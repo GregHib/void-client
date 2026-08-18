@@ -3604,7 +3604,7 @@ class OpenGlModel : AbstractModel {
 
         @JvmStatic
         fun method689(i: Byte, i_377_: Int) {
-            ColourAdjustment.anInt859 = -1
+            ColourAdjustmentStatics.anInt859 = -1
             TextureMetadataProvider.anInt4609 = -1
             if (i.toInt() != -59) anInt5584 = 77
             anInt5577++

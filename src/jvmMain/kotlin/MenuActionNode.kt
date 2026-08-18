@@ -32,22 +32,22 @@ class MenuActionNode internal constructor(var anInt6773: Int, var aClass55_Sub1_
             if (WidgetActionEntry.Companion.anInt6992 < 0) {
                 WidgetActionEntry.Companion.anInt6992 = 0
                 TextureMetadataProvider.anInt4609 = -1
-                ColourAdjustment.anInt859 = -1
+                ColourAdjustmentStatics.anInt859 = -1
             }
             if (WidgetActionEntry.Companion.anInt6992 > MapRegionLoaderStatics.anInt1259) {
                 WidgetActionEntry.Companion.anInt6992 = MapRegionLoaderStatics.anInt1259
-                ColourAdjustment.anInt859 = -1
+                ColourAdjustmentStatics.anInt859 = -1
                 TextureMetadataProvider.anInt4609 = -1
             }
             if (DebugOverlayRenderer.anInt3170 < 0) {
-                ColourAdjustment.anInt859 = -1
+                ColourAdjustmentStatics.anInt859 = -1
                 DebugOverlayRenderer.anInt3170 = 0
                 TextureMetadataProvider.anInt4609 = -1
             }
             if (MapRegionLoaderStatics.anInt1267 < DebugOverlayRenderer.anInt3170) {
                 DebugOverlayRenderer.anInt3170 = MapRegionLoaderStatics.anInt1267
                 TextureMetadataProvider.anInt4609 = -1
-                ColourAdjustment.anInt859 = -1
+                ColourAdjustmentStatics.anInt859 = -1
             }
             if (bool != false) aDouble6774 = 1.5874482848681375
         }

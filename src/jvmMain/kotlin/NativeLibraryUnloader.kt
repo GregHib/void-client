@@ -119,16 +119,16 @@ object NativeLibraryUnloader {
             MapRegionLoaderStatics.aByteArrayArrayArray1251 = SpriteMaskShapeStatics.method2596(MapRegionLoaderStatics.anInt1255, i + 12871)
         }
         anInt2971++
-        if (i != (TextureMetadataProvider.anInt4609.inv()) && ColourAdjustment.anInt859 != -1) {
+        if (i != (TextureMetadataProvider.anInt4609.inv()) && ColourAdjustmentStatics.anInt859 != -1) {
             var i_8_ = TextureMetadataProvider.anInt4609 - WidgetActionEntry.anInt6992
             if (i_8_ < 2 || i_8_ > 2) i_8_ /= 8
-            var i_9_ = -DebugOverlayRenderer.anInt3170 + ColourAdjustment.anInt859
+            var i_9_ = -DebugOverlayRenderer.anInt3170 + ColourAdjustmentStatics.anInt859
             WidgetActionEntry.anInt6992 = i_8_ + WidgetActionEntry.anInt6992
             if (i_9_ < 2 || i_9_ > 2) i_9_ /= 8
             DebugOverlayRenderer.anInt3170 -= -i_9_
             if (i_8_ == 0 && i_9_ == 0) {
                 TextureMetadataProvider.anInt4609 = -1
-                ColourAdjustment.anInt859 = -1
+                ColourAdjustmentStatics.anInt859 = -1
             }
             MenuActionNode.method2811(false)
         }

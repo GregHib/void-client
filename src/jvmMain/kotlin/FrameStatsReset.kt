@@ -192,7 +192,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Player.anInt10518 = 0
             DualMaterialContainer.anInt1632 = 0
             OpenGlRenderer.anInt7632 = 0
-            ColourAdjustment.anInt849 = 0
+            ColourAdjustmentStatics.anInt849 = 0
             GlRenderDevice.anInt9818 = 0
             Direct3dModel.anInt5409 = 0
             ServerConnectionInfo.anInt2140 = 0
@@ -3438,7 +3438,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProjectedGroundDecor.anInt10200 = 0
             GlTexture.anInt4850 = 0
             LocTypeConfig.anInt3565 = 0
-            ColourAdjustment.anInt850 = 0
+            ColourAdjustmentStatics.anInt850 = 0
             ClientMachineInfo.anInt6615 = 0
             FontDefinition.anInt1978 = 0
             NamedIdRecord.anInt4468 = 0

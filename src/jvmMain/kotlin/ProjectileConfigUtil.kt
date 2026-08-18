@@ -34,7 +34,7 @@ object ProjectileConfigUtil {
 
     @JvmStatic
     fun method312(i: Int, i_0_: Byte) {
-        ColourAdjustment.anInt859 = -1
+        ColourAdjustmentStatics.anInt859 = -1
         if (i != 37) {
             if (i != 50) {
                 if (i != 75) {
@@ -45,7 +45,7 @@ object ProjectileConfigUtil {
             } else MapRegionLoaderStatics.aFloat1249 = 4.0f
         } else MapRegionLoaderStatics.aFloat1249 = 3.0f
         anInt397++
-        ColourAdjustment.anInt859 = -1
+        ColourAdjustmentStatics.anInt859 = -1
         if (i_0_.toInt() != 56) anInt394 = 32
     }
 
@@ -67,7 +67,7 @@ object ProjectileConfigUtil {
             while (l != 0L) {
                 val l_3_ = l
                 l /= 37L
-                stringbuffer.append(ColourAdjustment.aCharArray852!![(-(37L * l) + l_3_).toInt()])
+                stringbuffer.append(ColourAdjustmentStatics.aCharArray852!![(-(37L * l) + l_3_).toInt()])
             }
             return stringbuffer.reverse().toString()
         } catch (runtimeexception: RuntimeException) {

@@ -411,7 +411,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                 is_99_ = (BoundingBoxNode.anIntArrayArray6740!![i_76_.toInt()]!!)
                                 i_100_ = (if (class277 == null) 0 else (ConstantColourTextureNode.anIntArray9249!![i_76_.toInt()]))
                             } else if (bool_75_) {
-                                i_100_ = (if (class277 == null) 0 else ColourAdjustment.anIntArray860!![i_76_.toInt()])
+                                i_100_ = (if (class277 == null) 0 else ColourAdjustmentStatics.anIntArray860!![i_76_.toInt()])
                                 is_96_ = NodeDequeHolder.anIntArrayArray1566!![i_76_.toInt()]
                                 is_95_ = DualMaterialContainer.anIntArrayArray1638!![i_76_.toInt()]
                                 is_97_ = AudioResampler.anIntArrayArray2165!![i_76_.toInt()]!!
@@ -559,7 +559,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                                     if (i_76_.toInt() != 12 && (class277.anInt3563 != -1) && class277.aBoolean3566) bool = true
                                 } else if (bool_94_) i_102_ += (ConstantColourTextureNode.anIntArray9249!![i_76_.toInt()])
                                 else if (!bool_75_) i_102_ += CameraOrModelTransformStatics.anIntArray4152!![i_76_.toInt()]
-                                else i_102_ += ColourAdjustment.anIntArray860!![i_76_.toInt()]
+                                else i_102_ += ColourAdjustmentStatics.anIntArray860!![i_76_.toInt()]
                                 if (class22 != null) {
                                     if (i_82_ == 0) i_82_ = i_79_
                                     if (i_81_ == 0) i_81_ = i_79_

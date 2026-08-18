@@ -50,7 +50,7 @@ import GlTexture2DRegion.Companion.method3553
 import GlWaterRenderPass.Companion.method3538
 import GlCubemapLightPass.Companion.method3544
 import WorldMapLabel.Companion.method3569
-import ColourAdjustment.Companion.method449
+import ColourAdjustmentStatics.method449
 import MinimapPolygonDrawer.Companion.method468
 import OggCacheStream.Companion.method524
 import MapSceneTileStatics.method529
@@ -1901,9 +1901,9 @@ object ChatCommandProcessor {
                 anInt1173 -= 4
                 ChatCommandProcessor.aShort9555 = anIntArray1149!![anInt1173].toShort()
                 if (ChatCommandProcessor.aShort9555 <= 0) ChatCommandProcessor.aShort9555 = 1.toShort()
-                ColourAdjustment.aShort851 = anIntArray1149!![anInt1173 + 1].toShort()
-                if (ColourAdjustment.aShort851 <= 0) ColourAdjustment.aShort851 = 32767.toShort()
-                else if (ColourAdjustment.aShort851 < ChatCommandProcessor.aShort9555) ColourAdjustment.aShort851 = ChatCommandProcessor.aShort9555
+                ColourAdjustmentStatics.aShort851 = anIntArray1149!![anInt1173 + 1].toShort()
+                if (ColourAdjustmentStatics.aShort851 <= 0) ColourAdjustmentStatics.aShort851 = 32767.toShort()
+                else if (ColourAdjustmentStatics.aShort851 < ChatCommandProcessor.aShort9555) ColourAdjustmentStatics.aShort851 = ChatCommandProcessor.aShort9555
                 FixedFunctionWaterPass.aShort7355 = anIntArray1149!![anInt1173 + 2].toShort()
                 if (FixedFunctionWaterPass.aShort7355 <= 0) FixedFunctionWaterPass.aShort7355 = 1.toShort()
                 RefCountedHandle.aShort2269 = anIntArray1149!![anInt1173 + 3].toShort()

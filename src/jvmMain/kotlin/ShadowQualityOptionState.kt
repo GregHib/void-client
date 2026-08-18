@@ -84,7 +84,7 @@ class ShadowQualityOptionState : GraphicsOptionState {
                 while (l != 0L) {
                     val l_3_ = l
                     l /= 37L
-                    var c = ColourAdjustment.aCharArray852!![(l_3_ + -(37L * l)).toInt()]
+                    var c = ColourAdjustmentStatics.aCharArray852!![(l_3_ + -(37L * l)).toInt()]
                     if (c.code == 95) {
                         val i_4_ = stringbuffer.length + -1
                         stringbuffer.setCharAt(i_4_, stringbuffer.get(i_4_).uppercaseChar())
