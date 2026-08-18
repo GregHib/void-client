@@ -31,6 +31,7 @@ final class Class82 {
                         Applet_Sub1.method94("displayfps - Toggle FPS and other information", -89);
                         Applet_Sub1.method94("renderer - Print graphics renderer information", 122);
                         Applet_Sub1.method94("heap - Print java memory information", -88);
+                        Applet_Sub1.method94("profile - Toggle frame profiler (reports on stdout)", -87);
                         return;
                     }
                     if (string.equalsIgnoreCase("cls")) {
@@ -58,6 +59,15 @@ final class Class82 {
                     }
                     if (string.equals("heap")) {
                         Applet_Sub1.method94(("Heap: " + Class226.anInt2964 + "MB"), 69);
+                        return;
+                    }
+                    if (string.equalsIgnoreCase("profile")) {
+                        FrameProfiler.setEnabled(!FrameProfiler.enabled);
+                        if (FrameProfiler.enabled) Applet_Sub1.method94("Profiler on - see stdout for 5s reports", 84);
+                        else {
+                            Applet_Sub1.method94("Profiler off. Last window:", -70);
+                            Applet_Sub1.method94(FrameProfiler.summary(), -71);
+                        }
                         return;
                     }
                 } catch (Exception exception) {

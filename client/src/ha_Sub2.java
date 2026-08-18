@@ -1904,6 +1904,10 @@ final class ha_Sub2 extends ha {
         this.aBoolean7775 = Stream.c();
         aBoolean7866 = anOpenGL7664.arePbuffersAvailable();
         aBoolean7873 = anOpenGL7664.a("GL_ARB_vertex_buffer_object");
+        // Use VBOs for dynamic geometry too (stock code enables this only on
+        // Radeon). Mixed client-array + VBO draws take Apple's Metal-GLEngine
+        // through gleRunVertexSubmitImmediate, which segfaults on the gather.
+        aBoolean7869 = aBoolean7873;
         aBoolean7843 = anOpenGL7664.a("GL_ARB_multisample");
         this.aBoolean7841 = anOpenGL7664.a("GL_ARB_vertex_program");
         anOpenGL7664.a("GL_ARB_fragment_program");

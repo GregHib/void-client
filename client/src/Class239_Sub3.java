@@ -157,6 +157,7 @@ final class Class239_Sub3 extends Class239 {
     final boolean method1735(boolean bool) {
         if (bool != false) anInt5871 = -86;
         anInt5858++;
+        if (Loader.forcedResizable >= 0) return Loader.forcedResizable == 1;
         return Class60.method576(this.anInt3138, 29);
     }
 }
