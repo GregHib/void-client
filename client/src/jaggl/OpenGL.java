@@ -473,20 +473,16 @@ public class OpenGL {
     }
 
     /**
-     * Display scale (2.0 on Retina). Java 8's AWT reports an identity
-     * transform (HiDPI transforms are a Java 9+ API), but the Mac JDK 8
-     * exposes the real value via sun.awt.CGraphicsDevice.getScaleFactor().
+     * The WINDOW'S backing scale as AWT manages it - which is what the JAWT
+     * layer graft's coordinate space tracks. This is the graphics config
+     * transform: identity (1.0) on Java 8's Retina-blind AWT, whose windows
+     * really do get a 1x backing store, and 2.0 on Retina-aware JDKs (Metal
+     * AWT pipeline). Deliberately NOT sun.awt.CGraphicsDevice.getScaleFactor:
+     * that reports the PHYSICAL display scale (2.0 even on Java 8), which is
+     * the wrong unit for a 1x-backed window and shrinks the layer to the
+     * bottom-left quarter.
      */
     private double displayScale() {
-        try {
-            java.awt.GraphicsDevice device = canvas.getGraphicsConfiguration().getDevice();
-            Object factor = device.getClass().getMethod("getScaleFactor").invoke(device);
-            if (factor instanceof Number) {
-                double f = ((Number) factor).doubleValue();
-                if (f > 0) return f;
-            }
-        } catch (Throwable ignored) {
-        }
         double t = canvas.getGraphicsConfiguration().getDefaultTransform().getScaleX();
         return t > 0 ? t : 1.0;
     }
@@ -529,18 +525,16 @@ public class OpenGL {
             if (subLayer == 0L) return;
             long interLayer = org.lwjgl.system.JNI.invokePPP(subLayer,
                 org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("superlayer"), msgSend);
-            // Self-calibrate the scale: the AWT root layer's bounds are in
-            // backing units; dividing by the window's point size yields the
-            // Retina scale regardless of what this JVM's AWT reports.
+            // The graft's coordinate space tracks the window's BACKING scale:
+            // 1x on Zulu 8 (its Retina-blind AWT gives the window a 1x
+            // backing store) and 2x on Retina-aware JDKs (Metal AWT
+            // pipeline, default since 17). AWT's GraphicsConfiguration
+            // transform reports exactly that on both, so trust it. Do NOT
+            // calibrate from ancestor layer bounds: on the Metal pipeline
+            // every ancestor reports POINT-sized bounds while the graft's
+            // space is pixels, which mis-derives the scale and parks the GL
+            // layer in the bottom-left quarter of the window.
             double scale = displayScale();
-            long rootLayer = interLayer != 0L ? org.lwjgl.system.JNI.invokePPP(interLayer,
-                org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("superlayer"), msgSend) : 0L;
-            double[] rootBounds = new double[4];
-            if (rootLayer != 0L && readLayerRect(rootLayer, msgSend, "bounds", rootBounds)
-                && rootBounds[3] > 0 && contentH > 0) {
-                double derived = rootBounds[3] / contentH;
-                if (derived >= 0.5 && derived <= 4.0) scale = derived;
-            }
             double w = canvas.getWidth() * scale;
             double h = canvas.getHeight() * scale;
             double x = xPt * scale;
@@ -552,7 +546,7 @@ public class OpenGL {
                 setLayerFrame(subLayer, msgSend, x, y, w, h);
             }
             if (DEBUG) System.err.println("[jaggl] layer frame -> px(" + x + "," + y + " "
-                + w + "x" + h + ") scale=" + scale + " rootH=" + rootBounds[3] + " contentH=" + contentH);
+                + w + "x" + h + ") scale=" + scale + " contentH=" + contentH);
         } catch (Throwable t) {
             // Transient failures (component mid-layout etc.) - retry next frame.
             if (DEBUG) System.err.println("[jaggl] layer frame fix skipped: " + t);
