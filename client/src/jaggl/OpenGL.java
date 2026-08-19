@@ -48,6 +48,15 @@ public class OpenGL {
     private int warmupFrames = 30;
     private int layerFixFrames;
 
+    // One live context per canvas. The engine tears a replaced toolkit down
+    // lazily (finalizer), and lwjgl3-awt never detaches its CALayer graft from
+    // AWT's root layer, so a mid-session renderer switch would otherwise
+    // create the new context's layer while the previous one is still grafted
+    // - the new frames composite into an invisible surface (GL renders at
+    // full speed, screen stays black). init() force-releases the previous
+    // instance for the canvas, and release() detaches the layer graft.
+    private static final java.util.Map graftByCanvas = new java.util.WeakHashMap();
+
 
     public OpenGL() {
     }
@@ -80,16 +89,24 @@ public class OpenGL {
                 want.sampleBuffers = 1;
                 want.samples = samples;
             }
-            try {
-                canvasBinding = platformCanvas();
-                context = canvasBinding.create(canvas, want, new GLData());
-            } catch (Throwable t) {
-                if (samples <= 1) throw t;
-                if (DEBUG) System.err.println("[jaggl] MSAA " + samples + "x failed, retrying without: " + t);
-                want.sampleBuffers = 0;
-                want.samples = 0;
-                canvasBinding = platformCanvas();
-                context = canvasBinding.create(canvas, want, new GLData());
+            synchronized (OpenGL.class) {
+                OpenGL prev = (OpenGL) graftByCanvas.get(canvas);
+                if (prev != null && prev != this) {
+                    if (DEBUG) System.err.println("[jaggl] releasing previous context on this canvas");
+                    prev.release();
+                }
+                try {
+                    canvasBinding = platformCanvas();
+                    context = canvasBinding.create(canvas, want, new GLData());
+                } catch (Throwable t) {
+                    if (samples <= 1) throw t;
+                    if (DEBUG) System.err.println("[jaggl] MSAA " + samples + "x failed, retrying without: " + t);
+                    want.sampleBuffers = 0;
+                    want.samples = 0;
+                    canvasBinding = platformCanvas();
+                    context = canvasBinding.create(canvas, want, new GLData());
+                }
+                graftByCanvas.put(canvas, this);
             }
             if (DEBUG) System.err.println("[jaggl] context created: 0x" + Long.toHexString(context));
             this.canvas = canvas;
@@ -273,6 +290,7 @@ public class OpenGL {
 
     public final void release() {
         if (canvasBinding != null) {
+            detachLayerGraft();
             if (context != 0L) {
                 try {
                     canvasBinding.makeCurrent(0L);
@@ -288,9 +306,47 @@ public class OpenGL {
             canvasBinding = null;
         }
         caps = null;
+        synchronized (OpenGL.class) {
+            if (canvas != null && graftByCanvas.get(canvas) == this) graftByCanvas.remove(canvas);
+        }
         if (this.a != null) {
             b.remove(this.a);
             this.a = null;
+        }
+    }
+
+    /**
+     * Remove lwjgl3-awt's NSOpenGLView layer graft from AWT's root layer.
+     * lwjgl3-awt attaches it at create() and dispose() never detaches it, so
+     * without this a dead toolkit's layer keeps compositing over the canvas
+     * and the next GL toolkit's output is never visible.
+     */
+    private void detachLayerGraft() {
+        if (!(canvasBinding instanceof PlatformMacOSXGLCanvas)) return;
+        try {
+            if (viewField == null) {
+                viewField = PlatformMacOSXGLCanvas.class.getDeclaredField("view");
+                viewField.setAccessible(true);
+            }
+            long view = viewField.getLong(canvasBinding);
+            if (view == 0L) return;
+            long msgSend = org.lwjgl.system.macosx.ObjCRuntime.getLibrary().getFunctionAddress("objc_msgSend");
+            long subLayer = org.lwjgl.system.JNI.invokePPP(view,
+                org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("layer"), msgSend);
+            if (subLayer == 0L) return;
+            long interLayer = org.lwjgl.system.JNI.invokePPP(subLayer,
+                org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("superlayer"), msgSend);
+            long caTransaction = org.lwjgl.system.macosx.ObjCRuntime.objc_getClass("CATransaction");
+            long remove = org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("removeFromSuperlayer");
+            org.lwjgl.system.JNI.invokePPP(caTransaction,
+                org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("begin"), msgSend);
+            org.lwjgl.system.JNI.invokePPP(subLayer, remove, msgSend);
+            if (interLayer != 0L) org.lwjgl.system.JNI.invokePPP(interLayer, remove, msgSend);
+            org.lwjgl.system.JNI.invokePPP(caTransaction,
+                org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("commit"), msgSend);
+            if (DEBUG) System.err.println("[jaggl] detached layer graft (view=0x" + Long.toHexString(view) + ")");
+        } catch (Throwable t) {
+            if (DEBUG) System.err.println("[jaggl] layer graft detach failed: " + t);
         }
     }
 

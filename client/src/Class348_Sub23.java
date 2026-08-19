@@ -97,6 +97,8 @@ abstract class Class348_Sub23 extends Class348 {
                     Class348_Sub8.aHa6654.method3651(var_za);
                 }
             } catch (Throwable throwable) {
+                System.err.println("[toolkit] creating renderer mode=" + i + " failed, reverting:");
+                throwable.printStackTrace();
                 int i_3_ = Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350);
                 if (i_3_ == 2) Class139.aBoolean1952 = true;
                 Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271), 0);
