@@ -63,8 +63,8 @@ import KeyboardLayoutConfigStatics.method1254
 import ServerConnectionInfo.Companion.method1261
 import ClientLoadStateMachine.method1265
 import RgbColorPalette.Companion.method1267
-import AudioResampler.Companion.method1269
-import AudioResampler.Companion.method1276
+import AudioResamplerStatics.method1269
+import AudioResamplerStatics.method1276
 import ItemDefinitionLoader.Companion.method1284
 import ParticleSystemState.Companion.method1293
 import HeapDiagnosticsHolder.method1298

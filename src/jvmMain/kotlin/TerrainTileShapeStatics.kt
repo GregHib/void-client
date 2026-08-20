@@ -5,9 +5,6 @@ object TerrainTileShapeStatics {
 
     var anInt8802: Int = 0
 
-
-    var anInt8804: Int = 0
-
     var aBoolean8805: Boolean = false
 
     var anInt8806: Int = 0
@@ -15,26 +12,6 @@ object TerrainTileShapeStatics {
     var aLruByteCache_8807: LruByteCache?
 
     var anInt8808: Int = 0
-
-    @JvmStatic
-    fun method2726(i: Int, i_7_: Int, i_8_: Int): Int {
-        var i_7_ = i_7_
-        var i_8_ = i_8_
-        if (i_8_ > i_7_) {
-            val i_9_ = i_7_
-            i_7_ = i_8_
-            i_8_ = i_9_
-        }
-        if (i != -21806) method2727((-128).toByte(), null, null)
-        anInt8804++
-        var i_10_: Int
-        while ( /**/i_8_ != 0) {
-            i_10_ = i_7_ % i_8_
-            i_7_ = i_8_
-            i_8_ = i_10_
-        }
-        return i_7_
-    }
 
     @JvmStatic
     fun method2727(i: Byte, class237_sub1: WorldMapSceneSoftware?, `is`: Array<ByteArray?>?) {

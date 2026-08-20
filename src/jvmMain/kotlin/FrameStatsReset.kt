@@ -2655,7 +2655,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             EdgeDetectTextureNode.anInt9172 = 0
             LightDetailOptionState.anInt6036 = 0
             HeightMapNoise.anInt3827 = 0
-            AudioResampler.anInt2166 = 0
+            AudioResamplerStatics.anInt2166 = 0
             StreamingResourceRequest.anInt10448 = 0
             SpriteSheetCache.anInt2566 = 0
             SceneModelBuilderStatics.anInt6397 = 0
@@ -3237,7 +3237,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             DynamicSceneObjectEntity.anInt10187 = 0
             OpenGlModel.anInt5611 = 0
             GlslMaterialPass.anInt6240 = 0
-            AudioResampler.anInt2161 = 0
+            AudioResamplerStatics.anInt2161 = 0
             MultiLevelOptionState.anInt6150 = 0
             OpenGlRenderer.anInt7573 = 0
             GlowPostProcessor.anInt2516 = 0
@@ -3540,7 +3540,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             RSFont.anInt4056 = 0
             SineWaveTextureNode.anInt9454 = 0
             ResourceLoaderThread.anInt3905 = 0
-            TerrainTileShapeStatics.anInt8804 = 0
+            AudioResampler.anInt8804 = 0
             WorldMapToggle.anInt3876 = 0
             NativeRenderer.anInt7928 = 0
             ScriptCompilerThread.anInt1736 = 0
@@ -3786,7 +3786,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LocTypeDefLoader.anInt2504 = 0
             ChatCommandProcessor.anInt4023 = 0
             GlRenderDevice.anInt9867 = 0
-            AudioResampler.anInt2168 = 0
+            AudioResamplerStatics.anInt2168 = 0
             GroundItemRenderState.anInt1659 = 0
             SpriteArchiveLoader.anInt376 = 0
             InterfaceBounds.anInt6816 = 0

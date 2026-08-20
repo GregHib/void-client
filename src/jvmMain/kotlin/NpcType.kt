@@ -363,7 +363,7 @@ class NpcType {
                     val class17_51_ = widgetCache!!.method835((loadProgressCounters[i_50_]!!.anInt2454), 7)
                     if (class17_51_.anIntArray237 != null) {
                         bool_44_ = true
-                        AudioResampler.aWidgetDefinitionArray2169s!![i_50_] = class17_51_
+                        AudioResamplerStatics.aWidgetDefinitionArray2169s!![i_50_] = class17_51_
                         val i_52_ = loadProgressCounters[i_50_]!!.anInt2451
                         val i_53_ = loadProgressCounters[i_50_]!!.anInt2455
                         var i_54_ = class17_51_.anIntArray237[i_52_]
@@ -575,7 +575,7 @@ class NpcType {
                     (NpcType.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,
                     (ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_86_]),
-                    (AudioResampler.aWidgetDefinitionArray2169s!![i_86_]!!.aBoolean242),
+                    (AudioResamplerStatics.aWidgetDefinitionArray2169s!![i_86_]!!.aBoolean242),
                     KaraokeSubtitleStream.anIntArray9050!![i_86_]
                 )
                 i_86_++
@@ -604,7 +604,7 @@ class NpcType {
             while (i_49_ > i_91_) {
                 ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_91_] = null
                 NpcType.aClass348_Sub42_Sub17Array9672!![i_91_] = null
-                AudioResampler.aWidgetDefinitionArray2169s!![i_91_] = null
+                AudioResamplerStatics.aWidgetDefinitionArray2169s!![i_91_] = null
                 i_91_++
             }
             if (anInt1346 != 128 || anInt1358 != 128) class64_82_!!.O(anInt1346, anInt1358, anInt1346)

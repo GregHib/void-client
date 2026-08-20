@@ -881,7 +881,7 @@ object ConfigArchiveLoaderStatics {
         NpcCountAccessor.method1328(-26162)
         method3102(22385)
         MapSceneRenderer.method386((-106).toByte())
-        AudioResampler.method1271(0)
+        AudioResamplerStatics.method1271(0)
         TextureMipDescriptorStatics.aLruByteCache_4346!!.method587(-108)
         MaterialTypeMarkerStatics.aLruByteCache_6517!!.method587(-109)
         TerrainTileShapeStatics.aLruByteCache_8807!!.method587(-113)

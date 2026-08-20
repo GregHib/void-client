@@ -8,11 +8,11 @@ object TextureLoaderUtil {
 
     fun method2547(i: Int, i_0_: Byte): Boolean {
         anInt3993++
-        if (AudioResampler.aBooleanArray2162!![i]) return true
+        if (AudioResamplerStatics.aBooleanArray2162!![i]) return true
         if (!RenderConfigFactoryStatics.aJs5Archive_2978!!.method408((-124).toByte(), i)) return false
         val i_1_ = RenderConfigFactoryStatics.aJs5Archive_2978!!.method407(0, i)
         if (i_1_ == 0) {
-            AudioResampler.aBooleanArray2162!![i] = true
+            AudioResamplerStatics.aBooleanArray2162!![i] = true
             return true
         }
         if (WarpTextureNode.aWidgetComponentArrayArray9427!![i] == null) WarpTextureNode.aWidgetComponentArrayArray9427!![i] = arrayOfNulls<WidgetComponent>(i_1_)
@@ -30,7 +30,7 @@ object TextureLoaderUtil {
             i_2_++
         }
         if (i_0_.toInt() != 84) aFloat3994 = -0.8522395f
-        AudioResampler.aBooleanArray2162!![i] = true
+        AudioResamplerStatics.aBooleanArray2162!![i] = true
         return true
     }
 }

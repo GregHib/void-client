@@ -95,7 +95,7 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
                             if (npcConfig != null) `is` = npcConfig.anIntArray917
                         }
                     } else `is` = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-73, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
-                    if (`is` != null) string += AudioResampler.method1273(`is`, true)
+                    if (`is` != null) string += AudioResamplerStatics.method1273(`is`, true)
                 } else string = IntHashSetStatics.method2367(125.toByte(), IntHashSetStatics.aClass348_Sub42_Sub12_3963!!)
                 if (FileExistsConditionStatics.anInt4776 > 2) string += ("<col=ffffff> / " + (FileExistsConditionStatics.anInt4776 - 2) + LocalizedText.aLocalizedText_3508!!.method2063(ChatCommandProcessor.anInt6967, 544))
                 if (WidgetActionEntry.aWidgetComponent_6990 != null) {

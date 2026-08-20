@@ -1,6 +1,6 @@
 import WhirlpoolHash.Companion.method1166
 import WidgetNodeLink.Companion.method1197
-import AudioResampler.Companion.method1273
+import AudioResamplerStatics.method1273
 import PerlinTextureProvider.Companion.method1399
 import RemoveRoofsOptionState.Companion.method1813
 import WhirlpoolHash.Companion.method2057

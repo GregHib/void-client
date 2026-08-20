@@ -75,7 +75,7 @@ object SpriteBlitter {
         WarpTextureNode.aWidgetComponentArrayArray9427 = arrayOfNulls(RenderConfigFactoryStatics.aJs5Archive_2978!!.method414(-1))
         anInt1573++
         WorldMapTextLabel.aWidgetComponentArrayArray8584 = arrayOfNulls(RenderConfigFactoryStatics.aJs5Archive_2978!!.method414(-1))
-        AudioResampler.aBooleanArray2162 = BooleanArray(RenderConfigFactoryStatics.aJs5Archive_2978!!.method414(-1))
+        AudioResamplerStatics.aBooleanArray2162 = BooleanArray(RenderConfigFactoryStatics.aJs5Archive_2978!!.method414(-1))
     }
 
     @JvmStatic

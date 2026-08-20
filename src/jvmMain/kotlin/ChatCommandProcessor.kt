@@ -734,7 +734,7 @@ object ChatCommandProcessor {
             }
             if (i == 5214) {
                 val i_69_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub14 = AudioResampler.method1269(-17096)
+                val class348_sub42_sub14 = AudioResamplerStatics.method1269(-17096)
                 if (class348_sub42_sub14 != null) {
                     val bool_70_ = class348_sub42_sub14.method3236(anIntArray1175!!, i_69_ shr 14 and 0x3fff, i_69_ and 0x3fff, i_69_ shr 28 and 0x3, (-28).toByte())
                     if (bool_70_) method2839(anIntArray1175!![1], -17, anIntArray1175!![2])
@@ -782,7 +782,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5222) {
-                val class348_sub42_sub14 = AudioResampler.method1269(-17096)
+                val class348_sub42_sub14 = AudioResamplerStatics.method1269(-17096)
                 if (class348_sub42_sub14 == null) {
                     anIntArray1149!![anInt1173++] = -1
                     anIntArray1149!![anInt1173++] = -1
@@ -808,7 +808,7 @@ object ChatCommandProcessor {
             }
             if (i == 5224) {
                 val i_79_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub14 = AudioResampler.method1269(-17096)
+                val class348_sub42_sub14 = AudioResamplerStatics.method1269(-17096)
                 if (class348_sub42_sub14 == null) {
                     anIntArray1149!![anInt1173++] = -1
                     anIntArray1149!![anInt1173++] = -1
@@ -827,7 +827,7 @@ object ChatCommandProcessor {
             }
             if (i == 5225) {
                 val i_81_ = anIntArray1149!![--anInt1173]
-                val class348_sub42_sub14 = AudioResampler.method1269(-17096)
+                val class348_sub42_sub14 = AudioResamplerStatics.method1269(-17096)
                 if (class348_sub42_sub14 == null) {
                     anIntArray1149!![anInt1173++] = -1
                     anIntArray1149!![anInt1173++] = -1
