@@ -2716,7 +2716,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CubemapTextureGlSource.anInt8699 = 0
             ParticleDetailOptionState.anInt6019 = 0
             OpenGlTerrainTile.anInt8242 = 0
-            CharCodeMap.anInt9589 = 0
+            CharCodeMapStatics.anInt9589 = 0
             GlRenderDevice.anInt9855 = 0
             MidiSequencePlayer.anInt8892 = 0
             TimedTileQueueEntry.anInt9648 = 0

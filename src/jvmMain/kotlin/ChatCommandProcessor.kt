@@ -3258,7 +3258,7 @@ object ChatCommandProcessor {
             }
             if (i == 1211) {
                 widgetComponent!!.anInt770 = 5
-                widgetComponent.anInt753 = CharCodeMap.anInt9591
+                widgetComponent.anInt753 = CharCodeMapStatics.anInt9591
                 widgetComponent.anInt779 = 0
                 if (widgetComponent.anInt704 == -1) method3569(widgetComponent.anInt830, 66)
                 return

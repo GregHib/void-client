@@ -104,7 +104,7 @@ class FireParticleStream : OutputStream() {
                 if (-1 + (ActorEntity.anInt6451 shl 9) < GlslMaterialPass.anInt6246) GlslMaterialPass.anInt6246 = -1 + (ActorEntity.anInt6451 shl 9)
                 if (CompositeRgbNoiseTexture.anInt8685 < 0) CompositeRgbNoiseTexture.anInt8685 = 0
                 if (CompositeRgbNoiseTexture.anInt8685 > (ActorEntity.anInt7054 shl 9) + -1) CompositeRgbNoiseTexture.anInt8685 = (ActorEntity.anInt7054 shl 9) - 1
-                CharCodeMap.method3225(114)
+                CharCodeMapStatics.method3225(114)
                 Client.method3175((-107).toByte())
                 FacingDirectionNodeStatics.aRenderer6654!!.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_)
                 TextureDefinitionCache.method1626(1, true)
@@ -129,7 +129,7 @@ class FireParticleStream : OutputStream() {
                     if (GrayscaleNoiseTexture.aBoolean5300) {
                         CameraRotationStubStatics.method289(-15902, 0x3fff and -WorldMapElement.anInt4638, -MapTileShapeStatics.anInt4186 and 0x3fff, (-MinimapAreaMarkerNode.anInt9701 and 0x3fff))
                         method1634(
-                            CharCodeMap.anIntArray1127,
+                            CharCodeMapStatics.anIntArray1127,
                             -2,
                             RegionSceneLoader.aByteArrayArrayArray3700,
                             (LocalPlayerState.aPlayer_1907!!.y) shr 9,
@@ -158,7 +158,7 @@ class FireParticleStream : OutputStream() {
                         LinkedListIteratorStatics.anIntArray2117,
                         BlankTextureNode.anIntArray9259,
                         ConnectionStateTypeStatics.anIntArray1045,
-                        CharCodeMap.anIntArray1127,
+                        CharCodeMapStatics.anIntArray1127,
                         (LocalPlayerState.aPlayer_1907!!.plane) - -1,
                         i_16_,
                         (LocalPlayerState.aPlayer_1907!!.x) shr 9,
@@ -176,7 +176,7 @@ class FireParticleStream : OutputStream() {
                         GroundDecorSceneEntity.method2403(i_1_, 256, i_3_, i_0_, 19206, i_2_, 256)
                         ItemDefinitionLoader.method1289(i_2_, i_0_, i_3_, 8, i_1_)
                     }
-                    CharCodeMap.method3223()
+                    CharCodeMapStatics.method3223()
                     GlslMaterialPass.anInt6246 = i_8_
                     MinimapAreaMarkerNode.anInt9701 = i_11_
                     WorldMapElement.anInt4638 = i_12_

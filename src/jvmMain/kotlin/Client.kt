@@ -338,7 +338,7 @@ import EdgeDetectTextureNode.Companion.method3071
 import RegionSceneShifterStatics.method3155
 import ParamMap.Companion.method3165
 import ParameterizedText.Companion.method3217
-import CharCodeMap.Companion.method3220
+import CharCodeMapStatics.method3220
 import ContactEntryStatics.method3228
 import ContactEntryStatics.method3229
 import InterfaceComponentGroup.Companion.method3237
@@ -800,7 +800,7 @@ class Client : GameAppletFrame() {
         NpcType.method3269(true)
         method265(false)
         method1375(5616)
-        CharCodeMap.method609((-52).toByte())
+        CharCodeMapStatics.method609((-52).toByte())
         method355(i + 4189)
         method1426(25165)
         method2254(i.toInt() xor 0x39bf.inv())
@@ -3064,7 +3064,7 @@ class Client : GameAppletFrame() {
                     } else if (i_40_ shr 28 != 0) {
                         val i_52_ = i_40_ and 0xffff
                         val player: Player?
-                        if (CharCodeMap.anInt9591 != i_52_) player = (LoadingBarRenderer.aPlayerArray5058!![i_52_])
+                        if (CharCodeMapStatics.anInt9591 != i_52_) player = (LoadingBarRenderer.aPlayerArray5058!![i_52_])
                         else player = LocalPlayerState.aPlayer_1907
                         if (player != null) {
                             if (i_38_ == 65535) i_38_ = -1
@@ -3323,7 +3323,7 @@ class Client : GameAppletFrame() {
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3842) {
                 val i = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 WallSceneEntity.method2397((-128).toByte())
-                AbstractGameSocketStatics.method1703(5, i, CharCodeMap.anInt9591, 4, 0)
+                AbstractGameSocketStatics.method1703(5, i, CharCodeMapStatics.anInt9591, 4, 0)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -3434,7 +3434,7 @@ class Client : GameAppletFrame() {
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1901) {
                 val i = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val player: Player?
-                if (i != CharCodeMap.anInt9591) player = LoadingBarRenderer.aPlayerArray5058!![i]
+                if (i != CharCodeMapStatics.anInt9591) player = LoadingBarRenderer.aPlayerArray5058!![i]
                 else player = LocalPlayerState.aPlayer_1907
                 if (player == null) {
                     InboundPacketHeader.aInboundPacketHeader_6584 = null
@@ -4798,7 +4798,7 @@ class Client : GameAppletFrame() {
                             if (OpenGlTerrainTile.anInt8270 != i_5_ || i_4_ != anInt4032) {
                                 if (class348_sub47 == null) {
                                     CollisionMap.anInt4450++
-                                    class348_sub47 = (method2148(CharCodeMap.aOutgoingPacketHeader_9590, TheoraVideoStream.aIsaacCipher_9029, -94))
+                                    class348_sub47 = (method2148(CharCodeMapStatics.aOutgoingPacketHeader_9590, TheoraVideoStream.aIsaacCipher_9029, -94))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     i_2_ = class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197
                                 }

@@ -132,7 +132,7 @@ object InterfaceBoundsStatics {
                 widgetComponent.anInt757 = 150
                 widgetComponent.anInt675 = 0x7ff and (256.0 * sin((GlGroundShaderPass.anInt7396).toDouble() / 40.0)).toInt()
                 widgetComponent.anInt770 = 5
-                widgetComponent.anInt753 = CharCodeMap.anInt9591
+                widgetComponent.anInt753 = CharCodeMapStatics.anInt9591
                 widgetComponent.anInt779 = (ModelGroundDecor.method2418((LocalPlayerState.aPlayer_1907!!.aString10544!!), (-41).toByte()))
                 widgetComponent.anInt699 = LocalPlayerState.aPlayer_1907!!.anInt10268
                 widgetComponent.anInt841 = 0

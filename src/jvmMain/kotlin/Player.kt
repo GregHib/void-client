@@ -214,7 +214,7 @@ class Player : ProjectedGroundDecor() {
             this.x = (this.anIntArray10320!![0] shl 9) - -(method2436(89.toByte()) shl 8)
             this.y = (this.anIntArray10317!![0] shl 9) - -(method2436(98.toByte()) shl 8)
         }
-        if ((CharCodeMap.anInt9591 == this.anInt10290) && is_30_ != null) {
+        if ((CharCodeMapStatics.anInt9591 == this.anInt10290) && is_30_ != null) {
             for (i_31_ in is_20_.indices) {
                 if (is_20_[i_31_] != is_30_[i_31_]) {
                     ClientExceptionStatics.aModelHeaderCache_112!!.method1936(72)

@@ -941,7 +941,7 @@ class WidgetComponent {
                 ConnectionStateTypeStatics.anIntArray1045 = IntArray(i)
                 LinkedListIteratorStatics.anIntArray2117 = IntArray(i)
                 anInt825++
-                CharCodeMap.anIntArray1127 = IntArray(i)
+                CharCodeMapStatics.anIntArray1127 = IntArray(i)
                 FileIoUtil.anIntArray4097 = IntArray(i)
             }
         }

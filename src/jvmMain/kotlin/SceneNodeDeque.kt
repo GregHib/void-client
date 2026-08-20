@@ -362,7 +362,7 @@ class SceneNodeDeque {
                                 PlayerUpdateDecoder.aBoolean1915 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 RsaVarbitHandler.aBoolean4903 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 MinimapTriangleDrawer.aBoolean5233 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                CharCodeMap.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944)
+                                CharCodeMapStatics.anInt9591 = class348_sub49_sub2.readUnsignedShort(842397944)
                                 FrameBufferObject.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 ModelDataCache.anInt359 = class348_sub49_sub2.method3369(125.toByte())
                                 ModelBatchBaseStatics.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1

@@ -139,7 +139,7 @@ class TrackedGroundDecor internal constructor(i: Int, i_22_: Int, i_23_: Int, i_
                 var class318_sub1_sub3_sub3: ProjectedGroundDecor? = null
                 if (anInt10387 < 0) {
                     val i_9_ = -1 + -anInt10387
-                    if (i_9_ == CharCodeMap.anInt9591) class318_sub1_sub3_sub3 = LocalPlayerState.aPlayer_1907
+                    if (i_9_ == CharCodeMapStatics.anInt9591) class318_sub1_sub3_sub3 = LocalPlayerState.aPlayer_1907
                     else class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![i_9_])
                 } else {
                     val i_10_ = -1 + anInt10387

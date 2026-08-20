@@ -71,7 +71,7 @@ class SimpleToggleOptionState : GraphicsOptionState {
         fun method1741(class348_sub49_sub2: CipheredPacketBuffer, i: Byte) {
             anInt5893++
             class348_sub49_sub2.startBitAccess(122)
-            val i_3_ = CharCodeMap.anInt9591
+            val i_3_ = CharCodeMapStatics.anInt9591
             val player = (Player().also { LoadingBarRenderer.aPlayerArray5058!![i_3_] = it }.also { LocalPlayerState.aPlayer_1907 = it })
             player.anInt10290 = i_3_
             val i_4_ = class348_sub49_sub2.readBits((-24).toByte(), 30)

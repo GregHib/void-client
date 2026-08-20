@@ -147,7 +147,7 @@ class InputStream_Sub2 : InputStream() {
                             var class318_sub1_sub3_sub3: ProjectedGroundDecor? = null
                             if (i_58_ < 0) {
                                 val i_67_ = -i_58_ + -1
-                                if (CharCodeMap.anInt9591 != i_67_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![i_67_])
+                                if (CharCodeMapStatics.anInt9591 != i_67_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![i_67_])
                                 else class318_sub1_sub3_sub3 = (LocalPlayerState.aPlayer_1907)
                             } else {
                                 val i_68_ = i_58_ + -1
@@ -242,7 +242,7 @@ class InputStream_Sub2 : InputStream() {
                         val i_102_ = ArbVertexProgram.regionTileX + i_101_
                         val i_103_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAdd(-25)
                         val i_104_ = CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readShortAdd(123)
-                        if (i_104_ != CharCodeMap.anInt9591) {
+                        if (i_104_ != CharCodeMapStatics.anInt9591) {
                             val bool = (i_101_ >= 0 && i_99_ >= 0 && (i_101_ < GlCubemapLightPass.anInt7319) && (i_99_ < RangeThresholdTextureNode.anInt9109))
                             if (bool || NpcEntityUpdater.method2112(122, WidgetRedrawTrackerStatics.anInt3931)) {
                                 RenderableEntry.method3459(IntPair(i_103_, i_97_), GradientLookupEffect.anInt9200, i_100_, i_102_, i + -10)

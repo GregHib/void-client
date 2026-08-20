@@ -227,7 +227,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
             if (i_23_ == 0) {
                 if (bool) player.aBoolean10539 = false
                 else {
-                    if (CharCodeMap.anInt9591 == i_22_) throw RuntimeException("s:lr")
+                    if (CharCodeMapStatics.anInt9591 == i_22_) throw RuntimeException("s:lr")
                     val textureAtlasState = (TextureAtlasState().also { SoundBankPatch.aTextureAtlasStateArray6802s!![i_22_] = it })
                     textureAtlasState.anInt4420 = ((RegionMapDecoder.regionTileY - -(player.anIntArray10317!![0]) shr 6) + ((player.anIntArray10320!![0] + ArbVertexProgram.regionTileX) shr 6 shl 14) + ((player.plane).toInt() shl 28))
                     if (player.anInt10524 != -1) textureAtlasState.anInt4423 = player.anInt10524
@@ -338,7 +338,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     player.aByte6376 = (0x3 and (player.plane) + i_32_).toByte()
                     player.plane = player.aByte6376
                     if (NpcType.method802(i_36_, i_35_, true)) player.aByte6376++
-                    if (CharCodeMap.anInt9591 == i_22_) {
+                    if (CharCodeMapStatics.anInt9591 == i_22_) {
                         if ((player.plane).toInt() != CompiledScriptCache.anInt4372) PcmStreamBuffer.aBoolean8870 = true
                         CompiledScriptCache.anInt4372 = (player.plane).toInt()
                     }
@@ -357,7 +357,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     player.aByte6376 = ((player.plane) + i_38_ and 0x3).toByte()
                     player.plane = player.aByte6376
                     if (NpcType.method802(i_42_, i_41_, true)) player.aByte6376++
-                    if (CharCodeMap.anInt9591 == i_22_) CompiledScriptCache.anInt4372 = (player.plane).toInt()
+                    if (CharCodeMapStatics.anInt9591 == i_22_) CompiledScriptCache.anInt4372 = (player.plane).toInt()
                 }
             }
         }

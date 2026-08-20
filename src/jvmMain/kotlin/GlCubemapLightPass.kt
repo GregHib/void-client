@@ -280,9 +280,9 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                     if (i_36_ < LinkedListIteratorStatics.anIntArray2117!![i_15_]) LinkedListIteratorStatics.anIntArray2117!![i_15_] = i_36_
                     else if (i_36_ > BlankTextureNode.anIntArray9259!![i_15_]) BlankTextureNode.anIntArray9259!![i_15_] = i_36_
                     val i_37_ = i_22_ shl 9
-                    if (i_37_ >= CharCodeMap.anIntArray1127!![i_15_]) {
+                    if (i_37_ >= CharCodeMapStatics.anIntArray1127!![i_15_]) {
                         if (ConnectionStateTypeStatics.anIntArray1045!![i_15_] < i_37_) ConnectionStateTypeStatics.anIntArray1045!![i_15_] = i_37_
-                    } else CharCodeMap.anIntArray1127!![i_15_] = i_37_
+                    } else CharCodeMapStatics.anIntArray1127!![i_15_] = i_37_
                 }
                 if (!bool_24_) {
                     if (i_19_ >= 1 && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) != i_16_) {
@@ -345,7 +345,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                 LinkedListIteratorStatics.anIntArray2117!![i_15_] -= 512
                 BlankTextureNode.anIntArray9259!![i_15_] += 512
                 ConnectionStateTypeStatics.anIntArray1045!![i_15_] += 512
-                CharCodeMap.anIntArray1127!![i_15_] -= 512
+                CharCodeMapStatics.anIntArray1127!![i_15_] -= 512
             }
             return true
         }
