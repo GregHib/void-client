@@ -2122,7 +2122,11 @@ final class ha_Sub2 extends ha {
 
     final Interface13 method3624(int i, int i_215_) {
         anInt7679++;
-        return null;
+        // Reconstructed (decompile stub returned null; see GlRenderTarget):
+        // DEPTH_COMPONENT24 renderbuffer - renderbuffer storage needs a SIZED
+        // depth format on Apple GL (unsized 6402 leaves the FBO depthless and
+        // the scene z-scrambles into terrain rings).
+        return new GlDepthTarget(new Class348_Sub42_Sub2(this, 33190, i, i_215_));
     }
 
     final void method3775(boolean bool, int i, int i_216_, int i_217_) {
@@ -2409,7 +2413,13 @@ final class ha_Sub2 extends ha {
             this.aClass64_Sub3_7785 = new Class64_Sub3(this);
             if (this.aBoolean7820) {
                 this.aClass206_7778 = new Class206(this);
-                new Class206(this);
+                // Decompiler dropped this assignment (bare `new Class206(this)`
+                // with the result discarded), leaving aClass206_7739 forever
+                // null - the FBO present path (method3672, used by the
+                // resizable HUD) then NPEs on the first world frame after
+                // login. Never seen upstream because the GL toolkit couldn't
+                // even start without its natives.
+                this.aClass206_7739 = new Class206(this);
             }
         }
     }
@@ -2465,9 +2475,54 @@ final class ha_Sub2 extends ha {
     final void method3687(Interface4 interface4) {
         try {
             anInt7590++;
+            // Reconstructed (decompile stub was empty; see GlRenderTarget):
+            // frame begin for offscreen rendering - attach the target's
+            // color texture (slot 0) and depth buffer (slot 8) to the
+            // singleton FBO, bind it, and point the viewport at the target.
+            // method3672 is the surviving mirror image (detach 0+8, pop,
+            // restore the canvas-sized viewport).
+            GlRenderTarget target = (GlRenderTarget) interface4;
+            method3773(-1, aClass206_7739); // bind first: attach requires a bound FBO
+            aClass206_7739.method1509(target.color.texture, 0, 0);
+            if (target.depth != null) aClass206_7739.method1508(8, target.depth.buffer, 113);
+            aClass206_7739.method1503(0, (byte) 3);
+            if (OpenGL.DEBUG && !aClass206_7739.method1507(-57)) System.err.println("[ha_Sub2] offscreen FBO incomplete");
+            this.anInt7688 = target.color.width;
+            this.anInt7641 = target.color.height;
+            method3755(-32);
+            method3809(true);
+            la();
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, "qo.IA(" + (interface4 != null ? "{...}" : "null") + ')');
         }
+    }
+
+    /** Scale-blit an offscreen target's color texture to the window (the
+     * reconstructed Interface4.method14; see GlRenderTarget). Runs after
+     * method3672 restored the window surface and 2D state. */
+    final void blitRenderTarget(GlRenderTarget target, int srcW, int srcH, int dstW, int dstH, int x, int y, boolean smooth) {
+        if (OpenGL.DEBUG && (anInt7698 & 0xff) == 0) System.err.println("[ha_Sub2] blit src=" + srcW + "x" + srcH
+            + " dst=" + dstW + "x" + dstH + " at " + x + "," + y + " tex=" + target.color.width + "x" + target.color.height
+            + " surface=" + this.anInt7688 + "x" + this.anInt7641);
+        Class258_Sub3 texture = target.color.texture;
+        int filter = smooth ? 9729 : 9728;
+        method3771((byte) -88, texture);
+        OpenGL.glTexParameteri(3553, 10241, filter);
+        OpenGL.glTexParameteri(3553, 10240, filter);
+        float u = (float) srcW / (float) target.color.width;
+        float v = (float) srcH / (float) target.color.height;
+        OpenGL.glColor4ub((byte) -1, (byte) -1, (byte) -1, (byte) -1);
+        OpenGL.glBegin(7); // GL_QUADS - screen space is y-down; the FBO
+        OpenGL.glTexCoord2f(0.0F, v);  // texture is y-up, so V flips here.
+        OpenGL.glVertex2f((float) x, (float) y);
+        OpenGL.glTexCoord2f(u, v);
+        OpenGL.glVertex2f((float) (x + dstW), (float) y);
+        OpenGL.glTexCoord2f(u, 0.0F);
+        OpenGL.glVertex2f((float) (x + dstW), (float) (y + dstH));
+        OpenGL.glTexCoord2f(0.0F, 0.0F);
+        OpenGL.glVertex2f((float) x, (float) (y + dstH));
+        OpenGL.glEnd();
+        method3771((byte) -88, null);
     }
 
     final void KA(int i, int i_259_, int i_260_, int i_261_) {
@@ -2689,7 +2744,11 @@ final class ha_Sub2 extends ha {
     final Interface4 method3634(Interface3 interface3, Interface13 interface13) {
         try {
             anInt7596++;
-            return null;
+            // Reconstructed (decompile stub returned null; see GlRenderTarget):
+            // pair the color and depth attachments; method3687 attaches them
+            // to the singleton FBO (aClass206_7739) at each frame start and
+            // method3672 detaches at frame end.
+            return new GlRenderTarget(this, (GlColorTarget) interface3, (GlDepthTarget) interface13);
         } catch (RuntimeException runtimeexception) {
             throw Class348_Sub17.method2929(runtimeexception, ("qo.NB(" + (interface3 != null ? "{...}" : "null") + ',' + (interface13 != null ? "{...}" : "null") + ')'));
         }
@@ -2797,6 +2856,7 @@ final class ha_Sub2 extends ha {
     final int method3798(int i, int i_295_) {
         anInt7698++;
         if (i_295_ != 2) this.aFloat7872 = -1.3399854F;
+        if (i == 33190) return 3; // DEPTH_COMPONENT24 (offscreen target depth)
         if (i != 6406 && i != 6409) {
             if (i != 6410 && i != 34846 && i != 34844) {
                 if (i == 6407) return 3;
@@ -3545,7 +3605,9 @@ final class ha_Sub2 extends ha {
 
     final Interface3 method3665(int i, int i_462_) {
         anInt7561++;
-        return null;
+        // Reconstructed (decompile stub returned null; see GlRenderTarget):
+        // create the offscreen color texture at the internal render size.
+        return new GlColorTarget(new Class258_Sub3(this, 3553, 6408, i, i_462_), i, i_462_);
     }
 
     private final void method3806(int i) {
