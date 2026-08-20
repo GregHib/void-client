@@ -1,5 +1,5 @@
 import AbstractBloomEffect.Companion.method2753
-import HslColorConfig.Companion.method295
+import HslColorConfigStatics.method295
 import GrayscaleNoiseTexture.Companion.method552
 import jaggl.OpenGL.Companion.glLoadIdentity
 import jaggl.OpenGL.Companion.glMatrixMode

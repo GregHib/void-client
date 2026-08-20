@@ -113,7 +113,7 @@ import ParticleAmountCache.Companion.method1585
 import MapSceneIconDef.Companion.method1594
 import ModelDefinitionCache.Companion.method1600
 import ModelDefinitionCache.Companion.method1604
-import HslColorConfig.Companion.method294
+import HslColorConfigStatics.method294
 import NpcDefinition.Companion.method1619
 import TextureDefinitionCache.Companion.method1624
 import BoxedIntHolderStatics.method1627
@@ -925,7 +925,7 @@ class Client : GameAppletFrame() {
         method3491(1)
         method2805(113.toByte())
         method2071(-128)
-        HslColorConfig.method293((-83).toByte())
+        HslColorConfigStatics.method293((-83).toByte())
         method351(80)
         method1194(10)
         method1594(-1966608624)

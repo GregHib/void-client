@@ -123,7 +123,7 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
         if (i != -21987) method2818()
         val class348_sub42_sub4 = aNodeDeque_8861!!.method1995(4) as ShortMatrixNode?
         if (class348_sub42_sub4 == null) return -1.0
-        return (-((class348_sub42_sub4.aShortArrayArray9518[0])!!.size.toFloat() / HslColorConfig.anInt339.toFloat()).toDouble() + class348_sub42_sub4.aDouble9512)
+        return (-((class348_sub42_sub4.aShortArrayArray9518[0])!!.size.toFloat() / HslColorConfigStatics.anInt339.toFloat()).toDouble() + class348_sub42_sub4.aDouble9512)
     }
 
     fun method2838(i: Int, d: Double, i_14_: Int): ShortMatrixNode? {

@@ -70,7 +70,7 @@ class IOException_Sub1(string: String?) : IOException(string) {
             anInt87++
             require(!(i_10_ < 8000 || i_10_ > 48000))
             CameraConfigDefinitionStatics.anInt3248 = i
-            HslColorConfig.anInt339 = i_10_
+            HslColorConfigStatics.anInt339 = i_10_
             NpcEntityUpdater.aBoolean3652 = bool
             if (bool_9_ != true) method130(-125)
         }

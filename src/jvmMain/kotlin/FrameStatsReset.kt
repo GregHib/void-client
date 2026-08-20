@@ -1002,7 +1002,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FlickeringEffectsOptionState.anInt5918 = 0
             HitsplatDefinitionStatics.anInt2012 = 0
             GlIndexBufferArb.anInt8506 = 0
-            HslColorConfig.anInt338 = 0
+            HslColorConfigStatics.anInt338 = 0
             OpenGlModel.anInt5641 = 0
             Js5Archive.anInt649 = 0
             GameAppletFrame.anInt2 = 0
@@ -2235,7 +2235,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9841 = 0
             OpenGlModel.anInt5569 = 0
             SceneryDetailOptionState.anInt6084 = 0
-            HslColorConfig.anInt328 = 0
+            HslColorConfigStatics.anInt328 = 0
             ParticleEffectCache.anInt3469 = 0
             ParticleSystemState.anInt2206 = 0
             NativeRenderer.anInt7995 = 0

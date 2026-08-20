@@ -44,7 +44,7 @@ class JavaSoundOutput : SoundChannelMixer() {
                 }
             }
         }
-        anAudioFormat6179 = AudioFormat(HslColorConfig.anInt339.toFloat(), 16, if (NpcEntityUpdater.aBoolean3652) 2 else 1, true, false)
+        anAudioFormat6179 = AudioFormat(HslColorConfigStatics.anInt339.toFloat(), 16, if (NpcEntityUpdater.aBoolean3652) 2 else 1, true, false)
         aByteArray6176 = ByteArray(256 shl (if (!NpcEntityUpdater.aBoolean3652) 1 else 2))
     }
 

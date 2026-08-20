@@ -26,7 +26,7 @@ class TextureHandle internal constructor(private val aGlRenderDevice_2585: GlRen
             var i = i
             try {
                 anInt2583++
-                check(HslColorConfig.anInt339 != 0)
+                check(HslColorConfigStatics.anInt339 != 0)
                 require(!(i_0_ < 0 || i_0_ >= 2))
                 if (i < 256) i = 256
                 try {
