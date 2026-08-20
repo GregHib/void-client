@@ -31,7 +31,7 @@ object DebugOverlayRenderer {
     fun method1884() {
         val i = 10
         val i_1_ = 30
-        if (InterfaceBounds.anInt6818 != 0 && Tooltip.aRSFont_4456 != null) {
+        if (InterfaceBoundsStatics.anInt6818 != 0 && Tooltip.aRSFont_4456 != null) {
             NativeLibraryState.aRenderer171!!.K(BrightnessContrastEffect.anIntArray9183)
             for (i_2_ in WidgetDefinition.anIntArray256!!.indices) NativeLibraryState.aRenderer171!!.method3660((WidgetDefinition.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_]), -256, (BrightnessContrastEffect.anIntArray9183!![3] - BrightnessContrastEffect.anIntArray9183!![1]), BrightnessContrastEffect.anIntArray9183!![1], true)
             for (i_3_ in 0..<ParameterizedText.anInt9577) {
@@ -56,7 +56,7 @@ object DebugOverlayRenderer {
             Tooltip.aRSFont_4456!!.method2576(("Occluders: " + (DetailLevelOptionState.anInt6115 + CollisionFlagQuery.anInt1200) + " Active: " + (ParameterizedText.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
             Tooltip.aRSFont_4456!!.method2576(("Occluded: Ground:" + ActorEntity.anInt9039 + " Walls: " + ActorEntity.anInt562 + " CPs: " + SourceRowTextureNode.anInt9112 + " Pixels: " + ActorEntity.anInt2946), -256, i_1_ + 105, i, -16777216, -115)
             Tooltip.aRSFont_4456!!.method2576(("Occlude Calc Took: " + (GlslEnvMaterialPass.aLong6276 / 1000L) + "us"), -256, i_1_ + 120, i, -16777216, -123)
-            if (InterfaceBounds.anInt6818 == 2 && ActorEntity.anIntArray5091 != null) {
+            if (InterfaceBoundsStatics.anInt6818 == 2 && ActorEntity.anIntArray5091 != null) {
                 for (i_5_ in ActorEntity.anIntArray5091!!.indices) {
                     var f = ActorEntity.anIntArray5091!![i_5_].toFloat()
                     f /= 4194304.0f

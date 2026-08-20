@@ -105,7 +105,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             }
             anInt9437++
             NpcDefinition.anInt2955 = 0
-            InterfaceBounds.method2938(87.toByte())
+            InterfaceBoundsStatics.method2938(87.toByte())
             method2433()
             if (i.toInt() != 11) anIntArray9436 = null
             for (i_2_ in 0..3) TimedRecordAccessorStatics.aCollisionMapArray7108s!![i_2_]!!.method3500(700)

@@ -286,7 +286,7 @@ import MenuActionNode.Companion.method2810
 import SynthVoiceGroup.Companion.method2823
 import PcmStreamBuffer.Companion.method2830
 import MidiSequencePlayer.Companion.method2871
-import InterfaceBounds.Companion.method2941
+import InterfaceBoundsStatics.method2941
 import TerrainTileShapeStatics.method2728
 import TextureTileRenderer.Companion.method2950
 import CameraSplineNodeStatics.method2956
@@ -997,7 +997,7 @@ class Client : GameAppletFrame() {
         method2415(61)
         method860(44.toByte())
         method2490(4)
-        InterfaceBounds.method2936((-25).toByte())
+        InterfaceBoundsStatics.method2936((-25).toByte())
         method3028(-11677)
         method3418(114)
         AbstractMenuEntryStatics.method1030(-24)

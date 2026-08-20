@@ -628,7 +628,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             Gl2dTexture.anInt8606 = 0
             NpcConfig.anInt891 = 0
             SequencedGroundDecor.anInt10052 = 0
-            InterfaceBounds.anInt6804 = 0
+            InterfaceBoundsStatics.anInt6804 = 0
             ContactList.anInt9614 = 0
             MinimapTriangleDrawer.anInt5228 = 0
             TerrainChunkBuilder.anInt1554 = 0
@@ -666,7 +666,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7534 = 0
             PackedFlagsAccessor.anInt7091 = 0
             RSFont.anInt4052 = 0
-            InterfaceBounds.anInt6808 = 0
+            InterfaceBoundsStatics.anInt6808 = 0
             ModelLightingConfig.anInt2543 = 0
             RenderConfigFactoryStatics.anInt2977 = 0
             AbstractRenderPass.anInt4478 = 0
@@ -732,7 +732,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlEnvMappedWaterPass.anInt7377 = 0
             ContactEntryStatics.anInt9596 = 0
             GroundDecorSceneEntity.anInt9992 = 0
-            InterfaceBounds.anInt6805 = 0
+            InterfaceBoundsStatics.anInt6805 = 0
             WidgetComponentNode.anInt4660 = 0
             GameAppletFrame.anInt18 = 0
             GlTexture1D.anInt8554 = 0
@@ -1865,7 +1865,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NormalMapTextureNode.anInt9437 = 0
             RenderableGroup.anInt5018 = 0
             GroundDecorSceneEntity.anInt9982 = 0
-            InterfaceBounds.anInt3972 = 0
+            InterfaceBoundsStatics.anInt3972 = 0
             VarpStore.anInt5079 = 0
             GameAppletFrame.anInt34 = 0
             ContactList.anInt9619 = 0

@@ -296,7 +296,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
         var job: Job? = null
         var aJs5Archive_6950: Js5Archive? = null
         fun method3018(i: Int) {
-            InterfaceBounds.Companion.anInt6818 = i
+            InterfaceBoundsStatics.anInt6818 = i
         }
 
         @JvmStatic

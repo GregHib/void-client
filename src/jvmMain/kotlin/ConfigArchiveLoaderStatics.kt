@@ -498,7 +498,7 @@ object ConfigArchiveLoaderStatics {
                         return
                     }
                     if (string == "resetcache") {
-                        InterfaceBounds.method2938(122.toByte())
+                        InterfaceBoundsStatics.method2938(122.toByte())
                         method94("Caches reset", -113)
                         return
                     }

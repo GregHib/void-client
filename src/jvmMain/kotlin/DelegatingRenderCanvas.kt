@@ -224,7 +224,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                 if (bool) {
                     if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNodeStatics.aRenderer6654)
                     method3570(false)
-                    InterfaceBounds.method2938(102.toByte())
+                    InterfaceBoundsStatics.method2938(102.toByte())
                     method1772(i xor 0x41)
                     var bool_25_ = false
                     if (FacingDirectionNodeStatics.aRenderer6654!!.method3639() && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2) {
@@ -290,7 +290,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         RegionSceneLoader.method2193(true, (-121).toByte())
                         ProjectionCameraTransform.method944(i + -8212, GlRectangleTexture.aByteArrayArray8642, MapTileShapeStatics.aClass237_Sub1_4197)
                     }
-                    InterfaceBounds.method2938(66.toByte())
+                    InterfaceBoundsStatics.method2938(66.toByte())
                     if (TextureDefinitionCache.anInt2964 < 96) method2271(31268)
                     RegionSceneLoader.method2193(true, (-119).toByte())
                     MapTileShapeStatics.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (ActorEntity.aTerrainTileArray4142!![0])), FacingDirectionNodeStatics.aRenderer6654)
@@ -301,7 +301,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         RegionSceneLoader.method2193(true, (-124).toByte())
                         if (WidgetRedrawTrackerStatics.anInt3931 != 0) ProjectionCameraTransform.method944(-8212, (VorbisOggDecoder.aByteArrayArray8996), VarpStore.aClass237_Sub1_5067)
                         else ObjectSpawnDecoder.method1090((VorbisOggDecoder.aByteArrayArray8996), i + 65536, VarpStore.aClass237_Sub1_5067)
-                        InterfaceBounds.method2938(73.toByte())
+                        InterfaceBoundsStatics.method2938(73.toByte())
                         RegionSceneLoader.method2193(true, (-121).toByte())
                         VarpStore.aClass237_Sub1_5067!!.method1680((TerrainTileShapeStatics.aTerrainTileArray8801!![0]), (-127).toByte(), null, (FacingDirectionNodeStatics.aRenderer6654))
                         VarpStore.aClass237_Sub1_5067!!.method1697(true, FacingDirectionNodeStatics.aRenderer6654, i + -60)
@@ -328,7 +328,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     EdgeDetectTextureNode.method3072((-99).toByte())
                     method3570(false)
                     MapElementManager.method3514((-105).toByte())
-                    InterfaceBounds.method2938(62.toByte())
+                    InterfaceBoundsStatics.method2938(62.toByte())
                     FrameStatsReset.method1131(99)
                     if (RsaVarbitHandler.aFrame4904 != null && Client.aAbstractGameSocket_9165 != null && WorldMapRenderer.anInt4674 == 11) {
                         RenderableEntry.anInt4335++

@@ -142,7 +142,7 @@ class TileRenderState {
                     method1779(124.toByte())
                     if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2295(96.toByte())
                     method2269(true)
-                    InterfaceBounds.method2938(127.toByte())
+                    InterfaceBoundsStatics.method2938(127.toByte())
                     method369(-29776)
                     method3616(12639)
                     LoadingScreenImageNodeStatics.method3177(-78, false)

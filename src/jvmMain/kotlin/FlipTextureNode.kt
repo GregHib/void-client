@@ -126,7 +126,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                             class46.anInt794 = GlGroundShaderPass.anInt7396
                             class46.anInt760 = i_23_
                             if (!Client.method111(class46)) {
-                                if (class46.anInt765 != 0) InterfaceBounds.method2942(class46, (-36).toByte())
+                                if (class46.anInt765 != 0) InterfaceBoundsStatics.method2942(class46, (-36).toByte())
                                 var i_24_ = class46.anInt800 - -i_11_
                                 var i_25_ = class46.anInt750 + i_10_
                                 var i_26_ = 0

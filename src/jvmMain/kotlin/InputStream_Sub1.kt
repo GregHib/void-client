@@ -38,7 +38,7 @@ class InputStream_Sub1 : InputStream() {
             for (i_7_ in 0..3) TimedRecordAccessorStatics.aCollisionMapArray7108s!![i_7_]!!.method3500(700)
             if (i != -16203) ActorEntity.method125(125, -95, 109, null, (-52).toByte())
             MinimapTriangleDrawer.method464(-1)
-            InterfaceBounds.method2938(98.toByte())
+            InterfaceBoundsStatics.method2938(98.toByte())
             BloomGraphicsOptionState.method1772(28)
             System.gc()
             FacingDirectionNodeStatics.aRenderer6654!!.ya()

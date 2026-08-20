@@ -901,7 +901,7 @@ object SpriteMaskShapeStatics {
                                     val npc = (class348_sub22.aNpc_6859)!!
                                     SpriteArchiveLoader.anInt385 = i_73_
                                     LinkedListNodeStatics.anInt4292 = 0
-                                    val class348_sub47 = (method2148(InterfaceBounds.aOutgoingPacketHeader_6814, TheoraVideoStream.aIsaacCipher_9029, -125))
+                                    val class348_sub47 = (method2148(InterfaceBoundsStatics.aOutgoingPacketHeader_6814, TheoraVideoStream.aIsaacCipher_9029, -125))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (!LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -125)) 0 else 1)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortLittle(i_77_, 3.toByte())
                                     InterfaceComponentGroup.method3243(-37, class348_sub47)

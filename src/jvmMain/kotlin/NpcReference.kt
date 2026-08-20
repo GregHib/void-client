@@ -52,7 +52,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             ParticleSystemRenderer.aCanvas3869!!.setBackground(Color.black)
             GlShaderProgramHandle.anInt4179 = i
             LoadProgressCountersStatics.aKeyboardInputSource_2449 = method2743(ParticleSystemRenderer.aCanvas3869, 84.toByte())
-            GlTexture1D.aInputTracker_8552 = InterfaceBounds.Companion.method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
+            GlTexture1D.aInputTracker_8552 = InterfaceBoundsStatics.method2941(ParticleSystemRenderer.aCanvas3869, 0, true)
         }
     }
 }
