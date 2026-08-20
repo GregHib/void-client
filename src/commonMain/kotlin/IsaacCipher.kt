@@ -1,5 +1,3 @@
-import direct.Direct3dModel
-
 /* Class77 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -187,7 +185,7 @@ class IsaacCipher {
             anInt1291 = i_13_ + anIntArray1296!![(WhirlpoolHash.method1166(261268, i_14_) shr 278777480 shr 242087490)]
             anIntArray1289[i] = anInt1291
         }
-        if (bool != false) method776(-33, -56, 52)
+//        if (bool != false) method776(-33, -56, 52)
     }
 
     fun method781(i: Byte): Int {
@@ -206,11 +204,7 @@ class IsaacCipher {
 
         var anInt1295: Int = 0
 
-        var anInt1297: Int = 0
-
         var aBoundsConstraintEntry_1298: BoundsConstraintEntry? = BoundsConstraintEntry("", 16)
-
-        var anInt1299: Int = 0
 
         var anInt1300: Int = 0
 
@@ -220,12 +214,8 @@ class IsaacCipher {
 
         var anIntArray1303: IntArray? = null
 
-        fun method776(i: Int, i_0_: Int, i_1_: Int): Boolean {
-            anInt1297++
-            if (i_1_ != 65536) method780(-106, -24, 57)
-            val bool = (if ((i and 0x37) != 0) Crc64Hashable.method1113(i_0_, i, -7) else Direct3dModel.method3200(i_0_, i, 111.toByte()))
-            return bool or (LocalizedTextStatics.method2058(i_0_, i, i_1_ xor 0x1003d) or ((0x10000 and i_0_) != 0))
-        }
+
+        var anInt1299: Int = 0
 
         fun method780(i: Int, i_15_: Int, i_16_: Int): Boolean {
             if (i_15_ != 0) return true

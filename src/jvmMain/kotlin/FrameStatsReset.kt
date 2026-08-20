@@ -2380,7 +2380,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WorldMapScene.anInt3106 = 0
             SpotAnimDefinition.anInt2396 = 0
             GroundDecorEntity.anInt8742 = 0
-            IsaacCipher.anInt1297 = 0
+            Direct3dModel.anInt1297 = 0
             NativeRenderer.anInt7961 = 0
             DirectionalLightTextureNode.anInt9441 = 0
             OpenGlModel.anInt5643 = 0

@@ -29,6 +29,7 @@ import FloatCameraTransform
 import Client.Companion.method3196
 import HeadIconRenderer
 import HuffmanCodec.Companion.anInt3765
+import IsaacCipher.Companion.method780
 import KeyedCacheEntryReference.Companion.method3203
 import ModelDefinition
 import ModelFacePriorityNode
@@ -533,7 +534,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 anIntArray5455 = null
                 aShortArray5439 = null
             }
-            if (aByteArray5499 != null && !IsaacCipher.method776(anInt5472, anInt5463, i + -196608)) {
+            if (aByteArray5499 != null && !method776(anInt5472, anInt5463, i + -196608)) {
                 if (if ((0x37 and anInt5472) != 0) (aBufferToggleState_5424 == null || aBufferToggleState_5424!!.method2197((-10).toByte())) else (aBufferToggleState_5482 == null || aBufferToggleState_5482!!.method2197((-73).toByte()))) {
                     aShortArray5436 = null
                     aShortArray5438 = aShortArray5436
@@ -3557,5 +3558,13 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             return false
         }
         var aFloat6430: Float = 0f
+        var anInt1297: Int = 0
+        fun method776(i: Int, i_0_: Int, i_1_: Int): Boolean {
+            anInt1297++
+            if (i_1_ != 65536) method780(-106, -24, 57)
+            val bool = (if ((i and 0x37) != 0) Crc64Hashable.method1113(i_0_, i, -7) else Direct3dModel.method3200(i_0_, i, 111.toByte()))
+            return bool or (LocalizedTextStatics.method2058(i_0_, i, i_1_ xor 0x1003d) or ((0x10000 and i_0_) != 0))
+        }
+
     }
 }
