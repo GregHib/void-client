@@ -104,6 +104,20 @@ public class Loader extends Applet {
         Class316.aClass348_Sub51_3959.method3429((byte) 74, Class316.aClass348_Sub51_3959.aClass239_Sub25_7271, mode);
     }
 
+    /**
+     * One-shot semantics for --resizable/--fixed, mirroring the graphics-mode
+     * force: it holds until the first explicit write to the window-mode
+     * preference, then the stored value is synced and the getter overrides in
+     * Class239_Sub3 go inert so in-game layout switching works normally.
+     */
+    public static void consumeForcedResizable() {
+        if (forcedResizable < 0) return;
+        int mode = forcedResizable == 1 ? 2 : 1;
+        forcedResizable = -1;
+        if (Class316.aClass348_Sub51_3959 != null && Class316.aClass348_Sub51_3959.aClass239_Sub3_7222 != null)
+            Class316.aClass348_Sub51_3959.aClass239_Sub3_7222.anInt3138 = mode;
+    }
+
     @Override
     public void init() {
         doApplet();
