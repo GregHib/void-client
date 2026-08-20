@@ -765,7 +765,7 @@ class Client : GameAppletFrame() {
         method3237(42.toByte())
         method1917(40960)
         method2294(126)
-        DoublyLinkedNodeList.method1873((-120).toByte())
+        DoublyLinkedNodeListStatics.method1873((-120).toByte())
         WidgetComponent.method442((-84).toByte())
         method530(14)
         method2458(true)

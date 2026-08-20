@@ -1856,7 +1856,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7929 = 0
             SoundChannelMixer.anInt3598 = 0
             StructConfig.anInt579 = 0
-            DoublyLinkedNodeList.anInt3164 = 0
+            DoublyLinkedNodeListStatics.anInt3164 = 0
             ModelDefinitionLoader.anInt2055 = 0
             AnimatedModelRenderer.anInt8405 = 0
             ModelVertexColorBuffer.anInt6578 = 0

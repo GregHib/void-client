@@ -268,7 +268,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     GroundItemRenderState.method1015(GlCubemapLightPass.anInt7319 shr 4, (RangeThresholdTextureNode.anInt9109 shr 4), true)
                     Client.method3175((-77).toByte())
                     if (bool_25_) {
-                        DoublyLinkedNodeList.method1879(true)
+                        DoublyLinkedNodeListStatics.method1879(true)
                         VarpStore.aClass237_Sub1_5067 = WorldMapSceneSoftware(1, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, true)
                         if (WidgetRedrawTrackerStatics.anInt3931 == 0) {
                             TerrainTileShapeStatics.method2727((-44).toByte(), (VarpStore.aClass237_Sub1_5067), (RegionMapDecoder.aByteArrayArray1887))
@@ -279,7 +279,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         }
                         VarpStore.aClass237_Sub1_5067!!.method1679(0, 0, (MapTileShapeStatics.aClass237_Sub1_4197!!.anIntArrayArrayArray3122[0]!!))
                         VarpStore.aClass237_Sub1_5067!!.method1685(FacingDirectionNodeStatics.aRenderer6654, null, 21407, null)
-                        DoublyLinkedNodeList.method1879(false)
+                        DoublyLinkedNodeListStatics.method1879(false)
                     }
                     MapTileShapeStatics.aClass237_Sub1_4197!!.method1685(FacingDirectionNodeStatics.aRenderer6654, (if (!bool_25_) null else (VarpStore.aClass237_Sub1_5067!!.anIntArrayArrayArray3122)), 21407, TimedRecordAccessorStatics.aCollisionMapArray7108s)
                     if (WidgetRedrawTrackerStatics.anInt3931 == 0) {
@@ -297,7 +297,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     MapTileShapeStatics.aClass237_Sub1_4197!!.method1697(false, FacingDirectionNodeStatics.aRenderer6654, -36)
                     RegionSceneLoader.method2193(true, (-122).toByte())
                     if (bool_25_) {
-                        DoublyLinkedNodeList.method1879(true)
+                        DoublyLinkedNodeListStatics.method1879(true)
                         RegionSceneLoader.method2193(true, (-124).toByte())
                         if (WidgetRedrawTrackerStatics.anInt3931 != 0) ProjectionCameraTransform.method944(-8212, (VorbisOggDecoder.aByteArrayArray8996), VarpStore.aClass237_Sub1_5067)
                         else ObjectSpawnDecoder.method1090((VorbisOggDecoder.aByteArrayArray8996), i + 65536, VarpStore.aClass237_Sub1_5067)
@@ -306,7 +306,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         VarpStore.aClass237_Sub1_5067!!.method1680((TerrainTileShapeStatics.aTerrainTileArray8801!![0]), (-127).toByte(), null, (FacingDirectionNodeStatics.aRenderer6654))
                         VarpStore.aClass237_Sub1_5067!!.method1697(true, FacingDirectionNodeStatics.aRenderer6654, i + -60)
                         RegionSceneLoader.method2193(true, (-126).toByte())
-                        DoublyLinkedNodeList.method1879(false)
+                        DoublyLinkedNodeListStatics.method1879(false)
                     }
                     StringCacheNodeStatics.method3419(13022)
                     var i_29_ = MapTileShapeStatics.aClass237_Sub1_4197!!.anInt5824

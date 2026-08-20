@@ -1,4 +1,4 @@
-import DoublyLinkedNodeList.Companion.method1879
+import DoublyLinkedNodeListStatics.method1879
 import WalkingTypeUtil.method1978
 import SynthVoiceGroup.Companion.method2826
 import TimedRecordAccessorStatics.method3309

@@ -246,7 +246,7 @@ class CharacterRenderState : LinkedListNode() {
                             }
                             if (i_8_ == 8) {
                                 ScriptCompilerThread.anInt1726++
-                                val class348_sub47 = method2148((DoublyLinkedNodeList.aOutgoingPacketHeader_3165), (TheoraVideoStream.aIsaacCipher_9029), -117)
+                                val class348_sub47 = method2148((DoublyLinkedNodeListStatics.aOutgoingPacketHeader_3165), (TheoraVideoStream.aIsaacCipher_9029), -117)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(-96, class348_sub47)
                             }

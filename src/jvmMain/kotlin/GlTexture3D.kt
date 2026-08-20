@@ -145,7 +145,7 @@ class GlTexture3D : GlTexture {
                 GrayscaleNoiseTexture.anInt5293 = ActorEntity.anInt7054
                 ActorEntity.aBoolean351 = false
             }
-            DoublyLinkedNodeList.method1877(NativeLibraryState.aRenderer171, -69)
+            DoublyLinkedNodeListStatics.method1877(NativeLibraryState.aRenderer171, -69)
             if (!PlayerSequenceSelector.aSceneObjectSpawner_1208!!.aBoolean1283) {
                 val class243 = PlayerSequenceSelector.aSceneObjectSpawner_1208!!.aDoublyLinkedNodeList_1282
                 var class318_sub4 = class243.method1872(8) as SceneEntityModel?
@@ -167,12 +167,12 @@ class GlTexture3D : GlTexture {
             }
             if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) {
                 if (VoronoiNoiseTextureNode.aBoolean9121) method2131(0)
-                DoublyLinkedNodeList.method1879(true)
+                DoublyLinkedNodeListStatics.method1879(true)
                 NativeLibraryState.aRenderer171!!.ra(-1, 1583160, 40, 127)
                 FloatBuffer.method3398(true, `is`, i_20_, i_21_, i_25_, i_26_, bool_27_)
                 if (VoronoiNoiseTextureNode.aBoolean9121) method2290()
                 NativeLibraryState.aRenderer171!!.pa()
-                DoublyLinkedNodeList.method1879(false)
+                DoublyLinkedNodeListStatics.method1879(false)
             }
             FloatBuffer.method3398(false, `is`, i_20_, i_21_, i_25_, i_26_, bool_27_)
             if (VoronoiNoiseTextureNode.aBoolean9121) {
