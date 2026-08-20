@@ -62,6 +62,6 @@ object ParticleEmitterFactoryStatics {
     fun method1887(i: Int, i_16_: Int, i_17_: Int): Boolean {
         anInt3178++
         if (i != 0) return true
-        return RangeThresholdTextureNode.method3056(63, i_17_, i_16_) or ((0x70000 and i_17_) != 0) || CompassSmoother.method2015(i_17_, i_16_, i + 7)
+        return RangeThresholdTextureNode.method3056(63, i_17_, i_16_) or ((0x70000 and i_17_) != 0) || CompassSmootherStatics.method2015(i_17_, i_16_, i + 7)
     }
 }

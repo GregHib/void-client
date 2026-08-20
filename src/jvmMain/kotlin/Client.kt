@@ -168,7 +168,7 @@ import SpriteArchiveLoader.Companion.method306
 import WalkingTypeUtil.method1979
 import NpcDefinitionCache.Companion.method1980
 import NpcDefinitionCache.Companion.method1987
-import CompassSmoother.Companion.method2018
+import CompassSmootherStatics.method2018
 import SlotBindingStatics.method2026
 import SlotBindingStatics.method2029
 import LocDefinitionCache.Companion.method2036
@@ -495,7 +495,7 @@ import GlRenderDevice.Companion.method3965
 import GlVertexBufferArb.Companion.method2127
 import ByteBufferStatics.method1713
 import ChatCommandProcessor.anIntArray3295
-import CompassSmoother.Companion.method2017
+import CompassSmootherStatics.method2017
 import ConfigFlagUtilStatics.method1916
 import FrameBufferObject.Companion.method1501
 import FrameStatsReset.Companion.method1131
@@ -1555,7 +1555,7 @@ class Client : GameAppletFrame() {
             if (GlGroundShaderPass.anInt7396 % 50 == 0) {
                 ModelResourceBundle.anInt7134 = FogState.anInt1433
                 FogState.anInt1433 = 0
-                CompassSmoother.anInt3372 = MinimapRectClipper.anInt221
+                CompassSmootherStatics.anInt3372 = MinimapRectClipper.anInt221
                 MinimapRectClipper.anInt221 = 0
             }
             method102(61.toByte())

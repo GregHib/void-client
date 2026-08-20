@@ -1,5 +1,5 @@
 import ConfigFlagUtilStatics.method1916
-import CompassSmoother.Companion.method2017
+import CompassSmootherStatics.method2017
 import ActiveMapRegion.method769
 
 object ShortMatrixNodeStatics {

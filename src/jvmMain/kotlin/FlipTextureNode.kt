@@ -260,7 +260,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     }
                                                     GameAppletFrame.aRSFont_20!!.method2569("Mem:" + i_40_ + "k", i_38_, i_41_, i_37_, -124, -1)
                                                     i_38_ += 15
-                                                    GameAppletFrame.aRSFont_20!!.method2569(("In:" + CompassSmoother.anInt3372 + "B/s Out:" + (ModelResourceBundle.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
+                                                    GameAppletFrame.aRSFont_20!!.method2569(("In:" + CompassSmootherStatics.anInt3372 + "B/s Out:" + (ModelResourceBundle.anInt7134) + "B/s"), i_38_, -256, i_37_, -127, -1)
                                                     i_38_ += 15
                                                     val i_43_ = (FacingDirectionNodeStatics.aRenderer6654!!.E() / 1024)
                                                     GameAppletFrame.aRSFont_20!!.method2569("Offheap:" + i_43_ + "k", i_38_, (if (i_43_ <= 65536) -256 else -65536), i_37_, -125, -1)

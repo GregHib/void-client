@@ -3679,13 +3679,13 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 }
                                 if (player.anInt10522 != -1) {
                                     i_323_ -= 25
-                                    val class105 = (CompassSmoother.aAbstractModelRendererArray3378!![(player.anInt10522)])!!
+                                    val class105 = (CompassSmootherStatics.aAbstractModelRendererArray3378!![(player.anInt10522)])!!
                                     class105.method974((-12 + i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0])), i_323_)
                                     MapTileShapeStatics.method2663(-5590, (-12 + RemoveRoofsOptionState.anIntArray6062!![0] + i_317_), (RemoveRoofsOptionState.anIntArray6062!![0] + i_317_ - (12 + -class105.method966())), i_323_, i_323_ - -class105.method980())
                                     i_323_ -= 2
                                 }
-                            } else if (npcType!!.anInt1375 >= 0 && (npcType.anInt1375 < CompassSmoother.aAbstractModelRendererArray3378!!.size)) {
-                                val class105 = (CompassSmoother.aAbstractModelRendererArray3378!![npcType.anInt1375])!!
+                            } else if (npcType!!.anInt1375 >= 0 && (npcType.anInt1375 < CompassSmootherStatics.aAbstractModelRendererArray3378!!.size)) {
+                                val class105 = (CompassSmootherStatics.aAbstractModelRendererArray3378!![npcType.anInt1375])!!
                                 i_323_ -= 25
                                 class105.method974((i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0]) + -(class105.method971() shr 1)), i_323_)
                                 MapTileShapeStatics.method2663(-5590, (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1))), (RemoveRoofsOptionState.anIntArray6062!![0] + (i_317_ - (class105.method971() shr 1)) + class105.method966()), i_323_, class105.method980() + i_323_)

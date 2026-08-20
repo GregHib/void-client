@@ -122,7 +122,7 @@ class TileRenderState {
             WorldMapRenderer.aRSFont_4684 = null
             HostPingThread.aAbstractModelRendererArray2260 = null
             CameraNodeListStatics.aAbstractModelRendererArray1744 = null
-            CompassSmoother.aAbstractModelRendererArray3378 = null
+            CompassSmootherStatics.aAbstractModelRendererArray3378 = null
             GrayscaleNoiseTexture.aAbstractModelRendererArray5294 = null
             WallSceneEntity.aAbstractModelRendererArray9959 = null
             anInt542++

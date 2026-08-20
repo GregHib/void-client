@@ -1111,9 +1111,9 @@ object ChatCommandProcessor {
             }
             if (i == 5424) {
                 anInt1173 -= 11
-                CompassSmoother.anInt3376 = anIntArray1149!![anInt1173]
+                CompassSmootherStatics.anInt3376 = anIntArray1149!![anInt1173]
                 NpcConfig.anInt948 = anIntArray1149!![anInt1173 + 1]
-                CompassSmoother.anInt3374 = anIntArray1149!![anInt1173 + 2]
+                CompassSmootherStatics.anInt3374 = anIntArray1149!![anInt1173 + 2]
                 ShortMatrixNodeStatics.anInt9511 = anIntArray1149!![anInt1173 + 3]
                 HudTabPanelStatics.anInt2996 = anIntArray1149!![anInt1173 + 4]
                 CombineTextureNode.anInt9231 = anIntArray1149!![anInt1173 + 5]
@@ -3034,7 +3034,7 @@ object ChatCommandProcessor {
                     widgetComponent.anInt730 = 1
                     widgetComponent.anInt841 = 0
                     val class17 = (if (widgetComponent.anInt699 == -1) null else ParticleEmitterNode.aWidgetCache_191!!.method835(widgetComponent.anInt699, 7))
-                    if (class17 != null) CompassSmoother.method2017(widgetComponent.anInt795, class17, 46)
+                    if (class17 != null) CompassSmootherStatics.method2017(widgetComponent.anInt795, class17, 46)
                     ConfigFlagUtilStatics.method1916(-9343, widgetComponent)
                 }
                 if (widgetComponent.anInt704 == -1) OpenGlModel.method687((-117).toByte(), widgetComponent.anInt830)

@@ -66,7 +66,7 @@ class ChatMessageStream : OutputStream() {
         fun method137(i: Int, i_4_: Int, i_5_: Int): Boolean {
             anInt102++
             val i_6_ = -114 / ((i_4_ - 36) / 55)
-            return ((0x70000 and i_5_) != 0) or EdgeDetectTextureNode.method3073(i, i_5_, 50.toByte()) || CompassSmoother.method2015(i_5_, i, 7)
+            return ((0x70000 and i_5_) != 0) or EdgeDetectTextureNode.method3073(i, i_5_, 50.toByte()) || CompassSmootherStatics.method2015(i_5_, i, 7)
         }
 
         @JvmStatic

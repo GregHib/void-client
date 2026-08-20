@@ -873,7 +873,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt8076 = 0
             ModelHeaderCache.anInt3281 = 0
             ChatCommandProcessor.anInt1163 = 0
-            CompassSmoother.anInt3375 = 0
+            CompassSmootherStatics.anInt3375 = 0
             MapElementDecor.anInt10358 = 0
             MapElementDecor.anInt10352 = 0
             ArchiveResourceProvider.anInt6345 = 0
@@ -3068,7 +3068,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7999 = 0
             OpenGlRenderer.anInt7585 = 0
             BrightnessContrastEffect.anInt9179 = 0
-            CompassSmoother.anInt3367 = 0
+            CompassSmootherStatics.anInt3367 = 0
             NativeRenderer.anInt7941 = 0
             VorbisOggDecoder.anInt8991 = 0
             ClientLoadStateMachine.anInt2174 = 0

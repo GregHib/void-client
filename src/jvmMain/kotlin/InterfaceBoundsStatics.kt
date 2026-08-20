@@ -3,7 +3,7 @@ import PerlinTextureProvider.Companion.method1402
 import SocketGameConnection.Companion.method1707
 import DisplayModeOptionState.Companion.method1828
 import ModelDataCache.method297
-import CompassSmoother.Companion.method2017
+import CompassSmootherStatics.method2017
 import WorldMapIconLabel.Companion.method3573
 import MapSceneCache.Companion.method821
 import java.awt.Component
