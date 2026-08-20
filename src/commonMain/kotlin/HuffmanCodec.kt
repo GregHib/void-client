@@ -1,7 +1,3 @@
-import GameDisplayManager.method1582
-import WhirlpoolHash.Companion.method2057
-import WorldMapAreaLabel.Companion.method3570
-
 /* Class296 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -106,7 +102,7 @@ class HuffmanCodec internal constructor(`is`: ByteArray) {
                 val i_22_ = (i_21_ - -i_19_ + -1 shr 3) + i_20_
                 i_16_ += i_19_
                 i_21_ += 24
-                is_14_!![i_20_] = (method2057(i_15_, i_18_ ushr i_21_).also { i_15_ = it }).toByte()
+                is_14_!![i_20_] = (WhirlpoolHash.method2057(i_15_, i_18_ ushr i_21_).also { i_15_ = it }).toByte()
                 if (i_22_ > i_20_) {
                     i_20_++
                     i_21_ -= 8
@@ -158,7 +154,7 @@ class HuffmanCodec internal constructor(`is`: ByteArray) {
                             is_23_[i_30_] = is_23_[i_30_ - 1]
                             break
                         }
-                        is_23_[i_30_] = method2057(i_31_, i_32_)
+                        is_23_[i_30_] = WhirlpoolHash.method2057(i_31_, i_32_)
                     }
                     i_29_ = i_27_ or i_28_
                 } else i_29_ = is_23_[-1 + i_26_]
@@ -198,27 +194,12 @@ class HuffmanCodec internal constructor(`is`: ByteArray) {
         var anInt3768: Int = 0
         var anInt3770: Int = 0
         var anInt3771: Int = 0
-        var anInt3772: Int = 0
         var anInt3775: Int = 0
-
-        fun method2224(i: Int, i_0_: Byte, i_1_: Int): Boolean {
-            val i_2_ = 41 / ((59 - i_0_) / 37)
-            anInt3765++
-            return (i and 0x800) != 0
-        }
 
         @JvmStatic
         fun method2225(i: Int) {
             InboundPacketHeader.aInboundPacketHeader_3773 = null
         }
 
-        @JvmStatic
-        fun method2228(i: Int) {
-            if (i == 0) {
-                method1582(7851)
-                anInt3772++
-                method3570(false)
-            }
-        }
     }
 }

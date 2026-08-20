@@ -28,6 +28,7 @@ import CubemapTextureFactory
 import FloatCameraTransform
 import Client.Companion.method3196
 import HeadIconRenderer
+import HuffmanCodec.Companion.anInt3765
 import KeyedCacheEntryReference.Companion.method3203
 import ModelDefinition
 import ModelFacePriorityNode
@@ -1025,7 +1026,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3709 = true
                 class64_sub2_154_.aBufferToggleState_5482!!.aBoolean3714 = aBufferToggleState_5482!!.aBoolean3714
                 class64_sub2_154_.aBufferToggleState_5482!!.anInterface5_Impl1_3711 = aBufferToggleState_5482!!.anInterface5_Impl1_3711
-            } else if (HuffmanCodec.method2224(i, 117.toByte(), anInt5472)) class64_sub2_154_.aBufferToggleState_5482 = aBufferToggleState_5482
+            } else if (method2224(i, 117.toByte(), anInt5472)) class64_sub2_154_.aBufferToggleState_5482 = aBufferToggleState_5482
             else class64_sub2_154_.aBufferToggleState_5482 = null
             if (LocalizedTextStatics.method2058(i, anInt5472, 116)) {
                 if (class64_sub2_153_!!.aShortArray5493 == null || (anInt5475 > class64_sub2_153_.aShortArray5493!!.size)) {
@@ -3371,7 +3372,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             aHa_Sub3_5419 = var_ha_Sub3
             if (bool || ServerConnectionInfo.method1258(anInt5463, -9301, anInt5472)) aBufferToggleState_5520 = BufferToggleState(CompassSmootherStatics.method2015(anInt5463, anInt5472, 7))
             if (bool || method1837(anInt5472, 102, anInt5463)) aBufferToggleState_5460 = BufferToggleState(ParticleDefLoader.method1379(4, anInt5472, anInt5463))
-            if (bool || HuffmanCodec.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(method3200(anInt5463, anInt5472, (-82).toByte()))
+            if (bool || method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(method3200(anInt5463, anInt5472, (-82).toByte()))
             if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aBufferToggleState_5424 = BufferToggleState(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
             if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(method2783(anInt5472, (-97).toByte(), anInt5463))
         } catch (runtimeexception: RuntimeException) {
@@ -3510,6 +3511,11 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
 
         var anInt5526: Int = 0
 
+        fun method2224(i: Int, i_0_: Byte, i_1_: Int): Boolean {
+            anInt3765++
+            return (i and 0x800) != 0
+        }
+
         @JvmStatic
         fun method661(i: Byte) {
             anInt5466++
@@ -3540,7 +3546,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
         fun method3200(i: Int, i_0_: Int, i_1_: Byte): Boolean {
             anInt10433++
             val i_2_ = 18 / ((i_1_ - 30) / 42)
-            if (!HuffmanCodec.method2224(i, (-118).toByte(), i_0_)) return false
+            if (!method2224(i, (-118).toByte(), i_0_)) return false
             if (DetailLevelOptionState.method1833((-118).toByte(), i, i_0_) or ((0x9000 and i) != 0) or KaraokeSubtitleStream.method2985(-31735, i_0_, i)) return true
             return (((0x37 and i_0_) == 0) and (((0x2000 and i) != 0) or LocalizedTextStatics.method2058(i, i_0_, 88) or method3203(i_0_, 127.toByte(), i)))
         }

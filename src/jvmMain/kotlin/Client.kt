@@ -209,7 +209,6 @@ import MapArchiveSourceStatics.method2202
 import LoadingBarRenderer.Companion.method2214
 import LocalizedTextTripleStatics.method2223
 import HuffmanCodec.Companion.method2225
-import HuffmanCodec.Companion.method2228
 import PixelBlender.method2251
 import CircleRasterizerObject.method2254
 import CubemapTextureGlSource.Companion.method2265
@@ -499,6 +498,7 @@ import CompassSmootherStatics.method2017
 import ConfigFlagUtilStatics.method1916
 import FrameBufferObject.Companion.method1501
 import FrameStatsReset.Companion.method1131
+import GameDisplayManager.method1582
 import HslAdjustTextureNode.Companion.method3126
 import HslAdjustTextureNode.Companion.method3127
 import MapArchiveSourceStatics.method1365
@@ -518,6 +518,7 @@ import TileSceneEntity.Companion.method2396
 import TwoStateOptionState.Companion.method1844
 import WhirlpoolHash.Companion.method1166
 import WidgetTextConfigStatics.method362
+import WorldMapAreaLabel.Companion.method3570
 import java.awt.Canvas
 import java.awt.Component
 import java.awt.Container
@@ -5374,6 +5375,17 @@ class Client : GameAppletFrame() {
                 MovementDirection.aMovementDirection_1179 = null
                 MovementDirection.aMovementDirection_1186 = null
                 MovementDirection.aMovementDirection_1185 = null
+            }
+        }
+
+
+        var anInt3772: Int = 0
+        @JvmStatic
+        fun method2228(i: Int) {
+            if (i == 0) {
+                method1582(7851)
+                anInt3772++
+                method3570(false)
             }
         }
     }

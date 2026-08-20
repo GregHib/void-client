@@ -3004,7 +3004,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlModel.anInt5574 = 0
             GlRenderDevice.anInt9887 = 0
             OpenGlRenderer.anInt7649 = 0
-            HuffmanCodec.anInt3772 = 0
+            Client.anInt3772 = 0
             Client.anInt5188 = 0
             InterfaceBounds.anInt6807 = 0
             OpenGlRenderer.anInt7726 = 0
