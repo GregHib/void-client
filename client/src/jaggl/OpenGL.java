@@ -376,7 +376,9 @@ public class OpenGL {
     private static java.lang.reflect.Field viewField;
     private static java.lang.reflect.Field widthField;
     private static java.lang.reflect.Field heightField;
-    private static boolean layerFixBroken;
+    // -Djaggl.nolayerfix=true disables the CALayer frame correction, to test
+    // whether the underlying lwjgl3-awt places the layer correctly by itself.
+    private static boolean layerFixBroken = Boolean.getBoolean("jaggl.nolayerfix");
 
     /**
      * lwjgl3-awt only applies the Retina backing-size override

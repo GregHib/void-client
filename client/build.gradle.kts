@@ -28,7 +28,7 @@ dependencies {
     implementation("org.lwjgl:lwjgl:$lwjglVersion")
     implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion")
     implementation("org.lwjgl:lwjgl-jawt:$lwjglVersion")
-    implementation("org.lwjglx:lwjgl3-awt:0.2.3") {
+    implementation("org.lwjglx:lwjgl3-awt:0.2.4") {
         isTransitive = false // its pom leaks an unresolved ${lwjgl.natives} classifier
     }
     for (natives in lwjglNatives) {
