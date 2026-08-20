@@ -51,7 +51,7 @@ object InterfaceBoundsStatics {
         method3573(-15326)
         method1277(62.toByte())
         method821(-126)
-        InterfaceBounds.method2375(16127)
+        method2375(16127)
         if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolverStatics.aNamedIdRecord_165) {
             var i_6_ = 0
             while (CacheLruCache.aByteArrayArray3882!!.size > i_6_) {
