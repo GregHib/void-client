@@ -112,7 +112,14 @@ public class Loader extends Applet {
      */
     public static void consumeForcedResizable() {
         if (forcedResizable < 0) return;
-        int mode = forcedResizable == 1 ? 2 : 1;
+        // Mode 0 is stock fixed - NOT 1. Any nonzero mode here flips
+        // Class305.aBoolean3870, which enables the client's leftover dev
+        // orthographic camera (see the 'ortho <n>'/'orthocamlock' console
+        // commands): pitch clamps to [45,90] degrees and the whole world
+        // renders as a flat overhead view. This value is also persisted to
+        // jagex_runescape_preferences.dat, so getting it wrong once poisons
+        // every later flag-less launch.
+        int mode = forcedResizable == 1 ? 2 : 0;
         forcedResizable = -1;
         if (Class316.aClass348_Sub51_3959 != null && Class316.aClass348_Sub51_3959.aClass239_Sub3_7222 != null)
             Class316.aClass348_Sub51_3959.aClass239_Sub3_7222.anInt3138 = mode;
