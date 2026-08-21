@@ -5,6 +5,7 @@ import OpenGlRenderer.Companion.method3802
 import Client.Companion.anInt2986
 import ScrollingNoiseTexture.Companion.method560
 import SocketStreamWorker.Companion.method1469
+import WidgetDefinition.Companion.method268
 import java.io.IOException
 import java.io.OutputStream
 import java.util.*
@@ -79,7 +80,7 @@ class FireParticleStream : OutputStream() {
                     if (MinimapStateReset.aBooleanArray2374!![4] && (i_6_ < ModelHeaderCache.anIntArray3273!![4] + 128)) i_6_ = 128 + ModelHeaderCache.anIntArray3273!![4]
                     val i_7_ = CameraDistanceOptionState.aFloat3938.toInt() and 0x3fff
                     WidgetDefinition.method268(i_6_, -200 + CollisionMapAccessor.method2064(OpenGlRenderer.anInt6633, CompiledScriptCache.anInt4372, 11219, RegionTileNodeStatics.anInt6652), i_7_, AsyncTaskHandle.anInt2578, i_2_, -19360, FrameStatsReset.anInt5799, 600 - -((i_6_ shr 3) * 3) shl 2)
-                } else if (WeaveTextureNode.anInt9282 == 5) LocDefinitionCache.method2035(i_2_, 0)
+                } else if (WeaveTextureNode.anInt9282 == 5) method2035(i_2_, 0)
                 val i_8_ = GlslMaterialPass.anInt6246
                 val i_9_ = ParticleSystemRenderer.anInt3855
                 val i_10_ = CompositeRgbNoiseTexture.anInt8685
@@ -523,5 +524,34 @@ class FireParticleStream : OutputStream() {
             CircleDrawer.anInt2688 = i_3_
         }
         var anInt9157: Int = 0
+
+        var anInt3445: Int = 0
+
+        fun method2035(i: Int, i_4_: Int) {
+            anInt3445++
+            val i_5_ = GlGroundShaderPass.anInt7396 - FloatBuffer.anInt9751
+            if (i_5_ >= 100) {
+                WeaveTextureNode.anInt9282 = 1
+                SequencedWallEntity.anInt10163 = -1
+                NativeLibraryState.anInt167 = SequencedWallEntity.anInt10163
+            } else {
+                var i_6_ = SceneObjectSpawner.aFloat1287.toInt()
+                if (i_6_ < CameraDistanceOptionState.anInt6979 shr 8) i_6_ = CameraDistanceOptionState.anInt6979 shr 8
+                if (MinimapStateReset.aBooleanArray2374!![4] && ModelHeaderCache.anIntArray3273!![4] - -128 > i_6_) i_6_ = ModelHeaderCache.anIntArray3273!![4] + 128
+                val i_7_ = 0x3fff and CameraDistanceOptionState.aFloat3938.toInt() + RenderableGroup.anInt5016
+                method268(i_6_, -200 + (CollisionMapAccessor.method2064((LocalPlayerState.aPlayer_1907!!.x), CompiledScriptCache.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_7_, AsyncTaskHandle.anInt2578, i, -19360, FrameStatsReset.anInt5799, 3 * (i_6_ shr 3) + 600 shl 2)
+                val f = (-(((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)).toFloat() / 1000000.0f) + 1.0f)
+                GlslMaterialPass.anInt6246 = (SequencedGroundDecor.anInt10047.toFloat() + f * (-SequencedGroundDecor.anInt10047 + GlslMaterialPass.anInt6246).toFloat()).toInt()
+                ParticleSystemRenderer.anInt3855 = ((-SpriteComponent.anInt8368 + ParticleSystemRenderer.anInt3855).toFloat() * f + SpriteComponent.anInt8368.toFloat()).toInt()
+                MinimapAreaMarkerNode.anInt9701 = (DataHolderStatics.anInt3662.toFloat() + (MinimapAreaMarkerNode.anInt9701 - DataHolderStatics.anInt3662).toFloat() * f).toInt()
+                CompositeRgbNoiseTexture.anInt8685 = (TextureAtlasStateStatics.anInt4424.toFloat() + f * (-TextureAtlasStateStatics.anInt4424 + CompositeRgbNoiseTexture.anInt8685).toFloat()).toInt()
+                var i_8_ = WorldMapElement.anInt4638 - CameraConfigDefinitionStatics.anInt3253
+                if (i_8_ <= 8192) {
+                    if (i_8_ < -8192) i_8_ += 16384
+                } else i_8_ -= 16384
+                WorldMapElement.anInt4638 = (i_8_.toFloat() * f + CameraConfigDefinitionStatics.anInt3253.toFloat()).toInt()
+                WorldMapElement.anInt4638 = WorldMapElement.anInt4638 and 0x3fff
+            }
+        }
     }
 }

@@ -1,5 +1,3 @@
-import NormalMapTextureNode.Companion.method3140
-
 /* Class277 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -68,22 +66,20 @@ class LocTypeConfig {
         this.anInt3569 = -1
         this.anInt3575 = -1
     }
-
+    
     companion object {
         var anInt3565: Int = 0
         var anInt3567: Int = 0
-
-        var aIndexedFileCache_3568: IndexedFileCache? = null
         var anInt3571: Int = 0
-        var aCameraRotationStub_3572: CameraRotationStub? = CameraRotationStub()
 
+        var anInt9435: Int = 0
         @JvmStatic
-        fun method2071(i: Int) {
-            aCameraRotationStub_3572 = null
-            aIndexedFileCache_3568 = null
-            if (i > -126) aCameraRotationStub_3572 = null
+        fun method3140(i: Int, i_0_: Int): Int {
+            val i_1_ = 40 / ((i - 19) / 63)
+            anInt9435++
+            if (i_0_ == 16711935) return -1
+            return method160(27076, i_0_)
         }
-
 
         var anInt113: Int = 0
         fun method160(i: Int, i_3_: Int): Int {

@@ -1,6 +1,5 @@
 import ProjectedGroundDecor.Companion.method2433
 import AbstractFrameBufferSurface.Companion.method3007
-import LocTypeConfig.Companion.method160
 import kotlin.math.sqrt
 
 /* Class348_Sub40_Sub34 - Decompiled by JODE
@@ -13,7 +12,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
     override fun method3049(class348_sub49: ByteBuffer, i: Int, i_5_: Int) {
         do {
             try {
-                if (i_5_ != 31015) method3140(-77, 55)
+                if (i_5_ != 31015) LocTypeConfig.method3140(-77, 55)
                 anInt9433++
                 val i_6_ = i
                 if (i_6_ == 0) {
@@ -31,7 +30,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
     override fun method3047(i: Int, i_7_: Int): Array<IntArray?>? {
         anInt9434++
         val `is` = this.aImageFrameCache_7033!!.method2557(-111, i)!!
-        if (i_7_ != -1564599039) method3140(72, -13)
+        if (i_7_ != -1564599039) LocTypeConfig.method3140(72, -13)
         if (this.aImageFrameCache_7033!!.aBoolean4035) {
             val is_8_ = this.method3048(-1 + i and TextureCubeProviderStatics.anInt6325, 633706337, 0)!!
             val is_9_ = this.method3048(i, i_7_ + -2096661920, 0)!!
@@ -84,18 +83,10 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
 
         var anInt9434: Int = 0
 
-        var anInt9435: Int = 0
 
         var anIntArray9436: IntArray? = IntArray(2)
 
         var anInt9437: Int = 0
-        @JvmStatic
-        fun method3140(i: Int, i_0_: Int): Int {
-            val i_1_ = 40 / ((i - 19) / 63)
-            anInt9435++
-            if (i_0_ == 16711935) return -1
-            return method160(27076, i_0_)
-        }
 
         @JvmStatic
         fun method3141(bool: Boolean, i: Byte) {

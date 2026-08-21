@@ -180,7 +180,7 @@ import BoundsConstraintEntryStatics.method2055
 import CollisionMapAccessor.method2064
 import CollisionMapAccessor.method2065
 import CollisionMapAccessor.method2066
-import LocTypeConfig.Companion.method2071
+import LocTypeConfigStatics.method2071
 import NativeSoundOutput.Companion.method2097
 import ItemNameResolver.Companion.method318
 import GroundDecorRenderer.Companion.method2104
@@ -684,7 +684,7 @@ class Client : GameAppletFrame() {
             TextureCubeProviderStatics.aBufferedRandomAccessFile_6328 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
             for (i_3_ in 0..36) MinimapRenderer.aBufferedRandomAccessFileArray1579!![i_3_] = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
             SceneObjectAnimator.aBufferedRandomAccessFile_3075 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
-            LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, TextureCubeProviderStatics.aBufferedRandomAccessFile_6328, SceneObjectAnimator.aBufferedRandomAccessFile_3075, 500000)
+            LocTypeConfigStatics.aIndexedFileCache_3568 = IndexedFileCache(255, TextureCubeProviderStatics.aBufferedRandomAccessFile_6328, SceneObjectAnimator.aBufferedRandomAccessFile_3075, 500000)
             BufferedFileReader.aBufferedRandomAccessFile_4538 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779 = null
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 = null
@@ -4150,7 +4150,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1068) {
-                LocDefinitionCache.method2038(-103)
+                method2038(-103)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -5388,5 +5388,19 @@ class Client : GameAppletFrame() {
                 method3570(false)
             }
         }
+        var anInt3446: Int = 0
+        fun method2038(i: Int) {
+            if (i <= -47) {
+                for (i_9_ in 0..<HintArrowOrMessage.anInt2021) {
+                    val class10 = GlTextureCubeMap.aParticleEmitterNodeArray8531s!![i_9_]
+                    if (class10!!.aByte180.toInt() == 3) {
+                        if (class10.aClass348_Sub16_Sub5_176 == null) class10.anInt188 = -2147483648
+                        else SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class10.aClass348_Sub16_Sub5_176!!)
+                    }
+                }
+                anInt3446++
+            }
+        }
+
     }
 }

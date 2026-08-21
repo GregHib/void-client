@@ -2072,7 +2072,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NativeRenderer.anInt7944 = 0
             AbstractCameraTransformStatics.anInt1596 = 0
             HeadIconRendererStatics.anInt551 = 0
-            LocDefinitionCache.anInt3445 = 0
+            FireParticleStream.anInt3445 = 0
             ChatCommandProcessor.anInt1171 = 0
             ProjectedGroundDecor.anInt10235 = 0
             LoadingBarRenderer.anInt5052 = 0
@@ -3611,7 +3611,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             TextureLoadExceptionStatics.anInt4597 = 0
             Js5Archive.anInt665 = 0
             GlTexture2D.anInt8543 = 0
-            NormalMapTextureNode.anInt9435 = 0
+            LocTypeConfig.anInt9435 = 0
             GlEnvMappedWaterPass.anInt7380 = 0
             MultiLevelOptionState.anInt6152 = 0
             GlShadowRenderPass.anInt7383 = 0
@@ -3762,7 +3762,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SpotAnimEntity.anInt6438 = 0
             RegionTileNodeStatics.anInt6641 = 0
             GlRenderDevice.anInt9871 = 0
-            LocDefinitionCache.anInt3446 = 0
+            Client.anInt3446 = 0
             RingBufferInputStream.anInt4549 = 0
             GlRenderDevice.anInt9876 = 0
             OpenGlTerrainTile.anInt8261 = 0

@@ -779,7 +779,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             if (i.toInt() != -111) Companion.method3952(null, (-118).toByte())
             if (cameraRotationStub == TileTransform.aCameraRotationStub_3217) return 2
             if (GlBloomEffect.aCameraRotationStub_8832 == cameraRotationStub) return 3
-            if (LocTypeConfig.aCameraRotationStub_3572 == cameraRotationStub) return 1
+            if (LocTypeConfigStatics.aCameraRotationStub_3572 == cameraRotationStub) return 1
             if (cameraRotationStub == VideoAdChecker.aCameraRotationStub_3181) return 4
             if (AsyncResourceRequestStatics.aCameraRotationStub_9661 == cameraRotationStub) return 6
             if (cameraRotationStub == NativeTerrainTile.aCameraRotationStub_8320) return 5

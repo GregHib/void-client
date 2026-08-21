@@ -66,7 +66,6 @@ import FlickeringEffectsOptionState.Companion.method1750
 import GlTexture1D.Companion.method1974
 import MidiSequencePlayer.Companion.method2862
 import OpenGlModel.Companion.method690
-import LocTypeConfig.Companion.method160
 import NullRenderPass.Companion.method3535
 import ProjectedGroundDecor.Companion.method2420
 import java.awt.datatransfer.DataFlavor
@@ -1023,7 +1022,7 @@ object ChatCommandProcessor {
             }
             if (i == 5401) {
                 anInt1173 -= 2
-                Client.aShortArray6428!![anIntArray1149!![anInt1173]] = method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
+                Client.aShortArray6428!![anIntArray1149!![anInt1173]] = LocTypeConfig.method160(27076, anIntArray1149!![anInt1173 + 1]).toShort()
                 ClientExceptionStatics.aModelHeaderCache_112!!.method1930(-21804)
                 ClientExceptionStatics.aModelHeaderCache_112!!.method1936(-71)
                 MapAreaDefinitionStatics.aBufferedMessageQueue_2529!!.method2074(-118)
