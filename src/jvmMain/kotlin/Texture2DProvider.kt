@@ -9,8 +9,6 @@ abstract class Texture2DProvider : CircleRasterizer() {
 
         var anInt6320: Int = 0
 
-        var aRectangleRegion_6321: RectangleRegion? = RectangleRegion(1, 2, 2, 0)
-
         var anInt6322: Int = 0
 
         var aFileOutputStream6323: FileOutputStream? = null
@@ -26,15 +24,9 @@ abstract class Texture2DProvider : CircleRasterizer() {
         }
 
         @JvmStatic
-        fun method2258(i: Byte) {
-            aRectangleRegion_6321 = null
-            if (i < -119) aFileOutputStream6323 = null
-        }
-
-        @JvmStatic
         fun method2259(i: Int, i_5_: Int, i_6_: Int): Boolean {
             anInt6320++
-            if (i != 0) aRectangleRegion_6321 = null
+//            if (i != 0) aRectangleRegion_6321 = null
             return (0x34 and i_6_) != 0
         }
     }

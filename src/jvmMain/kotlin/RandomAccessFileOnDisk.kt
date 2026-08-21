@@ -46,7 +46,7 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
 
     fun method1660(i: Int): File {
         anInt3042++
-        if (i <= 64) Companion.method1659((-48).toByte())
+        if (i <= 64) RectangleRegion.method1659((-48).toByte())
         return aFile3046!!
     }
 
@@ -105,20 +105,10 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
         var anInt3042: Int = 0
         var anInt3043: Int = 0
 
-        var aRectangleRegion_3044: RectangleRegion?
         var anInt3045: Int = 0
 
         var anInt3047: Int = 0
         var anInt3048: Int = 0
 
-        @JvmStatic
-        fun method1659(i: Byte) {
-            if (i >= -2) method1659(126.toByte())
-            aRectangleRegion_3044 = null
-        }
-
-        init {
-            aRectangleRegion_3044 = RectangleRegion(0, 2, 2, 1)
-        }
     }
 }

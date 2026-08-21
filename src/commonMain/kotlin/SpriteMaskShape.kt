@@ -25,5 +25,29 @@ class SpriteMaskShape(i: Int, i_78_: Int, movementDirection: MovementDirection?)
 
     companion object {
         var anInt4066: Int = 0
+        var aSpriteMaskShape_4073: SpriteMaskShape? = SpriteMaskShape(0, 3, MovementDirection.aMovementDirection_1187)
+        var aSpriteMaskShape_4075: SpriteMaskShape? = SpriteMaskShape(1, 3, MovementDirection.aMovementDirection_1187)
+        var aSpriteMaskShape_4076: SpriteMaskShape? = SpriteMaskShape(2, 4, MovementDirection.aMovementDirection_1183)
+        var aSpriteMaskShape_4077: SpriteMaskShape? = SpriteMaskShape(3, 1, MovementDirection.aMovementDirection_1187)
+        var aSpriteMaskShape_4078: SpriteMaskShape? = SpriteMaskShape(4, 2, MovementDirection.aMovementDirection_1187)
+        var aSpriteMaskShape_4079: SpriteMaskShape? = SpriteMaskShape(5, 3, MovementDirection.aMovementDirection_1187)
+        var aSpriteMaskShape_4080: SpriteMaskShape? = SpriteMaskShape(6, 4, MovementDirection.aMovementDirection_1187)
+
+
+        var aRectangleRegion_4082: RectangleRegion? = RectangleRegion(8, 0, 4, 1)
+
+        @JvmStatic
+        fun method2597(i: Int) {
+            aSpriteMaskShape_4073 = null
+            aSpriteMaskShape_4080 = null
+            aSpriteMaskShape_4078 = null
+            aRectangleRegion_4082 = null
+            aSpriteMaskShape_4077 = null
+            aSpriteMaskShape_4079 = null
+            if (i == -27327) {
+                aSpriteMaskShape_4076 = null
+                aSpriteMaskShape_4075 = null
+            }
+        }
     }
 }

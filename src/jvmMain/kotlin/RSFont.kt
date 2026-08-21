@@ -184,7 +184,7 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
             val i_53_ = (random.nextInt() and 0x1f) + 192
             method2579(i_53_ shl 24 or (0xffffff and i_50_), i xor 0x79.inv(), i_53_ shl 24 or (i_49_ and 0xffffff))
             val i_54_ = string.length
-            if (i != -1) aRectangleRegion_4062 = null
+            if (i != -1) RectangleRegion.aRectangleRegion_4062 = null
             val is_55_ = IntArray(i_54_)
             var i_56_ = 0
             var i_57_ = 0
@@ -507,8 +507,6 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
 
         var anInt4061: Int = 0
 
-        var aRectangleRegion_4062: RectangleRegion? = RectangleRegion(2, 4, 4, 0)
-
         var anInt4064: Int = 0
 
         var anInt4065: Int = 0
@@ -527,16 +525,10 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
         }
 
         @JvmStatic
-        fun method2572(i: Byte) {
-            aRectangleRegion_4062 = null
-            if (i.toInt() != 23) aRectangleRegion_4062 = null
-        }
-
-        @JvmStatic
         fun method2582(glRenderDevice: GlRenderDevice?, glShaderObjectHandles: Array<GlShaderObjectHandle?>?, i: Int): NativeBufferHandle? {
             try {
                 anInt4065++
-                if (i != -2113) aRectangleRegion_4062 = null
+//                if (i != -2113) aRectangleRegion_4062 = null
                 var i_100_ = 0
                 while (glShaderObjectHandles!!.size > i_100_) {
                     if (glShaderObjectHandles[i_100_] == null || glShaderObjectHandles[i_100_]!!.aLong517 <= 0) return null

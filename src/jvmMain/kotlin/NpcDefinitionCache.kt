@@ -155,8 +155,8 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             if (class348_sub45 != null) i_14_ = class348_sub45.method3310(58)
             if (ScrollbarComponent.aBoolean8335) {
                 if (i_14_ == -1) {
-                    val i_15_ = GlTexture1D.aInputTracker_8552!!.method3597(true)
-                    val i_16_ = GlTexture1D.aInputTracker_8552!!.method3594(116.toByte())
+                    val i_15_ = RectangleRegion.aInputTracker_8552!!.method3597(true)
+                    val i_16_ = RectangleRegion.aInputTracker_8552!!.method3594(116.toByte())
                     var bool = false
                     if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
                         if (MinimapPolygonDrawer.anInt5252 + -10 > i_15_ || ((MinimapPolygonDrawer.anInt5252 - -TerrainTileShapeStatics.anInt8806 + 10) < i_15_) || -10 + InputTracker.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + InputTracker.anInt4534 + 10 < i_16_)) MinimapAreaMarkerNode.method3277((-48).toByte())

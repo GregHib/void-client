@@ -30,15 +30,9 @@ class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_
 
     companion object {
 
-        var aInputTracker_8552: InputTracker? = null
-
-        var aRectangleRegion_8553: RectangleRegion?
-
         var anInt8554: Int = 0
 
         var anInt8555: Int = 0
-
-        var anIntArray8557: IntArray? = IntArray(500)
 
         var aBoolean8558: Boolean = false
 
@@ -47,22 +41,11 @@ class GlTexture1D internal constructor(var_ha_Sub2: OpenGlRenderer, i: Int, i_0_
         var aFloat8560: Float = 0f
 
         @JvmStatic
-        fun method1973(i: Int) {
-            aRectangleRegion_8553 = null
-            aInputTracker_8552 = null
-            if (i == 24885) anIntArray8557 = null
-        }
-
-        @JvmStatic
         fun method1974(i: Byte, i_3_: Int, bool: Boolean): ModelKeyBuilder? {
             anInt8559++
             val i_4_ = -43 / ((-65 - i) / 55)
             val l = (i_3_ or (if (bool) -2147483648 else 0)).toLong()
             return (Client.aHashtable_7041!!.method3480(l, -6008) as ModelKeyBuilder?)
-        }
-
-        init {
-            aRectangleRegion_8553 = RectangleRegion(9, 0, 4, 1)
         }
     }
 }

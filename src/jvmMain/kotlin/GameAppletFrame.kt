@@ -555,7 +555,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             val i_9_ = WaterMaterialPass.aCalendar6221!!.get(12)
             val i_10_ = WaterMaterialPass.aCalendar6221!!.get(13)
             val string_11_ = ((i_8_ / 10).toString() + i_8_ % 10 + ":" + i_9_ / 10 + i_9_ % 10 + ":" + i_10_ / 10 + i_10_ % 10)
-            val strings = TurbulenceTextureNode.method3113('\n', true, string)
+            val strings = ParameterizedText.method3113('\n', true, string)
             for (i_12_ in strings.indices) {
                 for (i_13_ in WorldMapTextLabel.anInt8587 downTo 1) ArbFogMaterialPass.aStringArray6200!![i_13_] = ArbFogMaterialPass.aStringArray6200!![-1 + i_13_]
                 ArbFogMaterialPass.aStringArray6200!![0] = string_11_ + ": " + strings[i_12_]

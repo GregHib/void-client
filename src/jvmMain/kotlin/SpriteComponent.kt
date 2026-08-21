@@ -123,7 +123,7 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
                                     InterfaceComponentGroup.method3243(i_5_ + 7281, class348_sub47)
                                 } else if (i == 7) {
                                     WorldMapTextLabel.anInt8588++
-                                    val class348_sub47 = (method2148(ProceduralTextureGraph.aOutgoingPacketHeader_9533, TheoraVideoStream.aIsaacCipher_9029, -116))
+                                    val class348_sub47 = (method2148(RectangleRegion.aOutgoingPacketHeader_9533, TheoraVideoStream.aIsaacCipher_9029, -116))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(i_5_ xor 0x1c2c, `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd(92.toByte(), 0)
                                     InterfaceComponentGroup.method3243(127, class348_sub47)

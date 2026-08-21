@@ -13,8 +13,6 @@ object PlayerSequenceSelector {
 
     var aClass209_1212: UnusedToStringStub?
 
-    var aRectangleRegion_1213: RectangleRegion?
-
     var aBooleanArray1214: BooleanArray?
 
     @JvmStatic
@@ -24,7 +22,6 @@ object PlayerSequenceSelector {
         aSceneObjectSpawner_1210 = null
         aBooleanArray1214 = null
         if (bool != true) aClass209_1212 = null
-        aRectangleRegion_1213 = null
     }
 
     @JvmStatic
@@ -94,7 +91,6 @@ object PlayerSequenceSelector {
         aSceneObjectSpawner_1210 = SceneObjectSpawner(false)
         aSceneObjectSpawner_1208 = aSceneObjectSpawner_1210
         aClass209_1212 = UnusedToStringStub()
-        aRectangleRegion_1213 = RectangleRegion(11, 0, 1, 2)
         aBooleanArray1214 = BooleanArray(8)
     }
 }

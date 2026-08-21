@@ -615,7 +615,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 aString9916 = glGetString(7937).lowercase(Locale.getDefault())
                 if (aString9917.indexOf("microsoft") != -1 || aString9917.indexOf("brian paul") != -1 || aString9917.indexOf("mesa") != -1) throw RuntimeException("")
                 val string = glGetString(7938)
-                val strings = TurbulenceTextureNode.method3113(' ', true, string.replace('.', ' '))
+                val strings = ParameterizedText.method3113(' ', true, string.replace('.', ' '))
                 if (strings.size < 2) throw RuntimeException("")
                 try {
                     val i_32_ = RegionSceneShifterStatics.method3156(true, strings!![0]!!)
@@ -648,7 +648,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                     var i_34_ = 0
                     var bool = false
                     var bool_35_ = false
-                    val strings_36_ = (TurbulenceTextureNode.method3113(' ', true, aString9916!!.replace('/', ' ')))
+                    val strings_36_ = (ParameterizedText.method3113(' ', true, aString9916!!.replace('/', ' ')))
                     var i_37_ = 0
                     while ((i_37_ < strings_36_.size)) {
                         var string_38_ = strings_36_[i_37_]!!
@@ -994,25 +994,25 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                 var i_80_ = 0
                 while ((i_80_ < class58.method538((-119).toByte()))) {
                     val class325 = class58.method537(i_80_, -119)!!
-                    if (class325 == SpriteMaskShapeStatics.aSpriteMaskShape_4073) {
+                    if (class325 == SpriteMaskShape.aSpriteMaskShape_4073) {
                         glVertexPointer(3, 5126, i_79_, i_78_.toLong() + l)
                         bool_76_ = true
-                    } else if (SpriteMaskShapeStatics.aSpriteMaskShape_4075 == class325) {
+                    } else if (SpriteMaskShape.aSpriteMaskShape_4075 == class325) {
                         bool_75_ = true
                         glNormalPointer(5126, i_79_, i_78_.toLong() + l)
-                    } else if (class325 == SpriteMaskShapeStatics.aSpriteMaskShape_4076) {
+                    } else if (class325 == SpriteMaskShape.aSpriteMaskShape_4076) {
                         glColorPointer(4, 5121, i_79_, i_78_.toLong() + l)
                         bool = true
-                    } else if (SpriteMaskShapeStatics.aSpriteMaskShape_4077 == class325) {
+                    } else if (SpriteMaskShape.aSpriteMaskShape_4077 == class325) {
                         glClientActiveTexture(33984 + i_74_++)
                         glTexCoordPointer(1, 5126, i_79_, i_78_.toLong() + l)
-                    } else if (SpriteMaskShapeStatics.aSpriteMaskShape_4078 == class325) {
+                    } else if (SpriteMaskShape.aSpriteMaskShape_4078 == class325) {
                         glClientActiveTexture(i_74_++ + 33984)
                         glTexCoordPointer(2, 5126, i_79_, i_78_.toLong() + l)
-                    } else if (SpriteMaskShapeStatics.aSpriteMaskShape_4079 == class325) {
+                    } else if (SpriteMaskShape.aSpriteMaskShape_4079 == class325) {
                         glClientActiveTexture(i_74_++ + 33984)
                         glTexCoordPointer(3, 5126, i_79_, i_78_.toLong() + l)
-                    } else if (class325 == SpriteMaskShapeStatics.aSpriteMaskShape_4080) {
+                    } else if (class325 == SpriteMaskShape.aSpriteMaskShape_4080) {
                         glClientActiveTexture(33984 - -i_74_++)
                         glTexCoordPointer(4, 5126, i_79_, l + i_78_.toLong())
                     }
@@ -1292,8 +1292,6 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
 
         var anInt9859: Int = 0
 
-        var aRectangleRegion_9860: RectangleRegion? = RectangleRegion(15, 0, 1, 0)
-
         var anInt9861: Int = 0
 
         var anInt9862: Int = 0
@@ -1381,11 +1379,6 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             }
         }
 
-        @JvmStatic
-        fun method3968(i: Int) {
-            val i_10_ = 69 % ((-67 - i) / 57)
-            aRectangleRegion_9860 = null
-        }
 
 
         @JvmStatic

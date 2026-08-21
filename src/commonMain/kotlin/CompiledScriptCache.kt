@@ -63,19 +63,8 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
         var anObject4366: Any? = null
         var aLong4367: Long = -1L
         var anInt4370: Int = 0
-        var anInt4371: Int = 0
 
         var anInt4372: Int = 0
-        fun method3470(i: Int) {
-            if (i == 1) {
-                anInt4371++
-                if (!MinimapSquareDrawer.aBoolean5224) {
-                    MinimapSquareDrawer.aBoolean5224 = true
-                    WorldMapPolygonIconLabel.aBoolean10174 = true
-                    MultiFieldRecordStatics.aFloat6898 += (-12.0f - MultiFieldRecordStatics.aFloat6898) / 2.0f
-                }
-            }
-        }
 
         @JvmStatic
         fun method3473(i: Int) {

@@ -76,9 +76,9 @@ class SpriteDefinition : LinkedListNode() {
                     if (bool) MinimapPolygonDrawer.method466(true, "", 0, (-115).toByte(), false, 0, 0, false, -1, player.anInt10290.toLong(), "<col=cccccc>" + string, 0L, -1)
                     else {
                         for (i_6_ in 7 downTo 0) {
-                            if (DynamicSceneObjectEntity.aStringArray10195!![i_6_] != null) {
+                            if (RectangleRegion.aStringArray10195!![i_6_] != null) {
                                 var i_7_: Short = 0
-                                if ((Client.aSceneProjector_10434 != ParticleEmitterNode.aSceneProjector_186) || !(DynamicSceneObjectEntity.aStringArray10195!![i_6_].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.anInt6967, 544), ignoreCase = true))) {
+                                if ((Client.aSceneProjector_10434 != ParticleEmitterNode.aSceneProjector_186) || !(RectangleRegion.aStringArray10195!![i_6_].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.anInt6967, 544), ignoreCase = true))) {
                                     if (PlayerSequenceSelector.aBooleanArray1214!![i_6_]) i_7_ = 2000.toShort()
                                 } else {
                                     if ((LocalPlayerState.aPlayer_1907!!.anInt10516) < (player.anInt10516)) i_7_ = 2000.toShort()
@@ -89,7 +89,7 @@ class SpriteDefinition : LinkedListNode() {
                                 }
                                 val i_8_ = (i_7_ + (CipheredPacketBuffer.Companion.aShortArray9768!![i_6_])).toShort()
                                 val i_9_ = (if (DelegatingRenderCanvas.anIntArray60!![i_6_] == -1) WidgetTextConfigStatics.anInt506 else DelegatingRenderCanvas.anIntArray60!![i_6_])
-                                MinimapPolygonDrawer.method466(false, "<col=ffffff>" + string, 0, (-105).toByte(), false, 0, -1, true, i_8_.toInt(), player.anInt10290.toLong(), (DynamicSceneObjectEntity.aStringArray10195!![i_6_]), player.anInt10290.toLong(), i_9_)
+                                MinimapPolygonDrawer.method466(false, "<col=ffffff>" + string, 0, (-105).toByte(), false, 0, -1, true, i_8_.toInt(), player.anInt10290.toLong(), (RectangleRegion.aStringArray10195!![i_6_]), player.anInt10290.toLong(), i_9_)
                                 DelegatingRenderCanvas.anInt69++
                             }
                         }

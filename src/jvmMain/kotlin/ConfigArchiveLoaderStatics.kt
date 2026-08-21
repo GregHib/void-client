@@ -11,7 +11,7 @@ import CubemapTextureImplSource.Companion.method2271
 import SceneObjectEntity.Companion.method2405
 import ArchiveResourceProvider.Companion.method2348
 import VorbisOggDecoder.Companion.method2972
-import TurbulenceTextureNode.Companion.method3113
+import ParameterizedText.Companion.method3113
 import GlTexture2DRegion.Companion.method3553
 import GlCubemapLightPass.Companion.method3544
 import MinimapTriangleDrawer.Companion.method464
@@ -414,7 +414,7 @@ object ConfigArchiveLoaderStatics {
                         var i_9_ = -1
                         var i_10_ = 1000
                         if (string.length > 15) {
-                            val strings = TurbulenceTextureNode.method3113(' ', true, string)
+                            val strings = ParameterizedText.method3113(' ', true, string)
                             try {
                                 if (strings.size > 1) i_10_ = strings[1]!!.toInt()
                             } catch (throwable: Throwable) {

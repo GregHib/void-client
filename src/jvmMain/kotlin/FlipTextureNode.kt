@@ -146,8 +146,8 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                         continue
                                     }
                                     if (ParticleConfigParser.aBoolean3819 && ScrollingWidgetComponentNode.aBoolean8386) {
-                                        var i_29_ = (GlTexture1D.aInputTracker_8552!!.method3597(true) - -i_26_)
-                                        var i_30_ = (GlTexture1D.aInputTracker_8552!!.method3594(101.toByte()) + i_27_)
+                                        var i_29_ = (RectangleRegion.aInputTracker_8552!!.method3597(true) - -i_26_)
+                                        var i_30_ = (RectangleRegion.aInputTracker_8552!!.method3594(101.toByte()) + i_27_)
                                         i_29_ -= SceneEntityModel.anInt6411
                                         i_30_ -= ModelDefinitionCache.anInt2872
                                         if (BoxBlurTextureNode.Companion.anInt9461 > i_29_) i_29_ = BoxBlurTextureNode.Companion.anInt9461

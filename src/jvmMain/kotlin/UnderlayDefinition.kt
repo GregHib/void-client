@@ -21,7 +21,7 @@ class UnderlayDefinition {
         var spriteImage = this.aItemDefinitionLoader_2886!!.aLruByteCache_2190!!.method583(anInt2891.toLong(), -70) as? SpriteImage?
         if (spriteImage != null) return spriteImage
         spriteImage = SpriteImage.method1521(this.aItemDefinitionLoader_2886!!.aJs5Archive_2180!!, anInt2891, 0)
-        if (i < 49) method1609(93.toByte())
+//        if (i < 49) method1609(93.toByte())
         if (spriteImage != null) this.aItemDefinitionLoader_2886!!.aLruByteCache_2190!!.method582(spriteImage, anInt2891.toLong(), (-120).toByte())
         return spriteImage
     }
@@ -40,18 +40,8 @@ class UnderlayDefinition {
 
         var anInt2884: Int = 0
 
-        var aRectangleRegion_2885: RectangleRegion? = RectangleRegion(4, 1, 1, 1)
         var anInt2887: Int = 0
         var anInt2888: Int = 0
         var anInt2889: Int = 0
-        var aOutgoingPacketHeader_2892: OutgoingPacketHeader? = OutgoingPacketHeader(39, 8)
-
-        @JvmStatic
-        fun method1609(i: Byte) {
-            if (i <= -71) {
-                aOutgoingPacketHeader_2892 = null
-                aRectangleRegion_2885 = null
-            }
-        }
     }
 }

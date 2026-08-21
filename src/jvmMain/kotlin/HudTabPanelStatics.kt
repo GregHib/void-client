@@ -42,8 +42,8 @@ object HudTabPanelStatics {
         SpotAnimEntity.method2509(SceneTileBounds.anInt1117, ProceduralTextureGraph.anInt9532 - -i_4_, var_renderer!!, GlArrayBufferObject.anInt4717 - -i_3_, i_5_, true, WorldMapSceneSoftware.anInt5819, -16777216)
         if (i > 98) {
             NodeDequeStatics.aRSFont_3326!!.method2576(LocalizedText.aLocalizedText_3507!!.method2063(ChatCommandProcessor.anInt6967, 544), i_5_, i_4_ + (ProceduralTextureGraph.anInt9532 - -14), i_3_ + (GlArrayBufferObject.anInt4717 + 3), -1, -125)
-            val i_6_ = GlTexture1D.aInputTracker_8552!!.method3597(true) - -i_3_
-            val i_7_ = i_4_ + GlTexture1D.aInputTracker_8552!!.method3594(127.toByte())
+            val i_6_ = RectangleRegion.aInputTracker_8552!!.method3597(true) - -i_3_
+            val i_7_ = i_4_ + RectangleRegion.aInputTracker_8552!!.method3594(127.toByte())
             if (ChatScriptListNode.aBoolean9535) {
                 var i_8_ = 0
                 var class348_sub42_sub13 = (ParticleSortRenderer.Companion.aLinkedNodeListIterator_3022!!.method1011(-119) as? ContactList?)

@@ -305,24 +305,9 @@ class ProceduralTextureGraph : HashLinkedListNode {
         var anInt9525: Int = 0
         var anInt9526: Int = 0
         var anInt9529: Int = 0
-        var aRectangleRegion_9530: RectangleRegion? = RectangleRegion(6, 0, 4, 2)
         var aDouble9531: Double = 0.0
         var anInt9532: Int = 0
-        var aOutgoingPacketHeader_9533: OutgoingPacketHeader?
 
-        var anCharStreamReaderArray9534s: Array<CharStreamReader?>? = arrayOfNulls<CharStreamReader>(128)
-
-        @JvmStatic
-        fun method3187(i: Byte) {
-            anCharStreamReaderArray9534s = null
-            val i_55_ = 19 % ((76 - i) / 39)
-            aOutgoingPacketHeader_9533 = null
-            aRectangleRegion_9530 = null
-        }
-
-        init {
-            aOutgoingPacketHeader_9533 = OutgoingPacketHeader(57, 3)
-        }
 
 
         var anInt6996: Int = 0

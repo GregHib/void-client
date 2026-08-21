@@ -12,8 +12,8 @@ object FloatGridStatics {
     fun method1583(i: Byte) {
         anInt4977++
         if (RenderNodeStatics.anInt9721 != -1) {
-            var i_0_ = GlTexture1D.aInputTracker_8552!!.method3597(true)
-            var i_1_ = GlTexture1D.aInputTracker_8552!!.method3594(72.toByte())
+            var i_0_ = RectangleRegion.aInputTracker_8552!!.method3597(true)
+            var i_1_ = RectangleRegion.aInputTracker_8552!!.method3594(72.toByte())
             val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as TimedRecordAccessor?)
             if (class348_sub45 != null) {
                 i_0_ = class348_sub45.method3308((-128).toByte())

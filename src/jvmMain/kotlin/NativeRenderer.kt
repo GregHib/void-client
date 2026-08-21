@@ -352,7 +352,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         val i_28_ = -85 / ((41 - i) / 54)
         anInt7948++
         anInterface5_Impl1_8203!!.method20(24, 125.toByte(), 12)
-        aModelBatchBase_8205 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4073!!))))
+        aModelBatchBase_8205 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShape.aSpriteMaskShape_4073!!))))
     }
 
     fun method3817(i: Int, i_29_: Int) {
@@ -621,7 +621,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (anInterface5_Impl1_8193!!.method18(6331)) break
             }
         }
-        aModelBatchBase_8197 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4078, SpriteMaskShapeStatics.aSpriteMaskShape_4078)))))
+        aModelBatchBase_8197 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078, SpriteMaskShape.aSpriteMaskShape_4078)))))
     }
 
     abstract fun method3829(trigLookupTables: TrigLookupTables?, i: Int, i_56_: Byte, bool: Boolean)
@@ -1843,7 +1843,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     if (anInterface5_Impl1_8201!!.method18(6331)) break
                 }
             }
-            aModelBatchBase_8190 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4073!!))))
+            aModelBatchBase_8190 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShape.aSpriteMaskShape_4073!!))))
         }
     }
 
@@ -2171,10 +2171,10 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aClass348_Sub1Array8132 = arrayOfNulls<AbstractTileShape>(-2 + this.anInt8138)
         this.anRenderable_8147 = method3861(1, (-84).toByte(), 1, MovementDirection.aMovementDirection_1183, GroundItemRenderState.aTextureFormatInfo_1662)
         method3651(ArbVertexProgram(262144))
-        this.aModelBatchBase_8204 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4078)))))
-        this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShapeStatics.aSpriteMaskShape_4073, SpriteMaskShapeStatics.aSpriteMaskShape_4076)))))
-        this.aModelBatchBase_8208 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4073!!), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4076!!), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4078!!), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4075!!))))
-        this.aModelBatchBase_8191 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4073!!), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4076!!), DirectionPath(SpriteMaskShapeStatics.aSpriteMaskShape_4078!!))))
+        this.aModelBatchBase_8204 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4078)))))
+        this.aModelBatchBase_8202 = method3812(i.toInt() xor 0x1a, (arrayOf<DirectionPath>(DirectionPath(arrayOf<SpriteMaskShape?>(SpriteMaskShape.aSpriteMaskShape_4073, SpriteMaskShape.aSpriteMaskShape_4076)))))
+        this.aModelBatchBase_8208 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShape.aSpriteMaskShape_4073!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4076!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4078!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4075!!))))
+        this.aModelBatchBase_8191 = method3812(0, (arrayOf<DirectionPath>(DirectionPath(SpriteMaskShape.aSpriteMaskShape_4073!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4076!!), DirectionPath(SpriteMaskShape.aSpriteMaskShape_4078!!))))
         this.aClass64_Sub2_8206 = Direct3dModel(this, 0, 0, false, false)
         this.aClass64_Sub2_8198 = Direct3dModel(this, 0, 0, true, true)
         this.aClass64_Sub2_8192 = Direct3dModel(this, 0, 0, false, false)

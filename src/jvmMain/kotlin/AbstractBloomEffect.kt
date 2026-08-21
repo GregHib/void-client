@@ -54,8 +54,6 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
 
         var aByteArray6624: ByteArray? = ByteArray(2048)
 
-        var anInt6625: Int = 0
-
         var anInt6626: Int = 0
 
         var aAbstractModelRenderer_6627: AbstractModelRenderer? = null
@@ -64,17 +62,6 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
 
         var anInt6629: Int = 0
 
-        @JvmStatic
-        fun method2752(i: Int, i_2_: Int): RectangleRegion? {
-            anInt6625++
-            val class138s = MultiFieldRecordStatics.method3002((-97).toByte())
-            var i_3_ = i_2_
-            while (class138s.size > i_3_) {
-                if (i == class138s[i_3_]!!.anInt1941) return class138s[i_3_]
-                i_3_++
-            }
-            return null
-        }
 
         @JvmStatic
         fun method2753(bool: Boolean, i: Int, i_4_: Int, canvas: Canvas?, var_renderConfig: RenderConfig?): Renderer {

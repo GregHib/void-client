@@ -133,8 +133,8 @@ object ChatCommandProcessor {
                     i_1_ = HeapDiagnosticsHolder.aWidgetComponent_2249!!.anInt800
                     i_2_ = HeapDiagnosticsHolder.aWidgetComponent_2249!!.anInt750
                 }
-                anIntArray1164!![0] = GlTexture1D.aInputTracker_8552!!.method3597(true) - i_1_
-                anIntArray1164!![1] = (GlTexture1D.aInputTracker_8552!!.method3594(80.toByte()) - i_2_)
+                anIntArray1164!![0] = RectangleRegion.aInputTracker_8552!!.method3597(true) - i_1_
+                anIntArray1164!![1] = (RectangleRegion.aInputTracker_8552!!.method3594(80.toByte()) - i_2_)
             }
             method711(class348_sub42_sub19, 200000)
         }
@@ -1263,7 +1263,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5508) {
-                CompiledScriptCache.method3470(1)
+                method3470(1)
                 return
             }
             if (i == 5509) {
@@ -4146,11 +4146,11 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3342) {
-                    anIntArray1149!![anInt1173++] = GlTexture1D.aInputTracker_8552!!.method3597(true)
+                    anIntArray1149!![anInt1173++] = RectangleRegion.aInputTracker_8552!!.method3597(true)
                     return
                 }
                 if (i == 3343) {
-                    anIntArray1149!![anInt1173++] = GlTexture1D.aInputTracker_8552!!.method3594(127.toByte())
+                    anIntArray1149!![anInt1173++] = RectangleRegion.aInputTracker_8552!!.method3594(127.toByte())
                     return
                 }
                 if (i == 3344) {
@@ -4174,9 +4174,9 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3351) {
-                    anIntArray1149!![anInt1173++] = if (GlTexture1D.aInputTracker_8552!!.method3595(-83)) 1 else 0
-                    anIntArray1149!![anInt1173++] = if (GlTexture1D.aInputTracker_8552!!.method3588(-121)) 1 else 0
-                    anIntArray1149!![anInt1173++] = if (GlTexture1D.aInputTracker_8552!!.method3590(125.toByte())) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (RectangleRegion.aInputTracker_8552!!.method3595(-83)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (RectangleRegion.aInputTracker_8552!!.method3588(-121)) 1 else 0
+                    anIntArray1149!![anInt1173++] = if (RectangleRegion.aInputTracker_8552!!.method3590(125.toByte())) 1 else 0
                     return
                 }
             } else if (i < 3500) {
@@ -5481,5 +5481,16 @@ object ChatCommandProcessor {
         return class348_sub13.anIntArray6757!![i_0_]
     }
 
+    var anInt4371: Int = 0
+    fun method3470(i: Int) {
+        if (i == 1) {
+            anInt4371++
+            if (!MinimapSquareDrawer.aBoolean5224) {
+                MinimapSquareDrawer.aBoolean5224 = true
+                WorldMapPolygonIconLabel.aBoolean10174 = true
+                MultiFieldRecordStatics.aFloat6898 += (-12.0f - MultiFieldRecordStatics.aFloat6898) / 2.0f
+            }
+        }
+    }
 
 }

@@ -28,8 +28,6 @@ class ArbVertexProgram(i: Int) : ShaderProgram() {
 
         var regionTileX: Int = 0
 
-        var aRectangleRegion_9781: RectangleRegion?
-
         var aBoolean9783: Boolean = false
 
         @JvmStatic
@@ -104,13 +102,5 @@ class ArbVertexProgram(i: Int) : ShaderProgram() {
             }
         }
 
-        @JvmStatic
-        fun method3444(i: Int) {
-            if (i <= -85) aRectangleRegion_9781 = null
-        }
-
-        init {
-            aRectangleRegion_9781 = RectangleRegion(14, 0, 4, 1)
-        }
     }
 }

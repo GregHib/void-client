@@ -13,17 +13,8 @@ import WorldMapImageBuilder.Companion.method696
 object SpriteMaskShapeStatics {
     var anInt4067: Int = 0
     var anInt4068: Int = 0
-    var aSpriteMaskShape_4073: SpriteMaskShape? = SpriteMaskShape(0, 3, MovementDirection.aMovementDirection_1187)
     var anInt4074: Int = 0
-    var aSpriteMaskShape_4075: SpriteMaskShape? = SpriteMaskShape(1, 3, MovementDirection.aMovementDirection_1187)
-    var aSpriteMaskShape_4076: SpriteMaskShape? = SpriteMaskShape(2, 4, MovementDirection.aMovementDirection_1183)
-    var aSpriteMaskShape_4077: SpriteMaskShape? = SpriteMaskShape(3, 1, MovementDirection.aMovementDirection_1187)
-    var aSpriteMaskShape_4078: SpriteMaskShape? = SpriteMaskShape(4, 2, MovementDirection.aMovementDirection_1187)
-    var aSpriteMaskShape_4079: SpriteMaskShape? = SpriteMaskShape(5, 3, MovementDirection.aMovementDirection_1187)
-    var aSpriteMaskShape_4080: SpriteMaskShape? = SpriteMaskShape(6, 4, MovementDirection.aMovementDirection_1187)
     var anInt4081: Int = method2253(16, 119)
-
-    var aRectangleRegion_4082: RectangleRegion? = RectangleRegion(8, 0, 4, 1)
 
     fun method2596(i: Int, i_0_: Int): Array<Array<ByteArray?>?> {
         anInt4068++
@@ -62,7 +53,7 @@ object SpriteMaskShapeStatics {
             }
             i_9_++
         }
-        if (i_0_ != 12871) aSpriteMaskShape_4078 = null
+        if (i_0_ != 12871) SpriteMaskShape.aSpriteMaskShape_4078 = null
         `is`[0]!![2] = is_3_
         is_3_ = ByteArray(i_1_ * i_2_)
         i_4_ = 0
@@ -362,20 +353,6 @@ object SpriteMaskShapeStatics {
         return `is`
     }
 
-    @JvmStatic
-    fun method2597(i: Int) {
-        aSpriteMaskShape_4073 = null
-        aSpriteMaskShape_4080 = null
-        aSpriteMaskShape_4078 = null
-        aRectangleRegion_4082 = null
-        aSpriteMaskShape_4077 = null
-        aSpriteMaskShape_4079 = null
-        if (i == -27327) {
-            aSpriteMaskShape_4076 = null
-            aSpriteMaskShape_4075 = null
-        }
-    }
-
     fun method2598(i: Int, i_69_: Int): SpriteMaskShape? {
         anInt4074++
         val i_70_ = -44 / ((-47 - i_69_) / 45)
@@ -401,18 +378,18 @@ object SpriteMaskShapeStatics {
                                         } else break
                                         break@while_114_
                                     }
-                                } else return aSpriteMaskShape_4073
-                                return aSpriteMaskShape_4075
+                                } else return SpriteMaskShape.aSpriteMaskShape_4073
+                                return SpriteMaskShape.aSpriteMaskShape_4075
                             } while (false)
-                            return aSpriteMaskShape_4076
+                            return SpriteMaskShape.aSpriteMaskShape_4076
                         } while (false)
-                        return aSpriteMaskShape_4077
+                        return SpriteMaskShape.aSpriteMaskShape_4077
                     } while (false)
-                    return aSpriteMaskShape_4078
+                    return SpriteMaskShape.aSpriteMaskShape_4078
                 } while (false)
-                return aSpriteMaskShape_4079
+                return SpriteMaskShape.aSpriteMaskShape_4079
             } while (false)
-            return aSpriteMaskShape_4080
+            return SpriteMaskShape.aSpriteMaskShape_4080
         } while (false)
         return null
     }
@@ -802,7 +779,7 @@ object SpriteMaskShapeStatics {
                         LinkedListNodeStatics.anInt4292 = 0
                         IntHashSetStatics.anInt3966++
                         JagGlToolkitFactory.anInt1534 = i_72_
-                        val class348_sub47 = method2148((FloatBuffer.aOutgoingPacketHeader_9749), (TheoraVideoStream.aIsaacCipher_9029), -81)
+                        val class348_sub47 = method2148((RectangleRegion.aOutgoingPacketHeader_9749), (TheoraVideoStream.aIsaacCipher_9029), -81)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(106, i_74_ - -ArbVertexProgram.regionTileX)
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, (if (!LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -128)) 0 else 1))
@@ -916,7 +893,7 @@ object SpriteMaskShapeStatics {
                                     WorldMapTextLabel.anInt8588++
                                     LinkedListNodeStatics.anInt4292 = 0
                                     SpriteArchiveLoader.anInt385 = i_73_
-                                    val class348_sub47 = (method2148(ProceduralTextureGraph.aOutgoingPacketHeader_9533, TheoraVideoStream.aIsaacCipher_9029, -115))
+                                    val class348_sub47 = (method2148(RectangleRegion.aOutgoingPacketHeader_9533, TheoraVideoStream.aIsaacCipher_9029, -115))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-88, i_77_)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteAdd((-111).toByte(), if (LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -127)) 1 else 0)
                                     InterfaceComponentGroup.method3243(125, class348_sub47)

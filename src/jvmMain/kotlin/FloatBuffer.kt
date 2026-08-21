@@ -27,14 +27,11 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
     companion object {
         var anInt9741: Int = 0
         var anInt9742: Int = 0
-        var aOutgoingPacketHeader_9743: OutgoingPacketHeader? = OutgoingPacketHeader(84, -1)
         var anInt9744: Int = 0
         var anInt9745: Int = 0
         var aBoolean9746: Boolean = true
 
         var anInt9747: Int = 0
-        var aRectangleRegion_9748: RectangleRegion? = RectangleRegion(7, 0, 1, 1)
-        var aOutgoingPacketHeader_9749: OutgoingPacketHeader?
 
         var anInt9750: Int
         var anInt9751: Int = 0
@@ -205,18 +202,8 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
             if (i > -20) aBoolean9746 = false
         }
 
-        @JvmStatic
-        fun method3403(i: Int) {
-            if (i >= 58) {
-                aRectangleRegion_9748 = null
-                aOutgoingPacketHeader_9749 = null
-                aOutgoingPacketHeader_9743 = null
-            }
-        }
-
         init {
             anInt9750 = 0
-            aOutgoingPacketHeader_9749 = OutgoingPacketHeader(45, 7)
         }
     }
 }

@@ -1,5 +1,4 @@
 object ShaderProgramStatics {
-    var aRectangleRegion_7274: RectangleRegion? = RectangleRegion(10, 2, 2, 0)
 
     var anInt7275: Int = 0
 
@@ -31,10 +30,5 @@ object ShaderProgramStatics {
                 }
             }
         }
-    }
-
-    @JvmStatic
-    fun method3438(i: Byte) {
-        if (i > 39) aRectangleRegion_7274 = null
     }
 }

@@ -157,8 +157,8 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
             if (i != 3112) method1052(121.toByte())
             if (RegionSceneLoader.aWidgetComponent_3701 == null) {
                 if (!ScrollbarComponent.aBoolean8335 && IntHashSetStatics.aClass348_Sub42_Sub12_3963 != null) return (IntHashSetStatics.aClass348_Sub42_Sub12_3963!!.anInt9609)
-                val i_2_ = GlTexture1D.aInputTracker_8552!!.method3597(true)
-                val i_3_ = GlTexture1D.aInputTracker_8552!!.method3594(81.toByte())
+                val i_2_ = RectangleRegion.aInputTracker_8552!!.method3597(true)
+                val i_3_ = RectangleRegion.aInputTracker_8552!!.method3594(81.toByte())
                 if (ChatScriptListNode.aBoolean9535) {
                     if (i_2_ > GlArrayBufferObject.anInt4717 && i_2_ < SceneTileBounds.anInt1117 + GlArrayBufferObject.anInt4717) {
                         var i_9_ = -1

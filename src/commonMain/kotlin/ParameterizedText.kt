@@ -1,8 +1,5 @@
 import WhirlpoolHash.Companion.method2057
-import ParticleSystemRenderer.Companion.method2296
-import ModelVertexColorBuffer.Companion.method2739
-import TurbulenceTextureNode.Companion.method3113
-import AbstractBloomEffect.Companion.method2752
+import RectangleRegion.Companion.method2752
 
 /* Class348_Sub42_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -145,45 +142,43 @@ class ParameterizedText : HashLinkedListNode() {
         var anInt9561: Int = 0
         var anInt9563: Int = 0
         var anInt9568: Int = 0
-        var anInt9569: Int = 0
         var anInt9570: Int = 0
-
         var aCircleRasterizer_9571: CircleRasterizer? = null
-        var anIntArray9572: IntArray?
+        var anIntArray9572: IntArray? = intArrayOf(16, 32, 64, 128)
         var anInt9573: Int = 0
         var anInt9575: Int = 0
         var anInt9576: Int = 0
         var anInt9577: Int = 0
         var anInt9578: Int = 0
 
-        fun method3211(i: Byte) {
-            NpcType.aClient1367!!.method83(true)
-            anInt9569++
-            method2739(0)
-            RegionSceneLoader.anInt3699 = 0
-            InboundPacketHeader.aInboundPacketHeader_9456 = null
-            StringCacheNodeStatics.anInt7213 = 0
-            InboundPacketHeader.aInboundPacketHeader_3145 = null
-            CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
-            val i_3_ = -122 % ((i - 13) / 45)
-            InboundPacketHeader.aInboundPacketHeader_3133 = null
-            method2296(-99)
-            HslAdjustTextureNode.anInt9383 = 0
-            MinimapShapeDrawerStatics.aString863 = null
-            ByteArrayPool.anInt496 = 0
-            HostPingThread.aWorldListEntryArray2261 = null
-            MinimapSpriteRenderer.anInt4930 = 0
-        }
-
         @JvmStatic
         fun method3217(i: Byte) {
-            if (i.toInt() != 61) Companion.method3211((-95).toByte())
+//            if (i.toInt() != 61) Companion.method3211((-95).toByte())
             aCircleRasterizer_9571 = null
             anIntArray9572 = null
         }
 
-        init {
-            anIntArray9572 = intArrayOf(16, 32, 64, 128)
+        var anInt9315: Int = 0
+
+        @JvmStatic
+        fun method3113(c: Char, bool: Boolean, string: String): Array<String?> {
+            anInt9315++
+            val i = CharCountUtil.method257(4, string, c)
+            val strings = arrayOfNulls<String>(i - -1)
+            var i_37_ = 0
+            var i_38_ = 0
+//            if (bool != true) TurbulenceTextureNode.Companion.method3114((-76).toByte())
+            for (i_39_ in 0..<i) {
+                var i_40_: Int
+                i_40_ = i_38_
+                while (string.get(i_40_) != c) {
+                    i_40_++
+                }
+                strings[i_37_++] = string.substring(i_38_, i_40_)
+                i_38_ = 1 + i_40_
+            }
+            strings[i] = string.substring(i_38_)
+            return strings
         }
     }
 }

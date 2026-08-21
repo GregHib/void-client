@@ -25,8 +25,6 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
 
         var anInt4900: Int = 0
 
-        var aRectangleRegion_4901: RectangleRegion?
-
         var anInt4902: Int = 0
 
         var aBoolean4903: Boolean = false
@@ -71,7 +69,6 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
             if (i < -17) {
                 aBigInteger4896 = null
                 anIntArray4906 = null
-                aRectangleRegion_4901 = null
             }
         }
 
@@ -131,7 +128,6 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
         }
 
         init {
-            aRectangleRegion_4901 = RectangleRegion(12, 0, 1, 0)
             anIntArray4906 = IntArray(4)
             aOutgoingPacketHeader_4905 = OutgoingPacketHeader(44, 3)
             aOutgoingPacketHeader_4907 = OutgoingPacketHeader(48, 11)

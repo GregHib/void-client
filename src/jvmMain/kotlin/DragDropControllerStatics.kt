@@ -34,8 +34,8 @@ object DragDropControllerStatics {
                 i_0_ = NativeTerrainTile.method4008((-124).toByte())
                 i_1_ = method260(false)
             }
-            var i_2_ = i_0_ + GlTexture1D.aInputTracker_8552!!.method3597(true)
-            var i_3_ = i_1_ + GlTexture1D.aInputTracker_8552!!.method3594(80.toByte())
+            var i_2_ = i_0_ + RectangleRegion.aInputTracker_8552!!.method3597(true)
+            var i_3_ = i_1_ + RectangleRegion.aInputTracker_8552!!.method3594(80.toByte())
             i_3_ -= ModelDefinitionCache.anInt2872
             i_2_ -= SceneEntityModel.anInt6411
             if (i_2_ < BoxBlurTextureNode.anInt9461) i_2_ = BoxBlurTextureNode.anInt9461
@@ -45,7 +45,7 @@ object DragDropControllerStatics {
                 if (RegionSceneLoader.aWidgetComponent_3701!!.anInt789 + i_3_ > (anInt558 - -CalendarUtil.aWidgetComponent_4130!!.anInt789)) i_3_ = (-RegionSceneLoader.aWidgetComponent_3701!!.anInt789 + (anInt558 - -CalendarUtil.aWidgetComponent_4130!!.anInt789))
                 val i_4_ = (-BoxBlurTextureNode.anInt9461 + (i_2_ - -CalendarUtil.aWidgetComponent_4130!!.anInt747))
                 val i_5_ = (-anInt558 + (i_3_ + CalendarUtil.aWidgetComponent_4130!!.anInt755))
-                if (GlTexture1D.aInputTracker_8552!!.method3593(94)) {
+                if (RectangleRegion.aInputTracker_8552!!.method3593(94)) {
                     if (RegionSceneLoader.aWidgetComponent_3701!!.anInt703 < anInt6392) {
                         val i_6_ = i_2_ + -NativeRenderer.anInt8001
                         val i_7_ = -GrayscaleEffect.anInt9203 + i_3_

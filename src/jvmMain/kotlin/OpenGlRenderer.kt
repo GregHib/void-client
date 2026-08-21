@@ -1652,7 +1652,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         if (aString7845!!.indexOf("microsoft") != -1) i_183_ = i_183_ or 0x1
         if (aString7845!!.indexOf("brian paul") != -1 || aString7845!!.indexOf("mesa") != -1) i_183_ = i_183_ or 0x1
         val string = glGetString(7938)
-        val strings = TurbulenceTextureNode.method3113(' ', true, string.replace('.', ' '))
+        val strings = ParameterizedText.method3113(' ', true, string.replace('.', ' '))
         if (strings.size >= 2) {
             try {
                 val i_184_ = RegionSceneShifterStatics.method3156(true, strings[0]!!)
@@ -3032,7 +3032,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     var i_100_ = 0
                     var bool = false
                     var bool_101_ = false
-                    val strings = (TurbulenceTextureNode.method3113(' ', true, aString7790!!.replace('/', ' ')))
+                    val strings = (ParameterizedText.method3113(' ', true, aString7790!!.replace('/', ' ')))
                     for (i_102_ in strings.indices) {
                         var string = strings[i_102_]!!
                         try {
@@ -4006,7 +4006,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 i_322_++
             }
             for (i_433_ in 0..<Js5Archive.anInt669) {
-                val i_434_ = GlTexture1D.anIntArray8557!![i_433_]
+                val i_434_ = RectangleRegion.anIntArray8557!![i_433_]
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480((-2048 + i_434_).toLong(), -6008) as? NpcReference)?.aNpc_6859)
                 else class318_sub1_sub3_sub3 = LoadingBarRenderer.aPlayerArray5058!![i_434_]

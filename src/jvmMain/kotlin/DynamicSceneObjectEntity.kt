@@ -18,7 +18,7 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
     var anInt10196: Int = 0
     public override fun method2393(i: Int): Int {
         anInt10197++
-        if (i > -109) aStringArray10195 = null
+        if (i > -109) RectangleRegion.aStringArray10195 = null
         val class213 = (ClientExceptionStatics.aModelHeaderCache_112!!.method1940(-115, this.anInt10181))
         var i_0_ = class213.anInt2784
         if (this.anInt10189 != -1) {
@@ -153,7 +153,7 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
 
     public override fun method2379(i: Int): Int {
         anInt10193++
-        if (i != -25675) aRectangleRegion_10194 = null
+//        if (i != -25675) aRectangleRegion_10194 = null
         return anInt10184
     }
 
@@ -181,23 +181,9 @@ class DynamicSceneObjectEntity internal constructor(i: Int, i_3_: Int, i_4_: Int
         var anInt10188: Int = 0
         var anInt10192: Int = 0
         var anInt10193: Int = 0
-
-        var aRectangleRegion_10194: RectangleRegion?
-
-        var aStringArray10195: Array<String?>? = arrayOfNulls<String>(8)
         var anInt10197: Int = 0
         var anInt10198: Int = 0
         var aFloat10199: Float = 0f
 
-        @JvmStatic
-        fun method2407(bool: Boolean) {
-            aStringArray10195 = null
-            aRectangleRegion_10194 = null
-            if (bool != false) method2407(true)
-        }
-
-        init {
-            aRectangleRegion_10194 = RectangleRegion(13, 0, 1, 0)
-        }
     }
 }
