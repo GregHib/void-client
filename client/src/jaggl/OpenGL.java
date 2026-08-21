@@ -932,7 +932,11 @@ public class OpenGL {
     // sometimes issues draws whose indices span slightly more vertex data than
     // it uploaded (2011 drivers read adjacent heap garbage and drew a glitched
     // vertex; Apple's Metal-backed GLEngine segfaults in its CPU shadow copy).
-    private static final int VBO_PAD = 16384;
+    // Sized for driver tail-overreads past the last vertex (a stride or a
+    // cacheline) - the crash-level overreads are handled by the arena, map
+    // emulation and deferred deletes. Large pads churn the driver allocator:
+    // at thousands of streaming uploads/second, 16KB pads cost whole frames.
+    private static final int VBO_PAD = 512;
 
     public static final void glBufferDataARBa(int target, int size, long data, int usage) {
         trackVboSize(target, size + VBO_PAD);
