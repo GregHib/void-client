@@ -3579,7 +3579,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelGroundDecor.anInt10009 = 0
             Js5Archive.anInt638 = 0
             WorldListEntryStatics.anInt305 = 0
-            TwoStateOptionState.anInt6134 = 0
+            CollisionMap.anInt6134 = 0
             AbstractModel.anInt1130 = 0
             Client.anInt5187 = 0
             BufferToggleState.anInt3718 = 0
