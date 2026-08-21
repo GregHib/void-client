@@ -3250,7 +3250,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FixedFunctionMaterialPass.anInt6206 = 0
             ProjectedGroundDecor.anInt10249 = 0
             MinimapRenderer.anInt1587 = 0
-            CameraNodeListStatics.anInt1741 = 0
+            CameraNodeList.anInt1741 = 0
             OpenGlTerrainTile.anInt8271 = 0
             ModelDefinition.anInt1858 = 0
             ByteBuffer.anInt7199 = 0

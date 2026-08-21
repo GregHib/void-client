@@ -3,8 +3,6 @@ object CameraNodeListStatics {
 
     var anInt1740: Int = 0
 
-    var anInt1741: Int = 0
-
     var anInt1742: Int = 0
 
     var aJs5Archive_1743: Js5Archive? = null
