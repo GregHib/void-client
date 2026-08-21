@@ -212,7 +212,7 @@ public class OpenGL {
                 boolean showing = canvas.isShowing();
                 if (showing != lastShowing) {
                     lastShowing = showing;
-                    System.err.println("[jaggl] canvas showing=" + showing
+                    if (DEBUG) System.err.println("[jaggl] canvas showing=" + showing
                         + " displayable=" + canvas.isDisplayable() + " size=" + cw + "x" + ch
                         + " root=" + root.getClass().getSimpleName());
                 }
@@ -243,11 +243,14 @@ public class OpenGL {
                     if (layerFixFrames > 0) layerFixFrames--;
                     fixLayerFrame((java.awt.Window) root);
                 }
-                // Once a second, verify AWT's window model against the real
-                // NSWindow and resync if the resize notifications got lost.
+                // Once a second: verify AWT's window model against the real
+                // NSWindow (resync if resize notifications got lost) and
+                // verify the layer graft is attached to the CURRENT canvas
+                // peer (re-graft if AWT recreated it).
                 if (Platform.get() == Platform.MACOSX && root instanceof java.awt.Window
                     && --windowSyncCountdown <= 0) {
                     windowSyncCountdown = 50;
+                    reattachLayerGraft();
                     syncWindowFromNative((java.awt.Window) root);
                 }
             }
@@ -336,6 +339,131 @@ public class OpenGL {
         if (this.a != null) {
             b.remove(this.a);
             this.a = null;
+        }
+    }
+
+    /**
+     * Re-attach the layer graft to the canvas's CURRENT peer if AWT replaced
+     * it. lwjgl3-awt attaches its CALayer to the JAWT surface layers exactly
+     * once, at create() - but the engine re-parents the game canvas around
+     * world-map close, AWT recreates the peer, and the graft stays on the
+     * dead peer's surface: the new GL context then renders full-speed into a
+     * layer that is in no window's layer tree (screen shows the canvas's
+     * stale software pixels - black + "Loading - please wait" forever).
+     * Idempotent: a fresh JAWT drawing surface always reflects the live peer,
+     * and if its layer is already our graft this is a no-op.
+     */
+
+    private void reattachLayerGraft() {
+        if (!(canvasBinding instanceof PlatformMacOSXGLCanvas)) return;
+        try {
+            if (viewField == null) {
+                viewField = PlatformMacOSXGLCanvas.class.getDeclaredField("view");
+                viewField.setAccessible(true);
+            }
+            long view = viewField.getLong(canvasBinding);
+            if (view == 0L) return;
+            long msgSend = org.lwjgl.system.macosx.ObjCRuntime.getLibrary().getFunctionAddress("objc_msgSend");
+            long subLayer = org.lwjgl.system.JNI.invokePPP(view,
+                org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("layer"), msgSend);
+            if (subLayer == 0L) return;
+            long interLayer = org.lwjgl.system.JNI.invokePPP(subLayer,
+                org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("superlayer"), msgSend);
+            long target = interLayer != 0L ? interLayer : subLayer;
+            // lwjgl3-awt's HierarchyListener mirrors the canvas's showing
+            // state onto the view layer with setHidden:. The world-map close
+            // rebuilds the toolkit while the canvas is churning through the
+            // hierarchy, and the hide/show events race the listener
+            // registration - the layer can be left setHidden:YES forever
+            // while the canvas is showing (black screen; the world renders
+            // into an invisible layer). Un-hide whenever they disagree.
+            long viewLayerHidden = org.lwjgl.system.JNI.invokePPP(subLayer,
+                org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("isHidden"), msgSend);
+            if ((viewLayerHidden & 1L) != 0L && canvas.isShowing()) {
+                long caTr = org.lwjgl.system.macosx.ObjCRuntime.objc_getClass("CATransaction");
+                org.lwjgl.system.JNI.invokePPP(caTr,
+                    org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("begin"), msgSend);
+                org.lwjgl.system.JNI.invokePPPV(subLayer,
+                    org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("setHidden:"), 0L, msgSend);
+                if (interLayer != 0L) org.lwjgl.system.JNI.invokePPPV(interLayer,
+                    org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("setHidden:"), 0L, msgSend);
+                org.lwjgl.system.JNI.invokePPP(caTr,
+                    org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("commit"), msgSend);
+                System.err.println("[jaggl] unhid layer graft (canvas showing but graft was left hidden)");
+                layerFixFrames = 10;
+            }
+            // The private _NSOpenGLViewBackingLayer wires the GL context to its
+            // window-server surface during ITS display pass. A context built
+            // mid-hierarchy-churn (world-map close) may never get that initial
+            // display - frames then flush into nowhere while the screen keeps
+            // the canvas's stale software pixels (black + "Loading - please
+            // wait" while the world renders at full speed underneath).
+            //
+            // The display pass has to be requested ON THE APPKIT MAIN THREAD.
+            // Asking from the render thread only takes effect when something
+            // else (mouse input, a resize) happens to drive a main-thread
+            // CoreAnimation commit, which is why a render-thread kick appeared
+            // to work under light testing and left the screen dead for tens of
+            // seconds under a heavier scene reload.
+            //
+            // Do NOT reach for [NSOpenGLContext update] here: it recomputes the
+            // drawable from the view bounds and discards the
+            // kCGLCPSurfaceBackingSize lwjgl3-awt set for Retina, which renders
+            // the whole client magnified ~2x and cropped to the top-left.
+            //
+            // Runs for the life of the context rather than a fixed number of
+            // frames after creation: a slow reload (crossing regions first, a
+            // GC-heavy window, Java 8's slower AWT) outlasts any fixed budget.
+            // Once a second against a layer that is already presenting is
+            // noise - we already present every frame at 50fps.
+            long performOnMain = org.lwjgl.system.macosx.ObjCRuntime.sel_getUid(
+                "performSelectorOnMainThread:withObject:waitUntilDone:");
+            long needsDisplay = org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("setNeedsDisplay");
+            org.lwjgl.system.JNI.invokePPPPPV(subLayer, performOnMain, needsDisplay, 0L, 0L, msgSend);
+            if (interLayer != 0L) {
+                org.lwjgl.system.JNI.invokePPPPPV(interLayer, performOnMain, needsDisplay, 0L, 0L, msgSend);
+            }
+            try { org.lwjgl.awt.MacOSX.caFlush(); } catch (Throwable ignored) { }
+            org.lwjgl.system.jawt.JAWTDrawingSurface ds =
+                org.lwjgl.system.jawt.JAWTFunctions.JAWT_GetDrawingSurface(
+                    canvas, PlatformMacOSXGLCanvas.awt.GetDrawingSurface());
+            if (ds == null) return;
+            try {
+                int lock = org.lwjgl.system.jawt.JAWTFunctions.JAWT_DrawingSurface_Lock(ds, ds.Lock());
+                if ((lock & org.lwjgl.system.jawt.JAWTFunctions.JAWT_LOCK_ERROR) != 0) return;
+                try {
+                    org.lwjgl.system.jawt.JAWTDrawingSurfaceInfo dsi =
+                        org.lwjgl.system.jawt.JAWTFunctions.JAWT_DrawingSurface_GetDrawingSurfaceInfo(
+                            ds, ds.GetDrawingSurfaceInfo());
+                    if (dsi == null) return;
+                    try {
+                        long surfaceLayers = dsi.platformInfo();
+                        if (surfaceLayers == 0L) return;
+                        long current = org.lwjgl.system.JNI.invokePPP(surfaceLayers,
+                            org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("layer"), msgSend);
+                        if (current == target) return; // graft is on the live peer
+                        long caTransaction = org.lwjgl.system.macosx.ObjCRuntime.objc_getClass("CATransaction");
+                        org.lwjgl.system.JNI.invokePPP(caTransaction,
+                            org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("begin"), msgSend);
+                        org.lwjgl.system.JNI.invokePPPV(surfaceLayers,
+                            org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("setLayer:"), target, msgSend);
+                        org.lwjgl.system.JNI.invokePPP(caTransaction,
+                            org.lwjgl.system.macosx.ObjCRuntime.sel_getUid("commit"), msgSend);
+                        System.err.println("[jaggl] re-attached layer graft (canvas peer was recreated)");
+                        layerFixFrames = 10;
+                    } finally {
+                        org.lwjgl.system.jawt.JAWTFunctions.JAWT_DrawingSurface_FreeDrawingSurfaceInfo(
+                            dsi, ds.FreeDrawingSurfaceInfo());
+                    }
+                } finally {
+                    org.lwjgl.system.jawt.JAWTFunctions.JAWT_DrawingSurface_Unlock(ds, ds.Unlock());
+                }
+            } finally {
+                org.lwjgl.system.jawt.JAWTFunctions.JAWT_FreeDrawingSurface(
+                    ds, PlatformMacOSXGLCanvas.awt.FreeDrawingSurface());
+            }
+        } catch (Throwable t) {
+            if (DEBUG) System.err.println("[jaggl] layer reattach check failed: " + t);
         }
     }
 
