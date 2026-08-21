@@ -45,6 +45,7 @@ public class OpenGL {
     private GLCapabilities caps;
     private Canvas canvas;
     private int lastWidth, lastHeight, lastWinWidth, lastWinHeight;
+    private boolean lastShowing = true;
     private int warmupFrames = 30;
     private int layerFixFrames;
 
@@ -56,6 +57,10 @@ public class OpenGL {
     // full speed, screen stays black). init() force-releases the previous
     // instance for the canvas, and release() detaches the layer graft.
     private static final java.util.Map graftByCanvas = new java.util.WeakHashMap();
+    // Every instance with a live context/graft, keyed weakly by the instance
+    // itself: the engine rebuilds toolkits on NEW Canvases (world-map
+    // open/close), so a canvas-keyed lookup alone can't find the stale one.
+    private static final java.util.Map liveContexts = new java.util.WeakHashMap();
 
 
     public OpenGL() {
@@ -90,10 +95,20 @@ public class OpenGL {
                 want.samples = samples;
             }
             synchronized (OpenGL.class) {
-                OpenGL prev = (OpenGL) graftByCanvas.get(canvas);
-                if (prev != null && prev != this) {
-                    if (DEBUG) System.err.println("[jaggl] releasing previous context on this canvas");
-                    prev.release();
+                // Release EVERY other live context - same canvas or not. The
+                // engine replaces toolkits (renderer switches, but also the
+                // world map's open/close rebuild, which uses a NEW Canvas) and
+                // only releases the old one via a finalizer that may never
+                // run. Its undetached CALayer graft keeps compositing over
+                // the new canvas: the world renders at full speed into an
+                // invisible surface while the screen shows the last software
+                // frame (black + "Loading - please wait").
+                for (java.util.Iterator it = new java.util.ArrayList(liveContexts.keySet()).iterator(); it.hasNext(); ) {
+                    OpenGL prev = (OpenGL) it.next();
+                    if (prev != null && prev != this) {
+                        if (DEBUG) System.err.println("[jaggl] releasing stale context (toolkit replaced)");
+                        prev.release();
+                    }
                 }
                 try {
                     canvasBinding = platformCanvas();
@@ -107,6 +122,7 @@ public class OpenGL {
                     context = canvasBinding.create(canvas, want, new GLData());
                 }
                 graftByCanvas.put(canvas, this);
+                liveContexts.put(this, Boolean.TRUE);
             }
             if (DEBUG) System.err.println("[jaggl] context created: 0x" + Long.toHexString(context));
             this.canvas = canvas;
@@ -193,6 +209,13 @@ public class OpenGL {
                 java.awt.Component root = canvas;
                 while (root.getParent() != null) root = root.getParent();
                 int cw = canvas.getWidth(), ch = canvas.getHeight();
+                boolean showing = canvas.isShowing();
+                if (showing != lastShowing) {
+                    lastShowing = showing;
+                    System.err.println("[jaggl] canvas showing=" + showing
+                        + " displayable=" + canvas.isDisplayable() + " size=" + cw + "x" + ch
+                        + " root=" + root.getClass().getSimpleName());
+                }
                 int ww = root.getWidth(), wh = root.getHeight();
                 if (DEBUG && (frameCount % 256) == 0) {
                     System.err.println("[jaggl] geometry: canvas " + cw + "x" + ch
@@ -308,6 +331,7 @@ public class OpenGL {
         caps = null;
         synchronized (OpenGL.class) {
             if (canvas != null && graftByCanvas.get(canvas) == this) graftByCanvas.remove(canvas);
+            liveContexts.remove(this);
         }
         if (this.a != null) {
             b.remove(this.a);
