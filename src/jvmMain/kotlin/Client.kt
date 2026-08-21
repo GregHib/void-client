@@ -404,7 +404,7 @@ import RectangleRegion.Companion.method3968
 import WidgetTextConfigStatics.method363
 import GlShaderObjectHandle.Companion.method367
 import NpcModelTransform.Companion.method177
-import MinimapTileEntry.Companion.method380
+import MinimapTileEntryStatics.method380
 import MapSceneRenderer.method387
 import NanoTimerStatics.method445
 import SpriteRenderable.Companion.method453
@@ -2731,7 +2731,7 @@ class Client : GameAppletFrame() {
             InboundPacketHeader.aInboundPacketHeader_3145 = InboundPacketHeader.aInboundPacketHeader_3133
             InboundPacketHeader.aInboundPacketHeader_3133 = InboundPacketHeader.aInboundPacketHeader_6584
             if (InboundPacketHeader.aInboundPacketHeader_90 == InboundPacketHeader.aInboundPacketHeader_6584) {
-                MinimapTileEntry.method382(CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
+                MinimapTileEntryStatics.method382(CircleRasterizerObject.aClass348_Sub49_Sub2_3813!!.readString(118.toByte()), true)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }

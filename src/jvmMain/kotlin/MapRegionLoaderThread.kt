@@ -1,6 +1,6 @@
 import TextureQualityOptionState.Companion.method1783
 import ConfigFlagUtilStatics.method1916
-import MinimapTileEntry.Companion.method381
+import MinimapTileEntryStatics.method381
 import SolidFillComponent.Companion.method196
 import ChatCommandProcessor.method705
 import kotlinx.coroutines.Dispatchers

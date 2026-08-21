@@ -1,6 +1,6 @@
 import AudioResamplerStatics.method1274
 import GlTexture3D.Companion.method1960
-import MinimapTileEntry.Companion.method383
+import MinimapTileEntryStatics.method383
 import OpenGlRenderer.Companion.method3802
 import Client.Companion.anInt2986
 import ScrollingNoiseTexture.Companion.method560

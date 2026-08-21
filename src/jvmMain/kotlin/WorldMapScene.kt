@@ -407,7 +407,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                             if (bool_94_) {
                                 is_96_ = ParticleEmitterNode.anIntArrayArray174!![i_76_.toInt()]!!
                                 is_97_ = MovementDirection.anIntArrayArray1190!![i_76_.toInt()]!!
-                                i_98_ = (if (class22 != null) MinimapTileEntry.anIntArray619!![i_76_.toInt()] else 0)
+                                i_98_ = (if (class22 != null) MinimapTileEntryStatics.anIntArray619!![i_76_.toInt()] else 0)
                                 is_99_ = (BoundingBoxNode.anIntArrayArray6740!![i_76_.toInt()]!!)
                                 i_100_ = (if (class277 == null) 0 else (ConstantColourTextureNode.anIntArray9249!![i_76_.toInt()]))
                             } else if (bool_75_) {
@@ -1006,7 +1006,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                             var i_233_ = 0
                             if (i_228_.toInt() != 0) {
                                 i_233_ = (if (class277 == null) 0 else (ConstantColourTextureNode.anIntArray9249!![i_228_.toInt()]))
-                                i_232_ = (if (class22 != null) MinimapTileEntry.anIntArray619!![i_228_.toInt()] else 0)
+                                i_232_ = (if (class22 != null) MinimapTileEntryStatics.anIntArray619!![i_228_.toInt()] else 0)
                             } else if (class277 != null) i_233_ = (ConstantColourTextureNode.anIntArray9249!![i_228_.toInt()])
                             else if (class22 != null) i_232_ = (ConstantColourTextureNode.anIntArray9249!![i_228_.toInt()])
                             val i_234_ = i_233_ + i_232_

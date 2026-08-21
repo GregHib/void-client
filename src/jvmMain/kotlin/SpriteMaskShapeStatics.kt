@@ -923,7 +923,7 @@ object SpriteMaskShapeStatics {
                                     SpriteArchiveLoader.anInt385 = i_73_
                                     FogOptionState.anInt6048 = 2
                                     FileExistsConditionStatics.anInt4773++
-                                    val class348_sub47 = (method2148(MinimapTileEntry.aOutgoingPacketHeader_618, TheoraVideoStream.aIsaacCipher_9029, -117))
+                                    val class348_sub47 = (method2148(MinimapTileEntryStatics.aOutgoingPacketHeader_618, TheoraVideoStream.aIsaacCipher_9029, -117))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, if (LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -124)) 1 else 0)
                                     InterfaceComponentGroup.method3243(-25, class348_sub47)

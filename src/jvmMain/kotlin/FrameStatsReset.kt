@@ -905,7 +905,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NpcActorEntity.anInt10070 = 0
             RSFont.anInt4060 = 0
             ParticleDefLoader.anInt2465 = 0
-            MinimapTileEntry.anInt616 = 0
+            MinimapTileEntryStatics.anInt616 = 0
             ItemDefinition.anInt2806 = 0
             TerrainChunkBuilder.anInt1545 = 0
             ScrollingNoiseTexture.anInt8654 = 0
@@ -1186,7 +1186,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlSpriteRenderer.anInt8438 = 0
             HeapInfoRecord.anInt4939 = 0
             RandomAccessFileOnDisk.anInt3042 = 0
-            MinimapTileEntry.anInt612 = 0
+            MinimapTileEntryStatics.anInt612 = 0
             MapSceneRenderer.anInt622 = 0
             TextureMaterialGroup.anInt9677 = 0
             NoOpGraphicsOptionState.anInt6039 = 0
@@ -2462,7 +2462,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlVertexBufferArb.anInt8489 = 0
             SocketStreamWorker.anInt2653 = 0
             CacheLruCache.anInt3880 = 0
-            MinimapTileEntry.anInt613 = 0
+            MinimapTileEntryStatics.anInt613 = 0
             TerrainTile.anInt4593 = 0
             RSFont.anInt4049 = 0
             CompositeRgbNoiseTexture.anInt8676 = 0

@@ -158,7 +158,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
                         MaterialPass.Companion.aClass348_Sub2_3683 = MidiFileBuilder.method2734(ModelDefinition.aJs5Archive_1848!!, (NpcActorEntity.anInt10074), CacheIndexManager.anInt3971)
                         if (MaterialPass.Companion.aClass348_Sub2_3683 == null) return false
                     }
-                    if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(MinimapTileEntry.aJs5Archive_611, MapElementLookupStatics.aJs5Archive_4147)
+                    if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(MinimapTileEntryStatics.aJs5Archive_611, MapElementLookupStatics.aJs5Archive_4147)
                     var class348_sub16_sub3 = NodeDequeHolder.aClass348_Sub16_Sub3_1564!!
                     if (GlBufferObject.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = GlBufferObject.aClass348_Sub16_Sub3_4743!!
                     if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, GlEnvMappedWaterPass.aJs5Archive_7371, -35)) {

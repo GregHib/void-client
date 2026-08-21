@@ -285,7 +285,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
             try {
                 GlslEnvMaterialPass.aSoundChannelMixer_8764 = soundChannelMixer
                 NodeDequeHolder.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
-                MinimapTileEntry.aJs5Archive_611 = js5Archive
+                MinimapTileEntryStatics.aJs5Archive_611 = js5Archive
                 GlEnvMappedWaterPass.aJs5Archive_7371 = js5Archive_6_
                 MapElementLookupStatics.aJs5Archive_4147 = js5Archive_5_
                 BasicGlRenderPass.anIntArray7299 = IntArray(16)
