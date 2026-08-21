@@ -886,7 +886,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CipheredPacketBuffer.anInt9764 = 0
             TerrainTileStatics.anInt4591 = 0
             FixedFunctionMaterialPass.anInt6204 = 0
-            CollisionMap.anInt4442 = 0
+            CollisionMapStatics.anInt4442 = 0
             CompassSmoother.anInt3366 = 0
             ByteBuffer.anInt7204 = 0
             ChatCommandProcessor.anInt7044 = 0
@@ -2276,7 +2276,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             NpcActorEntity.anInt10080 = 0
             ByteBuffer.anInt7185 = 0
             CacheArchiveIndex.anInt1769 = 0
-            CollisionMap.anInt4439 = 0
+            CollisionMapStatics.anInt4439 = 0
             LightDetailOptionState.anInt6033 = 0
             MapSceneCache.anInt2295 = 0
             RegionMapDecoder.anInt1514 = 0
@@ -3944,7 +3944,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             StructConfig.anInt563 = 0
             TileSceneEntity.anInt8721 = 0
             InputStream_Sub1.anInt74 = 0
-            CollisionMap.anInt4450 = 0
+            CollisionMapStatics.anInt4450 = 0
             ProjectedGroundDecor.anInt10256 = 0
             CubemapTextureGlSource.anInt8703 = 0
             SoundChannelMixer.anInt3607 = 0

@@ -1,4 +1,3 @@
-import TwoStateOptionState.Companion.method1842
 import MultiLevelOptionState.Companion.method1850
 
 /* Class263 - Decompiled by JODE
@@ -216,7 +215,7 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                                         } else break
                                         break@while_82_
                                     }
-                                    if (method1842(i_5_, i_2_, -1, 2, i_10_, i_11_, i_3_, 2, i_6_)) {
+                                    if (CollisionMap.method1842(i_5_, i_2_, -1, 2, i_10_, i_11_, i_3_, 2, i_6_)) {
                                         OverlayColorTable.anInt1753 = i_11_
                                         HslAdjustTextureNode.anInt9388 = i_10_
                                         return true

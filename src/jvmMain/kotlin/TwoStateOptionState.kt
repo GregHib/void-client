@@ -38,8 +38,6 @@ class TwoStateOptionState : GraphicsOptionState {
 
     companion object {
 
-        var anInt6134: Int = 0
-
         var anInt6135: Int = 0
 
         var anInt6136: Int = 0
@@ -58,13 +56,7 @@ class TwoStateOptionState : GraphicsOptionState {
 
         var anInt6143: Int = 0
 
-        @JvmStatic
-        fun method1842(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int): Boolean {
-            anInt6134++
-            if (i_1_ != -1) return false
-            if (i_3_ >= i + i_5_ || i_3_ - -i_6_ <= i_5_) return false
-            return i_0_ + i_7_ > i_4_ && i_0_ < i_2_ + i_4_
-        }
+
 
         @JvmStatic
         fun method1843(i: Int, i_8_: Int, widgetComponent: WidgetComponent, bool: Boolean, i_9_: Int) {

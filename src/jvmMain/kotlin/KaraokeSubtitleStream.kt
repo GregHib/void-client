@@ -136,7 +136,7 @@ class KaraokeSubtitleStream internal constructor(oggstreamstate: OggStreamState)
         fun method2988(bool: Boolean) {
             TerrainChunkBuilder.aRenderer1098!!.xa((IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350).toFloat() * 0.1f + 0.7f) * KeyboardLayoutConfigStatics.aFloat2137)
             anInt9049++
-            TerrainChunkBuilder.aRenderer1098!!.ZA(NativeIndexBuffer.anInt4703, TextureMetadataProvider.aFloat4626, CollisionMap.aFloat4455, (CameraRotationStubStatics.anInt325 shl 2).toFloat(), (ModelGroundDecor.anInt10023 shl 2).toFloat(), (GroundItemRenderState.anInt2601 shl 2).toFloat())
+            TerrainChunkBuilder.aRenderer1098!!.ZA(NativeIndexBuffer.anInt4703, TextureMetadataProvider.aFloat4626, CollisionMapStatics.aFloat4455, (CameraRotationStubStatics.anInt325 shl 2).toFloat(), (ModelGroundDecor.anInt10023 shl 2).toFloat(), (GroundItemRenderState.anInt2601 shl 2).toFloat())
             TerrainChunkBuilder.aRenderer1098!!.method3653(HeapInfoRecord.aCircleRasterizer_4938)
             if (bool != true) anIntArray9050 = null
         }

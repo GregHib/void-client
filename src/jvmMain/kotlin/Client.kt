@@ -380,8 +380,8 @@ import SceneCollisionEntry.Companion.method3487
 import ParticleGeometryStatics.method3488
 import TextureAtlasStateStatics.method3491
 import AnimationFrameTable.method355
-import CollisionMap.Companion.method3502
-import CollisionMap.Companion.method3508
+import CollisionMapStatics.method3502
+import CollisionMapStatics.method3508
 import Tooltip.method3511
 import Tooltip.method3512
 import MapElementManager.method3516
@@ -4798,7 +4798,7 @@ class Client : GameAppletFrame() {
                             } else i_5_ = -1
                             if (OpenGlTerrainTile.anInt8270 != i_5_ || i_4_ != anInt4032) {
                                 if (class348_sub47 == null) {
-                                    CollisionMap.anInt4450++
+                                    CollisionMapStatics.anInt4450++
                                     class348_sub47 = (method2148(CharCodeMapStatics.aOutgoingPacketHeader_9590, TheoraVideoStream.aIsaacCipher_9029, -94))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     i_2_ = class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197
@@ -5118,7 +5118,7 @@ class Client : GameAppletFrame() {
                                 if (i_30_ >= 0) {
                                     if (i_30_ > 3) i_30_ = 3
                                 } else i_30_ = 0
-                                CollisionMap.method3502((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) + RegionMapDecoder.regionTileY, i xor 0x2caa, i_30_, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + ArbVertexProgram.regionTileX)
+                                CollisionMapStatics.method3502((LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0]) + RegionMapDecoder.regionTileY, i xor 0x2caa, i_30_, (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0]) + ArbVertexProgram.regionTileX)
                             }
                             method1987(-120)
                             var i_31_ = 0

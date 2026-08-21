@@ -114,7 +114,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                     KeyboardLayoutConfigStatics.aFloat2137 = (TileSceneEntity.aFloat8725 + (-TileSceneEntity.aFloat8725 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2547)) * f_6_)
                     TextureMetadataProvider.aFloat4626 = (AbstractModel.aFloat1136 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2544) - AbstractModel.aFloat1136))
                     LocTypeDefLoader.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)))))) ushr 8
-                    CollisionMap.aFloat4455 = (ParticleEmitterFactoryStatics.aFloat3177 + f_6_ * (-ParticleEmitterFactoryStatics.aFloat3177 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536)))
+                    CollisionMapStatics.aFloat4455 = (ParticleEmitterFactoryStatics.aFloat3177 + f_6_ * (-ParticleEmitterFactoryStatics.aFloat3177 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536)))
                     NormalMapGenerator.aFloat3462 = (DebugOverlayRenderer.aFloat3172 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2542 - DebugOverlayRenderer.aFloat3172) * f_6_)
                     if (SceneryDetailOptionState.aCircleRasterizer_6098 !== (WaterDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541)) HeapInfoRecord.aCircleRasterizer_4938 = (TerrainChunkBuilder.aRenderer1098!!.method3706(SceneryDetailOptionState.aCircleRasterizer_6098, (WaterDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541), f_6_, HeapInfoRecord.aCircleRasterizer_4938))
                 } else {
@@ -124,7 +124,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                     RangedGraphicsOptionState.aFloat5945 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2551
                     AnimationFrameTable.anInt486 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546
                     NormalMapGenerator.aFloat3462 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2542
-                    CollisionMap.aFloat4455 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536
+                    CollisionMapStatics.aFloat4455 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536
                     TexGenMaterialPass.anInt6248 = -1
                     LocTypeDefLoader.anInt2500 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549
                     NativeIndexBuffer.anInt4703 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540

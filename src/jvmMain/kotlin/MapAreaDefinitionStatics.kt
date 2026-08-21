@@ -1,5 +1,3 @@
-import TwoStateOptionState.Companion.method1842
-
 object MapAreaDefinitionStatics {
     var anInt2521: Int = 0
 
@@ -53,7 +51,7 @@ object MapAreaDefinitionStatics {
                                     } else break
                                     break@while_45_
                                 }
-                                if (method1842(i, i_14_, -1, i_12_, i_15_, i_16_, i_9_, i_12_, i_8_)) {
+                                if (CollisionMap.method1842(i, i_14_, -1, i_12_, i_15_, i_16_, i_9_, i_12_, i_8_)) {
                                     OverlayColorTable.anInt1753 = i_16_
                                     HslAdjustTextureNode.anInt9388 = i_15_
                                     return true

@@ -1,5 +1,3 @@
-import TwoStateOptionState.Companion.method1842
-
 /* Class5_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -170,7 +168,7 @@ open class ScrollbarComponent(js5Archive: Js5Archive, js5Archive_0_: Js5Archive,
                                         } else break
                                         break@while_0_
                                     }
-                                    if (method1842(i_11_, i_7_, -1, 1, i_16_, i_17_, i, 1, i_13_)) {
+                                    if (CollisionMap.method1842(i_11_, i_7_, -1, 1, i_16_, i_17_, i, 1, i_13_)) {
                                         OverlayColorTable.anInt1753 = i_17_
                                         HslAdjustTextureNode.anInt9388 = i_16_
                                         return true

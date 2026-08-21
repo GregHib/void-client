@@ -1,7 +1,3 @@
-import WhirlpoolHash.Companion.method1166
-import TwoStateOptionState.Companion.method1842
-import WhirlpoolHash.Companion.method2057
-import MapRegionLoaderStatics.method751
 import kotlin.math.max
 import kotlin.math.min
 
@@ -15,13 +11,13 @@ class CollisionMap {
     var anInt4443: Int = 0
     var anInt4453: Int = 0
     private fun method3493(i: Int, i_0_: Int, i_1_: Int, i_2_: Int) {
-        this.anIntArrayArray4438!![i_1_]!![i_2_] = method1166((this.anIntArrayArray4438!![i_1_]!![i_2_]), i.inv())
+        this.anIntArrayArray4438!![i_1_]!![i_2_] = WhirlpoolHash.method1166((this.anIntArrayArray4438!![i_1_]!![i_2_]), i.inv())
         if (i_0_ > -120) method3509(-18, true, false, 122, 119, -54, 18, -57)
         anInt4452++
     }
 
     private fun method3494(i: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
-        this.anIntArrayArray4438!![i]!![i_4_] = method2057((this.anIntArrayArray4438!![i]!![i_4_]), i_3_)
+        this.anIntArrayArray4438!![i]!![i_4_] = WhirlpoolHash.method2057((this.anIntArrayArray4438!![i]!![i_4_]), i_3_)
         if (i_5_ != -6496) method3494(20, -107, -63, 115)
         anInt4448++
     }
@@ -151,7 +147,7 @@ class CollisionMap {
         if (i_17_ != 1) method3510(113, 9, 32, -49, -123, false, false)
         anInt4444++
         i_16_ -= this.anInt4453
-        this.anIntArrayArray4438!![i_16_]!![i] = method2057((this.anIntArrayArray4438!![i_16_]!![i]), 262144)
+        this.anIntArrayArray4438!![i_16_]!![i] = WhirlpoolHash.method2057((this.anIntArrayArray4438!![i_16_]!![i]), 262144)
     }
 
     fun method3497(i: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int): Boolean {
@@ -199,7 +195,7 @@ class CollisionMap {
         i_55_ -= this.anInt4441
         i_54_ -= this.anInt4453
         anInt4446++
-        if (i.toInt() == -52) this.anIntArrayArray4438!![i_54_]!![i_55_] = method1166((this.anIntArrayArray4438!![i_54_]!![i_55_]), -262145)
+        if (i.toInt() == -52) this.anIntArrayArray4438!![i_54_]!![i_55_] = WhirlpoolHash.method1166((this.anIntArrayArray4438!![i_54_]!![i_55_]), -262145)
     }
 
     fun method3500(i: Int) {
@@ -224,7 +220,7 @@ class CollisionMap {
         anInt4447++
         i_58_ -= this.anInt4441
         val i_60_ = -79 % ((i - 66) / 39)
-        this.anIntArrayArray4438!![i_59_]!![i_58_] = method1166((this.anIntArrayArray4438!![i_59_]!![i_58_]), -2097153)
+        this.anIntArrayArray4438!![i_59_]!![i_58_] = WhirlpoolHash.method1166((this.anIntArrayArray4438!![i_59_]!![i_58_]), -2097153)
     }
 
     fun method3503(i: Int, i_64_: Byte, i_65_: Int, i_66_: Int, i_67_: Int, i_68_: Int, i_69_: Int, i_70_: Int, i_71_: Int): Boolean {
@@ -526,7 +522,7 @@ class CollisionMap {
         i -= this.anInt4441
         anInt4431++
         i_97_ -= this.anInt4453
-        this.anIntArrayArray4438!![i_97_]!![i] = method2057((this.anIntArrayArray4438!![i_97_]!![i]), 2097152)
+        this.anIntArrayArray4438!![i_97_]!![i] = WhirlpoolHash.method2057((this.anIntArrayArray4438!![i_97_]!![i]), 2097152)
     }
 
     fun method3509(i: Int, bool: Boolean, bool_99_: Boolean, i_100_: Int, i_101_: Int, i_102_: Int, i_103_: Int, i_104_: Int) {
@@ -751,92 +747,23 @@ class CollisionMap {
         var anInt4434: Int = 0
         var anInt4435: Int = 0
         var anInt4436: Int = 0
-        var anInt4439: Int = 0
         var anInt4440: Int = 0
-        var anInt4442: Int = 0
         var anInt4444: Int = 0
         var anInt4445: Int = 0
         var anInt4446: Int = 0
         var anInt4447: Int = 0
         var anInt4448: Int = 0
         var anInt4449: Int = 0
-        var anInt4450: Int = 0
         var anInt4451: Int = 0
         var anInt4452: Int = 0
         var anInt4454: Int = 0
-        var aFloat4455: Float = 0f
-
-        fun method3498(i: Int, var_renderer: Renderer?, i_39_: Int, i_40_: Int, bool: Boolean, i_41_: Int) {
-            var i_39_ = i_39_
-            var i_41_ = i_41_
-            do {
-                try {
-                    anInt4442++
-                    var_renderer!!.KA(i_39_, i_41_, i_40_ + i_39_, i_41_ + i)
-                    var_renderer.method3675(i_40_, (-125).toByte(), i_39_, i_41_, i, -16777216)
-                    if (LinkedListNodeStatics.anInt4290 >= 100) {
-                        val f = (MapRegionLoaderStatics.anInt1267.toFloat() / MapRegionLoaderStatics.anInt1259.toFloat())
-                        var i_42_ = i_40_
-                        var i_43_ = i
-                        if (!(f < 1.0f)) i_42_ = (i.toFloat() / f).toInt()
-                        else i_43_ = (i_40_.toFloat() * f).toInt()
-                        i_41_ += (-i_43_ + i) / 2
-                        i_39_ += (i_40_ + -i_42_) / 2
-                        if (TooltipComponentRenderer.aAbstractModelRenderer_4643 == null || i_40_ != TooltipComponentRenderer.aAbstractModelRenderer_4643!!.method971() || (TooltipComponentRenderer.aAbstractModelRenderer_4643!!.method969() != i)) {
-                            method751(MapRegionLoaderStatics.anInt1266, (MapRegionLoaderStatics.anInt1267 + MapRegionLoaderStatics.anInt1263), (MapRegionLoaderStatics.anInt1266 - -MapRegionLoaderStatics.anInt1259), MapRegionLoaderStatics.anInt1263, i_39_, i_41_, i_42_ + i_39_, i_43_ + i_41_)
-                            MapRegionLoaderStatics.method748(var_renderer)
-                            TooltipComponentRenderer.aAbstractModelRenderer_4643 = var_renderer.method3683(i_39_, i_41_, i_42_, i_43_, false)
-                        }
-                        TooltipComponentRenderer.aAbstractModelRenderer_4643!!.method974(i_39_, i_41_)
-                        val i_44_ = SpriteStore.anInt370 * i_42_ / MapRegionLoaderStatics.anInt1259
-                        val i_45_ = i_43_ * LoadProgressCountersStatics.anInt2446 / MapRegionLoaderStatics.anInt1267
-                        val i_46_ = i_39_ - -(i_42_ * LocConfigModelBuilder.anInt4509 / MapRegionLoaderStatics.anInt1259)
-                        if (bool != true) method3498(44, null, -27, -91, true, -26)
-                        val i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * StaticNoiseTexture.anInt8665 / MapRegionLoaderStatics.anInt1267)))
-                        var i_48_ = -1996554240
-                        if (GlRectangleTexture.aSceneProjector_8638 == Client.aSceneProjector_10434) i_48_ = -1996488705
-                        var_renderer.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1)
-                        var_renderer.method3628(i_46_, i_47_, i_44_, i_45_, i_48_, 0)
-                        if (GlEnvMappedWaterPass.anInt7379 <= 0) break
-                        val i_49_: Int
-                        if (ClientLoadStateMachine.anInt2173 <= 50) i_49_ = ClientLoadStateMachine.anInt2173 * 5
-                        else i_49_ = -(5 * ClientLoadStateMachine.anInt2173) + 500
-                        var class348_sub21 = (MapRegionLoaderStatics.aNodeDeque_1254!!.method1995(4) as CameraSplineNode?)
-                        while (class348_sub21 != null) {
-                            val class42 = (MapRegionLoaderStatics.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))
-                            if (FlipTextureNode.method589(class42, -4)) {
-                                if (HslAdjustTextureNode.anInt9399 == (class348_sub21.anInt6847)) {
-                                    val i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / MapRegionLoaderStatics.anInt1259))
-                                    val i_51_ = (((MapRegionLoaderStatics.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / MapRegionLoaderStatics.anInt1267) + i_41_)
-                                    var_renderer.method3675(4, (-125).toByte(), i_50_ - 2, -2 + i_51_, 4, (i_49_ shl 24 or 0xffff00))
-                                } else if (SkeletalAnimFrameLoader.anInt481 != -1 && (class42!!.anInt596 == SkeletalAnimFrameLoader.anInt481)) {
-                                    val i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / MapRegionLoaderStatics.anInt1259))
-                                    val i_53_ = i_41_ - -(i_43_ * (MapRegionLoaderStatics.anInt1267 + -(class348_sub21.anInt6851)) / MapRegionLoaderStatics.anInt1267)
-                                    var_renderer.method3675(4, (-125).toByte(), i_52_ + -2, -2 + i_53_, 4, (i_49_ shl 24 or 0xffff00))
-                                }
-                            }
-                            class348_sub21 = MapRegionLoaderStatics.aNodeDeque_1254!!.method1990(126.toByte()) as CameraSplineNode?
-                        }
-                    }
-                } catch (runtimeexception: RuntimeException) {
-                    throw TextureLoadException.method2929(runtimeexception, ("fe.E(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_39_ + ',' + i_40_ + ',' + bool + ',' + i_41_ + ')'))
-                }
-                break
-            } while (false)
-        }
-
+        var anInt6134: Int = 0
         @JvmStatic
-        fun method3502(i: Int, i_61_: Int, i_62_: Int, i_63_: Int) {
-            anInt4439++
-            val string = ("tele " + i_62_ + "," + (i_63_ shr 6) + "," + (i shr 6) + "," + (0x3f and i_63_) + "," + (0x3f and i))
-            if (i_61_ != 2) method3502(-25, -23, 24, 63)
-            ConfigArchiveLoaderStatics.method812(string, true, false, (-79).toByte())
-        }
-
-        @JvmStatic
-        fun method3508(i: Int) {
-            InboundPacketHeader.aInboundPacketHeader_4433 = null
-            if (i != 2) aFloat4455 = 0.7198636f
+        fun method1842(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int): Boolean {
+            anInt6134++
+            if (i_1_ != -1) return false
+            if (i_3_ >= i + i_5_ || i_3_ - -i_6_ <= i_5_) return false
+            return i_0_ + i_7_ > i_4_ && i_0_ < i_2_ + i_4_
         }
     }
 }

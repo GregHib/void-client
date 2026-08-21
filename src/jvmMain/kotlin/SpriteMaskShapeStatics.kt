@@ -450,7 +450,7 @@ object SpriteMaskShapeStatics {
                             }
                             InterfaceComponentGroup.method3243(123, class348_sub47)
                             PixelBlender.method2252(true, i_74_, i_75_, (-120).toByte(), 1, 0, 1, -4, 0)
-                        } else CollisionMap.method3502(i_75_ + RegionMapDecoder.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), i_74_ + ArbVertexProgram.regionTileX)
+                        } else CollisionMapStatics.method3502(i_75_ + RegionMapDecoder.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), i_74_ + ArbVertexProgram.regionTileX)
                     }
                     if (i_76_ == 4) {
                         JagGlToolkitFactory.anInt1534 = i_72_
@@ -599,7 +599,7 @@ object SpriteMaskShapeStatics {
                         }
                     }
                     if (i_76_ == 12) {
-                        if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -127) && LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -126)) CollisionMap.method3502(i_75_ + RegionMapDecoder.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
+                        if (AsyncTaskHandle.anInt2581 > 0 && LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(82, -127) && LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2696(81, -126)) CollisionMapStatics.method3502(i_75_ + RegionMapDecoder.regionTileY, 2, (LocalPlayerState.aPlayer_1907!!.plane).toInt(), ArbVertexProgram.regionTileX - -i_74_)
                         else {
                             JagGlToolkitFactory.anInt1534 = i_72_
                             SpriteArchiveLoader.anInt385 = i_73_
