@@ -354,7 +354,6 @@ import ShortMatrixNodeStatics.method3181
 import ChatScriptListNode.Companion.method3190
 import ChatCommandProcessor.method3199
 import KeyedCacheEntryReference.Companion.method3204
-import HardKeyedCacheEntryReference.Companion.method3208
 import SpriteDefinition.Companion.method3300
 import TimedRecordAccessorStatics.method3314
 import OutgoingPacketNode.Companion.method3323
@@ -5402,5 +5401,25 @@ class Client : GameAppletFrame() {
             }
         }
 
+
+        var anInt10439: Int = 0
+
+        @JvmStatic
+        fun method3208(class318_sub1_sub3_sub3: ProjectedGroundDecor, i: Int, i_2_: Int) {
+            anInt10439++
+            if (class318_sub1_sub3_sub3.anIntArray10236 != null) {
+                val i_3_ = (class318_sub1_sub3_sub3.anIntArray10236!![1 + i])
+                if (i_3_ != class318_sub1_sub3_sub3.anInt10286) {
+                    class318_sub1_sub3_sub3.anInt10322 = (class318_sub1_sub3_sub3.anInt10319)
+                    class318_sub1_sub3_sub3.anInt10286 = i_3_
+                    class318_sub1_sub3_sub3.anInt10244 = 1
+                    class318_sub1_sub3_sub3.anInt10232 = 0
+                    class318_sub1_sub3_sub3.anInt10294 = 0
+                    class318_sub1_sub3_sub3.anInt10267 = 0
+                    if ((class318_sub1_sub3_sub3.anInt10286) != -1) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10267, (ParticleEmitterNode.aWidgetCache_191!!.method835(class318_sub1_sub3_sub3.anInt10286, 7)), -83)
+                }
+            }
+            if (i_2_ > -4) HardKeyedCacheEntryReference.method3207((-83).toByte())
+        }
     }
 }

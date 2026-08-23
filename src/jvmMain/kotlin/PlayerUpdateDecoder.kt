@@ -224,7 +224,7 @@ object PlayerUpdateDecoder {
                         val i_36_: Byte
                         if (i_2_.toInt() != -1) i_36_ = i_2_
                         else i_36_ = KeyboardLayoutCache.aByteArray3300!![i]
-                        HardKeyedCacheEntryReference.method3208(player, i_36_.toInt(), -21)
+                        Client.method3208(player, i_36_.toInt(), -21)
                         player.method2455(player.anInt10531, -26443, i_36_, player.anInt10549)
                     } else player.method2449(player.anInt10531, player.anInt10549, 84.toByte())
                 }

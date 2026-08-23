@@ -759,7 +759,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ByteBuffer.anInt7153 = 0
             Js5Archive.anInt627 = 0
             GlRenderDevice.anInt9850 = 0
-            HardKeyedCacheEntryReference.anInt10439 = 0
+            Client.anInt10439 = 0
             WorldMapElement.anInt4634 = 0
             LinkedNodeListIterator.anInt1654 = 0
             HeadIconRendererStatics.anInt2065 = 0
