@@ -1086,7 +1086,7 @@ class Client : GameAppletFrame() {
         method3968(15)
         method3450()
         method3096(i.toInt() xor 0x7ea2)
-        BlankTextureNode.method3099((-121).toByte())
+        BlankTextureNodeStatics.method3099((-121).toByte())
         SourceRowTextureNode.method3057((-54).toByte())
         method3110(-1633784916)
         method3148(true)

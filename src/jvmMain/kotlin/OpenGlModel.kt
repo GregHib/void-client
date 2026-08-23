@@ -4,7 +4,7 @@ import SphereMapMaterialPass.Companion.method2174
 import Texture2DProvider.Companion.method2259
 import ArchiveResourceProvider.Companion.method2352
 import PcmStreamBuffer.Companion.method2832
-import BlankTextureNode.Companion.method3100
+import BlankTextureNodeStatics.method3100
 import CachedRgbNoiseTexture.Companion.method565
 import RasterSpriteStatics.method166
 import jaclib.memory.Stream.Companion.floatToRawIntBits

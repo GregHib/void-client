@@ -1,4 +1,4 @@
-import BlankTextureNode.Companion.method3098
+import BlankTextureNodeStatics.method3098
 import NativeLibraryState.method215
 import java.awt.Canvas
 

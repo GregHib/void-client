@@ -278,7 +278,7 @@ abstract class OggMediaStream(i: Int) {
     }
 
     init {
-        if (!BlankTextureNode.method3098(-30282, "jagtheora")) throw RuntimeException("Failed to load jagtheora library")
+        if (!BlankTextureNodeStatics.method3098(-30282, "jagtheora")) throw RuntimeException("Failed to load jagtheora library")
         aByteArray995 = ByteArray(i)
         anOggSyncState987 = OggSyncState()
         anOggPage981 = OggPage()

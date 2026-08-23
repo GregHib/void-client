@@ -65,7 +65,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     fun method83(bool: Boolean): Boolean {
         if (bool != true) getDocumentBase()
         anInt5++
-        return BlankTextureNode.method3098(-30282, "jagmisc")
+        return BlankTextureNodeStatics.method3098(-30282, "jagmisc")
     }
 
     override fun focusLost(focusevent: FocusEvent?) {
@@ -424,7 +424,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     fun method97(i: Int): Boolean {
         if (i != -1) method88(-104)
         anInt4++
-        return BlankTextureNode.method3098(-30282, "jaclib")
+        return BlankTextureNodeStatics.method3098(-30282, "jaclib")
     }
 
     fun start() {
@@ -437,7 +437,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     fun method100(i: Int): Boolean {
         anInt10++
         if (i != 10) return true
-        return BlankTextureNode.method3098(-30282, "jagtheora")
+        return BlankTextureNodeStatics.method3098(-30282, "jagtheora")
     }
 
     companion object {

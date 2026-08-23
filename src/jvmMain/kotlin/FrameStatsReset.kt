@@ -646,7 +646,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LoadingScreenImageNodeStatics.anInt9500 = 0
             ByteBuffer.anInt7170 = 0
             ItemDefinition.anInt2832 = 0
-            BlankTextureNode.anInt9258 = 0
+            BlankTextureNodeStatics.anInt9258 = 0
             BoundingBoxNode.anInt6734 = 0
             BackgroundWorkerThread.anInt3222 = 0
             TwoStateOptionState.anInt6140 = 0
@@ -2662,7 +2662,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9814 = 0
             GlFramebufferBlitter.anInt274 = 0
             OpenGlTerrainTile.anInt8255 = 0
-            BlankTextureNode.anInt9253 = 0
+            BlankTextureNodeStatics.anInt9253 = 0
             Npc.anInt10494 = 0
             OpenGlRenderer.anInt7590 = 0
             GlRenderDevice.anInt9823 = 0
@@ -3151,7 +3151,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FloatCameraTransform.anInt5733 = 0
             GlBufferObject.anInt4749 = 0
             WorldMapScene.anInt3125 = 0
-            BlankTextureNode.anInt9255 = 0
+            BlankTextureNodeStatics.anInt9255 = 0
             ConfigShortValueNode.anInt9544 = 0
             TheoraVideoStream.anInt9030 = 0
             LoadingBarRenderer.anInt5025 = 0

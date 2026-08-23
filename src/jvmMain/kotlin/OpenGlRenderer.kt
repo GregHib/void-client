@@ -3017,8 +3017,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             aCanvas7626 = canvas
             aCanvas7575 = aCanvas7626
             this.anInt7713 = i
-            if (!BlankTextureNode.method3098(-30282, "jaclib")) throw RuntimeException("")
-            if (!BlankTextureNode.method3098(-30282, "jaggl")) throw RuntimeException("")
+            if (!BlankTextureNodeStatics.method3098(-30282, "jaclib")) throw RuntimeException("")
+            if (!BlankTextureNodeStatics.method3098(-30282, "jaggl")) throw RuntimeException("")
             try {
                 anOpenGL7664 = OpenGL()
                 aLong7553 = anOpenGL7664!!.init(canvas, 8, 8, 8, 24, 0, this.anInt7713)

@@ -936,7 +936,7 @@ class WidgetComponent {
         }
 
         fun method440(i: Int, i_67_: Byte) {
-            BlankTextureNode.anIntArray9259 = IntArray(i)
+            BlankTextureNodeStatics.anIntArray9259 = IntArray(i)
             if (i_67_.toInt() == -61) {
                 ConnectionStateTypeStatics.anIntArray1045 = IntArray(i)
                 LinkedListIteratorStatics.anIntArray2117 = IntArray(i)

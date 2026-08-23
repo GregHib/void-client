@@ -49,7 +49,7 @@ object CharCodeMapStatics {
                 for (i_9_ in 0..1) {
                     FileIoUtil.anIntArray4097!![i_9_] = -1000000
                     LinkedListIteratorStatics.anIntArray2117!![i_9_] = 1000000
-                    BlankTextureNode.anIntArray9259!![i_9_] = 0
+                    BlankTextureNodeStatics.anIntArray9259!![i_9_] = 0
                     anIntArray1127!![i_9_] = 1000000
                     ConnectionStateTypeStatics.anIntArray1045!![i_9_] = 0
                 }
