@@ -8,10 +8,33 @@ version = "1.2.0"
 
 repositories {
     mavenCentral()
+    maven("https://jitpack.io")
 }
+
+val lwjglVersion = "3.3.6"
+val lwjglNatives = listOf(
+    "natives-macos-arm64", "natives-macos",
+    "natives-linux", "natives-linux-arm64",
+    "natives-windows", "natives-windows-x86"
+)
 
 dependencies {
     implementation(files("../libs/clientlibs.jar"))
+
+    // Pure-Java jaggl/jaclib replacement backend (hardware rendering on modern
+    // macOS/Linux/Windows). client/src/jaggl and client/src/jaclib shadow the
+    // classes in clientlibs.jar - the classpath (and shadowJar) order makes the
+    // project classes win.
+    implementation("org.lwjgl:lwjgl:$lwjglVersion")
+    implementation("org.lwjgl:lwjgl-opengl:$lwjglVersion")
+    implementation("org.lwjgl:lwjgl-jawt:$lwjglVersion")
+    implementation("org.lwjglx:lwjgl3-awt:0.2.4") {
+        isTransitive = false // its pom leaks an unresolved ${lwjgl.natives} classifier
+    }
+    for (natives in lwjglNatives) {
+        runtimeOnly("org.lwjgl:lwjgl:$lwjglVersion:$natives")
+        runtimeOnly("org.lwjgl:lwjgl-opengl:$lwjglVersion:$natives")
+    }
 }
 
 java {
@@ -31,6 +54,18 @@ java {
 
 application {
     mainClass = "Loader"
+}
+
+// `./gradlew run -Pjfr` records a JDK Flight Recorder profile to client/client.jfr
+// (open it with JDK Mission Control or `jfr print`). Requires a JRE with JFR
+// (OpenJDK 8u262+; the provisioned toolchain qualifies).
+tasks.named<JavaExec>("run") {
+    if (project.hasProperty("jfr")) {
+        jvmArgs(
+            "-XX:StartFlightRecording=filename=client.jfr,settings=profile,dumponexit=true",
+            "-XX:FlightRecorderOptions=stackdepth=256"
+        )
+    }
 }
 
 tasks.shadowJar {

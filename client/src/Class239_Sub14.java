@@ -64,6 +64,9 @@ final class Class239_Sub14 extends Class239 {
     static final int method1781(int i, int i_1_, int i_2_) {
         anInt5983++;
         if (Class348_Sub31.anInt6923 == -1) return 1;
+        // Renderer benchmark: skip modes other than the forced one so the
+        // login-time performance test can't switch away from --gl/--software.
+        if (Loader.forcedGraphicsMode >= 0 && i != Loader.forcedGraphicsMode) return 1;
         if (i != Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350)) {
             Class258_Sub3_Sub1.method1971(-2, Class274.aClass274_3496.method2063(Class348_Sub33.anInt6967, 544), true, i);
             if (i != Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350)) return -1;

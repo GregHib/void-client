@@ -409,11 +409,16 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
                 method92(28740);
                 Class348_Sub8.aClass241_6660 = Class229.method1631(false);
                 while (Class113.aLong1739 == 0L || (Class62.method599(-124) < Class113.aLong1739)) {
+                    long prof0 = FrameProfiler.time();
                     Class101_Sub2.anInt5744 = Class348_Sub8.aClass241_6660.method1861(0, Class73.aLong4783);
+                    long prof1 = FrameProfiler.time();
                     for (int i = 0; Class101_Sub2.anInt5744 > i; i++)
                         method84(-1);
+                    long prof2 = FrameProfiler.time();
                     method88(-119);
+                    long prof3 = FrameProfiler.time();
                     Class369_Sub3_Sub1.method3578((byte) -42, Class305.aCanvas3869, (Class348_Sub23_Sub1.aClass297_8992));
+                    FrameProfiler.frame(prof0, prof1, prof2, prof3, FrameProfiler.time(), Class101_Sub2.anInt5744);
                 }
             } catch (Throwable throwable) {
                 Class156.method1242(method81((byte) 109), throwable, 15004);

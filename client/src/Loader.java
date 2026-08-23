@@ -20,6 +20,10 @@ public class Loader extends Applet {
     public static boolean trace = false;
     public static String address = "127.0.0.1";
     public static int port = 43594;
+    // -1 = use the saved display-settings preference; 0 = force software; 1 = force OpenGL
+    public static int forcedGraphicsMode = -1;
+    // -1 = use the saved preference; 0 = force fixed; 1 = force resizable HUD
+    public static int forcedResizable = -1;
     public static final BigInteger LOGIN_SERVER_RSA_MODULUS = new BigInteger("ea3680fdebf2621da7a33601ba39925ee203b3fc80775cd3727bf27fd8c0791c803e0bdb42b8b5257567177f8569024569da9147cef59009ed016af6007e57a556f1754f09ca84dd39a03287f7e41e8626fd78ab3b53262bd63f2e37403a549980bf3077bd402b82ef5fac269eb3c04d2a9b7712a67a018321ceba6c3bfb8f7f", 16);
     public static final BigInteger FILE_SERVER_RSA_MODULUS = new BigInteger("d6808be939bbfd2ec4e96b1581ce3e1144b526e7643a72e3c64fbb902724fbfcf14ab601da6d6f8dbb57d1c369d080d9fc392abeb7886e0076d07f2aea5810e540d2817fd1967e35b39cc95cf7c9170b5fb55f5bf95524b60e938f0d64614bc365b87d66963a8cc8664e32875366099ef297180d01c7c3842162865e11d92299", 16);
     // Camera zoom constants
@@ -55,10 +59,70 @@ public class Loader extends Applet {
                 case "--trace":
                     trace = true;
                     break;
+                case "-prof":
+                case "--profile":
+                    FrameProfiler.setEnabled(true);
+                    break;
+                case "-gl":
+                case "--gl":
+                    forcedGraphicsMode = 1; // OpenGL toolkit (LWJGL-backed jaggl)
+                    break;
+                case "--gldebug":
+                    jaggl.OpenGL.DEBUG = true;
+                    break;
+                case "--resizable":
+                    forcedResizable = 1;
+                    break;
+                case "--fixed":
+                    forcedResizable = 0;
+                    break;
+                case "-sw":
+                case "--software":
+                    forcedGraphicsMode = 0; // software toolkit
+                    break;
             }
         }
         Loader l = new Loader();
         l.doFrame();
+    }
+
+    /**
+     * A --gl/--software force means "start with this renderer": it holds
+     * through boot and the login-time auto-detect benchmark, then the first
+     * explicit renderer event afterwards consumes it. While it is active,
+     * every graphics-mode preference read reports the forced mode
+     * (Class239_Sub25.method1829), which keeps the in-game display settings
+     * from ever seeing - or applying - a different choice; consuming syncs
+     * both stored preferences to the forced value first so reads stay
+     * consistent with the renderer that is actually running.
+     */
+    public static void consumeForcedGraphicsMode() {
+        int mode = forcedGraphicsMode;
+        if (mode < 0 || Class316.aClass348_Sub51_3959 == null) return;
+        forcedGraphicsMode = -1;
+        Class316.aClass348_Sub51_3959.method3429((byte) 74, Class316.aClass348_Sub51_3959.aClass239_Sub25_7251, mode);
+        Class316.aClass348_Sub51_3959.method3429((byte) 74, Class316.aClass348_Sub51_3959.aClass239_Sub25_7271, mode);
+    }
+
+    /**
+     * One-shot semantics for --resizable/--fixed, mirroring the graphics-mode
+     * force: it holds until the first explicit write to the window-mode
+     * preference, then the stored value is synced and the getter overrides in
+     * Class239_Sub3 go inert so in-game layout switching works normally.
+     */
+    public static void consumeForcedResizable() {
+        if (forcedResizable < 0) return;
+        // Mode 0 is stock fixed - NOT 1. Any nonzero mode here flips
+        // Class305.aBoolean3870, which enables the client's leftover dev
+        // orthographic camera (see the 'ortho <n>'/'orthocamlock' console
+        // commands): pitch clamps to [45,90] degrees and the whole world
+        // renders as a flat overhead view. This value is also persisted to
+        // jagex_runescape_preferences.dat, so getting it wrong once poisons
+        // every later flag-less launch.
+        int mode = forcedResizable == 1 ? 2 : 0;
+        forcedResizable = -1;
+        if (Class316.aClass348_Sub51_3959 != null && Class316.aClass348_Sub51_3959.aClass239_Sub3_7222 != null)
+            Class316.aClass348_Sub51_3959.aClass239_Sub3_7222.anInt3138 = mode;
     }
 
     @Override

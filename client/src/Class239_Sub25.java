@@ -143,6 +143,7 @@ final class Class239_Sub25 extends Class239 {
     final int method1829(int i) {
         anInt6107++;
         if (i != -32350) aBoolean6110 = false;
+        if (Loader.forcedGraphicsMode >= 0) return Loader.forcedGraphicsMode;
         return this.anInt3138;
     }
 

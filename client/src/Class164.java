@@ -266,7 +266,9 @@ final class Class164 {
             else if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251.aBoolean6113 && Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 < 512 && Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609 != 0)
                 Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), 0);
             Class14_Sub2.method243(i ^ ~0x6fd6);
-            if (Class348_Sub23_Sub2.aBoolean9038) Class367_Sub10.method3553(false, (byte) 108, 0);
+            // Safe mode (crash on previous boot) normally forces the software
+            // toolkit; an explicit --gl/--software flag overrides it.
+            if (Class348_Sub23_Sub2.aBoolean9038 && Loader.forcedGraphicsMode < 0) Class367_Sub10.method3553(false, (byte) 108, 0);
             else Class367_Sub10.method3553(false, (byte) 102, Class316.aClass348_Sub51_3959.aClass239_Sub25_7251.method1829(-32350));
             Class85.method830(Class316.aClass348_Sub51_3959.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
             Class170.method1311(5139, Class348_Sub8.aHa6654);
