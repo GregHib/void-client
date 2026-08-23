@@ -27,6 +27,9 @@ final class Class348_Sub6 extends Class348 {
     static final boolean method2769(Class var_class, byte i, String string) {
         try {
             anInt6639++;
+            // jaggl/jaclib are provided by the pure-Java LWJGL backend
+            // (client/src/jaggl, client/src/jaclib) - no natives to load.
+            if ("jaggl".equals(string) || "jaclib".equals(string)) return true;
             Class var_class_0_ = ((Class) Player.aHashtable10565.get(string));
             if (var_class_0_ != null) {
                 return var_class_0_.getClassLoader() == var_class.getClassLoader();

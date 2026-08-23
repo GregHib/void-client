@@ -19,6 +19,9 @@ final class Class239_Sub3 extends Class239 {
     static int anInt5871;
 
     final void method1712(int i, int i_0_) {
+        // An explicit write to the window-mode preference consumes the
+        // --resizable/--fixed force so the write (and later reads) win.
+        Loader.consumeForcedResizable();
         this.anInt3138 = i_0_;
         anInt5862++;
         int i_1_ = -40 / ((i - 82) / 35);
@@ -27,6 +30,14 @@ final class Class239_Sub3 extends Class239 {
     final int method1727(int i) {
         if (i != -32350) anInt5871 = 39;
         anInt5869++;
+        // Must agree with the forced method1735: boot reads the raw mode
+        // here to build the resizable/fullscreen layout (which initializes
+        // Class21.aHa326) and reads method1735 to APPLY it - answering
+        // "resizable" there but "fixed" here NPEs startup in s.method3980.
+        // Fixed MUST be 0 (stock default), not 1: any nonzero mode turns on
+        // the dev orthographic camera (Class305.aBoolean3870 via
+        // Class348_Sub42_Sub3.method3179) - pitch locks to [45,90] degrees.
+        if (Loader.forcedResizable >= 0) return Loader.forcedResizable == 1 ? 2 : 0;
         return this.anInt3138;
     }
 
@@ -157,6 +168,7 @@ final class Class239_Sub3 extends Class239 {
     final boolean method1735(boolean bool) {
         if (bool != false) anInt5871 = -86;
         anInt5858++;
+        if (Loader.forcedResizable >= 0) return Loader.forcedResizable == 1;
         return Class60.method576(this.anInt3138, 29);
     }
 }

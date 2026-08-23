@@ -1498,6 +1498,8 @@ final class Class66 {
             if (i == 6031) {
                 int i_154_ = anIntArray1149[--anInt1173];
                 if (i_154_ < 0 || i_154_ > 5) i_154_ = 2;
+                // An explicit in-game renderer choice overrides --gl/--software.
+                Loader.consumeForcedGraphicsMode();
                 Class367_Sub10.method3553(false, (byte) 101, i_154_);
                 return;
             }
@@ -1505,6 +1507,9 @@ final class Class66 {
                 anInt1173 -= 2;
                 int i_155_ = anIntArray1149[anInt1173];
                 boolean bool_156_ = anIntArray1149[anInt1173 + 1] == 1;
+                // Consume the force first so this write isn't masked by the
+                // forced-mode preference getter.
+                Loader.consumeForcedGraphicsMode();
                 Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub25_7251), i_155_);
                 if (!bool_156_) Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub29_7229), 0);
                 Class14_Sub2.method243(37);

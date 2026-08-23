@@ -31,6 +31,7 @@ final class Class82 {
                         Applet_Sub1.method94("displayfps - Toggle FPS and other information", -89);
                         Applet_Sub1.method94("renderer - Print graphics renderer information", 122);
                         Applet_Sub1.method94("heap - Print java memory information", -88);
+                        Applet_Sub1.method94("profile - Toggle frame profiler (reports on stdout)", -87);
                         return;
                     }
                     if (string.equalsIgnoreCase("cls")) {
@@ -58,6 +59,15 @@ final class Class82 {
                     }
                     if (string.equals("heap")) {
                         Applet_Sub1.method94(("Heap: " + Class226.anInt2964 + "MB"), 69);
+                        return;
+                    }
+                    if (string.equalsIgnoreCase("profile")) {
+                        FrameProfiler.setEnabled(!FrameProfiler.enabled);
+                        if (FrameProfiler.enabled) Applet_Sub1.method94("Profiler on - see stdout for 5s reports", 84);
+                        else {
+                            Applet_Sub1.method94("Profiler off. Last window:", -70);
+                            Applet_Sub1.method94(FrameProfiler.summary(), -71);
+                        }
                         return;
                     }
                 } catch (Exception exception) {
@@ -203,6 +213,7 @@ final class Class82 {
                             return;
                         }
                         if (string.equalsIgnoreCase("tk0")) {
+                            Loader.consumeForcedGraphicsMode(); // explicit choice overrides --gl/--software
                             Class367_Sub10.method3553(false, (byte) 104, 0);
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 0) {
                                 Applet_Sub1.method94("Entered tk0", 101);
@@ -214,6 +225,7 @@ final class Class82 {
                             return;
                         }
                         if (string.equalsIgnoreCase("tk1")) {
+                            Loader.consumeForcedGraphicsMode(); // explicit choice overrides --gl/--software
                             Class367_Sub10.method3553(false, (byte) 109, 1);
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 1) {
                                 Applet_Sub1.method94("Entered tk1", -65);
@@ -225,6 +237,7 @@ final class Class82 {
                             return;
                         }
                         if (string.equalsIgnoreCase("tk2")) {
+                            Loader.consumeForcedGraphicsMode(); // explicit choice overrides --gl/--software
                             Class367_Sub10.method3553(false, (byte) 115, 2);
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
                                 Applet_Sub1.method94("Entered tk2", i + 151);
@@ -238,6 +251,7 @@ final class Class82 {
                             return;
                         }
                         if (string.equalsIgnoreCase("tk3")) {
+                            Loader.consumeForcedGraphicsMode(); // explicit choice overrides --gl/--software
                             Class367_Sub10.method3553(false, (byte) 107, 3);
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 3) {
                                 Applet_Sub1.method94("Entered tk3", 78);
@@ -249,6 +263,7 @@ final class Class82 {
                             return;
                         }
                         if (string.equalsIgnoreCase("tk5")) {
+                            Loader.consumeForcedGraphicsMode(); // explicit choice overrides --gl/--software
                             Class367_Sub10.method3553(false, (byte) 113, 5);
                             if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(i ^ 0x7e13) == 5) {
                                 Applet_Sub1.method94("Entered tk5", -108);
