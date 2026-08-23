@@ -2,7 +2,7 @@ import LinkedListIteratorStatics.method1241
 import BooleanGraphicsOptionState.Companion.method1722
 import NpcReference.Companion.method2959
 import GlTexture2DRegion.Companion.method3553
-import GameClock.method599
+import CommonClock.method599
 import ModelDefinition.Companion.method1096
 import RasterSpriteStatics.method166
 import java.awt.Canvas

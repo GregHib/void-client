@@ -76,29 +76,29 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
         fun method493(bool: Boolean) {
             if (MaterialTypeMarkerStatics.aConnectionStateTypeArray6515 == null) {
                 MaterialTypeMarkerStatics.aConnectionStateTypeArray6515 = ConnectionStateTypeStatics.method528(-91)
-                TimedTileQueueEntry.aConnectionStateType_9660 = MaterialTypeMarkerStatics.aConnectionStateTypeArray6515!![0]
-                DataHolderStatics.aLong3660 = GameClock.method599(-119)
+                TimedTileQueueEntryStatics.aConnectionStateType_9660 = MaterialTypeMarkerStatics.aConnectionStateTypeArray6515!![0]
+                DataHolderStatics.aLong3660 = CommonClock.method599(-119)
             }
             anInt4900++
             if (ActorEntity.aResourceLoaderThread_897 == null) TrigLookupTablesStatics.method726(116)
-            val class56 = TimedTileQueueEntry.aConnectionStateType_9660!!
+            val class56 = TimedTileQueueEntryStatics.aConnectionStateType_9660!!
             val i = ClientLoadStateMachine.method1278(-28660)
-            if (class56 == TimedTileQueueEntry.aConnectionStateType_9660) {
-                Direct3dModel.aString5420 = TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(ChatCommandProcessor.anInt6967, 544)
-                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016) ConfigFlagUtilStatics.anInt3236 = (i * ((TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1021) + -(TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025)) / 100 + (TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025))
-                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += ConfigFlagUtilStatics.anInt3236.toString() + "%"
-            } else if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1043) {
+            if (class56 == TimedTileQueueEntryStatics.aConnectionStateType_9660) {
+                Direct3dModel.aString5420 = TimedTileQueueEntryStatics.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(ChatCommandProcessor.anInt6967, 544)
+                if (TimedTileQueueEntryStatics.aConnectionStateType_9660!!.aBoolean1016) ConfigFlagUtilStatics.anInt3236 = (i * ((TimedTileQueueEntryStatics.aConnectionStateType_9660!!.anInt1021) + -(TimedTileQueueEntryStatics.aConnectionStateType_9660!!.anInt1025)) / 100 + (TimedTileQueueEntryStatics.aConnectionStateType_9660!!.anInt1025))
+                if (TimedTileQueueEntryStatics.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += ConfigFlagUtilStatics.anInt3236.toString() + "%"
+            } else if (TimedTileQueueEntryStatics.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1043) {
                 ActorEntity.aResourceLoaderThread_897 = null
                 ByteBufferStatics.method3379(2, 3)
             } else {
                 Direct3dModel.aString5420 = class56.aLocalizedText_1015!!.method2063(ChatCommandProcessor.anInt6967, 544)
-                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += class56.anInt1021.toString() + "%"
+                if (TimedTileQueueEntryStatics.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += class56.anInt1021.toString() + "%"
                 ConfigFlagUtilStatics.anInt3236 = class56.anInt1021
-                if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolderStatics.aLong3660 = GameClock.method599(-128)
+                if (TimedTileQueueEntryStatics.aConnectionStateType_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolderStatics.aLong3660 = CommonClock.method599(-128)
             }
             if (bool == true) {
                 if (ActorEntity.aResourceLoaderThread_897 != null) {
-                    ActorEntity.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntry.aConnectionStateType_9660), Direct3dModel.aString5420, ConfigFlagUtilStatics.anInt3236, DataHolderStatics.aLong3660, false)
+                    ActorEntity.aResourceLoaderThread_897!!.method2316((TimedTileQueueEntryStatics.aConnectionStateType_9660), Direct3dModel.aString5420, ConfigFlagUtilStatics.anInt3236, DataHolderStatics.aLong3660, false)
                     if (LoadProgressCountersStatics.anCursorControllerArray2447 != null) {
                         var i_5_ = PlayerAppearanceUpdateDecoder.anInt4544 - -1
                         while ((LoadProgressCountersStatics.anCursorControllerArray2447!!.size > i_5_)) {

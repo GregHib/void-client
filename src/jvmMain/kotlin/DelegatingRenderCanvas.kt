@@ -364,7 +364,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     AnimationFrameState.method867(true)
                     PcmStreamBuffer.aBoolean8870 = true
                     if (GlTexture1D.aBoolean8558) {
-                        method94(("Took: " + (GameClock.method599(-117) + -RegionMapDecoder.aLong1516) + "ms"), i + 52)
+                        method94(("Took: " + (CommonClock.method599(-117) + -RegionMapDecoder.aLong1516) + "ms"), i + 52)
                         GlTexture1D.aBoolean8558 = false
                     }
                 } else AnimationFrameTable.anInt489 = 2

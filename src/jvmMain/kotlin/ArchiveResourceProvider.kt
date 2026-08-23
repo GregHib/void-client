@@ -120,7 +120,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
             } else aNodeDeque_6372 = null
         }
         if (i == -1) {
-            if (aBoolean6375 && GameClock.method599(-94) >= aLong6374) {
+            if (aBoolean6375 && CommonClock.method599(-94) >= aLong6374) {
                 var class348_sub42_sub16 = aHashtable_6360.method3484(0) as AsyncResourceRequest?
                 while (class348_sub42_sub16 != null) {
                     if (!class348_sub42_sub16.aBoolean9664) {
@@ -131,7 +131,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
                     }
                     class348_sub42_sub16 = (aHashtable_6360.method3482(0) as AsyncResourceRequest?)
                 }
-                aLong6374 = GameClock.method599(-82) - -1000L
+                aLong6374 = CommonClock.method599(-82) - -1000L
             }
         }
     }

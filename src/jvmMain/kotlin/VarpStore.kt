@@ -2,7 +2,7 @@ import ChatEffectsOptionState.Companion.method1730
 import MidiSequencePlayer.Companion.method2862
 import FixedFunctionWaterPass.Companion.method3548
 import WorldMapElement.Companion.method181
-import GameClock.method599
+import CommonClock.method599
 import RegionMapDecoder.aByteArrayArray1887
 import TrigLookupTablesStatics.method726
 import NativeTerrainTile.Companion.method4004

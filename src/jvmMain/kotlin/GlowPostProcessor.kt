@@ -81,7 +81,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
 
     fun method1414(i: Int): Boolean {
         if (aHa_Sub2_2511.aBoolean7820 && aHa_Sub2_2511.aBoolean7783 && aGlShaderProgramHandle_2513 == null) {
-            val class242 = (TimedTileQueueEntry.method3249(
+            val class242 = (TimedTileQueueEntryStatics.method3249(
                 35632,
                 121,
                 aHa_Sub2_2511,

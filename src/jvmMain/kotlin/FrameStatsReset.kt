@@ -1501,7 +1501,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ParticleEmitterDefExt.anInt8578 = 0
             TextureMapImageNode.anInt9381 = 0
             NodeDequeStatics.anInt3324 = 0
-            TimedTileQueueEntry.anInt9655 = 0
+            TimedTileQueueEntryStatics.anInt9655 = 0
             MediaStreamClient.anInt3190 = 0
             HudTabPanel.anInt2992 = 0
             CubeMapMaterialPass.anInt6295 = 0
@@ -2892,7 +2892,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FrameBufferObject.anInt4890 = 0
             SceneObjectAnimator.anInt3061 = 0
             CubemapTextureImplSource.anInt8710 = 0
-            GameClock.anInt1113 = 0
+            CommonClock.anInt1113 = 0
             NativeTerrainTile.anInt8298 = 0
             RectangleBounds.anInt2154 = 0
             LinkedListNodeStatics.anInt4298 = 0
@@ -3427,7 +3427,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FontDefinition.anInt1981 = 0
             ParticleEmitterListNode.anInt9683 = 0
             GlRenderDevice.anInt9849 = 0
-            TimedTileQueueEntry.anInt9656 = 0
+            TimedTileQueueEntryStatics.anInt9656 = 0
             OpenGlModel.anInt5637 = 0
             SpriteMaskShape.anInt4066 = 0
             HeightMapNoise.anInt3828 = 0

@@ -47,8 +47,6 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
 
         var anInt8726: Int = 0
 
-        var aLong8728: Long = 0
-
         @JvmStatic
         fun method2395(i: Byte) {
             aOutgoingPacketHeader_8724 = null

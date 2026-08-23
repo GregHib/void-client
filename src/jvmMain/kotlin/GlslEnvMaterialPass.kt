@@ -72,13 +72,13 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
             try {
                 aWaterTextureSet_6268 = waterTextureSet
                 if (aWaterTextureSet_6268!!.aClass258_Sub1_1443 == null || !(this.aHa_Sub2_3684.aBoolean7791) || !(this.aHa_Sub2_3684.aBoolean7783)) break
-                val class242 = (TimedTileQueueEntry.method3249(
+                val class242 = (TimedTileQueueEntryStatics.method3249(
                     35633,
                     -110,
                     this.aHa_Sub2_3684,
                     "uniform float time;\nuniform float scale;\nvarying vec3 wvVertex;\nvarying float waterDepth;\nvoid main() {\nwaterDepth = gl_MultiTexCoord0.z;\nvec4 ecVertex = gl_ModelViewMatrix*gl_Vertex;\nwvVertex.x = dot(gl_NormalMatrix[0], ecVertex.xyz);\nwvVertex.y = dot(gl_NormalMatrix[1], ecVertex.xyz);\nwvVertex.z = dot(gl_NormalMatrix[2], ecVertex.xyz);\ngl_TexCoord[0].x = dot(gl_TextureMatrix[0][0], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].y = dot(gl_TextureMatrix[0][1], gl_MultiTexCoord0)*scale;\ngl_TexCoord[0].z = time;\ngl_TexCoord[0].w = 1.0;\ngl_FogFragCoord = 1.0-clamp((gl_Fog.end+ecVertex.z)*gl_Fog.scale, 0.0, 1.0);\ngl_Position = ftransform();\n}\n"
                 ))
-                val class242_4_ = (TimedTileQueueEntry.method3249(
+                val class242_4_ = (TimedTileQueueEntryStatics.method3249(
                     35632,
                     -38,
                     this.aHa_Sub2_3684,

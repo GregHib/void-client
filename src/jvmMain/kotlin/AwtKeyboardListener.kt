@@ -71,7 +71,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
         class348_sub11.anInt4771 = i_5_
         class348_sub11.anInt4767 = i
         class348_sub11.aChar4761 = c
-        class348_sub11.aLong4764 = GameClock.method599(-102)
+        class348_sub11.aLong4764 = CommonClock.method599(-102)
         aNodeDeque_6542!!.method1999(class348_sub11, -20180)
         if (i_4_ != 128) aComponent6544 = null
     }

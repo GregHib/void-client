@@ -1,7 +1,7 @@
 import LinkedListIteratorStatics.method1242
 import GlTexture2DRegion.Companion.method3553
 import GlGroundShaderPass.Companion.method3556
-import GameClock.method599
+import CommonClock.method599
 import java.awt.Container
 import kotlin.concurrent.Volatile
 

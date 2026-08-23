@@ -1,6 +1,6 @@
 import FileStoreLocator.method1464
 import FileStoreLocator.method1466
-import GameClock.method599
+import CommonClock.method599
 import direct.DirectDrawDisplayMode
 import direct.sound.DirectSoundAudioChannel
 import kotlinx.coroutines.Dispatchers

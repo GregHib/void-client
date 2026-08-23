@@ -1,6 +1,6 @@
 import GameAppletFrame.Companion.method94
 import GrayscaleNoiseTexture.Companion.method555
-import GameClock.method599
+import CommonClock.method599
 
 /* Class348_Sub42_Sub6 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

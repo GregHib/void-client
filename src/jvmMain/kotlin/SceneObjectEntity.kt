@@ -99,7 +99,7 @@ abstract class SceneObjectEntity internal constructor(i: Int, i_6_: Int, i_7_: I
             } catch (exception: Exception) {
                 /* empty */
             }
-            SkeletalAnimFrameLoader.aLong482 = GameClock.method599(-117)
+            SkeletalAnimFrameLoader.aLong482 = CommonClock.method599(-117)
             ScanlineRasterFiller.aBoolean2469 = false
         }
 

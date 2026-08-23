@@ -39,7 +39,7 @@ object MinimapTileEntryStatics {
                 val string_1_ = JagGlToolkitFactory.anApplet1530!!.getParameter("cookiehost")
                 var string_2_ = (string_0_ + "settings=" + string + "; version=1; path=/; domain=" + string_1_)
                 if (string.length == 0) string_2_ += "; Expires=Thu, 01-Jan-1970 00:00:00 GMT; Max-Age=0"
-                else string_2_ += ("; Expires=" + (method3261(GameClock.method599(-53) + 94608000000L, 63)) + "; Max-Age=" + 94608000L)
+                else string_2_ += ("; Expires=" + (method3261(CommonClock.method599(-53) + 94608000000L, 63)) + "; Max-Age=" + 94608000L)
                 JavaScriptBridge.method1615(JagGlToolkitFactory.anApplet1530, -15092, "document.cookie=\"" + string_2_ + "\"")
             } catch (throwable: Throwable) {
                 /* empty */

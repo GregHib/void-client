@@ -1,6 +1,6 @@
 import ArrayCopyUtil.method1573
 import TexGenMaterialPass.Companion.method2161
-import GameClock.method599
+import CommonClock.method599
 import kotlin.math.min
 
 /*

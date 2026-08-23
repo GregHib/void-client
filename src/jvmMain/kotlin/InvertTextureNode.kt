@@ -100,7 +100,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
         fun method3134(i: Int) {
             anInt9419++
             if ((TexGenMaterialPass.anInt6248.inv()) <= i) {
-                val l = GameClock.method599(i xor 0x3c)
+                val l = CommonClock.method599(i xor 0x3c)
                 TexGenMaterialPass.anInt6248 -= (-aLong6963 + l).toInt()
                 if (TexGenMaterialPass.anInt6248 > 0) {
                     val i_4_ = ((TexGenMaterialPass.anInt6248 shl 8) / FrameBufferObject.anInt4889)

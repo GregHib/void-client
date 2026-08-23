@@ -22,9 +22,9 @@ class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145
 
     private fun method3432(exception: Exception) {
         if (!aBoolean5144) {
-            aLong5146 = GameClock.method599(-54)
+            aLong5146 = CommonClock.method599(-54)
             aBoolean5144 = true
-        } else if (GameClock.method599(-88) - aLong5146 < 30000L) this.aCanvas5147!!.repaint()
+        } else if (CommonClock.method599(-88) - aLong5146 < 30000L) this.aCanvas5147!!.repaint()
         else throw RuntimeException(exception.message)
     }
 

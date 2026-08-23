@@ -61,7 +61,7 @@ import SolidFillComponent.Companion.method197
 import SpriteComponent.Companion.method199
 import SpriteComponent.Companion.method201
 import GameClock.method596
-import GameClock.method599
+import CommonClock.method599
 import FlickeringEffectsOptionState.Companion.method1750
 import GlTexture1D.Companion.method1974
 import MidiSequencePlayer.Companion.method2862
@@ -1128,12 +1128,12 @@ object ChatCommandProcessor {
                 CameraRotationStubStatics.aJs5Archive_322!!.method421(false, NpcType.anInt1387)
                 MapSceneCache.aAbstractModelRenderer_2309 = null
                 AbstractMenuEntryStatics.aAbstractModelRenderer_1706 = MapSceneCache.aAbstractModelRenderer_2309
-                TimedTileQueueEntry.aAbstractModelRenderer_9659 = AbstractMenuEntryStatics.aAbstractModelRenderer_1706
+                TimedTileQueueEntryStatics.aAbstractModelRenderer_9659 = AbstractMenuEntryStatics.aAbstractModelRenderer_1706
                 AbstractBloomEffect.aAbstractModelRenderer_6627 = null
                 MinimapFlagRenderer.aAbstractModelRenderer_1800 = AbstractBloomEffect.aAbstractModelRenderer_6627
                 ChatMessageStream.aAbstractModelRenderer_106 = MinimapFlagRenderer.aAbstractModelRenderer_1800
                 ConfigVarProgress.aAbstractModelRenderer_4808 = null
-                TimedTileQueueEntry.aAbstractModelRenderer_9658 = ConfigVarProgress.aAbstractModelRenderer_4808
+                TimedTileQueueEntryStatics.aAbstractModelRenderer_9658 = ConfigVarProgress.aAbstractModelRenderer_4808
                 PlayerSequenceSelector.aBoolean1211 = true
                 return
             }

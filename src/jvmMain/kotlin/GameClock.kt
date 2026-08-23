@@ -13,8 +13,6 @@ object GameClock {
 
     var anInt1112: Int = 0
 
-    var anInt1113: Int = 0
-
     var aDoublyLinkedNodeList_1114: DoublyLinkedNodeList? = DoublyLinkedNodeList()
 
     var anInt1115: Int = 0
@@ -45,17 +43,6 @@ object GameClock {
             else class348_sub15.aBoolean6772 = false
             class348_sub15 = ProjectileConfigUtil.aHashtable_389!!.method3482(0) as? MenuActionNode?
         }
-    }
-
-    @JvmStatic
-    @Synchronized
-    fun method599(i: Int): Long {
-        if (i > -52) return -121L
-        anInt1113++
-        val l = Clock.millis()
-        if (MatrixCameraTransform.aLong5663 > l) TileSceneEntity.aLong8728 += MatrixCameraTransform.aLong5663 - l
-        MatrixCameraTransform.aLong5663 = l
-        return l + TileSceneEntity.aLong8728
     }
 
     fun method600(i: Byte, i_1_: Int, i_2_: Int): Int {

@@ -267,14 +267,14 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
             aGlShaderProgramHandle_8842 = (SequencedWallEntity.method2493(
                 this.aHa_Sub2_6618,
                 -1,
-                (arrayOf<ManagedGlResource?>(TimedTileQueueEntry.method3249(35632, 80, this.aHa_Sub2_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))
+                (arrayOf<ManagedGlResource?>(TimedTileQueueEntryStatics.method3249(35632, 80, this.aHa_Sub2_6618, "#extension GL_ARB_texture_rectangle : enable\nuniform vec3 params;\nuniform sampler2DRect sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2DRect(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))
             ))
-            aGlShaderProgramHandle_8824 = (SequencedWallEntity.method2493(this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(TimedTileQueueEntry.method3249(35632, -45, this.aHa_Sub2_6618, "uniform vec3 params;\nuniform sampler2D sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))))
+            aGlShaderProgramHandle_8824 = (SequencedWallEntity.method2493(this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(TimedTileQueueEntryStatics.method3249(35632, -45, this.aHa_Sub2_6618, "uniform vec3 params;\nuniform sampler2D sceneTex;\nconst vec3 lumCoef = vec3(0.2126, 0.7152, 0.0722);\nvoid main() {\n    vec4 col = texture2D(sceneTex, gl_TexCoord[0].xy);\n    gl_FragColor = col*step(params.x, dot(lumCoef, col.rgb));\n}\n")))))
             aGlShaderProgramHandle_8836 = (SequencedWallEntity.method2493(
                 this.aHa_Sub2_6618,
                 -1,
                 (arrayOf<ManagedGlResource?>(
-                    TimedTileQueueEntry.method3249(
+                    TimedTileQueueEntryStatics.method3249(
                         35632,
                         -108,
                         this.aHa_Sub2_6618,
@@ -284,7 +284,7 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
             ))
             aGlShaderProgramHandle_8822 = (SequencedWallEntity.method2493(
                 this.aHa_Sub2_6618, -1, (arrayOf<ManagedGlResource?>(
-                    TimedTileQueueEntry.method3249(
+                    TimedTileQueueEntryStatics.method3249(
                         35632,
                         -31,
                         this.aHa_Sub2_6618,

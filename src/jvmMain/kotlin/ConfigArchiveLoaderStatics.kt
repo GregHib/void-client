@@ -15,7 +15,7 @@ import ParameterizedText.Companion.method3113
 import GlTexture2DRegion.Companion.method3553
 import GlCubemapLightPass.Companion.method3544
 import MinimapTriangleDrawer.Companion.method464
-import GameClock.method599
+import CommonClock.method599
 import ChatCommandProcessor.method706
 import ChatCommandProcessor.method715
 import NoiseTextureNode.Companion.method3102

@@ -342,7 +342,7 @@ import ContactEntryStatics.method3228
 import ContactEntryStatics.method3229
 import InterfaceComponentGroup.Companion.method3237
 import InterfaceComponentGroup.Companion.method3243
-import TimedTileQueueEntry.Companion.method3247
+import TimedTileQueueEntryStatics.method3247
 import AsyncResourceRequestStatics.method3252
 import StreamingResourceRequest.Companion.method3260
 import CompletedResourceRequest.Companion.method3263
@@ -437,7 +437,7 @@ import IdentKitRecolorStatics.method207
 import IdentKitRecolorStatics.method208
 import TerrainChunkBuilder.Companion.method584
 import GameClock.method598
-import GameClock.method599
+import CommonClock.method599
 import direct.Direct3dModel.Companion.method661
 import direct.Direct3dModel.Companion.method676
 import OpenGlModel.Companion.method681

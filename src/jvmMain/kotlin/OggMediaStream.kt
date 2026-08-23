@@ -66,7 +66,7 @@ abstract class OggMediaStream(i: Int) {
             return !aClass348_Sub23_Sub2_1001!!.method2976(-1) || method519(126) > aClass348_Sub23_Sub2_1001!!.method2980(100.toByte())
         }
         val d = aClass348_Sub23_Sub2_1001!!.method2977(0).toDouble()
-        return d == 0.0 || GameClock.method599(-74).toDouble() >= 1000.0 / d + aClass348_Sub23_Sub2_1001!!.method2979(30).toDouble()
+        return d == 0.0 || CommonClock.method599(-74).toDouble() >= 1000.0 / d + aClass348_Sub23_Sub2_1001!!.method2979(30).toDouble()
     }
 
     fun method508(i: Int) {

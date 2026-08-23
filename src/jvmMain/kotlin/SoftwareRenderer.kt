@@ -2143,7 +2143,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             method3659(0)
             CachedRgbNoiseTexture.method566(true, true, (-126).toByte())
             aBoolean7471 = true
-            anInt7466 = GameClock.method599(-70).toInt()
+            anInt7466 = CommonClock.method599(-70).toInt()
         } catch (throwable: Throwable) {
             throwable.printStackTrace()
             this.method3635((-98).toByte())

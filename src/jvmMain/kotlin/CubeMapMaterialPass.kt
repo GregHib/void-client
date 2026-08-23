@@ -143,7 +143,7 @@ class CubeMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : Ma
             if (JagGlToolkitFactory.anApplet1530 != null) {
                 try {
                     val string = JagGlToolkitFactory.anApplet1530!!.getParameter("cookiehost")
-                    val i_3_ = (GameClock.method599(-74) / 86400000L).toInt() - 11745
+                    val i_3_ = (CommonClock.method599(-74) / 86400000L).toInt() - 11745
                     val string_4_ = ("usrdob=" + i_3_ + "; version=1; path=/; domain=" + string)
                     JavaScriptBridge.method1615(JagGlToolkitFactory.anApplet1530, -15092, "document.cookie=\"" + string_4_ + "\"")
                 } catch (throwable: Throwable) {

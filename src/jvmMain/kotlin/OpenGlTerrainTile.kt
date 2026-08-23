@@ -769,8 +769,6 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
 
         var anInt8239: Int = 0
 
-        var aLinkedNodeListIterator_8241: LinkedNodeListIterator? = LinkedNodeListIterator()
-
         var anInt8242: Int = 0
 
         var anInt8244: Int = 0

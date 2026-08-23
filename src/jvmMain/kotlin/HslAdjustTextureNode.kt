@@ -212,16 +212,16 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
         fun method3127(i: Int): TimedTileQueueEntry? {
             anInt9395++
             if (i != 2681) aBoolean9403 = true
-            var class348_sub42_sub15 = (GlCubemapLightPass.aLinkedNodeListIterator_7325!!.method1011(-47) as TimedTileQueueEntry?)
+            var class348_sub42_sub15 = (TimedTileQueueEntry.aLinkedNodeListIterator_7325!!.method1011(-47) as TimedTileQueueEntry?)
             if (class348_sub42_sub15 != null) {
                 class348_sub42_sub15.method2715(81.toByte())
                 class348_sub42_sub15.method3162(true)
                 return class348_sub42_sub15
             }
             do {
-                class348_sub42_sub15 = OpenGlTerrainTile.aLinkedNodeListIterator_8241!!.method1011(-87) as TimedTileQueueEntry?
+                class348_sub42_sub15 = TimedTileQueueEntry.aLinkedNodeListIterator_8241!!.method1011(-87) as TimedTileQueueEntry?
                 if (class348_sub42_sub15 == null) return null
-                if (GameClock.method599(-59) < class348_sub42_sub15.method3250((-51).toByte())) return null
+                if (CommonClock.method599(-59) < class348_sub42_sub15.method3250((-51).toByte())) return null
                 class348_sub42_sub15.method2715(113.toByte())
                 class348_sub42_sub15.method3162(true)
             } while ((0x7fffffffffffffffL.inv() and class348_sub42_sub15.aLong7057) == 0L)

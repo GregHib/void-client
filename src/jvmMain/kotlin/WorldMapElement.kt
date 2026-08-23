@@ -38,14 +38,14 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
         var i_9_ = 100 * i_8_
         if (anInt4630 != i_8_ || i_8_ == 0) {
             anInt4630 = i_8_
-            aLong4640 = GameClock.method599(-125)
+            aLong4640 = CommonClock.method599(-125)
         } else {
             val i_10_ = ActorEntity.aResourceLoaderThread_897!!.method2315(121.toByte())
             if (i_8_ < i_10_) {
                 val l = aLong4640 - ActorEntity.aResourceLoaderThread_897!!.method2323(0)
                 if (l > 0L) {
                     val l_11_ = (i_10_ - i_8_).toLong() * (10000L * l / i_8_.toLong())
-                    val l_12_ = (-aLong4640 + GameClock.method599(-89)) * 10000L
+                    val l_12_ = (-aLong4640 + CommonClock.method599(-89)) * 10000L
                     if (l_11_ > l_12_) i_9_ = ((i_8_ * 100).toLong() + ((i_10_ + -i_8_).toLong() * (l_12_ * 100L) / l_11_)).toInt()
                     else i_9_ = i_10_ * 100
                 }
@@ -62,7 +62,7 @@ abstract class WorldMapElement(js5Archive: Js5Archive?, js5Archive_15_: Js5Archi
             method178(i_13_, bool, (-84).toByte(), i_14_)
             method182(63, i_14_, i_13_, bool)
             var string = ActorEntity.aResourceLoaderThread_897!!.method2318(i.toInt() xor 0x245b)
-            if (-aLong4640 + GameClock.method599(-100) > 10000L) string += " (" + ActorEntity.aResourceLoaderThread_897!!.method2324(i + 149)!!.method525(-117) + ")"
+            if (-aLong4640 + CommonClock.method599(-100) > 10000L) string += " (" + ActorEntity.aResourceLoaderThread_897!!.method2324(i + 149)!!.method525(-117) + ")"
             aRSFont_4637!!.method2575(115.toByte(), (i_13_ + this.aWorldMapLabel_4635!!.anInt4971 / 2), this.aWorldMapLabel_4635!!.anInt4961, string, -1, (this.aWorldMapLabel_4635!!.anInt4966 + 4 + (i_14_ - -(this.aWorldMapLabel_4635!!.anInt4963 / 2))))
         }
     }

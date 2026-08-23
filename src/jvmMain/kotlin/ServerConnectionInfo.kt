@@ -1,6 +1,6 @@
 import ChatCommandProcessor.method3038
 import InvertTextureNode.Companion.method3134
-import GameClock.method599
+import CommonClock.method599
 import SceneObjectSpawner.Companion.method773
 
 /* Class161 - Decompiled by JODE

@@ -1,5 +1,5 @@
 import SoftwareSpriteRaster.Companion.method958
-import GameClock.method599
+import CommonClock.method599
 import java.awt.Canvas
 
 object ViewportTransformStatics {

@@ -268,7 +268,6 @@ class MatrixCameraTransform : AbstractCameraTransform() {
         var anInt5660: Int = 0
 
         var anInt5661: Int = 0
-        var aLong5663: Long = 0
 
         var anInt5665: Int = 0
 

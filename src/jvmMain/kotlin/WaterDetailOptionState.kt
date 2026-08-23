@@ -92,7 +92,7 @@ class WaterDetailOptionState : GraphicsOptionState {
                 val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
                 Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(ChatCommandProcessor.anInt6967, 544), 2, FacingDirectionNodeStatics.aRenderer6654)
                 val class124 = ParticleConfigParserStatics.method2277(0, RasterSpriteStatics.aJs5Archive_5207!!, AbstractFrameBufferSurface.anInt6923, -1)
-                val l = GameClock.method599(-88)
+                val l = CommonClock.method599(-88)
                 FacingDirectionNodeStatics.aRenderer6654!!.la()
                 SettingsCrcWriter.aAbstractCameraTransform_2123!!.method894(0, ActorEntity.anInt9037, 0)
                 FacingDirectionNodeStatics.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
@@ -110,12 +110,12 @@ class WaterDetailOptionState : GraphicsOptionState {
                             MinimapSquareDrawer.aAbstractCameraTransform_5209!!.method894(((-(i_5_.toFloat() / 2.0f) + i_6_.toFloat()) * ActorEntity.anInt3465.toFloat()).toInt(), 0, (i_5_ + 1) * ActorEntity.anInt3465)
                             i_3_++
                             class64.method615(MinimapSquareDrawer.aAbstractCameraTransform_5209, null, 0)
-                            if (GameClock.method599(-105) + -l >= i_2_.toLong()) break@while_80_
+                            if (CommonClock.method599(-105) + -l >= i_2_.toLong()) break@while_80_
                         }
                     }
                 }
                 FacingDirectionNodeStatics.aRenderer6654!!.method3633()
-                val l_7_ = (1000 * i_3_).toLong() / (GameClock.method599(-86) + -l)
+                val l_7_ = (1000 * i_3_).toLong() / (CommonClock.method599(-86) + -l)
                 FacingDirectionNodeStatics.aRenderer6654!!.GA(0)
                 FacingDirectionNodeStatics.aRenderer6654!!.ya()
                 return l_7_.toInt()

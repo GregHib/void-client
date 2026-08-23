@@ -1,4 +1,4 @@
-import GameClock.method599
+import CommonClock.method599
 
 /* Class195 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

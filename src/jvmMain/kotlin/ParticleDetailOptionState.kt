@@ -154,7 +154,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
             if (Client.method105(widgetComponent)!!.method3305(0)) {
                 if (widgetComponent.aString816 != null) MinimapPolygonDrawer.method466(false, "", widgetComponent.anInt830, (-118).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 16, ((widgetComponent.anInt704 shl 0) or widgetComponent.anInt830).toLong(), widgetComponent.aString816, 0L, -1)
                 else MinimapPolygonDrawer.method466(false, "", widgetComponent.anInt830, (-79).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 16, (widgetComponent.anInt704 shl 0 or widgetComponent.anInt830).toLong(), LocalizedText.aLocalizedText_3492!!.method2063(ChatCommandProcessor.anInt6967, 544), 0L, -1)
-                TimedTileQueueEntry.anInt9655++
+                TimedTileQueueEntryStatics.anInt9655++
             }
         }
     }

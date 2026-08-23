@@ -41,8 +41,8 @@ object CalendarUtil {
         val i_5_ = -114 % ((i - 22) / 33)
         anInt4137++
         MinimapRenderer.aHashtable_1585!!.method3481(0)
-        OpenGlTerrainTile.aLinkedNodeListIterator_8241!!.method1009(2110355138)
-        GlCubemapLightPass.aLinkedNodeListIterator_7325!!.method1009(2110355138)
+        TimedTileQueueEntry.aLinkedNodeListIterator_8241!!.method1009(2110355138)
+        TimedTileQueueEntry.aLinkedNodeListIterator_7325!!.method1009(2110355138)
     }
 
     @JvmStatic

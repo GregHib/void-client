@@ -180,9 +180,9 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             val class348_sub35 = aNodeDeque_9869.method1997(8) as IntKeyNode?
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
-        if (this.E() > 100663296 && (GameClock.method599(-82) > 60000L + aLong9906)) {
+        if (this.E() > 100663296 && (CommonClock.method599(-82) > 60000L + aLong9906)) {
             System.gc()
-            aLong9906 = GameClock.method599(-96)
+            aLong9906 = CommonClock.method599(-96)
         }
         super.method3646(i)
     }

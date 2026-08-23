@@ -98,8 +98,8 @@ object LocalizedTextStatics {
 
     @JvmStatic
     fun method2061(i: Int) {
-        TimedTileQueueEntry.aAbstractModelRenderer_9658 = null
-        TimedTileQueueEntry.aAbstractModelRenderer_9659 = null
+        TimedTileQueueEntryStatics.aAbstractModelRenderer_9658 = null
+        TimedTileQueueEntryStatics.aAbstractModelRenderer_9659 = null
         MapSceneCache.aAbstractModelRenderer_2309 = null
         TileRenderState.aAbstractModelRendererArray4234 = null
         MinimapFlagRenderer.aAbstractModelRenderer_1800 = null

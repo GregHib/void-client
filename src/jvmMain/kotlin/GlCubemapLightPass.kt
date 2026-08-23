@@ -170,9 +170,6 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
 
         var anInt7322: Int = 0
 
-
-        var aLinkedNodeListIterator_7325: LinkedNodeListIterator? = LinkedNodeListIterator()
-
         @JvmStatic
         fun method3541(i: Byte) {
             InboundPacketHeader.aInboundPacketHeader_7323 = null
