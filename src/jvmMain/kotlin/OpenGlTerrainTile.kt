@@ -814,7 +814,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             if (i != 8448) aString8265 = null
             anIntArray8269 = null
             aString8265 = null
-            aLinkedNodeListIterator_8241 = null
+            TimedTileQueueEntry.aLinkedNodeListIterator_8241 = null
         }
 
         @JvmStatic
