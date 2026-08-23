@@ -78,7 +78,7 @@ public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, t
         fun method3569(i: Int, i_1_: Int) {
             anInt4969++
             val i_2_ = 83 % ((i_1_ - -87) / 37)
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 4)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i, 105.toByte(), 4)
             class348_sub42_sub15.method3251(-16058)
         }
     }

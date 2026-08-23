@@ -147,7 +147,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
         fun method1733(i: Byte, i_23_: Int) {
             anInt5870++
             if (i.toInt() != -78) method1732(80.toByte(), -38)
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i_23_, 105.toByte(), 11)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i_23_, 105.toByte(), 11)
             class348_sub42_sub15.method3251(-16058)
         }
 

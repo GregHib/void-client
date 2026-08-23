@@ -38,7 +38,7 @@ class BrightnessTextureNode internal constructor(i: Int) : AbstractProceduralTex
 
         fun method3084(i: Int, i_2_: Byte, i_3_: Int) {
             anInt9218++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i_3_, 105.toByte(), 17)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i_3_, 105.toByte(), 17)
             class348_sub42_sub15.method3246(-25490)
             class348_sub42_sub15.anInt9652 = i
             val i_4_ = 59 / ((i_2_ - -7) / 49)

@@ -59,7 +59,7 @@ class NoOpGraphicsOptionState : GraphicsOptionState {
         fun method1803(i: Int, string: String?, i_1_: Int) {
             anInt6047++
             if (i_1_ != -32394) method1803(93, null, 106)
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 3)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i, 105.toByte(), 3)
             class348_sub42_sub15.method3246(i_1_ xor 0x1d18)
             class348_sub42_sub15.aString9654 = string
         }

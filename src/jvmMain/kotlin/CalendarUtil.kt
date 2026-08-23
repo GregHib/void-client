@@ -40,7 +40,7 @@ object CalendarUtil {
     fun method2636(i: Int) {
         val i_5_ = -114 % ((i - 22) / 33)
         anInt4137++
-        MinimapRenderer.aHashtable_1585!!.method3481(0)
+        ConfigValueProvider.aHashtable_1585!!.method3481(0)
         TimedTileQueueEntry.aLinkedNodeListIterator_8241!!.method1009(2110355138)
         TimedTileQueueEntry.aLinkedNodeListIterator_7325!!.method1009(2110355138)
     }

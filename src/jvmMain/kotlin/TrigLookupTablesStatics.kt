@@ -27,7 +27,7 @@ object TrigLookupTablesStatics {
 
     fun method727(i: Byte, i_0_: Int, i_1_: Int, i_2_: Int) {
         anInt1205++
-        val class348_sub42_sub15 = NamedTimedNode.method2516(i_2_, 105.toByte(), 9)
+        val class348_sub42_sub15 = ConfigValueProvider.method2516(i_2_, 105.toByte(), 9)
         class348_sub42_sub15.method3246(i + -25427)
         class348_sub42_sub15.anInt9652 = i_1_
         class348_sub42_sub15.anInt9651 = i_0_

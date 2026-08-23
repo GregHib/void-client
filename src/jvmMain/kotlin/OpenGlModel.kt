@@ -3598,7 +3598,7 @@ class OpenGlModel : AbstractModel {
         fun method687(i: Byte, i_282_: Int) {
             val i_283_ = 113 / ((-63 - i) / 53)
             anInt5570++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i_282_, 105.toByte(), 5)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i_282_, 105.toByte(), 5)
             class348_sub42_sub15.method3251(-16058)
         }
 

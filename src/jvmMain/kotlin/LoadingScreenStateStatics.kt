@@ -84,7 +84,7 @@ object LoadingScreenStateStatics {
 
     fun method1459(i: Int, i_9_: Int) {
         anInt2637++
-        val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 10)
+        val class348_sub42_sub15 = ConfigValueProvider.method2516(i, 105.toByte(), 10)
         class348_sub42_sub15.method3251(-16058)
         if (i_9_ != 2) aRenderableEntryArray2636 = null
     }

@@ -77,7 +77,7 @@ class MinimapPolygonDrawer internal constructor(private val anInt5246: Int, priv
         fun method467(i: Int, i_9_: Int, i_10_: Int) {
             if (i_9_ == -18075) {
                 anInt5248++
-                val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 1)
+                val class348_sub42_sub15 = ConfigValueProvider.method2516(i, 105.toByte(), 1)
                 class348_sub42_sub15.method3246(-25490)
                 class348_sub42_sub15.anInt9652 = i_10_
             }

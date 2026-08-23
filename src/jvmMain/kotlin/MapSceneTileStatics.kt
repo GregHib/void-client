@@ -14,7 +14,7 @@ object MapSceneTileStatics {
     fun method529(i: Int, bool: Boolean) {
         anInt1053++
         if (bool != true) method530(-105)
-        val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 2)
+        val class348_sub42_sub15 = ConfigValueProvider.method2516(i, 105.toByte(), 2)
         class348_sub42_sub15.method3251(-16058)
     }
 

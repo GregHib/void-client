@@ -138,7 +138,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
 
         fun method2966(i: Int, i_4_: Int, bool: Boolean) {
             anInt6864++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 14)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i, 105.toByte(), 14)
             if (bool != false) aFloatArray6865 = null
             class348_sub42_sub15.method3246(-25490)
             class348_sub42_sub15.anInt9652 = i_4_

@@ -5,7 +5,7 @@ object AbstractGameSocketStatics {
     @JvmStatic
     fun method1703(i: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
         anInt3132++
-        val class348_sub42_sub15 = NamedTimedNode.method2516(i_2_, 105.toByte(), i_4_) //4
+        val class348_sub42_sub15 = ConfigValueProvider.method2516(i_2_, 105.toByte(), i_4_) //4
         class348_sub42_sub15.method3246(-25490)
         class348_sub42_sub15.anInt9651 = i_3_
         class348_sub42_sub15.anInt9652 = i

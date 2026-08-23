@@ -84,8 +84,6 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
 
         var anIntArray1583: IntArray? = IntArray(14)
 
-        var aHashtable_1585: Hashtable? = Hashtable(16)
-
         var anInt1587: Int = 0
 
         var anInt1589: Int = 0

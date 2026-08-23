@@ -37,7 +37,7 @@ object FileExistsConditionStatics {
 
     fun method743(i: Int, i_2_: Int) {
         anInt4775++
-        val class348_sub42_sub15 = NamedTimedNode.method2516(i_2_, 105.toByte(), i) //9
+        val class348_sub42_sub15 = ConfigValueProvider.method2516(i_2_, 105.toByte(), i) //9
         class348_sub42_sub15.method3251(i xor 0x3eb0.inv())
     }
 

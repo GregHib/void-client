@@ -167,7 +167,7 @@ class TextureQualityOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1787(i: Int, i_22_: Int) {
             anInt6002++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), i_22_) //8
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i, 105.toByte(), i_22_) //8
             class348_sub42_sub15.method3251(-16058)
         }
         var anInt6637: Int = 2

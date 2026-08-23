@@ -119,7 +119,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
 
         fun method1415(i: Int, i_6_: Int) {
             anInt2520++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), 17)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i, 105.toByte(), 17)
             class348_sub42_sub15.method3251(-16058)
         }
 

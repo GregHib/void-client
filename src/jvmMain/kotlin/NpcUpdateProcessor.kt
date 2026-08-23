@@ -18,7 +18,7 @@ object NpcUpdateProcessor {
 
     fun method855(i: Int, i_0_: Int, i_1_: Int) {
         anInt1520++
-        val class348_sub42_sub15 = NamedTimedNode.method2516(i_1_, 105.toByte(), i) //6
+        val class348_sub42_sub15 = ConfigValueProvider.method2516(i_1_, 105.toByte(), i) //6
         class348_sub42_sub15.method3246(i xor 0x6397.inv())
         class348_sub42_sub15.anInt9652 = i_0_
     }

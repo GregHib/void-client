@@ -16,7 +16,7 @@ object ProjectileSpawner {
 
     fun method1477(i: Int, i_0_: Int) {
         anInt2672++
-        val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), i_0_) //14
+        val class348_sub42_sub15 = ConfigValueProvider.method2516(i, 105.toByte(), i_0_) //14
         class348_sub42_sub15.method3251(-16058)
     }
 

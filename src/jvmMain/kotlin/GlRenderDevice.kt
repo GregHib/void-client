@@ -1371,7 +1371,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         fun method3965(string: String?, i: Int, i_1_: Int) {
             try {
                 anInt9841++
-                val class348_sub42_sub15 = NamedTimedNode.method2516(i, 105.toByte(), i_1_) //2
+                val class348_sub42_sub15 = ConfigValueProvider.method2516(i, 105.toByte(), i_1_) //2
                 class348_sub42_sub15.method3246(-25490)
                 class348_sub42_sub15.aString9654 = string
             } catch (runtimeexception: RuntimeException) {

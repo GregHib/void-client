@@ -1669,7 +1669,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             CipheredPacketBuffer.anInt9752 = 0
             GlTextureCubeMap.anInt8534 = 0
             OggMediaStream.anInt1003 = 0
-            NamedTimedNode.anInt8788 = 0
+            ConfigValueProvider.anInt8788 = 0
             ProjectionCameraTransform.anInt5782 = 0
             GlVertexBufferArb.anInt8485 = 0
             WorldMapScene.anInt3127 = 0

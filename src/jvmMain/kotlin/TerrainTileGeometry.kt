@@ -167,7 +167,7 @@ class TerrainTileGeometry internal constructor(var_ha_Sub2: OpenGlRenderer?, sof
         fun method1647(i: Int, i_3_: Int) {
             if (i != -128) anIntArray3014 = null
             anInt3012++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i_3_, 105.toByte(), 1)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i_3_, 105.toByte(), 1)
             class348_sub42_sub15.method3251(-16058)
         }
     }

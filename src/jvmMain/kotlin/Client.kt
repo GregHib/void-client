@@ -5324,7 +5324,7 @@ class Client : GameAppletFrame() {
         var anInt2746: Int = 0
         fun method1540(i: Int, i_31_: Int, i_32_: Int) {
             anInt2746++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i_31_, 105.toByte(), 13)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i_31_, 105.toByte(), 13)
             class348_sub42_sub15.method3246(-25490)
             class348_sub42_sub15.anInt9652 = i_32_
         }

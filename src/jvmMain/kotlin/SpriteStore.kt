@@ -81,7 +81,7 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
         fun method304(i: Int, i_10_: Int, i_11_: Int) {
             anInt363++
             if (i_10_ != 437853543) aBoolean368 = true
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i_11_, 105.toByte(), 16)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i_11_, 105.toByte(), 16)
             class348_sub42_sub15.method3246(-25490)
             class348_sub42_sub15.anInt9652 = i
         }

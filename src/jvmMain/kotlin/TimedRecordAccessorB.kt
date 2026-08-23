@@ -54,7 +54,7 @@ class TimedRecordAccessorB : TimedRecordAccessor() {
         @JvmStatic
         fun method3316(i: Int, i_0_: Int) {
             anInt9732++
-            val class348_sub42_sub15 = NamedTimedNode.method2516(i_0_, 105.toByte(), 3)
+            val class348_sub42_sub15 = ConfigValueProvider.method2516(i_0_, 105.toByte(), 3)
             if (i > 108) class348_sub42_sub15.method3251(-16058)
         }
     }
