@@ -92,7 +92,7 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
         var aBoxedIntHolder_1591: BoxedIntHolder? = BoxedIntHolder(1)
         @JvmStatic
         fun method886(i: Int) {
-            aHashtable_1585 = null
+            ConfigValueProvider.aHashtable_1585 = null
             aBufferedRandomAccessFileArray1579 = null
             if (i != 16) aBufferedRandomAccessFileArray1579 = null
             anIntArray1583 = null
