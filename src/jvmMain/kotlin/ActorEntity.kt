@@ -1,3 +1,5 @@
+import PositionedSceneNode.Companion.anIntArray8797
+
 abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) : SceneEntity() {
     var aShort8759: Short
     override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {
@@ -46,7 +48,6 @@ abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, 
 
     companion object {
         var aBooleanArrayArray1572: Array<BooleanArray?>? = null
-        var anIntArray8797: IntArray? = intArrayOf(19, 55, 38, 155, 255, 110, 137, 205, 76)
         var anInt6111: Int = 0
         var anInt8502: Int = 0
         var anInt6451: Int = 0
