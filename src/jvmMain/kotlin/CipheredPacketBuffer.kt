@@ -1,4 +1,4 @@
-import NamedTimedNode.Companion.method2516
+import ConfigValueProvider.Companion.method2516
 import NpcType.Companion.method797
 
 /* Class348_Sub49_Sub2 - Decompiled by JODE

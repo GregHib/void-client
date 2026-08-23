@@ -1,4 +1,4 @@
-import NamedTimedNode.Companion.method2516
+import ConfigValueProvider.Companion.method2516
 
 object NamedIdEntryStatics {
     var aClass348_Sub42_Sub14_6885: InterfaceComponentGroup? = null

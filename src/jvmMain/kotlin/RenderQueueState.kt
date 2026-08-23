@@ -1,5 +1,5 @@
 import WaterMaterialPass.Companion.method2152
-import NamedTimedNode.Companion.method2516
+import ConfigValueProvider.Companion.method2516
 
 /* Class328_Sub3 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
