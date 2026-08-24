@@ -243,8 +243,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     if (FacingDirectionNodeStatics.aRenderer6654!!.method3670()) i_27_++
                     RenderbufferObject.method3171(FacingDirectionNodeStatics.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNodeStatics.aRenderer6654!!.method3704() > 0)
                     TerrainShadowBuilderGl2.method3018(SequencedActorEntity.anInt10096)
-                    if (SequencedActorEntity.anInt10096 != 0) ModelResourceBundle.method3328(WorldMapRenderer.aRSFont_4684)
-                    else ModelResourceBundle.method3328(null)
+                    if (SequencedActorEntity.anInt10096 != 0) DelegatingRenderCanvas.method3328(WorldMapRenderer.aRSFont_4684)
+                    else DelegatingRenderCanvas.method3328(null)
                     for (i_28_ in 0..3) TimedRecordAccessorStatics.aCollisionMapArray7108s!![i_28_]!!.method3500(i xor 0x2bc)
                     RsaVarbitHandler.method491((-86).toByte())
                     FloatCameraTransform.method921(99.toByte(), false)
@@ -374,6 +374,10 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
 
         init {
             anIntArray60 = IntArray(8)
+        }
+
+        fun method3328(RSFont: RSFont?) {
+            Tooltip.aRSFont_4456 = RSFont
         }
     }
 }
