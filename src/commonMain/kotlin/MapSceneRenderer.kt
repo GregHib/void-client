@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WorldMapAreaLabel.Companion.method3570
 
 /* Class44 - Decompiled by JODE

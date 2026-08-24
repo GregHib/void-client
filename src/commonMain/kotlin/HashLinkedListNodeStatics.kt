@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 object HashLinkedListNodeStatics {
     var aModelOrSpriteHolder_7058: ModelOrSpriteHolder?
 

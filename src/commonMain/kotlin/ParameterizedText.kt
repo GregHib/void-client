@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WhirlpoolHash.Companion.method2057
 import ParticleSystemRenderer.Companion.method2296
 import ModelVertexColorBuffer.Companion.method2739

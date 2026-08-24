@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import DirectionPath.Companion.method536
 import CompositeRgbNoiseTexture.Companion.method574
 import NpcType.Companion.method802

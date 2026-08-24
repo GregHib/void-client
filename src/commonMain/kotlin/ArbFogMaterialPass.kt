@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MinimapShapeDrawer.Companion.method459
 import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glDisable

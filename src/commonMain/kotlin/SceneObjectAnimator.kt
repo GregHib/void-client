@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ModelBatchBase.Companion.method1130
 import HostPingThread.Companion.method1301
 

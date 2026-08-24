@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CacheArchiveIndexLoader.Companion.method340
 
 /* Class213 - Decompiled by JODE

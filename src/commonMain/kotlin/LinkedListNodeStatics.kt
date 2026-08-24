@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 object LinkedListNodeStatics {
 
     var aJs5Archive_4286: Js5Archive? = null

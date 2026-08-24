@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ProjectileDefinition.method2288
 import VorbisOggDecoder.Companion.method2972
 

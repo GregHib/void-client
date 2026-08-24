@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import LinkedListIterator.Companion.method1242
 import kotlin.concurrent.Volatile
 

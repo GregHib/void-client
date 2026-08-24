@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.concurrent.Volatile
 
 object RenderNodeStatics {

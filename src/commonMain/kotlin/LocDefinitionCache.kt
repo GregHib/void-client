@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WidgetDefinition.Companion.method268
 
 /* Class268 - Decompiled by JODE

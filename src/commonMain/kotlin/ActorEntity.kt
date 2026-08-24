@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 abstract class ActorEntity internal constructor(i: Int, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Int) : SceneEntity() {
     var aShort8759: Short
     override fun method2384(class348_sub1s: Array<AbstractTileShape?>?, i: Int): Int {

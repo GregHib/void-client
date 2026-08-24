@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WhirlpoolHash.Companion.method2057
 import jaclib.memory.Stream
 import jaclib.memory.heap.NativeHeapBuffer

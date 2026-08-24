@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.math.atan2
 
 object ParticleEmitterFactoryStatics {

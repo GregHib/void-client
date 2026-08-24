@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import HeapInfoRecord.Companion.method1248
 import GameClock.method596
 

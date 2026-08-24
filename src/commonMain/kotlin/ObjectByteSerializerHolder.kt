@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import JagGlToolkitFactory.method864
 
 /* Class173 - Decompiled by JODE

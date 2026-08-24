@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import RangedGraphicsOptionState.Companion.method1765
 import kotlin.math.min
 

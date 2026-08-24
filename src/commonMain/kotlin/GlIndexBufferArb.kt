@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaclib.memory.Buffer
 
 class GlIndexBufferArb internal constructor(glRenderDevice: GlRenderDevice, movementDirection: MovementDirection?, bool: Boolean) : GlBufferObject(glRenderDevice, 34963, bool), IndexBufferResource {

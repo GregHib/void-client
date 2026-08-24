@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import TextureQualityOptionState.Companion.method1783
 import ConfigFlagUtil.Companion.method1916
 import MinimapTileEntry.Companion.method381

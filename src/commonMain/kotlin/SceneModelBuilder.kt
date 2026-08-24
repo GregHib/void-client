@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WhirlpoolHash.Companion.method1166
 import WidgetNodeLink.Companion.method1197
 import AudioResampler.Companion.method1273

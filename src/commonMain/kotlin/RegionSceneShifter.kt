@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ClickFeedbackTask.Companion.method1353
 import DetailLevelOptionState.Companion.method1836
 import BackgroundWorkerThread.Companion.method1911

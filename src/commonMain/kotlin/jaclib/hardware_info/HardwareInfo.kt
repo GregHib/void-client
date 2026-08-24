@@ -1,5 +1,6 @@
 package jaclib.hardware_info
 
+import kotlin.jvm.JvmStatic
 
 object HardwareInfo {
     private val dXDiagDisplayDevicesProps: Array<Array<String?>?>?

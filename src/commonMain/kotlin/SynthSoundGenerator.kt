@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import java.util.*
 import kotlin.math.pow
 import kotlin.math.sin

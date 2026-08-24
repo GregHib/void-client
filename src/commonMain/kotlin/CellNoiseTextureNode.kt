@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GraphicsOptionState.Companion.method1717
 import kotlin.random.Random
 

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import IOException_Sub1.Companion.method129
 
 /* Class348_Sub16_Sub2 - Decompiled by JODE

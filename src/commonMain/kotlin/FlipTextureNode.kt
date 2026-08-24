@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlVertexBufferBase.Companion.method1151
 import WaterMaterialPass.Companion.method2148
 import GlslMaterialPass.Companion.method2157

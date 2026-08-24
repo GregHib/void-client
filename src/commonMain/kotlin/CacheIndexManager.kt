@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ObjectSpawnDecoder.method1087
 import BoundsConstraintEntry.Companion.method2056
 import kotlin.concurrent.Volatile

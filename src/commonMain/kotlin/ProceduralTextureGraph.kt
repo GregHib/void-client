@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import NpcType.Companion.method797
 
 /* Class348_Sub42_Sub5 - Decompiled by JODE

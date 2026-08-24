@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import java.awt.Component
 import java.awt.event.FocusEvent
 import java.awt.event.FocusListener

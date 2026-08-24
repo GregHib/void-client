@@ -1,5 +1,6 @@
 package jaclib.peer
 
+import kotlin.jvm.JvmStatic
 
 abstract class Peer protected constructor() {
     protected var reference: PeerReference? = null

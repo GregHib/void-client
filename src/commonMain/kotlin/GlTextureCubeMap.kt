@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glFramebufferTexture2DEXT
 import jaggl.OpenGL.Companion.glTexImage2Di
 import jaggl.OpenGL.Companion.glTexImage2Dub

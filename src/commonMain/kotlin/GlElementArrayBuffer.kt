@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ProjectileConfigUtil.method313
 import NodeDequeHolder.Companion.method878
 

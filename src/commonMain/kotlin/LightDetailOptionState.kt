@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import java.io.IOException
 
 class LightDetailOptionState : GraphicsOptionState {

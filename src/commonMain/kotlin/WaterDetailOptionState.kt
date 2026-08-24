@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 class WaterDetailOptionState : GraphicsOptionState {
     fun method1778(i: Int): Int {
         if (i != -32350) aModelLightingConfig_5990 = null

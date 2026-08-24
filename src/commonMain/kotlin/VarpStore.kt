@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ChatEffectsOptionState.Companion.method1730
 import MidiSequencePlayer.Companion.method2862
 import FixedFunctionWaterPass.Companion.method3548

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 object AbstractGameSocketStatics {
 
     var anInt3132: Int = 0

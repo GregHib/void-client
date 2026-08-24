@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CacheArchiveIndexLoader.Companion.method340
 import ColorThresholdEffect.Companion.method3051
 import kotlin.math.asin

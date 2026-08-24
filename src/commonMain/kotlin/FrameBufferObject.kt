@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ParticleSystemState.Companion.method1296
 import WaterMaterialPass.Companion.method2148
 import ParticleTileShape.Companion.method2732

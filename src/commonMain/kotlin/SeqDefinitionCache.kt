@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import TwoStateOptionState.Companion.method1842
 import MultiLevelOptionState.Companion.method1850
 

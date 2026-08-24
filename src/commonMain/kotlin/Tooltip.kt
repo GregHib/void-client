@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MinimapRectClipper.method226
 import SceneTilePlaneManager.method260
 import TextureAtlasState.Companion.method3490

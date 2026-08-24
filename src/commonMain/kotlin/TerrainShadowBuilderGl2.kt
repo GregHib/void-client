@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CacheArchiveIndexLoader.Companion.method340
 import kotlinx.coroutines.Job
 import kotlin.math.sqrt

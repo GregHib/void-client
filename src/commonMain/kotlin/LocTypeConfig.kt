@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import NormalMapTextureNode.Companion.method3140
 
 /* Class277 - Decompiled by JODE

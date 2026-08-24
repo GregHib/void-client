@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CacheArchiveIndex.Companion.method1070
 import GlElementArrayBuffer.Companion.method1156
 import WhirlpoolHash.Companion.method831

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ModelGroundDecor.Companion.method2419
 import HashTileShape.Companion.method2729
 

@@ -1,5 +1,6 @@
 package direct
 
+import kotlin.jvm.JvmStatic
 import AbstractCameraTransform
 import AbstractModel
 import ParticleEmitterNode.Companion.method219

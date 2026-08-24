@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GameAppletFrame.Companion.method94
 import GlCubeMapTexture.Companion.method243
 import WaterDetailOptionState.Companion.method1781

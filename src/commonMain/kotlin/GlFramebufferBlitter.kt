@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glBegin
 import jaggl.OpenGL.Companion.glBlitFramebufferEXT
 import jaggl.OpenGL.Companion.glEnd

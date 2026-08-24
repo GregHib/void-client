@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import AudioResampler.Companion.method1274
 import GlTexture3D.Companion.method1960
 import MinimapTileEntry.Companion.method383

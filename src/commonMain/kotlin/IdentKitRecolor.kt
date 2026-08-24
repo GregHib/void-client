@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import NpcAnimationResolver.Companion.method214
 import ProjectileFactory.Companion.aBoolean2895
 import WorldMapElement.Companion.method181

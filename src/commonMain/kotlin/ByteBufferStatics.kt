@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import AbstractFrameBufferSurface.Companion.method3007
 import Client.Companion.method3196
 import CacheIndexManager.Companion.method2355

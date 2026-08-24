@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 object AbstractTileShapeStatics {
 
     var anIntArray6547: IntArray? = null

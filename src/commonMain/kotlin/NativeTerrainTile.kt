@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaclib.memory.Stream
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.sqrt

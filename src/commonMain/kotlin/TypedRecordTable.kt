@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import HeadIconRenderer.Companion.method1211
 import WorldListEntry.Companion.method285
 import java.util.zip.CRC32

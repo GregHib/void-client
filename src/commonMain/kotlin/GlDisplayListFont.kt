@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glCallList
 import jaggl.OpenGL.Companion.glEndList
 import jaggl.OpenGL.Companion.glGenLists

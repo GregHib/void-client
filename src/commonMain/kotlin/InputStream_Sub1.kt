@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import java.io.InputStream
 
 class InputStream_Sub1 : InputStream() {

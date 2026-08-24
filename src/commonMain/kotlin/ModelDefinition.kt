@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.random.Random
 
 class ModelDefinition {

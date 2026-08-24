@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import IOException_Sub1.Companion.method131
 
 /* Class35 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ObjectSpawnDecoder.method1088
 import GlTexture2DRegion.Companion.method3553
 import MapSceneRenderer.method384

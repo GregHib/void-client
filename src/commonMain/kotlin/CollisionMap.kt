@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WhirlpoolHash.Companion.method1166
 import TwoStateOptionState.Companion.method1842
 import WhirlpoolHash.Companion.method2057

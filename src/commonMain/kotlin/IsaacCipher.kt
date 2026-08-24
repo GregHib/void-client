@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import direct.Direct3dModel
 
 /* Class77 - Decompiled by JODE

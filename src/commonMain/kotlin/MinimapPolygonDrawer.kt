@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import BasicGlRenderPass.Companion.method3540
 import OpenGlRenderer.Companion.method3743
 import java.awt.Color

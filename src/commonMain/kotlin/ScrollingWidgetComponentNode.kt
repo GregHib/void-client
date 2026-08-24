@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import RSFont.Companion.method2570
 
 class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?, class288_sub1: ParticleEmitterDefExt?) : WidgetComponentNode(js5Archive, class288_sub1) {

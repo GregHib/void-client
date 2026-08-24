@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glTexImage2Dub
 import java.util.*
 import kotlin.math.min

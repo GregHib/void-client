@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import RefCountedHandle.Companion.method1323
 import ModelOrSpriteHolder.Companion.method174
 import NoiseTextureGenerator.Companion.method545

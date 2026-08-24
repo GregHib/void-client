@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import VoronoiNoiseTextureNode.Companion.method3060
 import kotlin.math.sqrt
 

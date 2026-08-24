@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.math.sqrt
 
 /* Class348_Sub40_Sub36 - Decompiled by JODE

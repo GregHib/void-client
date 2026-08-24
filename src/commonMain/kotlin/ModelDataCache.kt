@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlTexture2DRegion.Companion.method3553
 
 /* Class24 - Decompiled by JODE

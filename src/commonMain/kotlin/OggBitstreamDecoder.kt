@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import AntialiasOptionState.Companion.method1819
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggStreamState

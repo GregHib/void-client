@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import FixedFunctionMaterialPass.Companion.method2145
 import ModelVertexColorBuffer.Companion.method2739
 import BoxBlurTextureNode.Companion.method3147

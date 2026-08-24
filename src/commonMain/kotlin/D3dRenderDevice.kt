@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CollisionFlagQuery.Companion.aCollisionFlagQuery_1195
 import CollisionFlagQuery.Companion.aCollisionFlagQuery_1197
 import CollisionFlagQuery.Companion.aCollisionFlagQuery_1198

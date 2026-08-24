@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MatrixCameraTransform.Companion.method913
 import SceneTilePlaneManager.method260
 import ModelOrSpriteHolder.Companion.method173

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GroundDecorEntity.Companion.method2408
 
 /* Class147 - Decompiled by JODE

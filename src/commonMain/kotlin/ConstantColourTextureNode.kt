@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import SphereMapMaterialPass.Companion.method2177
 import GroundDecorEntity.Companion.method2413
 import NpcType.Companion.method802

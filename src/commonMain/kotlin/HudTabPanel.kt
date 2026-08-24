@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import SceneTilePlaneManager.method260
 import ArrayCopyUtil.method1574
 import ProjectedGroundDecor.Companion.method2431

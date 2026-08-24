@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CollisionMapAccessor.method2064
 import kotlin.math.atan2
 import kotlin.math.sqrt

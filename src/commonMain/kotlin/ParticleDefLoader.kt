@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import DetailLevelOptionState.Companion.method1837
 import direct.Direct3dModel
 

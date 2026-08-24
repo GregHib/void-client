@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import TexGenMaterialPass.Companion.method2161
 import TypedRecordTable.Companion.method2178
 import HeightMapNoise.method2278

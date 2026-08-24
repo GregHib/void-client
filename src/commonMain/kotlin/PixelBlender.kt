@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CubemapTextureGlSource.Companion.method2264
 import CompositeRgbNoiseTexture.Companion.method574
 

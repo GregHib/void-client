@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ArrayCopyUtil.method1577
 import NoiseTextureGenerator.Companion.method547
 import FlipTextureNode.Companion.method589

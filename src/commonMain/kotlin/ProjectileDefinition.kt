@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlArrayBufferObject.Companion.method1153
 import HeapInfoRecord.Companion.method1248
 import HudTabPanel.Companion.method1642

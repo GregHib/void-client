@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import FlickeringEffectsOptionState.Companion.method1753
 import LocConfigModelBuilder.Companion.method3561
 

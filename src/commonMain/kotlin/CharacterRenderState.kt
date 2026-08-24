@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WaterMaterialPass.Companion.method2148
 import StreamingResourceRequest.Companion.method3262
 import LocConfigModelBuilder.Companion.method3563

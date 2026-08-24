@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import java.awt.Canvas
 import java.awt.Graphics
 import java.awt.Image

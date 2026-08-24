@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlVertexBufferArb.Companion.method2131
 import TexGenMaterialPass.Companion.method2161
 import jaggl.OpenGL.Companion.glCopyTexSubImage3D

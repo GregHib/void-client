@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlRectangleTexture.Companion.method250
 import kotlin.math.max
 import kotlin.math.min

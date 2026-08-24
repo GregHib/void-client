@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 object AbstractMenuEntryStatics {
 
     var aShort1700: Short = 256

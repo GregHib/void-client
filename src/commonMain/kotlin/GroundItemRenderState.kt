@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import KaraokeSubtitleStream.Companion.method2988
 import NativeBufferHandle.Companion.method850
 

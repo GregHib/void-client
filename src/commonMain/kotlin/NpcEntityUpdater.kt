@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ParticleDefLoader.Companion.method1376
 import CollisionMapAccessor.method2064
 import NativeBufferHandle.Companion.method850

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ServerConnectionInfo.Companion.method1258
 import RangeThresholdTextureNode.Companion.method3056
 import EdgeDetectTextureNode.Companion.method3073

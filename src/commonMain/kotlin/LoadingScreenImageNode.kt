@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MinimapFlagRenderer.method1083
 import GlFramebufferBlitter.Companion.method282
 import MapRegionLoader.Companion.method749

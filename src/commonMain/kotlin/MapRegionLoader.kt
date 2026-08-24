@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import SoundEnvelope.Companion.method303
 import SoundEngineInitializer.method353
 import WidgetComponent.Companion.method424

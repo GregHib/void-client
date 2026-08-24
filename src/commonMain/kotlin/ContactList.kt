@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CollisionFlagQuery.Companion.aCollisionFlagQuery_1199
 import SceneModelBuilder.Companion.method2496
 import ContactList.Companion.method721

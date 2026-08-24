@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ProjectileSpawner.method1478
 
 /* Class281 - Decompiled by JODE

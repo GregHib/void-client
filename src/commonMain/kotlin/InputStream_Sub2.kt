@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ByteArrayPool.anInt496
 import java.io.InputStream
 

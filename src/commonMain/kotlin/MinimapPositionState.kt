@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import DelegatingRenderCanvas.Companion.method119
 import MinimapDrawController.method950
 import ScriptCompilerThread.Companion.method1053

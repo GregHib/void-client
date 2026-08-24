@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaclib.memory.heap.NativeHeap
 import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glGenProgramARB

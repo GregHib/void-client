@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ClientLoadStateMachine.method1277
 import PerlinTextureProvider.Companion.method1402
 import SocketGameConnection.Companion.method1707

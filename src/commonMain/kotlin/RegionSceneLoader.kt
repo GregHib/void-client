@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import LightDetailOptionState.Companion.method1802
 import WaterMaterialPass.Companion.method2148
 import WorldMapAreaLabel.Companion.method3570

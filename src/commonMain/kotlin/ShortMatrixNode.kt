@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ConfigFlagUtil.Companion.method1916
 import CompassSmoother.Companion.method2017
 import ActiveMapRegion.method769

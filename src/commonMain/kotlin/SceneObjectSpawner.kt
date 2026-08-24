@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ScrollingNoiseTexture.Companion.method560
 
 /* Class76 - Decompiled by JODE

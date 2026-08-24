@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.concurrent.Volatile
 import kotlin.math.max
 import kotlin.math.min

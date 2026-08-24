@@ -1,6 +1,7 @@
 package com.ms.win32
 
 import com.ms.dll.Callback
+import kotlin.jvm.JvmStatic
 
 object User32 {
     @JvmStatic

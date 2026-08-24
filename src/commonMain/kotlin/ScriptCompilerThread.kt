@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import TexGenMaterialPass.Companion.method2161
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.runBlocking

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CircleRasterizer.Companion.method2253
 import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable

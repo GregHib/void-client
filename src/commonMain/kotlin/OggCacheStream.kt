@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import java.io.IOException
 
 class OggCacheStream private constructor(i: Int, js5Archive: Js5Archive, i_1_: Int) : OggMediaStream(i) {

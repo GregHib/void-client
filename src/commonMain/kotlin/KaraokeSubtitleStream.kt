@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ParticleDetailOptionState.Companion.method1793
 import WaterMaterialPass.Companion.method2152
 import jagtheora.ogg.OggPacket

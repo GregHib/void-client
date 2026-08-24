@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MouseInputTracker.Companion.method3607
 
 /* Class348_Sub40_Sub32 - Decompiled by JODE

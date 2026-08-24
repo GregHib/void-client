@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.math.atan2
 
 /* Class348_Sub40_Sub33 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlRectangleTexture.Companion.method253
 import IdentKitRecolor.Companion.method203
 

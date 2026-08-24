@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ScanlineRasterFiller.Companion.method1387
 import kotlin.concurrent.Volatile
 

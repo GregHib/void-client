@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import NoiseTextureGenerator.Companion.method544
 
 /* Class239_Sub1 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import external.oa
 
 /* Class348_Sub45 - Decompiled by JODE

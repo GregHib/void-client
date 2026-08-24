@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ClientException.Companion.method141
 
 /* Class100 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import StreamingResourceRequest.Companion.method3261
 
 /* Class43 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import PlayerAppearanceUpdateDecoder.method3612
 
 /* Class348_Sub16_Sub1 - Decompiled by JODE

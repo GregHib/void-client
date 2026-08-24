@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import SceneTilePlaneManager.method260
 import LoadProgressCounters.Companion.method1373
 

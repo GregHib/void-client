@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import DelegatingRenderCanvas.Companion.method120
 import DelegatingRenderCanvas.Companion.method123
 import ParticleEmitterNode.Companion.method218

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CircleRasterizer.Companion.method2253
 import jagex3.jagmisc.jagmisc.ping
 import kotlinx.coroutines.Dispatchers

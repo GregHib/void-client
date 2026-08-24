@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import SceneTilePlaneManager.method260
 import CubemapTextureImplSource.Companion.method2270
 import ProjectedGroundDecor.Companion.method2431

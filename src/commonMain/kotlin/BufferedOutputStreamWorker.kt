@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job

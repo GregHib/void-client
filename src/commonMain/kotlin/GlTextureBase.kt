@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glBindTexture
 import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable

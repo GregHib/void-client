@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CameraDistanceOptionState.Companion.method1725
 
 /* Class318_Sub1_Sub1 - Decompiled by JODE

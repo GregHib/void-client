@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WorldMapPolygonIconLabel.Companion.method3575
 import DirectionPath.Companion.method535
 import NativeBufferHandle.Companion.method849

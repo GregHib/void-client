@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import NamedTimedNode.Companion.method2516
 import NpcType.Companion.method797
 

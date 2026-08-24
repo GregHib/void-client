@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import Player.Companion.method2460
 
 /* Class253 - Decompiled by JODE

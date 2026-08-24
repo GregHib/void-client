@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import BrightnessOptionState.Companion.method1745
 import ModelHeaderCache.Companion.method1935
 import WaterMaterialPass.Companion.method2148

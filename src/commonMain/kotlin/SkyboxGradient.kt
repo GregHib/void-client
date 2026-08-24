@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WaterMaterialPass.Companion.method2148
 
 /* Class313 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ChatEffectsOptionState.Companion.method1731
 import BrightnessOptionState.Companion.method1745
 import FixedFunctionMaterialPass.Companion.method2146

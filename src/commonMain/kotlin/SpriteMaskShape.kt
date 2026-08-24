@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ItemActionPacketSender.method1237
 import FlickeringEffectsOptionState.Companion.method1753
 import WaterMaterialPass.Companion.method2148

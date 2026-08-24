@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.concurrent.Volatile
 
 /* Class348_Sub42_Sub16 - Decompiled by JODE

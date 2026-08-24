@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlTexture1D.Companion.method1974
 
 /* Class187 - Decompiled by JODE

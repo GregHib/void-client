@@ -2,7 +2,7 @@ package jaggl
 
 import java.awt.Canvas
 import java.util.*
-
+import kotlin.jvm.JvmStatic
 
 class OpenGL {
     private var a: Thread? = null

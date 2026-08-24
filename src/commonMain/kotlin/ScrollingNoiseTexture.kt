@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlinx.coroutines.runBlocking
 
 /* Class59_Sub1_Sub1 - Decompiled by JODE

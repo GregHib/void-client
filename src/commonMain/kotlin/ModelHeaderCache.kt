@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import FloorOverlayDefinition.Companion.method500
 
 /* Class255 - Decompiled by JODE

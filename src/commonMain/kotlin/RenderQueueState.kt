@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WaterMaterialPass.Companion.method2152
 import NamedTimedNode.Companion.method2516
 

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glAttachObjectARB
 import jaggl.OpenGL.Companion.glCreateProgramObjectARB
 import jaggl.OpenGL.Companion.glDeleteObjectARB

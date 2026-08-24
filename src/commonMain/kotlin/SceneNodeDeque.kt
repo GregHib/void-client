@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import Gl3dTexture.Companion.method248
 import SceneTilePlaneManager.method260
 import LightDetailOptionState.Companion.method1802

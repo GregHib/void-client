@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GameClock.method599
 
 /* Class318_Sub9_Sub1 - Decompiled by JODE

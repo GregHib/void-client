@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MinimapSquareDrawer.Companion.method462
 
 /* Class254 - Decompiled by JODE

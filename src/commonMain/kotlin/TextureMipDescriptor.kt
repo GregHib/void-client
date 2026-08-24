@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WhirlpoolHash.Companion.method1166
 import WhirlpoolHash.Companion.method2057
 import jaggl.OpenGL.Companion.glTexImage2Di

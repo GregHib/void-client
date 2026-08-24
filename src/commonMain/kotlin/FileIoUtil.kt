@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import BufferedFileReader.method3610
 import java.io.File
 import java.io.IOException

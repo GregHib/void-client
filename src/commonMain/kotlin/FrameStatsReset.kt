@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ScrollingWidgetComponentNode.Companion.method1118
 import FixedFunctionMaterialPass.Companion.method2145
 import CombineTextureNode.Companion.method3089

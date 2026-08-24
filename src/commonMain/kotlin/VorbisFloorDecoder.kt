@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CircleRasterizer.Companion.method2253
 import VorbisAudioDecoder.Companion.method2788
 import VorbisAudioDecoder.Companion.method2789

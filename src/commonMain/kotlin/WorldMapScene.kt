@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import RefCountedHandle.Companion.method1320
 import MapSceneDefLoader.Companion.method1394
 import LoadingScreenState.Companion.method1457

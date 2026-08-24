@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ShadowQualityOptionState.Companion.method1791
 
 /* Class11 - Decompiled by JODE

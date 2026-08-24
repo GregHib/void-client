@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ChatMessageStream.Companion.method138
 
 /* Class99 - Decompiled by JODE

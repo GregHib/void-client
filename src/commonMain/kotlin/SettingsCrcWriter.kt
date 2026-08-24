@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MatrixCameraTransform.Companion.method912
 import ShadowQualityOptionState.Companion.method1788
 

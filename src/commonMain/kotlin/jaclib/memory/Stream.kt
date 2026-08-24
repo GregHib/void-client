@@ -1,5 +1,6 @@
 package jaclib.memory
 
+import kotlin.jvm.JvmStatic
 
 class Stream private constructor(arg0: Int) {
     private var a = 0

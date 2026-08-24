@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ActorEntity.Companion.method163
 import FontMetaRef.Companion.aLruByteCache_4327
 import java.awt.Color

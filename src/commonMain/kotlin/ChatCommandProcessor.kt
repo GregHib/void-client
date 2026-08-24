@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GameAppletFrame.Companion.method94
 import ParticleEmitterNode.Companion.method217
 import SceneRegionState.method222

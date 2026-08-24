@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ColorThresholdEffect.Companion.method3051
 import java.awt.Canvas
 

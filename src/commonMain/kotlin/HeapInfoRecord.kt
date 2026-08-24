@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import PlayerUpdateDecoder.method1142
 import ProjectileFactory.Companion.anIntArray2899
 import ProjectileFactory.Companion.anIntArrayArray2900

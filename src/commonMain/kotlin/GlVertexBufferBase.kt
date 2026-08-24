@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaclib.memory.Buffer
 import jaggl.OpenGL.Companion.glBufferDataARBa
 import jaggl.OpenGL.Companion.glBufferDataARBub

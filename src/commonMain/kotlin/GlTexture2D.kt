@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glCopyTexImage2D
 import jaggl.OpenGL.Companion.glCopyTexSubImage2D
 import jaggl.OpenGL.Companion.glFlush

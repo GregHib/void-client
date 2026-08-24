@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CollisionMapAccessor.method2066
 import Gl3dTexture.Companion.method249
 

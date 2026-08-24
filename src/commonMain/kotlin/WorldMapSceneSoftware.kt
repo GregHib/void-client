@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CollisionMapRegion.Companion.method1045
 import NativeVertexBuffer.Companion.method1079
 import WhirlpoolHash.Companion.method1166

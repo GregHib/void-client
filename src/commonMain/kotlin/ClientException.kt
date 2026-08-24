@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 /* Exception_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */

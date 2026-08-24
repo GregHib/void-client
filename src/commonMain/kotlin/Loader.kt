@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GameAppletFrame.Companion.provideLoaderApplet
 import java.awt.BorderLayout
 import java.awt.Component

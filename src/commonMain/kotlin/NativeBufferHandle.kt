@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import RingBufferInputStream.Companion.method3620
 
 /* Class89 - Decompiled by JODE

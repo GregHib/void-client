@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MidiSequencePlayer.Companion.method2878
 import RangeThresholdTextureNode.Companion.method3055
 import OggMediaStream.Companion.method520

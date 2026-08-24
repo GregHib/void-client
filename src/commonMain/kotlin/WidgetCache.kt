@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CharCountUtil.method256
 import GraphicsOptionState.Companion.method1711
 import RsaVarbitHandler.Companion.method494

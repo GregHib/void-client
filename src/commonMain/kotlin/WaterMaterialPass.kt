@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import TwoStateOptionState.Companion.method1847
 import MinimapShapeDrawer.Companion.method459
 import jaggl.OpenGL.Companion.glBindProgramARB

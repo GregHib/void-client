@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 /* za - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */

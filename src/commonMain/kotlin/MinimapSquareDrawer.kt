@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import DefaultGraphicsOptionState.Companion.method1839
 import OggMediaStream.Companion.method515
 import Renderer.Companion.anInt4581

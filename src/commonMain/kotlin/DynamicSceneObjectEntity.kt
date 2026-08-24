@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import RenderableGroup.Companion.method1449
 import ChatMessageStream.Companion.method136
 import kotlin.math.atan2

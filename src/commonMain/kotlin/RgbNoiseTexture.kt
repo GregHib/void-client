@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.math.abs
 import kotlin.math.pow
 

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import LinkedListIterator.Companion.method1241
 import BooleanGraphicsOptionState.Companion.method1722
 import NpcReference.Companion.method2959

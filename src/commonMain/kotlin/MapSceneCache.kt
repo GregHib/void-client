@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import AbstractModel.Companion.method607
 
 /* Class84 - Decompiled by JODE

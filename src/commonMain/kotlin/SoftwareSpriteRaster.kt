@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import AbstractBloomEffect.Companion.method2753
 import HslColorConfig.Companion.method295
 import GrayscaleNoiseTexture.Companion.method552

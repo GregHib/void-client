@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import TextureQualityOptionState.Companion.method1782
 import java.awt.Rectangle
 

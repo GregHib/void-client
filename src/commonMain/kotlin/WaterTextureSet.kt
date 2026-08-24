@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GrowableStringList.Companion.anInt2361
 import Js5Archive.Companion.method3873
 import Js5Archive.Companion.method461

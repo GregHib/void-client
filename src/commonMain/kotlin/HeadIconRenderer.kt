@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import SoftwareSpriteRaster.Companion.method960
 import SpriteRgbTextureNode.Companion.method3093
 import ParticleTileShape.Companion.method2732

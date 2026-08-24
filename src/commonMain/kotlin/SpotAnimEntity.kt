@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ModelFacePriorityNode.Companion.method3591
 import MapRegionLoader.Companion.method756
 import MapRegionLoader.Companion.method760

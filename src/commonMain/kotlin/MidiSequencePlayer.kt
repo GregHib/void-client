@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import java.net.URL
 import kotlin.math.max
 import kotlin.math.pow

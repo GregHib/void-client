@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import TextureDefinitionCache.Companion.method1626
 
 /* Class290 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlCubeMapTexture.Companion.method245
 import ClickFeedbackTask.Companion.method1353
 import GlTexture2D.Companion.method1969

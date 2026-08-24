@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlWaterRenderPass.Companion.method3536
 import NpcType.Companion.method802
 import kotlin.concurrent.Volatile

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ArrayCopyUtil.method1576
 
 /* Class331 - Decompiled by JODE

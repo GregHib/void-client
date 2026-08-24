@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ProjectedGroundDecor.Companion.method2433
 import AbstractFrameBufferSurface.Companion.method3007
 import LocTypeConfig.Companion.method160

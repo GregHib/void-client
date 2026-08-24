@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import RSFont.Companion.method2570
 import ModelVertexColorBuffer.Companion.method2743
 import java.awt.Color

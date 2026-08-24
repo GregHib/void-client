@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ShadowQualityOptionState.Companion.method1791
 import ChatCommandProcessor.method3038
 import SceneObjectSpawner.Companion.method773

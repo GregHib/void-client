@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.math.max
 
 /* Class265 - Decompiled by JODE

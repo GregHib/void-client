@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MinimapLineDrawer.Companion.method473
 import ScrollingNoiseTexture.Companion.method558
 

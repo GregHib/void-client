@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ActorEntity.Companion.method2169
 import WhirlpoolHash.Companion.anInt1067
 import WhirlpoolHash.Companion.anInt3225

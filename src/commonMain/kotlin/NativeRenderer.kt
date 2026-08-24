@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CubeMapMaterialPass.Companion.method2173
 import MidiSequencePlayer.Companion.method2878
 import InvertTextureNode.Companion.method3135

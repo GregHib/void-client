@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.math.pow
 
 /* Class59_Sub1_Sub2 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CharacterRenderState.Companion.method2778
 import jaclib.memory.Stream.Companion.floatToRawIntBits
 import OpenGlTerrainTile.Companion.method4001

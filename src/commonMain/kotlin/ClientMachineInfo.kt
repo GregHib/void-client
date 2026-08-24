@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaclib.hardware_info.HardwareInfo.cPUInfo
 import java.util.*
 

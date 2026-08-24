@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GameClock.method599
 import jaggl.OpenGL.Companion.glCompileShaderARB
 import jaggl.OpenGL.Companion.glCreateShaderObjectARB

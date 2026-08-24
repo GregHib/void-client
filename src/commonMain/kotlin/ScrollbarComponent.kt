@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import TwoStateOptionState.Companion.method1842
 
 /* Class5_Sub1 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GameAppletFrame.Companion.method94
 import WallEntity.Companion.method2483
 import TurbulenceTextureNode.Companion.method3113

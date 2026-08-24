@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ConfigFlagUtil.Companion.method1915
 
 /* Class354 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlElementArrayBuffer.Companion.method1156
 import ClickFeedbackTask.Companion.method1353
 import SimpleToggleOptionState.Companion.method1742

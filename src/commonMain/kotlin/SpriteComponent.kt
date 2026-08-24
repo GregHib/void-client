@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WaterMaterialPass.Companion.method2148
 import NoiseTextureGenerator.Companion.method544
 

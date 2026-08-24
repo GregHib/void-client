@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 /* Class63 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */

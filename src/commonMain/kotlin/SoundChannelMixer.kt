@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ArrayCopyUtil.method1573
 import TexGenMaterialPass.Companion.method2161
 import GameClock.method599

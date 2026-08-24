@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import BlankTextureNode.Companion.method3098
 
 /* Class9 - Decompiled by JODE

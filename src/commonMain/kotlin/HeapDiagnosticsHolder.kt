@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import StreamingResourceRequest.Companion.method3262
 import kotlin.concurrent.Volatile
 

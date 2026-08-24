@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlGroundShaderPass.Companion.method3555
 
 /* Class348_Sub1_Sub3 - Decompiled by JODE

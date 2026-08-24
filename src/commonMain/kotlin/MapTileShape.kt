@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ConfigFlagUtil.Companion.method1913
 import ConfigFlagUtil.Companion.method1916
 import RSFont.Companion.method2570

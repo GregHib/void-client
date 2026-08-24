@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaclib.memory.heap.NativeHeap
 
 class NativeShaderProgram(i: Int) : ShaderProgram() {

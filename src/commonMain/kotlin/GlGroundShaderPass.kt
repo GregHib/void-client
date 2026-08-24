@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ByteBufferStatics.method1713
 import TexGenMaterialPass.Companion.method2158
 import CubemapTexture2dSource.Companion.method2260

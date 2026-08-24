@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ModelHeaderCache.Companion.method1935
 import VorbisOggDecoder.Companion.method2967
 import ChatMessageStream.Companion.method136

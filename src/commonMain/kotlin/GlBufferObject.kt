@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaclib.memory.Buffer
 import jaclib.memory.Source
 import jaclib.memory.heap.NativeHeapBuffer

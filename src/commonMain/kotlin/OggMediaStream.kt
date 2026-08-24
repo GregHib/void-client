@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jagtheora.ogg.OggPacket
 import jagtheora.ogg.OggPage
 import jagtheora.ogg.OggStreamState

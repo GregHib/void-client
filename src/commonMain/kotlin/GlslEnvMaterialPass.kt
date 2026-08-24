@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glGetUniformLocationARB
 import jaggl.OpenGL.Companion.glUniform1fARB
 import jaggl.OpenGL.Companion.glUniform1iARB

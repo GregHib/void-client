@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import RSFont.Companion.method2570
 
 /* Class348_Sub40_Sub19 - Decompiled by JODE

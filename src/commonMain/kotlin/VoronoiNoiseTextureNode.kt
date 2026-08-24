@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import kotlin.math.max
 import kotlin.math.sqrt
 import kotlin.random.Random

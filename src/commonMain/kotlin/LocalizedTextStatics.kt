@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import LocalizedText.Companion.aLocalizedText_3483
 import LocalizedText.Companion.aLocalizedText_3485
 import LocalizedText.Companion.aLocalizedText_3486

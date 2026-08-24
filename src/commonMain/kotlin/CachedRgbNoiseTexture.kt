@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import DisplayModeOptionState.Companion.method1827
 
 /* Class59_Sub2_Sub1 - Decompiled by JODE

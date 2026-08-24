@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import KeyedCacheEntryReference.Companion.method3203
 
 /* Class126 - Decompiled by JODE

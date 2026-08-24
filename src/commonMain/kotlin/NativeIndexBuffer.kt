@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MinimapRectClipper.method226
 import RemoveRoofsOptionState.Companion.method1813
 import FixedFunctionWaterPass.Companion.method3549

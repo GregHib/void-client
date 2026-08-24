@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jagex3.jagmisc.jagmisc.quit
 import java.awt.Color
 import java.awt.Container

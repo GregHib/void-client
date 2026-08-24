@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MultiLevelOptionState.Companion.method1849
 import jaclib.memory.Buffer
 import jaclib.memory.Source

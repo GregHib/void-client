@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import TexGenMaterialPass.Companion.method2161
 import AbstractFrameBufferSurface.Companion.method3014
 import java.io.IOException

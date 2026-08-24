@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 /* Class318_Sub1_Sub5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */

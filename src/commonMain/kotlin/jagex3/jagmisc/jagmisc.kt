@@ -1,5 +1,6 @@
 package jagex3.jagmisc
 
+import kotlin.jvm.JvmStatic
 
 object jagmisc {
     private val totalPhysicalMemory: Long

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import BrightnessOptionState.Companion.method1745
 import GlVertexBufferArb.Companion.method2127
 import jaggl.OpenGL.Companion.glDisable

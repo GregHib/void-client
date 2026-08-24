@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import VorbisOggDecoder.Companion.method2970
 
 /* Class348_Sub40_Sub39 - Decompiled by JODE

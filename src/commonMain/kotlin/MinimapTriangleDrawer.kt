@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WallEntity.Companion.method2486
 
 /* Class50_Sub2 - Decompiled by JODE

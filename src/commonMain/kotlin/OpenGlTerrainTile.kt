@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import jaclib.memory.Stream
 import jaggl.OpenGL.Companion.glLoadMatrixf
 import jaggl.OpenGL.Companion.glMatrixMode

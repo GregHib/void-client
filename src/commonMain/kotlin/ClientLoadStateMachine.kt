@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GameAppletFrame.Companion.method85
 import AnimatedModelRenderer.Companion.method988
 import InputSettingsState.method1063

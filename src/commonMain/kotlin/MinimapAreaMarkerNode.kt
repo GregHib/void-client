@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import MinimapRectClipper.method226
 
 /* Class348_Sub42_Sub19 - Decompiled by JODE

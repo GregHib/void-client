@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import PcmStreamBuffer.Companion.method2834
 
 /* Class105_Sub1 - Decompiled by JODE

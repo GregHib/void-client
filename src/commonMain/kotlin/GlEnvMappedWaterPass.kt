@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import RSFont.Companion.method2582
 import jaggl.OpenGL.Companion.glGetUniformLocationARB
 import jaggl.OpenGL.Companion.glUniform1fARB

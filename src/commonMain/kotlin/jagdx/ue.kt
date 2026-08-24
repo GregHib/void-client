@@ -1,5 +1,6 @@
 package jagdx
 
+import kotlin.jvm.JvmStatic
 
 object ue {
     @JvmStatic

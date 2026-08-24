@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ChatEffectsOptionState.Companion.method1728
 
 /* Class239 - Decompiled by JODE

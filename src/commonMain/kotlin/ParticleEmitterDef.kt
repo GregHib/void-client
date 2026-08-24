@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ProjectileFactory.Companion.method1613
 import Texture2DProvider.Companion.method2259
 

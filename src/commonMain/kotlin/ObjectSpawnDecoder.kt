@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import FontMetaRef.Companion.aBoolean4328
 import FontMetaRef.Companion.anInt4324
 import WorldMapAreaLabel.Companion.method3570

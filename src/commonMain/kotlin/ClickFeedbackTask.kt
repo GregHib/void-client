@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ProjectionCameraTransform.Companion.method943
 import ParticleSystemState.Companion.method1296
 import ParticleTileShape.Companion.method2732

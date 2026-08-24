@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import SpotAnimEntity.Companion.method2510
 
 /* Class348_Sub42_Sub18 - Decompiled by JODE

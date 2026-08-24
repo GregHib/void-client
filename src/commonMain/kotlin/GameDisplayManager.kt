@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlCubeMapTexture.Companion.method243
 import ByteBufferStatics.method1713
 import FixedFunctionMaterialPass.Companion.method2145

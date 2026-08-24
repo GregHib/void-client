@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import WorldMapLabel.Companion.method3568
 import RingBufferInputStream.Companion.method3616
 

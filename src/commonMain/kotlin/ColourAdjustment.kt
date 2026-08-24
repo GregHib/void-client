@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import DetailLevelOptionState.Companion.method1836
 import CubeMapMaterialPass.Companion.method2172
 import OpenGlTerrainTile.Companion.method4002

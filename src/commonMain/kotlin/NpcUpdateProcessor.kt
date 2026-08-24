@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import FixedFunctionMaterialPass.Companion.method2146
 import WorldMapElement.Companion.method181
 import IdentKitRecolor.Companion.method204

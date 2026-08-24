@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import NullOggStream.Companion.anInt9040
 import java.io.IOException
 import java.net.Socket

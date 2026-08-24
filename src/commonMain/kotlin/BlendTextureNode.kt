@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import java.awt.datatransfer.Clipboard
 
 class BlendTextureNode : AbstractProceduralTextureNode(3, false) {

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ParticleEmitterDef.Companion.method2187
 import ParticleEmitterDefExt.Companion.method2189
 

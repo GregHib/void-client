@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 object AbstractCameraTransformStatics {
 
 

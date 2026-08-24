@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import GlslMaterialPass.Companion.method2154
 
 /*

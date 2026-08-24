@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import CellNoiseTextureNode.Companion.method3111
 
 /* Class90 - Decompiled by JODE

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import SceneTilePlaneManager.method259
 
 /* Class217 - Decompiled by JODE

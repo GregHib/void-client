@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ScrollbarComponent.Companion.method188
 import java.util.*
 

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ChatMessageStream.Companion.method138
 import RegionSceneLoader.method2194
 import TextureFormatInfo.Companion.anInt3849

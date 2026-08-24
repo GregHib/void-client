@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import AbstractRenderPass.Companion.method3529
 import IndexedSprite.Companion.method165
 import jaclib.memory.Buffer

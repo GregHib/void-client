@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import AbstractBloomEffect.Companion.method2755
 
 /* Class348_Sub40_Sub17_Sub1 - Decompiled by JODE

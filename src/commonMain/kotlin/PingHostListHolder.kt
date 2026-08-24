@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 /* Class176 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */

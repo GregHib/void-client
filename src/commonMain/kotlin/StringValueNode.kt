@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ParticleDefLoader.Companion.method1376
 import MapSceneDefLoader.Companion.method1394
 import LongKeyNode.Companion.method2808

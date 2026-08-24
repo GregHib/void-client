@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import ObjectSpawnDecoder.method1087
 import HitsplatDefinition.Companion.method1193
 import LinkedListIterator.Companion.method1241

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmStatic
 import PerlinTextureProvider.Companion.method1399
 import SphereMapMaterialPass.Companion.method2174
 
