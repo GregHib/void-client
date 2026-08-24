@@ -22,14 +22,12 @@ class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, 
 
     fun method301(i: Int, i_2_: Int): WidgetTextConfig {
         anInt361++
-        var widgetTextConfig: WidgetTextConfig?
-        withLock(aLruByteCache_360!!) {
-            widgetTextConfig = aLruByteCache_360!!.method583(i.toLong(), -91) as WidgetTextConfig?
+        var widgetTextConfig: WidgetTextConfig? = withLock(aLruByteCache_360!!) {
+            aLruByteCache_360!!.method583(i.toLong(), -91) as WidgetTextConfig?
         }
         if (widgetTextConfig != null) return widgetTextConfig
-        val `is`: ByteArray?
-        withLock(aJs5Archive_366!!) {
-            `is` = aJs5Archive_366!!.method410(-1860, 30, i)
+        val `is`: ByteArray? = withLock(aJs5Archive_366!!) {
+            aJs5Archive_366!!.method410(-1860, 30, i)
         }
         if (i_2_ < 6) aLruByteCache_360 = null
         widgetTextConfig = WidgetTextConfig()

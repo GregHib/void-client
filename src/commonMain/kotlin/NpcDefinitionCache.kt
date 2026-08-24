@@ -13,14 +13,12 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
     private val aLruByteCache_3321 = LruByteCache(64)
     fun method1983(i: Int, i_9_: Int): NpcDefinition {
         anInt3320++
-        var npcDefinition: NpcDefinition?
-        withLock(aLruByteCache_3321) {
-            npcDefinition = aLruByteCache_3321.method583(i.toLong(), 69) as NpcDefinition?
+        var npcDefinition: NpcDefinition? = withLock(aLruByteCache_3321) {
+            aLruByteCache_3321.method583(i.toLong(), 69) as NpcDefinition?
         }
         if (npcDefinition != null) return npcDefinition
-        val `is`: ByteArray?
-        withLock(aJs5Archive_3319!!) {
-            `is` = aJs5Archive_3319.method410(-1860, i_9_, i)
+        val `is`: ByteArray? = withLock(aJs5Archive_3319!!) {
+            aJs5Archive_3319.method410(-1860, i_9_, i)
         }
         npcDefinition = NpcDefinition()
         if (`is` != null) npcDefinition.method1620(ByteBuffer(`is`), -108)

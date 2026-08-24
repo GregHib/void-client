@@ -37,7 +37,7 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
     override fun run() {
         anInt4553++
         loop@ while (true) {
-            var i: Int
+            var i: Int = 0
             withLock(this) {
                 while (true) {
                     if (anIOException4560 != null) return

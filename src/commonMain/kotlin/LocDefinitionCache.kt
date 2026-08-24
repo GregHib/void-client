@@ -28,14 +28,12 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
     fun method2034(i: Int, bool: Boolean): LocTypeConfig {
         if (bool != false) aShortArray3437 = null
         anInt3431++
-        var locTypeConfig: LocTypeConfig?
-        withLock(aLruByteCache_3433) {
-            locTypeConfig = aLruByteCache_3433.method583(i.toLong(), 64) as LocTypeConfig?
+        var locTypeConfig: LocTypeConfig? = withLock(aLruByteCache_3433) {
+            aLruByteCache_3433.method583(i.toLong(), 64) as LocTypeConfig?
         }
         if (locTypeConfig != null) return locTypeConfig
-        val `is`: ByteArray?
-        withLock(aJs5Archive_3442!!) {
-            `is` = aJs5Archive_3442.method410(-1860, 4, i)
+        val `is`: ByteArray? = withLock(aJs5Archive_3442!!) {
+            aJs5Archive_3442.method410(-1860, 4, i)
         }
         locTypeConfig = LocTypeConfig()
         locTypeConfig.anInt3573 = i

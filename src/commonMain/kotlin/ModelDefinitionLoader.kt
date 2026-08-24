@@ -8,14 +8,12 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
     fun method1203(i: Byte, i_3_: Int): SkeletalAnimFrameLoader {
         anInt2056++
         if (i.toInt() != 33) aJs5Archive_2048 = null
-        var skeletalAnimFrameLoader: SkeletalAnimFrameLoader?
-        withLock(aLruByteCache_2050) {
-            skeletalAnimFrameLoader = aLruByteCache_2050.method583(i_3_.toLong(), -58) as SkeletalAnimFrameLoader?
+        var skeletalAnimFrameLoader: SkeletalAnimFrameLoader? = withLock(aLruByteCache_2050) {
+            aLruByteCache_2050.method583(i_3_.toLong(), -58) as SkeletalAnimFrameLoader?
         }
         if (skeletalAnimFrameLoader != null) return skeletalAnimFrameLoader
-        val `is`: ByteArray?
-        withLock(aJs5Archive_2048!!) {
-            `is` = aJs5Archive_2048!!.method410(i + -1893, 3, i_3_)
+        val `is`: ByteArray? = withLock(aJs5Archive_2048!!) {
+            aJs5Archive_2048!!.method410(i + -1893, 3, i_3_)
         }
         skeletalAnimFrameLoader = SkeletalAnimFrameLoader()
         skeletalAnimFrameLoader.aModelDefinitionLoader_475 = this

@@ -20,7 +20,7 @@ class BufferedOutputStreamWorker internal constructor(private var anOutputStream
     override fun run() {
         anInt2710++
         while (true) {
-            var i: Int
+            var i: Int = 0
             withLock(this) {
                 while (true) {
                     if (anIOException2704 != null) return

@@ -41,14 +41,12 @@ class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: I
 
     fun method1446(i: Int, i_4_: Int): HitsplatDefinition? {
         anInt2593++
-        var hitsplatDefinition: HitsplatDefinition?
-        withLock(aLruByteCache_2594!!) {
-            hitsplatDefinition = aLruByteCache_2594!!.method583(i.toLong(), 76) as HitsplatDefinition?
+        var hitsplatDefinition: HitsplatDefinition? = withLock(aLruByteCache_2594!!) {
+            aLruByteCache_2594!!.method583(i.toLong(), 76) as HitsplatDefinition?
         }
         if (hitsplatDefinition != null) return hitsplatDefinition
-        val `is`: ByteArray?
-        withLock(aJs5Archive_2597!!) {
-            `is` = aJs5Archive_2597.method410(i_4_ xor 0x743, method1359(true, i), LongKeyNode.method2806(false, i))
+        val `is`: ByteArray? = withLock(aJs5Archive_2597!!) {
+            aJs5Archive_2597.method410(i_4_ xor 0x743, method1359(true, i), LongKeyNode.method2806(false, i))
         }
         hitsplatDefinition = HitsplatDefinition()
         if (i_4_ != -1) return null

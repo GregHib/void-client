@@ -138,10 +138,9 @@ class LocConfigModelBuilder {
             if (bool) i_33_ = i_33_ or (if (this.aByte4488.toInt() != 3) 2 else 7)
             if (anInt4492 != 128) i_33_ = i_33_ or 0x2
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ = i_33_ or 0x5
-            var abstractModel: AbstractModel?
             this.anInt4501 = this.anInt4501 or (var_renderer!!.anInt4567 shl 29)
-            withLock(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
-                abstractModel = ((this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method583(this.anInt4501.toLong(), -122)) as AbstractModel?)
+            var abstractModel: AbstractModel? = withLock(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
+                ((this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method583(this.anInt4501.toLong(), -122)) as AbstractModel?)
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_33_) != 0) {
                 if (abstractModel != null) i_33_ = var_renderer!!.method3679(i_33_, abstractModel.ua())

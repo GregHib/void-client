@@ -67,7 +67,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
     }
 
     fun runClass348() : CompletedResourceRequest? {
-        val class348_sub42_sub16_sub2: CompletedResourceRequest?
+        var class348_sub42_sub16_sub2: CompletedResourceRequest? = null
         withLock(aLinkedNodeListIterator_1730) {
             class348_sub42_sub16_sub2 = (aLinkedNodeListIterator_1730.method1008(20) as? CompletedResourceRequest?)
             if (class348_sub42_sub16_sub2 == null) {

@@ -147,7 +147,7 @@ class CompositeNpcModelBuilder {
                 if (bool_12_) i_9_ = i_9_ or 0x100
                 if (bool_14_) i_9_ = i_9_ or 0x400
             }
-            var abstractModel: AbstractModel?
+            var abstractModel: AbstractModel? = null
             withLock(ModelDataCache.aLruByteCache_355!!) {
                 abstractModel = ModelDataCache.aLruByteCache_355!!.method583(l, -47) as AbstractModel?
             }
@@ -363,7 +363,7 @@ class CompositeNpcModelBuilder {
                 if (bool_73_) i_70_ = i_70_ or 0x400
             }
             if (i != -402058072) aLong2094 = -101L
-            var abstractModel: AbstractModel?
+            var abstractModel: AbstractModel? = null
             withLock(ModelBatchBase.aLruByteCache_1894!!) {
                 abstractModel = ModelBatchBase.aLruByteCache_1894!!.method583(aLong2102, i xor 0x17f6eb29.inv()) as AbstractModel?
             }
@@ -470,7 +470,7 @@ class CompositeNpcModelBuilder {
                 if (bool_101_) i_98_ = i_98_ or 0x400
             }
             val l = i_95_.toLong() or ((i_93_ shl 16).toLong() or (i_92_.toLong() shl 32))
-            var abstractModel: AbstractModel?
+            var abstractModel: AbstractModel? = null
             withLock(ModelBatchBase.aLruByteCache_1894!!) {
                 abstractModel = ModelBatchBase.aLruByteCache_1894!!.method583(l, i_94_ xor 0x3bd4.inv()) as AbstractModel?
             }

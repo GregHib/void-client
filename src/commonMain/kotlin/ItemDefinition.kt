@@ -244,9 +244,8 @@ class ItemDefinition {
             if (i_23_.toInt() != 88) this.aString2795 = null
             var i_27_ = i
             if (widgetDefinition != null) i_27_ = i_27_ or widgetDefinition.method263(i_24_, 105, i_22_, true)
-            var abstractModel: AbstractModel?
-            withLock(this.aModelHeaderCache_2761!!.aLruByteCache_3287) {
-                abstractModel = (this.aModelHeaderCache_2761!!.aLruByteCache_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as AbstractModel?
+            var abstractModel: AbstractModel? = withLock(this.aModelHeaderCache_2761!!.aLruByteCache_3287) {
+                (this.aModelHeaderCache_2761!!.aLruByteCache_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as AbstractModel?
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_27_) != 0) {
                 if (abstractModel != null) i_27_ = var_renderer!!.method3679(i_27_, abstractModel.ua())

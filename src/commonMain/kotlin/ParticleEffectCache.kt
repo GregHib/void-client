@@ -6,14 +6,12 @@ class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, 
     private val aJs5Archive_3468: Js5Archive?
     fun method2044(i: Int, i_0_: Int): ConfigShortValueNode {
         anInt3469++
-        var class348_sub42_sub7: ConfigShortValueNode?
-        withLock(aLruByteCache_3466) {
-            class348_sub42_sub7 = aLruByteCache_3466.method583(i_0_.toLong(), -85) as ConfigShortValueNode?
+        var class348_sub42_sub7: ConfigShortValueNode? = withLock(aLruByteCache_3466) {
+            aLruByteCache_3466.method583(i_0_.toLong(), -85) as ConfigShortValueNode?
         }
         if (class348_sub42_sub7 != null) return class348_sub42_sub7
-        val `is`: ByteArray?
-        withLock(aJs5Archive_3468!!) {
-            `is` = aJs5Archive_3468.method410(-1860, 5, i_0_)
+        val `is`: ByteArray? = withLock(aJs5Archive_3468!!) {
+            aJs5Archive_3468.method410(-1860, 5, i_0_)
         }
         class348_sub42_sub7 = ConfigShortValueNode()
         if (i < 78) method2046()

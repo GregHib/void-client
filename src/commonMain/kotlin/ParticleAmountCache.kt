@@ -18,14 +18,12 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
 
     fun method1588(i: Int, i_1_: Int): ParticleAmountConfig {
         anInt2847++
-        var particleAmountConfig: ParticleAmountConfig?
-        withLock(aLruByteCache_2848!!) {
-            particleAmountConfig = aLruByteCache_2848!!.method583(i_1_.toLong(), -126) as ParticleAmountConfig?
+        var particleAmountConfig: ParticleAmountConfig? = withLock(aLruByteCache_2848!!) {
+            aLruByteCache_2848!!.method583(i_1_.toLong(), -126) as ParticleAmountConfig?
         }
         if (particleAmountConfig != null) return particleAmountConfig
-        val `is`: ByteArray?
-        withLock(aJs5Archive_2842!!) {
-            `is` = aJs5Archive_2842.method410(-1860, 16, i_1_)
+        val `is`: ByteArray? = withLock(aJs5Archive_2842!!) {
+            aJs5Archive_2842.method410(-1860, 16, i_1_)
             if (i >= -17) aLruByteCache_2848 = null
         }
         particleAmountConfig = ParticleAmountConfig()

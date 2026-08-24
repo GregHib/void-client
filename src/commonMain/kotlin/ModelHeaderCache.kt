@@ -123,14 +123,12 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
 
     fun method1940(i: Int, i_13_: Int): ItemDefinition {
         anInt3283++
-        var itemDefinition: ItemDefinition?
-        withLock(aLruByteCache_3278) {
-            itemDefinition = aLruByteCache_3278.method583(i_13_.toLong(), 90) as ItemDefinition?
+        var itemDefinition: ItemDefinition? = withLock(aLruByteCache_3278) {
+            aLruByteCache_3278.method583(i_13_.toLong(), 90) as ItemDefinition?
         }
         if (itemDefinition != null) return itemDefinition
-        val `is`: ByteArray?
-        withLock(aJs5Archive_3267!!) {
-            `is` = aJs5Archive_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtil.Companion.method1914(-23590, i_13_))
+        val `is`: ByteArray? = withLock(aJs5Archive_3267!!) {
+            aJs5Archive_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtil.Companion.method1914(-23590, i_13_))
         }
         itemDefinition = ItemDefinition()
         itemDefinition.aModelHeaderCache_2761 = this

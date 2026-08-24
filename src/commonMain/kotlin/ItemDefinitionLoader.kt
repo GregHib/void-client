@@ -36,15 +36,13 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
 
     fun method1287(i: Byte, i_1_: Int): UnderlayDefinition {
         anInt2182++
-        var underlayDefinition: UnderlayDefinition?
-        withLock(aLruByteCache_2185) {
-            underlayDefinition = aLruByteCache_2185.method583(i_1_.toLong(), i.toInt() xor 0x1d.inv()) as? UnderlayDefinition?
+        var underlayDefinition: UnderlayDefinition? = withLock(aLruByteCache_2185) {
+            aLruByteCache_2185.method583(i_1_.toLong(), i.toInt() xor 0x1d.inv()) as? UnderlayDefinition?
         }
         if (underlayDefinition != null) return underlayDefinition
         if (i.toInt() != -104) this.aLruByteCache_2190 = null
-        val `is`: ByteArray?
-        withLock(aJs5Archive_2188!!) {
-            `is` = aJs5Archive_2188.method410(-1860, 33, i_1_)
+        val `is`: ByteArray? = withLock(aJs5Archive_2188!!) {
+            aJs5Archive_2188.method410(-1860, 33, i_1_)
         }
         underlayDefinition = UnderlayDefinition()
         underlayDefinition.aItemDefinitionLoader_2886 = this

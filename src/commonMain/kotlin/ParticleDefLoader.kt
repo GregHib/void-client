@@ -18,14 +18,12 @@ class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i:
     fun method1380(bool: Boolean, i: Int): HslColorConfig? {
         anInt2460++
         if (bool != true) return null
-        var hslColorConfig: HslColorConfig?
-        withLock(aLruByteCache_2458) {
-            hslColorConfig = aLruByteCache_2458.method583(i.toLong(), 77) as HslColorConfig?
+        var hslColorConfig: HslColorConfig? = withLock(aLruByteCache_2458) {
+            aLruByteCache_2458.method583(i.toLong(), 77) as HslColorConfig?
         }
         if (hslColorConfig != null) return hslColorConfig
-        val `is`: ByteArray?
-        withLock(aJs5Archive_2461!!) {
-            `is` = aJs5Archive_2461.method410(-1860, 1, i)
+        val `is`: ByteArray? = withLock(aJs5Archive_2461!!) {
+            aJs5Archive_2461.method410(-1860, 1, i)
         }
         hslColorConfig = HslColorConfig()
         if (`is` != null) hslColorConfig.method290(ByteBuffer(`is`), -1)

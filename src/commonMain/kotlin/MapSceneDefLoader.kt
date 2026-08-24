@@ -14,14 +14,12 @@ class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i:
 
     fun method1391(i: Byte, i_1_: Int): CameraConfigDefinition {
         anInt2485++
-        var cameraConfigDefinition: CameraConfigDefinition?
-        withLock(aLruByteCache_2479) {
-            cameraConfigDefinition = aLruByteCache_2479.method583(i_1_.toLong(), 96) as CameraConfigDefinition?
+        var cameraConfigDefinition: CameraConfigDefinition? = withLock(aLruByteCache_2479) {
+            aLruByteCache_2479.method583(i_1_.toLong(), 96) as CameraConfigDefinition?
         }
         if (cameraConfigDefinition != null) return cameraConfigDefinition
-        val `is`: ByteArray?
-        withLock(aJs5Archive_2480!!) {
-            `is` = aJs5Archive_2480.method410(-1860, 31, i_1_)
+        val `is`: ByteArray? = withLock(aJs5Archive_2480!!) {
+            aJs5Archive_2480.method410(-1860, 31, i_1_)
         }
         cameraConfigDefinition = CameraConfigDefinition()
         val i_2_ = 50 / ((i - -63) / 56)

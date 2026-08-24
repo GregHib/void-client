@@ -26,14 +26,12 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
 
     fun method2005(i: Int, i_0_: Int): NpcConfig {
         anInt3351++
-        var npcConfig: NpcConfig?
-        withLock(aLruByteCache_3350!!) {
-            npcConfig = aLruByteCache_3350!!.method583(i_0_.toLong(), i xor 0x32) as NpcConfig?
+        var npcConfig: NpcConfig? = withLock(aLruByteCache_3350!!) {
+            aLruByteCache_3350!!.method583(i_0_.toLong(), i xor 0x32) as NpcConfig?
         }
         if (npcConfig != null) return npcConfig
-        val `is`: ByteArray?
-        withLock(aJs5Archive_3343!!) {
-            `is` = aJs5Archive_3343.method410(i + -1860, method1850(i_0_, 111), ScrollbarComponent.method185(i_0_, (-90).toByte()))
+        val `is`: ByteArray? = withLock(aJs5Archive_3343!!) {
+            aJs5Archive_3343.method410(i + -1860, method1850(i_0_, 111), ScrollbarComponent.method185(i_0_, (-90).toByte()))
         }
         npcConfig = NpcConfig()
         npcConfig.anInt941 = i_0_

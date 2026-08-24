@@ -52,13 +52,13 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
 
     fun method1225(i: Int, i_9_: Byte): StructConfig? {
         anInt2085++
-        var structConfig: StructConfig?
+        var structConfig: StructConfig? = null
         withLock(aLruByteCache_2083) {
             structConfig = aLruByteCache_2083.method583(i.toLong(), 91) as StructConfig?
         }
         if (structConfig != null) return structConfig
         if (i_9_ < 36) return null
-        val `is`: ByteArray?
+        var `is`: ByteArray? = null
         withLock(aJs5Archive_2084!!) {
             `is` = aJs5Archive_2084.method410(-1860, 36, i)
         }

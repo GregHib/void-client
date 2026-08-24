@@ -23,15 +23,13 @@ class WidgetCache internal constructor(sceneProjector: SceneProjector?, i: Int, 
 
     fun method835(i: Int, i_0_: Int): WidgetDefinition {
         anInt1483++
-        var widgetDefinition: WidgetDefinition?
-        withLock(aLruByteCache_1487!!) {
-            widgetDefinition = aLruByteCache_1487!!.method583(i.toLong(), i_0_ + -68) as WidgetDefinition?
+        var widgetDefinition: WidgetDefinition? = withLock(aLruByteCache_1487!!) {
+            aLruByteCache_1487!!.method583(i.toLong(), i_0_ + -68) as WidgetDefinition?
         }
         if (i_0_ != 7) aLruByteCache_1491 = null
         if (widgetDefinition != null) return widgetDefinition
-        val `is`: ByteArray?
-        withLock(aJs5Archive_1488!!) {
-            `is` = aJs5Archive_1488.method410(-1860, method256(i, 125.toByte()), method494(i_0_ xor 0x55, i))
+        val `is`: ByteArray? = withLock(aJs5Archive_1488!!) {
+            aJs5Archive_1488.method410(-1860, method256(i, 125.toByte()), method494(i_0_ xor 0x55, i))
         }
         widgetDefinition = WidgetDefinition()
         widgetDefinition.anInt269 = i
@@ -68,15 +66,15 @@ class WidgetCache internal constructor(sceneProjector: SceneProjector?, i: Int, 
 
     fun method839(i: Int, i_5_: Int): TextureMaterialGroup? {
         anInt1484++
-        var class348_sub42_sub17: TextureMaterialGroup?
-        withLock(aLruByteCache_1491!!) {
+        var class348_sub42_sub17: TextureMaterialGroup? = withLock(aLruByteCache_1491!!) {
             if (i_5_ != 3) aLruByteCache_1487 = null
-            class348_sub42_sub17 = aLruByteCache_1491!!.method583(i.toLong(), -60) as TextureMaterialGroup?
-            if (class348_sub42_sub17 == null) {
-                class348_sub42_sub17 = TextureMaterialGroup(i)
-                aLruByteCache_1491!!.method582(class348_sub42_sub17, i.toLong(), (-127).toByte())
+            var tmp = aLruByteCache_1491!!.method583(i.toLong(), -60) as TextureMaterialGroup?
+            if (tmp == null) {
+                tmp = TextureMaterialGroup(i)
+                aLruByteCache_1491!!.method582(tmp, i.toLong(), (-127).toByte())
             }
-            if (!class348_sub42_sub17.method3268(-122)) return null
+            if (!tmp.method3268(-122)) return null
+            tmp
         }
         return class348_sub42_sub17
     }

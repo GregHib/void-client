@@ -88,8 +88,8 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
     override fun run() {
         try {
             while (true) {
-                val i: Int
-                val i_8_: Int
+                var i = 0
+                var i_8_ = 0
                 if (anInt2648 == anInt2656 && aBoolean2654) {
                     break
                 }

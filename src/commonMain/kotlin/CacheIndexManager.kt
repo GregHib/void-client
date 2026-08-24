@@ -70,7 +70,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
     fun method2362(i: Int): SceneLinkedListNode {
         anInt3952++
         val `object`: Any? = null
-        val sceneLinkedListNode: SceneLinkedListNode?
+        var sceneLinkedListNode: SceneLinkedListNode? = null
         withLock(aDoublyLinkedNodeList_3946) {
             sceneLinkedListNode = aDoublyLinkedNodeList_3946.method1872(8)
             sceneLinkedListNode!!.method2373(false)

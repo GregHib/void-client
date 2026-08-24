@@ -78,14 +78,12 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
 
     fun method2079(i: Int, i_6_: Int): NpcType {
         anInt3586++
-        var npcType: NpcType?
-        withLock(aLruByteCache_3577!!) {
-            npcType = aLruByteCache_3577!!.method583(i.toLong(), -104) as NpcType?
+        var npcType: NpcType? = withLock(aLruByteCache_3577!!) {
+            aLruByteCache_3577!!.method583(i.toLong(), -104) as NpcType?
         }
         if (npcType != null) return npcType
-        val `is`: ByteArray?
-        withLock(aJs5Archive_3585!!) {
-            `is` = aJs5Archive_3585.method410(i_6_ + -1859, method1060(i, 69.toByte()), method1920(127, i))
+        val `is`: ByteArray? = withLock(aJs5Archive_3585!!) {
+            aJs5Archive_3585.method410(i_6_ + -1859, method1060(i, 69.toByte()), method1920(127, i))
         }
         npcType = NpcType()
         npcType.anInt1344 = i

@@ -465,9 +465,8 @@ class NpcType {
                 if (bool_48_) i_43_ = i_43_ or 0x400
             }
             val l = (var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong()
-            var abstractModel: AbstractModel?
-            withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
-                abstractModel = this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method583(l, 80) as AbstractModel?
+            var abstractModel: AbstractModel? = withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
+                this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method583(l, 80) as AbstractModel?
             }
             var npcDefinition: NpcDefinition? = null
             if (this.anInt1366 != -1) npcDefinition = npcDefinitionCache!!.method1983(this.anInt1366, 32)
@@ -638,9 +637,8 @@ class NpcType {
             if (anIntArray1380 == null) return null
             var i_99_ = i_97_
             if (widgetDefinition != null && i_95_ != -1) i_99_ = i_99_ or widgetDefinition.method263(i_94_, 97, i_95_, true)
-            var abstractModel: AbstractModel?
-            withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
-                abstractModel = ((this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as AbstractModel?)
+            var abstractModel: AbstractModel? = withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
+                ((this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as AbstractModel?)
             }
             if (abstractModel == null || i_99_ != (abstractModel.ua() and i_99_)) {
                 if (abstractModel != null) i_99_ = i_99_ or abstractModel.ua()

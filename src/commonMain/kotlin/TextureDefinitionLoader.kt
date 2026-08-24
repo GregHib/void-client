@@ -10,14 +10,12 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
     var aLruByteCache_1976: LruByteCache = LruByteCache(64)
     fun method1173(i: Byte, i_0_: Int): MapSceneIconDef? {
         anInt1964++
-        var mapSceneIconDef: MapSceneIconDef?
-        withLock(aLruByteCache_1963) {
-            mapSceneIconDef = aLruByteCache_1963.method583(i_0_.toLong(), 118) as MapSceneIconDef?
+        var mapSceneIconDef: MapSceneIconDef? = withLock(aLruByteCache_1963) {
+            aLruByteCache_1963.method583(i_0_.toLong(), 118) as MapSceneIconDef?
         }
         if (mapSceneIconDef != null) return mapSceneIconDef
-        val `is`: ByteArray?
-        withLock(aJs5Archive_1971!!) {
-            `is` = aJs5Archive_1971.method410(i + -1891, 34, i_0_)
+        val `is`: ByteArray? = withLock(aJs5Archive_1971!!) {
+            aJs5Archive_1971.method410(i + -1891, 34, i_0_)
         }
         mapSceneIconDef = MapSceneIconDef()
         if (i.toInt() != 31) return null

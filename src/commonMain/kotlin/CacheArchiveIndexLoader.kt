@@ -10,7 +10,7 @@ class CacheArchiveIndexLoader internal constructor(sceneProjector: SceneProjecto
     private val aLruByteCache_460 = LruByteCache(128)
     fun method337(bool: Boolean, i: Int): CacheArchiveIndex {
         anInt457++
-        var cacheArchiveIndex: CacheArchiveIndex?
+        var cacheArchiveIndex: CacheArchiveIndex? = null
         withLock(aLruByteCache_460) {
             cacheArchiveIndex = aLruByteCache_460.method583(i.toLong(), 111) as CacheArchiveIndex?
         }

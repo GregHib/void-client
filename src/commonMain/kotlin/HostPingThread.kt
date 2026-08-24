@@ -29,7 +29,7 @@ class HostPingThread : Runnable {
     }
 
     fun runClass348(): NamedIdEntry? {
-        val class348_sub26: NamedIdEntry?
+        var class348_sub26: NamedIdEntry? = null
         withLock(aNodeDeque_2258!!) {
             var linkedListNode: LinkedListNode?
             linkedListNode = aNodeDeque_2258!!.method1997(8)

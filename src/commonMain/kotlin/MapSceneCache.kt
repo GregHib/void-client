@@ -24,14 +24,12 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
 
     private fun method820(i: Int, i_15_: Int): ParticleConfigParser {
         anInt1458++
-        var particleConfigParser: ParticleConfigParser?
-        withLock(aLruByteCache_1449) {
-            particleConfigParser = aLruByteCache_1449.method583(i.toLong(), 116) as ParticleConfigParser?
+        var particleConfigParser: ParticleConfigParser? = withLock(aLruByteCache_1449) {
+            aLruByteCache_1449.method583(i.toLong(), 116) as ParticleConfigParser?
         }
         if (particleConfigParser != null) return particleConfigParser!!
-        val `is`: ByteArray?
-        withLock(aJs5Archive_1460!!) {
-            `is` = aJs5Archive_1460.method410(-1860, i_15_, i)
+        val `is`: ByteArray? = withLock(aJs5Archive_1460!!) {
+            aJs5Archive_1460.method410(-1860, i_15_, i)
         }
         particleConfigParser = ParticleConfigParser()
         if (`is` != null) particleConfigParser!!.method2275(ByteBuffer(`is`), (-123).toByte())

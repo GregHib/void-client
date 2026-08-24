@@ -16,14 +16,12 @@ class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: 
 
     fun method1408(i: Int, i_3_: Int): LocTypeDefinition {
         anInt2504++
-        var locTypeDefinition: LocTypeDefinition?
-        withLock(aLruByteCache_2501!!) {
-            locTypeDefinition = aLruByteCache_2501!!.method583(i_3_.toLong(), 76) as LocTypeDefinition?
+        var locTypeDefinition: LocTypeDefinition? = withLock(aLruByteCache_2501!!) {
+            aLruByteCache_2501!!.method583(i_3_.toLong(), 76) as LocTypeDefinition?
         }
         if (locTypeDefinition != null) return locTypeDefinition
-        val `is`: ByteArray?
-        withLock(aJs5Archive_2498!!) {
-            `is` = aJs5Archive_2498!!.method410(-1860, 35, i_3_)
+        val `is`: ByteArray? = withLock(aJs5Archive_2498!!) {
+            aJs5Archive_2498!!.method410(-1860, 35, i_3_)
         }
         locTypeDefinition = LocTypeDefinition()
         if (`is` != null) locTypeDefinition.method2551(-125, ByteBuffer(`is`))

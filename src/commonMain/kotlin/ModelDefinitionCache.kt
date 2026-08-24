@@ -22,14 +22,12 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
 
     fun method1601(i: Int, i_15_: Int): ItemModelDefinition {
         anInt2874++
-        var itemModelDefinition: ItemModelDefinition?
-        withLock(aLruByteCache_2875) {
-            itemModelDefinition = aLruByteCache_2875.method583(i_15_.toLong(), i + -148) as ItemModelDefinition?
+        var itemModelDefinition: ItemModelDefinition? = withLock(aLruByteCache_2875) {
+            aLruByteCache_2875.method583(i_15_.toLong(), i + -148) as ItemModelDefinition?
         }
         if (itemModelDefinition != null) return itemModelDefinition
-        val `is`: ByteArray?
-        withLock(aJs5Archive_2866!!) {
-            `is` = aJs5Archive_2866.method410(-1860, i, i_15_)
+        val `is`: ByteArray? = withLock(aJs5Archive_2866!!) {
+            aJs5Archive_2866.method410(-1860, i, i_15_)
         }
         itemModelDefinition = ItemModelDefinition()
         itemModelDefinition.aModelDefinitionCache_438 = this

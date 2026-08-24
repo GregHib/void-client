@@ -166,9 +166,8 @@ class NpcConfig {
                 if (anInt890 != 0) i_11_ = i_11_ or 0x4
             }
             if (bool) i_11_ = i_11_ or 0x40000
-            var modelOrSpriteHolder: ModelOrSpriteHolder?
-            withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!) {
-                modelOrSpriteHolder = this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!.method583(l, i_10_ + -25) as ModelOrSpriteHolder?
+            var modelOrSpriteHolder: ModelOrSpriteHolder? = withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!) {
+                this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!.method583(l, i_10_ + -25) as ModelOrSpriteHolder?
             }
             var class64 = if (modelOrSpriteHolder == null) null else modelOrSpriteHolder.aAbstractModel_119
             var var_renderNode: RenderNode? = null
@@ -601,9 +600,8 @@ class NpcConfig {
                 if (anInt890 != 0) i_67_ = i_67_ or 0x4
             } else i_67_ = i_67_ or 0x7
             if (i_64_ == 10 && i_66_ > 3) i_67_ = i_67_ or 0x5
-            var abstractModel: AbstractModel?
-            withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!) {
-                abstractModel = this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!.method583(l, 100) as AbstractModel?
+            var abstractModel: AbstractModel? = withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!) {
+                this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!.method583(l, 100) as AbstractModel?
             }
             if (abstractModel == null || var_renderer.method3667(abstractModel.ua(), i_67_) != 0) {
                 if (abstractModel != null) i_67_ = var_renderer.method3679(i_67_, abstractModel.ua())

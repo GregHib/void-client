@@ -74,12 +74,12 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
 
     override fun run() {
         while (true) {
-            val linkedQueueNode: LinkedQueueNode?
-            withLock(this) {
+            val linkedQueueNode: LinkedQueueNode? = withLock(this) {
+                var result: LinkedQueueNode? = null
                 while (true) {
                     if (aBoolean3801) return
                     if (aLinkedQueueNode_3797 != null) {
-                        linkedQueueNode = aLinkedQueueNode_3797
+                        result = aLinkedQueueNode_3797
                         aLinkedQueueNode_3797 = aLinkedQueueNode_3797!!.aLinkedQueueNode_1995
                         if (aLinkedQueueNode_3797 == null) aLinkedQueueNode_3798 = null
                         break
@@ -90,7 +90,9 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                         /* empty */
                     }
                 }
+                result
             }
+            if (linkedQueueNode == null) return
             try {
                 val i = linkedQueueNode!!.anInt1994
                 if (i == 1) {

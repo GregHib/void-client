@@ -34,14 +34,12 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
     fun method2543(i: Byte, i_1_: Int): LocConfigModelBuilder {
         if (i <= 38) method2542(-73)
         anInt3983++
-        var locConfigModelBuilder: LocConfigModelBuilder?
-        withLock(aLruByteCache_3989) {
-            locConfigModelBuilder = aLruByteCache_3989.method583(i_1_.toLong(), 101) as LocConfigModelBuilder?
+        var locConfigModelBuilder: LocConfigModelBuilder? = withLock(aLruByteCache_3989) {
+            aLruByteCache_3989.method583(i_1_.toLong(), 101) as LocConfigModelBuilder?
         }
         if (locConfigModelBuilder != null) return locConfigModelBuilder
-        val `is`: ByteArray?
-        withLock(aJs5Archive_3979!!) {
-            `is` = aJs5Archive_3979.method410(-1860, method2419(127.toByte(), i_1_), method2729(i_1_, 16))
+        val `is`: ByteArray? = withLock(aJs5Archive_3979!!) {
+            aJs5Archive_3979.method410(-1860, method2419(127.toByte(), i_1_), method2729(i_1_, 16))
         }
         locConfigModelBuilder = LocConfigModelBuilder()
         locConfigModelBuilder.aMapElementDefinitionCache_4513 = this
