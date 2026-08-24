@@ -23,8 +23,9 @@ class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, 
         }
         if (particleAmountConfig != null) return particleAmountConfig
         val `is`: ByteArray? = withLock(aJs5Archive_2842!!) {
-            aJs5Archive_2842.method410(-1860, 16, i_1_)
+            val temp = aJs5Archive_2842.method410(-1860, 16, i_1_)
             if (i >= -17) aLruByteCache_2848 = null
+            temp
         }
         particleAmountConfig = ParticleAmountConfig()
         if (`is` != null) particleAmountConfig.method1253(ByteBuffer(`is`), true)
