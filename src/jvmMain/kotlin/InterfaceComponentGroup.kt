@@ -629,7 +629,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                     ActorEntity.anInt4319 = 1
                     var i_14_ = 0
                     while ((i_14_ < ParameterizedText.anInt9577)) {
-                        val mapTileShape: MapTileShape = MinimapAreaMarkerNode.Companion.aMapTileShapeArray9700!![i_14_]!!
+                        val mapTileShape: MapTileShape = MinimapAreaMarkerNodeStatics.aMapTileShapeArray9700!![i_14_]!!
                         ActorEntity.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![0].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![1].toInt(), (-105).toByte(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4188!![0].toInt(), mapTileShape.aShortArray4194!![0].toInt(), mapTileShape.aShortArray4183!![3].toInt())
                         ActorEntity.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4194!![2].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![2].toInt(), (-118).toByte(), mapTileShape.aShortArray4183!![2].toInt(), mapTileShape.aShortArray4188!![1].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4183!![3].toInt())
                         i_14_++

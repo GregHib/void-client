@@ -159,7 +159,7 @@ class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
                     val i_16_ = RectangleRegion.aInputTracker_8552!!.method3594(116.toByte())
                     var bool = false
                     if (ManagedGlResource.aClass348_Sub42_Sub13_3152 != null) {
-                        if (MinimapPolygonDrawer.anInt5252 + -10 > i_15_ || ((MinimapPolygonDrawer.anInt5252 - -TerrainTileShapeStatics.anInt8806 + 10) < i_15_) || -10 + InputTracker.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + InputTracker.anInt4534 + 10 < i_16_)) MinimapAreaMarkerNode.method3277((-48).toByte())
+                        if (MinimapPolygonDrawer.anInt5252 + -10 > i_15_ || ((MinimapPolygonDrawer.anInt5252 - -TerrainTileShapeStatics.anInt8806 + 10) < i_15_) || -10 + InputTracker.anInt4534 > i_16_ || (ClickFeedbackTask.anInt4669 + InputTracker.anInt4534 + 10 < i_16_)) MinimapAreaMarkerNodeStatics.method3277((-48).toByte())
                         else bool = true
                     }
                     if (!bool) {

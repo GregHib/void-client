@@ -97,7 +97,7 @@ object WidgetTextConfigStatics {
         }
         if (i >= 124) {
             var i_6_ = 0
-            while ((MinimapAreaMarkerNode.anInt9699 > i_6_)) {
+            while ((MinimapAreaMarkerNodeStatics.anInt9699 > i_6_)) {
                 val interface6 = RectangleRegion.anCharStreamReaderArray9534s!![i_6_]!!
                 val i_7_ = interface6.method30(false)
                 val c = interface6.method28(46.toByte())
@@ -224,7 +224,7 @@ object WidgetTextConfigStatics {
                 } else GrayscaleNoiseTexture.method555(true, 0)
                 i_6_++
             }
-            MinimapAreaMarkerNode.anInt9699 = 0
+            MinimapAreaMarkerNodeStatics.anInt9699 = 0
             CameraConfigDefinitionStatics.anInt3246 = 0
             TextureCache.method3466(89)
         }

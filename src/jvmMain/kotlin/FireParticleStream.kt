@@ -84,16 +84,16 @@ class FireParticleStream : OutputStream() {
                 val i_8_ = GlslMaterialPass.anInt6246
                 val i_9_ = ParticleSystemRenderer.anInt3855
                 val i_10_ = CompositeRgbNoiseTexture.anInt8685
-                val i_11_ = MinimapAreaMarkerNode.anInt9701
+                val i_11_ = MinimapAreaMarkerNodeStatics.anInt9701
                 val i_12_ = WorldMapElement.anInt4638
                 for (i_13_ in 0..4) {
                     if (MinimapStateReset.aBooleanArray2374!![i_13_]) {
                         val i_14_ = ((Math.random() * ((CollisionMapAccessor.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - CollisionMapAccessor.anIntArray3552!![i_13_].toDouble() + (sin((GroundDecorSceneEntity.anIntArray9981!![i_13_]).toDouble() * ((MapTileShapeStatics.anIntArray4196!![i_13_]).toDouble() / 100.0)) * (ModelHeaderCache.anIntArray3273!![i_13_]).toDouble())).toInt()
                         if (i_13_ == 4) {
-                            MinimapAreaMarkerNode.anInt9701 += i_14_
-                            if (MinimapAreaMarkerNode.anInt9701 >= 1024) {
-                                if (MinimapAreaMarkerNode.anInt9701 > 3072) MinimapAreaMarkerNode.anInt9701 = 3072
-                            } else MinimapAreaMarkerNode.anInt9701 = 1024
+                            MinimapAreaMarkerNodeStatics.anInt9701 += i_14_
+                            if (MinimapAreaMarkerNodeStatics.anInt9701 >= 1024) {
+                                if (MinimapAreaMarkerNodeStatics.anInt9701 > 3072) MinimapAreaMarkerNodeStatics.anInt9701 = 3072
+                            } else MinimapAreaMarkerNodeStatics.anInt9701 = 1024
                         }
                         if (i_13_ == 0) GlslMaterialPass.anInt6246 += i_14_ shl 2
                         if (i_13_ == 3) WorldMapElement.anInt4638 = 0x3fff and i_14_ + WorldMapElement.anInt4638
@@ -116,19 +116,19 @@ class FireParticleStream : OutputStream() {
                 } else {
                     FacingDirectionNodeStatics.aRenderer6654!!.ya()
                     val i_15_ = LocTypeDefLoader.anInt2500
-                    if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, FacingDirectionNodeStatics.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, WorldMapElement.anInt4638, MinimapAreaMarkerNode.anInt9701, i_15_, i_2_)
+                    if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, FacingDirectionNodeStatics.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, WorldMapElement.anInt4638, MinimapAreaMarkerNodeStatics.anInt9701, i_15_, i_2_)
                     else FacingDirectionNodeStatics.aRenderer6654!!.GA(i_15_)
                 }
                 WorldMapAreaLabel.method3570(false)
                 if (i >= 80) {
-                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, CompositeRgbNoiseTexture.anInt8685, -MinimapAreaMarkerNode.anInt9701 and 0x3fff, -WorldMapElement.anInt4638 and 0x3fff, 0x3fff and -MapTileShapeStatics.anInt4186)
+                    SettingsCrcWriter.aAbstractCameraTransform_2123!!.method903(GlslMaterialPass.anInt6246, ParticleSystemRenderer.anInt3855, CompositeRgbNoiseTexture.anInt8685, -MinimapAreaMarkerNodeStatics.anInt9701 and 0x3fff, -WorldMapElement.anInt4638 and 0x3fff, 0x3fff and -MapTileShapeStatics.anInt4186)
                     FacingDirectionNodeStatics.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
                     FacingDirectionNodeStatics.aRenderer6654!!.DA(i_0_ / 2 + i_1_, i_3_ + i_2_ / 2, TerrainChunkBuilder.anInt1550 shl 1, TerrainChunkBuilder.anInt1550 shl 1)
                     method319(TerrainChunkBuilder.anInt1550 shl 1, TerrainChunkBuilder.anInt1550 shl 1, (-18).toByte(), i_1_ + i_0_ / 2, i_3_ + i_2_ / 2)
-                    SpriteRenderEntry.method3282(0x3fff and -(MinimapAreaMarkerNode.anInt9701), CompositeRgbNoiseTexture.anInt8685, ParticleSystemRenderer.anInt3855, 0, -WorldMapElement.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShapeStatics.anInt4186 and 0x3fff)
+                    SpriteRenderEntry.method3282(0x3fff and -(MinimapAreaMarkerNodeStatics.anInt9701), CompositeRgbNoiseTexture.anInt8685, ParticleSystemRenderer.anInt3855, 0, -WorldMapElement.anInt4638 and 0x3fff, GlslMaterialPass.anInt6246, -MapTileShapeStatics.anInt4186 and 0x3fff)
                     val i_16_ = (if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub14_7264!!.method1778(-32350) != 2) 1.toByte() else TextureQualityOptionState.anInt6006.toByte())
                     if (GrayscaleNoiseTexture.aBoolean5300) {
-                        CameraRotationStubStatics.method289(-15902, 0x3fff and -WorldMapElement.anInt4638, -MapTileShapeStatics.anInt4186 and 0x3fff, (-MinimapAreaMarkerNode.anInt9701 and 0x3fff))
+                        CameraRotationStubStatics.method289(-15902, 0x3fff and -WorldMapElement.anInt4638, -MapTileShapeStatics.anInt4186 and 0x3fff, (-MinimapAreaMarkerNodeStatics.anInt9701 and 0x3fff))
                         method1634(
                             CharCodeMapStatics.anIntArray1127,
                             -2,
@@ -179,7 +179,7 @@ class FireParticleStream : OutputStream() {
                     }
                     CharCodeMapStatics.method3223()
                     GlslMaterialPass.anInt6246 = i_8_
-                    MinimapAreaMarkerNode.anInt9701 = i_11_
+                    MinimapAreaMarkerNodeStatics.anInt9701 = i_11_
                     WorldMapElement.anInt4638 = i_12_
                     ParticleSystemRenderer.anInt3855 = i_9_
                     CompositeRgbNoiseTexture.anInt8685 = i_10_
@@ -543,7 +543,7 @@ class FireParticleStream : OutputStream() {
                 val f = (-(((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)).toFloat() / 1000000.0f) + 1.0f)
                 GlslMaterialPass.anInt6246 = (SequencedGroundDecor.anInt10047.toFloat() + f * (-SequencedGroundDecor.anInt10047 + GlslMaterialPass.anInt6246).toFloat()).toInt()
                 ParticleSystemRenderer.anInt3855 = ((-SpriteComponent.anInt8368 + ParticleSystemRenderer.anInt3855).toFloat() * f + SpriteComponent.anInt8368.toFloat()).toInt()
-                MinimapAreaMarkerNode.anInt9701 = (DataHolderStatics.anInt3662.toFloat() + (MinimapAreaMarkerNode.anInt9701 - DataHolderStatics.anInt3662).toFloat() * f).toInt()
+                MinimapAreaMarkerNodeStatics.anInt9701 = (DataHolderStatics.anInt3662.toFloat() + (MinimapAreaMarkerNodeStatics.anInt9701 - DataHolderStatics.anInt3662).toFloat() * f).toInt()
                 CompositeRgbNoiseTexture.anInt8685 = (TextureAtlasStateStatics.anInt4424.toFloat() + f * (-TextureAtlasStateStatics.anInt4424 + CompositeRgbNoiseTexture.anInt8685).toFloat()).toInt()
                 var i_8_ = WorldMapElement.anInt4638 - CameraConfigDefinitionStatics.anInt3253
                 if (i_8_ <= 8192) {

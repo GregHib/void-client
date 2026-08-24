@@ -65,7 +65,7 @@ abstract class TileSceneEntity internal constructor(i: Int, i_4_: Int, i_5_: Int
             if (WeaveTextureNode.anInt9282 == 2) {
                 WorldMapElement.anInt4638 = i_1_
                 MapTileShapeStatics.anInt4186 = i_2_
-                MinimapAreaMarkerNode.anInt9701 = i
+                MinimapAreaMarkerNodeStatics.anInt9701 = i
             }
             CameraDistanceOptionState.aFloat3938 = i_1_.toFloat()
             SceneObjectSpawner.aFloat1287 = i.toFloat()

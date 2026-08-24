@@ -376,7 +376,7 @@ class WidgetDefinition {
             CompositeRgbNoiseTexture.anInt8685 = i_38_ - i_49_
             ParticleSystemRenderer.anInt3855 = -i_48_ + i_36_
             GlslMaterialPass.anInt6246 = -i_47_ + i_41_
-            MinimapAreaMarkerNode.anInt9701 = i
+            MinimapAreaMarkerNodeStatics.anInt9701 = i
         }
     }
 }

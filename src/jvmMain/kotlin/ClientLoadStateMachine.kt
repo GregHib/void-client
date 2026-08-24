@@ -43,7 +43,7 @@ object ClientLoadStateMachine {
     fun method1278(i: Int): Int {
         if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub11_7265!!.method1768(i + -3690) == 0) {
             var i_0_ = 0
-            while ((i_0_ < MinimapAreaMarkerNode.anInt9699)) {
+            while ((i_0_ < MinimapAreaMarkerNodeStatics.anInt9699)) {
                 if (RectangleRegion.anCharStreamReaderArray9534s!![i_0_]!!.method28(31.toByte()).code == 115 || RectangleRegion.anCharStreamReaderArray9534s!![i_0_]!!.method28(71.toByte()).code == 83) {
                     IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub11_7265), 1)
                     TextureFormatInfo.aBoolean3847 = true

@@ -43,11 +43,11 @@ object ContactEntryStatics {
             val i_12_ = -ParticleSystemRenderer.anInt3855 + i_10_
             val i_13_ = i_9_ - CompositeRgbNoiseTexture.anInt8685
             val i_14_ = sqrt((i_11_ * i_11_ + i_13_ * i_13_).toDouble()).toInt()
-            MinimapAreaMarkerNode.Companion.anInt9701 = (atan2(i_12_.toDouble(), i_14_.toDouble()) * 2607.5945876176133).toInt() and 0x3fff
+            MinimapAreaMarkerNodeStatics.anInt9701 = (atan2(i_12_.toDouble(), i_14_.toDouble()) * 2607.5945876176133).toInt() and 0x3fff
             WorldMapElement.anInt4638 = (-2607.5945876176133 * atan2(i_11_.toDouble(), i_13_.toDouble())).toInt() and 0x3fff
-            if (MinimapAreaMarkerNode.Companion.anInt9701 < 1024) MinimapAreaMarkerNode.Companion.anInt9701 = 1024
+            if (MinimapAreaMarkerNodeStatics.anInt9701 < 1024) MinimapAreaMarkerNodeStatics.anInt9701 = 1024
             MapTileShapeStatics.anInt4186 = 0
-            if (MinimapAreaMarkerNode.Companion.anInt9701 > 3072) MinimapAreaMarkerNode.Companion.anInt9701 = 3072
+            if (MinimapAreaMarkerNodeStatics.anInt9701 > 3072) MinimapAreaMarkerNodeStatics.anInt9701 = 3072
         }
         WeaveTextureNode.anInt9282 = 2
         SequencedWallEntity.anInt10163 = -1

@@ -128,7 +128,7 @@ object LocalizedTextStatics {
         ActorEntity.anIntArrayArrayArray4356 = null
         val i_6_ = 36 % ((-81 - i) / 38)
         ActorEntity.anIntArray5091 = null
-        MinimapAreaMarkerNode.aMapTileShapeArray9700 = null
+        MinimapAreaMarkerNodeStatics.aMapTileShapeArray9700 = null
         DrawListState.anInt1480 = -1
         ActorEntity.anInt3872 = DrawListState.anInt1480
     }

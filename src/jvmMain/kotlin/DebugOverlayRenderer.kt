@@ -35,7 +35,7 @@ object DebugOverlayRenderer {
             NativeLibraryState.aRenderer171!!.K(BrightnessContrastEffect.anIntArray9183)
             for (i_2_ in WidgetDefinition.anIntArray256!!.indices) NativeLibraryState.aRenderer171!!.method3660((WidgetDefinition.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_]), -256, (BrightnessContrastEffect.anIntArray9183!![3] - BrightnessContrastEffect.anIntArray9183!![1]), BrightnessContrastEffect.anIntArray9183!![1], true)
             for (i_3_ in 0..<ParameterizedText.anInt9577) {
-                val class338 = MinimapAreaMarkerNode.aMapTileShapeArray9700!![i_3_]!!
+                val class338 = MinimapAreaMarkerNodeStatics.aMapTileShapeArray9700!![i_3_]!!
                 NativeLibraryState.aRenderer171!!.H(class338.anIntArray4187!![0], class338.anIntArray4191[0], class338.anIntArray4184[0], ClickFeedbackTask.anIntArray4670)
                 NativeLibraryState.aRenderer171!!.H(class338.anIntArray4187!![1], class338.anIntArray4191[1], class338.anIntArray4184[1], MinimapRectClipper.anIntArray222)
                 NativeLibraryState.aRenderer171!!.H(class338.anIntArray4187!![2], class338.anIntArray4191[2], class338.anIntArray4184[2], anIntArray3169)

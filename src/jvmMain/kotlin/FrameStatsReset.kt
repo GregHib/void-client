@@ -2981,7 +2981,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ParticleConfigParserStatics.anInt3816 = 0
             ResourceLoaderThread.anInt3904 = 0
             ConfigFlagUtilStatics.anInt3231 = 0
-            MinimapAreaMarkerNode.anInt9698 = 0
+            MinimapAreaMarkerNodeStatics.anInt9698 = 0
             SceneObjectEntity.anInt8733 = 0
             ParticleSystemState.anInt2193 = 0
             AbstractRenderPass.anInt4485 = 0

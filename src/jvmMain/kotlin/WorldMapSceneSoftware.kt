@@ -349,7 +349,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                         val i_63_ = i_61_ shr 9
                                         if (i_62_ >= 0 && i_63_ >= 0 && (this.anInt3117 > i_62_) && (this.anInt3114 > i_63_)) {
                                             class348_sub1.method2725(i_60_, 70.toByte(), i_61_, ((this.anIntArrayArrayArray3122!![(soundEnvelope.anInt2731)]!![i_62_]!![i_63_]) + -class348_sub1.method2722(120)))
-                                            MinimapAreaMarkerNode.method3276(soundEnvelope)
+                                            MinimapAreaMarkerNodeStatics.method3276(soundEnvelope)
                                         }
                                     }
                                     i_59_++
@@ -640,7 +640,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                                                 i_129_ = i_131_ shr 9
                                                 if (i_128_ >= 0 && (i_129_ >= 0) && (i_128_ < (this.anInt3117)) && ((this.anInt3114) > i_129_)) {
                                                     class348_sub1.method2725(i_130_, 70.toByte(), i_131_, ((this.anIntArrayArrayArray3122!![i_121_]!![i_128_]!![i_129_]) - (class348_sub1.method2722(124))))
-                                                    MinimapAreaMarkerNode.method3276(soundEnvelope)
+                                                    MinimapAreaMarkerNodeStatics.method3276(soundEnvelope)
                                                 }
                                             }
                                         }

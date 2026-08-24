@@ -268,13 +268,13 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
             if (i_23_ < 1024) i_23_ = 1024
             val i_24_ = 0x3fff and (-2607.5945876176133 * atan2(i_19_.toDouble(), i_21_.toDouble())).toInt()
             if (i_23_ > 3072) i_23_ = 3072
-            if (i_23_ > MinimapAreaMarkerNode.anInt9701) {
-                MinimapAreaMarkerNode.anInt9701 += (BloomGraphicsOptionState.anInt5973 * (i_23_ - MinimapAreaMarkerNode.anInt9701 shr 3) / 1000) + GlGroundShaderPass.anInt7403 shl 3
-                if (i_23_ < MinimapAreaMarkerNode.anInt9701) MinimapAreaMarkerNode.anInt9701 = i_23_
+            if (i_23_ > MinimapAreaMarkerNodeStatics.anInt9701) {
+                MinimapAreaMarkerNodeStatics.anInt9701 += (BloomGraphicsOptionState.anInt5973 * (i_23_ - MinimapAreaMarkerNodeStatics.anInt9701 shr 3) / 1000) + GlGroundShaderPass.anInt7403 shl 3
+                if (i_23_ < MinimapAreaMarkerNodeStatics.anInt9701) MinimapAreaMarkerNodeStatics.anInt9701 = i_23_
             }
-            if (MinimapAreaMarkerNode.anInt9701 > i_23_) {
-                MinimapAreaMarkerNode.anInt9701 -= (((-i_23_ + MinimapAreaMarkerNode.anInt9701 shr 3) * BloomGraphicsOptionState.anInt5973 / 1000) + GlGroundShaderPass.anInt7403) shl 3
-                if (MinimapAreaMarkerNode.anInt9701 < i_23_) MinimapAreaMarkerNode.anInt9701 = i_23_
+            if (MinimapAreaMarkerNodeStatics.anInt9701 > i_23_) {
+                MinimapAreaMarkerNodeStatics.anInt9701 -= (((-i_23_ + MinimapAreaMarkerNodeStatics.anInt9701 shr 3) * BloomGraphicsOptionState.anInt5973 / 1000) + GlGroundShaderPass.anInt7403) shl 3
+                if (MinimapAreaMarkerNodeStatics.anInt9701 < i_23_) MinimapAreaMarkerNodeStatics.anInt9701 = i_23_
             }
             var i_25_ = -WorldMapElement.anInt4638 + i_24_
             if (i_25_ > 8192) i_25_ -= 16384

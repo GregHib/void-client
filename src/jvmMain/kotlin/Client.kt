@@ -347,7 +347,7 @@ import AsyncResourceRequestStatics.method3252
 import StreamingResourceRequest.Companion.method3260
 import CompletedResourceRequest.Companion.method3263
 import ParticleEmitterListNode.Companion.method3274
-import MinimapAreaMarkerNode.Companion.method3278
+import MinimapAreaMarkerNodeStatics.method3278
 import SpriteRenderEntry.Companion.method3280
 import LoadingScreenImageNodeStatics.method3176
 import ShortMatrixNodeStatics.method3181
@@ -1567,16 +1567,16 @@ class Client : GameAppletFrame() {
             if (FacingDirectionNodeStatics.aRenderer6654 != null) FacingDirectionNodeStatics.aRenderer6654!!.method3646(method599(-74).toInt())
             method1315(93)
             CameraConfigDefinitionStatics.anInt3246 = 0
-            MinimapAreaMarkerNode.anInt9699 = 0
+            MinimapAreaMarkerNodeStatics.anInt9699 = 0
             var interface6 = LoadProgressCountersStatics.aKeyboardInputSource_2449!!.method2697(0)
             while (interface6 != null) {
                 val i_109_ = interface6.method27(26276)
                 if (i_109_ == 2 || i_109_ == 3) {
                     val i_110_ = interface6.method28(96.toByte()).code
                     if (!method2066(116.toByte()) || (i_110_ != 96 && i_110_ != 167 && i_110_ != 178)) {
-                        if (MinimapAreaMarkerNode.anInt9699 < 128) {
-                            RectangleRegion.anCharStreamReaderArray9534s!![MinimapAreaMarkerNode.anInt9699] = interface6
-                            MinimapAreaMarkerNode.anInt9699++
+                        if (MinimapAreaMarkerNodeStatics.anInt9699 < 128) {
+                            RectangleRegion.anCharStreamReaderArray9534s!![MinimapAreaMarkerNodeStatics.anInt9699] = interface6
+                            MinimapAreaMarkerNodeStatics.anInt9699++
                         }
                     } else if (!method3263(true)) IntHashSetStatics.method2363(-84)
                     else GlCubemapLightPass.method3543((-89).toByte())
@@ -2479,7 +2479,7 @@ class Client : GameAppletFrame() {
                                 }
                                 class46.anInt726 = ResourceLoaderThread.anInt3918
                                 if (class46.anObjectArray822 != null) {
-                                    for (i_89_ in 0..<MinimapAreaMarkerNode.anInt9699) {
+                                    for (i_89_ in 0..<MinimapAreaMarkerNodeStatics.anInt9699) {
                                         val class348_sub36 = WidgetActionEntry()
                                         class348_sub36.aWidgetComponent_6989 = class46
                                         class348_sub36.anInt6991 = RectangleRegion.anCharStreamReaderArray9534s!![i_89_]!!.method30(false)

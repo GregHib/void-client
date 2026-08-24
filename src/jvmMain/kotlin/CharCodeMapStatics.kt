@@ -62,7 +62,7 @@ object CharCodeMapStatics {
                             i_10_ = NativeLibraryState.anInt167
                         }
                         if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_10_ shr 9]!![i_11_ shr 9]).toInt()) != 0) method3542(i_11_ shr 9, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, i_10_ shr 9, 0, 0, false)
-                        if (MinimapAreaMarkerNode.Companion.anInt9701 < 2560) {
+                        if (MinimapAreaMarkerNodeStatics.anInt9701 < 2560) {
                             var i_12_ = GlslMaterialPass.anInt6246 shr 9
                             var i_13_ = CompositeRgbNoiseTexture.anInt8685 shr 9
                             val i_14_ = i_10_ shr 9

@@ -132,7 +132,7 @@ object SceneModelBuilderStatics {
                     if (bool) {
                         var f = (ActorEntity.anInt1974 - (mapTileShape.anIntArray4187!![0])).toFloat()
                         if (f < 0.0f) f *= -1.0f
-                        if (!(f < SceneRegionState.anInt194.toFloat()) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                        if (!(f < SceneRegionState.anInt194.toFloat()) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNodeStatics.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                     }
                 }
             } else if (mapTileShape.aByte4192.toInt() == 2) {
@@ -156,7 +156,7 @@ object SceneModelBuilderStatics {
                     if (bool) {
                         var f = (ActorEntity.anInt9360 - (mapTileShape.anIntArray4184[0])).toFloat()
                         if (f < 0.0f) f *= -1.0f
-                        if (!(f < SceneRegionState.anInt194.toFloat()) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                        if (!(f < SceneRegionState.anInt194.toFloat()) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNodeStatics.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                     }
                 }
             } else if (mapTileShape.aByte4192.toInt() == 16 || mapTileShape.aByte4192.toInt() == 8) {
@@ -168,7 +168,7 @@ object SceneModelBuilderStatics {
                         if (f < 0.0f) f *= -1.0f
                         var f_28_ = (ActorEntity.anInt9360 + -(mapTileShape.anIntArray4184[0])).toFloat()
                         if (f_28_ < 0.0f) f_28_ *= -1.0f
-                        if ((!(f < SceneRegionState.anInt194.toFloat()) || !(SceneRegionState.anInt194.toFloat() > f_28_)) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                        if ((!(f < SceneRegionState.anInt194.toFloat()) || !(SceneRegionState.anInt194.toFloat() > f_28_)) && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNodeStatics.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                     }
                 }
             } else if (mapTileShape.aByte4192.toInt() == 4) {
@@ -199,7 +199,7 @@ object SceneModelBuilderStatics {
                             i_34_++
                         }
                     }
-                    if (bool && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNode.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
+                    if (bool && TextureCache.method3465(0, 1, mapTileShape) && TextureCache.method3465(1, 1, mapTileShape) && TextureCache.method3465(2, 1, mapTileShape) && TextureCache.method3465(3, 1, mapTileShape)) MinimapAreaMarkerNodeStatics.aMapTileShapeArray9700!![ParameterizedText.anInt9577++] = mapTileShape
                 }
             }
         } catch (runtimeexception: RuntimeException) {
