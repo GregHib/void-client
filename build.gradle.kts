@@ -14,6 +14,10 @@ kotlin {
 
     jvm()
 
+    js(IR) {
+        browser()
+    }
+
     sourceSets {
         jvmMain {
             dependencies {
