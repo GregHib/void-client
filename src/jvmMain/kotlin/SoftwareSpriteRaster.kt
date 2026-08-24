@@ -1,7 +1,6 @@
 import AbstractBloomEffect.Companion.method2753
 import HslColorConfig.Companion.method295
 import GrayscaleNoiseTexture.Companion.method552
-import awt.AwtCanvas
 import jaggl.OpenGL.Companion.glLoadIdentity
 import jaggl.OpenGL.Companion.glMatrixMode
 import jaggl.OpenGL.Companion.glScalef
@@ -363,7 +362,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         var anInt4576: Int = 0
         @JvmStatic
         @Synchronized
-        fun method3692(i: Int, i_168_: Int, i_169_: Int, js5Archive: Js5Archive?, i_170_: Int, var_renderConfig: RenderConfig?, canvas: AwtCanvas?, i_171_: Int): Renderer? {
+        fun method3692(i: Int, i_168_: Int, i_169_: Int, js5Archive: Js5Archive?, i_170_: Int, var_renderConfig: RenderConfig?, canvas: Canvas?, i_171_: Int): Renderer? {
             try {
                 anInt4576++
                 if (i_170_ == i_171_) return method2753(true, i_168_, i_169_, canvas, var_renderConfig)
