@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 import SceneTilePlaneManager.method260
 import ArrayCopyUtil.method1574

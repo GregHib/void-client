@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 import GameClock.method599
 

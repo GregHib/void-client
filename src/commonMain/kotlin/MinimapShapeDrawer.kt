@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glBindProgramARB
 import jaggl.OpenGL.Companion.glGenProgramARB

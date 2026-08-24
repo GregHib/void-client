@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmField
 class AnimationFrameDefinition internal constructor(@JvmField var anInt6958: Int, `is`: ByteArray?) : LinkedListNode() {
     var aBooleanArray6954: BooleanArray?
     var anIntArray6957: IntArray?

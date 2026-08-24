@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 /* Class348_Sub34 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

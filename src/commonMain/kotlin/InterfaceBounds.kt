@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 import ClientLoadStateMachine.method1277
 import PerlinTextureProvider.Companion.method1402

@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmField
 import VoronoiNoiseTextureNode.Companion.method3060
 
 /* Class348_Sub44 - Decompiled by JODE

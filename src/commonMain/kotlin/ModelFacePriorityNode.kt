@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmField
 /* Class129 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */

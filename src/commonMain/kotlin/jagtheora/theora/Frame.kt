@@ -1,6 +1,7 @@
 package jagtheora.theora
 
 import jagtheora.misc.SimplePeer
+import kotlin.jvm.JvmField
 
 class Frame(@JvmField val a: Int, @JvmField val b: Int) : SimplePeer() {
 

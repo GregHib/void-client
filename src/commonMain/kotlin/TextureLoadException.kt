@@ -1,3 +1,4 @@
+import kotlin.jvm.JvmField
 /* RuntimeException_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */

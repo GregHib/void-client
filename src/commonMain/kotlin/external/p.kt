@@ -5,6 +5,7 @@ import LinkedListNode
 import withLock
 import java.awt.Canvas
 import java.awt.Rectangle
+import kotlin.jvm.JvmField
 
 /*
  * NativeFrameBuffer
