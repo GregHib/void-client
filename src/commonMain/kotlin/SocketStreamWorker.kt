@@ -7,6 +7,7 @@ import io.EOFException
 import io.IOException
 import io.InputStream
 import io.OutputStream
+import lang.InterruptedException
 import net.Socket
 
 /*

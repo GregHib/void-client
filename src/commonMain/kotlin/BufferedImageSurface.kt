@@ -11,6 +11,7 @@ import awt.h
 import awt.left
 import awt.top
 import awt.w
+import util.Hashtable
 
 class BufferedImageSurface : AbstractFrameBufferSurface() {
     private var aShape9064: Shape? = null

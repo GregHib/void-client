@@ -3,6 +3,7 @@ import SoundEnvelope.Companion.method303
 import PcmStreamBuffer.Companion.method2832
 import CachedRgbNoiseTexture.Companion.method565
 import IdentKitRecolor.Companion.method206
+import lang.InterruptedException
 import kotlin.math.asin
 import kotlin.math.atan2
 import kotlin.math.sqrt

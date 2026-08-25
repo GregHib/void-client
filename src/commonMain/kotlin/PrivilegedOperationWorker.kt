@@ -17,6 +17,7 @@ import io.File
 import io.FileOutputStream
 import io.IOException
 import kotlinx.coroutines.Runnable
+import lang.InterruptedException
 import java.lang.reflect.Method
 import java.net.InetAddress
 import net.Socket

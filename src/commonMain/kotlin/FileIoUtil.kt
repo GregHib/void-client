@@ -2,6 +2,7 @@ import kotlin.jvm.JvmStatic
 import BufferedFileReader.method3610
 import io.File
 import io.IOException
+import lang.InterruptedException
 
 /*
  * Class327

@@ -1,5 +1,6 @@
 import kotlin.jvm.JvmStatic
 import kotlinx.coroutines.runBlocking
+import lang.InterruptedException
 
 /* Class59_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

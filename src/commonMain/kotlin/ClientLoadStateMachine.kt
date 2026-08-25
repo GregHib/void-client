@@ -21,6 +21,7 @@ import NativeRenderer.Companion.method3896
 import jagex3.jagmisc.jagmisc.init
 import NativeRenderNode.Companion.method3290
 import kotlinx.coroutines.runBlocking
+import lang.InterruptedException
 
 /*
  * Class164

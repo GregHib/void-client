@@ -1,6 +1,8 @@
 import GlslMaterialPass.Companion.method2154
 import WidgetTextConfig.Companion.method365
+import kotlinx.coroutines.Runnable
 import kotlin.concurrent.Volatile
+import lang.InterruptedException
 
 /* Class293 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -13,6 +13,7 @@ import jaggl.OpenGL.Companion.glTexSubImage2Dub
 import java.awt.MediaTracker
 import java.awt.Toolkit
 import awt.image.PixelGrabber
+import lang.InterruptedException
 
 open class GlTexture2D : GlTexture {
     private var anInt8545: Int

@@ -18,5 +18,6 @@ expect abstract class Graphics {
     abstract fun clipRect(x: Int, y: Int, width: Int, height: Int)
     abstract fun getClipBounds(): Rectangle
     abstract fun getClip(): Shape
+    abstract fun drawImage(img: Image?, x: Int, y: Int, observer: Canvas?): Boolean
     fun drawRect(x: Int, y: Int, width: Int, height: Int)
 }
