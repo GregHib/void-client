@@ -22,6 +22,7 @@ import jagex3.jagmisc.jagmisc.init
 import NativeRenderNode.Companion.method3290
 import kotlinx.coroutines.runBlocking
 import lang.InterruptedException
+import lang.PlatformRuntime
 import lang.StringBuffer
 import lang.gc
 
@@ -59,8 +60,7 @@ object ClientLoadStateMachine {
         }
         anInt2174++
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1018) {
-            val runtime = Runtime.getRuntime()
-            val i_1_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()
+            val i_1_ = ((PlatformRuntime.totalMemory() + -PlatformRuntime.freeMemory()) / 1024L).toInt()
             val l = method599(i + 28559)
             if (SoundBankPatch.aLong6791 == 0L) SoundBankPatch.aLong6791 = l
             if (i_1_ > 16384 && -SoundBankPatch.aLong6791 + l < 5000) {

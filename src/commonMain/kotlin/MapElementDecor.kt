@@ -8,6 +8,7 @@ import MapRegionLoader.Companion.method751
 import MapRegionLoader.Companion.method758
 import ChatMessageStream.Companion.method136
 import awt.Frame
+import lang.PlatformRuntime
 
 class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int) : GroundDecorEntity(i_36_, i_37_, i_38_, i_39_, i_40_, i_41_, i_42_, i_43_, i_44_, false, 0.toByte()) {
     private var anInt10331 = 0
@@ -306,8 +307,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         var i_23_ = -8 + i_13_ + i_14_
                         GameAppletFrame.aRSFont_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_23_, 16776960, i_22_, i + -116, -1)
                         i_23_ -= 15
-                        val runtime = Runtime.getRuntime()
-                        val i_24_ = ((runtime.totalMemory() + -runtime.freeMemory()) / 1024L).toInt()
+                        val i_24_ = ((PlatformRuntime.totalMemory() + -PlatformRuntime.freeMemory()) / 1024L).toInt()
                         var i_25_ = 16776960
                         if (i_24_ > 65536) i_25_ = 16711680
                         GameAppletFrame.aRSFont_20!!.method2569("Mem:" + i_24_ + "k", i_23_, i_25_, i_22_, -127, -1)

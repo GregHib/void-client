@@ -6,6 +6,7 @@ import CubemapTextureGlSource.Companion.method2263
 import WorldMapAreaLabel.Companion.method3570
 import NoiseTextureGenerator.Companion.method544
 import FireParticleStream.Companion.method132
+import lang.PlatformRuntime
 import lang.gc
 import kotlin.math.max
 import kotlin.math.min
@@ -248,15 +249,14 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                     if (SimpleToggleOptionState.anInt5891 < 20) i_39_ = -65536
                                                     GameAppletFrame.aRSFont_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_38_, i_39_, i_37_, -128, -1)
                                                     i_38_ += 15
-                                                    val runtime = Runtime.getRuntime()
-                                                    var i_40_ = (((runtime.totalMemory()) + -(runtime.freeMemory())) / 1024L).toInt()
+                                                    var i_40_ = (((PlatformRuntime.totalMemory()) + -(PlatformRuntime.freeMemory())) / 1024L).toInt()
                                                     var i_41_ = -256
                                                     if (i_40_ > 98304) {
                                                         i_41_ = -65536
                                                         if (ServerConnectionInfo.aBoolean2151) {
                                                             ConfigArchiveLoader.method427(-35)
                                                             for (i_42_ in 0..9) gc()
-                                                            i_40_ = (((runtime.totalMemory()) - (runtime.freeMemory())) / 1024L).toInt()
+                                                            i_40_ = (((PlatformRuntime.totalMemory()) - (PlatformRuntime.freeMemory())) / 1024L).toInt()
                                                             if (i_40_ > 65536) method544("WARNING: Memory usage over 64MB! Please inform whoever is responsible for the content/area you are using/in.", false, 4)
                                                         }
                                                     }

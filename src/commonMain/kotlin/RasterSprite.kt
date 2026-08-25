@@ -1,4 +1,5 @@
 import lang.Class
+import lang.PlatformRuntime
 import kotlin.jvm.JvmStatic
 class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprite() {
 
@@ -51,8 +52,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
                 if (!VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
                     try {
                         try {
-                            val runtime = Runtime.getRuntime()
-                            val var_long = runtime.maxMemory()
+                            val var_long = PlatformRuntime.maxMemory()
                             TextureDefinitionCache.anInt2964 = 1 + (var_long / 1048576L).toInt()
                         } catch (throwable: Throwable) {
                             /* empty */

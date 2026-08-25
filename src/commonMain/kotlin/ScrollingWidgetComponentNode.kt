@@ -1,6 +1,7 @@
 import kotlin.jvm.JvmStatic
 import RSFont.Companion.method2570
 import lang.Class
+import lang.PlatformRuntime
 
 class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?, class288_sub1: ParticleEmitterDefExt?) : WidgetComponentNode(js5Archive, class288_sub1) {
     private var anInt8383 = 0
@@ -67,8 +68,7 @@ class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?,
             anInt8381++
             try {
                 try {
-                    val runtime = Runtime.getRuntime()
-                    val integer = runtime.availableProcessors()
+                    val integer = PlatformRuntime.availableProcessors()
                     ActorEntity.anInt9372 = integer
                 } catch (throwable: Throwable) {
                     /* empty */
