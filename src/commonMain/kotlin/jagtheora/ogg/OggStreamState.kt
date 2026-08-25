@@ -10,7 +10,6 @@ expect class OggStreamState(arg0: Int) : SimplePeer {
     fun init(arg0: Int): Boolean
 
     val isEOS: Boolean
-        get
 
     override fun clear()
 

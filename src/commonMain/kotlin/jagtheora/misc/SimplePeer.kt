@@ -1,7 +1,7 @@
 package jagtheora.misc
 
 
-abstract expect class SimplePeer {
+expect abstract class SimplePeer {
     var peer: Long
 
     abstract fun clear()

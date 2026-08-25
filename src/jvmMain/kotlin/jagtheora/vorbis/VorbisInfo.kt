@@ -19,7 +19,7 @@ actual class VorbisInfo : SimplePeer() {
 
     actual external override fun clear()
 
-    companion object {
+    actual companion object {
         init {
             initFields()
         }

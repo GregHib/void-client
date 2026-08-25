@@ -12,4 +12,11 @@ expect class VorbisInfo : SimplePeer {
     fun headerIn(arg0: VorbisComment?, arg1: OggPacket?): Int
 
     override fun clear()
+
+    companion object {
+
+        fun initFields()
+
+        fun init()
+    }
 }

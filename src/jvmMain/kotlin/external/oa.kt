@@ -155,7 +155,7 @@ actual class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_
         return true
     }
 
-    fun method3973(): a? {
+    actual fun method3973(): a? {
         for (i in 0..<this.anInt5141) {
             if (anAArray5143!![i]!!.aRunnable5112 === Thread.currentThread()) return anAArray5143!![i]
         }

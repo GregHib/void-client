@@ -1,7 +1,6 @@
 package jaclib.memory
 
-
-open expect class NativeBuffer : Buffer, Source {
+expect open class NativeBuffer() : Buffer, Source {
     var a: Long
 
     var b: Int

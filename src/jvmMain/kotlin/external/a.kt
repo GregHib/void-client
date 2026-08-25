@@ -43,7 +43,7 @@ actual class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int
 
     actual external fun W(l: Long)
 
-    protected actual fun finalize() {
+    /*protected*/ actual fun finalize() {
         if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 

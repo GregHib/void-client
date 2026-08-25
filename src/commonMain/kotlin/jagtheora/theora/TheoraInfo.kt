@@ -38,4 +38,10 @@ expect class TheoraInfo : SimplePeer {
 
     override fun clear()
 
+    companion object {
+
+        /*private*/ fun initFields()
+
+        /*protected*/ fun init()
+    }
 }

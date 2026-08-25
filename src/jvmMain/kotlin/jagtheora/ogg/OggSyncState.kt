@@ -18,7 +18,7 @@ actual class OggSyncState : SimplePeer() {
 
     /*private*/ actual external fun pageSeek(arg0: OggPage?): Long
 
-    companion object {
+    actual companion object {
         /*protected*/ actual external fun init()
     }
 }

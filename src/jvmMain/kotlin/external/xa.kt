@@ -7,9 +7,9 @@ import Marker
 * Visit http://jode.sourceforge.net/
 * NativeTextureHandle
 */
-actual class xa(i: Int, i_1_: Int) : Marker, Disposable {
+actual class xa actual constructor(i: Int, i_1_: Int) : Marker, Disposable {
 
-    var nativeid: Long = 0L
+    actual var nativeid: Long = 0L
 
     /*private*/ actual external fun r(i: Int, i_0_: Int)
 

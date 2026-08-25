@@ -3,7 +3,8 @@ package jagdx
 import jaclib.peer.IUnknown
 import jaclib.peer.hb
 
-expect class IDirect3DDevice(val b: hb?) : IUnknown {
+expect class IDirect3DDevice(b: hb?) : IUnknown {
+    val b: hb?
     fun b(): IDirect3DEventQuery? 
 
     fun b(arg0: Int): IDirect3DSwapChain 

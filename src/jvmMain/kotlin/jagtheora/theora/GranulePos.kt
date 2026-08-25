@@ -7,7 +7,7 @@ actual class GranulePos : SimplePeer() {
 
     actual external override fun clear()
 
-    companion object {
+    actual companion object {
         init {
             init()
         }

@@ -10,8 +10,9 @@ import TerrainTile
 * Visit http://jode.sourceforge.net/
 * NativeContextTerrainTile
 */
-expect class t(val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<IntArray?>, is_51_: Array<IntArray?>?, i_52_: Int, i_53_: Int, i_54_: Int) : TerrainTile, Disposable {
+expect class t(anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<IntArray?>, is_51_: Array<IntArray?>?, i_52_: Int, i_53_: Int, i_54_: Int) : TerrainTile, Disposable {
 
+    val anOa5150: oa
     var nativeid: Long
     val aNodeDeque_5149: NodeDeque
     var anInt5151: Int

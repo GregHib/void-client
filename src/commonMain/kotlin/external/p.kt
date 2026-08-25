@@ -11,7 +11,10 @@ import kotlin.jvm.JvmField
 /*
  * NativeFrameBuffer
  */
-expect class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145: Int, @JvmField var anInt5148: Int) : LinkedListNode, Disposable {
+expect class p(var_oa: oa?, aCanvas5147: Canvas?, anInt5145: Int, anInt5148: Int) : LinkedListNode, Disposable {
+    var aCanvas5147: Canvas?
+    var anInt5145: Int
+    var anInt5148: Int
     var nativeid: Long
 
     fun sa(var_oa: oa?, canvas: Canvas?, i: Int, i_0_: Int)

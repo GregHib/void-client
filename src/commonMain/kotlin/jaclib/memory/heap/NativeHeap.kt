@@ -1,6 +1,7 @@
 package jaclib.memory.heap
 
-expect class NativeHeap(val b: Int) {
+expect class NativeHeap(b: Int) {
+    val b: Int
     val peer: Long
 
     var a: Boolean

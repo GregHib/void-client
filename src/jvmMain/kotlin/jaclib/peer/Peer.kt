@@ -13,7 +13,7 @@ abstract actual class Peer /*protected*/ actual constructor() {
         return this.reference!!.a(false)
     }
 
-    companion actual object {
+    actual companion object {
         init {
             init(PeerReference::class.java)
         }

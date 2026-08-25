@@ -28,7 +28,6 @@ import TerrainTile
 import withLock
 import java.awt.Canvas
 import java.awt.Rectangle
-import kotlin.jvm.Synchronized
 import kotlin.math.max
 
 /*
@@ -121,7 +120,7 @@ expect class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_
 
     override fun method3636(i: Int, i_95_: Int, i_96_: Int, i_97_: Int, i_98_: Int, i_99_: Int, var_sprite: Sprite?, i_100_: Int, i_101_: Int) 
 
-    @Synchronized
+    /*@Synchronized*/
     /*protected*/ override fun finalize() 
 
     /*private*/ fun d(i: Int)

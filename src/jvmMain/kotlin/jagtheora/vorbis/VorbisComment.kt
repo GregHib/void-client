@@ -10,7 +10,7 @@ actual class VorbisComment : SimplePeer() {
 
     actual external override fun clear()
 
-    companion object {
+    actual companion object {
         /*protected*/ actual external fun init()
     }
 }

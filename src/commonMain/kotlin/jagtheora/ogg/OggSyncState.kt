@@ -12,4 +12,8 @@ expect class OggSyncState : SimplePeer {
     fun pageOut(arg0: OggPage?): Int
 
     fun pageSeek(arg0: OggPage?): Long
+
+    companion object {
+        /*protected*/ fun init()
+    }
 }
