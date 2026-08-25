@@ -97,7 +97,7 @@ class HeadIconRenderer {
                 if (i > -48) InboundPacketHeader.aInboundPacketHeader_2068 = null
                 anInt2063++
                 TextureLoadExceptionStatics.anInt4596 = -1
-                BloomGraphicsOptionState.anInt5969 = if (Loader.skipLobby) 2 else 1
+                BloomGraphicsOptionState.anInt5969 = if (Config.skipLobby) 2 else 1
                 LocalPlayerState.method1138(string, false, string_16_, (-95).toByte())
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("ok.E(" + (if (string != null) "{...}" else "null") + ',' + (if (string_16_ != null) "{...}" else "null") + ',' + i + ')'))

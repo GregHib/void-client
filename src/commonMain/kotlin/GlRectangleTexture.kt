@@ -241,7 +241,7 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
         @JvmStatic
         fun method254(i: Int, i_48_: Byte) {
             if (i_48_ > -79) method252(127, 53)
-            if (Loader.skipLobby) {
+            if (Config.skipLobby) {
                 Client.anInt6634 = i
                 anInt1645 = i
             } else if (BloomGraphicsOptionState.anInt5969 != 1) {

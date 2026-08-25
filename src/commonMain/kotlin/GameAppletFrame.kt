@@ -1,7 +1,6 @@
 import awt.COLOR_BLACK
 import kotlin.jvm.JvmStatic
 import jagex3.jagmisc.jagmisc.quit
-import awt.Color
 import awt.Container
 import awt.Frame
 import awt.Graphics
@@ -615,7 +614,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                         Player.aHashtable10565!![string] = aClass6640
                         return true
                     } catch (throwable: Throwable) {
-                        if (Loader.trace) {
+                        if (Config.trace) {
                             throwable.printStackTrace()
                         }
                     }

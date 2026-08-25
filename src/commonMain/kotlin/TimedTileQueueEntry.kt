@@ -57,7 +57,7 @@ class TimedTileQueueEntry internal constructor(i: Int, i_2_: Int) : HashLinkedLi
         var anInt9653: Int = 0
         var anInt9655: Int = 0
         var anInt9656: Int = 0
-        var aBigInteger9657: BigInt? = Loader.FILE_SERVER_RSA_MODULUS
+        var aBigInteger9657: BigInt? = Config.FILE_SERVER_RSA_MODULUS
         var aAbstractModelRenderer_9658: AbstractModelRenderer? = null
         var aAbstractModelRenderer_9659: AbstractModelRenderer? = null
         var aConnectionStateType_9660: ConnectionStateType? = null

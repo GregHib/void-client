@@ -1657,7 +1657,7 @@ class Client : GameAppletFrame() {
                 field.set(JagGlToolkitFactory.anApplet1530, null)
                 if (ParticleSystemRenderer.aCanvas3869 != null) return
             } catch (exception: Exception) {
-                if (Loader.trace) {
+                if (Config.trace) {
                     exception.printStackTrace()
                 }
             }
@@ -1821,14 +1821,14 @@ class Client : GameAppletFrame() {
                                     field_138_.setAccessible(false)
                                 }
                             } catch (throwable: Throwable) {
-                                if (Loader.trace) {
+                                if (Config.trace) {
                                     throwable.printStackTrace()
                                 }
                                 /* empty */
                             }
                             field_136_.setAccessible(false)
                         } catch (throwable: Throwable) {
-                            if (Loader.trace) {
+                            if (Config.trace) {
                                 throwable.printStackTrace()
                             }
                             /* empty */
@@ -1836,14 +1836,14 @@ class Client : GameAppletFrame() {
                     }
                 }
             } catch (throwable: Throwable) {
-                if (Loader.trace) {
+                if (Config.trace) {
                     throwable.printStackTrace()
                 }
                 /* empty */
             }
             string += "]"
         } catch (throwable: Throwable) {
-            if (Loader.trace) {
+            if (Config.trace) {
                 throwable.printStackTrace()
             }
             /* empty */
@@ -2718,7 +2718,7 @@ class Client : GameAppletFrame() {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3407(15295)
                 if (i < 0 || i >= class114s.size) throw IOException("invo:" + i + " ip:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197))
                 InboundPacketHeader.aInboundPacketHeader_6584 = class114s[i]
-                if (Loader.debug) {
+                if (Config.debug) {
                     println("Packet read: " + i + " length: " + InboundPacketHeader.aInboundPacketHeader_6584!!.anInt1749)
                 }
                 RadialTextureNode.anInt9341 = InboundPacketHeader.aInboundPacketHeader_6584!!.anInt1749

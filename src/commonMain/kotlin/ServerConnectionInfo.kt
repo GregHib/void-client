@@ -44,7 +44,7 @@ class ServerConnectionInfo {
     }
 
     init {
-        this.anInt2138 = Loader.port
+        this.anInt2138 = Config.port
     }
 
     companion object {

@@ -1,7 +1,6 @@
 import awt.DisplayMode
 import awt.Frame
 import awt.GraphicsDevice
-import awt.GraphicsEnvironment
 import awt.localGraphicsEnvironment
 import lang.jClass
 import kotlin.math.abs
@@ -90,7 +89,7 @@ class FullscreenDisplayController {
                 bool = true
             }
         } catch (throwable: Throwable) {
-            if (Loader.trace) {
+            if (Config.trace) {
                 throwable.printStackTrace()
             }
             /* empty */
@@ -103,7 +102,7 @@ class FullscreenDisplayController {
                     val field = GraphicsDevice::class.jClass.getDeclaredField("valid")
                     field.set(aGraphicsDevice157, true) // java.lang.Boolean.TRUE
                 } catch (e: Exception) {
-                    if (Loader.trace) {
+                    if (Config.trace) {
                         e.printStackTrace()
                     }
                 }
@@ -114,7 +113,7 @@ class FullscreenDisplayController {
                 val field = GraphicsDevice::class.jClass.getDeclaredField("valid")
                 field.set(aGraphicsDevice157, true) // java.lang.Boolean.TRUE
             } catch (throwable: Throwable) {
-                if (Loader.trace) {
+                if (Config.trace) {
                     throwable.printStackTrace()
                 }
                 /* empty */
