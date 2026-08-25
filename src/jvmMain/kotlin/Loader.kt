@@ -145,7 +145,7 @@ class Loader : Panel(), GameApplet {
                     "-t", "--trace" -> trace = true
                 }
             }
-            val l = Config()
+            val l = Loader()
             l.doFrame()
         }
 

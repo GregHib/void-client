@@ -2504,7 +2504,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 aCanvas7910 = this.aCanvas7925
                 this.anObject7919 = `object`
                 anObject8020 = this.anObject7919
-                anInt7987 = canvas.getHeight()
+                anInt7987 = canvas!!.getHeight()
                 this.anInt7962 = anInt7987
                 anInt7958 = canvas.getWidth()
                 this.anInt7931 = anInt7958
