@@ -4,20 +4,19 @@ import io.InputStreamReader
 import lang.getProperty
 import lang.setProperty
 import net.Socket
-import util.Locale
-import java.net.*
-import java.nio.charset.StandardCharsets
+//import java.net.*
+//import java.nio.charset.StandardCharsets
 
 class ProxySocketFactory : SocketFactory() {
-    private val aProxySelector6172: ProxySelector = ProxySelector.getDefault()
+//    private val aProxySelector6172: ProxySelector = ProxySelector.getDefault()
 
     @Throws(IOException::class)
     private fun method2052(string: String?, i: Int, string_0_: String?): Socket? {
         val socket = Socket(string, i)
         socket.setSoTimeout(10000)
         val outputstream = socket.getOutputStream()
-        if (string_0_ != null) outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n" + string_0_ + "\n\n").toByteArray(StandardCharsets.ISO_8859_1))
-        else outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n\n").toByteArray(StandardCharsets.ISO_8859_1))
+        if (string_0_ != null) outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n" + string_0_ + "\n\n").hexToByteArray(/*StandardCharsets.ISO_8859_1*/))
+        else outputstream.write(("CONNECT " + this.aString3476 + ":" + this.anInt3470 + " HTTP/1.0\n\n").hexToByteArray(/*StandardCharsets.ISO_8859_1*/))
         outputstream.flush()
         val bufferedreader = BufferedReader(InputStreamReader(socket.getInputStream()))
         var string_1_ = bufferedreader.readLine()
@@ -64,41 +63,41 @@ class ProxySocketFactory : SocketFactory() {
         } catch (urisyntaxexception: URISyntaxException) {
             return method2047(121.toByte())
         }*/
-        list.addAll(list1)
-        val aobj: Array<Any?> = list.toTypedArray()
+//        list.addAll(list1)
+//        val aobj: Array<Any?> = list.toTypedArray()
         ioexception_sub1 = null
-        aobj1 = aobj
+//        aobj1 = aobj
         j = 0
 
-        while (j < aobj1.size) {
-            val localObject2 = aobj1[j]
+//        while (j < aobj1.size) {
+//            val localObject2 = aobj1[j]
 
-            val localProxy = localObject2 as Proxy
+//            val localProxy = localObject2 as Proxy
             try {
-                val localSocket = method2053(localProxy, 125.toByte())
-                if (localSocket != null) {
-                    return localSocket
-                }
+//                val localSocket = method2053(localProxy, 125.toByte())
+//                if (localSocket != null) {
+//                    return localSocket
+//                }
             } catch (localIOException_Sub1: IOException_Sub1) {
                 ioexception_sub1 = localIOException_Sub1
             } catch (localIOException: IOException) {
             }
             ++j
-        }
+//        }
         if (ioexception_sub1 != null) throw ioexception_sub1
         else return method2047(92.toByte())
     }
 
-    @Throws(IOException::class)
-    private fun method2053(proxy: Proxy, i: Byte): Socket? {
-        if (proxy.type() == Proxy.Type.DIRECT) return method2047(126.toByte())
-        val socketaddress = proxy.address()
-        if (socketaddress !is InetSocketAddress) return null
-        val inetsocketaddress = socketaddress
-        if (i.toInt() != 125) return null
-        if (proxy.type() == Proxy.Type.HTTP) {
-            var string: String? = null
-            try {
+//    @Throws(IOException::class)
+//    private fun method2053(proxy: Proxy, i: Byte): Socket? {
+//        if (proxy.type() == Proxy.Type.DIRECT) return method2047(126.toByte())
+//        val socketaddress = proxy.address()
+//        if (socketaddress !is InetSocketAddress) return null
+//        val inetsocketaddress = socketaddress
+//        if (i.toInt() != 125) return null
+//        if (proxy.type() == Proxy.Type.HTTP) {
+//            var string: String? = null
+//            try {
 //                val method = (AuthenticationInfo::class.java.getDeclaredMethod("getProxyAuth", (if (aClass6173 == null) String::class.java.also { aClass6173 = it } else aClass6173), Integer.TYPE))
 //                method.setAccessible(true)
 //                val `object` = method.invoke(null, inetsocketaddress.getHostName(), inetsocketaddress.getPort())
@@ -115,17 +114,17 @@ class ProxySocketFactory : SocketFactory() {
 //                        string = string_17_ + ": " + string_18_
 //                    }
 //                }
-            } catch (exception: Exception) {
-                /* empty */
-            }
-            return method2052(inetsocketaddress.getHostName(), inetsocketaddress.getPort(), string)
-        } else if (proxy.type() == Proxy.Type.SOCKS) {
-            val socket = Socket(proxy)
-            socket.connect(InetSocketAddress((this.aString3476), (this.anInt3470)))
-            return socket
-        }
-        return null
-    }
+//            } catch (exception: Exception) {
+//                /* empty */
+//            }
+//            return method2052(inetsocketaddress.getHostName(), inetsocketaddress.getPort(), string)
+//        } else if (proxy.type() == Proxy.Type.SOCKS) {
+//            val socket = Socket(proxy)
+//            socket.connect(InetSocketAddress((this.aString3476), (this.anInt3470)))
+//            return socket
+//        }
+//        return null
+//    }
 
     companion object {
         var aClass6173: Class<*>? = null

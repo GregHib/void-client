@@ -1,3 +1,4 @@
+import awt.COLOR_BLACK
 import kotlin.jvm.JvmStatic
 import jagex3.jagmisc.jagmisc.quit
 import awt.Color
@@ -5,16 +6,17 @@ import awt.Container
 import awt.Frame
 import awt.Graphics
 import awt.Panel
-import java.awt.event.FocusEvent
-import java.awt.event.FocusListener
-import java.awt.event.WindowEvent
-import java.awt.event.WindowListener
+import awt.event.FocusEvent
+import awt.event.FocusListener
+import awt.event.WindowEvent
+import awt.event.WindowListener
 import io.File
 import io.IOException
 import kotlinx.coroutines.Runnable
 import net.URL
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
+import kotlin.jvm.Synchronized
 import kotlin.time.ExperimentalTime
 import kotlin.time.Instant
 
@@ -120,7 +122,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         if (i > -11) paint(null)
         if (ParticleSystemRenderer.aCanvas3869 != null) {
             ParticleSystemRenderer.aCanvas3869!!.removeFocusListener(this)
-            ParticleSystemRenderer.aCanvas3869!!.getParent().setBackground(Color.black)
+            ParticleSystemRenderer.aCanvas3869!!.getParent().setBackground(COLOR_BLACK)
             ParticleSystemRenderer.aCanvas3869!!.getParent().remove(ParticleSystemRenderer.aCanvas3869)
         }
         anInt7++
@@ -153,7 +155,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         anInt39++
     }
 
-    @Synchronized
+//    @Synchronized
     override fun paint(graphics: Graphics?) {
         anInt18++
         if (this === EdgeDetectTextureNode.anGameApplet_Frame_9169 && !SpriteArchiveLoader.aBoolean384) {

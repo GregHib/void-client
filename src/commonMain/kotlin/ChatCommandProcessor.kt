@@ -70,7 +70,8 @@ import OpenGlModel.Companion.method690
 import LocTypeConfig.Companion.method160
 import NullRenderPass.Companion.method3535
 import ProjectedGroundDecor.Companion.method2420
-import java.awt.datatransfer.DataFlavor
+import awt.datatransfer.DataFlavor
+import awt.datatransfer.STRING_FLAVOR
 import kotlin.time.Instant
 import kotlinx.datetime.LocalDate
 import kotlinx.datetime.TimeZone
@@ -1198,7 +1199,7 @@ object ChatCommandProcessor {
                     val transferable = BlendTextureNode.aClipboard9357!!.getContents(null)
                     if (transferable != null) {
                         try {
-                            string = (transferable.getTransferData(DataFlavor.stringFlavor)) as String
+                            string = (transferable.getTransferData(STRING_FLAVOR)) as String
                             if (string == null) string = ""
                         } catch (exception: Exception) {
                             /* empty */

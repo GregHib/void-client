@@ -1,5 +1,4 @@
 import awt.Component
-import java.awt.event.*
 
 class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracker(), MouseListener, MouseMotionListener, MouseWheelListener {
     private var anInt7416 = 0
@@ -29,7 +28,7 @@ class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracke
         aNodeDeque_7420!!.method1999(class348_sub45_sub1, -20180)
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseReleased(mouseevent: MouseEvent?) {
         var i = method3600(mouseevent, -75)
         if ((i and anInt7422) == 0) i = anInt7422

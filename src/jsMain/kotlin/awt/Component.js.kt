@@ -1,5 +1,7 @@
 package awt
 
+import awt.event.FocusListener
+import awt.event.KeyListener
 import awt.image.ImageObserver
 import org.w3c.dom.CanvasRenderingContext2D
 import kotlinx.browser.window
@@ -73,6 +75,29 @@ actual abstract class Component : ImageObserver {
 
     actual override fun imageUpdate(img: Image, infoflags: Int, x: Int, y: Int, width: Int, height: Int): Boolean {
         TODO("Not yet implemented")
+    }
+
+    actual fun getParent(): Container {
+        TODO("Not yet implemented")
+    }
+
+    actual fun setCursor(cursor: Cursor?) {
+    }
+
+    actual fun getToolkit(): Toolkit {
+        TODO("Not yet implemented")
+    }
+
+    actual fun addKeyListener(keyListener: KeyListener) {
+    }
+
+    actual fun addFocusListener(focusListener: FocusListener) {
+    }
+
+    actual fun removeKeyListener(keyListener: KeyListener) {
+    }
+
+    actual fun removeFocusListener(focusListener: FocusListener) {
     }
 }
 

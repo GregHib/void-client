@@ -5,8 +5,8 @@ import TurbulenceTextureNode.Companion.method3113
 import FixedFunctionWaterPass.Companion.method3547
 import SolidFillComponent.Companion.method195
 import Client.Companion.method159
-import java.awt.datatransfer.DataFlavor
-import java.awt.datatransfer.StringSelection
+import awt.datatransfer.STRING_FLAVOR
+import awt.datatransfer.StringSelection
 import kotlin.math.max
 import kotlin.math.min
 
@@ -261,7 +261,7 @@ class WidgetTextConfig {
                             val transferable = BlendTextureNode.aClipboard9357!!.getContents(null)
                             if (transferable != null) {
                                 try {
-                                    val string = (transferable.getTransferData(DataFlavor.stringFlavor)) as String
+                                    val string = (transferable.getTransferData(STRING_FLAVOR)) as String
                                     if (string != null) {
                                         val strings = method3113('\n', true, string)
                                         ChatScriptListNode.method3189(0, strings)

@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.awt.datatransfer.Clipboard
+import awt.datatransfer.Clipboard
 
 class BlendTextureNode : AbstractProceduralTextureNode(3, false) {
     override fun method3047(i: Int, i_0_: Int): Array<IntArray?>? {

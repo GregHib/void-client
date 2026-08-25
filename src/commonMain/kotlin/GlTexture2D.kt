@@ -10,8 +10,9 @@ import jaggl.OpenGL.Companion.glTexImage2Dub
 import jaggl.OpenGL.Companion.glTexParameteri
 import jaggl.OpenGL.Companion.glTexSubImage2Di
 import jaggl.OpenGL.Companion.glTexSubImage2Dub
-import java.awt.MediaTracker
-import java.awt.Toolkit
+import awt.MediaTracker
+import awt.Toolkit
+import awt.getDefaultToolkit
 import awt.image.PixelGrabber
 import lang.InterruptedException
 
@@ -254,7 +255,7 @@ open class GlTexture2D : GlTexture {
             if (`is` == null) throw RuntimeException("")
             while (true) {
                 try {
-                    val image = Toolkit.getDefaultToolkit().createImage(`is`)
+                    val image = getDefaultToolkit().createImage(`is`)
                     val mediatracker = MediaTracker(NpcType.aClient1367)
                     mediatracker.addImage(image, 0)
                     mediatracker.waitForAll()

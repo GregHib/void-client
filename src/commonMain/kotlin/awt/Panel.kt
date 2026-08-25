@@ -1,3 +1,3 @@
 package awt
 
-expect class Panel() : Container
+expect open class Panel() : Container

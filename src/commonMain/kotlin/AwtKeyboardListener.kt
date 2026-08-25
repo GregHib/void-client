@@ -1,9 +1,9 @@
 import kotlin.jvm.JvmStatic
 import awt.Component
-import java.awt.event.FocusEvent
-import java.awt.event.FocusListener
-import java.awt.event.KeyEvent
-import java.awt.event.KeyListener
+import awt.event.FocusEvent
+import awt.event.FocusListener
+import awt.event.KeyEvent
+import awt.event.KeyListener
 
 class AwtKeyboardListener internal constructor(component: Component?) : KeyboardInputSource(), KeyListener, FocusListener {
     private val aNodeDeque_6541 = NodeDeque()
@@ -38,7 +38,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
         }
     }
 
-    @Synchronized
+//    @Synchronized
     override fun keyPressed(keyevent: KeyEvent) {
         anInt6526++
         method2701(keyevent, 0, 0)
@@ -77,13 +77,13 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
         if (i_4_ != 128) aComponent6544 = null
     }
 
-    @Synchronized
+//    @Synchronized
     override fun keyReleased(keyevent: KeyEvent) {
         anInt6529++
         method2701(keyevent, 0, 1)
     }
 
-    @Synchronized
+//    @Synchronized
     override fun keyTyped(keyevent: KeyEvent) {
         anInt6527++
         val c = keyevent.getKeyChar()
@@ -107,7 +107,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
         return i_9_
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2695(i: Int) {
         anInt6534++
         aNodeDeque_6541.method1996(110)

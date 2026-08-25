@@ -1,7 +1,7 @@
-import java.awt.DisplayMode
+import awt.DisplayMode
 import awt.Frame
-import awt.GraphicsDevice
-import awt.GraphicsEnvironment
+import java.awt.GraphicsDevice
+import java.awt.GraphicsEnvironment
 import kotlin.math.abs
 
 /*
