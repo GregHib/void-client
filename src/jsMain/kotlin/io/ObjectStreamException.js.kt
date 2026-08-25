@@ -1,6 +1,11 @@
 package io
 
 actual abstract class ObjectStreamException : IOException {
-    protected actual constructor() : super()
-    protected actual constructor(classname: String?) : super(classname)
+    actual constructor(classname: String?) {
+        TODO("Not yet implemented")
+    }
+
+    actual constructor() {
+        TODO("Not yet implemented")
+    }
 }
