@@ -1,4 +1,9 @@
 import awt.Component
+import awt.event.MouseEvent
+import awt.event.MouseListener
+import awt.event.MouseMotionListener
+import awt.event.MouseWheelEvent
+import awt.event.MouseWheelListener
 
 class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracker(), MouseListener, MouseMotionListener, MouseWheelListener {
     private var anInt7416 = 0
@@ -24,12 +29,12 @@ class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracke
         class348_sub45_sub1.anInt9729 = i
         class348_sub45_sub1.aLong9726 = GameClock.method599(-115)
         class348_sub45_sub1.anInt9727 = i_2_
-        if (bool) mouseDragged(null)
+//        if (bool) mouseDragged(null)
         aNodeDeque_7420!!.method1999(class348_sub45_sub1, -20180)
     }
 
 //    @Synchronized
-    override fun mouseReleased(mouseevent: MouseEvent?) {
+    override fun mouseReleased(mouseevent: MouseEvent) {
         var i = method3600(mouseevent, -75)
         if ((i and anInt7422) == 0) i = anInt7422
         if (0 != (0x1 and i)) method3598(mouseevent!!.getX(), 3, mouseevent.getClickCount(), mouseevent.getY(), false)
@@ -57,7 +62,7 @@ class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracke
         return (anInt7419 and 0x4) != 0
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mousePressed(mouseevent: MouseEvent) {
         val i = method3600(mouseevent, -90)
         if (1 == i) method3598(mouseevent.getX(), 0, mouseevent.getClickCount(), mouseevent.getY(), false)
@@ -83,28 +88,28 @@ class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracke
         return 0
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseEntered(mouseevent: MouseEvent) {
         method3599(mouseevent.getX(), -1, mouseevent.getY())
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseClicked(mouseevent: MouseEvent) {
         if (mouseevent.isPopupTrigger()) mouseevent.consume()
     }
 
     override fun method3595(i: Int): Boolean {
-        if (i >= -67) mouseMoved(null)
+//        if (i >= -67) mouseMoved(null)
         return (anInt7419 and 0x1) != 0
     }
 
     override fun method3596(i: Int): TimedRecordAccessor? {
-        if (i != 0) mouseReleased(null)
+//        if (i != 0) mouseReleased(null)
         return aNodeDeque_7418!!.method1997(8) as TimedRecordAccessor?
     }
 
-    @Synchronized
-    override fun mouseMoved(mouseevent: MouseEvent?) {
+//    @Synchronized
+    override fun mouseMoved(mouseevent: MouseEvent) {
         method3599(mouseevent!!.getX(), -1, mouseevent.getY())
     }
 
@@ -126,7 +131,7 @@ class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracke
         }
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method3589(i: Int) {
         anInt7416 = anInt7421
         anInt7417 = anInt7423
@@ -139,7 +144,7 @@ class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracke
         }
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseWheelMoved(mousewheelevent: MouseWheelEvent) {
         val i = mousewheelevent.getX()
         val i_8_ = mousewheelevent.getY()
@@ -148,13 +153,13 @@ class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracke
         mousewheelevent.consume()
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseExited(mouseevent: MouseEvent) {
         method3599(mouseevent.getX(), -1, mouseevent.getY())
     }
 
-    @Synchronized
-    override fun mouseDragged(mouseevent: MouseEvent?) {
+//    @Synchronized
+    override fun mouseDragged(mouseevent: MouseEvent) {
         method3599(mouseevent!!.getX(), -1, mouseevent.getY())
     }
 

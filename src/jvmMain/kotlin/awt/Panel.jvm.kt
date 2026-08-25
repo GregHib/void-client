@@ -1,3 +1,3 @@
 package awt
 
-actual open typealias Panel = java.awt.Panel
+actual typealias Panel = java.awt.Panel

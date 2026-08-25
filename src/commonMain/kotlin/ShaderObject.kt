@@ -30,7 +30,7 @@ open class ShaderObject {
                     if (DirectionalStripeTextureNode.anIntArray9096!![1] > 1) {
                         val is_1_ = ByteArray(DirectionalStripeTextureNode.anIntArray9096!![1])
                         glGetInfoLogARB(l, (DirectionalStripeTextureNode.anIntArray9096!![1]), DirectionalStripeTextureNode.anIntArray9096, 0, is_1_, 0)
-                        println(is_1_.concatToString())
+                        println(is_1_.map { it.toInt().toChar() }.toCharArray().concatToString())
                     }
                     if (DirectionalStripeTextureNode.anIntArray9096!![0] == 0) {
                         glDeleteObjectARB(l)

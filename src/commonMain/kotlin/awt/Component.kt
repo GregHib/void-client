@@ -2,6 +2,9 @@ package awt
 
 import awt.event.FocusListener
 import awt.event.KeyListener
+import awt.event.MouseListener
+import awt.event.MouseMotionListener
+import awt.event.MouseWheelListener
 import awt.image.ImageObserver
 
 expect abstract class Component : ImageObserver {
@@ -33,6 +36,12 @@ expect abstract class Component : ImageObserver {
     fun addFocusListener(focusListener: FocusListener)
     fun removeKeyListener(keyListener: KeyListener)
     fun removeFocusListener(focusListener: FocusListener)
+    fun addMouseListener(mouseListener: MouseListener)
+    fun addMouseMotionListener(mouseMotionListener: MouseMotionListener)
+    fun addMouseWheelListener(mouseWheelListener: MouseWheelListener)
+    fun removeMouseListener(mouseListener: MouseListener)
+    fun removeMouseMotionListener(mouseMotionListener: MouseMotionListener)
+    fun removeMouseWheelListener(mouseWheelListener: MouseWheelListener)
     fun getFontMetrics(font: Font): FontMetrics
     override fun imageUpdate(img: Image, infoflags: Int, x: Int, y: Int, width: Int, height: Int): Boolean
 }

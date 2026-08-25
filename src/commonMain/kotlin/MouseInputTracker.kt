@@ -18,7 +18,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
 
     private fun method3603(i: Byte, component: Component?) {
         anInt7447++
-        if (i >= -83) mouseExited(null)
+//        if (i >= -83) mouseExited(null)
         method3608(85)
         aComponent7459 = component
         aComponent7459!!.addMouseListener(this)
@@ -53,8 +53,8 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
     }
 
 //    @Synchronized
-    override fun mouseExited(mouseevent: MouseEvent?) {
-        method3605(mouseevent!!.getY(), (-76).toByte(), mouseevent.getX())
+    override fun mouseExited(event: MouseEvent) {
+        method3605(event.getY(), (-76).toByte(), event.getX())
         anInt7452++
     }
 
@@ -98,7 +98,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
     }
 
     override fun method3596(i: Int): TimedRecordAccessor? {
-        if (i != 0) mouseReleased(null)
+//        if (i != 0) mouseReleased(null)
         anInt7437++
         return aNodeDeque_7441!!.method1997(i + 8) as TimedRecordAccessor?
     }
@@ -135,12 +135,12 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
 
     override fun method3595(i: Int): Boolean {
         anInt7455++
-        if (i >= -67) mouseExited(null)
+//        if (i >= -67) mouseExited(null)
         return (anInt7432 and 0x1) != 0
     }
 
 //    @Synchronized
-    override fun mouseReleased(mouseevent: MouseEvent?) {
+    override fun mouseReleased(mouseevent: MouseEvent) {
         anInt7428++
         var i = method3604(-6345, mouseevent!!)
         if ((i and anInt7456) == 0) i = anInt7456

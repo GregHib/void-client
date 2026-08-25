@@ -2504,10 +2504,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 aCanvas7910 = this.aCanvas7925
                 this.anObject7919 = `object`
                 anObject8020 = this.anObject7919
-                val dimension = canvas!!.getSize()
-                anInt7987 = dimension.height
+                anInt7987 = canvas.getHeight()
                 this.anInt7962 = anInt7987
-                anInt7958 = dimension.width
+                anInt7958 = canvas.getWidth()
                 this.anInt7931 = anInt7958
                 this.anInt8178 = i_289_
                 CachedRgbNoiseTexture.method566(false, true, (-127).toByte())

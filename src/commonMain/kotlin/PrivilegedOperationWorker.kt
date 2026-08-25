@@ -134,12 +134,12 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                     if (this.aBoolean3777 && ((objects!![0] as Class<*>).getClassLoader() == null)) throw SecurityException()
                     linkedQueueNode.anObject1998 = ((objects!![0] as Class<*>).getDeclaredField(objects[1] as String?))
                 } else if (i == 18) {
-                    val clipboard = Toolkit.getDefaultToolkit().getSystemClipboard()
+                    val clipboard = getDefaultToolkit().getSystemClipboard()
                     linkedQueueNode.anObject1998 = clipboard.getContents(null)
                 } else if (i == 19) {
                     val transferable = ((linkedQueueNode.anObject1996) as Transferable?)
-                    val clipboard = Toolkit.getDefaultToolkit().getSystemClipboard()
-                    clipboard.setContents(transferable, null)
+                    val clipboard = getDefaultToolkit().getSystemClipboard()
+                    clipboard.setContents(transferable!!, null)
                 } else if (this.aBoolean3777) {
                     if (i == 3) {
                         if (aLong3781 > method599(-123)) throw IOException()

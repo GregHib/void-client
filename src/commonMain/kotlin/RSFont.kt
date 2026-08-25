@@ -557,7 +557,7 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
                     if (RSFont.anIntArray2744!![1] > 1) {
                         val `is` = ByteArray(RSFont.anIntArray2744!![1])
                         glGetInfoLogARB(l, RSFont.anIntArray2744!![1], RSFont.anIntArray2744, 0, `is`, 0)
-                        println(`is`.concatToString())
+                        println(`is`.map { it.toInt().toChar() }.toCharArray().concatToString())
                     }
                     if (RSFont.anIntArray2744!![0] == 0) {
                         var i_102_ = 0
