@@ -1,6 +1,6 @@
 package io
 
 expect abstract class ObjectStreamException : IOException {
-    protected constructor()
-    protected constructor(classname: String?)
+    constructor()
+    constructor(classname: String?)
 }

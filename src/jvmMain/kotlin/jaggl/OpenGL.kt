@@ -7,7 +7,7 @@ import kotlin.jvm.JvmStatic
 actual class OpenGL {
     /*private*/ actual var a: Thread? = null
 
-    /*private*/ actual var c: Hashtable<Any?, Any?>? = null
+    /*private*/ actual var c: util.Hashtable<Any?, Any?>? = null
 
     /*private*/ actual val peer: Long = 0
 
@@ -61,7 +61,7 @@ actual class OpenGL {
 
     actual fun a(arg0: String?): Boolean {
         if (this.c == null) {
-            this.c = Hashtable<Any?, Any?>()
+            this.c = _root_ide_package_.util.Hashtable<Any?, Any?>()
             val local10: String = glGetString(7939)
             var local12 = 0
             while (true) {
@@ -90,7 +90,7 @@ actual class OpenGL {
     actual external fun setSurface(arg0: Long): Boolean
 
     actual companion object {
-        private val b: Hashtable<Any?, Any?> = Hashtable<Any?, Any?>()
+        private val b: util.Hashtable<Any?, Any?> = _root_ide_package_.util.Hashtable<Any?, Any?>()
 
         @JvmStatic
 		actual external fun glTranslatef(arg0: Float, arg1: Float, arg2: Float)

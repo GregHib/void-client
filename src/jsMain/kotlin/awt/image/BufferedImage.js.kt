@@ -5,6 +5,7 @@ import kotlinx.browser.document
 import org.w3c.dom.CanvasRenderingContext2D
 import org.w3c.dom.HTMLCanvasElement
 import org.khronos.webgl.set
+import util.Hashtable
 
 actual val BUFFERED_IMAGE_TYPE_INT_RGB: Int = 1
 actual val BUFFERED_IMAGE_TYPE_INT_ARGB: Int = 2
@@ -73,7 +74,7 @@ actual open class BufferedImage actual constructor(
         cm: ColorModel,
         raster: WritableRaster,
         isRasterPremultiplied: Boolean,
-        properties: util.Hashtable<*, *>?,
+        properties: Hashtable<*, *>?,
     ) : this(raster.pxWidth, raster.pxHeight, BUFFERED_IMAGE_TYPE_INT_ARGB) {
         this.model = cm
         this.raster = raster
