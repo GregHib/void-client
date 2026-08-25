@@ -1,6 +1,7 @@
 package io
 
 expect open class File(pathname: String) {
+    constructor(parent: String, child: String?)
     open fun getName(): String
     open fun getPath(): String
     open fun getAbsolutePath(): String

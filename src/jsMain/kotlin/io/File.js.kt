@@ -44,4 +44,8 @@ actual open class File actual constructor(pathname: String) {
     actual open fun listFiles(): Array<File>? {
         TODO("Not yet implemented")
     }
+
+    actual constructor(parent: String, child: String?) : this("$parent\\$child") {
+        TODO("Not yet implemented")
+    }
 }
