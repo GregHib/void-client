@@ -42,4 +42,8 @@ actual open class Socket actual constructor(host: String?, port: Int) {
 
     actual open fun shutdownOutput() {
     }
+
+    actual constructor(address: InetAddress, port: Int) : this(address.getHostName(), port) {
+        TODO("Not yet implemented")
+    }
 }
