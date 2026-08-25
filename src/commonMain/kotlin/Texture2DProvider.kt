@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.io.FileOutputStream
+import io.FileOutputStream
 import kotlin.math.ln
 import kotlin.math.pow
 

@@ -1,8 +1,8 @@
 import kotlin.jvm.JvmStatic
-import java.io.EOFException
+import io.EOFException
 import io.File
 import io.IOException
-import java.io.RandomAccessFile
+import io.RandomAccessFile
 
 /*
  * Class234

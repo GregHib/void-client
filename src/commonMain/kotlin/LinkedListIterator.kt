@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import GlBloomEffect.Companion.method2766
 import SceneNodeDeque.Companion.method847
-import java.io.DataInputStream
+import io.DataInputStream
 import java.net.URL
 
 /*

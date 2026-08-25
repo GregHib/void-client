@@ -3,7 +3,7 @@ import LinkedListIterator.Companion.method1242
 import TexGenMaterialPass.Companion.method2161
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.runBlocking
-import java.io.EOFException
+import io.EOFException
 import io.IOException
 import io.InputStream
 import io.OutputStream

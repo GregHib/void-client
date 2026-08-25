@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.io.EOFException
+import io.EOFException
 import io.IOException
 
 /* Class137 - Decompiled by JODE

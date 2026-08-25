@@ -1,6 +1,6 @@
-import java.io.BufferedReader
+import io.BufferedReader
 import io.IOException
-import java.io.InputStreamReader
+import io.InputStreamReader
 import java.net.*
 import java.nio.charset.StandardCharsets
 import java.util.*

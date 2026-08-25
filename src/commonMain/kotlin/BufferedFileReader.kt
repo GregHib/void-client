@@ -1,5 +1,10 @@
 import kotlin.jvm.JvmStatic
-import java.io.*
+import io.File
+import io.EOFException
+import io.DataInputStream
+import io.BufferedInputStream
+import io.FileInputStream
+import io.IOException
 
 /*
  * Class374

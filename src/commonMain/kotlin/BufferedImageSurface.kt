@@ -1,5 +1,6 @@
 import awt.Canvas
 import awt.Graphics
+import awt.Image
 import awt.image.BufferedImage
 import awt.image.DataBufferInt
 import awt.image.DirectColorModel

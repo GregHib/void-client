@@ -15,7 +15,11 @@ import jaggl.OpenGL.Companion.glUniform3fARB
 import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import jaggl.OpenGL.Companion.glVertex2i
 import jaggl.OpenGL.Companion.glViewport
-import java.io.*
+import io.IOException
+import io.StringWriter
+import io.PrintWriter
+import io.BufferedReader
+import io.StringReader
 
 class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : AbstractBloomEffect(var_ha_Sub2) {
     private var aGlShaderProgramHandle_8822: GlShaderProgramHandle? = null
@@ -338,7 +342,8 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
             } else string = ""
             val stringwriter = StringWriter()
             val printwriter = PrintWriter(stringwriter)
-            throwable.printStackTrace(printwriter)
+            throwable.printStackTrace()
+//            throwable.printStackTrace(printwriter)
             printwriter.close()
             val string_8_ = stringwriter.toString()
             val bufferedreader = BufferedReader(StringReader(string_8_))

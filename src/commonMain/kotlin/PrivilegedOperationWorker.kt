@@ -11,9 +11,9 @@ import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import java.awt.*
 import java.awt.datatransfer.Transferable
-import java.io.DataInputStream
+import io.DataInputStream
 import io.File
-import java.io.FileOutputStream
+import io.FileOutputStream
 import io.IOException
 import java.lang.reflect.Method
 import java.net.InetAddress
