@@ -21,4 +21,9 @@ actual class OggSyncState : SimplePeer() {
     actual fun pageSeek(arg0: OggPage?): Long {
         TODO("Not yet implemented")
     }
+
+    actual companion object {
+        actual fun init() {
+        }
+    }
 }

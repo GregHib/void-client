@@ -22,9 +22,9 @@ import lang.Thread
 import lang.currentThread
 import lang.getProperty
 import java.lang.reflect.Method
-import java.net.InetAddress
 import net.Socket
 import net.URL
+import net.getByName
 import kotlin.concurrent.Volatile
 
 /*
@@ -104,7 +104,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                     if (Loader.debug) {
                         println("Connect: " + linkedQueueNode.anObject1996 + " " + linkedQueueNode.anInt2000)
                     }
-                    linkedQueueNode.anObject1998 = Socket(InetAddress.getByName((linkedQueueNode.anObject1996) as String?), linkedQueueNode.anInt2000)
+                    linkedQueueNode.anObject1998 = Socket(getByName((linkedQueueNode.anObject1996) as String?), linkedQueueNode.anInt2000)
                 } else if (i == 22) {
                     if (aLong3781 > method599(-92)) throw IOException()
                     try {
@@ -139,10 +139,10 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                     if (i == 3) {
                         if (aLong3781 > method599(-123)) throw IOException()
                         val string = (((0xff and (linkedQueueNode.anInt2000 shr 24))).toString() + "." + (0xff and (linkedQueueNode.anInt2000 shr 16)) + "." + ((linkedQueueNode.anInt2000 shr 8) and 0xff) + "." + (0xff and linkedQueueNode.anInt2000))
-                        linkedQueueNode.anObject1998 = InetAddress.getByName(string).getHostName()
+                        linkedQueueNode.anObject1998 = getByName(string).getHostName()
                     } else if (i == 21) {
                         if (method599(-82) < aLong3781) throw IOException()
-                        linkedQueueNode.anObject1998 = InetAddress.getByName((linkedQueueNode.anObject1996) as String?).getAddress()
+                        linkedQueueNode.anObject1998 = getByName((linkedQueueNode.anObject1996) as String?).getAddress()
                     } else if (i != 5) {
                         if (i == 6) {
                             val frame = (Frame("Jagex Full Screen"))
@@ -183,7 +183,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                                     if ((string_7_.indexOf(string.get(i_8_))) == -1) throw Exception()
                                     i_8_++
                                 }
-                                Runtime.getRuntime().exec("cmd /c start \"j\" \"" + string + "\"")
+//                                Runtime.getRuntime().exec("cmd /c start \"j\" \"" + string + "\"")
                                 linkedQueueNode.anObject1998 = null
                             } catch (exception: Exception) {
                                 linkedQueueNode.anObject1998 = exception

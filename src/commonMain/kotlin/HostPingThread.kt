@@ -4,10 +4,11 @@ import jagex3.jagmisc.jagmisc.ping
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.Runnable
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import lang.InterruptedException
-import java.net.InetAddress
+import net.getByName
 
 /*
  * Class169
@@ -21,7 +22,7 @@ class HostPingThread : Runnable {
             val class348_sub26: NamedIdEntry = runClass348() ?: break
             var i: Int
             try {
-                val `is` = InetAddress.getByName(class348_sub26!!.aString6888).getAddress()
+                val `is` = getByName(class348_sub26!!.aString6888).getAddress()
                 i = ping(`is`[0], `is`[1], `is`[2], `is`[3], 1000L)
             } catch (throwable: Throwable) {
                 i = 1000

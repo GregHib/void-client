@@ -7,10 +7,12 @@ import AbstractTileShape
 import CameraMarker
 import CircleRasterizer
 import Disposable
+import FontDefinition
 import Marker
 import ModelDefinition
 import NodeDequeHolder
-import Rectangle
+import RSFont
+import awt.Rectangle
 import RenderConfig
 import Renderer
 import RendererType
@@ -19,9 +21,9 @@ import Sprite
 import SpriteDrawTarget
 import SpriteImage
 import TerrainTile
-import kotlin.jvm.Synchronized
+import awt.Canvas
 
-actual class oa actual constructor(canvas: Canvas, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(), Disposable {
+actual class oa actual constructor(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Disposable {
     actual var nativeid: Long
         get() = TODO("Not yet implemented")
         set(value) {}
@@ -57,7 +59,7 @@ actual class oa actual constructor(canvas: Canvas, var_renderConfig: RenderConfi
     actual override fun method3698() {
     }
 
-    @Throws(exceptionClasses = [ClientException::class])
+//    @Throws(exceptionClasses = [ClientException::class])
     actual override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_18_: Int, i_19_: Int) {
     }
 
@@ -200,13 +202,13 @@ actual class oa actual constructor(canvas: Canvas, var_renderConfig: RenderConfi
     actual override fun xa(f: Float) {
     }
 
-    actual override fun method3701(canvas: Canvas) {
+    actual override fun method3701(canvas: Canvas?) {
     }
 
     actual override fun method3636(i: Int, i_95_: Int, i_96_: Int, i_97_: Int, i_98_: Int, i_99_: Int, var_sprite: Sprite?, i_100_: Int, i_101_: Int) {
     }
 
-    @Synchronized
+//    @Synchronized
     actual override fun finalize() {
     }
 
@@ -234,7 +236,7 @@ actual class oa actual constructor(canvas: Canvas, var_renderConfig: RenderConfi
     actual override fun method3652() {
     }
 
-    actual override fun method3669(canvas: Canvas, i: Int, i_108_: Int) {
+    actual override fun method3669(canvas: Canvas?, i: Int, i_108_: Int) {
     }
 
     actual fun c(i: Short): Boolean {
@@ -323,7 +325,7 @@ actual class oa actual constructor(canvas: Canvas, var_renderConfig: RenderConfi
     actual fun va(var_shaderProgram: ShaderProgram?) {
     }
 
-    actual override fun method3643(canvas: Canvas, i: Int, i_153_: Int) {
+    actual override fun method3643(canvas: Canvas?, i: Int, i_153_: Int) {
     }
 
     actual override fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_154_: CircleRasterizer?, f: Float, circleRasterizer_155_: CircleRasterizer?): CircleRasterizer? {
@@ -337,7 +339,7 @@ actual class oa actual constructor(canvas: Canvas, var_renderConfig: RenderConfi
         TODO("Not yet implemented")
     }
 
-    @Throws(exceptionClasses = [ClientException::class])
+//    @Throws(exceptionClasses = [ClientException::class])
     actual override fun method3626(i: Int, i_156_: Int) {
     }
 
@@ -362,7 +364,7 @@ actual class oa actual constructor(canvas: Canvas, var_renderConfig: RenderConfi
         TODO("Not yet implemented")
     }
 
-    actual override fun method3677(canvas: Canvas) {
+    actual override fun method3677(canvas: Canvas?) {
     }
 
     actual override fun method3682(): Boolean {

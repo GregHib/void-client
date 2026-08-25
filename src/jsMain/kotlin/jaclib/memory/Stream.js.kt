@@ -87,7 +87,7 @@ actual class Stream actual constructor(arg0: Int) {
         TODO("Not yet implemented")
     }
 
-    @JvmOverloads
+//    @JvmOverloads
     actual constructor(arg0: Buffer, arg1: Int, arg2: Int) : this(if (arg0.getSize() >= 4096) 4096 else arg0.getSize()) {
         TODO("Not yet implemented")
     }

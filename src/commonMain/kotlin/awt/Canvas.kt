@@ -1,6 +1,6 @@
 package awt
 
-expect class Canvas() {
+expect open class Canvas() {
     fun setSize(width: Int, height: Int)
     fun getWidth(): Int
     fun getHeight(): Int

@@ -3,6 +3,7 @@ package jaclib.memory.heap
 import jaclib.memory.Buffer
 import jaclib.memory.Source
 import kotlin.jvm.JvmField
+import kotlin.jvm.Synchronized
 
 class NativeHeapBuffer(private val a: NativeHeap, private val d: Int, @JvmField val b: Int) : Buffer, Source {
     private var c = true

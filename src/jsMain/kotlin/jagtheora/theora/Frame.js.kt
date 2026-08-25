@@ -8,4 +8,9 @@ actual class Frame actual constructor(actual val a: Int, actual val b: Int) : Si
 
     actual override fun clear() {
     }
+
+    actual companion object {
+        actual fun init() {
+        }
+    }
 }

@@ -16,7 +16,7 @@ expect class Stream constructor(arg0: Int) {
 
     constructor()
 
-    @JvmOverloads
+//    @JvmOverloads
     constructor(arg0: Buffer, arg1: Int = 0, arg2: Int = arg0.getSize())
 
     fun a(arg0: Int) 

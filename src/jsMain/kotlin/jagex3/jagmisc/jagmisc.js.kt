@@ -29,7 +29,7 @@ actual object jagmisc {
     }
 
 //    @JvmStatic
-    @Throws(exceptionClasses = [Throwable::class])
+//    @Throws(exceptionClasses = [Throwable::class])
     actual fun ping(arg0: Byte, arg1: Byte, arg2: Byte, arg3: Byte, arg4: Long): Int {
         TODO("Not yet implemented")
     }

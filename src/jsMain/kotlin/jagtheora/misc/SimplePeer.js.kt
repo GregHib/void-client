@@ -9,7 +9,7 @@ actual abstract class SimplePeer {
     actual fun a() {
     }
 
-    @Throws(exceptionClasses = [Throwable::class])
+//    @Throws(exceptionClasses = [Throwable::class])
     actual fun finalize() {
     }
 
