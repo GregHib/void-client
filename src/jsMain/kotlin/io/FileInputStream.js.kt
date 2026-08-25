@@ -1,10 +1,10 @@
 package io
 
-actual open class FileInputStream actual constructor(file: File) : InputStream() {
+actual open class FileInputStream actual constructor(file: File?) : InputStream() {
 
     actual constructor(name: String) : this(File(name))
 
-    private val path: String = file.getPath()
+    private val path: String = file!!.getPath()
     private val fd: Int = mapNodeErrors(path) { openSync(path, "r") }
     private var position: Double = 0.0
     private var closed = false
