@@ -1,37 +1,37 @@
 package jaclib.memory.heap
 
 
-class NativeHeap(private val b: Int) {
-    private val peer: Long = 0
+actual class NativeHeap actual constructor(/*private*/ actual val b: Int) {
+    /*private*/ actual val peer: Long = 0
 
-    private var a: Boolean
+    /*private*/ actual var a: Boolean
 
     init {
         this.allocateHeap(this.b)
         this.a = true
     }
 
-    private external fun allocateHeap(arg0: Int)
+    /*private*/ actual external fun allocateHeap(arg0: Int)
 
     @Synchronized
-    fun a(): Boolean {
+    actual fun a(): Boolean {
         return this.a
     }
 
-    fun a(arg0: Int, arg1: Boolean): NativeHeapBuffer {
+    actual fun a(arg0: Int, arg1: Boolean): NativeHeapBuffer {
         check(this.a)
         return NativeHeapBuffer(this, this.allocateBuffer(arg0, arg1), arg0)
     }
 
     @Synchronized
     @Throws(Throwable::class)
-    fun finalize() {
+    actual fun finalize() {
 //        super.finalize()
         this.b()
     }
 
     @Synchronized
-    fun b() {
+    actual fun b() {
         if (this.a) {
             this.deallocateHeap()
         }
@@ -39,19 +39,19 @@ class NativeHeap(private val b: Int) {
     }
 
     @Synchronized
-    private external fun allocateBuffer(arg0: Int, arg1: Boolean): Int
+    /*private*/ actual external fun allocateBuffer(arg0: Int, arg1: Boolean): Int
 
     @Synchronized
-    private external fun get(arg0: Int, arg1: ByteArray?, arg2: Int, arg3: Int, arg4: Int)
+    /*private*/ actual external fun get(arg0: Int, arg1: ByteArray?, arg2: Int, arg3: Int, arg4: Int)
 
     @Synchronized
-    external fun put(arg0: Int, arg1: ByteArray?, arg2: Int, arg3: Int, arg4: Int)
+    actual external fun put(arg0: Int, arg1: ByteArray?, arg2: Int, arg3: Int, arg4: Int)
 
-    private external fun deallocateHeap()
-
-    @Synchronized
-    external fun getBufferAddress(arg0: Int): Long
+    /*private*/ actual external fun deallocateHeap()
 
     @Synchronized
-    external fun deallocateBuffer(arg0: Int)
+    actual external fun getBufferAddress(arg0: Int): Long
+
+    @Synchronized
+    actual external fun deallocateBuffer(arg0: Int)
 }

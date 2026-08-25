@@ -2,30 +2,30 @@ package jagtheora.ogg
 
 import jagtheora.misc.SimplePeer
 
-class OggPage : SimplePeer() {
-    private val version: Int
+actual class OggPage : SimplePeer() {
+    /*private*/ actual val version: Int
         external get
 
-    private val isContinued: Boolean
+    /*private*/ actual val isContinued: Boolean
         external get
 
-    val serialNumber: Int
+    actual val serialNumber: Int
         external get
 
-    private val isEOS: Boolean
+    /*private*/ actual val isEOS: Boolean
         external get
 
-    private val granulePos: Long
+    /*private*/ actual val granulePos: Long
         external get
 
-    val isBOS: Boolean
+    actual val isBOS: Boolean
         external get
 
-    external override fun clear()
+    actual external override fun clear()
 
-    private val pageNumber: Long
+    /*private*/ actual val pageNumber: Long
         external get
 
-    private val completedPackets: Int
+    /*private*/ actual val completedPackets: Int
         external get
 }

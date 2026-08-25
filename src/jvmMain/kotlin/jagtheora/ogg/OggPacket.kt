@@ -2,21 +2,21 @@ package jagtheora.ogg
 
 import jagtheora.misc.SimplePeer
 
-class OggPacket : SimplePeer() {
-    val isTheora: Boolean
+actual class OggPacket : SimplePeer() {
+    actual val isTheora: Boolean
         external get
 
-    external override fun clear()
+    actual external override fun clear()
 
-    val data: ByteArray?
+    actual val data: ByteArray?
         external get
 
-    private val isHeader: Int
+    /*private*/ actual val isHeader: Int
         external get
 
-    val isKeyFrame: Int
+    actual val isKeyFrame: Int
         external get
 
-    val isVorbis: Boolean
+    actual val isVorbis: Boolean
         external get
 }

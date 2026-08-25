@@ -4,25 +4,25 @@ import java.awt.Canvas
 import java.util.*
 import kotlin.jvm.JvmStatic
 
-class OpenGL {
+actual class OpenGL {
     private var a: Thread? = null
 
     private var c: Hashtable<Any?, Any?>? = null
 
     private val peer: Long = 0
 
-    private external fun detachPeer()
+    /*private*/ actual external fun detachPeer()
 
-    external fun setSwapInterval(arg0: Int)
+    actual external fun setSwapInterval(arg0: Int)
 
-    external fun surfaceResized(arg0: Long)
+    actual external fun surfaceResized(arg0: Long)
 
-    private external fun setPbuffer(arg0: Long)
+    /*private*/ actual external fun setPbuffer(arg0: Long)
 
-    external fun arePbuffersAvailable(): Boolean
+    actual external fun arePbuffersAvailable(): Boolean
 
     @Synchronized
-    fun a(): Boolean {
+    actual fun a(): Boolean {
         if (this.a === Thread.currentThread()) {
             this.detachPeer()
             b.remove(this.a)
@@ -33,16 +33,16 @@ class OpenGL {
         }
     }
 
-    private external fun releasePbuffer(arg0: Long)
+    /*private*/ actual external fun releasePbuffer(arg0: Long)
 
-    private external fun attachPeer(): Boolean
+    /*private*/ actual external fun attachPeer(): Boolean
 
-    external fun releaseSurface(arg0: Canvas?, arg1: Long)
+    actual external fun releaseSurface(arg0: Canvas?, arg1: Long)
 
-    external fun init(arg0: Canvas?, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int): Long
+    actual external fun init(arg0: Canvas?, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int): Long
 
     @Synchronized
-    fun b(): Boolean {
+    actual fun b(): Boolean {
         val local1 = Thread.currentThread()
         if (!this.attachPeer()) {
             return false
@@ -55,11 +55,11 @@ class OpenGL {
         return true
     }
 
-    private external fun createPbuffer(arg0: Int, arg1: Int): Long
+    /*private*/ actual external fun createPbuffer(arg0: Int, arg1: Int): Long
 
-    external fun swapBuffers()
+    actual external fun swapBuffers()
 
-    fun a(arg0: String?): Boolean {
+    actual fun a(arg0: String?): Boolean {
         if (this.c == null) {
             this.c = Hashtable<Any?, Any?>()
             val local10: String = glGetString(7939)
@@ -83,13 +83,13 @@ class OpenGL {
         return this.c!!.containsKey(arg0)
     }
 
-    external fun release()
+    actual external fun release()
 
-    external fun prepareSurface(arg0: Canvas?): Long
+    actual external fun prepareSurface(arg0: Canvas?): Long
 
-    external fun setSurface(arg0: Long): Boolean
+    actual external fun setSurface(arg0: Long): Boolean
 
-    companion object {
+    companion actual object {
         private val b: Hashtable<Any?, Any?> = Hashtable<Any?, Any?>()
 
         @JvmStatic
@@ -128,12 +128,12 @@ class OpenGL {
         @JvmStatic
 		external fun glReadBuffer(arg0: Int)
 
-        private external fun glGetError(): Int
+        /*private*/ actual external fun glGetError(): Int
 
         @JvmStatic
 		external fun glUseProgramObjectARB(arg0: Long)
 
-        private external fun glColor4f(arg0: Float, arg1: Float, arg2: Float, arg3: Float)
+        /*private*/ actual external fun glColor4f(arg0: Float, arg1: Float, arg2: Float, arg3: Float)
 
         @JvmStatic
 		external fun glTexGeni(arg0: Int, arg1: Int, arg2: Int)
@@ -156,7 +156,7 @@ class OpenGL {
         @JvmStatic
 		external fun glBufferDataARBa(arg0: Int, arg1: Int, arg2: Long, arg3: Int)
 
-        private external fun glStencilFunc(arg0: Int, arg1: Int, arg2: Int)
+        /*private*/ actual external fun glStencilFunc(arg0: Int, arg1: Int, arg2: Int)
 
         @JvmStatic
 		external fun glClearColor(arg0: Float, arg1: Float, arg2: Float, arg3: Float)
@@ -188,9 +188,9 @@ class OpenGL {
         @JvmStatic
 		external fun glOrtho(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double)
 
-        private external fun glUniformMatrix3fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int)
+        /*private*/ actual external fun glUniformMatrix3fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int)
 
-        private external fun glUniformMatrix2fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int)
+        /*private*/ actual external fun glUniformMatrix2fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int)
 
         @JvmStatic
 		external fun glBufferSubDataARBa(arg0: Int, arg1: Int, arg2: Int, arg3: Long)
@@ -204,7 +204,7 @@ class OpenGL {
         @JvmStatic
 		external fun glScissor(arg0: Int, arg1: Int, arg2: Int, arg3: Int)
 
-        private external fun glTexCoord2i(arg0: Int, arg1: Int)
+        /*private*/ actual external fun glTexCoord2i(arg0: Int, arg1: Int)
 
         @JvmStatic
 		external fun glLineWidth(arg0: Float)
@@ -215,7 +215,7 @@ class OpenGL {
         @JvmStatic
 		external fun glDeleteObjectARB(arg0: Long)
 
-        private external fun glMultiTexCoord2i(arg0: Int, arg1: Int, arg2: Int)
+        /*private*/ actual external fun glMultiTexCoord2i(arg0: Int, arg1: Int, arg2: Int)
 
         @JvmStatic
 		external fun glRotatef(arg0: Float, arg1: Float, arg2: Float, arg3: Float)
@@ -262,7 +262,7 @@ class OpenGL {
         @JvmStatic
 		external fun glGetInfoLogARB(arg0: Long, arg1: Int, arg2: IntArray?, arg3: Int, arg4: ByteArray?, arg5: Int)
 
-        private external fun glReadPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: ByteArray?, arg7: Int)
+        /*private*/ actual external fun glReadPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: ByteArray?, arg7: Int)
 
         @JvmStatic
 		external fun glDepthMask(arg0: Boolean)
@@ -282,7 +282,7 @@ class OpenGL {
         @JvmStatic
 		external fun glBlendFunc(arg0: Int, arg1: Int)
 
-        private external fun glStencilOp(arg0: Int, arg1: Int, arg2: Int)
+        /*private*/ actual external fun glStencilOp(arg0: Int, arg1: Int, arg2: Int)
 
         @JvmStatic
 		external fun glClearDepth(arg0: Float)
@@ -323,7 +323,7 @@ class OpenGL {
         @JvmStatic
 		external fun glCompileShaderARB(arg0: Long)
 
-        private external fun glMaterialfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int)
+        /*private*/ actual external fun glMaterialfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int)
 
         @JvmStatic
 		external fun glDetachObjectARB(arg0: Long, arg1: Long)
@@ -358,7 +358,7 @@ class OpenGL {
         @JvmStatic
 		external fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int)
 
-        private external fun glTexParameterf(arg0: Int, arg1: Int, arg2: Float)
+        /*private*/ actual external fun glTexParameterf(arg0: Int, arg1: Int, arg2: Float)
 
         @JvmStatic
 		external fun glMatrixMode(arg0: Int)
@@ -369,7 +369,7 @@ class OpenGL {
         @JvmStatic
 		external fun glTexImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int)
 
-        external fun glUnmapBufferARB(arg0: Int): Boolean
+        actual external fun glUnmapBufferARB(arg0: Int): Boolean
 
         @JvmStatic
 		external fun glColor4ub(arg0: Byte, arg1: Byte, arg2: Byte, arg3: Byte)
@@ -389,9 +389,9 @@ class OpenGL {
         @JvmStatic
 		external fun glDepthFunc(arg0: Int)
 
-        private external fun glDrawPixelsi(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IntArray?, arg5: Int)
+        /*private*/ actual external fun glDrawPixelsi(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IntArray?, arg5: Int)
 
-        private external fun glDrawPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int)
+        /*private*/ actual external fun glDrawPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int)
 
         @JvmStatic
 		external fun glVertex3f(arg0: Float, arg1: Float, arg2: Float)
@@ -399,7 +399,7 @@ class OpenGL {
         @JvmStatic
 		external fun glUniform4fARB(arg0: Int, arg1: Float, arg2: Float, arg3: Float, arg4: Float)
 
-        private external fun glFrustum(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double)
+        /*private*/ actual external fun glFrustum(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double)
 
         @JvmStatic
 		external fun glTexEnvi(arg0: Int, arg1: Int, arg2: Int)
@@ -410,24 +410,24 @@ class OpenGL {
         @JvmStatic
 		external fun glNormal3f(arg0: Float, arg1: Float, arg2: Float)
 
-        private external fun glGetTexImageub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int)
+        /*private*/ actual external fun glGetTexImageub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int)
 
         @JvmStatic
 		external fun glGenFramebuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int)
 
-        private external fun glGetProgramivARB(arg0: Int, arg1: Int, arg2: IntArray?, arg3: Int)
+        /*private*/ actual external fun glGetProgramivARB(arg0: Int, arg1: Int, arg2: IntArray?, arg3: Int)
 
         @JvmStatic
 		external fun glUniform3fARB(arg0: Int, arg1: Float, arg2: Float, arg3: Float)
 
-        private external fun glDrawBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int)
+        /*private*/ actual external fun glDrawBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int)
 
         @JvmStatic
 		external fun glCreateShaderObjectARB(arg0: Int): Long
 
-        external fun glMapBufferARB(arg0: Int, arg1: Int): Long
+        actual external fun glMapBufferARB(arg0: Int, arg1: Int): Long
 
-        private external fun glColor3ub(arg0: Byte, arg1: Byte, arg2: Byte)
+        /*private*/ actual external fun glColor3ub(arg0: Byte, arg1: Byte, arg2: Byte)
 
         @JvmStatic
 		external fun glGetIntegerv(arg0: Int, arg1: IntArray?, arg2: Int)
@@ -483,7 +483,7 @@ class OpenGL {
         @JvmStatic
 		external fun glGetString(arg0: Int): String
 
-        private external fun glPixelZoom(arg0: Float, arg1: Float)
+        /*private*/ actual external fun glPixelZoom(arg0: Float, arg1: Float)
 
         @JvmStatic
 		external fun glDisableClientState(arg0: Int)
@@ -563,7 +563,7 @@ class OpenGL {
         @JvmStatic
 		external fun glTexImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int)
 
-        private external fun glUniformMatrix4fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int)
+        /*private*/ actual external fun glUniformMatrix4fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int)
 
         @JvmStatic
 		external fun glProgramRawARB(arg0: Int, arg1: Int, arg2: ByteArray?)

@@ -2,23 +2,23 @@ package jaclib.peer
 
 import kotlin.jvm.JvmStatic
 
-abstract class Peer protected constructor() {
-    protected var reference: PeerReference? = null
+abstract actual class Peer /*protected*/ actual constructor() {
+    /*protected*/ actual var reference: PeerReference? = null
 
-    protected fun a(arg0: Boolean): Boolean {
+    /*protected*/ actual fun a(arg0: Boolean): Boolean {
         return this.reference!!.a((-67).toByte())
     }
 
-    protected open fun a(): Long {
+    /*protected*/ actual open fun a(): Long {
         return this.reference!!.a(false)
     }
 
-    companion object {
+    companion actual object {
         init {
             init(PeerReference::class.java)
         }
 
         @JvmStatic
-        private external fun init(arg0: Class<*>?)
+        /*private*/ actual external fun init(arg0: Class<*>?)
     }
 }

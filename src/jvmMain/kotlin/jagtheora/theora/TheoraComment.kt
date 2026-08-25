@@ -2,15 +2,15 @@ package jagtheora.theora
 
 import jagtheora.misc.SimplePeer
 
-class TheoraComment : SimplePeer() {
+actual class TheoraComment : SimplePeer() {
     init {
         init()
         check(!this.b())
     }
 
-    external override fun clear()
+    actual external override fun clear()
 
     companion object {
-        protected external fun init()
+        /*protected*/ actual external fun init()
     }
 }

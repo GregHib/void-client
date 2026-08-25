@@ -3,21 +3,21 @@ package jagtheora.theora
 import jagtheora.misc.SimplePeer
 import kotlin.jvm.JvmField
 
-class Frame(@JvmField val a: Int, @JvmField val b: Int) : SimplePeer() {
+actual class Frame actual constructor(@JvmField actual val a: Int, @JvmField actual val b: Int) : SimplePeer() {
 
-    val pixels: IntArray
+    actual val pixels: IntArray
 
     init {
         this.pixels = IntArray(this.a * this.b)
     }
 
-    external override fun clear()
+    actual external override fun clear()
 
     companion object {
         init {
             init()
         }
 
-        protected external fun init()
+        /*protected*/ actual external fun init()
     }
 }

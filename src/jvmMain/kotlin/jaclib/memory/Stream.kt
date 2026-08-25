@@ -2,21 +2,21 @@ package jaclib.memory
 
 import kotlin.jvm.JvmStatic
 
-class Stream private constructor(arg0: Int) {
-    private var a = 0
+actual class Stream /*private*/ actual constructor(arg0: Int) {
+    /*private*/ actual var a: Int = 0
 
-    private var b: Buffer? = null
+    /*private*/ actual var b: Buffer? = null
 
-    private var c = 0
+    /*private*/ actual var c: Int = 0
 
-    private var d = 0
+    /*private*/ actual var d: Int = 0
 
-    private val e: ByteArray
+    /*private*/ actual val e: ByteArray
 
-    constructor() : this(4096)
+    actual constructor() : this(4096)
 
     @JvmOverloads
-    constructor(arg0: Buffer, arg1: Int = 0, arg2: Int = arg0.getSize()) : this(if (arg0.getSize() >= 4096) 4096 else arg0.getSize()) {
+    actual constructor(arg0: Buffer, arg1: Int, arg2: Int) : this(if (arg0.getSize() >= 4096) 4096 else arg0.getSize()) {
         this.a(arg0, arg1, arg2)
     }
 
@@ -24,7 +24,7 @@ class Stream private constructor(arg0: Int) {
         this.e = ByteArray(arg0)
     }
 
-    fun a(arg0: Int) {
+    actual fun a(arg0: Int) {
         if (this.c + 1 >= this.e.size) {
             this.a()
         }
@@ -32,7 +32,7 @@ class Stream private constructor(arg0: Int) {
         this.e[this.c++] = (arg0 shr 8).toByte()
     }
 
-    fun a(arg0: Float) {
+    actual fun a(arg0: Float) {
         if (this.e.size <= this.c + 3) {
             this.a()
         }
@@ -43,7 +43,7 @@ class Stream private constructor(arg0: Int) {
         this.e[this.c++] = local12.toByte()
     }
 
-    fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
+    actual fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
         if (this.c + 3 >= this.e.size) {
             this.a()
         }
@@ -53,11 +53,11 @@ class Stream private constructor(arg0: Int) {
         this.e[this.c++] = arg3.toByte()
     }
 
-    fun a(arg0: Buffer) {
+    actual fun a(arg0: Buffer) {
         this.a(arg0, 0, arg0.getSize())
     }
 
-    fun b(arg0: Int) {
+    actual fun b(arg0: Int) {
         if (this.c + 3 >= this.e.size) {
             this.a()
         }
@@ -67,7 +67,7 @@ class Stream private constructor(arg0: Int) {
         this.e[this.c++] = (arg0 shr 24).toByte()
     }
 
-    fun a() {
+    actual fun a() {
         if (this.c <= 0) {
             return
         }
@@ -79,7 +79,7 @@ class Stream private constructor(arg0: Int) {
         this.c = 0
     }
 
-    private fun a(arg0: Buffer, arg1: Int, arg2: Int) {
+    /*private*/ actual fun a(arg0: Buffer, arg1: Int, arg2: Int) {
         this.a()
         this.a = arg1 + arg2
         this.d = arg1
@@ -89,7 +89,7 @@ class Stream private constructor(arg0: Int) {
         }
     }
 
-    fun b(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
+    actual fun b(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
         if (this.e.size <= this.c + 3) {
             this.a()
         }
@@ -99,7 +99,7 @@ class Stream private constructor(arg0: Int) {
         this.e[this.c++] = arg3.toByte()
     }
 
-    fun c(arg0: Int) {
+    actual fun c(arg0: Int) {
         if (this.e.size <= this.c + 3) {
             this.a()
         }
@@ -109,11 +109,11 @@ class Stream private constructor(arg0: Int) {
         this.e[this.c++] = (arg0 shr 24).toByte()
     }
 
-    fun b(): Int {
+    actual fun b(): Int {
         return this.d + this.c
     }
 
-    fun d(arg0: Int) {
+    actual fun d(arg0: Int) {
         if (this.e.size <= this.c + 1) {
             this.a()
         }
@@ -121,12 +121,12 @@ class Stream private constructor(arg0: Int) {
         this.e[this.c++] = arg0.toByte()
     }
 
-    fun e(arg0: Int) {
+    actual fun e(arg0: Int) {
         this.a()
         this.d = arg0
     }
 
-    fun b(arg0: Float) {
+    actual fun b(arg0: Float) {
         if (this.e.size <= this.c + 3) {
             this.a()
         }
@@ -137,22 +137,22 @@ class Stream private constructor(arg0: Int) {
         this.e[this.c++] = (local12 shr 24).toByte()
     }
 
-    fun f(arg0: Int) {
+    actual fun f(arg0: Int) {
         if (this.c >= this.e.size) {
             this.a()
         }
         this.e[this.c++] = arg0.toByte()
     }
 
-    companion object {
+    actual companion object {
         @JvmStatic
-        external fun floatToRawIntBits(arg0: Float): Int
+        actual external fun floatToRawIntBits(arg0: Float): Int
 
         @JvmStatic
-        private external fun getLSB(arg0: Int): Byte
+        /*private*/ actual external fun getLSB(arg0: Int): Byte
 
         @JvmStatic
-        fun c(): Boolean {
+        actual fun c(): Boolean {
             return getLSB(-65536).toInt() == -1
         }
     }

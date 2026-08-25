@@ -3,8 +3,8 @@ package jagdx
 import jaclib.peer.IUnknown
 import jaclib.peer.hb
 
-class IDirect3DEventQuery(arg0: hb?) : IUnknown(arg0) {
-    external fun Issue(): Int
+actual class IDirect3DEventQuery actual constructor(arg0: hb?) : IUnknown(arg0) {
+    actual external fun Issue(): Int
 
-    external fun IsSignaled(): Int
+    actual external fun IsSignaled(): Int
 }

@@ -2,17 +2,17 @@ package jaclib.hardware_info
 
 import kotlin.jvm.JvmStatic
 
-object HardwareInfo {
-    private val dXDiagDisplayDevicesProps: Array<Array<String?>?>?
+actual object HardwareInfo {
+    /*private*/actual val dXDiagDisplayDevicesProps: Array<Array<String?>?>?
         external get
 
     @JvmStatic
-    val cPUInfo: IntArray?
+    actual val cPUInfo: IntArray?
         external get
 
-    private val openGLProps: Array<String?>?
+    /*private*/actual val openGLProps: Array<String?>?
         external get
 
-    private val dXDiagSystemProps: Array<String?>?
+    /*private*/actual val dXDiagSystemProps: Array<String?>?
         external get
 }

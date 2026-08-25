@@ -7,14 +7,14 @@ import java.awt.Canvas
 /*
  * Class306
  */
-object WorldMapToggle {
-    var anIntArray3873: IntArray? = IntArray(13)
+actual object WorldMapToggle {
+    actual var anIntArray3873: IntArray? = IntArray(13)
 
-    var anInt3874: Int = 0
-    var anInt3875: Int = 0
-    var anInt3876: Int = 0
+    actual var anInt3874: Int = 0
+    actual var anInt3875: Int = 0
+    actual var anInt3876: Int = 0
 
-    fun method2297(i: Int, i_0_: Int, var_renderConfig: RenderConfig?, canvas: Canvas?, i_1_: Int): Renderer {
+    actual fun method2297(i: Int, i_0_: Int, var_renderConfig: RenderConfig?, canvas: Canvas?, i_1_: Int): Renderer {
         try {
             if (i != -6) method2297(23, -44, null, null, -57)
             anInt3875++
@@ -24,7 +24,7 @@ object WorldMapToggle {
         }
     }
 
-    fun method2298(i: Byte, string: String) {
+    actual fun method2298(i: Byte, string: String) {
         anInt3876++
         if (HostPingThread.aWorldListEntryArray2261 != null) {
             NativeIndexBuffer.anInt4698++
@@ -37,7 +37,7 @@ object WorldMapToggle {
     }
 
     @JvmStatic
-    fun method2299(i: Byte) {
+    actual fun method2299(i: Byte) {
         anIntArray3873 = null
         if (i.toInt() != -128) method2297(66, -48, null, null, 100)
     }

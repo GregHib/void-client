@@ -1,38 +1,38 @@
 package jagtheora.misc
 
 
-abstract class SimplePeer {
-    private var peer: Long = 0
+abstract actual class SimplePeer {
+    /*private*/ actual var peer: Long = 0
 
-    protected abstract fun clear()
+    /*protected*/ actual abstract fun clear()
 
-    fun a() {
+    actual fun a() {
         if (!this.b()) {
             this.clear()
         }
     }
 
     @Throws(Throwable::class)
-    fun finalize() {
+    actual fun finalize() {
         if (!this.b()) {
             this.a()
         }
 //        super.finalize()
     }
 
-    fun b(): Boolean {
+    actual fun b(): Boolean {
         return this.peer == 0L
     }
 
-    private fun setPeer(arg0: Long) {
+    /*private*/ actual fun setPeer(arg0: Long) {
         this.peer = arg0
     }
 
-    companion object {
+    companion actual object {
         init {
             init()
         }
 
-        protected external fun init()
+        /*protected*/ actual external fun init()
     }
 }

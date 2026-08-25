@@ -3,8 +3,8 @@ package jagdx
 import jaclib.peer.IUnknown
 import jaclib.peer.hb
 
-class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
-    fun b(): IDirect3DEventQuery? {
+actual class IDirect3DDevice actual constructor(/*private*/ actual val b: hb?) : IUnknown(b) {
+    actual fun b(): IDirect3DEventQuery? {
         val local5 = IDirect3DEventQuery(this.b)
         if (ue.a(this._CreateEventQuery(local5), false)) {
             return local5
@@ -13,7 +13,7 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         }
     }
 
-    fun b(arg0: Int): IDirect3DSwapChain {
+    actual fun b(arg0: Int): IDirect3DSwapChain {
         val local5 = IDirect3DSwapChain(this.b)
         val local10 = this._GetSwapChain(arg0, local5)
         if (ue.a(97.toByte(), local10)) {
@@ -22,27 +22,27 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return local5
     }
 
-    external fun SetStreamSource(arg0: Int, arg1: IDirect3DVertexBuffer?, arg2: Int, arg3: Int): Int
+    actual external fun SetStreamSource(arg0: Int, arg1: IDirect3DVertexBuffer?, arg2: Int, arg3: Int): Int
 
-    private external fun _CreateEventQuery(arg0: IDirect3DEventQuery?): Int
+    /*private*/ actual external fun _CreateEventQuery(arg0: IDirect3DEventQuery?): Int
 
-    fun a(arg0: Int, arg1: FloatArray): Int {
+    actual fun a(arg0: Int, arg1: FloatArray): Int {
         return this.SetVertexShaderConstantF(arg0, arg1, arg1.size / 4)
     }
 
-    private external fun _CreateCubeTexture(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: IDirect3DCubeTexture?): Int
+    /*private*/ actual external fun _CreateCubeTexture(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: IDirect3DCubeTexture?): Int
 
-    fun a(arg0: Int, arg1: Boolean): Int {
+    actual fun a(arg0: Int, arg1: Boolean): Int {
         return this.SetRenderStateb(arg0, arg1)
     }
 
-    private external fun SetRenderStateb(arg0: Int, arg1: Boolean): Int
+    /*private*/ actual external fun SetRenderStateb(arg0: Int, arg1: Boolean): Int
 
-    external fun Clear(arg0: Int, arg1: Int, arg2: Float, arg3: Int): Int
+    actual external fun Clear(arg0: Int, arg1: Int, arg2: Float, arg3: Int): Int
 
-    private external fun _CreateVertexBuffer(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IDirect3DVertexBuffer?): Int
+    /*private*/ actual external fun _CreateVertexBuffer(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IDirect3DVertexBuffer?): Int
 
-    fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int): IDirect3DTexture {
+    actual fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int): IDirect3DTexture {
         val local5 = IDirect3DTexture(this.b)
         val local15 = this._CreateTexture(arg0, arg1, arg2, arg3, arg4, arg5, local5)
         if (ue.a(97.toByte(), local15)) {
@@ -51,27 +51,27 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return local5
     }
 
-    external fun EndScene(): Int
+    actual external fun EndScene(): Int
 
-    private external fun _CreateVolumeTexture(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: IDirect3DVolumeTexture?): Int
+    /*private*/ actual external fun _CreateVolumeTexture(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: IDirect3DVolumeTexture?): Int
 
-    external fun SetTransform(arg0: Int, arg1: FloatArray?): Int
+    actual external fun SetTransform(arg0: Int, arg1: FloatArray?): Int
 
-    private external fun SetRenderStatef(arg0: Int, arg1: Float): Int
+    /*private*/ actual external fun SetRenderStatef(arg0: Int, arg1: Float): Int
 
-    fun a(arg0: Int, arg1: Float): Int {
+    actual fun a(arg0: Int, arg1: Float): Int {
         return this.SetRenderStatef(arg0, arg1)
     }
 
-    external fun BeginScene(): Int
+    actual external fun BeginScene(): Int
 
-    private external fun _GetBackBuffer(arg0: Int, arg1: Int, arg2: Int, arg3: IDirect3DSurface?): Int
+    /*private*/ actual external fun _GetBackBuffer(arg0: Int, arg1: Int, arg2: Int, arg3: IDirect3DSurface?): Int
 
-    external fun SetViewport(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Float, arg5: Float): Int
+    actual external fun SetViewport(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Float, arg5: Float): Int
 
-    external fun SetLight(arg0: Int, arg1: D3DLIGHT?): Int
+    actual external fun SetLight(arg0: Int, arg1: D3DLIGHT?): Int
 
-    fun a(arg0: ByteArray?): IDirect3DPixelShader? {
+    actual fun a(arg0: ByteArray?): IDirect3DPixelShader? {
         if (arg0 == null) {
             return null
         }
@@ -83,7 +83,7 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return local11
     }
 
-    fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int): IDirect3DCubeTexture {
+    actual fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int): IDirect3DCubeTexture {
         val local5 = IDirect3DCubeTexture(this.b)
         val local14 = this._CreateCubeTexture(arg0, arg1, arg2, arg3, arg4, local5)
         if (ue.a(97.toByte(), local14)) {
@@ -92,43 +92,43 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return local5
     }
 
-    external fun Reset(arg0: D3DPRESENT_PARAMETERS?): Int
+    actual external fun Reset(arg0: D3DPRESENT_PARAMETERS?): Int
 
-    external fun SetScissorRect(arg0: Int, arg1: Int, arg2: Int, arg3: Int): Int
+    actual external fun SetScissorRect(arg0: Int, arg1: Int, arg2: Int, arg3: Int): Int
 
-    external fun DrawIndexedPrimitive(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int): Int
+    actual external fun DrawIndexedPrimitive(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int): Int
 
-    private external fun SetPixelShaderConstantF(arg0: Int, arg1: FloatArray?, arg2: Int): Int
+    /*private*/ actual external fun SetPixelShaderConstantF(arg0: Int, arg1: FloatArray?, arg2: Int): Int
 
-    private external fun _CreateDepthStencilSurface(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Boolean, arg6: IDirect3DSurface?): Int
+    /*private*/ actual external fun _CreateDepthStencilSurface(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Boolean, arg6: IDirect3DSurface?): Int
 
-    private external fun _CreateVertexDeclaration(arg0: VertexElementCollection?, arg1: IDirect3DVertexDeclaration?): Int
+    /*private*/ actual external fun _CreateVertexDeclaration(arg0: VertexElementCollection?, arg1: IDirect3DVertexDeclaration?): Int
 
-    private external fun _GetDepthStencilSurface(arg0: IDirect3DSurface?): Int
+    /*private*/ actual external fun _GetDepthStencilSurface(arg0: IDirect3DSurface?): Int
 
-    external fun SetTextureStageState(arg0: Int, arg1: Int, arg2: Int): Int
+    actual external fun SetTextureStageState(arg0: Int, arg1: Int, arg2: Int): Int
 
-    external fun SetSamplerState(arg0: Int, arg1: Int, arg2: Int): Int
+    actual external fun SetSamplerState(arg0: Int, arg1: Int, arg2: Int): Int
 
-    private external fun _CreateRenderTarget(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Boolean, arg6: IDirect3DSurface?): Int
+    /*private*/ actual external fun _CreateRenderTarget(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Boolean, arg6: IDirect3DSurface?): Int
 
-    private external fun SetFVF(arg0: Int): Int
+    /*private*/ actual external fun SetFVF(arg0: Int): Int
 
-    external fun SetVertexDeclaration(arg0: IDirect3DVertexDeclaration?): Int
+    actual external fun SetVertexDeclaration(arg0: IDirect3DVertexDeclaration?): Int
 
-    external fun DrawPrimitive(arg0: Int, arg1: Int, arg2: Int): Int
+    actual external fun DrawPrimitive(arg0: Int, arg1: Int, arg2: Int): Int
 
-    private external fun _CreateTexture(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: IDirect3DTexture?): Int
+    /*private*/ actual external fun _CreateTexture(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: IDirect3DTexture?): Int
 
-    private external fun _CreateIndexBuffer(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IDirect3DIndexBuffer?): Int
+    /*private*/ actual external fun _CreateIndexBuffer(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IDirect3DIndexBuffer?): Int
 
-    external fun SetPixelShader(arg0: IDirect3DPixelShader?): Int
+    actual external fun SetPixelShader(arg0: IDirect3DPixelShader?): Int
 
-    external fun SetVertexShaderConstantF(arg0: Int, arg1: FloatArray?, arg2: Int): Int
+    actual external fun SetVertexShaderConstantF(arg0: Int, arg1: FloatArray?, arg2: Int): Int
 
-    external fun LightEnable(arg0: Int, arg1: Boolean): Boolean
+    actual external fun LightEnable(arg0: Int, arg1: Boolean): Boolean
 
-    fun c(arg0: Int): IDirect3DSurface {
+    actual fun c(arg0: Int): IDirect3DSurface {
         val local5 = IDirect3DSurface(this.b)
         val local10 = this._GetRenderTarget(arg0, local5)
         if (ue.a(97.toByte(), local10)) {
@@ -137,7 +137,7 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return local5
     }
 
-    fun c(): IDirect3DSurface {
+    actual fun c(): IDirect3DSurface {
         val local5 = IDirect3DSurface(this.b)
         val local9 = this._GetDepthStencilSurface(local5)
         if (ue.a(97.toByte(), local9)) {
@@ -146,11 +146,11 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return local5
     }
 
-    external fun StretchRect(arg0: IDirect3DSurface?, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: IDirect3DSurface?, arg6: Int, arg7: Int, arg8: Int, arg9: Int, arg10: Int): Int
+    actual external fun StretchRect(arg0: IDirect3DSurface?, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: IDirect3DSurface?, arg6: Int, arg7: Int, arg8: Int, arg9: Int, arg10: Int): Int
 
-    external fun SetIndices(arg0: IDirect3DIndexBuffer?): Int
+    actual external fun SetIndices(arg0: IDirect3DIndexBuffer?): Int
 
-    fun a(arg0: VertexElementCollection?, arg1: IDirect3DVertexDeclaration?): IDirect3DVertexDeclaration {
+    actual fun a(arg0: VertexElementCollection?, arg1: IDirect3DVertexDeclaration?): IDirect3DVertexDeclaration {
         var arg1 = arg1
         if (arg1 == null) {
             arg1 = IDirect3DVertexDeclaration(this.b)
@@ -164,7 +164,7 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return arg1
     }
 
-    fun b(arg0: ByteArray?): IDirect3DVertexShader? {
+    actual fun b(arg0: ByteArray?): IDirect3DVertexShader? {
         if (arg0 == null) {
             return null
         }
@@ -176,11 +176,11 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return local11
     }
 
-    private external fun _GetRenderTarget(arg0: Int, arg1: IDirect3DSurface?): Int
+    /*private*/ actual external fun _GetRenderTarget(arg0: Int, arg1: IDirect3DSurface?): Int
 
-    external fun SetVertexShader(arg0: IDirect3DVertexShader?): Int
+    actual external fun SetVertexShader(arg0: IDirect3DVertexShader?): Int
 
-    fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IDirect3DIndexBuffer?): IDirect3DIndexBuffer {
+    actual fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IDirect3DIndexBuffer?): IDirect3DIndexBuffer {
         var arg4 = arg4
         if (arg4 == null) {
             arg4 = IDirect3DIndexBuffer(this.b)
@@ -194,9 +194,9 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return arg4
     }
 
-    private external fun _CreateVertexShader(arg0: ByteArray?, arg1: IDirect3DVertexShader?): Int
+    /*private*/ actual external fun _CreateVertexShader(arg0: ByteArray?, arg1: IDirect3DVertexShader?): Int
 
-    fun a(arg0: Int, arg1: Float, arg2: Float, arg3: Float, arg4: Float): Int {
+    actual fun a(arg0: Int, arg1: Float, arg2: Float, arg3: Float, arg4: Float): Int {
         c[0] = arg1
         c[2] = arg3
         c[3] = arg4
@@ -204,7 +204,7 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return this.SetVertexShaderConstantF(arg0, c, 1)
     }
 
-    fun b(arg0: Int, arg1: Float, arg2: Float, arg3: Float, arg4: Float): Int {
+    actual fun b(arg0: Int, arg1: Float, arg2: Float, arg3: Float, arg4: Float): Int {
         c[3] = arg4
         c[0] = arg1
         c[1] = arg2
@@ -212,7 +212,7 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return this.SetPixelShaderConstantF(arg0, c, 1)
     }
 
-    fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int): IDirect3DVolumeTexture {
+    actual fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int): IDirect3DVolumeTexture {
         val local5 = IDirect3DVolumeTexture(this.b)
         val local16 = this._CreateVolumeTexture(arg0, arg1, arg2, arg3, arg4, arg5, arg6, local5)
         if (ue.a(97.toByte(), local16)) {
@@ -221,7 +221,7 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return local5
     }
 
-    fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Boolean): IDirect3DSurface {
+    actual fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Boolean): IDirect3DSurface {
         val local5 = IDirect3DSurface(this.b)
         val local15 = this._CreateRenderTarget(arg0, arg1, arg2, arg3, arg4, arg5, local5)
         if (ue.a(97.toByte(), local15)) {
@@ -230,7 +230,7 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return local5
     }
 
-    fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IDirect3DVertexBuffer?): IDirect3DVertexBuffer {
+    actual fun a(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IDirect3DVertexBuffer?): IDirect3DVertexBuffer {
         var arg4 = arg4
         if (arg4 == null) {
             arg4 = IDirect3DVertexBuffer(this.b)
@@ -245,17 +245,17 @@ class IDirect3DDevice(private val b: hb?) : IUnknown(b) {
         return arg4
     }
 
-    external fun SetTexture(arg0: Int, arg1: IDirect3DBaseTexture?): Int
+    actual external fun SetTexture(arg0: Int, arg1: IDirect3DBaseTexture?): Int
 
-    external fun SetRenderState(arg0: Int, arg1: Int): Int
+    actual external fun SetRenderState(arg0: Int, arg1: Int): Int
 
-    external fun TestCooperativeLevel(): Int
+    actual external fun TestCooperativeLevel(): Int
 
-    private external fun _CreateOffscreenPlainSurface(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IDirect3DSurface?): Int
+    /*private*/ actual external fun _CreateOffscreenPlainSurface(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IDirect3DSurface?): Int
 
-    private external fun _CreatePixelShader(arg0: ByteArray?, arg1: IDirect3DPixelShader?): Int
+    /*private*/ actual external fun _CreatePixelShader(arg0: ByteArray?, arg1: IDirect3DPixelShader?): Int
 
-    private external fun _GetSwapChain(arg0: Int, arg1: IDirect3DSwapChain?): Int
+    /*private*/ actual external fun _GetSwapChain(arg0: Int, arg1: IDirect3DSwapChain?): Int
 
     companion object {
         private val c = FloatArray(4)
