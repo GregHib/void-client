@@ -18,6 +18,7 @@ actual abstract class Graphics {
     actual abstract fun setClip(x: Int, y: Int, width: Int, height: Int)
     actual abstract fun clipRect(x: Int, y: Int, width: Int, height: Int)
     actual abstract fun getClipBounds(): Rectangle
+    actual abstract fun getClip(): Shape
 
     // final actual, mirroring AWT's concrete implementation
     actual fun drawRect(x: Int, y: Int, width: Int, height: Int) {
@@ -26,6 +27,8 @@ actual abstract class Graphics {
         drawLine(x + width, y + height, x, y + height)
         drawLine(x, y + height, x, y)
     }
+
+    actual abstract fun setClip(shape: Shape?)
 }
 
 // Concrete impl — plain overrides, NO `actual` keyword here
@@ -88,6 +91,28 @@ internal class CanvasGraphics(
         ctx.beginPath()
         ctx.rect(x.toDouble(), y.toDouble(), width.toDouble(), height.toDouble())
         ctx.clip()
+    }
+    override fun setClip(shape: Shape?) {
+    }
+
+    override fun getClip(): Shape {
+        return object : Shape {
+            override fun getBounds(): Rectangle {
+                TODO("Not yet implemented")
+            }
+
+            override fun contains(x: Double, y: Double): Boolean {
+                TODO("Not yet implemented")
+            }
+
+            override fun contains(x: Double, y: Double, w: Double, h: Double): Boolean {
+                TODO("Not yet implemented")
+            }
+
+            override fun intersects(x: Double, y: Double, w: Double, h: Double): Boolean {
+                TODO("Not yet implemented")
+            }
+        }
     }
 
     override fun clipRect(x: Int, y: Int, width: Int, height: Int) {

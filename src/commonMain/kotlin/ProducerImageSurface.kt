@@ -6,6 +6,7 @@ import awt.image.ColorModel
 import awt.image.DirectColorModel
 import awt.image.ImageConsumer
 import awt.image.ImageProducer
+import kotlin.jvm.Synchronized
 
 class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
     private var aCanvas9073: Canvas? = null
@@ -64,10 +65,10 @@ class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
         if (i_7_ != -1) method3011(-26, 63, -8, null, 101, 114, -111, 37)
         anInt9074++
         method3015(i_6_, 25786, i_5_, i_10_, i_9_)
-        val shape = graphics!!.clip
+        val shape = graphics!!.getClip()
         graphics.clipRect(i_8_, i, i_9_, i_6_)
         graphics.drawImage(anImage9075, i_8_ - i_5_, -i_10_ + i, aCanvas9073)
-        graphics.clip = shape
+        graphics.setClip(shape)
     }
 
     override fun method3008(canvas: Canvas?, i: Int, i_11_: Int, i_12_: Int) {

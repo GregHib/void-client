@@ -14,7 +14,9 @@ expect abstract class Graphics {
     abstract fun fillOval(x: Int, y: Int, width: Int, height: Int)
     abstract fun drawString(str: String, x: Int, y: Int)
     abstract fun setClip(x: Int, y: Int, width: Int, height: Int)
+    abstract fun setClip(shape: Shape?)
     abstract fun clipRect(x: Int, y: Int, width: Int, height: Int)
     abstract fun getClipBounds(): Rectangle
+    abstract fun getClip(): Shape
     fun drawRect(x: Int, y: Int, width: Int, height: Int)
 }

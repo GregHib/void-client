@@ -6,7 +6,11 @@ import awt.image.DataBufferInt
 import awt.image.DirectColorModel
 import awt.image.Raster
 import awt.Rectangle
-import java.util.*
+import awt.Shape
+import awt.h
+import awt.left
+import awt.top
+import awt.w
 
 class BufferedImageSurface : AbstractFrameBufferSurface() {
     private var aShape9064: Shape? = null
@@ -16,10 +20,10 @@ class BufferedImageSurface : AbstractFrameBufferSurface() {
 
     override fun method3011(i: Int, i_0_: Int, i_1_: Int, graphics: Graphics?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
         aShape9064 = graphics!!.getClip()
-        aRectangle9067!!.x = i_3_
-        aRectangle9067!!.width = i_4_
-        aRectangle9067!!.y = i
-        aRectangle9067!!.height = i_1_
+        aRectangle9067!!.left = i_3_
+        aRectangle9067!!.w = i_4_
+        aRectangle9067!!.top = i
+        aRectangle9067!!.h = i_1_
         graphics.setClip(aRectangle9067)
         graphics.drawImage(anImage9066, i_3_ + -i_0_, -i_5_ + i, aCanvas9065)
         if (i_2_ == -1) graphics.setClip(aShape9064)
