@@ -1,6 +1,6 @@
 package jaclib.peer
 
-import java.lang.ref.ReferenceQueue
+import lang.ref.PlatformReferenceQueue
 
 
 class hb {
@@ -8,7 +8,7 @@ class hb {
 
     private var c: PeerReference? = null
 
-    val a: ReferenceQueue<Any?> = ReferenceQueue<Any?>()
+    val a: PlatformReferenceQueue<Any> = PlatformReferenceQueue<Any>()
 
     fun a(arg0: Byte) {
         this.a(21492)

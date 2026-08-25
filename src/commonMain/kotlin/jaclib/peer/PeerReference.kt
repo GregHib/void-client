@@ -1,9 +1,8 @@
 package jaclib.peer
 
-import java.lang.ref.WeakReference
+import lang.ref.PlatformWeakReference
 
-
-abstract class PeerReference protected constructor(arg0: Peer?, arg1: hb?) : WeakReference<Any?>(arg0, arg1?.a) {
+abstract class PeerReference protected constructor(arg0: Peer, arg1: hb?) : PlatformWeakReference<Any>(arg0, arg1?.a) {
     var a: PeerReference? = null
 
     private var peer: Long = 0
