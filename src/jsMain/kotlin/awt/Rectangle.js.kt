@@ -16,9 +16,9 @@ actual class Rectangle actual constructor(
         this.x = x; this.y = y; this.width = width; this.height = height
     }
 
-    override fun getBounds(): Rectangle = Rectangle(x, y, width, height)
+    actual override fun getBounds(): Rectangle = Rectangle(x, y, width, height)
 
-    override fun contains(x: Double, y: Double): Boolean {
+    actual override fun contains(x: Double, y: Double): Boolean {
         if (width < 0 || height < 0) return false
         val rx = this.x.toDouble(); val ry = this.y.toDouble()
         val rw = this.width.toDouble(); val rh = this.height.toDouble()
@@ -26,7 +26,7 @@ actual class Rectangle actual constructor(
         return x < rx + rw && y < ry + rh
     }
 
-    override fun contains(x: Double, y: Double, w: Double, h: Double): Boolean {
+    actual override fun contains(x: Double, y: Double, w: Double, h: Double): Boolean {
         if (w < 0 || h < 0) return false
         val rx = this.x.toDouble(); val ry = this.y.toDouble()
         val rw = this.width.toDouble(); val rh = this.height.toDouble()
@@ -35,7 +35,7 @@ actual class Rectangle actual constructor(
         return x + w <= rx + rw && y + h <= ry + rh
     }
 
-    override fun intersects(x: Double, y: Double, w: Double, h: Double): Boolean {
+    actual override fun intersects(x: Double, y: Double, w: Double, h: Double): Boolean {
         if (w < 0 || h < 0) return false
         val rx = this.x.toDouble(); val ry = this.y.toDouble()
         val rw = this.width.toDouble(); val rh = this.height.toDouble()

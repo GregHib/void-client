@@ -1,6 +1,6 @@
 package awt
 
-expect class Rectangle(x: Int, y: Int, width: Int, height: Int) {
+expect class Rectangle(x: Int, y: Int, width: Int, height: Int) : Shape {
     constructor()
     fun translate(dx: Int, dy: Int)
     fun grow(h: Int, v: Int)
@@ -8,6 +8,10 @@ expect class Rectangle(x: Int, y: Int, width: Int, height: Int) {
     fun intersects(r: Rectangle): Boolean
     fun isEmpty(): Boolean
     fun setBounds(x: Int, y: Int, width: Int, height: Int)
+    override fun getBounds(): Rectangle
+    override fun contains(x: Double, y: Double): Boolean
+    override fun contains(x: Double, y: Double, w: Double, h: Double): Boolean
+    override fun intersects(x: Double, y: Double, w: Double, h: Double): Boolean
 }
 
 expect var Rectangle.left: Int

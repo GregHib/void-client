@@ -19,6 +19,7 @@ actual abstract class Graphics {
     actual abstract fun clipRect(x: Int, y: Int, width: Int, height: Int)
     actual abstract fun getClipBounds(): Rectangle
     actual abstract fun getClip(): Shape
+    actual abstract fun drawImage(img: Image?, x: Int, y: Int, observer: Canvas?): Boolean
 
     // final actual, mirroring AWT's concrete implementation
     actual fun drawRect(x: Int, y: Int, width: Int, height: Int) {
@@ -39,11 +40,25 @@ internal class CanvasGraphics(
     private var color: Color = Color(0, 0, 0)
     private var font: Font = Font("sans-serif", FONT_PLAIN, 12)
     private var clip: Rectangle? = null
+    private var translateX: Double = 0.0
+    private var translateY: Double = 0.0
+
+    init {
+        // Canvas 2D's ctx.clip() only ever *intersects* the current clip region,
+        // it can never widen it. AWT's setClip() replaces the clip absolutely.
+        // To bridge that, we keep a single save() anchored at the unclipped
+        // state; every clip change restores back to that pristine state first,
+        // then re-saves, then applies the new region on top of it.
+        ctx.save()
+    }
 
     override fun dispose() { /* no-op: the 2D context isn't a scarce resource */ }
 
-    override fun translate(x: Int, y: Int) =
+    override fun translate(x: Int, y: Int) {
+        translateX += x
+        translateY += y
         ctx.translate(x.toDouble(), y.toDouble())
+    }
 
     override fun setColor(c: Color) {
         color = c
@@ -86,34 +101,31 @@ internal class CanvasGraphics(
     override fun drawString(str: String, x: Int, y: Int) =
         ctx.fillText(str, x.toDouble(), y.toDouble())
 
+    override fun drawImage(img: Image?, x: Int, y: Int, observer: Canvas?): Boolean {
+        // Canvas image sources (HTMLImageElement/HTMLCanvasElement) are decoded
+        // eagerly by the time an Image shim wraps them, so unlike real AWT's
+        // async ImageObserver callback, this can just draw synchronously and
+        // report completion immediately.
+        if (img == null) return false
+        ctx.drawImage(img.source, x.toDouble(), y.toDouble())
+        return true
+    }
+
     override fun setClip(x: Int, y: Int, width: Int, height: Int) {
-        clip = Rectangle(x, y, width, height)
-        ctx.beginPath()
-        ctx.rect(x.toDouble(), y.toDouble(), width.toDouble(), height.toDouble())
-        ctx.clip()
+        applyClip(Rectangle(x, y, width, height))
     }
+
     override fun setClip(shape: Shape?) {
-    }
-
-    override fun getClip(): Shape {
-        return object : Shape {
-            override fun getBounds(): Rectangle {
-                TODO("Not yet implemented")
-            }
-
-            override fun contains(x: Double, y: Double): Boolean {
-                TODO("Not yet implemented")
-            }
-
-            override fun contains(x: Double, y: Double, w: Double, h: Double): Boolean {
-                TODO("Not yet implemented")
-            }
-
-            override fun intersects(x: Double, y: Double, w: Double, h: Double): Boolean {
-                TODO("Not yet implemented")
-            }
+        when (shape) {
+            null -> applyClip(null)
+            is Rectangle -> applyClip(shape)
+            // Shape only exposes bounds/contains/intersects, not a path we can
+            // walk, so a non-rectangular clip is approximated by its bounds.
+            else -> applyClip(shape.getBounds())
         }
     }
+
+    override fun getClip(): Shape = clip ?: fullCanvasBounds()
 
     override fun clipRect(x: Int, y: Int, width: Int, height: Int) {
         val c = clip
@@ -128,7 +140,28 @@ internal class CanvasGraphics(
         }
     }
 
-    override fun getClipBounds(): Rectangle = clip ?: Rectangle(0, 0, 0, 0)
+    override fun getClipBounds(): Rectangle = clip ?: fullCanvasBounds()
+
+    private fun fullCanvasBounds(): Rectangle =
+        Rectangle(0, 0, ctx.canvas.width, ctx.canvas.height)
+
+    // Replaces the clip absolutely (AWT semantics), unlike ctx.clip() which
+    // only ever intersects with whatever region is already in effect.
+    private fun applyClip(rect: Rectangle?) {
+        // restore()/save() reset the *entire* canvas state, not just the
+        // clip, so the accumulated translate() has to be replayed afterwards.
+        ctx.restore()
+        ctx.save()
+        if (translateX != 0.0 || translateY != 0.0) {
+            ctx.translate(translateX, translateY)
+        }
+        if (rect != null) {
+            ctx.beginPath()
+            ctx.rect(rect.left.toDouble(), rect.top.toDouble(), rect.w.toDouble(), rect.h.toDouble())
+            ctx.clip()
+        }
+        clip = rect
+    }
 
     private fun ovalPath(x: Int, y: Int, width: Int, height: Int) {
         ctx.beginPath()
