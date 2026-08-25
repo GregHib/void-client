@@ -5,7 +5,7 @@ import awt.Component
 import java.awt.Dimension
 import awt.Image
 import awt.Panel
-import java.net.URL
+import net.URL
 import java.util.*
 import javax.swing.ImageIcon
 import javax.swing.JFrame

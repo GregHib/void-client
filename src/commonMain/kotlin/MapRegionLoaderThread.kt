@@ -12,8 +12,9 @@ import io.BufferedReader
 import io.DataInputStream
 import io.IOException
 import io.InputStreamReader
-import java.net.MalformedURLException
-import java.net.URL
+import kotlinx.coroutines.Runnable
+import net.MalformedURLException
+import net.URL
 import kotlin.concurrent.Volatile
 
 /*
@@ -30,7 +31,7 @@ class MapRegionLoaderThread : Runnable {
     override fun run() {
         anInt4203++
         try {
-            val bufferedreader = BufferedReader(InputStreamReader((aLinkedQueueNode_4201!!.anObject1998) as DataInputStream?))
+            val bufferedreader = BufferedReader(InputStreamReader((aLinkedQueueNode_4201!!.anObject1998) as DataInputStream))
             var string = bufferedreader.readLine()
             val class179 = method381(68.toByte())
             while ( /**/string != null) {

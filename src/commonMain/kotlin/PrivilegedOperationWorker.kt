@@ -24,7 +24,7 @@ import lang.getProperty
 import java.lang.reflect.Method
 import java.net.InetAddress
 import net.Socket
-import java.net.URL
+import net.URL
 import kotlin.concurrent.Volatile
 
 /*

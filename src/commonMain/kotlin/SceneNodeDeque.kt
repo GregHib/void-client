@@ -14,7 +14,7 @@ import NativeShaderProgram.Companion.method3439
 import io.IOException
 import net.Socket
 import util.random
-import java.net.URL
+import net.URL
 
 /*
  * Class88

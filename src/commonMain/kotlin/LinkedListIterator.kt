@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 import GlBloomEffect.Companion.method2766
 import SceneNodeDeque.Companion.method847
 import io.DataInputStream
-import java.net.URL
+import net.URL
 
 /*
  * Class156

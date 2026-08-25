@@ -1,5 +1,5 @@
 import awt.Component
-import java.net.URL
+import net.URL
 
 interface GameApplet {
     fun getParameter(name: String?): String?

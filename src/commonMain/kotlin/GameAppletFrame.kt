@@ -11,7 +11,8 @@ import java.awt.event.WindowEvent
 import java.awt.event.WindowListener
 import io.File
 import io.IOException
-import java.net.URL
+import kotlinx.coroutines.Runnable
+import net.URL
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import kotlin.time.ExperimentalTime

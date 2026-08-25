@@ -534,12 +534,13 @@ import java.lang.reflect.Field
 import java.lang.reflect.InvocationTargetException
 import java.lang.reflect.Method
 import net.Socket
-import java.net.URL
+import net.URL
 import java.util.*
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import lang.IllegalAccessException
 import util.random
+import kotlin.jvm.Synchronized
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.time.Clock

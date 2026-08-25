@@ -6,7 +6,7 @@ import jagtheora.vorbis.DSPState
 import jagtheora.vorbis.VorbisBlock
 import jagtheora.vorbis.VorbisComment
 import jagtheora.vorbis.VorbisInfo
-import java.net.URL
+import net.URL
 
 class VorbisOggDecoder internal constructor(oggstreamstate: OggStreamState) : OggBitstreamDecoder(oggstreamstate) {
     private var aDSPState8993: DSPState? = null
