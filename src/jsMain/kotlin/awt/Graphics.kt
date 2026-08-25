@@ -1,25 +1,25 @@
 package awt
 
+import awt.image.ImageObserver
 import org.w3c.dom.CanvasRenderingContext2D
 
 actual abstract class Graphics {
     actual abstract fun dispose()
     actual abstract fun translate(x: Int, y: Int)
-    actual abstract fun setColor(c: Color)
+    actual abstract fun setColor(c: Color?)
     actual abstract fun getColor(): Color
-    actual abstract fun setFont(font: Font)
+    actual abstract fun setFont(font: Font?)
     actual abstract fun getFont(): Font
     actual abstract fun clearRect(x: Int, y: Int, width: Int, height: Int)
     actual abstract fun drawLine(x1: Int, y1: Int, x2: Int, y2: Int)
     actual abstract fun fillRect(x: Int, y: Int, width: Int, height: Int)
     actual abstract fun drawOval(x: Int, y: Int, width: Int, height: Int)
     actual abstract fun fillOval(x: Int, y: Int, width: Int, height: Int)
-    actual abstract fun drawString(str: String, x: Int, y: Int)
+    actual abstract fun drawString(str: String?, x: Int, y: Int)
     actual abstract fun setClip(x: Int, y: Int, width: Int, height: Int)
     actual abstract fun clipRect(x: Int, y: Int, width: Int, height: Int)
     actual abstract fun getClipBounds(): Rectangle
     actual abstract fun getClip(): Shape
-    actual abstract fun drawImage(img: Image?, x: Int, y: Int, observer: Canvas?): Boolean
 
     // final actual, mirroring AWT's concrete implementation
     actual fun drawRect(x: Int, y: Int, width: Int, height: Int) {
@@ -30,6 +30,7 @@ actual abstract class Graphics {
     }
 
     actual abstract fun setClip(shape: Shape?)
+    actual abstract fun drawImage(img: Image?, x: Int, y: Int, observer: ImageObserver?): Boolean
 }
 
 // Concrete impl — plain overrides, NO `actual` keyword here
@@ -60,16 +61,16 @@ internal class CanvasGraphics(
         ctx.translate(x.toDouble(), y.toDouble())
     }
 
-    override fun setColor(c: Color) {
-        color = c
+    override fun setColor(c: Color?) {
+        color = c ?: return
         ctx.fillStyle = c.css()
         ctx.strokeStyle = c.css()
     }
 
     override fun getColor(): Color = color
 
-    override fun setFont(font: Font) {
-        this.font = font
+    override fun setFont(font: Font?) {
+        this.font = font ?: return
         val weight = if (font.isBold()) "bold " else ""
         val slant = if (font.isItalic()) "italic " else ""
         ctx.font = "$slant$weight${font.getSize()}px ${font.getName()}"
@@ -98,14 +99,11 @@ internal class CanvasGraphics(
         ovalPath(x, y, width, height); ctx.fill()
     }
 
-    override fun drawString(str: String, x: Int, y: Int) =
-        ctx.fillText(str, x.toDouble(), y.toDouble())
+    override fun drawString(str: String?, x: Int, y: Int) {
+        ctx.fillText(str ?: return, x.toDouble(), y.toDouble())
+    }
 
-    override fun drawImage(img: Image?, x: Int, y: Int, observer: Canvas?): Boolean {
-        // Canvas image sources (HTMLImageElement/HTMLCanvasElement) are decoded
-        // eagerly by the time an Image shim wraps them, so unlike real AWT's
-        // async ImageObserver callback, this can just draw synchronously and
-        // report completion immediately.
+    override fun drawImage(img: Image?, x: Int, y: Int, observer: ImageObserver?): Boolean {
         if (img == null) return false
         ctx.drawImage(img.source, x.toDouble(), y.toDouble())
         return true
@@ -170,4 +168,5 @@ internal class CanvasGraphics(
             width / 2.0, height / 2.0, 0.0, 0.0, 2 * kotlin.math.PI
         )
     }
+
 }

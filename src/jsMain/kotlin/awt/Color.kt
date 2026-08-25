@@ -5,6 +5,7 @@ actual class Color actual constructor(
 ) {
     private var a: Int = 255
 
+    actual constructor(color: Int) : this(0, 0, 0)
     actual constructor(r: Int, g: Int, b: Int, a: Int) : this(r, g, b) { this.a = a }
 
     actual fun getRed(): Int = r

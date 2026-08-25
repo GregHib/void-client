@@ -1,5 +1,6 @@
 package awt
 
+import awt.image.ImageObserver
 import kotlinx.browser.document
 import org.w3c.dom.HTMLElement
 
@@ -34,4 +35,7 @@ actual open class Container : Component() {
     actual fun validate() { doLayout() }
     actual fun invalidate() { }
     actual fun doLayout() { }
+    actual override fun drawImage(img: Image?, x: Int, y: Int, observer: Canvas?): Boolean {
+        TODO("Not yet implemented")
+    }
 }

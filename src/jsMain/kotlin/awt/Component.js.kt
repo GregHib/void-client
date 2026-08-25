@@ -1,11 +1,12 @@
 package awt
 
+import awt.image.ImageObserver
 import org.w3c.dom.CanvasRenderingContext2D
 import kotlinx.browser.window
 import org.w3c.dom.HTMLCanvasElement
 import org.w3c.dom.HTMLElement
 
-actual abstract class Component {
+actual abstract class Component : ImageObserver {
     // plain members, no `actual` — platform storage only
     abstract val element: HTMLElement
 
@@ -68,6 +69,10 @@ actual abstract class Component {
         val canvas = element as? HTMLCanvasElement
             ?: error("getGraphics() requires a canvas-backed component")
         return CanvasGraphics(canvas.getContext("2d") as CanvasRenderingContext2D)
+    }
+
+    actual override fun imageUpdate(img: Image, infoflags: Int, x: Int, y: Int, width: Int, height: Int): Boolean {
+        TODO("Not yet implemented")
     }
 }
 

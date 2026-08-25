@@ -1,12 +1,9 @@
-import kotlin.jvm.JvmStatic
-import GameAppletFrame.Companion.provideLoaderApplet
-import java.awt.BorderLayout
 import awt.Component
-import java.awt.Dimension
 import awt.Image
 import awt.Panel
 import net.URL
-import java.util.*
+import java.awt.BorderLayout
+import java.awt.Dimension
 import javax.swing.ImageIcon
 import javax.swing.JFrame
 import javax.swing.JPanel
@@ -35,7 +32,7 @@ class Loader : Panel(), GameApplet {
         aProperties1.put("colourid", "0")
         aProperties1.put("worldid", "16")
         aProperties1.put("lobbyid", "15")
-        aProperties1.put("lobbyaddress", if (loadRunescape) "lobby16.runescape.com" else address)
+        if (loadRunescape) "lobby16.runescape.com" else address?.let { aProperties1.put("lobbyaddress", it) }
         aProperties1.put("demoid", "0")
         aProperties1.put("demoaddress", "")
         aProperties1.put("modewhere", "0")
@@ -84,7 +81,7 @@ class Loader : Panel(), GameApplet {
 
     fun startClient() {
         try {
-            provideLoaderApplet(this)
+            GameAppletFrame.provideLoaderApplet(this)
             val var_client = Client()
             var_client.init()
             var_client.start()

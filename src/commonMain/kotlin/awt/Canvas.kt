@@ -9,6 +9,8 @@ expect open class Canvas() {
     fun setVisible(visible: Boolean)
     fun isVisible(): Boolean
     fun requestFocus()
+    fun getGraphics(): Graphics
+    fun createImage(width: Int, height: Int): Image
 }
 
 // Property-style API, same shape as your Rectangle extensions

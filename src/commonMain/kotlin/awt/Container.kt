@@ -1,5 +1,7 @@
 package awt
 
+import awt.image.ImageObserver
+
 expect open class Container : Component {
     fun add(comp: Component): Component
     fun remove(comp: Component)

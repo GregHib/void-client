@@ -1,6 +1,7 @@
 package awt
 
 expect class Color(r: Int, g: Int, b: Int) {
+    constructor(color: Int)
     constructor(r: Int, g: Int, b: Int, a: Int)
     fun getRed(): Int
     fun getGreen(): Int

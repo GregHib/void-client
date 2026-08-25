@@ -3,7 +3,7 @@ package awt
 import kotlinx.browser.document
 import org.w3c.dom.HTMLCanvasElement
 
-actual class Canvas actual constructor() {
+actual open class Canvas actual constructor() {
     val element: HTMLCanvasElement =
         document.createElement("canvas") as HTMLCanvasElement
 
@@ -45,6 +45,8 @@ actual class Canvas actual constructor() {
 
     actual fun isVisible(): Boolean = visible
     actual fun requestFocus() { element.focus() }
+    actual fun getGraphics(): Graphics = TODO()
+
 }
 
 actual var Canvas.ignoreRepaint: Boolean
