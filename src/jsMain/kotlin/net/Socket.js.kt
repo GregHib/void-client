@@ -1,6 +1,9 @@
 package net
 
-actual open class Socket actual constructor(host: String, port: Int) {
+import io.InputStream
+import io.OutputStream
+
+actual open class Socket actual constructor(host: String?, port: Int) {
     actual open fun getInputStream(): InputStream {
         TODO("Not yet implemented")
     }
@@ -29,6 +32,9 @@ actual open class Socket actual constructor(host: String, port: Int) {
     }
 
     actual open fun setSoTimeout(timeout: Int) {
+    }
+
+    actual open fun setTcpNoDelay(on: Boolean) {
     }
 
     actual open fun shutdownInput() {

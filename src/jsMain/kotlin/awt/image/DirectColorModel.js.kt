@@ -23,6 +23,14 @@ actual open class DirectColorModel : ColorModel {
     actual final override fun getGreen(pixel: Int): Int = extractComponent(pixel, gMask, 0)
     actual final override fun getBlue(pixel: Int): Int = extractComponent(pixel, bMask, 0)
     actual final override fun getAlpha(pixel: Int): Int = extractComponent(pixel, aMask, 255)
+
+    actual final override fun getRGB(pixel: Int): Int =
+        (getAlpha(pixel) shl 24) or (getRed(pixel) shl 16) or (getGreen(pixel) shl 8) or getBlue(pixel)
+
+    actual final override fun createCompatibleSampleModel(w: Int, h: Int): SampleModel {
+        val masks = if (aMask != 0) intArrayOf(rMask, gMask, bMask, aMask) else intArrayOf(rMask, gMask, bMask)
+        return PackedSampleModel(w, h, masks)
+    }
 }
 
 actual val DirectColorModel.redMask: Int get() = rMask

@@ -6,4 +6,5 @@ expect open class FileOutputStream : OutputStream {
 
     override fun write(b: Int)
     override fun close()
+    override fun flush()
 }

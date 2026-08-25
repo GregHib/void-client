@@ -15,6 +15,9 @@ actual abstract class ColorModel actual constructor(bits: Int) {
     actual abstract fun getBlue(pixel: Int): Int
     actual abstract fun getAlpha(pixel: Int): Int
 
+    actual open fun createCompatibleSampleModel(w: Int, h: Int): SampleModel =
+        throw UnsupportedOperationException("createCompatibleSampleModel not implemented for $this")
+
     actual open fun getRGB(pixel: Int): Int =
         (getAlpha(pixel) shl 24) or
                 (getRed(pixel) shl 16) or

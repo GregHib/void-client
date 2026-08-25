@@ -14,5 +14,9 @@ actual abstract class OutputStream actual constructor() : AutoCloseable {
         for (i in 0 until len) write(b[off + i].toInt())
     }
 
-    actual open fun flush() {}
+    actual override fun close() {
+    }
+
+    actual open fun flush() {
+    }
 }

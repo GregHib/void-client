@@ -1,9 +1,16 @@
 package awt.image
 
 import awt.Image
+import util.Hashtable
 
 expect open class BufferedImage : Image {
     constructor(width: Int, height: Int, imageType: Int)
+    constructor(
+        cm: ColorModel,
+        raster: WritableRaster,
+        isRasterPremultiplied: Boolean,
+        properties: Hashtable<*, *>?,
+    )
 
     fun getType(): Int
     fun getColorModel(): ColorModel

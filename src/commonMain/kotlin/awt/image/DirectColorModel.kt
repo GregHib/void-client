@@ -10,6 +10,7 @@ expect open class DirectColorModel : ColorModel {
     final override fun getBlue(pixel: Int): Int
     final override fun getAlpha(pixel: Int): Int
     final override fun getRGB(pixel: Int): Int
+    final override fun createCompatibleSampleModel(w: Int, h: Int): SampleModel
 }
 
 expect val DirectColorModel.redMask: Int

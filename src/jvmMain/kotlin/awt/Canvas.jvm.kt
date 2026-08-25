@@ -1,6 +1,5 @@
 package awt
 
-
 actual typealias Canvas = java.awt.Canvas
 
 actual var Canvas.ignoreRepaint: Boolean

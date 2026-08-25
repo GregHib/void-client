@@ -17,7 +17,8 @@ actual open class FileOutputStream : OutputStream {
         write(byteArrayOf(b.toByte()), 0, 1)
     }
 
-    override fun write(b: ByteArray, off: Int, len: Int) {
+    override fun write(b: ByteArray?, off: Int, len: Int) {
+        b ?: return
         checkOpen()
         checkBounds(b.size, off, len)
         val view = b.asUint8Array()
@@ -37,5 +38,8 @@ actual open class FileOutputStream : OutputStream {
 
     private fun checkOpen() {
         if (closed) throw IOException("Stream closed: $path")
+    }
+
+    actual override fun flush() {
     }
 }

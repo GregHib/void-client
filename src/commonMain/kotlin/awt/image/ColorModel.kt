@@ -9,6 +9,8 @@ expect abstract class ColorModel {
     abstract fun getAlpha(pixel: Int): Int
 
     open fun getRGB(pixel: Int): Int
+
+    open fun createCompatibleSampleModel(w: Int, h: Int): SampleModel
 }
 
 expect val ColorModel.pixelSize: Int

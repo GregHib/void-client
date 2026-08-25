@@ -4,7 +4,7 @@ import awt.Image
 import awt.image.BufferedImage
 import awt.image.DataBufferInt
 import awt.image.DirectColorModel
-import awt.image.Raster
+import awt.image.createWritableRaster
 import awt.Rectangle
 import awt.Shape
 import awt.h
@@ -36,10 +36,10 @@ class BufferedImageSurface : AbstractFrameBufferSurface() {
         this.anInt6917 = i
         this.anInt6920 = i_7_
         this.anIntArray6916 = IntArray((this.anInt6920 * this.anInt6917))
-        val databufferint = DataBufferInt(this.anIntArray6916, (this.anIntArray6916)!!.size)
+        val databufferint = DataBufferInt(this.anIntArray6916!!, (this.anIntArray6916)!!.size)
         if (i_6_ > -42) method3008(null, 6, -14, 63)
         val directcolormodel = DirectColorModel(32, 16711680, 65280, 255)
-        val writableraster = Raster.createWritableRaster((directcolormodel.createCompatibleSampleModel((this.anInt6917), (this.anInt6920))), databufferint, null)
+        val writableraster = createWritableRaster((directcolormodel.createCompatibleSampleModel((this.anInt6917), (this.anInt6920))), databufferint, null)
         anImage9066 = BufferedImage(directcolormodel, writableraster, false, Hashtable<Any?, Any?>())
     }
 }

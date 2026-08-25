@@ -47,17 +47,17 @@ actual open class BufferedImage actual constructor(
     val height: Int = height
 
     private val type: Int = imageType
-    private val pixels: IntArray = IntArray(width * height)
+    private var pixels: IntArray = IntArray(width * height)
     private val dataBuffer = DataBufferInt(pixels, pixels.size)
 
-    private val model: ColorModel = when (imageType) {
+    private var model: ColorModel = when (imageType) {
         BUFFERED_IMAGE_TYPE_INT_RGB ->
             DirectColorModel(24, 0x00FF0000, 0x0000FF00, 0x000000FF)
         else ->
             DirectColorModel(32, 0x00FF0000, 0x0000FF00, 0x000000FF, -0x1000000)
     }
 
-    private val raster: WritableRaster = createPackedRaster(
+    private var raster: WritableRaster = createPackedRaster(
         dataBuffer,
         width,
         height,
@@ -68,6 +68,17 @@ actual open class BufferedImage actual constructor(
             intArrayOf(0x00FF0000, 0x0000FF00, 0x000000FF, -0x1000000)
         },
     )
+
+    actual constructor(
+        cm: ColorModel,
+        raster: WritableRaster,
+        isRasterPremultiplied: Boolean,
+        properties: util.Hashtable<*, *>?,
+    ) : this(raster.pxWidth, raster.pxHeight, BUFFERED_IMAGE_TYPE_INT_ARGB) {
+        this.model = cm
+        this.raster = raster
+        this.pixels = raster.intData
+    }
 
     actual fun getType(): Int = type
     actual fun getColorModel(): ColorModel = model

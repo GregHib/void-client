@@ -12,6 +12,7 @@ expect open class Socket(host: String?, port: Int) {
     open fun getPort(): Int
     open fun getLocalPort(): Int
     open fun setSoTimeout(timeout: Int)
+    open fun setTcpNoDelay(on: Boolean)
     open fun shutdownInput()
     open fun shutdownOutput()
 }

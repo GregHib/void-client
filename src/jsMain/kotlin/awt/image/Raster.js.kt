@@ -30,6 +30,11 @@ actual val Raster.pxWidth: Int get() = rasterWidth
 actual val Raster.pxHeight: Int get() = rasterHeight
 actual val Raster.intData: IntArray get() = buffer
 
+actual fun createWritableRaster(sm: SampleModel, db: DataBufferInt, location: awt.Point?): WritableRaster {
+    val masks = (sm as? PackedSampleModel)?.bandMasks ?: DEFAULT_BAND_MASKS
+    return createPackedRaster(db, sm.getWidth(), sm.getHeight(), sm.getWidth(), masks)
+}
+
 actual fun createPackedRaster(
     dataBuffer: DataBufferInt,
     w: Int,
