@@ -1,5 +1,6 @@
 package jaclib.peer
 
+import lang.Class
 import kotlin.jvm.JvmStatic
 
 actual abstract class Peer actual constructor() {
@@ -16,8 +17,8 @@ actual abstract class Peer actual constructor() {
     }
 
     actual companion object {
-        @JvmStatic
-        actual fun init(arg0: Class<*>) {
+//        @JvmStatic
+        actual fun init(arg0: Class<*>?) {
         }
     }
 }

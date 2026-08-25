@@ -5,6 +5,7 @@ import awt.datatransfer.Clipboard
 expect abstract class Toolkit {
     abstract fun getScreenSize(): Dimension
     abstract fun getScreenResolution(): Int
+    fun getSystemEventQueue(): EventQueue
     abstract fun getSystemClipboard(): Clipboard
     fun createCustomCursor(cursor: Image?, hotSpot: Point?, name: String?): Cursor
     fun createImage(array: ByteArray): Image

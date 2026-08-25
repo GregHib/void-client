@@ -341,9 +341,8 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
                 var i_62_ = 0
                 var i_63_ = 0
                 if (canvas != null) {
-                    val dimension = canvas.size
-                    i_63_ = dimension.height
-                    i_62_ = dimension.width
+                    i_63_ = canvas.getHeight()
+                    i_62_ = canvas.getWidth()
                 }
                 return method3692(i_61_, i_63_, i_62_, js5Archive, 0, var_renderConfig, canvas, i)
             } catch (runtimeexception: RuntimeException) {
@@ -362,7 +361,7 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
 
         var anInt4576: Int = 0
         @JvmStatic
-        @Synchronized
+//        @Synchronized
         fun method3692(i: Int, i_168_: Int, i_169_: Int, js5Archive: Js5Archive?, i_170_: Int, var_renderConfig: RenderConfig?, canvas: Canvas?, i_171_: Int): Renderer? {
             try {
                 anInt4576++

@@ -1,3 +1,4 @@
+import lang.StringBuffer
 import kotlin.jvm.JvmStatic
 /* Class239_Sub16 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

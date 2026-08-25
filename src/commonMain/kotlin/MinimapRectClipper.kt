@@ -1,5 +1,9 @@
 import kotlin.jvm.JvmStatic
 import GlslMaterialPass.Companion.method2154
+import awt.h
+import awt.left
+import awt.top
+import awt.w
 
 /*
  * Class13
@@ -31,7 +35,7 @@ object MinimapRectClipper {
         var i_4_ = i_2_
         while (TerrainShadowBuilderGl3.anInt7008 > i_4_) {
             val rectangle = HintIconState.aRectangleArray2371!![i_4_]!!
-            if (i < rectangle.width + rectangle.x && i_0_ + i > rectangle.x && (i_1_ < rectangle.y - -rectangle.height) && rectangle.y < i_1_ + i_3_) OpenGlModel.aBooleanArray2076!![i_4_] = true
+            if (i < rectangle.w + rectangle.left && i_0_ + i > rectangle.left && (i_1_ < rectangle.top - -rectangle.h) && rectangle.top < i_1_ + i_3_) OpenGlModel.aBooleanArray2076!![i_4_] = true
             i_4_++
         }
         anInt219++

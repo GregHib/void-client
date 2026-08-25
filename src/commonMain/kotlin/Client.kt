@@ -524,25 +524,34 @@ import awt.Canvas
 import awt.Component
 import awt.Container
 import awt.Frame
+import awt.h
+import awt.left
+import awt.top
+import awt.w
 import io.ByteArrayInputStream
 import io.IOException
 import io.InvalidClassException
 import io.ObjectInputStream
 import io.OptionalDataException
 import io.StreamCorruptedException
-import java.lang.reflect.Field
-import java.lang.reflect.InvocationTargetException
-import java.lang.reflect.Method
+import lang.reflect.Field
+import lang.reflect.Method
 import net.Socket
 import net.URL
-import java.util.*
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
+import lang.Class
+import lang.ClassLoader
+import lang.ClassNotFoundException
 import lang.IllegalAccessException
+import lang.SecurityException
+import lang.classOf
+import lang.jClass
+import util.Vector
 import util.random
-import kotlin.jvm.Synchronized
 import kotlin.math.max
 import kotlin.math.min
+import kotlin.math.round
 import kotlin.time.Clock
 import kotlin.time.ExperimentalTime
 
@@ -1440,8 +1449,8 @@ class Client : GameAppletFrame() {
                 if ((i_97_.toInt() and 0x1) != 0) {
                     val i_98_ = npc.method2436(117.toByte())
                     if ((0x2 and i_97_.toInt()) != 0 && npc.anInt10319 == 0 && random() * 1000.0 < 10.0) {
-                        val i_99_ = Math.round(-5.0 + 10.0 * random()).toInt()
-                        val i_100_ = Math.round(10.0 * random() - 5.0).toInt()
+                        val i_99_ = round(-5.0 + 10.0 * random()).toInt()
+                        val i_100_ = round(10.0 * random() - 5.0).toInt()
                         if (i_99_ != 0 || i_100_ != 0) {
                             var i_101_ = ((npc.anIntArray10320!![0]) - -i_99_)
                             if (i_101_ < 0) i_101_ = 0
@@ -1636,13 +1645,13 @@ class Client : GameAppletFrame() {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     public override fun method87(i: Byte) {
         if (i > -11) aNodeDeque_5185 = null
         anInt5173++
         if (JagGlToolkitFactory.anApplet1530 != null && ParticleSystemRenderer.aCanvas3869 == null && !VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3794) {
             try {
-                val var_class: Class<*> = JagGlToolkitFactory.anApplet1530!!.javaClass
+                val var_class: Class<*> = JagGlToolkitFactory.anApplet1530!!.jClass
                 val field = var_class.getDeclaredField("canvas")
                 ParticleSystemRenderer.aCanvas3869 = field.get(JagGlToolkitFactory.anApplet1530) as? Canvas
                 field.set(JagGlToolkitFactory.anApplet1530, null)
@@ -1673,8 +1682,8 @@ class Client : GameAppletFrame() {
                     if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
                     else container = JagGlToolkitFactory.anApplet1530 as? Container
                 } else container = RsaVarbitHandler.aFrame4904
-                var i = container!!.getSize().width
-                var i_119_ = container.getSize().height
+                var i = container!!.getWidth()
+                var i_119_ = container.getHeight()
                 if (container === RsaVarbitHandler.aFrame4904) {
                     val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                     i -= insets.left + insets.right
@@ -1720,9 +1729,9 @@ class Client : GameAppletFrame() {
                 var i = 0
                 while (TerrainShadowBuilderGl3.anInt7008 > i) {
                     val rectangle = HintIconState.aRectangleArray2371!![i]
-                    if (SizeBoundedSoftCache.aBooleanArray2326!![i]) FacingDirectionNode.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46)
-                    else if (!LocDefinitionCache.aBooleanArray3438!![i]) FacingDirectionNode.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66)
-                    else FacingDirectionNode.aRenderer6654!!.method3668(rectangle!!.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40)
+                    if (SizeBoundedSoftCache.aBooleanArray2326!![i]) FacingDirectionNode.aRenderer6654!!.method3668(rectangle!!.w, rectangle.top, -65281, rectangle.left, rectangle.h, 46)
+                    else if (!LocDefinitionCache.aBooleanArray3438!![i]) FacingDirectionNode.aRenderer6654!!.method3668(rectangle!!.w, rectangle.top, -16711936, rectangle.left, rectangle.h, 66)
+                    else FacingDirectionNode.aRenderer6654!!.method3668(rectangle!!.w, rectangle.top, -65536, rectangle.left, rectangle.h, 40)
                     i++
                 }
             }
@@ -1792,23 +1801,23 @@ class Client : GameAppletFrame() {
             if (NoiseTextureNode.aClass348_Sub4_9264 != null) string += "|15)" + (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609)
             try {
                 if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
-                    val field = ClassLoader::class.java.getDeclaredField("nativeLibraries")
+                    val field = classOf(ClassLoader::class).getDeclaredField("nativeLibraries")
                     field.setAccessible(true)
-                    val vector = (field.get((if (aClass5189 != null) aClass5189 else (Client::class.java.also { aClass5189 = it }))!!.getClassLoader()) as Vector<*>)
+                    val vector = (field.get((if (aClass5189 != null) aClass5189 else (classOf(Client::class).also { aClass5189 = it }))!!.getClassLoader()) as Vector<*>)
                     for (i_135_ in vector.indices) {
                         try {
-                            val `object`: Any = vector.elementAt(i_135_)
-                            val field_136_ = `object`.javaClass.getDeclaredField("name")
+                            val `object`: Any? = vector.elementAt(i_135_)
+                            val field_136_ = classOf(`object`).getDeclaredField("name")
                             field_136_.setAccessible(true)
                             try {
                                 val string_137_ = field_136_.get(`object`) as String?
 
                                 if (string_137_ != null && string_137_.indexOf("sw3d.dll") != -1) {
-                                    val field_138_ = `object`.javaClass.getDeclaredField("handle")
+                                    val field_138_ = classOf(`object`).getDeclaredField("handle")
 
 
                                     field_138_.setAccessible(true)
-                                    string += ("|16)" + (java.lang.Long.toHexString(field_138_.getLong(`object`))))
+                                    string += ("|16)" + (field_138_.getLong(`object`).toHexString()))
                                     field_138_.setAccessible(false)
                                 }
                             } catch (throwable: Throwable) {
@@ -5242,7 +5251,7 @@ class Client : GameAppletFrame() {
                                     val objects = arrayOfNulls<Any>(`is`.size)
                                     var i_6_ = 0
                                     while (`is`.size > i_6_) {
-                                        val objectinputstream = (ObjectInputStream(ByteArrayInputStream(`is`[i_6_])))
+                                        val objectinputstream = (ObjectInputStream(ByteArrayInputStream(`is`[i_6_]!!)))
                                         objects[i_6_] = objectinputstream.readObject()
                                         i_6_++
                                     }
@@ -5274,8 +5283,8 @@ class Client : GameAppletFrame() {
                                 class348_sub49_sub2.writeByte(false, -14)
                             } catch (illegalargumentexception: IllegalArgumentException) {
                                 class348_sub49_sub2.writeByte(false, -15)
-                            } catch (invocationtargetexception: InvocationTargetException) {
-                                class348_sub49_sub2.writeByte(false, -16)
+//                            } catch (invocationtargetexception: InvocationTargetException) {
+//                                class348_sub49_sub2.writeByte(false, -16)
                             } catch (securityexception: SecurityException) {
                                 class348_sub49_sub2.writeByte(false, -17)
                             } catch (ioexception: IOException) {

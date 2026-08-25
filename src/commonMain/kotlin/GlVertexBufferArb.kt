@@ -2,6 +2,7 @@ import kotlin.jvm.JvmStatic
 import MultiLevelOptionState.Companion.method1849
 import jaclib.memory.Buffer
 import jaclib.memory.Source
+import lang.StringBuffer
 
 class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, bool: Boolean) : GlBufferObject(glRenderDevice, 34962, bool), VertexBufferResource {
     private var aByte8491: Byte = 0

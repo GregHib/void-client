@@ -16,7 +16,7 @@ actual open class Container : Component() {
         return comp
     }
 
-    actual fun remove(comp: Component) {
+    actual fun remove(comp: Component?) {
         if (children.remove(comp)) element.removeChild(comp.element)
     }
 

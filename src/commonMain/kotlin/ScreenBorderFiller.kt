@@ -1,5 +1,6 @@
 import kotlin.jvm.JvmStatic
 import GlEnvMappedWaterPass.Companion.method3551
+import awt.COLOR_BLACK
 import awt.Color
 import awt.Container
 import awt.Rectangle
@@ -56,7 +57,7 @@ object ScreenBorderFiller {
                             i_6_ = insets.top
                         }
                         val graphics = container!!.getGraphics()
-                        graphics.setColor(Color.black)
+                        graphics.setColor(COLOR_BLACK)
                         if (i_1_ > 0) graphics.fillRect(i_5_, i_6_, i_1_, NpcReference.anInt6857)
                         if (i_2_ > 0) graphics.fillRect(i_5_, i_6_, SocketFactory.anInt3473, i_2_)
                         if (i_3_ > 0) graphics.fillRect((-i_3_ + SocketFactory.anInt3473 + i_5_), i_6_, i_3_, NpcReference.anInt6857)

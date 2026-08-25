@@ -2,6 +2,7 @@ import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 import RSFont.Companion.method2570
 import ModelVertexColorBuffer.Companion.method2743
+import awt.COLOR_BLACK
 import awt.Color
 
 class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedListNode() {
@@ -51,7 +52,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             anInt6860++
             GlTexture1D.aInputTracker_8552!!.method3592(0)
             NpcType.aClient1367!!.method87((-49).toByte())
-            ParticleSystemRenderer.aCanvas3869!!.setBackground(Color.black)
+            ParticleSystemRenderer.aCanvas3869!!.setBackground(COLOR_BLACK)
             GlShaderProgramHandle.anInt4179 = i
             LoadProgressCounters.aKeyboardInputSource_2449 = method2743(ParticleSystemRenderer.aCanvas3869, 84.toByte())
             GlTexture1D.aInputTracker_8552 = InterfaceBounds.Companion.method2941(ParticleSystemRenderer.aCanvas3869, 0, true)

@@ -10,3 +10,4 @@ expect fun getProperty(key: String, defaultValue: String): String
 expect fun getenv(name: String): String?
 expect fun exit(status: Int): Nothing
 expect fun runFinalization()
+expect fun load(path: String)

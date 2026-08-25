@@ -1,6 +1,5 @@
 import kotlin.jvm.JvmStatic
 import net.URL
-import kotlin.jvm.Synchronized
 import kotlin.math.max
 import kotlin.math.pow
 import kotlin.math.sin
@@ -38,13 +37,13 @@ class MidiSequencePlayer : AudioStreamNode {
     private var aClass348_Sub2_8963: MidiFileBuilder? = null
     private val aBoolean8964 = false
 
-    @Synchronized
+//    @Synchronized
     override fun method2818(): AudioStreamNode? {
         anInt8946++
         return null
     }
 
-    @Synchronized
+//    @Synchronized
     private fun method2840(bool: Boolean, i: Byte) {
         aMidiTrackReader_8944!!.method1487()
         anInt8950++
@@ -53,7 +52,7 @@ class MidiSequencePlayer : AudioStreamNode {
         if (i >= -74) method2879(-43, 88, -33)
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2841(i: Int, i_2_: Int, i_3_: Int) {
         if (i_2_ < -34) {
             anInt8935++
@@ -154,7 +153,7 @@ class MidiSequencePlayer : AudioStreamNode {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2843(i: Int, i_26_: Int, i_27_: Int) {
         if (i_26_ < 0) {
             for (i_28_ in 0..15) anIntArray8925[i_28_] = i
@@ -191,7 +190,7 @@ class MidiSequencePlayer : AudioStreamNode {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     private fun method2846(bool: Boolean, bool_34_: Boolean, class348_sub2: MidiFileBuilder?, bool_35_: Boolean) {
         do {
             try {
@@ -500,7 +499,7 @@ class MidiSequencePlayer : AudioStreamNode {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2819(i: Int) {
         var i = i
         anInt8908++
@@ -527,14 +526,14 @@ class MidiSequencePlayer : AudioStreamNode {
         if (i_66_ != -32) anIntArray8916 = null
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2860(i: Int): Boolean {
         if (i <= 94) method2818()
         anInt8949++
         return aMidiTrackReader_8944!!.method1491()
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2817(`is`: IntArray, i: Int, i_67_: Int) {
         var i = i
         var i_67_ = i_67_
@@ -562,7 +561,7 @@ class MidiSequencePlayer : AudioStreamNode {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2861(i: Int, i_70_: Int) {
         if (i != 0) method2878(56, 73, 54)
         anInt8933 = i_70_
@@ -574,7 +573,7 @@ class MidiSequencePlayer : AudioStreamNode {
         anInt8940++
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2864(i: Byte) {
         anInt8924++
         if (i <= 46) aMidiTrackReader_8944 = null
@@ -611,7 +610,7 @@ class MidiSequencePlayer : AudioStreamNode {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2866(class348_sub2: MidiFileBuilder?, i: Int, spriteArchiveLoader: SpriteArchiveLoader?, js5Archive: Js5Archive?, i_77_: Int): Boolean {
         try {
             class348_sub2!!.method2733()
@@ -643,7 +642,7 @@ class MidiSequencePlayer : AudioStreamNode {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2867(i: Int) {
         anInt8903++
         if (i == 4) {
@@ -693,7 +692,7 @@ class MidiSequencePlayer : AudioStreamNode {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2869(class348_sub2: MidiFileBuilder?, bool: Boolean, bool_88_: Boolean) {
         try {
             anInt8932++
@@ -703,7 +702,7 @@ class MidiSequencePlayer : AudioStreamNode {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2870(class348_sub2: MidiFileBuilder?, l: Long, bool: Boolean, bool_89_: Boolean, i: Byte) {
         try {
             method2846(false, bool_89_, class348_sub2, bool)
@@ -716,7 +715,7 @@ class MidiSequencePlayer : AudioStreamNode {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2816(): AudioStreamNode? {
         anInt8912++
         return aClass348_Sub16_Sub1_8958
@@ -820,14 +819,14 @@ class MidiSequencePlayer : AudioStreamNode {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2877(i: Int) {
         method2840(true, (-95).toByte())
         if (i != -128) method2849(103, -71, (-108).toByte(), -63)
         anInt8913++
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2821(): Int {
         anInt8901++
         return 0

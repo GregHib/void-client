@@ -1,5 +1,7 @@
 package awt
 
+import awt.event.WindowListener
+
 expect class Frame(title: String) : Container {
     constructor()
 
@@ -15,7 +17,10 @@ expect class Frame(title: String) : Container {
     fun dispose()
     fun toFront()
     fun toBack()
+    fun addWindowListener(listener: WindowListener)
     fun setLocationRelativeTo(c: Component)
+
+    fun enableInputMethods(boolean: Boolean)
 }
 
 expect val FRAME_NORMAL: Int

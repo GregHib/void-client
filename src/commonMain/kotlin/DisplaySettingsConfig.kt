@@ -1,4 +1,6 @@
+import lang.Class
 import lang.IllegalAccessException
+import lang.jClass
 import kotlin.jvm.JvmStatic
 import kotlin.math.max
 
@@ -248,13 +250,13 @@ class DisplaySettingsConfig : LinkedListNode {
     private fun method3426(i: Byte) {
         anInt7219++
         try {
-            val fields = this.javaClass.getDeclaredFields()
+            val fields = this.jClass.getDeclaredFields()
             if (i.toInt() != 36) aLoadingScreenState_7221 = null
             val fields_5_ = fields
             var i_6_ = 0
             while (fields_5_.size > i_6_) {
                 val field = fields_5_[i_6_]
-                if ((if (aClass7273 != null) aClass7273 else (GraphicsOptionState::class.java.also { aClass7273 = it }))!!.isAssignableFrom(field.getType())) {
+                if ((if (aClass7273 != null) aClass7273 else (GraphicsOptionState::class.jClass.also { aClass7273 = it }))!!.isAssignableFrom(field.getType())) {
                     val graphicsOptionState = field.get(this) as GraphicsOptionState
                     graphicsOptionState.method1716(false)
                 }

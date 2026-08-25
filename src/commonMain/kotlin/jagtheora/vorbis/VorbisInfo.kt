@@ -3,7 +3,7 @@ package jagtheora.vorbis
 import jagtheora.misc.SimplePeer
 import jagtheora.ogg.OggPacket
 
-expect class VorbisInfo : SimplePeer {
+expect class VorbisInfo() : SimplePeer {
 
     var rate: Int
 

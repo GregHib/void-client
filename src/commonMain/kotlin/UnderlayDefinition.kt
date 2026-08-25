@@ -16,7 +16,7 @@ class UnderlayDefinition {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method1610(i: Byte): SpriteImage? {
         anInt2888++
         var spriteImage = this.aItemDefinitionLoader_2886!!.aLruByteCache_2190!!.method583(anInt2891.toLong(), -70) as? SpriteImage?

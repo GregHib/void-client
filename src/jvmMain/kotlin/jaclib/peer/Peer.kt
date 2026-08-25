@@ -1,5 +1,6 @@
 package jaclib.peer
 
+import lang.jClass
 import kotlin.jvm.JvmStatic
 
 abstract actual class Peer /*protected*/ actual constructor() {
@@ -15,7 +16,7 @@ abstract actual class Peer /*protected*/ actual constructor() {
 
     actual companion object {
         init {
-            init(PeerReference::class.java)
+            init(PeerReference::class.jClass)
         }
 
         @JvmStatic

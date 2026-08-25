@@ -9,6 +9,9 @@ class InputStream_Sub2 : InputStream() {
         return -1
     }
 
+    override fun close() {
+    }
+
     companion object {
 
         var anInt80: Int = 0

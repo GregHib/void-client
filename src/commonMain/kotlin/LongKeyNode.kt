@@ -9,6 +9,8 @@ import InvertTextureNode.Companion.method3135
 import DirectionPath.Companion.method536
 import NpcType.Companion.method802
 import OpenGlRenderNode.Companion.method3297
+import lang.Class
+import lang.jClass
 import util.random
 
 /* Class348_Sub14 - Decompiled by JODE
@@ -203,7 +205,7 @@ class LongKeyNode : LinkedListNode {
                             while (i_39_ <= 1 + i && i_39_ <= 3) {
                                 if (method536(i_38_, !bool, i_37_, i, i_39_)) {
                                     var renderTarget = (method2878(i_39_, i_37_, i_38_) as RenderTarget?)
-                                    if (renderTarget == null) renderTarget = ((method1353(i_39_, i_37_, i_38_, (if (aClass6767 != null) aClass6767 else (RenderTarget::class.java.also { aClass6767 = it })))) as RenderTarget?)
+                                    if (renderTarget == null) renderTarget = ((method1353(i_39_, i_37_, i_38_, (if (aClass6767 != null) aClass6767 else (RenderTarget::class.jClass.also { aClass6767 = it })))) as RenderTarget?)
                                     if (renderTarget == null) renderTarget = (method3297(i_39_, i_37_, i_38_) as RenderTarget?)
                                     if (renderTarget == null) renderTarget = ((method3135(i_39_, i_37_, i_38_)) as RenderTarget?)
                                     if (renderTarget != null) {

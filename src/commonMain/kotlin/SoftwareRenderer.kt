@@ -1,5 +1,9 @@
 ﻿import awt.Canvas
 import awt.Rectangle
+import awt.h
+import awt.left
+import awt.top
+import awt.w
 import lang.currentThread
 import util.random
 import kotlin.math.floor
@@ -1511,9 +1515,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             val class348_sub31 = (aHashtable_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
             if (class348_sub31 != null) {
                 aCanvas7468 = canvas
-                val dimension = canvas.getSize()
-                anInt7465 = dimension.width
-                anInt7472 = dimension.height
+                anInt7465 = canvas.getWidth()
+                anInt7472 = canvas.getHeight()
                 this.aClass348_Sub31_7469 = class348_sub31
                 if (aSpriteRenderable_7475 == null) {
                     this.anIntArray7483 = class348_sub31.anIntArray6916
@@ -2348,7 +2351,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             val graphics = aCanvas7468!!.getGraphics()
             for (i_633_ in 0..<i) {
                 val rectangle = rectangles!![i_633_]!!
-                if (rectangle.x + i_631_ <= this.anInt7477 && rectangle.y + i_632_ <= anInt7486 && rectangle.x + i_631_ + rectangle.width > 0 && rectangle.y + i_632_ + rectangle.height > 0) this.aClass348_Sub31_7469!!.method3011(rectangle.y, rectangle.x + i_631_, rectangle.height, graphics, -1, rectangle.x, rectangle.width, rectangle.y + i_632_)
+                if (rectangle.left + i_631_ <= this.anInt7477 && rectangle.top + i_632_ <= anInt7486 && rectangle.left + i_631_ + rectangle.w > 0 && rectangle.top + i_632_ + rectangle.h > 0) this.aClass348_Sub31_7469!!.method3011(rectangle.top, rectangle.left + i_631_, rectangle.h, graphics, -1, rectangle.left, rectangle.w, rectangle.top + i_632_)
             }
         } catch (exception: Exception) {
             aCanvas7468!!.repaint()

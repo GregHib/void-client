@@ -152,7 +152,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
         }
     }
 
-    @Synchronized
+//    @Synchronized
     override fun focusLost(focusevent: FocusEvent?) {
         anInt6537++
         method2702(0, 128, '\u0000', -1)
@@ -166,7 +166,7 @@ class AwtKeyboardListener internal constructor(component: Component?) : Keyboard
         val method = PrivilegedOperationWorker.aMethod3783
         if (method != null) {
             try {
-                method.invoke(aComponent6544, java.lang.Boolean.FALSE)
+                method.invoke(aComponent6544, false)//java.lang.Boolean.FALSE
             } catch (throwable: Throwable) {
                 /* empty */
             }

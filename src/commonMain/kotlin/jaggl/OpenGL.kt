@@ -5,7 +5,7 @@ import lang.Thread
 import util.Hashtable
 import kotlin.jvm.JvmStatic
 
-expect class OpenGL {
+expect class OpenGL() {
     var a: Thread?
 
     var c: Hashtable<Any?, Any?>?

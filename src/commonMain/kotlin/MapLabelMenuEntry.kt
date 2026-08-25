@@ -1,6 +1,7 @@
 import kotlin.jvm.JvmStatic
 import ChatEffectsOptionState.Companion.method1732
 import MinimapSquareDrawer.Companion.method462
+import lang.StringBuffer
 
 /* Class110_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

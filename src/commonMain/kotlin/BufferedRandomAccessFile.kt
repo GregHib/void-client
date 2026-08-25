@@ -2,6 +2,7 @@ import kotlin.jvm.JvmStatic
 import io.EOFException
 import io.File
 import io.IOException
+import lang.ArrayIndexOutOfBoundsException
 
 /*
  * Class78
@@ -95,7 +96,7 @@ class BufferedRandomAccessFile internal constructor(private val aRandomAccessFil
         var i_5_ = i_5_
         anInt1307++
         try {
-            if (i_5_ + i > `is`.size) throw ArrayIndexOutOfBoundsException(i + (i_5_ - `is`.size))
+            if (i_5_ + i > `is`.size) throw ArrayIndexOutOfBoundsException("Array index out of range: ${i + (i_5_ - `is`.size)}")
             if (i_6_ != -16717) return
             if (aLong1321 != -1L && aLong1324 >= aLong1321 && (aLong1324 - -i_5_.toLong() <= anInt1314.toLong() + aLong1321)) {
                 ArrayCopyUtil.method1577(aByteArray1305, (-aLong1321 + aLong1324).toInt(), `is`, i, i_5_)

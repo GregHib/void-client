@@ -1,5 +1,7 @@
 import kotlin.jvm.JvmStatic
 import RSFont.Companion.method2570
+import lang.Class
+import lang.classOf
 
 /* Class348_Sub40_Sub19 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -68,7 +70,7 @@ class BlankTextureNode : AbstractProceduralTextureNode(0, true) {
             if (i != -30282) return true
             anInt9255++
             if (aClass9260 == null) {
-                aClass9260 = RegionMapDecoder::class.java
+                aClass9260 = classOf(RegionMapDecoder::class)
             }
             return GameAppletFrame.method2769(aClass9260, 20.toByte(), string)
         }

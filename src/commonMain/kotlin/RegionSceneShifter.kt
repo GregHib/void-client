@@ -9,6 +9,8 @@ import MinimapTriangleDrawer.Companion.method464
 import MapRegionLoader.Companion.method766
 import SceneObjectSpawner.Companion.method773
 import OpenGlRenderNode.Companion.method3297
+import lang.Class
+import lang.jClass
 import kotlin.math.abs
 
 /* Class348_Sub41 - Decompiled by JODE
@@ -263,7 +265,7 @@ class RegionSceneShifter : LinkedListNode() {
                     }
                 } else method2028(i_46_, class51, i_42_, var_renderer, i_48_, 126)
             }
-            renderTarget = (method1353(i_43_, i_45_, i_44_, (if (aClass7056 != null) aClass7056 else (RenderTarget::class.java.also { aClass7056 = it }))) as RenderTarget?)
+            renderTarget = (method1353(i_43_, i_45_, i_44_, (if (aClass7056 != null) aClass7056 else (RenderTarget::class.jClass.also { aClass7056 = it }))) as RenderTarget?)
             if (renderTarget != null) {
                 val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-88))
                 val i_51_ = renderTarget.method41(-32228) and 0x3

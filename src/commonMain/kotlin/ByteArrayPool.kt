@@ -14,7 +14,7 @@ object ByteArrayPool {
 
 
     @JvmStatic
-    @Synchronized
+//    @Synchronized
     fun method357(i: Int, `is`: ByteArray) {
         anInt491++
         if (`is`.size == 100 && anInt9412 < 1000) aByteArrayArray358!![anInt9412++] = `is`
@@ -47,7 +47,7 @@ object ByteArrayPool {
     var anInt9606: Int = 0
 
     @JvmStatic
-    @Synchronized
+//    @Synchronized
     fun method359(i: Int, i_9_: Int): ByteArray? {
         anInt493++
         if (i == 100 && anInt9412 > 0) {

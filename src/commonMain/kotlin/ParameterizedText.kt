@@ -4,6 +4,7 @@ import ParticleSystemRenderer.Companion.method2296
 import ModelVertexColorBuffer.Companion.method2739
 import TurbulenceTextureNode.Companion.method3113
 import AbstractBloomEffect.Companion.method2752
+import lang.StringBuffer
 
 /* Class348_Sub42_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

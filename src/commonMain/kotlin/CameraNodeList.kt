@@ -27,7 +27,7 @@ class CameraNodeList {
             if (i_0_ != 30316) return 27
             anInt1740++
             var i_1_ = c.code shl 4
-            if (Character.isUpperCase(c) || Character.isTitleCase(c)) {
+            if (c.isUpperCase() || c.isTitleCase()) {
                 val i_2_ = c.lowercaseChar().code
                 i_1_ = 1 + (i_2_ shl 4)
             }

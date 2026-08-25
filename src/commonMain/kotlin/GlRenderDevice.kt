@@ -65,7 +65,6 @@ import jaggl.OpenGL.Companion.glViewport
 import awt.Canvas
 import awt.Rectangle
 import lang.gc
-import kotlin.jvm.Synchronized
 
 /*
  * Class377
@@ -109,7 +108,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
     private val aBoolean9926: Boolean
     var anIntArray9927: IntArray?
 
-    @Synchronized
+//    @Synchronized
     override fun method3646(i: Int) {
         var i = i
         anInt9870++
@@ -271,7 +270,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         glClear(256)
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3966(l: Long, i: Int) {
         try {
             anInt9853++
@@ -304,7 +303,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3967(i: Int, i_8_: Byte, i_9_: Int) {
         anInt9898++
         val class348_sub35 = IntKeyNode(i)
@@ -504,7 +503,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3969(i: Int, i_26_: Int, i_27_: Int) {
         if (i_27_ != 3089) this.anIntArray9927 = null
         anInt9850++
@@ -940,7 +939,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         anInt9878++
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3971(i: Int, i_70_: Int) {
         anInt9819++
         val linkedListNode = LinkedListNode()

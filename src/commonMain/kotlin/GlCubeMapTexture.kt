@@ -4,6 +4,8 @@ import RangeThresholdTextureNode.Companion.method3055
 import OggMediaStream.Companion.method520
 import jaggl.OpenGL.Companion.glTexImage2Di
 import OpenGlRenderNode.Companion.method3297
+import lang.Class
+import lang.jClass
 
 class GlCubeMapTexture internal constructor(glRenderDevice: GlRenderDevice?, i: Int, bool: Boolean, `is`: Array<IntArray?>?) : GlTextureBase(glRenderDevice, 34067, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirection.aMovementDirection_1183, 6 * (i * i), bool), RenderableCubeTexture {
     init {
@@ -77,7 +79,7 @@ class GlCubeMapTexture internal constructor(glRenderDevice: GlRenderDevice?, i: 
             var renderTarget = method3297(i, i_2_, i_3_) as RenderTarget?
             var bool = true
             if (renderTarget != null) bool = bool and method520(renderTarget, -1)
-            renderTarget = (ClickFeedbackTask.method1353(i, i_2_, i_3_, (if (aClass8623 != null) aClass8623 else (RenderTarget::class.java.also { aClass8623 = it }))) as RenderTarget?)
+            renderTarget = (ClickFeedbackTask.method1353(i, i_2_, i_3_, (if (aClass8623 != null) aClass8623 else (RenderTarget::class.jClass.also { aClass8623 = it }))) as RenderTarget?)
             if (renderTarget != null) bool = bool and method520(renderTarget, -1)
             renderTarget = method2878(i, i_2_, i_3_) as RenderTarget?
             if (renderTarget != null) bool = bool and method520(renderTarget, -1)

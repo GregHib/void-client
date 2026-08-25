@@ -90,14 +90,15 @@ class WaterDetailOptionState : GraphicsOptionState {
                 if (i != IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) return -1
             }
             try {
-                val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
+                val width = ParticleSystemRenderer.aCanvas3869!!.getWidth()
+                val height = ParticleSystemRenderer.aCanvas3869!!.getHeight()
                 Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(ChatCommandProcessor.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
                 val class124 = ParticleConfigParser.method2277(0, RasterSprite.aJs5Archive_5207!!, AbstractFrameBufferSurface.anInt6923, -1)
                 val l = GameClock.method599(-88)
                 FacingDirectionNode.aRenderer6654!!.la()
                 SettingsCrcWriter.aAbstractCameraTransform_2123!!.method894(0, ActorEntity.anInt9037, 0)
                 FacingDirectionNode.aRenderer6654!!.method3638(SettingsCrcWriter.aAbstractCameraTransform_2123)
-                FacingDirectionNode.aRenderer6654!!.DA(dimension.width / 2, dimension.height / 2, 512, 512)
+                FacingDirectionNode.aRenderer6654!!.DA(width / 2, height / 2, 512, 512)
                 FacingDirectionNode.aRenderer6654!!.xa(1.0f)
                 if (i_1_ >= -66) aModelLightingConfig_5990 = null
                 FacingDirectionNode.aRenderer6654!!.ZA(16777215, 0.5f, 0.5f, 20.0f, -50.0f, 30.0f)

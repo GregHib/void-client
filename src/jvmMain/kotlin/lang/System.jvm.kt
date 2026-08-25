@@ -21,3 +21,5 @@ actual fun setProperty(key: String, value: String) = System.setProperty(key, val
 actual fun runFinalization() = System.runFinalization()
 
 actual fun exit(status: Int): Nothing = exitProcess(status)
+
+actual fun load(path: String) = System.load(path)

@@ -1,8 +1,9 @@
 package jaclib.peer
 
+import lang.Class
 import kotlin.jvm.JvmStatic
 
-abstract expect class Peer constructor() {
+expect abstract class Peer constructor() {
     var reference: PeerReference?
 
     fun a(arg0: Boolean): Boolean 

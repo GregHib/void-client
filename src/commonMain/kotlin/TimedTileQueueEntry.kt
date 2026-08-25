@@ -85,7 +85,7 @@ class TimedTileQueueEntry internal constructor(i: Int, i_2_: Int) : HashLinkedLi
                     if (ShortMatrixNode.Companion.anIntArray9519!![1] > 1) {
                         val `is` = ByteArray(ShortMatrixNode.Companion.anIntArray9519!![1])
                         glGetInfoLogARB(l, (ShortMatrixNode.Companion.anIntArray9519!![1]), ShortMatrixNode.Companion.anIntArray9519, 0, `is`, 0)
-                        println(String(`is`))
+                        println(`is`.concatToString())
                     }
                     if (ShortMatrixNode.Companion.anIntArray9519!![0] == 0) {
                         glDeleteObjectARB(l)

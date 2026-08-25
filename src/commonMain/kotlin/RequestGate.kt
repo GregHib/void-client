@@ -6,18 +6,18 @@ object RequestGate {
     private val aNodeDeque_3297: NodeDeque
     private var anInt3298 = 0
 
-    @Synchronized
+//    @Synchronized
     fun method1945(i: Byte, bool: Boolean) {
         if (i < -120) aBoolean3296 = bool
     }
 
-    @Synchronized
+//    @Synchronized
     fun method1946(i: Int) {
         anInt3298--
         if (anInt3298 == 0) RequestGate.method1948((-109).toByte())
     }
 
-    @Synchronized
+//    @Synchronized
     fun method1947(i: Int, disposable: Disposable) {
         if (!aBoolean3296) {
             if (i >= anInt3298) disposable.w(false)
@@ -29,7 +29,7 @@ object RequestGate {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method1948(i: Byte) {
         while (true) {
             val class348_sub28 = aNodeDeque_3297.method1997(8) as DisposableHolder?
@@ -40,7 +40,7 @@ object RequestGate {
         if (i > -22) aBoolean3296 = false
     }
 
-    @Synchronized
+//    @Synchronized
     fun method1949(i: Byte) {
         anInt3298++
         val i_0_ = -68 % ((i - -79) / 45)

@@ -4,6 +4,7 @@ import jagtheora.ogg.OggPage
 import jagtheora.ogg.OggStreamState
 import jagtheora.ogg.OggSyncState
 import io.IOException
+import lang.StringBuffer
 import lang.exit
 
 /*
@@ -267,7 +268,7 @@ abstract class OggMediaStream(i: Int) {
             val stringbuffer = StringBuffer()
             var i_33_ = 1
             while (`is`!!.size > i_33_) {
-                if (!Character.isLetterOrDigit(Char(`is`[i_33_].toUShort()))) break
+                if (!Char(`is`[i_33_].toUShort()).isLetterOrDigit()) break
                 stringbuffer.append(Char(`is`[i_33_].toUShort()))
                 i_33_++
             }

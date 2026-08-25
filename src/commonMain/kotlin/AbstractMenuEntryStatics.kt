@@ -1,4 +1,9 @@
+import lang.Class
+import lang.ClassNotFoundException
+import lang.SecurityException
+import lang.jClass
 import kotlin.jvm.JvmStatic
+
 object AbstractMenuEntryStatics {
 
     var aShort1700: Short = 256
@@ -30,12 +35,12 @@ object AbstractMenuEntryStatics {
         anInt1701++
         var i_1_ = 0
         if (i != -1) method1034(117, null, null, 29)
-        val fields = (if (aClass1713 != null) aClass1713 else (DisplaySettingsConfig::class.java.also { aClass1713 = it }))!!.getDeclaredFields()
+        val fields = (if (aClass1713 != null) aClass1713 else (DisplaySettingsConfig::class.jClass.also { aClass1713 = it }))!!.getDeclaredFields()
         val fields_2_ = fields
         var i_3_ = 0
         while (fields_2_.size > i_3_) {
             val field = fields_2_[i_3_]
-            if ((if (aClass1714 != null) aClass1714 else (GraphicsOptionState::class.java.also { aClass1714 = it }))!!.isAssignableFrom(field.getType())) i_1_++
+            if ((if (aClass1714 != null) aClass1714 else (GraphicsOptionState::class.jClass.also { aClass1714 = it }))!!.isAssignableFrom(field.getType())) i_1_++
             i_3_++
         }
         return i_1_ - -1

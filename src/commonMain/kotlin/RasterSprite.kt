@@ -1,3 +1,4 @@
+import lang.Class
 import kotlin.jvm.JvmStatic
 class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprite() {
 

@@ -1,8 +1,8 @@
 import kotlin.jvm.JvmStatic
 import awt.Component
-import java.awt.event.MouseEvent
-import java.awt.event.MouseListener
-import java.awt.event.MouseMotionListener
+import awt.event.MouseEvent
+import awt.event.MouseListener
+import awt.event.MouseMotionListener
 
 class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), MouseListener, MouseMotionListener {
     private var anInt7432 = 0
@@ -25,13 +25,13 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
         aComponent7459!!.addMouseMotionListener(this)
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseDragged(mouseevent: MouseEvent) {
         method3605(mouseevent.getY(), (-76).toByte(), mouseevent.getX())
         anInt7427++
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseEntered(mouseevent: MouseEvent) {
         method3605(mouseevent.getY(), (-76).toByte(), mouseevent.getX())
         anInt7426++
@@ -52,7 +52,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
         return 0
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseExited(mouseevent: MouseEvent?) {
         method3605(mouseevent!!.getY(), (-76).toByte(), mouseevent.getX())
         anInt7452++
@@ -64,7 +64,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
         return (anInt7432 and 0x4) != 0
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method3589(i: Int) {
         if (i != 0) method3589(-46)
         anInt7432 = anInt7456
@@ -77,7 +77,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
         aNodeDeque_7450!!.method1996(i xor 0x66)
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseMoved(mouseevent: MouseEvent) {
         anInt7435++
         method3605(mouseevent.getY(), (-76).toByte(), mouseevent.getX())
@@ -115,7 +115,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
         if (i_8_ >= -110) Companion.method3607(28, null, -68)
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseClicked(mouseevent: MouseEvent) {
         if (mouseevent.isPopupTrigger()) mouseevent.consume()
         anInt7438++
@@ -139,7 +139,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
         return (anInt7432 and 0x1) != 0
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mouseReleased(mouseevent: MouseEvent?) {
         anInt7428++
         var i = method3604(-6345, mouseevent!!)
@@ -175,7 +175,7 @@ class MouseInputTracker(component: Component?, bool: Boolean) : InputTracker(), 
         return anInt7442
     }
 
-    @Synchronized
+//    @Synchronized
     override fun mousePressed(mouseevent: MouseEvent) {
         anInt7449++
         val i = method3604(-6345, mouseevent)

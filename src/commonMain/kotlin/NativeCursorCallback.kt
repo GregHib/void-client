@@ -9,6 +9,7 @@ import com.ms.win32.User32.SetCursor
 import com.ms.win32.User32.SetCursorPos
 import com.ms.win32.User32.SetWindowLong
 import awt.Component
+import lang.jClass
 import kotlin.concurrent.Volatile
 
 /*
@@ -32,10 +33,10 @@ class NativeCursorCallback : Callback() {
 
     fun getTopHwnd(component: Component): Long? {
         try {
-            val peerField = Component::class.java.getDeclaredField("peer")
+            val peerField = Component::class.jClass.getDeclaredField("peer")
             peerField.isAccessible = true
             val peer = peerField.get(component) ?: return null
-            val hwndMethod = peer.javaClass.getMethod("getTopHwnd")
+            val hwndMethod = peer.jClass.getMethod("getTopHwnd")
             return hwndMethod.invoke(peer) as? Long
         } catch (e: Exception) {
             e.printStackTrace()
@@ -69,7 +70,7 @@ class NativeCursorCallback : Callback() {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3623(i: Int, i_3_: Int, i_4_: Int, i_5_: Int): Int {
         if (i != anInt7461) {
             val i_6_ = GetWindowLong(i, -4)

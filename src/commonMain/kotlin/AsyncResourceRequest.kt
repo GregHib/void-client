@@ -1,3 +1,5 @@
+import lang.Class
+import lang.classOf
 import kotlin.jvm.JvmStatic
 import kotlin.concurrent.Volatile
 
@@ -40,7 +42,7 @@ abstract class AsyncResourceRequest : HashLinkedListNode() {
                 var class148 = class357.aWidgetNodeLink_4396
                 while (class148 != null) {
                     val class318_sub1_sub3 = class148.aClass318_Sub1_Sub3_2040!!
-                    if (var_class.isAssignableFrom(class318_sub1_sub3.javaClass) && (class318_sub1_sub3.aShort8743.toInt() == i_0_) && (class318_sub1_sub3.aShort8750.toInt() == i_1_)) {
+                    if (var_class.isAssignableFrom(classOf(class318_sub1_sub3)) && (class318_sub1_sub3.aShort8743.toInt() == i_0_) && (class318_sub1_sub3.aShort8750.toInt() == i_1_)) {
                         StringValueNode.method3320(class318_sub1_sub3, false)
                         break
                     }

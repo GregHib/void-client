@@ -1,3 +1,5 @@
+import awt.COLOR_BLACK
+import awt.COLOR_WHITE
 import kotlin.jvm.JvmStatic
 import awt.Color
 import awt.Component
@@ -33,9 +35,9 @@ class SystemFontGlyphs internal constructor(var_renderer: Renderer, i: Int, bool
         val i_4_ = fontmetrics.getHeight()
         val image = ParticleSystemRenderer.aCanvas3869!!.createImage(i_0_, i_3_)
         val graphics = image.getGraphics()
-        graphics.setColor(Color.black)
+        graphics.setColor(COLOR_BLACK)
         graphics.fillRect(0, 0, i_0_, i_3_)
-        graphics.setColor(Color.white)
+        graphics.setColor(COLOR_WHITE)
         graphics.setFont(font)
         graphics.drawString(c.toString(), 0, i_2_)
         if (bool) graphics.drawString(c.toString(), 1, i_2_)

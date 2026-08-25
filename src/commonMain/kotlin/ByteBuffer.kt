@@ -759,7 +759,7 @@ open class ByteBuffer : LinkedListNode {
                     cs[i_2_++] = i_4_.toChar()
                 }
             }
-            return String(cs, 0, i_2_)
+            return cs.concatToString(0, 0 + i_2_)
         }
     }
 }

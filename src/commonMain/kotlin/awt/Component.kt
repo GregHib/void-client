@@ -11,6 +11,9 @@ expect abstract class Component : ImageObserver {
     fun getParent(): Container
     fun getX(): Int
     fun getY(): Int
+    fun isShowing(): Boolean
+    fun setIgnoreRepaint(ignore: Boolean)
+    fun setLocation(x: Int, y: Int)
     fun setBounds(x: Int, y: Int, width: Int, height: Int)
     fun getBounds(): Rectangle
     fun repaint()
@@ -22,10 +25,15 @@ expect abstract class Component : ImageObserver {
     fun getGraphics(): Graphics
     fun setCursor(cursor: Cursor?)
     fun getToolkit(): Toolkit
+    fun getInsets(): Insets
+    fun prepareImage(image: Image, observer: ImageObserver)
+    open fun update(graphics: Graphics?)
+    open fun paint(graphics: Graphics?)
     fun addKeyListener(keyListener: KeyListener)
     fun addFocusListener(focusListener: FocusListener)
     fun removeKeyListener(keyListener: KeyListener)
     fun removeFocusListener(focusListener: FocusListener)
+    fun getFontMetrics(font: Font): FontMetrics
     override fun imageUpdate(img: Image, infoflags: Int, x: Int, y: Int, width: Int, height: Int): Boolean
 }
 

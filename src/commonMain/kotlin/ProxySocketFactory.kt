@@ -1,6 +1,7 @@
 import io.BufferedReader
 import io.IOException
 import io.InputStreamReader
+import lang.Class
 import lang.getProperty
 import lang.setProperty
 import net.Socket
@@ -98,16 +99,16 @@ class ProxySocketFactory : SocketFactory() {
 //        if (proxy.type() == Proxy.Type.HTTP) {
 //            var string: String? = null
 //            try {
-//                val method = (AuthenticationInfo::class.java.getDeclaredMethod("getProxyAuth", (if (aClass6173 == null) String::class.java.also { aClass6173 = it } else aClass6173), Integer.TYPE))
+//                val method = (AuthenticationInfo::class.jClass.getDeclaredMethod("getProxyAuth", (if (aClass6173 == null) String::class.jClass.also { aClass6173 = it } else aClass6173), Integer.TYPE))
 //                method.setAccessible(true)
 //                val `object` = method.invoke(null, inetsocketaddress.getHostName(), inetsocketaddress.getPort())
 //                if (null != `object`) {
-//                    val method_14_ = (AuthenticationInfo::class.java.getDeclaredMethod("supportsPreemptiveAuthorization"))
+//                    val method_14_ = (AuthenticationInfo::class.jClass.getDeclaredMethod("supportsPreemptiveAuthorization"))
 //                    method_14_.setAccessible(true)
 //                    if ((method_14_.invoke(`object`, *arrayOfNulls<Any>(0)) as Boolean)) {
-//                        val method_15_ = AuthenticationInfo::class.java.getDeclaredMethod("getHeaderName")
+//                        val method_15_ = AuthenticationInfo::class.jClass.getDeclaredMethod("getHeaderName")
 //                        method_15_.setAccessible(true)
-//                        val method_16_ = (AuthenticationInfo::class.java.getDeclaredMethod("getHeaderValue", (if (aClass6174 == null) URL::class.java.also { aClass6174 = it } else aClass6174), (if (aClass6173 == null) (String::class.java.also { aClass6173 = it }) else aClass6173)))
+//                        val method_16_ = (AuthenticationInfo::class.jClass.getDeclaredMethod("getHeaderValue", (if (aClass6174 == null) URL::class.jClass.also { aClass6174 = it } else aClass6174), (if (aClass6173 == null) (String::class.java.also { aClass6173 = it }) else aClass6173)))
 //                        method_16_.setAccessible(true)
 //                        val string_17_ = (method_15_.invoke(`object`, *arrayOfNulls<Any>(0)) as String?)
 //                        val string_18_ = (method_16_.invoke(`object`, *(arrayOf<Any>(URL("https://" + (this.aString3476) + "/"), "https"))) as String?)

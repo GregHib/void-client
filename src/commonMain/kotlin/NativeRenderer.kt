@@ -10,6 +10,8 @@ import jagex3.graphics2.hw.NativeInterface
 import OpenGlRenderNode.Companion.method3297
 import direct.Direct3dModel
 import awt.Canvas
+import lang.Class
+import lang.jClass
 import util.Hashtable
 import kotlin.math.cos
 import kotlin.math.max
@@ -1890,9 +1892,8 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             anInt7987 = 1
             anInt7958 = anInt7987
         } else {
-            val dimension = aCanvas7910!!.getSize()
-            anInt7987 = dimension.height
-            anInt7958 = dimension.width
+            anInt7987 = aCanvas7910!!.getHeight()
+            anInt7958 = aCanvas7910!!.getWidth()
         }
         if (bool != false) aHashtable8014 = null
         anInt8033++
@@ -2922,7 +2923,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                         }
                     }
                 } else if (i_41_ == 2) {
-                    val renderTarget = ((ClickFeedbackTask.method1353(i_40_, i_37_, i, (if (aClass8211 != null) aClass8211 else (RenderTarget::class.java.also { aClass8211 = it })))) as RenderTarget?)
+                    val renderTarget = ((ClickFeedbackTask.method1353(i_40_, i_37_, i, (if (aClass8211 != null) aClass8211 else (RenderTarget::class.jClass.also { aClass8211 = it })))) as RenderTarget?)
                     if (renderTarget != null) {
                         if (i_36_ == 11) i_36_ = 10
                         if (renderTarget !is SequencedGroundDecor) MapSceneIconDef.method1591(i_37_, 43, i_41_, i_35_, renderTarget.method42(-107), i_36_, i, i_38_, i_40_)

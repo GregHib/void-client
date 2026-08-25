@@ -22,7 +22,7 @@ class SampledVoice private constructor(class348_sub19_sub1: PcmSampleData, i: In
     private val anInt8982: Int
     private var anInt8983: Int
 
-    @Synchronized
+//    @Synchronized
     fun method2888(i: Int, i_0_: Int, i_1_: Int) {
         var i = i
         if (i == 0) method2926(i_0_, i_1_)
@@ -52,13 +52,13 @@ class SampledVoice private constructor(class348_sub19_sub1: PcmSampleData, i: In
         return anInt8983 < 0 || anInt8983 >= ((this.aClass348_Sub19_6787 as PcmSampleData).aByteArray8984)!!.size shl 8
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2891(bool: Boolean) {
         anInt8979 = (anInt8979 xor (anInt8979 shr 31)) + (anInt8979 ushr 31)
         if (bool) anInt8979 = -anInt8979
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2892(): Int {
         if (anInt8977 < 0) return -1
         return anInt8977
@@ -132,13 +132,13 @@ class SampledVoice private constructor(class348_sub19_sub1: PcmSampleData, i: In
         return false
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2901(i: Int) {
         if (anInt8979 < 0) anInt8979 = -i
         else anInt8979 = i
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2902(i: Int) {
         var i = i
         if (i == 0) {
@@ -170,24 +170,24 @@ class SampledVoice private constructor(class348_sub19_sub1: PcmSampleData, i: In
         return 1
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2906(): Int {
         if (anInt8969 == -2147483648) return 0
         return anInt8969
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2909(i: Int) {
         method2926(method2906(), i)
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2914(): Int {
         if (anInt8979 < 0) return -anInt8979
         return anInt8979
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2915(i: Int) {
         method2926(i shl 6, method2892())
     }
@@ -196,12 +196,12 @@ class SampledVoice private constructor(class348_sub19_sub1: PcmSampleData, i: In
         return null
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2916(i: Int, i_124_: Int) {
         method2888(i, i_124_, method2892())
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2917(i: Int) {
         anInt8980 = i
     }
@@ -235,12 +235,12 @@ class SampledVoice private constructor(class348_sub19_sub1: PcmSampleData, i: In
         return method2925(0, 0, ((this.aClass348_Sub19_6787 as PcmSampleData).aByteArray8984!!), `is`, anInt8983, i, anInt8976, 0, i_126_, i_125_, this, anInt8979, i_127_)
     }
 
-    @Synchronized
+//    @Synchronized
     private fun method2923(i: Int) {
         method2926(i, method2892())
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2817(`is`: IntArray, i: Int, i_159_: Int) {
         var i_159_ = i_159_
         if (anInt8969 == 0 && anInt8972 == 0) method2819(i_159_)
@@ -370,7 +370,7 @@ class SampledVoice private constructor(class348_sub19_sub1: PcmSampleData, i: In
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2924(i: Int) {
         var i = i
         val i_167_ = (((this.aClass348_Sub19_6787 as PcmSampleData).aByteArray8984!!).size shl 8)
@@ -383,7 +383,7 @@ class SampledVoice private constructor(class348_sub19_sub1: PcmSampleData, i: In
         return null
     }
 
-    @Synchronized
+//    @Synchronized
     private fun method2926(i: Int, i_178_: Int) {
         anInt8969 = i
         anInt8977 = i_178_
@@ -391,7 +391,7 @@ class SampledVoice private constructor(class348_sub19_sub1: PcmSampleData, i: In
         method2918()
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2819(i: Int) {
         var i = i
         if (anInt8972 > 0) {

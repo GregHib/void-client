@@ -5,6 +5,7 @@ import FixedFunctionMaterialPass.Companion.method2146
 import WaterMaterialPass.Companion.method2148
 import WallEntity.Companion.method2485
 import SpriteBlitter.method881
+import lang.StringBuffer
 
 /* Class261 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

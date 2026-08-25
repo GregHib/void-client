@@ -46,6 +46,9 @@ actual class Frame actual constructor(title: String) : Container() {
         element.style.left = "${c.getX() + (c.getWidth() - getWidth()) / 2}px"
         element.style.top = "${c.getY() + (c.getHeight() - getHeight()) / 2}px"
     }
+
+    actual fun setLocation(x: Int, y: Int) {
+    }
 }
 
 actual val FRAME_NORMAL: Int = 0

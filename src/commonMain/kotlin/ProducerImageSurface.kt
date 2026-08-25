@@ -6,7 +6,6 @@ import awt.image.ColorModel
 import awt.image.DirectColorModel
 import awt.image.ImageConsumer
 import awt.image.ImageProducer
-import kotlin.jvm.Synchronized
 
 class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
     private var aCanvas9073: Canvas? = null
@@ -14,7 +13,7 @@ class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
     private var aColorModel9078: ColorModel? = null
     private var anImageConsumer9083: ImageConsumer? = null
 
-    @Synchronized
+//    @Synchronized
     private fun method3015(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
         anInt9068++
         if (anImageConsumer9083 != null) {
@@ -24,8 +23,8 @@ class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
         }
     }
 
-    @Synchronized
-    override fun removeConsumer(imageconsumer: ImageConsumer?) {
+//    @Synchronized
+    override fun removeConsumer(imageconsumer: ImageConsumer) {
         if (imageconsumer === anImageConsumer9083) anImageConsumer9083 = null
         anInt9081++
     }
@@ -35,7 +34,7 @@ class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
         anInt9076++
     }
 
-    @Synchronized
+//    @Synchronized
     private fun method3017(i: Byte) {
         anInt9071++
         val i_4_ = -25 % ((i - -41) / 55)
@@ -45,7 +44,7 @@ class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     override fun addConsumer(imageconsumer: ImageConsumer) {
         anInt9072++
         anImageConsumer9083 = imageconsumer
@@ -55,8 +54,8 @@ class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
         imageconsumer.setHints(14)
     }
 
-    @Synchronized
-    override fun isConsumer(imageconsumer: ImageConsumer?): Boolean {
+//    @Synchronized
+    override fun isConsumer(imageconsumer: ImageConsumer): Boolean {
         anInt9080++
         return anImageConsumer9083 === imageconsumer
     }
@@ -81,15 +80,15 @@ class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
         if (i_11_ <= -42) {
             anImage9075 = aCanvas9073!!.createImage(this)
             method3017((-117).toByte())
-            aCanvas9073!!.prepareImage(anImage9075, aCanvas9073)
+            aCanvas9073!!.prepareImage(anImage9075!!, aCanvas9073!!)
             method3017(86.toByte())
-            aCanvas9073!!.prepareImage(anImage9075, aCanvas9073)
+            aCanvas9073!!.prepareImage(anImage9075!!, aCanvas9073!!)
             method3017(51.toByte())
-            aCanvas9073!!.prepareImage(anImage9075, aCanvas9073)
+            aCanvas9073!!.prepareImage(anImage9075!!, aCanvas9073!!)
         }
     }
 
-    override fun requestTopDownLeftRightResend(imageconsumer: ImageConsumer?) {
+    override fun requestTopDownLeftRightResend(imageconsumer: ImageConsumer) {
         anInt9070++
     }
 

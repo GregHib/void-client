@@ -7,6 +7,7 @@ import com.ms.directX.IEnumModesCallback
 import com.ms.win32.User32
 import awt.Component
 import awt.Frame
+import lang.jClass
 
 /*
  * Class134
@@ -37,10 +38,10 @@ class DirectDrawDisplayMode : IEnumModesCallback {
 
     fun getHwnd(component: Component): Long? {
         try {
-            val peerField = Component::class.java.getDeclaredField("peer")
+            val peerField = Component::class.jClass.getDeclaredField("peer")
             peerField.isAccessible = true
             val peer = peerField.get(component) ?: return null
-            val hwndMethod = peer.javaClass.getMethod("getHwnd")
+            val hwndMethod = peer.jClass.getMethod("getHwnd")
             return hwndMethod.invoke(peer) as? Long
         } catch (e: Exception) {
             e.printStackTrace()

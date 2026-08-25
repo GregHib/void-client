@@ -3,7 +3,7 @@ package awt
 import kotlinx.browser.document
 import org.w3c.dom.HTMLCanvasElement
 
-actual open class Canvas actual constructor() {
+actual open class Canvas actual constructor() : Component() {
     val element: HTMLCanvasElement =
         document.createElement("canvas") as HTMLCanvasElement
 

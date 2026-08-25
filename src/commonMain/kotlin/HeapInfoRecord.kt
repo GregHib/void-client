@@ -3,6 +3,7 @@ import PlayerUpdateDecoder.method1142
 import ProjectileFactory.Companion.anIntArray2899
 import ProjectileFactory.Companion.anIntArrayArray2900
 import io.File
+import lang.Class
 
 /*
  * Class158
@@ -63,7 +64,7 @@ class HeapInfoRecord internal constructor(string: String?, screenAnchorAlignment
             anInt4939++
             if (bool_0_ != false) aCircleRasterizer_4938 = null
             try {
-//                val method = (HotSpotDiagnosticMXBean::class.java.getDeclaredMethod("dumpHeap", (if (aClass4949 != null) aClass4949 else (String::class.java.also { aClass4949 = it })), java.lang.Boolean.TYPE))
+//                val method = (HotSpotDiagnosticMXBean::class.jClass.getDeclaredMethod("dumpHeap", (if (aClass4949 != null) aClass4949 else (String::class.jClass.also { aClass4949 = it })), java.lang.Boolean.TYPE))
 //                method.invoke(Class168.anObject2256, file.getAbsolutePath(), bool)
             } catch (exception: Exception) {
                 println("HeapDump error:")

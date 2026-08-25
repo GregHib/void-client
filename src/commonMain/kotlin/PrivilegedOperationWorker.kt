@@ -3,8 +3,10 @@ import FileStoreLocator.method1466
 import GameClock.method599
 import awt.Component
 import awt.Container
+import awt.EventQueue
 import awt.Frame
 import awt.Point
+import awt.Toolkit
 import direct.DirectDrawDisplayMode
 import direct.sound.DirectSoundAudioChannel
 import kotlinx.coroutines.Dispatchers
@@ -12,16 +14,19 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import awt.datatransfer.Transferable
+import awt.getDefaultToolkit
 import io.DataInputStream
 import io.File
 import io.FileOutputStream
 import io.IOException
 import kotlinx.coroutines.Runnable
+import lang.Class
 import lang.InterruptedException
 import lang.Thread
 import lang.currentThread
 import lang.getProperty
-import java.lang.reflect.Method
+import lang.jClass
+import lang.reflect.Method
 import net.Socket
 import net.URL
 import net.getByName
@@ -383,18 +388,18 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
         }
         if (aString3800 == null) aString3800 = "~/"
         try {
-            this.anEventQueue3799 = Toolkit.getDefaultToolkit().getSystemEventQueue()
+            this.anEventQueue3799 = getDefaultToolkit().getSystemEventQueue()
         } catch (throwable: Throwable) {
             /* empty */
         }
         if (!this.aBoolean3794) {
             try {
-                aMethod3783 = Component::class.java.getDeclaredMethod("setFocusTraversalKeysEnabled", java.lang.Boolean.TYPE)
+//                aMethod3783 = Component::class.jClass.getDeclaredMethod("setFocusTraversalKeysEnabled", java.lang.Boolean.TYPE)
             } catch (exception: Exception) {
                 /* empty */
             }
             try {
-                aMethod3786 = (Container::class.java.getDeclaredMethod("setFocusCycleRoot", java.lang.Boolean.TYPE))
+//                aMethod3786 = (Container::class.jClass.getDeclaredMethod("setFocusCycleRoot", java.lang.Boolean.TYPE))
             } catch (exception: Exception) {
                 /* empty */
             }

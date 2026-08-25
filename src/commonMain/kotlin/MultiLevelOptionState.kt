@@ -62,7 +62,7 @@ class MultiLevelOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1849(c: Char, i: Int): Boolean {
             anInt6149++
-            if (Character.isISOControl(c)) return false
+            if (c.isISOControl()) return false
             if (Npc.method2446(c, 105.toByte())) return true
             val cs = MapSceneDefLoader.aCharArray2488!!
             var i_2_ = 0

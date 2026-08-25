@@ -16,7 +16,7 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
     @Throws(IOException::class)
     fun method1656(`is`: ByteArray?, i: Int, i_0_: Byte, i_1_: Int): Int {
         anInt3040++
-        val i_2_ = aRandomAccessFile3036!!.read(`is`, i, i_1_)
+        val i_2_ = aRandomAccessFile3036!!.read(`is`!!, i, i_1_)
         val i_3_ = 39 % ((75 - i_0_) / 39)
         if (i_2_ > 0) aLong3039 += i_2_.toLong()
         return i_2_
@@ -41,7 +41,7 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
             throw EOFException()
         }
         if (i < 108) aLong3039 = 124L
-        aRandomAccessFile3036!!.write(`is`, i_4_, i_5_)
+        aRandomAccessFile3036!!.write(`is`!!, i_4_, i_5_)
         aLong3039 += i_5_.toLong()
     }
 
@@ -84,7 +84,7 @@ class RandomAccessFileOnDisk internal constructor(file: File?, string: String?, 
         try {
             if (l == -1L) l = 9223372036854775807L
             if (l < file!!.length()) file.delete()
-            aRandomAccessFile3036 = RandomAccessFile(file, string)
+            aRandomAccessFile3036 = RandomAccessFile(file.getPath(), string!!)
             aLong3037 = l
             aLong3039 = 0L
             aFile3046 = file

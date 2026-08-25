@@ -194,8 +194,8 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
                         if (RsaVarbitHandler.aFrame4904 != null) container = RsaVarbitHandler.aFrame4904!!
                         else if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169!!
                         else container = JagGlToolkitFactory.anApplet1530!! as Container
-                        SocketFactory.anInt3473 = container.getSize().width
-                        NpcReference.anInt6857 = container.getSize().height
+                        SocketFactory.anInt3473 = container.getWidth()
+                        NpcReference.anInt6857 = container.getHeight()
                         if (RsaVarbitHandler.aFrame4904 === container) {
                             val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                             SocketFactory.anInt3473 -= insets.left - -insets.right

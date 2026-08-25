@@ -2,7 +2,7 @@ package jagtheora.ogg
 
 import jagtheora.misc.SimplePeer
 
-expect class OggPacket : SimplePeer {
+expect class OggPacket() : SimplePeer {
     val isTheora: Boolean
 
     override fun clear()

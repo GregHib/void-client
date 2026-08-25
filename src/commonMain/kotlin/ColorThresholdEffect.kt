@@ -1,3 +1,7 @@
+import lang.Class
+import lang.ClassNotFoundException
+import lang.forName
+import lang.jClass
 import kotlin.jvm.JvmStatic
 import kotlin.Array
 import kotlin.Boolean
@@ -138,15 +142,15 @@ class ColorThresholdEffect : AbstractProceduralTextureNode(1, false) {
         fun method3052(i: Int, string: String?): Class<*> {
             if (i != 11012) aFontMetaRef_9089 = null
             anInt9088++
-            if (string == "B") return Byte.TYPE
-            if (string == "I") return Integer.TYPE
-            if (string == "S") return Short.TYPE
-            if (string == "J") return Long.TYPE
-            if (string == "Z") return java.lang.Boolean.TYPE
-            if (string == "F") return Float.TYPE
-            if (string == "D") return Double.TYPE
-            if (string == "C") return Character.TYPE
-            return Class.forName(string)
+            if (string == "B") return Byte::class.jClass//Byte.TYPE
+            if (string == "I") return Int::class.jClass//Integer.TYPE
+            if (string == "S") return Short::class.jClass//Short.TYPE
+            if (string == "J") return Long::class.jClass//Long.TYPE
+            if (string == "Z") return Boolean::class.jClass//java.lang.Boolean.TYPE
+            if (string == "F") return Float::class.jClass//Float.TYPE
+            if (string == "D") return Double::class.jClass//Double.TYPE
+            if (string == "C") return Char::class.jClass//Character.TYPE
+            return forName(string)
         }
     }
 }

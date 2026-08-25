@@ -20,7 +20,7 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
         anInt8880++
     }
 
-    @Synchronized
+//    @Synchronized
     private fun method2828(i: Int): ShortMatrixNode? {
         anInt8872++
         return aNodeDeque_8861!!.method1995(i + 23080) as ShortMatrixNode?
@@ -31,14 +31,14 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
         return null
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2829(i: Int): Int {
         anInt8871++
         if (i >= -33) method2831(84.toByte())
         return anInt8888
     }
 
-    @Synchronized
+//    @Synchronized
     private fun method2831(i: Byte) {
         anInt8875++
         val i_1_ = -13 / ((-66 - i) / 49)
@@ -51,7 +51,7 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
         }
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2817(`is`: IntArray, i: Int, i_2_: Int) {
         var i = i
         anInt8863++
@@ -85,14 +85,14 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2833(i: Int, bool: Boolean) {
         if (i != 1) aDouble8869 = -2.8743710633758983
         aBoolean8886 = bool
         anInt8878++
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2835(class348_sub42_sub4: ShortMatrixNode, i: Int) {
         while ( /**/anInt8888 >= 100) {
             aNodeDeque_8861!!.method1997(8)
@@ -110,14 +110,14 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
         return null
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2836(i: Int) {
         aBoolean8884 = true
         if (i != -1) aNodeDeque_8861 = null
         anInt8865++
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2837(i: Int): Double {
         anInt8868++
         if (anInt8888 < 1) return -1.0
@@ -140,7 +140,7 @@ class PcmStreamBuffer internal constructor(private val anInt8879: Int) : AudioSt
         return class348_sub42_sub4
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2819(i: Int) {
         var i = i
         anInt8864++

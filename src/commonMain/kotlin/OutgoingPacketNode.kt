@@ -71,8 +71,7 @@ class OutgoingPacketNode : LinkedListNode() {
                     FacingDirectionNode.aRenderer6654!!.method3701(ParticleSystemRenderer.aCanvas3869)
                     method2959(-1)
                     if (!GrayscaleNoiseTexture.aBoolean5300) {
-                        val dimension = ParticleSystemRenderer.aCanvas3869!!.getSize()
-                        FacingDirectionNode.aRenderer6654!!.method3643(ParticleSystemRenderer.aCanvas3869, dimension.width, dimension.height)
+                        FacingDirectionNode.aRenderer6654!!.method3643(ParticleSystemRenderer.aCanvas3869, ParticleSystemRenderer.aCanvas3869!!.getWidth(), ParticleSystemRenderer.aCanvas3869!!.getHeight())
                     } else method1108((-99).toByte(), ParticleSystemRenderer.aCanvas3869!!)
                     FacingDirectionNode.aRenderer6654!!.method3677(ParticleSystemRenderer.aCanvas3869)
                 } else method3553(false, 100.toByte(), IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350))
@@ -86,9 +85,8 @@ class OutgoingPacketNode : LinkedListNode() {
         @JvmStatic
         fun method1108(i: Byte, canvas: Canvas) {
             anInt1850++
-            val dimension = canvas.getSize()
             if (i.toInt() != -99) method1096(57)
-            MinimapFlagRenderer.method828(38.toByte(), dimension.height, dimension.width)
+            MinimapFlagRenderer.method828(38.toByte(), canvas.getHeight(), canvas.getWidth())
             if (WhirlpoolHash.anInt7207 != 1) CameraRotationStub.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt5283, WhirlpoolHash.anInt1651)
             else CameraRotationStub.aRenderer326!!.method3643(canvas, WhirlpoolHash.anInt8854, WhirlpoolHash.anInt6008)
         }

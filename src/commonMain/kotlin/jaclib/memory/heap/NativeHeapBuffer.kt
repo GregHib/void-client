@@ -3,7 +3,6 @@ package jaclib.memory.heap
 import jaclib.memory.Buffer
 import jaclib.memory.Source
 import kotlin.jvm.JvmField
-import kotlin.jvm.Synchronized
 
 class NativeHeapBuffer(private val a: NativeHeap, private val d: Int, @JvmField val b: Int) : Buffer, Source {
     private var c = true
@@ -12,12 +11,12 @@ class NativeHeapBuffer(private val a: NativeHeap, private val d: Int, @JvmField 
         return this.a.getBufferAddress(this.d)
     }
 
-    @Synchronized
+//    @Synchronized
     private fun a(): Boolean {
         return this.a.a() && this.c
     }
 
-    @Synchronized
+//    @Synchronized
     private fun b() {
         if (this.a()) {
             this.a.deallocateBuffer(this.d)
@@ -25,7 +24,7 @@ class NativeHeapBuffer(private val a: NativeHeap, private val d: Int, @JvmField 
         this.c = false
     }
 
-    @Synchronized
+//    @Synchronized
     override fun a(arg0: ByteArray?, arg1: Int, arg2: Int, arg3: Int) {
         if ((arg1 < 0) or (arg0 == null) or !this.a() or (arg3 + arg1 > arg0!!.size) or (arg2 < 0) or (this.b < arg2 + arg3)) {
             throw RuntimeException()
@@ -33,7 +32,7 @@ class NativeHeapBuffer(private val a: NativeHeap, private val d: Int, @JvmField 
         this.a.put(this.d, arg0, arg1, arg2, arg3)
     }
 
-    @Synchronized
+//    @Synchronized
     @Throws(Throwable::class)
     fun finalize() {
 //        super.finalize()

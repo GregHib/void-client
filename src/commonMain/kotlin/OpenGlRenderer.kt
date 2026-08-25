@@ -508,7 +508,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return (intArrayOf(this.anInt7853, this.anInt7810, this.anInt7771, this.anInt7794))
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3737(i: Int, i_31_: Byte, i_32_: Int) {
         anInt7676++
         val class348_sub35 = IntKeyNode(i_32_)
@@ -626,9 +626,8 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private fun method3745(i: Byte) {
         anInt7680++
         if (aCanvas7575 != null) {
-            val dimension = aCanvas7575!!.getSize()
-            anInt7645 = dimension.width
-            anInt7523 = dimension.height
+            anInt7645 = aCanvas7575!!.getWidth()
+            anInt7523 = aCanvas7575!!.getHeight()
         } else {
             anInt7523 = 0
             anInt7645 = anInt7523
@@ -1093,7 +1092,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method3646(i: Int) {
         var i = i
         anInt7699++
@@ -1265,7 +1264,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3765(i: Byte, i_137_: Int) {
         anInt7566++
         val linkedListNode = LinkedListNode()
@@ -1447,7 +1446,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return null
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3769(l: Long, bool: Boolean) {
         try {
             if (bool != false) aNodeDeque_7751 = null
@@ -2015,7 +2014,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3780(i: Int, i_235_: Int, i_236_: Int) {
         anInt7616++
         val class348_sub35 = IntKeyNode(i)
@@ -2613,7 +2612,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         aBoolean7860 = true
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3800(i: Int, i_299_: Int) {
         anInt7570++
         val class348_sub35 = IntKeyNode(i_299_)
@@ -2920,7 +2919,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         return aBoolean7843 && (!method3666() || aBoolean7822)
     }
 
-    @Synchronized
+//    @Synchronized
     fun method3810(i: Int, i_478_: Int, i_479_: Int) {
         if (i_479_ < -57) {
             anInt7677++

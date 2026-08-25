@@ -5,8 +5,10 @@ import awt.Color
 import awt.Font
 import awt.FontMetrics
 import awt.Image
+import lang.Class
 import lang.IllegalAccessException
 import lang.NoSuchFieldException
+import lang.jClass
 
 /*
  * Class294
@@ -41,7 +43,7 @@ class LoadingBarRenderer : CursorController {
     @Throws(IllegalAccessException::class, NoSuchFieldException::class)
     private fun method2211(bool: Boolean) {
         anInt5055++
-        val var_class: Class<*> = JagGlToolkitFactory.anApplet1530!!.javaClass
+        val var_class: Class<*> = JagGlToolkitFactory.anApplet1530!!.jClass
         anImage5047 = method2213(var_class, 2, "bar") as Image?
         anImage5035 = method2213(var_class, 2, "background") as Image?
         anImage5032 = method2213(var_class, 2, "left") as Image?
@@ -55,7 +57,7 @@ class LoadingBarRenderer : CursorController {
         aFontMetrics5024 = method2213(var_class, 2, "bfm") as FontMetrics?
         aColor5034 = method2213(var_class, 2, "colourtext") as Color?
         val `object` = method2213(var_class, 2, "lb")
-        val var_class_0_: Class<*> = `object`!!.javaClass
+        val var_class_0_: Class<*> = `object`!!.jClass
         aBoolean5020 = method2216(`object`, bool, var_class_0_, "xMiddle")
         aBoolean5045 = method2216(`object`, bool, var_class_0_, "yMiddle")
         anInt5021 = method2212(`object`, var_class_0_, "xOffset", 95)

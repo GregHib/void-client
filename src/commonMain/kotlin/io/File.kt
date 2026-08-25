@@ -13,4 +13,6 @@ expect open class File(pathname: String) {
     open fun mkdirs(): Boolean
     open fun renameTo(dest: File): Boolean
     open fun listFiles(): Array<File>?
+    open fun mkdir(): Boolean
+    open fun getCanonicalPath(): String
 }

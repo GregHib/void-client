@@ -1,0 +1,3 @@
+package lang
+
+actual typealias ArrayIndexOutOfBoundsException = java.lang.ArrayIndexOutOfBoundsException

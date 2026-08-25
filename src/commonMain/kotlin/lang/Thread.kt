@@ -2,7 +2,7 @@ package lang
 
 import kotlinx.coroutines.Runnable
 
-expect class Thread(target: Runnable) {
+expect class Thread(target: Runnable): Runnable {
     fun getThreadGroup(): ThreadGroup
     fun getName(): String
     fun start()
@@ -10,6 +10,7 @@ expect class Thread(target: Runnable) {
     fun interrupt()
     fun isAlive(): Boolean
     fun setPriority(priority: Int)
+    override fun run()
 }
 
 expect fun currentThread(): Thread

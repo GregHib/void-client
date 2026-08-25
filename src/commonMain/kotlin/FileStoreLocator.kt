@@ -35,7 +35,7 @@ object FileStoreLocator {
                             if (i_3_ != 1 || string_8_.length <= 0 || File(string_8_).exists()) {
                                 File(strings[i_5_] + strings_2_[i_4_]).mkdir()
                                 if (string_1_ != null) File(strings[i_5_] + strings_2_[i_4_] + "/" + string_1_).mkdir()
-                                randomaccessfile = RandomAccessFile(file_7_, "rw")
+                                randomaccessfile = RandomAccessFile(file_7_.getPath(), "rw")
                                 val i_9_ = randomaccessfile.read()
                                 randomaccessfile.seek(0L)
                                 randomaccessfile.write(i_9_)

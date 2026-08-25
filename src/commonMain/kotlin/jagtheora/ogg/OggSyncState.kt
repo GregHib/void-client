@@ -2,7 +2,7 @@ package jagtheora.ogg
 
 import jagtheora.misc.SimplePeer
 
-expect class OggSyncState : SimplePeer {
+expect class OggSyncState() : SimplePeer {
     fun reset(): Boolean
 
     override fun clear()

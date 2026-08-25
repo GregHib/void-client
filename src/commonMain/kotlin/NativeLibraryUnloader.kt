@@ -1,5 +1,8 @@
 import kotlin.jvm.JvmStatic
 import io.File
+import lang.Class
+import lang.ClassLoader
+import lang.jClass
 import util.Enumeration
 import util.Hashtable
 import util.Vector
@@ -31,7 +34,7 @@ object NativeLibraryUnloader {
             hashtable.put(`object`, Player.aHashtable10565!!.get(`object`))
         }
         try {
-            val field = ClassLoader::class.java.getDeclaredField("nativeLibraries")
+            val field = ClassLoader::class.jClass.getDeclaredField("nativeLibraries")
             if (bool != true) return false
             field.setAccessible(true)
             try {
@@ -44,14 +47,14 @@ object NativeLibraryUnloader {
                         val vector = (field.get(var_class_1_!!.getClassLoader()) as Vector<*>)
                         for (i in vector.indices) {
                             try {
-                                val `object`: Any = vector.elementAt(i)
-                                val field_2_ = `object`.javaClass.getDeclaredField("name")
+                                val `object`: Any = vector.elementAt(i)!!
+                                val field_2_ = `object`.jClass.getDeclaredField("name")
                                 field_2_.setAccessible(true)
                                 try {
                                     val string_3_ = field_2_.get(`object`) as String?
                                     if (string_3_ != null && (string_3_.equals(file.getCanonicalPath(), ignoreCase = true))) {
-                                        val field_4_ = `object`.javaClass.getDeclaredField("handle")
-                                        val method_5_ = (`object`.javaClass.getDeclaredMethod("finalize"))
+                                        val field_4_ = `object`.jClass.getDeclaredField("handle")
+                                        val method_5_ = (`object`.jClass.getDeclaredMethod("finalize"))
                                         field_4_.setAccessible(true)
                                         method_5_.setAccessible(true)
                                         try {

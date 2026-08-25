@@ -1,3 +1,5 @@
+import lang.Class
+import lang.jClass
 import kotlin.jvm.JvmStatic
 /* Class171 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -55,7 +57,7 @@ class RefCountedHandle internal constructor(private val aHa_Sub2_2268: OpenGlRen
                         if (i_15_ >= ActorEntity.anInt6451) i_15_ = ActorEntity.anInt6451 - 1
                         for (i_16_ in i_14_..i_15_) {
                             var i_17_ = 1
-                            val class318_sub1_sub3: GroundDecorEntity? = (ClickFeedbackTask.Companion.method1353(i_3_, i_16_, i_10_, (if (aClass2276 != null) aClass2276 else (GroundDecorEntity::class.java.also { aClass2276 = it }))))
+                            val class318_sub1_sub3: GroundDecorEntity? = (ClickFeedbackTask.Companion.method1353(i_3_, i_16_, i_10_, (if (aClass2276 != null) aClass2276 else (GroundDecorEntity::class.jClass.also { aClass2276 = it }))))
                             if (class318_sub1_sub3 != null && (class318_sub1_sub3.aByte8745).toInt() != 0) {
                                 if ((class318_sub1_sub3.aByte8745).toInt() == 1) {
                                     var bool = i_16_ - 1 >= i_14_

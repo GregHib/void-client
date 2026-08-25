@@ -2,6 +2,7 @@ import kotlin.jvm.JvmStatic
 import ShadowQualityOptionState.Companion.method1791
 import ChatCommandProcessor.method3038
 import SceneObjectSpawner.Companion.method773
+import lang.Class
 
 /*
  * Class133
@@ -237,12 +238,12 @@ object PlayerUpdateDecoder {
     }
 
     @JvmStatic
-    @Synchronized
+//    @Synchronized
     fun method1142(i: Byte) {
         anInt1913++
         if (HeapDiagnosticsHolder.anObject2256 == null) {
             try {
-//                Class168.anObject2256 = ManagementFactory.newPlatformMXBeanProxy<HotSpotDiagnosticMXBean?>(ManagementFactory.getPlatformMBeanServer(), "com.sun.management:type=HotSpotDiagnostic", HotSpotDiagnosticMXBean::class.java)
+//                Class168.anObject2256 = ManagementFactory.newPlatformMXBeanProxy<HotSpotDiagnosticMXBean?>(ManagementFactory.getPlatformMBeanServer(), "com.sun.management:type=HotSpotDiagnostic", HotSpotDiagnosticMXBean::class.jClass)
             } catch (exception: Exception) {
                 println("HeapDump setup error:")
                 exception.printStackTrace()

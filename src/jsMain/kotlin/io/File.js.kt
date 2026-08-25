@@ -48,4 +48,7 @@ actual open class File actual constructor(pathname: String) {
     actual constructor(parent: String, child: String?) : this("$parent\\$child") {
         TODO("Not yet implemented")
     }
+
+    actual open fun mkdir(): Boolean {
+    }
 }

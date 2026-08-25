@@ -7,7 +7,7 @@ import jagdx.ue.a
 import awt.Canvas
 import awt.Rectangle
 import lang.yield
-import kotlin.jvm.Synchronized
+//import kotlin.jvm.Synchronized
 
 /*
  * Class378
@@ -520,7 +520,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         return D3DTexture2D(this, textureFormatInfo!!, i_50_, i, bool, `is`, i_49_, i_51_)
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method3646(i: Int) {
         this.aHb9788!!.b((-82).toByte())
         super.method3646(i)

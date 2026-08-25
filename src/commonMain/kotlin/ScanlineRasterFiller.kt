@@ -6,6 +6,8 @@ import MidiSequencePlayer.Companion.method2878
 import InvertTextureNode.Companion.method3135
 import GameClock.method599
 import OpenGlRenderNode.Companion.method3297
+import lang.Class
+import lang.jClass
 
 /* Class184 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -74,7 +76,7 @@ class ScanlineRasterFiller {
                 var renderTarget: RenderTarget? = null
                 if (class348_sub27.anInt6904 == 0) renderTarget = (method3297((class348_sub27.anInt6899), (class348_sub27.anInt6905), (class348_sub27.anInt6896)) as RenderTarget?)
                 if (class348_sub27.anInt6904 == 1) renderTarget = ((method3135(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)) as RenderTarget?)
-                if (class348_sub27.anInt6904 == 2) renderTarget = ((method1353(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896, (if (aClass2478 != null) aClass2478 else (RenderTarget::class.java.also { aClass2478 = it })))) as RenderTarget?)
+                if (class348_sub27.anInt6904 == 2) renderTarget = ((method1353(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896, (if (aClass2478 != null) aClass2478 else (RenderTarget::class.jClass.also { aClass2478 = it })))) as RenderTarget?)
                 if (class348_sub27.anInt6904 == 3) renderTarget = ((method2878(class348_sub27.anInt6899, class348_sub27.anInt6905, class348_sub27.anInt6896)) as RenderTarget?)
                 if (renderTarget == null) {
                     class348_sub27.anInt6892 = 0

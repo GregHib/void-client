@@ -24,6 +24,7 @@ import jagex3.jagmisc.jagmisc.availablePhysicalMemory
 import io.File
 import io.FileNotFoundException
 import io.FileOutputStream
+import lang.SecurityException
 import lang.gc
 import util.random
 
@@ -107,7 +108,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                 }
                 if (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271 || AsyncTaskHandle.anInt2581 >= 2) {
                     if (string.equals("errortest", ignoreCase = true)) throw RuntimeException()
-                    if (string == "nativememerror") throw OutOfMemoryError("native(MPR")
+                    if (string == "nativememerror") throw Exception("OOM MPR")//OutOfMemoryError("native(MPR")
                     try {
                         if (string.equals("printfps", ignoreCase = true)) {
                             method94(("FPS: " + SimpleToggleOptionState.anInt5891), -58)
@@ -648,7 +649,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 Texture2DProvider.aFileOutputStream6323 = null
                             }
                             try {
-                                Texture2DProvider.aFileOutputStream6323 = FileOutputStream(file)
+                                Texture2DProvider.aFileOutputStream6323 = FileOutputStream(file.getPath())
                             } catch (filenotfoundexception: FileNotFoundException) {
                                 method94(("Could not create " + file.getName()), 81)
                             } catch (securityexception: SecurityException) {

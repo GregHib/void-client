@@ -2,7 +2,7 @@ package jagtheora.theora
 
 import jagtheora.misc.SimplePeer
 
-expect class TheoraInfo : SimplePeer {
+expect class TheoraInfo() : SimplePeer {
     val colourSpace: Int
 
     val versionSubMinor: Byte

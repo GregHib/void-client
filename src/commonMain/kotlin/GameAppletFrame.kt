@@ -10,13 +10,17 @@ import awt.event.FocusEvent
 import awt.event.FocusListener
 import awt.event.WindowEvent
 import awt.event.WindowListener
+import awt.h
+import awt.w
 import io.File
 import io.IOException
 import kotlinx.coroutines.Runnable
 import net.URL
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
-import kotlin.jvm.Synchronized
+import lang.Class
+import lang.jClass
+import lang.load
 import kotlin.time.ExperimentalTime
 import kotlin.time.Instant
 
@@ -96,7 +100,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         if (i != -1) aBoolean27 = true
     }
 
-    override fun update(graphics: Graphics) {
+    override fun update(graphics: Graphics?) {
         anInt34++
         paint(graphics)
     }
@@ -117,7 +121,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         anInt12++
     }
 
-    @Synchronized
+//    @Synchronized
     open fun method87(i: Byte) {
         if (i > -11) paint(null)
         if (ParticleSystemRenderer.aCanvas3869 != null) {
@@ -133,9 +137,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 else container = JagGlToolkitFactory.anApplet1530!!.getPulseComponent() as Container
             } else container = RsaVarbitHandler.aFrame4904 as Container
         } else container = SkeletalAnimFrameLoader.aFrame476 as Container
-        container.setLayout(null)
+//        container.setLayout(null)
         ParticleSystemRenderer.aCanvas3869 = DelegatingRenderCanvas(this)
-        container.add(ParticleSystemRenderer.aCanvas3869)
+        container.add(ParticleSystemRenderer.aCanvas3869!!)
         ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
         ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
         if (container === RsaVarbitHandler.aFrame4904) {
@@ -162,7 +166,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             SpriteRenderable.aBoolean4726 = true
             if (GlCubemapLightPass.aBoolean7320 && -BoundingBoxNode.aLong6748 + GameClock.method599(-57) > 1000) {
                 val rectangle = graphics?.getClipBounds()
-                if (rectangle == null || (rectangle.width >= SocketFactory.anInt3473 && (NpcReference.anInt6857 <= rectangle.height))) ProjectileSpawner.aBoolean2674 = true
+                if (rectangle == null || (rectangle.w >= SocketFactory.anInt3473 && (NpcReference.anInt6857 <= rectangle.h))) ProjectileSpawner.aBoolean2674 = true
             }
         }
     }
@@ -332,7 +336,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 val method = PrivilegedOperationWorker.aMethod3786
                 if (method != null) {
                     try {
-                        method.invoke(applet, java.lang.Boolean.TRUE)
+                        method.invoke(applet, true)// java.lang.Boolean.TRUE
                     } catch (throwable: Throwable) {
                         /* empty */
                     }
@@ -604,9 +608,9 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 val file = CollisionMapAccessor.aHashtable3548!!.get(string) as? File?
                 if (file != null) {
                     try {
-                        System.load(file.getPath())
+                        load(file.getPath())
                         if (aClass6640 == null) {
-                            aClass6640 = RegionMapDecoder::class.java
+                            aClass6640 = RegionMapDecoder::class.jClass
                         }
                         Player.aHashtable10565!![string] = aClass6640
                         return true

@@ -49,7 +49,7 @@ object GameClock {
     }
 
     @JvmStatic
-    @Synchronized
+//    @Synchronized
     fun method599(i: Int): Long {
         if (i > -52) return -121L
         anInt1113++

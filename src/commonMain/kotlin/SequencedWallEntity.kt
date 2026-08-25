@@ -192,7 +192,7 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfi
                     if (LocTypeDefLoader.anIntArray2509!![1] > 1) {
                         val `is` = ByteArray(LocTypeDefLoader.anIntArray2509!![1])
                         glGetInfoLogARB(l, LocTypeDefLoader.anIntArray2509!![1], LocTypeDefLoader.anIntArray2509, 0, `is`, 0)
-                        println(String(`is`))
+                        println(`is`.concatToString())
                     }
                     if (LocTypeDefLoader.anIntArray2509!![0] == 0) {
                         var i_18_ = 0

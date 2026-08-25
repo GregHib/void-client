@@ -7,12 +7,12 @@ class AudioMixerScheduler : AudioStreamNode() {
     private var anInt8967 = -1
     private var anInt8968 = 0
 
-    @Synchronized
+//    @Synchronized
     fun method2880(class348_sub16: AudioStreamNode) {
         class348_sub16.method2715(94.toByte())
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2819(i: Int) {
         var i = i
         do {
@@ -65,7 +65,7 @@ class AudioMixerScheduler : AudioStreamNode() {
         else anInt8967 = (class348 as AbstractEffectNode).anInt6912
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2883(class348_sub16: AudioStreamNode) {
         aNodeDeque_8965.method2001(class348_sub16, -109)
     }
@@ -98,7 +98,7 @@ class AudioMixerScheduler : AudioStreamNode() {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2887(): Int {
         return aNodeDeque_8965.method1998(0)
     }
@@ -111,7 +111,7 @@ class AudioMixerScheduler : AudioStreamNode() {
         return 0
     }
 
-    @Synchronized
+//    @Synchronized
     override fun method2817(`is`: IntArray, i: Int, i_3_: Int) {
         var i = i
         var i_3_ = i_3_

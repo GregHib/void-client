@@ -1,7 +1,9 @@
 import awt.DisplayMode
 import awt.Frame
-import java.awt.GraphicsDevice
-import java.awt.GraphicsEnvironment
+import awt.GraphicsDevice
+import awt.GraphicsEnvironment
+import awt.localGraphicsEnvironment
+import lang.jClass
 import kotlin.math.abs
 
 /*
@@ -58,7 +60,7 @@ class FullscreenDisplayController {
     }
 
     init {
-        val graphicsenvironment = GraphicsEnvironment.getLocalGraphicsEnvironment()
+        val graphicsenvironment = localGraphicsEnvironment
         aGraphicsDevice157 = graphicsenvironment.getDefaultScreenDevice()
         if (!aGraphicsDevice157!!.isFullScreenSupported()) {
             val graphicsdevices = graphicsenvironment.getScreenDevices()
@@ -80,11 +82,11 @@ class FullscreenDisplayController {
         var bool = false
         if (i <= 47) method212(null, (-25).toByte())
         try {
-            val field = GraphicsDevice::class.java.getDeclaredField("valid")
+            val field = GraphicsDevice::class.jClass.getDeclaredField("valid")
             field.setAccessible(true)
             val bool_7_ = (field.get(aGraphicsDevice157) as Boolean)
             if (bool_7_) {
-                field.set(aGraphicsDevice157, java.lang.Boolean.FALSE)
+                field.set(aGraphicsDevice157, false) // java.lang.Boolean.FALSE
                 bool = true
             }
         } catch (throwable: Throwable) {
@@ -98,8 +100,8 @@ class FullscreenDisplayController {
         } catch (`object`: Throwable) {
             if (bool) {
                 try {
-                    val field = GraphicsDevice::class.java.getDeclaredField("valid")
-                    field.set(aGraphicsDevice157, java.lang.Boolean.TRUE)
+                    val field = GraphicsDevice::class.jClass.getDeclaredField("valid")
+                    field.set(aGraphicsDevice157, true) // java.lang.Boolean.TRUE
                 } catch (e: Exception) {
                     if (Loader.trace) {
                         e.printStackTrace()
@@ -109,8 +111,8 @@ class FullscreenDisplayController {
         }
         if (bool) {
             try {
-                val field = GraphicsDevice::class.java.getDeclaredField("valid")
-                field.set(aGraphicsDevice157, java.lang.Boolean.TRUE)
+                val field = GraphicsDevice::class.jClass.getDeclaredField("valid")
+                field.set(aGraphicsDevice157, true) // java.lang.Boolean.TRUE
             } catch (throwable: Throwable) {
                 if (Loader.trace) {
                     throwable.printStackTrace()

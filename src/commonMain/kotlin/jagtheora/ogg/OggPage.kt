@@ -2,7 +2,7 @@ package jagtheora.ogg
 
 import jagtheora.misc.SimplePeer
 
-expect class OggPage : SimplePeer {
+expect class OggPage() : SimplePeer {
     val version: Int
 
     val isContinued: Boolean

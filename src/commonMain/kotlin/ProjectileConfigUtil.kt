@@ -3,6 +3,7 @@ import BrightnessOptionState.Companion.method1745
 import GlVertexBufferArb.Companion.method2127
 import WaterMaterialPass.Companion.method2148
 import NoiseTextureGenerator.Companion.method544
+import lang.StringBuffer
 
 /* Class27 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

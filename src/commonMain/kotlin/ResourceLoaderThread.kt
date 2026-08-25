@@ -34,7 +34,7 @@ class ResourceLoaderThread : Runnable {
         return aConnectionStateType_3916!!.anInt1025
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2316(connectionStateType: ConnectionStateType?, string: String?, i: Int, l: Long, bool: Boolean) {
         try {
             if (bool != false) method2318(9)
@@ -110,8 +110,8 @@ class ResourceLoaderThread : Runnable {
                     container = JagGlToolkitFactory.anApplet1530!!.getPulseComponent() as? Container
                 }
                 else container = EdgeDetectTextureNode.anGameApplet_Frame_9169
-                container!!.getSize()
-                container.getSize()
+//                container!!.getSize()
+//                container.getSize()
                 if (RsaVarbitHandler.aFrame4904 === container) RsaVarbitHandler.aFrame4904!!.getInsets()
                 aBoolean3908 = false
                 if (FacingDirectionNode.aRenderer6654 != null && (anCursorController_3907 !is LoadingBarRenderer) && (aConnectionStateType_3916!!.method525(-112) < ConnectionStateType.aConnectionStateType_1041!!.method525(-127))) method3556(false)
@@ -140,7 +140,7 @@ class ResourceLoaderThread : Runnable {
         return anInt3915
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2321(i: Int, cursorController: CursorController) {
         anInt3911++
         if (i != 10559) aWidgetComponent_3913 = null
@@ -149,7 +149,7 @@ class ResourceLoaderThread : Runnable {
         aLong3914 = method599(-67)
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2322(i: Int): Boolean {
         anInt3900++
         if (i != 0) return false
@@ -174,7 +174,7 @@ class ResourceLoaderThread : Runnable {
         return anInt3920
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2326(i: Int) {
         if (i <= 39) method2315(28.toByte())
         anInt3905++

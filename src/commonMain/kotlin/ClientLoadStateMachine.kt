@@ -22,6 +22,7 @@ import jagex3.jagmisc.jagmisc.init
 import NativeRenderNode.Companion.method3290
 import kotlinx.coroutines.runBlocking
 import lang.InterruptedException
+import lang.StringBuffer
 import lang.gc
 
 /*

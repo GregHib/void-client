@@ -142,7 +142,7 @@ class GlEnvMappedWaterPass internal constructor(glRenderDevice: GlRenderDevice, 
                 else cs[i_9_] = (i_11_ + 87).toChar()
                 i_9_--
             }
-            return String(cs)
+            return cs.concatToString()
         }
 
         @JvmStatic

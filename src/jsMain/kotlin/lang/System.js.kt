@@ -37,3 +37,6 @@ actual fun runFinalization() {
 actual fun exit(status: Int): Nothing {
     TODO("Not yet implemented")
 }
+
+actual fun load(path: String) {
+}

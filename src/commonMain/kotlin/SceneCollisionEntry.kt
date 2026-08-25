@@ -1,3 +1,4 @@
+import lang.StringBuffer
 import kotlin.jvm.JvmStatic
 
 /* Class357 - Decompiled by JODE

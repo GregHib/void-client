@@ -107,7 +107,7 @@ class SceneEntityModel : SceneLinkedListNode() {
                 if (i_20_ != 3) {
                     if (i_20_ >= 100 || i_20_ == 21 || i_20_ == 38 || i_20_ == 39) class348_sub42_sub19.anIntArray9694!![i_19_] = class348_sub49.readUnsignedByte(255)
                     else class348_sub42_sub19.anIntArray9694!![i_19_] = class348_sub49.readInt((-126).toByte())
-                } else class348_sub42_sub19.aStringArray9692!![i_19_] = class348_sub49.readString((-98).toByte()).intern()
+                } else class348_sub42_sub19.aStringArray9692!![i_19_] = class348_sub49.readString((-98).toByte())//.intern()
                 class348_sub42_sub19.anIntArray9696!![i_19_++] = i_20_
             }
             return class348_sub42_sub19

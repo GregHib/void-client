@@ -2,7 +2,7 @@ package awt.image
 
 expect interface ImageConsumer {
     fun setDimensions(width: Int, height: Int)
-    fun setColorModel(model: ColorModel)
+    fun setColorModel(model: ColorModel?)
     fun setHints(hintflags: Int)
     fun setPixels(
         x: Int, y: Int, w: Int, h: Int,
@@ -10,9 +10,10 @@ expect interface ImageConsumer {
     )
     fun setPixels(
         x: Int, y: Int, w: Int, h: Int,
-        model: ColorModel, pixels: IntArray, off: Int, scansize: Int,
+        model: ColorModel?, pixels: IntArray?, off: Int, scansize: Int,
     )
     fun imageComplete(status: Int)
+    fun setProperties(something: Any?)
 }
 
 // ImageConsumer's static flags.

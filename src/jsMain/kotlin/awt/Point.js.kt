@@ -5,6 +5,8 @@ actual class Point actual constructor(var x: Int, var y: Int) {
     actual fun move(x: Int, y: Int) { this.x = x; this.y = y }
     actual fun setLocation(x: Int, y: Int) = move(x, y)
     actual fun getLocation(): Point = Point(x, y)
+
+    actual constructor() : this(0, 0)
 }
 
 actual var Point.px: Int

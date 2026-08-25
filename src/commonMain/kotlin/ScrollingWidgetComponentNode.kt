@@ -1,5 +1,6 @@
 import kotlin.jvm.JvmStatic
 import RSFont.Companion.method2570
+import lang.Class
 
 class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?, class288_sub1: ParticleEmitterDefExt?) : WidgetComponentNode(js5Archive, class288_sub1) {
     private var anInt8383 = 0

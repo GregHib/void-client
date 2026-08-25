@@ -42,7 +42,7 @@ open class SoundChannelMixer {
         anInt3606++
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2084(i: Int) {
         anInt3595++
         if (!aBoolean3610) {
@@ -200,7 +200,7 @@ open class SoundChannelMixer {
         aLong3602 = method599(-102)
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2087(i: Int) {
         aBoolean3623 = true
         anInt3599++
@@ -213,7 +213,7 @@ open class SoundChannelMixer {
         }
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2088(bool: Boolean, class348_sub16: AudioStreamNode?) {
         aClass348_Sub16_3604 = class348_sub16
         anInt3600++
@@ -231,7 +231,7 @@ open class SoundChannelMixer {
         anInt3598++
     }
 
-    @Synchronized
+//    @Synchronized
     fun method2093(bool: Boolean) {
         anInt3609++
         if (ParticleDefLoader.aBackgroundWorkerThread_2462 != null) {

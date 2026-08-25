@@ -44,12 +44,12 @@ object GameDisplayManager {
             } else if (RsaVarbitHandler.aFrame4904 == null) {
                 if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
                 else container = JagGlToolkitFactory.anApplet1530 as? Container
-                SocketFactory.anInt3473 = container!!.getSize().width
-                NpcReference.anInt6857 = container.getSize().height
+                SocketFactory.anInt3473 = container!!.getWidth()
+                NpcReference.anInt6857 = container.getHeight()
             } else {
                 val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
-                SocketFactory.anInt3473 = RsaVarbitHandler.aFrame4904!!.getSize().width + (-insets.left + -insets.right)
-                NpcReference.anInt6857 = RsaVarbitHandler.aFrame4904!!.getSize().height - (insets.top - -insets.bottom)
+                SocketFactory.anInt3473 = RsaVarbitHandler.aFrame4904!!.getWidth() + (-insets.left + -insets.right)
+                NpcReference.anInt6857 = RsaVarbitHandler.aFrame4904!!.getHeight() - (insets.top - -insets.bottom)
                 container = RsaVarbitHandler.aFrame4904
             }
             if (i_2_ == 1) {

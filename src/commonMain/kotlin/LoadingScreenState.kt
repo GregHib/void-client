@@ -1,3 +1,4 @@
+import awt.COLOR_BLACK
 import kotlin.jvm.JvmStatic
 import awt.Color
 import awt.Font
@@ -60,7 +61,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                     try {
                         if (LoadingBarRenderer.anImage4249 == null) LoadingBarRenderer.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432))
                         val graphics_3_ = LoadingBarRenderer.anImage4249!!.getGraphics()
-                        graphics_3_.setColor(Color.black)
+                        graphics_3_.setColor(COLOR_BLACK)
                         graphics_3_.fillRect(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
                         val i_4_ = -152 + LocTypeDefinition.anInt4017 / 2
                         val i_5_ = -18 + GameDisplayManager.anInt10432 / 2
@@ -68,7 +69,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         graphics_3_.drawRect(i_4_, i_5_, 303, 33)
                         graphics_3_.setColor(color)
                         graphics_3_.fillRect(2 + i_4_, i_5_ - -2, i * 3, 30)
-                        graphics_3_.setColor(Color.black)
+                        graphics_3_.setColor(COLOR_BLACK)
                         graphics_3_.drawRect(i_4_ + 1, 1 + i_5_, 301, 31)
                         graphics_3_.fillRect(3 * i + (i_4_ - -2), 2 + i_5_, 300 - i * 3, 30)
                         graphics_3_.setFont(LoadingBarRenderer.aFont4329)
@@ -81,7 +82,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         }
                         graphics.drawImage(LoadingBarRenderer.anImage4249, 0, 0, null)
                     } catch (exception: Exception) {
-                        graphics.setColor(Color.black)
+                        graphics.setColor(COLOR_BLACK)
                         graphics.fillRect(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
                         val i_6_ = -152 + LocTypeDefinition.anInt4017 / 2
                         val i_7_ = GameDisplayManager.anInt10432 / 2 + -18
@@ -89,7 +90,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         graphics.drawRect(i_6_, i_7_, 303, 33)
                         graphics.setColor(color)
                         graphics.fillRect(2 + i_6_, 2 + i_7_, i * 3, 30)
-                        graphics.setColor(Color.black)
+                        graphics.setColor(COLOR_BLACK)
                         graphics.drawRect(1 + i_6_, 1 + i_7_, 301, 31)
                         graphics.fillRect(3 * i + 2 + i_6_, 2 + i_7_, -(i * 3) + 300, 30)
                         graphics.setFont(LoadingBarRenderer.aFont4329)

@@ -100,7 +100,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
                 } else i_6_ = 65533
                 cs[i_2_++] = i_6_.toChar()
             }
-            return String(cs, 0, i_2_)
+            return cs.concatToString(0, 0 + i_2_)
         }
 
         @JvmStatic
