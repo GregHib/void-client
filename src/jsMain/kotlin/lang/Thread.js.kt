@@ -15,6 +15,14 @@ actual class Thread actual constructor(target: Runnable) {
     actual fun isAlive(): Boolean {
         TODO("Not yet implemented")
     }
+
+    actual fun getThreadGroup(): ThreadGroup {
+        TODO("Not yet implemented")
+    }
+
+    actual fun getName(): String {
+        TODO("Not yet implemented")
+    }
 }
 
 actual fun currentThread(): Thread {

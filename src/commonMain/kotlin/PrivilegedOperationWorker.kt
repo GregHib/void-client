@@ -2,6 +2,7 @@ import FileStoreLocator.method1464
 import FileStoreLocator.method1466
 import GameClock.method599
 import awt.Component
+import awt.Container
 import awt.Frame
 import awt.Point
 import direct.DirectDrawDisplayMode
@@ -171,7 +172,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                             else (anObject3791 as RobotMouseController).method1281(component, (bool))
                         } else if (!(this.aBoolean3794) && (i == 17)) {
                             val objects = ((linkedQueueNode.anObject1996) as Array<Any?>?)
-                            (anObject3791 as RobotMouseController).method1282((objects!![0] as java.awt.Component?)!!, objects[1] as IntArray?, (linkedQueueNode.anInt2000), (linkedQueueNode.anInt1999), objects[2] as Point?)
+                            (anObject3791 as RobotMouseController).method1282((objects!![0] as awt.Component?)!!, objects[1] as IntArray?, (linkedQueueNode.anInt2000), (linkedQueueNode.anInt1999), objects[2] as Point?)
                         } else if (i == 16) {
                             try {
                                 if (!aString3803.startsWith("win")) throw Exception()
