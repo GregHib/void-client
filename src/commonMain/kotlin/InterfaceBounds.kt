@@ -8,7 +8,7 @@ import ModelDataCache.method297
 import CompassSmoother.Companion.method2017
 import WorldMapIconLabel.Companion.method3573
 import MapSceneCache.Companion.method821
-import java.awt.Component
+import awt.Component
 import java.lang.reflect.Constructor
 import kotlin.math.sin
 

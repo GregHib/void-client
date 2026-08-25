@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import GlEnvMappedWaterPass.Companion.method3551
-import java.awt.Color
+import awt.Color
 import java.awt.Container
 import awt.Rectangle
 

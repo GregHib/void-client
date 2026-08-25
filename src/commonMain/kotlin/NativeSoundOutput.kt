@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.awt.Component
+import awt.Component
 
 class NativeSoundOutput internal constructor(privilegedOperationWorker: PrivilegedOperationWorker, private val anInt6181: Int) : SoundChannelMixer() {
     override fun method2083() {

@@ -1,9 +1,9 @@
 import kotlin.jvm.JvmStatic
 import jagex3.jagmisc.jagmisc.quit
-import java.awt.Color
+import awt.Color
 import java.awt.Container
 import java.awt.Frame
-import java.awt.Graphics
+import awt.Graphics
 import java.awt.Panel
 import java.awt.event.FocusEvent
 import java.awt.event.FocusListener

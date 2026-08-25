@@ -1,4 +1,4 @@
-import java.awt.Component
+import awt.Component
 import java.awt.event.*
 
 class MouseWheelInputTracker(component: Component?, bool: Boolean) : InputTracker(), MouseListener, MouseMotionListener, MouseWheelListener {

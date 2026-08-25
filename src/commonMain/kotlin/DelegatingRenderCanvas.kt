@@ -7,8 +7,8 @@ import CubemapTextureImplSource.Companion.method2271
 import WorldMapAreaLabel.Companion.method3570
 import NativeRenderer.Companion.method3936
 import awt.Canvas
-import java.awt.Component
-import java.awt.Graphics
+import awt.Component
+import awt.Graphics
 
 /*
  * Canvas_Sub1

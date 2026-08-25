@@ -2,7 +2,7 @@ import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 import RSFont.Companion.method2570
 import ModelVertexColorBuffer.Companion.method2743
-import java.awt.Color
+import awt.Color
 
 class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedListNode() {
     companion object {

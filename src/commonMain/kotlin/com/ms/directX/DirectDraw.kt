@@ -1,6 +1,6 @@
 package com.ms.directX
 
-import java.awt.Component
+import awt.Component
 import java.awt.Frame
 
 class DirectDraw {

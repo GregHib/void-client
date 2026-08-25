@@ -1,4 +1,4 @@
-import java.awt.Component
+import awt.Component
 
 /*
  * Interface20

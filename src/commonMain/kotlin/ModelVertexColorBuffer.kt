@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 import jaclib.memory.Stream
 import jaclib.memory.Stream.Companion.c
 import jaclib.memory.heap.NativeHeapBuffer
-import java.awt.Component
+import awt.Component
 
 class ModelVertexColorBuffer internal constructor(private val aS_Sub3_6566: NativeTerrainTile, var anInt6567: Int, i_43_: Int, var anInt6571: Int, var anInt6575: Int, var anInt6569: Int) : LinkedListNode() {
     private var aNativeHeapBuffer6572: NativeHeapBuffer? = null

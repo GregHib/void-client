@@ -1,4 +1,4 @@
-import java.awt.Component
+import awt.Component
 import java.net.URL
 
 interface GameApplet {

@@ -1,8 +1,8 @@
 import kotlin.jvm.JvmStatic
 import ActorEntity.Companion.method163
 import FontMetaRef.Companion.aLruByteCache_4327
-import java.awt.Color
-import java.awt.Font
+import awt.Color
+import awt.Font
 import java.awt.FontMetrics
 import java.awt.Image
 

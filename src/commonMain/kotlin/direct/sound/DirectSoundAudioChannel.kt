@@ -7,7 +7,7 @@ import com.ms.directX.DSCursors
 import com.ms.directX.DirectSound
 import com.ms.directX.DirectSoundBuffer
 import com.ms.directX.WaveFormatEx
-import java.awt.Component
+import awt.Component
 
 /*
  * Class1

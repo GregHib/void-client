@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.awt.Component
+import awt.Component
 
 /*
  * Class193

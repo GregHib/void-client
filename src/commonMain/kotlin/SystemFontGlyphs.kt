@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
-import java.awt.Color
-import java.awt.Component
-import java.awt.Font
+import awt.Color
+import awt.Component
+import awt.Font
 import java.awt.FontMetrics
 import java.awt.image.PixelGrabber
 

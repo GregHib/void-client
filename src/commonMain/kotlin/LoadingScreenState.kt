@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
-import java.awt.Color
-import java.awt.Font
+import awt.Color
+import awt.Font
 
 /*
  * Class199

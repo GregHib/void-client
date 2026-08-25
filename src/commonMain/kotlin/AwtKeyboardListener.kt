@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.awt.Component
+import awt.Component
 import java.awt.event.FocusEvent
 import java.awt.event.FocusListener
 import java.awt.event.KeyEvent

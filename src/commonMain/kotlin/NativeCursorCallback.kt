@@ -8,7 +8,7 @@ import com.ms.win32.User32.SendMessage
 import com.ms.win32.User32.SetCursor
 import com.ms.win32.User32.SetCursorPos
 import com.ms.win32.User32.SetWindowLong
-import java.awt.Component
+import awt.Component
 import kotlin.concurrent.Volatile
 
 /*

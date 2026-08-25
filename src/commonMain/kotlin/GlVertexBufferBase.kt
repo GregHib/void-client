@@ -4,7 +4,7 @@ import jaggl.OpenGL.Companion.glBufferDataARBa
 import jaggl.OpenGL.Companion.glBufferDataARBub
 import jaggl.OpenGL.Companion.glBufferSubDataARBub
 import jaggl.OpenGL.Companion.glGenBuffersARB
-import java.awt.Color
+import awt.Color
 
 abstract class GlVertexBufferBase {
     private var anInt1921 = 0

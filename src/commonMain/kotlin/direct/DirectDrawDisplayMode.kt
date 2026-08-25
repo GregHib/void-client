@@ -5,7 +5,7 @@ import com.ms.directX.DDSurfaceDesc
 import com.ms.directX.DirectDraw
 import com.ms.directX.IEnumModesCallback
 import com.ms.win32.User32
-import java.awt.Component
+import awt.Component
 import java.awt.Frame
 
 /*
