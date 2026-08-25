@@ -6,7 +6,7 @@ import com.ms.directX.DirectDraw
 import com.ms.directX.IEnumModesCallback
 import com.ms.win32.User32
 import awt.Component
-import java.awt.Frame
+import awt.Frame
 
 /*
  * Class134

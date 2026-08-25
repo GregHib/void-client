@@ -1,7 +1,7 @@
 package com.ms.directX
 
 import awt.Component
-import java.awt.Frame
+import awt.Frame
 
 class DirectDraw {
     fun setDisplayMode(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {

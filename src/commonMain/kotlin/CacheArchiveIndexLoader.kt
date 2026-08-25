@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import AbstractFrameBufferSurface.Companion.method3013
 import SpriteComponent.Companion.method200
-import java.awt.Point
+import awt.Point
 
 /*
  * Class33

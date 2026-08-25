@@ -3,8 +3,8 @@ import GameAppletFrame.Companion.provideLoaderApplet
 import java.awt.BorderLayout
 import awt.Component
 import java.awt.Dimension
-import java.awt.Image
-import java.awt.Panel
+import awt.Image
+import awt.Panel
 import java.net.URL
 import java.util.*
 import javax.swing.ImageIcon

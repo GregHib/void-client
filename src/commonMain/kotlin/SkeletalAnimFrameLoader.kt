@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.awt.Frame
+import awt.Frame
 
 /*
  * Class34

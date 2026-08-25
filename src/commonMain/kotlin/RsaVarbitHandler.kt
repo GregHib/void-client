@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 import direct.Direct3dModel
-import java.awt.Frame
+import awt.Frame
 
 /*
  * Class52

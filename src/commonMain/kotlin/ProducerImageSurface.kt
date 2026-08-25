@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import awt.Canvas
 import awt.Graphics
-import java.awt.Image
+import awt.Image
 import java.awt.image.ColorModel
 import java.awt.image.DirectColorModel
 import java.awt.image.ImageConsumer

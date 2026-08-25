@@ -1,5 +1,5 @@
 import awt.Component
-import java.awt.Point
+import awt.Point
 import java.awt.Robot
 import java.awt.image.BufferedImage
 

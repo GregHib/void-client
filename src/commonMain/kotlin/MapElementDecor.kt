@@ -7,7 +7,7 @@ import ConnectionStateType.Companion.method527
 import MapRegionLoader.Companion.method751
 import MapRegionLoader.Companion.method758
 import ChatMessageStream.Companion.method136
-import java.awt.Frame
+import awt.Frame
 
 class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int) : GroundDecorEntity(i_36_, i_37_, i_38_, i_39_, i_40_, i_41_, i_42_, i_43_, i_44_, false, 0.toByte()) {
     private var anInt10331 = 0

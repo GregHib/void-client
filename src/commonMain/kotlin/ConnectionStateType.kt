@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import TexGenMaterialPass.Companion.method2161
-import java.awt.Frame
+import awt.Frame
 
 /*
  * Class56

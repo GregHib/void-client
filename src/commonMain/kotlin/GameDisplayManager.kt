@@ -4,7 +4,7 @@ import ByteBufferStatics.method1713
 import FixedFunctionMaterialPass.Companion.method2145
 import TexGenMaterialPass.Companion.method2158
 import ConnectionStateType.Companion.method527
-import java.awt.Container
+import awt.Container
 
 /*
  * Class215

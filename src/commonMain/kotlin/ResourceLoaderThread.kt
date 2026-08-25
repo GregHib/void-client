@@ -3,7 +3,7 @@ import LinkedListIterator.Companion.method1242
 import GlTexture2DRegion.Companion.method3553
 import GlGroundShaderPass.Companion.method3556
 import GameClock.method599
-import java.awt.Container
+import awt.Container
 import kotlin.concurrent.Volatile
 
 /* Class311 - Decompiled by JODE

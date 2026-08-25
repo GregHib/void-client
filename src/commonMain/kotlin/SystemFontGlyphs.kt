@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 import awt.Color
 import awt.Component
 import awt.Font
-import java.awt.FontMetrics
+import awt.FontMetrics
 import java.awt.image.PixelGrabber
 
 /*
