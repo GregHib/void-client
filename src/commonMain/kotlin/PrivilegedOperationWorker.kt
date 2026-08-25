@@ -9,9 +9,7 @@ import direct.sound.DirectSoundAudioChannel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.asCoroutineDispatcher
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 import java.awt.*
 import java.awt.datatransfer.Transferable
 import io.DataInputStream
@@ -23,8 +21,6 @@ import java.lang.reflect.Method
 import java.net.InetAddress
 import net.Socket
 import java.net.URL
-import java.util.*
-import java.util.concurrent.Executors
 import kotlin.concurrent.Volatile
 
 /*
@@ -42,7 +38,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
 
     var aRandomAccessFileOnDisk_3788: RandomAccessFileOnDisk? = null
     private val job: Job
-    private val dispatcher = Executors.newFixedThreadPool(1).asCoroutineDispatcher()
+    private val dispatcher = Dispatchers.Default.limitedParallelism(1)
     private var anObject3791: Any? = null
     private var anObject3793: Any? = null
 
