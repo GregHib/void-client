@@ -2,6 +2,7 @@ import kotlin.jvm.JvmStatic
 import ProjectedGroundDecor.Companion.method2433
 import AbstractFrameBufferSurface.Companion.method3007
 import LocTypeConfig.Companion.method160
+import lang.gc
 import kotlin.math.sqrt
 
 /* Class348_Sub40_Sub34 - Decompiled by JODE
@@ -111,7 +112,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             if (i.toInt() != 11) anIntArray9436 = null
             for (i_2_ in 0..3) TimedRecordAccessor.aCollisionMapArray7108s!![i_2_]!!.method3500(700)
             LoadingScreenImageNode.method3177(-50, false)
-            System.gc()
+            gc()
             method3007(2, 22684)
             RgbColorPalette.aBoolean1236 = false
             SlotBinding.anInt3428 = -1

@@ -9,6 +9,7 @@ import NativeRenderer.Companion.method3936
 import awt.Canvas
 import awt.Component
 import awt.Graphics
+import lang.gc
 
 /*
  * Canvas_Sub1
@@ -253,7 +254,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     KeyboardLayoutCache.aParticleSystemRenderer_3304 = null
                     OggCacheStream.aBoolean5265 = false
                     method3570(false)
-                    System.gc()
+                    gc()
                     RegionSceneLoader.method2193(true, (-128).toByte())
                     AnimationFrameTable.method354(2)
                     anInt3720 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)

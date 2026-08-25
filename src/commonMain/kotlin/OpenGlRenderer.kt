@@ -78,6 +78,7 @@ import jaggl.OpenGL.Companion.glVertexPointer
 import jaggl.OpenGL.Companion.glViewport
 import awt.Canvas
 import awt.Rectangle
+import lang.gc
 import util.Hashtable
 import util.Locale
 import kotlin.math.max
@@ -1167,7 +1168,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         }
         aTextureCache_7723.method3469(8218)
         if (E() > 100663296 && 60000L + aLong7757 < GameClock.method599(-96)) {
-            System.gc()
+            gc()
             aLong7757 = GameClock.method599(-91)
         }
         this.anInt7735 = i

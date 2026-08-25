@@ -5,6 +5,7 @@ import MapRegionLoader.Companion.method760
 import MapRegionLoader.Companion.method761
 import AnimationFrameState.method867
 import InputStream_Sub1.Companion.method126
+import lang.gc
 import util.random
 import kotlin.math.atan2
 import kotlin.math.sqrt
@@ -442,7 +443,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             LinkedListNodeStatics.anInt4290 = 100
                             RegionSceneLoader.method2193(true, (-119).toByte())
                             method867(true)
-                            System.gc()
+                            gc()
                         }
                     }
                 }

@@ -1,5 +1,6 @@
 import kotlin.jvm.JvmStatic
 import io.File
+import lang.getProperty
 import util.Locale
 
 object OSInfo {
@@ -34,42 +35,42 @@ object OSInfo {
     init {
         var string = "Unknown"
         try {
-            string = System.getProperty("java.vendor").lowercase()
+            string = getProperty("java.vendor")!!.lowercase()
         } catch (exception: Exception) {
             /* empty */
         }
         string.lowercase()
         string = "Unknown"
         try {
-            string = System.getProperty("java.version").lowercase()
+            string = getProperty("java.version")!!.lowercase()
         } catch (exception: Exception) {
             /* empty */
         }
         string.lowercase()
         string = "Unknown"
         try {
-            string = System.getProperty("os.name").lowercase()
+            string = getProperty("os.name")!!.lowercase()
         } catch (exception: Exception) {
             /* empty */
         }
         aString6877 = string.lowercase()
         string = "Unknown"
         try {
-            string = System.getProperty("os.arch").lowercase()
+            string = getProperty("os.arch")!!.lowercase()
         } catch (exception: Exception) {
             /* empty */
         }
         aString6876 = string.lowercase()
         string = "Unknown"
         try {
-            string = System.getProperty("os.version").lowercase()
+            string = getProperty("os.version")!!.lowercase()
         } catch (exception: Exception) {
             /* empty */
         }
         string.lowercase()
         string = "~/"
         try {
-            string = System.getProperty("user.home").lowercase()
+            string = getProperty("user.home")!!.lowercase()
         } catch (exception: Exception) {
             /* empty */
         }

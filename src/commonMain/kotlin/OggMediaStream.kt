@@ -4,6 +4,7 @@ import jagtheora.ogg.OggPage
 import jagtheora.ogg.OggStreamState
 import jagtheora.ogg.OggSyncState
 import io.IOException
+import lang.exit
 
 /*
  * Class55
@@ -382,7 +383,7 @@ abstract class OggMediaStream(i: Int) {
 
         @JvmStatic
         fun method518(string: String?, i: Byte) {
-            System.exit(1)
+            exit(1)
             anInt997++
             val i_29_ = 97 % ((-66 - i) / 54)
         }

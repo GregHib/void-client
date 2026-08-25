@@ -22,6 +22,7 @@ import jagex3.jagmisc.jagmisc.init
 import NativeRenderNode.Companion.method3290
 import kotlinx.coroutines.runBlocking
 import lang.InterruptedException
+import lang.gc
 
 /*
  * Class164
@@ -63,7 +64,7 @@ object ClientLoadStateMachine {
             if (SoundBankPatch.aLong6791 == 0L) SoundBankPatch.aLong6791 = l
             if (i_1_ > 16384 && -SoundBankPatch.aLong6791 + l < 5000) {
                 if (-ObjectByteSerializerHolder.aLong2286 + l > 1000L) {
-                    System.gc()
+                    gc()
                     ObjectByteSerializerHolder.aLong2286 = l
                 }
                 return 0

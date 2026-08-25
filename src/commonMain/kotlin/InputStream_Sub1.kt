@@ -1,5 +1,6 @@
 import kotlin.jvm.JvmStatic
 import io.InputStream
+import lang.gc
 
 class InputStream_Sub1 : InputStream() {
     override fun read(): Int {
@@ -41,7 +42,7 @@ class InputStream_Sub1 : InputStream() {
             MinimapTriangleDrawer.method464(-1)
             InterfaceBounds.method2938(98.toByte())
             BloomGraphicsOptionState.method1772(28)
-            System.gc()
+            gc()
             FacingDirectionNode.aRenderer6654!!.ya()
         }
 

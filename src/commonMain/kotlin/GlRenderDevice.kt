@@ -64,6 +64,7 @@ import jaggl.OpenGL.Companion.glVertexPointer
 import jaggl.OpenGL.Companion.glViewport
 import awt.Canvas
 import awt.Rectangle
+import lang.gc
 import kotlin.jvm.Synchronized
 
 /*
@@ -182,7 +183,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             glDeleteLists(class348_sub35!!.aLong4291.toInt(), class348_sub35.anInt6976)
         }
         if (this.E() > 100663296 && (GameClock.method599(-82) > 60000L + aLong9906)) {
-            System.gc()
+            gc()
             aLong9906 = GameClock.method599(-96)
         }
         super.method3646(i)

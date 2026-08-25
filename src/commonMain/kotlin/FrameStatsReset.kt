@@ -6,6 +6,7 @@ import RenderListTextureNode.Companion.method3153
 import SceneObjectSpawner.Companion.method773
 import SpriteBlitter.method882
 import direct.Direct3dModel
+import lang.gc
 import util.random
 
 // Decompiled by Jad v1.5.8f. Copyright 2001 Pavel Kouznetsov.
@@ -38,7 +39,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             anInt5802++
             if (i < 28) aLinkedQueueNode_5800 = null
             HeightMapNoise.method2282(-12648)
-            System.gc()
+            gc()
         }
 
         fun method1135(i: Int) {

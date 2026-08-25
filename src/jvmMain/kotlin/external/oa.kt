@@ -28,6 +28,8 @@ import withLock
 import awt.Canvas
 import awt.Rectangle
 import lang.currentThread
+import lang.gc
+import lang.runFinalization
 import kotlin.math.max
 
 /*
@@ -122,8 +124,8 @@ actual class oa actual constructor(canvas: Canvas?, var_renderConfig: RenderConf
     actual external override fun H(i: Int, i_53_: Int, i_54_: Int, `is`: IntArray?)
 
     /*private*/ actual fun g() { //
-        System.gc()
-        System.runFinalization()
+        gc()
+        runFinalization()
         RequestGate.method1948((-33).toByte())
     }
 

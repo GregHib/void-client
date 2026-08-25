@@ -1,6 +1,8 @@
 import io.BufferedReader
 import io.IOException
 import io.InputStreamReader
+import lang.getProperty
+import lang.setProperty
 import net.Socket
 import util.Locale
 import java.net.*
@@ -47,8 +49,8 @@ class ProxySocketFactory : SocketFactory() {
     @Throws(IOException::class)
     override fun method2050(i: Int): Socket? {
         val flag1: Boolean
-        val flag = System.getProperty("java.net.useSystemProxies").toBoolean()
-        if (!flag) System.setProperty("java.net.useSystemProxies", "true")
+        val flag = getProperty("java.net.useSystemProxies").toBoolean()
+        if (!flag) setProperty("java.net.useSystemProxies", "true")
         flag1 = anInt3470 == 443
         var ioexception_sub1: IOException_Sub1?
         val aobj1: Array<Any?>?

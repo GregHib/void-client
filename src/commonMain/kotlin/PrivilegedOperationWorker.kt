@@ -20,6 +20,7 @@ import kotlinx.coroutines.Runnable
 import lang.InterruptedException
 import lang.Thread
 import lang.currentThread
+import lang.getProperty
 import java.lang.reflect.Method
 import java.net.InetAddress
 import net.Socket
@@ -352,30 +353,30 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
         aString3782 = "Unknown"
         anInt3792 = i
         try {
-            aString3782 = System.getProperty("java.vendor")
-            aString3796 = System.getProperty("java.version")
+            aString3782 = getProperty("java.vendor")!!
+            aString3796 = getProperty("java.version")!!
         } catch (exception: Exception) {
             /* empty */
         }
         if (aString3782!!.lowercase().indexOf("microsoft") != -1) this.aBoolean3794 = true
         try {
-            aString3784 = System.getProperty("os.name")
+            aString3784 = getProperty("os.name")!!
         } catch (exception: Exception) {
             aString3784 = "Unknown"
         }
         aString3803 = aString3784!!.lowercase()
         try {
-            aString3780 = System.getProperty("os.arch").lowercase()
+            aString3780 = getProperty("os.arch")!!.lowercase()
         } catch (exception: Exception) {
             aString3780 = ""
         }
         try {
-            aString3778 = System.getProperty("os.version").lowercase()
+            aString3778 = getProperty("os.version")!!.lowercase()
         } catch (exception: Exception) {
             aString3778 = ""
         }
         try {
-            aString3800 = System.getProperty("user.home")
+            aString3800 = getProperty("user.home")!!
             if (aString3800 != null) aString3800 += "/"
         } catch (exception: Exception) {
             /* empty */

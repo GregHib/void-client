@@ -1,6 +1,7 @@
 import kotlin.jvm.JvmStatic
 import io.File
 import io.RandomAccessFile
+import lang.getProperty
 import util.Hashtable
 
 /*
@@ -68,7 +69,7 @@ object FileStoreLocator {
         if (i.toInt() != -121) aBoolean2644 = false
         aString2645 = string
         try {
-            aString2643 = System.getProperty("user.home")
+            aString2643 = getProperty("user.home")
             if (aString2643 != null) aString2643 += "/"
         } catch (exception: Exception) {
             /* empty */
