@@ -35,4 +35,6 @@ actual abstract class InputStream actual constructor() : AutoCloseable {
     }
 
     actual open fun available(): Int = 0
+
+    actual override fun close() { }
 }

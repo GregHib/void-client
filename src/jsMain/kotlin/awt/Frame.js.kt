@@ -1,5 +1,6 @@
 package awt
 
+import awt.event.WindowListener
 import kotlinx.browser.document
 
 actual class Frame actual constructor(title: String) : Container() {
@@ -47,7 +48,10 @@ actual class Frame actual constructor(title: String) : Container() {
         element.style.top = "${c.getY() + (c.getHeight() - getHeight()) / 2}px"
     }
 
-    actual fun setLocation(x: Int, y: Int) {
+    actual fun addWindowListener(listener: WindowListener) {
+    }
+
+    actual fun enableInputMethods(boolean: Boolean) {
     }
 }
 

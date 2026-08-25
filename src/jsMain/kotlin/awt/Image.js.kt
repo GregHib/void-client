@@ -1,5 +1,6 @@
 package awt
 
+import awt.image.ImageObserver
 import kotlinx.browser.document
 import org.w3c.dom.HTMLCanvasElement
 import org.w3c.dom.HTMLImageElement
@@ -25,43 +26,40 @@ actual abstract class Image {
 
     actual fun setAccelerationPriority(priority: Float) { this.priority = priority }
     actual fun getAccelerationPriority(): Float = priority
-    actual abstract fun getGraphics(): Graphics
-    actual abstract fun getWidth(observer: ImageObserver?): Int
-    actual abstract fun getHeight(observer: ImageObserver?): Int
+
+    internal abstract fun graphicsImpl(): Graphics
+    internal abstract fun widthImpl(observer: ImageObserver?): Int
+    internal abstract fun heightImpl(observer: ImageObserver?): Int
 }
+
+actual fun Image.getGraphics(): Graphics = graphicsImpl()
+actual fun Image.getWidth(observer: ImageObserver?): Int = widthImpl(observer)
+actual fun Image.getHeight(observer: ImageObserver?): Int = heightImpl(observer)
 
 internal class CanvasImage(private val canvas: HTMLCanvasElement) : Image() {
     override val source: dynamic get() = canvas
     override val naturalWidth: Int get() = canvas.width
     override val naturalHeight: Int get() = canvas.height
-    override fun getGraphics(): Graphics {
+    override fun graphicsImpl(): Graphics {
         TODO("Not yet implemented")
     }
 
-    override fun getWidth(observer: ImageObserver?): Int {
-        TODO("Not yet implemented")
-    }
+    override fun widthImpl(observer: ImageObserver?): Int = naturalWidth
 
-    override fun getHeight(observer: ImageObserver?): Int {
-        TODO("Not yet implemented")
-    }
+    override fun heightImpl(observer: ImageObserver?): Int = naturalHeight
 }
 
 internal class ElementImage(private val img: HTMLImageElement) : Image() {
     override val source: dynamic get() = img
     override val naturalWidth: Int get() = img.naturalWidth
     override val naturalHeight: Int get() = img.naturalHeight
-    override fun getGraphics(): Graphics {
+    override fun graphicsImpl(): Graphics {
         TODO("Not yet implemented")
     }
 
-    override fun getWidth(observer: ImageObserver?): Int {
-        TODO("Not yet implemented")
-    }
+    override fun widthImpl(observer: ImageObserver?): Int = naturalWidth
 
-    override fun getHeight(observer: ImageObserver?): Int {
-        TODO("Not yet implemented")
-    }
+    override fun heightImpl(observer: ImageObserver?): Int = naturalHeight
 }
 
 actual val Image.pxWidth: Int get() = naturalWidth

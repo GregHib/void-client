@@ -87,13 +87,13 @@ actual open class PixelGrabber private constructor(
             }
         }
 
-        override fun setColorModel(model: ColorModel) { this@PixelGrabber.model = model }
+        override fun setColorModel(model: ColorModel?) { if (model != null) this@PixelGrabber.model = model }
         override fun setHints(hintflags: Int) {}
 
         override fun setPixels(
             x: Int, y: Int, w: Int, h: Int,
-            model: ColorModel, pixels: IntArray, off: Int, scansize: Int,
-        ) = store(x, y, w, h) { row, col -> model.getRGB(pixels[off + row * scansize + col]) }
+            model: ColorModel?, pixels: IntArray?, off: Int, scansize: Int,
+        ) = store(x, y, w, h) { row, col -> model!!.getRGB(pixels!![off + row * scansize + col]) }
 
         override fun setPixels(
             x: Int, y: Int, w: Int, h: Int,

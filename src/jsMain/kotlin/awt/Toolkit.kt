@@ -15,7 +15,11 @@ actual abstract class Toolkit {
     actual fun createImage(array: ByteArray): Image {
         TODO("Not yet implemented")
     }
+
+    actual fun getSystemEventQueue(): EventQueue = systemEventQueue
 }
+
+private val systemEventQueue = EventQueue()
 
 class DefaultToolkit : Toolkit() {
 

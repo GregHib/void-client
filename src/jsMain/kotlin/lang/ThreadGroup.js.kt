@@ -1,8 +1,11 @@
 package lang
 
-actual class ThreadGroup actual constructor(name: String) {
+actual class ThreadGroup actual constructor(private val name: String) {
+
+    private var parent: ThreadGroup? = null
 
     actual constructor(parent: ThreadGroup, name: String) : this(name) {
+        this.parent = parent
     }
 
     private var destroyed = false
@@ -18,9 +21,9 @@ actual class ThreadGroup actual constructor(name: String) {
     override fun toString(): String =
         "java.lang.ThreadGroup[]"
 
-    actual fun getName() {
-    }
+    actual fun getName(): String = name
 
-    actual fun enumerate() {
-    }
+    actual fun getParent(): ThreadGroup? = parent
+
+    actual fun enumerate(list: Array<Thread?>): Int = 0
 }

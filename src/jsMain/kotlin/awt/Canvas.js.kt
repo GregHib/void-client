@@ -1,52 +1,15 @@
 package awt
 
+import awt.image.ImageProducer
 import kotlinx.browser.document
 import org.w3c.dom.HTMLCanvasElement
 
 actual open class Canvas actual constructor() : Component() {
-    val element: HTMLCanvasElement =
+    override val element: HTMLCanvasElement =
         document.createElement("canvas") as HTMLCanvasElement
 
-    // plain members — no `actual`, this is just platform storage
-    internal var ignoreRepaintFlag: Boolean = false
-    private var visible: Boolean = true
-    private var repaintScheduled: Boolean = false
-
-    var onRender: ((Canvas) -> Unit)? = null
-
-    actual fun setSize(width: Int, height: Int) {
-        element.width = width
-        element.height = height
-    }
-
-    actual fun getWidth(): Int = element.width
-    actual fun getHeight(): Int = element.height
-
-    actual fun setBounds(x: Int, y: Int, width: Int, height: Int) {
-        element.style.position = "absolute"
-        element.style.left = "${x}px"
-        element.style.top = "${y}px"
-        setSize(width, height)
-    }
-
-    actual fun repaint() {
-        if (ignoreRepaintFlag || repaintScheduled) return
-        repaintScheduled = true
-        kotlinx.browser.window.requestAnimationFrame {
-            repaintScheduled = false
-            onRender?.invoke(this)
-        }
-    }
-
-    actual fun setVisible(visible: Boolean) {
-        this.visible = visible
-        element.style.display = if (visible) "block" else "none"
-    }
-
-    actual fun isVisible(): Boolean = visible
-    actual fun requestFocus() { element.focus() }
-    actual fun getGraphics(): Graphics = TODO()
-
+    actual fun createImage(width: Int, height: Int): Image = TODO("Not yet implemented")
+    actual fun createImage(producer: ImageProducer): Image = TODO("Not yet implemented")
 }
 
 actual var Canvas.ignoreRepaint: Boolean

@@ -21,21 +21,24 @@ actual object PlatformRuntime {
     }
 
     // Chrome-only nonstandard API. Returns totalJSHeapSize if available.
-    actual fun totalMemory(): Long = chromeMemory()?.let {
-        (it["totalJSHeapSize"] as? Double)?.toLong()
-    } ?: -1L
+    actual fun totalMemory(): Long {
+        val mem = chromeMemory() ?: return -1L
+        return (mem["totalJSHeapSize"] as? Double)?.toLong() ?: -1L
+    }
 
     // Approximated as totalJSHeapSize - usedJSHeapSize on Chrome.
-    actual fun freeMemory(): Long = chromeMemory()?.let {
-        val total = (it["totalJSHeapSize"] as? Double)?.toLong()
-        val used = (it["usedJSHeapSize"] as? Double)?.toLong()
-        if (total != null && used != null) total - used else null
-    } ?: -1L
+    actual fun freeMemory(): Long {
+        val mem = chromeMemory() ?: return -1L
+        val total = (mem["totalJSHeapSize"] as? Double)?.toLong()
+        val used = (mem["usedJSHeapSize"] as? Double)?.toLong()
+        return if (total != null && used != null) total - used else -1L
+    }
 
     // jsHeapSizeLimit on Chrome; Node has no equivalent hard limit exposed here.
-    actual fun maxMemory(): Long = chromeMemory()?.let {
-        (it["jsHeapSizeLimit"] as? Double)?.toLong()
-    } ?: -1L
+    actual fun maxMemory(): Long {
+        val mem = chromeMemory() ?: return -1L
+        return (mem["jsHeapSizeLimit"] as? Double)?.toLong() ?: -1L
+    }
 
     private fun chromeMemory(): dynamic {
         return try {

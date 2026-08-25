@@ -2,10 +2,10 @@ package awt.image
 
 actual interface ImageConsumer {
     actual fun setDimensions(width: Int, height: Int)
-    actual fun setColorModel(model: ColorModel)
+    actual fun setColorModel(model: ColorModel?)
     actual fun setHints(hintflags: Int)
     actual fun setPixels(x: Int, y: Int, w: Int, h: Int, model: ColorModel, pixels: ByteArray, off: Int, scansize: Int)
-    actual fun setPixels(x: Int, y: Int, w: Int, h: Int, model: ColorModel, pixels: IntArray, off: Int, scansize: Int)
+    actual fun setPixels(x: Int, y: Int, w: Int, h: Int, model: ColorModel?, pixels: IntArray?, off: Int, scansize: Int)
     actual fun imageComplete(status: Int)
 }
 

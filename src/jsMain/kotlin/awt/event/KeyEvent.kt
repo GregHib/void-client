@@ -17,6 +17,10 @@ actual class KeyEvent internal constructor(
     actual fun isAltDown(): Boolean = altDown
     actual fun isMetaDown(): Boolean = metaDown
 
+    actual fun consume() {
+        TODO("Not yet implemented")
+    }
+
     companion object {
         /** Bridges a browser `org.w3c.dom.events.KeyboardEvent` into a [KeyEvent]. */
         fun from(event: org.w3c.dom.events.KeyboardEvent, id: Int): KeyEvent = KeyEvent(

@@ -118,4 +118,11 @@ actual open class BufferedImage actual constructor(
 
     /** Raw ARGB backing store — hand this to ImageData for canvas rendering. */
     val argb: IntArray get() = pixels
+
+    override fun graphicsImpl(): awt.Graphics {
+        TODO("Not yet implemented")
+    }
+
+    override fun widthImpl(observer: ImageObserver?): Int = width
+    override fun heightImpl(observer: ImageObserver?): Int = height
 }

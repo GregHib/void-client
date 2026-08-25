@@ -10,6 +10,13 @@ actual class StringBuffer actual constructor() {
 
     actual val length: Int get() = sb.length
 
+    actual fun get(index: Int): Char = sb[index]
+
+    actual fun append(value: Any?, i: Int, i2: Int): StringBuffer {
+        sb.append(value.toString(), i, i2)
+        return this
+    }
+
     actual fun append(value: Any?): StringBuffer {
         sb.append(value.toString())
         return this

@@ -4,6 +4,7 @@ import awt.h
 import awt.left
 import awt.top
 import awt.w
+import kotlinx.coroutines.Runnable
 import lang.currentThread
 import util.random
 import kotlin.math.floor

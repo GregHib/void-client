@@ -1,3 +1,3 @@
 package awt
 
-actual class Dimension actual constructor(actual val width: Int, actual val height: Int)
+actual class Dimension actual constructor(val width: Int, val height: Int)

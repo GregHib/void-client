@@ -15,4 +15,8 @@ actual class URL actual constructor(spec: String) {
     actual fun openStream(): InputStream {
         TODO("Not yet implemented")
     }
+
+    actual fun getHost(): String {
+        TODO("Not yet implemented")
+    }
 }

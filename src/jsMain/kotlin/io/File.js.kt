@@ -50,5 +50,10 @@ actual open class File actual constructor(pathname: String) {
     }
 
     actual open fun mkdir(): Boolean {
+        TODO("Not yet implemented")
+    }
+
+    actual open fun getCanonicalPath(): String {
+        TODO("Not yet implemented")
     }
 }

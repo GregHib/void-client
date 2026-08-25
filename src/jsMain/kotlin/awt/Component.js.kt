@@ -2,6 +2,9 @@ package awt
 
 import awt.event.FocusListener
 import awt.event.KeyListener
+import awt.event.MouseListener
+import awt.event.MouseMotionListener
+import awt.event.MouseWheelListener
 import awt.image.ImageObserver
 import org.w3c.dom.CanvasRenderingContext2D
 import kotlinx.browser.window
@@ -98,6 +101,51 @@ actual abstract class Component : ImageObserver {
     }
 
     actual fun removeFocusListener(focusListener: FocusListener) {
+    }
+
+    actual fun isShowing(): Boolean = visible
+
+    actual fun setIgnoreRepaint(ignore: Boolean) {
+        ignoreRepaintFlag = ignore
+    }
+
+    actual fun setLocation(x: Int, y: Int) {
+        element.style.position = "absolute"
+        element.style.left = "${x}px"
+        element.style.top = "${y}px"
+    }
+
+    actual fun prepareImage(image: Image, observer: ImageObserver): Boolean = true
+
+    actual open fun update(graphics: Graphics?) {
+        paint(graphics)
+    }
+
+    actual open fun paint(graphics: Graphics?) {
+    }
+
+    actual fun addMouseListener(mouseListener: MouseListener) {
+    }
+
+    actual fun addMouseMotionListener(mouseMotionListener: MouseMotionListener) {
+    }
+
+    actual fun addMouseWheelListener(mouseWheelListener: MouseWheelListener) {
+    }
+
+    actual fun removeMouseListener(mouseListener: MouseListener) {
+    }
+
+    actual fun removeMouseMotionListener(mouseMotionListener: MouseMotionListener) {
+    }
+
+    actual fun removeMouseWheelListener(mouseWheelListener: MouseWheelListener) {
+    }
+
+    actual fun getFontMetrics(font: Font): FontMetrics {
+        val canvas = element as? HTMLCanvasElement
+            ?: error("getFontMetrics() requires a canvas-backed component")
+        return CanvasFontMetrics(canvas.getContext("2d") as CanvasRenderingContext2D, font)
     }
 }
 

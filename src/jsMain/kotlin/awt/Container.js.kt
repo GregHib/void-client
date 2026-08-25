@@ -1,6 +1,5 @@
 package awt
 
-import awt.image.ImageObserver
 import kotlinx.browser.document
 import org.w3c.dom.HTMLElement
 
@@ -17,7 +16,7 @@ actual open class Container : Component() {
     }
 
     actual fun remove(comp: Component?) {
-        if (children.remove(comp)) element.removeChild(comp.element)
+        if (children.remove(comp)) element.removeChild(comp!!.element)
     }
 
     actual fun remove(index: Int) = remove(children[index])
@@ -35,7 +34,6 @@ actual open class Container : Component() {
     actual fun validate() { doLayout() }
     actual fun invalidate() { }
     actual fun doLayout() { }
-    actual override fun drawImage(img: Image?, x: Int, y: Int, observer: Canvas?): Boolean {
-        TODO("Not yet implemented")
-    }
 }
+
+actual fun Container.getInsets(): Insets = Insets()

@@ -31,7 +31,7 @@ actual class Class<T> internal constructor(
 
     actual override fun hashCode(): Int = "name".hashCode()
 
-    actual fun getDeclaredField(name: String): Field {
+    actual fun getDeclaredField(name: String?): Field {
         TODO("Not yet implemented")
     }
 
