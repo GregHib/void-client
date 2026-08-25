@@ -3,7 +3,7 @@ import java.awt.image.BufferedImage
 import java.awt.image.DataBufferInt
 import java.awt.image.DirectColorModel
 import java.awt.image.Raster
-import java.awt.Rectangle
+import awt.Rectangle
 import java.util.*
 
 class BufferedImageSurface : AbstractFrameBufferSurface() {

@@ -1,5 +1,5 @@
 import awt.Canvas
-import java.awt.Rectangle
+import awt.Rectangle
 import kotlin.math.floor
 import kotlin.math.max
 import kotlin.math.min

@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.awt.Rectangle
+import awt.Rectangle
 
 /*
  * Class180

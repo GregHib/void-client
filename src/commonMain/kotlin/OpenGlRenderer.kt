@@ -77,7 +77,7 @@ import jaggl.OpenGL.Companion.glVertex3f
 import jaggl.OpenGL.Companion.glVertexPointer
 import jaggl.OpenGL.Companion.glViewport
 import awt.Canvas
-import java.awt.Rectangle
+import awt.Rectangle
 import java.util.Hashtable
 import java.util.Locale
 import kotlin.math.max

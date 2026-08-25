@@ -63,7 +63,7 @@ import jaggl.OpenGL.Companion.glTexGeni
 import jaggl.OpenGL.Companion.glVertexPointer
 import jaggl.OpenGL.Companion.glViewport
 import awt.Canvas
-import java.awt.Rectangle
+import awt.Rectangle
 import java.util.*
 
 /*

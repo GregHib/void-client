@@ -4,7 +4,7 @@ import Disposable
 import LinkedListNode
 import withLock
 import awt.Canvas
-import java.awt.Rectangle
+import awt.Rectangle
 import kotlin.jvm.JvmField
 
 /*

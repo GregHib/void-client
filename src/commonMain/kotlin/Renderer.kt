@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 import awt.Canvas
-import java.awt.Rectangle
+import awt.Rectangle
 
 abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: RenderConfig?) {
 

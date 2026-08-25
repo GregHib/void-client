@@ -9,7 +9,7 @@ import jagdx.*
 import jagdx.IDirect3D.Companion.a
 import jagdx.ue.a
 import awt.Canvas
-import java.awt.Rectangle
+import awt.Rectangle
 
 /*
  * Class378
