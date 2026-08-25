@@ -12,7 +12,10 @@ import java.awt.event.WindowListener
 import io.File
 import io.IOException
 import java.net.URL
-import java.util.*
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
+import kotlin.time.ExperimentalTime
+import kotlin.time.Instant
 
 /*
  * Applet_Sub1
@@ -547,14 +550,16 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             TerrainShadowBuilderGl3.anInt7006 = string.length
         }
 
+        @OptIn(ExperimentalTime::class)
         @JvmStatic
         fun method94(string: String, i: Int) {
             anInt6++
             if (ArbFogMaterialPass.aStringArray6200 == null) Gl3dTexture.method249(2)
-            WaterMaterialPass.aCalendar6221!!.setTime(Date(GameClock.method599(-102)))
-            val i_8_ = WaterMaterialPass.aCalendar6221!!.get(11)
-            val i_9_ = WaterMaterialPass.aCalendar6221!!.get(12)
-            val i_10_ = WaterMaterialPass.aCalendar6221!!.get(13)
+            WaterMaterialPass.aCalendar6221 = Instant.fromEpochMilliseconds(GameClock.method599(-102))
+            val ldt = WaterMaterialPass.aCalendar6221!!.toLocalDateTime(TimeZone.UTC)
+            val i_8_ = ldt.time.hour
+            val i_9_ = ldt.time.minute
+            val i_10_ = ldt.time.second
             val string_11_ = ((i_8_ / 10).toString() + i_8_ % 10 + ":" + i_9_ / 10 + i_9_ % 10 + ":" + i_10_ / 10 + i_10_ % 10)
             val strings = TurbulenceTextureNode.method3113('\n', true, string)
             for (i_12_ in strings.indices) {

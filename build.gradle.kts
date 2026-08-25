@@ -31,6 +31,7 @@ kotlin {
     }
     sourceSets.commonMain.dependencies {
         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
+        implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1")
     }
 }
 

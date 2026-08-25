@@ -9,8 +9,10 @@ import jaggl.OpenGL.Companion.glLoadMatrixf
 import jaggl.OpenGL.Companion.glMatrixMode
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fvARB
-import java.util.*
+import kotlin.time.ExperimentalTime
+import kotlin.time.Instant
 
+@OptIn(ExperimentalTime::class)
 class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTextureSet: WaterTextureSet?) : MaterialPass(var_ha_Sub2) {
     private var aFloatArray6218: FloatArray? = null
     private var anInt6219 = 0
@@ -174,7 +176,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
 
         var anInt6217: Int = 0
 
-        var aCalendar6221: Calendar? = Calendar.getInstance(TimeZone.getTimeZone("GMT"))
+        var aCalendar6221: Instant? = kotlin.time.Clock.System.now()
 
         var anInt6223: Int = 0
 

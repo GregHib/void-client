@@ -71,16 +71,22 @@ import LocTypeConfig.Companion.method160
 import NullRenderPass.Companion.method3535
 import ProjectedGroundDecor.Companion.method2420
 import java.awt.datatransfer.DataFlavor
-import java.util.*
+import kotlin.time.Instant
+import kotlinx.datetime.LocalDate
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 import util.Locale
 import util.defaultLocale
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.pow
+import kotlin.time.Clock
+import kotlin.time.ExperimentalTime
 
 /*
  * Class66
  */
+@OptIn(ExperimentalTime::class)
 object ChatCommandProcessor {
     private var anIntArray1149: IntArray? = IntArray(1000)
     private var aWidgetComponent_1150: WidgetComponent? = null
@@ -98,7 +104,7 @@ object ChatCommandProcessor {
     var anInt1158: Int = 0
 
     var anInt1159: Int = 0
-    private var aCalendar1160: Calendar?
+    private var aCalendar1160: Instant?
     private var anIntArrayArray1161: Array<IntArray?>? = Array<IntArray?>(5) { IntArray(5000) }
 
     var anInt1162: Int = 0
@@ -1947,18 +1953,13 @@ object ChatCommandProcessor {
                 val i_162_ = anIntArray1149!![anInt1173]
                 val i_163_ = anIntArray1149!![anInt1173 + 1]
                 val i_164_ = anIntArray1149!![anInt1173 + 2]
-                aCalendar1160!!.clear()
-                aCalendar1160!!.set(11, 12)
-                aCalendar1160!!.set(i_164_, i_163_, i_162_)
-                var i_165_ = ((aCalendar1160!!.getTime().getTime() / 86400000L).toInt() - 11745)
+                var i_165_ = LocalDate(i_164_, i_163_ + 1, i_162_).toEpochDays().toInt() - 11745
                 if (i_164_ < 1970) i_165_--
                 anIntArray1149!![anInt1173++] = i_165_
                 return
             }
             if (i == 6303) {
-                aCalendar1160!!.clear()
-                aCalendar1160!!.setTime(Date(method599(-59)))
-                anIntArray1149!![anInt1173++] = aCalendar1160!!.get(1)
+                anIntArray1149!![anInt1173++] = Instant.fromEpochMilliseconds(method599(-59)).toLocalDateTime(TimeZone.UTC).date.year
                 return
             }
             if (i == 6304) {
@@ -2745,10 +2746,10 @@ object ChatCommandProcessor {
 
     private fun method709(i: Int): String {
         val l = (i.toLong() + 11745L) * 86400000L
-        aCalendar1160!!.setTime(Date(l))
-        val i_244_ = aCalendar1160!!.get(5)
-        val i_245_ = aCalendar1160!!.get(2)
-        val i_246_ = aCalendar1160!!.get(1)
+        val ldt = Instant.fromEpochMilliseconds(l).toLocalDateTime(TimeZone.UTC)
+        val i_244_ = ldt.date.dayOfMonth
+        val i_245_ = ldt.date.monthNumber - 1
+        val i_246_ = ldt.date.year
         return (i_244_.toString() + "-" + aStringArray1176!![i_245_] + "-" + i_246_)
     }
 
@@ -5340,7 +5341,7 @@ object ChatCommandProcessor {
 
     init {
         aScanlineRasterFillerArray1168 = arrayOfNulls<ScanlineRasterFiller>(50)
-        aCalendar1160 = Calendar.getInstance()
+        aCalendar1160 = Clock.System.now()
         anIntArray1175 = IntArray(3)
         aStringArray1176 = arrayOf<String>("Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec")
         aLruByteCache_1174 = LruByteCache(4)

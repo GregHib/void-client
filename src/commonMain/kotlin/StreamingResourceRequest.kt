@@ -1,5 +1,11 @@
+import kotlinx.datetime.LocalDate
 import kotlin.jvm.JvmStatic
-import java.util.*
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.isoDayNumber
+import kotlinx.datetime.number
+import kotlinx.datetime.toLocalDateTime
+import kotlin.time.ExperimentalTime
+import kotlin.time.Instant
 
 class StreamingResourceRequest : AsyncResourceRequest() {
 
@@ -69,19 +75,21 @@ class StreamingResourceRequest : AsyncResourceRequest() {
             anInt10448++
         }
 
+        @OptIn(ExperimentalTime::class)
         @JvmStatic
         fun method3261(l: Long, i: Int): String {
             try {
-                WaterMaterialPass.aCalendar6221!!.setTime(Date(l))
+                WaterMaterialPass.aCalendar6221 = Instant.fromEpochMilliseconds(l)
                 anInt10455++
-                val i_1_ = WaterMaterialPass.aCalendar6221!!.get(7)
-                val i_2_ = WaterMaterialPass.aCalendar6221!!.get(5)
+                val ldt = WaterMaterialPass.aCalendar6221!!.toLocalDateTime(TimeZone.UTC)
+                val i_1_ = (ldt.date.dayOfWeek.isoDayNumber % 7) + 1
+                val i_2_ = ldt.date.day
                 if (i <= 53) aBoolean10450 = false
-                val i_3_ = WaterMaterialPass.aCalendar6221!!.get(2)
-                val i_4_ = WaterMaterialPass.aCalendar6221!!.get(1)
-                val i_5_ = WaterMaterialPass.aCalendar6221!!.get(11)
-                val i_6_ = WaterMaterialPass.aCalendar6221!!.get(12)
-                val i_7_ = WaterMaterialPass.aCalendar6221!!.get(13)
+                val i_3_ = ldt.date.month.number - 1
+                val i_4_ = ldt.date.year
+                val i_5_ = ldt.time.hour
+                val i_6_ = ldt.time.minute
+                val i_7_ = ldt.time.second
                 return (JagGlToolkitFactory.aStringArray1531!![i_1_ - 1] + ", " + i_2_ / 10 + i_2_ % 10 + "-" + CalendarUtil.aStringArray4129!![i_3_] + "-" + i_4_ + " " + i_5_ / 10 + i_5_ % 10 + ":" + i_6_ / 10 + i_6_ % 10 + ":" + i_7_ / 10 + i_7_ % 10 + " GMT")
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, "mba.I(" + l + ',' + i + ')')

@@ -1,5 +1,4 @@
 import kotlin.jvm.JvmStatic
-import java.util.*
 import kotlin.math.max
 
 class DisplaySettingsConfig : LinkedListNode {

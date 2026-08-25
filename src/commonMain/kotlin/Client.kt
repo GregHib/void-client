@@ -536,8 +536,12 @@ import java.lang.reflect.Method
 import net.Socket
 import java.net.URL
 import java.util.*
+import kotlinx.datetime.TimeZone
+import kotlinx.datetime.toLocalDateTime
 import kotlin.math.max
 import kotlin.math.min
+import kotlin.time.Clock
+import kotlin.time.ExperimentalTime
 
 class Client : GameAppletFrame() {
     private fun method101(i: Byte) {
@@ -1545,13 +1549,14 @@ class Client : GameAppletFrame() {
         } while (false)
     }
 
+    @OptIn(ExperimentalTime::class)
     private fun method114(i: Int) {
         anInt5188++
         if (WorldMapRenderer.anInt4674 != 14) {
             GlGroundShaderPass.anInt7396++
             if (GlGroundShaderPass.anInt7396 % 1000 == 1) {
-                val gregoriancalendar = GregorianCalendar()
-                SpriteRenderEntry.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6)
+                val ldt = Clock.System.now().toLocalDateTime(TimeZone.currentSystemDefault())
+                SpriteRenderEntry.anInt4383 = (ldt.time.hour * 600 + ldt.time.minute * 10 + ldt.time.second / 6)
                 FireParticleStream.aRandom93!!.setSeed(SpriteRenderEntry.anInt4383.toLong())
             }
             if (GlGroundShaderPass.anInt7396 % 50 == 0) {

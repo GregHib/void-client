@@ -64,7 +64,6 @@ import jaggl.OpenGL.Companion.glVertexPointer
 import jaggl.OpenGL.Companion.glViewport
 import awt.Canvas
 import awt.Rectangle
-import java.util.*
 import kotlin.jvm.Synchronized
 
 /*
