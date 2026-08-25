@@ -24,6 +24,7 @@ import jagex3.jagmisc.jagmisc.availablePhysicalMemory
 import io.File
 import io.FileNotFoundException
 import io.FileOutputStream
+import util.random
 
 /*
  * Class82

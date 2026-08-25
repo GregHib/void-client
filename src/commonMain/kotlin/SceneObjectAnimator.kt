@@ -1,6 +1,7 @@
 ﻿import kotlin.jvm.JvmStatic
 import ModelBatchBase.Companion.method1130
 import HostPingThread.Companion.method1301
+import util.random
 
 /* Class235 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

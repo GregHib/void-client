@@ -8,6 +8,8 @@ class TextureFormatInfo internal constructor(var anInt3850: Int) {
     }
 
     companion object {
+
+        var aTextureFormatInfo_7103: TextureFormatInfo? = TextureFormatInfo(3)
         var aBoolean3847: Boolean = false
         var anInt3848: Int = 0
         var anInt3849: Int = 0

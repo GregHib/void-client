@@ -2,6 +2,7 @@
 import DefaultGraphicsOptionState.Companion.method1839
 import OggMediaStream.Companion.method515
 import Renderer.Companion.anInt4581
+import util.random
 
 /* Class50_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

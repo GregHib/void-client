@@ -9,6 +9,7 @@ import SocketStreamWorker.Companion.method1469
 import io.IOException
 import io.OutputStream
 import util.Random
+import util.random
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.sin

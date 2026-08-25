@@ -3,6 +3,7 @@ import kotlin.jvm.JvmStatic
 import NpcAnimationResolver.Companion.method214
 import ProjectileFactory.Companion.aBoolean2895
 import WorldMapElement.Companion.method181
+import util.random
 
 /* Class6 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

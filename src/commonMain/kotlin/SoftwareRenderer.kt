@@ -1,6 +1,7 @@
 ﻿import awt.Canvas
 import awt.Rectangle
 import lang.currentThread
+import util.random
 import kotlin.math.floor
 import kotlin.math.max
 import kotlin.math.min

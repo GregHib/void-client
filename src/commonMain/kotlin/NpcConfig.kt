@@ -1,5 +1,6 @@
 ﻿import kotlin.jvm.JvmStatic
 import CacheArchiveIndexLoader.Companion.method340
+import util.random
 
 /* Class51 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

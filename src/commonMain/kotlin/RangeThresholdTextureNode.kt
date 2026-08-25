@@ -62,7 +62,7 @@ class RangeThresholdTextureNode : AbstractProceduralTextureNode(1, true) {
         fun method3055(i: Int, textureFormatInfo: TextureFormatInfo?): Int {
             anInt9106++
             if (i < 94) method3054(false, -98, -116)
-            if (textureFormatInfo != TimedRecordAccessor.aTextureFormatInfo_7103) {
+            if (textureFormatInfo != TextureFormatInfo.aTextureFormatInfo_7103) {
                 if (GroundItemRenderState.aTextureFormatInfo_1662 == textureFormatInfo) return 6408
                 if (textureFormatInfo == GlFontTextured.aTextureFormatInfo_9471) return 6406
                 if (CellNoiseTextureNode.aTextureFormatInfo_9303 != textureFormatInfo) {

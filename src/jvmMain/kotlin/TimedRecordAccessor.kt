@@ -19,8 +19,6 @@ abstract actual class TimedRecordAccessor : LinkedListNode() {
 
         var anInt7102: Int = 1400
 
-        var aTextureFormatInfo_7103: TextureFormatInfo? = TextureFormatInfo(3)
-
         var anInt7104: Int = 0
 
 

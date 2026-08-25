@@ -45,7 +45,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         anInt5085++
         if (MovementDirection.aMovementDirection_1183 != this.aMovementDirection_5088) {
             if (MovementDirection.aMovementDirection_1186 == this.aMovementDirection_5088) {
-                if (this.aTextureFormatInfo_5084 == TimedRecordAccessor.aTextureFormatInfo_7103) return 34843
+                if (this.aTextureFormatInfo_5084 == TextureFormatInfo.aTextureFormatInfo_7103) return 34843
                 if (GroundItemRenderState.aTextureFormatInfo_1662 == this.aTextureFormatInfo_5084) return 34842
                 if (this.aTextureFormatInfo_5084 != GlFontTextured.aTextureFormatInfo_9471) {
                     if (this.aTextureFormatInfo_5084 != CellNoiseTextureNode.aTextureFormatInfo_9303) {
@@ -55,7 +55,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
                     } else return 34846
                 } else return 34844
             } else if (this.aMovementDirection_5088 == MovementDirection.aMovementDirection_1187) {
-                if (TimedRecordAccessor.aTextureFormatInfo_7103 != this.aTextureFormatInfo_5084) {
+                if (TextureFormatInfo.aTextureFormatInfo_7103 != this.aTextureFormatInfo_5084) {
                     if (this.aTextureFormatInfo_5084 == GroundItemRenderState.aTextureFormatInfo_1662) return 34836
                     if (this.aTextureFormatInfo_5084 != GlFontTextured.aTextureFormatInfo_9471) {
                         if (CellNoiseTextureNode.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 34840
@@ -65,7 +65,7 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
                     } else return 34838
                 } else return 34837
             }
-        } else if (this.aTextureFormatInfo_5084 != TimedRecordAccessor.aTextureFormatInfo_7103) {
+        } else if (this.aTextureFormatInfo_5084 != TextureFormatInfo.aTextureFormatInfo_7103) {
             if (this.aTextureFormatInfo_5084 != GroundItemRenderState.aTextureFormatInfo_1662) {
                 if (this.aTextureFormatInfo_5084 != GlFontTextured.aTextureFormatInfo_9471) {
                     if (CellNoiseTextureNode.aTextureFormatInfo_9303 == this.aTextureFormatInfo_5084) return 6409

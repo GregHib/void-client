@@ -1,4 +1,5 @@
-﻿import kotlin.jvm.JvmStatic
+﻿import util.random
+import kotlin.jvm.JvmStatic
 /* Class225 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */

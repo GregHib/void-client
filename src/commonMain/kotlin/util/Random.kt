@@ -14,3 +14,5 @@ expect class Random {
     fun nextGaussian(): Double
     fun nextBytes(bytes: ByteArray)
 }
+
+expect fun random(): Double

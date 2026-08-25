@@ -1,6 +1,7 @@
 ﻿import kotlin.jvm.JvmStatic
 import io.IOException
 import io.OutputStream
+import util.random
 
 /*
  * OutputStream_Sub2

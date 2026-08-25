@@ -1,5 +1,6 @@
 ﻿import kotlin.jvm.JvmStatic
 import GameAppletFrame.Companion.method86
+import util.random
 import kotlin.math.pow
 
 /* Class239_Sub25 - Decompiled by JODE

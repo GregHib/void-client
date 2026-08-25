@@ -9,6 +9,7 @@ import InvertTextureNode.Companion.method3135
 import DirectionPath.Companion.method536
 import NpcType.Companion.method802
 import OpenGlRenderNode.Companion.method3297
+import util.random
 
 /* Class348_Sub14 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

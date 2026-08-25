@@ -1,6 +1,7 @@
 ﻿import kotlin.jvm.JvmStatic
 import HeadIconRenderer.Companion.method1211
 import WorldListEntry.Companion.method285
+import util.random
 import util.zip.CRC32
 import kotlin.math.atan2
 import kotlin.math.cos

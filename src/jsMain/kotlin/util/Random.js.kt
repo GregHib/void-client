@@ -104,3 +104,8 @@ actual class Random {
         }
     }
 }
+
+private val sharedRandom: Random = Random()
+
+/** Returns a pseudorandom `Double` uniformly in `[0.0, 1.0)`. */
+actual fun random(): Double = sharedRandom.nextDouble()

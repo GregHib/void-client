@@ -3,6 +3,7 @@ import SoundEnvelope.Companion.method303
 import SoundEngineInitializer.method353
 import WidgetComponent.Companion.method424
 import CachedRgbNoiseTexture.Companion.method566
+import util.random
 
 /* Class75 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

@@ -2,6 +2,7 @@
 import ServerConnectionInfo.Companion.method1258
 import RangeThresholdTextureNode.Companion.method3056
 import EdgeDetectTextureNode.Companion.method3073
+import util.random
 
 /* Class264 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
