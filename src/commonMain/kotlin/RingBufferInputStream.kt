@@ -5,8 +5,8 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.runBlocking
 import java.io.EOFException
-import java.io.IOException
-import java.io.InputStream
+import io.IOException
+import io.InputStream
 
 /*
  * Class376

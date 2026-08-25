@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
-import java.io.IOException
-import java.io.OutputStream
+import io.IOException
+import io.OutputStream
 
 /*
  * OutputStream_Sub2

@@ -21,7 +21,7 @@ import ChatCommandProcessor.method706
 import ChatCommandProcessor.method715
 import NoiseTextureNode.Companion.method3102
 import jagex3.jagmisc.jagmisc.availablePhysicalMemory
-import java.io.File
+import io.File
 import java.io.FileNotFoundException
 import java.io.FileOutputStream
 

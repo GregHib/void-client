@@ -5,7 +5,7 @@ import jaggl.OpenGL.Companion.glMatrixMode
 import jaggl.OpenGL.Companion.glPopMatrix
 import jaggl.OpenGL.Companion.glPushMatrix
 import jaggl.OpenGL.Companion.glTranslatef
-import java.io.IOException
+import io.IOException
 import kotlin.math.sqrt
 
 class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134_: Int, i_135_: Int, `is`: Array<IntArray?>, is_136_: Array<IntArray?>?, i_137_: Int) : TerrainTile(i_134_, i_135_, i_137_, `is`) {

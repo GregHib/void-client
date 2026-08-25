@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 import LightDetailOptionState.Companion.method1802
 import WaterMaterialPass.Companion.method2148
 import WorldMapAreaLabel.Companion.method3570
-import java.io.IOException
+import io.IOException
 
 /* Class289 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

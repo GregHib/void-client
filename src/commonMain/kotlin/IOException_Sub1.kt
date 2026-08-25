@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.io.IOException
+import io.IOException
 
 class IOException_Sub1(string: String?) : IOException(string) {
     companion object {

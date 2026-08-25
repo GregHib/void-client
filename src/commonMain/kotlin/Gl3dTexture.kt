@@ -3,7 +3,7 @@ import GameAppletFrame.Companion.method94
 import RangeThresholdTextureNode.Companion.method3055
 import jaggl.OpenGL.Companion.glPixelStorei
 import jaggl.OpenGL.Companion.glTexImage3Dub
-import java.io.IOException
+import io.IOException
 
 class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureFormatInfo: TextureFormatInfo?, i: Int, i_0_: Int, i_1_: Int, `is`: ByteArray?) : GlTextureBase(glRenderDevice, 32879, textureFormatInfo, MovementDirection.aMovementDirection_1183, i_0_ * (i * i_1_), false), Renderable3dTexture {
     private val anInt8626: Int

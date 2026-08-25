@@ -12,12 +12,12 @@ import kotlinx.coroutines.runBlocking
 import java.awt.*
 import java.awt.datatransfer.Transferable
 import java.io.DataInputStream
-import java.io.File
+import io.File
 import java.io.FileOutputStream
-import java.io.IOException
+import io.IOException
 import java.lang.reflect.Method
 import java.net.InetAddress
-import java.net.Socket
+import net.Socket
 import java.net.URL
 import java.util.*
 import java.util.concurrent.Executors

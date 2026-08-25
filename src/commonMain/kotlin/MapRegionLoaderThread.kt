@@ -10,7 +10,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
 import java.io.BufferedReader
 import java.io.DataInputStream
-import java.io.IOException
+import io.IOException
 import java.io.InputStreamReader
 import java.net.MalformedURLException
 import java.net.URL

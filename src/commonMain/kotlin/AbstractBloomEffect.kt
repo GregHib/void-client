@@ -1,8 +1,8 @@
 import kotlin.jvm.JvmStatic
 import LightDetailOptionState.Companion.method1802
 import awt.Canvas
-import java.io.IOException
-import java.net.Socket
+import io.IOException
+import net.Socket
 
 abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenGlRenderer) : LinkedListNode() {
 

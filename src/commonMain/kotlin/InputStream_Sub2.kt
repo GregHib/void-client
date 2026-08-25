@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import ByteArrayPool.anInt496
-import java.io.InputStream
+import io.InputStream
 
 class InputStream_Sub2 : InputStream() {
     override fun read(): Int {

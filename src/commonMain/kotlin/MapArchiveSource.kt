@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 import LinkedListIterator.Companion.method1242
 import NormalMapTextureNode.Companion.method3141
 import SocketFactory.Companion.method2049
-import java.io.IOException
+import io.IOException
 
 /* Class292 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

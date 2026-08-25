@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.io.IOException
+import io.IOException
 
 class LightDetailOptionState : GraphicsOptionState {
     internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)

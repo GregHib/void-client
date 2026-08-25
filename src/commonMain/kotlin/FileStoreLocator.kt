@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.io.File
+import io.File
 import java.io.RandomAccessFile
 import java.util.Hashtable
 

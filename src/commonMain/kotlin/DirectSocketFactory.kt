@@ -1,5 +1,5 @@
-import java.io.IOException
-import java.net.Socket
+import io.IOException
+import net.Socket
 
 class DirectSocketFactory : SocketFactory() {
     @Throws(IOException::class)

@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 import ParticleDefLoader.Companion.method1376
 import MapSceneDefLoader.Companion.method1394
 import LongKeyNode.Companion.method2808
-import java.io.IOException
+import io.IOException
 
 /* Class348_Sub46 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

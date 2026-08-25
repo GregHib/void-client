@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.io.File
+import io.File
 
 class SceneryDetailOptionState : GraphicsOptionState {
     override fun method1712(i: Int, i_0_: Int) {

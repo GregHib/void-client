@@ -4,10 +4,10 @@ import TexGenMaterialPass.Companion.method2161
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.runBlocking
 import java.io.EOFException
-import java.io.IOException
-import java.io.InputStream
-import java.io.OutputStream
-import java.net.Socket
+import io.IOException
+import io.InputStream
+import io.OutputStream
+import net.Socket
 
 /*
  * Class202

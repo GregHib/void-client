@@ -11,8 +11,8 @@ import FireParticleStream.Companion.method132
 import InboundPacketHeader
 import OpenGlTerrainTile.Companion.method4002
 import NativeShaderProgram.Companion.method3439
-import java.io.IOException
-import java.net.Socket
+import io.IOException
+import net.Socket
 import java.net.URL
 
 /*

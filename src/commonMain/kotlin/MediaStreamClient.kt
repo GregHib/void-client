@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import GameClock.method599
-import java.io.IOException
+import io.IOException
 import kotlin.concurrent.Volatile
 
 /*

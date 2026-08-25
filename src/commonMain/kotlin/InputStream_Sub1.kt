@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.io.InputStream
+import io.InputStream
 
 class InputStream_Sub1 : InputStream() {
     override fun read(): Int {

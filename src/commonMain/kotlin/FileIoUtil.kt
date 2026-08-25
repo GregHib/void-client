@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import BufferedFileReader.method3610
-import java.io.File
-import java.io.IOException
+import io.File
+import io.IOException
 
 /*
  * Class327

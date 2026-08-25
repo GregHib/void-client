@@ -6,8 +6,8 @@ import OpenGlRenderer.Companion.method3802
 import Client.Companion.anInt2986
 import ScrollingNoiseTexture.Companion.method560
 import SocketStreamWorker.Companion.method1469
-import java.io.IOException
-import java.io.OutputStream
+import io.IOException
+import io.OutputStream
 import java.util.*
 import kotlin.math.max
 import kotlin.math.min

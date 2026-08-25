@@ -1,5 +1,5 @@
 import java.io.BufferedReader
-import java.io.IOException
+import io.IOException
 import java.io.InputStreamReader
 import java.net.*
 import java.nio.charset.StandardCharsets

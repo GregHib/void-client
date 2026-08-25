@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import NullOggStream.Companion.anInt9040
-import java.io.IOException
-import java.net.Socket
+import io.IOException
+import net.Socket
 import kotlin.math.atan2
 
 class SocketGameConnection internal constructor(private val aSocket5836: Socket, i: Int) : AbstractGameSocket() {

@@ -9,8 +9,8 @@ import java.awt.event.FocusEvent
 import java.awt.event.FocusListener
 import java.awt.event.WindowEvent
 import java.awt.event.WindowListener
-import java.io.File
-import java.io.IOException
+import io.File
+import io.IOException
 import java.net.URL
 import java.util.*
 
