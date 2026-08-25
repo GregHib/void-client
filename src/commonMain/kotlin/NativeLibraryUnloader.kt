@@ -2,6 +2,8 @@ import kotlin.jvm.JvmStatic
 import io.File
 import lang.Class
 import lang.ClassLoader
+import lang.getClassLoader
+import lang.getDeclaredMethod
 import lang.jClass
 import util.Enumeration
 import util.Hashtable

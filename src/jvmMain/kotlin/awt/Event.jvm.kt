@@ -1,3 +1,3 @@
 package awt
 
-actual typealias Event = java.awt.Event
+actual open class Event actual constructor()

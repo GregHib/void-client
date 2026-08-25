@@ -15,3 +15,5 @@ expect open class Container : Component {
     fun doLayout()
 //    fun setLayout(layout: LayoutManager)
 }
+
+expect fun Container.getInsets(): Insets

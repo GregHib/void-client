@@ -13,6 +13,8 @@ import jaggl.OpenGL.Companion.glTexSubImage2Dub
 import awt.MediaTracker
 import awt.Toolkit
 import awt.getDefaultToolkit
+import awt.getHeight
+import awt.getWidth
 import awt.image.PixelGrabber
 import lang.InterruptedException
 

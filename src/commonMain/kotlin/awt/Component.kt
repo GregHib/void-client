@@ -28,8 +28,7 @@ expect abstract class Component : ImageObserver {
     fun getGraphics(): Graphics
     fun setCursor(cursor: Cursor?)
     fun getToolkit(): Toolkit
-    fun getInsets(): Insets
-    fun prepareImage(image: Image, observer: ImageObserver)
+    fun prepareImage(image: Image, observer: ImageObserver): Boolean
     open fun update(graphics: Graphics?)
     open fun paint(graphics: Graphics?)
     fun addKeyListener(keyListener: KeyListener)

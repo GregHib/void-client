@@ -4,6 +4,7 @@ import awt.COLOR_BLACK
 import awt.Color
 import awt.Container
 import awt.Rectangle
+import awt.getInsets
 
 /*
  * Class140

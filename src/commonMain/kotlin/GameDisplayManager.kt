@@ -5,6 +5,7 @@ import FixedFunctionMaterialPass.Companion.method2145
 import TexGenMaterialPass.Companion.method2158
 import ConnectionStateType.Companion.method527
 import awt.Container
+import awt.getInsets
 
 /*
  * Class215

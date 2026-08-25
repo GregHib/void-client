@@ -1,5 +1,7 @@
 package lang
 
+import lang.reflect.Method
+
 actual typealias Class<T> = java.lang.Class<T>
 
 actual fun classOf(value: Any?): Class<*> = value!!.javaClass
@@ -12,3 +14,12 @@ actual val <T : Any> kotlin.reflect.KClass<T>.jClass: Class<T>
     get() = this.java
 
 actual fun forName(name: String?) = java.lang.Class.forName(name)
+
+actual fun <T> Class<T>.getClassLoader(): ClassLoader? =
+    (this as java.lang.Class<T>).classLoader?.let { ClassLoader(it) }
+
+actual fun <T> Class<T>.getMethod(name: String?, vararg parameterTypes: Class<*>): Method =
+    (this as java.lang.Class<T>).getMethod(name, *parameterTypes)
+
+actual fun <T> Class<T>.getDeclaredMethod(name: String?, vararg parameterTypes: Class<*>): Method =
+    (this as java.lang.Class<T>).getDeclaredMethod(name, *parameterTypes)

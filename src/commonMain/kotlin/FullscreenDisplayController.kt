@@ -1,7 +1,10 @@
 import awt.DisplayMode
 import awt.Frame
 import awt.GraphicsDevice
+import awt.getDefaultScreenDevice
+import awt.getScreenDevices
 import awt.localGraphicsEnvironment
+import awt.setFullScreenWindow
 import lang.jClass
 import kotlin.math.abs
 

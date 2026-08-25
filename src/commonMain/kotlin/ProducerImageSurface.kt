@@ -6,6 +6,7 @@ import awt.image.ColorModel
 import awt.image.DirectColorModel
 import awt.image.ImageConsumer
 import awt.image.ImageProducer
+import awt.image.setProperties
 
 class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
     private var aCanvas9073: Canvas? = null

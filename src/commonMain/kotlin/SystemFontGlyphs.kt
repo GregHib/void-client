@@ -5,6 +5,7 @@ import awt.Color
 import awt.Component
 import awt.Font
 import awt.FontMetrics
+import awt.getGraphics
 import awt.image.PixelGrabber
 
 /*

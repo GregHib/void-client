@@ -5,6 +5,9 @@ import awt.Color
 import awt.Font
 import awt.FontMetrics
 import awt.Image
+import awt.getGraphics
+import awt.getHeight
+import awt.getWidth
 import lang.Class
 import lang.IllegalAccessException
 import lang.NoSuchFieldException

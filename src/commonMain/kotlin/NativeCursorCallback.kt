@@ -9,7 +9,9 @@ import com.ms.win32.User32.SetCursor
 import com.ms.win32.User32.SetCursorPos
 import com.ms.win32.User32.SetWindowLong
 import awt.Component
+import lang.getMethod
 import lang.jClass
+import lang.reflect.isAccessible
 import kotlin.concurrent.Volatile
 
 /*

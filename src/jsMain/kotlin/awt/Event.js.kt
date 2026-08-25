@@ -1,3 +1,3 @@
 package awt
 
-actual class Event
+actual open class Event actual constructor()

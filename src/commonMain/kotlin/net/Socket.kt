@@ -16,5 +16,4 @@ expect open class Socket(host: String?, port: Int) {
     open fun setTcpNoDelay(on: Boolean)
     open fun shutdownInput()
     open fun shutdownOutput()
-    open fun connect(address: InetAddress)
 }

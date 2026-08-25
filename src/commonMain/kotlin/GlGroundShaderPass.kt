@@ -8,6 +8,7 @@ import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glProgramLocalParameter4fARB
 import ArbVertexProgram.Companion.method3442
 import awt.Container
+import awt.getInsets
 
 class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js5Archive: Js5Archive?) : AbstractRenderPass(glRenderDevice) {
     private var anInterface18_Impl3_7390: Renderable2dTexture? = null

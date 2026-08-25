@@ -10,13 +10,9 @@ expect class Class<T> {
 
     fun isInstance(obj: Any?): Boolean
 
-    fun getMethod(strring: String?): Method
-
     fun isAssignableFrom(other: Class<*>): Boolean
-    fun getClassLoader(): ClassLoader?
     fun getDeclaredField(name: String?): Field
     fun getDeclaredFields(): Array<Field>
-    fun getDeclaredMethod(name: String?): Method
 
     override fun toString(): String
     override fun equals(other: Any?): Boolean
@@ -30,3 +26,7 @@ expect val <T : Any> T.jClass: Class<T>
 
 /** Equivalent of `SomeType::class.java`. */
 expect val <T : Any> kotlin.reflect.KClass<T>.jClass: Class<T>
+
+expect fun <T> Class<T>.getClassLoader(): ClassLoader?
+expect fun <T> Class<T>.getMethod(name: String?, vararg parameterTypes: Class<*>): Method
+expect fun <T> Class<T>.getDeclaredMethod(name: String?, vararg parameterTypes: Class<*>): Method

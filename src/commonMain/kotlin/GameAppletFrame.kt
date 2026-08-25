@@ -9,6 +9,7 @@ import awt.event.FocusEvent
 import awt.event.FocusListener
 import awt.event.WindowEvent
 import awt.event.WindowListener
+import awt.getInsets
 import awt.h
 import awt.w
 import io.File
@@ -18,6 +19,7 @@ import net.URL
 import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import lang.Class
+import lang.getClassLoader
 import lang.jClass
 import lang.load
 import kotlin.time.ExperimentalTime

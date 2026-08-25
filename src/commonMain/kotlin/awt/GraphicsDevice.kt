@@ -8,10 +8,11 @@ expect abstract class GraphicsDevice {
     fun getDisplayMode(): DisplayMode
     fun getDisplayModes(): Array<DisplayMode>
     fun setDisplayMode(mode: DisplayMode?)
-    fun setFullScreenWindow(frame: Frame?)
     fun isFullScreenSupported(): Boolean
     override fun toString(): String
 }
+
+expect fun GraphicsDevice.setFullScreenWindow(frame: Frame?)
 
 const val GRAPHICS_DEVICE_TYPE_RASTER_SCREEN = 0
 

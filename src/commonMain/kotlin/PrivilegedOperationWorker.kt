@@ -23,6 +23,8 @@ import lang.InterruptedException
 import lang.SecurityException
 import lang.Thread
 import lang.currentThread
+import lang.getClassLoader
+import lang.getDeclaredMethod
 import lang.getProperty
 import lang.reflect.Method
 import net.Socket
@@ -126,7 +128,8 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 } else if (i == 8) {
                     val objects = (linkedQueueNode.anObject1996 as Array<Any?>?)
                     if (this.aBoolean3777 && ((objects!![0] as Class<*>).getClassLoader() == null)) throw SecurityException()
-                    linkedQueueNode.anObject1998 = ((objects!![0] as Class<*>).getDeclaredMethod(objects[1] as String?, *(objects[2] as Array<Class<*>?>)))
+                    val parameterTypes = (objects!![2] as Array<Class<*>?>).map { it!! }.toTypedArray()
+                    linkedQueueNode.anObject1998 = ((objects[0] as Class<*>).getDeclaredMethod(objects[1] as String?, *parameterTypes))
                 } else if (i == 9) {
                     val objects = (linkedQueueNode.anObject1996 as Array<Any?>?)
                     if (this.aBoolean3777 && ((objects!![0] as Class<*>).getClassLoader() == null)) throw SecurityException()
@@ -290,7 +293,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
 
     fun method2242(`is`: ByteArray, i: Byte, file: File): Boolean {
         try {
-            val fileoutputstream = FileOutputStream(file)
+            val fileoutputstream = FileOutputStream(file.getPath())
             fileoutputstream.write(`is`, 0, `is`.size)
             if (i.toInt() != -104) return false
             fileoutputstream.close()

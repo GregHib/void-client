@@ -2,6 +2,7 @@ import awt.COLOR_BLACK
 import kotlin.jvm.JvmStatic
 import awt.Color
 import awt.Font
+import awt.getGraphics
 
 /*
  * Class199

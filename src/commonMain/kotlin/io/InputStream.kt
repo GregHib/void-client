@@ -6,4 +6,5 @@ expect abstract class InputStream() : AutoCloseable {
     open fun read(b: ByteArray, off: Int, len: Int): Int
     open fun skip(n: Long): Long
     open fun available(): Int
+    override fun close()
 }

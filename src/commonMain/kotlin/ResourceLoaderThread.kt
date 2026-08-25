@@ -4,6 +4,7 @@ import GlTexture2DRegion.Companion.method3553
 import GlGroundShaderPass.Companion.method3556
 import GameClock.method599
 import awt.Container
+import awt.getInsets
 import kotlin.concurrent.Volatile
 
 /* Class311 - Decompiled by JODE

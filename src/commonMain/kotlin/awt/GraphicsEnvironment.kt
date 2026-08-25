@@ -6,9 +6,10 @@ expect abstract class GraphicsEnvironment {
 //    val defaultScreenDevice: GraphicsDevice
 //    val availableFontFamilyNames: Array<String>
     fun isHeadlessInstance(): Boolean
-    fun getScreenDevices(): Array<GraphicsDevice>
-    fun getDefaultScreenDevice(): GraphicsDevice
 }
+
+expect fun GraphicsEnvironment.getScreenDevices(): Array<GraphicsDevice>
+expect fun GraphicsEnvironment.getDefaultScreenDevice(): GraphicsDevice
 
 expect val localGraphicsEnvironment: GraphicsEnvironment
 

@@ -2,8 +2,15 @@ package awt
 
 import kotlinx.coroutines.Runnable
 
-actual class EventQueue actual constructor()
+actual class EventQueue actual constructor() {
+    internal var pending: Event? = null
+}
 
+actual fun EventQueue.peekEvent(): Event? = pending
+
+actual fun EventQueue.postEvent(event: Event) {
+    pending = event
+}
 
 private external fun setTimeout(handler: () -> Unit, timeout: Int): Int
 

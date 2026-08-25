@@ -524,6 +524,7 @@ import awt.Canvas
 import awt.Component
 import awt.Container
 import awt.Frame
+import awt.getInsets
 import awt.h
 import awt.left
 import awt.top
@@ -546,6 +547,7 @@ import lang.ClassNotFoundException
 import lang.IllegalAccessException
 import lang.SecurityException
 import lang.classOf
+import lang.getClassLoader
 import lang.jClass
 import util.Vector
 import util.random

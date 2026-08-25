@@ -7,7 +7,9 @@ import com.ms.directX.IEnumModesCallback
 import com.ms.win32.User32
 import awt.Component
 import awt.Frame
+import lang.getMethod
 import lang.jClass
+import lang.reflect.isAccessible
 
 /*
  * Class134

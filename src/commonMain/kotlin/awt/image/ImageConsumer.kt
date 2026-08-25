@@ -13,8 +13,9 @@ expect interface ImageConsumer {
         model: ColorModel?, pixels: IntArray?, off: Int, scansize: Int,
     )
     fun imageComplete(status: Int)
-    fun setProperties(something: Any?)
 }
+
+expect fun ImageConsumer.setProperties(something: Any?)
 
 // ImageConsumer's static flags.
 expect val IMAGE_CONSUMER_RANDOMPIXELORDER: Int

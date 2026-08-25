@@ -1,6 +1,6 @@
 package lang
 
-actual class ClassLoader private constructor(
+actual class ClassLoader internal constructor(
     internal val delegate: java.lang.ClassLoader
 ) {
     actual val parent: ClassLoader?

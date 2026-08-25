@@ -2,7 +2,7 @@ package lang.ref
 
 import java.lang.ref.WeakReference
 
-actual class PlatformWeakReference<T : Any> actual constructor(
+actual open class PlatformWeakReference<T : Any> actual constructor(
     referent: T,
     queue: PlatformReferenceQueue<T>?
 ) {

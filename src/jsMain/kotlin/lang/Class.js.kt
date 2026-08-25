@@ -1,6 +1,7 @@
 package lang
 
 import lang.reflect.Field
+import lang.reflect.Method
 import kotlin.reflect.KClass
 
 actual class Class<T> internal constructor(
@@ -29,9 +30,6 @@ actual class Class<T> internal constructor(
         other is Class<*> && other.ctor === ctor
 
     actual override fun hashCode(): Int = "name".hashCode()
-    actual fun getClassLoader(): ClassLoader? {
-        TODO("Not yet implemented")
-    }
 
     actual fun getDeclaredField(name: String): Field {
         TODO("Not yet implemented")
@@ -62,5 +60,17 @@ actual fun classOf(value: Any?): Class<*> {
 }
 
 actual fun forName(name: String?): Class<*> {
+    TODO("Not yet implemented")
+}
+
+actual fun <T> Class<T>.getClassLoader(): ClassLoader? {
+    TODO("Not yet implemented")
+}
+
+actual fun <T> Class<T>.getMethod(name: String?, vararg parameterTypes: Class<*>): Method {
+    TODO("Not yet implemented")
+}
+
+actual fun <T> Class<T>.getDeclaredMethod(name: String?, vararg parameterTypes: Class<*>): Method {
     TODO("Not yet implemented")
 }
