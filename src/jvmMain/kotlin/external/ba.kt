@@ -7,12 +7,12 @@ import RenderNode
 * Visit http://jode.sourceforge.net/
 * NativeRenderTarget
 */
-class ba internal constructor(var_oa: oa?) : RenderNode(), Disposable {
-    var nativeid: Long = 0
+actual class ba internal actual constructor(var_oa: oa?) : RenderNode(), Disposable {
+    actual var nativeid: Long = 0
 
-    protected fun finalize() {
+    /*protected*/ actual fun finalize() {
         if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
-    external override fun w(bool: Boolean)
+    actual external override fun w(bool: Boolean)
 }

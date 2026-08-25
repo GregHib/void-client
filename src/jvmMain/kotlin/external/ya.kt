@@ -7,20 +7,20 @@ import ShaderProgram
 * Visit http://jode.sourceforge.net/
 * NativeTextureManager
 */
-class ya(var_oa: oa?, i: Int) : ShaderProgram(), Disposable {
-    var nativeid: Long = 0
+actual class ya actual constructor(var_oa: oa?, i: Int) : ShaderProgram(), Disposable {
+    actual var nativeid: Long = 0
 
-    external override fun w(bool: Boolean)
+    actual external override fun w(bool: Boolean)
 
-    external fun ga()
+    actual external fun ga()
 
-    protected fun finalize() {
+    /*protected*/ actual fun finalize() {
         if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
-    private external fun aa(var_oa: oa?, i: Int)
+    /*private*/ actual external fun aa(var_oa: oa?, i: Int)
 
-    external fun r()
+    actual external fun r()
 
     init {
         aa(var_oa, i)

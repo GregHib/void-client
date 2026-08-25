@@ -10,13 +10,13 @@ import TerrainTile
 * Visit http://jode.sourceforge.net/
 * NativeContextTerrainTile
 */
-class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<IntArray?>, is_51_: Array<IntArray?>?, i_52_: Int, i_53_: Int, i_54_: Int) : TerrainTile(i, i_50_, i_52_, `is`), Disposable {
+actual class t actual constructor(/*private*/ actual val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<IntArray?>, is_51_: Array<IntArray?>?, i_52_: Int, i_53_: Int, i_54_: Int) : TerrainTile(i, i_50_, i_52_, `is`), Disposable {
 
-    var nativeid: Long = 0
-    private val aNodeDeque_5149 = NodeDeque()
-    private var anInt5151 = -1
+    actual var nativeid: Long = 0
+    /*private*/ actual val aNodeDeque_5149 = NodeDeque()
+    /*private*/ actual var anInt5151 = -1
 
-    override fun method3984(i: Int, i_0_: Int, i_1_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_2_: Int, i_3_: Int) {
+    actual override fun method3984(i: Int, i_0_: Int, i_1_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_2_: Int, i_3_: Int) {
         anInt5151 = i_2_
         var i_4_ = 0
         val fs = FloatArray(aNodeDeque_5149.method1998(0))
@@ -37,16 +37,16 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         }
     }
 
-    external override fun wa(var_renderNode: RenderNode?, i: Int, i_9_: Int, i_10_: Int, i_11_: Int, bool: Boolean)
+    actual external override fun wa(var_renderNode: RenderNode?, i: Int, i_9_: Int, i_10_: Int, i_11_: Int, bool: Boolean)
 
-    override fun method3979(i: Int, i_12_: Int) {
+    actual override fun method3979(i: Int, i_12_: Int) {
         if (anInt5151 < 0) anOa5150.method3973()?.method142(this, i, i_12_)
         else anOa5150.method3973()?.method147(this, i, i_12_, anInt5151)
     }
 
-    external override fun w(bool: Boolean)
+    actual external override fun w(bool: Boolean)
 
-    override fun method3978(i: Int, i_13_: Int, `is`: IntArray, is_14_: IntArray, is_15_: IntArray, is_16_: IntArray, is_17_: IntArray, is_18_: IntArray, is_19_: IntArray, is_20_: IntArray, is_21_: IntArray, is_22_: IntArray, is_23_: IntArray, i_24_: Int, i_25_: Int, i_26_: Int, bool: Boolean) {
+    actual override fun method3978(i: Int, i_13_: Int, `is`: IntArray, is_14_: IntArray, is_15_: IntArray, is_16_: IntArray, is_17_: IntArray, is_18_: IntArray, is_19_: IntArray, is_20_: IntArray, is_21_: IntArray, is_22_: IntArray, is_23_: IntArray, i_24_: Int, i_25_: Int, i_26_: Int, bool: Boolean) {
         var bool_27_ = false
         if (is_20_ != null) {
             val is_28_: IntArray? = is_20_
@@ -103,30 +103,30 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         if (bool_27_ || is_37_ != null) U(i, i_13_, is_32_, is_38_!!, is_33_, is_39_!!, is_34_, is_37_!!, is_35_, is_36_, i_24_, i_25_, i_26_, bool)
     }
 
-    override fun method3981(class348_sub1: AbstractTileShape, `is`: IntArray) {
+    actual override fun method3981(class348_sub1: AbstractTileShape, `is`: IntArray) {
         aNodeDeque_5149.method1999(class348_sub1, -20180)
         V(class348_sub1.hashCode(), class348_sub1.method2724(-1), class348_sub1.method2722(124), class348_sub1.method2717(83.toByte()), class348_sub1.method2723(-1), class348_sub1.method2720(-1), `is`)
     }
 
-    external override fun CA(var_renderNode: RenderNode?, i: Int, i_45_: Int, i_46_: Int, i_47_: Int, bool: Boolean)
+    actual external override fun CA(var_renderNode: RenderNode?, i: Int, i_45_: Int, i_46_: Int, i_47_: Int, bool: Boolean)
 
-    private external fun q(fs: FloatArray?)
+    /*private*/ actual external fun q(fs: FloatArray?)
 
-    external override fun ka(i: Int, i_48_: Int, i_49_: Int)
+    actual external override fun ka(i: Int, i_48_: Int, i_49_: Int)
 
     init {
         ga(anOa5150, var_ya, i, i_50_, this.anIntArrayArray4584, is_51_, i_52_, i_53_, i_54_)
     }
 
-    override fun method3989(var_renderNode: RenderNode?, i: Int, i_55_: Int, i_56_: Int, i_57_: Int, bool: Boolean): Boolean {
+    actual override fun method3989(var_renderNode: RenderNode?, i: Int, i_55_: Int, i_56_: Int, i_57_: Int, bool: Boolean): Boolean {
         return true
     }
 
-    private external fun V(i: Int, i_58_: Int, i_59_: Int, i_60_: Int, i_61_: Int, i_62_: Int, `is`: IntArray?)
+    /*private*/ actual external fun V(i: Int, i_58_: Int, i_59_: Int, i_60_: Int, i_61_: Int, i_62_: Int, `is`: IntArray?)
 
-    external override fun YA()
+    actual external override fun YA()
 
-    override fun method3983(i: Int, i_63_: Int, i_64_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_65_: Int) {
+    actual override fun method3983(i: Int, i_63_: Int, i_64_: Int, bools: Array<BooleanArray?>?, bool: Boolean, i_65_: Int) {
         anInt5151 = -1
         var i_66_ = 0
         val fs = FloatArray(aNodeDeque_5149.method1998(0))
@@ -147,17 +147,17 @@ class t(private val anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<I
         }
     }
 
-    external override fun fa(i: Int, i_71_: Int, var_renderNode: RenderNode?): RenderNode?
+    actual external override fun fa(i: Int, i_71_: Int, var_renderNode: RenderNode?): RenderNode?
 
-    protected fun finalize() {
+    /*protected*/ actual fun finalize() {
         if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
-    private external fun ga(var_oa: oa?, var_ya: ya?, i: Int, i_72_: Int, `is`: Array<IntArray?>?, is_73_: Array<IntArray?>?, i_74_: Int, i_75_: Int, i_76_: Int)
+    /*private*/ actual external fun ga(var_oa: oa?, var_ya: ya?, i: Int, i_72_: Int, `is`: Array<IntArray?>?, is_73_: Array<IntArray?>?, i_74_: Int, i_75_: Int, i_76_: Int)
 
-    external override fun U(i: Int, i_77_: Int, `is`: IntArray?, is_78_: IntArray?, is_79_: IntArray, is_80_: IntArray?, is_81_: IntArray, is_82_: IntArray?, is_83_: IntArray, is_84_: IntArray, i_85_: Int, i_86_: Int, i_87_: Int, bool: Boolean)
+    actual external override fun U(i: Int, i_77_: Int, `is`: IntArray?, is_78_: IntArray?, is_79_: IntArray, is_80_: IntArray?, is_81_: IntArray, is_82_: IntArray?, is_83_: IntArray, is_84_: IntArray, i_85_: Int, i_86_: Int, i_87_: Int, bool: Boolean)
 
-    override fun method3987(i: Int, i_88_: Int, i_89_: Int, i_90_: Int, i_91_: Int, i_92_: Int, i_93_: Int, bools: Array<BooleanArray?>) {
+    actual override fun method3987(i: Int, i_88_: Int, i_89_: Int, i_90_: Int, i_91_: Int, i_92_: Int, i_93_: Int, bools: Array<BooleanArray?>) {
         anOa5150.method3973()?.method148(this, i, i_88_, i_89_, i_90_, i_91_, i_92_, i_93_, bools)
     }
 }

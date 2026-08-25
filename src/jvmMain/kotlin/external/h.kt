@@ -11,8 +11,8 @@ import SpriteImage
 * Visit http://jode.sourceforge.net/
 * NativeFontRenderer
 */
-class h(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : RSFont(var_oa, fontDefinition), Disposable {
-    var nativeid: Long = 0
+actual class h actual constructor(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>, abstractModelRenderers: Array<AbstractModelRenderer?>?) : RSFont(var_oa, fontDefinition), Disposable {
+    actual var nativeid: Long = 0
 
     init {
         val `is` = arrayOfNulls<ByteArray>(spriteImages.size)
@@ -30,19 +30,19 @@ class h(var_oa: oa?, var_ya: ya?, fontDefinition: FontDefinition?, spriteImages:
         JA(var_oa, var_ya, `is`, is_0_, is_1_, is_2_, is_3_)
     }
 
-    protected fun finalize() {
+    actual fun finalize() {
         if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
-    external override fun w(bool: Boolean)
+    actual external override fun w(bool: Boolean)
 
-    external override fun fa(c: Char, i: Int, i_4_: Int, i_5_: Int, bool: Boolean)
+    actual external override fun fa(c: Char, i: Int, i_4_: Int, i_5_: Int, bool: Boolean)
 
-    override fun method2578(c: Char, i: Int, i_6_: Int, i_7_: Int, bool: Boolean, var_sprite: Sprite?, i_8_: Int, i_9_: Int) {
+    actual override fun method2578(c: Char, i: Int, i_6_: Int, i_7_: Int, bool: Boolean, var_sprite: Sprite?, i_8_: Int, i_9_: Int) {
         NA(c, i, i_6_, i_7_, bool, var_sprite, i_8_, i_9_)
     }
 
-    private external fun NA(c: Char, i: Int, i_10_: Int, i_11_: Int, bool: Boolean, var_sprite: Sprite?, i_12_: Int, i_13_: Int)
+    /*private*/ actual external fun NA(c: Char, i: Int, i_10_: Int, i_11_: Int, bool: Boolean, var_sprite: Sprite?, i_12_: Int, i_13_: Int)
 
-    private external fun JA(var_oa: oa?, var_ya: ya?, `is`: Array<ByteArray?>?, is_14_: IntArray?, is_15_: IntArray?, is_16_: IntArray?, is_17_: IntArray?)
+    /*private*/ actual external fun JA(var_oa: oa?, var_ya: ya?, `is`: Array<ByteArray?>?, is_14_: IntArray?, is_15_: IntArray?, is_16_: IntArray?, is_17_: IntArray?)
 }

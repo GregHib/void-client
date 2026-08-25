@@ -9,9 +9,9 @@ import TerrainTile
 /* a - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Disposable {
+actual class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Disposable {
     private val anI5105: i
-    var nativeid: Long = 0
+    actual var nativeid: Long = 0
     private val anI5106: i
     private val anI5107: i
     private val anI5108: i
@@ -23,73 +23,73 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Dis
     private val anI5114: i
     private val anI5116: i
 
-    fun method142(var_terrainTile: TerrainTile, i: Int, i_0_: Int) {
+    actual fun method142(var_terrainTile: TerrainTile, i: Int, i_0_: Int) {
         H(this.nativeid, (var_terrainTile as t).nativeid, i, i_0_)
     }
 
-    private external fun R(l: Long, l_1_: Long, i: Int, i_2_: Int, l_3_: Long, bool: Boolean): Boolean
+    /*private*/ actual external fun R(l: Long, l_1_: Long, i: Int, i_2_: Int, l_3_: Long, bool: Boolean): Boolean
 
-    fun method143(abstractModel: AbstractModel, i: Int, i_4_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_5_: Int): Boolean {
+    actual fun method143(abstractModel: AbstractModel, i: Int, i_4_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_5_: Int): Boolean {
         return n(this.nativeid, (abstractModel as i).nativeid, i, i_4_, (abstractCameraTransform as ja).nativeid, bool, i_5_)
     }
 
-    fun method144(abstractModel: AbstractModel, abstractModel_6_: AbstractModel?, i: Int, i_7_: Int, i_8_: Int, bool: Boolean) {
+    actual fun method144(abstractModel: AbstractModel, abstractModel_6_: AbstractModel?, i: Int, i_7_: Int, i_8_: Int, bool: Boolean) {
         r(this.nativeid, (abstractModel as i).nativeid, (abstractModel_6_ as i).nativeid, i, i_7_, i_8_, bool)
     }
 
-    private external fun E(l: Long, bool: Boolean)
+    actual external fun E(l: Long, bool: Boolean)
 
-    private external fun e(l: Long, l_9_: Long, `is`: IntArray?, l_10_: Long)
+    actual external fun e(l: Long, l_9_: Long, `is`: IntArray?, l_10_: Long)
 
-    private external fun W(l: Long)
+    actual external fun W(l: Long)
 
-    protected fun finalize() {
+    protected actual fun finalize() {
         if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
-    fun method145(abstractModel: AbstractModel?, abstractCameraTransform: AbstractCameraTransform, `is`: IntArray?, i: Int) {
+    actual fun method145(abstractModel: AbstractModel?, abstractCameraTransform: AbstractCameraTransform, `is`: IntArray?, i: Int) {
         UA(this.nativeid, (abstractModel as i).nativeid, (abstractCameraTransform as ja).nativeid, `is`, i)
     }
 
-    private external fun n(l: Long, l_11_: Long, i: Int, i_12_: Int, l_13_: Long, bool: Boolean, i_14_: Int): Boolean
+    actual external fun n(l: Long, l_11_: Long, i: Int, i_12_: Int, l_13_: Long, bool: Boolean, i_14_: Int): Boolean
 
-    fun method146(abstractModel: AbstractModel, i: Int, i_15_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean): Boolean {
+    actual fun method146(abstractModel: AbstractModel, i: Int, i_15_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean): Boolean {
         return R(this.nativeid, (abstractModel as i).nativeid, i, i_15_, (abstractCameraTransform as ja).nativeid, bool)
     }
 
-    fun method147(var_terrainTile: TerrainTile, i: Int, i_16_: Int, i_17_: Int) {
+    actual fun method147(var_terrainTile: TerrainTile, i: Int, i_16_: Int, i_17_: Int) {
         Z(this.nativeid, (var_terrainTile as t).nativeid, i, i_16_, i_17_)
     }
 
-    override fun w(bool: Boolean) {
+    actual override fun w(bool: Boolean) {
         E(this.nativeid, bool)
     }
 
-    fun method148(var_terrainTile: TerrainTile, i: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bools: Array<BooleanArray?>?) {
+    actual fun method148(var_terrainTile: TerrainTile, i: Int, i_18_: Int, i_19_: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bools: Array<BooleanArray?>?) {
         ta(this.nativeid, (var_terrainTile as t).nativeid, i, i_18_, i_19_, i_20_, i_21_, i_22_, i_23_, bools)
     }
 
-    fun method149(abstractModel: AbstractModel, abstractCameraTransform: AbstractCameraTransform?, `is`: IntArray?, i: Int, i_24_: Int) {
+    actual fun method149(abstractModel: AbstractModel, abstractCameraTransform: AbstractCameraTransform?, `is`: IntArray?, i: Int, i_24_: Int) {
         f(this.nativeid, (abstractModel as i).nativeid, (abstractCameraTransform as ja).nativeid, `is`, i, i_24_)
     }
 
-    private external fun na(l: Long, var_renderer: Renderer?, i: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int)
+    actual external fun na(l: Long, var_renderer: Renderer?, i: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int)
 
-    private external fun O(l: Long, var_renderer: Renderer?, `is`: IntArray?, is_31_: IntArray?, is_32_: IntArray?, is_33_: ShortArray?, i: Int)
+    actual external fun O(l: Long, var_renderer: Renderer?, `is`: IntArray?, is_31_: IntArray?, is_32_: IntArray?, is_33_: ShortArray?, i: Int)
 
-    fun method150(var_renderer: Renderer?, i: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int) {
+    actual fun method150(var_renderer: Renderer?, i: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int) {
         na(this.nativeid, var_renderer, i, i_34_, i_35_, i_36_, i_37_, i_38_, i_39_)
     }
 
-    private external fun f(l: Long, l_40_: Long, l_41_: Long, `is`: IntArray?, i: Int, i_42_: Int)
+    actual external fun f(l: Long, l_40_: Long, l_41_: Long, `is`: IntArray?, i: Int, i_42_: Int)
 
-    private external fun r(l: Long, l_43_: Long, l_44_: Long, i: Int, i_45_: Int, i_46_: Int, bool: Boolean)
+    actual external fun r(l: Long, l_43_: Long, l_44_: Long, i: Int, i_45_: Int, i_46_: Int, bool: Boolean)
 
-    fun method151(abstractModel: AbstractModel, `is`: IntArray?, abstractCameraTransform: AbstractCameraTransform?) {
+    actual fun method151(abstractModel: AbstractModel, `is`: IntArray?, abstractCameraTransform: AbstractCameraTransform?) {
         e(this.nativeid, (abstractModel as i).nativeid, `is`, (abstractCameraTransform as ja).nativeid)
     }
 
-    fun method152(var_i: i, i: Byte, i_47_: Int, bool: Boolean): AbstractModel {
+    actual fun method152(var_i: i, i: Byte, i_47_: Int, bool: Boolean): AbstractModel {
         val var_i_48_: i
         val var_i_49_: i
         if (i.toInt() == 1) {
@@ -117,37 +117,37 @@ class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int) : Dis
         return var_i_49_
     }
 
-    private external fun ta(l: Long, l_50_: Long, i: Int, i_51_: Int, i_52_: Int, i_53_: Int, i_54_: Int, i_55_: Int, i_56_: Int, bools: Array<BooleanArray?>?)
+    actual external fun ta(l: Long, l_50_: Long, i: Int, i_51_: Int, i_52_: Int, i_53_: Int, i_54_: Int, i_55_: Int, i_56_: Int, bools: Array<BooleanArray?>?)
 
-    private external fun Z(l: Long, l_57_: Long, i: Int, i_58_: Int, i_59_: Int)
+    actual external fun Z(l: Long, l_57_: Long, i: Int, i_58_: Int, i_59_: Int)
 
-    private fun method153() {
+    actual fun method153() {
         W(this.nativeid)
     }
 
-    fun method154() {
+    actual fun method154() {
         this.aRunnable5112 = Thread.currentThread()
         method157()
     }
 
-    private external fun M(l: Long)
+    actual external fun M(l: Long)
 
-    private external fun H(l: Long, l_60_: Long, i: Int, i_61_: Int)
+    actual external fun H(l: Long, l_60_: Long, i: Int, i_61_: Int)
 
-    private external fun UA(l: Long, l_62_: Long, l_63_: Long, `is`: IntArray?, i: Int)
+    actual external fun UA(l: Long, l_62_: Long, l_63_: Long, `is`: IntArray?, i: Int)
 
-    fun method155(var_renderer: Renderer?, `is`: IntArray?, is_64_: IntArray?, is_65_: IntArray?, is_66_: ShortArray?, i: Int) {
+    actual fun method155(var_renderer: Renderer?, `is`: IntArray?, is_64_: IntArray?, is_65_: IntArray?, is_66_: ShortArray?, i: Int) {
         O(this.nativeid, var_renderer, `is`, is_64_, is_65_, is_66_, i)
     }
 
-    private external fun HA(l: Long, var_renderer: Renderer?, i: Int, i_67_: Int)
+    actual external fun HA(l: Long, var_renderer: Renderer?, i: Int, i_67_: Int)
 
-    fun method156() {
+    actual fun method156() {
         this.aRunnable5112 = null
         method153()
     }
 
-    private fun method157() {
+    actual fun method157() {
         M(this.nativeid)
     }
 

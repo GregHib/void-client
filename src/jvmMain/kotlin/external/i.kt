@@ -15,57 +15,57 @@ import withLock
 * Visit http://jode.sourceforge.net/
 * NativeModel
 */
-class i : AbstractModel, Disposable {
+actual class i : AbstractModel, Disposable {
     private val anOa5117: oa
 
-    var aWidgetRedrawRegionArray5118: Array<WidgetRedrawRegion?>? = null
+    actual var aWidgetRedrawRegionArray5118: Array<WidgetRedrawRegion?>? = null
 
-    var nativeid: Long = 0
+    actual var nativeid: Long = 0
 
-    var aModelFacePriorityNodeArray5119: Array<ModelFacePriorityNode?>? = null
+    actual var aModelFacePriorityNodeArray5119: Array<ModelFacePriorityNode?>? = null
     private val aYa5120: ya?
 
-    public external override fun C(i: Int)
+    public actual external override fun C(i: Int)
 
-    public external override fun k(i: Int)
+    public actual external override fun k(i: Int)
 
-    external override fun w(bool: Boolean)
+    actual external override fun w(bool: Boolean)
 
-    public external override fun O(i: Int, i_0_: Int, i_1_: Int)
+    public actual external override fun O(i: Int, i_0_: Int, i_1_: Int)
 
-    public external override fun s(i: Int)
+    public actual external override fun s(i: Int)
 
-    public external override fun LA(i: Int)
+    public actual external override fun LA(i: Int)
 
-    public external override fun fa(): Int
+    public actual external override fun fa(): Int
 
-    public external override fun NA(): Boolean
+    public actual external override fun NA(): Boolean
 
-    public external override fun F(): Boolean
+    public actual external override fun F(): Boolean
 
-    external fun ZA(var_i_2_: i?, var_i_3_: i?, i: Int, bool: Boolean, bool_4_: Boolean)
+    actual external fun ZA(var_i_2_: i?, var_i_3_: i?, i: Int, bool: Boolean, bool_4_: Boolean)
 
-    public override fun method613(abstractModel: AbstractModel?, i: Int, i_5_: Int, i_6_: Int, bool: Boolean) {
+    public actual override fun method613(abstractModel: AbstractModel?, i: Int, i_5_: Int, i_6_: Int, bool: Boolean) {
         anOa5117.method3973()?.method144(this, abstractModel, i, i_5_, i_6_, bool)
     }
 
-    public external override fun aa(i: Short, i_7_: Short)
+    public actual external override fun aa(i: Short, i_7_: Short)
 
-    public override fun method623(i: Int, i_8_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_9_: Int, i_10_: Int): Boolean {
+    public actual override fun method623(i: Int, i_8_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_9_: Int, i_10_: Int): Boolean {
         return anOa5117.method3973()!!.method143(this, i, i_8_, abstractCameraTransform, bool, i_10_)
     }
 
-    public external override fun EA(): Int
+    public actual external override fun EA(): Int
 
-    public override fun method619(): Array<ModelFacePriorityNode?>? {
+    public actual override fun method619(): Array<ModelFacePriorityNode?>? {
         return this.aModelFacePriorityNodeArray5119
     }
 
-    public external override fun wa()
+    public actual external override fun wa()
 
-    public external override fun P(i: Int, i_11_: Int, i_12_: Int, i_13_: Int)
+    public actual external override fun P(i: Int, i_11_: Int, i_12_: Int, i_13_: Int)
 
-    public override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int, i_14_: Int) {
+    public actual override fun method608(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int, i_14_: Int) {
         if (class318_sub3 == null) anOa5117.method3973()!!.method149(this, abstractCameraTransform, null, i, i_14_)
         else {
             oa.anIntArray5132[5] = 0
@@ -79,15 +79,15 @@ class i : AbstractModel, Disposable {
         }
     }
 
-    public external override fun v()
+    public actual external override fun v()
 
-    private external fun l(l: Long, i: Int, `is`: IntArray?, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean)
+    /*private*/ actual external fun l(l: Long, i: Int, `is`: IntArray?, i_15_: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean)
 
-    public override fun method618(): Boolean {
+    public actual override fun method618(): Boolean {
         return true
     }
 
-    public override fun method621() {
+    public actual override fun method621() {
         if (anOa5117.anInt5141 > 1) {
             withLock(this) {
                 this.aBoolean1124 = false
@@ -96,39 +96,39 @@ class i : AbstractModel, Disposable {
         }
     }
 
-    public external override fun VA(i: Int)
+    public actual external override fun VA(i: Int)
 
-    public override fun method628(i: Int, i_19_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_20_: Int): Boolean {
+    public actual override fun method628(i: Int, i_19_: Int, abstractCameraTransform: AbstractCameraTransform?, bool: Boolean, i_20_: Int): Boolean {
         return anOa5117.method3973()!!.method146(this, i, i_19_, abstractCameraTransform, bool)
     }
 
-    public override fun method614(i: Byte, i_21_: Int, bool: Boolean): AbstractModel {
+    public actual override fun method614(i: Byte, i_21_: Int, bool: Boolean): AbstractModel {
         return anOa5117.method3973()!!.method152(this, i, i_21_, bool)
     }
 
-    public external override fun na(): Int
+    public actual external override fun na(): Int
 
-    public external override fun HA(): Int
+    public actual external override fun HA(): Int
 
-    public override fun method612() {
+    public actual override fun method612() {
         /* empty */
     }
 
-    public external override fun p(i: Int, i_22_: Int, var_terrainTile: TerrainTile?, var_terrainTile_23_: TerrainTile?, i_24_: Int, i_25_: Int, i_26_: Int)
+    public actual external override fun p(i: Int, i_22_: Int, var_terrainTile: TerrainTile?, var_terrainTile_23_: TerrainTile?, i_24_: Int, i_25_: Int, i_26_: Int)
 
-    public external override fun V(): Int
+    public actual external override fun V(): Int
 
-    public external override fun da(): Int
+    public actual external override fun da(): Int
 
-    public override fun method605(i: Int, `is`: IntArray, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, bool: Boolean) {
+    public actual override fun method605(i: Int, `is`: IntArray, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, bool: Boolean) {
         l(this.nativeid, i, `is`, i_27_, i_28_, i_29_, i_30_, bool)
     }
 
-    public external override fun G(): Int
+    public actual external override fun G(): Int
 
-    public external override fun ma(): Int
+    public actual external override fun ma(): Int
 
-    private external fun R(
+    /*private*/ actual external fun R(
         var_oa: oa?,
         var_ya: ya?,
         i: Int,
@@ -174,25 +174,25 @@ class i : AbstractModel, Disposable {
         is_69_: IntArray?
     )
 
-    public external override fun FA(i: Int)
+    public actual external override fun FA(i: Int)
 
-    public override fun method624(i: Int, i_70_: Int, i_71_: Int, i_72_: Int) {
+    public actual override fun method624(i: Int, i_70_: Int, i_71_: Int, i_72_: Int) {
         /* empty */
     }
 
-    public external override fun ia(i: Short, i_73_: Short)
+    public actual external override fun ia(i: Short, i_73_: Short)
 
-    protected fun finalize() {
+    actual fun finalize() {
         if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
-    public external override fun WA(): Int
+    public actual external override fun WA(): Int
 
-    public override fun method610(abstractCameraTransform: AbstractCameraTransform, i: Int, bool: Boolean) {
+    public actual override fun method610(abstractCameraTransform: AbstractCameraTransform, i: Int, bool: Boolean) {
         A((abstractCameraTransform as ja).nativeid, i, bool)
     }
 
-    public override fun method622() {
+    public actual override fun method622() {
         if (anOa5117.anInt5141 > 1) {
             withLock(this) {
                 while (this.aBoolean1124) {
@@ -207,7 +207,7 @@ class i : AbstractModel, Disposable {
         }
     }
 
-    public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int) {
+    public actual override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int) {
         if (class318_sub3 == null) anOa5117.method3973()?.method145(this, abstractCameraTransform!!, null, i)
         else {
             oa.anIntArray5132[5] = 0
@@ -221,9 +221,9 @@ class i : AbstractModel, Disposable {
         }
     }
 
-    public external override fun r(): Boolean
+    public actual external override fun r(): Boolean
 
-    public override fun method620(abstractCameraTransform: AbstractCameraTransform?) {
+    public actual override fun method620(abstractCameraTransform: AbstractCameraTransform?) {
         method693(oa.anIntArray5140, abstractCameraTransform)
         var i = 0
         if (this.aModelFacePriorityNodeArray5119 != null) {
@@ -254,21 +254,21 @@ class i : AbstractModel, Disposable {
         }
     }
 
-    public external override fun a(i: Int)
+    public actual external override fun a(i: Int)
 
-    public override fun method604(): Array<WidgetRedrawRegion?>? {
+    public actual override fun method604(): Array<WidgetRedrawRegion?>? {
         return this.aWidgetRedrawRegionArray5118
     }
 
-    private fun method693(`is`: IntArray?, abstractCameraTransform: AbstractCameraTransform?) {
+    /*private*/ actual fun method693(`is`: IntArray?, abstractCameraTransform: AbstractCameraTransform?) {
         anOa5117.method3973()!!.method151(this, `is`, abstractCameraTransform)
     }
 
-    public external override fun ua(): Int
+    public actual external override fun ua(): Int
 
-    public external override fun H(i: Int, i_77_: Int, i_78_: Int)
+    public actual external override fun H(i: Int, i_77_: Int, i_78_: Int)
 
-    constructor(var_oa: oa, var_ya: ya?, modelDefinition: ModelDefinition, i: Int, i_79_: Int, i_80_: Int, i_81_: Int) {
+    actual constructor(var_oa: oa, var_ya: ya?, modelDefinition: ModelDefinition, i: Int, i_79_: Int, i_80_: Int, i_81_: Int) {
         anOa5117 = var_oa
         aYa5120 = var_ya
         this.aModelFacePriorityNodeArray5119 = modelDefinition.aModelFacePriorityNodeArray1846
@@ -348,19 +348,19 @@ class i : AbstractModel, Disposable {
         )
     }
 
-    private external fun A(l: Long, i: Int, bool: Boolean)
+    /*private*/ actual external fun A(l: Long, i: Int, bool: Boolean)
 
-    public external override fun ba(var_renderNode: RenderNode?): RenderNode?
+    public actual external override fun ba(var_renderNode: RenderNode?): RenderNode?
 
-    private external fun oa(var_oa: oa?)
+    /*private*/ actual external fun oa(var_oa: oa?)
 
-    constructor(var_oa: oa) {
+    actual constructor(var_oa: oa) {
         anOa5117 = var_oa
         aYa5120 = null
         oa(var_oa)
     }
 
-    public external override fun RA(): Int
+    public actual external override fun RA(): Int
 
-    public external override fun I(i: Int, `is`: IntArray, i_92_: Int, i_93_: Int, i_94_: Int, bool: Boolean, i_95_: Int, is_96_: IntArray?)
+    public actual external override fun I(i: Int, `is`: IntArray, i_92_: Int, i_93_: Int, i_94_: Int, bool: Boolean, i_95_: Int, is_96_: IntArray?)
 }

@@ -10,18 +10,18 @@ import kotlin.jvm.JvmField
 /*
  * NativeFrameBuffer
  */
-class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145: Int, @JvmField var anInt5148: Int) : LinkedListNode(), Disposable {
-    var nativeid: Long = 0
+actual class p(var_oa: oa?, @JvmField actual var aCanvas5147: Canvas?, @JvmField actual var anInt5145: Int, @JvmField actual var anInt5148: Int) : LinkedListNode(), Disposable {
+    actual var nativeid: Long = 0
 
-    private external fun sa(var_oa: oa?, canvas: Canvas?, i: Int, i_0_: Int)
+    /*private*/ actual external fun sa(var_oa: oa?, canvas: Canvas?, i: Int, i_0_: Int)
 
-    external override fun w(bool: Boolean)
+    actual external override fun w(bool: Boolean)
 
-    private external fun H(i: Int, i_1_: Int, i_2_: Int, i_3_: Int)
+    /*private*/ actual external fun H(i: Int, i_1_: Int, i_2_: Int, i_3_: Int)
 
-    private external fun oa(canvas: Canvas?, i: Int, i_4_: Int)
+    /*private*/ actual external fun oa(canvas: Canvas?, i: Int, i_4_: Int)
 
-    private fun method3432(exception: Exception) {
+    /*private*/ actual fun method3432(exception: Exception) {
         if (!aBoolean5144) {
             aLong5146 = GameClock.method599(-54)
             aBoolean5144 = true
@@ -29,9 +29,9 @@ class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145
         else throw RuntimeException(exception.message)
     }
 
-    private external fun K(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int)
+    /*private*/ actual external fun K(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int)
 
-    fun method3433(i: Int, i_10_: Int) {
+    actual fun method3433(i: Int, i_10_: Int) {
         try {
             withLock(this.aCanvas5147!!.getTreeLock()) {
                 val dimension = this.aCanvas5147!!.getSize()
@@ -43,7 +43,7 @@ class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145
         }
     }
 
-    protected fun finalize() {
+    /*protected*/ actual fun finalize() {
         if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
@@ -71,7 +71,7 @@ class p(var_oa: oa?, @JvmField var aCanvas5147: Canvas?, @JvmField var anInt5145
         oa(canvas, i, i_15_)
     }
 
-    fun method3436() {
+    actual fun method3436() {
         w(true)
         this.nativeid = 0L
         this.aCanvas5147 = null

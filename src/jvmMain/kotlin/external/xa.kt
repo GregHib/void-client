@@ -7,19 +7,19 @@ import Marker
 * Visit http://jode.sourceforge.net/
 * NativeTextureHandle
 */
-class xa(i: Int, i_1_: Int) : Marker, Disposable {
+actual class xa(i: Int, i_1_: Int) : Marker, Disposable {
 
     var nativeid: Long = 0L
 
-    private external fun r(i: Int, i_0_: Int)
+    /*private*/ actual external fun r(i: Int, i_0_: Int)
 
-    private external fun va(l: Long, bool: Boolean)
+    /*private*/ actual external fun va(l: Long, bool: Boolean)
 
-    override fun w(bool: Boolean) {
+    actual override fun w(bool: Boolean) {
         va(this.nativeid, bool)
     }
 
-    protected fun finalize() {
+    /*protected*/ actual fun finalize() {
         if (this.nativeid != 0L) RequestGate.method1947(0, this)
     }
 
