@@ -20,8 +20,6 @@ import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
 import jagex3.jagmisc.jagmisc.init
 import NativeRenderNode.Companion.method3290
-import kotlinx.coroutines.runBlocking
-import lang.InterruptedException
 import lang.PlatformRuntime
 import lang.StringBuffer
 import lang.gc
@@ -279,13 +277,7 @@ object ClientLoadStateMachine {
         if (ConnectionStateType.aConnectionStateType_1041 == TimedTileQueueEntry.aConnectionStateType_9660) ByteBufferStatics.method3198(true, (-45).toByte())
         if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.aConnectionStateType_1042) {
             ActorEntity.aResourceLoaderThread_897!!.method2319((-56).toByte())
-            try {
-                runBlocking {
-                    TerrainShadowBuilderGl2.job!!.join()
-                }
-            } catch (interruptedexception: InterruptedException) {
-                return 0
-            }
+            if (TerrainShadowBuilderGl2.job?.isCompleted != true) return 0
             PerlinTextureProvider.aCollisionMapRegion_5813 = null
             SpriteRgbTextureNode.aJs5Archive_10426 = null
             ActorEntity.aResourceLoaderThread_897 = null

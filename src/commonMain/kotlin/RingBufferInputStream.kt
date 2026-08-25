@@ -1,60 +1,56 @@
 import kotlin.jvm.JvmStatic
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
 import io.EOFException
 import io.IOException
 import io.InputStream
-import kotlinx.coroutines.Runnable
-import lang.InterruptedException
 
 /*
  * Class376
+ *
+ * P2 (byte-ring-buffer producer/consumer), mirror image of BufferedOutputStreamWorker: here the
+ * background run() is the producer (reads from the InputStream, fills the buffer, waits for free
+ * space) and the external method3617 caller is the consumer (drains the buffer, frees space).
+ * spaceAvailable is a nudge-only signal reused for both "space freed" (P2) and "stop requested"
+ * (P3, method3615), matching the original single monitor's dual-purpose notify.
  */
-class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) : Runnable {
+class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) {
     private var anInt4546: Int
     private val aByteArray4554: ByteArray
     private var anInt4556 = 0
+    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
     private val job: Job
     private var anInt4558 = 0
     private var anIOException4560: IOException? = null
+    private val spaceAvailable = Channel<Unit>(Channel.CONFLATED)
 
     fun method3615(i: Int) {
+        // The only caller always passes 15984; the original's `if (i != 15984) run()` branch
+        // that re-entered the worker loop synchronously was therefore dead code and is dropped.
         withLock(this) {
-            if (i != 15984) run()
             if (anIOException4560 == null) anIOException4560 = IOException("")
-            (this as Object).notifyAll()
         }
+        spaceAvailable.trySend(Unit)
         anInt4552++
-        try {
-            runBlocking {
-                job.join()
-            }
-        } catch (interruptedexception: InterruptedException) {
-            /* empty */
-        }
     }
 
-    override fun run() {
+    private suspend fun run() {
         anInt4553++
         loop@ while (true) {
             var i: Int = 0
-            withLock(this) {
-                while (true) {
+            while (true) {
+                withLock(this) {
                     if (anIOException4560 != null) return
-                    if (anInt4556 != 0) {
-                        if (anInt4556 < anInt4558) i = -anInt4558 + anInt4546
-                        else i = -1 + anInt4556 - anInt4558
-                    } else i = -1 + (anInt4546 + -anInt4558)
-                    if (i > 0) break
-                    try {
-                        (this as Object).wait()
-                    } catch (interruptedexception: InterruptedException) {
-                        /* empty */
-                    }
+                    i = if (anInt4556 != 0) {
+                        if (anInt4556 < anInt4558) -anInt4558 + anInt4546 else -1 + anInt4556 - anInt4558
+                    } else -1 + (anInt4546 + -anInt4558)
                 }
+                if (i > 0) break
+                spaceAvailable.receive()
             }
             val i_1_: Int
             try {
@@ -89,9 +85,9 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
                 ArrayCopyUtil.method1577(aByteArray4554, 0, `is`, i_2_ - -i_5_, i - i_5_)
             } else ArrayCopyUtil.method1577(aByteArray4554, anInt4556, `is`, i_2_, i)
             anInt4556 = (anInt4556 - -i) % anInt4546
-            (this as Object).notifyAll()
-            return i
         }
+        spaceAvailable.trySend(Unit)
+        return i
     }
 
     fun method3618(i: Int) {
@@ -119,7 +115,7 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
     init {
         anInt4546 = i - -1
         aByteArray4554 = ByteArray(anInt4546)
-        job = GlobalScope.launch(Dispatchers.Default) { run() }
+        job = scope.launch { run() }
     }
 
     companion object {

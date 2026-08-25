@@ -1,88 +1,60 @@
 import kotlin.jvm.JvmStatic
 import CircleRasterizer.Companion.method2253
 import jagex3.jagmisc.jagmisc.ping
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.Runnable
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.runBlocking
-import lang.InterruptedException
 import net.getByName
 
 /*
  * Class169
+ *
+ * P2 producer/consumer with a genuine poison-pill-free P3 shutdown: the original enqueued a
+ * sentinel node through the same queue to unblock the consumer. A Channel's own close() already
+ * lets in-flight queued items drain before iteration ends, so the sentinel is no longer needed.
+ * method1303 is reachable from Client.method80's shutdown/error-recovery path (same call chain
+ * as ScrollingNoiseTexture.method556), so it does not join the worker - it closes the channel
+ * and returns without waiting, matching the ScrollingNoiseTexture decision.
  */
-class HostPingThread : Runnable {
-    private var aNodeDeque_2258: NodeDeque? = NodeDeque()
-    private var job: Job? = GlobalScope.launch(Dispatchers.Default) { run() }
-    override fun run() {
+class HostPingThread {
+    private val requests = Channel<NamedIdEntry>(Channel.UNLIMITED)
+    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
+    private var job: Job? = scope.launch { run() }
+
+    private suspend fun run() {
         anInt2263++
-        while (true) {
-            val class348_sub26: NamedIdEntry = runClass348() ?: break
+        for (class348_sub26 in requests) {
             var i: Int
             try {
-                val `is` = getByName(class348_sub26!!.aString6888).getAddress()
+                val `is` = getByName(class348_sub26.aString6888).getAddress()
                 i = ping(`is`[0], `is`[1], `is`[2], `is`[3], 1000L)
             } catch (throwable: Throwable) {
                 i = 1000
             }
-            class348_sub26!!.anInt6887 = i
+            class348_sub26.anInt6887 = i
         }
-    }
-
-    fun runClass348(): NamedIdEntry? {
-        var class348_sub26: NamedIdEntry? = null
-        withLock(aNodeDeque_2258!!) {
-            var linkedListNode: LinkedListNode?
-            linkedListNode = aNodeDeque_2258!!.method1997(8)
-            while (linkedListNode == null) {
-                try {
-                    (aNodeDeque_2258 as Object).wait()
-                } catch (interruptedexception: InterruptedException) {
-                    /* empty */
-                }
-                linkedListNode = aNodeDeque_2258!!.method1997(8)
-            }
-            if (linkedListNode !is NamedIdEntry) return null
-            class348_sub26 = linkedListNode
-        }
-        return class348_sub26
     }
 
     fun method1302(i: Int, string: String): NamedIdEntry {
         anInt2266++
         checkNotNull(job) { "" }
         requireNotNull(string) { "" }
-        if (i != -5255) aNodeDeque_2258 = null
         val class348_sub26 = NamedIdEntry(string)
-        method1304(1000, class348_sub26)
+        requests.trySend(class348_sub26)
+        anInt2262++
         return class348_sub26
     }
 
     fun method1303(i: Byte) {
         anInt2257++
         if (job != null) {
-            method1304(1000, LinkedListNode())
-            try {
-                runBlocking {
-                    job!!.join()
-                }
-            } catch (interruptedexception: InterruptedException) {
-                /* empty */
-            }
+            requests.close()
             job = null
             if (i.toInt() != 16) anInt2264 = 87
         }
-    }
-
-    private fun method1304(i: Int, linkedListNode: LinkedListNode) {
-        if (i != 1000) method1303(95.toByte())
-        withLock(aNodeDeque_2258!!) {
-            aNodeDeque_2258!!.method1999(linkedListNode, -20180)
-            (aNodeDeque_2258 as Object).notify()
-        }
-        anInt2262++
     }
 
     companion object {

@@ -1,6 +1,4 @@
 import kotlin.jvm.JvmStatic
-import kotlinx.coroutines.runBlocking
-import lang.InterruptedException
 
 /* Class59_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -43,18 +41,9 @@ class ScrollingNoiseTexture : GrayscaleNoiseTexture(8, 5, 8, 8, 2, 0.1f, 0.55f, 
             anInt8656++
             if (ActorEntity.aResourceLoaderThread_897 != null) ActorEntity.aResourceLoaderThread_897!!.method2319((-75).toByte())
             if (bool == false) {
-                if (TerrainShadowBuilderGl2.job != null) {
-                    while (true) {
-                        try {
-                            runBlocking {
-                                TerrainShadowBuilderGl2.job!!.join()
-                            }
-                            break
-                        } catch (interruptedexception: InterruptedException) {
-                            /* empty */
-                        }
-                    }
-                }
+                // Shutdown/reset path: abandon an in-flight load rather than block waiting for it
+                // (the original blocked the calling thread on job.join(), which cannot be ported to JS).
+                TerrainShadowBuilderGl2.job?.cancel()
             }
         }
 
