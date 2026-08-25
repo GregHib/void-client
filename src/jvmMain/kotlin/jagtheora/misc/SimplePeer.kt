@@ -24,10 +24,6 @@ abstract actual class SimplePeer {
         return this.peer == 0L
     }
 
-    /*private*/ actual fun setPeer(arg0: Long) {
-        this.peer = arg0
-    }
-
     companion actual object {
         init {
             init()

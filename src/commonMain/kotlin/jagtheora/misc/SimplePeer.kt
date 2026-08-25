@@ -11,9 +11,7 @@ expect abstract class SimplePeer {
     @Throws(Throwable::class)
     fun finalize() 
 
-    fun b(): Boolean 
-
-    fun setPeer(arg0: Long) 
+    fun b(): Boolean
 
     companion object {
         fun init()

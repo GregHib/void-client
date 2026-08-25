@@ -17,9 +17,6 @@ actual abstract class SimplePeer {
         TODO("Not yet implemented")
     }
 
-    actual fun setPeer(arg0: Long) {
-    }
-
     actual companion object {
         actual fun init() {
         }
