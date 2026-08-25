@@ -10,7 +10,7 @@ import jagex3.graphics2.hw.NativeInterface
 import OpenGlRenderNode.Companion.method3297
 import direct.Direct3dModel
 import awt.Canvas
-import java.util.Hashtable
+import util.Hashtable
 import kotlin.math.cos
 import kotlin.math.max
 import kotlin.math.sin

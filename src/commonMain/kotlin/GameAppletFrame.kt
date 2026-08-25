@@ -293,7 +293,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         do {
             try {
                 if (PrivilegedOperationWorker.aString3782 != null) {
-                    val string = PrivilegedOperationWorker.aString3782!!.lowercase(Locale.getDefault())
+                    val string = PrivilegedOperationWorker.aString3782!!.lowercase()
                     if (string.indexOf("sun") != -1 || string.indexOf("apple") != -1) {
                         val string_5_ = PrivilegedOperationWorker.aString3796!!
                         if (string_5_ == "1.1" || string_5_.startsWith("1.1.") || string_5_ == "1.2" || string_5_.startsWith("1.2.")) {
@@ -596,7 +596,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 val file = CollisionMapAccessor.aHashtable3548!!.get(string) as? File?
                 if (file != null) {
                     try {
-                        System.load(file.path)
+                        System.load(file.getPath())
                         if (aClass6640 == null) {
                             aClass6640 = RegionMapDecoder::class.java
                         }

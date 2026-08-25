@@ -65,6 +65,7 @@ import jaggl.OpenGL.Companion.glViewport
 import awt.Canvas
 import awt.Rectangle
 import java.util.*
+import kotlin.jvm.Synchronized
 
 /*
  * Class377
@@ -612,8 +613,8 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             try {
                 anOpenGL9856 = opengl
                 anOpenGL9856!!.b()
-                aString9917 = glGetString(7936).lowercase(Locale.getDefault())
-                aString9916 = glGetString(7937).lowercase(Locale.getDefault())
+                aString9917 = glGetString(7936).lowercase()
+                aString9916 = glGetString(7937).lowercase()
                 if (aString9917.indexOf("microsoft") != -1 || aString9917.indexOf("brian paul") != -1 || aString9917.indexOf("mesa") != -1) throw RuntimeException("")
                 val string = glGetString(7938)
                 val strings = TurbulenceTextureNode.method3113(' ', true, string.replace('.', ' '))

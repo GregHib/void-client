@@ -19,11 +19,6 @@ kotlin {
     }
 
     sourceSets {
-        jvmMain {
-            dependencies {
-                implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
-            }
-        }
         jvmTest {
             dependencies {
                 implementation(kotlin("test"))
@@ -33,6 +28,9 @@ kotlin {
 
     compilerOptions {
         freeCompilerArgs.add("-Xexpect-actual-classes")
+    }
+    sourceSets.commonMain.dependencies {
+        implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
     }
 }
 

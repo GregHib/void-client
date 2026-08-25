@@ -72,6 +72,8 @@ import NullRenderPass.Companion.method3535
 import ProjectedGroundDecor.Companion.method2420
 import java.awt.datatransfer.DataFlavor
 import java.util.*
+import util.Locale
+import util.defaultLocale
 import kotlin.math.max
 import kotlin.math.min
 import kotlin.math.pow
@@ -2612,7 +2614,7 @@ object ChatCommandProcessor {
     private fun method707(string: String, i: Int) {
         var string = string
         if (AsyncTaskHandle.anInt2581 != 0 || ((!RangeThresholdTextureNode.aBoolean9103 || PlayerUpdateDecoder.aBoolean1915) && !MinimapTriangleDrawer.aBoolean5233)) {
-            var string_240_ = string.lowercase(Locale.getDefault())
+            var string_240_ = string.lowercase()
             var i_241_ = 0
             if (string_240_.startsWith(LocalizedText.aLocalizedText_3530!!.method2063(0, 544)!!)) {
                 i_241_ = 0
@@ -2689,7 +2691,7 @@ object ChatCommandProcessor {
                     string = string.substring(LocalizedText.aLocalizedText_3541!!.method2063(ChatCommandProcessor.anInt6967, 544)!!.length)
                 }
             }
-            string_240_ = string.lowercase(Locale.getDefault())
+            string_240_ = string.lowercase()
             var i_242_ = 0
             if (string_240_.startsWith(LocalizedText.aLocalizedText_3542!!.method2063(0, 544)!!)) {
                 i_242_ = 1
@@ -4710,7 +4712,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 4103) {
                     val string = aStringArray1152!![--anInt1170]!!
-                    aStringArray1152!![anInt1170++] = string.lowercase(Locale.getDefault())
+                    aStringArray1152!![anInt1170++] = string.lowercase()
                     return
                 }
                 if (i == 4104) {
@@ -5354,14 +5356,14 @@ object ChatCommandProcessor {
     fun method606(i: Int, bool: Boolean, string: String) {
         var string = string
         anInt1128++
-        string = string.lowercase(Locale.getDefault())
+        string = string.lowercase()
         var `is` = ShortArray(16)
         var i_52_ = i
         val i_53_ = if (bool) 32768 else 0
         val i_54_ = ((if (!bool) BrightnessOptionState.aCompiledScriptCache_5900!!.anInt4365 else BrightnessOptionState.aCompiledScriptCache_5900!!.anInt4364) + i_53_)
         for (i_55_ in i_53_..<i_54_) {
             val class348_sub42_sub10 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_55_, (-102).toByte())
-            if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).lowercase(Locale.getDefault()).indexOf(string) != -1) {
+            if (class348_sub42_sub10.aBoolean9562 && class348_sub42_sub10.method3219(98).lowercase().indexOf(string) != -1) {
                 if (i_52_ >= 50) {
                     AsyncTaskHandle.aShortArray2579 = null
                     SceneObjectSpawner.anInt1285 = -1

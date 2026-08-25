@@ -2,7 +2,6 @@ import kotlin.jvm.JvmStatic
 import CharacterRenderState.Companion.method2778
 import jaclib.memory.Stream.Companion.floatToRawIntBits
 import OpenGlTerrainTile.Companion.method4001
-import java.util.*
 
 class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
     fun method3399(i: Int, f: Float) {
@@ -170,7 +169,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
         }
 
         fun method3402(i: Byte) {
-            if (PrivilegedOperationWorker.aString3782!!.lowercase(Locale.getDefault()).indexOf("microsoft") == -1) {
+            if (PrivilegedOperationWorker.aString3782!!.lowercase().indexOf("microsoft") == -1) {
                 GlIndexBufferArb.anIntArray8507!![46] = 72
                 GlIndexBufferArb.anIntArray8507!![92] = 74
                 GlIndexBufferArb.anIntArray8507!![44] = 71

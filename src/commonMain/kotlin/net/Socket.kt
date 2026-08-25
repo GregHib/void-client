@@ -1,6 +1,9 @@
 package net
 
-expect open class Socket(host: String, port: Int) {
+import io.InputStream
+import io.OutputStream
+
+expect open class Socket(host: String?, port: Int) {
     open fun getInputStream(): InputStream
     open fun getOutputStream(): OutputStream
     open fun close()

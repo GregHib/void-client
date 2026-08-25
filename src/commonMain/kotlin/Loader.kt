@@ -125,7 +125,7 @@ class Loader : Panel(), GameApplet {
     }
 
     companion object {
-        var aProperties1: Properties = Properties()
+        var aProperties1: MutableMap<String, String> = mutableMapOf()
         var loadRunescape: Boolean = false
         var showCoordinates: Boolean = true
         var skipLobby: Boolean = true

@@ -4,6 +4,7 @@ package awt
 actual class Rectangle actual constructor(
     var x: Int, var y: Int, var width: Int, var height: Int
 ) {
+    actual constructor(): this(0, 0, 0, 0)
     actual fun translate(dx: Int, dy: Int) { x += dx; y += dy }
     actual fun grow(h: Int, v: Int) { x -= h; y -= v; width += h * 2; height += v * 2 }
     actual fun contains(x: Int, y: Int) =

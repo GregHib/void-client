@@ -1,9 +1,10 @@
 import io.BufferedReader
 import io.IOException
 import io.InputStreamReader
+import net.Socket
+import util.Locale
 import java.net.*
 import java.nio.charset.StandardCharsets
-import java.util.*
 
 class ProxySocketFactory : SocketFactory() {
     private val aProxySelector6172: ProxySelector = ProxySelector.getDefault()
@@ -25,7 +26,7 @@ class ProxySocketFactory : SocketFactory() {
                 string_1_ = bufferedreader.readLine()
                 val string_3_ = "proxy-authenticate: "
                 while ( /**/null != string_1_ && i_2_ < 50) {
-                    if (string_1_.lowercase(Locale.getDefault()).startsWith(string_3_)) {
+                    if (string_1_.lowercase().startsWith(string_3_)) {
                         string_1_ = string_1_.substring(string_3_.length).trim { it <= ' ' }
                         val i_4_ = string_1_.indexOf(' ')
                         if (i_4_ != -1) string_1_ = string_1_.substring(0, i_4_)

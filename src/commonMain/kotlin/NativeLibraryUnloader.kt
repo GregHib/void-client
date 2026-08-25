@@ -1,8 +1,8 @@
 import kotlin.jvm.JvmStatic
 import io.File
-import java.util.Enumeration
-import java.util.Hashtable
-import java.util.Vector
+import util.Enumeration
+import util.Hashtable
+import util.Vector
 
 /*
  * Class228

@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import io.File
 import io.RandomAccessFile
-import java.util.Hashtable
+import util.Hashtable
 
 /*
  * Class201

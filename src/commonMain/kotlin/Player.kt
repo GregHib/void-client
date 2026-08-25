@@ -1,6 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.util.*
-import java.util.Hashtable
+import util.Hashtable
 import kotlin.math.atan2
 
 class Player : ProjectedGroundDecor() {

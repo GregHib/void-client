@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import ScrollbarComponent.Companion.method188
-import java.util.*
+import util.Locale
 
 /* Class178 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -54,7 +54,7 @@ object ScriptOpcodeHolder {
         try {
             anInt2337++
             aJs5Archive_2306!!.anInt634 = 1
-            string_2_ = string_2_!!.lowercase(Locale.getDefault())
+            string_2_ = string_2_!!.lowercase()
             var `is` = ShortArray(16)
             var i_4_ = -1
             var string_5_: String? = null
@@ -69,7 +69,7 @@ object ScriptOpcodeHolder {
             if (bool_3_ != true) aConfigIdPair_2352 = null
             while ( /**/i_7_ < ClientException.aModelHeaderCache_112!!.anInt3271) {
                 val class213 = ClientException.aModelHeaderCache_112!!.method1940(-74, i_7_)
-                if ((!bool_1_ || class213.aBoolean2755) && class213.anInt2833 == -1 && class213.anInt2812 == -1 && class213.anInt2799 == 0 && class213.aString2795!!.lowercase(Locale.getDefault()).indexOf(string_2_) != -1) {
+                if ((!bool_1_ || class213.aBoolean2755) && class213.anInt2833 == -1 && class213.anInt2812 == -1 && class213.anInt2799 == 0 && class213.aString2795!!.lowercase().indexOf(string_2_) != -1) {
                     if (i_0_ != -1) {
                         if (bool) {
                             if (string != class213.method1561(string_5_, i_0_, -1511086397)) {

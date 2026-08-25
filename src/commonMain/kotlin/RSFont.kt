@@ -6,7 +6,7 @@ import jaggl.OpenGL.Companion.glDetachObjectARB
 import jaggl.OpenGL.Companion.glGetInfoLogARB
 import jaggl.OpenGL.Companion.glGetObjectParameterivARB
 import jaggl.OpenGL.Companion.glLinkProgramARB
-import java.util.*
+import util.Random
 import kotlin.math.sin
 
 /*

@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glTexImage2Dub
-import java.util.*
+import util.Random
 import kotlin.math.min
 
 class PerlinTextureProvider internal constructor(i: Int) : TextureGenerator() {

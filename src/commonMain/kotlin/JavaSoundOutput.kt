@@ -1,6 +1,7 @@
 import GlslMaterialPass.Companion.method2155
 import CacheArchiveIndexLoader.Companion.method340
-import java.util.*
+import util.Locale
+import util.defaultLocale
 import javax.sound.sampled.*
 
 class JavaSoundOutput : SoundChannelMixer() {
@@ -40,7 +41,7 @@ class JavaSoundOutput : SoundChannelMixer() {
                 val info = infos_0_[i]
                 if (info != null) {
                     val string = info.getName()
-                    if (null != string && string.lowercase(Locale.getDefault()).indexOf("soundmax") >= 0) aBoolean6178 = true
+                    if (null != string && string.lowercase().indexOf("soundmax") >= 0) aBoolean6178 = true
                 }
             }
         }

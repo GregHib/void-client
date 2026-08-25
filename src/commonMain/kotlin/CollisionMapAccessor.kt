@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.util.Hashtable
+import util.Hashtable
 
 /*
  * Class275

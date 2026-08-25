@@ -1,8 +1,7 @@
 package jaggl
 
-import Hashtable
 import awt.Canvas
-import java.util.*
+import util.Hashtable
 import kotlin.jvm.JvmStatic
 
 expect class OpenGL {

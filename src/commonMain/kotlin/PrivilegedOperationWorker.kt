@@ -1,6 +1,9 @@
 import FileStoreLocator.method1464
 import FileStoreLocator.method1466
 import GameClock.method599
+import awt.Component
+import awt.Frame
+import awt.Point
 import direct.DirectDrawDisplayMode
 import direct.sound.DirectSoundAudioChannel
 import kotlinx.coroutines.Dispatchers
@@ -15,6 +18,7 @@ import io.DataInputStream
 import io.File
 import io.FileOutputStream
 import io.IOException
+import kotlinx.coroutines.Runnable
 import java.lang.reflect.Method
 import java.net.InetAddress
 import net.Socket
@@ -354,20 +358,20 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
         } catch (exception: Exception) {
             /* empty */
         }
-        if (aString3782!!.lowercase(Locale.getDefault()).indexOf("microsoft") != -1) this.aBoolean3794 = true
+        if (aString3782!!.lowercase().indexOf("microsoft") != -1) this.aBoolean3794 = true
         try {
             aString3784 = System.getProperty("os.name")
         } catch (exception: Exception) {
             aString3784 = "Unknown"
         }
-        aString3803 = aString3784!!.lowercase(Locale.getDefault())
+        aString3803 = aString3784!!.lowercase()
         try {
-            aString3780 = System.getProperty("os.arch").lowercase(Locale.getDefault())
+            aString3780 = System.getProperty("os.arch").lowercase()
         } catch (exception: Exception) {
             aString3780 = ""
         }
         try {
-            aString3778 = System.getProperty("os.version").lowercase(Locale.getDefault())
+            aString3778 = System.getProperty("os.version").lowercase()
         } catch (exception: Exception) {
             aString3778 = ""
         }
