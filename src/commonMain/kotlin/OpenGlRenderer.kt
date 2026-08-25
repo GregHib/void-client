@@ -76,7 +76,7 @@ import jaggl.OpenGL.Companion.glVertex2i
 import jaggl.OpenGL.Companion.glVertex3f
 import jaggl.OpenGL.Companion.glVertexPointer
 import jaggl.OpenGL.Companion.glViewport
-import java.awt.Canvas
+import awt.Canvas
 import java.awt.Rectangle
 import java.util.Hashtable
 import java.util.Locale

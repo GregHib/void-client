@@ -2,9 +2,8 @@ package external
 
 import Disposable
 import LinkedListNode
-import Rectangle
 import withLock
-import java.awt.Canvas
+import awt.Canvas
 import java.awt.Rectangle
 import kotlin.jvm.JvmField
 

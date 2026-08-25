@@ -8,7 +8,7 @@ import jaclib.peer.hb
 import jagdx.*
 import jagdx.IDirect3D.Companion.a
 import jagdx.ue.a
-import java.awt.Canvas
+import awt.Canvas
 import java.awt.Rectangle
 
 /*

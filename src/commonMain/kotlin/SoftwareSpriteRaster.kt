@@ -6,7 +6,7 @@ import jaggl.OpenGL.Companion.glLoadIdentity
 import jaggl.OpenGL.Companion.glMatrixMode
 import jaggl.OpenGL.Companion.glScalef
 import jaggl.OpenGL.Companion.glTranslatef
-import java.awt.Canvas
+import awt.Canvas
 
 class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, var_s_Sub2: OpenGlTerrainTile?) {
     private val anInt1612: Int

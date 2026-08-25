@@ -1,4 +1,4 @@
-import java.awt.Canvas
+import awt.Canvas
 import java.awt.Rectangle
 import kotlin.math.floor
 import kotlin.math.max

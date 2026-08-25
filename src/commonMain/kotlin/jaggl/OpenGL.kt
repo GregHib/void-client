@@ -1,7 +1,7 @@
 package jaggl
 
 import Hashtable
-import java.awt.Canvas
+import awt.Canvas
 import java.util.*
 import kotlin.jvm.JvmStatic
 

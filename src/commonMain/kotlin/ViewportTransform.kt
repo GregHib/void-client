@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import SoftwareSpriteRaster.Companion.method958
 import GameClock.method599
-import java.awt.Canvas
+import awt.Canvas
 
 /*
  * Class284

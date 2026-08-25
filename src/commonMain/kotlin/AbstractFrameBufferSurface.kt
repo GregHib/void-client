@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import TextureQualityOptionState.Companion.method1783
-import java.awt.Canvas
+import awt.Canvas
 import java.awt.Graphics
 
 abstract class AbstractFrameBufferSurface : LinkedListNode() {

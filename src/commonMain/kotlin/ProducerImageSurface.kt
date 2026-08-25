@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.awt.Canvas
+import awt.Canvas
 import java.awt.Graphics
 import java.awt.Image
 import java.awt.image.ColorModel

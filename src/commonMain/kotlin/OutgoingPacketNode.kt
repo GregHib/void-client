@@ -6,7 +6,7 @@ import GlTexture2DRegion.Companion.method3553
 import GameClock.method599
 import ModelDefinition.Companion.method1096
 import RasterSprite.Companion.method166
-import java.awt.Canvas
+import awt.Canvas
 
 class OutgoingPacketNode : LinkedListNode() {
     var aClass348_Sub49_Sub2_7116: CipheredPacketBuffer? = null

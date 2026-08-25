@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import java.awt.Canvas
+import awt.Canvas
 
 object TerrainTileStatics {
 

@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import AntialiasOptionState.Companion.method1819
-import java.awt.Canvas
+import awt.Canvas
 
 /*
  * Class22

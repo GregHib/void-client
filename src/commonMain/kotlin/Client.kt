@@ -520,7 +520,7 @@ import TileSceneEntity.Companion.method2396
 import TwoStateOptionState.Companion.method1844
 import WhirlpoolHash.Companion.method1166
 import WidgetTextConfig.Companion.method362
-import java.awt.Canvas
+import awt.Canvas
 import java.awt.Component
 import java.awt.Container
 import java.awt.Frame

@@ -1,6 +1,6 @@
 package jagdx
 
-import java.awt.Canvas
+import awt.Canvas
 
 
 class D3DPRESENT_PARAMETERS(private val DeviceWindow: Canvas?) {

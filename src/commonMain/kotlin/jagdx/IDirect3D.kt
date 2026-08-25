@@ -2,7 +2,7 @@ package jagdx
 
 import jaclib.peer.IUnknown
 import jaclib.peer.hb
-import java.awt.Canvas
+import awt.Canvas
 import kotlin.jvm.JvmStatic
 
 class IDirect3D private constructor(private val b: hb?) : IUnknown(b) {

@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import LightDetailOptionState.Companion.method1802
-import java.awt.Canvas
+import awt.Canvas
 import java.io.IOException
 import java.net.Socket
 
