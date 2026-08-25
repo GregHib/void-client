@@ -2,9 +2,14 @@ import GlslMaterialPass.Companion.method2155
 import CacheArchiveIndexLoader.Companion.method340
 import lang.Class
 import lang.jClass
+import sound.AudioFormat
+import sound.AudioSystem
+import sound.DataLineInfo
+import sound.LineUnavailableException
+import sound.MixerInfo
+import sound.SourceDataLine
 import util.Locale
 import util.defaultLocale
-import javax.sound.sampled.*
 
 class JavaSoundOutput : SoundChannelMixer() {
     private var anInt6175 = 0
@@ -22,7 +27,7 @@ class JavaSoundOutput : SoundChannelMixer() {
     @Throws(LineUnavailableException::class)
     override fun method2082(i: Int) {
         try {
-            val info = (DataLine.Info((if (aClass6180 == null) (SourceDataLine::class.jClass.also { aClass6180 = it }) else aClass6180), anAudioFormat6179, i shl (if (NpcEntityUpdater.aBoolean3652) 2 else 1)))
+            val info = (DataLineInfo((if (aClass6180 == null) (SourceDataLine::class.jClass.also { aClass6180 = it }) else aClass6180), anAudioFormat6179, i shl (if (NpcEntityUpdater.aBoolean3652) 2 else 1)))
             aSourceDataLine6177 = AudioSystem.getLine(info) as SourceDataLine?
             aSourceDataLine6177!!.open()
             aSourceDataLine6177!!.start()
@@ -38,7 +43,7 @@ class JavaSoundOutput : SoundChannelMixer() {
     fun method2095() {
         val infos = AudioSystem.getMixerInfo()
         if (null != infos) {
-            val infos_0_: Array<Mixer.Info?>? = infos
+            val infos_0_: Array<MixerInfo> = infos
             for (i in infos_0_!!.indices) {
                 val info = infos_0_[i]
                 if (info != null) {

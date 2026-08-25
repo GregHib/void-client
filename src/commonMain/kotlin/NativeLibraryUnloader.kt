@@ -62,7 +62,7 @@ object NativeLibraryUnloader {
                                             field_4_.set(`object`, 0)
                                             hashtable.remove(string)
                                         } catch (throwable: Throwable) {
-                                            if (Loader.trace) {
+                                            if (Config.trace) {
                                                 throwable.printStackTrace()
                                             }
                                             /* empty */
@@ -71,35 +71,35 @@ object NativeLibraryUnloader {
                                         field_4_.setAccessible(false)
                                     }
                                 } catch (throwable: Throwable) {
-                                    if (Loader.trace) {
+                                    if (Config.trace) {
                                         throwable.printStackTrace()
                                     }
                                     /* empty */
                                 }
                                 field_2_.setAccessible(false)
                             } catch (throwable: Throwable) {
-                                if (Loader.trace) {
+                                if (Config.trace) {
                                     throwable.printStackTrace()
                                 }
                                 /* empty */
                             }
                         }
                     } catch (throwable: Throwable) {
-                        if (Loader.trace) {
+                        if (Config.trace) {
                             throwable.printStackTrace()
                         }
                         /* empty */
                     }
                 }
             } catch (throwable: Throwable) {
-                if (Loader.trace) {
+                if (Config.trace) {
                     throwable.printStackTrace()
                 }
                 /* empty */
             }
             field.setAccessible(false)
         } catch (throwable: Throwable) {
-            if (Loader.trace) {
+            if (Config.trace) {
                 throwable.printStackTrace()
             }
             /* empty */

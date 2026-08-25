@@ -263,7 +263,7 @@ class DisplaySettingsConfig : LinkedListNode {
                 i_6_++
             }
         } catch (illegalaccessexception: IllegalAccessException) {
-            if (Loader.trace) {
+            if (Config.trace) {
                 illegalaccessexception.printStackTrace()
             }
             /* empty */

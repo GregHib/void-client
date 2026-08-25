@@ -11,7 +11,7 @@ import MapSceneCache.Companion.method821
 import awt.Component
 import lang.Class
 import lang.jClass
-import lang.reflect.Constructor
+//import lang.reflect.Constructor
 import kotlin.math.sin
 
 class InterfaceBounds internal constructor(private val anInt6815: Int, private val anInt6820: Int, private var anInt6811: Int, private val anInt6806: Int, private var anInt6810: Int, @JvmField var anInt6809: Int, @JvmField var anInt6812: Int, @JvmField var anInt6819: Int, @JvmField var anInt6813: Int) : LinkedListNode() {
@@ -158,8 +158,10 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
         fun method2941(component: Component?, i: Int, bool: Boolean): InputTracker? {
             anInt6808++
             try {
-                val constructor: Constructor<*> = (MouseWheelInputTracker::class.jClass.getDeclaredConstructor((if (aClass6823 != null) aClass6823 else (Component::class.jClass.also { aClass6823 = it })), java.lang.Boolean.TYPE))
-                return (constructor.newInstance(*arrayOf<Any?>(component, bool)) as InputTracker)
+                println("Input tracker disabled")
+//                val constructor: Constructor<*> = (MouseWheelInputTracker::class.jClass.getDeclaredConstructor((if (aClass6823 != null) aClass6823 else (Component::class.jClass.also { aClass6823 = it })), Boolean::class))//java.lang.Boolean.TYPE))
+//                return (constructor.newInstance(*arrayOf<Any?>(component, bool)) as InputTracker)
+                return null
             } catch (throwable: Throwable) {
                 if (i != 0) return null
                 return MouseInputTracker(component, bool)

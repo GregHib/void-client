@@ -334,7 +334,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                             }
                                         }
                                         anInt6956++
-                                        MinimapPolygonDrawer.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Loader.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(ChatCommandProcessor.anInt6967, 544)), class348_sub34.anInt6973.toLong(), CubeMapMaterialPass.anInt6299)
+                                        MinimapPolygonDrawer.method466(((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane), ("<col=ff9040>" + class213.aString2795) + Config.getDebug(class213.anInt2769), i_32_, (-122).toByte(), false, i_33_, -1, true, 1010, i_57_.toLong(), (LocalizedText.aLocalizedText_3505!!.method2063(ChatCommandProcessor.anInt6967, 544)), class348_sub34.anInt6973.toLong(), CubeMapMaterialPass.anInt6299)
                                         class348_sub34 = (class348_sub37.aNodeDeque_6998.method2003(-127) as IntPair?)
                                         i_57_++
                                     }
@@ -375,7 +375,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                         val y = i_32_ + RegionMapDecoder.regionTileY
                                         MinimapPolygonDrawer.method466(
                                             ((LocalPlayerState.aPlayer_1907!!.plane) != class318_sub4.aClass318_Sub1_6410!!.plane),
-                                            ("<col=00ffff>" + npcConfig.aString884 + Loader.getDebug(npcConfig.anInt941, x, y, class318_sub4.aClass318_Sub1_6410!!.plane.toInt())),
+                                            ("<col=00ffff>" + npcConfig.aString884 + Config.getDebug(npcConfig.anInt941, x, y, class318_sub4.aClass318_Sub1_6410!!.plane.toInt())),
                                             i_32_,
                                             (-120).toByte(),
                                             false,

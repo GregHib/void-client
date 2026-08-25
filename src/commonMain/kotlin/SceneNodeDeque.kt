@@ -8,7 +8,6 @@ import ColourKeyTextureNode.Companion.method3120
 import TileTextureNode.Companion.method3131
 import FlipTextureNode.Companion.method3064
 import FireParticleStream.Companion.method132
-import InboundPacketHeader
 import OpenGlTerrainTile.Companion.method4002
 import NativeShaderProgram.Companion.method3439
 import io.IOException
@@ -175,7 +174,7 @@ class SceneNodeDeque {
                         SceneRegionState.anInt197 = 0
                     }
                     if (NpcDefinition.anInt2955 == 1) {
-                        if (BloomGraphicsOptionState.anInt5969 == 2 && !Loader.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (CacheStateResetter.aServerConnectionInfo_125!!.method1262(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!, 36.toByte()))
+                        if (BloomGraphicsOptionState.anInt5969 == 2 && !Config.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (CacheStateResetter.aServerConnectionInfo_125!!.method1262(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!, 36.toByte()))
                         else FrameStatsReset.aLinkedQueueNode_5800 = (ModelHeaderCache.aServerConnectionInfo_3285!!.method1262(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!, 36.toByte()))
                         NpcDefinition.anInt2955 = 2
                     }

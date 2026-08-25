@@ -70,7 +70,6 @@ import OpenGlModel.Companion.method690
 import LocTypeConfig.Companion.method160
 import NullRenderPass.Companion.method3535
 import ProjectedGroundDecor.Companion.method2420
-import awt.datatransfer.DataFlavor
 import awt.datatransfer.STRING_FLAVOR
 import kotlin.time.Instant
 import kotlinx.datetime.LocalDate
@@ -78,8 +77,6 @@ import kotlinx.datetime.TimeZone
 import kotlinx.datetime.toLocalDateTime
 import lang.StringBuffer
 import lang.exit
-import util.Locale
-import util.defaultLocale
 import util.random
 import kotlin.math.max
 import kotlin.math.min
@@ -4877,7 +4874,7 @@ object ChatCommandProcessor {
             } else if (i < 4300) {
                 if (i == 4200) {
                     val i_456_ = anIntArray1149!![--anInt1173]
-                    aStringArray1152!![anInt1170++] = (ClientException.aModelHeaderCache_112!!.method1940(-52, i_456_).aString2795) + Loader.getDebug(i_456_)
+                    aStringArray1152!![anInt1170++] = (ClientException.aModelHeaderCache_112!!.method1940(-52, i_456_).aString2795) + Config.getDebug(i_456_)
                     return
                 }
                 if (i == 4201) {

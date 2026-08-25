@@ -2,11 +2,9 @@ import FileStoreLocator.method1464
 import FileStoreLocator.method1466
 import GameClock.method599
 import awt.Component
-import awt.Container
 import awt.EventQueue
 import awt.Frame
 import awt.Point
-import awt.Toolkit
 import direct.DirectDrawDisplayMode
 import direct.sound.DirectSoundAudioChannel
 import kotlinx.coroutines.Dispatchers
@@ -22,10 +20,10 @@ import io.IOException
 import kotlinx.coroutines.Runnable
 import lang.Class
 import lang.InterruptedException
+import lang.SecurityException
 import lang.Thread
 import lang.currentThread
 import lang.getProperty
-import lang.jClass
 import lang.reflect.Method
 import net.Socket
 import net.URL
@@ -106,7 +104,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 val i = linkedQueueNode!!.anInt1994
                 if (i == 1) {
                     if (aLong3781 > method599(-53)) throw IOException()
-                    if (Loader.debug) {
+                    if (Config.debug) {
                         println("Connect: " + linkedQueueNode.anObject1996 + " " + linkedQueueNode.anInt2000)
                     }
                     linkedQueueNode.anObject1998 = Socket(getByName((linkedQueueNode.anObject1996) as String?), linkedQueueNode.anInt2000)
@@ -200,7 +198,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 } else throw Exception("")
                 linkedQueueNode.anInt1997 = 1
             } catch (throwable: Throwable) {
-                if (Loader.trace) {
+                if (Config.trace) {
                     throwable.printStackTrace()
                 }
                 linkedQueueNode!!.anInt1997 = 2

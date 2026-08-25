@@ -71,7 +71,7 @@ class Loader : Panel(), GameApplet {
         aJFrame2!!.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE)
         val icons = ArrayList<Image?>()
         for (name in mutableListOf<String?>("icon-16.png", "icon-32.png", "icon-64.png", "icon-128.png", "icon-256.png")) {
-            val resource = Loader::class.java.getResource(name)
+            val resource = Config::class.java.getResource(name)
             if (resource != null) {
                 icons.add(ImageIcon(resource).getImage())
             }
@@ -145,7 +145,7 @@ class Loader : Panel(), GameApplet {
                     "-t", "--trace" -> trace = true
                 }
             }
-            val l = Loader()
+            val l = Config()
             l.doFrame()
         }
 

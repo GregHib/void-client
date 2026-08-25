@@ -2081,9 +2081,8 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             class348_sub31 = method1035(9029, i_578_, canvas, i)!!
             aHashtable_7467!!.method3483(112.toByte(), canvas.hashCode().toLong(), class348_sub31)
             if (aCanvas7468 === canvas && aSpriteRenderable_7475 == null) {
-                val dimension = canvas!!.getSize()
-                anInt7465 = dimension.width
-                anInt7472 = dimension.height
+                anInt7465 = canvas!!.getWidth()
+                anInt7472 = canvas.getHeight()
                 this.aClass348_Sub31_7469 = class348_sub31
                 this.anIntArray7483 = class348_sub31.anIntArray6916
                 this.anInt7477 = class348_sub31.anInt6917

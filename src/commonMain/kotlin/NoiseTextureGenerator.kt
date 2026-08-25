@@ -196,7 +196,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
             try {
                 file = FileStoreLocator.method1466(i + -7470, string_52_)
             } catch (runtimeexception: RuntimeException) {
-                if (Loader.trace) {
+                if (Config.trace) {
                     runtimeexception.printStackTrace()
                 }
                 return -1
@@ -216,7 +216,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
                 try {
                     if (!bool) GrayscaleNoiseTexture.aPrivilegedOperationWorker_5297!!.method2242(`is`, (-104).toByte(), file)
                 } catch (throwable: Throwable) {
-                    if (Loader.trace) {
+                    if (Config.trace) {
                         throwable.printStackTrace()
                     }
                     return -1

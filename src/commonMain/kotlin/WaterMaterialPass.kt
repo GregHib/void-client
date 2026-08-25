@@ -208,7 +208,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                 } else class348_sub47.aClass348_Sub49_Sub2_7116 = CipheredPacketBuffer(260)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.method3416(-17, isaacCipher!!)
 
-                if (Loader.debug) {
+                if (Config.debug) {
                     println("Encode packet " + class348_sub47.aFontMetaRef_7118!!.method3456(200))
                 }
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.method3408(class348_sub47.aFontMetaRef_7118!!.method3456(200), 18676)
@@ -281,7 +281,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                     CircleDrawer.anInt2690++
                     val npcX = (npc.x shr 9) + ArbVertexProgram.regionTileX - npc.aNpcType_10505!!.anInt1399 + 1
                     val npcY = (npc.y shr 9) + RegionMapDecoder.regionTileY - npc.aNpcType_10505!!.anInt1399 + 1
-                    MinimapPolygonDrawer.method466(bool, "<col=ffff00>" + string + Loader.getDebug(class79.anInt1344, npcX, npcY, npc.plane.toInt()), 0, (-105).toByte(), bool_14_, 0, -1, true, 1008, npc.anInt10290.toLong(), LocalizedText.aLocalizedText_3505!!.method2063(ChatCommandProcessor.anInt6967, 544), npc.anInt10290.toLong(), CubeMapMaterialPass.Companion.anInt6299)
+                    MinimapPolygonDrawer.method466(bool, "<col=ffff00>" + string + Config.getDebug(class79.anInt1344, npcX, npcY, npc.plane.toInt()), 0, (-105).toByte(), bool_14_, 0, -1, true, 1008, npc.anInt10290.toLong(), LocalizedText.aLocalizedText_3505!!.method2063(ChatCommandProcessor.anInt6967, 544), npc.anInt10290.toLong(), CubeMapMaterialPass.Companion.anInt6299)
                 }
             }
         }

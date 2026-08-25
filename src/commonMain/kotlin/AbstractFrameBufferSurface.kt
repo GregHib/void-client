@@ -224,7 +224,7 @@ abstract class AbstractFrameBufferSurface : LinkedListNode() {
         }
 
         init {
-            aBigInteger6921 = Loader.LOGIN_SERVER_RSA_MODULUS
+            aBigInteger6921 = Config.LOGIN_SERVER_RSA_MODULUS
             aString6926 = null
             aFontMetaRef_6925 = FontMetaRef(31, 1)
         }
