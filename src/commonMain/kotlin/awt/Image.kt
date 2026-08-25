@@ -7,7 +7,6 @@ expect abstract class Image {
     fun getAccelerationPriority(): Float
 }
 
-// Every abstract member of java.awt.Image takes an ImageObserver — keep them out
 expect val Image.pxWidth: Int
 expect val Image.pxHeight: Int
 

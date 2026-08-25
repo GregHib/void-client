@@ -12,7 +12,7 @@ import jaggl.OpenGL.Companion.glTexSubImage2Di
 import jaggl.OpenGL.Companion.glTexSubImage2Dub
 import java.awt.MediaTracker
 import java.awt.Toolkit
-import java.awt.image.PixelGrabber
+import awt.image.PixelGrabber
 
 open class GlTexture2D : GlTexture {
     private var anInt8545: Int

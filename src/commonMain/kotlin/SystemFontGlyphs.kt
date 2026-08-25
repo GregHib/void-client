@@ -3,7 +3,7 @@ import awt.Color
 import awt.Component
 import awt.Font
 import awt.FontMetrics
-import java.awt.image.PixelGrabber
+import awt.image.PixelGrabber
 
 /*
  * Class323

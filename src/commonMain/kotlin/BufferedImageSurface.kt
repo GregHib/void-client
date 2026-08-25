@@ -1,9 +1,9 @@
 import awt.Canvas
 import awt.Graphics
-import java.awt.image.BufferedImage
-import java.awt.image.DataBufferInt
-import java.awt.image.DirectColorModel
-import java.awt.image.Raster
+import awt.image.BufferedImage
+import awt.image.DataBufferInt
+import awt.image.DirectColorModel
+import awt.image.Raster
 import awt.Rectangle
 import java.util.*
 

@@ -2,10 +2,10 @@ import kotlin.jvm.JvmStatic
 import awt.Canvas
 import awt.Graphics
 import awt.Image
-import java.awt.image.ColorModel
-import java.awt.image.DirectColorModel
-import java.awt.image.ImageConsumer
-import java.awt.image.ImageProducer
+import awt.image.ColorModel
+import awt.image.DirectColorModel
+import awt.image.ImageConsumer
+import awt.image.ImageProducer
 
 class ProducerImageSurface : AbstractFrameBufferSurface(), ImageProducer {
     private var aCanvas9073: Canvas? = null
