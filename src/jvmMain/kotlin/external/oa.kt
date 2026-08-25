@@ -27,12 +27,13 @@ import TerrainTile
 import withLock
 import awt.Canvas
 import awt.Rectangle
+import lang.currentThread
 import kotlin.math.max
 
 /*
  * NativeGraphicsContext
  */
-actual class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Disposable {
+actual class oa actual constructor(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Disposable {
     private var aYa5121: ya? = null
     actual var nativeid: Long = 0L
     private val aNodeDeque_5123: NodeDeque
@@ -157,7 +158,7 @@ actual class oa(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_
 
     actual fun method3973(): a? {
         for (i in 0..<this.anInt5141) {
-            if (anAArray5143!![i]!!.aRunnable5112 === Thread.currentThread()) return anAArray5143!![i]
+            if (anAArray5143!![i]!!.aRunnable5112 === currentThread()) return anAArray5143!![i]
         }
         return null
     }

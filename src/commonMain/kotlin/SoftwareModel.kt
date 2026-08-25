@@ -4,6 +4,8 @@ import PcmStreamBuffer.Companion.method2832
 import CachedRgbNoiseTexture.Companion.method565
 import IdentKitRecolor.Companion.method206
 import lang.InterruptedException
+import lang.Thread
+import lang.currentThread
 import kotlin.math.asin
 import kotlin.math.atan2
 import kotlin.math.sqrt
@@ -1902,7 +1904,7 @@ class SoftwareModel : AbstractModel {
         var i_508_ = -2147483648
         var i_509_ = 2147483647
         var i_510_ = -2147483648
-        method632(Thread.currentThread())
+        method632(currentThread())
         if (!aBoolean5323) method655()
         val i_511_ = aShort5393 - aShort5395 shr 1
         val i_512_ = aShort5365 - aShort5329 shr 1
@@ -2347,7 +2349,7 @@ class SoftwareModel : AbstractModel {
         val class64_sub1_586_ = abstractModel as SoftwareModel
         check((anInt5316 and 0x10000) == 65536) { "" }
         check((class64_sub1_586_.anInt5316 and 0x10000) == 65536) { "" }
-        method632(Thread.currentThread())
+        method632(currentThread())
         method655()
         method636()
         class64_sub1_586_.method655()
@@ -2727,7 +2729,7 @@ class SoftwareModel : AbstractModel {
                         aBoolean5357 = true
                     }
                 }
-                method632(Thread.currentThread())
+                method632(currentThread())
                 aShadowProjector_5383!!.method1023((i_632_ and 0x2) != 0)
                 var bool_656_ = false
                 val bool_657_ = i_636_ <= aHa_Sub1_5353.anInt7482
@@ -3067,7 +3069,7 @@ class SoftwareModel : AbstractModel {
     }
 
     public override fun method614(i: Byte, i_762_: Int, bool: Boolean): AbstractModel {
-        method648(Thread.currentThread())
+        method648(currentThread())
         val class64_sub1_763_: SoftwareModel
         val class64_sub1_764_: SoftwareModel
         if (i.toInt() == 1) {
@@ -3425,7 +3427,7 @@ class SoftwareModel : AbstractModel {
         aFloatArrayArray5314 = arrayOfNulls<FloatArray>(anInt5351)
         aFloatArrayArray5345 = arrayOfNulls<FloatArray>(anInt5351)
         val class358 = method565(255, anInt5351, modelDefinition, `is`)!!
-        val particleSystemState: ParticleSystemState = aHa_Sub1_5353.method3724(Thread.currentThread())!!
+        val particleSystemState: ParticleSystemState = aHa_Sub1_5353.method3724(currentThread())!!
         val fs = particleSystemState.aFloatArray2226!!
         var bool_802_ = false
         for (i_803_ in 0..<anInt5351) {

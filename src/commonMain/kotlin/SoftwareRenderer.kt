@@ -1,5 +1,6 @@
-import awt.Canvas
+﻿import awt.Canvas
 import awt.Rectangle
+import lang.currentThread
 import kotlin.math.floor
 import kotlin.math.max
 import kotlin.math.min
@@ -277,7 +278,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3685(nodeDequeHolder: NodeDequeHolder, i: Int) {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         val class318_sub9 = (nodeDequeHolder.aSceneNodeDeque_1569.aClass318_Sub9_1503)!!
         var class318_sub9_65_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_65_ !== class318_sub9) {
@@ -417,7 +418,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3705(): AbstractCameraTransform {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         return class167!!.aClass101_Sub1_2209!!
     }
 
@@ -579,7 +580,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun f(i: Int, i_156_: Int) {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         this.anInt7482 = i
         this.anInt7494 = i_156_
         class167!!.anInt2210 = this.anInt7494 - 255
@@ -748,7 +749,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3684(nodeDequeHolder: NodeDequeHolder) {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         val class318_sub9 = (nodeDequeHolder.aSceneNodeDeque_1569.aClass318_Sub9_1503)!!
         var class318_sub9_208_ = class318_sub9.aClass318_Sub9_6469
         while (class318_sub9_208_ !== class318_sub9) {
@@ -1001,7 +1002,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         var i_273_ = i_273_
         var i_275_ = i_275_
         var i_276_ = i_276_
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         val class109 = class167!!.aShadowProjector_2220!!
         class109.aBoolean1669 = false
         i -= this.anInt7509
@@ -1050,7 +1051,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     public override fun C(bool: Boolean) {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         class167!!.aBoolean2202 = bool
     }
 
@@ -1441,7 +1442,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun EA(i: Int, i_387_: Int, i_388_: Int, i_389_: Int) {
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         class167!!.anInt2211 = i
         class167.anInt2192 = i_387_
         class167.anInt2197 = i_388_
@@ -1812,7 +1813,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     override fun method3688(i: Int, i_494_: Int, i_495_: Int, i_496_: Int, i_497_: Int, i_498_: Int, i_499_: Int) {
         var i = i
         var i_494_ = i_494_
-        val class167 = method3724(Thread.currentThread())
+        val class167 = method3724(currentThread())
         val class109 = class167!!.aShadowProjector_2220!!
         var i_500_ = i_495_ - i
         var i_501_ = i_496_ - i_494_
@@ -2336,7 +2337,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
     }
 
     override fun method3659(i: Int) {
-        aParticleSystemStateArray7480!![i]!!.method1291(10000, Thread.currentThread())
+        aParticleSystemStateArray7480!![i]!!.method1291(10000, currentThread())
     }
 
     @Throws(ClientException::class)
@@ -2464,7 +2465,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             anInt6638++
             if (SoundEnvelope.anIntArray179 == null) SoundEnvelope.anIntArray179 = IntArray(65536)
             else return
-            val d = 0.7 + (0.03 * Math.random() - 0.015)
+            val d = 0.7 + (0.03 * random() - 0.015)
             for (i_5_ in 0..65535) {
                 val d_6_ = 0.0078125 + ((0xfebd and i_5_) shr 10).toDouble() / 64.0
                 val d_7_ = ((0x384 and i_5_) shr 7).toDouble() / 8.0 + 0.0625

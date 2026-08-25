@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import ServerConnectionInfo.Companion.method1258
 import RangeThresholdTextureNode.Companion.method3056
 import EdgeDetectTextureNode.Companion.method3073
@@ -102,7 +102,7 @@ class CompassSmoother {
                 val i_4_ = widgetDefinition.anIntArrayArray264!![i]!![0]
                 var i_5_ = i_4_ shr 8
                 if (widgetDefinition.anIntArrayArray264!![i]!!.size > 1) {
-                    val i_6_ = (Math.random() * (widgetDefinition.anIntArrayArray264!![i])!!.size.toDouble()).toInt()
+                    val i_6_ = (random() * (widgetDefinition.anIntArrayArray264!![i])!!.size.toDouble()).toInt()
                     if (i_6_ > 0) i_5_ = widgetDefinition.anIntArrayArray264!![i]!![i_6_]
                 }
                 val i_7_ = 0x7 and (i_4_ shr 5)

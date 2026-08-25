@@ -5,6 +5,7 @@ import AbstractModel
 import Disposable
 import Renderer
 import TerrainTile
+import lang.currentThread
 
 /* a - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -126,7 +127,7 @@ actual class a internal constructor(private val anOa5115: oa, i: Int, i_68_: Int
     }
 
     actual fun method154() {
-        this.aRunnable5112 = Thread.currentThread()
+        this.aRunnable5112 = currentThread()
         method157()
     }
 

@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmField
+﻿import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 import NpcAnimationResolver.Companion.method214
 import ProjectileFactory.Companion.aBoolean2895
@@ -265,7 +265,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                         class348_sub9.aBoolean6684 = true
                         class348_sub9.method2781(21.toByte())
                     }
-                    if (class348_sub9.anIntArray6697 != null) class348_sub9.anInt6670 = (class348_sub9.anInt6680 - -((-class348_sub9.anInt6680 + class348_sub9.anInt6668).toDouble() * Math.random()).toInt())
+                    if (class348_sub9.anIntArray6697 != null) class348_sub9.anInt6670 = (class348_sub9.anInt6680 - -((-class348_sub9.anInt6680 + class348_sub9.anInt6668).toDouble() * random()).toInt())
                     MapSceneIconDef.aNodeDeque_2859!!.method1999(class348_sub9, -20180)
                 }
             } catch (runtimeexception: RuntimeException) {

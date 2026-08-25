@@ -1,13 +1,14 @@
 package jaggl
 
 import awt.Canvas
+import lang.currentThread
 import util.Hashtable
 import kotlin.jvm.JvmStatic
 
 actual class OpenGL {
     /*private*/ actual var a: Thread? = null
 
-    /*private*/ actual var c: util.Hashtable<Any?, Any?>? = null
+    /*private*/ actual var c: Hashtable<Any?, Any?>? = null
 
     /*private*/ actual val peer: Long = 0
 
@@ -23,7 +24,7 @@ actual class OpenGL {
 
     @Synchronized
     actual fun a(): Boolean {
-        if (this.a === Thread.currentThread()) {
+        if (this.a === currentThread()) {
             this.detachPeer()
             b.remove(this.a)
             this.a = null
@@ -43,7 +44,7 @@ actual class OpenGL {
 
     @Synchronized
     actual fun b(): Boolean {
-        val local1 = Thread.currentThread()
+        val local1 = currentThread()
         if (!this.attachPeer()) {
             return false
         }
@@ -90,7 +91,7 @@ actual class OpenGL {
     actual external fun setSurface(arg0: Long): Boolean
 
     actual companion object {
-        private val b: util.Hashtable<Any?, Any?> = _root_ide_package_.util.Hashtable<Any?, Any?>()
+        /*private*/ actual val b: Hashtable<Any?, Any?> = Hashtable<Any?, Any?>()
 
         @JvmStatic
 		actual external fun glTranslatef(arg0: Float, arg1: Float, arg2: Float)

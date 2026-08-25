@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import HeadIconRenderer.Companion.method1211
 import WorldListEntry.Companion.method285
 import util.zip.CRC32
@@ -69,12 +69,12 @@ class TypedRecordTable {
                     val i_3_ = (i_1_ and 0xf1) shr 5
                     if (i_0_ > -13) anInt3695 = 0
                     if (widgetDefinition.anIntArrayArray264!![i]!!.size > 1) {
-                        val i_4_ = ((widgetDefinition.anIntArrayArray264!![i])!!.size.toDouble() * Math.random()).toInt()
+                        val i_4_ = ((widgetDefinition.anIntArrayArray264!![i])!!.size.toDouble() * random()).toInt()
                         if (i_4_ > 0) i_2_ = widgetDefinition.anIntArrayArray264!![i]!![i_4_]
                     }
                     val i_5_ = i_1_ and 0x1f
                     var i_6_ = 256
-                    if (widgetDefinition.anIntArray236 != null && widgetDefinition.anIntArray265 != null) i_6_ = ((Math.random() * (-(widgetDefinition.anIntArray236!![i]) + (widgetDefinition.anIntArray265!![i])).toDouble()).toInt() + widgetDefinition.anIntArray236!![i])
+                    if (widgetDefinition.anIntArray236 != null && widgetDefinition.anIntArray265 != null) i_6_ = ((random() * (-(widgetDefinition.anIntArray236!![i]) + (widgetDefinition.anIntArray265!![i])).toDouble()).toInt() + widgetDefinition.anIntArray236!![i])
                     val i_7_ = (if (widgetDefinition.anIntArray253 == null) 255 else widgetDefinition.anIntArray253!![i])
                     if (i_5_ == 0) {
                         if (LocalPlayerState.aPlayer_1907 == class318_sub1) {

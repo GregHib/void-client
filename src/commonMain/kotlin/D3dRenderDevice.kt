@@ -10,6 +10,8 @@ import jagdx.IDirect3D.Companion.a
 import jagdx.ue.a
 import awt.Canvas
 import awt.Rectangle
+import lang.yield
+import kotlin.jvm.Synchronized
 
 /*
  * Class378
@@ -302,7 +304,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
             while (true) {
                 val i = idirect3deventquery.IsSignaled()
                 if (i != 1) break
-                Thread.yield()
+                yield()
             }
         }
         idirect3deventquery.a(9275)
@@ -712,8 +714,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
 
     override fun method3844(i: Int, canvas: Canvas?, `object`: Any?) {
         if (canvas === this.aCanvas7925) {
-            val dimension = canvas!!.getSize()
-            if (dimension.width > 0 && 0 < dimension.height) {
+            if (canvas!!.getWidth() > 0 && 0 < canvas!!.getHeight()) {
                 this.anIDirect3DDevice9810!!.EndScene()
                 method3960(false)
                 this.anIDirect3DDevice9810!!.BeginScene()

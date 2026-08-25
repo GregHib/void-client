@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 /* Class225 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -117,7 +117,7 @@ class NpcDefinition {
         anInt2921++
         if (this.anInt2918 != -1) return this.anInt2918
         if (this.anIntArray2915 != null) {
-            var i_9_ = (anInt2930.toDouble() * Math.random()).toInt()
+            var i_9_ = (anInt2930.toDouble() * random()).toInt()
             var i_10_: Int
             i_10_ = 0
             while (i_9_ >= this.anIntArray2929!![i_10_]) {

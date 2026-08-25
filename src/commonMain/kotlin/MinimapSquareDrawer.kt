@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import DefaultGraphicsOptionState.Companion.method1839
 import OggMediaStream.Companion.method515
 import Renderer.Companion.anInt4581
@@ -86,14 +86,14 @@ class MinimapSquareDrawer internal constructor(private var anInt5214: Int, priva
             anInt5210++
             val class348_sub49 = ByteBuffer(518)
             val `is` = IntArray(4)
-            for (i in 0..3) `is`[i] = (Math.random() * 9.9999999E7).toInt()
+            for (i in 0..3) `is`[i] = (random() * 9.9999999E7).toInt()
             class348_sub49.writeByte(bool, 10)
             class348_sub49.writeInt(114.toByte(), `is`[0])
             class348_sub49.writeInt(97.toByte(), `is`[1])
             class348_sub49.writeInt(109.toByte(), `is`[2])
             class348_sub49.writeInt(105.toByte(), `is`[3])
-            for (i in 0..9) class348_sub49.writeInt(120.toByte(), (9.9999999E7 * Math.random()).toInt())
-            class348_sub49.writeShort(107.toByte(), (9.9999999E7 * Math.random()).toInt())
+            for (i in 0..9) class348_sub49.writeInt(120.toByte(), (9.9999999E7 * random()).toInt())
+            class348_sub49.writeShort(107.toByte(), (9.9999999E7 * random()).toInt())
             class348_sub49.method3390(AbstractFrameBufferSurface.aBigInteger6921, (-98).toByte(), SceneNodeDeque.aBigInteger8762)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, 80)
             return `is`

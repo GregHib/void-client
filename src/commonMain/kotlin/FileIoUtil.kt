@@ -3,6 +3,7 @@ import BufferedFileReader.method3610
 import io.File
 import io.IOException
 import lang.InterruptedException
+import lang.sleep
 
 /*
  * Class327
@@ -41,7 +42,7 @@ object FileIoUtil {
         try {
             anInt4090++
             try {
-                Thread.sleep(l)
+                sleep(l)
                 val i_0_ = 107 % ((-80 - i) / 35)
             } catch (interruptedexception: InterruptedException) {
                 /* empty */

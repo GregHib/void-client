@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import DelegatingRenderCanvas.Companion.method120
 import DelegatingRenderCanvas.Companion.method123
 import ParticleEmitterNode.Companion.method218
@@ -1437,9 +1437,9 @@ class Client : GameAppletFrame() {
                 val i_97_ = (npc.aNpcType_10505!!.aByte1325)
                 if ((i_97_.toInt() and 0x1) != 0) {
                     val i_98_ = npc.method2436(117.toByte())
-                    if ((0x2 and i_97_.toInt()) != 0 && npc.anInt10319 == 0 && Math.random() * 1000.0 < 10.0) {
-                        val i_99_ = Math.round(-5.0 + 10.0 * Math.random()).toInt()
-                        val i_100_ = Math.round(10.0 * Math.random() - 5.0).toInt()
+                    if ((0x2 and i_97_.toInt()) != 0 && npc.anInt10319 == 0 && random() * 1000.0 < 10.0) {
+                        val i_99_ = Math.round(-5.0 + 10.0 * random()).toInt()
+                        val i_100_ = Math.round(10.0 * random() - 5.0).toInt()
                         if (i_99_ != 0 || i_100_ != 0) {
                             var i_101_ = ((npc.anIntArray10320!![0]) - -i_99_)
                             if (i_101_ < 0) i_101_ = 0
@@ -5147,7 +5147,7 @@ class Client : GameAppletFrame() {
                                 ItemNameResolver.anInt4999++
                                 if (ItemNameResolver.anInt4999 > 500) {
                                     ItemNameResolver.anInt4999 = 0
-                                    val i_32_ = (8.0 * Math.random()).toInt()
+                                    val i_32_ = (8.0 * random()).toInt()
                                     if ((0x4 and i_32_) == 4) RenderableGroup.anInt5016 += ProjectileDefinition.anInt3844
                                     if ((i_32_ and 0x1) == 1) ConnectionStateRefs.anInt319 += WallEntity.anInt8775
                                     if ((0x2 and i_32_) == 2) WalkingTypeUtil.anInt3310 += anInt4263
@@ -5161,7 +5161,7 @@ class Client : GameAppletFrame() {
                                 if (RenderableGroup.anInt5016 > 40) ProjectileDefinition.anInt3844 = -1
                                 if (GlBufferObject.anInt4753 > 500) {
                                     GlBufferObject.anInt4753 = 0
-                                    val i_33_ = (Math.random() * 8.0).toInt()
+                                    val i_33_ = (random() * 8.0).toInt()
                                     if ((i_33_ and 0x2) == 2) FloatBuffer.anInt9750 += InterfaceComponentGroup.anInt9645
                                     if ((i_33_ and 0x1) == 1) OpenGlRenderNode.anInt10483 += HardKeyedCacheEntryReference.anInt10443
                                 }

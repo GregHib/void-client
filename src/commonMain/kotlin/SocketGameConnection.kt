@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import NullOggStream.Companion.anInt9040
 import io.IOException
 import net.Socket
@@ -159,10 +159,10 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                         do {
                             if ((class348_sub9.aClass348_Sub16_Sub5_6673) == null) {
                                 if ((class348_sub9.anIntArray6697 != null) && (i.let { class348_sub9.anInt6670 -= it; class348_sub9.anInt6670 }) <= 0) {
-                                    val i_16_ = (if ((class348_sub9.anInt6681) == 256 && (class348_sub9.anInt6696) == 256) 256 else ((class348_sub9.anInt6696) + (Math.random() * (-(class348_sub9.anInt6696) + (class348_sub9.anInt6681)).toDouble()).toInt()))
+                                    val i_16_ = (if ((class348_sub9.anInt6681) == 256 && (class348_sub9.anInt6696) == 256) 256 else ((class348_sub9.anInt6696) + (random() * (-(class348_sub9.anInt6696) + (class348_sub9.anInt6681)).toDouble()).toInt()))
                                     if (class348_sub9.aBoolean6699) {
                                         if ((class348_sub9.aClass348_Sub10_6683) == null) {
-                                            val i_17_ = ((class348_sub9.anIntArray6697!!).size.toDouble() * Math.random()).toInt()
+                                            val i_17_ = ((class348_sub9.anIntArray6697!!).size.toDouble() * random()).toInt()
                                             class348_sub9.aClass348_Sub10_6683 = (VorbisAudioDecoder.method2793(LightingOptionState.aJs5Archive_5878!!, (class348_sub9.anIntArray6697!![i_17_])))
                                         }
                                         if ((class348_sub9.aClass348_Sub10_6683) != null) {
@@ -172,18 +172,18 @@ class SocketGameConnection internal constructor(private val aSocket5836: Socket,
                                                 class348_sub16_sub5!!.method2917(0)
                                                 SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
                                                 class348_sub9.aClass348_Sub16_Sub5_6673 = class348_sub16_sub5
-                                                class348_sub9.anInt6670 = ((((class348_sub9.anInt6668) - (class348_sub9.anInt6680)).toDouble() * Math.random()).toInt() + (class348_sub9.anInt6680))
+                                                class348_sub9.anInt6670 = ((((class348_sub9.anInt6668) - (class348_sub9.anInt6680)).toDouble() * random()).toInt() + (class348_sub9.anInt6680))
                                             }
                                         }
                                     } else {
-                                        val i_18_ = (Math.random() * (class348_sub9.anIntArray6697!!).size.toDouble()).toInt()
+                                        val i_18_ = (random() * (class348_sub9.anIntArray6697!!).size.toDouble()).toInt()
                                         val audioClipDefinition = AudioClipDefinition.method2372((ClientLoadStateMachine.aJs5Archive_1878!!), (class348_sub9.anIntArray6697!![i_18_]), 0)
                                         if (audioClipDefinition == null) break
                                         val class348_sub19_sub1 = (audioClipDefinition.method2369().method2944(MapSceneTile.aAudioResampler_1050!!))
                                         val class348_sub16_sub5 = (SampledVoice.method2911(class348_sub19_sub1, i_16_, i_9_ shl 6, i_10_))
                                         class348_sub16_sub5!!.method2917(0)
                                         SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2883(class348_sub16_sub5)
-                                        class348_sub9.anInt6670 = (((-(class348_sub9.anInt6680) + (class348_sub9.anInt6668)).toDouble() * Math.random()).toInt() + (class348_sub9.anInt6680))
+                                        class348_sub9.anInt6670 = (((-(class348_sub9.anInt6680) + (class348_sub9.anInt6668)).toDouble() * random()).toInt() + (class348_sub9.anInt6680))
                                         class348_sub9.aClass348_Sub16_Sub5_6673 = class348_sub16_sub5
                                     }
                                     break

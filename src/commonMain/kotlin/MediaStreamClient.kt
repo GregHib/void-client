@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import GameClock.method599
 import io.IOException
 import kotlin.concurrent.Volatile
@@ -299,7 +299,7 @@ class MediaStreamClient {
         anInt3189++
         aSocketStreamWorker_3209 = null
         this.anInt3213++
-        aByte3212 = (Math.random() * 255.0 + 1.0).toInt().toByte()
+        aByte3212 = (random() * 255.0 + 1.0).toInt().toByte()
         this.anInt3214 = i
     }
 

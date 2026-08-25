@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import AudioResampler.Companion.method1274
 import GlTexture3D.Companion.method1960
 import MinimapTileEntry.Companion.method383
@@ -88,7 +88,7 @@ class FireParticleStream : OutputStream() {
                 val i_12_ = WorldMapElement.anInt4638
                 for (i_13_ in 0..4) {
                     if (MinimapStateReset.aBooleanArray2374!![i_13_]) {
-                        val i_14_ = ((Math.random() * ((CollisionMapAccessor.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - CollisionMapAccessor.anIntArray3552!![i_13_].toDouble() + (sin((GroundDecorSceneEntity.anIntArray9981!![i_13_]).toDouble() * ((MapTileShape.anIntArray4196!![i_13_]).toDouble() / 100.0)) * (ModelHeaderCache.anIntArray3273!![i_13_]).toDouble())).toInt()
+                        val i_14_ = ((random() * ((CollisionMapAccessor.anIntArray3552!![i_13_] * 2) - -1).toDouble()) - CollisionMapAccessor.anIntArray3552!![i_13_].toDouble() + (sin((GroundDecorSceneEntity.anIntArray9981!![i_13_]).toDouble() * ((MapTileShape.anIntArray4196!![i_13_]).toDouble() / 100.0)) * (ModelHeaderCache.anIntArray3273!![i_13_]).toDouble())).toInt()
                         if (i_13_ == 4) {
                             MinimapAreaMarkerNode.anInt9701 += i_14_
                             if (MinimapAreaMarkerNode.anInt9701 >= 1024) {

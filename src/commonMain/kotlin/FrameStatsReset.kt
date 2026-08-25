@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import ScrollingWidgetComponentNode.Companion.method1118
 import FixedFunctionMaterialPass.Companion.method2145
 import CombineTextureNode.Companion.method3089
@@ -4110,12 +4110,12 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
 
             RenderNodeStatics.aBoolean9722 = false
             SoundBankPatch.method2928(true)
-            OpenGlRenderNode.anInt10483 = -60 + (Math.random() * 120.0).toInt()
-            WalkingTypeUtil.anInt3310 = -55 + (Math.random() * 110.0).toInt()
-            CameraDistanceOptionState.aFloat3938 = (0x3fff and -80 + (160.0 * Math.random()).toInt()).toFloat()
-            FloatBuffer.anInt9750 = (30.0 * Math.random()).toInt() + -20
-            RenderableGroup.anInt5016 = (80.0 * Math.random()).toInt() - 40
-            ConnectionStateRefs.anInt319 = (Math.random() * 100.0).toInt() - 50
+            OpenGlRenderNode.anInt10483 = -60 + (random() * 120.0).toInt()
+            WalkingTypeUtil.anInt3310 = -55 + (random() * 110.0).toInt()
+            CameraDistanceOptionState.aFloat3938 = (0x3fff and -80 + (160.0 * random()).toInt()).toFloat()
+            FloatBuffer.anInt9750 = (30.0 * random()).toInt() + -20
+            RenderableGroup.anInt5016 = (80.0 * random()).toInt() - 40
+            ConnectionStateRefs.anInt319 = (random() * 100.0).toInt() - 50
             method3089(-126)
             for (k in 0..2047) LoadingBarRenderer.aPlayerArray5058!![k] = null
 

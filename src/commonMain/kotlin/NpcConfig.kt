@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import CacheArchiveIndexLoader.Companion.method340
 
 /* Class51 - Decompiled by JODE
@@ -702,7 +702,7 @@ class NpcConfig {
     fun method489(i: Int): Int {
         anInt927++
         if (this.anIntArray943 != null) {
-            var i_84_ = (Math.random() * anInt911.toDouble()).toInt()
+            var i_84_ = (random() * anInt911.toDouble()).toInt()
             var i_85_: Int
             i_85_ = 0
             while (i_84_ >= anIntArray959!![i_85_]) {

@@ -6,29 +6,23 @@ import AbstractModelRenderer
 import AbstractTileShape
 import CameraMarker
 import CircleRasterizer
+import ClientException
 import Disposable
-import RSFont
 import FontDefinition
-import RendererType
-import HashTileShape
-import Hashtable
 import Marker
 import ModelDefinition
-import NodeDeque
 import NodeDequeHolder
-import PositionedSceneNode
-import Rectangle
+import RSFont
 import RenderConfig
 import Renderer
+import RendererType
 import ShaderProgram
 import Sprite
 import SpriteDrawTarget
 import SpriteImage
 import TerrainTile
-import withLock
 import awt.Canvas
 import awt.Rectangle
-import kotlin.math.max
 
 /*
  * NativeGraphicsContext

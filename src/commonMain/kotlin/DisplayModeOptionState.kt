@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import GameAppletFrame.Companion.method86
 import kotlin.math.pow
 
@@ -108,7 +108,7 @@ class DisplayModeOptionState : GraphicsOptionState {
             anInt6112++
             if (SoundEnvelope.anIntArray4983 == null) SoundEnvelope.anIntArray4983 = IntArray(65536)
             else return
-            val d = 0.7 + (0.03 * Math.random() - 0.015)
+            val d = 0.7 + (0.03 * random() - 0.015)
             var i_5_ = 0
             if (i == 1415665776) {
                 for (i_6_ in 0..511) {

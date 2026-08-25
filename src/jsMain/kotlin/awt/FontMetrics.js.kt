@@ -15,8 +15,8 @@ actual abstract class FontMetrics {
     actual fun getMaxDescent(): Int = getDescent()
     actual fun getMaxAdvance(): Int = stringWidth("W")
     actual fun charWidth(ch: Char): Int = stringWidth(ch.toString())
-    actual fun stringWidth(str: String): Int =
-        ctx.measureText(str).width.toInt()
+    actual fun stringWidth(str: String?): Int =
+        ctx.measureText(str!!).width.toInt()
 }
 
 internal class CanvasFontMetrics(

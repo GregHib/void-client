@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import GameAppletFrame.Companion.method94
 import ParticleEmitterNode.Companion.method217
 import SceneRegionState.method222
@@ -4567,12 +4567,12 @@ object ChatCommandProcessor {
                 }
                 if (i == 4004) {
                     val i_396_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (Math.random() * i_396_.toDouble()).toInt()
+                    anIntArray1149!![anInt1173++] = (random() * i_396_.toDouble()).toInt()
                     return
                 }
                 if (i == 4005) {
                     val i_397_ = anIntArray1149!![--anInt1173]
-                    anIntArray1149!![anInt1173++] = (Math.random() * (i_397_ + 1).toDouble()).toInt()
+                    anIntArray1149!![anInt1173++] = (random() * (i_397_ + 1).toDouble()).toInt()
                     return
                 }
                 if (i == 4006) {
@@ -4687,7 +4687,7 @@ object ChatCommandProcessor {
                     val i_426_ = anIntArray1149!![anInt1173]
                     val i_427_ = anIntArray1149!![anInt1173 + 1]
                     if (i_426_ > 700 || i_427_ > 700) anIntArray1149!![anInt1173++] = 256
-                    val d = ((Math.random() * (i_427_ + i_426_).toDouble() - i_426_.toDouble() + 800.0) / 100.0)
+                    val d = ((random() * (i_427_ + i_426_).toDouble() - i_426_.toDouble() + 800.0) / 100.0)
                     anIntArray1149!![anInt1173++] = (2.0.pow(d) + 0.5).toInt()
                     return
                 }

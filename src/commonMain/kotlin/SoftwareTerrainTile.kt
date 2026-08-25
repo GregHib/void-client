@@ -1,3 +1,4 @@
+import lang.currentThread
 import kotlin.math.sqrt
 
 /* s_Sub1 - Decompiled by JODE
@@ -1187,7 +1188,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     }
 
     private fun method3992(i: Int, i_255_: Int, i_256_: Int) {
-        val class167 = aHa_Sub1_8217.method3724(Thread.currentThread())
+        val class167 = aHa_Sub1_8217.method3724(currentThread())
         class167!!.aShadowProjector_2220!!.anInt1674 = 0
         if (aModelVertexNormalArrayArray8230 != null) method3990(i, i_255_, class167.aBoolean2195, class167, class167.aShadowProjector_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232!!, i_256_)
         else if (aVertexNormalArrayArray8215 != null) method3994(i, i_255_, class167.aShadowProjector_2220!!, class167.anIntArray2212!!, class167.anIntArray2228!!, class167.anIntArray2217!!, class167.anIntArray2232, i_256_)
@@ -1740,7 +1741,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
     }
 
     override fun method3987(i: Int, i_411_: Int, i_412_: Int, i_413_: Int, i_414_: Int, i_415_: Int, i_416_: Int, bools: Array<BooleanArray?>) {
-        val class167 = aHa_Sub1_8217.method3724(Thread.currentThread())
+        val class167 = aHa_Sub1_8217.method3724(currentThread())
         val class109 = class167!!.aShadowProjector_2220!!
         class109.anInt1674 = 0
         class109.aBoolean1671 = true

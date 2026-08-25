@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import io.FileOutputStream
 import kotlin.math.ln
 import kotlin.math.pow
@@ -22,7 +22,7 @@ abstract class Texture2DProvider : CircleRasterizer() {
             val d = ln(i.toDouble()) / ln(2.0)
             val d_2_ = ln(i_0_.toDouble()) / ln(2.0)
             val i_3_ = -43 % ((i_1_ - 11) / 59)
-            val d_4_ = (d - d_2_) * Math.random() + d_2_
+            val d_4_ = (d - d_2_) * random() + d_2_
             return (0.5 + 2.0.pow(d_4_)).toInt()
         }
 

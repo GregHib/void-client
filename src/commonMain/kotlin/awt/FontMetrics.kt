@@ -10,5 +10,5 @@ expect abstract class FontMetrics {
     fun getMaxDescent(): Int
     fun getMaxAdvance(): Int
     fun charWidth(ch: Char): Int
-    fun stringWidth(str: String): Int
+    fun stringWidth(str: String?): Int
 }

@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import GlCubeMapTexture.Companion.method245
 import ClickFeedbackTask.Companion.method1353
 import GlTexture2D.Companion.method1969
@@ -115,9 +115,9 @@ class LongKeyNode : LinkedListNode {
                 }
                 GroundItemRenderState.aAbstractModelRenderer_1664 = var_renderer!!.method3662(512, `is`, 94.toByte(), 0, 512, 512)
                 ParticleGeometry.method3489(-3)
-                val i_13_ = (((-10 + (238 + (20.0 * Math.random()).toInt()) shl 8) + (-10 + (Math.random() * 20.0).toInt() + 238 shl 16) - (-(Math.random() * 20.0).toInt() + -228)) or 0xffffff.inv())
-                val i_14_ = (228 - -(20.0 * Math.random()).toInt() shl 16 or 0xffffff.inv())
-                val i_15_ = ((8.0 * Math.random()).toInt() or ((8.0 * Math.random()).toInt() shl 16 or ((8.0 * Math.random()).toInt() shl 8)))
+                val i_13_ = (((-10 + (238 + (20.0 * random()).toInt()) shl 8) + (-10 + (random() * 20.0).toInt() + 238 shl 16) - (-(random() * 20.0).toInt() + -228)) or 0xffffff.inv())
+                val i_14_ = (228 - -(20.0 * random()).toInt() shl 16 or 0xffffff.inv())
+                val i_15_ = ((8.0 * random()).toInt() or ((8.0 * random()).toInt() shl 16 or ((8.0 * random()).toInt() shl 8)))
                 val bools = (Array<BooleanArray?>(3 + TextureLoadExceptionStatics.anInt4600) { BooleanArray(TextureLoadExceptionStatics.anInt4600 - -1 + 2) })
                 var i_16_ = i_5_
                 while (i_16_ < i_5_ - -104) {
@@ -232,7 +232,7 @@ class LongKeyNode : LinkedListNode {
                                                     val i_47_ = (TimedRecordAccessor.aCollisionMapArray7108s!![i_39_]!!.anInt4453)
                                                     val i_48_ = (TimedRecordAccessor.aCollisionMapArray7108s!![i_39_]!!.anInt4441)
                                                     for (i_49_ in 0..9) {
-                                                        val i_50_ = (Math.random() * 4.0).toInt()
+                                                        val i_50_ = (random() * 4.0).toInt()
                                                         if ((i_50_ == 0) && (i_44_ > i_5_) && i_37_ + -3 < i_44_ && ((0x2c0108 and (is_46_[(-i_47_ + (i_44_ - 1))]!![(-i_48_ + i_45_)])) == 0)) i_44_--
                                                         if (i_50_ == 1 && (i_44_ < 104 + (i_5_ - 1)) && 3 + i_37_ > i_44_ && ((is_46_[(-i_47_ + 1 + i_44_)]!![i_45_ + -i_48_]) and 0x2c0180) == 0) i_44_++
                                                         if ((i_50_ == 2) && (i_6_ < i_45_) && i_45_ > -3 + i_38_ && ((0x2c0102 and (is_46_[(-i_47_ + i_44_)]!![(i_45_ - 1 - i_48_)])) == 0)) i_45_--

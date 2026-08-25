@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import GameAppletFrame.Companion.method94
 import GlCubeMapTexture.Companion.method243
 import WaterDetailOptionState.Companion.method1781
@@ -495,8 +495,8 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             var i_14_ = 0
                             while ((i_14_ < IsaacCipher.Companion.anIntArray1303!!.size)) {
                                 if (GlslEnvMaterialPass.aBooleanArray6270!![i_14_]) {
-                                    IsaacCipher.Companion.anIntArray1303!![i_14_] = (Math.random() * 99999.0).toInt()
-                                    if (Math.random() > 0.5) IsaacCipher.Companion.anIntArray1303!![i_14_] *= -1
+                                    IsaacCipher.Companion.anIntArray1303!![i_14_] = (random() * 99999.0).toInt()
+                                    if (random() > 0.5) IsaacCipher.Companion.anIntArray1303!![i_14_] *= -1
                                 }
                                 i_14_++
                             }

@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import Gl3dTexture.Companion.method248
 import SceneTilePlaneManager.method260
 import LightDetailOptionState.Companion.method1802
@@ -205,10 +205,10 @@ class SceneNodeDeque {
                         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 = 0
                         val class348_sub49 = ByteBuffer(518)
                         val `is` = IntArray(4)
-                        `is`[0] = (Math.random() * 9.9999999E7).toInt()
-                        `is`[1] = (9.9999999E7 * Math.random()).toInt()
-                        `is`[3] = (9.9999999E7 * Math.random()).toInt()
-                        `is`[2] = (9.9999999E7 * Math.random()).toInt()
+                        `is`[0] = (random() * 9.9999999E7).toInt()
+                        `is`[1] = (9.9999999E7 * random()).toInt()
+                        `is`[3] = (9.9999999E7 * random()).toInt()
+                        `is`[2] = (9.9999999E7 * random()).toInt()
                         class348_sub49.writeByte(false, 10)
                         class348_sub49.writeInt(91.toByte(), `is`[0])
                         class348_sub49.writeInt(96.toByte(), `is`[1])

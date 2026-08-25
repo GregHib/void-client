@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import ModelFacePriorityNode.Companion.method3591
 import MapRegionLoader.Companion.method756
 import MapRegionLoader.Companion.method760
@@ -130,7 +130,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             anInt6452 = i_22_ - (-(this.aSpotAnimDefinition_6441!!.aShort2418) - -(anInt6454 shr 1))
                         }
                     }
-                    anInt6434 += ((((-this.aSpotAnimDefinition_6441!!.anInt2391 + this.aSpotAnimDefinition_6441!!.anInt2389).toDouble() * Math.random()) + this.aSpotAnimDefinition_6441!!.anInt2391.toDouble()) * i.toDouble()).toInt()
+                    anInt6434 += ((((-this.aSpotAnimDefinition_6441!!.anInt2391 + this.aSpotAnimDefinition_6441!!.anInt2389).toDouble() * random()) + this.aSpotAnimDefinition_6441!!.anInt2391.toDouble()) * i.toDouble()).toInt()
                     if (anInt6434 > 63) {
                         val i_23_ = anInt6434 shr 6
                         anInt6434 = anInt6434 and 0x3f
@@ -143,11 +143,11 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                                 i_27_ = anInt6458
                                 i_26_ = anInt6457
                             } else {
-                                var i_28_ = ((Math.random() * anInt6456.toDouble()).toInt() + anInt6459)
+                                var i_28_ = ((random() * anInt6456.toDouble()).toInt() + anInt6459)
                                 i_28_ = i_28_ and 0x3fff
                                 val i_29_ = SpotAnimVector.anIntArray1207!![i_28_]
                                 val i_30_ = SpotAnimVector.anIntArray1204!![i_28_]
-                                var i_31_ = anInt6452 + (anInt6454.toDouble() * Math.random()).toInt()
+                                var i_31_ = anInt6452 + (anInt6454.toDouble() * random()).toInt()
                                 i_31_ = i_31_ and 0x1fff
                                 val i_32_ = SpotAnimVector.anIntArray1207!![i_31_]
                                 val i_33_ = SpotAnimVector.anIntArray1204!![i_31_]
@@ -156,8 +156,8 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                                 i_26_ = -1 * (i_33_ shl 1)
                                 i_27_ = i_32_ * i_29_ shr i_34_
                             }
-                            var f = Math.random().toFloat()
-                            var f_35_ = Math.random().toFloat()
+                            var f = random().toFloat()
+                            var f_35_ = random().toFloat()
                             if (f + f_35_ > 1.0f) {
                                 f_35_ = 1.0f - f_35_
                                 f = -f + 1.0f
@@ -172,19 +172,19 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                             val i_43_ = i_37_ - i_40_
                             val i_44_ = -i_41_ + i_38_
                             val i_45_ = i_39_ + -i_42_
-                            val i_46_ = (i_43_.toDouble() * Math.random() + i_40_.toDouble()).toInt()
-                            val i_47_ = (i_41_.toDouble() + i_44_.toDouble() * Math.random()).toInt()
-                            val i_48_ = (i_42_.toDouble() + i_45_.toDouble() * Math.random()).toInt()
-                            val i_49_ = ((Math.random() * ((this.aSpotAnimDefinition_6441!!.anInt2438) + -(this.aSpotAnimDefinition_6441!!.anInt2392)).toDouble()).toInt() + this.aSpotAnimDefinition_6441!!.anInt2392)
-                            val i_50_ = (this.aSpotAnimDefinition_6441!!.anInt2394 + ((-(this.aSpotAnimDefinition_6441!!.anInt2394) + (this.aSpotAnimDefinition_6441!!.anInt2407)).toDouble() * Math.random()).toInt())
-                            val i_51_ = ((((this.aSpotAnimDefinition_6441!!.anInt2417) - (this.aSpotAnimDefinition_6441!!.anInt2442)).toDouble() * Math.random()).toInt() + this.aSpotAnimDefinition_6441!!.anInt2442)
+                            val i_46_ = (i_43_.toDouble() * random() + i_40_.toDouble()).toInt()
+                            val i_47_ = (i_41_.toDouble() + i_44_.toDouble() * random()).toInt()
+                            val i_48_ = (i_42_.toDouble() + i_45_.toDouble() * random()).toInt()
+                            val i_49_ = ((random() * ((this.aSpotAnimDefinition_6441!!.anInt2438) + -(this.aSpotAnimDefinition_6441!!.anInt2392)).toDouble()).toInt() + this.aSpotAnimDefinition_6441!!.anInt2392)
+                            val i_50_ = (this.aSpotAnimDefinition_6441!!.anInt2394 + ((-(this.aSpotAnimDefinition_6441!!.anInt2394) + (this.aSpotAnimDefinition_6441!!.anInt2407)).toDouble() * random()).toInt())
+                            val i_51_ = ((((this.aSpotAnimDefinition_6441!!.anInt2417) - (this.aSpotAnimDefinition_6441!!.anInt2442)).toDouble() * random()).toInt() + this.aSpotAnimDefinition_6441!!.anInt2442)
                             val i_52_: Int
                             if (this.aSpotAnimDefinition_6441!!.aBoolean2443) {
-                                val d = Math.random()
+                                val d = random()
                                 i_52_ =
-                                    ((d * (this.aSpotAnimDefinition_6441!!.anInt2408).toDouble() + (this.aSpotAnimDefinition_6441!!.anInt2399).toDouble()).toInt() or ((((this.aSpotAnimDefinition_6441!!.anInt2433).toDouble() * d + (this.aSpotAnimDefinition_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((this.aSpotAnimDefinition_6441!!.anInt2390).toDouble() + ((this.aSpotAnimDefinition_6441!!.anInt2403).toDouble() * d)).toInt() shl 8)) or (((this.aSpotAnimDefinition_6441!!.anInt2413).toDouble() + ((this.aSpotAnimDefinition_6441!!.anInt2410).toDouble() * (Math.random()))).toInt() shl 24))
+                                    ((d * (this.aSpotAnimDefinition_6441!!.anInt2408).toDouble() + (this.aSpotAnimDefinition_6441!!.anInt2399).toDouble()).toInt() or ((((this.aSpotAnimDefinition_6441!!.anInt2433).toDouble() * d + (this.aSpotAnimDefinition_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((this.aSpotAnimDefinition_6441!!.anInt2390).toDouble() + ((this.aSpotAnimDefinition_6441!!.anInt2403).toDouble() * d)).toInt() shl 8)) or (((this.aSpotAnimDefinition_6441!!.anInt2413).toDouble() + ((this.aSpotAnimDefinition_6441!!.anInt2410).toDouble() * (random()))).toInt() shl 24))
                             } else i_52_ =
-                                (((((this.aSpotAnimDefinition_6441!!.anInt2410).toDouble() * Math.random()) + (this.aSpotAnimDefinition_6441!!.anInt2413).toDouble()).toInt() shl 24) or ((((Math.random() * (this.aSpotAnimDefinition_6441!!.anInt2433).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((Math.random() * (this.aSpotAnimDefinition_6441!!.anInt2403).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2390).toDouble()).toInt() shl 8) or (((this.aSpotAnimDefinition_6441!!.anInt2408).toDouble() * Math.random()) + (this.aSpotAnimDefinition_6441!!.anInt2399).toDouble()).toInt()))
+                                (((((this.aSpotAnimDefinition_6441!!.anInt2410).toDouble() * random()) + (this.aSpotAnimDefinition_6441!!.anInt2413).toDouble()).toInt() shl 24) or ((((random() * (this.aSpotAnimDefinition_6441!!.anInt2433).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2429).toDouble()).toInt() shl 16) or (((random() * (this.aSpotAnimDefinition_6441!!.anInt2403).toDouble()) + (this.aSpotAnimDefinition_6441!!.anInt2390).toDouble()).toInt() shl 8) or (((this.aSpotAnimDefinition_6441!!.anInt2408).toDouble() * random()) + (this.aSpotAnimDefinition_6441!!.anInt2399).toDouble()).toInt()))
                             var i_53_ = (this.aSpotAnimDefinition_6441!!.anInt2414)
                             if (!var_renderer!!.method3644() && !(this.aSpotAnimDefinition_6441!!.aBoolean2382)) i_53_ = -1
                             if (Client.anInt5171 == TerrainTileShape.anInt8808) {
@@ -242,7 +242,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
             this.aSpotAnimDefinition_6441 = this.aModelFacePriorityNode_6436!!.method1125(59.toByte())
             if (!var_renderer!!.method3644() && (this.aSpotAnimDefinition_6441!!.anInt2387) != -1) this.aSpotAnimDefinition_6441 = method3591((this.aSpotAnimDefinition_6441!!.anInt2387), 0)
             this.aDoublyLinkedNodeList_6433 = DoublyLinkedNodeList()
-            anInt6434 = (anInt6434 + 64.0 * Math.random()).toInt()
+            anInt6434 = (anInt6434 + 64.0 * random()).toInt()
             method2507(true)
             aViewportTransform_6449.anInt3680 = this.aViewportTransform_6444.anInt3680
             aViewportTransform_6449.anInt3669 = this.aViewportTransform_6444.anInt3669
@@ -338,8 +338,8 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                                 SceneNodeDeque.aBoolean1500 = false
                             }
                         } else {
-                            i_7_ += (10.0 * Math.random()).toInt() + -5
-                            i_8_ += (Math.random() * 10.0).toInt() + -5
+                            i_7_ += (10.0 * random()).toInt() + -5
+                            i_8_ += (random() * 10.0).toInt() + -5
                             WidgetActionEntry.anInt6992 = i_7_
                             DebugOverlayRenderer.anInt3170 = i_8_
                         }
@@ -373,10 +373,10 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                         MenuActionNode.method2811(false)
                         method760()
                         RegionSceneLoader.aNodeDeque_3705 = NodeDeque()
-                        MapRegionLoader.anInt1250 += (Math.random() * 5.0).toInt() + -2
+                        MapRegionLoader.anInt1250 += (random() * 5.0).toInt() + -2
                         if (MapRegionLoader.anInt1250 < -8) MapRegionLoader.anInt1250 = -8
                         if (MapRegionLoader.anInt1250 > 8) MapRegionLoader.anInt1250 = 8
-                        MapRegionLoader.anInt1253 += -2 + (5.0 * Math.random()).toInt()
+                        MapRegionLoader.anInt1253 += -2 + (5.0 * random()).toInt()
                         if (MapRegionLoader.anInt1253 < -16) MapRegionLoader.anInt1253 = -16
                         if (MapRegionLoader.anInt1253 > 16) MapRegionLoader.anInt1253 = 16
                         MapRegionLoader.method764(var_renderConfig!!, (MapRegionLoader.anInt1250 shr 2 shl 10), MapRegionLoader.anInt1253 shr 1)

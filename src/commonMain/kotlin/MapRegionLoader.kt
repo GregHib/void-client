@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import SoundEnvelope.Companion.method303
 import SoundEngineInitializer.method353
 import WidgetComponent.Companion.method424
@@ -37,7 +37,7 @@ open class MapRegionLoader {
         var aByteArrayArrayArray1251: Array<Array<ByteArray?>?>? = null
         private var aShortArray1252: ShortArray?
 
-        var anInt1253: Int = (Math.random() * 17.0).toInt() - 8
+        var anInt1253: Int = (random() * 17.0).toInt() - 8
 
         var aNodeDeque_1254: NodeDeque?
 
@@ -857,7 +857,7 @@ open class MapRegionLoader {
 
         init {
             aShortArray1252 = ShortArray(1)
-            anInt1250 = (Math.random() * 11.0).toInt() - 5
+            anInt1250 = (random() * 11.0).toInt() - 5
             aByteArray1248 = ByteArray(1)
             aNodeDeque_1254 = NodeDeque()
         }

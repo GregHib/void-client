@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import io.IOException
 import io.OutputStream
 
@@ -28,7 +28,7 @@ class ChatMessageStream : OutputStream() {
 
         var anInt107: Int = 0
 
-        var aLong108: Long = (Math.random() * 9.999999999E9).toLong()
+        var aLong108: Long = (random() * 9.999999999E9).toLong()
 
         @JvmStatic
         fun method135(i: Byte, `is`: ByteArray?, i_0_: Int): ByteArray {

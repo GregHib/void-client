@@ -18,6 +18,8 @@ import io.FileOutputStream
 import io.IOException
 import kotlinx.coroutines.Runnable
 import lang.InterruptedException
+import lang.Thread
+import lang.currentThread
 import java.lang.reflect.Method
 import java.net.InetAddress
 import net.Socket
@@ -428,7 +430,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
             }
         }
         if (this.aBoolean3777 && !this.aBoolean3794) {
-            var threadgroup = Thread.currentThread().getThreadGroup()
+            var threadgroup = currentThread().getThreadGroup()
             var threadgroup_24_ = threadgroup!!.getParent()
             while (threadgroup_24_ != null) {
                 threadgroup = threadgroup_24_

@@ -1,4 +1,4 @@
-import kotlin.jvm.JvmStatic
+﻿import kotlin.jvm.JvmStatic
 import ModelBatchBase.Companion.method1130
 import HostPingThread.Companion.method1301
 
@@ -91,8 +91,8 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             if (aWidgetDefinition_3057!!.anIntArray237 == null) aWidgetDefinition_3057 = null
             else {
                 if (bool) {
-                    anInt3084 = ((aWidgetDefinition_3057!!.anIntArray237).size.toDouble() * Math.random()).toInt()
-                    anInt3054 = 1 + ((aWidgetDefinition_3057!!.anIntArray267!![anInt3084]).toDouble() * Math.random()).toInt()
+                    anInt3084 = ((aWidgetDefinition_3057!!.anIntArray237).size.toDouble() * random()).toInt()
+                    anInt3054 = 1 + ((aWidgetDefinition_3057!!.anIntArray267!![anInt3084]).toDouble() * random()).toInt()
                 } else {
                     anInt3084 = 0
                     anInt3054 = 1
