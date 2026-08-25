@@ -56,12 +56,12 @@ class ProxySocketFactory : SocketFactory() {
         if (i >= -100) return null
         val list: MutableList<*>
         val list1: MutableList<*>
-        try {
+        /*try {
             list = aProxySelector6172.select(URI((if (flag1) "https" else "http") + "://" + aString3476))
             list1 = aProxySelector6172.select(URI((if (flag1) "http" else "https") + "://" + aString3476))
         } catch (urisyntaxexception: URISyntaxException) {
             return method2047(121.toByte())
-        }
+        }*/
         list.addAll(list1)
         val aobj: Array<Any?> = list.toTypedArray()
         ioexception_sub1 = null

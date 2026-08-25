@@ -1,5 +1,6 @@
 import kotlin.jvm.JvmStatic
 import java.net.URL
+import kotlin.jvm.Synchronized
 import kotlin.math.max
 import kotlin.math.pow
 import kotlin.math.sin

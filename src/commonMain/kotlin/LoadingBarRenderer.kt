@@ -5,6 +5,8 @@ import awt.Color
 import awt.Font
 import awt.FontMetrics
 import awt.Image
+import lang.IllegalAccessException
+import lang.NoSuchFieldException
 
 /*
  * Class294
