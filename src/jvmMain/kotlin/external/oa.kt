@@ -25,7 +25,7 @@ import SpriteDrawTarget
 import SpriteImage
 import TerrainTile
 import withLock
-import java.awt.Canvas
+import awt.Canvas
 import java.awt.Rectangle
 import kotlin.math.max
 

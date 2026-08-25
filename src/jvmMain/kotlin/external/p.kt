@@ -3,14 +3,14 @@ package external
 import Disposable
 import LinkedListNode
 import withLock
-import java.awt.Canvas
+import awt.Canvas
 import java.awt.Rectangle
 import kotlin.jvm.JvmField
 
 /*
  * NativeFrameBuffer
  */
-actual class p(var_oa: oa?, @JvmField actual var aCanvas5147: Canvas?, @JvmField actual var anInt5145: Int, @JvmField actual var anInt5148: Int) : LinkedListNode(), Disposable {
+actual class p actual constructor(var_oa: oa?, @JvmField actual var aCanvas5147: Canvas?, @JvmField actual var anInt5145: Int, @JvmField actual var anInt5148: Int) : LinkedListNode(), Disposable {
     actual var nativeid: Long = 0
 
     /*private*/ actual external fun sa(var_oa: oa?, canvas: Canvas?, i: Int, i_0_: Int)
@@ -51,7 +51,7 @@ actual class p(var_oa: oa?, @JvmField actual var aCanvas5147: Canvas?, @JvmField
         sa(var_oa, this.aCanvas5147, anInt5145, anInt5148)
     }
 
-    fun method3434(rectangles: Array<Rectangle?>, i: Int, i_12_: Int, i_13_: Int) {
+    actual fun method3434(rectangles: Array<Rectangle?>, i: Int, i_12_: Int, i_13_: Int) {
         try {
             withLock(this.aCanvas5147!!.getTreeLock()) {
                 for (i_14_ in 0..<i) {
@@ -65,7 +65,7 @@ actual class p(var_oa: oa?, @JvmField actual var aCanvas5147: Canvas?, @JvmField
         }
     }
 
-    fun method3435(canvas: Canvas?, i: Int, i_15_: Int) {
+    actual fun method3435(canvas: Canvas?, i: Int, i_15_: Int) {
         this.anInt5145 = i
         this.anInt5148 = i_15_
         oa(canvas, i, i_15_)

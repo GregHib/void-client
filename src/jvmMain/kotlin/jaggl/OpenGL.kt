@@ -1,6 +1,6 @@
 package jaggl
 
-import java.awt.Canvas
+import awt.Canvas
 import java.util.*
 import kotlin.jvm.JvmStatic
 

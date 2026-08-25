@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 import BrightnessOptionState.Companion.method1745
 import WaterMaterialPass.Companion.method2148
 import external.oa
-import java.awt.Canvas
+import awt.Canvas
 
 /*
  * Class306
