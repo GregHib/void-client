@@ -1,7 +1,9 @@
 package awt
 
 import awt.image.ImageObserver
+import org.w3c.dom.CanvasLineCap
 import org.w3c.dom.CanvasRenderingContext2D
+import org.w3c.dom.SQUARE
 
 actual abstract class Graphics {
     actual abstract fun dispose()
@@ -89,9 +91,16 @@ internal class CanvasGraphics(
         ctx.clearRect(x.toDouble(), y.toDouble(), width.toDouble(), height.toDouble())
 
     override fun drawLine(x1: Int, y1: Int, x2: Int, y2: Int) {
+        // Canvas centres a stroke on its path, so a 1px line at an integer coordinate straddles
+        // two pixel rows and renders as two 50%-alpha rows - blurred edges, and corners that fade
+        // to 75%/25% and read as rounded. Offsetting to the pixel centre puts the whole stroke in
+        // one row. "square" caps then extend it by half a pixel at each end so the endpoint pixels
+        // are fully covered (AWT's drawLine is inclusive of both ends, and BasicStroke's default
+        // cap is CAP_SQUARE) - without that, rectangle corners stay at 50%.
+        ctx.lineCap = CanvasLineCap.SQUARE
         ctx.beginPath()
-        ctx.moveTo(x1.toDouble(), y1.toDouble())
-        ctx.lineTo(x2.toDouble(), y2.toDouble())
+        ctx.moveTo(x1 + 0.5, y1 + 0.5)
+        ctx.lineTo(x2 + 0.5, y2 + 0.5)
         ctx.stroke()
     }
 
