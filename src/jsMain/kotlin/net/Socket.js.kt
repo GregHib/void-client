@@ -122,7 +122,6 @@ actual open class Socket actual constructor(host: String?, port: Int) {
             error?.let { throw it }
             if (closed) throw IOException("Socket is closed")
             val slice = b.copyOfRange(off, off + len)
-            println("ws send: ${slice.size} bytes (queued=${!connectedOnce})")
             if (connectedOnce) ws.send(slice.asUint8Array()) else outQueue.add(slice)
         }
 
