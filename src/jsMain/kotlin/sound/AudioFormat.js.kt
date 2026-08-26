@@ -1,6 +1,8 @@
 package sound
 
 import kotlin.js.Promise
+import kotlinx.browser.document
+import org.w3c.dom.events.Event
 
 private external class AudioContext {
     val destination: AudioDestinationNode
@@ -30,11 +32,42 @@ private external class AudioBuffer {
     fun getChannelData(channel: Int): FloatArray
 }
 
-private fun createAudioContext(): AudioContext =
-    js("new (window.AudioContext || window.webkitAudioContext)()") as AudioContext
+private var audioContextCreateCount = 0
+
+private fun createAudioContext(): AudioContext {
+    audioContextCreateCount++
+    return js("new (window.AudioContext || window.webkitAudioContext)()") as AudioContext
+}
 
 private fun audioContextSupported(): Boolean =
     js("typeof (window.AudioContext || window.webkitAudioContext) !== 'undefined'") as Boolean
+
+// Chrome logs the "AudioContext was prevented from starting automatically" warning as soon as
+// an AudioContext is *constructed* without prior user activation, not just when resume() is
+// called on one. So both context creation and resume must be deferred until a real user gesture.
+private var userGestureOccurred = false
+private var gestureListenerRegistered = false
+private val pendingActions = mutableListOf<() -> Unit>()
+
+private fun runAfterUserGesture(action: () -> Unit) {
+    if (userGestureOccurred) {
+        action()
+        return
+    }
+    pendingActions.add(action)
+    if (gestureListenerRegistered) return
+    gestureListenerRegistered = true
+    val handler: (Event) -> Unit = {
+        userGestureOccurred = true
+        val actions = pendingActions.toList()
+        pendingActions.clear()
+        for (pending in actions) pending()
+    }
+    val options = js("({ once: true })")
+    document.addEventListener("pointerdown", handler, options)
+    document.addEventListener("keydown", handler, options)
+    document.addEventListener("touchstart", handler, options)
+}
 
 // --- Shim implementation ---
 
@@ -77,26 +110,31 @@ actual class SourceDataLine internal constructor(private var format: AudioFormat
 
     private fun openInternal() {
         if (isOpen) return
-        val ctx = createAudioContext()
-        val channels = format.getChannels().coerceAtLeast(1)
-        val scriptNode = ctx.createScriptProcessor(4096, 0, channels)
-        scriptNode.onaudioprocess = { e -> fillBuffer(e.outputBuffer, channels) }
-        scriptNode.connect(ctx.destination)
-        audioContext = ctx
-        node = scriptNode
         isOpen = true
+        runAfterUserGesture {
+            if (!isOpen) return@runAfterUserGesture
+            val ctx = createAudioContext()
+            val channels = format.getChannels().coerceAtLeast(1)
+            val scriptNode = ctx.createScriptProcessor(4096, 0, channels)
+            scriptNode.onaudioprocess = { e -> fillBuffer(e.outputBuffer, channels) }
+            scriptNode.connect(ctx.destination)
+            audioContext = ctx
+            node = scriptNode
+        }
     }
 
     actual fun start() {
-        audioContext?.resume()
+        runAfterUserGesture {
+            if (isOpen) audioContext?.resume()?.catch { }
+        }
     }
 
     actual fun close() {
+        isOpen = false
         node?.disconnect()
-        audioContext?.close()
+        audioContext?.close()?.catch { }
         node = null
         audioContext = null
-        isOpen = false
         queue.clear()
     }
 
