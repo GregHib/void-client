@@ -1,27 +1,44 @@
 import kotlin.jvm.JvmStatic
 import LinkedListIterator.Companion.method1242
-import TexGenMaterialPass.Companion.method2161
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.Runnable
-import kotlinx.coroutines.runBlocking
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.launch
 import io.EOFException
 import io.IOException
 import io.InputStream
 import io.OutputStream
-import lang.InterruptedException
 import net.Socket
 
 /*
  * Class202
+ *
+ * P2 byte-ring-buffer producer/consumer on `this` (same shape as BufferedOutputStreamWorker,
+ * mirrored: run() drains the buffer out to the socket). The original wait() here had no
+ * surrounding while loop, but the unconditional downstream `if (i_8_ > 0)` guard already made a
+ * spurious/early wake harmless (it just loops back around to wait again) - so the predicate is
+ * "anInt2648 != anInt2656" exactly as everywhere else, and expressing it as an explicit loop
+ * here is not a behavior change, just making the implicit self-correction explicit.
+ *
+ * run() previously wasn't launched directly: it was lazily handed to
+ * PrivilegedOperationWorker.method2236 as a plain Runnable, dispatched via GlobalScope.launch
+ * and a busy-poll + runBlocking join in method1476 to wait for that dispatch. That indirection
+ * was a JVM-applet-security-manager artifact (the "privileged" worker existed to run things in a
+ * permissioned thread context) with no JS equivalent, so run() is now launched directly on this
+ * class's own scope instead, which also lets run() be a normal suspend fun.
  */
-class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Int) : Runnable {
+class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperationWorker: PrivilegedOperationWorker?, i: Int) {
     private var anInt2648 = 0
     private val aPrivilegedOperationWorker_2649: PrivilegedOperationWorker?
     private var anInputStream2652: InputStream? = null
     private var aBoolean2654 = false
     private var anInt2656 = 0
     private var anOutputStream2657: OutputStream? = null
-    private var aLinkedQueueNode_2658: LinkedQueueNode? = null
+    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
+    private var job: Job? = null
+    private val dataAvailable = Channel<Unit>(Channel.CONFLATED)
     private var aBoolean2659 = false
     private var aByteArray2663: ByteArray? = null
     private val aSocket2668: Socket?
@@ -60,13 +77,13 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
                         anInt2648 = (anInt2648 - -1) % anInt2669
                         if (anInt2648 == (anInt2656 - (-anInt2669 - -100)) % anInt2669) throw IOException()
                     }
-                    if (aLinkedQueueNode_2658 == null) aLinkedQueueNode_2658 = aPrivilegedOperationWorker_2649!!.method2236(this, -10240, 3)
-                    (this as Object).notifyAll()
+                    if (job == null) job = scope.launch { run() }
                 } else {
                     /* empty */
                 }
             }
         }
+        dataAvailable.trySend(Unit)
     }
 
     @Throws(IOException::class)
@@ -87,40 +104,31 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
         if (i != 0) return 38
         return anInputStream2652!!.read()
     }
-    
-    override fun run() {
+
+    private suspend fun run() {
         try {
             while (true) {
+                if (anInt2648 == anInt2656 && aBoolean2654) break
                 var i = 0
                 var i_8_ = 0
-                if (anInt2648 == anInt2656 && aBoolean2654) {
-                    break
-                }
                 withLock(this) {
-                    if (anInt2648 == anInt2656) {
-//                        if (aBoolean2654) break
-                        try {
-                            (this as Object).wait()
-                        } catch (interruptedexception: InterruptedException) {
-                            /* empty */
-                        }
-                    }
                     i = anInt2656
-                    if (anInt2656 > anInt2648) i_8_ = anInt2669 - anInt2656
-                    else i_8_ = -anInt2656 + anInt2648
+                    i_8_ = if (anInt2656 > anInt2648) anInt2669 - anInt2656 else -anInt2656 + anInt2648
                 }
-                if (i_8_ > 0) {
-                    try {
-                        anOutputStream2657!!.write(aByteArray2663, i, i_8_)
-                    } catch (ioexception: IOException) {
-                        aBoolean2659 = true
-                    }
-                    anInt2656 = (i_8_ + anInt2656) % anInt2669
-                    try {
-                        if (anInt2648 == anInt2656) anOutputStream2657!!.flush()
-                    } catch (ioexception: IOException) {
-                        aBoolean2659 = true
-                    }
+                if (i_8_ == 0) {
+                    dataAvailable.receive()
+                    continue
+                }
+                try {
+                    anOutputStream2657!!.write(aByteArray2663, i, i_8_)
+                } catch (ioexception: IOException) {
+                    aBoolean2659 = true
+                }
+                anInt2656 = (i_8_ + anInt2656) % anInt2669
+                try {
+                    if (anInt2648 == anInt2656) anOutputStream2657!!.flush()
+                } catch (ioexception: IOException) {
+                    aBoolean2659 = true
                 }
             }
             try {
@@ -149,7 +157,9 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
                 i_10_ -= i_11_
                 i += i_11_
             }
-            if (i_9_.toInt() != -72) run()
+            // The only real callers always pass i_9_ == -72, so `if (i_9_.toInt() != -72) run()`
+            // was dead code (and run() is suspend now, so a synchronous call site here couldn't
+            // compile regardless).
         }
     }
 
@@ -164,21 +174,8 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
             withLock(this) {
                 aBoolean2654 = true
                 if (i > -120) method1476((-105).toByte())
-                (this as Object).notifyAll()
             }
-            if (aLinkedQueueNode_2658 != null) {
-                while (aLinkedQueueNode_2658!!.anInt1997 == 0) method2161(105.toByte(), 1L)
-                if (aLinkedQueueNode_2658!!.anInt1997 == 1) {
-                    try {
-                        runBlocking {
-                            (aLinkedQueueNode_2658!!.anObject1998 as Job).join()
-                        }
-                    } catch (interruptedexception: InterruptedException) {
-                        /* empty */
-                    }
-                }
-            }
-            aLinkedQueueNode_2658 = null
+            dataAvailable.trySend(Unit)
         }
     }
 

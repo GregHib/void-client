@@ -1,16 +1,32 @@
 import kotlin.jvm.JvmStatic
-import TexGenMaterialPass.Companion.method2161
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.Job
-import kotlinx.coroutines.Runnable
-import kotlinx.coroutines.runBlocking
-import lang.InterruptedException
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.channels.Channel
+import kotlinx.coroutines.launch
 
 /* Class112 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
-*/
-class ScriptCompilerThread internal constructor(privilegedOperationWorker: PrivilegedOperationWorker) : Runnable {
+*
+* P2 producer/consumer on aLinkedNodeListIterator_1730's monitor, fused with a P3 shutdown
+* (aBoolean1738) that reuses the same wait/notify. The queue's own data structure
+* (LinkedNodeListIterator) stays as-is - method1055 needs to scan it non-destructively, which a
+ * Channel can't do - only the wait()/notify() is replaced, by a nudge-only signal exactly like
+ * BufferedOutputStreamWorker/RingBufferInputStream/SocketStreamWorker.
+ *
+ * run() previously wasn't launched directly: like SocketStreamWorker, it was handed to
+ * PrivilegedOperationWorker.method2236 as a plain Runnable (a JVM-applet-security-manager
+ * artifact - cache file I/O needing a "privileged" thread context - with no JS equivalent), with
+ * an init-block busy-poll waiting for that dispatch to actually start. run() is now launched
+ * directly on this class's own scope, which removes the busy-poll entirely and lets run() be a
+ * normal suspend fun.
+ */
+class ScriptCompilerThread internal constructor(privilegedOperationWorker: PrivilegedOperationWorker) {
     private val aLinkedNodeListIterator_1730 = LinkedNodeListIterator()
+    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default)
     private var job: Job?
+    private val requestAvailable = Channel<Unit>(Channel.CONFLATED)
     var anInt1734: Int = 0
     private var aBoolean1738 = false
 
@@ -37,23 +53,20 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
             aLinkedNodeListIterator_1730.method1005(true, class348_sub42_sub16_sub2)
             anInt1734++
             if (i > -100) aSpriteImage_1727 = null
-            (aLinkedNodeListIterator_1730 as Object).notifyAll()
         }
+        requestAvailable.trySend(Unit)
     }
 
     fun method1051(bool: Boolean) {
         aBoolean1738 = bool
         anInt1731++
-        withLock(aLinkedNodeListIterator_1730) {
-            (aLinkedNodeListIterator_1730 as Object).notifyAll()
-        }
-        try {
-            runBlocking {
-                job!!.join()
-            }
-        } catch (interruptedexception: InterruptedException) {
-            /* empty */
-        }
+        requestAvailable.trySend(Unit)
+        // Reachable (rarely) from the per-frame tick via Client.method80, the same call-chain
+        // family as ScrollingNoiseTexture.method556 / HostPingThread.method1303 /
+        // PrivilegedOperationWorker.method2234, so this does not join(): aBoolean1738 plus the
+        // nudge above are enough for run() to stop on its own: job.cancel() is a safety net in
+        // case run() is mid-task rather than parked in requestAvailable.receive().
+        job?.cancel()
         job = null
     }
 
@@ -69,23 +82,19 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
         return class348_sub42_sub16_sub2
     }
 
-    fun runClass348() : CompletedResourceRequest? {
-        var class348_sub42_sub16_sub2: CompletedResourceRequest? = null
+    private suspend fun runClass348(): CompletedResourceRequest? {
         withLock(aLinkedNodeListIterator_1730) {
-            class348_sub42_sub16_sub2 = (aLinkedNodeListIterator_1730.method1008(20) as? CompletedResourceRequest?)
-            if (class348_sub42_sub16_sub2 == null) {
-                try {
-                    (aLinkedNodeListIterator_1730 as Object).wait()
-                } catch (interruptedexception: InterruptedException) {
-                    /* empty */
-                }
-                return null
-            } else anInt1734--
+            val class348_sub42_sub16_sub2 = aLinkedNodeListIterator_1730.method1008(20) as? CompletedResourceRequest?
+            if (class348_sub42_sub16_sub2 != null) {
+                anInt1734--
+                return class348_sub42_sub16_sub2
+            }
         }
-        return class348_sub42_sub16_sub2
+        requestAvailable.receive()
+        return null
     }
 
-    override fun run() {
+    private suspend fun run() {
         while (!aBoolean1738) {
             val class348_sub42_sub16_sub2 = runClass348() ?: continue
             try {
@@ -123,10 +132,7 @@ class ScriptCompilerThread internal constructor(privilegedOperationWorker: Privi
     }
 
     init {
-        val class144 = privilegedOperationWorker.method2236(this, -10240, 5)
-        while (class144.anInt1997 == 0) method2161(43.toByte(), 10L)
-        if (class144.anInt1997 == 2) throw RuntimeException()
-        job = class144.anObject1998 as Job
+        job = scope.launch { run() }
     }
 
     companion object {

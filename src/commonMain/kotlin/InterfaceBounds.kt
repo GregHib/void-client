@@ -158,10 +158,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
         fun method2941(component: Component?, i: Int, bool: Boolean): InputTracker? {
             anInt6808++
             try {
-                println("Input tracker disabled")
-//                val constructor: Constructor<*> = (MouseWheelInputTracker::class.jClass.getDeclaredConstructor((if (aClass6823 != null) aClass6823 else (Component::class.jClass.also { aClass6823 = it })), Boolean::class))//java.lang.Boolean.TYPE))
-//                return (constructor.newInstance(*arrayOf<Any?>(component, bool)) as InputTracker)
-                return null
+                return MouseWheelInputTracker(component, bool) as InputTracker
             } catch (throwable: Throwable) {
                 if (i != 0) return null
                 return MouseInputTracker(component, bool)

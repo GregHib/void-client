@@ -7,9 +7,12 @@ import awt.Frame
 import awt.Point
 import direct.DirectDrawDisplayMode
 import direct.sound.DirectSoundAudioChannel
+import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.Job
+import kotlinx.coroutines.SupervisorJob
+import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.launch
 import awt.datatransfer.Transferable
 import awt.getDefaultToolkit
@@ -19,7 +22,6 @@ import io.FileOutputStream
 import io.IOException
 import kotlinx.coroutines.Runnable
 import lang.Class
-import lang.InterruptedException
 import lang.SecurityException
 import lang.Thread
 import lang.currentThread
@@ -35,7 +37,7 @@ import kotlin.concurrent.Volatile
 /*
  * Class297
  */
-class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String?, i_22_: Int, bool: Boolean) : Runnable {
+class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String?, i_22_: Int, bool: Boolean) {
     private var aNativeCursorCallback__3776: NativeCursorCallback? = null
 
     var aBoolean3777: Boolean = false
@@ -46,18 +48,20 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
     private var anObject3787: Any? = null
 
     var aRandomAccessFileOnDisk_3788: RandomAccessFileOnDisk? = null
+    private val scope = CoroutineScope(SupervisorJob() + Dispatchers.Default.limitedParallelism(1))
     private val job: Job
-    private val dispatcher = Dispatchers.Default.limitedParallelism(1)
     private var anObject3791: Any? = null
     private var anObject3793: Any? = null
 
     var aBoolean3794: Boolean = false
 
     var aRandomAccessFileOnDiskArray3795: Array<RandomAccessFileOnDisk?>? = null
-    private var aLinkedQueueNode_3797: LinkedQueueNode? = null
-    private var aLinkedQueueNode_3798: LinkedQueueNode? = null
+    // P2 task queue, was a hand-rolled linked list (aLinkedQueueNode_3797/_3798) guarded by
+    // wait()/notify() on `this`. aBoolean3801 (the stop flag, checked before the queue on every
+    // loop) is gone: job.cancel() in method2234 achieves the identical "stop between tasks,
+    // abandon anything still queued" semantics via structured cancellation of the channel receive.
+    private val requests = Channel<LinkedQueueNode>(Channel.UNLIMITED)
     var anEventQueue3799: EventQueue? = null
-    private var aBoolean3801 = false
     private var aDirectDrawDisplayMode_3802: DirectDrawDisplayMode? = null
 
     fun method2229(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Byte): LinkedQueueNode {
@@ -81,27 +85,8 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
         return method2246(8, 0, 12, 0, string)
     }
 
-    override fun run() {
-        while (true) {
-            val linkedQueueNode: LinkedQueueNode? = withLock(this) {
-                var result: LinkedQueueNode? = null
-                while (true) {
-                    if (aBoolean3801) return
-                    if (aLinkedQueueNode_3797 != null) {
-                        result = aLinkedQueueNode_3797
-                        aLinkedQueueNode_3797 = aLinkedQueueNode_3797!!.aLinkedQueueNode_1995
-                        if (aLinkedQueueNode_3797 == null) aLinkedQueueNode_3798 = null
-                        break
-                    }
-                    try {
-                        (this as Object).wait()
-                    } catch (interruptedexception: InterruptedException) {
-                        /* empty */
-                    }
-                }
-                result
-            }
-            if (linkedQueueNode == null) return
+    private suspend fun run() {
+        for (linkedQueueNode in requests) {
             try {
                 val i = linkedQueueNode!!.anInt1994
                 if (i == 1) {
@@ -204,27 +189,30 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 if (Config.trace) {
                     throwable.printStackTrace()
                 }
-                linkedQueueNode!!.anInt1997 = 2
+                linkedQueueNode.anInt1997 = 2
             }
-            withLock(linkedQueueNode) {
-                (linkedQueueNode as Object).notify()
-            }
+            // P0: nothing ever wait()ed on linkedQueueNode's monitor - every consumer busy-polled
+            // anInt1997 with a sleep instead. completion.complete() is the real signal for those
+            // consumers to await() (see LinkedQueueNode.kt and the SocketStreamWorker/
+            // ScriptCompilerThread call sites).
+            linkedQueueNode.completion.complete(Unit)
         }
     }
 
     fun method2234(i: Byte) {
-        withLock(this) {
-            aBoolean3801 = true
-            (this as Object).notifyAll()
-        }
-        try {
-            runBlocking {
-                job.join()
-            }
-            if (i.toInt() != 103) this.aRandomAccessFileOnDisk_3788 = null
-        } catch (interruptedexception: InterruptedException) {
-            /* empty */
-        }
+        // Shutdown: job.cancel() reproduces the original's "stop between tasks, abandon anything
+        // still queued" semantics via structured cancellation of the channel receive in run() -
+        // aBoolean3801's stop-flag check ran at the same point (top of the loop, before dequeuing
+        // the next item), so cancellation lands identically. This is reachable (rarely) from the
+        // per-frame tick via GameAppletFrame.method88 -> method90 -> Client.method80, the same
+        // call-chain family as ScrollingNoiseTexture.method556 and HostPingThread.method1303, so
+        // it does not join(): the cleanup below runs immediately rather than waiting for the
+        // worker coroutine to fully stop. This is an intentional behavior change - an in-flight
+        // task can now observe a closed file handle - but run()'s existing catch(Throwable) around
+        // each task already treats that as an ordinary per-task failure (anInt1997 = 2), and the
+        // worker is being torn down regardless.
+        job.cancel()
+        if (i.toInt() != 103) this.aRandomAccessFileOnDisk_3788 = null
         if (this.aRandomAccessFileOnDisk_3785 != null) {
             try {
                 this.aRandomAccessFileOnDisk_3785!!.method1657(false)
@@ -324,17 +312,8 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
         linkedQueueNode.anInt1999 = i_19_
         linkedQueueNode.anInt1994 = i_20_
         linkedQueueNode.anInt2000 = i_21_
-        withLock(this) {
-            if (aLinkedQueueNode_3798 == null) {
-                aLinkedQueueNode_3797 = linkedQueueNode
-                aLinkedQueueNode_3798 = aLinkedQueueNode_3797
-            } else {
-                aLinkedQueueNode_3798!!.aLinkedQueueNode_1995 = linkedQueueNode
-                aLinkedQueueNode_3798 = linkedQueueNode
-            }
-            (this as Object).notify()
-            if (i != 8) method2235(false, 76, null, 37)
-        }
+        requests.trySend(linkedQueueNode)
+        if (i != 8) method2235(false, 76, null, 37)
         return linkedQueueNode
     }
 
@@ -451,10 +430,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 i_25_++
             }
         }
-        aBoolean3801 = false
-        job = GlobalScope.launch(dispatcher) {
-            run()
-        }
+        job = scope.launch { run() }
     }
 
     companion object {

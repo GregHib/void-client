@@ -20,11 +20,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
             aDoublyLinkedNodeList_3946.method1869(-90, class318_sub1)
             anInt3957++
         }
-        if (aSceneLoaderThread_3956 != null) {
-            withLock(aSceneLoaderThread_3956!!) {
-                (aSceneLoaderThread_3956 as Object).notify()
-            }
-        }
+        aSceneLoaderThread_3956?.signal()
     }
 
     fun method2356(sceneLoaderThread: SceneLoaderThread?, i: Byte) {
@@ -40,11 +36,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
             anInt3957++
         }
         anInt3947++
-        if (aSceneLoaderThread_3956 != null) {
-            withLock(aSceneLoaderThread_3956!!) {
-                (aSceneLoaderThread_3956 as Object).notify()
-            }
-        }
+        aSceneLoaderThread_3956?.signal()
     }
 
     fun method2360(i: Int): Boolean {
@@ -61,11 +53,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
             anInt3957++
         }
         if (i != -15481) this.aString3953 = null
-        if (aSceneLoaderThread_3956 != null) {
-            withLock(aSceneLoaderThread_3956!!) {
-                (aSceneLoaderThread_3956 as Object).notify()
-            }
-        }
+        aSceneLoaderThread_3956?.signal()
     }
 
     fun method2362(i: Int): SceneLinkedListNode {

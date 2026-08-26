@@ -1,13 +1,20 @@
 import GlslMaterialPass.Companion.method2154
 import WidgetTextConfig.Companion.method365
-import kotlinx.coroutines.Runnable
+import kotlinx.coroutines.channels.Channel
 import kotlin.concurrent.Volatile
-import lang.InterruptedException
 
 /* Class293 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
+*
+* This monitor has two wait loops (work-ready and pause/resume) that are woken from three
+* external call sites (CacheIndexManager on new work, GlTexture3D.method2290's barrier on
+* pause/resume, and this class's own method2205 on shutdown) without regard to which loop is
+* currently parked. In Java that's safe only because a spurious wake is harmless - both loops
+ * re-test their own condition. A single shared nudge-only Channel reproduces that: any of the
+ * three signals wakes whichever loop is currently suspended, which then re-evaluates its own
+ * predicate fresh, exactly like a spurious wait() wakeup did.
 */
-class SceneLoaderThread internal constructor(private val anInt3749: Int, private val aRenderer3746: Renderer) : Runnable {
+class SceneLoaderThread internal constructor(private val anInt3749: Int, private val aRenderer3746: Renderer) {
     private var aLong3742: Long = 0
     private var aCacheIndexManager_3743: CacheIndexManager? = null
 
@@ -22,20 +29,27 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
     @Volatile
     private var aBoolean3750 = true
 
+    private val nudge = Channel<Unit>(Channel.CONFLATED)
+
     fun method2204(): Long {
         return aLong3742
     }
 
-    override fun run() {
+    // Was `withLock(sceneLoaderThread) { (sceneLoaderThread as Object).notify() }` at each of the
+    // external call sites (CacheIndexManager, GlTexture3D) - notify() always required holding the
+    // target's own monitor, so this replaces both "acquire the right lock" and "notify" in one call.
+    fun signal() {
+        nudge.trySend(Unit)
+    }
+
+    suspend fun run() {
         while (aBoolean3745) method2207()
     }
 
     fun method2205() {
         aBoolean3750 = false
         aBoolean3745 = false
-        withLock(this) {
-            (this as Object).notify()
-        }
+        nudge.trySend(Unit)
     }
 
     fun method2206(cacheIndexManager: CacheIndexManager?) {
@@ -44,19 +58,13 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
         if (aCacheIndexManager_3743 != null) aCacheIndexManager_3743!!.method2356(this, (-108).toByte())
     }
 
-    private fun method2207() {
+    private suspend fun method2207() {
         aRenderer3746.method3659(anInt3749)
         while (!aBoolean3750 && aBoolean3745) {
             if (aCacheIndexManager_3743 == null || aCacheIndexManager_3743!!.method2360(-112)) {
                 aBoolean3744 = false
                 aLong3742 = MinimapLineDrawer.aNanoTimer_5262!!.method446(1)
-                withLock(this) {
-                    try {
-                        (this as Object).wait()
-                    } catch (interruptedexception: InterruptedException) {
-                        /* empty */
-                    }
-                }
+                nudge.receive()
             } else {
                 aBoolean3744 = true
                 val class318 = aCacheIndexManager_3743!!.method2362(25061)
@@ -89,28 +97,18 @@ class SceneLoaderThread internal constructor(private val anInt3749: Int, private
         }
         aRenderer3746.method3678(anInt3749)
         while (aBoolean3750 && aBoolean3745) {
-            withLock(this) {
-                try {
-                    (this as Object).wait()
-                } catch (interruptedexception: InterruptedException) {
-                    /* empty */
-                }
-            }
+            nudge.receive()
         }
     }
 
     fun method2208() {
         aBoolean3750 = true
-        withLock(this) {
-            (this as Object).notify()
-        }
+        nudge.trySend(Unit)
     }
 
     fun method2209() {
         aBoolean3750 = false
-        withLock(this) {
-            (this as Object).notify()
-        }
+        nudge.trySend(Unit)
     }
 
     fun method2210(): Boolean {

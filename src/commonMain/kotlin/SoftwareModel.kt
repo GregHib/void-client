@@ -3,9 +3,10 @@ import SoundEnvelope.Companion.method303
 import PcmStreamBuffer.Companion.method2832
 import CachedRgbNoiseTexture.Companion.method565
 import IdentKitRecolor.Companion.method206
-import lang.InterruptedException
+import kotlinx.coroutines.sync.Mutex
 import lang.Thread
 import lang.currentThread
+import lang.sleep
 import kotlin.math.asin
 import kotlin.math.atan2
 import kotlin.math.sqrt
@@ -58,6 +59,10 @@ class SoftwareModel : AbstractModel {
     private lateinit var anIntArray5355: IntArray
     private var anIntArray5356: IntArray? = null
     private var aBoolean5357 = false
+    // Group B: same hand-rolled-mutex shape as aBoolean1124/mutex1124 above, but self-contained
+    // within method654 (guards concurrent re-entrant calls to that one method from different
+    // render workers) rather than exposed as a separate acquire/release API.
+    private val mutex5357 = Mutex()
     private var aByteArray5358: ByteArray? = null
     private lateinit var anIntArray5359: IntArray
     private var aRectangleArray5360: Array<Rectangle?>? = null
@@ -743,18 +748,29 @@ class SoftwareModel : AbstractModel {
         }
     }
 
+    // aBoolean1124 (declared on AbstractModel) is a hand-rolled binary mutex, not a repeating
+    // state gate: the wait loop flips its own exit condition back to true under the same lock,
+    // exactly the shape the migration plan calls out as unsafe to migrate with the default
+    // StateFlow template (two concurrent callers could both observe false and both proceed).
+    // method622()/method621() are acquire/release across separate calls (not a scoped block), so
+    // a suspending Mutex would need every AbstractModel.kt call site - and everything upstream of
+    // it in the per-model render path - to become suspend. That subsystem is only reachable when
+    // aHa_Sub1_5353.anInt7485 > 1 (more than one software-render worker), the same gate as
+    // GlTexture3D.method2290's barrier, which requires NativeLibraryState.aRenderer171.method3708()
+    // to be true - an unimplemented TODO() on the JS renderer today, so this cannot currently be
+    // reached there either. mutex1124.tryLock() + a short platform sleep (a no-op on JS, a real
+    // Thread.sleep on JVM, same as used elsewhere in this codebase e.g. FileIoUtil.method2606)
+    // preserves genuine blocking mutual exclusion for JVM's real worker threads without requiring
+    // suspend, at the cost of being a busy-wait if this ever becomes reachable on JS - exactly why
+    // this is flagged rather than silently "fixed".
+    private val mutex1124 = Mutex()
+
     public override fun method622() {
         if (aHa_Sub1_5353.anInt7485 > 1) {
-            withLock(this) {
-                while (this.aBoolean1124) {
-                    try {
-                        (this as Object).wait()
-                    } catch (interruptedexception: InterruptedException) {
-                        /* empty */
-                    }
-                }
-                this.aBoolean1124 = true
+            while (!mutex1124.tryLock()) {
+                sleep(1)
             }
+            this.aBoolean1124 = true
         }
     }
 
@@ -1842,10 +1858,8 @@ class SoftwareModel : AbstractModel {
 
     public override fun method621() {
         if (aHa_Sub1_5353.anInt7485 > 1) {
-            withLock(this) {
-                this.aBoolean1124 = false
-                (this as Object).notifyAll()
-            }
+            this.aBoolean1124 = false
+            mutex1124.unlock()
         }
     }
 
@@ -2718,16 +2732,10 @@ class SoftwareModel : AbstractModel {
                     f_655_ = ((class101_sub1.aFloat5662 * aClass101_Sub1_5320!!.aFloat5669) + (class101_sub1.aFloat5680 * (aClass101_Sub1_5320!!.aFloat5666)) + (class101_sub1.aFloat5664 * (aClass101_Sub1_5320!!.aFloat5664)))
                 }
                 if (aHa_Sub1_5353.anInt7485 > 1) {
-                    withLock(this) {
-                        while (aBoolean5357) {
-                            try {
-                                (this as Object).wait()
-                            } catch (interruptedexception: InterruptedException) {
-                                /* empty */
-                            }
-                        }
-                        aBoolean5357 = true
+                    while (!mutex5357.tryLock()) {
+                        sleep(1)
                     }
+                    aBoolean5357 = true
                 }
                 method632(currentThread())
                 aShadowProjector_5383!!.method1023((i_632_ and 0x2) != 0)
@@ -2902,10 +2910,8 @@ class SoftwareModel : AbstractModel {
                 }
                 aShadowProjector_5383 = null
                 if (aHa_Sub1_5353.anInt7485 > 1) {
-                    withLock(this) {
-                        aBoolean5357 = false
-                        (this as Object).notifyAll()
-                    }
+                    aBoolean5357 = false
+                    mutex5357.unlock()
                 }
             }
         }

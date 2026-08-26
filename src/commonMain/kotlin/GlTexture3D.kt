@@ -203,14 +203,25 @@ class GlTexture3D : GlTexture {
             aClass318_Sub1Array3737 = null
         }
 
+        // ESCALATED (see migration plan / conversation): this is a genuine cross-thread barrier
+        // that depends on real background parallelism across N SceneLoaderThreads while this
+        // thread spins - the exact case the migration plan says has no mechanical translation to
+        // a single-threaded JS target. Only the wait/notify primitives are swapped here
+        // (notify() -> signal(), which no longer requires a per-target lock) so this compiles on
+        // every target; the spin-and-sleep structure is UNCHANGED and is only ever live when
+        // VoronoiNoiseTextureNode.aBoolean9121 is true, which requires the software renderer to
+        // report more than one usable render worker (Npc.anInt10503 > 1 &&
+        // NativeLibraryState.aRenderer171.method3708()) - method3708() is an unimplemented TODO()
+        // stub on the JS renderer today, so this path cannot currently be reached there. Making
+        // this genuinely safe to reach on JS needs a real redesign (an awaitAll()-of-Deferred
+        // rework of SceneLoaderThread's work loop, or a Web Worker split) plus capping the
+        // configured worker count to 1 on JS/Wasm - not a mechanical wait/notify swap.
         fun method2290() {
             while (true) {
                 var bool = true
                 for (i in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) {
                     if (!NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2210()) {
-                        withLock(NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!) {
-                            (NormalMapTextureNode.aSceneLoaderThreadArray9432!![i] as Object).notify()
-                        }
+                        NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.signal()
                         bool = false
                     } else HitsplatDefinition.aLongArray2013!![i] = NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2204()
                 }
@@ -227,9 +238,7 @@ class GlTexture3D : GlTexture {
                 var bool = true
                 for (i in 0..<NormalMapTextureNode.aSceneLoaderThreadArray9432!!.size - 1) {
                     if (!NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2210()) {
-                        withLock(NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!) {
-                            (NormalMapTextureNode.aSceneLoaderThreadArray9432!![i] as Object).notify()
-                        }
+                        NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.signal()
                         bool = false
                     }
                 }
@@ -243,9 +252,7 @@ class GlTexture3D : GlTexture {
             for (i in 1..<NormalMapTextureNode.aSceneLoaderThreadArray9432!!.size - 2) NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2208()
             method2131(2)
             while (!NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2210()) {
-                withLock(NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!) {
-                    (NormalMapTextureNode.aSceneLoaderThreadArray9432!![0] as Object).notify()
-                }
+                NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.signal()
                 try {
                     method2161(112.toByte(), 1L)
                 } catch (exception: Exception) {
