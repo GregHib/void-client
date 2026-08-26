@@ -1760,6 +1760,8 @@ class Client : GameAppletFrame() {
                     else method1168(i, 0, ModelLightingConfig.aRectangleArray2554)
                 } catch (clientException_: ClientException) {
                     /* empty */
+                } catch (throwable: Throwable) {
+                    throwable.printStackTrace()
                 }
             } else if (!NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-59).toByte())) {
                 var i = 0

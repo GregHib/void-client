@@ -222,7 +222,7 @@ object ClientLoadStateMachine {
             try {
                 init()
             } catch (throwable: Throwable) {
-                /* empty */
+                throwable.printStackTrace()
             }
             FacingDirectionNode.aBufferPositionTracker_6660 = RenderConfigFactory.method1631(false)
             NoiseTextureNode.aClass348_Sub4_9264 = ClientMachineInfo(true, VorbisOggDecoder.aPrivilegedOperationWorker_8992!!)

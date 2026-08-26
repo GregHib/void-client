@@ -101,6 +101,8 @@ actual class SourceDataLine internal constructor(private var format: AudioFormat
     private var node: ScriptProcessorNode? = null
     private var isOpen = false
 
+    private var started = false
+
     actual fun open(format: AudioFormat) {
         this.format = format
         openInternal()
@@ -120,6 +122,7 @@ actual class SourceDataLine internal constructor(private var format: AudioFormat
             scriptNode.connect(ctx.destination)
             audioContext = ctx
             node = scriptNode
+            started = true
         }
     }
 
@@ -131,6 +134,7 @@ actual class SourceDataLine internal constructor(private var format: AudioFormat
 
     actual fun close() {
         isOpen = false
+        started = false
         node?.disconnect()
         audioContext?.close()?.catch { }
         node = null
@@ -143,12 +147,13 @@ actual class SourceDataLine internal constructor(private var format: AudioFormat
     }
 
     actual fun write(data: ByteArray, offset: Int, length: Int): Int {
+        if (!started) return length
         val toWrite = minOf(length, available())
         for (i in 0 until toWrite) queue.addLast(data[offset + i])
         return toWrite
     }
 
-    actual fun available(): Int = bufferCapacityBytes - queue.size
+    actual fun available(): Int = if (!started) bufferCapacityBytes else bufferCapacityBytes - queue.size
 
     private fun popSample(): Float {
         if (queue.size < 2) return 0f

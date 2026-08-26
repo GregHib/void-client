@@ -22,6 +22,11 @@ import TerrainTile
 import awt.Canvas
 
 actual class oa actual constructor(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Disposable {
+
+    init {
+        throw RuntimeException("Native renderer unavailable in JS")
+    }
+
     actual var nativeid: Long
         get() = TODO("Not yet implemented")
         set(value) {}

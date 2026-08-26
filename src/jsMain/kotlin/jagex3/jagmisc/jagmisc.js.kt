@@ -16,7 +16,7 @@ actual object jagmisc {
 
 //    @JvmStatic
     actual fun init(): Boolean {
-        TODO("Not yet implemented")
+        return true
     }
 
 //    @JvmStatic

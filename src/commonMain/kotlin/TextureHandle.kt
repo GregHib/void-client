@@ -50,6 +50,7 @@ class TextureHandle internal constructor(private val aGlRenderDevice_2585: GlRen
                     if (i_1_ != 7) method1440(107)
                     return soundChannelMixer
                 } catch (throwable: Throwable) {
+                    throwable.printStackTrace()
                     try {
                         val class279_sub2 = NativeSoundOutput(privilegedOperationWorker!!, i_0_)
                         class279_sub2.anInt3620 = i
@@ -68,6 +69,7 @@ class TextureHandle internal constructor(private val aGlRenderDevice_2585: GlRen
                         }
                         return class279_sub2
                     } catch (throwable_2_: Throwable) {
+                        throwable_2_.printStackTrace()
                         return SoundChannelMixer()
                     }
                 }

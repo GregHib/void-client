@@ -2,9 +2,9 @@ package awt.image
 
 import awt.Image
 import kotlinx.browser.document
+import org.khronos.webgl.set
 import org.w3c.dom.CanvasRenderingContext2D
 import org.w3c.dom.HTMLCanvasElement
-import org.khronos.webgl.set
 import util.Hashtable
 
 actual val BUFFERED_IMAGE_TYPE_INT_RGB: Int = 1
@@ -31,14 +31,24 @@ actual open class BufferedImage actual constructor(
         get() {
             val ctx = canvas.getContext("2d") as CanvasRenderingContext2D
             val img = ctx.createImageData(width.toDouble(), height.toDouble())
-            val bytes = img.data
+            // Uint8ClampedArray.set clamps *negative* numbers to 0 per spec. Component values are
+            // 0-255, but Kotlin's Int.toByte() wraps anything >= 128 into a negative Byte (e.g. 255
+            // -> -1), which then gets clamped to 0 instead of 255 - silently zeroing every bright
+            // channel and, critically, opaque alpha. Write through a dynamic Int index instead so
+            // the value reaches the typed array unsigned.
+            val bytes = img.data.asDynamic()
             for (i in pixels.indices) {
                 val p = pixels[i]
                 val o = i * 4
-                bytes[o] = ((p shr 16) and 0xFF).toByte()      // R
-                bytes[o + 1] = ((p shr 8) and 0xFF).toByte()   // G
-                bytes[o + 2] = (p and 0xFF).toByte()           // B
-                bytes[o + 3] = ((p ushr 24) and 0xFF).toByte() // A
+                // Must go through the color model rather than assuming the top byte is alpha:
+                // a model with no alpha mask (e.g. the RGB-only DirectColorModel that
+                // BufferedImageSurface uses for the game's framebuffer) treats every pixel as
+                // fully opaque regardless of what happens to be in bits 24-31 - and for plain
+                // 0xRRGGBB fills, which is most of them, that byte is just 0.
+                bytes[o] = model.getRed(p)
+                bytes[o + 1] = model.getGreen(p)
+                bytes[o + 2] = model.getBlue(p)
+                bytes[o + 3] = model.getAlpha(p)
             }
             ctx.putImageData(img, 0.0, 0.0)
             return canvas

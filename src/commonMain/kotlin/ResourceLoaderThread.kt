@@ -130,6 +130,7 @@ class ResourceLoaderThread : Runnable {
                 aBoolean3908 = false
                 if (FacingDirectionNode.aRenderer6654 != null && (anCursorController_3907 !is LoadingBarRenderer) && (aConnectionStateType_3916!!.method525(-112) < ConnectionStateType.aConnectionStateType_1041!!.method525(-127))) method3556(false)
             } catch (exception: Exception) {
+                exception.printStackTrace()
                 return true
             }
         }

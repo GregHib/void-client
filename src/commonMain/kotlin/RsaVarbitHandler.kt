@@ -87,7 +87,12 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
             anInt4900++
             if (ActorEntity.aResourceLoaderThread_897 == null) TrigLookupTables.method726(116)
             val class56 = TimedTileQueueEntry.aConnectionStateType_9660!!
-            val i = ClientLoadStateMachine.method1278(-28660)
+            val i = try {
+                ClientLoadStateMachine.method1278(-28660)
+            } catch (throwable: Throwable) {
+                throwable.printStackTrace()
+                throw throwable
+            }
             if (class56 == TimedTileQueueEntry.aConnectionStateType_9660) {
                 Direct3dModel.aString5420 = TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(ChatCommandProcessor.anInt6967, 544)
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016) ConfigFlagUtil.anInt3236 = (i * ((TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1021) + -(TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025)) / 100 + (TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025))
