@@ -55,3 +55,6 @@ internal class ArrayImageProducer(
 
     override fun requestTopDownLeftRightResend(ic: ImageConsumer) = startProduction(ic)
 }
+
+actual fun ImageConsumer.setProperties(something: Any?) {
+}

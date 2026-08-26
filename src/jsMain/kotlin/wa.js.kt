@@ -1,5 +1,3 @@
-package external
-
 actual class wa actual constructor(var_oa: oa, var_j: j, var_xa: xa) : SpriteDrawTarget {
     actual var aJ4732: j
         get() = TODO("Not yet implemented")
