@@ -609,7 +609,15 @@ class Client : GameAppletFrame() {
                     Js5Archive.aLong667 = method599(-70)
                 }
                 if (NanoTimer.anInt846 == 3) {
-                    if (NpcSummaryDefinition.method1167(WorldMapRenderer.anInt4674, (-100).toByte()) || TextureHandle.aSocketStreamWorker_2589!!.method1467(83.toByte()) > 0) {
+                    // The `method1167(...)` (loading-gamestate) disjunct used to be enough on its
+                    // own to force this read - on a real blocking JVM socket that's fine, it just
+                    // waits. A non-blocking platform stream (the JS WebSocket-backed Socket) has
+                    // no way to distinguish "nothing buffered yet" from EOF at a single-byte read,
+                    // so forcing the call before a byte has actually arrived reads a false -1 and
+                    // aborts the handshake. Gating on availability first is a no-op on JVM (the
+                    // byte gets read the same tick it arrives either way) and makes this correct
+                    // on JS as well.
+                    if (TextureHandle.aSocketStreamWorker_2589!!.method1467(83.toByte()) > 0) {
                         val i_0_ = TextureHandle.aSocketStreamWorker_2589!!.method1473(0)
                         if (i_0_ != 0) {
                             method103(i_0_, 111.toByte())
