@@ -5,6 +5,7 @@ import kotlinx.coroutines.Job
 import kotlinx.coroutines.SupervisorJob
 import kotlinx.coroutines.channels.Channel
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.yield
 import io.EOFException
 import io.IOException
 import io.InputStream
@@ -62,6 +63,11 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
                 }
                 break@loop
             }
+            // On a real blocking socket read() never returns 0 - it either has bytes or it
+            // blocks. A non-blocking platform stream (the JS WebSocket-backed Socket) returns 0
+            // when nothing is buffered yet instead, which would otherwise spin this loop forever
+            // without ever giving the event loop a turn to deliver the next incoming frame.
+            if (i_1_ == 0) yield()
             withLock(this) {
                 anInt4558 = (i_1_ + anInt4558) % anInt4546
             }
