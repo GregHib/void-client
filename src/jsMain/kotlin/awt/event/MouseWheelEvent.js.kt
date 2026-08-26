@@ -1,8 +1,8 @@
 package awt.event
 
 actual class MouseWheelEvent(private val event: org.w3c.dom.events.WheelEvent) {
-    actual fun getX(): Int = event.clientX
-    actual fun getY(): Int = event.clientY
+    actual fun getX(): Int = event.offsetX.toInt()
+    actual fun getY(): Int = event.offsetY.toInt()
     // Normalize deltaY into AWT-style "notches"; sign preserved, magnitude scaled
     actual fun getWheelRotation(): Int {
         val notches = event.deltaY / 100.0
