@@ -53,12 +53,6 @@ actual val <T : Any> KClass<T>.jClass: Class<T>
         return Class(js/*, js.name*/)
     }
 
-actual fun classOf(value: Any?): Class<*> {
-    val ctor: dynamic = value.asDynamic().constructor
-    val name: String = (ctor?.name as? String) ?: "Object"
-    return TODO()//Class(ctor/*, name*/)
-}
-
 actual fun forName(name: String?): Class<*> {
     TODO("Not yet implemented")
 }

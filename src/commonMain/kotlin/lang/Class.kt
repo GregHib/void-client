@@ -20,7 +20,6 @@ expect class Class<T> {
 }
 
 expect fun forName(name: String?): Class<*>
-expect fun classOf(value: Any?): Class<*>
 
 expect val <T : Any> T.jClass: Class<T>
 

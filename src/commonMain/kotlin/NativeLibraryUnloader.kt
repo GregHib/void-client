@@ -36,7 +36,7 @@ object NativeLibraryUnloader {
             hashtable.put(`object`, Player.aHashtable10565!!.get(`object`))
         }
         try {
-            val field = ClassLoader::class.jClass.getDeclaredField("nativeLibraries")
+            val field = ClassLoader.nativeClass.getDeclaredField("nativeLibraries")
             if (bool != true) return false
             field.setAccessible(true)
             try {
@@ -46,7 +46,7 @@ object NativeLibraryUnloader {
                     try {
                         val file = CollisionMapAccessor.aHashtable3548!!.get(string) as File
                         val var_class_1_ = Player.aHashtable10565!!.get(string) as Class<*>?
-                        val vector = (field.get(var_class_1_!!.getClassLoader()) as Vector<*>)
+                        val vector = (field.get(var_class_1_!!.getClassLoader()!!.nativeInstance) as Vector<*>)
                         for (i in vector.indices) {
                             try {
                                 val `object`: Any = vector.elementAt(i)!!

@@ -19,7 +19,12 @@ actual class ClassLoader private constructor(private val label: String?) {
         return found
     }
 
+    // There is no platform class loader to reflect into on JS.
+    actual val nativeInstance: Any get() = throw UnsupportedOperationException()
+
     actual companion object {
         actual fun getSystemClassLoader(): ClassLoader = ClassLoader(null)
+
+        actual val nativeClass: Class<*> get() = throw UnsupportedOperationException()
     }
 }

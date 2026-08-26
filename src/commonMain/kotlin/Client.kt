@@ -546,7 +546,6 @@ import lang.ClassLoader
 import lang.ClassNotFoundException
 import lang.IllegalAccessException
 import lang.SecurityException
-import lang.classOf
 import lang.getClassLoader
 import lang.jClass
 import util.Vector
@@ -1803,19 +1802,19 @@ class Client : GameAppletFrame() {
             if (NoiseTextureNode.aClass348_Sub4_9264 != null) string += "|15)" + (NoiseTextureNode.aClass348_Sub4_9264!!.anInt6609)
             try {
                 if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
-                    val field = classOf(ClassLoader::class).getDeclaredField("nativeLibraries")
+                    val field = ClassLoader.nativeClass.getDeclaredField("nativeLibraries")
                     field.setAccessible(true)
-                    val vector = (field.get((if (aClass5189 != null) aClass5189 else (classOf(Client::class).also { aClass5189 = it }))!!.getClassLoader()) as Vector<*>)
+                    val vector = (field.get((if (aClass5189 != null) aClass5189 else (Client::class.jClass.also { aClass5189 = it }))!!.getClassLoader()!!.nativeInstance) as Vector<*>)
                     for (i_135_ in vector.indices) {
                         try {
-                            val `object`: Any? = vector.elementAt(i_135_)
-                            val field_136_ = classOf(`object`).getDeclaredField("name")
+                            val `object`: Any = vector.elementAt(i_135_)!!
+                            val field_136_ = `object`.jClass.getDeclaredField("name")
                             field_136_.setAccessible(true)
                             try {
                                 val string_137_ = field_136_.get(`object`) as String?
 
                                 if (string_137_ != null && string_137_.indexOf("sw3d.dll") != -1) {
-                                    val field_138_ = classOf(`object`).getDeclaredField("handle")
+                                    val field_138_ = `object`.jClass.getDeclaredField("handle")
 
 
                                     field_138_.setAccessible(true)
