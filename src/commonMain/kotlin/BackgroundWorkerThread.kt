@@ -23,20 +23,23 @@ class BackgroundWorkerThread : Runnable {
     override fun run() {
         this.aBoolean3223 = true
         anInt3224++
-        try {
-            while (!this.aBoolean3221) {
-                for (i in 0..1) {
-                    val class279 = this.aSoundChannelMixerArray3218s[i]
-                    if (class279 != null) class279.method2084(-6858)
-                }
-                TexGenMaterialPass.method2161((-107).toByte(), 10L)
-                WorldMapPolygonIconLabel.method3578((-42).toByte(), null, (this.aPrivilegedOperationWorker_3228))
-            }
-        } catch (exception: Exception) {
-            method1242(null, exception, 15004)
-        } finally {
-            this.aBoolean3223 = false
+        runLoop(
+            prelude = { true },
+            step = ::runStep,
+            onError = { throwable -> method1242(null, throwable, 15004) },
+            onFinally = { this.aBoolean3223 = false },
+        )
+    }
+
+    private fun runStep(): Boolean {
+        if (this.aBoolean3221) return false
+        for (i in 0..1) {
+            val class279 = this.aSoundChannelMixerArray3218s[i]
+            if (class279 != null) class279.method2084(-6858)
         }
+        TexGenMaterialPass.method2161((-107).toByte(), 10L)
+        WorldMapPolygonIconLabel.method3578((-42).toByte(), null, (this.aPrivilegedOperationWorker_3228))
+        return true
     }
 
     companion object {
