@@ -8,13 +8,13 @@ actual abstract class Toolkit {
     actual abstract fun getScreenSize(): Dimension
     actual abstract fun getScreenResolution(): Int
     actual abstract fun getSystemClipboard(): Clipboard
-    actual fun createCustomCursor(cursor: Image?, hotSpot: Point?, name: String?): Cursor {
-        TODO("Not yet implemented")
-    }
+    // Both unimplemented, but as Exceptions rather than TODO(): NotImplementedError is an Error
+    // and would escape the client's `catch (Exception)` fallbacks instead of triggering them.
+    actual fun createCustomCursor(cursor: Image?, hotSpot: Point?, name: String?): Cursor =
+        throw UnsupportedOperationException("Custom cursors are not supported yet")
 
-    actual fun createImage(array: ByteArray): Image {
-        TODO("Not yet implemented")
-    }
+    actual fun createImage(array: ByteArray): Image =
+        throw UnsupportedOperationException("Decoding images from bytes is not supported yet")
 
     actual fun getSystemEventQueue(): EventQueue = systemEventQueue
 }

@@ -50,17 +50,29 @@ class ResourceLoaderThread : Runnable {
         }
     }
 
+    // Driven through runLoop so JS can pace this off the event loop rather than blocking it -
+    // this is the loop that actually paints the loading screen. See PlatformLoop.kt.
     override fun run() {
         anInt3902++
-        while (!aBoolean3910) {
-            val l = method599(-61)
-            if (skip()) {
-                continue
-            }
-            val l_3_ = method599(-73)
-            val i = (-l_3_ - -l + 20L).toInt()
-            if (i > 0) TexGenMaterialPass.method2161((-3).toByte(), i.toLong())
-        }
+        runLoop(
+            prelude = { true },
+            step = ::runStep,
+            // The original had no catch here, so an exception propagated out of run(). Rethrowing
+            // preserves that rather than silently stopping the loop that paints the loading screen.
+            onError = { throw it },
+            onFinally = { },
+        )
+    }
+
+    private fun runStep(): Boolean {
+        if (aBoolean3910) return false
+        val l = method599(-61)
+        // The original `continue`d here, skipping the sleep but staying in the loop.
+        if (skip()) return true
+        val l_3_ = method599(-73)
+        val i = (-l_3_ - -l + 20L).toInt()
+        if (i > 0) TexGenMaterialPass.method2161((-3).toByte(), i.toLong())
+        return true
     }
 
     private fun skip(): Boolean {

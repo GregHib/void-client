@@ -299,71 +299,90 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         }
     }
 
+    /**
+     * The original was `do { try { setup; while (running) { tick } } catch finally } while (false)`,
+     * where the do/while(false) existed only so the two "wrongjava" checks could `break` to the
+     * finally. It is now expressed through [runLoop] so that JS can drive the iteration off the
+     * event loop instead of a blocking while - see PlatformLoop.kt. On the JVM runLoop is that
+     * same blocking while, so behaviour is unchanged.
+     */
     override fun run() {
         anInt28++
-        do {
-            try {
-                if (PrivilegedOperationWorker.aString3782 != null) {
-                    val string = PrivilegedOperationWorker.aString3782!!.lowercase()
-                    if (string.indexOf("sun") != -1 || string.indexOf("apple") != -1) {
-                        val string_5_ = PrivilegedOperationWorker.aString3796!!
-                        if (string_5_ == "1.1" || string_5_.startsWith("1.1.") || string_5_ == "1.2" || string_5_.startsWith("1.2.")) {
-                            method82(-119, "wrongjava")
-                            break
-                        }
-                    } else if (string.indexOf("ibm") != -1 && (PrivilegedOperationWorker.aString3796 == null || PrivilegedOperationWorker.aString3796 == "1.4.2")) {
-                        method82(81, "wrongjava")
-                        break
-                    }
-                }
-                if (PrivilegedOperationWorker.aString3796 != null && PrivilegedOperationWorker.aString3796!!.startsWith("1.")) {
-                    var i = 2
-                    var i_6_ = 0
-                    while (PrivilegedOperationWorker.aString3796!!.length > i) {
-                        val i_7_ = PrivilegedOperationWorker.aString3796!!.get(i).code
-                        if (i_7_ < 48 || i_7_ > 57) break
-                        i++
-                        i_6_ = 10 * i_6_ - (-i_7_ + 48)
-                    }
-                    if (i_6_ >= 5) GlCubemapLightPass.aBoolean7320 = true
-                }
-                var applet: Panel? = EdgeDetectTextureNode.anGameApplet_Frame_9169
-                if (JagGlToolkitFactory.anApplet1530 != null) {
-                    val container = JagGlToolkitFactory.anApplet1530!!.getPulseComponent() as? Container
-                    if (container != null) {
-                        applet = container as Panel
-                    }
-                }
-                val method = PrivilegedOperationWorker.aMethod3786
-                if (method != null) {
-                    try {
-                        method.invoke(applet, true)// java.lang.Boolean.TRUE
-                    } catch (throwable: Throwable) {
-                        /* empty */
-                    }
-                }
-                RasterSprite.method168(103.toByte())
-                ScrollingWidgetComponentNode.method1119(false)
-                method87((-97).toByte())
-                method92(28740)
-                FacingDirectionNode.aBufferPositionTracker_6660 = RenderConfigFactory.method1631(false)
-                while (CameraNodeList.aLong1739 == 0L || (GameClock.method599(-124) < CameraNodeList.aLong1739)) {
-                    FloatCameraTransform.anInt5744 = FacingDirectionNode.aBufferPositionTracker_6660!!.method1861(0, FileExistsCondition.aLong4783)
-                    var i = 0
-                    while (FloatCameraTransform.anInt5744 > i) {
-                        method84(-1)
-                        i++
-                    }
-                    method88(-119)
-                    WorldMapPolygonIconLabel.method3578((-42).toByte(), ParticleSystemRenderer.aCanvas3869, (VorbisOggDecoder.aPrivilegedOperationWorker_8992))
-                }
-            } catch (throwable: Throwable) {
+        runLoop(
+            prelude = ::runPrelude,
+            step = ::runStep,
+            onError = { throwable ->
                 LinkedListIterator.method1242(method81(109.toByte()), throwable, 15004)
                 method82(123, "crash")
-            } finally {
-                method90(true, false)
+            },
+            onFinally = { method90(true, false) },
+        )
+    }
+
+    /** One-time setup; false where the original broke out to the finally. */
+    private fun runPrelude(): Boolean {
+        if (PrivilegedOperationWorker.aString3782 != null) {
+            val string = PrivilegedOperationWorker.aString3782!!.lowercase()
+            if (string.indexOf("sun") != -1 || string.indexOf("apple") != -1) {
+                val string_5_ = PrivilegedOperationWorker.aString3796!!
+                if (string_5_ == "1.1" || string_5_.startsWith("1.1.") || string_5_ == "1.2" || string_5_.startsWith("1.2.")) {
+                    method82(-119, "wrongjava")
+                    return false
+                }
+            } else if (string.indexOf("ibm") != -1 && (PrivilegedOperationWorker.aString3796 == null || PrivilegedOperationWorker.aString3796 == "1.4.2")) {
+                method82(81, "wrongjava")
+                return false
             }
-        } while (false)
+        }
+        if (PrivilegedOperationWorker.aString3796 != null && PrivilegedOperationWorker.aString3796!!.startsWith("1.")) {
+            var i = 2
+            var i_6_ = 0
+            while (PrivilegedOperationWorker.aString3796!!.length > i) {
+                val i_7_ = PrivilegedOperationWorker.aString3796!!.get(i).code
+                if (i_7_ < 48 || i_7_ > 57) break
+                i++
+                i_6_ = 10 * i_6_ - (-i_7_ + 48)
+            }
+            if (i_6_ >= 5) GlCubemapLightPass.aBoolean7320 = true
+        }
+        var applet: Panel? = EdgeDetectTextureNode.anGameApplet_Frame_9169
+        if (JagGlToolkitFactory.anApplet1530 != null) {
+            val container = JagGlToolkitFactory.anApplet1530!!.getPulseComponent() as? Container
+            if (container != null) {
+                applet = container as Panel
+            }
+        }
+        val method = PrivilegedOperationWorker.aMethod3786
+        if (method != null) {
+            try {
+                method.invoke(applet, true)// java.lang.Boolean.TRUE
+            } catch (throwable: Throwable) {
+                /* empty */
+            }
+        }
+        RasterSprite.method168(103.toByte())
+        ScrollingWidgetComponentNode.method1119(false)
+        method87((-97).toByte())
+        method92(28740)
+        FacingDirectionNode.aBufferPositionTracker_6660 = RenderConfigFactory.method1631(false)
+        return true
+    }
+
+    /**
+     * One iteration: tick then draw. The loop condition is checked first, so the original's
+     * "test before the first iteration" ordering is preserved on both platforms.
+     */
+    private fun runStep(): Boolean {
+        if (CameraNodeList.aLong1739 != 0L && GameClock.method599(-124) >= CameraNodeList.aLong1739) return false
+        FloatCameraTransform.anInt5744 = FacingDirectionNode.aBufferPositionTracker_6660!!.method1861(0, FileExistsCondition.aLong4783)
+        var i = 0
+        while (FloatCameraTransform.anInt5744 > i) {
+            method84(-1)
+            i++
+        }
+        method88(-119)
+        WorldMapPolygonIconLabel.method3578((-42).toByte(), ParticleSystemRenderer.aCanvas3869, (VorbisOggDecoder.aPrivilegedOperationWorker_8992))
+        return true
     }
 
     abstract fun method92(i: Int)

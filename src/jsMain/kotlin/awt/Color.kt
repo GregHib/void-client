@@ -5,7 +5,12 @@ actual class Color actual constructor(
 ) {
     private var a: Int = 255
 
-    actual constructor(color: Int) : this(0, 0, 0)
+    /**
+     * Packed 0xRRGGBB, matching java.awt.Color(int): bits 16-23 red, 8-15 green, 0-7 blue, alpha
+     * forced opaque. This previously discarded [color] and produced black, which silently turned
+     * every packed-int colour in the client black - including the loading bar's Color(9179409).
+     */
+    actual constructor(color: Int) : this((color shr 16) and 0xFF, (color shr 8) and 0xFF, color and 0xFF)
     actual constructor(r: Int, g: Int, b: Int, a: Int) : this(r, g, b) { this.a = a }
 
     actual fun getRed(): Int = r

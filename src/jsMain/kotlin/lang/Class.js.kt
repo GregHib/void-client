@@ -31,13 +31,17 @@ actual class Class<T> internal constructor(
 
     actual override fun hashCode(): Int = "name".hashCode()
 
-    actual fun getDeclaredField(name: String?): Field {
-        TODO("Not yet implemented")
-    }
+    /**
+     * Kotlin/JS erases field metadata, so there is nothing to reflect over. Throwing
+     * NoSuchFieldException is not just a placeholder - LoadingBarRenderer.method58 calls
+     * method2211 inside `catch (Exception) { aBoolean5022 = true }`, and that failure is exactly
+     * what selects the plain-AWT loading bar. A TODO() here would escape the catch and kill the
+     * loading screen instead of enabling it.
+     */
+    actual fun getDeclaredField(name: String?): Field =
+        throw NoSuchFieldException(name)
 
-    actual fun getDeclaredFields(): Array<Field> {
-        TODO("Not yet implemented")
-    }
+    actual fun getDeclaredFields(): Array<Field> = emptyArray()
 }
 
 actual val <T : Any> T.jClass: Class<T>
@@ -53,18 +57,14 @@ actual val <T : Any> KClass<T>.jClass: Class<T>
         return Class(js/*, js.name*/)
     }
 
-actual fun forName(name: String?): Class<*> {
-    TODO("Not yet implemented")
-}
+actual fun forName(name: String?): Class<*> =
+    throw ClassNotFoundException(name)
 
-actual fun <T> Class<T>.getClassLoader(): ClassLoader? {
-    TODO("Not yet implemented")
-}
+// null means "bootstrap classloader" to the client, which is what its security checks expect.
+actual fun <T> Class<T>.getClassLoader(): ClassLoader? = null
 
-actual fun <T> Class<T>.getMethod(name: String?, vararg parameterTypes: Class<*>): Method {
-    TODO("Not yet implemented")
-}
+actual fun <T> Class<T>.getMethod(name: String?, vararg parameterTypes: Class<*>): Method =
+    throw RuntimeException("No such method: $name")
 
-actual fun <T> Class<T>.getDeclaredMethod(name: String?, vararg parameterTypes: Class<*>): Method {
-    TODO("Not yet implemented")
-}
+actual fun <T> Class<T>.getDeclaredMethod(name: String?, vararg parameterTypes: Class<*>): Method =
+    throw RuntimeException("No such method: $name")

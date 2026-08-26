@@ -15,7 +15,12 @@ kotlin {
     jvm()
 
     js(IR) {
-        browser()
+        browser {
+            commonWebpackConfig {
+                outputFileName = "void-client.js"
+            }
+        }
+        binaries.executable()
     }
 
     sourceSets {
@@ -33,6 +38,17 @@ kotlin {
         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
         implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1")
     }
+}
+
+// jsBrowserDevelopmentWebpack emits only the bundle, so index.html would be missing from its
+// output directory. Copy jsMain/resources alongside it to make that directory directly servable.
+val jsCopyDevResources = tasks.register<Copy>("jsCopyDevResources") {
+    from(tasks.named("jsProcessResources"))
+    into(layout.buildDirectory.dir("kotlin-webpack/js/developmentExecutable"))
+}
+
+tasks.named("jsBrowserDevelopmentWebpack") {
+    finalizedBy(jsCopyDevResources)
 }
 
 tasks {

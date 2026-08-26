@@ -19,11 +19,18 @@ actual abstract class Component : ImageObserver {
     private var background: Color = Color(255, 255, 255)
     private var repaintScheduled: Boolean = false
     internal var ignoreRepaintFlag: Boolean = false
+    internal var parent: Container? = null
 
     var onPaint: ((Graphics) -> Unit)? = null
 
     actual fun setSize(width: Int, height: Int) {
-        (element as? HTMLCanvasElement)?.let { it.width = width; it.height = height }
+        val canvas = element as? HTMLCanvasElement
+        // Assigning canvas.width/height clears the surface AND resets the 2D context state,
+        // including the ctx.save() CanvasGraphics anchors its clip stack on. GameAppletFrame
+        // .method88 re-sizes the render canvas every 50 draws, so without this guard the screen
+        // would blank periodically and the cached Graphics would be left with a stale stack.
+        if (canvas != null && canvas.width == width && canvas.height == height) return
+        canvas?.let { it.width = width; it.height = height }
         element.style.width = "${width}px"
         element.style.height = "${height}px"
     }
@@ -70,26 +77,23 @@ actual abstract class Component : ImageObserver {
 
     actual fun getBackground(): Color = background
 
+    // AWT hands out a *fresh* Graphics with identity transform and no clip on every call, and
+    // callers rely on that - caching one instance would let an earlier caller's translate() and
+    // clip leak into every later draw. CanvasGraphics' init resets the surface state for us.
     actual fun getGraphics(): Graphics {
         val canvas = element as? HTMLCanvasElement
             ?: error("getGraphics() requires a canvas-backed component")
         return CanvasGraphics(canvas.getContext("2d") as CanvasRenderingContext2D)
     }
 
-    actual override fun imageUpdate(img: Image, infoflags: Int, x: Int, y: Int, width: Int, height: Int): Boolean {
-        TODO("Not yet implemented")
-    }
+    actual override fun imageUpdate(img: Image, infoflags: Int, x: Int, y: Int, width: Int, height: Int): Boolean = false
 
-    actual fun getParent(): Container {
-        TODO("Not yet implemented")
-    }
+    actual fun getParent(): Container = parent ?: rootContainer
 
     actual fun setCursor(cursor: Cursor?) {
     }
 
-    actual fun getToolkit(): Toolkit {
-        TODO("Not yet implemented")
-    }
+    actual fun getToolkit(): Toolkit = DefaultToolkit()
 
     actual fun addKeyListener(keyListener: KeyListener) {
     }

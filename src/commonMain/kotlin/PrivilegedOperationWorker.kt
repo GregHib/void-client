@@ -85,10 +85,20 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
         return method2246(8, 0, 12, 0, string)
     }
 
-    private suspend fun run() {
+    // Renamed from run() so the kotlin.run scoping block in executeTask cannot be mistaken for it.
+    private suspend fun processQueue() {
         for (linkedQueueNode in requests) {
+            executeTask(linkedQueueNode)
+        }
+    }
+
+    // Extracted from processQueue() so that JS can execute a task inline on the submitting caller
+    // - see executeWorkerTasksInline in PlatformLoop.kt. The body is unchanged and has no
+    // suspension points, so the JVM's queued path behaves exactly as before.
+    private fun executeTask(linkedQueueNode: LinkedQueueNode) {
+        run {
             try {
-                val i = linkedQueueNode!!.anInt1994
+                val i = linkedQueueNode.anInt1994
                 if (i == 1) {
                     if (aLong3781 > method599(-53)) throw IOException()
                     if (Config.debug) {
@@ -312,7 +322,9 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
         linkedQueueNode.anInt1999 = i_19_
         linkedQueueNode.anInt1994 = i_20_
         linkedQueueNode.anInt2000 = i_21_
-        requests.trySend(linkedQueueNode)
+        // On JS the worker coroutine cannot run while a caller busy-waits on anInt1997, so the
+        // task has to be done before we return. See executeWorkerTasksInline in PlatformLoop.kt.
+        if (executeWorkerTasksInline) executeTask(linkedQueueNode) else requests.trySend(linkedQueueNode)
         if (i != 8) method2235(false, 76, null, 37)
         return linkedQueueNode
     }
@@ -430,7 +442,7 @@ class PrivilegedOperationWorker internal constructor(i: Int, aString3789: String
                 i_25_++
             }
         }
-        job = scope.launch { run() }
+        job = if (executeWorkerTasksInline) Job() else scope.launch { processQueue() }
     }
 
     companion object {

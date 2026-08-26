@@ -50,6 +50,13 @@ internal class CanvasGraphics(
         // To bridge that, we keep a single save() anchored at the unclipped
         // state; every clip change restores back to that pristine state first,
         // then re-saves, then applies the new region on top of it.
+        //
+        // The leading restore() pops the baseline left behind by whichever Graphics was handed
+        // out for this surface before us (restore() on an empty stack is a documented no-op).
+        // Without it the save stack would grow by one on every getGraphics() call, and - worse -
+        // this instance would inherit that instance's clip and translate instead of starting
+        // pristine, which AWT guarantees.
+        ctx.restore()
         ctx.save()
     }
 

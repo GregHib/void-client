@@ -2,6 +2,7 @@ package awt
 
 import awt.image.ImageObserver
 import kotlinx.browser.document
+import org.w3c.dom.CanvasRenderingContext2D
 import org.w3c.dom.HTMLCanvasElement
 import org.w3c.dom.HTMLImageElement
 
@@ -40,9 +41,10 @@ internal class CanvasImage(private val canvas: HTMLCanvasElement) : Image() {
     override val source: dynamic get() = canvas
     override val naturalWidth: Int get() = canvas.width
     override val naturalHeight: Int get() = canvas.height
-    override fun graphicsImpl(): Graphics {
-        TODO("Not yet implemented")
-    }
+
+    // Fresh each call, matching AWT - CanvasGraphics' init resets the surface state.
+    override fun graphicsImpl(): Graphics =
+        CanvasGraphics(canvas.getContext("2d") as CanvasRenderingContext2D)
 
     override fun widthImpl(observer: ImageObserver?): Int = naturalWidth
 
@@ -53,9 +55,10 @@ internal class ElementImage(private val img: HTMLImageElement) : Image() {
     override val source: dynamic get() = img
     override val naturalWidth: Int get() = img.naturalWidth
     override val naturalHeight: Int get() = img.naturalHeight
-    override fun graphicsImpl(): Graphics {
-        TODO("Not yet implemented")
-    }
+
+    // An <img> has no drawing surface; AWT throws for non-offscreen images here too.
+    override fun graphicsImpl(): Graphics =
+        throw UnsupportedOperationException("Cannot draw into a loaded image")
 
     override fun widthImpl(observer: ImageObserver?): Int = naturalWidth
 

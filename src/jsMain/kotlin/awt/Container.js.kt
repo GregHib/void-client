@@ -11,12 +11,16 @@ actual open class Container : Component() {
 
     actual fun add(comp: Component): Component {
         children += comp
+        comp.parent = this
         element.appendChild(comp.element)
         return comp
     }
 
     actual fun remove(comp: Component?) {
-        if (children.remove(comp)) element.removeChild(comp!!.element)
+        if (children.remove(comp)) {
+            comp!!.parent = null
+            element.removeChild(comp.element)
+        }
     }
 
     actual fun remove(index: Int) = remove(children[index])
@@ -37,3 +41,10 @@ actual open class Container : Component() {
 }
 
 actual fun Container.getInsets(): Insets = Insets()
+
+/**
+ * Fallback for Component.getParent(), which is non-null in the expect declaration. A detached
+ * component has no real parent, and the client only ever uses the result to call setBackground /
+ * remove on it, so an empty container is a safe stand-in.
+ */
+internal val rootContainer: Container by lazy { Container() }
