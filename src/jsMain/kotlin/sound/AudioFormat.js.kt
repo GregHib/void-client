@@ -34,9 +34,18 @@ private external class AudioBuffer {
 
 private var audioContextCreateCount = 0
 
-private fun createAudioContext(): AudioContext {
+private fun createAudioContext(sampleRate: Float): AudioContext {
     audioContextCreateCount++
-    return js("new (window.AudioContext || window.webkitAudioContext)()") as AudioContext
+    return js(
+        """(function(rate) {
+            var Ctx = window.AudioContext || window.webkitAudioContext;
+            try {
+                return new Ctx({ sampleRate: rate });
+            } catch (e) {
+                return new Ctx();
+            }
+        })(sampleRate)"""
+    ) as AudioContext
 }
 
 private fun audioContextSupported(): Boolean =
@@ -115,7 +124,7 @@ actual class SourceDataLine internal constructor(private var format: AudioFormat
         isOpen = true
         runAfterUserGesture {
             if (!isOpen) return@runAfterUserGesture
-            val ctx = createAudioContext()
+            val ctx = createAudioContext(format.getSampleRate())
             val channels = format.getChannels().coerceAtLeast(1)
             val scriptNode = ctx.createScriptProcessor(4096, 0, channels)
             scriptNode.onaudioprocess = { e -> fillBuffer(e.outputBuffer, channels) }
