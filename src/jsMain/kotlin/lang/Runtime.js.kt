@@ -11,6 +11,9 @@ external val process: dynamic
 
 actual object PlatformRuntime {
 
+    // performance.memory is Chrome-only; fallback to 102MB to avoid tripping low-memory modes.
+    private const val FALLBACK_MAX_MEMORY = 102L * 1024L * 1024L
+
     actual fun availableProcessors(): Int {
         return try {
             val hc = navigator.hardwareConcurrency
@@ -20,24 +23,21 @@ actual object PlatformRuntime {
         }
     }
 
-    // Chrome-only nonstandard API. Returns totalJSHeapSize if available.
     actual fun totalMemory(): Long {
-        val mem = chromeMemory() ?: return -1L
-        return (mem["totalJSHeapSize"] as? Double)?.toLong() ?: -1L
+        val mem = chromeMemory() ?: return FALLBACK_MAX_MEMORY
+        return (mem["totalJSHeapSize"] as? Double)?.toLong() ?: FALLBACK_MAX_MEMORY
     }
 
-    // Approximated as totalJSHeapSize - usedJSHeapSize on Chrome.
     actual fun freeMemory(): Long {
-        val mem = chromeMemory() ?: return -1L
+        val mem = chromeMemory() ?: return FALLBACK_MAX_MEMORY
         val total = (mem["totalJSHeapSize"] as? Double)?.toLong()
         val used = (mem["usedJSHeapSize"] as? Double)?.toLong()
-        return if (total != null && used != null) total - used else -1L
+        return if (total != null && used != null) total - used else FALLBACK_MAX_MEMORY
     }
 
-    // jsHeapSizeLimit on Chrome; Node has no equivalent hard limit exposed here.
     actual fun maxMemory(): Long {
-        val mem = chromeMemory() ?: return -1L
-        return (mem["jsHeapSizeLimit"] as? Double)?.toLong() ?: -1L
+        val mem = chromeMemory() ?: return FALLBACK_MAX_MEMORY
+        return (mem["jsHeapSizeLimit"] as? Double)?.toLong() ?: FALLBACK_MAX_MEMORY
     }
 
     private fun chromeMemory(): dynamic {
