@@ -54,7 +54,5 @@ actual class StringBuffer actual constructor() {
 
     actual override fun toString(): String = sb.toString()
 
-    actual constructor(capacity: Int) : this() {
-        TODO("Not yet implemented")
-    }
+    actual constructor(capacity: Int) : this()
 }
