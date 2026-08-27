@@ -1,7 +1,10 @@
 import awt.Component
 import awt.Panel
+import io.CachePersistence
 import kotlinx.browser.document
 import kotlinx.browser.window
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import net.URL
 
 /**
@@ -24,10 +27,14 @@ class JsLoader : Panel(), GameApplet {
         window.addEventListener("resize", { resize() })
         (document.getElementById("client") ?: document.body!!).appendChild(element)
 
-        GameAppletFrame.provideLoaderApplet(this)
-        val client = Client()
-        client.init()
-        client.start()
+        GlobalScope.launch {
+            CachePersistence.hydrate()
+            GameAppletFrame.provideLoaderApplet(this@JsLoader)
+            val client = Client()
+            client.init()
+            client.start()
+            CachePersistence.startAutoFlush()
+        }
     }
 
     private fun resize() {

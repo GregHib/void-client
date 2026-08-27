@@ -34,6 +34,16 @@ internal object MemFs {
     val files: MutableMap<String, MemFile> = mutableMapOf()
     val dirs: MutableSet<String> = mutableSetOf("")
 
+    /** Paths written since the last flush to [IndexedDbStore], and paths removed since then. */
+    val dirtyPaths: MutableSet<String> = mutableSetOf()
+    val pendingDeletes: MutableSet<String> = mutableSetOf()
+
+    fun markDirty(path: String) {
+        val key = normalise(path)
+        pendingDeletes.remove(key)
+        dirtyPaths.add(key)
+    }
+
     /** Collapses Windows separators and duplicate slashes so the two File constructors agree. */
     fun normalise(path: String): String {
         val unified = path.replace('\\', '/')
@@ -72,7 +82,12 @@ internal object MemFs {
 
     fun delete(path: String): Boolean {
         val key = normalise(path)
-        return files.remove(key) != null || dirs.remove(key)
+        val removedFile = files.remove(key) != null
+        if (removedFile) {
+            dirtyPaths.remove(key)
+            pendingDeletes.add(key)
+        }
+        return removedFile || dirs.remove(key)
     }
 
     fun rename(from: String, to: String): Boolean {
@@ -80,6 +95,9 @@ internal object MemFs {
         val target = normalise(to)
         val file = files.remove(source) ?: return false
         files[target] = file
+        dirtyPaths.remove(source)
+        pendingDeletes.add(source)
+        markDirty(target)
         return true
     }
 

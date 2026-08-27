@@ -72,13 +72,16 @@ fun writeSync(fd: Int, buffer: Uint8Array, offset: Int, length: Int, position: D
     }
     if (end > descriptor.file.size) descriptor.file.size = end
     if (position == null) descriptor.position = end
+    MemFs.markDirty(descriptor.path)
     return length
 }
 
 fun fstatSync(fd: Int): Stats = MemStats(descriptor(fd).file.size.toDouble())
 
 fun ftruncateSync(fd: Int, len: Double) {
-    descriptor(fd).file.truncate(len.toInt())
+    val descriptor = descriptor(fd)
+    descriptor.file.truncate(len.toInt())
+    MemFs.markDirty(descriptor.path)
 }
 
 fun fsyncSync(fd: Int) {
