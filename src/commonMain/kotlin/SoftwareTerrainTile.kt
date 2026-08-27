@@ -337,7 +337,7 @@ class SoftwareTerrainTile(private val aHa_Sub1_8217: SoftwareRenderer, i: Int, p
         }
     }
 
-    override fun method3978(i: Int, i_60_: Int, `is`: IntArray, is_61_: IntArray, is_62_: IntArray, is_63_: IntArray, is_64_: IntArray, is_65_: IntArray, is_66_: IntArray, is_67_: IntArray, is_68_: IntArray, is_69_: IntArray, is_70_: IntArray, i_71_: Int, i_72_: Int, i_73_: Int, bool: Boolean) {
+    override fun method3978(i: Int, i_60_: Int, `is`: IntArray, is_61_: IntArray?, is_62_: IntArray, is_63_: IntArray?, is_64_: IntArray, is_65_: IntArray, is_66_: IntArray, is_67_: IntArray, is_68_: IntArray?, is_69_: IntArray, is_70_: IntArray, i_71_: Int, i_72_: Int, i_73_: Int, bool: Boolean) {
         if (aVertexNormalArrayArray8215 == null) {
             aVertexNormalArrayArray8215 = Array<Array<VertexNormal?>?>(this.anInt4587) { arrayOfNulls<VertexNormal?>(this.anInt4590) }
             aModelVertexDataArrayArray8222 = Array<Array<ModelVertexData?>?>(this.anInt4587) { arrayOfNulls<ModelVertexData?>(this.anInt4590) }

@@ -44,7 +44,7 @@ actual class t actual constructor(/*private*/ actual val anOa5150: oa, var_ya: y
 
     actual external override fun w(bool: Boolean)
 
-    actual override fun method3978(i: Int, i_13_: Int, `is`: IntArray, is_14_: IntArray, is_15_: IntArray, is_16_: IntArray, is_17_: IntArray, is_18_: IntArray, is_19_: IntArray, is_20_: IntArray, is_21_: IntArray, is_22_: IntArray, is_23_: IntArray, i_24_: Int, i_25_: Int, i_26_: Int, bool: Boolean) {
+    actual override fun method3978(i: Int, i_13_: Int, `is`: IntArray, is_14_: IntArray?, is_15_: IntArray, is_16_: IntArray?, is_17_: IntArray, is_18_: IntArray, is_19_: IntArray, is_20_: IntArray, is_21_: IntArray?, is_22_: IntArray, is_23_: IntArray, i_24_: Int, i_25_: Int, i_26_: Int, bool: Boolean) {
         var bool_27_ = false
         if (is_20_ != null) {
             val is_28_: IntArray? = is_20_

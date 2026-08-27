@@ -598,7 +598,7 @@ class NativeTerrainTile(var_ha_Sub3: NativeRenderer?, i: Int, i_139_: Int, i_140
         anInt8288++
     }
 
-    override fun method3978(i: Int, i_184_: Int, `is`: IntArray, is_185_: IntArray, is_186_: IntArray, is_187_: IntArray, is_188_: IntArray, is_189_: IntArray, is_190_: IntArray, is_191_: IntArray, is_192_: IntArray, is_193_: IntArray, is_194_: IntArray, i_195_: Int, i_196_: Int, i_197_: Int, bool: Boolean) {
+    override fun method3978(i: Int, i_184_: Int, `is`: IntArray, is_185_: IntArray?, is_186_: IntArray, is_187_: IntArray?, is_188_: IntArray, is_189_: IntArray, is_190_: IntArray, is_191_: IntArray, is_192_: IntArray?, is_193_: IntArray, is_194_: IntArray, i_195_: Int, i_196_: Int, i_197_: Int, bool: Boolean) {
         try {
             anInt8300++
             val i_198_ = is_191_!!.size

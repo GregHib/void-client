@@ -23,7 +23,7 @@ expect class t(anOa5150: oa, var_ya: ya?, i: Int, i_50_: Int, `is`: Array<IntArr
 
     override fun w(bool: Boolean)
 
-    override fun method3978(i: Int, i_13_: Int, `is`: IntArray, is_14_: IntArray, is_15_: IntArray, is_16_: IntArray, is_17_: IntArray, is_18_: IntArray, is_19_: IntArray, is_20_: IntArray, is_21_: IntArray, is_22_: IntArray, is_23_: IntArray, i_24_: Int, i_25_: Int, i_26_: Int, bool: Boolean) 
+    override fun method3978(i: Int, i_13_: Int, `is`: IntArray, is_14_: IntArray?, is_15_: IntArray, is_16_: IntArray?, is_17_: IntArray, is_18_: IntArray, is_19_: IntArray, is_20_: IntArray, is_21_: IntArray?, is_22_: IntArray, is_23_: IntArray, i_24_: Int, i_25_: Int, i_26_: Int, bool: Boolean)
 
     override fun method3981(class348_sub1: AbstractTileShape, `is`: IntArray) 
 

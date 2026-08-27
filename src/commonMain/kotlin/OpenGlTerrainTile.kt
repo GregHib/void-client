@@ -58,7 +58,7 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
         }
     }
 
-    override fun method3978(i: Int, i_5_: Int, `is`: IntArray, is_6_: IntArray, is_7_: IntArray, is_8_: IntArray, is_9_: IntArray, is_10_: IntArray, is_11_: IntArray, is_12_: IntArray, is_13_: IntArray, is_14_: IntArray, is_15_: IntArray, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) {
+    override fun method3978(i: Int, i_5_: Int, `is`: IntArray, is_6_: IntArray?, is_7_: IntArray, is_8_: IntArray?, is_9_: IntArray, is_10_: IntArray, is_11_: IntArray, is_12_: IntArray, is_13_: IntArray?, is_14_: IntArray, is_15_: IntArray, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean) {
         try {
             anInt8249++
             val i_19_ = is_12_!!.size
