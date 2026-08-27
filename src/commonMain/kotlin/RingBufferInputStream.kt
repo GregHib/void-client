@@ -46,9 +46,9 @@ class RingBufferInputStream(private var anInputStream4548: InputStream, i: Int) 
             while (true) {
                 withLock(this) {
                     if (anIOException4560 != null) return
-                    i = if (anInt4556 != 0) {
-                        if (anInt4556 < anInt4558) -anInt4558 + anInt4546 else -1 + anInt4556 - anInt4558
-                    } else -1 + (anInt4546 + -anInt4558)
+                    val used = if (anInt4556 <= anInt4558) anInt4558 - anInt4556 else anInt4546 - anInt4556 + anInt4558
+                    val free = anInt4546 - 1 - used
+                    i = minOf(free, anInt4546 - anInt4558)
                 }
                 if (i > 0) break
                 spaceAvailable.receive()
