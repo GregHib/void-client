@@ -1,6 +1,7 @@
 import awt.Component
 import awt.Panel
 import kotlinx.browser.document
+import kotlinx.browser.window
 import net.URL
 
 /**
@@ -19,13 +20,18 @@ class JsLoader : Panel(), GameApplet {
     fun boot() {
         setParms()
         element.style.position = "relative"
-        setSize(WIDTH, HEIGHT)
+        resize()
+        window.addEventListener("resize", { resize() })
         (document.getElementById("client") ?: document.body!!).appendChild(element)
 
         GameAppletFrame.provideLoaderApplet(this)
         val client = Client()
         client.init()
         client.start()
+    }
+
+    private fun resize() {
+        setSize(window.innerWidth, window.innerHeight)
     }
 
     /** Ported verbatim from jvmMain Loader.setParms(). */
@@ -82,8 +88,6 @@ class JsLoader : Panel(), GameApplet {
     }
 
     companion object {
-        const val WIDTH = 765
-        const val HEIGHT = 503
         const val ADDRESS = "127.0.0.1"
     }
 }
