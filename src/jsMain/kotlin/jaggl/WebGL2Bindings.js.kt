@@ -2,11 +2,6 @@ package jaggl
 
 import org.khronos.webgl.ArrayBufferView
 
-/**
- * Kotlin/JS's stdlib no longer bundles WebGL context bindings (only the typed-array classes under
- * org.khronos.webgl survived), so the small slice of the WebGL2 API this shim actually calls is
- * declared here by hand as external declarations against the browser's real global objects.
- */
 external interface WebGLBuffer
 external interface WebGLTexture
 external interface WebGLProgram
@@ -104,6 +99,7 @@ external class WebGL2RenderingContext {
     fun getProgramInfoLog(program: WebGLProgram): String?
     fun getUniformLocation(program: WebGLProgram, name: String): WebGLUniformLocation?
     fun uniform1i(location: WebGLUniformLocation?, x: Int)
+    fun uniform3i(location: WebGLUniformLocation?, x: Int, y: Int, z: Int)
     fun uniform1f(location: WebGLUniformLocation?, x: Float)
     fun uniform2f(location: WebGLUniformLocation?, x: Float, y: Float)
     fun uniform3f(location: WebGLUniformLocation?, x: Float, y: Float, z: Float)

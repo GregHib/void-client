@@ -12,7 +12,6 @@ object Mat4 {
         0f, 0f, 0f, 1f
     )
 
-    // Both GL and column-major storage: element [col*4 + row].
     fun multiply(a: FloatArray, b: FloatArray): FloatArray {
         val r = FloatArray(16)
         for (col in 0 until 4) {
@@ -88,14 +87,28 @@ class MatrixStack {
     private val stacks = HashMap<Int, ArrayDeque<FloatArray>>()
     var mode: Int = GL_MODELVIEW
 
+    var textureUnit: Int = 0
+
     init {
         stacks[GL_MODELVIEW] = ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) }
         stacks[GL_PROJECTION] = ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) }
         stacks[GL_TEXTURE_MATRIX] = ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) }
     }
 
+    private val versions = HashMap<Int, Int>()
+
+    private fun key(mode: Int): Int = if (mode == GL_TEXTURE_MATRIX) GL_TEXTURE_MATRIX + textureUnit else mode
+
     private fun current(): ArrayDeque<FloatArray> =
-        stacks.getOrPut(mode) { ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) } }
+        stacks.getOrPut(key(mode)) { ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) } }
+
+    private fun bump() {
+        val k = key(mode)
+        versions[k] = (versions[k] ?: 0) + 1
+    }
+
+    fun version(mode: Int, unit: Int = 0): Int =
+        versions[if (mode == GL_TEXTURE_MATRIX) mode + unit else mode] ?: 0
 
     fun top(): FloatArray = current().last()
 
@@ -103,10 +116,11 @@ class MatrixStack {
         val s = current()
         s.removeLast()
         s.addLast(m)
+        bump()
     }
 
-    fun push() { current().addLast(top().copyOf()) }
-    fun pop() { if (current().size > 1) current().removeLast() }
+    fun push() { current().addLast(top().copyOf()); bump() }
+    fun pop() { if (current().size > 1) current().removeLast(); bump() }
     fun loadIdentity() { setTop(Mat4.identity()) }
     fun loadMatrix(m: FloatArray) { setTop(m.copyOf(16)) }
     fun mult(m: FloatArray) { setTop(Mat4.multiply(top(), m)) }
@@ -118,6 +132,7 @@ class MatrixStack {
 
     fun modelview(): FloatArray = stacks[GL_MODELVIEW]!!.last()
     fun projection(): FloatArray = stacks[GL_PROJECTION]!!.last()
-    fun textureMatrix(): FloatArray = stacks[GL_TEXTURE_MATRIX]!!.last()
+    fun textureMatrix(unit: Int = 0): FloatArray =
+        stacks.getOrPut(GL_TEXTURE_MATRIX + unit) { ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) } }.last()
     fun mvp(): FloatArray = Mat4.multiply(projection(), modelview())
 }

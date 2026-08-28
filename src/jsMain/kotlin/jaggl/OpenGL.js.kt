@@ -4,10 +4,8 @@ import awt.Canvas
 import lang.Thread
 import util.Hashtable
 import org.khronos.webgl.Uint8Array
+import org.khronos.webgl.Uint32Array
 import org.w3c.dom.HTMLCanvasElement
-import kotlinx.browser.document
-import kotlinx.browser.window
-import kotlin.js.console
 
 const val GL_TEXTURE_1D = 3552
 const val GL_TEXTURE_3D = 32879
@@ -26,16 +24,6 @@ private val UNSUPPORTED_IN_WEBGL2 = setOf(
 
 private fun fixTarget(target: Int): Int =
     if (target == GL_TEXTURE_1D) WebGL2RenderingContext.TEXTURE_2D else target
-
-private val loggedGlErrors = HashSet<String>()
-private fun logGlErrorIfAny(gl: WebGL2RenderingContext, tag: String, details: String) {
-    val err = gl.getError()
-    if (err == 0) return // GL_NO_ERROR
-    val key = "$tag:$err"
-    if (loggedGlErrors.add(key)) {
-        console.error("[jaggl] GL error $err after $tag - $details")
-    }
-}
 
 private fun IntArray?.slice(offset: Int, count: Int): IntArray {
     val src = this ?: return IntArray(count)
@@ -64,55 +52,25 @@ actual class OpenGL {
     actual fun releaseSurface(arg0: Canvas?, arg1: Long) {}
 
     actual fun init(arg0: Canvas?, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int): Long {
-        console.log("[jaggl] OpenGL.init() called, canvas=$arg0")
         val canvasEl = arg0?.element as? HTMLCanvasElement
         if (canvasEl == null) {
-            console.error("[jaggl] init: canvas element is null or not an HTMLCanvasElement")
             return 0L
         }
-        console.log("[jaggl] canvas element size ${canvasEl.width}x${canvasEl.height}")
         var context = canvasEl.getContext("webgl2") as? WebGL2RenderingContext
-        var activeCanvas: HTMLCanvasElement = canvasEl
         if (context == null) {
-            console.log("[jaggl] canvas already locked to another context type, swapping in a fresh canvas")
-            val fresh = arg0.replaceWithFreshCanvas()
-            context = fresh.getContext("webgl2") as? WebGL2RenderingContext
-            activeCanvas = fresh
+            context = arg0.replaceWithFreshCanvas().getContext("webgl2") as? WebGL2RenderingContext
         }
         if (context == null) {
-            console.error("[jaggl] init: getContext(\"webgl2\") returned null even on a fresh canvas")
             return 0L
-        }
-        console.log("[jaggl] WebGL2 context created successfully")
-        run {
-            val allCanvases = document.querySelectorAll("canvas")
-            console.log("[jaggl] document has ${allCanvases.length} <canvas> element(s)")
-            for (i in 0 until allCanvases.length) {
-                val c = allCanvases.item(i) as HTMLCanvasElement
-                val rect = c.getBoundingClientRect()
-                val cs = window.getComputedStyle(c)
-                console.log(
-                    "[jaggl]   canvas[$i] isActiveTarget=${c === activeCanvas} size=${c.width}x${c.height} " +
-                            "rect=${rect.left},${rect.top},${rect.width}x${rect.height} " +
-                            "display=${cs.display} visibility=${cs.visibility} opacity=${cs.opacity} " +
-                            "zIndex=${cs.zIndex} position=${cs.position} inDocument=${document.body?.contains(c)}"
-                )
-            }
         }
         try {
             val newState = GlState(context)
-            console.log("[jaggl] GlState created")
             newState.immediateMode = ImmediateModeEmulator(context, newState)
-            console.log("[jaggl] ImmediateModeEmulator created")
             newState.fixedFunctionShader = FixedFunctionShader(context)
-            console.log("[jaggl] FixedFunctionShader compiled/linked successfully")
             state = newState
             peerValue = 1L
-            console.log("[jaggl] init() complete, peer=$peerValue")
             return peerValue
         } catch (t: Throwable) {
-            console.error("[jaggl] init: exception while setting up GlState/shaders: ${t.message}")
-            console.error(t.stackTraceToString())
             return 0L
         }
     }
@@ -156,6 +114,25 @@ actual class OpenGL {
         private const val GL_UNSIGNED_INT_8_8_8_8_REV = 33639
         private fun fixPixelType(type: Int): Int =
             if (type == GL_UNSIGNED_INT_8_8_8_8_REV) WebGL2RenderingContext.UNSIGNED_BYTE else type
+
+        private const val GL_RGB = 6407
+
+        private fun bgraToRgb(data: Uint8Array): Uint8Array {
+            val texels = data.length / 4
+            val out = Uint8Array(texels * 3)
+            val src = data.asDynamic()
+            val dst = out.asDynamic()
+            var i = 0
+            var o = 0
+            while (i + 3 < data.length) {
+                dst[o] = src[i + 2]
+                dst[o + 1] = src[i + 1]
+                dst[o + 2] = src[i]
+                i += 4
+                o += 3
+            }
+            return out
+        }
 
         private fun swapRedBlue(data: Uint8Array): Uint8Array {
             val out = Uint8Array(data.length)
@@ -251,7 +228,7 @@ actual class OpenGL {
         // ---- Core / fixed-function state ------------------------------------
 
         private fun texturingUnitIndex(): Int? = when (state.activeTextureUnit) {
-            0, 1 -> state.activeTextureUnit
+            0, 1, 2 -> state.activeTextureUnit
             else -> null
         }
 
@@ -260,12 +237,16 @@ actual class OpenGL {
                 GL_LIGHTING -> state.lightingEnabled = true
                 WebGL2RenderingContext.TEXTURE_2D, WebGL2RenderingContext.TEXTURE_CUBE_MAP,
                 GL_TEXTURE_1D, GL_TEXTURE_3D,
-                    -> texturingUnitIndex()?.let { state.texturingEnabled[it] = true }
+                    -> texturingUnitIndex()?.let {
+                        state.texturingEnabled[it] = true
+                        state.textureTarget[it] = fixTarget(arg0)
+                    }
+                GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
+                    texturingUnitIndex()?.let { state.texGenEnabled[it] = true }
                 GL_FOG -> state.fogEnabled = true
                 GL_ALPHA_TEST -> state.alphaTestEnabled = true
-                in GL_LIGHT0..GL_LIGHT7, GL_COLOR_MATERIAL, GL_NORMALIZE, GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T,
-                GL_MULTISAMPLE,
-                    -> {
+                in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let { if (it in 0..1) state.lightEnabled[it] = true }
+                GL_COLOR_MATERIAL, GL_NORMALIZE, GL_MULTISAMPLE -> {
                 }
                 else -> gl.enable(arg0)
             }
@@ -277,11 +258,12 @@ actual class OpenGL {
                 WebGL2RenderingContext.TEXTURE_2D, WebGL2RenderingContext.TEXTURE_CUBE_MAP,
                 GL_TEXTURE_1D, GL_TEXTURE_3D,
                     -> texturingUnitIndex()?.let { state.texturingEnabled[it] = false }
+                GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
+                    texturingUnitIndex()?.let { state.texGenEnabled[it] = false }
                 GL_FOG -> state.fogEnabled = false
                 GL_ALPHA_TEST -> state.alphaTestEnabled = false
-                in GL_LIGHT0..GL_LIGHT7, GL_COLOR_MATERIAL, GL_NORMALIZE, GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T,
-                GL_MULTISAMPLE,
-                    -> {
+                in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let { if (it in 0..1) state.lightEnabled[it] = false }
+                GL_COLOR_MATERIAL, GL_NORMALIZE, GL_MULTISAMPLE -> {
                 }
                 else -> gl.disable(arg0)
             }
@@ -302,7 +284,8 @@ actual class OpenGL {
         actual fun glPushAttrib(arg0: Int) {}
         actual fun glPopAttrib() {}
 
-        actual fun glAlphaFunc(arg0: Int, arg1: Float) {
+        actual fun glAlphaFunc(arg0: Int, arg1: Float) = exec {
+            state.alphaFunc = arg0
             state.alphaRef = arg1
         }
 
@@ -324,14 +307,13 @@ actual class OpenGL {
 
         actual fun glLightf(arg0: Int, arg1: Int, arg2: Float) {}
         actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
-            if (arg0 != GL_LIGHT0) return@exec
+            val light = arg0 - GL_LIGHT0
+            if (light !in 0..1) return@exec
             val v = arg2.slice(arg3, 4)
             when (arg1) {
-                GL_AMBIENT -> v.copyInto(state.light0Ambient)
-                GL_DIFFUSE -> v.copyInto(state.light0Diffuse)
-                GL_POSITION -> {
-                    state.light0Direction[0] = v[0]; state.light0Direction[1] = v[1]; state.light0Direction[2] = v[2]
-                }
+                GL_AMBIENT -> v.copyInto(state.lightAmbient[light])
+                GL_DIFFUSE -> v.copyInto(state.lightDiffuse[light])
+                GL_POSITION -> state.transformLightPosition(v).copyInto(state.lightDirection[light])
             }
         }
 
@@ -356,7 +338,11 @@ actual class OpenGL {
             }
         }
 
-        actual fun glTexGeni(arg0: Int, arg1: Int, arg2: Int) {}
+        actual fun glTexGeni(arg0: Int, arg1: Int, arg2: Int) = exec {
+            if (arg1 != GL_TEXTURE_GEN_MODE) return@exec
+            if (arg0 !in GL_S..GL_Q) return@exec
+            texturingUnitIndex()?.let { state.texGenMode[it] = arg2 }
+        }
         actual fun glTexGenfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
         actual fun glTexEnvi(arg0: Int, arg1: Int, arg2: Int) = exec {
             if (arg0 != GL_TEXTURE_ENV) return@exec
@@ -370,10 +356,25 @@ actual class OpenGL {
                 GL_OPERAND0_RGB -> state.operand0Rgb[unit] = arg2
                 GL_OPERAND1_RGB -> state.operand1Rgb[unit] = arg2
                 GL_OPERAND2_RGB -> state.operand2Rgb[unit] = arg2
+                GL_SOURCE0_ALPHA -> state.source0Alpha[unit] = arg2
+                GL_SOURCE1_ALPHA -> state.source1Alpha[unit] = arg2
+                GL_SOURCE2_ALPHA -> state.source2Alpha[unit] = arg2
+                GL_OPERAND0_ALPHA -> state.operand0Alpha[unit] = arg2
+                GL_OPERAND1_ALPHA -> state.operand1Alpha[unit] = arg2
+                GL_OPERAND2_ALPHA -> state.operand2Alpha[unit] = arg2
+                GL_RGB_SCALE -> state.rgbScale[unit] = arg2.toFloat()
+                GL_ALPHA_SCALE -> state.alphaScale[unit] = arg2.toFloat()
             }
         }
 
-        actual fun glTexEnvf(arg0: Int, arg1: Int, arg2: Float) {}
+        actual fun glTexEnvf(arg0: Int, arg1: Int, arg2: Float) = exec {
+            if (arg0 != GL_TEXTURE_ENV) return@exec
+            val unit = texturingUnitIndex() ?: return@exec
+            when (arg1) {
+                GL_RGB_SCALE -> state.rgbScale[unit] = arg2
+                GL_ALPHA_SCALE -> state.alphaScale[unit] = arg2
+            }
+        }
         actual fun glTexEnvfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
             if (arg0 == GL_TEXTURE_ENV && arg1 == GL_TEXTURE_ENV_COLOR) {
                 val unit = texturingUnitIndex() ?: return@exec
@@ -386,16 +387,14 @@ actual class OpenGL {
         private const val GL_MAX_TEXTURE_UNITS = 34018
         private const val GL_MAX_TEXTURE_COORDS = 34929
         private const val GL_POINT_SIZE_RANGE = 2834
-
-        // Legacy unsized formats (GL_RGBA, GL_DEPTH_COMPONENT, ...) were valid renderbuffer/texture
         private fun sizedInternalFormat(format: Int): Int = when (format) {
-            6408 -> WebGL2RenderingContext.RGBA8 // GL_RGBA
-            6407 -> WebGL2RenderingContext.RGB8 // GL_RGB
-            6406 -> WebGL2RenderingContext.R8 // GL_ALPHA (closest single-channel equivalent)
-            6409 -> WebGL2RenderingContext.R8 // GL_LUMINANCE
-            6410 -> WebGL2RenderingContext.RG8 // GL_LUMINANCE_ALPHA
-            6402 -> WebGL2RenderingContext.DEPTH_COMPONENT24 // GL_DEPTH_COMPONENT
-            34041 -> WebGL2RenderingContext.DEPTH24_STENCIL8 // GL_DEPTH_STENCIL
+            6408 -> WebGL2RenderingContext.RGBA8
+            6407 -> WebGL2RenderingContext.RGB8
+            6406 -> WebGL2RenderingContext.R8
+            6409 -> WebGL2RenderingContext.R8
+            6410 -> WebGL2RenderingContext.RG8
+            6402 -> WebGL2RenderingContext.DEPTH_COMPONENT24
+            34041 -> WebGL2RenderingContext.DEPTH24_STENCIL8
             else -> format
         }
 
@@ -462,6 +461,7 @@ actual class OpenGL {
 
         actual fun glActiveTexture(arg0: Int) = exec {
             state.activeTextureUnit = arg0 - WebGL2RenderingContext.TEXTURE0
+            state.matrixStack.textureUnit = state.activeTextureUnit
             gl.activeTexture(arg0)
         }
 
@@ -474,6 +474,7 @@ actual class OpenGL {
                 }
                 1 -> {
                     state.currentTexCoord1[0] = arg1; state.currentTexCoord1[1] = arg2
+                    state.currentTexCoord1[2] = 0f
                 }
             }
         }
@@ -485,6 +486,7 @@ actual class OpenGL {
                 }
                 1 -> {
                     state.currentTexCoord1[0] = arg1.toFloat(); state.currentTexCoord1[1] = arg2.toFloat()
+                    state.currentTexCoord1[2] = 0f
                 }
             }
         }
@@ -496,6 +498,7 @@ actual class OpenGL {
                 }
                 1 -> {
                     state.currentTexCoord1[0] = arg1.toFloat(); state.currentTexCoord1[1] = arg2.toFloat()
+                    state.currentTexCoord1[2] = arg3.toFloat()
                 }
             }
         }
@@ -508,7 +511,7 @@ actual class OpenGL {
         actual fun glTexImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int) {
             val data = arg8?.asUint8Array()?.subarray(arg9, arg8.size)
             gl.texImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
-            logGlErrorIfAny(gl, "glTexImage2Dub", "target=$arg0 level=$arg1 internalformat=$arg2 w=$arg3 h=$arg4 format=$arg6 type=$arg7 hasData=${arg8 != null}")
+            state.recordTextureInternalFormat(fixTarget(arg0), arg2)
         }
 
         actual fun glTexImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int) {
@@ -518,16 +521,19 @@ actual class OpenGL {
             else arg8.asInt32Array().subarray(arg9, arg8.size)
             val target = fixTarget(arg0)
             val internalformat = fixBgraFormat(arg2)
-            val format = fixBgraFormat(arg6)
-            if (arg6 == GL_BGRA && data is Uint8Array) data = swapRedBlue(data)
+            val toRgb = arg6 == GL_BGRA && internalformat == GL_RGB
+            val format = if (toRgb) GL_RGB else fixBgraFormat(arg6)
+            if (arg6 == GL_BGRA && data is Uint8Array) {
+                data = if (toRgb) bgraToRgb(data) else swapRedBlue(data)
+            }
             gl.texImage2D(target, arg1, internalformat, arg3, arg4, arg5, format, type, data)
-            logGlErrorIfAny(gl, "glTexImage2Di", "target=$arg0 level=$arg1 internalformat=$arg2->$internalformat w=$arg3 h=$arg4 format=$arg6->$format type=$arg7->$type hasData=${arg8 != null}")
+            state.recordTextureInternalFormat(target, internalformat)
         }
 
         actual fun glTexImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int) {
             val data = arg8?.asFloat32Array()?.subarray(arg9, arg8.size)
             gl.texImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
-            logGlErrorIfAny(gl, "glTexImage2Df", "target=$arg0 level=$arg1 internalformat=$arg2 w=$arg3 h=$arg4 format=$arg6 type=$arg7 hasData=${arg8 != null}")
+            state.recordTextureInternalFormat(fixTarget(arg0), arg2)
         }
 
         actual fun glTexImage3Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: ByteArray?, arg10: Int) {
@@ -538,27 +544,25 @@ actual class OpenGL {
         actual fun glTexSubImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int) {
             val data = arg8?.asUint8Array()?.subarray(arg9, arg8.size)
             gl.texSubImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
-            logGlErrorIfAny(gl, "glTexSubImage2Dub", "target=$arg0 level=$arg1 x=$arg2 y=$arg3 w=$arg4 h=$arg5 format=$arg6 type=$arg7 hasData=${arg8 != null}")
         }
 
         actual fun glTexSubImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int) {
-            // See glTexImage2Di - normalize the type, then reinterpret as bytes when uploading as
-            // GL_UNSIGNED_BYTE.
             val type = fixPixelType(arg7)
             var data = if (arg8 == null) null
             else if (type == WebGL2RenderingContext.UNSIGNED_BYTE) arg8.asUint8ArrayView(arg9, arg8.size - arg9)
             else arg8.asInt32Array().subarray(arg9, arg8.size)
             val target = fixTarget(arg0)
-            val format = fixBgraFormat(arg6)
-            if (arg6 == GL_BGRA && data is Uint8Array) data = swapRedBlue(data)
+            val toRgb = arg6 == GL_BGRA && state.textureInternalFormat(target) == GL_RGB
+            val format = if (toRgb) GL_RGB else fixBgraFormat(arg6)
+            if (arg6 == GL_BGRA && data is Uint8Array) {
+                data = if (toRgb) bgraToRgb(data) else swapRedBlue(data)
+            }
             gl.texSubImage2D(target, arg1, arg2, arg3, arg4, arg5, format, type, data)
-            logGlErrorIfAny(gl, "glTexSubImage2Di", "target=$arg0 level=$arg1 x=$arg2 y=$arg3 w=$arg4 h=$arg5 format=$arg6->$format type=$arg7->$type hasData=${arg8 != null}")
         }
 
         actual fun glTexSubImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int) {
             val data = arg8?.asFloat32Array()?.subarray(arg9, arg8.size)
             gl.texSubImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
-            logGlErrorIfAny(gl, "glTexSubImage2Df", "target=$arg0 level=$arg1 x=$arg2 y=$arg3 w=$arg4 h=$arg5 format=$arg6 type=$arg7 hasData=${arg8 != null}")
         }
 
         actual fun glCopyTexImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) =
@@ -569,19 +573,13 @@ actual class OpenGL {
 
         actual fun glCopyTexSubImage3D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int) =
             gl.copyTexSubImage3D(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
-
-        // Reading a mip's dimensions has no WebGL2 equivalent (no glGetTexLevelParameteriv); left
-        // unimplemented since actual call sites are edge-case texture-tool paths, not core rendering.
         actual fun glGetTexImageub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int) {}
         actual fun glGetTexImagei(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IntArray?, arg5: Int) {}
-
-        // ---- Buffers / client arrays / draw calls -----------------------------
 
         actual fun glGenBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int) {
             for (i in 0 until arg0) {
                 val buf = gl.createBuffer()
                 if (buf == null) {
-                    console.error("[jaggl] glGenBuffersARB: gl.createBuffer() returned null")
                 }
                 val id = state.buffers.allocate(buf!!)
                 arg1?.set(arg2 + i, id)
@@ -685,7 +683,9 @@ actual class OpenGL {
                             loc, state.currentColor[0], state.currentColor[1], state.currentColor[2], state.currentColor[3]
                         )
                         ATTRIB_TEXCOORD0 -> gl.vertexAttrib2f(loc, state.currentTexCoord[0], state.currentTexCoord[1])
-                        ATTRIB_TEXCOORD1 -> gl.vertexAttrib2f(loc, state.currentTexCoord1[0], state.currentTexCoord1[1])
+                        ATTRIB_TEXCOORD1 -> gl.vertexAttrib3f(
+                            loc, state.currentTexCoord1[0], state.currentTexCoord1[1], state.currentTexCoord1[2]
+                        )
                         ATTRIB_NORMAL -> gl.vertexAttrib3f(loc, state.currentNormal[0], state.currentNormal[1], state.currentNormal[2])
                     }
                 }
@@ -695,7 +695,51 @@ actual class OpenGL {
         actual fun glDrawArrays(arg0: Int, arg1: Int, arg2: Int) = exec {
             bindClientArrays()
             state.prepareDraw()
-            gl.drawArrays(arg0, arg1, arg2)
+            val indices = quadIndices(arg0, arg1, arg2)
+            if (indices == null) {
+                gl.drawArrays(arg0, arg1, arg2)
+            } else {
+                gl.bindBuffer(WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER, state.quadIndexBuffer)
+                gl.bufferData(WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER, indices, WebGL2RenderingContext.STREAM_DRAW)
+                gl.drawElements(WebGL2RenderingContext.TRIANGLES, indices.length, GL_UNSIGNED_INT, 0)
+                gl.bindBuffer(WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER, state.boundElementArrayBuffer)
+            }
+        }
+
+        private const val GL_UNSIGNED_INT = 5125
+
+        private fun quadIndices(mode: Int, first: Int, count: Int): Uint32Array? {
+            val out = ArrayList<Int>()
+            when (mode) {
+                GL_QUADS -> {
+                    var i = 0
+                    while (i + 4 <= count) {
+                        val b = first + i
+                        out.add(b); out.add(b + 1); out.add(b + 2)
+                        out.add(b); out.add(b + 2); out.add(b + 3)
+                        i += 4
+                    }
+                }
+                GL_QUAD_STRIP -> {
+                    var i = 0
+                    while (i + 4 <= count) {
+                        val b = first + i
+                        out.add(b); out.add(b + 1); out.add(b + 3)
+                        out.add(b); out.add(b + 3); out.add(b + 2)
+                        i += 2
+                    }
+                }
+                GL_POLYGON -> {
+                    for (i in 1..count - 2) {
+                        out.add(first); out.add(first + i); out.add(first + i + 1)
+                    }
+                }
+                else -> return null
+            }
+            val array = Uint32Array(out.size)
+            val view = array.asDynamic()
+            for (i in out.indices) view[i] = out[i]
+            return array
         }
 
         actual fun glDrawElements(arg0: Int, arg1: Int, arg2: Int, arg3: Long) = exec {
@@ -703,7 +747,7 @@ actual class OpenGL {
             if (state.boundElementArrayBuffer == null) {
                 val bytesPerIndex = when (arg2) {
                     WebGL2RenderingContext.UNSIGNED_BYTE -> 1
-                    5123 /* GL_UNSIGNED_SHORT */ -> 2
+                    5123 -> 2
                     else -> 4
                 }
                 val bytes = jaclib.memory.heap.nativeHeapBytes(arg3)
@@ -725,8 +769,6 @@ actual class OpenGL {
             }
         }
 
-        // ---- Legacy pixel transfer --------------------------------------------
-
         actual fun glPixelStorei(arg0: Int, arg1: Int) = gl.pixelStorei(arg0, arg1)
         actual fun glPixelTransferf(arg0: Int, arg1: Float) {}
         actual fun glPixelZoom(arg0: Float, arg1: Float) {}
@@ -739,13 +781,9 @@ actual class OpenGL {
             arg6 ?: return
             gl.readPixels(arg0, arg1, arg2, arg3, arg4, arg5, arg6.asUint8Array())
         }
-
-        // Both known call sites are a full-framebuffer copy-to-self (src == dst); safe no-op.
         actual fun glCopyPixels(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) {}
         actual fun glDrawPixelsi(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IntArray?, arg5: Int) {}
         actual fun glDrawPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int) {}
-
-        // ---- Framebuffers / renderbuffers --------------------------------------
 
         actual fun glGenFramebuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int) {
             for (i in 0 until arg0) {
@@ -823,8 +861,6 @@ actual class OpenGL {
 
         actual fun glRenderbufferStorageMultisampleEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) =
             gl.renderbufferStorageMultisample(arg0, arg1, sizedInternalFormat(arg2), arg3, arg4)
-
-        // ---- ARB shader objects (GLSL) -----------------------------------------
 
         actual fun glCreateShaderObjectARB(arg0: Int): Long {
             val shader = gl.createShader(arg0) ?: return 0L

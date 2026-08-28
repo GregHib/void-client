@@ -1,7 +1,5 @@
 package jaggl
 
-// Legacy fixed-function enum values with no WebGL2 core equivalent - intercepted in
-// glEnable/glDisable/glGet* rather than forwarded to the WebGL2RenderingContext.
 const val GL_LIGHTING = 2896
 const val GL_FOG = 2912
 const val GL_ALPHA_TEST = 3008
@@ -57,3 +55,34 @@ const val GL_ADD = 260
 const val GL_ADD_SIGNED = 34164
 const val GL_INTERPOLATE = 34165
 const val GL_SUBTRACT = 34023
+
+const val GL_SOURCE0_ALPHA = 34184
+const val GL_SOURCE1_ALPHA = 34185
+const val GL_SOURCE2_ALPHA = 34186
+const val GL_OPERAND0_ALPHA = 34200
+const val GL_OPERAND1_ALPHA = 34201
+const val GL_OPERAND2_ALPHA = 34202
+
+const val GL_RGB_SCALE = 34163
+const val GL_ALPHA_SCALE = 3356
+
+const val GL_NEVER = 512
+const val GL_ALWAYS = 519
+
+const val GL_QUADRATIC_ATTENUATION = 33507
+
+const val GL_BLEND = 3042
+const val GL_DEPTH_TEST = 2929
+const val GL_CULL_FACE = 2884
+
+const val GL_TEXTURE_GEN_R = 3170
+const val GL_TEXTURE_GEN_Q = 3171
+const val GL_TEXTURE_GEN_MODE = 9472
+const val GL_S = 8192
+const val GL_T = 8193
+const val GL_R = 8194
+const val GL_Q = 8195
+const val GL_NORMAL_MAP = 34065
+const val GL_REFLECTION_MAP = 34066
+const val GL_SPHERE_MAP = 9218
+const val GL_TEXTURE_CUBE_MAP = 34067
