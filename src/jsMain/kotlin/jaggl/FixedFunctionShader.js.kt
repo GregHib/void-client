@@ -279,6 +279,12 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
         uOpAlpha = perUnit("uOpAlpha")
         uTexEnvColor = perUnit("uTexEnvColor")
         uEnvScale = perUnit("uEnvScale")
+
+        gl.useProgram(program)
+        for (unit in 0 until 3) gl.uniform1i(uTexture[unit], unit)
+        gl.uniform1i(uTextureCube[1], CUBE_SAMPLER_UNIT + 1)
+        gl.uniform1i(uTextureCube[2], CUBE_SAMPLER_UNIT + 2)
+        gl.useProgram(null)
     }
 
     private fun perIndex(name: String): Array<WebGLUniformLocation?> =

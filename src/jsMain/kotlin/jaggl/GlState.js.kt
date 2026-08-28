@@ -40,7 +40,7 @@ class ClientArrayPointer {
     var sourceBuffer: WebGLBuffer? = null
 }
 
-private const val CUBE_SAMPLER_UNIT = 5
+internal const val CUBE_SAMPLER_UNIT = 5
 
 class GlState(val gl: WebGL2RenderingContext) {
     val textures = IntHandleTable<WebGLTexture>()

@@ -234,18 +234,21 @@ actual class OpenGL {
 
         actual fun glEnable(arg0: Int) = exec {
             when (arg0) {
-                GL_LIGHTING -> state.lightingEnabled = true
+                GL_LIGHTING -> { state.lightingEnabled = true; state.ffpStateDirty = true }
                 WebGL2RenderingContext.TEXTURE_2D, WebGL2RenderingContext.TEXTURE_CUBE_MAP,
                 GL_TEXTURE_1D, GL_TEXTURE_3D,
                     -> texturingUnitIndex()?.let {
                         state.texturingEnabled[it] = true
                         state.textureTarget[it] = fixTarget(arg0)
+                        state.texEnvDirty[it] = true
                     }
                 GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
-                    texturingUnitIndex()?.let { state.texGenEnabled[it] = true }
-                GL_FOG -> state.fogEnabled = true
-                GL_ALPHA_TEST -> state.alphaTestEnabled = true
-                in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let { if (it in 0..1) state.lightEnabled[it] = true }
+                    texturingUnitIndex()?.let { state.texGenEnabled[it] = true; state.texEnvDirty[it] = true }
+                GL_FOG -> { state.fogEnabled = true; state.ffpStateDirty = true }
+                GL_ALPHA_TEST -> { state.alphaTestEnabled = true; state.ffpStateDirty = true }
+                in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let {
+                    if (it in 0..1) { state.lightEnabled[it] = true; state.ffpStateDirty = true }
+                }
                 GL_COLOR_MATERIAL, GL_NORMALIZE, GL_MULTISAMPLE -> {
                 }
                 else -> gl.enable(arg0)
@@ -254,15 +257,17 @@ actual class OpenGL {
 
         actual fun glDisable(arg0: Int) = exec {
             when (arg0) {
-                GL_LIGHTING -> state.lightingEnabled = false
+                GL_LIGHTING -> { state.lightingEnabled = false; state.ffpStateDirty = true }
                 WebGL2RenderingContext.TEXTURE_2D, WebGL2RenderingContext.TEXTURE_CUBE_MAP,
                 GL_TEXTURE_1D, GL_TEXTURE_3D,
-                    -> texturingUnitIndex()?.let { state.texturingEnabled[it] = false }
+                    -> texturingUnitIndex()?.let { state.texturingEnabled[it] = false; state.texEnvDirty[it] = true }
                 GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
-                    texturingUnitIndex()?.let { state.texGenEnabled[it] = false }
-                GL_FOG -> state.fogEnabled = false
-                GL_ALPHA_TEST -> state.alphaTestEnabled = false
-                in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let { if (it in 0..1) state.lightEnabled[it] = false }
+                    texturingUnitIndex()?.let { state.texGenEnabled[it] = false; state.texEnvDirty[it] = true }
+                GL_FOG -> { state.fogEnabled = false; state.ffpStateDirty = true }
+                GL_ALPHA_TEST -> { state.alphaTestEnabled = false; state.ffpStateDirty = true }
+                in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let {
+                    if (it in 0..1) { state.lightEnabled[it] = false; state.ffpStateDirty = true }
+                }
                 GL_COLOR_MATERIAL, GL_NORMALIZE, GL_MULTISAMPLE -> {
                 }
                 else -> gl.disable(arg0)
@@ -287,6 +292,7 @@ actual class OpenGL {
         actual fun glAlphaFunc(arg0: Int, arg1: Float) = exec {
             state.alphaFunc = arg0
             state.alphaRef = arg1
+            state.ffpStateDirty = true
         }
 
         actual fun glBlendFunc(arg0: Int, arg1: Int) = gl.blendFunc(arg0, arg1)
@@ -309,6 +315,7 @@ actual class OpenGL {
         actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
             val light = arg0 - GL_LIGHT0
             if (light !in 0..1) return@exec
+            state.ffpStateDirty = true
             val v = arg2.slice(arg3, 4)
             when (arg1) {
                 GL_AMBIENT -> v.copyInto(state.lightAmbient[light])
@@ -318,12 +325,16 @@ actual class OpenGL {
         }
 
         actual fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
-            if (arg0 == GL_LIGHT_MODEL_AMBIENT) arg1.slice(arg2, 4).copyInto(state.globalAmbient)
+            if (arg0 == GL_LIGHT_MODEL_AMBIENT) {
+                arg1.slice(arg2, 4).copyInto(state.globalAmbient)
+                state.ffpStateDirty = true
+            }
         }
 
         actual fun glMaterialfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
 
         actual fun glFogf(arg0: Int, arg1: Float) = exec {
+            state.ffpStateDirty = true
             when (arg0) {
                 GL_FOG_START -> state.fogStart = arg1; GL_FOG_END -> state.fogEnd = arg1
             }
@@ -331,6 +342,7 @@ actual class OpenGL {
 
         actual fun glFogi(arg0: Int, arg1: Int) {}
         actual fun glFogfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
+            state.ffpStateDirty = true
             when (arg0) {
                 GL_FOG_COLOR -> arg1.slice(arg2, 4).copyInto(state.fogColor)
                 GL_FOG_START -> state.fogStart = arg1?.get(arg2) ?: state.fogStart
@@ -341,12 +353,13 @@ actual class OpenGL {
         actual fun glTexGeni(arg0: Int, arg1: Int, arg2: Int) = exec {
             if (arg1 != GL_TEXTURE_GEN_MODE) return@exec
             if (arg0 !in GL_S..GL_Q) return@exec
-            texturingUnitIndex()?.let { state.texGenMode[it] = arg2 }
+            texturingUnitIndex()?.let { state.texGenMode[it] = arg2; state.texEnvDirty[it] = true }
         }
         actual fun glTexGenfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
         actual fun glTexEnvi(arg0: Int, arg1: Int, arg2: Int) = exec {
             if (arg0 != GL_TEXTURE_ENV) return@exec
             val unit = texturingUnitIndex() ?: return@exec
+            state.texEnvDirty[unit] = true
             when (arg1) {
                 GL_COMBINE_RGB -> state.combineRgb[unit] = arg2
                 GL_COMBINE_ALPHA -> state.combineAlpha[unit] = arg2
@@ -370,6 +383,7 @@ actual class OpenGL {
         actual fun glTexEnvf(arg0: Int, arg1: Int, arg2: Float) = exec {
             if (arg0 != GL_TEXTURE_ENV) return@exec
             val unit = texturingUnitIndex() ?: return@exec
+            state.texEnvDirty[unit] = true
             when (arg1) {
                 GL_RGB_SCALE -> state.rgbScale[unit] = arg2
                 GL_ALPHA_SCALE -> state.alphaScale[unit] = arg2
@@ -379,6 +393,7 @@ actual class OpenGL {
             if (arg0 == GL_TEXTURE_ENV && arg1 == GL_TEXTURE_ENV_COLOR) {
                 val unit = texturingUnitIndex() ?: return@exec
                 arg2.slice(arg3, 4).copyInto(state.textureEnvColor[unit])
+                state.texEnvDirty[unit] = true
             }
         }
 
