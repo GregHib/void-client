@@ -1,5 +1,7 @@
 package io
 
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import org.khronos.webgl.Int8Array
 import org.khronos.webgl.Uint8Array
 import kotlin.js.unsafeCast
@@ -117,6 +119,9 @@ actual open class RandomAccessFile actual constructor(name: String, mode: String
         if (closed) return
         closed = true
         mapNodeErrors(path) { closeSync(fd) }
+        if (!readOnly && MemFs.dirtyPaths.contains(MemFs.normalise(path))) {
+            GlobalScope.launch { CachePersistence.flushPath(path) }
+        }
     }
 
     private fun checkOpen() {

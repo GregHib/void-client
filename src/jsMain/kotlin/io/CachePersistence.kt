@@ -42,6 +42,23 @@ object CachePersistence {
         }
     }
 
+    /**
+     * Flushes a single path immediately instead of waiting for the next periodic [flushDirty].
+     * Used for small, latency-sensitive writes (e.g. the graphics-options file) that would
+     * otherwise be lost if the tab closes before the next 5s tick.
+     */
+    suspend fun flushPath(path: String) {
+        val key = MemFs.normalise(path)
+        if (!MemFs.dirtyPaths.remove(key)) return
+        val file = MemFs.files[key] ?: return
+        try {
+            IndexedDbStore.put(key, file.data.copyOf(file.size))
+        } catch (e: Throwable) {
+            console.error("CachePersistence: failed to persist $key", e)
+            MemFs.dirtyPaths.add(key)
+        }
+    }
+
     private suspend fun flushDirty() {
         val dirty = MemFs.dirtyPaths.toList()
         MemFs.dirtyPaths.removeAll(dirty)

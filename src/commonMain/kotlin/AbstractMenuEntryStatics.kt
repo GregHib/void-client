@@ -30,6 +30,8 @@ object AbstractMenuEntryStatics {
         if (i > -19) method1034(-89, null, null, -72)
     }
 
+    private const val GRAPHICS_OPTION_FIELD_COUNT = 33
+
     @JvmStatic
     fun method1032(i: Int): Int {
         anInt1701++
@@ -43,6 +45,7 @@ object AbstractMenuEntryStatics {
             if ((if (aClass1714 != null) aClass1714 else (GraphicsOptionState::class.jClass.also { aClass1714 = it }))!!.isAssignableFrom(field.getType())) i_1_++
             i_3_++
         }
+        if (i_1_ == 0) i_1_ = GRAPHICS_OPTION_FIELD_COUNT
         return i_1_ - -1
     }
 
