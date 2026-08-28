@@ -44,6 +44,7 @@ import jaggl.OpenGL.Companion.glFogfv
 import jaggl.OpenGL.Companion.glFogi
 import jaggl.OpenGL.Companion.glGenBuffersARB
 import jaggl.OpenGL.Companion.glGetFloatv
+import jaggl.OpenGL.Companion.glGetError
 import jaggl.OpenGL.Companion.glGetIntegerv
 import jaggl.OpenGL.Companion.glGetString
 import jaggl.OpenGL.Companion.glHint
@@ -310,7 +311,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     private var aBoolean7866 = false
     private var anInt7867: Int
     private var anInt7868: Int
-    private var aBoolean7869 = false
+    private var aBoolean7869 = true
     private var aBoolean7870: Boolean
 
     var aFloat7871: Float
@@ -2175,7 +2176,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
 
     private fun method3786(bool: Boolean) {
         anInt7630++
-        aGlTextureArray7828 = arrayOfNulls<GlTexture>(this.anInt7795)
+        aGlTextureArray7828 = Array(this.anInt7795) { null }
         this.aClass258_Sub3_7827 = GlTexture2D(this, 3553, 6408, 1, 1)
         GlTexture2D(this, 3553, 6408, 1, 1)
         GlTexture2D(this, 3553, 6408, 1, 1)

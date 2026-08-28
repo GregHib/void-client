@@ -1775,6 +1775,9 @@ class Client : GameAppletFrame() {
                 } catch (clientException_: ClientException) {
                     method1242((clientException_.message + " (Recovered) " + method81(79.toByte())), clientException_, 15004)
                     method3553(false, 113.toByte(), 0)
+                } catch (throwable: Throwable) {
+                    method1242((throwable.message + " (Recovered) " + method81(79.toByte())), throwable, 15004)
+                    method3553(false, 113.toByte(), 0)
                 }
             }
             method598(9013)

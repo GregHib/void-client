@@ -18,7 +18,6 @@ import org.w3c.dom.HTMLCanvasElement
 import org.w3c.dom.HTMLElement
 
 actual abstract class Component : ImageObserver {
-    // plain members, no `actual` — platform storage only
     abstract val element: HTMLElement
 
     private var visible: Boolean = true
@@ -38,10 +37,6 @@ actual abstract class Component : ImageObserver {
 
     actual fun setSize(width: Int, height: Int) {
         val canvas = element as? HTMLCanvasElement
-        // Assigning canvas.width/height clears the surface AND resets the 2D context state,
-        // including the ctx.save() CanvasGraphics anchors its clip stack on. GameAppletFrame
-        // .method88 re-sizes the render canvas every 50 draws, so without this guard the screen
-        // would blank periodically and the cached Graphics would be left with a stale stack.
         if (canvas != null && canvas.width == width && canvas.height == height) return
         canvas?.let { it.width = width; it.height = height }
         element.style.width = "${width}px"
@@ -95,9 +90,6 @@ actual abstract class Component : ImageObserver {
 
     actual fun getBackground(): Color = background
 
-    // AWT hands out a *fresh* Graphics with identity transform and no clip on every call, and
-    // callers rely on that - caching one instance would let an earlier caller's translate() and
-    // clip leak into every later draw. CanvasGraphics' init resets the surface state for us.
     actual fun getGraphics(): Graphics {
         val canvas = element as? HTMLCanvasElement
             ?: error("getGraphics() requires a canvas-backed component")
@@ -113,6 +105,11 @@ actual abstract class Component : ImageObserver {
     }
 
     actual fun getToolkit(): Toolkit = DefaultToolkit()
+
+    internal fun resetDomListeners() {
+        domListenersAttached = false
+        ensureDomListeners()
+    }
 
     private fun ensureDomListeners() {
         if (domListenersAttached) return

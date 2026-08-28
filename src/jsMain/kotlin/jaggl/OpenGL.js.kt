@@ -1,589 +1,967 @@
 package jaggl
 
 import awt.Canvas
-import util.Hashtable
 import lang.Thread
+import util.Hashtable
+import org.khronos.webgl.Uint8Array
+import org.w3c.dom.HTMLCanvasElement
+import kotlinx.browser.document
+import kotlinx.browser.window
+import kotlin.js.console
+
+const val GL_TEXTURE_1D = 3552
+const val GL_TEXTURE_3D = 32879
+const val GL_MULTISAMPLE = 32925
+
+private val CORE_IN_WEBGL2 = setOf(
+    "GL_ARB_multitexture", "GL_ARB_texture_env_combine", "GL_ARB_vertex_buffer_object",
+    "GL_ARB_vertex_shader", "GL_ARB_fragment_shader", "GL_ARB_texture_cube_map",
+    "GL_EXT_texture3D", "GL_EXT_framebuffer_object", "GL_EXT_framebuffer_blit",
+    "GL_EXT_framebuffer_multisample", "GL_ARB_multisample", "GL_ARB_texture_float",
+    "GL_ARB_half_float_pixel", "GL_ARB_shader_objects", "GL_ARB_shading_language_100",
+)
+private val UNSUPPORTED_IN_WEBGL2 = setOf(
+    "GL_ARB_vertex_program", "GL_ARB_fragment_program", "GL_ARB_texture_rectangle",
+)
+
+private fun fixTarget(target: Int): Int =
+    if (target == GL_TEXTURE_1D) WebGL2RenderingContext.TEXTURE_2D else target
+
+private val loggedGlErrors = HashSet<String>()
+private fun logGlErrorIfAny(gl: WebGL2RenderingContext, tag: String, details: String) {
+    val err = gl.getError()
+    if (err == 0) return // GL_NO_ERROR
+    val key = "$tag:$err"
+    if (loggedGlErrors.add(key)) {
+        console.error("[jaggl] GL error $err after $tag - $details")
+    }
+}
+
+private fun IntArray?.slice(offset: Int, count: Int): IntArray {
+    val src = this ?: return IntArray(count)
+    return IntArray(count) { src[offset + it] }
+}
+
+private fun FloatArray?.slice(offset: Int, count: Int): FloatArray {
+    val src = this ?: return FloatArray(count)
+    return FloatArray(count) { src[offset + it] }
+}
 
 actual class OpenGL {
-    actual fun a(): Boolean {
-        TODO("Not yet implemented")
-    }
+    actual var a: Thread? = null
+    actual var c: Hashtable<Any?, Any?>? = null
+    private var peerValue: Long = 0L
+    actual val peer: Long get() = peerValue
 
-    actual fun a(arg0: String?): Boolean {
-        TODO("Not yet implemented")
-    }
-
-    actual var a: Thread?
-        get() = TODO("Not yet implemented")
-        set(value) {}
-    actual var c: Hashtable<Any?, Any?>?
-        get() = TODO("Not yet implemented")
-        set(value) {}
-    actual val peer: Long
-        get() = TODO("Not yet implemented")
-
-    actual fun detachPeer() {
-    }
-
-    actual fun setSwapInterval(arg0: Int) {
-    }
-
-    actual fun surfaceResized(arg0: Long) {
-    }
-
-    actual fun setPbuffer(arg0: Long) {
-    }
-
-    actual fun arePbuffersAvailable(): Boolean {
-        TODO("Not yet implemented")
-    }
-
-    actual fun releasePbuffer(arg0: Long) {
-    }
-
-    actual fun attachPeer(): Boolean {
-        TODO("Not yet implemented")
-    }
-
-    actual fun releaseSurface(arg0: Canvas?, arg1: Long) {
-    }
+    actual fun detachPeer() {}
+    actual fun setSwapInterval(arg0: Int) {}
+    actual fun surfaceResized(arg0: Long) {}
+    actual fun setPbuffer(arg0: Long) {}
+    actual fun arePbuffersAvailable(): Boolean = false
+    actual fun a(): Boolean = true
+    actual fun releasePbuffer(arg0: Long) {}
+    actual fun attachPeer(): Boolean = true
+    actual fun releaseSurface(arg0: Canvas?, arg1: Long) {}
 
     actual fun init(arg0: Canvas?, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int): Long {
-        TODO("Not yet implemented")
+        console.log("[jaggl] OpenGL.init() called, canvas=$arg0")
+        val canvasEl = arg0?.element as? HTMLCanvasElement
+        if (canvasEl == null) {
+            console.error("[jaggl] init: canvas element is null or not an HTMLCanvasElement")
+            return 0L
+        }
+        console.log("[jaggl] canvas element size ${canvasEl.width}x${canvasEl.height}")
+        var context = canvasEl.getContext("webgl2") as? WebGL2RenderingContext
+        var activeCanvas: HTMLCanvasElement = canvasEl
+        if (context == null) {
+            console.log("[jaggl] canvas already locked to another context type, swapping in a fresh canvas")
+            val fresh = arg0.replaceWithFreshCanvas()
+            context = fresh.getContext("webgl2") as? WebGL2RenderingContext
+            activeCanvas = fresh
+        }
+        if (context == null) {
+            console.error("[jaggl] init: getContext(\"webgl2\") returned null even on a fresh canvas")
+            return 0L
+        }
+        console.log("[jaggl] WebGL2 context created successfully")
+        run {
+            val allCanvases = document.querySelectorAll("canvas")
+            console.log("[jaggl] document has ${allCanvases.length} <canvas> element(s)")
+            for (i in 0 until allCanvases.length) {
+                val c = allCanvases.item(i) as HTMLCanvasElement
+                val rect = c.getBoundingClientRect()
+                val cs = window.getComputedStyle(c)
+                console.log(
+                    "[jaggl]   canvas[$i] isActiveTarget=${c === activeCanvas} size=${c.width}x${c.height} " +
+                            "rect=${rect.left},${rect.top},${rect.width}x${rect.height} " +
+                            "display=${cs.display} visibility=${cs.visibility} opacity=${cs.opacity} " +
+                            "zIndex=${cs.zIndex} position=${cs.position} inDocument=${document.body?.contains(c)}"
+                )
+            }
+        }
+        try {
+            val newState = GlState(context)
+            console.log("[jaggl] GlState created")
+            newState.immediateMode = ImmediateModeEmulator(context, newState)
+            console.log("[jaggl] ImmediateModeEmulator created")
+            newState.fixedFunctionShader = FixedFunctionShader(context)
+            console.log("[jaggl] FixedFunctionShader compiled/linked successfully")
+            state = newState
+            peerValue = 1L
+            console.log("[jaggl] init() complete, peer=$peerValue")
+            return peerValue
+        } catch (t: Throwable) {
+            console.error("[jaggl] init: exception while setting up GlState/shaders: ${t.message}")
+            console.error(t.stackTraceToString())
+            return 0L
+        }
     }
 
-    actual fun b(): Boolean {
-        TODO("Not yet implemented")
-    }
-
-    actual fun createPbuffer(arg0: Int, arg1: Int): Long {
-        TODO("Not yet implemented")
-    }
-
-    actual fun swapBuffers() {
+    actual fun b(): Boolean = true
+    actual fun createPbuffer(arg0: Int, arg1: Int): Long = 0L
+    actual fun swapBuffers() {}
+    actual fun a(arg0: String?): Boolean {
+        if (arg0 == null) return false
+        if (arg0 in CORE_IN_WEBGL2) return true
+        if (arg0 in UNSUPPORTED_IN_WEBGL2) return false
+        val supported = state.gl.getSupportedExtensions() ?: return false
+        return supported.contains(arg0)
     }
 
     actual fun release() {
+        peerValue = 0L
     }
 
-    actual fun prepareSurface(arg0: Canvas?): Long {
-        TODO("Not yet implemented")
-    }
-
-    actual fun setSurface(arg0: Long): Boolean {
-        TODO("Not yet implemented")
-    }
+    actual fun prepareSurface(arg0: Canvas?): Long = 0L
+    actual fun setSurface(arg0: Long): Boolean = true
 
     actual companion object {
-        actual val b: Hashtable<Any?, Any?>
-            get() = TODO("Not yet implemented")
+        lateinit var state: GlState
+        private val gl: WebGL2RenderingContext get() = state.gl
 
-        actual fun glTranslatef(arg0: Float, arg1: Float, arg2: Float) {
+        actual val b: Hashtable<Any?, Any?> = Hashtable()
+
+        private inline fun exec(crossinline op: () -> Unit) {
+            if (state.displayLists.isRecording) {
+                state.displayLists.record { op() }
+            } else {
+                op()
+            }
         }
 
-        actual fun glBindRenderbufferEXT(arg0: Int, arg1: Int) {
+        private const val GL_BGRA = 32993
+        private const val GL_RGBA = 6408
+        private fun fixBgraFormat(format: Int): Int = if (format == GL_BGRA) GL_RGBA else format
+
+        private const val GL_UNSIGNED_INT_8_8_8_8_REV = 33639
+        private fun fixPixelType(type: Int): Int =
+            if (type == GL_UNSIGNED_INT_8_8_8_8_REV) WebGL2RenderingContext.UNSIGNED_BYTE else type
+
+        private fun swapRedBlue(data: Uint8Array): Uint8Array {
+            val out = Uint8Array(data.length)
+            val src = data.asDynamic()
+            val dst = out.asDynamic()
+            var i = 0
+            while (i + 3 < data.length) {
+                dst[i] = src[i + 2]
+                dst[i + 1] = src[i + 1]
+                dst[i + 2] = src[i]
+                dst[i + 3] = src[i + 3]
+                i += 4
+            }
+            return out
         }
 
-        actual fun glScalef(arg0: Float, arg1: Float, arg2: Float) {
+        // ---- Immediate mode -------------------------------------------------
+
+        actual fun glBegin(arg0: Int) = exec { state.immediateMode.begin(arg0) }
+        actual fun glEnd() = exec { state.immediateMode.end() }
+        actual fun glVertex2i(arg0: Int, arg1: Int) = exec { state.immediateMode.vertex(arg0.toFloat(), arg1.toFloat(), 0f) }
+        actual fun glVertex2f(arg0: Float, arg1: Float) = exec { state.immediateMode.vertex(arg0, arg1, 0f) }
+        actual fun glVertex3f(arg0: Float, arg1: Float, arg2: Float) = exec { state.immediateMode.vertex(arg0, arg1, arg2) }
+
+        actual fun glColor3f(arg0: Float, arg1: Float, arg2: Float) = exec {
+            state.currentColor[0] = arg0; state.currentColor[1] = arg1; state.currentColor[2] = arg2; state.currentColor[3] = 1f
         }
 
-        actual fun glActiveTexture(arg0: Int) {
+        actual fun glColor4f(arg0: Float, arg1: Float, arg2: Float, arg3: Float) = exec {
+            state.currentColor[0] = arg0; state.currentColor[1] = arg1; state.currentColor[2] = arg2; state.currentColor[3] = arg3
         }
 
-        actual fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
+        actual fun glColor3ub(arg0: Byte, arg1: Byte, arg2: Byte) = exec {
+            state.currentColor[0] = (arg0.toInt() and 0xFF) / 255f
+            state.currentColor[1] = (arg1.toInt() and 0xFF) / 255f
+            state.currentColor[2] = (arg2.toInt() and 0xFF) / 255f
+            state.currentColor[3] = 1f
         }
 
-        actual fun glGetObjectParameterivARB(arg0: Long, arg1: Int, arg2: IntArray?, arg3: Int) {
+        actual fun glColor4ub(arg0: Byte, arg1: Byte, arg2: Byte, arg3: Byte) = exec {
+            state.currentColor[0] = (arg0.toInt() and 0xFF) / 255f
+            state.currentColor[1] = (arg1.toInt() and 0xFF) / 255f
+            state.currentColor[2] = (arg2.toInt() and 0xFF) / 255f
+            state.currentColor[3] = (arg3.toInt() and 0xFF) / 255f
         }
 
-        actual fun glFramebufferTexture3DEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int) {
-        }
+        actual fun glTexCoord2f(arg0: Float, arg1: Float) = exec { state.currentTexCoord[0] = arg0; state.currentTexCoord[1] = arg1 }
+        actual fun glTexCoord2i(arg0: Int, arg1: Int) = exec { state.currentTexCoord[0] = arg0.toFloat(); state.currentTexCoord[1] = arg1.toFloat() }
+        actual fun glTexCoord3f(arg0: Float, arg1: Float, arg2: Float) = exec { state.currentTexCoord[0] = arg0; state.currentTexCoord[1] = arg1 }
+        actual fun glTexCoord3i(arg0: Int, arg1: Int, arg2: Int) = exec { state.currentTexCoord[0] = arg0.toFloat(); state.currentTexCoord[1] = arg1.toFloat() }
 
-        actual fun glDeleteLists(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glUniform1iARB(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glFinish() {
-        }
-
-        actual fun glDrawElements(arg0: Int, arg1: Int, arg2: Int, arg3: Long) {
-        }
-
-        actual fun glReadBuffer(arg0: Int) {
-        }
-
-        actual fun glGetError(): Int {
-            TODO("Not yet implemented")
-        }
-
-        actual fun glUseProgramObjectARB(arg0: Long) {
-        }
-
-        actual fun glColor4f(arg0: Float, arg1: Float, arg2: Float, arg3: Float) {
-        }
-
-        actual fun glTexGeni(arg0: Int, arg1: Int, arg2: Int) {
-        }
-
-        actual fun glDeleteFramebuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int) {
-        }
-
-        actual fun glColorMask(arg0: Boolean, arg1: Boolean, arg2: Boolean, arg3: Boolean) {
-        }
-
-        actual fun glCullFace(arg0: Int) {
-        }
-
-        actual fun glLoadMatrixf(arg0: FloatArray?, arg1: Int) {
+        actual fun glNormal3f(arg0: Float, arg1: Float, arg2: Float) = exec {
+            state.currentNormal[0] = arg0; state.currentNormal[1] = arg1; state.currentNormal[2] = arg2
         }
 
         actual fun glRasterPos2i(arg0: Int, arg1: Int) {
+            // Only known call sites are the glCopyPixels(GL_COLOR) copy-to-self pattern below; no-op otherwise.
         }
 
-        actual fun glBufferDataARBa(arg0: Int, arg1: Int, arg2: Long, arg3: Int) {
+        // ---- Matrix stack -----------------------------------------------------
+
+        actual fun glMatrixMode(arg0: Int) = exec { state.matrixStack.mode = arg0 }
+        actual fun glLoadIdentity() = exec { state.matrixStack.loadIdentity() }
+        actual fun glLoadMatrixf(arg0: FloatArray?, arg1: Int) = exec { state.matrixStack.loadMatrix(arg0.slice(arg1, 16)) }
+        actual fun glMultMatrixf(arg0: FloatArray?, arg1: Int) = exec { state.matrixStack.mult(arg0.slice(arg1, 16)) }
+        actual fun glPushMatrix() = exec { state.matrixStack.push() }
+        actual fun glPopMatrix() = exec { state.matrixStack.pop() }
+        actual fun glTranslatef(arg0: Float, arg1: Float, arg2: Float) = exec { state.matrixStack.translate(arg0, arg1, arg2) }
+        actual fun glScalef(arg0: Float, arg1: Float, arg2: Float) = exec { state.matrixStack.scale(arg0, arg1, arg2) }
+        actual fun glRotatef(arg0: Float, arg1: Float, arg2: Float, arg3: Float) = exec { state.matrixStack.rotate(arg0, arg1, arg2, arg3) }
+        actual fun glOrtho(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double) = exec {
+            state.matrixStack.ortho(arg0, arg1, arg2, arg3, arg4, arg5)
         }
 
-        actual fun glStencilFunc(arg0: Int, arg1: Int, arg2: Int) {
+        actual fun glFrustum(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double) = exec {
+            state.matrixStack.frustum(arg0, arg1, arg2, arg3, arg4, arg5)
         }
 
-        actual fun glClearColor(arg0: Float, arg1: Float, arg2: Float, arg3: Float) {
-        }
+        // ---- Display lists ------------------------------------------------
 
-        actual fun glRenderbufferStorageEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
-        }
-
-        actual fun glDeleteBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int) {
-        }
-
-        actual fun glCopyTexSubImage3D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int) {
-        }
-
-        actual fun glTexImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int) {
-        }
-
-        actual fun glReadPixelsi(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: IntArray?, arg7: Int) {
-        }
-
-        actual fun glTexCoordPointer(arg0: Int, arg1: Int, arg2: Int, arg3: Long) {
-        }
-
-        actual fun glBindTexture(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glLinkProgramARB(arg0: Long) {
-        }
-
-        actual fun glOrtho(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double) {
-        }
-
-        actual fun glUniformMatrix3fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int) {
-        }
-
-        actual fun glUniformMatrix2fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int) {
-        }
-
-        actual fun glBufferSubDataARBa(arg0: Int, arg1: Int, arg2: Int, arg3: Long) {
-        }
-
-        actual fun glDeleteRenderbuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int) {
-        }
-
-        actual fun glPixelStorei(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glScissor(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
-        }
-
-        actual fun glTexCoord2i(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glLineWidth(arg0: Float) {
-        }
-
-        actual fun glGenerateMipmapEXT(arg0: Int) {
-        }
-
-        actual fun glDeleteObjectARB(arg0: Long) {
-        }
-
-        actual fun glMultiTexCoord2i(arg0: Int, arg1: Int, arg2: Int) {
-        }
-
-        actual fun glRotatef(arg0: Float, arg1: Float, arg2: Float, arg3: Float) {
-        }
-
-        actual fun glMultiTexCoord2f(arg0: Int, arg1: Float, arg2: Float) {
-        }
-
-        actual fun glFramebufferRenderbufferEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
-        }
-
-        actual fun glTexSubImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int) {
-        }
-
-        actual fun glLightf(arg0: Int, arg1: Int, arg2: Float) {
-        }
-
-        actual fun glTexGenfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
-        }
-
-        actual fun glTexCoord3i(arg0: Int, arg1: Int, arg2: Int) {
-        }
-
-        actual fun glDrawArrays(arg0: Int, arg1: Int, arg2: Int) {
-        }
-
-        actual fun glCallList(arg0: Int) {
-        }
-
-        actual fun glDeleteProgramARB(arg0: Int) {
-        }
-
-        actual fun glBindFramebufferEXT(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glTexCoord3f(arg0: Float, arg1: Float, arg2: Float) {
-        }
-
-        actual fun glGenBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int) {
-        }
-
-        actual fun glVertexPointer(arg0: Int, arg1: Int, arg2: Int, arg3: Long) {
-        }
-
-        actual fun glGetInfoLogARB(arg0: Long, arg1: Int, arg2: IntArray?, arg3: Int, arg4: ByteArray?, arg5: Int) {
-        }
-
-        actual fun glReadPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: ByteArray?, arg7: Int) {
-        }
-
-        actual fun glDepthMask(arg0: Boolean) {
-        }
-
-        actual fun glEnd() {
+        actual fun glGenLists(arg0: Int): Int = state.displayLists.genLists(arg0)
+        actual fun glDeleteLists(arg0: Int, arg1: Int) = state.displayLists.deleteLists(arg0, arg1)
+        actual fun glNewList(arg0: Int, arg1: Int) {
+            state.displayLists.newList(arg0)
         }
 
         actual fun glEndList() {
+            state.displayLists.endList()
         }
 
-        actual fun glTexImage3Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: ByteArray?, arg10: Int) {
+        actual fun glCallList(arg0: Int) = exec { state.displayLists.callList(arg0) }
+
+        // ---- Core / fixed-function state ------------------------------------
+
+        private fun texturingUnitIndex(): Int? = when (state.activeTextureUnit) {
+            0, 1 -> state.activeTextureUnit
+            else -> null
         }
 
-        actual fun glTexImage1Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: ByteArray?, arg8: Int) {
+        actual fun glEnable(arg0: Int) = exec {
+            when (arg0) {
+                GL_LIGHTING -> state.lightingEnabled = true
+                WebGL2RenderingContext.TEXTURE_2D, WebGL2RenderingContext.TEXTURE_CUBE_MAP,
+                GL_TEXTURE_1D, GL_TEXTURE_3D,
+                    -> texturingUnitIndex()?.let { state.texturingEnabled[it] = true }
+                GL_FOG -> state.fogEnabled = true
+                GL_ALPHA_TEST -> state.alphaTestEnabled = true
+                in GL_LIGHT0..GL_LIGHT7, GL_COLOR_MATERIAL, GL_NORMALIZE, GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T,
+                GL_MULTISAMPLE,
+                    -> {
+                }
+                else -> gl.enable(arg0)
+            }
         }
 
-        actual fun glBlendFunc(arg0: Int, arg1: Int) {
+        actual fun glDisable(arg0: Int) = exec {
+            when (arg0) {
+                GL_LIGHTING -> state.lightingEnabled = false
+                WebGL2RenderingContext.TEXTURE_2D, WebGL2RenderingContext.TEXTURE_CUBE_MAP,
+                GL_TEXTURE_1D, GL_TEXTURE_3D,
+                    -> texturingUnitIndex()?.let { state.texturingEnabled[it] = false }
+                GL_FOG -> state.fogEnabled = false
+                GL_ALPHA_TEST -> state.alphaTestEnabled = false
+                in GL_LIGHT0..GL_LIGHT7, GL_COLOR_MATERIAL, GL_NORMALIZE, GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T,
+                GL_MULTISAMPLE,
+                    -> {
+                }
+                else -> gl.disable(arg0)
+            }
         }
 
-        actual fun glStencilOp(arg0: Int, arg1: Int, arg2: Int) {
-        }
-
-        actual fun glClearDepth(arg0: Float) {
-        }
-
-        actual fun glGetUniformLocationARB(arg0: Long, arg1: String?): Int {
-            TODO("Not yet implemented")
-        }
-
-        actual fun glNewList(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glViewport(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
-        }
-
-        actual fun glTexEnvfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
-        }
-
-        actual fun glPolygonMode(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glTexParameteri(arg0: Int, arg1: Int, arg2: Int) {
-        }
-
-        actual fun glPushMatrix() {
-        }
-
-        actual fun glPixelTransferf(arg0: Int, arg1: Float) {
-        }
-
-        actual fun glUniform1fARB(arg0: Int, arg1: Float) {
-        }
-
-        actual fun glBlitFramebufferEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: Int) {
-        }
-
-        actual fun glCopyTexSubImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) {
-        }
-
-        actual fun glCompileShaderARB(arg0: Long) {
-        }
-
-        actual fun glMaterialfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
-        }
-
-        actual fun glDetachObjectARB(arg0: Long, arg1: Long) {
-        }
-
-        actual fun glNormalPointer(arg0: Int, arg1: Int, arg2: Long) {
-        }
-
-        actual fun glUniform2fARB(arg0: Int, arg1: Float, arg2: Float) {
-        }
-
-        actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
-        }
-
-        actual fun glFogfv(arg0: Int, arg1: FloatArray?, arg2: Int) {
-        }
-
-        actual fun glGetFloatv(arg0: Int, arg1: FloatArray?, arg2: Int) {
-        }
+        actual fun glShadeModel(arg0: Int) {}
+        actual fun glColorMaterial(arg0: Int, arg1: Int) {}
 
         actual fun glHint(arg0: Int, arg1: Int) {
+            if (arg0 == WebGL2RenderingContext.GENERATE_MIPMAP_HINT || arg0 == WebGL2RenderingContext.FRAGMENT_SHADER_DERIVATIVE_HINT) {
+                gl.hint(arg0, arg1)
+            }
         }
 
-        actual fun glBufferDataARBub(arg0: Int, arg1: Int, arg2: ByteArray?, arg3: Int, arg4: Int) {
+        actual fun glPointSize(arg0: Float) {}
+        actual fun glLineWidth(arg0: Float) = gl.lineWidth(arg0)
+        actual fun glPolygonMode(arg0: Int, arg1: Int) {}
+        actual fun glPushAttrib(arg0: Int) {}
+        actual fun glPopAttrib() {}
+
+        actual fun glAlphaFunc(arg0: Int, arg1: Float) {
+            state.alphaRef = arg1
         }
 
-        actual fun glTexSubImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int) {
+        actual fun glBlendFunc(arg0: Int, arg1: Int) = gl.blendFunc(arg0, arg1)
+        actual fun glDepthFunc(arg0: Int) = gl.depthFunc(arg0)
+        actual fun glDepthMask(arg0: Boolean) = gl.depthMask(arg0)
+        actual fun glCullFace(arg0: Int) = gl.cullFace(arg0)
+        actual fun glColorMask(arg0: Boolean, arg1: Boolean, arg2: Boolean, arg3: Boolean) = gl.colorMask(arg0, arg1, arg2, arg3)
+        actual fun glScissor(arg0: Int, arg1: Int, arg2: Int, arg3: Int) = gl.scissor(arg0, arg1, arg2, arg3)
+        actual fun glStencilFunc(arg0: Int, arg1: Int, arg2: Int) = gl.stencilFunc(arg0, arg1, arg2)
+        actual fun glStencilOp(arg0: Int, arg1: Int, arg2: Int) = gl.stencilOp(arg0, arg1, arg2)
+
+        actual fun glViewport(arg0: Int, arg1: Int, arg2: Int, arg3: Int) = gl.viewport(arg0, arg1, arg2, arg3)
+        actual fun glClearColor(arg0: Float, arg1: Float, arg2: Float, arg3: Float) = gl.clearColor(arg0, arg1, arg2, arg3)
+        actual fun glClearDepth(arg0: Float) = gl.clearDepth(arg0)
+        actual fun glClear(arg0: Int) = gl.clear(arg0)
+        actual fun glFinish() = gl.finish()
+        actual fun glFlush() = gl.flush()
+
+        actual fun glLightf(arg0: Int, arg1: Int, arg2: Float) {}
+        actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
+            if (arg0 != GL_LIGHT0) return@exec
+            val v = arg2.slice(arg3, 4)
+            when (arg1) {
+                GL_AMBIENT -> v.copyInto(state.light0Ambient)
+                GL_DIFFUSE -> v.copyInto(state.light0Diffuse)
+                GL_POSITION -> {
+                    state.light0Direction[0] = v[0]; state.light0Direction[1] = v[1]; state.light0Direction[2] = v[2]
+                }
+            }
         }
 
-        actual fun glClientActiveTexture(arg0: Int) {
+        actual fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
+            if (arg0 == GL_LIGHT_MODEL_AMBIENT) arg1.slice(arg2, 4).copyInto(state.globalAmbient)
         }
 
-        actual fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int) {
+        actual fun glMaterialfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
+
+        actual fun glFogf(arg0: Int, arg1: Float) = exec {
+            when (arg0) {
+                GL_FOG_START -> state.fogStart = arg1; GL_FOG_END -> state.fogEnd = arg1
+            }
         }
 
-        actual fun glTexParameterf(arg0: Int, arg1: Int, arg2: Float) {
+        actual fun glFogi(arg0: Int, arg1: Int) {}
+        actual fun glFogfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
+            when (arg0) {
+                GL_FOG_COLOR -> arg1.slice(arg2, 4).copyInto(state.fogColor)
+                GL_FOG_START -> state.fogStart = arg1?.get(arg2) ?: state.fogStart
+                GL_FOG_END -> state.fogEnd = arg1?.get(arg2) ?: state.fogEnd
+            }
         }
 
-        actual fun glMatrixMode(arg0: Int) {
+        actual fun glTexGeni(arg0: Int, arg1: Int, arg2: Int) {}
+        actual fun glTexGenfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
+        actual fun glTexEnvi(arg0: Int, arg1: Int, arg2: Int) = exec {
+            if (arg0 != GL_TEXTURE_ENV) return@exec
+            val unit = texturingUnitIndex() ?: return@exec
+            when (arg1) {
+                GL_COMBINE_RGB -> state.combineRgb[unit] = arg2
+                GL_COMBINE_ALPHA -> state.combineAlpha[unit] = arg2
+                GL_SOURCE0_RGB -> state.source0Rgb[unit] = arg2
+                GL_SOURCE1_RGB -> state.source1Rgb[unit] = arg2
+                GL_SOURCE2_RGB -> state.source2Rgb[unit] = arg2
+                GL_OPERAND0_RGB -> state.operand0Rgb[unit] = arg2
+                GL_OPERAND1_RGB -> state.operand1Rgb[unit] = arg2
+                GL_OPERAND2_RGB -> state.operand2Rgb[unit] = arg2
+            }
         }
 
-        actual fun glCopyTexImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) {
+        actual fun glTexEnvf(arg0: Int, arg1: Int, arg2: Float) {}
+        actual fun glTexEnvfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
+            if (arg0 == GL_TEXTURE_ENV && arg1 == GL_TEXTURE_ENV_COLOR) {
+                val unit = texturingUnitIndex() ?: return@exec
+                arg2.slice(arg3, 4).copyInto(state.textureEnvColor[unit])
+            }
         }
 
-        actual fun glTexImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int) {
+        // ---- Queries ----------------------------------------------------------
+
+        private const val GL_MAX_TEXTURE_UNITS = 34018
+        private const val GL_MAX_TEXTURE_COORDS = 34929
+        private const val GL_POINT_SIZE_RANGE = 2834
+
+        // Legacy unsized formats (GL_RGBA, GL_DEPTH_COMPONENT, ...) were valid renderbuffer/texture
+        private fun sizedInternalFormat(format: Int): Int = when (format) {
+            6408 -> WebGL2RenderingContext.RGBA8 // GL_RGBA
+            6407 -> WebGL2RenderingContext.RGB8 // GL_RGB
+            6406 -> WebGL2RenderingContext.R8 // GL_ALPHA (closest single-channel equivalent)
+            6409 -> WebGL2RenderingContext.R8 // GL_LUMINANCE
+            6410 -> WebGL2RenderingContext.RG8 // GL_LUMINANCE_ALPHA
+            6402 -> WebGL2RenderingContext.DEPTH_COMPONENT24 // GL_DEPTH_COMPONENT
+            34041 -> WebGL2RenderingContext.DEPTH24_STENCIL8 // GL_DEPTH_STENCIL
+            else -> format
         }
 
-        actual fun glUnmapBufferARB(arg0: Int): Boolean {
-            TODO("Not yet implemented")
+        private fun translatePname(pname: Int): Int = when (pname) {
+            GL_MAX_TEXTURE_UNITS, GL_MAX_TEXTURE_COORDS -> WebGL2RenderingContext.MAX_TEXTURE_IMAGE_UNITS
+            GL_POINT_SIZE_RANGE -> WebGL2RenderingContext.ALIASED_POINT_SIZE_RANGE
+            else -> pname
         }
 
-        actual fun glColor4ub(arg0: Byte, arg1: Byte, arg2: Byte, arg3: Byte) {
-        }
-
-        actual fun glBufferSubDataARBub(arg0: Int, arg1: Int, arg2: Int, arg3: ByteArray?, arg4: Int) {
-        }
-
-        actual fun glMultMatrixf(arg0: FloatArray?, arg1: Int) {
-        }
-
-        actual fun glFogi(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glVertex2i(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glDepthFunc(arg0: Int) {
-        }
-
-        actual fun glDrawPixelsi(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IntArray?, arg5: Int) {
-        }
-
-        actual fun glDrawPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int) {
-        }
-
-        actual fun glVertex3f(arg0: Float, arg1: Float, arg2: Float) {
-        }
-
-        actual fun glUniform4fARB(arg0: Int, arg1: Float, arg2: Float, arg3: Float, arg4: Float) {
-        }
-
-        actual fun glFrustum(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double) {
-        }
-
-        actual fun glTexEnvi(arg0: Int, arg1: Int, arg2: Int) {
-        }
-
-        actual fun glCreateProgramObjectARB(): Long {
-            TODO("Not yet implemented")
-        }
-
-        actual fun glNormal3f(arg0: Float, arg1: Float, arg2: Float) {
-        }
-
-        actual fun glGetTexImageub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int) {
-        }
-
-        actual fun glGenFramebuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int) {
-        }
-
-        actual fun glGetProgramivARB(arg0: Int, arg1: Int, arg2: IntArray?, arg3: Int) {
-        }
-
-        actual fun glUniform3fARB(arg0: Int, arg1: Float, arg2: Float, arg3: Float) {
-        }
-
-        actual fun glDrawBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int) {
-        }
-
-        actual fun glCreateShaderObjectARB(arg0: Int): Long {
-            TODO("Not yet implemented")
-        }
-
-        actual fun glMapBufferARB(arg0: Int, arg1: Int): Long {
-            TODO("Not yet implemented")
-        }
-
-        actual fun glColor3ub(arg0: Byte, arg1: Byte, arg2: Byte) {
+        actual fun glGetError(): Int = gl.getError()
+        actual fun glGetString(arg0: Int): String {
+            if (arg0 == 7938) return "2.1.0 WebGL2"
+            return gl.getParameter(arg0)?.toString() ?: ""
         }
 
         actual fun glGetIntegerv(arg0: Int, arg1: IntArray?, arg2: Int) {
+            when (val v = gl.getParameter(translatePname(arg0))) {
+                is org.khronos.webgl.Int32Array -> for (i in 0 until v.length) arg1?.set(arg2 + i, v.asDynamic()[i] as Int)
+                is Int -> arg1?.set(arg2, v)
+                is Double -> arg1?.set(arg2, v.toInt())
+                is Boolean -> arg1?.set(arg2, if (v) 1 else 0)
+                else -> arg1?.set(arg2, 0)
+            }
         }
 
-        actual fun glShadeModel(arg0: Int) {
+        actual fun glGetFloatv(arg0: Int, arg1: FloatArray?, arg2: Int) {
+            when (val v = gl.getParameter(translatePname(arg0))) {
+                is org.khronos.webgl.Float32Array -> for (i in 0 until v.length) arg1?.set(arg2 + i, v.asDynamic()[i] as Float)
+                is Float -> arg1?.set(arg2, v)
+                is Double -> arg1?.set(arg2, v.toFloat())
+                else -> arg1?.set(arg2, 0f)
+            }
         }
 
-        actual fun glProgramStringARB(arg0: Int, arg1: Int, arg2: String?) {
-        }
-
-        actual fun glGenProgramARB(): Int {
-            TODO("Not yet implemented")
-        }
-
-        actual fun glPushAttrib(arg0: Int) {
-        }
-
-        actual fun glFlush() {
-        }
-
-        actual fun glRenderbufferStorageMultisampleEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) {
-        }
-
-        actual fun glEnable(arg0: Int) {
-        }
-
-        actual fun glDisable(arg0: Int) {
-        }
+        // ---- Textures -----------------------------------------------------
 
         actual fun glGenTextures(arg0: Int, arg1: IntArray?, arg2: Int) {
-        }
-
-        actual fun glFramebufferTexture2DEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) {
-        }
-
-        actual fun glBindBufferARB(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glMultiTexCoord3i(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
-        }
-
-        actual fun glColorMaterial(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glTexSubImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int) {
-        }
-
-        actual fun glShaderSourceARB(arg0: Long, arg1: String?) {
-        }
-
-        actual fun glGetTexImagei(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IntArray?, arg5: Int) {
-        }
-
-        actual fun glGetString(arg0: Int): String {
-            TODO("Not yet implemented")
-        }
-
-        actual fun glPixelZoom(arg0: Float, arg1: Float) {
-        }
-
-        actual fun glDisableClientState(arg0: Int) {
-        }
-
-        actual fun glClear(arg0: Int) {
-        }
-
-        actual fun glPointSize(arg0: Float) {
-        }
-
-        actual fun glCopyPixels(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) {
-        }
-
-        actual fun glTexCoord2f(arg0: Float, arg1: Float) {
-        }
-
-        actual fun glBindProgramARB(arg0: Int, arg1: Int) {
-        }
-
-        actual fun glGenRenderbuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int) {
-        }
-
-        actual fun glPopAttrib() {
-        }
-
-        actual fun glVertex2f(arg0: Float, arg1: Float) {
-        }
-
-        actual fun glLoadIdentity() {
-        }
-
-        actual fun glGenLists(arg0: Int): Int {
-            TODO("Not yet implemented")
-        }
-
-        actual fun glColorPointer(arg0: Int, arg1: Int, arg2: Int, arg3: Long) {
-        }
-
-        actual fun glPopMatrix() {
-        }
-
-        actual fun glEnableClientState(arg0: Int) {
-        }
-
-        actual fun glShaderSourceRawARB(arg0: Long, arg1: ByteArray?) {
-        }
-
-        actual fun glColor3f(arg0: Float, arg1: Float, arg2: Float) {
-        }
-
-        actual fun glTexEnvf(arg0: Int, arg1: Int, arg2: Float) {
-        }
-
-        actual fun glProgramLocalParameter4fARB(arg0: Int, arg1: Int, arg2: Float, arg3: Float, arg4: Float, arg5: Float) {
-        }
-
-        actual fun glAlphaFunc(arg0: Int, arg1: Float) {
+            for (i in 0 until arg0) {
+                val id = state.textures.allocate(gl.createTexture()!!)
+                arg1?.set(arg2 + i, id)
+            }
         }
 
         actual fun glDeleteTextures(arg0: Int, arg1: IntArray?, arg2: Int) {
+            for (i in 0 until arg0) {
+                val id = arg1?.get(arg2 + i) ?: continue
+                state.textures[id]?.let { gl.deleteTexture(it) }
+                state.textures.release(id)
+            }
         }
 
-        actual fun glDrawBuffer(arg0: Int) {
+        actual fun glBindTexture(arg0: Int, arg1: Int) = exec {
+            val target = fixTarget(arg0)
+            val tex = if (arg1 == 0) null else state.textures[arg1]
+            gl.bindTexture(target, tex)
+            val unit = state.activeTextureUnit
+            if (target == WebGL2RenderingContext.TEXTURE_2D) state.boundTexture2D[unit] = tex
+            else if (target == WebGL2RenderingContext.TEXTURE_CUBE_MAP) state.boundTextureCubeMap[unit] = tex
         }
 
-        actual fun glBegin(arg0: Int) {
+        actual fun glTexParameteri(arg0: Int, arg1: Int, arg2: Int) = gl.texParameteri(fixTarget(arg0), arg1, arg2)
+        actual fun glTexParameterf(arg0: Int, arg1: Int, arg2: Float) = gl.texParameterf(fixTarget(arg0), arg1, arg2)
+        actual fun glGenerateMipmapEXT(arg0: Int) = gl.generateMipmap(fixTarget(arg0))
+
+        actual fun glActiveTexture(arg0: Int) = exec {
+            state.activeTextureUnit = arg0 - WebGL2RenderingContext.TEXTURE0
+            gl.activeTexture(arg0)
         }
 
-        actual fun glFogf(arg0: Int, arg1: Float) {
+        actual fun glClientActiveTexture(arg0: Int) {}
+
+        actual fun glMultiTexCoord2f(arg0: Int, arg1: Float, arg2: Float) = exec {
+            when (arg0 - WebGL2RenderingContext.TEXTURE0) {
+                0 -> {
+                    state.currentTexCoord[0] = arg1; state.currentTexCoord[1] = arg2
+                }
+                1 -> {
+                    state.currentTexCoord1[0] = arg1; state.currentTexCoord1[1] = arg2
+                }
+            }
         }
 
-        actual fun glAttachObjectARB(arg0: Long, arg1: Long) {
+        actual fun glMultiTexCoord2i(arg0: Int, arg1: Int, arg2: Int) = exec {
+            when (arg0 - WebGL2RenderingContext.TEXTURE0) {
+                0 -> {
+                    state.currentTexCoord[0] = arg1.toFloat(); state.currentTexCoord[1] = arg2.toFloat()
+                }
+                1 -> {
+                    state.currentTexCoord1[0] = arg1.toFloat(); state.currentTexCoord1[1] = arg2.toFloat()
+                }
+            }
         }
 
-        actual fun glCheckFramebufferStatusEXT(arg0: Int): Int {
-            TODO("Not yet implemented")
+        actual fun glMultiTexCoord3i(arg0: Int, arg1: Int, arg2: Int, arg3: Int) = exec {
+            when (arg0 - WebGL2RenderingContext.TEXTURE0) {
+                0 -> {
+                    state.currentTexCoord[0] = arg1.toFloat(); state.currentTexCoord[1] = arg2.toFloat()
+                }
+                1 -> {
+                    state.currentTexCoord1[0] = arg1.toFloat(); state.currentTexCoord1[1] = arg2.toFloat()
+                }
+            }
+        }
+
+        actual fun glTexImage1Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: ByteArray?, arg8: Int) {
+            val data = arg7?.asUint8Array()?.subarray(arg8, arg7.size)
+            gl.texImage2D(WebGL2RenderingContext.TEXTURE_2D, arg1, arg2, arg3, 1, arg4, arg5, arg6, data)
         }
 
         actual fun glTexImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int) {
+            val data = arg8?.asUint8Array()?.subarray(arg9, arg8.size)
+            gl.texImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
+            logGlErrorIfAny(gl, "glTexImage2Dub", "target=$arg0 level=$arg1 internalformat=$arg2 w=$arg3 h=$arg4 format=$arg6 type=$arg7 hasData=${arg8 != null}")
         }
 
-        actual fun glUniformMatrix4fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int) {
+        actual fun glTexImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int) {
+            val type = fixPixelType(arg7)
+            var data = if (arg8 == null) null
+            else if (type == WebGL2RenderingContext.UNSIGNED_BYTE) arg8.asUint8ArrayView(arg9, arg8.size - arg9)
+            else arg8.asInt32Array().subarray(arg9, arg8.size)
+            val target = fixTarget(arg0)
+            val internalformat = fixBgraFormat(arg2)
+            val format = fixBgraFormat(arg6)
+            if (arg6 == GL_BGRA && data is Uint8Array) data = swapRedBlue(data)
+            gl.texImage2D(target, arg1, internalformat, arg3, arg4, arg5, format, type, data)
+            logGlErrorIfAny(gl, "glTexImage2Di", "target=$arg0 level=$arg1 internalformat=$arg2->$internalformat w=$arg3 h=$arg4 format=$arg6->$format type=$arg7->$type hasData=${arg8 != null}")
         }
 
-        actual fun glProgramRawARB(arg0: Int, arg1: Int, arg2: ByteArray?) {
+        actual fun glTexImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int) {
+            val data = arg8?.asFloat32Array()?.subarray(arg9, arg8.size)
+            gl.texImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
+            logGlErrorIfAny(gl, "glTexImage2Df", "target=$arg0 level=$arg1 internalformat=$arg2 w=$arg3 h=$arg4 format=$arg6 type=$arg7 hasData=${arg8 != null}")
         }
+
+        actual fun glTexImage3Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: ByteArray?, arg10: Int) {
+            val data = arg9?.asUint8Array()?.subarray(arg10, arg9.size)
+            gl.texImage3D(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, data)
+        }
+
+        actual fun glTexSubImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int) {
+            val data = arg8?.asUint8Array()?.subarray(arg9, arg8.size)
+            gl.texSubImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
+            logGlErrorIfAny(gl, "glTexSubImage2Dub", "target=$arg0 level=$arg1 x=$arg2 y=$arg3 w=$arg4 h=$arg5 format=$arg6 type=$arg7 hasData=${arg8 != null}")
+        }
+
+        actual fun glTexSubImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int) {
+            // See glTexImage2Di - normalize the type, then reinterpret as bytes when uploading as
+            // GL_UNSIGNED_BYTE.
+            val type = fixPixelType(arg7)
+            var data = if (arg8 == null) null
+            else if (type == WebGL2RenderingContext.UNSIGNED_BYTE) arg8.asUint8ArrayView(arg9, arg8.size - arg9)
+            else arg8.asInt32Array().subarray(arg9, arg8.size)
+            val target = fixTarget(arg0)
+            val format = fixBgraFormat(arg6)
+            if (arg6 == GL_BGRA && data is Uint8Array) data = swapRedBlue(data)
+            gl.texSubImage2D(target, arg1, arg2, arg3, arg4, arg5, format, type, data)
+            logGlErrorIfAny(gl, "glTexSubImage2Di", "target=$arg0 level=$arg1 x=$arg2 y=$arg3 w=$arg4 h=$arg5 format=$arg6->$format type=$arg7->$type hasData=${arg8 != null}")
+        }
+
+        actual fun glTexSubImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int) {
+            val data = arg8?.asFloat32Array()?.subarray(arg9, arg8.size)
+            gl.texSubImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
+            logGlErrorIfAny(gl, "glTexSubImage2Df", "target=$arg0 level=$arg1 x=$arg2 y=$arg3 w=$arg4 h=$arg5 format=$arg6 type=$arg7 hasData=${arg8 != null}")
+        }
+
+        actual fun glCopyTexImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) =
+            gl.copyTexImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+
+        actual fun glCopyTexSubImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) =
+            gl.copyTexSubImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+
+        actual fun glCopyTexSubImage3D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int) =
+            gl.copyTexSubImage3D(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
+
+        // Reading a mip's dimensions has no WebGL2 equivalent (no glGetTexLevelParameteriv); left
+        // unimplemented since actual call sites are edge-case texture-tool paths, not core rendering.
+        actual fun glGetTexImageub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int) {}
+        actual fun glGetTexImagei(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IntArray?, arg5: Int) {}
+
+        // ---- Buffers / client arrays / draw calls -----------------------------
+
+        actual fun glGenBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int) {
+            for (i in 0 until arg0) {
+                val buf = gl.createBuffer()
+                if (buf == null) {
+                    console.error("[jaggl] glGenBuffersARB: gl.createBuffer() returned null")
+                }
+                val id = state.buffers.allocate(buf!!)
+                arg1?.set(arg2 + i, id)
+            }
+        }
+
+        actual fun glDeleteBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int) {
+            for (i in 0 until arg0) {
+                val id = arg1?.get(arg2 + i) ?: continue
+                state.buffers[id]?.let { gl.deleteBuffer(it) }
+                state.buffers.release(id)
+            }
+        }
+
+        actual fun glBindBufferARB(arg0: Int, arg1: Int) {
+            val buf = if (arg1 == 0) null else state.buffers[arg1]
+            gl.bindBuffer(arg0, buf)
+            when (arg0) {
+                WebGL2RenderingContext.ARRAY_BUFFER -> state.boundArrayBuffer = buf
+                WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER -> state.boundElementArrayBuffer = buf
+            }
+        }
+
+        actual fun glBufferDataARBa(arg0: Int, arg1: Int, arg2: Long, arg3: Int) {
+            val bytes = jaclib.memory.heap.nativeHeapBytes(arg2)
+            if (bytes == null) gl.bufferData(arg0, arg1, arg3)
+            else gl.bufferData(arg0, bytes.asUint8Array().subarray(0, arg1), arg3)
+        }
+
+        actual fun glBufferDataARBub(arg0: Int, arg1: Int, arg2: ByteArray?, arg3: Int, arg4: Int) {
+            val data = arg2 ?: return
+            gl.bufferData(arg0, data.asUint8Array().subarray(arg3, arg3 + arg1), arg4)
+        }
+
+        actual fun glBufferSubDataARBa(arg0: Int, arg1: Int, arg2: Int, arg3: Long) {
+            val bytes = jaclib.memory.heap.nativeHeapBytes(arg3) ?: return
+            gl.bufferSubData(arg0, arg1, bytes.asUint8Array().subarray(0, arg2))
+        }
+
+        actual fun glBufferSubDataARBub(arg0: Int, arg1: Int, arg2: Int, arg3: ByteArray?, arg4: Int) {
+            val data = arg3 ?: return
+            gl.bufferSubData(arg0, arg1, data.asUint8Array().subarray(arg4, arg4 + arg2))
+        }
+
+        actual fun glMapBufferARB(arg0: Int, arg1: Int): Long = 0L
+        actual fun glUnmapBufferARB(arg0: Int): Boolean = true
+
+        actual fun glEnableClientState(arg0: Int) = exec {
+            val loc = attribForClientState(arg0) ?: return@exec
+            state.clientArrays.getValue(loc).enabled = true
+        }
+
+        actual fun glDisableClientState(arg0: Int) = exec {
+            val loc = attribForClientState(arg0) ?: return@exec
+            state.clientArrays.getValue(loc).enabled = false
+        }
+
+        private fun attribForClientState(cap: Int): Int? = when (cap) {
+            GL_VERTEX_ARRAY -> ATTRIB_POSITION
+            GL_COLOR_ARRAY -> ATTRIB_COLOR
+            GL_TEXTURE_COORD_ARRAY -> ATTRIB_TEXCOORD0
+            GL_NORMAL_ARRAY -> ATTRIB_NORMAL
+            else -> null
+        }
+
+        actual fun glVertexPointer(arg0: Int, arg1: Int, arg2: Int, arg3: Long) = exec {
+            val p = state.clientArrays.getValue(ATTRIB_POSITION)
+            p.size = arg0; p.type = arg1; p.stride = arg2; p.offset = arg3.toInt()
+            p.sourceBuffer = state.boundArrayBuffer
+        }
+
+        actual fun glColorPointer(arg0: Int, arg1: Int, arg2: Int, arg3: Long) = exec {
+            val p = state.clientArrays.getValue(ATTRIB_COLOR)
+            p.size = arg0; p.type = arg1; p.stride = arg2; p.offset = arg3.toInt()
+            p.normalized = arg1 == WebGL2RenderingContext.UNSIGNED_BYTE
+            p.sourceBuffer = state.boundArrayBuffer
+        }
+
+        actual fun glTexCoordPointer(arg0: Int, arg1: Int, arg2: Int, arg3: Long) = exec {
+            val p = state.clientArrays.getValue(ATTRIB_TEXCOORD0)
+            p.size = arg0; p.type = arg1; p.stride = arg2; p.offset = arg3.toInt()
+            p.sourceBuffer = state.boundArrayBuffer
+        }
+
+        actual fun glNormalPointer(arg0: Int, arg1: Int, arg2: Long) = exec {
+            val p = state.clientArrays.getValue(ATTRIB_NORMAL)
+            p.size = 3; p.type = arg0; p.stride = arg1; p.offset = arg2.toInt()
+            p.sourceBuffer = state.boundArrayBuffer
+        }
+
+        private fun bindClientArrays() {
+            for ((loc, p) in state.clientArrays) {
+                if (p.enabled) {
+                    gl.bindBuffer(WebGL2RenderingContext.ARRAY_BUFFER, p.sourceBuffer)
+                    gl.enableVertexAttribArray(loc)
+                    gl.vertexAttribPointer(loc, p.size, p.type, p.normalized, p.stride, p.offset)
+                } else {
+                    gl.disableVertexAttribArray(loc)
+                    when (loc) {
+                        ATTRIB_COLOR -> gl.vertexAttrib4f(
+                            loc, state.currentColor[0], state.currentColor[1], state.currentColor[2], state.currentColor[3]
+                        )
+                        ATTRIB_TEXCOORD0 -> gl.vertexAttrib2f(loc, state.currentTexCoord[0], state.currentTexCoord[1])
+                        ATTRIB_TEXCOORD1 -> gl.vertexAttrib2f(loc, state.currentTexCoord1[0], state.currentTexCoord1[1])
+                        ATTRIB_NORMAL -> gl.vertexAttrib3f(loc, state.currentNormal[0], state.currentNormal[1], state.currentNormal[2])
+                    }
+                }
+            }
+        }
+
+        actual fun glDrawArrays(arg0: Int, arg1: Int, arg2: Int) = exec {
+            bindClientArrays()
+            state.prepareDraw()
+            gl.drawArrays(arg0, arg1, arg2)
+        }
+
+        actual fun glDrawElements(arg0: Int, arg1: Int, arg2: Int, arg3: Long) = exec {
+            bindClientArrays()
+            if (state.boundElementArrayBuffer == null) {
+                val bytesPerIndex = when (arg2) {
+                    WebGL2RenderingContext.UNSIGNED_BYTE -> 1
+                    5123 /* GL_UNSIGNED_SHORT */ -> 2
+                    else -> 4
+                }
+                val bytes = jaclib.memory.heap.nativeHeapBytes(arg3)
+                gl.bindBuffer(WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER, state.clientElementBuffer)
+                if (bytes != null) {
+                    gl.bufferData(
+                        WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER,
+                        bytes.asUint8Array().subarray(0, arg1 * bytesPerIndex),
+                        WebGL2RenderingContext.STREAM_DRAW
+                    )
+                }
+                state.prepareDraw()
+                gl.drawElements(arg0, arg1, arg2, 0)
+                gl.bindBuffer(WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER, null)
+            } else {
+                gl.bindBuffer(WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER, state.boundElementArrayBuffer)
+                state.prepareDraw()
+                gl.drawElements(arg0, arg1, arg2, arg3.toInt())
+            }
+        }
+
+        // ---- Legacy pixel transfer --------------------------------------------
+
+        actual fun glPixelStorei(arg0: Int, arg1: Int) = gl.pixelStorei(arg0, arg1)
+        actual fun glPixelTransferf(arg0: Int, arg1: Float) {}
+        actual fun glPixelZoom(arg0: Float, arg1: Float) {}
+        actual fun glReadPixelsi(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: IntArray?, arg7: Int) {
+            arg6 ?: return
+            gl.readPixels(arg0, arg1, arg2, arg3, arg4, arg5, arg6.asInt32Array())
+        }
+
+        actual fun glReadPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: ByteArray?, arg7: Int) {
+            arg6 ?: return
+            gl.readPixels(arg0, arg1, arg2, arg3, arg4, arg5, arg6.asUint8Array())
+        }
+
+        // Both known call sites are a full-framebuffer copy-to-self (src == dst); safe no-op.
+        actual fun glCopyPixels(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) {}
+        actual fun glDrawPixelsi(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: IntArray?, arg5: Int) {}
+        actual fun glDrawPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: ByteArray?, arg5: Int) {}
+
+        // ---- Framebuffers / renderbuffers --------------------------------------
+
+        actual fun glGenFramebuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int) {
+            for (i in 0 until arg0) {
+                val id = state.framebuffers.allocate(gl.createFramebuffer()!!)
+                arg1?.set(arg2 + i, id)
+            }
+        }
+
+        actual fun glDeleteFramebuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int) {
+            for (i in 0 until arg0) {
+                val id = arg1?.get(arg2 + i) ?: continue
+                state.framebuffers[id]?.let { gl.deleteFramebuffer(it) }
+                state.framebuffers.release(id)
+            }
+        }
+
+        actual fun glBindFramebufferEXT(arg0: Int, arg1: Int) {
+            val fb = if (arg1 == 0) null else state.framebuffers[arg1]
+            gl.bindFramebuffer(arg0, fb)
+            state.boundFramebuffer = fb
+        }
+
+        actual fun glFramebufferTexture2DEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) {
+            val tex = if (arg3 == 0) null else state.textures[arg3]
+            gl.framebufferTexture2D(arg0, arg1, fixTarget(arg2), tex, arg4)
+        }
+
+        actual fun glFramebufferTexture3DEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int) {
+            val tex = if (arg3 == 0) null else state.textures[arg3]
+            gl.framebufferTextureLayer(arg0, arg1, tex, arg4, arg5)
+        }
+
+        actual fun glFramebufferRenderbufferEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
+            val rb = if (arg3 == 0) null else state.renderbuffers[arg3]
+            gl.framebufferRenderbuffer(arg0, arg1, arg2, rb)
+        }
+
+        actual fun glCheckFramebufferStatusEXT(arg0: Int): Int = gl.checkFramebufferStatus(arg0)
+        actual fun glBlitFramebufferEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: Int) =
+            gl.blitFramebuffer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
+
+        actual fun glDrawBuffer(arg0: Int) {
+            val mode = if (state.boundFramebuffer == null && arg0 != WebGL2RenderingContext.NONE) {
+                WebGL2RenderingContext.BACK
+            } else arg0
+            gl.drawBuffers(arrayOf(mode))
+        }
+
+        actual fun glDrawBuffersARB(arg0: Int, arg1: IntArray?, arg2: Int) = gl.drawBuffers(arg1.slice(arg2, arg0).toTypedArray())
+        actual fun glReadBuffer(arg0: Int) {
+            val mode = if (state.boundFramebuffer == null && arg0 != WebGL2RenderingContext.NONE) {
+                WebGL2RenderingContext.BACK
+            } else arg0
+            gl.readBuffer(mode)
+        }
+
+        actual fun glGenRenderbuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int) {
+            for (i in 0 until arg0) {
+                val id = state.renderbuffers.allocate(gl.createRenderbuffer()!!)
+                arg1?.set(arg2 + i, id)
+            }
+        }
+
+        actual fun glDeleteRenderbuffersEXT(arg0: Int, arg1: IntArray?, arg2: Int) {
+            for (i in 0 until arg0) {
+                val id = arg1?.get(arg2 + i) ?: continue
+                state.renderbuffers[id]?.let { gl.deleteRenderbuffer(it) }
+                state.renderbuffers.release(id)
+            }
+        }
+
+        actual fun glBindRenderbufferEXT(arg0: Int, arg1: Int) = gl.bindRenderbuffer(arg0, if (arg1 == 0) null else state.renderbuffers[arg1])
+        actual fun glRenderbufferStorageEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int) =
+            gl.renderbufferStorage(arg0, sizedInternalFormat(arg1), arg2, arg3)
+
+        actual fun glRenderbufferStorageMultisampleEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) =
+            gl.renderbufferStorageMultisample(arg0, arg1, sizedInternalFormat(arg2), arg3, arg4)
+
+        // ---- ARB shader objects (GLSL) -----------------------------------------
+
+        actual fun glCreateShaderObjectARB(arg0: Int): Long {
+            val shader = gl.createShader(arg0) ?: return 0L
+            return state.glObjects.allocate(ShaderOrProgram.Shader(shader, arg0))
+        }
+
+        actual fun glShaderSourceARB(arg0: Long, arg1: String?) {
+            val obj = state.glObjects[arg0] as? ShaderOrProgram.Shader ?: return
+            gl.shaderSource(obj.shader, translateLegacyGlsl(arg1 ?: "", obj.type))
+        }
+
+        actual fun glShaderSourceRawARB(arg0: Long, arg1: ByteArray?) {
+            val obj = state.glObjects[arg0] as? ShaderOrProgram.Shader ?: return
+            gl.shaderSource(obj.shader, translateLegacyGlsl(arg1?.decodeToString() ?: "", obj.type))
+        }
+
+        actual fun glCompileShaderARB(arg0: Long) {
+            (state.glObjects[arg0] as? ShaderOrProgram.Shader)?.let { gl.compileShader(it.shader) }
+        }
+
+        actual fun glCreateProgramObjectARB(): Long {
+            val program = gl.createProgram() ?: return 0L
+            return state.glObjects.allocate(ShaderOrProgram.Program(program))
+        }
+
+        actual fun glAttachObjectARB(arg0: Long, arg1: Long) {
+            val obj = state.glObjects[arg0] as? ShaderOrProgram.Program ?: return
+            val shaderObj = state.glObjects[arg1] as? ShaderOrProgram.Shader ?: return
+            gl.attachShader(obj.program, shaderObj.shader)
+            obj.attachedTypes.add(shaderObj.type)
+        }
+
+        actual fun glDetachObjectARB(arg0: Long, arg1: Long) {
+            val obj = state.glObjects[arg0] as? ShaderOrProgram.Program ?: return
+            val shaderObj = state.glObjects[arg1] as? ShaderOrProgram.Shader ?: return
+            gl.detachShader(obj.program, shaderObj.shader)
+            obj.attachedTypes.remove(shaderObj.type)
+        }
+
+        actual fun glLinkProgramARB(arg0: Long) {
+            (state.glObjects[arg0] as? ShaderOrProgram.Program)?.let {
+                if (WebGL2RenderingContext.VERTEX_SHADER !in it.attachedTypes && !it.hasSyntheticVertexShader) {
+                    gl.attachShader(it.program, state.syntheticVertexShader)
+                    it.hasSyntheticVertexShader = true
+                }
+                gl.linkProgram(it.program)
+                it.compat = CompatUniformLocations(gl, it.program)
+            }
+        }
+
+        actual fun glUseProgramObjectARB(arg0: Long) {
+            val obj = if (arg0 == 0L) null else state.glObjects[arg0] as? ShaderOrProgram.Program
+            gl.useProgram(obj?.program)
+            state.boundProgram = obj?.program
+            state.boundProgramObj = obj
+        }
+
+        actual fun glDeleteObjectARB(arg0: Long) {
+            when (val obj = state.glObjects[arg0]) {
+                is ShaderOrProgram.Program -> gl.deleteProgram(obj.program)
+                is ShaderOrProgram.Shader -> gl.deleteShader(obj.shader)
+                null -> return
+            }
+            state.glObjects.release(arg0)
+        }
+
+        actual fun glGetObjectParameterivARB(arg0: Long, arg1: Int, arg2: IntArray?, arg3: Int) {
+            val obj = state.glObjects[arg0]
+            if (arg1 == 35716) {
+                val log = when (obj) {
+                    is ShaderOrProgram.Program -> gl.getProgramInfoLog(obj.program)
+                    is ShaderOrProgram.Shader -> gl.getShaderInfoLog(obj.shader)
+                    null -> null
+                }
+                arg2?.set(arg3, (log?.length ?: 0) + 1)
+                return
+            }
+            val result: Any? = when (obj) {
+                is ShaderOrProgram.Program -> gl.getProgramParameter(obj.program, arg1)
+                is ShaderOrProgram.Shader -> gl.getShaderParameter(obj.shader, arg1)
+                null -> null
+            }
+            val v = when (result) {
+                is Boolean -> if (result) 1 else 0
+                is Int -> result
+                is Double -> result.toInt()
+                else -> 0
+            }
+            arg2?.set(arg3, v)
+        }
+
+        actual fun glGetInfoLogARB(arg0: Long, arg1: Int, arg2: IntArray?, arg3: Int, arg4: ByteArray?, arg5: Int) {
+            val log = when (val obj = state.glObjects[arg0]) {
+                is ShaderOrProgram.Program -> gl.getProgramInfoLog(obj.program)
+                is ShaderOrProgram.Shader -> gl.getShaderInfoLog(obj.shader)
+                null -> null
+            } ?: ""
+            val bytes = log.encodeToByteArray()
+            val n = minOf(bytes.size, arg1)
+            arg2?.set(arg3, n)
+            if (arg4 != null) for (i in 0 until n) arg4[arg5 + i] = bytes[i]
+        }
+
+        actual fun glGetProgramivARB(arg0: Int, arg1: Int, arg2: IntArray?, arg3: Int) {
+            arg2?.set(arg3, 0)
+        }
+
+        actual fun glGetUniformLocationARB(arg0: Long, arg1: String?): Int {
+            val program = (state.glObjects[arg0] as? ShaderOrProgram.Program)?.program ?: return -1
+            val location = gl.getUniformLocation(program, arg1 ?: "") ?: return -1
+            return state.uniforms.allocate(location)
+        }
+
+        actual fun glUniform1iARB(arg0: Int, arg1: Int) = gl.uniform1i(state.uniforms[arg0], arg1)
+        actual fun glUniform1fARB(arg0: Int, arg1: Float) = gl.uniform1f(state.uniforms[arg0], arg1)
+        actual fun glUniform2fARB(arg0: Int, arg1: Float, arg2: Float) = gl.uniform2f(state.uniforms[arg0], arg1, arg2)
+        actual fun glUniform3fARB(arg0: Int, arg1: Float, arg2: Float, arg3: Float) = gl.uniform3f(state.uniforms[arg0], arg1, arg2, arg3)
+        actual fun glUniform4fARB(arg0: Int, arg1: Float, arg2: Float, arg3: Float, arg4: Float) =
+            gl.uniform4f(state.uniforms[arg0], arg1, arg2, arg3, arg4)
+
+        actual fun glUniformMatrix2fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int) =
+            gl.uniformMatrix2fv(state.uniforms[arg0], arg2, arg3.slice(arg4, 4 * arg1).asFloat32Array())
+
+        actual fun glUniformMatrix3fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int) =
+            gl.uniformMatrix3fv(state.uniforms[arg0], arg2, arg3.slice(arg4, 9 * arg1).asFloat32Array())
+
+        actual fun glUniformMatrix4fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int) =
+            gl.uniformMatrix4fv(state.uniforms[arg0], arg2, arg3.slice(arg4, 16 * arg1).asFloat32Array())
+
+        // ---- ARB vertex-program assembly (Phase 5: hand-port pending) --------
+
+        actual fun glGenProgramARB(): Int = state.arbPrograms.allocate("")
+        actual fun glDeleteProgramARB(arg0: Int) = state.arbPrograms.release(arg0)
+        actual fun glBindProgramARB(arg0: Int, arg1: Int) {}
+        actual fun glProgramStringARB(arg0: Int, arg1: Int, arg2: String?) {}
+        actual fun glProgramRawARB(arg0: Int, arg1: Int, arg2: ByteArray?) {}
+        actual fun glProgramLocalParameter4fARB(arg0: Int, arg1: Int, arg2: Float, arg3: Float, arg4: Float, arg5: Float) {}
+        actual fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
     }
 }
