@@ -1,30 +1,10 @@
-import AbstractCameraTransform
-import AbstractModel
-import AbstractModelRenderer
-import AbstractTileShape
-import CameraMarker
-import CircleRasterizer
-import Disposable
-import FontDefinition
-import Marker
-import ModelDefinition
-import NodeDequeHolder
-import RSFont
-import awt.Rectangle
-import RenderConfig
-import Renderer
-import RendererType
-import ShaderProgram
-import Sprite
-import SpriteDrawTarget
-import SpriteImage
-import TerrainTile
 import awt.Canvas
+import awt.Rectangle
 
 actual class oa actual constructor(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Disposable {
 
     init {
-        throw RuntimeException("Native renderer unavailable in JS")
+        throw RuntimeException("Software renderer unavailable in JS")
     }
 
     actual var nativeid: Long

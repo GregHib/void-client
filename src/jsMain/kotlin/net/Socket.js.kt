@@ -49,12 +49,10 @@ actual open class Socket actual constructor(host: String?, port: Int) {
             Unit
         }
         ws.onmessage = { event ->
-            val data = (event as MessageEvent).data
+            val data = event.data
             if (data is ArrayBuffer) {
                 val chunk = Int8Array(data)
                 inChunks.addLast(chunk)
-            } else {
-                println("ws recv: non-ArrayBuffer message")
             }
             Unit
         }
