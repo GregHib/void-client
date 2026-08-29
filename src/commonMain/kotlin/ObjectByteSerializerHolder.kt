@@ -39,7 +39,7 @@ class ObjectByteSerializerHolder {
                 return method864(i_2_, `is`, i_3_, -104)
             }
             if (i < 89) InboundPacketHeader.aInboundPacketHeader_2285 = null
-            if (`object` is NioByteStore) {
+            if (`object` is ByteStoreArray) {
                 val class344 = `object`
                 return class344.method2689(2, i_3_, i_2_)
             }
