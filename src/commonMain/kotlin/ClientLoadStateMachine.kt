@@ -14,7 +14,6 @@ import ScrollbarComponent.Companion.method184
 import GameClock.method599
 import GraphicsOptionState.Companion.aByteArray3144
 import CacheArchiveIndexLoader.Companion.aItemDefinitionLoader_3147
-import WorldMapScene.Companion.method1709
 import MapRegionLoader.Companion.method752
 import NativeRenderer.Companion.method3886
 import NativeRenderer.Companion.method3896
@@ -292,6 +291,11 @@ object ClientLoadStateMachine {
             method243(i xor 0x6fd6.inv())
             if (TheoraVideoStream.aBoolean9038) method3553(false, 108.toByte(), 0)
             else method3553(false, 102.toByte(), IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7251!!.method1829(-32350))
+            // The default for aClass239_Sub27_7261 (DefaultGraphicsOptionState) is computed once at
+            // construction time from the render mode, but construction can race with the real render
+            // mode being applied above (the client always boots with mode 0 first). Recompute it now
+            // that the real mode is settled, so it never latches onto the transient boot-time value.
+            IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1716(false)
             ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
             method3568(FacingDirectionNode.aRenderer6654, i xor 0x6ff7.inv())
