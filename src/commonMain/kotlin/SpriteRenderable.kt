@@ -7,12 +7,12 @@ import kotlin.concurrent.Volatile
 /* Class49 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SpriteRenderable internal constructor(var_ha_Sub1: SoftwareRenderer?, abstractModelRenderer: AbstractModelRenderer?, floatGrid: FloatGrid?) : SpriteDrawTarget {
+class SpriteRenderable internal constructor(var_ha_Sub1: SoftwareRasterHost?, abstractModelRenderer: AbstractModelRenderer?, floatGrid: FloatGrid?) : SpriteDrawTarget {
     var aFloatArray4719: FloatArray? = null
     var anInt4722: Int = 0
     private var aFloatGrid_4724: FloatGrid? = null
     var anInt4725: Int = 0
-    private val aHa_Sub1_4729: SoftwareRenderer?
+    private val aHa_Sub1_4729: SoftwareRasterHost?
     var anIntArray4731: IntArray?
 
     override fun method14(i: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, bool: Boolean, bool_8_: Boolean) {

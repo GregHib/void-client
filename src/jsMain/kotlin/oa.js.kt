@@ -1,497 +1,2535 @@
 import awt.Canvas
 import awt.Rectangle
+import awt.h
+import awt.left
+import awt.top
+import awt.w
+import kotlinx.coroutines.Runnable
+import lang.currentThread
+import kotlin.math.floor
+import kotlin.math.max
+import kotlin.math.min
+import kotlin.math.sqrt
 
-actual class oa actual constructor(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Disposable {
+/*
+ * NativeGraphicsContext
+ *
+ * JS actual implementation of the software rasterizer.
+ *
+ * This is ported from SoftwareRenderer.kt (the existing pure-Kotlin CPU rasterizer already used
+ * for "safe mode" on all platforms). Field names are kept identical to SoftwareRenderer.kt's own
+ * fields wherever possible so method bodies could be transplanted with minimal changes.
+ *
+ * SoftwareRenderer's collaborator classes (SoftwareModel, ParticleSystemState, ShadowProjector,
+ * SoftwareModelRenderer and its Rgb/Alpha/Paletted subclasses, SoftwareFontAlpha/Plain/Palette,
+ * SoftwareTerrainTile, SpriteRenderable) originally declared their constructor parameter as the
+ * *concrete* `SoftwareRenderer` type, which blocked `oa` from constructing them. That was fixed by
+ * extracting the `SoftwareRasterHost` interface (see SoftwareRasterHost.kt in commonMain) covering
+ * every `SoftwareRenderer`-specific member those collaborators need; `oa` now implements that
+ * interface (in addition to `Renderer`) and constructs real instances of all of them, mirroring
+ * SoftwareRenderer's own method bodies. `oa` keeps its own `aParticleSystemStateArray7480` (and
+ * `anInt7512`/`aAbstractModelRenderer_7513` model-renderer cache) - it does not share state with
+ * SoftwareRenderer's instance.
+ */
+actual class oa actual constructor(canvas: Canvas?, var_renderConfig: RenderConfig?, i: Int, i_177_: Int) : Renderer(var_renderConfig), Disposable, SoftwareRasterHost {
 
-    init {
-        throw RuntimeException("Software renderer unavailable in JS")
-    }
+    actual var nativeid: Long = 0L
+    actual var anInt5141: Int = 0
 
-    actual var nativeid: Long
-        get() = TODO("Not yet implemented")
-        set(value) {}
-    actual var anInt5141: Int
-        get() = TODO("Not yet implemented")
-        set(value) {}
+    private var anInt7465 = 0
+    private var anInt7466 = 0
+    private var aHashtable_7467: Hashtable? = null
+    private var aCanvas7468: Canvas? = null
+    override var aClass348_Sub31_7469: AbstractFrameBufferSurface? = null
+    private var aBoolean7470 = false
+    private var aBoolean7471 = false
+    private var anInt7472 = 0
+    override var anInt7473: Int = 0
+    override var anInt7474: Int = 0
+    private var aSpriteRenderable_7475: SpriteRenderable? = null
+    override var anInt7476: Int = 0
+    override var anInt7477: Int = 0
+    override var anInt7478: Int = 0
+    override var anInt7479: Int = 0
+    private var anInt7481 = 0
+    override var anInt7482: Int = 0
+    override var anIntArray7483: IntArray? = null
+    override var anInt7484: Int = 0
+    override var anInt7485: Int = 0
+    private var anInt7486 = 0
+    private var anInt7488 = 0
+    private var aBoolean7489: Boolean = false
+    override var anInt7490: Int = 0
+    override var anInt7491: Int = 0
+    override var aClass101_Sub1_7492: MatrixCameraTransform? = null
+    private var anInt7493 = 0
+    override var anInt7494: Int = 0
+    private var anInt7495 = 0
+    override var anInt7496: Int = 0
+    override var anInt7497: Int = 0
+    private val aLruByteCache_7498: LruByteCache = LruByteCache(256)
+    private val aLruByteCache_7499: LruByteCache = LruByteCache(16)
+    override var anInt7500: Int = 0
+    override var anInt7501: Int = 0
+    override var aFloatArray7502: FloatArray? = null
+    override var anInt7503: Int = 0
+    override var anInt7504: Int = 0
+    private var anInt7505: Int = 0
+    override var anInt7506: Int = 0
+    override var anInt7507: Int = 0
+    override var anInt7508: Int = 0
+    override var anInt7509: Int = 0
+    override var anInt7510: Int = 0
+    override var aFloatArray7511: FloatArray? = null
+    private var anInt7512: Int = -1
+    private var aAbstractModelRenderer_7513: AbstractModelRenderer? = null
+    private var aParticleSystemStateArray7480: Array<ParticleSystemState?>? = null
 
     actual fun MA(var_renderConfig: RenderConfig?, i: Int, i_0_: Int) {
+        anInt7474 = 45823
+        aBoolean7489 = false
+        anInt7501 = 128
+        anInt7476 = 0
+        anInt7482 = 50
+        anInt7503 = 0
+        anInt7496 = 0
+        anInt7497 = 512
+        anInt7500 = 75518
+        anInt7491 = 512
+        anInt7505 = 0
+        anInt7494 = 3500
+        anInt7507 = 0
+        anInt7478 = 78642
     }
 
     actual override fun method3628(i: Int, i_1_: Int, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int) {
+        U(i, i_1_, i_2_, i_4_, i_5_)
+        U(i, i_1_ + i_3_ - 1, i_2_, i_4_, i_5_)
+        P(i, i_1_ + 1, i_3_ - 2, i_4_, i_5_)
+        P(i + i_2_ - 1, i_1_ + 1, i_3_ - 2, i_4_, i_5_)
     }
 
     actual fun ma(l: Long) {
+        /* no native camera-transform handle on JS */
     }
 
     actual override fun method3697(i: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int): CircleRasterizer? {
-        TODO("Not yet implemented")
+        return null
     }
 
     actual override fun method3651(var_shaderProgram: ShaderProgram?) {
+        /* empty - shaders unused in software rendering */
     }
 
     actual override fun w(bool: Boolean) {
+        method3652()
     }
 
     actual override fun A(i: Int, var_sprite: Sprite?, i_11_: Int, i_12_: Int) {
+        var i_146_ = i_12_
+        val var_aa_Sub3 = var_sprite as RasterSprite
+        val `is` = var_aa_Sub3.anIntArray5201
+        val is_147_ = var_aa_Sub3.anIntArray5202
+        val i_148_: Int = if (this.anInt7503 < i_146_ + `is`!!.size) this.anInt7503 - i_146_ else `is`.size
+        val i_149_: Int
+        if (this.anInt7476 > i_146_) {
+            i_149_ = this.anInt7476 - i_146_
+            i_146_ = this.anInt7476
+        } else i_149_ = 0
+        if (i_148_ - i_149_ > 0) {
+            var i_150_ = i_146_ * this.anInt7477
+            for (i_151_ in i_149_..<i_148_) {
+                var i_152_ = i_11_ + `is`[i_151_]
+                var i_153_ = is_147_!![i_151_]
+                if (this.anInt7496 > i_152_) {
+                    i_153_ -= this.anInt7496 - i_152_
+                    i_152_ = this.anInt7496
+                }
+                if (this.anInt7507 < i_152_ + i_153_) i_153_ = this.anInt7507 - i_152_
+                i_152_ += i_150_
+                for (i_154_ in -i_153_..-1) this.anIntArray7483!![i_152_++] = i
+                i_150_ += this.anInt7477
+            }
+        }
     }
 
     actual override fun aa(i: Int, i_13_: Int, i_14_: Int, i_15_: Int, i_16_: Int, i_17_: Int) {
+        var i = i
+        var i_13_ = i_13_
+        var i_14_ = i_14_
+        var i_15_ = i_15_
+        var i_16_ = i_16_
+        if (i < this.anInt7496) {
+            i_14_ -= this.anInt7496 - i
+            i = this.anInt7496
+        }
+        if (i_13_ < this.anInt7476) {
+            i_15_ -= this.anInt7476 - i_13_
+            i_13_ = this.anInt7476
+        }
+        if (i + i_14_ > this.anInt7507) i_14_ = this.anInt7507 - i
+        if (i_13_ + i_15_ > this.anInt7503) i_15_ = this.anInt7503 - i_13_
+        if (i_14_ > 0 && i_15_ > 0 && i <= this.anInt7507 && i_13_ <= this.anInt7503) {
+            val i_339_ = this.anInt7477 - i_14_
+            var i_340_ = i + i_13_ * this.anInt7477
+            val i_341_ = i_16_ ushr 24
+            if (i_17_ == 0 || i_17_ == 1 && i_341_ == 255) {
+                val i_342_ = i_14_ shr 3
+                val i_343_ = i_14_ and 0x7
+                var idx = i_340_ - 1
+                for (i_344_ in -i_15_..-1) {
+                    if (i_342_ > 0) {
+                        var n = i_342_
+                        do {
+                            this.anIntArray7483!![++idx] = i_16_
+                            this.anIntArray7483!![++idx] = i_16_
+                            this.anIntArray7483!![++idx] = i_16_
+                            this.anIntArray7483!![++idx] = i_16_
+                            this.anIntArray7483!![++idx] = i_16_
+                            this.anIntArray7483!![++idx] = i_16_
+                            this.anIntArray7483!![++idx] = i_16_
+                            this.anIntArray7483!![++idx] = i_16_
+                        } while (--n > 0)
+                    }
+                    if (i_343_ > 0) {
+                        var n = i_343_
+                        do this.anIntArray7483!![++idx] = i_16_ while (--n > 0)
+                    }
+                    idx += i_339_
+                }
+            } else if (i_17_ == 1) {
+                var color = i_16_
+                color = (((color and 0xff00ff) * i_341_ shr 8 and 0xff00ff) + (((color and 0xff00ff.inv()) ushr 8) * i_341_ and 0xff00ff.inv()))
+                val i_345_ = 256 - i_341_
+                for (i_346_ in 0..<i_15_) {
+                    for (i_347_ in -i_14_..-1) {
+                        var i_348_ = this.anIntArray7483!![i_340_]
+                        i_348_ = (((i_348_ and 0xff00ff) * i_345_ shr 8 and 0xff00ff) + (((i_348_ and 0xff00ff.inv()) ushr 8) * i_345_ and 0xff00ff.inv()))
+                        this.anIntArray7483!![i_340_++] = color + i_348_
+                    }
+                    i_340_ += i_339_
+                }
+            } else if (i_17_ == 2) {
+                for (i_349_ in 0..<i_15_) {
+                    for (i_350_ in -i_14_..-1) {
+                        var i_351_ = this.anIntArray7483!![i_340_]
+                        val i_352_ = i_16_ + i_351_
+                        val i_353_ = (i_16_ and 0xff00ff) + (i_351_ and 0xff00ff)
+                        i_351_ = (i_353_ and 0x1000100) + (i_352_ - i_353_ and 0x10000)
+                        this.anIntArray7483!![i_340_++] = i_352_ - i_351_ or i_351_ - (i_351_ ushr 8)
+                    }
+                    i_340_ += i_339_
+                }
+            } else throw IllegalArgumentException()
+        }
     }
 
     actual override fun method3698() {
+        /* empty */
     }
 
 //    @Throws(exceptionClasses = [ClientException::class])
     actual override fun method3707(rectangles: Array<Rectangle?>?, i: Int, i_18_: Int, i_19_: Int) {
+        check(!(aCanvas7468 == null || this.aClass348_Sub31_7469 == null)) { "off" }
+        try {
+            val graphics = aCanvas7468!!.getGraphics()
+            for (i_633_ in 0..<i) {
+                val rectangle = rectangles!![i_633_]!!
+                if (rectangle.left + i_18_ <= this.anInt7477 && rectangle.top + i_19_ <= anInt7486 && rectangle.left + i_18_ + rectangle.w > 0 && rectangle.top + i_19_ + rectangle.h > 0) this.aClass348_Sub31_7469!!.method3011(rectangle.top, rectangle.left + i_18_, rectangle.h, graphics, -1, rectangle.left, rectangle.w, rectangle.top + i_19_)
+            }
+        } catch (exception: Exception) {
+            aCanvas7468!!.repaint()
+        }
     }
 
     actual override fun method3708(): Boolean {
-        TODO("Not yet implemented")
+        return true
     }
 
     actual override fun method3685(nodeDequeHolder: NodeDequeHolder, i: Int) {
+        val class167 = method3724(currentThread())
+        val class318_sub9 = (nodeDequeHolder.aSceneNodeDeque_1569.aClass318_Sub9_1503)!!
+        var class318_sub9_65_ = class318_sub9.aClass318_Sub9_6469
+        while (class318_sub9_65_ !== class318_sub9) {
+            val class318_sub9_sub2 = class318_sub9_65_ as PositionedSceneNode
+            val i_66_ = class318_sub9_sub2.anInt8791 shr 12
+            val i_67_ = class318_sub9_sub2.anInt8796 shr 12
+            val i_68_ = class318_sub9_sub2.anInt8789 shr 12
+            var f = ((this.aClass101_Sub1_7492!!.aFloat5681) + ((this.aClass101_Sub1_7492!!.aFloat5662) * i_66_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_67_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_68_.toFloat()))
+            if (!(f < this.anInt7482.toFloat()) && !(f > class167!!.anInt2210.toFloat())) {
+                val i_69_ = (this.anInt7510 + (this.anInt7491.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5686) + ((this.aClass101_Sub1_7492!!.aFloat5672) * i_66_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673) * i_67_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5669) * i_68_.toFloat())) / i.toFloat()).toInt())
+                val i_70_ = (this.anInt7504 + (this.anInt7497.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5685) + ((this.aClass101_Sub1_7492!!.aFloat5655) * i_66_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678) * i_67_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5666) * i_68_.toFloat())) / i.toFloat()).toInt())
+                if (i_69_ >= this.anInt7496 && i_69_ <= this.anInt7507 && i_70_ >= this.anInt7476 && i_70_ <= this.anInt7503) {
+                    if (f == 0.0f) f = 1.0f
+                    method3712(class318_sub9_sub2, i_69_, i_70_, f.toInt(), ((class318_sub9_sub2.anInt8793) * this.anInt7491 shr 12) / i)
+                }
+            }
+            class318_sub9_65_ = class318_sub9_65_.aClass318_Sub9_6469
+        }
     }
 
     actual override fun method3676(i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, i_29_: Int, i_30_: Int, i_31_: Int) {
+        var i = i
+        var i_20_ = i_20_
+        var i_22_ = i_22_
+        var i_23_ = i_23_
+        var i_25_ = i_25_
+        var i_26_ = i_26_
+        val class167 = method3724(currentThread())
+        val class109 = class167!!.aShadowProjector_2220!!
+        class109.aBoolean1669 = false
+        i -= this.anInt7509
+        i_22_ -= this.anInt7509
+        i_25_ -= this.anInt7509
+        i_20_ -= this.anInt7490
+        i_23_ -= this.anInt7490
+        i_26_ -= this.anInt7490
+        class109.aBoolean1671 = (i < 0 || i > class109.anInt1679 || i_22_ < 0 || i_22_ > class109.anInt1679 || i_25_ < 0 || i_25_ > class109.anInt1679)
+        val i_282_ = i_28_ ushr 24
+        if (i_31_ == 0 || i_31_ == 1 && i_282_ == 255) {
+            class109.anInt1674 = 0
+            class109.aBoolean1667 = false
+            class109.method1027(i_20_.toFloat(), i_23_.toFloat(), i_26_.toFloat(), i.toFloat(), i_22_.toFloat(), i_25_.toFloat(), i_21_.toFloat(), i_24_.toFloat(), i_27_.toFloat(), i_28_, i_29_, i_30_)
+        } else if (i_31_ == 1) {
+            class109.anInt1674 = 255 - i_282_
+            class109.aBoolean1667 = false
+            class109.method1027(i_20_.toFloat(), i_23_.toFloat(), i_26_.toFloat(), i.toFloat(), i_22_.toFloat(), i_25_.toFloat(), i_21_.toFloat(), i_24_.toFloat(), i_27_.toFloat(), i_28_, i_29_, i_30_)
+        } else if (i_31_ == 2) {
+            class109.anInt1674 = 128
+            class109.aBoolean1667 = true
+            class109.method1027(i_20_.toFloat(), i_23_.toFloat(), i_26_.toFloat(), i.toFloat(), i_22_.toFloat(), i_25_.toFloat(), i_21_.toFloat(), i_24_.toFloat(), i_27_.toFloat(), i_28_, i_29_, i_30_)
+        } else throw IllegalArgumentException()
+        class109.aBoolean1669 = true
     }
 
     actual override fun method3663() {
+        aLruByteCache_7498.method590(0)
+        aLruByteCache_7499.method590(0)
     }
 
     actual override fun method3691(spriteImage: SpriteImage?, bool: Boolean): AbstractModelRenderer {
-        TODO("Not yet implemented")
+        val `is` = spriteImage!!.anIntArray2697
+        val is_430_ = spriteImage.aByteArray2699
+        val i = spriteImage.anInt2702
+        val i_431_ = spriteImage.anInt2696
+        val class105_sub3: SoftwareModelRenderer
+        if (bool && spriteImage.aByteArray2695 == null) {
+            val is_432_ = IntArray(`is`.size)
+            val is_433_ = ByteArray(i * i_431_)
+            for (i_434_ in 0..<i_431_) {
+                val i_435_ = i_434_ * i
+                for (i_436_ in 0..<i) is_433_[i_435_ + i_436_] = is_430_[i_435_ + i_436_]
+            }
+            for (i_437_ in `is`.indices) is_432_[i_437_] = `is`[i_437_]
+            class105_sub3 = SoftwarePalettedSpriteRenderer(this, is_433_, is_432_, i, i_431_)
+        } else {
+            val is_438_ = IntArray(i * i_431_)
+            val is_439_ = spriteImage.aByteArray2695
+            if (is_439_ == null) {
+                for (i_443_ in 0..<i_431_) {
+                    val i_444_ = i_443_ * i
+                    for (i_445_ in 0..<i) {
+                        val i_446_ = `is`[is_430_[i_444_ + i_445_].toInt() and 0xff]
+                        is_438_[i_444_ + i_445_] = if (i_446_ != 0) 0xffffff.inv() or i_446_ else 0
+                    }
+                }
+                class105_sub3 = SoftwareRgbSpriteRenderer(this, is_438_, i, i_431_)
+            } else {
+                for (i_440_ in 0..<i_431_) {
+                    val i_441_ = i_440_ * i
+                    for (i_442_ in 0..<i) is_438_[i_441_ + i_442_] = (`is`[is_430_[i_441_ + i_442_].toInt() and 0xff] or (is_439_[i_441_ + i_442_].toInt() shl 24))
+                }
+                class105_sub3 = SoftwareAlphaSpriteRenderer(this, is_438_, i, i_431_)
+            }
+        }
+        class105_sub3.method985(spriteImage.anInt2703, spriteImage.anInt2700, spriteImage.anInt2698, spriteImage.anInt2701)
+        return class105_sub3
     }
 
     actual override fun HA(i: Int, i_32_: Int, i_33_: Int, i_34_: Int, `is`: IntArray?) {
+        val f = ((this.aClass101_Sub1_7492!!.aFloat5681) + ((this.aClass101_Sub1_7492!!.aFloat5662) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_32_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_33_.toFloat()))
+        if (f >= this.anInt7482.toFloat() && f <= this.anInt7494.toFloat()) {
+            val i_203_ = (this.anInt7491.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5686 + ((this.aClass101_Sub1_7492!!.aFloat5672) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673) * i_32_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5669) * i_33_.toFloat())) / i_34_.toFloat()).toInt()
+            val i_204_ = (this.anInt7497.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5685 + ((this.aClass101_Sub1_7492!!.aFloat5655) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678) * i_32_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5666) * i_33_.toFloat())) / i_34_.toFloat()).toInt()
+            if (i_203_ >= this.anInt7509 && i_203_ <= this.anInt7508 && i_204_ >= this.anInt7490 && i_204_ <= this.anInt7506) {
+                `is`!![0] = i_203_ - this.anInt7509
+                `is`[1] = i_204_ - this.anInt7490
+                `is`[2] = f.toInt()
+            } else {
+                `is`!![2] = -1
+                `is`[1] = `is`[2]
+                `is`[0] = `is`[1]
+            }
+        } else {
+            `is`!![2] = -1
+            `is`[1] = `is`[2]
+            `is`[0] = `is`[1]
+        }
     }
 
     actual override fun method3710() {
+        /* empty */
     }
 
     actual fun AA(
-        i: Short,
-        i_35_: Short,
-        i_36_: Int,
-        i_37_: Byte,
-        i_38_: Byte,
-        i_39_: Int,
-        bool: Boolean,
-        i_40_: Byte,
-        i_41_: Byte,
-        i_42_: Byte,
-        i_43_: Byte,
-        bool_44_: Boolean,
-        bool_45_: Boolean,
-        bool_46_: Boolean,
-        bool_47_: Boolean,
-        bool_48_: Boolean,
-        i_49_: Byte,
-        bool_50_: Boolean,
-        bool_51_: Boolean,
-        i_52_: Int,
+        i: Short, i_35_: Short, i_36_: Int, i_37_: Byte, i_38_: Byte, i_39_: Int, bool: Boolean, i_40_: Byte,
+        i_41_: Byte, i_42_: Byte, i_43_: Byte, bool_44_: Boolean, bool_45_: Boolean, bool_46_: Boolean,
+        bool_47_: Boolean, bool_48_: Boolean, i_49_: Byte, bool_50_: Boolean, bool_51_: Boolean, i_52_: Int,
     ) {
+        /* native SSE texture upload - no equivalent needed, texture pipeline is a no-op on JS */
     }
 
     actual override fun method3696(i: Int) {
+        this.anInt7501 = i
+        aLruByteCache_7498.method590(0)
     }
 
     actual override fun H(i: Int, i_53_: Int, i_54_: Int, `is`: IntArray?) {
+        val f = ((this.aClass101_Sub1_7492!!.aFloat5681) + ((this.aClass101_Sub1_7492!!.aFloat5662) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_53_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_54_.toFloat()))
+        if (f == 0.0f) {
+            `is`!![2] = -1
+            `is`[1] = `is`[2]
+            `is`[0] = `is`[1]
+        } else {
+            val i_364_ = (this.anInt7491.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5686 + ((this.aClass101_Sub1_7492!!.aFloat5672) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673) * i_53_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5669) * i_54_.toFloat())) / f).toInt()
+            val i_365_ = (this.anInt7497.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5685 + ((this.aClass101_Sub1_7492!!.aFloat5655) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678) * i_53_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5666) * i_54_.toFloat())) / f).toInt()
+            `is`!![0] = i_364_ - this.anInt7509
+            `is`[1] = i_365_ - this.anInt7490
+            `is`[2] = f.toInt()
+        }
     }
 
     actual fun g() {
+        /* GC hints - no-op on JS */
     }
 
     actual override fun b(i: Int, i_55_: Int, i_56_: Int, i_57_: Int, d: Double) {
+        val i_236_ = anInt7495 - i_57_
+        var i_237_ = i_55_ * anInt7495 + i
+        val fs = this.aFloatArray7511
+        var i_238_ = 0
+        while (i_238_ < i_56_) {
+            var i_239_ = 0
+            while (i_239_ < i_57_) {
+                val f = fs!![i_237_]
+                if (f != 2.14748365E9f) fs[i_237_] = (f.toDouble() + d).toFloat()
+                i_239_++
+                i_237_++
+            }
+            i_238_++
+            i_237_ += i_236_
+        }
     }
 
     actual override fun method3700(f: Float, f_58_: Float, f_59_: Float) {
+        /* empty */
     }
 
     actual override fun method3686(fontDefinition: FontDefinition?, spriteImages: Array<SpriteImage>?, bool: Boolean): RSFont {
-        TODO("Not yet implemented")
+        val `is` = IntArray(spriteImages!!.size)
+        val is_283_ = IntArray(spriteImages.size)
+        var bool_284_ = false
+        for (i in spriteImages.indices) {
+            `is`[i] = spriteImages[i]!!.anInt2702
+            is_283_[i] = spriteImages[i]!!.anInt2696
+            if (spriteImages[i]!!.aByteArray2695 != null) bool_284_ = true
+        }
+        if (bool) {
+            if (bool_284_) return SoftwareFontAlpha(this, fontDefinition, spriteImages, `is`, is_283_)
+            return SoftwareFontPlain(this, fontDefinition, spriteImages, `is`, is_283_)
+        }
+        require(!bool_284_) { "" }
+        return SoftwareFontPalette(this, fontDefinition, spriteImages, `is`, is_283_)
     }
 
     actual fun wa(i: Int, i_62_: Int, i_63_: Int, i_64_: Int, i_65_: Int, i_66_: Int) {
+        /* no SoftwareRenderer equivalent - no-op */
     }
 
     actual override fun method3644(): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     actual fun method3973(): a? {
-        TODO("Not yet implemented")
+        return null
     }
 
     actual fun t(var_p: p?) {
+        /* JS stores AbstractFrameBufferSurface? directly, no wrapper needed - no-op */
     }
 
     actual override fun method3705(): AbstractCameraTransform {
-        TODO("Not yet implemented")
+        val class167 = method3724(currentThread())
+        return class167!!.aClass101_Sub1_2209!!
     }
 
     actual fun WA(i: Short): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     actual fun method3975(nodeDequeHolder: NodeDequeHolder, bool: Boolean) {
+        /* no-op - node marshalling only needed for the native JNI boundary */
     }
 
     actual override fun method3659(i: Int) {
+        aParticleSystemStateArray7480!![i]!!.method1291(10000, currentThread())
     }
 
     actual override fun method3632(`is`: IntArray?) {
+        `is`!![0] = this.anInt7477
+        `is`[1] = anInt7486
     }
 
     actual fun CA(
-        i: Short,
-        `is`: IntArray?,
-        i_71_: Short,
-        i_72_: Int,
-        i_73_: Byte,
-        i_74_: Byte,
-        i_75_: Int,
-        bool: Boolean,
-        i_76_: Byte,
-        i_77_: Byte,
-        i_78_: Byte,
-        i_79_: Byte,
-        bool_80_: Boolean,
-        bool_81_: Boolean,
-        bool_82_: Boolean,
-        bool_83_: Boolean,
-        bool_84_: Boolean,
-        i_85_: Byte,
-        bool_86_: Boolean,
-        bool_87_: Boolean,
-        i_88_: Int,
+        i: Short, `is`: IntArray?, i_71_: Short, i_72_: Int, i_73_: Byte, i_74_: Byte, i_75_: Int, bool: Boolean,
+        i_76_: Byte, i_77_: Byte, i_78_: Byte, i_79_: Byte, bool_80_: Boolean, bool_81_: Boolean, bool_82_: Boolean,
+        bool_83_: Boolean, bool_84_: Boolean, i_85_: Byte, bool_86_: Boolean, bool_87_: Boolean, i_88_: Int,
     ) {
+        /* native SSE texture upload - no-op on JS */
     }
 
     actual override fun DA(i: Int, i_89_: Int, i_90_: Int, i_91_: Int) {
+        this.anInt7510 = i
+        this.anInt7504 = i_89_
+        this.anInt7491 = i_90_
+        this.anInt7497 = i_91_
+        method3713()
     }
 
     actual override fun method3702(i: Int): ShaderProgram {
-        TODO("Not yet implemented")
+        /* shaders are unused in software rendering; construct the (stub) ya shader object purely
+         * to satisfy the non-null return type - it is never meaningfully used. */
+        return ya(this, i)
     }
 
     actual override fun method3650(i: Int) {
+        SoftwareModel.anInt5350 = i
+        SoftwareModel.anInt5346 = SoftwareModel.anInt5350
+        check(this.anInt7485 <= 1) { "No MT" }
+        method3631(this.anInt7485)
+        method3659(0)
     }
 
     actual override fun method3667(i: Int, i_92_: Int): Int {
-        TODO("Not yet implemented")
+        var i = i
+        i = i or 0x20800
+        return i and i_92_ xor i_92_
     }
 
     actual override fun xa(f: Float) {
+        this.anInt7500 = (f * 65535.0f).toInt()
     }
 
     actual override fun method3701(canvas: Canvas?) {
+        if (aCanvas7468 === canvas) method3677(null)
+        val class348_sub31 = (aHashtable_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
+        if (class348_sub31 != null) class348_sub31.method2715(100.toByte())
     }
 
     actual override fun method3636(i: Int, i_95_: Int, i_96_: Int, i_97_: Int, i_98_: Int, i_99_: Int, var_sprite: Sprite?, i_100_: Int, i_101_: Int) {
+        var i = i
+        var i_285_ = i_95_
+        var i_286_ = i_96_
+        var i_287_ = i_97_
+        var i_288_ = i_98_
+        val var_aa_Sub3 = var_sprite as RasterSprite
+        val `is` = var_aa_Sub3.anIntArray5201
+        val is_292_ = var_aa_Sub3.anIntArray5202
+        val i_293_ = (max(this.anInt7476, i_101_))
+        val i_294_ = (min(this.anInt7503, i_101_ + `is`!!.size))
+        i_286_ -= i
+        i_287_ -= i_285_
+        if (i_286_ + i_287_ < 0) {
+            i += i_286_
+            i_286_ = -i_286_
+            i_285_ += i_287_
+            i_287_ = -i_287_
+        }
+        if (i_286_ > i_287_) {
+            i_285_ = i_285_ shl 16
+            i_285_ += 32768
+            i_287_ = i_287_ shl 16
+            val i_295_ = floor(i_287_.toDouble() / i_286_.toDouble() + 0.5).toInt()
+            i_286_ += i
+            if (i < this.anInt7496) {
+                i_285_ += i_295_ * (this.anInt7496 - i)
+                i = this.anInt7496
+            }
+            if (i_286_ >= this.anInt7507) i_286_ = this.anInt7507 - 1
+            val i_296_ = i_288_ ushr 24
+            if (i_99_ == 0 || i_99_ == 1 && i_296_ == 255) {
+                while (i <= i_286_) {
+                    val i_297_ = i_285_ shr 16
+                    val i_298_ = i_297_ - i_101_
+                    if (i_297_ >= i_293_ && i_297_ < i_294_) {
+                        val i_299_ = i_100_ + `is`[i_298_]
+                        if (i >= i_299_ && i < i_299_ + is_292_!![i_298_]) this.anIntArray7483!![i + i_297_ * this.anInt7477] = i_288_
+                    }
+                    i_285_ += i_295_
+                    i++
+                }
+                return
+            }
+            if (i_99_ == 1) {
+                i_288_ = (((i_288_ and 0xff00ff) * i_296_ shr 8 and 0xff00ff) + ((i_288_ and 0xff00) * i_296_ shr 8 and 0xff00) + (i_296_ shl 24))
+                val i_300_ = 256 - i_296_
+                while (i <= i_286_) {
+                    val i_301_ = i_285_ shr 16
+                    val i_302_ = i_301_ - i_101_
+                    if (i_301_ >= i_293_ && i_301_ < i_294_) {
+                        val i_303_ = i_100_ + `is`[i_302_]
+                        if (i >= i_303_ && i < i_303_ + is_292_!![i_302_]) {
+                            val i_304_ = i + i_301_ * this.anInt7477
+                            var i_305_ = this.anIntArray7483!![i_304_]
+                            i_305_ = (((i_305_ and 0xff00ff) * i_300_ shr 8 and 0xff00ff) + ((i_305_ and 0xff00) * i_300_ shr 8 and 0xff00))
+                            this.anIntArray7483!![i_304_] = i_288_ + i_305_
+                        }
+                    }
+                    i_285_ += i_295_
+                    i++
+                }
+                return
+            }
+            if (i_99_ == 2) {
+                while (i <= i_286_) {
+                    val i_306_ = i_285_ shr 16
+                    val i_307_ = i_306_ - i_101_
+                    if (i_306_ >= i_293_ && i_306_ < i_294_) {
+                        val i_308_ = i_100_ + `is`[i_307_]
+                        if (i >= i_308_ && i < i_308_ + is_292_!![i_307_]) {
+                            val i_309_ = i + i_306_ * this.anInt7477
+                            var i_310_ = this.anIntArray7483!![i_309_]
+                            val i_311_ = i_288_ + i_310_
+                            val i_312_ = (i_288_ and 0xff00ff) + (i_310_ and 0xff00ff)
+                            i_310_ = (i_312_ and 0x1000100) + (i_311_ - i_312_ and 0x10000)
+                            this.anIntArray7483!![i_309_] = i_311_ - i_310_ or i_310_ - (i_310_ ushr 8)
+                        }
+                    }
+                    i_285_ += i_295_
+                    i++
+                }
+                return
+            }
+            throw IllegalArgumentException()
+        }
+        i = i shl 16
+        i += 32768
+        i_286_ = i_286_ shl 16
+        val i_313_ = floor(i_286_.toDouble() / i_287_.toDouble() + 0.5).toInt()
+        i_287_ += i_285_
+        if (i_285_ < i_293_) {
+            i += i_313_ * (i_293_ - i_285_)
+            i_285_ = i_293_
+        }
+        if (i_287_ >= i_294_) i_287_ = i_294_ - 1
+        val i_314_ = i_288_ ushr 24
+        if (i_99_ == 0 || i_99_ == 1 && i_314_ == 255) {
+            while (i_285_ <= i_287_) {
+                val i_315_ = i shr 16
+                val i_316_ = i_285_ - i_101_
+                val i_317_ = i_100_ + `is`[i_316_]
+                if (i_315_ >= this.anInt7496 && i_315_ < this.anInt7507 && i_315_ >= i_317_ && i_315_ < i_317_ + is_292_!![i_316_]) this.anIntArray7483!![i_315_ + i_285_ * this.anInt7477] = i_288_
+                i += i_313_
+                i_285_++
+            }
+        } else if (i_99_ == 1) {
+            i_288_ = (((i_288_ and 0xff00ff) * i_314_ shr 8 and 0xff00ff) + ((i_288_ and 0xff00) * i_314_ shr 8 and 0xff00) + (i_314_ shl 24))
+            val i_318_ = 256 - i_314_
+            while (i_285_ <= i_287_) {
+                val i_319_ = i shr 16
+                val i_320_ = i_285_ - i_101_
+                val i_321_ = i_100_ + `is`[i_320_]
+                if (i_319_ >= this.anInt7496 && i_319_ < this.anInt7507 && i_319_ >= i_321_ && i_319_ < i_321_ + is_292_!![i_320_]) {
+                    val i_322_ = i_319_ + i_285_ * this.anInt7477
+                    var i_323_ = this.anIntArray7483!![i_322_]
+                    i_323_ = (((i_323_ and 0xff00ff) * i_318_ shr 8 and 0xff00ff) + ((i_323_ and 0xff00) * i_318_ shr 8 and 0xff00))
+                    this.anIntArray7483!![i_319_ + i_285_ * this.anInt7477] = i_288_ + i_323_
+                }
+                i += i_313_
+                i_285_++
+            }
+        } else if (i_99_ == 2) {
+            while (i_285_ <= i_287_) {
+                val i_324_ = i shr 16
+                val i_325_ = i_285_ - i_101_
+                val i_326_ = i_100_ + `is`[i_325_]
+                if (i_324_ >= this.anInt7496 && i_324_ < this.anInt7507 && i_324_ >= i_326_ && i_324_ < i_326_ + is_292_!![i_325_]) {
+                    val i_327_ = i_324_ + i_285_ * this.anInt7477
+                    var i_328_ = this.anIntArray7483!![i_327_]
+                    val i_329_ = i_288_ + i_328_
+                    val i_330_ = (i_288_ and 0xff00ff) + (i_328_ and 0xff00ff)
+                    i_328_ = (i_330_ and 0x1000100) + (i_329_ - i_330_ and 0x10000)
+                    this.anIntArray7483!![i_327_] = i_329_ - i_328_ or i_328_ - (i_328_ ushr 8)
+                }
+                i += i_313_
+                i_285_++
+            }
+        } else throw IllegalArgumentException()
     }
 
-//    @Synchronized
     actual override fun finalize() {
+        /* no-op on JS - no native handle, no finalizer semantics */
     }
 
     actual fun d(i: Int) {
+        /* no-op */
     }
 
     actual override fun i(): Int {
-        TODO("Not yet implemented")
+        return this.anInt7482
     }
 
     actual fun n(l: Long, l_102_: Long) {
+        /* no-op - see method3687 */
     }
 
     actual override fun method3684(nodeDequeHolder: NodeDequeHolder) {
+        val class167 = method3724(currentThread())
+        val class318_sub9 = (nodeDequeHolder.aSceneNodeDeque_1569.aClass318_Sub9_1503)!!
+        var class318_sub9_208_ = class318_sub9.aClass318_Sub9_6469
+        while (class318_sub9_208_ !== class318_sub9) {
+            val class318_sub9_sub2 = class318_sub9_208_ as PositionedSceneNode
+            val i = class318_sub9_sub2.anInt8791 shr 12
+            val i_209_ = class318_sub9_sub2.anInt8796 shr 12
+            val i_210_ = class318_sub9_sub2.anInt8789 shr 12
+            var f = ((this.aClass101_Sub1_7492!!.aFloat5681) + ((this.aClass101_Sub1_7492!!.aFloat5662) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_209_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_210_.toFloat()))
+            if (!(f < this.anInt7482.toFloat()) && !(f > class167!!.anInt2210.toFloat())) {
+                val i_211_ = (this.anInt7510 + (this.anInt7491.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5686) + ((this.aClass101_Sub1_7492!!.aFloat5672) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673) * i_209_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5669) * i_210_.toFloat())) / f).toInt())
+                val i_212_ = (this.anInt7504 + (this.anInt7497.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5685) + ((this.aClass101_Sub1_7492!!.aFloat5655) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678) * i_209_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5666) * i_210_.toFloat())) / f).toInt())
+                if (i_211_ >= this.anInt7496 && i_211_ <= this.anInt7507 && i_212_ >= this.anInt7476 && i_212_ <= this.anInt7503) {
+                    if (f == 0.0f) f = 1.0f
+                    method3712(class318_sub9_sub2, i_211_, i_212_, f.toInt(), (((class318_sub9_sub2.anInt8793 * this.anInt7491) shr 12).toFloat() / f).toInt())
+                }
+            }
+            class318_sub9_208_ = class318_sub9_208_.aClass318_Sub9_6469
+        }
+    }
+
+    private fun method3712(class318_sub9_sub2: PositionedSceneNode, i: Int, i_91_: Int, i_92_: Int, i_93_: Int) {
+        var i_93_ = i_93_
+        val i_94_ = class318_sub9_sub2.anInt8792
+        val i_95_ = i_93_
+        i_93_ = i_93_ shl 1
+        if (i_94_ == -1) method3723(i, i_91_, i_92_, i_95_, class318_sub9_sub2.anInt8790, 1)
+        else {
+            if (anInt7512 != i_94_) {
+                var abstractModelRenderer = aLruByteCache_7499.method583(i_94_.toLong(), 117) as AbstractModelRenderer?
+                if (abstractModelRenderer == null) {
+                    val `is` = method3719(i_94_)
+                    if (`is` != null) {
+                        val i_96_ = (if (method3727(i_94_)) 64 else this.anInt7501)
+                        abstractModelRenderer = this.method3662(i_96_, `is`, 94.toByte(), 0, i_96_, i_96_)
+                        aLruByteCache_7499.method582(abstractModelRenderer, i_94_.toLong(), (-121).toByte())
+                    } else return
+                }
+                anInt7512 = i_94_
+                aAbstractModelRenderer_7513 = abstractModelRenderer
+            }
+            i_93_++
+            (aAbstractModelRenderer_7513 as SoftwareModelRenderer).method996(i - i_95_, i_91_ - i_95_, i_92_, i_93_, i_93_, 0, class318_sub9_sub2.anInt8790, 1, 1)
+        }
+    }
+
+    private fun method3723(i: Int, i_447_: Int, i_448_: Int, i_449_: Int, i_450_: Int, i_451_: Int) {
+        var i_447_ = i_447_
+        var i_449_ = i_449_
+        var i_450_ = i_450_
+        if (i_449_ < 0) i_449_ = -i_449_
+        var i_452_ = i_447_ - i_449_
+        if (i_452_ < this.anInt7476) i_452_ = this.anInt7476
+        var i_453_ = i_447_ + i_449_ + 1
+        if (i_453_ > this.anInt7503) i_453_ = this.anInt7503
+        var i_454_ = i_452_
+        val i_455_ = i_449_ * i_449_
+        var i_456_ = 0
+        var i_457_ = i_447_ - i_454_
+        var i_458_ = i_457_ * i_457_
+        var i_459_ = i_458_ - i_457_
+        if (i_447_ > i_453_) i_447_ = i_453_
+        val i_460_ = i_450_ ushr 24
+        if (i_451_ == 0 || i_451_ == 1 && i_460_ == 255) {
+            while (i_454_ < i_447_) {
+                while ( /**/i_459_ <= i_455_ || i_458_ <= i_455_) {
+                    i_458_ += i_456_ + i_456_
+                    i_459_ += i_456_++ + i_456_
+                }
+                var i_461_ = i - i_456_ + 1
+                if (i_461_ < this.anInt7496) i_461_ = this.anInt7496
+                var i_462_ = i + i_456_
+                if (i_462_ > this.anInt7507) i_462_ = this.anInt7507
+                var i_463_ = i_461_ + i_454_ * this.anInt7477
+                for (i_464_ in i_461_..<i_462_) {
+                    if (i_448_.toFloat() < this.aFloatArray7511!![i_463_]) this.anIntArray7483!![i_463_] = i_450_
+                    i_463_++
+                }
+                i_454_++
+                i_458_ -= i_457_-- + i_457_
+                i_459_ -= i_457_ + i_457_
+            }
+            i_456_ = i_449_
+            i_457_ = i_454_ - i_447_
+            i_459_ = i_457_ * i_457_ + i_455_
+            i_458_ = i_459_ - i_456_
+            i_459_ -= i_457_
+            while (i_454_ < i_453_) {
+                while ( /**/i_459_ > i_455_ && i_458_ > i_455_) {
+                    i_459_ -= i_456_-- + i_456_
+                    i_458_ -= i_456_ + i_456_
+                }
+                var i_465_ = i - i_456_
+                if (i_465_ < this.anInt7496) i_465_ = this.anInt7496
+                var i_466_ = i + i_456_
+                if (i_466_ > this.anInt7507 - 1) i_466_ = this.anInt7507 - 1
+                var i_467_ = i_465_ + i_454_ * this.anInt7477
+                for (i_468_ in i_465_..i_466_) {
+                    if (i_448_.toFloat() < this.aFloatArray7511!![i_467_]) this.anIntArray7483!![i_467_] = i_450_
+                    i_467_++
+                }
+                i_454_++
+                i_459_ += i_457_ + i_457_
+                i_458_ += i_457_++ + i_457_
+            }
+        } else if (i_451_ == 1) {
+            i_450_ = (((i_450_ and 0xff00ff) * i_460_ shr 8 and 0xff00ff) + ((i_450_ and 0xff00) * i_460_ shr 8 and 0xff00) + (i_460_ shl 24))
+            val i_469_ = 256 - i_460_
+            while (i_454_ < i_447_) {
+                while ( /**/i_459_ <= i_455_ || i_458_ <= i_455_) {
+                    i_458_ += i_456_ + i_456_
+                    i_459_ += i_456_++ + i_456_
+                }
+                var i_470_ = i - i_456_ + 1
+                if (i_470_ < this.anInt7496) i_470_ = this.anInt7496
+                var i_471_ = i + i_456_
+                if (i_471_ > this.anInt7507) i_471_ = this.anInt7507
+                var i_472_ = i_470_ + i_454_ * this.anInt7477
+                for (i_473_ in i_470_..<i_471_) {
+                    if (i_448_.toFloat() < this.aFloatArray7511!![i_472_]) {
+                        var i_474_ = this.anIntArray7483!![i_472_]
+                        i_474_ = (((i_474_ and 0xff00ff) * i_469_ shr 8 and 0xff00ff) + ((i_474_ and 0xff00) * i_469_ shr 8 and 0xff00))
+                        this.anIntArray7483!![i_472_] = i_450_ + i_474_
+                    }
+                    i_472_++
+                }
+                i_454_++
+                i_458_ -= i_457_-- + i_457_
+                i_459_ -= i_457_ + i_457_
+            }
+            i_456_ = i_449_
+            i_457_ = -i_457_
+            i_459_ = i_457_ * i_457_ + i_455_
+            i_458_ = i_459_ - i_456_
+            i_459_ -= i_457_
+            while (i_454_ < i_453_) {
+                while ( /**/i_459_ > i_455_ && i_458_ > i_455_) {
+                    i_459_ -= i_456_-- + i_456_
+                    i_458_ -= i_456_ + i_456_
+                }
+                var i_475_ = i - i_456_
+                if (i_475_ < this.anInt7496) i_475_ = this.anInt7496
+                var i_476_ = i + i_456_
+                if (i_476_ > this.anInt7507 - 1) i_476_ = this.anInt7507 - 1
+                var i_477_ = i_475_ + i_454_ * this.anInt7477
+                for (i_478_ in i_475_..i_476_) {
+                    if (i_448_.toFloat() < this.aFloatArray7511!![i_477_]) {
+                        var i_479_ = this.anIntArray7483!![i_477_]
+                        i_479_ = (((i_479_ and 0xff00ff) * i_469_ shr 8 and 0xff00ff) + ((i_479_ and 0xff00) * i_469_ shr 8 and 0xff00))
+                        this.anIntArray7483!![i_477_] = i_450_ + i_479_
+                    }
+                    i_477_++
+                }
+                i_454_++
+                i_459_ += i_457_ + i_457_
+                i_458_ += i_457_++ + i_457_
+            }
+        } else if (i_451_ == 2) {
+            while (i_454_ < i_447_) {
+                while ( /**/i_459_ <= i_455_ || i_458_ <= i_455_) {
+                    i_458_ += i_456_ + i_456_
+                    i_459_ += i_456_++ + i_456_
+                }
+                var i_480_ = i - i_456_ + 1
+                if (i_480_ < this.anInt7496) i_480_ = this.anInt7496
+                var i_481_ = i + i_456_
+                if (i_481_ > this.anInt7507) i_481_ = this.anInt7507
+                var i_482_ = i_480_ + i_454_ * this.anInt7477
+                for (i_483_ in i_480_..<i_481_) {
+                    if (i_448_.toFloat() < this.aFloatArray7511!![i_482_]) {
+                        var i_484_ = this.anIntArray7483!![i_482_]
+                        val i_485_ = i_450_ + i_484_
+                        val i_486_ = (i_450_ and 0xff00ff) + (i_484_ and 0xff00ff)
+                        i_484_ = (i_486_ and 0x1000100) + (i_485_ - i_486_ and 0x10000)
+                        this.anIntArray7483!![i_482_] = i_485_ - i_484_ or i_484_ - (i_484_ ushr 8)
+                    }
+                    i_482_++
+                }
+                i_454_++
+                i_458_ -= i_457_-- + i_457_
+                i_459_ -= i_457_ + i_457_
+            }
+            i_456_ = i_449_
+            i_457_ = -i_457_
+            i_459_ = i_457_ * i_457_ + i_455_
+            i_458_ = i_459_ - i_456_
+            i_459_ -= i_457_
+            while (i_454_ < i_453_) {
+                while ( /**/i_459_ > i_455_ && i_458_ > i_455_) {
+                    i_459_ -= i_456_-- + i_456_
+                    i_458_ -= i_456_ + i_456_
+                }
+                var i_487_ = i - i_456_
+                if (i_487_ < this.anInt7496) i_487_ = this.anInt7496
+                var i_488_ = i + i_456_
+                if (i_488_ > this.anInt7507 - 1) i_488_ = this.anInt7507 - 1
+                var i_489_ = i_487_ + i_454_ * this.anInt7477
+                for (i_490_ in i_487_..i_488_) {
+                    if (i_448_.toFloat() < this.aFloatArray7511!![i_489_]) {
+                        var i_491_ = this.anIntArray7483!![i_489_]
+                        val i_492_ = i_450_ + i_491_
+                        val i_493_ = (i_450_ and 0xff00ff) + (i_491_ and 0xff00ff)
+                        i_491_ = (i_493_ and 0x1000100) + (i_492_ - i_493_ and 0x10000)
+                        this.anIntArray7483!![i_489_] = i_492_ - i_491_ or i_491_ - (i_491_ ushr 8)
+                    }
+                    i_489_++
+                }
+                i_454_++
+                i_459_ += i_457_ + i_457_
+                i_458_ += i_457_++ + i_457_
+            }
+        } else throw IllegalArgumentException()
     }
 
     actual override fun method3704(): Int {
-        TODO("Not yet implemented")
+        return 0
     }
 
     actual override fun JA(i: Int, i_103_: Int, i_104_: Int, i_105_: Int, i_106_: Int, i_107_: Int): Int {
-        TODO("Not yet implemented")
+        var i_416_ = 0
+        var f = ((this.aClass101_Sub1_7492!!.aFloat5662) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_103_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_104_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5681))
+        if (f < 1.0f) f = 1.0f
+        var f_417_ = ((this.aClass101_Sub1_7492!!.aFloat5662) * i_105_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_106_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_107_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5681))
+        if (f_417_ < 1.0f) f_417_ = 1.0f
+        if (f < this.anInt7482.toFloat() && f_417_ < this.anInt7482.toFloat()) i_416_ = i_416_ or 0x10
+        else if (f > this.anInt7494.toFloat() && f_417_ > this.anInt7494.toFloat()) i_416_ = i_416_ or 0x20
+        val i_418_ = (this.anInt7491.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5672) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673 * i_103_.toFloat()) + (this.aClass101_Sub1_7492!!.aFloat5669 * i_104_.toFloat()) + this.aClass101_Sub1_7492!!.aFloat5686) / f).toInt()
+        val i_419_ = (this.anInt7491.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5672) * i_105_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673 * i_106_.toFloat()) + (this.aClass101_Sub1_7492!!.aFloat5669 * i_107_.toFloat()) + this.aClass101_Sub1_7492!!.aFloat5686) / f_417_).toInt()
+        if (i_418_ < this.anInt7509 && i_419_ < this.anInt7509) i_416_ = i_416_ or 0x1
+        else if (i_418_ > this.anInt7508 && i_419_ > this.anInt7508) i_416_ = i_416_ or 0x2
+        val i_420_ = (this.anInt7497.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5655) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678 * i_103_.toFloat()) + (this.aClass101_Sub1_7492!!.aFloat5666 * i_104_.toFloat()) + this.aClass101_Sub1_7492!!.aFloat5685) / f).toInt()
+        val i_421_ = (this.anInt7497.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5655) * i_105_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678 * i_106_.toFloat()) + (this.aClass101_Sub1_7492!!.aFloat5666 * i_107_.toFloat()) + this.aClass101_Sub1_7492!!.aFloat5685) / f_417_).toInt()
+        if (i_420_ < this.anInt7490 && i_421_ < this.anInt7490) i_416_ = i_416_ or 0x4
+        else if (i_420_ > this.anInt7506 && i_421_ > this.anInt7506) i_416_ = i_416_ or 0x8
+        return i_416_
     }
 
     actual override fun method3652() {
+        if (!aBoolean7470) {
+            if (aBoolean7471) {
+                CubeMapMaterialPass.method2173(false, -101, true)
+                aBoolean7471 = false
+            }
+            this.aClass348_Sub31_7469 = null
+            aCanvas7468 = null
+            anInt7465 = 0
+            anInt7472 = 0
+            aHashtable_7467 = null
+            aBoolean7470 = true
+        }
     }
 
     actual override fun method3669(canvas: Canvas?, i: Int, i_108_: Int) {
+        var class348_sub31 = (aHashtable_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
+        if (class348_sub31 != null) {
+            class348_sub31.method2715(95.toByte())
+            class348_sub31 = method1035(9029, i_108_, canvas, i)!!
+            aHashtable_7467!!.method3483(112.toByte(), canvas.hashCode().toLong(), class348_sub31)
+            if (aCanvas7468 === canvas && aSpriteRenderable_7475 == null) {
+                anInt7465 = canvas!!.getWidth()
+                anInt7472 = canvas.getHeight()
+                this.aClass348_Sub31_7469 = class348_sub31
+                this.anIntArray7483 = class348_sub31.anIntArray6916
+                this.anInt7477 = class348_sub31.anInt6917
+                anInt7486 = class348_sub31.anInt6920
+                if (this.anInt7477 != anInt7495 || anInt7486 != anInt7488) {
+                    anInt7495 = this.anInt7477
+                    anInt7481 = anInt7495
+                    anInt7488 = anInt7486
+                    anInt7493 = anInt7488
+                    this.aFloatArray7511 = FloatArray(anInt7495 * anInt7488)
+                    this.aFloatArray7502 = this.aFloatArray7511
+                }
+                method3717()
+            }
+        }
     }
 
     actual fun c(i: Short): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     actual override fun c(): RendererType {
-        TODO("Not yet implemented")
+        return RendererType(0, "SSE", 1, "CPU", 0L)
     }
 
     actual override fun method3666(): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     actual override fun Q(i: Int, i_109_: Int, i_110_: Int, i_111_: Int, i_112_: Int, i_113_: Int, `is`: ByteArray?, i_114_: Int, i_115_: Int) {
+        var i_100_ = i_110_
+        var i_101_ = i_111_
+        if (i_100_ > 0 && i_101_ > 0) {
+            var i_106_ = 0
+            var i_107_ = 0
+            val i_108_ = (i_114_ shl 16) / i_100_
+            val i_109_ = (`is`!!.size / i_114_ shl 16) / i_101_
+            var i_110_2 = i + i_109_ * 0 + i_110_ * this.anInt7477
+            i_110_2 = i + i_109_ * this.anInt7477
+            var i_111_2 = this.anInt7477 - i_100_
+            if (i_109_ + i_101_ > this.anInt7503) i_101_ -= i_109_ + i_101_ - this.anInt7503
+            if (i_109_ < this.anInt7476) {
+                val i_112_ = this.anInt7476 - i_109_
+                i_101_ -= i_112_
+                i_110_2 += i_112_ * this.anInt7477
+                i_107_ += i_109_ * i_112_
+            }
+            if (i + i_100_ > this.anInt7507) {
+                val i_113_ = i + i_100_ - this.anInt7507
+                i_100_ -= i_113_
+                i_111_2 += i_113_
+            }
+            if (i < this.anInt7496) {
+                val i_114_2 = this.anInt7496 - i
+                i_100_ -= i_114_2
+                i_110_2 += i_114_2
+                i_106_ += i_108_ * i_114_2
+                i_111_2 += i_114_2
+            }
+            val i_115_2 = i_112_ ushr 24
+            val i_116_ = i_113_ ushr 24
+            if (i_115_ == 0 || i_115_ == 1 && i_115_2 == 255 && i_116_ == 255) {
+                val i_117_ = i_106_
+                for (i_118_ in -i_101_..-1) {
+                    val i_119_ = (i_107_ shr 16) * i_114_
+                    for (i_120_ in -i_100_..-1) {
+                        if (`is`[(i_106_ shr 16) + i_119_].toInt() != 0) this.anIntArray7483!![i_110_2++] = i_113_
+                        else this.anIntArray7483!![i_110_2++] = i_112_
+                        i_106_ += i_108_
+                    }
+                    i_107_ += i_109_
+                    i_106_ = i_117_
+                    i_110_2 += i_111_2
+                }
+            } else if (i_115_ == 1) {
+                val i_121_ = i_106_
+                for (i_122_ in -i_101_..-1) {
+                    val i_123_ = (i_107_ shr 16) * i_114_
+                    for (i_124_ in -i_100_..-1) {
+                        var i_125_ = i_112_
+                        if (`is`[(i_106_ shr 16) + i_123_].toInt() != 0) i_125_ = i_113_
+                        val i_126_ = i_125_ ushr 24
+                        val i_127_ = 255 - i_126_
+                        val i_128_ = this.anIntArray7483!![i_110_2]
+                        this.anIntArray7483!![i_110_2++] = ((((i_125_ and 0xff00ff) * i_126_ + (i_128_ and 0xff00ff) * i_127_) and 0xff00ff.inv()) + (((i_125_ and 0xff00) * i_126_ + (i_128_ and 0xff00) * i_127_) and 0xff0000)) shr 8
+                        i_106_ += i_108_
+                    }
+                    i_107_ += i_109_
+                    i_106_ = i_121_
+                    i_110_2 += i_111_2
+                }
+            } else if (i_115_ == 2) {
+                val i_129_ = i_106_
+                for (i_130_ in -i_101_..-1) {
+                    val i_131_ = (i_107_ shr 16) * i_114_
+                    for (i_132_ in -i_100_..-1) {
+                        var i_133_ = i_112_
+                        if (`is`[(i_106_ shr 16) + i_131_].toInt() != 0) i_133_ = i_113_
+                        if (i_133_ != 0) {
+                            var i_134_ = this.anIntArray7483!![i_110_2]
+                            val i_135_ = i_133_ + i_134_
+                            val i_136_ = (i_133_ and 0xff00ff) + (i_134_ and 0xff00ff)
+                            i_134_ = (i_136_ and 0x1000100) + (i_135_ - i_136_ and 0x10000)
+                            this.anIntArray7483!![i_110_2++] = i_135_ - i_134_ or i_134_ - (i_134_ ushr 8)
+                        } else i_110_2++
+                        i_106_ += i_108_
+                    }
+                    i_107_ += i_109_
+                    i_106_ = i_129_
+                    i_110_2 += i_111_2
+                }
+            } else throw IllegalArgumentException()
+        }
     }
 
     actual override fun method3629(i: Int, i_116_: Int, bool: Boolean): AbstractModelRenderer {
-        TODO("Not yet implemented")
+        if (bool) return SoftwareAlphaSpriteRenderer(this, i, i_116_)
+        return SoftwareRgbSpriteRenderer(this, i, i_116_)
     }
 
     actual override fun ya() {
+        if (this.anInt7496 == 0 && this.anInt7507 == this.anInt7477 && this.anInt7476 == 0 && this.anInt7503 == anInt7486) {
+            val i = this.aFloatArray7511!!.size
+            val i_176_ = i - (i and 0x7)
+            var i_177_ = 0
+            while (i_177_ < i_176_) {
+                this.aFloatArray7511!![i_177_++] = 2.14748365E9f
+                this.aFloatArray7511!![i_177_++] = 2.14748365E9f
+                this.aFloatArray7511!![i_177_++] = 2.14748365E9f
+                this.aFloatArray7511!![i_177_++] = 2.14748365E9f
+                this.aFloatArray7511!![i_177_++] = 2.14748365E9f
+                this.aFloatArray7511!![i_177_++] = 2.14748365E9f
+                this.aFloatArray7511!![i_177_++] = 2.14748365E9f
+                this.aFloatArray7511!![i_177_++] = 2.14748365E9f
+            }
+            while (i_177_ < i) this.aFloatArray7511!![i_177_++] = 2.14748365E9f
+        } else {
+            var i = this.anInt7507 - this.anInt7496
+            val i_178_ = this.anInt7503 - this.anInt7476
+            val i_179_ = this.anInt7477 - i
+            val i_180_ = (this.anInt7496 + this.anInt7476 * this.anInt7477)
+            val i_181_ = i shr 3
+            val i_182_ = i and 0x7
+            i = i_180_ - 1
+            for (i_183_ in -i_178_..-1) {
+                if (i_181_ > 0) {
+                    var i_184_ = i_181_
+                    do {
+                        this.aFloatArray7511!![++i] = 2.14748365E9f
+                        this.aFloatArray7511!![++i] = 2.14748365E9f
+                        this.aFloatArray7511!![++i] = 2.14748365E9f
+                        this.aFloatArray7511!![++i] = 2.14748365E9f
+                        this.aFloatArray7511!![++i] = 2.14748365E9f
+                        this.aFloatArray7511!![++i] = 2.14748365E9f
+                        this.aFloatArray7511!![++i] = 2.14748365E9f
+                        this.aFloatArray7511!![++i] = 2.14748365E9f
+                    } while (--i_184_ > 0)
+                }
+                if (i_182_ > 0) {
+                    var i_185_ = i_182_
+                    do this.aFloatArray7511!![++i] = 2.14748365E9f while (--i_185_ > 0)
+                }
+                i += i_179_
+            }
+        }
     }
 
     actual override fun I(): Int {
-        TODO("Not yet implemented")
+        return 0
     }
 
     actual override fun f(i: Int, i_117_: Int) {
+        val class167 = method3724(currentThread())
+        this.anInt7482 = i
+        this.anInt7494 = i_117_
+        class167!!.anInt2210 = this.anInt7494 - 255
     }
 
     actual override fun KA(i: Int, i_118_: Int, i_119_: Int, i_120_: Int) {
+        var i = i
+        var i_142_ = i_118_
+        var i_143_ = i_119_
+        var i_144_ = i_120_
+        if (i < 0) i = 0
+        if (i_142_ < 0) i_142_ = 0
+        if (i_143_ > this.anInt7477) i_143_ = this.anInt7477
+        if (i_144_ > anInt7486) i_144_ = anInt7486
+        this.anInt7496 = i
+        this.anInt7507 = i_143_
+        this.anInt7476 = i_142_
+        this.anInt7503 = i_144_
+        method3713()
     }
 
     actual override fun method3646(i: Int) {
+        val i_634_ = i - anInt7466
+        var `object` = aLruByteCache_7498.method588(-5052)
+        while (`object` != null) {
+            val class348_sub25 = `object` as ImageBoxBlurScroller
+            if (class348_sub25.aBoolean6882) {
+                class348_sub25.anInt6879 += i_634_
+                val i_635_ = class348_sub25.anInt6879 / 20
+                if (i_635_ > 0) {
+                    val class12 = this.aRenderConfig4579!!.method3((class348_sub25.anInt6883), -6662)
+                    class348_sub25.method2995((class12!!.aByte198 * i_634_ * 50 / 1000), (class12.aByte211 * i_634_ * 50 / 1000))
+                    class348_sub25.anInt6879 -= i_635_ * 20
+                }
+                class348_sub25.aBoolean6882 = false
+            }
+            `object` = aLruByteCache_7498.method579(-117)
+        }
+        anInt7466 = i
+        aLruByteCache_7499.method578(2, 5)
+        aLruByteCache_7498.method578(2, 5)
     }
 
     actual override fun method3679(i: Int, i_121_: Int): Int {
-        TODO("Not yet implemented")
+        return i or i_121_
     }
 
     actual override fun ra(i: Int, i_122_: Int, i_123_: Int, i_124_: Int) {
+        for (i_90_ in aParticleSystemStateArray7480!!.indices) {
+            aParticleSystemStateArray7480!![i_90_]!!.anInt2205 = aParticleSystemStateArray7480!![i_90_]!!.anInt2192
+            aParticleSystemStateArray7480!![i_90_]!!.anInt2211 = i
+            aParticleSystemStateArray7480!![i_90_]!!.anInt2192 = i_122_
+            aParticleSystemStateArray7480!![i_90_]!!.anInt2197 = i_123_
+            aParticleSystemStateArray7480!![i_90_]!!.aBoolean2195 = true
+        }
     }
 
     actual override fun E(): Int {
-        TODO("Not yet implemented")
+        return 0
     }
 
     actual override fun pa() {
+        for (i in aParticleSystemStateArray7480!!.indices) {
+            aParticleSystemStateArray7480!![i]!!.anInt2192 = aParticleSystemStateArray7480!![i]!!.anInt2205
+            aParticleSystemStateArray7480!![i]!!.aBoolean2195 = false
+        }
     }
 
     actual override fun method3688(i: Int, i_125_: Int, i_126_: Int, i_127_: Int, i_128_: Int, i_129_: Int, i_130_: Int) {
+        var i = i
+        var i_494_ = i_125_
+        val class167 = method3724(currentThread())
+        val class109 = class167!!.aShadowProjector_2220!!
+        var i_500_ = i_126_ - i
+        var i_501_ = i_127_ - i_494_
+        val i_502_ = if (i_500_ >= 0) i_500_ else -i_500_
+        val i_503_ = if (i_501_ >= 0) i_501_ else -i_501_
+        var i_504_ = i_502_
+        if (i_504_ < i_503_) i_504_ = i_503_
+        if (i_504_ != 0) {
+            var i_505_ = (i_500_ shl 16) / i_504_
+            var i_506_ = (i_501_ shl 16) / i_504_
+            i_500_ += i_505_ shr 16
+            i_501_ += i_506_ shr 16
+            if (i_506_ <= i_505_) i_505_ = -i_505_
+            else i_506_ = -i_506_
+            val i_507_ = i_129_ * i_506_ shr 17
+            val i_508_ = i_129_ * i_506_ + 1 shr 17
+            val i_509_ = i_129_ * i_505_ shr 17
+            val i_510_ = i_129_ * i_505_ + 1 shr 17
+            i -= class109.method1028()
+            i_494_ -= class109.method1017()
+            val i_511_ = i + i_507_
+            val i_512_ = i - i_508_
+            val i_513_ = i + i_500_ - i_508_
+            val i_514_ = i + i_500_ + i_507_
+            val i_515_ = i_494_ + i_509_
+            val i_516_ = i_494_ - i_510_
+            val i_517_ = i_494_ + i_501_ - i_510_
+            val i_518_ = i_494_ + i_501_ + i_509_
+            if (i_130_ == 0) class109.anInt1674 = 0
+            else if (i_130_ == 1) class109.anInt1674 = 255 - (i_128_ ushr 24)
+            else throw IllegalArgumentException()
+            C(false)
+            class109.aBoolean1671 = (i_511_ < 0 || i_511_ > class109.anInt1679 || i_512_ < 0 || i_512_ > class109.anInt1679 || i_513_ < 0 || i_513_ > class109.anInt1679)
+            class109.method1018(i_515_.toFloat(), i_516_.toFloat(), i_517_.toFloat(), i_511_.toFloat(), i_512_.toFloat(), i_513_.toFloat(), 100.0f, 100.0f, 100.0f, i_128_)
+            class109.aBoolean1671 = (i_511_ < 0 || i_511_ > class109.anInt1679 || i_513_ < 0 || i_513_ > class109.anInt1679 || i_514_ < 0 || i_514_ > class109.anInt1679)
+            class109.method1018(i_515_.toFloat(), i_517_.toFloat(), i_518_.toFloat(), i_511_.toFloat(), i_513_.toFloat(), i_514_.toFloat(), 100.0f, 100.0f, 100.0f, i_128_)
+            C(true)
+        }
     }
 
     actual override fun GA(i: Int) {
+        aa(0, 0, this.anInt7477, anInt7486, i, 0)
     }
 
     actual override fun method3670(): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     actual override fun X(i: Int) {
+        /* empty */
     }
 
     actual override fun method3625(modelDefinition: ModelDefinition?, i: Int, i_131_: Int, i_132_: Int, i_133_: Int): AbstractModel {
-        TODO("Not yet implemented")
+        return SoftwareModel(this, modelDefinition!!, i, i_132_, i_133_, i_131_)
     }
 
     actual override fun method3674(i: Int, i_134_: Int, i_135_: Int, i_136_: Int, i_137_: Int, i_138_: Int, i_139_: Int, i_140_: Int, i_141_: Int) {
+        var i = i
+        var i_592_ = i_134_
+        var i_593_ = i_135_
+        var i_594_ = i_136_
+        var i_595_ = i_137_
+        var i_597_ = i_139_
+        var i_598_ = i_140_
+        var i_599_ = i_141_
+        i_593_ -= i
+        i_594_ -= i_592_
+        if (i_594_ == 0) {
+            if (i_593_ >= 0) method3715(i, i_592_, i_593_ + 1, i_595_, i_138_, i_597_, i_598_, i_599_)
+            else {
+                val i_600_ = i_597_ + i_598_
+                i_599_ %= i_600_
+                i_599_ = i_600_ + i_597_ - i_599_ - (-i_593_ + 1) % i_600_
+                i_599_ %= i_600_
+                if (i_599_ < 0) i_599_ += i_600_
+                method3715(i + i_593_, i_592_, -i_593_ + 1, i_595_, i_138_, i_597_, i_598_, i_599_)
+            }
+        } else if (i_593_ == 0) {
+            if (i_594_ >= 0) method3721(i, i_592_, i_594_ + 1, i_595_, i_138_, i_597_, i_598_, i_599_)
+            else {
+                val i_601_ = i_597_ + i_598_
+                i_599_ %= i_601_
+                i_599_ = i_601_ + i_597_ - i_599_ - (-i_594_ + 1) % i_601_
+                i_599_ %= i_601_
+                if (i_599_ < 0) i_599_ += i_601_
+                method3721(i, i_592_ + i_594_, -i_594_ + 1, i_595_, i_138_, i_597_, i_598_, i_599_)
+            }
+        } else {
+            i_599_ = i_599_ shl 8
+            i_597_ = i_597_ shl 8
+            i_598_ = i_598_ shl 8
+            val i_602_ = i_597_ + i_598_
+            i_599_ %= i_602_
+            if (i_593_ + i_594_ < 0) {
+                val i_603_ = (sqrt((i_593_ * i_593_ + i_594_ * i_594_).toDouble()) * 256.0).toInt()
+                val i_604_ = i_603_ % i_602_
+                i_599_ = i_602_ + i_597_ - i_599_ - i_604_
+                i_599_ %= i_602_
+                if (i_599_ < 0) i_599_ += i_602_
+                i += i_593_
+                i_593_ = -i_593_
+                i_592_ += i_594_
+                i_594_ = -i_594_
+            }
+            if (i_593_ > i_594_) {
+                i_592_ = i_592_ shl 16
+                i_592_ += 32768
+                i_594_ = i_594_ shl 16
+                val i_605_ = floor(i_594_.toDouble() / i_593_.toDouble() + 0.5).toInt()
+                i_593_ += i
+                val i_606_ = i_138_ ushr 24
+                val i_607_ = sqrt((65536 + (i_605_ shr 8) * (i_605_ shr 8)).toDouble()).toInt()
+                if (i_595_ == 0 || i_595_ == 1 && i_606_ == 255) {
+                    while (i <= i_593_) {
+                        val i_608_ = i_592_ shr 16
+                        if (i >= this.anInt7496 && i < this.anInt7507 && i_608_ >= this.anInt7476 && i_608_ < this.anInt7503 && i_599_ < i_597_) this.anIntArray7483!![i + i_608_ * this.anInt7477] = i_138_
+                        i_592_ += i_605_
+                        i++
+                        i_599_ += i_607_
+                        i_599_ %= i_602_
+                    }
+                    return
+                }
+                if (i_595_ == 1) {
+                    var color = i_138_
+                    color = (((color and 0xff00ff) * i_606_ shr 8 and 0xff00ff) + ((color and 0xff00) * i_606_ shr 8 and 0xff00) + (i_606_ shl 24))
+                    val i_609_ = 256 - i_606_
+                    while (i <= i_593_) {
+                        val i_610_ = i_592_ shr 16
+                        if (i >= this.anInt7496 && i < this.anInt7507 && i_610_ >= this.anInt7476 && i_610_ < this.anInt7503 && i_599_ < i_597_) {
+                            val i_611_ = i + i_610_ * this.anInt7477
+                            var i_612_ = this.anIntArray7483!![i_611_]
+                            i_612_ = (((i_612_ and 0xff00ff) * i_609_ shr 8 and 0xff00ff) + ((i_612_ and 0xff00) * i_609_ shr 8 and 0xff00))
+                            this.anIntArray7483!![i_611_] = color + i_612_
+                        }
+                        i_592_ += i_605_
+                        i++
+                        i_599_ += i_607_
+                        i_599_ %= i_602_
+                    }
+                    return
+                }
+                if (i_595_ == 2) {
+                    while (i <= i_593_) {
+                        val i_613_ = i_592_ shr 16
+                        if (i >= this.anInt7496 && i < this.anInt7507 && i_613_ >= this.anInt7476 && i_613_ < this.anInt7503 && i_599_ < i_597_) {
+                            val i_614_ = i + i_613_ * this.anInt7477
+                            var i_615_ = this.anIntArray7483!![i_614_]
+                            val i_616_ = i_138_ + i_615_
+                            val i_617_ = (i_138_ and 0xff00ff) + (i_615_ and 0xff00ff)
+                            i_615_ = (i_617_ and 0x1000100) + (i_616_ - i_617_ and 0x10000)
+                            this.anIntArray7483!![i_614_] = i_616_ - i_615_ or i_615_ - (i_615_ ushr 8)
+                        }
+                        i_592_ += i_605_
+                        i++
+                        i_599_ += i_607_
+                        i_599_ %= i_602_
+                    }
+                    return
+                }
+                throw IllegalArgumentException()
+            }
+            i = i shl 16
+            i += 32768
+            i_593_ = i_593_ shl 16
+            val i_618_ = floor(i_593_.toDouble() / i_594_.toDouble() + 0.5).toInt()
+            i_594_ += i_592_
+            val i_619_ = i_138_ ushr 24
+            val i_620_ = sqrt((65536 + (i_618_ shr 8) * (i_618_ shr 8)).toDouble()).toInt()
+            if (i_595_ == 0 || i_595_ == 1 && i_619_ == 255) {
+                while (i_592_ <= i_594_) {
+                    val i_621_ = i shr 16
+                    if (i_592_ >= this.anInt7476 && i_592_ < this.anInt7503 && i_621_ >= this.anInt7496 && i_621_ < this.anInt7507 && i_599_ < i_597_) this.anIntArray7483!![i_621_ + i_592_ * this.anInt7477] = i_138_
+                    i += i_618_
+                    i_592_++
+                    i_599_ += i_620_
+                    i_599_ %= i_602_
+                }
+            } else if (i_595_ == 1) {
+                var color = i_138_
+                color = (((color and 0xff00ff) * i_619_ shr 8 and 0xff00ff) + ((color and 0xff00) * i_619_ shr 8 and 0xff00) + (i_619_ shl 24))
+                val i_622_ = 256 - i_619_
+                while (i_592_ <= i_594_) {
+                    val i_623_ = i shr 16
+                    if (i_592_ >= this.anInt7476 && i_592_ < this.anInt7503 && i_623_ >= this.anInt7496 && i_623_ < this.anInt7507 && i_599_ < i_597_) {
+                        val i_624_ = i_623_ + i_592_ * this.anInt7477
+                        var i_625_ = this.anIntArray7483!![i_624_]
+                        i_625_ = (((i_625_ and 0xff00ff) * i_622_ shr 8 and 0xff00ff) + ((i_625_ and 0xff00) * i_622_ shr 8 and 0xff00))
+                        this.anIntArray7483!![i_623_ + i_592_ * this.anInt7477] = color + i_625_
+                    }
+                    i += i_618_
+                    i_592_++
+                    i_599_ += i_620_
+                    i_599_ %= i_602_
+                }
+            } else if (i_595_ == 2) {
+                while (i_592_ <= i_594_) {
+                    val i_626_ = i shr 16
+                    if (i_592_ >= this.anInt7476 && i_592_ < this.anInt7503 && i_626_ >= this.anInt7496 && i_626_ < this.anInt7507 && i_599_ < i_597_) {
+                        val i_627_ = i_626_ + i_592_ * this.anInt7477
+                        var i_628_ = this.anIntArray7483!![i_627_]
+                        val i_629_ = i_138_ + i_628_
+                        val i_630_ = (i_138_ and 0xff00ff) + (i_628_ and 0xff00ff)
+                        i_628_ = (i_630_ and 0x1000100) + (i_629_ - i_630_ and 0x10000)
+                        this.anIntArray7483!![i_627_] = i_629_ - i_628_ or i_628_ - (i_628_ ushr 8)
+                    }
+                    i += i_618_
+                    i_592_++
+                    i_599_ += i_620_
+                    i_599_ %= i_602_
+                }
+            } else throw IllegalArgumentException()
+        }
     }
 
     actual override fun F(i: Int, i_142_: Int) {
+        val i_371_ = i_142_ * this.anInt7477 + i
+        val i_372_ = i_142_ * anInt7495 + i
+        if (i_371_ != 0 || i_372_ != 0) {
+            val `is` = this.anIntArray7483
+            val fs = this.aFloatArray7511
+            if (i_371_ < 0) {
+                val i_373_ = `is`!!.size + i_371_
+                ArrayCopyUtil.method1578(`is`, -i_371_, `is`, 0, i_373_)
+            } else if (i_371_ > 0) {
+                val i_374_ = `is`!!.size - i_371_
+                ArrayCopyUtil.method1578(`is`, 0, `is`, i_371_, i_374_)
+            }
+            if (i_372_ < 0) {
+                val i_375_ = fs!!.size + i_372_
+                ArrayCopyUtil.method1574(fs, -i_372_, fs, 0, i_375_)
+            } else if (i_372_ > 0) {
+                val i_376_ = fs!!.size - i_372_
+                ArrayCopyUtil.method1574(fs, 0, fs, i_372_, i_376_)
+            }
+        }
     }
 
     actual override fun method3683(i: Int, i_143_: Int, i_144_: Int, i_145_: Int, bool: Boolean): AbstractModelRenderer {
-        TODO("Not yet implemented")
+        val `is` = IntArray(i_144_ * i_145_)
+        var i_218_ = i_143_ * this.anInt7477 + i
+        val i_219_ = this.anInt7477 - i_144_
+        for (i_220_ in 0..<i_145_) {
+            val i_221_ = i_220_ * i_144_
+            for (i_222_ in 0..<i_144_) `is`[i_221_ + i_222_] = this.anIntArray7483!![i_218_++]
+            i_218_ += i_219_
+        }
+        if (bool) return SoftwareAlphaSpriteRenderer(this, `is`, i_144_, i_145_)
+        return SoftwareRgbSpriteRenderer(this, `is`, i_144_, i_145_)
     }
 
     actual override fun method3631(i: Int) {
+        this.anInt7485 = i
+        this.anInt5141 = i
+        aParticleSystemStateArray7480 = arrayOfNulls<ParticleSystemState>(this.anInt7485)
+        for (i_240_ in 0..<this.anInt7485) aParticleSystemStateArray7480!![i_240_] = ParticleSystemState(this)
+    }
+
+    private fun method3717() {
+        for (i in 0..<this.anInt7485) aParticleSystemStateArray7480!![i]!!.method1292(64)
+        la()
     }
 
     actual override fun r(i: Int, i_147_: Int, i_148_: Int, i_149_: Int, i_150_: Int, i_151_: Int, i_152_: Int): Int {
-        TODO("Not yet implemented")
+        val f = ((this.aClass101_Sub1_7492!!.aFloat5662) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_147_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_148_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5681))
+        val f_585_ = ((this.aClass101_Sub1_7492!!.aFloat5662) * i_149_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_150_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_151_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5681))
+        var i_586_ = 0
+        if (f < this.anInt7482.toFloat() && f_585_ < this.anInt7482.toFloat()) i_586_ = i_586_ or 0x10
+        else if (f > this.anInt7494.toFloat() && f_585_ > this.anInt7494.toFloat()) i_586_ = i_586_ or 0x20
+        val i_587_ = (this.anInt7491.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5672) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673 * i_147_.toFloat()) + (this.aClass101_Sub1_7492!!.aFloat5669 * i_148_.toFloat()) + this.aClass101_Sub1_7492!!.aFloat5686) / i_152_.toFloat()).toInt()
+        val i_588_ = (this.anInt7491.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5672) * i_149_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673 * i_150_.toFloat()) + (this.aClass101_Sub1_7492!!.aFloat5669 * i_151_.toFloat()) + this.aClass101_Sub1_7492!!.aFloat5686) / i_152_.toFloat()).toInt()
+        if (i_587_ < this.anInt7509 && i_588_ < this.anInt7509) i_586_ = i_586_ or 0x1
+        else if (i_587_ > this.anInt7508 && i_588_ > this.anInt7508) i_586_ = i_586_ or 0x2
+        val i_589_ = (this.anInt7497.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5655) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678 * i_147_.toFloat()) + (this.aClass101_Sub1_7492!!.aFloat5666 * i_148_.toFloat()) + this.aClass101_Sub1_7492!!.aFloat5685) / i_152_.toFloat()).toInt()
+        val i_590_ = (this.anInt7497.toFloat() * ((this.aClass101_Sub1_7492!!.aFloat5655) * i_149_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678 * i_150_.toFloat()) + (this.aClass101_Sub1_7492!!.aFloat5666 * i_151_.toFloat()) + this.aClass101_Sub1_7492!!.aFloat5685) / i_152_.toFloat()).toInt()
+        if (i_589_ < this.anInt7490 && i_590_ < this.anInt7490) i_586_ = i_586_ or 0x4
+        else if (i_589_ > this.anInt7506 && i_590_ > this.anInt7506) i_586_ = i_586_ or 0x8
+        return i_586_
     }
 
     actual fun va(var_shaderProgram: ShaderProgram?) {
+        /* shaders unused in software rendering - no-op */
     }
 
     actual override fun method3643(canvas: Canvas?, i: Int, i_153_: Int) {
+        var class348_sub31 = (aHashtable_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
+        if (class348_sub31 == null) {
+            class348_sub31 = method1035(9029, i_153_, canvas, i)
+            aHashtable_7467!!.method3483(21.toByte(), canvas.hashCode().toLong(), class348_sub31)
+        } else if (class348_sub31.anInt6917 != i || class348_sub31.anInt6920 != i_153_) method3669(canvas, i, i_153_)
     }
 
     actual override fun method3706(circleRasterizer: CircleRasterizer?, circleRasterizer_154_: CircleRasterizer?, f: Float, circleRasterizer_155_: CircleRasterizer?): CircleRasterizer? {
-        TODO("Not yet implemented")
+        return null
     }
 
     actual override fun K(`is`: IntArray?) {
+        `is`!![0] = this.anInt7496
+        `is`!![1] = this.anInt7476
+        `is`!![2] = this.anInt7507
+        `is`!![3] = this.anInt7503
     }
 
     actual override fun method3694(): Boolean {
-        TODO("Not yet implemented")
+        return true
     }
 
 //    @Throws(exceptionClasses = [ClientException::class])
     actual override fun method3626(i: Int, i_156_: Int) {
+        check(!(aCanvas7468 == null || this.aClass348_Sub31_7469 == null)) { "off" }
+        try {
+            val graphics = aCanvas7468!!.getGraphics()
+            this.aClass348_Sub31_7469!!.method3011(0, i, anInt7472, graphics, -1, 0, anInt7465, i_156_)
+        } catch (exception: Exception) {
+            aCanvas7468!!.repaint()
+        }
     }
 
     actual override fun method3665(i: Int, i_157_: Int): CameraMarker {
-        TODO("Not yet implemented")
+        return method3629(i, i_157_, false)
     }
 
     actual override fun method3642(i: Int, class348_sub1s: Array<AbstractTileShape?>?) {
+        /* empty - matches SoftwareRenderer, which does not use native tile-shape marshalling */
     }
 
     actual override fun za(i: Int, i_160_: Int, i_161_: Int, i_162_: Int, i_163_: Int) {
+        var i_526_ = i_160_
+        var i_527_ = i_161_
+        var i_528_ = i_162_
+        if (i_527_ < 0) i_527_ = -i_527_
+        var i_530_ = i_526_ - i_527_
+        if (i_530_ < this.anInt7476) i_530_ = this.anInt7476
+        var i_531_ = i_526_ + i_527_ + 1
+        if (i_531_ > this.anInt7503) i_531_ = this.anInt7503
+        var i_532_ = i_530_
+        val i_533_ = i_527_ * i_527_
+        var i_534_ = 0
+        var i_535_ = i_526_ - i_532_
+        var i_536_ = i_535_ * i_535_
+        var i_537_ = i_536_ - i_535_
+        if (i_526_ > i_531_) i_526_ = i_531_
+        val i_538_ = i_528_ ushr 24
+        if (i_163_ == 0 || i_163_ == 1 && i_538_ == 255) {
+            while (i_532_ < i_526_) {
+                while (i_537_ <= i_533_ || i_536_ <= i_533_) {
+                    i_536_ += i_534_ + i_534_
+                    i_537_ += i_534_++ + i_534_
+                }
+                var i_539_ = i - i_534_ + 1
+                if (i_539_ < this.anInt7496) i_539_ = this.anInt7496
+                var i_540_ = i + i_534_
+                if (i_540_ > this.anInt7507) i_540_ = this.anInt7507
+                var i_541_ = i_539_ + i_532_ * this.anInt7477
+                for (i_542_ in i_539_..<i_540_) this.anIntArray7483!![i_541_++] = i_528_
+                i_532_++
+                i_536_ -= i_535_-- + i_535_
+                i_537_ -= i_535_ + i_535_
+            }
+            i_534_ = i_527_
+            i_535_ = i_532_ - i_526_
+            i_537_ = i_535_ * i_535_ + i_533_
+            i_536_ = i_537_ - i_534_
+            i_537_ -= i_535_
+            while (i_532_ < i_531_) {
+                while (i_537_ > i_533_ && i_536_ > i_533_) {
+                    i_537_ -= i_534_-- + i_534_
+                    i_536_ -= i_534_ + i_534_
+                }
+                var i_543_ = i - i_534_
+                if (i_543_ < this.anInt7496) i_543_ = this.anInt7496
+                var i_544_ = i + i_534_
+                if (i_544_ > this.anInt7507 - 1) i_544_ = this.anInt7507 - 1
+                var i_545_ = i_543_ + i_532_ * this.anInt7477
+                for (i_546_ in i_543_..i_544_) this.anIntArray7483!![i_545_++] = i_528_
+                i_532_++
+                i_537_ += i_535_ + i_535_
+                i_536_ += i_535_++ + i_535_
+            }
+        } else if (i_163_ == 1) {
+            var color = i_528_
+            color = (((color and 0xff00ff) * i_538_ shr 8 and 0xff00ff) + ((color and 0xff00) * i_538_ shr 8 and 0xff00) + (i_538_ shl 24))
+            val i_547_ = 256 - i_538_
+            while (i_532_ < i_526_) {
+                while (i_537_ <= i_533_ || i_536_ <= i_533_) {
+                    i_536_ += i_534_ + i_534_
+                    i_537_ += i_534_++ + i_534_
+                }
+                var i_548_ = i - i_534_ + 1
+                if (i_548_ < this.anInt7496) i_548_ = this.anInt7496
+                var i_549_ = i + i_534_
+                if (i_549_ > this.anInt7507) i_549_ = this.anInt7507
+                var i_550_ = i_548_ + i_532_ * this.anInt7477
+                for (i_551_ in i_548_..<i_549_) {
+                    var i_552_ = this.anIntArray7483!![i_550_]
+                    i_552_ = (((i_552_ and 0xff00ff) * i_547_ shr 8 and 0xff00ff) + ((i_552_ and 0xff00) * i_547_ shr 8 and 0xff00))
+                    this.anIntArray7483!![i_550_++] = color + i_552_
+                }
+                i_532_++
+                i_536_ -= i_535_-- + i_535_
+                i_537_ -= i_535_ + i_535_
+            }
+            i_534_ = i_527_
+            i_535_ = -i_535_
+            i_537_ = i_535_ * i_535_ + i_533_
+            i_536_ = i_537_ - i_534_
+            i_537_ -= i_535_
+            while (i_532_ < i_531_) {
+                while (i_537_ > i_533_ && i_536_ > i_533_) {
+                    i_537_ -= i_534_-- + i_534_
+                    i_536_ -= i_534_ + i_534_
+                }
+                var i_553_ = i - i_534_
+                if (i_553_ < this.anInt7496) i_553_ = this.anInt7496
+                var i_554_ = i + i_534_
+                if (i_554_ > this.anInt7507 - 1) i_554_ = this.anInt7507 - 1
+                var i_555_ = i_553_ + i_532_ * this.anInt7477
+                for (i_556_ in i_553_..i_554_) {
+                    var i_557_ = this.anIntArray7483!![i_555_]
+                    i_557_ = (((i_557_ and 0xff00ff) * i_547_ shr 8 and 0xff00ff) + ((i_557_ and 0xff00) * i_547_ shr 8 and 0xff00))
+                    this.anIntArray7483!![i_555_++] = color + i_557_
+                }
+                i_532_++
+                i_537_ += i_535_ + i_535_
+                i_536_ += i_535_++ + i_535_
+            }
+        } else if (i_163_ == 2) {
+            while (i_532_ < i_526_) {
+                while (i_537_ <= i_533_ || i_536_ <= i_533_) {
+                    i_536_ += i_534_ + i_534_
+                    i_537_ += i_534_++ + i_534_
+                }
+                var i_558_ = i - i_534_ + 1
+                if (i_558_ < this.anInt7496) i_558_ = this.anInt7496
+                var i_559_ = i + i_534_
+                if (i_559_ > this.anInt7507) i_559_ = this.anInt7507
+                var i_560_ = i_558_ + i_532_ * this.anInt7477
+                for (i_561_ in i_558_..<i_559_) {
+                    var i_562_ = this.anIntArray7483!![i_560_]
+                    val i_563_ = i_528_ + i_562_
+                    val i_564_ = (i_528_ and 0xff00ff) + (i_562_ and 0xff00ff)
+                    i_562_ = (i_564_ and 0x1000100) + (i_563_ - i_564_ and 0x10000)
+                    this.anIntArray7483!![i_560_++] = i_563_ - i_562_ or i_562_ - (i_562_ ushr 8)
+                }
+                i_532_++
+                i_536_ -= i_535_-- + i_535_
+                i_537_ -= i_535_ + i_535_
+            }
+            i_534_ = i_527_
+            i_535_ = -i_535_
+            i_537_ = i_535_ * i_535_ + i_533_
+            i_536_ = i_537_ - i_534_
+            i_537_ -= i_535_
+            while (i_532_ < i_531_) {
+                while (i_537_ > i_533_ && i_536_ > i_533_) {
+                    i_537_ -= i_534_-- + i_534_
+                    i_536_ -= i_534_ + i_534_
+                }
+                var i_565_ = i - i_534_
+                if (i_565_ < this.anInt7496) i_565_ = this.anInt7496
+                var i_566_ = i + i_534_
+                if (i_566_ > this.anInt7507 - 1) i_566_ = this.anInt7507 - 1
+                var i_567_ = i_565_ + i_532_ * this.anInt7477
+                for (i_568_ in i_565_..i_566_) {
+                    var i_569_ = this.anIntArray7483!![i_567_]
+                    val i_570_ = i_528_ + i_569_
+                    val i_571_ = (i_528_ and 0xff00ff) + (i_569_ and 0xff00ff)
+                    i_569_ = (i_571_ and 0x1000100) + (i_570_ - i_571_ and 0x10000)
+                    this.anIntArray7483!![i_567_++] = i_570_ - i_569_ or i_569_ - (i_569_ ushr 8)
+                }
+                i_532_++
+                i_537_ += i_535_ + i_535_
+                i_536_ += i_535_++ + i_535_
+            }
+        } else throw IllegalArgumentException()
     }
 
     actual override fun na(i: Int, i_164_: Int, i_165_: Int, i_166_: Int): IntArray? {
-        TODO("Not yet implemented")
+        val `is` = IntArray(i_165_ * i_166_)
+        var i_3_ = 0
+        for (i_4_ in 0..<i_166_) {
+            val i_5_ = (i_164_ + i_4_) * this.anInt7477 + i
+            for (i_6_ in 0..<i_165_) `is`[i_3_++] = this.anIntArray7483!![i_5_ + i_6_]
+        }
+        return `is`
     }
 
     actual override fun method3647(bool: Boolean) {
+        /* empty */
     }
 
     actual override fun method3690(i: Int, i_167_: Int, i_168_: Int, i_169_: Int, i_170_: Int, f: Float): AbstractTileShape {
-        TODO("Not yet implemented")
+        return HashTileShape(i, i_167_, i_168_, i_169_, i_170_, f)
     }
 
     actual override fun method3677(canvas: Canvas?) {
+        if (canvas == null) {
+            aCanvas7468 = null
+            this.aClass348_Sub31_7469 = null
+            if (aSpriteRenderable_7475 == null) {
+                this.anIntArray7483 = null
+                anInt7486 = 1
+                this.anInt7477 = anInt7486
+                anInt7488 = 1
+                anInt7495 = anInt7488
+                method3717()
+            }
+        } else {
+            val class348_sub31 = (aHashtable_7467!!.method3480(canvas.hashCode().toLong(), -6008) as AbstractFrameBufferSurface?)
+            if (class348_sub31 != null) {
+                aCanvas7468 = canvas
+                anInt7465 = canvas.getWidth()
+                anInt7472 = canvas.getHeight()
+                this.aClass348_Sub31_7469 = class348_sub31
+                if (aSpriteRenderable_7475 == null) {
+                    this.anIntArray7483 = class348_sub31.anIntArray6916
+                    this.anInt7477 = class348_sub31.anInt6917
+                    anInt7486 = class348_sub31.anInt6920
+                    if (this.anInt7477 != anInt7495 || anInt7486 != anInt7488) {
+                        anInt7495 = this.anInt7477
+                        anInt7481 = anInt7495
+                        anInt7488 = anInt7486
+                        anInt7493 = anInt7488
+                        this.aFloatArray7511 = FloatArray(anInt7495 * anInt7488)
+                        this.aFloatArray7502 = this.aFloatArray7511
+                    }
+                    method3717()
+                }
+            }
+        }
     }
 
     actual override fun method3682(): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     actual override fun method3653(circleRasterizer: CircleRasterizer?) {
+        /* empty */
     }
 
     actual override fun method3654(): AbstractCameraTransform {
-        TODO("Not yet implemented")
+        return MatrixCameraTransform()
     }
 
     actual override fun method3678(i: Int) {
+        aParticleSystemStateArray7480!![i]!!.method1291(10000, null)
     }
 
     actual override fun EA(i: Int, i_171_: Int, i_172_: Int, i_173_: Int) {
+        val class167 = method3724(currentThread())
+        class167!!.anInt2211 = i
+        class167.anInt2192 = i_171_
+        class167.anInt2197 = i_172_
     }
 
     actual override fun method3633() {
+        /* empty */
     }
 
     actual override fun method3658(i: Int, i_174_: Int, i_175_: Int, i_176_: Int) {
+        /* empty */
     }
 
     actual fun FA() {
+        /* GC hint - no-op on JS */
     }
 
     actual override fun P(i: Int, i_178_: Int, i_179_: Int, i_180_: Int, i_181_: Int) {
+        var i_71_ = i_178_
+        var i_72_ = i_179_
+        var i_73_ = i_180_
+        if (i >= this.anInt7496 && i < this.anInt7507) {
+            if (i_71_ < this.anInt7476) {
+                i_72_ -= this.anInt7476 - i_71_
+                i_71_ = this.anInt7476
+            }
+            if (i_71_ + i_72_ > this.anInt7503) i_72_ = this.anInt7503 - i_71_
+            val i_75_ = i + i_71_ * this.anInt7477
+            val i_76_ = i_73_ ushr 24
+            if (i_181_ == 0 || i_181_ == 1 && i_76_ == 255) {
+                for (i_77_ in 0..<i_72_) this.anIntArray7483!![i_75_ + i_77_ * this.anInt7477] = i_73_
+            } else if (i_181_ == 1) {
+                i_73_ = (((i_73_ and 0xff00ff) * i_76_ shr 8 and 0xff00ff) + ((i_73_ and 0xff00) * i_76_ shr 8 and 0xff00) + (i_76_ shl 24))
+                val i_78_ = 256 - i_76_
+                for (i_79_ in 0..<i_72_) {
+                    val i_80_ = i_75_ + i_79_ * this.anInt7477
+                    var i_81_ = this.anIntArray7483!![i_80_]
+                    i_81_ = (((i_81_ and 0xff00ff) * i_78_ shr 8 and 0xff00ff) + ((i_81_ and 0xff00) * i_78_ shr 8 and 0xff00))
+                    this.anIntArray7483!![i_80_] = i_73_ + i_81_
+                }
+            } else if (i_181_ == 2) {
+                for (i_82_ in 0..<i_72_) {
+                    val i_83_ = i_75_ + i_82_ * this.anInt7477
+                    var i_84_ = this.anIntArray7483!![i_83_]
+                    val i_85_ = i_73_ + i_84_
+                    val i_86_ = (i_73_ and 0xff00ff) + (i_84_ and 0xff00ff)
+                    i_84_ = (i_86_ and 0x1000100) + (i_85_ - i_86_ and 0x10000)
+                    this.anIntArray7483!![i_83_] = i_85_ - i_84_ or i_84_ - (i_84_ ushr 8)
+                }
+            } else throw IllegalArgumentException()
+        }
     }
 
     actual override fun method3695(): Boolean {
-        TODO("Not yet implemented")
+        return true
     }
 
     actual override fun U(i: Int, i_182_: Int, i_183_: Int, i_184_: Int, i_185_: Int) {
+        var i = i
+        var i_187_ = i_183_
+        var i_188_ = i_184_
+        if (i_182_ >= this.anInt7476 && i_182_ < this.anInt7503) {
+            if (i < this.anInt7496) {
+                i_187_ -= this.anInt7496 - i
+                i = this.anInt7496
+            }
+            if (i + i_187_ > this.anInt7507) i_187_ = this.anInt7507 - i
+            val i_190_ = i + i_182_ * this.anInt7477
+            val i_191_ = i_188_ ushr 24
+            if (i_185_ == 0 || i_185_ == 1 && i_191_ == 255) {
+                for (i_192_ in 0..<i_187_) this.anIntArray7483!![i_190_ + i_192_] = i_188_
+            } else if (i_185_ == 1) {
+                i_188_ = (((i_188_ and 0xff00ff) * i_191_ shr 8 and 0xff00ff) + ((i_188_ and 0xff00) * i_191_ shr 8 and 0xff00) + (i_191_ shl 24))
+                val i_193_ = 256 - i_191_
+                for (i_194_ in 0..<i_187_) {
+                    var i_195_ = this.anIntArray7483!![i_190_ + i_194_]
+                    i_195_ = (((i_195_ and 0xff00ff) * i_193_ shr 8 and 0xff00ff) + ((i_195_ and 0xff00) * i_193_ shr 8 and 0xff00))
+                    this.anIntArray7483!![i_190_ + i_194_] = i_188_ + i_195_
+                }
+            } else if (i_185_ == 2) {
+                for (i_196_ in 0..<i_187_) {
+                    var i_197_ = this.anIntArray7483!![i_190_ + i_196_]
+                    val i_198_ = i_188_ + i_197_
+                    val i_199_ = (i_188_ and 0xff00ff) + (i_197_ and 0xff00ff)
+                    i_197_ = (i_199_ and 0x1000100) + (i_198_ - i_199_ and 0x10000)
+                    this.anIntArray7483!![i_190_ + i_196_] = i_198_ - i_197_ or i_197_ - (i_197_ ushr 8)
+                }
+            } else throw IllegalArgumentException()
+        }
     }
 
     actual override fun Y(): IntArray {
-        TODO("Not yet implemented")
+        return (intArrayOf(this.anInt7510, this.anInt7504, this.anInt7491, this.anInt7497))
     }
 
     actual override fun ZA(i: Int, f: Float, f_186_: Float, f_187_: Float, f_188_: Float, f_189_: Float) {
+        this.anInt7474 = (f * 65535.0f).toInt()
+        this.anInt7478 = (f_186_ * 65535.0f).toInt()
+        val f_577_ = sqrt((f_187_ * f_187_ + f_188_ * f_188_ + f_189_ * f_189_).toDouble()).toFloat()
+        this.anInt7484 = (f_187_ * 65535.0f / f_577_).toInt()
+        this.anInt7473 = (f_188_ * 65535.0f / f_577_).toInt()
+        this.anInt7479 = (f_189_ * 65535.0f / f_577_).toInt()
     }
 
     actual override fun method3634(cameraMarker: CameraMarker?, marker: Marker?): SpriteDrawTarget {
-        TODO("Not yet implemented")
+        return SpriteRenderable(this, cameraMarker as AbstractModelRenderer?, marker as FloatGrid?)
     }
 
     actual override fun method3687(spriteDrawTarget: SpriteDrawTarget?) {
+        val spriteRenderable = spriteDrawTarget as? SpriteRenderable ?: return
+        this.anInt7477 = spriteRenderable.anInt4725
+        anInt7486 = spriteRenderable.anInt4722
+        this.anIntArray7483 = spriteRenderable.anIntArray4731
+        aSpriteRenderable_7475 = spriteRenderable
+        anInt7495 = spriteRenderable.anInt4725
+        anInt7488 = spriteRenderable.anInt4722
+        this.aFloatArray7511 = spriteRenderable.aFloatArray4719
+        method3717()
     }
 
     actual override fun da(i: Int, i_190_: Int, i_191_: Int, `is`: IntArray?) {
+        val f = ((this.aClass101_Sub1_7492!!.aFloat5681) + ((this.aClass101_Sub1_7492!!.aFloat5662) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5680) * i_190_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5664) * i_191_.toFloat()))
+        if (f >= this.anInt7482.toFloat() && f <= this.anInt7494.toFloat()) {
+            val i_638_ = (this.anInt7491.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5686 + ((this.aClass101_Sub1_7492!!.aFloat5672) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5673) * i_190_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5669) * i_191_.toFloat())) / f).toInt()
+            val i_639_ = (this.anInt7497.toFloat() * (this.aClass101_Sub1_7492!!.aFloat5685 + ((this.aClass101_Sub1_7492!!.aFloat5655) * i.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5678) * i_190_.toFloat() + (this.aClass101_Sub1_7492!!.aFloat5666) * i_191_.toFloat())) / f).toInt()
+            if (i_638_ >= this.anInt7509 && i_638_ <= this.anInt7508 && i_639_ >= this.anInt7490 && i_639_ <= this.anInt7506) {
+                `is`!![0] = i_638_ - this.anInt7509
+                `is`[1] = i_639_ - this.anInt7490
+                `is`[2] = f.toInt()
+            } else {
+                `is`!![2] = -1
+                `is`[1] = `is`[2]
+                `is`[0] = `is`[1]
+            }
+        } else {
+            `is`!![2] = -1
+            `is`[1] = `is`[2]
+            `is`[0] = `is`[1]
+        }
     }
 
     actual override fun method3661(i: Int, i_192_: Int, `is`: IntArray?, is_193_: IntArray?): Sprite {
-        TODO("Not yet implemented")
+        return RasterSprite(i, i_192_, `is`, is_193_)
     }
 
     actual override fun method3640(): AbstractCameraTransform? {
-        TODO("Not yet implemented")
+        return aClass101_Sub1_7492
     }
 
     actual override fun method3709(i: Int, i_194_: Int, i_195_: Int, i_196_: Int, i_197_: Int, i_198_: Int) {
+        var i = i
+        var i_241_ = i_194_
+        var i_242_ = i_195_
+        var i_243_ = i_196_
+        i_242_ -= i
+        i_243_ -= i_241_
+        if (i_243_ == 0) {
+            if (i_242_ >= 0) U(i, i_241_, i_242_ + 1, i_197_, i_198_)
+            else U(i + i_242_, i_241_, -i_242_ + 1, i_197_, i_198_)
+        } else if (i_242_ == 0) {
+            if (i_243_ >= 0) P(i, i_241_, i_243_ + 1, i_197_, i_198_)
+            else P(i, i_241_ + i_243_, -i_243_ + 1, i_197_, i_198_)
+        } else {
+            var i_244_ = i_197_
+            var i_245_ = i_198_
+            if (i_242_ + i_243_ < 0) {
+                i += i_242_
+                i_242_ = -i_242_
+                i_241_ += i_243_
+                i_243_ = -i_243_
+            }
+            if (i_242_ > i_243_) {
+                i_241_ = i_241_ shl 16
+                i_241_ += 32768
+                i_243_ = i_243_ shl 16
+                val i_246_ = floor(i_243_.toDouble() / i_242_.toDouble() + 0.5).toInt()
+                i_242_ += i
+                if (i < this.anInt7496) {
+                    i_241_ += i_246_ * (this.anInt7496 - i)
+                    i = this.anInt7496
+                }
+                if (i_242_ >= this.anInt7507) i_242_ = this.anInt7507 - 1
+                val i_247_ = i_244_ ushr 24
+                if (i_245_ == 0 || i_245_ == 1 && i_247_ == 255) {
+                    while (i <= i_242_) {
+                        val i_248_ = i_241_ shr 16
+                        if (i_248_ >= this.anInt7476 && i_248_ < this.anInt7503) this.anIntArray7483!![i + i_248_ * this.anInt7477] = i_244_
+                        i_241_ += i_246_
+                        i++
+                    }
+                    return
+                }
+                if (i_245_ == 1) {
+                    i_244_ = (((i_244_ and 0xff00ff) * i_247_ shr 8 and 0xff00ff) + ((i_244_ and 0xff00) * i_247_ shr 8 and 0xff00) + (i_247_ shl 24))
+                    val i_249_ = 256 - i_247_
+                    while (i <= i_242_) {
+                        val i_250_ = i_241_ shr 16
+                        if (i_250_ >= this.anInt7476 && i_250_ < this.anInt7503) {
+                            val i_251_ = i + i_250_ * this.anInt7477
+                            var i_252_ = this.anIntArray7483!![i_251_]
+                            i_252_ = (((i_252_ and 0xff00ff) * i_249_ shr 8 and 0xff00ff) + ((i_252_ and 0xff00) * i_249_ shr 8 and 0xff00))
+                            this.anIntArray7483!![i_251_] = i_244_ + i_252_
+                        }
+                        i_241_ += i_246_
+                        i++
+                    }
+                    return
+                }
+                if (i_245_ == 2) {
+                    while (i <= i_242_) {
+                        val i_253_ = i_241_ shr 16
+                        if (i_253_ >= this.anInt7476 && i_253_ < this.anInt7503) {
+                            val i_254_ = i + i_253_ * this.anInt7477
+                            var i_255_ = this.anIntArray7483!![i_254_]
+                            val i_256_ = i_244_ + i_255_
+                            val i_257_ = (i_244_ and 0xff00ff) + (i_255_ and 0xff00ff)
+                            i_255_ = (i_257_ and 0x1000100) + (i_256_ - i_257_ and 0x10000)
+                            this.anIntArray7483!![i_254_] = i_256_ - i_255_ or i_255_ - (i_255_ ushr 8)
+                        }
+                        i_241_ += i_246_
+                        i++
+                    }
+                    return
+                }
+                throw IllegalArgumentException()
+            }
+            i = i shl 16
+            i += 32768
+            i_242_ = i_242_ shl 16
+            val i_258_ = floor(i_242_.toDouble() / i_243_.toDouble() + 0.5).toInt()
+            i_243_ += i_241_
+            if (i_241_ < this.anInt7476) {
+                i += i_258_ * (this.anInt7476 - i_241_)
+                i_241_ = this.anInt7476
+            }
+            if (i_243_ >= this.anInt7503) i_243_ = this.anInt7503 - 1
+            val i_259_ = i_244_ ushr 24
+            if (i_245_ == 0 || i_245_ == 1 && i_259_ == 255) {
+                while (i_241_ <= i_243_) {
+                    val i_260_ = i shr 16
+                    if (i_260_ >= this.anInt7496 && i_260_ < this.anInt7507) this.anIntArray7483!![i_260_ + i_241_ * this.anInt7477] = i_244_
+                    i += i_258_
+                    i_241_++
+                }
+            } else if (i_245_ == 1) {
+                i_244_ = (((i_244_ and 0xff00ff) * i_259_ shr 8 and 0xff00ff) + ((i_244_ and 0xff00) * i_259_ shr 8 and 0xff00) + (i_259_ shl 24))
+                val i_261_ = 256 - i_259_
+                while (i_241_ <= i_243_) {
+                    val i_262_ = i shr 16
+                    if (i_262_ >= this.anInt7496 && i_262_ < this.anInt7507) {
+                        val i_263_ = i_262_ + i_241_ * this.anInt7477
+                        var i_264_ = this.anIntArray7483!![i_263_]
+                        i_264_ = (((i_264_ and 0xff00ff) * i_261_ shr 8 and 0xff00ff) + ((i_264_ and 0xff00) * i_261_ shr 8 and 0xff00))
+                        this.anIntArray7483!![i_262_ + i_241_ * this.anInt7477] = i_244_ + i_264_
+                    }
+                    i += i_258_
+                    i_241_++
+                }
+            } else if (i_245_ == 2) {
+                while (i_241_ <= i_243_) {
+                    val i_265_ = i shr 16
+                    if (i_265_ >= this.anInt7496 && i_265_ < this.anInt7507) {
+                        val i_266_ = i_265_ + i_241_ * this.anInt7477
+                        var i_267_ = this.anIntArray7483!![i_266_]
+                        val i_268_ = i_244_ + i_267_
+                        val i_269_ = (i_244_ and 0xff00ff) + (i_267_ and 0xff00ff)
+                        i_267_ = (i_269_ and 0x1000100) + (i_268_ - i_269_ and 0x10000)
+                        this.anIntArray7483!![i_266_] = i_268_ - i_267_ or i_267_ - (i_267_ ushr 8)
+                    }
+                    i += i_258_
+                    i_241_++
+                }
+            } else throw IllegalArgumentException()
+        }
     }
 
     actual fun Z(i: Int, i_199_: Int, i_200_: Int, i_201_: Int, i_202_: Int, i_203_: Int, var_sprite: Sprite?, i_204_: Int, i_205_: Int) {
+        /* unused: method3636 is ported directly rather than delegating through Z - no-op */
     }
 
     actual override fun C(bool: Boolean) {
+        /* particle-system control - no-op, see class doc */
     }
 
     actual override fun method3624(i: Int, i_206_: Int): Marker {
-        TODO("Not yet implemented")
+        return FloatGrid(i, i_206_)
     }
 
     actual override fun method3639(): Boolean {
-        TODO("Not yet implemented")
+        return true
     }
 
     actual override fun L(i: Int, i_207_: Int, i_208_: Int) {
+        for (i_228_ in aParticleSystemStateArray7480!!.indices) {
+            val class167 = aParticleSystemStateArray7480!![i_228_]!!
+            class167.anInt2192 = i and 0xffffff
+            var i_229_ = class167.anInt2192 ushr 16 and 0xff
+            if (i_229_ < 2) i_229_ = 2
+            var i_230_ = class167.anInt2192 shr 8 and 0xff
+            if (i_230_ < 2) i_230_ = 2
+            var i_231_ = class167.anInt2192 and 0xff
+            if (i_231_ < 2) i_231_ = 2
+            class167.anInt2192 = i_229_ shl 16 or (i_230_ shl 8) or i_231_
+            class167.aBoolean2201 = i_207_ >= 0
+        }
     }
 
     actual override fun method3711(`is`: IntArray?, i: Int, i_209_: Int, i_210_: Int, i_211_: Int, bool: Boolean): AbstractModelRenderer {
-        TODO("Not yet implemented")
+        var bool_425_ = false
+        var i_426_ = i
+        while_229_@ for (i_427_ in 0..<i_211_) {
+            for (i_428_ in 0..<i_210_) {
+                val i_429_ = `is`!![i_426_++] ushr 24
+                if (i_429_ != 0 && i_429_ != 255) {
+                    bool_425_ = true
+                    break@while_229_
+                }
+            }
+        }
+        if (bool_425_) return SoftwareAlphaSpriteRenderer(this, `is`!!, i, i_209_, i_210_, i_211_, bool)
+        return SoftwareRgbSpriteRenderer(this, `is`!!, i, i_209_, i_210_, i_211_, bool)
     }
 
     actual override fun la() {
+        this.anInt7496 = 0
+        this.anInt7476 = 0
+        this.anInt7507 = this.anInt7477
+        this.anInt7503 = anInt7486
+        method3713()
     }
 
     actual override fun method3630(bool: Boolean) {
+        aBoolean7489 = bool
+        aLruByteCache_7498.method590(0)
     }
 
     actual override fun M(): Int {
-        TODO("Not yet implemented")
+        val i = anInt7505
+        anInt7505 = 0
+        return i
     }
 
     actual override fun method3627(): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     actual fun OA(): Any {
-        TODO("Not yet implemented")
+        return Any()
     }
 
     actual override fun method3655(): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     actual override fun method3703(i: Int, i_212_: Int, i_213_: Int, i_214_: Int, i_215_: Int, i_216_: Int, var_sprite: Sprite?, i_217_: Int, i_218_: Int, i_219_: Int, i_220_: Int, i_221_: Int) {
+        var i = i
+        var i_12_ = i_212_
+        var i_13_ = i_213_
+        var i_14_ = i_214_
+        var i_15_ = i_215_
+        var i_19_ = i_219_
+        var i_20_ = i_220_
+        var i_21_ = i_221_
+        val var_aa_Sub3 = var_sprite as RasterSprite
+        val `is` = var_aa_Sub3.anIntArray5201
+        val is_22_ = var_aa_Sub3.anIntArray5202
+        val i_23_ = (max(this.anInt7476, i_218_))
+        val i_24_ = (min(this.anInt7503, i_218_ + `is`!!.size))
+        i_21_ = i_21_ shl 8
+        i_19_ = i_19_ shl 8
+        i_20_ = i_20_ shl 8
+        val i_25_ = i_19_ + i_20_
+        i_21_ %= i_25_
+        i_13_ -= i
+        i_14_ -= i_12_
+        if (i_13_ + i_14_ < 0) {
+            val i_26_ = (sqrt((i_13_ * i_13_ + i_14_ * i_14_).toDouble()) * 256.0).toInt()
+            val i_27_ = i_26_ % i_25_
+            i_21_ = i_25_ + i_19_ - i_21_ - i_27_
+            i_21_ %= i_25_
+            if (i_21_ < 0) i_21_ += i_25_
+            i += i_13_
+            i_13_ = -i_13_
+            i_12_ += i_14_
+            i_14_ = -i_14_
+        }
+        if (i_13_ > i_14_) {
+            i_12_ = i_12_ shl 16
+            i_12_ += 32768
+            i_14_ = i_14_ shl 16
+            val i_28_ = floor(i_14_.toDouble() / i_13_.toDouble() + 0.5).toInt()
+            i_13_ += i
+            val i_29_ = i_15_ ushr 24
+            val i_30_ = sqrt((65536 + (i_28_ shr 8) * (i_28_ shr 8)).toDouble()).toInt()
+            if (i_216_ == 0 || i_216_ == 1 && i_29_ == 255) {
+                while (i <= i_13_) {
+                    val i_31_ = i_12_ shr 16
+                    val i_32_ = i_31_ - i_218_
+                    if (i >= this.anInt7496 && i < this.anInt7507 && i_31_ >= i_23_ && i_31_ < i_24_ && i_21_ < i_19_) {
+                        val i_33_ = i_217_ + `is`[i_32_]
+                        if (i >= i_33_ && i < i_33_ + is_22_!![i_32_]) this.anIntArray7483!![i + i_31_ * this.anInt7477] = i_15_
+                    }
+                    i_12_ += i_28_
+                    i++
+                    i_21_ += i_30_
+                    i_21_ %= i_25_
+                }
+                return
+            }
+            if (i_216_ == 1) {
+                i_15_ = (((i_15_ and 0xff00ff) * i_29_ shr 8 and 0xff00ff) + ((i_15_ and 0xff00) * i_29_ shr 8 and 0xff00) + (i_29_ shl 24))
+                val i_34_ = 256 - i_29_
+                while (i <= i_13_) {
+                    val i_35_ = i_12_ shr 16
+                    val i_36_ = i_35_ - i_218_
+                    if (i >= this.anInt7496 && i < this.anInt7507 && i_35_ >= i_23_ && i_35_ < i_24_ && i_21_ < i_19_) {
+                        val i_37_ = i_217_ + `is`[i_36_]
+                        if (i >= i_37_ && i < i_37_ + is_22_!![i_36_]) {
+                            val i_38_ = i + i_35_ * this.anInt7477
+                            var i_39_ = this.anIntArray7483!![i_38_]
+                            i_39_ = (((i_39_ and 0xff00ff) * i_34_ shr 8 and 0xff00ff) + ((i_39_ and 0xff00) * i_34_ shr 8 and 0xff00))
+                            this.anIntArray7483!![i_38_] = i_15_ + i_39_
+                        }
+                    }
+                    i_12_ += i_28_
+                    i++
+                    i_21_ += i_30_
+                    i_21_ %= i_25_
+                }
+                return
+            }
+            if (i_216_ == 2) {
+                while (i <= i_13_) {
+                    val i_40_ = i_12_ shr 16
+                    val i_41_ = i_40_ - i_218_
+                    if (i >= this.anInt7496 && i < this.anInt7507 && i_40_ >= i_23_ && i_40_ < i_24_ && i_21_ < i_19_) {
+                        val i_42_ = i_217_ + `is`[i_41_]
+                        if (i >= i_42_ && i < i_42_ + is_22_!![i_41_]) {
+                            val i_43_ = i + i_40_ * this.anInt7477
+                            var i_44_ = this.anIntArray7483!![i_43_]
+                            val i_45_ = i_15_ + i_44_
+                            val i_46_ = (i_15_ and 0xff00ff) + (i_44_ and 0xff00ff)
+                            i_44_ = (i_46_ and 0x1000100) + (i_45_ - i_46_ and 0x10000)
+                            this.anIntArray7483!![i_43_] = i_45_ - i_44_ or i_44_ - (i_44_ ushr 8)
+                        }
+                    }
+                    i_12_ += i_28_
+                    i++
+                    i_21_ += i_30_
+                    i_21_ %= i_25_
+                }
+                return
+            }
+            throw IllegalArgumentException()
+        }
+        i = i shl 16
+        i += 32768
+        i_13_ = i_13_ shl 16
+        val i_47_ = floor(i_13_.toDouble() / i_14_.toDouble() + 0.5).toInt()
+        val i_48_ = sqrt((65536 + (i_47_ shr 8) * (i_47_ shr 8)).toDouble()).toInt()
+        i_14_ += i_12_
+        val i_49_ = i_15_ ushr 24
+        if (i_216_ == 0 || i_216_ == 1 && i_49_ == 255) {
+            while (i_12_ <= i_14_) {
+                val i_50_ = i shr 16
+                val i_51_ = i_12_ - i_218_
+                if (i_12_ >= i_23_ && i_12_ < i_24_ && i_50_ >= this.anInt7496 && i_50_ < this.anInt7507 && i_21_ < i_19_ && i_50_ >= i_217_ + `is`[i_51_] && i_50_ < i_217_ + `is`[i_51_] + is_22_!![i_51_]) this.anIntArray7483!![i_50_ + i_12_ * this.anInt7477] = i_15_
+                i += i_47_
+                i_12_++
+                i_21_ += i_48_
+                i_21_ %= i_25_
+            }
+        } else if (i_216_ == 1) {
+            i_15_ = (((i_15_ and 0xff00ff) * i_49_ shr 8 and 0xff00ff) + ((i_15_ and 0xff00) * i_49_ shr 8 and 0xff00) + (i_49_ shl 24))
+            val i_52_ = 256 - i_49_
+            while (i_12_ <= i_14_) {
+                val i_53_ = i shr 16
+                val i_54_ = i_12_ - i_218_
+                if (i_12_ >= i_23_ && i_12_ < i_24_ && i_53_ >= this.anInt7496 && i_53_ < this.anInt7507 && i_21_ < i_19_ && i_53_ >= i_217_ + `is`[i_54_] && i_53_ < i_217_ + `is`[i_54_] + is_22_!![i_54_]) {
+                    val i_55_ = i_53_ + i_12_ * this.anInt7477
+                    var i_56_ = this.anIntArray7483!![i_55_]
+                    i_56_ = (((i_56_ and 0xff00ff) * i_52_ shr 8 and 0xff00ff) + ((i_56_ and 0xff00) * i_52_ shr 8 and 0xff00))
+                    this.anIntArray7483!![i_53_ + i_12_ * this.anInt7477] = i_15_ + i_56_
+                }
+                i += i_47_
+                i_12_++
+                i_21_ += i_48_
+                i_21_ %= i_25_
+            }
+        } else if (i_216_ == 2) {
+            while (i_12_ <= i_14_) {
+                val i_57_ = i shr 16
+                val i_58_ = i_12_ - i_218_
+                if (i_12_ >= i_23_ && i_12_ < i_24_ && i_57_ >= this.anInt7496 && i_57_ < this.anInt7507 && i_21_ < i_19_ && i_57_ >= i_217_ + `is`[i_58_] && i_57_ < i_217_ + `is`[i_58_] + is_22_!![i_58_]) {
+                    val i_59_ = i_57_ + i_12_ * this.anInt7477
+                    var i_60_ = this.anIntArray7483!![i_59_]
+                    val i_61_ = i_15_ + i_60_
+                    val i_62_ = (i_15_ and 0xff00ff) + (i_60_ and 0xff00ff)
+                    i_60_ = (i_62_ and 0x1000100) + (i_61_ - i_62_ and 0x10000)
+                    this.anIntArray7483!![i_59_] = i_61_ - i_60_ or i_60_ - (i_60_ ushr 8)
+                }
+                i += i_47_
+                i_12_++
+                i_21_ += i_48_
+                i_21_ %= i_25_
+            }
+        } else throw IllegalArgumentException()
     }
 
     actual override fun method3638(abstractCameraTransform: AbstractCameraTransform?) {
+        aClass101_Sub1_7492 = abstractCameraTransform as MatrixCameraTransform
     }
 
     actual override fun method3672() {
+        if (aCanvas7468 == null) {
+            this.anInt7477 = 1
+            anInt7486 = 1
+            this.anIntArray7483 = null
+            anInt7495 = 1
+            anInt7488 = 1
+            this.aFloatArray7511 = null
+        } else {
+            this.anIntArray7483 = (this.aClass348_Sub31_7469!!.anIntArray6916)
+            this.anInt7477 = (this.aClass348_Sub31_7469!!.anInt6917)
+            anInt7486 = (this.aClass348_Sub31_7469!!.anInt6920)
+            this.aFloatArray7511 = this.aFloatArray7502
+            anInt7495 = anInt7481
+            anInt7488 = anInt7493
+        }
+        aSpriteRenderable_7475 = null
+        method3717()
     }
 
     actual override fun method3648(i: Int, i_222_: Int, `is`: Array<IntArray?>, is_223_: Array<IntArray?>?, i_224_: Int, i_225_: Int, i_226_: Int): TerrainTile {
-        TODO("Not yet implemented")
+        return SoftwareTerrainTile(this, i_225_, i_226_, i, i_222_, `is`, is_223_!!, i_224_)
     }
 
     actual override fun XA(): Int {
-        TODO("Not yet implemented")
+        return this.anInt7494
     }
 
     actual fun N(i: Int, `is`: IntArray?, fs: FloatArray?) {
+        /* empty - matches SoftwareRenderer.method3642 not needing native marshalling */
     }
 
     actual override fun T(i: Int, i_227_: Int, i_228_: Int, i_229_: Int) {
+        if (this.anInt7496 < i) this.anInt7496 = i
+        if (this.anInt7476 < i_227_) this.anInt7476 = i_227_
+        if (this.anInt7507 > i_228_) this.anInt7507 = i_228_
+        if (this.anInt7503 > i_229_) this.anInt7503 = i_229_
+        method3713()
     }
 
     actual override fun method3693(): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     actual override fun method3673() {
+        /* empty */
     }
 
     actual override fun method3671(): Boolean {
-        TODO("Not yet implemented")
+        return false
     }
 
     actual override fun method3699(): Boolean {
-        TODO("Not yet implemented")
+        return false
+    }
+
+    private fun method3713() {
+        this.anInt7509 = this.anInt7496 - this.anInt7510
+        this.anInt7508 = this.anInt7507 - this.anInt7510
+        this.anInt7490 = this.anInt7476 - this.anInt7504
+        this.anInt7506 = this.anInt7503 - this.anInt7504
+        for (i in 0..<this.anInt7485) {
+            val class109 = aParticleSystemStateArray7480!![i]!!.aShadowProjector_2220!!
+            class109.anInt1665 = this.anInt7510 - this.anInt7496
+            class109.anInt1668 = this.anInt7504 - this.anInt7476
+            class109.anInt1679 = this.anInt7507 - this.anInt7496
+            class109.anInt1672 = this.anInt7503 - this.anInt7476
+        }
+        var i = (this.anInt7476 * this.anInt7477 + this.anInt7496)
+        for (i_97_ in this.anInt7476..<this.anInt7503) {
+            for (i_98_ in 0..<this.anInt7485) aParticleSystemStateArray7480!![i_98_]!!.aShadowProjector_2220!!.anIntArray1676[i_97_ - this.anInt7476] = i
+            i += this.anInt7477
+        }
+    }
+
+    override fun method3716(): Boolean {
+        return aBoolean7470
+    }
+
+    override fun method3718(i: Int): IntArray? {
+        var class348_sub25: ImageBoxBlurScroller? = null
+        withLock(aLruByteCache_7498) {
+            class348_sub25 = aLruByteCache_7498.method583(i.toLong(), 77) as ImageBoxBlurScroller?
+            if (class348_sub25 == null) {
+                if (!this.aRenderConfig4579!!.method4(-7953, i)) return null
+                val class12 = this.aRenderConfig4579!!.method3(i, -6662)
+                val i_354_ = (if (class12!!.aBoolean199 || aBoolean7489) 64 else this.anInt7501)
+                class348_sub25 = ImageBoxBlurScroller(i, i_354_, this.aRenderConfig4579!!.method5(true, i, 0.7f, i_354_, i_354_, 71), class12.anInt200 != 1)
+                aLruByteCache_7498.method582(class348_sub25, i.toLong(), (-122).toByte())
+            }
+        }
+        class348_sub25!!.aBoolean6882 = true
+        return class348_sub25!!.method2997()
+    }
+
+    override fun method3719(i: Int): IntArray? {
+        var class348_sub25: ImageBoxBlurScroller? = null
+        withLock(aLruByteCache_7498) {
+            class348_sub25 = (aLruByteCache_7498.method583(i.toLong() or 0x7fffffffffffffffL.inv(), 107) as ImageBoxBlurScroller?)
+            if (class348_sub25 == null) {
+                if (!this.aRenderConfig4579!!.method4(-7953, i)) return null
+                val class12 = this.aRenderConfig4579!!.method3(i, -6662)
+                val i_356_ = (if (class12!!.aBoolean199 || aBoolean7489) 64 else this.anInt7501)
+                class348_sub25 = ImageBoxBlurScroller(i, i_356_, this.aRenderConfig4579!!.method6(-21540, i_356_, 0.7f, i, true, i_356_), class12.anInt200 != 1)
+                aLruByteCache_7498.method582(class348_sub25, i.toLong() or 0x7fffffffffffffffL.inv(), (-116).toByte())
+            }
+        }
+        class348_sub25!!.aBoolean6882 = true
+        return class348_sub25!!.method2997()
+    }
+
+    override fun method3720(i: Int, i_377_: Int, i_378_: Int, i_379_: Int, i_380_: Int, i_381_: Int, i_382_: Int, i_383_: Int, i_384_: Int, i_385_: Int) {
+        if (i_379_ != 0 && i_380_ != 0) {
+            if (i_382_ != 65535 && !(this.aRenderConfig4579!!.method3(i_382_, -6662)!!.aBoolean209)) {
+                if (anInt7512 != i_382_) {
+                    var abstractModelRenderer = (aLruByteCache_7499.method583(i_382_.toLong(), 97) as AbstractModelRenderer?)
+                    if (abstractModelRenderer == null) {
+                        val `is` = method3719(i_382_)
+                        if (`is` == null) return
+                        val i_386_ = (if (method3727(i_382_)) 64 else this.anInt7501)
+                        abstractModelRenderer = this.method3662(i_386_, `is`, 94.toByte(), 0, i_386_, i_386_)
+                        aLruByteCache_7499.method582(abstractModelRenderer, i_382_.toLong(), (-100).toByte())
+                    }
+                    anInt7512 = i_382_
+                    aAbstractModelRenderer_7513 = abstractModelRenderer
+                }
+                (aAbstractModelRenderer_7513 as SoftwareModelRenderer).method996(i - i_379_, i_377_ - i_380_, i_378_, i_379_ shl 1, i_380_ shl 1, i_384_, i_383_, i_385_, 1)
+            } else method3723(i, i_377_, i_378_, i_379_, i_383_, i_385_)
+        }
+    }
+
+    override fun method3722(i: Int): Int {
+        return (this.aRenderConfig4579!!.method3(i, -6662)!!.aShort208.toInt() and 0xffff)
+    }
+
+    override fun method3724(runnable: Runnable?): ParticleSystemState? {
+        for (i in 0..<this.anInt7485) {
+            if (aParticleSystemStateArray7480!![i]!!.aRunnable2198 === runnable) return aParticleSystemStateArray7480!![i]!!
+        }
+        return null
+    }
+
+    override fun method3725(i: Int): Boolean {
+        return this.aRenderConfig4579!!.method4(-7953, i)
+    }
+
+    override fun method3726(i: Int): Int {
+        return this.aRenderConfig4579!!.method3(i, -6662)!!.anInt200
+    }
+
+    override fun method3727(i: Int): Boolean {
+        return aBoolean7489 || this.aRenderConfig4579!!.method3(i, -6662)!!.aBoolean199
+    }
+
+    override fun method3714(i: Int): Boolean {
+        return this.aRenderConfig4579!!.method3(i, -6662)!!.aBoolean217 || this.aRenderConfig4579!!.method3(i, -6662)!!.aBoolean215
+    }
+
+    private fun method3715(i: Int, i_157_: Int, i_158_: Int, i_159_: Int, i_160_: Int, i_161_: Int, i_162_: Int, i_163_: Int) {
+        var i_159_ = i_159_
+        if (i_157_ >= this.anInt7476 && i_157_ < this.anInt7503) {
+            val i_164_ = i + i_157_ * this.anInt7477
+            val i_165_ = i_159_ ushr 24
+            val i_166_ = i_161_ + i_162_
+            var i_167_ = i_163_ % i_166_
+            if (i_160_ == 0 || i_160_ == 1 && i_165_ == 255) {
+                var i_168_ = 0
+                while (i_168_ < i_158_) {
+                    if (i + i_168_ >= this.anInt7496 && i + i_168_ < this.anInt7507 && i_167_ < i_161_) this.anIntArray7483!![i_164_ + i_168_] = i_159_
+                    i_168_++
+                    i_167_ = ++i_167_ % i_166_
+                }
+            } else if (i_160_ == 1) {
+                i_159_ = (((i_159_ and 0xff00ff) * i_165_ shr 8 and 0xff00ff) + ((i_159_ and 0xff00) * i_165_ shr 8 and 0xff00) + (i_165_ shl 24))
+                val i_169_ = 256 - i_165_
+                var i_170_ = 0
+                while (i_170_ < i_158_) {
+                    if (i + i_170_ >= this.anInt7496 && i + i_170_ < this.anInt7507 && i_167_ < i_161_) {
+                        var i_171_ = this.anIntArray7483!![i_164_ + i_170_]
+                        i_171_ = (((i_171_ and 0xff00ff) * i_169_ shr 8 and 0xff00ff) + ((i_171_ and 0xff00) * i_169_ shr 8 and 0xff00))
+                        this.anIntArray7483!![i_164_ + i_170_] = i_159_ + i_171_
+                    }
+                    i_170_++
+                    i_167_ = ++i_167_ % i_166_
+                }
+            } else if (i_160_ == 2) {
+                var i_172_ = 0
+                while (i_172_ < i_158_) {
+                    if (i + i_172_ >= this.anInt7496 && i + i_172_ < this.anInt7507 && i_167_ < i_161_) {
+                        var i_173_ = this.anIntArray7483!![i_164_ + i_172_]
+                        val i_174_ = i_159_ + i_173_
+                        val i_175_ = (i_159_ and 0xff00ff) + (i_173_ and 0xff00ff)
+                        i_173_ = (i_175_ and 0x1000100) + (i_174_ - i_175_ and 0x10000)
+                        this.anIntArray7483!![i_164_ + i_172_] = i_174_ - i_173_ or i_173_ - (i_173_ ushr 8)
+                    }
+                    i_172_++
+                    i_167_ = ++i_167_ % i_166_
+                }
+            } else throw IllegalArgumentException()
+        }
+    }
+
+    private fun method3721(i: Int, i_390_: Int, i_391_: Int, i_392_: Int, i_393_: Int, i_394_: Int, i_395_: Int, i_396_: Int) {
+        var i_392_ = i_392_
+        if (i >= this.anInt7496 && i < this.anInt7507) {
+            val i_397_ = i + i_390_ * this.anInt7477
+            val i_398_ = i_392_ ushr 24
+            val i_399_ = i_394_ + i_395_
+            var i_400_ = i_396_ % i_399_
+            if (i_393_ == 0 || i_393_ == 1 && i_398_ == 255) {
+                var i_401_ = 0
+                while (i_401_ < i_391_) {
+                    if (i_390_ + i_401_ >= this.anInt7476 && i_390_ + i_401_ < this.anInt7503 && i_400_ < i_394_) this.anIntArray7483!![i_397_ + i_401_ * this.anInt7477] = i_392_
+                    i_401_++
+                    i_400_ = ++i_400_ % i_399_
+                }
+            } else if (i_393_ == 1) {
+                i_392_ = (((i_392_ and 0xff00ff) * i_398_ shr 8 and 0xff00ff) + ((i_392_ and 0xff00) * i_398_ shr 8 and 0xff00) + (i_398_ shl 24))
+                val i_402_ = 256 - i_398_
+                var i_403_ = 0
+                while (i_403_ < i_391_) {
+                    if (i_390_ + i_403_ >= this.anInt7476 && i_390_ + i_403_ < this.anInt7503 && i_400_ < i_394_) {
+                        val i_404_ = i_397_ + i_403_ * this.anInt7477
+                        var i_405_ = this.anIntArray7483!![i_404_]
+                        i_405_ = (((i_405_ and 0xff00ff) * i_402_ shr 8 and 0xff00ff) + ((i_405_ and 0xff00) * i_402_ shr 8 and 0xff00))
+                        this.anIntArray7483!![i_404_] = i_392_ + i_405_
+                    }
+                    i_403_++
+                    i_400_ = ++i_400_ % i_399_
+                }
+            } else if (i_393_ == 2) {
+                var i_406_ = 0
+                while (i_406_ < i_391_) {
+                    if (i_390_ + i_406_ >= this.anInt7476 && i_390_ + i_406_ < this.anInt7503 && i_400_ < i_394_) {
+                        val i_407_ = i_397_ + i_406_ * this.anInt7477
+                        var i_408_ = this.anIntArray7483!![i_407_]
+                        val i_409_ = i_392_ + i_408_
+                        val i_410_ = (i_392_ and 0xff00ff) + (i_408_ and 0xff00ff)
+                        i_408_ = (i_410_ and 0x1000100) + (i_409_ - i_410_ and 0x10000)
+                        this.anIntArray7483!![i_407_] = i_409_ - i_408_ or i_408_ - (i_408_ ushr 8)
+                    }
+                    i_406_++
+                    i_400_ = ++i_400_ % i_399_
+                }
+            } else throw IllegalArgumentException()
+        }
+    }
+
+    private fun method1035(i: Int, i_16_: Int, canvas: Canvas?, i_17_: Int): AbstractFrameBufferSurface? {
+        if (i != 9029) return null
+        try {
+            val class348_sub31: AbstractFrameBufferSurface = BufferedImageSurface()
+            class348_sub31.method3008(canvas, i_17_, -90, i_16_)
+            return class348_sub31
+        } catch (throwable: Throwable) {
+            val class348_sub31_sub2 = ProducerImageSurface()
+            class348_sub31_sub2.method3008(canvas, i_17_, -128, i_16_)
+            return class348_sub31_sub2
+        }
+    }
+
+    init {
+        try {
+            aHashtable_7467 = Hashtable(4)
+            MA(var_renderConfig, 0, 0)
+            aClass101_Sub1_7492 = MatrixCameraTransform()
+            method3638(MatrixCameraTransform())
+            method3631(1)
+            method3659(0)
+            if (canvas != null) {
+                method3643(canvas, i, i_177_)
+                method3677(canvas)
+            }
+        } catch (throwable: Throwable) {
+            throwable.printStackTrace()
+            this.method3635(124.toByte())
+            throw RuntimeException()
+        }
     }
 }

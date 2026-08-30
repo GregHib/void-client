@@ -3,8 +3,8 @@ import kotlin.jvm.JvmStatic
 /* Class167 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRenderer) {
-    private val aHa_Sub1_2191: SoftwareRenderer
+class ParticleSystemState internal constructor(var_ha_Sub1: SoftwareRasterHost) {
+    private val aHa_Sub1_2191: SoftwareRasterHost
     var anInt2192: Int = 0
     var aBoolean2195: Boolean = false
     var anInt2197: Int = 0

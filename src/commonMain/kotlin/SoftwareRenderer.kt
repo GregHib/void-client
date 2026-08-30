@@ -13,82 +13,82 @@ import kotlin.math.min
 import kotlin.math.pow
 import kotlin.math.sqrt
 
-class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Renderer(var_renderConfig) {
+class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Renderer(var_renderConfig), SoftwareRasterHost {
     private var anInt7465 = 0
     private var anInt7466 = 0
     private var aHashtable_7467: Hashtable?
     private var aCanvas7468: Canvas? = null
 
-    var aClass348_Sub31_7469: AbstractFrameBufferSurface? = null
+    override var aClass348_Sub31_7469: AbstractFrameBufferSurface? = null
     private var aBoolean7470 = false
     private var aBoolean7471 = false
     private var anInt7472 = 0
 
-    var anInt7473: Int = 0
+    override var anInt7473: Int = 0
 
-    var anInt7474: Int
+    override var anInt7474: Int
     private var aSpriteRenderable_7475: SpriteRenderable? = null
 
-    var anInt7476: Int
+    override var anInt7476: Int
 
-    var anInt7477: Int = 0
+    override var anInt7477: Int = 0
 
-    var anInt7478: Int
+    override var anInt7478: Int
 
-    var anInt7479: Int = 0
+    override var anInt7479: Int = 0
     private var aParticleSystemStateArray7480: Array<ParticleSystemState?>? = null
     private var anInt7481 = 0
 
-    var anInt7482: Int
+    override var anInt7482: Int
 
-    var anIntArray7483: IntArray? = null
+    override var anIntArray7483: IntArray? = null
 
-    var anInt7484: Int = 0
+    override var anInt7484: Int = 0
 
-    var anInt7485: Int = 0
+    override var anInt7485: Int = 0
     private var anInt7486 = 0
     private var anInt7487: Int
     private var anInt7488 = 0
     private var aBoolean7489: Boolean
 
-    var anInt7490: Int = 0
+    override var anInt7490: Int = 0
 
-    var anInt7491: Int
+    override var anInt7491: Int
 
-    var aClass101_Sub1_7492: MatrixCameraTransform? = null
+    override var aClass101_Sub1_7492: MatrixCameraTransform? = null
     private var anInt7493 = 0
 
-    var anInt7494: Int
+    override var anInt7494: Int
     private var anInt7495 = 0
 
-    var anInt7496: Int
+    override var anInt7496: Int
 
-    var anInt7497: Int
+    override var anInt7497: Int
     private val aLruByteCache_7498: LruByteCache
     private val aLruByteCache_7499: LruByteCache
 
-    var anInt7500: Int
+    override var anInt7500: Int
 
-    var anInt7501: Int
+    override var anInt7501: Int
 
-    var aFloatArray7502: FloatArray? = null
+    override var aFloatArray7502: FloatArray? = null
 
-    var anInt7503: Int
+    override var anInt7503: Int
 
-    var anInt7504: Int = 0
+    override var anInt7504: Int = 0
     private var anInt7505: Int
 
-    var anInt7506: Int = 0
+    override var anInt7506: Int = 0
 
-    var anInt7507: Int
+    override var anInt7507: Int
 
-    var anInt7508: Int = 0
+    override var anInt7508: Int = 0
 
-    var anInt7509: Int = 0
+    override var anInt7509: Int = 0
 
-    var anInt7510: Int = 0
+    override var anInt7510: Int = 0
 
-    var aFloatArray7511: FloatArray? = null
+    override var aFloatArray7511: FloatArray? = null
     private var anInt7512: Int
     private var aAbstractModelRenderer_7513: AbstractModelRenderer? = null
 
@@ -428,7 +428,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return class167!!.aClass101_Sub1_2209!!
     }
 
-    fun method3714(i: Int): Boolean {
+    override fun method3714(i: Int): Boolean {
         return this.aRenderConfig4579!!.method3(i, -6662)!!.aBoolean217 || this.aRenderConfig4579!!.method3(i, -6662)!!.aBoolean215
     }
 
@@ -746,7 +746,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
     }
 
-    fun method3716(): Boolean {
+    override fun method3716(): Boolean {
         return aBoolean7470
     }
 
@@ -1284,7 +1284,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
     }
 
-    fun method3718(i: Int): IntArray? {
+    override fun method3718(i: Int): IntArray? {
         var class348_sub25: ImageBoxBlurScroller? = null
         withLock(aLruByteCache_7498) {
             class348_sub25 = aLruByteCache_7498.method583(i.toLong(), 77) as ImageBoxBlurScroller?
@@ -1328,7 +1328,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         }
     }
 
-    fun method3719(i: Int): IntArray? {
+    override fun method3719(i: Int): IntArray? {
         var class348_sub25: ImageBoxBlurScroller? = null
         withLock(aLruByteCache_7498) {
             class348_sub25 = (aLruByteCache_7498.method583(i.toLong() or 0x7fffffffffffffffL.inv(), 107) as ImageBoxBlurScroller?)
@@ -1423,7 +1423,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         method3717()
     }
 
-    fun method3720(i: Int, i_377_: Int, i_378_: Int, i_379_: Int, i_380_: Int, i_381_: Int, i_382_: Int, i_383_: Int, i_384_: Int, i_385_: Int) {
+    override fun method3720(i: Int, i_377_: Int, i_378_: Int, i_379_: Int, i_380_: Int, i_381_: Int, i_382_: Int, i_383_: Int, i_384_: Int, i_385_: Int) {
         if (i_379_ != 0 && i_380_ != 0) {
             if (i_382_ != 65535 && !(this.aRenderConfig4579!!.method3(i_382_, -6662)!!.aBoolean209)) {
                 if (anInt7512 != i_382_) {
@@ -1580,7 +1580,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         method3717()
     }
 
-    fun method3722(i: Int): Int {
+    override fun method3722(i: Int): Int {
         return (this.aRenderConfig4579!!.method3(i, -6662)!!.aShort208.toInt() and 0xffff)
     }
 
@@ -2039,7 +2039,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         } else throw IllegalArgumentException()
     }
 
-    fun method3724(runnable: Runnable?): ParticleSystemState? {
+    override fun method3724(runnable: Runnable?): ParticleSystemState? {
         for (i in 0..<this.anInt7485) {
             if (aParticleSystemStateArray7480!![i]!!.aRunnable2198 === runnable) return aParticleSystemStateArray7480!![i]!!
         }
@@ -2118,7 +2118,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return i_586_
     }
 
-    fun method3725(i: Int): Boolean {
+    override fun method3725(i: Int): Boolean {
         return this.aRenderConfig4579!!.method4(-7953, i)
     }
 
@@ -2364,7 +2364,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return i
     }
 
-    fun method3726(i: Int): Int {
+    override fun method3726(i: Int): Int {
         return this.aRenderConfig4579!!.method3(i, -6662)!!.anInt200
     }
 
@@ -2442,7 +2442,7 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
         return i or i_640_
     }
 
-    fun method3727(i: Int): Boolean {
+    override fun method3727(i: Int): Boolean {
         return aBoolean7489 || this.aRenderConfig4579!!.method3(i, -6662)!!.aBoolean199
     }
     

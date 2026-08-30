@@ -54,7 +54,7 @@ class SoftwareModel : AbstractModel {
     private var anInt5349 = 0
     private var anInt5351: Int
     private var aShort5352: Short = 0
-    private val aHa_Sub1_5353: SoftwareRenderer
+    private val aHa_Sub1_5353: SoftwareRasterHost
     private var anInt5354: Int
     private lateinit var anIntArray5355: IntArray
     private var anIntArray5356: IntArray? = null
@@ -3328,7 +3328,7 @@ class SoftwareModel : AbstractModel {
         }
     }
 
-    internal constructor(var_ha_Sub1: SoftwareRenderer) {
+    internal constructor(var_ha_Sub1: SoftwareRasterHost) {
         anInt5354 = 0
         aBoolean5369 = false
         anInt5351 = 0
@@ -3339,7 +3339,7 @@ class SoftwareModel : AbstractModel {
         aHa_Sub1_5353 = var_ha_Sub1
     }
 
-    internal constructor(var_ha_Sub1: SoftwareRenderer, modelDefinition: ModelDefinition, i: Int, i_785_: Int, i_786_: Int, i_787_: Int) {
+    internal constructor(var_ha_Sub1: SoftwareRasterHost, modelDefinition: ModelDefinition, i: Int, i_785_: Int, i_786_: Int, i_787_: Int) {
         anInt5354 = 0
         aBoolean5369 = false
         anInt5351 = 0

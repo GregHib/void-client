@@ -6,11 +6,11 @@ import kotlin.math.min
 class SoftwareAlphaSpriteRenderer : SoftwareModelRenderer {
     var anIntArray9936: IntArray
 
-    internal constructor(var_ha_Sub1: SoftwareRenderer, `is`: IntArray, i: Int, i_0_: Int) : super(var_ha_Sub1, i, i_0_) {
+    internal constructor(var_ha_Sub1: SoftwareRasterHost, `is`: IntArray, i: Int, i_0_: Int) : super(var_ha_Sub1, i, i_0_) {
         this.anIntArray9936 = `is`
     }
 
-    internal constructor(var_ha_Sub1: SoftwareRenderer, `is`: IntArray, i: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean) : super(var_ha_Sub1, i_2_, i_3_) {
+    internal constructor(var_ha_Sub1: SoftwareRasterHost, `is`: IntArray, i: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean) : super(var_ha_Sub1, i_2_, i_3_) {
         var i = i
         var i_1_ = i_1_
         if (bool) this.anIntArray9936 = IntArray(i_2_ * i_3_)
@@ -1212,7 +1212,7 @@ class SoftwareAlphaSpriteRenderer : SoftwareModelRenderer {
         }
     }
 
-    internal constructor(var_ha_Sub1: SoftwareRenderer, i: Int, i_443_: Int) : super(var_ha_Sub1, i, i_443_) {
+    internal constructor(var_ha_Sub1: SoftwareRasterHost, i: Int, i_443_: Int) : super(var_ha_Sub1, i, i_443_) {
         this.anIntArray9936 = IntArray(i * i_443_)
     }
 

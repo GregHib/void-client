@@ -1732,11 +1732,11 @@ class SoftwareRgbSpriteRenderer : SoftwareModelRenderer {
         throw IllegalStateException("Can't capture alpha into a java_sprite_24")
     }
 
-    internal constructor(var_ha_Sub1: SoftwareRenderer, i: Int, i_743_: Int) : super(var_ha_Sub1, i, i_743_) {
+    internal constructor(var_ha_Sub1: SoftwareRasterHost, i: Int, i_743_: Int) : super(var_ha_Sub1, i, i_743_) {
         this.anIntArray9933 = IntArray(i * i_743_)
     }
 
-    internal constructor(var_ha_Sub1: SoftwareRenderer, `is`: IntArray, i: Int, i_744_: Int, i_745_: Int, i_746_: Int, bool: Boolean) : super(var_ha_Sub1, i_745_, i_746_) {
+    internal constructor(var_ha_Sub1: SoftwareRasterHost, `is`: IntArray, i: Int, i_744_: Int, i_745_: Int, i_746_: Int, bool: Boolean) : super(var_ha_Sub1, i_745_, i_746_) {
         var i = i
         var i_744_ = i_744_
         if (bool) this.anIntArray9933 = IntArray(i_745_ * i_746_)
@@ -1753,7 +1753,7 @@ class SoftwareRgbSpriteRenderer : SoftwareModelRenderer {
         }
     }
 
-    internal constructor(var_ha_Sub1: SoftwareRenderer, `is`: IntArray, i: Int, i_751_: Int) : super(var_ha_Sub1, i, i_751_) {
+    internal constructor(var_ha_Sub1: SoftwareRasterHost, `is`: IntArray, i: Int, i_751_: Int) : super(var_ha_Sub1, i, i_751_) {
         this.anIntArray9933 = `is`
     }
 
