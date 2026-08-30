@@ -1,6 +1,10 @@
 package awt
 
 actual class Cursor actual constructor(private val type: Int) {
+    /** Not part of java.awt.Cursor - the `cursor` CSS value for a CUSTOM_CURSOR,
+     *  set by [awt.DefaultToolkit.createCustomCursor]. */
+    internal var customCss: String? = null
+
     actual fun getType(): Int = type
 
     actual fun getName(): String = when (type) {
@@ -38,6 +42,7 @@ actual class Cursor actual constructor(private val type: Int) {
         CursorType.E_RESIZE_CURSOR -> "e-resize"
         CursorType.HAND_CURSOR -> "pointer"
         CursorType.MOVE_CURSOR -> "move"
+        CursorType.CUSTOM_CURSOR -> customCss ?: "auto"
         else -> "auto"
     }
 }
