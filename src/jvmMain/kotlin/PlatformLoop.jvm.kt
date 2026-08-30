@@ -19,5 +19,3 @@ actual fun runLoop(
 }
 
 actual val executeWorkerTasksInline: Boolean = false
-
-actual val nativeRendererSupported: Boolean = true
