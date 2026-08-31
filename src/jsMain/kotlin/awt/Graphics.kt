@@ -80,9 +80,7 @@ internal class CanvasGraphics(
 
     override fun setFont(font: Font?) {
         this.font = font ?: return
-        val weight = if (font.isBold()) "bold " else ""
-        val slant = if (font.isItalic()) "italic " else ""
-        ctx.font = "$slant$weight${font.getSize()}px ${font.getName()}"
+        ctx.font = font.toCssFont()
     }
 
     override fun getFont(): Font = font

@@ -13,3 +13,9 @@ actual class Font actual constructor(
 actual val FONT_PLAIN: Int = 0
 actual val FONT_BOLD: Int = 1
 actual val FONT_ITALIC: Int = 2
+
+internal fun Font.toCssFont(): String {
+    val slant = if (isItalic()) "italic " else ""
+    val weight = if (isBold()) "bold " else ""
+    return "$slant$weight${getSize()}px ${getName()}"
+}

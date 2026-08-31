@@ -1,6 +1,7 @@
 package awt
 
 import org.w3c.dom.CanvasRenderingContext2D
+import kotlin.math.roundToInt
 
 actual abstract class FontMetrics {
     internal abstract val ctx: CanvasRenderingContext2D
@@ -15,8 +16,17 @@ actual abstract class FontMetrics {
     actual fun getMaxDescent(): Int = getDescent()
     actual fun getMaxAdvance(): Int = stringWidth("W")
     actual fun charWidth(ch: Char): Int = stringWidth(ch.toString())
-    actual fun stringWidth(str: String?): Int =
-        ctx.measureText(str!!).width.toInt()
+    actual fun stringWidth(str: String?): Int = measureText(str!!)
+
+    private fun measureText(text: String): Int {
+        val previousFont = ctx.font
+        ctx.font = fnt.toCssFont()
+        try {
+            return ctx.measureText(text).width.roundToInt()
+        } finally {
+            ctx.font = previousFont
+        }
+    }
 }
 
 internal class CanvasFontMetrics(
