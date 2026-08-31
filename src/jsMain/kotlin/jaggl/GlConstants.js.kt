@@ -69,7 +69,11 @@ const val GL_ALPHA_SCALE = 3356
 const val GL_NEVER = 512
 const val GL_ALWAYS = 519
 
-const val GL_QUADRATIC_ATTENUATION = 33507
+const val GL_CONSTANT_ATTENUATION = 4615
+const val GL_LINEAR_ATTENUATION = 4616
+const val GL_QUADRATIC_ATTENUATION = 4617
+
+const val MAX_LIGHTS = 8
 
 const val GL_BLEND = 3042
 const val GL_DEPTH_TEST = 2929

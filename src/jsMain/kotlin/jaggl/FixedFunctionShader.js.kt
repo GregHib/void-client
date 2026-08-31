@@ -20,10 +20,12 @@ uniform mat4 uTextureMatrixU[3];
 uniform highp int uTexGenMode[3];
 uniform bool uLightingEnabled;
 uniform vec4 uGlobalAmbient;
-uniform bool uLightEnabled[2];
-uniform vec4 uLightAmbient[2];
-uniform vec4 uLightDiffuse[2];
-uniform vec3 uLightDirection[2];
+uniform bool uLightEnabled[$MAX_LIGHTS];
+uniform vec4 uLightAmbient[$MAX_LIGHTS];
+uniform vec4 uLightDiffuse[$MAX_LIGHTS];
+// xyz = eye-space position (or direction when w == 0), w == 1 means positional with attenuation.
+uniform vec4 uLightPosition[$MAX_LIGHTS];
+uniform vec3 uLightAttenuation[$MAX_LIGHTS];
 
 out vec4 vColor;
 out vec2 vTexCoord0;
@@ -38,10 +40,21 @@ void main() {
 
     if (uLightingEnabled) {
         vec4 lit = uGlobalAmbient;
-        for (int i = 0; i < 2; i++) {
+        for (int i = 0; i < $MAX_LIGHTS; i++) {
             if (uLightEnabled[i]) {
-                float diff = max(dot(eyeNormal, normalize(uLightDirection[i])), 0.0);
-                lit += uLightAmbient[i] + uLightDiffuse[i] * diff;
+                vec3 lightDir;
+                float atten = 1.0;
+                if (uLightPosition[i].w == 0.0) {
+                    lightDir = normalize(uLightPosition[i].xyz);
+                } else {
+                    vec3 toLight = uLightPosition[i].xyz - viewPos.xyz;
+                    float dist = length(toLight);
+                    lightDir = toLight / max(dist, 0.0001);
+                    vec3 k = uLightAttenuation[i];
+                    atten = 1.0 / max(k.x + k.y * dist + k.z * dist * dist, 0.0001);
+                }
+                float diff = max(dot(eyeNormal, lightDir), 0.0);
+                lit += (uLightAmbient[i] + uLightDiffuse[i] * diff) * atten;
             }
         }
         vColor = vec4(clamp(aColor.rgb * lit.rgb, 0.0, 1.0), aColor.a);
@@ -205,7 +218,8 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
     val uLightEnabled: Array<WebGLUniformLocation?>
     val uLightAmbient: Array<WebGLUniformLocation?>
     val uLightDiffuse: Array<WebGLUniformLocation?>
-    val uLightDirection: Array<WebGLUniformLocation?>
+    val uLightPosition: Array<WebGLUniformLocation?>
+    val uLightAttenuation: Array<WebGLUniformLocation?>
     val uUseTexture: Array<WebGLUniformLocation?>
     val uCubeMap: Array<WebGLUniformLocation?>
     val uTexture: Array<WebGLUniformLocation?>
@@ -254,10 +268,11 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
         )
         uLightingEnabled = gl.getUniformLocation(program, "uLightingEnabled")
         uGlobalAmbient = gl.getUniformLocation(program, "uGlobalAmbient")
-        uLightEnabled = perIndex("uLightEnabled")
-        uLightAmbient = perIndex("uLightAmbient")
-        uLightDiffuse = perIndex("uLightDiffuse")
-        uLightDirection = perIndex("uLightDirection")
+        uLightEnabled = perLight("uLightEnabled")
+        uLightAmbient = perLight("uLightAmbient")
+        uLightDiffuse = perLight("uLightDiffuse")
+        uLightPosition = perLight("uLightPosition")
+        uLightAttenuation = perLight("uLightAttenuation")
         uUseTexture = perUnit("uUseTexture")
         uTexture = arrayOf(
             gl.getUniformLocation(program, "uTexture0"),
@@ -287,8 +302,9 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
         gl.useProgram(null)
     }
 
-    private fun perIndex(name: String): Array<WebGLUniformLocation?> =
-        arrayOf(gl.getUniformLocation(program, "$name[0]"), gl.getUniformLocation(program, "$name[1]"))
+    private fun perLight(name: String): Array<WebGLUniformLocation?> = Array(MAX_LIGHTS) {
+        gl.getUniformLocation(program, "$name[$it]")
+    }
 
     private fun perUnit(name: String): Array<WebGLUniformLocation?> = Array(3) {
         gl.getUniformLocation(program, "$name[$it]")

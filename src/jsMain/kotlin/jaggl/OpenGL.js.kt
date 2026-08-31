@@ -247,7 +247,7 @@ actual class OpenGL {
                 GL_FOG -> { state.fogEnabled = true; state.ffpStateDirty = true }
                 GL_ALPHA_TEST -> { state.alphaTestEnabled = true; state.ffpStateDirty = true }
                 in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let {
-                    if (it in 0..1) { state.lightEnabled[it] = true; state.ffpStateDirty = true }
+                    if (it in 0 until MAX_LIGHTS) { state.lightEnabled[it] = true; state.ffpStateDirty = true }
                 }
                 GL_COLOR_MATERIAL, GL_NORMALIZE, GL_MULTISAMPLE -> {
                 }
@@ -266,7 +266,7 @@ actual class OpenGL {
                 GL_FOG -> { state.fogEnabled = false; state.ffpStateDirty = true }
                 GL_ALPHA_TEST -> { state.alphaTestEnabled = false; state.ffpStateDirty = true }
                 in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let {
-                    if (it in 0..1) { state.lightEnabled[it] = false; state.ffpStateDirty = true }
+                    if (it in 0 until MAX_LIGHTS) { state.lightEnabled[it] = false; state.ffpStateDirty = true }
                 }
                 GL_COLOR_MATERIAL, GL_NORMALIZE, GL_MULTISAMPLE -> {
                 }
@@ -311,16 +311,25 @@ actual class OpenGL {
         actual fun glFinish() = gl.finish()
         actual fun glFlush() = gl.flush()
 
-        actual fun glLightf(arg0: Int, arg1: Int, arg2: Float) {}
+        actual fun glLightf(arg0: Int, arg1: Int, arg2: Float) = exec {
+            val light = arg0 - GL_LIGHT0
+            if (light !in 0 until MAX_LIGHTS) return@exec
+            state.ffpStateDirty = true
+            when (arg1) {
+                GL_CONSTANT_ATTENUATION -> state.lightAttenuation[light][0] = arg2
+                GL_LINEAR_ATTENUATION -> state.lightAttenuation[light][1] = arg2
+                GL_QUADRATIC_ATTENUATION -> state.lightAttenuation[light][2] = arg2
+            }
+        }
         actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
             val light = arg0 - GL_LIGHT0
-            if (light !in 0..1) return@exec
+            if (light !in 0 until MAX_LIGHTS) return@exec
             state.ffpStateDirty = true
             val v = arg2.slice(arg3, 4)
             when (arg1) {
                 GL_AMBIENT -> v.copyInto(state.lightAmbient[light])
                 GL_DIFFUSE -> v.copyInto(state.lightDiffuse[light])
-                GL_POSITION -> state.transformLightPosition(v).copyInto(state.lightDirection[light])
+                GL_POSITION -> state.transformLightPosition(v).copyInto(state.lightPosition[light])
             }
         }
 
@@ -436,6 +445,28 @@ actual class OpenGL {
         }
 
         actual fun glGetFloatv(arg0: Int, arg1: FloatArray?, arg2: Int) {
+            // Fixed-function matrix state lives in MatrixStack on the JS shim. WebGL2's
+            // getParameter() does not know the legacy matrix pnames (2982/2983/2984) and
+            // silently returns null for them, which previously left the caller's array
+            // untouched/zeroed - e.g. ParticleSortRenderer's billboard basis vectors were
+            // all zero, collapsing every particle quad to a zero-area point.
+            when (arg0) {
+                GL_MODELVIEW_MATRIX_PNAME -> {
+                    val m = state.matrixStack.modelview()
+                    for (i in m.indices) arg1?.set(arg2 + i, m[i])
+                    return
+                }
+                GL_PROJECTION_MATRIX_PNAME -> {
+                    val m = state.matrixStack.projection()
+                    for (i in m.indices) arg1?.set(arg2 + i, m[i])
+                    return
+                }
+                GL_TEXTURE_MATRIX_PNAME -> {
+                    val m = state.matrixStack.textureMatrix(state.matrixStack.textureUnit)
+                    for (i in m.indices) arg1?.set(arg2 + i, m[i])
+                    return
+                }
+            }
             when (val v = gl.getParameter(translatePname(arg0))) {
                 is org.khronos.webgl.Float32Array -> for (i in 0 until v.length) arg1?.set(arg2 + i, v.asDynamic()[i] as Float)
                 is Float -> arg1?.set(arg2, v)
@@ -722,6 +753,13 @@ actual class OpenGL {
         }
 
         private const val GL_UNSIGNED_INT = 5125
+
+        // Fixed-function matrix *pname* values (as passed to glGetFloatv/glGetIntegerv).
+        // These are shim-only state on JS (tracked by MatrixStack); WebGL2 has no such
+        // legacy pnames, so gl.getParameter() returns null for them.
+        private const val GL_MODELVIEW_MATRIX_PNAME = 2982
+        private const val GL_PROJECTION_MATRIX_PNAME = 2983
+        private const val GL_TEXTURE_MATRIX_PNAME = 2984
 
         private fun quadIndices(mode: Int, first: Int, count: Int): Uint32Array? {
             val out = ArrayList<Int>()

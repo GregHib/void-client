@@ -124,10 +124,14 @@ class GlState(val gl: WebGL2RenderingContext) {
     var fogStart = 0f
     var fogEnd = 1f
     val globalAmbient = floatArrayOf(0.2f, 0.2f, 0.2f, 1f)
-    val lightEnabled = booleanArrayOf(false, false)
-    val lightAmbient = arrayOf(floatArrayOf(0f, 0f, 0f, 1f), floatArrayOf(0f, 0f, 0f, 1f))
-    val lightDiffuse = arrayOf(floatArrayOf(0f, 0f, 0f, 1f), floatArrayOf(0f, 0f, 0f, 1f))
-    val lightDirection = arrayOf(floatArrayOf(0f, 0f, -1f), floatArrayOf(0f, 0f, -1f))
+    val lightEnabled = BooleanArray(MAX_LIGHTS)
+    val lightAmbient = Array(MAX_LIGHTS) { floatArrayOf(0f, 0f, 0f, 1f) }
+    val lightDiffuse = Array(MAX_LIGHTS) { floatArrayOf(0f, 0f, 0f, 1f) }
+    // xyz = eye-space position (or direction, when w == 0), w mirrors the w passed to
+    // glLightfv(GL_POSITION): 0 = directional light, 1 = positional light with attenuation.
+    val lightPosition = Array(MAX_LIGHTS) { floatArrayOf(0f, 0f, -1f, 0f) }
+    // (constant, linear, quadratic) attenuation factors; GL defaults to (1, 0, 0), i.e. no falloff.
+    val lightAttenuation = Array(MAX_LIGHTS) { floatArrayOf(1f, 0f, 0f) }
 
     val currentColor = floatArrayOf(1f, 1f, 1f, 1f)
     val currentTexCoord = floatArrayOf(0f, 0f)
@@ -160,11 +164,12 @@ class GlState(val gl: WebGL2RenderingContext) {
                 ffpStateDirty = false
                 gl.uniform1i(s.uLightingEnabled, if (lightingEnabled) 1 else 0)
                 gl.uniform4fv(s.uGlobalAmbient, globalAmbient.asFloat32Array())
-                for (i in 0 until 2) {
+                for (i in 0 until MAX_LIGHTS) {
                     gl.uniform1i(s.uLightEnabled[i], if (lightEnabled[i]) 1 else 0)
                     gl.uniform4fv(s.uLightAmbient[i], lightAmbient[i].asFloat32Array())
                     gl.uniform4fv(s.uLightDiffuse[i], lightDiffuse[i].asFloat32Array())
-                    gl.uniform3fv(s.uLightDirection[i], lightDirection[i].asFloat32Array())
+                    gl.uniform4fv(s.uLightPosition[i], lightPosition[i].asFloat32Array())
+                    gl.uniform3fv(s.uLightAttenuation[i], lightAttenuation[i].asFloat32Array())
                 }
                 gl.uniform1i(s.uAlphaTestEnabled, if (alphaTestEnabled) 1 else 0)
                 gl.uniform1i(s.uAlphaFunc, alphaFunc)
@@ -246,6 +251,7 @@ class GlState(val gl: WebGL2RenderingContext) {
             m[0] * v[0] + m[4] * v[1] + m[8] * v[2] + m[12] * w,
             m[1] * v[0] + m[5] * v[1] + m[9] * v[2] + m[13] * w,
             m[2] * v[0] + m[6] * v[1] + m[10] * v[2] + m[14] * w,
+            w,
         )
     }
 
