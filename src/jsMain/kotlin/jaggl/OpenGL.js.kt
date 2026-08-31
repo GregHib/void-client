@@ -656,8 +656,11 @@ actual class OpenGL {
         }
 
         actual fun glBufferDataARBub(arg0: Int, arg1: Int, arg2: ByteArray?, arg3: Int, arg4: Int) {
-            val data = arg2 ?: return
-            gl.bufferData(arg0, data.asUint8Array().subarray(arg3, arg3 + arg1), arg4)
+            if (arg2 == null) {
+                gl.bufferData(arg0, arg1, arg4)
+                return
+            }
+            gl.bufferData(arg0, arg2.asUint8Array().subarray(arg3, arg3 + arg1), arg4)
         }
 
         actual fun glBufferSubDataARBa(arg0: Int, arg1: Int, arg2: Int, arg3: Long) {
