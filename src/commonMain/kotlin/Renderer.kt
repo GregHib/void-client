@@ -1,9 +1,8 @@
-import kotlin.jvm.JvmField
 import kotlin.jvm.JvmStatic
 import awt.Canvas
 import awt.Rectangle
 
-abstract class Renderer internal constructor(@JvmField var aRenderConfig4579: RenderConfig?) {
+abstract class Renderer internal constructor(open var aRenderConfig4579: RenderConfig?) {
 
     var anInt4567: Int
     abstract fun method3624(i: Int, i_0_: Int): Marker?

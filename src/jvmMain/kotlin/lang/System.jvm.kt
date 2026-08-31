@@ -22,4 +22,4 @@ actual fun runFinalization() = System.runFinalization()
 
 actual fun exit(status: Int): Nothing = exitProcess(status)
 
-actual fun load(path: String) = System.load(path)
+actual fun load(path: String) = System.load(java.io.File(path).absolutePath)
