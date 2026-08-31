@@ -44,6 +44,7 @@ class BufferToggleState internal constructor(var aBoolean3709: Boolean) {
                 if (FacingDirectionNode.aRenderer6654!!.method3670()) NoOpGraphicsOptionState.anInt6043 += 512
                 method1626(1, false)
             }
+            NoOpGraphicsOptionState.anInt6043 = (NoOpGraphicsOptionState.anInt6043 * Config.CULLING_DISTANCE_MULTIPLIER).toInt()
         }
     }
 }

@@ -1615,6 +1615,7 @@ class Client : GameAppletFrame() {
                 interface6 = LoadProgressCounters.aKeyboardInputSource_2449!!.method2697(0)
             }
             NodeDequeHolder.anInt1565 = 0
+            TextureLoaderUtil.scrollWheelDiff = 0
             var class348_sub45 = GlTexture1D.aInputTracker_8552!!.method3596(0)
             while (class348_sub45 != null) {
                 val i_111_ = class348_sub45.method3310(86)
@@ -1624,7 +1625,11 @@ class Client : GameAppletFrame() {
                             GroundDecorEntity.aNodeDeque_8744!!.method1999(class348_sub45, -20180)
                             if (GroundDecorEntity.aNodeDeque_8744!!.method1998(0) > 10) GroundDecorEntity.aNodeDeque_8744!!.method1997(8)
                         }
-                    } else NodeDequeHolder.anInt1565 += class348_sub45.method3315(0)
+                    } else {
+                        val anInt1565 = class348_sub45.method3315(0)
+                        TextureLoaderUtil.scrollWheelDiff = anInt1565
+                        NodeDequeHolder.anInt1565 += anInt1565
+                    }
                 } else NativeRenderNode.aNodeDeque_10479!!.method1999(class348_sub45, -20180)
                 class348_sub45 = GlTexture1D.aInputTracker_8552!!.method3596(0)
             }
@@ -2114,6 +2119,9 @@ class Client : GameAppletFrame() {
                                 if (class46.anInt719 >= 0) Tooltip.anInt4458 = class46.anInt719
                                 else if (class46.aBoolean776) Tooltip.anInt4458 = -1
                             }
+                            if (class46.aBoolean737 && (i == 48889856 || i == 35913731)) {
+                                TextureLoaderUtil.overGameScreen = true
+                            }
                             if (!ScrollbarComponent.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) ParticleDetailOptionState.method1797(i_41_ - i_44_, i_40_ - i_43_, class46, (-95).toByte())
                             var bool_53_ = false
                             if (GlTexture1D.aInputTracker_8552!!.method3595(-91) && bool) bool_53_ = true
@@ -2165,6 +2173,7 @@ class Client : GameAppletFrame() {
                                     class348_sub36.anInt6995 = NodeDequeHolder.anInt1565
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray803
                                     HashTileShape.aNodeDeque_8810!!.method1999(class348_sub36, -20180)
+                                    TextureLoaderUtil.overGameScreen = false
                                 }
                                 if (RegionSceneLoader.aWidgetComponent_3701 != null || ScrollbarComponent.aBoolean8335 || ((class46.anInt765 != TimedRecordAccessor.anInt7102) && HashLinkedListNodeStatics.anInt7059 > 0)) {
                                     bool_54_ = false
@@ -5098,8 +5107,14 @@ class Client : GameAppletFrame() {
                             method198(null, false, -1, -1)
                             method1343(-1, null, 1, -1)
                             if (!RenderNodeStatics.aBoolean9722) Tooltip.anInt4458 = -1
+                            TextureLoaderUtil.overGameScreen = false
                             FloatGrid.method1583((-73).toByte())
                             ResourceLoaderThread.anInt3918++
+                            if (TextureLoaderUtil.overGameScreen && TextureLoaderUtil.scrollWheelDiff != 0 && !FontMetaRef.aBoolean4328) {
+                                if (AsyncTaskHandle.anInt2581 <= 0 || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -125) || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -126)) {
+                                    TextureLoaderUtil.zoomStep += -TextureLoaderUtil.scrollWheelDiff * Config.ZOOM_OFFSET_STEP
+                                }
+                            }
                             if (WorldMapScene.aBoolean3103) {
                                 NodeDequeHolder.anInt1568++
                                 val class348_sub47 = method2148((OpenGlRenderer.aFontMetaRef_7715), (TheoraVideoStream.aIsaacCipher_9029), i + -11525)

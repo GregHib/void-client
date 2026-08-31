@@ -4,6 +4,9 @@
 object TextureLoaderUtil {
     var aShort3992: Short = 320
     var anInt3993: Int = 0
+    var zoomStep: Int = Config.ZOOM_OFFSET_DEFAULT
+    var overGameScreen: Boolean = false
+    var scrollWheelDiff: Int = 0
     var aFloat3994: Float = 0f
 
     fun method2547(i: Int, i_0_: Byte): Boolean {

@@ -33,17 +33,30 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             var i_4_ = i_3_ - 334
             if (i_4_ < 0) i_4_ = 0
             else if (i_4_ > 100) i_4_ = 100
-            var i_5_ = ((-AbstractMenuEntryStatics.aShort1700 + HeapDiagnosticsHolder.aShort2250) * i_4_ / 100 + AbstractMenuEntryStatics.aShort1700)
-            if (i_5_ < ChatCommandProcessor.aShort9555) i_5_ = ChatCommandProcessor.aShort9555.toInt()
-            else if (ColourAdjustment.aShort851 < i_5_) i_5_ = ColourAdjustment.aShort851.toInt()
-            var i_6_ = 512 * i_5_ * i_3_ / (i_1_ * 334)
+            var adjustedZoom = ((-AbstractMenuEntryStatics.aShort1700 + HeapDiagnosticsHolder.aShort2250) * i_4_ / 100 + AbstractMenuEntryStatics.aShort1700)
+            val base = adjustedZoom
+            if (TextureLoaderUtil.zoomStep != 0) adjustedZoom += TextureLoaderUtil.zoomStep
+            var min = AbstractMenuEntryStatics.aShort1700 * Config.FOV_MIN_FACTOR_NUM / Config.FOV_MIN_FACTOR_DEN
+            var max = HeapDiagnosticsHolder.aShort2250 * Config.FOV_MAX_FACTOR_NUM / Config.FOV_MAX_FACTOR_DEN
+            if (min < Config.FOV_MIN_ABS) min = Config.FOV_MIN_ABS
+            if (min > max) {
+                val tmp = min
+                min = max
+                max = tmp
+            }
+            if (adjustedZoom < min) adjustedZoom = min
+            else if (adjustedZoom > max) adjustedZoom = max
+            if (TextureLoaderUtil.zoomStep != 0) TextureLoaderUtil.zoomStep = adjustedZoom - base
+            if (adjustedZoom < ChatCommandProcessor.aShort9555) adjustedZoom = ChatCommandProcessor.aShort9555.toInt()
+            else if (ColourAdjustment.aShort851 < adjustedZoom) adjustedZoom = ColourAdjustment.aShort851.toInt()
+            var i_6_ = 512 * adjustedZoom * i_3_ / (i_1_ * 334)
             if (i_6_ >= FixedFunctionWaterPass.aShort7355) {
                 if (i_6_ > RefCountedHandle.aShort2269) {
                     i_6_ = RefCountedHandle.aShort2269.toInt()
-                    i_5_ = i_1_ * i_6_ * 334 / (i_3_ * 512)
-                    if (i_5_ < ChatCommandProcessor.aShort9555) {
-                        i_5_ = ChatCommandProcessor.aShort9555.toInt()
-                        val i_7_ = i_6_ * (i_1_ * 334) / (i_5_ * 512)
+                    adjustedZoom = i_1_ * i_6_ * 334 / (i_3_ * 512)
+                    if (adjustedZoom < ChatCommandProcessor.aShort9555) {
+                        adjustedZoom = ChatCommandProcessor.aShort9555.toInt()
+                        val i_7_ = i_6_ * (i_1_ * 334) / (adjustedZoom * 512)
                         val i_8_ = (-i_7_ + i_3_) / 2
                         if (bool) {
                             FacingDirectionNode.aRenderer6654!!.la()
@@ -56,10 +69,10 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                 }
             } else {
                 i_6_ = FixedFunctionWaterPass.aShort7355.toInt()
-                i_5_ = i_6_ * (i_1_ * 334) / (i_3_ * 512)
-                if (ColourAdjustment.aShort851 < i_5_) {
-                    i_5_ = ColourAdjustment.aShort851.toInt()
-                    val i_9_ = i_5_ * i_3_ * 512 / (334 * i_6_)
+                adjustedZoom = i_6_ * (i_1_ * 334) / (i_3_ * 512)
+                if (ColourAdjustment.aShort851 < adjustedZoom) {
+                    adjustedZoom = ColourAdjustment.aShort851.toInt()
+                    val i_9_ = adjustedZoom * i_3_ * 512 / (334 * i_6_)
                     val i_10_ = (i_1_ + -i_9_) / 2
                     if (bool) {
                         FacingDirectionNode.aRenderer6654!!.la()
@@ -70,7 +83,7 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                     i_1_ -= i_10_ * 2
                 }
             }
-            TerrainChunkBuilder.anInt1550 = i_3_ * i_5_ / 334
+            TerrainChunkBuilder.anInt1550 = i_3_ * adjustedZoom / 334
             RandomAccessFileOnDisk.anInt3047 = i_0_
             GroundDecorRenderer.anInt3643 = i_3_.toShort().toInt()
             WidgetComponentNode.anInt4656 = i_1_.toShort().toInt()
