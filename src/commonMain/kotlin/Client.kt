@@ -1315,6 +1315,9 @@ class Client : GameAppletFrame() {
             try {
                 method114(i.toInt() xor 0x66)
             } catch (throwable: Throwable) {
+                if (Config.trace) {
+                    throwable.printStackTrace()
+                }
                 method1242((throwable.message + " (Recovered) " + method81(115.toByte())), throwable, 15004)
                 NpcSummaryDefinition.aBoolean1952 = true
                 method3553(false, 102.toByte(), 0)

@@ -3,7 +3,7 @@ object Config {
     var showCoordinates: Boolean = true
     var skipLobby: Boolean = true
     var splitPorts: Boolean = false
-    var debug: Boolean = false
+    var debug: Boolean = true
     var trace: Boolean = true
     var address: String? = "127.0.0.1"
     var port: Int = 43594
