@@ -21,7 +21,7 @@ actual fun GraphicsEnvironment.getDefaultScreenDevice(): GraphicsDevice =
 
 actual val isHeadless: Boolean = false
 
-private fun fullscreenEnabled(): Boolean =
+internal fun fullscreenEnabled(): Boolean =
     try {
         js("document.fullscreenEnabled") as? Boolean ?: false
     } catch (e: Throwable) {

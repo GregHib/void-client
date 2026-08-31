@@ -14,6 +14,10 @@ expect abstract class GraphicsDevice {
 
 expect fun GraphicsDevice.setFullScreenWindow(frame: Frame?)
 
+// Set by the platform-agnostic fullscreen controller; invoked by platform code when fullscreen
+// exits without going through setFullScreenWindow(null) - e.g. the browser's own Escape handling.
+var onFullscreenExitedExternally: (() -> Unit)? = null
+
 const val GRAPHICS_DEVICE_TYPE_RASTER_SCREEN = 0
 
 const val GRAPHICS_DEVICE_TYPE_PRINTER = 1

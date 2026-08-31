@@ -4,6 +4,7 @@ import awt.GraphicsDevice
 import awt.getDefaultScreenDevice
 import awt.getScreenDevices
 import awt.localGraphicsEnvironment
+import awt.onFullscreenExitedExternally
 import awt.setFullScreenWindow
 import lang.jClass
 import kotlin.math.abs
@@ -68,15 +69,22 @@ class FullscreenDisplayController {
             val graphicsdevices = graphicsenvironment.getScreenDevices()
             val graphicsdevices_6_ = graphicsdevices
             var i = 0
+            var found = false
             while (graphicsdevices_6_.size > i) {
                 val graphicsdevice = graphicsdevices_6_[i]
                 if (null != graphicsdevice && graphicsdevice.isFullScreenSupported()) {
                     aGraphicsDevice157 = graphicsdevice
+                    found = true
                     break
                 }
                 i++
             }
-            throw Exception()
+            if (!found) throw Exception()
+        }
+        // wm2 is the "Resizable" window mode - see the wm1/wm2/wm3 debug chat commands in
+        // ConfigArchiveLoader.kt for the same call used to switch modes explicitly.
+        onFullscreenExitedExternally = {
+            ChatCommandProcessor.method830(2, -1, 102.toByte(), false, -1)
         }
     }
 
