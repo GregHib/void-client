@@ -176,7 +176,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
             anInt1077++
             ParticleGeometry.aLruByteCache_4417!!.method578(2, i)
             if (i_49_ != -1) InboundPacketHeader.aInboundPacketHeader_1068 = null
-            SceneryDetailOptionState.aLruByteCache_6096!!.method578(2, i)
+            TextureOptionState.aLruByteCache_6096!!.method578(2, i)
             EdgeDetectTextureNode.aLruByteCache_9171!!.method578(i_49_ xor 0x2.inv(), i)
         }
 
@@ -203,7 +203,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
             }
             if (`is` != null && file != null) {
                 var bool = true
-                val is_54_ = SceneryDetailOptionState.method1821(i xor 0x1d5b, file)
+                val is_54_ = TextureOptionState.method1821(i xor 0x1d5b, file)
                 if (is_54_ == null || is_54_.size != `is`.size) bool = false
                 else {
                     for (i_55_ in is_54_.indices) {

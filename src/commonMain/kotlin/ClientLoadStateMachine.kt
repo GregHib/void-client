@@ -38,7 +38,7 @@ object ClientLoadStateMachine {
         anInt2175++
         FontMetaRef.aLruByteCache_4327!!.method590(i + -62)
         ParticleGeometry.aLruByteCache_4417!!.method590(0)
-        SceneryDetailOptionState.aLruByteCache_6096!!.method590(0)
+        TextureOptionState.aLruByteCache_6096!!.method590(0)
         if (i.toInt() != 62) method1277(43.toByte())
         EdgeDetectTextureNode.aLruByteCache_9171!!.method590(0)
     }
@@ -133,7 +133,7 @@ object ClientLoadStateMachine {
             SceneTilePlaneManager.aJs5Archive_233 = WorldMapTextLabel.method3571(false, 10, (-23).toByte(), 1)
             TheoraVideoStream.aJs5Archive_9033 = WorldMapTextLabel.method3571(false, 11, (-23).toByte(), 1)
             CameraNodeList.aJs5Archive_1743 = WorldMapTextLabel.method3571(false, 12, (-23).toByte(), 1)
-            LightingOptionState.aJs5Archive_5878 = WorldMapTextLabel.method3571(false, 14, (-23).toByte(), 1)
+            GroundDecorOptionState.aJs5Archive_5878 = WorldMapTextLabel.method3571(false, 14, (-23).toByte(), 1)
             HoverActionEntry.aJs5Archive_1815 = WorldMapTextLabel.method3571(false, 15, (-23).toByte(), 1)
             AnimationFrameState.aJs5Archive_1538 = WorldMapTextLabel.method3571(false, 16, (-23).toByte(), 1)
             VideoAdChecker.aJs5Archive_3183 = WorldMapTextLabel.method3571(false, 17, (-23).toByte(), 1)
@@ -203,7 +203,7 @@ object ClientLoadStateMachine {
             ConstantColourTextureNode.aMapElementDefinitionCache_9245 = MapElementDefinitionCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, BufferedRandomAccessFile.aJs5Archive_1322, RasterSprite.aJs5Archive_5207)
             SpriteLoadValidator.aWorldMapImageBuilder_4787 = WorldMapImageBuilder(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             NpcUpdateProcessor.aConfigArchiveLoader_1523 = ConfigArchiveLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
-            WaterDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
+            RemoveRoofLightingDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, MidiSequencePlayer.aJs5Archive_8926)
             NormalMapGenerator.aParticleAmountCache_3453 = ParticleAmountCache(Client.aSceneProjector_10434, ChatCommandProcessor.anInt6967, DirectionUtil.aJs5Archive_1541)
             WorldMapImageBuilder.method699(SoftwareSpriteRaster.aJs5Archive_1627, (-100).toByte(), ClientLoadStateMachine.aJs5Archive_6980, CameraRotationStub.aJs5Archive_322, RasterSprite.aJs5Archive_5207)
@@ -234,12 +234,12 @@ object ClientLoadStateMachine {
         if (ConnectionStateType.aConnectionStateType_1038 == TimedTileQueueEntry.aConnectionStateType_9660) method752(TerrainShadowBuilderGl2.aJs5Archive_6950, RenderConfigFactory.aLocDefinitionCache_2979, Tooltip.aParticleDefLoader_4460, GradientLookupEffect.aSeqDefinitionCache_9195, TheoraVideoStream.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aTextureDefinitionLoader_117, ProjectedGroundDecor.aVarpStore_10209)
         if (ConnectionStateType.aConnectionStateType_1039 == TimedTileQueueEntry.aConnectionStateType_9660) {
             // TODO make cache edit to extend these or change id's
-            IsaacCipher.anIntArray1303 = (IntArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
-            GlslEnvMaterialPass.aBooleanArray6270 = (BooleanArray(WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
+            IsaacCipher.anIntArray1303 = (IntArray(RemoveRoofLightingDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
+            GlslEnvMaterialPass.aBooleanArray6270 = (BooleanArray(RemoveRoofLightingDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
             GlTextureCubeMap.aStringArray8532 = arrayOfNulls<String>(NpcUpdateProcessor.aConfigArchiveLoader_1523!!.anInt1439)
             var i_13_ = 0
-            while (WaterDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000 > i_13_) {
-                if (WaterDetailOptionState.aKeyboardLayoutCache_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
+            while (RemoveRoofLightingDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000 > i_13_) {
+                if (RemoveRoofLightingDetailOptionState.aKeyboardLayoutCache_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
                     GlslEnvMaterialPass.aBooleanArray6270!![i_13_] = true
                     TimingCounters.anInt4168++
                 }

@@ -19,9 +19,9 @@ object AbstractTileShapeStatics {
     fun method2718(i: Int) {
         if (i >= -95) method2719(90)
         anInt6560++
-        if (GroundDecorOptionState.anInt5976 != -1) {
-            ModelDataCache.method298(false, -1, -1, GroundDecorOptionState.anInt5976, -67)
-            GroundDecorOptionState.anInt5976 = -1
+        if (IdleAnimationOptionState.anInt5976 != -1) {
+            ModelDataCache.method298(false, -1, -1, IdleAnimationOptionState.anInt5976, -67)
+            IdleAnimationOptionState.anInt5976 = -1
         }
     }
 

@@ -290,8 +290,8 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                     }
                 }
                 spriteImages = SpriteImage.method1519(js5Archive, OverlayColorTable.anInt1756, 0)
-                CustomCursorsOptionState.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
-                for (i in spriteImages.indices) CustomCursorsOptionState.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                GroundBlendingOptionState.aAbstractModelRendererArray5933 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                for (i in spriteImages.indices) GroundBlendingOptionState.aAbstractModelRendererArray5933!![i] = var_renderer!!.method3691(spriteImages[i], true)
                 spriteImages = SpriteImage.method1519(js5Archive, TexGenMaterialPass.anInt3739, 0)
                 GrayscaleNoiseTexture.aAbstractModelRendererArray5294 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
@@ -310,7 +310,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(js5Archive, RangedGraphicsOptionState.anInt5948, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, BrightnessGraphicsOptionState.anInt5948, 0)
                 BoxBlurTextureNode.aAbstractModelRendererArray9467 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) BoxBlurTextureNode.aAbstractModelRendererArray9467!![i] = var_renderer!!.method3691(spriteImages[i], true)
                 spriteImages = SpriteImage.method1519(js5Archive, CameraNodeList.anInt1742, 0)
@@ -335,7 +335,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
                     }
                 }
                 NpcType.aAbstractModelRenderer_1365 = var_renderer!!.method3691(SpriteImage.method1521(js5Archive, RsaVarbitHandler.anInt4895, 0), bool)
-                SceneryDetailOptionState.aAbstractModelRenderer_6097 = var_renderer.method3691(SpriteImage.method1521(js5Archive, (PerlinTextureProvider.anInt5814), 0), true)
+                TextureOptionState.aAbstractModelRenderer_6097 = var_renderer.method3691(SpriteImage.method1521(js5Archive, (PerlinTextureProvider.anInt5814), 0), true)
                 spriteImages = SpriteImage.method1519(js5Archive, SpriteComponent.anInt8370, 0)
                 ScriptResources.aAbstractModelRendererArray2640 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 for (i in spriteImages.indices) ScriptResources.aAbstractModelRendererArray2640!![i] = var_renderer.method3691(spriteImages[i], true)

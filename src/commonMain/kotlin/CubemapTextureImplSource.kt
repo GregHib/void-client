@@ -24,8 +24,8 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
                 if (i < i_2_) i = i_2_
                 if (class12.aByte205 > 0) bool_0_ = true
             }
-            for (i_3_ in 0..5) WaterDetailOptionState.anIntArrayArray5991!![i_3_] = var_d.method5(false, ArchiveFileConditionWrapper.anIntArray3464!![i_3_], 1.0f, i, i, 81)
-            anInterface18_Impl2_8719 = aHa_Sub3_8718.method3900(WaterDetailOptionState.anIntArrayArray5991, bool_0_, 61, i)
+            for (i_3_ in 0..5) RemoveRoofLightingDetailOptionState.anIntArrayArray5991!![i_3_] = var_d.method5(false, ArchiveFileConditionWrapper.anIntArray3464!![i_3_], 1.0f, i, i, 81)
+            anInterface18_Impl2_8719 = aHa_Sub3_8718.method3900(RemoveRoofLightingDetailOptionState.anIntArrayArray5991, bool_0_, 61, i)
         }
         return anInterface18_Impl2_8719
     }

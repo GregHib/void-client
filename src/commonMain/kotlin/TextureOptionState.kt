@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import io.File
 
-class SceneryDetailOptionState : GraphicsOptionState {
+class TextureOptionState : GraphicsOptionState {
     override fun method1712(i: Int, i_0_: Int) {
         val i_1_ = -73 % ((i - 82) / 35)
         this.anInt3138 = i_0_
@@ -175,7 +175,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                         if (!RenderNodeStatics.aBoolean9722 || (0x40 and WidgetTextConfig.anInt500) == 0) {
                             if (ObjectSpawnDecoder.aBoolean1801) MinimapPolygonDrawer.method466(false, "", i_14_, (-109).toByte(), true, i_13_, -1, true, 12, (i_14_ or (i_13_ shl 0)).toLong(), (LocalizedText.aLocalizedText_3510!!.method2063(ChatCommandProcessor.anInt6967, 544)), 0L, -1)
                             RenderableEntry.anInt4334++
-                            MinimapPolygonDrawer.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), LightingOptionState.aString5882, 0L, MapElementLookup.anInt4144)
+                            MinimapPolygonDrawer.method466(false, "", i_14_, (-82).toByte(), true, i_13_, -1, true, 19, (i_14_ or (i_13_ shl 0)).toLong(), GroundDecorOptionState.aString5882, 0L, MapElementLookup.anInt4144)
                         } else {
                             val class46 = NpcReference.method2957(NativeLibraryState.anInt169, (-54).toByte(), OrientationRotator.anInt2046)
                             if (class46 == null) TileRenderState.method2678(-2049)
@@ -329,7 +329,7 @@ class SceneryDetailOptionState : GraphicsOptionState {
                                                     if (i_58_ == 4) i_59_ = 5
                                                     if ((class213.anInt2764) == i_58_) i_60_ = class213.anInt2830
                                                     MinimapPolygonDrawer.method466(false, ("<col=ff9040>" + (class213.aString2795)), i_32_, (-119).toByte(), false, i_33_, -1, true, i_59_, i_57_.toLong(), strings[i_58_], class348_sub34.anInt6973.toLong(), i_60_)
-                                                    SceneryDetailOptionState.anInt9548++
+                                                    TextureOptionState.anInt9548++
                                                 }
                                             }
                                         }

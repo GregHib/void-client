@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import LocTypeDefLoader.Companion.method1406
-import WaterDetailOptionState.Companion.method1779
+import RemoveRoofLightingDetailOptionState.Companion.method1779
 import ConfigFlagUtil.Companion.method1916
 import TextureCubeProvider.Companion.method2269
 import ProjectedGroundDecor.Companion.method2433
@@ -114,11 +114,11 @@ class TileRenderState {
             WorldMapRenderer.aAbstractModelRendererArray4679 = null
             NpcType.aAbstractModelRenderer_1365 = null
             SpriteStore.aAbstractModelRendererArray367 = null
-            CustomCursorsOptionState.aAbstractModelRendererArray5933 = null
+            GroundBlendingOptionState.aAbstractModelRendererArray5933 = null
             ScriptResources.aAbstractModelRendererArray2640 = null
             BoxBlurTextureNode.aAbstractModelRendererArray9467 = null
             NodeDequeStatics.aRSFont_3326 = null
-            SceneryDetailOptionState.aAbstractModelRenderer_6097 = null
+            TextureOptionState.aAbstractModelRenderer_6097 = null
             GameAppletFrame.aRSFont_20 = null
             WorldMapRenderer.aRSFont_4684 = null
             HostPingThread.aAbstractModelRendererArray2260 = null

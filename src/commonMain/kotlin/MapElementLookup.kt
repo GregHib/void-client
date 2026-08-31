@@ -46,7 +46,7 @@ class MapElementLookup {
         var anInt4149: Int = 0
         fun method2643(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             if (LoadingBarRenderer.anIntArrayArray4253 != null) LoadingBarRenderer.anIntArrayArray4253!![i]!![i_0_] = 0xffffff.inv() or i_1_
-            if (BooleanGraphicsOptionState.aShortArrayArray5847 != null) BooleanGraphicsOptionState.aShortArrayArray5847!![i]!![i_0_] = i_2_.toShort()
+            if (FlickeringGraphicsOptionState.aShortArrayArray5847 != null) FlickeringGraphicsOptionState.aShortArrayArray5847!![i]!![i_0_] = i_2_.toShort()
             if (HashTileShape.aByteArrayArray8816 != null) HashTileShape.aByteArrayArray8816!![i]!![i_0_] = i_3_.toByte()
         }
 

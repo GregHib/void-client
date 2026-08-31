@@ -1,74 +1,167 @@
+import lang.StringBuffer
 import kotlin.jvm.JvmStatic
-/* Class239_Sub20 - Decompiled by JODE
+/* Class239_Sub16 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
 class FogOptionState : GraphicsOptionState {
-    override fun method1710(i: Int): Int {
-        if (i != 20014) return -9
-        anInt6055++
-        return 0
+    override fun method1714(i: Int, i_5_: Int): Int {
+        if (i != 3) anInt6012 = -22
+        anInt6014++
+        if (i_5_ == 0 || this.aClass348_Sub51_3136.aClass239_Sub9_7256!!.method1759(i xor 0x7e5e.inv()) == 1) return 1
+        return 2
     }
 
-    override fun method1714(i: Int, i_0_: Int): Int {
-        anInt6051++
-        if (!LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) return 3
-        if (i != 3) method1807(64.toByte())
-        return 1
+    override fun method1716(bool: Boolean) {
+        if (bool != false) anInt6012 = 46
+        if (this.anInt3138 != 0 && this.aClass348_Sub51_3136.aClass239_Sub9_7256!!.method1759(-32350) != 1) this.anInt3138 = 0
+        anInt6007++
+        if (this.anInt3138 < 0 || this.anInt3138 > 1) this.anInt3138 = method1710(20014)
     }
 
-    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
-
-    fun method1806(i: Int): Boolean {
-        if (i < 85) method1714(-53, -119)
-        anInt6049++
-        return LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))
+    fun method1789(i: Int): Int {
+        if (i != -32350) WhirlpoolHash.anInt6008 = 32
+        anInt6017++
+        return this.anInt3138
     }
 
     internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
-    fun method1808(i: Int): Int {
-        anInt6053++
-        if (i != -32350) anInt6048 = -97
-        return this.anInt3138
+    override fun method1712(i: Int, i_6_: Int) {
+        anInt6011++
+        val i_7_ = -19 / ((i - 82) / 35)
+        this.anInt3138 = i_6_
     }
 
-    override fun method1712(i: Int, i_1_: Int) {
-        val i_2_ = 38 / ((82 - i) / 35)
-        anInt6052++
-        this.anInt3138 = i_1_
+    fun method1790(i: Int): Boolean {
+        if (i < 85) anInt6012 = -109
+        anInt6015++
+        return true
     }
 
-    override fun method1716(bool: Boolean) {
-        anInt6050++
-        if (bool != false) method1714(-51, -128)
-        if (this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1830((-123).toByte()) && !LinkedListNodeStatics.method2714(7351, this.aClass348_Sub51_3136.aClass239_Sub25_7271!!.method1829(-32350))) this.anInt3138 = 0
-        if (this.anInt3138 < 0 || this.anInt3138 > 2) this.anInt3138 = method1710(20014)
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
+
+    override fun method1710(i: Int): Int {
+        if (i != 20014) method1789(40)
+        anInt6010++
+        return 1
     }
 
     companion object {
 
-        var anInt6048: Int = 0
+        var anInt6007: Int = 0
 
-        var anInt6049: Int = 0
+        var anInt6009: Int = 0
 
-        var anInt6050: Int = 0
+        var anInt6010: Int = 0
 
-        var anInt6051: Int = 0
+        var anInt6011: Int = 0
 
-        var anInt6052: Int = 0
+        var anInt6012: Int = 1
 
-        var anInt6053: Int = 0
+        var anInt6013: Int = 0
 
-        var anIntArrayArray6054: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(12, 12, 12, 12), intArrayOf(12, 12, 12, 12), intArrayOf(5, 5, 5), intArrayOf(5, 5, 5), intArrayOf(5, 5, 5), intArrayOf(5, 5, 5), intArrayOf(12, 12, 12, 12, 12, 12), intArrayOf(1, 1, 1, 7), intArrayOf(1, 1, 7, 1), intArrayOf(8, 9, 9, 8, 8, 9), intArrayOf(8, 8, 9, 8, 9, 9), intArrayOf(10, 10, 11, 11, 11, 10), intArrayOf(12, 12, 12, 12))
+        var anInt6014: Int = 0
 
-        var anInt6055: Int = 0
+        var anInt6015: Int = 0
 
+        var anInt6016: Int = 0
+
+        var anInt6017: Int = 0
 
         @JvmStatic
-        fun method1807(i: Byte) {
-            anIntArrayArray6054 = null
-            if (i.toInt() != -121) anIntArrayArray6054 = null
-            InboundPacketHeader.aInboundPacketHeader_6056 = null
+        fun method1788(i: Byte, l: Long): String? {
+            var l = l
+            try {
+                anInt6016++
+                if (l <= 0L || l >= 6582952005840035281L) return null
+                if (l % 37L == 0L) return null
+                var i_0_ = 0
+                var l_1_ = l
+                val i_2_ = -20 % ((i - -6) / 62)
+                while ( /**/l_1_ != 0L) {
+                    i_0_++
+                    l_1_ /= 37L
+                }
+                val stringbuffer = StringBuffer(i_0_)
+                while (l != 0L) {
+                    val l_3_ = l
+                    l /= 37L
+                    var c = ColourAdjustment.aCharArray852!![(l_3_ + -(37L * l)).toInt()]
+                    if (c.code == 95) {
+                        val i_4_ = stringbuffer.length + -1
+                        stringbuffer.setCharAt(i_4_, stringbuffer.get(i_4_).uppercaseChar())
+                        c = '\u00a0'
+                    }
+                    stringbuffer.append(c)
+                }
+                stringbuffer.reverse()
+                stringbuffer.setCharAt(0, stringbuffer.get(0).uppercaseChar())
+                return stringbuffer.toString()
+            } catch (runtimeexception: RuntimeException) {
+                throw TextureLoadException.method2929(runtimeexception, "sba.F(" + i + ',' + l + ')')
+            }
+        }
+
+        @JvmStatic
+        fun method1791(i: Int, `is`: IntArray?, i_8_: Int, player: Player?) {
+            do {
+                try {
+                    anInt6009++
+                    if ((player!!.anIntArray10236) != null) {
+                        var bool = true
+                        var i_9_ = 0
+                        while ((player.anIntArray10236!!.size > i_9_)) {
+                            if ((player.anIntArray10236!![i_9_]) != `is`!![i_9_]) {
+                                bool = false
+                                break
+                            }
+                            i_9_++
+                        }
+                        if (bool && player.anInt10286 != -1) {
+                            val class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835(player.anInt10286, 7))
+                            val i_10_ = class17.anInt248
+                            if (i_10_ == 1) {
+                                player.anInt10232 = 0
+                                player.anInt10267 = 0
+                                player.anInt10294 = 0
+                                player.anInt10218 = i_8_
+                                player.anInt10244 = 1
+                                if (!player.aBoolean10309) TypedRecordTable.method2178(player, player.anInt10267, class17, i xor 0x5df4.inv())
+                            }
+                            if (i_10_ == 2) player.anInt10294 = 0
+                        }
+                    }
+                    var bool = true
+                    if (i != 23946) method1791(126, null, -73, null)
+                    var i_11_ = 0
+                    while (`is`!!.size > i_11_) {
+                        if (`is`[i_11_] != -1) bool = false
+                        if (player.anIntArray10236 == null || (player.anIntArray10236!![i_11_]) == -1 || (ParticleEmitterNode.aWidgetCache_191!!.method835((player.anIntArray10236!![i_11_]), 7).anInt239 <= (ParticleEmitterNode.aWidgetCache_191!!.method835(`is`[i_11_], i xor 0x5d8d).anInt239))) {
+                            player.anInt10218 = i_8_
+                            player.anIntArray10236 = `is`
+                            break
+                        }
+                        i_11_++
+                    }
+                    if (!bool) break
+                    player.anIntArray10236 = `is`
+                    player.anInt10218 = i_8_
+                } catch (runtimeexception: RuntimeException) {
+                    throw TextureLoadException.method2929(runtimeexception, ("sba.E(" + i + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_8_ + ',' + (if (player != null) "{...}" else "null") + ')'))
+                }
+                break
+            } while (false)
+        }
+
+        @JvmStatic
+        fun method1792(i: Int, i_12_: Int, i_13_: Int, i_14_: Int, i_15_: Byte, i_16_: Int) {
+            anInt6013++
+            val i_17_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i, LocalPlayerState.anInt1910, -90)
+            val i_18_ = WhirlpoolHash.method831(WidgetTextConfig.anInt513, i_13_, LocalPlayerState.anInt1910, -94)
+            val i_19_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_12_, WorldMapLabel.anInt4960, 77)
+            val i_20_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_14_, WorldMapLabel.anInt4960, 59)
+            val i_21_ = -27 / ((i_15_ - -6) / 55)
+            for (i_22_ in i_17_..i_18_) GlElementArrayBuffer.method1156(-27, i_20_, WidgetDefinition.anIntArrayArray255!![i_22_]!!, i_19_, i_16_)
         }
     }
 }

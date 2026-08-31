@@ -885,7 +885,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method775(69.toByte())
             HashTileShape.aByteArrayArray8816 = null
             LoadingBarRenderer.anIntArrayArray4253 = null
-            BooleanGraphicsOptionState.aShortArrayArray5847 = null
+            FlickeringGraphicsOptionState.aShortArrayArray5847 = null
             if (NormalMapTextureNode.aSceneLoaderThreadArray9432 != null) {
                 WalkingTypeUtil.method1978()
                 NativeLibraryState.aRenderer171!!.method3631(1)

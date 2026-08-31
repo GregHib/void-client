@@ -304,7 +304,7 @@ class WidgetComponent {
 
     fun method425(var_renderer: Renderer, i: Byte): Sprite? {
         anInt767++
-        var var_sprite = SceneryDetailOptionState.aLruByteCache_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
+        var var_sprite = TextureOptionState.aLruByteCache_6096!!.method583(this.anInt830.toLong(), 119) as Sprite?
         if (var_sprite != null) return var_sprite
         val spriteImage = SpriteImage.method1521(GroundDecorEntity.aJs5Archive_8755!!, this.anInt756, 0)
         if (spriteImage == null) return null
@@ -337,7 +337,7 @@ class WidgetComponent {
             i_12_++
         }
         var_sprite = var_renderer.method3661(i_10_, i_11_, this.anIntArray677, this.anIntArray772)
-        SceneryDetailOptionState.aLruByteCache_6096!!.method582(var_sprite, this.anInt830.toLong(), (-104).toByte())
+        TextureOptionState.aLruByteCache_6096!!.method582(var_sprite, this.anInt830.toLong(), (-104).toByte())
         return var_sprite
     }
 

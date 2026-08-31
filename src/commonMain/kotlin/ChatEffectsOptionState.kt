@@ -164,7 +164,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
                 var renderableEntry = SoundCacheState.aLruByteCache_4139!!.method583(i.toLong(), -92) as? RenderableEntry?
                 if (renderableEntry != null) {
                     if (bool && renderableEntry.aFontDefinition_4333 == null) {
-                        val class143 = RangedGraphicsOptionState.method1766((-76).toByte(), i, TerrainTileStatics.aJs5Archive_4585!!)
+                        val class143 = BrightnessGraphicsOptionState.method1766((-76).toByte(), i, TerrainTileStatics.aJs5Archive_4585!!)
                         if (class143 == null) return null
                         renderableEntry.aFontDefinition_4333 = class143
                     }
@@ -173,7 +173,7 @@ class ChatEffectsOptionState : GraphicsOptionState {
                 val i_27_ = -118 / ((-33 - i_25_) / 44)
                 val spriteImages = SpriteImage.method1523(GlShaderObjectHandle.aJs5Archive_518!!, i)
                 if (spriteImages == null) return null
-                val class143 = RangedGraphicsOptionState.method1766((-39).toByte(), i, TerrainTileStatics.aJs5Archive_4585!!)
+                val class143 = BrightnessGraphicsOptionState.method1766((-39).toByte(), i, TerrainTileStatics.aJs5Archive_4585!!)
                 if (class143 == null) return null
                 if (!bool) renderableEntry = RenderableEntry(var_renderer!!.method3686(class143, spriteImages, true))
                 else renderableEntry = RenderableEntry(var_renderer!!.method3686(class143, spriteImages, true), class143)

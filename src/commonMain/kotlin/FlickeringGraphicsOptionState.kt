@@ -4,7 +4,7 @@ import NoiseTextureGenerator.Companion.method544
 /* Class239_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class BooleanGraphicsOptionState : GraphicsOptionState {
+class FlickeringGraphicsOptionState : GraphicsOptionState {
     fun method1720(i: Int): Int {
         anInt5843++
         if (i != -32350) method1714(82, -89)

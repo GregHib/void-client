@@ -108,28 +108,28 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                     val i_5_ = -i_4_ + 255
                     val f = i_4_.toFloat() / 255.0f
                     val f_6_ = 1.0f - f
-                    NativeIndexBuffer.anInt4703 = (((i_5_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540) and 0xff00ff) + (GroundDecorEntity.anInt8739 and 0xff00ff) * i_4_) and 0xff00ff.inv()) - -(0xff0000 and (i_4_ * (0xff00 and GroundDecorEntity.anInt8739) + (0xff00 and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540)) * i_5_))) ushr 8
-                    RangedGraphicsOptionState.aFloat5945 = (GlTexture1D.aFloat8560 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2551) - GlTexture1D.aFloat8560))
-                    ModelVertexColorBuffer.aFloat6586 = (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2545 - ServerConnectionInfo.aFloat670) * f_6_ + ServerConnectionInfo.aFloat670
-                    AnimationFrameTable.anInt486 = (i_4_ * NoOpGraphicsOptionState.anInt6042 + (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546 * i_5_)) shr 8
-                    KeyboardLayoutConfig.aFloat2137 = (TileSceneEntity.aFloat8725 + (-TileSceneEntity.aFloat8725 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2547)) * f_6_)
-                    TextureMetadataProvider.aFloat4626 = (AbstractModel.aFloat1136 + f_6_ * ((WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2544) - AbstractModel.aFloat1136))
-                    LocTypeDefLoader.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549)))))) ushr 8
-                    CollisionMap.aFloat4455 = (ParticleEmitterFactoryStatics.aFloat3177 + f_6_ * (-ParticleEmitterFactoryStatics.aFloat3177 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536)))
-                    NormalMapGenerator.aFloat3462 = (DebugOverlayRenderer.aFloat3172 + (WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2542 - DebugOverlayRenderer.aFloat3172) * f_6_)
-                    if (SceneryDetailOptionState.aCircleRasterizer_6098 !== (WaterDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541)) HeapInfoRecord.aCircleRasterizer_4938 = (TerrainChunkBuilder.aRenderer1098!!.method3706(SceneryDetailOptionState.aCircleRasterizer_6098, (WaterDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541), f_6_, HeapInfoRecord.aCircleRasterizer_4938))
+                    NativeIndexBuffer.anInt4703 = (((i_5_ * ((RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2540) and 0xff00ff) + (GroundDecorEntity.anInt8739 and 0xff00ff) * i_4_) and 0xff00ff.inv()) - -(0xff0000 and (i_4_ * (0xff00 and GroundDecorEntity.anInt8739) + (0xff00 and (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2540)) * i_5_))) ushr 8
+                    BrightnessGraphicsOptionState.aFloat5945 = (GlTexture1D.aFloat8560 + f_6_ * ((RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2551) - GlTexture1D.aFloat8560))
+                    ModelVertexColorBuffer.aFloat6586 = (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2545 - ServerConnectionInfo.aFloat670) * f_6_ + ServerConnectionInfo.aFloat670
+                    AnimationFrameTable.anInt486 = (i_4_ * NoOpGraphicsOptionState.anInt6042 + (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2546 * i_5_)) shr 8
+                    KeyboardLayoutConfig.aFloat2137 = (TileSceneEntity.aFloat8725 + (-TileSceneEntity.aFloat8725 + (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2547)) * f_6_)
+                    TextureMetadataProvider.aFloat4626 = (AbstractModel.aFloat1136 + f_6_ * ((RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2544) - AbstractModel.aFloat1136))
+                    LocTypeDefLoader.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2549)))))) ushr 8
+                    CollisionMap.aFloat4455 = (ParticleEmitterFactoryStatics.aFloat3177 + f_6_ * (-ParticleEmitterFactoryStatics.aFloat3177 + (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2536)))
+                    NormalMapGenerator.aFloat3462 = (DebugOverlayRenderer.aFloat3172 + (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2542 - DebugOverlayRenderer.aFloat3172) * f_6_)
+                    if (TextureOptionState.aCircleRasterizer_6098 !== (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541)) HeapInfoRecord.aCircleRasterizer_4938 = (TerrainChunkBuilder.aRenderer1098!!.method3706(TextureOptionState.aCircleRasterizer_6098, (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541), f_6_, HeapInfoRecord.aCircleRasterizer_4938))
                 } else {
-                    HeapInfoRecord.aCircleRasterizer_4938 = (WaterDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541)
-                    TextureMetadataProvider.aFloat4626 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2544
-                    ModelVertexColorBuffer.aFloat6586 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2545
-                    RangedGraphicsOptionState.aFloat5945 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2551
-                    AnimationFrameTable.anInt486 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2546
-                    NormalMapGenerator.aFloat3462 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2542
-                    CollisionMap.aFloat4455 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2536
+                    HeapInfoRecord.aCircleRasterizer_4938 = (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541)
+                    TextureMetadataProvider.aFloat4626 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2544
+                    ModelVertexColorBuffer.aFloat6586 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2545
+                    BrightnessGraphicsOptionState.aFloat5945 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2551
+                    AnimationFrameTable.anInt486 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2546
+                    NormalMapGenerator.aFloat3462 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2542
+                    CollisionMap.aFloat4455 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2536
                     TexGenMaterialPass.anInt6248 = -1
-                    LocTypeDefLoader.anInt2500 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2549
-                    NativeIndexBuffer.anInt4703 = WaterDetailOptionState.aModelLightingConfig_5990!!.anInt2540
-                    KeyboardLayoutConfig.aFloat2137 = WaterDetailOptionState.aModelLightingConfig_5990!!.aFloat2547
+                    LocTypeDefLoader.anInt2500 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2549
+                    NativeIndexBuffer.anInt4703 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2540
+                    KeyboardLayoutConfig.aFloat2137 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2547
                 }
                 aLong6963 = l
             }

@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import LightDetailOptionState.Companion.method1802
+import WaterDetailOptionState.Companion.method1802
 import awt.Canvas
 import io.IOException
 import net.Socket

@@ -44,7 +44,6 @@ import jaggl.OpenGL.Companion.glFogfv
 import jaggl.OpenGL.Companion.glFogi
 import jaggl.OpenGL.Companion.glGenBuffersARB
 import jaggl.OpenGL.Companion.glGetFloatv
-import jaggl.OpenGL.Companion.glGetError
 import jaggl.OpenGL.Companion.glGetIntegerv
 import jaggl.OpenGL.Companion.glGetString
 import jaggl.OpenGL.Companion.glHint
@@ -81,7 +80,6 @@ import awt.Canvas
 import awt.Rectangle
 import lang.gc
 import util.Hashtable
-import util.Locale
 import kotlin.math.max
 import kotlin.math.sqrt
 
@@ -3702,7 +3700,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 while ((i_341_ < class302s.size)) {
                                     val class302 = class302s[i_341_]
                                     if (class302 != null && class302.anInt3840 == 10 && (`is`[i_322_] == class302.anInt3833)) {
-                                        val class105 = (CustomCursorsOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])!!
+                                        val class105 = (GroundBlendingOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])!!
                                         if (i_340_ < class105.method969()) i_340_ = class105.method969()
                                         class105.method974(-12 + ((RemoveRoofsOptionState.anIntArray6062!![0]) + i_317_), (i_323_ + -class105.method969()))
                                         MapTileShape.method2663(-5590, -12 + (i_317_ - -(RemoveRoofsOptionState.anIntArray6062!![0])), (i_317_ + (RemoveRoofsOptionState.anIntArray6062!![0] + -12 - -class105.method966())), -class105.method969() + i_323_, (i_323_ + -class105.method969() - -class105.method980()))
@@ -3718,7 +3716,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             while (class302s.size > i_343_) {
                                 val class302 = class302s[i_343_]
                                 if (class302 != null && class302.anInt3840 == 1 && (class302.anInt3833 == Client.anIntArray1233!![i_322_ - i_321_])) {
-                                    val class105 = (CustomCursorsOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])!!
+                                    val class105 = (GroundBlendingOptionState.aAbstractModelRendererArray5933!![class302.anInt3831])!!
                                     if (class105.method969() > i_342_) i_342_ = class105.method969()
                                     if (GlGroundShaderPass.anInt7396 % 20 < 10) {
                                         class105.method974((-12 + i_317_ + RemoveRoofsOptionState.anIntArray6062!![0]), i_323_ + -class105.method969())

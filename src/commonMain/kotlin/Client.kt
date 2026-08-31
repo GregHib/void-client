@@ -126,28 +126,28 @@ import ParticleSortRenderer.Companion.method1653
 import SceneObjectAnimator.Companion.method1673
 import WorldMapScene.Companion.method1677
 import WorldMapSceneSoftware.Companion.method1698
-import BooleanGraphicsOptionState.Companion.method1723
-import RangedGraphicsOptionState.Companion.method1761
-import RangedGraphicsOptionState.Companion.method1763
+import FlickeringGraphicsOptionState.Companion.method1723
+import BrightnessGraphicsOptionState.Companion.method1761
+import BrightnessGraphicsOptionState.Companion.method1763
 import BinaryGraphicsOptionState.Companion.method1769
 import BloomGraphicsOptionState.Companion.method1773
-import GroundDecorOptionState.Companion.method1777
-import WaterDetailOptionState.Companion.method1780
+import IdleAnimationOptionState.Companion.method1777
+import RemoveRoofLightingDetailOptionState.Companion.method1780
 import TextureQualityOptionState.Companion.method1785
 import ParticleDetailOptionState.Companion.method1794
-import LightDetailOptionState.Companion.method1799
-import LightDetailOptionState.Companion.method1802
+import WaterDetailOptionState.Companion.method1799
+import WaterDetailOptionState.Companion.method1802
 import CameraDistanceOptionState.Companion.method1724
-import SimpleBinaryOptionState.Companion.method1816
-import SceneryDetailOptionState.Companion.method1822
+import CustomCursorOptionState.Companion.method1816
+import TextureOptionState.Companion.method1822
 import DisplayModeOptionState.Companion.method1832
 import DetailLevelOptionState.Companion.method1835
 import DefaultGraphicsOptionState.Companion.method1841
-import LightingOptionState.Companion.method1738
+import GroundDecorOptionState.Companion.method1738
 import BrightnessOptionState.Companion.method1746
 import FlickeringEffectsOptionState.Companion.method1753
 import FlickeringEffectsOptionState.Companion.method1755
-import CustomCursorsOptionState.Companion.method1758
+import GroundBlendingOptionState.Companion.method1758
 import WorldMapRenderer.Companion.method1853
 import ManagedGlResource.Companion.method1866
 import TextureMetadataProvider.Companion.method1880
@@ -511,7 +511,7 @@ import MapLabelMenuEntry.Companion.method1041
 import MaterialPass.Companion.method2138
 import MultiLevelOptionState.Companion.method1851
 import NoOpGraphicsOptionState.Companion.method1803
-import ShadowQualityOptionState.Companion.method1788
+import FogOptionState.Companion.method1788
 import SkeletalAnimFrameLoader.Companion.method349
 import SkyboxGradient.method2334
 import SocketFactory.Companion.method2049
@@ -690,7 +690,7 @@ class Client : GameAppletFrame() {
             LocDefinitionCache.anInt3439 = 16777215
             GlWaterRenderPass.aShortArrayArrayArray7290 = DisplaySettingsConfig.aShortArrayArrayArray7262
             LocDefinitionCache.anInt3444 = 0
-        } else if (Client.aSceneProjector_10434 == CustomCursorsOptionState.aSceneProjector_5932) {
+        } else if (Client.aSceneProjector_10434 == GroundBlendingOptionState.aSceneProjector_5932) {
             SpriteLoadValidator.aShortArrayArray4791 = LocDefinitionCache.aShortArrayArray3443
             GlWaterRenderPass.aShortArrayArrayArray7290 = ProjectedGroundDecor.aShortArrayArrayArray10253
         } else {
@@ -841,7 +841,7 @@ class Client : GameAppletFrame() {
         method2572(23.toByte())
         RandomAccessFileOnDisk.method1659((-71).toByte())
         method1461(112.toByte())
-        FogOptionState.method1807((-121).toByte())
+        AntiAliasingOptionState.method1807((-121).toByte())
         method1773(120.toByte())
         method1763(-15596)
         method1746(-15628)
@@ -1360,7 +1360,7 @@ class Client : GameAppletFrame() {
                 if (string_26_ == "0") Client.aSceneProjector_10434 = ParticleEmitterNode.aSceneProjector_186
                 else if (string_26_ == "1") Client.aSceneProjector_10434 = GlRectangleTexture.aSceneProjector_8638
                 else if (string_26_ != "2") {
-                    if (string_26_ == "3") Client.aSceneProjector_10434 = CustomCursorsOptionState.aSceneProjector_5932
+                    if (string_26_ == "3") Client.aSceneProjector_10434 = GroundBlendingOptionState.aSceneProjector_5932
                 } else Client.aSceneProjector_10434 = GlslEnvMaterialPass.aSceneProjector_6262
             }
             try {
@@ -1557,7 +1557,7 @@ class Client : GameAppletFrame() {
                     SceneRegionState.anInt193++
                     if (SceneRegionState.anInt193 > 50) {
                         IOException_Sub1.anInt88++
-                        val class348_sub47 = method2148((RangedGraphicsOptionState.aFontMetaRef_5938), (TheoraVideoStream.aIsaacCipher_9029), -104)
+                        val class348_sub47 = method2148((BrightnessGraphicsOptionState.aFontMetaRef_5938), (TheoraVideoStream.aIsaacCipher_9029), -104)
                         method3243(-49, class348_sub47)
                     }
                     try {
@@ -2027,7 +2027,7 @@ class Client : GameAppletFrame() {
                         if (strings[5] != "game1") {
                             if (strings[5] != "game2") {
                                 if (strings[5] != "game3") OggMediaStream.method518("game", (-124).toByte())
-                                else aSceneProjector_10434 = CustomCursorsOptionState.aSceneProjector_5932
+                                else aSceneProjector_10434 = GroundBlendingOptionState.aSceneProjector_5932
                             } else aSceneProjector_10434 = GlslEnvMaterialPass.aSceneProjector_6262
                         } else aSceneProjector_10434 = GlRectangleTexture.aSceneProjector_8638
                     } else aSceneProjector_10434 = ParticleEmitterNode.aSceneProjector_186
@@ -2184,12 +2184,12 @@ class Client : GameAppletFrame() {
                                     bool = false
                                 }
                                 if (class46.anInt765 != 0) {
-                                    if ((class46.anInt765 == RangedGraphicsOptionState.anInt5943) || (class46.anInt765 == WidgetRedrawTracker.anInt3932)) {
+                                    if ((class46.anInt765 == BrightnessGraphicsOptionState.anInt5943) || (class46.anInt765 == WidgetRedrawTracker.anInt3932)) {
                                         AbstractTileShapeStatics.aWidgetComponent_6561 = class46
                                         if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2292(123, FacingDirectionNode.aRenderer6654!!, class46.anInt789)
-                                        if (class46.anInt765 == RangedGraphicsOptionState.anInt5943) {
+                                        if (class46.anInt765 == BrightnessGraphicsOptionState.anInt5943) {
                                             if (!ScrollbarComponent.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
-                                                SceneryDetailOptionState.method1823(FacingDirectionNode.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
+                                                TextureOptionState.method1823(FacingDirectionNode.aRenderer6654!!, i_38_, i_39_, (-50).toByte())
                                                 var class318_sub6 = (InputStream_Sub2.aDoublyLinkedNodeList_83!!.method1872(8) as SceneEffectMarker?)
                                                 while (class318_sub6 != null) {
                                                     if (i_40_ >= (class318_sub6.anInt6429) && (i_40_ < (class318_sub6.anInt6426)) && (i_41_ >= (class318_sub6.anInt6427)) && (i_41_ < (class318_sub6.anInt6425))) {
@@ -2237,7 +2237,7 @@ class Client : GameAppletFrame() {
                                                     else method2678(-2049)
                                                 } else {
                                                     if ((Client.aSceneProjector_10434) == (GlRectangleTexture.aSceneProjector_8638)) MinimapPolygonDrawer.method466(false, "", i_67_, (-116).toByte(), true, i_66_, -1, true, 12, 0L, (LocalizedText.aLocalizedText_3510!!.method2063((ChatCommandProcessor.anInt6967), 544)), 1L, -1)
-                                                    MinimapPolygonDrawer.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, LightingOptionState.aString5882, 1L, MapElementLookup.anInt4144)
+                                                    MinimapPolygonDrawer.method466(false, "", i_67_, (-93).toByte(), true, i_66_, -1, true, 19, 0L, GroundDecorOptionState.aString5882, 1L, MapElementLookup.anInt4144)
                                                 }
                                             }
                                         }
@@ -2849,7 +2849,7 @@ class Client : GameAppletFrame() {
             }
             if (bool != true) aSceneProjector_10434 = null
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1762) {
-                LightingOptionState.aString5882 = (if (RadialTextureNode.anInt9341 > 2) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else LocalizedText.aLocalizedText_3509!!.method2063(ChatCommandProcessor.anInt6967, 544))
+                GroundDecorOptionState.aString5882 = (if (RadialTextureNode.anInt9341 > 2) CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readString((-119).toByte()) else LocalizedText.aLocalizedText_3509!!.method2063(ChatCommandProcessor.anInt6967, 544))
                 MapElementLookup.anInt4144 = (if (RadialTextureNode.anInt9341 <= 0) -1 else CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944))
                 if (MapElementLookup.anInt4144 == 65535) MapElementLookup.anInt4144 = -1
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
@@ -2918,9 +2918,9 @@ class Client : GameAppletFrame() {
                     SceneCollisionEntry.aLongArray4410!![NpcType.anInt1359] = l_19_
                     NpcType.anInt1359 = (1 + NpcType.anInt1359) % 100
                     val string_22_ = (CompositeRgbNoiseTexture.method572((InvertTextureNode.method3136(64.toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813)), 23034))
-                    if (i == 2 || i == 3) TrackedGroundDecor.method2477("<img=1>" + string_16_, string_22_, (-126).toByte(), -1, "<img=1>" + string, ShadowQualityOptionState.method1788((-76).toByte(), l), 9, 0, string)
-                    else if (i != 1) TrackedGroundDecor.method2477(string_16_, string_22_, (-125).toByte(), -1, string, ShadowQualityOptionState.method1788((-83).toByte(), l), 9, 0, string)
-                    else TrackedGroundDecor.method2477("<img=0>" + string_16_, string_22_, (-126).toByte(), -1, "<img=0>" + string, ShadowQualityOptionState.method1788((-75).toByte(), l), 9, 0, string)
+                    if (i == 2 || i == 3) TrackedGroundDecor.method2477("<img=1>" + string_16_, string_22_, (-126).toByte(), -1, "<img=1>" + string, FogOptionState.method1788((-76).toByte(), l), 9, 0, string)
+                    else if (i != 1) TrackedGroundDecor.method2477(string_16_, string_22_, (-125).toByte(), -1, string, FogOptionState.method1788((-83).toByte(), l), 9, 0, string)
+                    else TrackedGroundDecor.method2477("<img=0>" + string_16_, string_22_, (-126).toByte(), -1, "<img=0>" + string, FogOptionState.method1788((-75).toByte(), l), 9, 0, string)
                 }
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
@@ -3287,7 +3287,7 @@ class Client : GameAppletFrame() {
                 val minimapPositionState = MinimapPositionState()
                 minimapPositionState.anInt3840 = i_77_
                 minimapPositionState.anInt3831 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                if (minimapPositionState.anInt3831 >= 0 && (minimapPositionState.anInt3831 < CustomCursorsOptionState.aAbstractModelRendererArray5933!!.size)) {
+                if (minimapPositionState.anInt3831 >= 0 && (minimapPositionState.anInt3831 < GroundBlendingOptionState.aAbstractModelRendererArray5933!!.size)) {
                     if (minimapPositionState.anInt3840 == 1 || minimapPositionState.anInt3840 == 10) {
                         minimapPositionState.anInt3833 = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                         CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197 += 6
@@ -3657,7 +3657,7 @@ class Client : GameAppletFrame() {
                     val string_121_ = (BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(i_117_, (-106).toByte()).method3216(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 42.toByte()))
                     if (i == 2) TrackedGroundDecor.method2477("<img=1>" + string_114_, string_121_, (-120).toByte(), i_117_, "<img=1>" + string, method1788(87.toByte(), l), 20, 0, string)
                     else if (i != 1) TrackedGroundDecor.method2477(string_114_, string_121_, (-111).toByte(), i_117_, string, method1788(80.toByte(), l), 20, 0, string)
-                    else TrackedGroundDecor.method2477("<img=0>" + string_114_, string_121_, (-116).toByte(), i_117_, "<img=0>" + string, ShadowQualityOptionState.method1788((-98).toByte(), l), 20, 0, string)
+                    else TrackedGroundDecor.method2477("<img=0>" + string_114_, string_121_, (-116).toByte(), i_117_, "<img=0>" + string, FogOptionState.method1788((-98).toByte(), l), 20, 0, string)
                 }
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
@@ -4815,15 +4815,15 @@ class Client : GameAppletFrame() {
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.method3339(113, (class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197) + -i_1_)
                         InterfaceComponentGroup.method3243(119, class348_sub47)
                     }
-                    if (LightingOptionState.aClass348_Sub26_5881 != null) {
-                        if ((LightingOptionState.aClass348_Sub26_5881!!.anInt6887) != -1) {
+                    if (GroundDecorOptionState.aClass348_Sub26_5881 != null) {
+                        if ((GroundDecorOptionState.aClass348_Sub26_5881!!.anInt6887) != -1) {
                             val class348_sub47 = method2148((GlCubemapLightPass.aFontMetaRef_7318), (TheoraVideoStream.aIsaacCipher_9029), -81)
-                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), LightingOptionState.aClass348_Sub26_5881!!.anInt6887)
+                            class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), GroundDecorOptionState.aClass348_Sub26_5881!!.anInt6887)
                             InterfaceComponentGroup.method3243(122, class348_sub47)
-                            LightingOptionState.aClass348_Sub26_5881 = null
+                            GroundDecorOptionState.aClass348_Sub26_5881 = null
                             FloatCameraTransform.aLong5745 = method599(-106) + 30000L
                         }
-                    } else if (FloatCameraTransform.aLong5745 <= method599(-121)) LightingOptionState.aClass348_Sub26_5881 = SceneObjectSpawner.aHostPingThread_1286!!.method1302(-5255, (CacheStateResetter.aServerConnectionInfo_125!!.aString2147!!))
+                    } else if (FloatCameraTransform.aLong5745 <= method599(-121)) GroundDecorOptionState.aClass348_Sub26_5881 = SceneObjectSpawner.aHostPingThread_1286!!.method1302(-5255, (CacheStateResetter.aServerConnectionInfo_125!!.aString2147!!))
                     val class348_sub45 = (GroundDecorEntity.aNodeDeque_8744!!.method1995(4) as TimedRecordAccessor?)
                     if (class348_sub45 != null || (CompiledScriptCache.aLong4367 < -2000L + method599(-97))) {
                         var class348_sub47: OutgoingPacketNode? = null
@@ -4919,7 +4919,7 @@ class Client : GameAppletFrame() {
                     }
                     if (HintArrowOrMessage.anInt2035 > 0) HintArrowOrMessage.anInt2035--
                     if (WorldMapPolygonIconLabel.aBoolean10174 && HintArrowOrMessage.anInt2035 <= 0) {
-                        LightDetailOptionState.anInt6033++
+                        WaterDetailOptionState.anInt6033++
                         WorldMapPolygonIconLabel.aBoolean10174 = false
                         HintArrowOrMessage.anInt2035 = 20
                         val class348_sub47 = method2148(ClanChatRequestSender.aFontMetaRef_3648, (TheoraVideoStream.aIsaacCipher_9029), i + -11549)
@@ -5092,9 +5092,9 @@ class Client : GameAppletFrame() {
                                 class348_sub42_sub15 = method3127(2681)
                             }
                             DisplaySettingsConfig.anInt7267++
-                            if (FogOptionState.anInt6048 != 0) {
+                            if (AntiAliasingOptionState.anInt6048 != 0) {
                                 LinkedListNodeStatics.anInt4292 += 20
-                                if (LinkedListNodeStatics.anInt4292 >= 400) FogOptionState.anInt6048 = 0
+                                if (LinkedListNodeStatics.anInt4292 >= 400) AntiAliasingOptionState.anInt6048 = 0
                             }
                             if (ResourceLoaderThread.aWidgetComponent_3913 != null) {
                                 GroundItemRenderState.anInt1656++
@@ -5215,7 +5215,7 @@ class Client : GameAppletFrame() {
                                 SceneRegionState.anInt193++
                                 if (SceneRegionState.anInt193 > 50) {
                                     IOException_Sub1.anInt88++
-                                    val class348_sub47 = (method2148(RangedGraphicsOptionState.aFontMetaRef_5938, TheoraVideoStream.aIsaacCipher_9029, -125))
+                                    val class348_sub47 = (method2148(BrightnessGraphicsOptionState.aFontMetaRef_5938, TheoraVideoStream.aIsaacCipher_9029, -125))
                                     InterfaceComponentGroup.method3243(i xor 0x2cc0.inv(), class348_sub47)
                                 }
                                 if (MultiLevelOptionState.aBoolean6147) {

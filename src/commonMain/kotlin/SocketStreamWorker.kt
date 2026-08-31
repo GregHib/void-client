@@ -216,7 +216,7 @@ class SocketStreamWorker internal constructor(socket: Socket?, privilegedOperati
         fun method1469(i: Int) {
             anInt2662++
             MaterialPass.anInt3682 = 0
-            SceneryDetailOptionState.anInt6095 = 0
+            TextureOptionState.anInt6095 = 0
             val i_0_ = 29 % ((-42 - i) / 63)
             var i_1_ = 0
             while (WhirlpoolHash.anInt3225 > i_1_) {

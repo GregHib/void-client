@@ -780,7 +780,7 @@ class NpcType {
             if (PerlinNoiseTextureNode.anInt9139 != i_29_) {
                 PerlinNoiseTextureNode.anIntArray6432 = IntArray(i_29_)
                 for (i_31_ in 0..<i_29_) PerlinNoiseTextureNode.anIntArray6432!![i_31_] = (i_31_ shl 12) / i_29_
-                SimpleBinaryOptionState.anInt6076 = i_29_ + -1
+                CustomCursorOptionState.anInt6076 = i_29_ + -1
                 PerlinNoiseTextureNode.anInt9139 = i_29_
                 MediaStreamClient.anInt3201 = 32 * i_29_
             }

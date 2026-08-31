@@ -419,13 +419,13 @@ class FireParticleStream : OutputStream() {
                                     FireParticleStream.anInt9157 = (-ModelVertexColorBuffer.anInt6568 + i_26_ + WhirlpoolHash.anInt10444)
                                     MapRegionLoaderThread.anInt4211 = (-ShaderObject.anInt4100 + WhirlpoolHash.anInt2747 + i_25_)
                                     if (WhirlpoolHash.anInt7207 == 1) {
-                                        SceneryDetailOptionState.anInt6095 += i_35_
+                                        TextureOptionState.anInt6095 += i_35_
                                         MaterialPass.anInt3682 += i_36_
                                         for (i_65_ in 0..<WhirlpoolHash.anInt3225) {
                                             val i_66_ = ((ModelDefinition.method3452(i_65_ - -MaterialPass.anInt3682, (-15).toByte(), WhirlpoolHash.anInt3225)) * WhirlpoolHash.anInt425)
                                             var i_67_ = 0
                                             while ((WhirlpoolHash.anInt425 > i_67_)) {
-                                                val i_68_ = ((ModelDefinition.method3452(i_67_ + (SceneryDetailOptionState.anInt6095), (-15).toByte(), WhirlpoolHash.anInt425)) + i_66_)
+                                                val i_68_ = ((ModelDefinition.method3452(i_67_ + (TextureOptionState.anInt6095), (-15).toByte(), WhirlpoolHash.anInt425)) + i_66_)
                                                 val bool_69_ = (((i_38_ <= i_65_) && i_39_ + i_38_ > i_65_) || (i_65_ >= i_41_ && (i_65_ < i_41_ - -i_47_) && i_67_ >= i_40_ && (i_40_ - -i_42_ > i_67_)))
                                                 NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_68_]!!.method15(WhirlpoolHash.anInt1067 * i_67_, i_65_ * WhirlpoolHash.anInt4267, WhirlpoolHash.anInt1067, WhirlpoolHash.anInt4267, 0, 0, bool_69_, true)
                                                 i_67_++

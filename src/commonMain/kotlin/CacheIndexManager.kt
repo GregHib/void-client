@@ -93,7 +93,7 @@ class CacheIndexManager internal constructor(var aString3953: String?) {
             KeyboardInputSource.aBoolean4275 = bool
             GlBufferObject.aClass348_Sub16_Sub3_4743 = null
             NpcActorEntity.anInt10074 = i_1_
-            WaterDetailOptionState.anInt5994 = i_3_
+            RemoveRoofLightingDetailOptionState.anInt5994 = i_3_
             SpriteDefinition.anInt7068 = 1
             CacheIndexManager.anInt3971 = i_2_
             ModelDefinition.aJs5Archive_1848 = js5Archive

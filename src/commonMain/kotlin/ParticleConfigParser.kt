@@ -47,8 +47,8 @@ class ParticleConfigParser {
         fun method2273(i: Byte): OutgoingPacketNode? {
             anInt3824++
             if (i.toInt() != -103) return null
-            if (GroundDecorOptionState.anInt5980 == 0) return OutgoingPacketNode()
-            return PingHostListHolder.aClass348_Sub47Array2334!![--GroundDecorOptionState.anInt5980]
+            if (IdleAnimationOptionState.anInt5980 == 0) return OutgoingPacketNode()
+            return PingHostListHolder.aClass348_Sub47Array2334!![--IdleAnimationOptionState.anInt5980]
         }
 
         fun method2274(string: String?, i: Int): Int {

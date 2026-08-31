@@ -1,10 +1,10 @@
 ﻿import kotlin.jvm.JvmStatic
 import GameAppletFrame.Companion.method94
 import GlCubeMapTexture.Companion.method243
-import WaterDetailOptionState.Companion.method1781
+import RemoveRoofLightingDetailOptionState.Companion.method1781
 import ParticleDetailOptionState.Companion.method1795
 import CameraDistanceOptionState.Companion.method1725
-import SceneryDetailOptionState.Companion.method1821
+import TextureOptionState.Companion.method1821
 import SimpleToggleOptionState.Companion.method1742
 import SocketFactory.Companion.method2049
 import WaterMaterialPass.Companion.method2148
@@ -390,9 +390,9 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 if (i_8_ >= 1) {
                                     if (i_8_ > 4) i_8_ = 4
                                 } else i_8_ = 1
-                                ShadowQualityOptionState.anInt6012 = i_8_
+                                FogOptionState.anInt6012 = i_8_
                                 TextureTileRenderer.method2953((-128).toByte())
-                                method94(("Render cores now: " + (ShadowQualityOptionState.anInt6012)), -77)
+                                method94(("Render cores now: " + (FogOptionState.anInt6012)), -77)
                             } else {
                                 method94("Current toolkit doesn't support multiple cores", i + 138)
                                 return

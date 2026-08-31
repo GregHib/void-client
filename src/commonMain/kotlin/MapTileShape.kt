@@ -107,7 +107,7 @@ class MapTileShape internal constructor(i: Int, i_15_: Int, i_16_: Int, i_17_: I
                         val i_12_ = (ModelDefinition.method3452(i_11_ + MaterialPass.anInt3682, (-15).toByte(), WhirlpoolHash.anInt3225) * WhirlpoolHash.anInt425)
                         var i_13_ = i_7_
                         while (i_8_ >= i_13_) {
-                            val i_14_ = (i_12_ + ModelDefinition.method3452((SceneryDetailOptionState.anInt6095 + i_13_), (-15).toByte(), WhirlpoolHash.anInt425))
+                            val i_14_ = (i_12_ + ModelDefinition.method3452((TextureOptionState.anInt6095 + i_13_), (-15).toByte(), WhirlpoolHash.anInt425))
                             LocalPlayerState.anIntArray1909!![i_14_] = GroundDecorSceneEntity.anInt9997
                             i_13_++
                         }

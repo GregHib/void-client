@@ -1,73 +1,96 @@
 import kotlin.jvm.JvmStatic
-/* Class239_Sub13 - Decompiled by JODE
-* Visit http://jode.sourceforge.net/
-*/
+import kotlin.math.cos
+import kotlin.math.sin
+
+/* Class239_Sub4 - Decompiled by JODE
+ * Visit http://jode.sourceforge.net/
+ */
 class GroundDecorOptionState : GraphicsOptionState {
-    fun method1776(i: Int): Int {
-        if (i != -32350) anInt5980 = 42
-        anInt5978++
-        return this.anInt3138
-    }
-
     override fun method1716(bool: Boolean) {
-        if (this.aClass348_Sub51_3136.method3422(674) == GlRectangleTexture.aSceneProjector_8638) this.anInt3138 = 2
-        if (bool == false) {
-            anInt5974++
-            if (this.anInt3138 < 0 || this.anInt3138 > 2) this.anInt3138 = method1710(20014)
-        }
+        if (bool != false) method1736(-57)
+        anInt5880++
+        if (this.aClass348_Sub51_3136.method3422(674) != ParticleEmitterNode.aSceneProjector_186) this.anInt3138 = 1
+        else if (this.aClass348_Sub51_3136.method3425(-95)) this.anInt3138 = 0
+        if (this.anInt3138 != 0 && this.anInt3138 != 1) this.anInt3138 = method1710(20014)
     }
 
-    override fun method1714(i: Int, i_0_: Int): Int {
-        if (i != 3) return 3
-        anInt5979++
-        return 1
+    override fun method1712(i: Int, i_0_: Int) {
+        val i_1_ = 107 / ((i - 82) / 35)
+        anInt5879++
+        this.anInt3138 = i_0_
     }
 
-    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
-
-    override fun method1712(i: Int, i_1_: Int) {
-        anInt5977++
-        this.anInt3138 = i_1_
-        val i_2_ = -54 / ((82 - i) / 35)
-    }
-
-    override fun method1710(i: Int): Int {
-        anInt5975++
-        if (i != 20014) return 70
-        return 1
+    fun method1736(i: Int): Boolean {
+        anInt5873++
+        if (this.aClass348_Sub51_3136.method3425(-80)) return false
+        if (i < 85) method1716(true)
+        return this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186
     }
 
     internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
+    override fun method1710(i: Int): Int {
+        if (i != 20014) InboundPacketHeader.aInboundPacketHeader_5883 = null
+        anInt5877++
+        return 1
+    }
+
+    fun method1737(i: Int): Int {
+        if (i != -32350) method1716(true)
+        anInt5875++
+        return this.anInt3138
+    }
+
+    override fun method1714(i: Int, i_2_: Int): Int {
+        if (i != 3) aString5882 = null
+        anInt5872++
+        if (this.aClass348_Sub51_3136.method3425(-63)) return 3
+        if (this.aClass348_Sub51_3136.method3422(674) == ParticleEmitterNode.aSceneProjector_186) return 1
+        return 3
+    }
+
+    internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
+
     companion object {
 
-        var anInt5974: Int = 0
+        var anInt5872: Int = 0
 
-        var anInt5975: Int = 0
+        var anInt5873: Int = 0
 
-        var anInt5976: Int = 0
+        var aFloatArray5874: FloatArray? = FloatArray(16384)
 
-        var anInt5977: Int = 0
+        var anInt5875: Int = 0
 
-        var anInt5978: Int = 0
+        var aFloatArray5876: FloatArray? = FloatArray(16384)
 
-        var anInt5979: Int = 0
+        var anInt5877: Int = 0
 
-        var anInt5980: Int = 0
+        var aJs5Archive_5878: Js5Archive? = null
 
-        var anInt5981: Int = 0
+        var anInt5879: Int = 0
+
+        var anInt5880: Int = 0
+
+        var aClass348_Sub26_5881: NamedIdEntry? = null
+
+        var aString5882: String? = null
 
         @JvmStatic
-        fun method1777(i: Int, class318_sub1_sub3_sub3: ProjectedGroundDecor?) {
-            if (i == -3) {
-                if (class318_sub1_sub3_sub3 is Npc) {
-                    val npc = class318_sub1_sub3_sub3
-                    if (npc.aNpcType_10505 != null) WaterMaterialPass.method2150(((LocalPlayerState.aPlayer_1907!!.plane) != (npc.plane)), false, npc)
-                } else if (class318_sub1_sub3_sub3 is Player) {
-                    val player = class318_sub1_sub3_sub3
-                    SpriteDefinition.method3298(105.toByte(), ((player.plane) != (LocalPlayerState.aPlayer_1907!!.plane)), player)
-                }
-                anInt5981++
+        fun method1738(i: Int) {
+            aJs5Archive_5878 = null
+            aFloatArray5874 = null
+            aString5882 = null
+            if (i != 21921) method1738(11)
+            aFloatArray5876 = null
+            aClass348_Sub26_5881 = null
+            InboundPacketHeader.aInboundPacketHeader_5883 = null
+        }
+
+        init {
+            val d = 3.834951969714103E-4
+            for (i in 0..16383) {
+                aFloatArray5874!![i] = sin(d * i.toDouble()).toFloat()
+                aFloatArray5876!![i] = cos(i.toDouble() * d).toFloat()
             }
         }
     }

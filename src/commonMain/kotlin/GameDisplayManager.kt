@@ -97,7 +97,7 @@ object GameDisplayManager {
                     if (SpriteDefinition.anInt7068 == 1) {
                         var i_6_ = NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2844(123.toByte())
                         if (i_6_ > 0 && NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2860(124)) {
-                            i_6_ -= WaterDetailOptionState.anInt5994
+                            i_6_ -= RemoveRoofLightingDetailOptionState.anInt5994
                             if (i_6_ < 0) i_6_ = 0
                             NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2861(0, i_6_)
                             break

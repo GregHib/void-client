@@ -9,8 +9,8 @@ import GlCubeMapTexture.Companion.method244
 import SceneTilePlaneManager.method259
 import SceneTilePlaneManager.method262
 import ModelOrSpriteHolder.Companion.method170
-import BooleanGraphicsOptionState.Companion.method1719
-import WaterDetailOptionState.Companion.method1781
+import FlickeringGraphicsOptionState.Companion.method1719
+import RemoveRoofLightingDetailOptionState.Companion.method1781
 import TextureQualityOptionState.Companion.method1787
 import RemoveRoofsOptionState.Companion.method1811
 import AntialiasOptionState.Companion.method1819
@@ -1484,7 +1484,7 @@ object ChatCommandProcessor {
         } else if (i < 6100) {
             if (i == 6001) {
                 val i_146_ = anIntArray1149!![--anInt1173]
-                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!), i_146_)
+                IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.brightnessSetting!!), i_146_)
                 TextureTileRenderer.method2953((-126).toByte())
                 method243(37)
                 RenderNodeStatics.aBoolean9719 = false
@@ -1743,7 +1743,7 @@ object ChatCommandProcessor {
             }
         } else if (i < 6200) {
             if (i == 6101) {
-                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub10_7232!!.method1764(-32350)
+                anIntArray1149!![anInt1173++] = IntHashSetStatics.aClass348_Sub51_3959!!.brightnessSetting!!.method1764(-32350)
                 return
             }
             if (i == 6102) {
@@ -3875,7 +3875,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3113) {
-                    BooleanGraphicsOptionState.method1721(aStringArray1152!![--anInt1170], (-70).toByte())
+                    FlickeringGraphicsOptionState.method1721(aStringArray1152!![--anInt1170], (-70).toByte())
                     return
                 }
                 if (i == 3114) {

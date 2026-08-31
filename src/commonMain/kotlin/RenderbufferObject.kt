@@ -113,13 +113,13 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
             if (bool) {
                 LoadingBarRenderer.anIntArrayArray4253 = Array<IntArray?>(ActorEntity.anInt6451) { IntArray(ActorEntity.anInt7054) }
                 HashTileShape.aByteArrayArray8816 = Array<ByteArray?>(ActorEntity.anInt6451) { ByteArray(ActorEntity.anInt7054) }
-                BooleanGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(ActorEntity.anInt6451) { ShortArray(ActorEntity.anInt7054) }
+                FlickeringGraphicsOptionState.aShortArrayArray5847 = Array<ShortArray?>(ActorEntity.anInt6451) { ShortArray(ActorEntity.anInt7054) }
                 ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = (Array<Array<Array<SceneCollisionEntry?>?>?>(1) { Array<Array<SceneCollisionEntry?>?>(ActorEntity.anInt6451) { arrayOfNulls<SceneCollisionEntry>(ActorEntity.anInt7054) } })
                 ActorEntity.aTerrainTileArray4142 = arrayOfNulls<TerrainTile>(1)
             } else {
                 LoadingBarRenderer.anIntArrayArray4253 = null
                 HashTileShape.aByteArrayArray8816 = null
-                BooleanGraphicsOptionState.aShortArrayArray5847 = null
+                FlickeringGraphicsOptionState.aShortArrayArray5847 = null
                 ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 = null
                 ActorEntity.aTerrainTileArray4142 = null
             }
@@ -174,7 +174,7 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
                     ActiveMapRegion.anInt5652 = 4
                 }
                 MapElementDefinitionCache.aCacheIndexManagerArray3982 = arrayOfNulls<CacheIndexManager>(i_7_)
-                for (i_8_ in 0..<i_7_) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_8_] = CacheIndexManager(SceneryDetailOptionState.aStringArrayArray6093!![(Npc.anInt10503 - 2)]!![i_8_])
+                for (i_8_ in 0..<i_7_) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_8_] = CacheIndexManager(TextureOptionState.aStringArrayArray6093!![(Npc.anInt10503 - 2)]!![i_8_])
             } else ActiveMapRegion.anInt5652 = 1
             WidgetDefinition.anIntArray256 = IntArray(ActiveMapRegion.anInt5652 - 1)
             ParticleProcessor.anIntArray4271 = IntArray(ActiveMapRegion.anInt5652 - 1)

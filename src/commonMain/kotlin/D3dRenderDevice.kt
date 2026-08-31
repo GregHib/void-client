@@ -690,7 +690,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
 
     override fun method3940(i: Int) {
         if (anIDirect3DVertexShader9794 == null && ((this.aConfigFlagUtilArray8113[this.anInt8175]) != ParticleEmitterListNode.aConfigFlagUtil_9685)) {
-            if (LightDetailOptionState.aConfigFlagUtil_6030 == (this.aConfigFlagUtilArray8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175]!!.method928(aFloatArray9797!!, i))
+            if (WaterDetailOptionState.aConfigFlagUtil_6030 == (this.aConfigFlagUtilArray8113[this.anInt8175])) this.anIDirect3DDevice9810!!.SetTransform(this.anInt8175 + 16, this.aClass101_Sub2Array8131[this.anInt8175]!!.method928(aFloatArray9797!!, i))
             else this.anIDirect3DDevice9810!!.SetTransform(16 - -this.anInt8175, this.aClass101_Sub2Array8131[this.anInt8175]!!.method918(aFloatArray9797!!, i xor 0x1))
             val i_72_: Int = method3963(594, (this.aConfigFlagUtilArray8113[this.anInt8175]))
             if (anIntArray9805!![this.anInt8175] != i_72_) {
@@ -871,10 +871,10 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         private fun method3963(i: Int, configFlagUtil: ConfigFlagUtil?): Int {
             if (i != 594) return 7
             if (configFlagUtil == GlElementArrayBuffer.aConfigFlagUtil_4835) return 1
-            if (configFlagUtil != LightDetailOptionState.aConfigFlagUtil_6030) {
+            if (configFlagUtil != WaterDetailOptionState.aConfigFlagUtil_6030) {
                 if (configFlagUtil != GlCubemapLightPass.aConfigFlagUtil_9477) {
                     if (MapSceneTile.aConfigFlagUtil_1051 == configFlagUtil) return 4
-                    if (configFlagUtil == WaterDetailOptionState.aConfigFlagUtil_5989) return 256
+                    if (configFlagUtil == RemoveRoofLightingDetailOptionState.aConfigFlagUtil_5989) return 256
                 } else return 3
             } else return 2
             return 0

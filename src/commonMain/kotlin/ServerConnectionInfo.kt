@@ -73,8 +73,8 @@ class ServerConnectionInfo {
                 i = 0
             }
             anInt2140++
-            if (WaterDetailOptionState.aModelLightingConfig_5990 == null || !WaterDetailOptionState.aModelLightingConfig_5990!!.method1424(modelLightingConfig!!, 84.toByte())) {
-                WaterDetailOptionState.aModelLightingConfig_5990 = modelLightingConfig
+            if (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990 == null || !RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.method1424(modelLightingConfig!!, 84.toByte())) {
+                RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990 = modelLightingConfig
                 InvertTextureNode.aLong6963 = method599(-78)
                 TexGenMaterialPass.anInt6248 = i
                 FrameBufferObject.anInt4889 = TexGenMaterialPass.anInt6248
@@ -82,11 +82,11 @@ class ServerConnectionInfo {
                 else {
                     TileSceneEntity.aFloat8725 = KeyboardLayoutConfig.Companion.aFloat2137
                     DelegatingRenderCanvas.anInt70 = LocTypeDefLoader.anInt2500
-                    SceneryDetailOptionState.aCircleRasterizer_6098 = HeapInfoRecord.aCircleRasterizer_4938
+                    TextureOptionState.aCircleRasterizer_6098 = HeapInfoRecord.aCircleRasterizer_4938
                     AbstractModel.aFloat1136 = TextureMetadataProvider.aFloat4626
                     DebugOverlayRenderer.aFloat3172 = NormalMapGenerator.aFloat3462
                     aFloat670 = ModelVertexColorBuffer.aFloat6586
-                    GlTexture1D.aFloat8560 = RangedGraphicsOptionState.aFloat5945
+                    GlTexture1D.aFloat8560 = BrightnessGraphicsOptionState.aFloat5945
                     ParticleEmitterFactoryStatics.aFloat3177 = CollisionMap.aFloat4455
                     GroundDecorEntity.anInt8739 = NativeIndexBuffer.anInt4703
                     NoOpGraphicsOptionState.anInt6042 = AnimationFrameTable.anInt486

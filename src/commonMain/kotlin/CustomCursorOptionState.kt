@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class239_Sub22 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SimpleBinaryOptionState : GraphicsOptionState {
+class CustomCursorOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         anInt6072++
         if (i != 20014) return 63

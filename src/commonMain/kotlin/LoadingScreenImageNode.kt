@@ -101,8 +101,8 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
 
         @JvmStatic
         fun method3177(i: Int, bool: Boolean) {
-            if (!bool || MapRegionLoader.aClass348_Sub42_Sub14_1243 == null) GroundDecorOptionState.anInt5976 = -1
-            else GroundDecorOptionState.anInt5976 = (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9628)
+            if (!bool || MapRegionLoader.aClass348_Sub42_Sub14_1243 == null) IdleAnimationOptionState.anInt5976 = -1
+            else IdleAnimationOptionState.anInt5976 = (MapRegionLoader.aClass348_Sub42_Sub14_1243!!.anInt9628)
             anInt9500++
             MapRegionLoader.aClass348_Sub42_Sub14_1243 = null
             HeapDiagnosticsHolder.aWidgetComponent_2249 = null

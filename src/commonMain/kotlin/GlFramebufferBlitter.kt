@@ -393,7 +393,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
             RenderNodeStatics.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
             WhirlpoolHash.anInt4784 = i_26_
-            SceneryDetailOptionState.anInt6095 = 0
+            TextureOptionState.anInt6095 = 0
             if (i_22_ <= 64) anIntArray279 = null
             WhirlpoolHash.anInt4267 = i_23_
             MaterialPass.anInt3682 = 0

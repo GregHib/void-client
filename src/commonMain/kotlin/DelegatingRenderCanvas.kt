@@ -244,7 +244,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     else i_27_ = (CubeMapMaterialPass.anIntArray6296!![MenuActionNode.anInt6769])
                     if (FacingDirectionNode.aRenderer6654!!.method3670()) i_27_++
                     i_27_ = (Config.RENDER_DISTANCE_MULTIPLIER * i_27_).toInt()
-                    RenderbufferObject.method3171(FacingDirectionNode.aRenderer6654, ShadowQualityOptionState.anInt6012, 9, 4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNode.aRenderer6654!!.method3704() > 0)
+                    RenderbufferObject.method3171(FacingDirectionNode.aRenderer6654, FogOptionState.anInt6012, 9, 4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNode.aRenderer6654!!.method3704() > 0)
                     TerrainShadowBuilderGl2.method3018(SequencedActorEntity.anInt10096)
                     if (SequencedActorEntity.anInt10096 != 0) ModelResourceBundle.method3328(WorldMapRenderer.aRSFont_4684)
                     else ModelResourceBundle.method3328(null)

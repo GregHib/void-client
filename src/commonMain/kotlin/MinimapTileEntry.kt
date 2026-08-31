@@ -67,7 +67,7 @@ class MinimapTileEntry {
                 val i_4_ = (ModelDefinition.method3452(MaterialPass.anInt3682 + i_3_, (-15).toByte(), WhirlpoolHash.anInt3225) * WhirlpoolHash.anInt425)
                 var i_5_ = 0
                 while (WhirlpoolHash.anInt425 > i_5_) {
-                    val i_6_ = (ModelDefinition.method3452(i_5_ - -SceneryDetailOptionState.anInt6095, (-15).toByte(), WhirlpoolHash.anInt425) + i_4_)
+                    val i_6_ = (ModelDefinition.method3452(i_5_ - -TextureOptionState.anInt6095, (-15).toByte(), WhirlpoolHash.anInt425) + i_4_)
                     if (LocalPlayerState.anIntArray1909!![i_6_] == GroundDecorSceneEntity.anInt9997) NpcSpawnDecoder.anSpriteDrawTargetArray1525!![i_6_]!!.method14(0, 0, WhirlpoolHash.anInt1067, WhirlpoolHash.anInt4267, i_5_ * WhirlpoolHash.anInt1067, WhirlpoolHash.anInt4267 * i_3_, true, true)
                     i_5_++
                 }

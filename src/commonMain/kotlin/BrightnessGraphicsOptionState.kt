@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class239_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class RangedGraphicsOptionState : GraphicsOptionState {
+class BrightnessGraphicsOptionState : GraphicsOptionState {
     internal constructor(i: Int, class348_sub51: DisplaySettingsConfig) : super(i, class348_sub51)
 
     override fun method1716(bool: Boolean) {

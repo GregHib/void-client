@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import LightDetailOptionState.Companion.method1802
+import WaterDetailOptionState.Companion.method1802
 import WaterMaterialPass.Companion.method2148
 import WorldMapAreaLabel.Companion.method3570
 import io.IOException
@@ -54,7 +54,7 @@ object RegionSceneLoader {
                 SceneRegionState.anInt193 = 0
                 if (!AbstractMenuEntryStatics.aBoolean1712 && Client.aAbstractGameSocket_9165 != null) {
                     IOException_Sub1.anInt88++
-                    val class348_sub47 = method2148((RangedGraphicsOptionState.aFontMetaRef_5938), (TheoraVideoStream.aIsaacCipher_9029), -106)
+                    val class348_sub47 = method2148((BrightnessGraphicsOptionState.aFontMetaRef_5938), (TheoraVideoStream.aIsaacCipher_9029), -106)
                     InterfaceComponentGroup.method3243(122, class348_sub47)
                     try {
                         method1802(0)

@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import RangedGraphicsOptionState.Companion.method1762
+import BrightnessGraphicsOptionState.Companion.method1762
 
 /* Class58 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

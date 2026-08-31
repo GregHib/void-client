@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import ShadowQualityOptionState.Companion.method1791
+import FogOptionState.Companion.method1791
 
 /* Class11 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

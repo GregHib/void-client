@@ -100,7 +100,7 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
                                 bool = true
                                 if (i == 1) {
                                     WidgetComponentNode.anInt4657++
-                                    val class348_sub47 = (method2148(CustomCursorsOptionState.aFontMetaRef_5929, TheoraVideoStream.aIsaacCipher_9029, i_5_ + 7158))
+                                    val class348_sub47 = (method2148(GroundBlendingOptionState.aFontMetaRef_5929, TheoraVideoStream.aIsaacCipher_9029, i_5_ + 7158))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, `is`[i_7_])
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteInverse((-75).toByte(), 0)
                                     InterfaceComponentGroup.method3243(i_5_ xor 0x1c2a, class348_sub47)

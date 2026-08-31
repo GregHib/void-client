@@ -1,7 +1,7 @@
 ﻿import kotlin.jvm.JvmStatic
 import Gl3dTexture.Companion.method248
 import SceneTilePlaneManager.method260
-import LightDetailOptionState.Companion.method1802
+import WaterDetailOptionState.Companion.method1802
 import NoOpGraphicsOptionState.Companion.method1804
 import ModelVertexColorBuffer.Companion.method2739
 import ColourKeyTextureNode.Companion.method3120

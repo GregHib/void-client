@@ -317,7 +317,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                         val i_27_ = i_26_ * 50
                         val class101_sub2 = method3820(false)
                         class101_sub2.method916(((this.anInt8146 % i_27_ * class12.aByte211).toFloat() / i_27_.toFloat()), true, 0.0f, ((class12.aByte198 * (this.anInt8146 % i_27_)).toFloat() / i_27_.toFloat()))
-                        method3853(-32, LightDetailOptionState.aConfigFlagUtil_6030)
+                        method3853(-32, WaterDetailOptionState.aConfigFlagUtil_6030)
                     }
                     i_22_ = class12.anInt203
                     if (!this.aBoolean8160) {
@@ -893,7 +893,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
             method3915(0)
             this.aClass101_Sub2Array8131[0]!!.method932(1.0f, interface18_impl3!!.method71((-46).toByte(), this.anInt7962.toFloat()), interface18_impl3.method67(this.anInt7931.toFloat(), 109), (-37).toByte())
             this.aClass101_Sub2Array8131[0]!!.method920(interface18_impl3.method71((-52).toByte(), -i_86_.toFloat()), false, 0.0f, interface18_impl3.method67(-i_85_.toFloat(), 94))
-            this.aConfigFlagUtilArray8113[0] = LightDetailOptionState.aConfigFlagUtil_6030
+            this.aConfigFlagUtilArray8113[0] = WaterDetailOptionState.aConfigFlagUtil_6030
             method3905(127.toByte())
             method3933(-127)
             method3879(-8629)

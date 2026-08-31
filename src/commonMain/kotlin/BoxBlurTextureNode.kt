@@ -42,15 +42,15 @@ class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
                 var i_22_ = 0
                 var i_23_ = -anInt9466
                 while (anInt9466 >= i_23_) {
-                    i_22_ += is_20_[i_23_ and SimpleBinaryOptionState.anInt6076]
+                    i_22_ += is_20_[i_23_ and CustomCursorOptionState.anInt6076]
                     i_23_++
                 }
                 var i_24_ = 0
                 while (i_24_ < PerlinNoiseTextureNode.Companion.anInt9139) {
                     is_21_[i_24_] = i_17_ * i_22_ shr 16
-                    i_22_ -= (is_20_[-anInt9466 + i_24_ and SimpleBinaryOptionState.anInt6076])
+                    i_22_ -= (is_20_[-anInt9466 + i_24_ and CustomCursorOptionState.anInt6076])
                     i_24_++
-                    i_22_ += (is_20_[i_24_ + anInt9466 and SimpleBinaryOptionState.anInt6076])
+                    i_22_ += (is_20_[i_24_ + anInt9466 and CustomCursorOptionState.anInt6076])
                 }
                 is_18_[-i + (i_19_ + anInt9463)] = is_21_
                 i_19_++
@@ -90,7 +90,7 @@ class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
                 val is_41_ = is_35_[1]!!
                 val is_42_ = is_35_[2]!!
                 for (i_43_ in -anInt9466..anInt9466) {
-                    val i_44_ = SimpleBinaryOptionState.anInt6076 and i_43_
+                    val i_44_ = CustomCursorOptionState.anInt6076 and i_43_
                     i_39_ += is_42_[i_44_]
                     i_37_ += is_40_[i_44_]
                     i_38_ += is_41_[i_44_]
@@ -103,12 +103,12 @@ class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
                     is_45_[i_48_] = i_37_ * i_32_ shr 16
                     is_46_[i_48_] = i_38_ * i_32_ shr 16
                     is_47_[i_48_] = i_39_ * i_32_ shr 16
-                    var i_49_ = SimpleBinaryOptionState.anInt6076 and -anInt9466 + i_48_
+                    var i_49_ = CustomCursorOptionState.anInt6076 and -anInt9466 + i_48_
                     i_37_ -= is_40_[i_49_]
                     i_48_++
                     i_38_ -= is_41_[i_49_]
                     i_39_ -= is_42_[i_49_]
-                    i_49_ = i_48_ - -anInt9466 and SimpleBinaryOptionState.anInt6076
+                    i_49_ = i_48_ - -anInt9466 and CustomCursorOptionState.anInt6076
                     i_39_ += is_42_[i_49_]
                     i_38_ += is_41_[i_49_]
                     i_37_ += is_40_[i_49_]

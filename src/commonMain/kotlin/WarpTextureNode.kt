@@ -90,7 +90,7 @@ class WarpTextureNode : AbstractProceduralTextureNode(1, false) {
             MinimapFlagRenderer.anInt1796 = i_12_
         }
         anInt4265 = anInt4265 and TextureCubeProvider.anInt6325
-        MinimapFlagRenderer.anInt1796 = MinimapFlagRenderer.anInt1796 and SimpleBinaryOptionState.anInt6076
+        MinimapFlagRenderer.anInt1796 = MinimapFlagRenderer.anInt1796 and CustomCursorOptionState.anInt6076
     }
 
     companion object {

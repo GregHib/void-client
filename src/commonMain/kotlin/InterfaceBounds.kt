@@ -10,7 +10,6 @@ import WorldMapIconLabel.Companion.method3573
 import MapSceneCache.Companion.method821
 import awt.Component
 import lang.Class
-import lang.jClass
 //import lang.reflect.Constructor
 import kotlin.math.sin
 
@@ -128,7 +127,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 TheoraVideoStream.aJs5Archive_9033!!.method412(89.toByte())
                 CameraNodeList.aJs5Archive_1743!!.method412((-125).toByte())
                 SoftwareSpriteRaster.aJs5Archive_1627!!.method412((-117).toByte())
-                LightingOptionState.aJs5Archive_5878!!.method412(29.toByte())
+                GroundDecorOptionState.aJs5Archive_5878!!.method412(29.toByte())
                 HoverActionEntry.aJs5Archive_1815!!.method412(80.toByte())
                 AnimationFrameState.aJs5Archive_1538!!.method412(34.toByte())
                 VideoAdChecker.aJs5Archive_3183!!.method412((-116).toByte())

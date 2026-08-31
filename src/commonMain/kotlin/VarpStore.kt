@@ -7,7 +7,6 @@ import GameClock.method599
 import RegionMapDecoder.aByteArrayArray1887
 import TrigLookupTables.Companion.method726
 import NativeTerrainTile.Companion.method4004
-import kotlin.collections.set
 
 /* Class170 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -170,7 +169,7 @@ class VarpStore : VarResolver {
             var i_21_ = 0
             while ((i_21_ < AbstractTileShapeStatics.anIntArray6547!!.size)) {
                 val i_22_ = AbstractTileShapeStatics.anIntArray6547!![i_21_]
-                val class143 = RangedGraphicsOptionState.method1766((-86).toByte(), i_22_, TerrainTileStatics.aJs5Archive_4585!!)
+                val class143 = BrightnessGraphicsOptionState.method1766((-86).toByte(), i_22_, TerrainTileStatics.aJs5Archive_4585!!)
                 val class324 = var_renderer.method3686(class143, SpriteImage.method1523(GlShaderObjectHandle.aJs5Archive_518!!, i_22_), true)
                 LoadingScreenState.aRenderableEntryArray2636!![i_21_] = RenderableEntry(class324, class143)
                 i_21_++

@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import RangedGraphicsOptionState.Companion.method1765
+import BrightnessGraphicsOptionState.Companion.method1765
 import kotlin.math.min
 
 /* Class239_Sub21 - Decompiled by JODE

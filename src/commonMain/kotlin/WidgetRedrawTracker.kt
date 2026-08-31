@@ -2,7 +2,6 @@ import kotlin.jvm.JvmStatic
 import FixedFunctionMaterialPass.Companion.method2145
 import ModelVertexColorBuffer.Companion.method2739
 import BoxBlurTextureNode.Companion.method3147
-import InboundPacketHeader
 import RenderListTextureNode.Companion.method3153
 
 /* Class312 - Decompiled by JODE
@@ -88,7 +87,7 @@ class WidgetRedrawTracker {
                 ByteBufferStatics.method3379(2, 10)
                 for (i_2_ in 0..99) OpenGlModel.aBooleanArray2076!![i_2_] = true
                 method2145(-24498)
-                LightingOptionState.aClass348_Sub26_5881 = null
+                GroundDecorOptionState.aClass348_Sub26_5881 = null
                 FloatCameraTransform.aLong5745 = 0L
             }
         }

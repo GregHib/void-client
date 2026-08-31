@@ -44,7 +44,7 @@ class CubemapTexture2dSource internal constructor(private val aHa_Sub2_8693: Ope
         fun method2260(i: Int, i_4_: Int, l: Long, i_5_: Int, bool: Boolean, js5Archive: Js5Archive?, i_6_: Byte, i_7_: Int) {
             do {
                 try {
-                    WaterDetailOptionState.anInt5994 = 10000
+                    RemoveRoofLightingDetailOptionState.anInt5994 = 10000
                     ModelDefinition.aJs5Archive_1848 = js5Archive
                     DirectionPath.anInt1059 = i_7_
                     NpcActorEntity.anInt10074 = i

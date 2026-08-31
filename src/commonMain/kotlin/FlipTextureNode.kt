@@ -31,9 +31,9 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
             val is_7_ = `is`[2]!!
             if (aBoolean9140) {
                 for (i_8_ in 0..<PerlinNoiseTextureNode.anInt9139) {
-                    is_5_[i_8_] = is_2_[SimpleBinaryOptionState.anInt6076 + -i_8_]
-                    is_6_[i_8_] = is_3_[SimpleBinaryOptionState.anInt6076 - i_8_]
-                    is_7_[i_8_] = is_4_[-i_8_ + SimpleBinaryOptionState.anInt6076]
+                    is_5_[i_8_] = is_2_[CustomCursorOptionState.anInt6076 + -i_8_]
+                    is_6_[i_8_] = is_3_[CustomCursorOptionState.anInt6076 - i_8_]
+                    is_7_[i_8_] = is_4_[-i_8_ + CustomCursorOptionState.anInt6076]
                 }
             } else {
                 var i_9_ = 0
@@ -85,7 +85,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
             if (aBoolean9140) {
                 var i_77_ = 0
                 while ((i_77_ < PerlinNoiseTextureNode.Companion.anInt9139)) {
-                    `is`[i_77_] = is_76_[SimpleBinaryOptionState.anInt6076 + -i_77_]
+                    `is`[i_77_] = is_76_[CustomCursorOptionState.anInt6076 + -i_77_]
                     i_77_++
                 }
             } else ArrayCopyUtil.method1578(is_76_, 0, `is`, 0, PerlinNoiseTextureNode.Companion.anInt9139)
@@ -185,7 +185,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                 }
                                 if (i_31_ < i_34_ && i_32_ < i_33_) {
                                     if (class46.anInt765 != 0) {
-                                        if ((RangedGraphicsOptionState.anInt5943 == class46.anInt765) || (class46.anInt765 == WidgetRedrawTracker.anInt3932)) {
+                                        if ((BrightnessGraphicsOptionState.anInt5943 == class46.anInt765) || (class46.anInt765 == WidgetRedrawTracker.anInt3932)) {
                                             SolidFillComponent.method198(class46, false, i_25_, i_24_)
                                             if (!GrayscaleNoiseTexture.aBoolean5300) {
                                                 method132(124, (WidgetRedrawTracker.anInt3932 == (class46.anInt765)), class46.anInt709, i_24_, class46.anInt789, i_25_)

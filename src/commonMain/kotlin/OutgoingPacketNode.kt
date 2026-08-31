@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import LinkedListIterator.Companion.method1241
-import BooleanGraphicsOptionState.Companion.method1722
+import FlickeringGraphicsOptionState.Companion.method1722
 import NpcReference.Companion.method2959
 import GlTexture2DRegion.Companion.method3553
 import GameClock.method599
@@ -15,7 +15,7 @@ class OutgoingPacketNode : LinkedListNode() {
     var anInt7122: Int = 0
     fun method3326(i: Byte) {
         anInt7117++
-        if (PingHostListHolder.aClass348_Sub47Array2334!!.size > GroundDecorOptionState.anInt5980 && i.toInt() == -45) PingHostListHolder.aClass348_Sub47Array2334!![GroundDecorOptionState.anInt5980++] = this
+        if (PingHostListHolder.aClass348_Sub47Array2334!!.size > IdleAnimationOptionState.anInt5980 && i.toInt() == -45) PingHostListHolder.aClass348_Sub47Array2334!![IdleAnimationOptionState.anInt5980++] = this
     }
 
     companion object {

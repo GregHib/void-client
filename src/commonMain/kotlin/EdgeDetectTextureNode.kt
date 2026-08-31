@@ -22,7 +22,7 @@ class EdgeDetectTextureNode : AbstractProceduralTextureNode(1, true) {
             var i_9_ = 0
             while (PerlinNoiseTextureNode.Companion.anInt9139 > i_9_) {
                 val i_10_ = anInt9167 * (-is_6_[i_9_] + is_8_[i_9_])
-                val i_11_ = (anInt9167 * (-is_7_[SimpleBinaryOptionState.anInt6076 and -1 + i_9_] + is_7_[SimpleBinaryOptionState.anInt6076 and i_9_ - -1]))
+                val i_11_ = (anInt9167 * (-is_7_[CustomCursorOptionState.anInt6076 and -1 + i_9_] + is_7_[CustomCursorOptionState.anInt6076 and i_9_ - -1]))
                 val i_12_ = i_11_ shr 12
                 val i_13_ = i_10_ shr 12
                 val i_14_ = i_12_ * i_12_ shr 12
