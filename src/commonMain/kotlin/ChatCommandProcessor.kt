@@ -1482,7 +1482,6 @@ object ChatCommandProcessor {
                 return
             }
         } else if (i < 6100) {
-            println("Cs2 option $i")
             if (i == 6001) {
                 val i_146_ = anIntArray1149!![--anInt1173]
                 IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.brightnessSetting!!), i_146_)
