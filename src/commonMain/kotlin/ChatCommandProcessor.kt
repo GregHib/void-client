@@ -14,7 +14,7 @@ import RemoveRoofLightingDetailOptionState.Companion.method1781
 import TextureQualityOptionState.Companion.method1787
 import RemoveRoofsOptionState.Companion.method1811
 import AntialiasOptionState.Companion.method1819
-import TwoStateOptionState.Companion.method1844
+import LightingDetailOptionState.Companion.method1844
 import MultiLevelOptionState.Companion.method1851
 import StereoSoundOptionState.Companion.method1742
 import BrightnessOptionState.Companion.method1745

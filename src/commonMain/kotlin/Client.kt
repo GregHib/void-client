@@ -517,7 +517,7 @@ import SkyboxGradient.method2334
 import SocketFactory.Companion.method2049
 import TextureGenerator.Companion.method1397
 import TileSceneEntity.Companion.method2396
-import TwoStateOptionState.Companion.method1844
+import LightingDetailOptionState.Companion.method1844
 import WhirlpoolHash.Companion.method1166
 import WidgetTextConfig.Companion.method362
 import awt.Canvas

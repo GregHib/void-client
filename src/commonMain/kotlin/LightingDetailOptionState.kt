@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class239_Sub28 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class TwoStateOptionState : GraphicsOptionState {
+class LightingDetailOptionState : GraphicsOptionState {
     internal constructor(class348_sub51: DisplaySettingsConfig) : super(class348_sub51)
 
     override fun method1714(i: Int, i_17_: Int): Int {
@@ -110,11 +110,11 @@ class TwoStateOptionState : GraphicsOptionState {
             if (bool_14_ == false) {
                 TileTextureNode.anInt9406 = i
                 anInt6136++
-                TwoStateOptionState.anInt6981 = i_12_
+                LightingDetailOptionState.anInt6981 = i_12_
                 GlTextureCubeMap.anInt8537 = i_15_
                 if (bool && GlTextureCubeMap.anInt8537 >= 100) {
                     CompositeRgbNoiseTexture.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
-                    GlslMaterialPass.anInt6246 = 256 + TwoStateOptionState.anInt6981 * 512
+                    GlslMaterialPass.anInt6246 = 256 + LightingDetailOptionState.anInt6981 * 512
                     ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, CompositeRgbNoiseTexture.anInt8685) + -ShortMatrixNode.anInt9515)
                 }
                 WeaveTextureNode.anInt9282 = 2

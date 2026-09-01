@@ -18,7 +18,7 @@ class DisplaySettingsConfig : LinkedListNode {
     var aClass239_Sub2_7228: CameraDistanceOptionState? = null
     var aClass239_Sub29_7229: MultiLevelOptionState? = null
 
-    var aClass239_Sub28_7230: TwoStateOptionState? = null
+    var aClass239_Sub28_7230: LightingDetailOptionState? = null
     var aClass239_Sub23_7231: AntialiasOptionState? = null
 
     var brightnessSetting: BrightnessGraphicsOptionState? = null
@@ -85,7 +85,7 @@ class DisplaySettingsConfig : LinkedListNode {
                     bool = class348_sub49.readUnsignedByte(255) == 1
                     class348_sub49.readUnsignedByte(255)
                 }
-                this.aClass239_Sub28_7230 = TwoStateOptionState(if (!(bool or bool_3_)) 0 else 1, this)
+                this.aClass239_Sub28_7230 = LightingDetailOptionState(if (!(bool or bool_3_)) 0 else 1, this)
                 this.aClass239_Sub18_7259 = WaterDetailOptionState(class348_sub49.readUnsignedByte(255), this)
                 this.aClass239_Sub16_7247 = FogOptionState(class348_sub49.readUnsignedByte(i xor 0x7860), this)
                 this.aClass239_Sub20_7216 = AntiAliasingOptionState(class348_sub49.readUnsignedByte(255), this)
@@ -146,7 +146,7 @@ class DisplaySettingsConfig : LinkedListNode {
         if (bool || this.aClass239_Sub4_7220 == null) this.aClass239_Sub4_7220 = GroundDecorOptionState(this)
         if (i != 31286) this.aClass239_Sub4_7220 = null
         if (bool || this.aClass239_Sub13_7236 == null) this.aClass239_Sub13_7236 = IdleAnimationOptionState(this)
-        if (bool || this.aClass239_Sub28_7230 == null) this.aClass239_Sub28_7230 = TwoStateOptionState(this)
+        if (bool || this.aClass239_Sub28_7230 == null) this.aClass239_Sub28_7230 = LightingDetailOptionState(this)
         if (bool || this.aClass239_Sub7_7238 == null) this.aClass239_Sub7_7238 = SceneryShadowsOptionState(this)
         if (bool || this.aClass239_Sub3_7222 == null) this.aClass239_Sub3_7222 = ChatEffectsOptionState(this)
         if (bool || this.aClass239_Sub15_7224 == null) this.aClass239_Sub15_7224 = TextureQualityOptionState(this)
@@ -195,7 +195,7 @@ class DisplaySettingsConfig : LinkedListNode {
                             this.aClass239_Sub9_7256 = GroundBlendingOptionState(class348_sub49.readUnsignedByte(255), this)
                             this.aClass239_Sub4_7220 = GroundDecorOptionState(class348_sub49.readUnsignedByte(255), this)
                             this.aClass239_Sub13_7236 = IdleAnimationOptionState(class348_sub49.readUnsignedByte(255), this)
-                            this.aClass239_Sub28_7230 = TwoStateOptionState(class348_sub49.readUnsignedByte(i + -670), this)
+                            this.aClass239_Sub28_7230 = LightingDetailOptionState(class348_sub49.readUnsignedByte(i + -670), this)
                             this.aClass239_Sub7_7238 = SceneryShadowsOptionState(class348_sub49.readUnsignedByte(255), this)
                             if (i_4_ >= 24) this.aClass239_Sub3_7222 = ChatEffectsOptionState(class348_sub49.readUnsignedByte(255), this)
                             this.aClass239_Sub15_7224 = TextureQualityOptionState(class348_sub49.readUnsignedByte(255), this)

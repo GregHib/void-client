@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import TwoStateOptionState.Companion.method1846
+import LightingDetailOptionState.Companion.method1846
 import ParticleEmitterFactoryStatics.method1885
 import SphereMapMaterialPass.Companion.method2174
 import Texture2DProvider.Companion.method2259

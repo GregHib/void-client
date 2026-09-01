@@ -224,12 +224,12 @@ class Gl2dTexture : GlTextureBase, Renderable2dTexture {
         @JvmStatic
         fun method241(i: Byte) {
             anInt8617++
-            var i_16_ = TwoStateOptionState.anInt6981 * 512 + 256
+            var i_16_ = LightingDetailOptionState.anInt6981 * 512 + 256
             var i_17_ = 512 * CollisionMapAccessor.anInt3550 + 256
             var i_18_ = (CollisionMapAccessor.method2064(i_16_, CompiledScriptCache.anInt4372, 11219, i_17_) + -ShortMatrixNode.anInt9515)
             if (GlTextureCubeMap.anInt8537 >= 100) {
                 CompositeRgbNoiseTexture.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
-                GlslMaterialPass.anInt6246 = TwoStateOptionState.anInt6981 * 512 + 256
+                GlslMaterialPass.anInt6246 = LightingDetailOptionState.anInt6981 * 512 + 256
                 ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, CompositeRgbNoiseTexture.anInt8685) + -ShortMatrixNode.anInt9515)
             } else {
                 if (GlslMaterialPass.anInt6246 < i_16_) {

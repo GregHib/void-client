@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import TwoStateOptionState.Companion.method1842
+import LightingDetailOptionState.Companion.method1842
 import MultiLevelOptionState.Companion.method1850
 
 /* Class263 - Decompiled by JODE
