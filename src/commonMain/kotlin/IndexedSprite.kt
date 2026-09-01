@@ -72,7 +72,7 @@ class IndexedSprite : Sprite {
             Gl3dTexture.anInt8630 = `is`[2]
             MediaStreamClient.anInt3202 = `is`[0]
             ProjectileConfigUtil.anInt394 = `is`[3]
-            SimpleToggleOptionState.anInt5886 = `is`[1]
+            StereoSoundOptionState.anInt5886 = `is`[1]
             if (bool_42_) {
                 CameraRotationStub.aRenderer326!!.DA(AnimationFrameState.anInt1537, SceneTextLabel.anInt6417, TextureHandle.anInt2590, FireParticleStream.anInt1879)
                 RenderNodeStatics.method3284(true, ModelWallEntity.aDouble10120)

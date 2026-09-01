@@ -38,7 +38,7 @@ abstract class TimedRecordAccessor : LinkedListNode() {
             MinimapSquareDrawer.aBoolean5226 = false
             HintArrowOrMessage.aMapTileShapeArray2034 = arrayOfNulls<MapTileShape>(500)
             CollisionFlagQuery.anInt1200 = 0
-            DetailLevelOptionState.anInt6115 = 0
+            SoundLevelOptionState.anInt6115 = 0
             LoadingBarRenderer.aMapTileShapeArray5060 = arrayOfNulls<MapTileShape>(1000)
             if (i > -113) aTextureFormatInfo_7103 = null
             ParameterizedText.anInt9577 = 0

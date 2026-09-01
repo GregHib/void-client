@@ -102,7 +102,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ProjectileSpawner.anInt2672 = 0
             TheoraVideoStream.anInt9026 = 0
             CompassSmoother.anInt3377 = 0
-            DetailLevelOptionState.anInt6123 = 0
+            SoundLevelOptionState.anInt6123 = 0
             OpenGlRenderer.anInt7690 = 0
             Client.anInt9546 = 0
             FogOptionState.anInt6017 = 0
@@ -349,7 +349,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelDefinitionCache.anInt2867 = 0
             ProportionalScrollbarComponent.anInt9928 = 0
             FrameBufferObject.anInt4871 = 0
-            DetailLevelOptionState.anInt6117 = 0
+            SoundLevelOptionState.anInt6117 = 0
             TileRenderState.anInt4229 = 0
             CollisionMap.anInt4447 = 0
             ParticleConfigParser.anInt3818 = 0
@@ -494,7 +494,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FrameBufferObject.anInt4878 = 0
             StreamingResourceRequest.anInt10451 = 0
             RenderbufferObject.anInt8568 = 0
-            SimpleToggleOptionState.anInt5893 = 0
+            StereoSoundOptionState.anInt5893 = 0
             NativeRenderer.anInt8064 = 0
             ShaderObject.anInt4101 = 0
             AnimatedModelRenderer.anInt8420 = 0
@@ -852,7 +852,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SeqDefinitionCache.anInt3358 = 0
             SoundChannelMixer.anInt3597 = 0
             GlslEnvMaterialPass.anInt6267 = 0
-            DetailLevelOptionState.anInt6124 = 0
+            SoundLevelOptionState.anInt6124 = 0
             CircleDrawer.anInt2685 = 0
             HitsplatDefinition.anInt2014 = 0
             NativeRenderer.anInt8072 = 0
@@ -1107,7 +1107,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelVertexColorBuffer.anInt6583 = 0
             NativeRenderer.anInt8055 = 0
             SoundEnvelope.anInt2741 = 0
-            DetailLevelOptionState.anInt6122 = 0
+            SoundLevelOptionState.anInt6122 = 0
             MapSceneCache.anInt1452 = 0
             NoOpGraphicsOptionState.anInt6046 = 0
             GlRenderDevice.anInt9900 = 0
@@ -1656,11 +1656,11 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             BinaryGraphicsOptionState.anInt5952 = 0
             Js5Archive.anInt663 = 0
             CompletedResourceRequest.anInt10464 = 0
-            DetailLevelOptionState.anInt6126 = 0
+            SoundLevelOptionState.anInt6126 = 0
             TextureHandle.anInt2586 = 0
             WidgetCache.anInt1484 = 0
             anInt1898 = 0
-            SimpleToggleOptionState.anInt5890 = 0
+            StereoSoundOptionState.anInt5890 = 0
             ChatEffectsOptionState.anInt5870 = 0
             NativeRenderer.anInt8049 = 0
             Texture2DProvider.anInt6322 = 0
@@ -1804,7 +1804,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             OpenGlRenderer.anInt7560 = 0
             LongHashTable.anInt450 = 0
             GroundDecorSceneEntity.anInt9994 = 0
-            SimpleToggleOptionState.anInt5885 = 0
+            StereoSoundOptionState.anInt5885 = 0
             SoundEngineInitializer.anInt484 = 0
             TextureQualityOptionState.anInt5996 = 0
             MapSceneIconDef.anInt2858 = 0
@@ -1882,7 +1882,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             GlRenderDevice.anInt9832 = 0
             ByteBuffer.anInt7140 = 0
             SequencedGroundDecor.anInt10049 = 0
-            SimpleToggleOptionState.anInt5888 = 0
+            StereoSoundOptionState.anInt5888 = 0
             ScrollbarComponent.anInt8336 = 0
             ServerConnectionInfo.anInt2141 = 0
             ModelGroundDecor.anInt10016 = 0
@@ -2624,7 +2624,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             LruByteCache.anInt1101 = 0
             OpenGlRenderer.anInt7658 = 0
             ModelHeaderCache.anInt3283 = 0
-            DetailLevelOptionState.anInt6125 = 0
+            SoundLevelOptionState.anInt6125 = 0
             OggBitstreamDecoder.anInt6870 = 0
             TexGenMaterialPass.anInt6249 = 0
             NativeRenderer.anInt8044 = 0
@@ -2639,7 +2639,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             WidgetComponent.anInt827 = 0
             SequencedGroundDecor.anInt10061 = 0
             GlSpriteRenderer.anInt8437 = 0
-            SimpleToggleOptionState.anInt5892 = 0
+            StereoSoundOptionState.anInt5892 = 0
             SkeletalAnimFrameLoader.anInt478 = 0
             TerrainTileStatics.anInt4586 = 0
             ArbFogMaterialPass.anInt6186 = 0
@@ -2887,7 +2887,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             FloatCameraTransform.anInt5725 = 0
             NpcActorEntity.anInt10068 = 0
             LruByteCache.anInt1094 = 0
-            DetailLevelOptionState.anInt6116 = 0
+            SoundLevelOptionState.anInt6116 = 0
             GlSpriteRenderer.anInt8442 = 0
             MinimapSquareDrawer.anInt5218 = 0
             OpenGlRenderer.anInt7546 = 0
@@ -3232,7 +3232,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ModelDefinition.anInt4315 = 0
             ClientLoadStateMachine.anInt2172 = 0
             CutsceneSequenceData.anInt5284 = 0
-            SimpleToggleOptionState.anInt5889 = 0
+            StereoSoundOptionState.anInt5889 = 0
             WhirlpoolHash.anInt1470 = 0
             ModelVertexColorBuffer.anInt6579 = 0
             NoOpGraphicsOptionState.anInt6040 = 0
@@ -3268,7 +3268,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SequencedWallEntity.anInt10159 = 0
             WarpTextureNode.anInt9429 = 0
             WallSceneEntity.anInt9956 = 0
-            DetailLevelOptionState.anInt6119 = 0
+            SoundLevelOptionState.anInt6119 = 0
             NativeRenderer.anInt7949 = 0
             TextureMetadataProvider.anInt4612 = 0
             CollisionMap.anInt4446 = 0
@@ -3828,7 +3828,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SoftwareSpriteRaster.anInt1629 = 0
             OpenGlRenderer.anInt7616 = 0
             NoOpGraphicsOptionState.anInt6047 = 0
-            DetailLevelOptionState.anInt6118 = 0
+            SoundLevelOptionState.anInt6118 = 0
             MapElementDecor.anInt10348 = 0
             GlCubeMapTexture.anInt8619 = 0
             AwtKeyboardListener.anInt6526 = 0
@@ -3871,7 +3871,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             ConstantColourTextureNode.anInt9247 = 0
             NativeRenderer.anInt7964 = 0
             TrackedGroundDecor.anInt10388 = 0
-            SimpleToggleOptionState.anInt5887 = 0
+            StereoSoundOptionState.anInt5887 = 0
             OggCacheStream.anInt5273 = 0
             OpenGlRenderer.anInt7676 = 0
             DisplayModeOptionState.anInt6109 = 0
@@ -4015,7 +4015,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SceneListNode.anInt6467 = 0
             FontDefinition.anInt1985 = 0
             FloorOverlayDefinition.anInt968 = 0
-            SimpleToggleOptionState.anInt5884 = 0
+            StereoSoundOptionState.anInt5884 = 0
             LocTypeDefLoader.anInt2499 = 0
             ByteBuffer.anInt7141 = 0
             ConfigDefinitionLoader.anInt2081 = 0
@@ -4168,7 +4168,7 @@ class FrameStatsReset internal constructor(var aDirectionPathArray5801: Array<Di
             SocketGameConnection.aBoolean5840 = true
             for (j1 in 0..99) OpenGlModel.aBooleanArray2076!![j1] = true
 
-            for (k1 in 0..5) DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![k1] = FloorOverlayDefinition()
+            for (k1 in 0..5) SoundLevelOptionState.aFloorOverlayDefinitionArray6114!![k1] = FloorOverlayDefinition()
 
             for (l1 in 0..24) {
                 ServerConnectionInfo.anIntArray2145!![l1] = 0

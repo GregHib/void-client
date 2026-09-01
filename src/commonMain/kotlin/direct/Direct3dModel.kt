@@ -4,8 +4,8 @@ import kotlin.jvm.JvmStatic
 import AbstractCameraTransform
 import AbstractModel
 import ParticleEmitterNode.Companion.method219
-import DetailLevelOptionState.Companion.method1837
-import SimpleToggleOptionState.Companion.method1740
+import SoundLevelOptionState.Companion.method1837
+import StereoSoundOptionState.Companion.method1740
 import ParticleEmitterFactoryStatics.method1885
 import ParticleEmitterFactoryStatics.method1887
 import PcmStreamBuffer.Companion.method2832
@@ -1002,7 +1002,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 class64_sub2_154_.aBufferToggleState_5520!!.aBoolean3709 = true
             } else if (!ServerConnectionInfo.method1258(i, -9301, anInt5472)) class64_sub2_154_.aBufferToggleState_5520 = null
             else class64_sub2_154_.aBufferToggleState_5520 = aBufferToggleState_5520
-            if (DetailLevelOptionState.method1833((-122).toByte(), i, anInt5472)) {
+            if (SoundLevelOptionState.method1833((-122).toByte(), i, anInt5472)) {
                 if (class64_sub2_153_!!.aShortArray5486 != null && (anInt5478 <= class64_sub2_153_.aShortArray5486!!.size)) class64_sub2_154_.aShortArray5486 = class64_sub2_153_.aShortArray5486
                 else {
                     class64_sub2_153_.aShortArray5486 = ShortArray(anInt5478)
@@ -3542,7 +3542,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             anInt10433++
             val i_2_ = 18 / ((i_1_ - 30) / 42)
             if (!HuffmanCodec.method2224(i, (-118).toByte(), i_0_)) return false
-            if (DetailLevelOptionState.method1833((-118).toByte(), i, i_0_) or ((0x9000 and i) != 0) or KaraokeSubtitleStream.method2985(-31735, i_0_, i)) return true
+            if (SoundLevelOptionState.method1833((-118).toByte(), i, i_0_) or ((0x9000 and i) != 0) or KaraokeSubtitleStream.method2985(-31735, i_0_, i)) return true
             return (((0x37 and i_0_) == 0) and (((0x2000 and i) != 0) or LocalizedTextStatics.method2058(i, i_0_, 88) or method3203(i_0_, 127.toByte(), i)))
         }
         var anInt9551: Int = 0

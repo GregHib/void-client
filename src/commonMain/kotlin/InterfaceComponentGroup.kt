@@ -605,7 +605,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                 ActorEntity.aAbstractCameraTransform_9114 = var_renderer.method3640()
                 ParameterizedText.Companion.anInt9577 = 0
                 var i_8_ = 0
-                while ( /**/DetailLevelOptionState.anInt6115 > i_8_) {
+                while ( /**/SoundLevelOptionState.anInt6115 > i_8_) {
                     SceneModelBuilder.method2498(HintArrowOrMessage.aMapTileShapeArray2034!![i_8_], var_renderer, (-112).toByte(), i)
                     i_8_++
                 }

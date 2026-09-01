@@ -114,7 +114,7 @@ object LocalizedTextStatics {
 
     fun method2062(i: Byte) {
         if (HintArrowOrMessage.aMapTileShapeArray2034 != null) {
-            for (i_3_ in 0..<DetailLevelOptionState.anInt6115) HintArrowOrMessage.aMapTileShapeArray2034!![i_3_] = null
+            for (i_3_ in 0..<SoundLevelOptionState.anInt6115) HintArrowOrMessage.aMapTileShapeArray2034!![i_3_] = null
             HintArrowOrMessage.aMapTileShapeArray2034 = null
         }
         anInt3480++

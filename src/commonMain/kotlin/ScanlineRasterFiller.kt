@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import GlElementArrayBuffer.Companion.method1156
 import ClickFeedbackTask.Companion.method1353
-import SimpleToggleOptionState.Companion.method1742
+import StereoSoundOptionState.Companion.method1742
 import MidiSequencePlayer.Companion.method2878
 import InvertTextureNode.Companion.method3135
 import GameClock.method599

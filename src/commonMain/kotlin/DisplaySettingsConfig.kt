@@ -5,7 +5,7 @@ import kotlin.jvm.JvmStatic
 import kotlin.math.max
 
 class DisplaySettingsConfig : LinkedListNode {
-    var aClass239_Sub26_7215: DetailLevelOptionState? = null
+    var aClass239_Sub26_7215: SoundLevelOptionState? = null
 
     var aClass239_Sub20_7216: AntiAliasingOptionState? = null
     var aClass239_Sub4_7220: GroundDecorOptionState? = null
@@ -22,17 +22,17 @@ class DisplaySettingsConfig : LinkedListNode {
     var aClass239_Sub23_7231: AntialiasOptionState? = null
 
     var brightnessSetting: BrightnessGraphicsOptionState? = null
-    var aClass239_Sub26_7234: DetailLevelOptionState? = null
+    var aClass239_Sub26_7234: SoundLevelOptionState? = null
 
     var aClass239_Sub24_7235: TextureOptionState? = null
 
     var aClass239_Sub13_7236: IdleAnimationOptionState? = null
 
     var aClass239_Sub7_7238: SceneryShadowsOptionState? = null
-    var aClass239_Sub5_7240: SimpleToggleOptionState? = null
+    var aClass239_Sub5_7240: StereoSoundOptionState? = null
 
     var aClass239_Sub12_7243: BloomGraphicsOptionState? = null
-    var aClass239_Sub26_7245: DetailLevelOptionState? = null
+    var aClass239_Sub26_7245: SoundLevelOptionState? = null
     var aClass239_Sub1_7246: FlickeringGraphicsOptionState? = null
     var aClass239_Sub16_7247: FogOptionState? = null
     var aClass239_Sub20_7248: AntiAliasingOptionState? = null
@@ -45,7 +45,7 @@ class DisplaySettingsConfig : LinkedListNode {
     var aClass239_Sub19_7257: NoOpGraphicsOptionState? = null
 
     var aClass239_Sub18_7259: WaterDetailOptionState? = null
-    var aClass239_Sub26_7260: DetailLevelOptionState? = null
+    var aClass239_Sub26_7260: SoundLevelOptionState? = null
 
     var aClass239_Sub27_7261: DefaultGraphicsOptionState? = null
 
@@ -58,7 +58,7 @@ class DisplaySettingsConfig : LinkedListNode {
     var aClass239_Sub21_7270: RemoveRoofsOptionState? = null
 
     var aClass239_Sub25_7271: DisplayModeOptionState? = null
-    var aClass239_Sub26_7272: DetailLevelOptionState? = null
+    var aClass239_Sub26_7272: SoundLevelOptionState? = null
     private fun method3421(i: Int, class348_sub49: ByteBuffer?, i_0_: Int) {
         do {
             try {
@@ -89,14 +89,14 @@ class DisplaySettingsConfig : LinkedListNode {
                 this.aClass239_Sub18_7259 = WaterDetailOptionState(class348_sub49.readUnsignedByte(255), this)
                 this.aClass239_Sub16_7247 = FogOptionState(class348_sub49.readUnsignedByte(i xor 0x7860), this)
                 this.aClass239_Sub20_7216 = AntiAliasingOptionState(class348_sub49.readUnsignedByte(255), this)
-                this.aClass239_Sub5_7240 = SimpleToggleOptionState(class348_sub49.readUnsignedByte(255), this)
-                this.aClass239_Sub26_7272 = DetailLevelOptionState(class348_sub49.readUnsignedByte(i + -30624), this)
-                if (i_0_ >= 20) this.aClass239_Sub26_7215 = DetailLevelOptionState(class348_sub49.readUnsignedByte(255), this)
-                else this.aClass239_Sub26_7215 = DetailLevelOptionState(this.aClass239_Sub26_7272!!.method1838(-32350), this)
-                this.aClass239_Sub26_7260 = DetailLevelOptionState(class348_sub49.readUnsignedByte(255), this)
-                this.aClass239_Sub26_7234 = DetailLevelOptionState(class348_sub49.readUnsignedByte(255), this)
-                if (i_0_ >= 21) this.aClass239_Sub26_7245 = DetailLevelOptionState(class348_sub49.readUnsignedByte(255), this)
-                else this.aClass239_Sub26_7245 = DetailLevelOptionState(this.aClass239_Sub26_7260!!.method1838(-32350), this)
+                this.aClass239_Sub5_7240 = StereoSoundOptionState(class348_sub49.readUnsignedByte(255), this)
+                this.aClass239_Sub26_7272 = SoundLevelOptionState(class348_sub49.readUnsignedByte(i + -30624), this)
+                if (i_0_ >= 20) this.aClass239_Sub26_7215 = SoundLevelOptionState(class348_sub49.readUnsignedByte(255), this)
+                else this.aClass239_Sub26_7215 = SoundLevelOptionState(this.aClass239_Sub26_7272!!.method1838(-32350), this)
+                this.aClass239_Sub26_7260 = SoundLevelOptionState(class348_sub49.readUnsignedByte(255), this)
+                this.aClass239_Sub26_7234 = SoundLevelOptionState(class348_sub49.readUnsignedByte(255), this)
+                if (i_0_ >= 21) this.aClass239_Sub26_7245 = SoundLevelOptionState(class348_sub49.readUnsignedByte(255), this)
+                else this.aClass239_Sub26_7245 = SoundLevelOptionState(this.aClass239_Sub26_7260!!.method1838(-32350), this)
                 if (i_0_ >= 1) {
                     class348_sub49.readUnsignedShort(842397944)
                     class348_sub49.readUnsignedShort(842397944)
@@ -168,12 +168,12 @@ class DisplaySettingsConfig : LinkedListNode {
         if (bool || this.aClass239_Sub17_7263 == null) this.aClass239_Sub17_7263 = ParticleDetailOptionState(this)
         if (bool || this.aClass239_Sub19_7257 == null) this.aClass239_Sub19_7257 = NoOpGraphicsOptionState(this)
         if (bool || this.aClass239_Sub11_7265 == null) this.aClass239_Sub11_7265 = BinaryGraphicsOptionState(this)
-        if (bool || this.aClass239_Sub26_7272 == null) this.aClass239_Sub26_7272 = DetailLevelOptionState(this)
-        if (bool || this.aClass239_Sub26_7234 == null) this.aClass239_Sub26_7234 = DetailLevelOptionState(this)
-        if (bool || this.aClass239_Sub26_7215 == null) this.aClass239_Sub26_7215 = DetailLevelOptionState(this)
-        if (bool || this.aClass239_Sub26_7260 == null) this.aClass239_Sub26_7260 = DetailLevelOptionState(this)
-        if (bool || this.aClass239_Sub26_7245 == null) this.aClass239_Sub26_7245 = DetailLevelOptionState(this)
-        if (bool || this.aClass239_Sub5_7240 == null) this.aClass239_Sub5_7240 = SimpleToggleOptionState(this)
+        if (bool || this.aClass239_Sub26_7272 == null) this.aClass239_Sub26_7272 = SoundLevelOptionState(this)
+        if (bool || this.aClass239_Sub26_7234 == null) this.aClass239_Sub26_7234 = SoundLevelOptionState(this)
+        if (bool || this.aClass239_Sub26_7215 == null) this.aClass239_Sub26_7215 = SoundLevelOptionState(this)
+        if (bool || this.aClass239_Sub26_7260 == null) this.aClass239_Sub26_7260 = SoundLevelOptionState(this)
+        if (bool || this.aClass239_Sub26_7245 == null) this.aClass239_Sub26_7245 = SoundLevelOptionState(this)
+        if (bool || this.aClass239_Sub5_7240 == null) this.aClass239_Sub5_7240 = StereoSoundOptionState(this)
     }
 
     private fun method3424(i: Int, class348_sub49: ByteBuffer?) {
@@ -217,12 +217,12 @@ class DisplaySettingsConfig : LinkedListNode {
                             this.aClass239_Sub17_7263 = ParticleDetailOptionState(class348_sub49.readUnsignedByte(255), this)
                             this.aClass239_Sub19_7257 = NoOpGraphicsOptionState(class348_sub49.readUnsignedByte(255), this)
                             this.aClass239_Sub11_7265 = BinaryGraphicsOptionState(class348_sub49.readUnsignedByte(255), this)
-                            this.aClass239_Sub26_7272 = DetailLevelOptionState(class348_sub49.readUnsignedByte(255), this)
-                            this.aClass239_Sub26_7234 = DetailLevelOptionState(class348_sub49.readUnsignedByte(255), this)
-                            this.aClass239_Sub26_7215 = DetailLevelOptionState(class348_sub49.readUnsignedByte(255), this)
-                            this.aClass239_Sub26_7260 = DetailLevelOptionState(class348_sub49.readUnsignedByte(255), this)
-                            this.aClass239_Sub26_7245 = DetailLevelOptionState(class348_sub49.readUnsignedByte(i + -670), this)
-                            this.aClass239_Sub5_7240 = SimpleToggleOptionState(class348_sub49.readUnsignedByte(255), this)
+                            this.aClass239_Sub26_7272 = SoundLevelOptionState(class348_sub49.readUnsignedByte(255), this)
+                            this.aClass239_Sub26_7234 = SoundLevelOptionState(class348_sub49.readUnsignedByte(255), this)
+                            this.aClass239_Sub26_7215 = SoundLevelOptionState(class348_sub49.readUnsignedByte(255), this)
+                            this.aClass239_Sub26_7260 = SoundLevelOptionState(class348_sub49.readUnsignedByte(255), this)
+                            this.aClass239_Sub26_7245 = SoundLevelOptionState(class348_sub49.readUnsignedByte(i + -670), this)
+                            this.aClass239_Sub5_7240 = StereoSoundOptionState(class348_sub49.readUnsignedByte(255), this)
                             method3423(false, 31286)
                         }
                     } else {

@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import DetailLevelOptionState.Companion.method1837
+import SoundLevelOptionState.Companion.method1837
 import direct.Direct3dModel
 
 /* Class183 - Decompiled by JODE

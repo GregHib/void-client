@@ -4,7 +4,7 @@ import direct.Direct3dModel
 /* Class239_Sub5 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SimpleToggleOptionState : GraphicsOptionState {
+class StereoSoundOptionState : GraphicsOptionState {
     override fun method1710(i: Int): Int {
         anInt5892++
         if (i != 20014) return 98
@@ -65,7 +65,7 @@ class SimpleToggleOptionState : GraphicsOptionState {
         fun method1740(i: Int, i_2_: Int, bool: Boolean): Boolean {
             if (bool != false) return true
             anInt5890++
-            return DetailLevelOptionState.method1833((-128).toByte(), i_2_, i) || Direct3dModel.method3200(i_2_, i, 96.toByte())
+            return SoundLevelOptionState.method1833((-128).toByte(), i_2_, i) || Direct3dModel.method3200(i_2_, i, 96.toByte())
         }
 
         @JvmStatic

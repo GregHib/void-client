@@ -116,7 +116,7 @@ class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, boo
         fun method2129(i: Byte) {
             anInt8494++
             CameraRotationStub.aRenderer326!!.method3638(RenderNodeStatics.aAbstractCameraTransform_9720)
-            CameraRotationStub.aRenderer326!!.DA(MediaStreamClient.anInt3202, SimpleToggleOptionState.anInt5886, Gl3dTexture.anInt8630, ProjectileConfigUtil.anInt394)
+            CameraRotationStub.aRenderer326!!.DA(MediaStreamClient.anInt3202, StereoSoundOptionState.anInt5886, Gl3dTexture.anInt8630, ProjectileConfigUtil.anInt394)
         }
 
         @JvmStatic

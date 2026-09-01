@@ -5,7 +5,7 @@ import RemoveRoofLightingDetailOptionState.Companion.method1781
 import ParticleDetailOptionState.Companion.method1795
 import CameraDistanceOptionState.Companion.method1725
 import TextureOptionState.Companion.method1821
-import SimpleToggleOptionState.Companion.method1742
+import StereoSoundOptionState.Companion.method1742
 import SocketFactory.Companion.method2049
 import WaterMaterialPass.Companion.method2148
 import CubemapTextureImplSource.Companion.method2271
@@ -112,7 +112,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                     if (string == "nativememerror") throw Exception("OOM MPR")//OutOfMemoryError("native(MPR")
                     try {
                         if (string.equals("printfps", ignoreCase = true)) {
-                            method94(("FPS: " + SimpleToggleOptionState.anInt5891), -58)
+                            method94(("FPS: " + StereoSoundOptionState.anInt5891), -58)
                             return
                         }
                         if (string.equals("occlude", ignoreCase = true)) {

@@ -246,8 +246,8 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                 }
                                                 if (PixelBlender.aBoolean3811) {
                                                     var i_39_ = -256
-                                                    if (SimpleToggleOptionState.anInt5891 < 20) i_39_ = -65536
-                                                    GameAppletFrame.aRSFont_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_38_, i_39_, i_37_, -128, -1)
+                                                    if (StereoSoundOptionState.anInt5891 < 20) i_39_ = -65536
+                                                    GameAppletFrame.aRSFont_20!!.method2569("Fps:" + (StereoSoundOptionState.anInt5891), i_38_, i_39_, i_37_, -128, -1)
                                                     i_38_ += 15
                                                     var i_40_ = (((PlatformRuntime.totalMemory()) + -(PlatformRuntime.freeMemory())) / 1024L).toInt()
                                                     var i_41_ = -256

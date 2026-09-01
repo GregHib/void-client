@@ -305,7 +305,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         if (!PixelBlender.aBoolean3811) break
                         val i_22_ = -5 + i_11_ + i_12_
                         var i_23_ = -8 + i_13_ + i_14_
-                        GameAppletFrame.aRSFont_20!!.method2569("Fps:" + (SimpleToggleOptionState.anInt5891), i_23_, 16776960, i_22_, i + -116, -1)
+                        GameAppletFrame.aRSFont_20!!.method2569("Fps:" + (StereoSoundOptionState.anInt5891), i_23_, 16776960, i_22_, i + -116, -1)
                         i_23_ -= 15
                         val i_24_ = ((PlatformRuntime.totalMemory() + -PlatformRuntime.freeMemory()) / 1024L).toInt()
                         var i_25_ = 16776960

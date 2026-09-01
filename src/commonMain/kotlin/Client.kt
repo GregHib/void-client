@@ -141,7 +141,7 @@ import CameraDistanceOptionState.Companion.method1724
 import CustomCursorOptionState.Companion.method1816
 import TextureOptionState.Companion.method1822
 import DisplayModeOptionState.Companion.method1832
-import DetailLevelOptionState.Companion.method1835
+import SoundLevelOptionState.Companion.method1835
 import DefaultGraphicsOptionState.Companion.method1841
 import GroundDecorOptionState.Companion.method1738
 import BrightnessOptionState.Companion.method1746
@@ -3821,10 +3821,10 @@ class Client : GameAppletFrame() {
             }
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_7105) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255)
-                if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i] = FloorOverlayDefinition()
+                if (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255) == 0) SoundLevelOptionState.aFloorOverlayDefinitionArray6114!![i] = FloorOverlayDefinition()
                 else {
                     CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197--
-                    DetailLevelOptionState.aFloorOverlayDefinitionArray6114!![i] = FloorOverlayDefinition(CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
+                    SoundLevelOptionState.aFloorOverlayDefinitionArray6114!![i] = FloorOverlayDefinition(CircleRasterizer.aClass348_Sub49_Sub2_3813!!)
                 }
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 MapAreaDefinition.anInt2523 = ResourceLoaderThread.anInt3918
@@ -4522,7 +4522,7 @@ class Client : GameAppletFrame() {
             anInt4028++
             var i_3_ = -1
             var i_4_ = 0
-            if (GlGroundShaderPass.anInt7396 < class318_sub1_sub3_sub3.anInt10239) DetailLevelOptionState.method1834(class318_sub1_sub3_sub3, (-16).toByte())
+            if (GlGroundShaderPass.anInt7396 < class318_sub1_sub3_sub3.anInt10239) SoundLevelOptionState.method1834(class318_sub1_sub3_sub3, (-16).toByte())
             else if (GlGroundShaderPass.anInt7396 <= (class318_sub1_sub3_sub3.anInt10300)) method1041(-1, class318_sub1_sub3_sub3)
             else {
                 method1600(false, 0, class318_sub1_sub3_sub3)

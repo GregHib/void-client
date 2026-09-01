@@ -179,7 +179,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         ByteBufferStatics.aLongArray7206!![anInt2071] = l
         if (l_2_ != 0L && l_2_ < l) {
             val i_3_ = (l - l_2_).toInt()
-            SimpleToggleOptionState.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
+            StereoSoundOptionState.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
         }
         anInt2071 = anInt2071 - -1 and 0x1f
         if (ParticleAmountConfig.anInt2127++ > 50) {

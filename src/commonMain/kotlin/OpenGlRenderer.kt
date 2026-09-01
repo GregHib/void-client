@@ -1289,7 +1289,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         GrayscaleEffect.aFloat9204 = f_139_
         ActiveMapRegion.aFloat5654 = f
         anInt7685++
-        DetailLevelOptionState.aFloat6120 = f_138_
+        SoundLevelOptionState.aFloat6120 = f_138_
     }
 
     override fun method3701(canvas: Canvas?) {

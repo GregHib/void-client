@@ -465,7 +465,7 @@ class SceneNodeDeque {
                                 val i_13_ = RadialTextureNode.anInt9341
                                 GlRectangleTexture.method254(2, (-124).toByte())
                                 FrameStatsReset.method1135(0)
-                                SimpleToggleOptionState.method1741(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 118.toByte())
+                                StereoSoundOptionState.method1741(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                 Renderer.anInt4581 = -1
                                 if (InboundPacketHeader.aInboundPacketHeader_6584 != InboundPacketHeader.aInboundPacketHeader_304) method3120(-92)
                                 else RegionMapDecoder.method853(99.toByte())
@@ -488,7 +488,7 @@ class SceneNodeDeque {
                                     NpcDefinition.anInt2955 = 0
                                     GlRectangleTexture.method254(15, (-120).toByte())
                                     WidgetRedrawTracker.method2330(86.toByte())
-                                    SimpleToggleOptionState.method1741(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 118.toByte())
+                                    StereoSoundOptionState.method1741(CircleRasterizer.aClass348_Sub49_Sub2_3813!!, 118.toByte())
                                     if (i_15_ != (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197)) throw RuntimeException("lswpr pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + i_15_)
                                     InboundPacketHeader.aInboundPacketHeader_6584 = null
                                 }
