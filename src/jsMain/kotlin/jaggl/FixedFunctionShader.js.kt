@@ -36,7 +36,9 @@ void main() {
     vec4 viewPos = uModelView * aPosition;
     gl_Position = uProjection * viewPos;
 
-    vec3 eyeNormal = normalize(mat3(uModelView) * aNormal);
+    vec3 rawEyeNormal = mat3(uModelView) * aNormal;
+    float eyeNormalLenSq = dot(rawEyeNormal, rawEyeNormal);
+    vec3 eyeNormal = eyeNormalLenSq > 0.0 ? rawEyeNormal * inversesqrt(eyeNormalLenSq) : vec3(0.0);
 
     if (uLightingEnabled) {
         vec4 lit = uGlobalAmbient;
@@ -53,7 +55,7 @@ void main() {
                     vec3 k = uLightAttenuation[i];
                     atten = 1.0 / max(k.x + k.y * dist + k.z * dist * dist, 0.0001);
                 }
-                float diff = max(dot(eyeNormal, lightDir), 0.0);
+                float diff = max(dot(rawEyeNormal, lightDir), 0.0);
                 lit += (uLightAmbient[i] + uLightDiffuse[i] * diff) * atten;
             }
         }
