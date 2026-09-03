@@ -242,7 +242,9 @@ open class SoundChannelMixer {
             }
             if (bool_35_) {
                 ParticleDefLoader.aBackgroundWorkerThread_2462!!.aBoolean3221 = true
-                while (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aBoolean3223) method2161(68.toByte(), 50L)
+                if (!executeWorkerTasksInline) {
+                    while (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aBoolean3223) method2161(68.toByte(), 50L)
+                }
                 ParticleDefLoader.aBackgroundWorkerThread_2462 = null
             }
         }
