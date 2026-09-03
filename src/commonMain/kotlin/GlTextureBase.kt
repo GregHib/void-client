@@ -29,15 +29,15 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
         anInt5104++
         val i_0_ = this.aGlRenderDevice_5082!!.method3877((-126).toByte())
         if (i > -21) this.aGlRenderDevice_5082 = null
-        val i_1_ = (this.aGlRenderDevice_5082!!.anIntArray9927!![i_0_])
-        if (this.anInt5093 != i_1_) {
-            if (i_1_ != 0) {
-                glBindTexture(i_1_, 0)
-                glDisable(i_1_)
-            }
-            glEnable(this.anInt5093)
-            this.aGlRenderDevice_5082!!.anIntArray9927!![i_0_] = this.anInt5093
-        }
+        // Always re-enable this texture's target rather than eliding based on the cached
+        // anIntArray9927[i_0_]: that cache only tracks what THIS renderer (NativeRenderer/
+        // GlRenderDevice) last enabled at this slot, and can't see texture enable/bind calls
+        // issued by the separate OpenGlRenderer (WaterMaterialPass/ArbFogMaterialPass) against
+        // the same real GL unit - see the matching comment on NativeRenderer.method3850.
+        // glEnable unconditionally overwrites the shim's per-unit target/enabled state, so
+        // skipping the paired glDisable-of-the-old-target here changes nothing observable.
+        glEnable(this.anInt5093)
+        this.aGlRenderDevice_5082!!.anIntArray9927!![i_0_] = this.anInt5093
         glBindTexture(this.anInt5093, anInt5096)
     }
 

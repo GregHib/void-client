@@ -158,12 +158,28 @@ class CubemapTextureGlSource internal constructor(var_ha_Sub2: OpenGlRenderer, i
             class206!!.method1500(2983, 0)
             aHa_Sub2_8707.method3770(-422613672, class206)
             aHa_Sub2_8707.method3738(i + -80573, 1)
-            if (i != 65534) return true
+            if (i != 65534) {
+                // Restore the fog/lighting/blend/depth-mask state disabled above (lines 33-36) -
+                // without this, every caller that hits this early return leaves those disabled
+                // for the main scene, not just this offscreen cubemap-face render.
+                aHa_Sub2_8707.method3807(true, i + -65532)
+                aHa_Sub2_8707.method3728(true, i + -65411)
+                aHa_Sub2_8707.method3752(114, true)
+                aHa_Sub2_8707.method3748(i + -65534, true)
+                return true
+            }
             aHa_Sub2_8707.method3771((-95).toByte(), null)
             aHa_Sub2_8707.method3729(8448, 121.toByte(), 8448)
             aHa_Sub2_8707.method3738(-15039, 0)
             aHa_Sub2_8707.method3771((-88).toByte(), null)
             glPopAttrib()
+            // Same restore as above for the non-early-return path: glPopAttrib() only restores
+            // the pushed GL_VIEWPORT_BIT state, not the shim's own fog/lighting/blend/depth-mask
+            // flags that were explicitly disabled at the top of this function.
+            aHa_Sub2_8707.method3807(true, i + -65532)
+            aHa_Sub2_8707.method3728(true, i + -65411)
+            aHa_Sub2_8707.method3752(114, true)
+            aHa_Sub2_8707.method3748(i + -65534, true)
             aHa_Sub2_8707.KA(anIntArray6635!![0], anIntArray6635!![1], anIntArray6635!![2], anIntArray6635!![3])
             if (bool && !aHa_Sub2_8707.aBoolean7847) aClass258_Sub2_8701.method1950(69)
             return bool

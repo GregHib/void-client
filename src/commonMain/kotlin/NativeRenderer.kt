@@ -302,38 +302,41 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     fun method3814(bool: Boolean, bool_20_: Boolean, i: Int, i_21_: Byte) {
         if (i_21_ >= 27) {
             anInt8081++
-            if (anInt8104 != i || !aBoolean8153 == this.aBoolean8160) {
-                var interface18_impl3: Renderable2dTexture? = null
-                var i_22_ = 0
-                var i_23_: Byte = 0
-                var i_24_ = 0
-                var i_25_ = if (this.aBoolean8160) 3.toByte() else 0.toByte()
-                if (i >= 0) {
-                    interface18_impl3 = aMaterialTextureCache_8137!!.method3587((-97).toByte(), i)
-                    val class12 = this.aRenderConfig4579!!.method3(i, -6662)
-                    if (class12!!.aByte198.toInt() == 0 && class12.aByte211.toInt() == 0) method3879(-8629)
-                    else {
-                        val i_26_ = if (!class12.aBoolean199) 128 else 64
-                        val i_27_ = i_26_ * 50
-                        val class101_sub2 = method3820(false)
-                        class101_sub2.method916(((this.anInt8146 % i_27_ * class12.aByte211).toFloat() / i_27_.toFloat()), true, 0.0f, ((class12.aByte198 * (this.anInt8146 % i_27_)).toFloat() / i_27_.toFloat()))
-                        method3853(-32, WaterDetailOptionState.aConfigFlagUtil_6030)
-                    }
-                    i_22_ = class12.anInt203
-                    if (!this.aBoolean8160) {
-                        i_23_ = class12.aByte202
-                        i_25_ = class12.aByte213
-                        i_24_ = class12.anInt206
-                    }
-                } else method3879(-8629)
-                method3875(i_23_.toInt(), bool_20_, bool, i_25_.toInt(), i_24_, -103)
-                if (aAbstractRenderPass_8143 == null) {
-                    method3850((-86).toByte(), interface18_impl3)
-                    method3923(true, i_22_)
-                } else aAbstractRenderPass_8143!!.method3527(i_22_, interface18_impl3, -16776)
-                aBoolean8153 = this.aBoolean8160
-                anInt8104 = i
-            }
+            // Always re-issue rather than eliding when i/aBoolean8160 already match anInt8104/
+            // aBoolean8153: this cache only tracks what THIS renderer last selected as the
+            // current material texture, and can't see texture bind calls issued by the separate
+            // OpenGlRenderer (WaterMaterialPass/ArbFogMaterialPass) against the same real GL
+            // state - see the matching comment on method3850.
+            var interface18_impl3: Renderable2dTexture? = null
+            var i_22_ = 0
+            var i_23_: Byte = 0
+            var i_24_ = 0
+            var i_25_ = if (this.aBoolean8160) 3.toByte() else 0.toByte()
+            if (i >= 0) {
+                interface18_impl3 = aMaterialTextureCache_8137!!.method3587((-97).toByte(), i)
+                val class12 = this.aRenderConfig4579!!.method3(i, -6662)
+                if (class12!!.aByte198.toInt() == 0 && class12.aByte211.toInt() == 0) method3879(-8629)
+                else {
+                    val i_26_ = if (!class12.aBoolean199) 128 else 64
+                    val i_27_ = i_26_ * 50
+                    val class101_sub2 = method3820(false)
+                    class101_sub2.method916(((this.anInt8146 % i_27_ * class12.aByte211).toFloat() / i_27_.toFloat()), true, 0.0f, ((class12.aByte198 * (this.anInt8146 % i_27_)).toFloat() / i_27_.toFloat()))
+                    method3853(-32, WaterDetailOptionState.aConfigFlagUtil_6030)
+                }
+                i_22_ = class12.anInt203
+                if (!this.aBoolean8160) {
+                    i_23_ = class12.aByte202
+                    i_25_ = class12.aByte213
+                    i_24_ = class12.anInt206
+                }
+            } else method3879(-8629)
+            method3875(i_23_.toInt(), bool_20_, bool, i_25_.toInt(), i_24_, -103)
+            if (aAbstractRenderPass_8143 == null) {
+                method3850((-86).toByte(), interface18_impl3)
+                method3923(true, i_22_)
+            } else aAbstractRenderPass_8143!!.method3527(i_22_, interface18_impl3, -16776)
+            aBoolean8153 = this.aBoolean8160
+            anInt8104 = i
             anInt8100 = anInt8100 and 0x7.inv()
         }
     }

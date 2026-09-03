@@ -344,11 +344,13 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     }
 
     fun method3728(bool: Boolean, i: Int) {
-        if (aBoolean7784 != bool) {
-            aBoolean7784 = bool
-            method3768((-121).toByte())
-            anInt7765 = anInt7765 and 0x7.inv()
-        }
+        // Always re-issue rather than eliding when bool already matches aBoolean7784: this
+        // cache only tracks what THIS renderer last set for GL_LIGHTING, and can't see
+        // glEnable/glDisable calls the separate NativeRenderer/GlRenderDevice issues for the
+        // same real GL state (see the matching comment on NativeRenderer.method3850).
+        aBoolean7784 = bool
+        method3768((-121).toByte())
+        anInt7765 = anInt7765 and 0x7.inv()
         if (i < 18) anInt7804 = -98
         anInt7683++
     }
@@ -363,19 +365,17 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
     }
 
     fun method3729(i: Int, i_5_: Byte, i_6_: Int) {
+        // Always re-issue rather than eliding when i/i_6_ already match anInt7804/anInt7861:
+        // this cache only tracks what THIS renderer last set for unit 0's GL_TEXTURE_ENV
+        // combine mode, and can't see glTexEnvi calls the separate NativeRenderer/
+        // GlRenderDevice issues for the same real GL state (see the matching comment on
+        // NativeRenderer.method3850).
         if (anInt7876 == 0) {
-            var bool = false
-            if (anInt7804 != i) {
-                glTexEnvi(8960, 34161, i)
-                bool = true
-                anInt7804 = i
-            }
-            if (i_6_ != anInt7861) {
-                glTexEnvi(8960, 34162, i_6_)
-                anInt7861 = i_6_
-                bool = true
-            }
-            if (bool) anInt7765 = anInt7765 and 0x1d.inv()
+            glTexEnvi(8960, 34161, i)
+            glTexEnvi(8960, 34162, i_6_)
+            anInt7804 = i
+            anInt7861 = i_6_
+            anInt7765 = anInt7765 and 0x1d.inv()
         } else {
             glTexEnvi(8960, 34161, i)
             glTexEnvi(8960, 34162, i_6_)

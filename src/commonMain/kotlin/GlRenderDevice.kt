@@ -1021,21 +1021,21 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
                     i_80_++
                 }
             }
-            if (aBoolean9910 != bool_76_) {
-                if (bool_76_) glEnableClientState(32884)
-                else glDisableClientState(32884)
-                aBoolean9910 = bool_76_
-            }
-            if (aBoolean9912 == !bool_75_) {
-                if (bool_75_) glEnableClientState(32885)
-                else glDisableClientState(32885)
-                aBoolean9912 = bool_75_
-            }
-            if (!bool != !aBoolean9908) {
-                if (!bool) glDisableClientState(32886)
-                else glEnableClientState(32886)
-                aBoolean9908 = bool
-            }
+            // Always re-issue rather than eliding when bool_76_/bool_75_/bool already match
+            // aBoolean9910/aBoolean9912/aBoolean9908: these caches only track what THIS
+            // renderer last enabled for these client vertex arrays, and can't see
+            // glEnableClientState/glDisableClientState calls the separate OpenGlRenderer issues
+            // for the same real GL client state (see the matching comment on
+            // NativeRenderer.method3850).
+            if (bool_76_) glEnableClientState(32884)
+            else glDisableClientState(32884)
+            aBoolean9910 = bool_76_
+            if (bool_75_) glEnableClientState(32885)
+            else glDisableClientState(32885)
+            aBoolean9912 = bool_75_
+            if (!bool) glDisableClientState(32886)
+            else glEnableClientState(32886)
+            aBoolean9908 = bool
             if (i_74_ <= anInt9909) {
                 if (anInt9909 > i_74_) {
                     var i_81_ = i_74_

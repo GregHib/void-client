@@ -706,6 +706,13 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                 this.aHa_Sub2_8272!!.method3775(false, 0, 770, 5890)
                 this.aHa_Sub2_8272!!.method3771((-96).toByte(), null)
                 this.aHa_Sub2_8272!!.L(i_209_, i_210_, (this.aHa_Sub2_8272!!.anInt7813))
+                // The fog colour saved above is restored, but lighting (method3728) and the
+                // depth mask (method3748) disabled for this shadow sub-pass at lines 691-692
+                // were not - leaving both stuck off for every draw afterward until the next
+                // full preset re-run, surfacing as terrain/water rendering unlit/overdrawn
+                // whenever a tile with shadow casters was in view.
+                this.aHa_Sub2_8272!!.method3728((0x7 and (this.anInt8235)) != 0, 98)
+                this.aHa_Sub2_8272!!.method3748(0, true)
             }
             if (aSoftwareSpriteRaster_8266 != null) {
                 glPushMatrix()
