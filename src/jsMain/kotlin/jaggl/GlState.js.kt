@@ -49,7 +49,7 @@ class GlState(val gl: WebGL2RenderingContext) {
     val renderbuffers = IntHandleTable<WebGLRenderbuffer>()
     val glObjects = LongHandleTable<ShaderOrProgram>()
     val uniforms = IntHandleTable<WebGLUniformLocation>()
-    val arbPrograms = IntHandleTable<String>()
+    internal val arbPrograms = IntHandleTable<ArbProgramRuntime>()
 
     val matrixStack = MatrixStack()
     val displayLists = DisplayListManager()
@@ -69,12 +69,19 @@ class GlState(val gl: WebGL2RenderingContext) {
     var activeTextureUnit = 0
     var boundTexture2D = arrayOfNulls<WebGLTexture>(32)
     var boundTextureCubeMap = arrayOfNulls<WebGLTexture>(32)
+    var boundTexture3D = arrayOfNulls<WebGLTexture>(32)
     var boundArrayBuffer: WebGLBuffer? = null
     var boundElementArrayBuffer: WebGLBuffer? = null
     var boundProgram: WebGLProgram? = null
     var boundProgramObj: ShaderOrProgram.Program? = null
     var boundFramebuffer: WebGLFramebuffer? = null
     var readbackFramebuffer: WebGLFramebuffer? = null
+
+    // ARB vertex program state (GL_VERTEX_PROGRAM_ARB = 34336 emulation).
+    var vertexProgramEnabled = false
+    internal var boundVertexProgram: ArbProgramRuntime? = null
+    // GL_PROGRAM_ERROR_POSITION_ARB: -1 means no error after the last program load.
+    var arbErrorPosition = -1
 
     val clientElementBuffer: WebGLBuffer by lazy { gl.createBuffer()!! }
 
@@ -92,7 +99,26 @@ class GlState(val gl: WebGL2RenderingContext) {
     var fogEnabled = false
     var alphaTestEnabled = false
     var ffpStateDirty = true
+    // Separate from ffpStateDirty: the fixed-function *vertex* lighting uniforms
+    // (uLightingEnabled/uGlobalAmbient/uLight*) live only in fixedFunctionShader.program and
+    // are never touched by the ARB vertex-program path (which uploads its own uArbLight*
+    // uniforms unconditionally every draw). ffpStateDirty, by contrast, is also consumed by
+    // uploadFfFragmentUniforms on behalf of whichever program draws next (FF or ARB). Sharing
+    // one flag between these meant an ARB draw could silently consume ffpStateDirty and skip
+    // the fixed-function lighting re-upload for the rest of that frame - surfacing as
+    // terrain/objects flipping between stale and fresh lighting depending on whether a water
+    // (ARB) draw happened to run first, i.e. camera-angle/visibility dependent.
+    var ffpLightingDirty = true
     val texEnvDirty = booleanArrayOf(true, true, true)
+    // The fixed-function fragment stage is shared (by source) between the fixed-function
+    // program and every transpiled ARB vertex program, but each is a distinct WebGLProgram
+    // with independent uniform storage. texEnvDirty/ffpStateDirty alone would only reach
+    // whichever program happens to draw first after a state change; track which program last
+    // received the upload so a switch to a different program forces a full re-upload too.
+    internal var lastFragUniformProgram: WebGLProgram? = null
+    // TexGen state only feeds the fixed-function *vertex* stage (uTexGenMode); kept separate
+    // so transpiled-ARB draws can consume texEnvDirty without losing texgen updates.
+    val texGenDirty = booleanArrayOf(true, true, true)
     private var lastProjectionVersion = -1
     private val lastTextureMatrixVersion = intArrayOf(-1, -1, -1)
 
@@ -123,6 +149,9 @@ class GlState(val gl: WebGL2RenderingContext) {
     val fogColor = floatArrayOf(0f, 0f, 0f, 1f)
     var fogStart = 0f
     var fogEnd = 1f
+    private var lastLoggedFogStart = Float.NaN
+    private var lastLoggedFogEnd = Float.NaN
+    private val lastLoggedFogColor = floatArrayOf(Float.NaN, Float.NaN, Float.NaN)
     val globalAmbient = floatArrayOf(0.2f, 0.2f, 0.2f, 1f)
     val lightEnabled = BooleanArray(MAX_LIGHTS)
     val lightAmbient = Array(MAX_LIGHTS) { floatArrayOf(0f, 0f, 0f, 1f) }
@@ -141,6 +170,15 @@ class GlState(val gl: WebGL2RenderingContext) {
     fun prepareDraw() {
         val program = boundProgramObj
         if (program == null) {
+            // Transpiled ARB vertex program path: the ARB assembly (paired with the shared
+            // fixed-function fragment stage) replaces the fixed-function vertex stage.
+            val arb = boundVertexProgram
+            if (vertexProgramEnabled && arb != null &&
+                arb.status == ArbProgramRuntime.Status.OK && arb.useAndUpload(gl, this)
+            ) {
+                return
+            }
+
             gl.useProgram(fixedFunctionShader.program)
             val s = fixedFunctionShader
             gl.uniformMatrix4fv(s.uModelView, false, matrixStack.modelview().asFloat32Array())
@@ -160,8 +198,8 @@ class GlState(val gl: WebGL2RenderingContext) {
                 gl.uniformMatrix4fv(s.uTextureMatrixU[unit], false, m)
             }
 
-            if (ffpStateDirty) {
-                ffpStateDirty = false
+            if (ffpLightingDirty) {
+                ffpLightingDirty = false
                 gl.uniform1i(s.uLightingEnabled, if (lightingEnabled) 1 else 0)
                 gl.uniform4fv(s.uGlobalAmbient, globalAmbient.asFloat32Array())
                 for (i in 0 until MAX_LIGHTS) {
@@ -171,28 +209,16 @@ class GlState(val gl: WebGL2RenderingContext) {
                     gl.uniform4fv(s.uLightPosition[i], lightPosition[i].asFloat32Array())
                     gl.uniform3fv(s.uLightAttenuation[i], lightAttenuation[i].asFloat32Array())
                 }
-                gl.uniform1i(s.uAlphaTestEnabled, if (alphaTestEnabled) 1 else 0)
-                gl.uniform1i(s.uAlphaFunc, alphaFunc)
-                gl.uniform1f(s.uAlphaRef, alphaRef)
-                gl.uniform1i(s.uFogEnabled, if (fogEnabled) 1 else 0)
-                gl.uniform4fv(s.uFogColor, fogColor.asFloat32Array())
-                gl.uniform1f(s.uFogStart, fogStart)
-                gl.uniform1f(s.uFogEnd, fogEnd)
             }
+            val ffpWasDirty = ffpStateDirty
 
             for (unit in 0 until 3) {
-                val cube = textureTarget[unit] == GL_TEXTURE_CUBE_MAP
-                if (texEnvDirty[unit]) {
-                    texEnvDirty[unit] = false
+                if (texGenDirty[unit]) {
+                    texGenDirty[unit] = false
                     gl.uniform1i(s.uTexGenMode[unit], if (texGenEnabled[unit]) texGenMode[unit] else 0)
-                    gl.uniform1i(s.uUseTexture[unit], if (texturingEnabled[unit]) 1 else 0)
-                    gl.uniform1i(s.uCubeMap[unit], if (cube) 1 else 0)
-                    if (texturingEnabled[unit]) uploadCombine(s, unit)
-                }
-                if (unit > 0 && texturingEnabled[unit] && cube) {
-                    bindCubeSampler(CUBE_SAMPLER_UNIT + unit, boundTextureCubeMap[unit])
                 }
             }
+            uploadFfFragmentUniforms(gl, this, s.frag, s.program, ffpWasDirty)
             return
         }
         val c = program.compat ?: return
@@ -209,27 +235,26 @@ class GlState(val gl: WebGL2RenderingContext) {
         gl.uniform1f(c.fogEnd, fogEnd)
         gl.uniform1f(c.fogScale, fogRange)
         gl.uniform4fv(c.fogColor, fogColor.asFloat32Array())
+        if (fogStart != lastLoggedFogStart || fogEnd != lastLoggedFogEnd ||
+            fogColor[0] != lastLoggedFogColor[0] || fogColor[1] != lastLoggedFogColor[1] || fogColor[2] != lastLoggedFogColor[2]
+        ) {
+            lastLoggedFogStart = fogStart
+            lastLoggedFogEnd = fogEnd
+            lastLoggedFogColor[0] = fogColor[0]; lastLoggedFogColor[1] = fogColor[1]; lastLoggedFogColor[2] = fogColor[2]
+            println("[FOGDBG] compat-shader draw using fogStart=$fogStart fogEnd=$fogEnd fogScale=$fogRange color=(${fogColor[0]}, ${fogColor[1]}, ${fogColor[2]})")
+        }
     }
 
-    private fun bindCubeSampler(glUnit: Int, texture: WebGLTexture?) {
+    /** Binds [texture] as [target] on a reserved sampler unit, restoring the active unit. */
+    fun bindSampler(target: Int, glUnit: Int, texture: WebGLTexture?) {
         gl.activeTexture(WebGL2RenderingContext.TEXTURE0 + glUnit)
-        gl.bindTexture(GL_TEXTURE_CUBE_MAP, texture)
+        gl.bindTexture(target, texture)
         gl.activeTexture(WebGL2RenderingContext.TEXTURE0 + activeTextureUnit)
     }
 
-    private fun uploadCombine(s: FixedFunctionShader, unit: Int) {
-        gl.uniform1i(s.uCombineRgb[unit], combineRgb[unit])
-        gl.uniform1i(s.uCombineAlpha[unit], combineAlpha[unit])
-        gl.uniform3i(s.uSrcRgb[unit], source0Rgb[unit], source1Rgb[unit], source2Rgb[unit])
-        gl.uniform3i(s.uOpRgb[unit], operand0Rgb[unit], operand1Rgb[unit], operand2Rgb[unit])
-        gl.uniform3i(s.uSrcAlpha[unit], source0Alpha[unit], source1Alpha[unit], source2Alpha[unit])
-        gl.uniform3i(s.uOpAlpha[unit], operand0Alpha[unit], operand1Alpha[unit], operand2Alpha[unit])
-        gl.uniform4fv(s.uTexEnvColor[unit], textureEnvColor[unit].asFloat32Array())
-        gl.uniform2f(s.uEnvScale[unit], rgbScale[unit], alphaScale[unit])
-    }
-
     private fun boundTextureFor(target: Int): WebGLTexture? = when {
-        target == WebGL2RenderingContext.TEXTURE_2D -> boundTexture2D[activeTextureUnit]
+        target == WebGL2RenderingContext.TEXTURE_2D || target == GL_TEXTURE_1D -> boundTexture2D[activeTextureUnit]
+        target == GL_TEXTURE_3D -> boundTexture3D[activeTextureUnit]
         target == WebGL2RenderingContext.TEXTURE_CUBE_MAP || target in 34069..34074 ->
             boundTextureCubeMap[activeTextureUnit]
         else -> null

@@ -132,6 +132,8 @@ external class WebGL2RenderingContext {
         val RGB8: Int
         val R8: Int
         val RG8: Int
+        val RED: Int
+        val RG: Int
         val DEPTH_COMPONENT16: Int
         val DEPTH_COMPONENT24: Int
         val DEPTH24_STENCIL8: Int

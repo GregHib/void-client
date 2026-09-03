@@ -28,9 +28,15 @@ uniform vec4 uLightPosition[$MAX_LIGHTS];
 uniform vec3 uLightAttenuation[$MAX_LIGHTS];
 
 out vec4 vColor;
-out vec2 vTexCoord0;
+out vec3 vTexCoord0;
 out vec3 vTexCoord1;
 out vec3 vTexCoord2;
+
+// Transpiled ARB_position_invariant vertex programs (water, ground shader, fog pass) must
+// reproduce this exact transform bit-for-bit so their geometry doesn't z-fight against
+// fixed-function-rendered geometry at the same world position - see the matching invariant
+// declaration and comment in ArbVertexProgramTranspiler.buildGlsl().
+invariant gl_Position;
 
 void main() {
     vec4 viewPos = uModelView * aPosition;
@@ -64,7 +70,7 @@ void main() {
         vColor = aColor;
     }
 
-    vTexCoord0 = (uTextureMatrix * vec4(aTexCoord0, 0.0, 1.0)).xy;
+    vTexCoord0 = (uTextureMatrix * vec4(aTexCoord0, 0.0, 1.0)).xyz;
 
     vec3 reflected = reflect(normalize(viewPos.xyz), eyeNormal);
     for (int i = 1; i < 3; i++) {
@@ -88,18 +94,23 @@ void main() {
 
 private const val FRAGMENT_SOURCE = """#version 300 es
 precision mediump float;
+precision highp sampler3D;
 
 in vec4 vColor;
-in vec2 vTexCoord0;
+in vec3 vTexCoord0;
 in vec3 vTexCoord1;
 in vec3 vTexCoord2;
 out vec4 fragColor;
 
 uniform bool uUseTexture[3];
 uniform bool uCubeMap[3];
+uniform int uIs3D[3];
 uniform sampler2D uTexture0;
 uniform sampler2D uTexture1;
 uniform sampler2D uTexture2;
+uniform sampler3D uTexture3D0;
+uniform sampler3D uTexture3D1;
+uniform sampler3D uTexture3D2;
 uniform samplerCube uTextureCube1;
 uniform samplerCube uTextureCube2;
 uniform bool uAlphaTestEnabled;
@@ -186,10 +197,31 @@ bool alphaTestPasses(float a) {
     return true;
 }
 
+// The client's 3D textures (animated water normal/detail maps) are authored as
+// GL_LUMINANCE_ALPHA: one channel of intensity meant to be read back as (L,L,L,A). WebGL2's
+// texImage3D has no legacy-format path, so the shim uploads them as RG8 (R=luminance,
+// G=alpha) instead - reconstruct the original (L,L,L,A) reading here rather than exposing
+// WebGL's native (R,G,0,1) layout to the combine stage.
+vec4 sampleLuminanceAlpha3D(sampler3D s, vec3 coord) {
+    vec2 t = texture(s, coord).rg;
+    return vec4(t.r, t.r, t.r, t.g);
+}
+
 vec4 sampleUnit(int unit) {
-    if (unit == 0) return texture(uTexture0, vTexCoord0);
-    if (unit == 1) return uCubeMap[1] ? texture(uTextureCube1, vTexCoord1) : texture(uTexture1, vTexCoord1.xy);
-    return uCubeMap[2] ? texture(uTextureCube2, vTexCoord2) : texture(uTexture2, vTexCoord2.xy);
+    // 3D textures (the animated water normal map) are sampled with the texcoord's full vec3;
+    // the animated slice coordinate r arrives through the per-unit texture matrix.
+    if (unit == 0) {
+        if (uIs3D[0] != 0) return sampleLuminanceAlpha3D(uTexture3D0, vTexCoord0);
+        return texture(uTexture0, vTexCoord0.xy);
+    }
+    if (unit == 1) {
+        if (uCubeMap[1]) return texture(uTextureCube1, vTexCoord1);
+        if (uIs3D[1] != 0) return sampleLuminanceAlpha3D(uTexture3D1, vTexCoord1);
+        return texture(uTexture1, vTexCoord1.xy);
+    }
+    if (uCubeMap[2]) return texture(uTextureCube2, vTexCoord2);
+    if (uIs3D[2] != 0) return sampleLuminanceAlpha3D(uTexture3D2, vTexCoord2);
+    return texture(uTexture2, vTexCoord2.xy);
 }
 
 void main() {
@@ -209,6 +241,9 @@ void main() {
 }
 """
 
+/** Exposes the fixed-function fragment stage to the transpiled ARB vertex programs. */
+internal val FF_FRAGMENT_SOURCE: String = FRAGMENT_SOURCE
+
 class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
     val program: WebGLProgram
 
@@ -222,27 +257,10 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
     val uLightDiffuse: Array<WebGLUniformLocation?>
     val uLightPosition: Array<WebGLUniformLocation?>
     val uLightAttenuation: Array<WebGLUniformLocation?>
-    val uUseTexture: Array<WebGLUniformLocation?>
-    val uCubeMap: Array<WebGLUniformLocation?>
-    val uTexture: Array<WebGLUniformLocation?>
-    val uTextureCube: Array<WebGLUniformLocation?>
     val uTextureMatrixU: Array<WebGLUniformLocation?>
     val uTexGenMode: Array<WebGLUniformLocation?>
-    val uAlphaTestEnabled: WebGLUniformLocation?
-    val uAlphaFunc: WebGLUniformLocation?
-    val uAlphaRef: WebGLUniformLocation?
-    val uFogEnabled: WebGLUniformLocation?
-    val uFogColor: WebGLUniformLocation?
-    val uFogStart: WebGLUniformLocation?
-    val uFogEnd: WebGLUniformLocation?
-    val uCombineRgb: Array<WebGLUniformLocation?>
-    val uCombineAlpha: Array<WebGLUniformLocation?>
-    val uSrcRgb: Array<WebGLUniformLocation?>
-    val uOpRgb: Array<WebGLUniformLocation?>
-    val uSrcAlpha: Array<WebGLUniformLocation?>
-    val uOpAlpha: Array<WebGLUniformLocation?>
-    val uTexEnvColor: Array<WebGLUniformLocation?>
-    val uEnvScale: Array<WebGLUniformLocation?>
+    // Fragment-stage locations (shared layout with the transpiled ARB programs).
+    val frag: FfFragmentUniformLocations
 
     init {
         val vs = compile(WebGL2RenderingContext.VERTEX_SHADER, VERTEX_SOURCE)
@@ -262,12 +280,6 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
         uTextureMatrix = gl.getUniformLocation(program, "uTextureMatrix")
         uTextureMatrixU = perUnit("uTextureMatrixU")
         uTexGenMode = perUnit("uTexGenMode")
-        uCubeMap = perUnit("uCubeMap")
-        uTextureCube = arrayOf(
-            null,
-            gl.getUniformLocation(program, "uTextureCube1"),
-            gl.getUniformLocation(program, "uTextureCube2"),
-        )
         uLightingEnabled = gl.getUniformLocation(program, "uLightingEnabled")
         uGlobalAmbient = gl.getUniformLocation(program, "uGlobalAmbient")
         uLightEnabled = perLight("uLightEnabled")
@@ -275,32 +287,17 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
         uLightDiffuse = perLight("uLightDiffuse")
         uLightPosition = perLight("uLightPosition")
         uLightAttenuation = perLight("uLightAttenuation")
-        uUseTexture = perUnit("uUseTexture")
-        uTexture = arrayOf(
-            gl.getUniformLocation(program, "uTexture0"),
-            gl.getUniformLocation(program, "uTexture1"),
-            gl.getUniformLocation(program, "uTexture2"),
-        )
-        uAlphaTestEnabled = gl.getUniformLocation(program, "uAlphaTestEnabled")
-        uAlphaFunc = gl.getUniformLocation(program, "uAlphaFunc")
-        uAlphaRef = gl.getUniformLocation(program, "uAlphaRef")
-        uFogEnabled = gl.getUniformLocation(program, "uFogEnabled")
-        uFogColor = gl.getUniformLocation(program, "uFogColor")
-        uFogStart = gl.getUniformLocation(program, "uFogStart")
-        uFogEnd = gl.getUniformLocation(program, "uFogEnd")
-        uCombineRgb = perUnit("uCombineRgb")
-        uCombineAlpha = perUnit("uCombineAlpha")
-        uSrcRgb = perUnit("uSrcRgb")
-        uOpRgb = perUnit("uOpRgb")
-        uSrcAlpha = perUnit("uSrcAlpha")
-        uOpAlpha = perUnit("uOpAlpha")
-        uTexEnvColor = perUnit("uTexEnvColor")
-        uEnvScale = perUnit("uEnvScale")
+        frag = FfFragmentUniformLocations(gl, prog)
 
+        // Sampler unit assignment: 2D samplers on logical units 0..2, 3D samplers on the
+        // reserved units 3..5, cube samplers on the reserved units 6..7.
         gl.useProgram(program)
-        for (unit in 0 until 3) gl.uniform1i(uTexture[unit], unit)
-        gl.uniform1i(uTextureCube[1], CUBE_SAMPLER_UNIT + 1)
-        gl.uniform1i(uTextureCube[2], CUBE_SAMPLER_UNIT + 2)
+        for (unit in 0 until 3) {
+            gl.uniform1i(frag.texture2D[unit], unit)
+            gl.uniform1i(frag.texture3D[unit], FF_TEXTURE_3D_SAMPLER_UNIT + unit)
+        }
+        gl.uniform1i(frag.textureCube[1], CUBE_SAMPLER_UNIT + 1)
+        gl.uniform1i(frag.textureCube[2], CUBE_SAMPLER_UNIT + 2)
         gl.useProgram(null)
     }
 
@@ -322,4 +319,100 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
         }
         return shader
     }
+}
+
+/**
+ * Fragment-stage uniform locations for the fixed-function fragment source. Used both by the
+ * fixed-function program itself and by transpiled ARB vertex programs, which pair the same
+ * fragment stage with a generated vertex stage.
+ */
+class FfFragmentUniformLocations(gl: WebGL2RenderingContext, program: WebGLProgram) {
+    val useTexture: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uUseTexture[$it]") }
+    val cubeMap: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uCubeMap[$it]") }
+    val is3D: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uIs3D[$it]") }
+    val texture2D: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uTexture$it") }
+    val texture3D: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uTexture3D$it") }
+    val textureCube: Array<WebGLUniformLocation?> = arrayOf(
+        null,
+        gl.getUniformLocation(program, "uTextureCube1"),
+        gl.getUniformLocation(program, "uTextureCube2"),
+    )
+    val alphaTestEnabled: WebGLUniformLocation? = gl.getUniformLocation(program, "uAlphaTestEnabled")
+    val alphaFunc: WebGLUniformLocation? = gl.getUniformLocation(program, "uAlphaFunc")
+    val alphaRef: WebGLUniformLocation? = gl.getUniformLocation(program, "uAlphaRef")
+    val fogEnabled: WebGLUniformLocation? = gl.getUniformLocation(program, "uFogEnabled")
+    val fogColor: WebGLUniformLocation? = gl.getUniformLocation(program, "uFogColor")
+    val fogStart: WebGLUniformLocation? = gl.getUniformLocation(program, "uFogStart")
+    val fogEnd: WebGLUniformLocation? = gl.getUniformLocation(program, "uFogEnd")
+    val combineRgb: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uCombineRgb[$it]") }
+    val combineAlpha: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uCombineAlpha[$it]") }
+    val srcRgb: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uSrcRgb[$it]") }
+    val opRgb: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uOpRgb[$it]") }
+    val srcAlpha: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uSrcAlpha[$it]") }
+    val opAlpha: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uOpAlpha[$it]") }
+    val texEnvColor: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uTexEnvColor[$it]") }
+    val envScale: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uEnvScale[$it]") }
+}
+
+/**
+ * Uploads the fragment-side fixed-function state (alpha test, fog, texenv/combine, sampler
+ * rebindings for the reserved cube/3D units). [force] re-uploads the global state instead of
+ * waiting for the dirty flags.
+ *
+ * [program] identifies which compiled WebGLProgram this upload targets. The fixed-function
+ * fragment source is shared (verbatim) by the fixed-function program and every transpiled ARB
+ * vertex program, but each is a distinct linked program with its own uniform storage — a value
+ * uploaded into one is invisible to the others. [GlState.texEnvDirty]/[GlState.ffpStateDirty]
+ * are cleared globally by whichever program draws first after a state change, so without this
+ * check every *other* program that draws afterwards would keep stale (default-zero) uniforms:
+ * textures reporting as disabled, fog/alpha-test off, texenv colours black. Detecting a program
+ * switch and forcing a full re-upload in that case fixes that (surfaces as, e.g., HD water
+ * losing its texture/colour or flashing white depending on draw order / camera angle).
+ */
+fun uploadFfFragmentUniforms(gl: WebGL2RenderingContext, state: GlState, L: FfFragmentUniformLocations, program: WebGLProgram, force: Boolean) {
+    val programChanged = state.lastFragUniformProgram !== program
+    state.lastFragUniformProgram = program
+    val forceGlobal = force || programChanged
+    if (forceGlobal) {
+        state.ffpStateDirty = false
+        gl.uniform1i(L.alphaTestEnabled, if (state.alphaTestEnabled) 1 else 0)
+        gl.uniform1i(L.alphaFunc, state.alphaFunc)
+        gl.uniform1f(L.alphaRef, state.alphaRef)
+        gl.uniform1i(L.fogEnabled, if (state.fogEnabled) 1 else 0)
+        gl.uniform4fv(L.fogColor, state.fogColor.asFloat32Array())
+        gl.uniform1f(L.fogStart, state.fogStart)
+        gl.uniform1f(L.fogEnd, state.fogEnd)
+//        println("[FOGDBG] uploadFfFragmentUniforms programChanged=$programChanged fogEnabled=${state.fogEnabled} fogColor=(${state.fogColor[0]}, ${state.fogColor[1]}, ${state.fogColor[2]}) fogStart=${state.fogStart} fogEnd=${state.fogEnd}")
+    }
+    for (unit in 0 until 3) {
+        val cube = state.textureTarget[unit] == GL_TEXTURE_CUBE_MAP
+        val is3d = state.textureTarget[unit] == GL_TEXTURE_3D
+        if (state.texEnvDirty[unit] || programChanged) {
+            state.texEnvDirty[unit] = false
+            gl.uniform1i(L.useTexture[unit], if (state.texturingEnabled[unit]) 1 else 0)
+            gl.uniform1i(L.is3D[unit], if (state.texturingEnabled[unit] && is3d) 1 else 0)
+            gl.uniform1i(L.cubeMap[unit], if (cube) 1 else 0)
+            if (state.texturingEnabled[unit]) uploadFfCombine(gl, L, state, unit)
+//            println("[FOGDBG] texenv[$unit] programChanged=$programChanged texturingEnabled=${state.texturingEnabled[unit]} is3d=$is3d cube=$cube useTextureLocNull=${L.useTexture[unit] == null} boundTex2D=${state.boundTexture2D[unit] != null} boundTex3D=${state.boundTexture3D[unit] != null}")
+        }
+        // Copy the logical-unit binding onto the reserved sampler unit (2D samplers read
+        // their logical unit directly, cube/3D samplers read the reserved ones).
+        if (unit > 0 && state.texturingEnabled[unit] && cube) {
+            state.bindSampler(GL_TEXTURE_CUBE_MAP, CUBE_SAMPLER_UNIT + unit, state.boundTextureCubeMap[unit])
+        }
+        if (state.texturingEnabled[unit] && is3d) {
+            state.bindSampler(GL_TEXTURE_3D, FF_TEXTURE_3D_SAMPLER_UNIT + unit, state.boundTexture3D[unit])
+        }
+    }
+}
+
+private fun uploadFfCombine(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, state: GlState, unit: Int) {
+    gl.uniform1i(L.combineRgb[unit], state.combineRgb[unit])
+    gl.uniform1i(L.combineAlpha[unit], state.combineAlpha[unit])
+    gl.uniform3i(L.srcRgb[unit], state.source0Rgb[unit], state.source1Rgb[unit], state.source2Rgb[unit])
+    gl.uniform3i(L.opRgb[unit], state.operand0Rgb[unit], state.operand1Rgb[unit], state.operand2Rgb[unit])
+    gl.uniform3i(L.srcAlpha[unit], state.source0Alpha[unit], state.source1Alpha[unit], state.source2Alpha[unit])
+    gl.uniform3i(L.opAlpha[unit], state.operand0Alpha[unit], state.operand1Alpha[unit], state.operand2Alpha[unit])
+    gl.uniform4fv(L.texEnvColor[unit], state.textureEnvColor[unit].asFloat32Array())
+    gl.uniform2f(L.envScale[unit], state.rgbScale[unit], state.alphaScale[unit])
 }

@@ -17,10 +17,18 @@ private val CORE_IN_WEBGL2 = setOf(
     "GL_EXT_texture3D", "GL_EXT_framebuffer_object", "GL_EXT_framebuffer_blit",
     "GL_EXT_framebuffer_multisample", "GL_ARB_multisample", "GL_ARB_texture_float",
     "GL_ARB_half_float_pixel", "GL_ARB_shader_objects", "GL_ARB_shading_language_100",
+    // Vertex-program assembly is emulated: glProgramRawARB transpiles ARBvp1.0 assembly to
+    // GLSL ES 300 (ArbVertexProgramTranspiler) and program-enabled draws route through it.
+    "GL_ARB_vertex_program",
 )
 private val UNSUPPORTED_IN_WEBGL2 = setOf(
-    "GL_ARB_vertex_program", "GL_ARB_fragment_program", "GL_ARB_texture_rectangle",
+    "GL_ARB_fragment_program", "GL_ARB_texture_rectangle",
 )
+
+private const val GL_VERTEX_PROGRAM_ARB = 34336
+private const val GL_FRAGMENT_PROGRAM_ARB = 34820
+private const val GL_PROGRAM_ERROR_POSITION_ARB = 34379
+private const val GL_PROGRAM_FORMAT_ASCII_ARB = 34933
 
 private fun fixTarget(target: Int): Int =
     if (target == GL_TEXTURE_1D) WebGL2RenderingContext.TEXTURE_2D else target
@@ -234,7 +242,11 @@ actual class OpenGL {
 
         actual fun glEnable(arg0: Int) = exec {
             when (arg0) {
-                GL_LIGHTING -> { state.lightingEnabled = true; state.ffpStateDirty = true }
+                GL_VERTEX_PROGRAM_ARB -> state.vertexProgramEnabled = true
+                // Fragment-program assembly has no WebGL2 emulation; absorb the enable so
+                // the caller's enable/disable pairing never produces INVALID_ENUM noise.
+                GL_FRAGMENT_PROGRAM_ARB -> {}
+                GL_LIGHTING -> { state.lightingEnabled = true; state.ffpLightingDirty = true }
                 WebGL2RenderingContext.TEXTURE_2D, WebGL2RenderingContext.TEXTURE_CUBE_MAP,
                 GL_TEXTURE_1D, GL_TEXTURE_3D,
                     -> texturingUnitIndex()?.let {
@@ -243,11 +255,15 @@ actual class OpenGL {
                         state.texEnvDirty[it] = true
                     }
                 GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
-                    texturingUnitIndex()?.let { state.texGenEnabled[it] = true; state.texEnvDirty[it] = true }
+                    texturingUnitIndex()?.let {
+                        state.texGenEnabled[it] = true
+                        state.texEnvDirty[it] = true
+                        state.texGenDirty[it] = true
+                    }
                 GL_FOG -> { state.fogEnabled = true; state.ffpStateDirty = true }
                 GL_ALPHA_TEST -> { state.alphaTestEnabled = true; state.ffpStateDirty = true }
                 in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let {
-                    if (it in 0 until MAX_LIGHTS) { state.lightEnabled[it] = true; state.ffpStateDirty = true }
+                    if (it in 0 until MAX_LIGHTS) { state.lightEnabled[it] = true; state.ffpLightingDirty = true }
                 }
                 GL_COLOR_MATERIAL, GL_NORMALIZE, GL_MULTISAMPLE -> {
                 }
@@ -257,16 +273,22 @@ actual class OpenGL {
 
         actual fun glDisable(arg0: Int) = exec {
             when (arg0) {
-                GL_LIGHTING -> { state.lightingEnabled = false; state.ffpStateDirty = true }
+                GL_VERTEX_PROGRAM_ARB -> state.vertexProgramEnabled = false
+                GL_FRAGMENT_PROGRAM_ARB -> {}
+                GL_LIGHTING -> { state.lightingEnabled = false; state.ffpLightingDirty = true }
                 WebGL2RenderingContext.TEXTURE_2D, WebGL2RenderingContext.TEXTURE_CUBE_MAP,
                 GL_TEXTURE_1D, GL_TEXTURE_3D,
                     -> texturingUnitIndex()?.let { state.texturingEnabled[it] = false; state.texEnvDirty[it] = true }
                 GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
-                    texturingUnitIndex()?.let { state.texGenEnabled[it] = false; state.texEnvDirty[it] = true }
+                    texturingUnitIndex()?.let {
+                        state.texGenEnabled[it] = false
+                        state.texEnvDirty[it] = true
+                        state.texGenDirty[it] = true
+                    }
                 GL_FOG -> { state.fogEnabled = false; state.ffpStateDirty = true }
                 GL_ALPHA_TEST -> { state.alphaTestEnabled = false; state.ffpStateDirty = true }
                 in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let {
-                    if (it in 0 until MAX_LIGHTS) { state.lightEnabled[it] = false; state.ffpStateDirty = true }
+                    if (it in 0 until MAX_LIGHTS) { state.lightEnabled[it] = false; state.ffpLightingDirty = true }
                 }
                 GL_COLOR_MATERIAL, GL_NORMALIZE, GL_MULTISAMPLE -> {
                 }
@@ -314,7 +336,7 @@ actual class OpenGL {
         actual fun glLightf(arg0: Int, arg1: Int, arg2: Float) = exec {
             val light = arg0 - GL_LIGHT0
             if (light !in 0 until MAX_LIGHTS) return@exec
-            state.ffpStateDirty = true
+            state.ffpLightingDirty = true
             when (arg1) {
                 GL_CONSTANT_ATTENUATION -> state.lightAttenuation[light][0] = arg2
                 GL_LINEAR_ATTENUATION -> state.lightAttenuation[light][1] = arg2
@@ -324,7 +346,7 @@ actual class OpenGL {
         actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
             val light = arg0 - GL_LIGHT0
             if (light !in 0 until MAX_LIGHTS) return@exec
-            state.ffpStateDirty = true
+            state.ffpLightingDirty = true
             val v = arg2.slice(arg3, 4)
             when (arg1) {
                 GL_AMBIENT -> v.copyInto(state.lightAmbient[light])
@@ -336,7 +358,7 @@ actual class OpenGL {
         actual fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
             if (arg0 == GL_LIGHT_MODEL_AMBIENT) {
                 arg1.slice(arg2, 4).copyInto(state.globalAmbient)
-                state.ffpStateDirty = true
+                state.ffpLightingDirty = true
             }
         }
 
@@ -362,7 +384,11 @@ actual class OpenGL {
         actual fun glTexGeni(arg0: Int, arg1: Int, arg2: Int) = exec {
             if (arg1 != GL_TEXTURE_GEN_MODE) return@exec
             if (arg0 !in GL_S..GL_Q) return@exec
-            texturingUnitIndex()?.let { state.texGenMode[it] = arg2; state.texEnvDirty[it] = true }
+            texturingUnitIndex()?.let {
+                state.texGenMode[it] = arg2
+                state.texEnvDirty[it] = true
+                state.texGenDirty[it] = true
+            }
         }
         actual fun glTexGenfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
         actual fun glTexEnvi(arg0: Int, arg1: Int, arg2: Int) = exec {
@@ -422,6 +448,20 @@ actual class OpenGL {
             else -> format
         }
 
+        // texImage2D keeps WebGL1's legacy unsized formats (GL_ALPHA/GL_LUMINANCE/
+        // GL_LUMINANCE_ALPHA) working as both internalformat and format for backward
+        // compatibility, but texImage3D is a WebGL2-only entry point with no such carve-out:
+        // it requires a *sized* internalformat (see sizedInternalFormat) paired with the
+        // matching unsized *format* token (GL_RED/GL_RG), not the legacy one. Passing the
+        // legacy format straight through (as glTexImage3Dub used to) is an invalid
+        // combination for gl.texImage3D and silently fails, leaving the texture data
+        // unset.
+        private fun unsizedFormatFor3D(format: Int): Int = when (format) {
+            6406, 6409 -> WebGL2RenderingContext.RED
+            6410 -> WebGL2RenderingContext.RG
+            else -> format
+        }
+
         private fun translatePname(pname: Int): Int = when (pname) {
             GL_MAX_TEXTURE_UNITS, GL_MAX_TEXTURE_COORDS -> WebGL2RenderingContext.MAX_TEXTURE_IMAGE_UNITS
             GL_POINT_SIZE_RANGE -> WebGL2RenderingContext.ALIASED_POINT_SIZE_RANGE
@@ -435,6 +475,12 @@ actual class OpenGL {
         }
 
         actual fun glGetIntegerv(arg0: Int, arg1: IntArray?, arg2: Int) {
+            // GL_PROGRAM_ERROR_POSITION_ARB is shim-side ARB vertex-program state (not a
+            // WebGL enum): the client's compile check (ArbVertexProgram.method3442) reads it.
+            if (arg0 == GL_PROGRAM_ERROR_POSITION_ARB) {
+                arg1?.set(arg2, state.arbErrorPosition)
+                return
+            }
             when (val v = gl.getParameter(translatePname(arg0))) {
                 is org.khronos.webgl.Int32Array -> for (i in 0 until v.length) arg1?.set(arg2 + i, v.asDynamic()[i] as Int)
                 is Int -> arg1?.set(arg2, v)
@@ -499,6 +545,19 @@ actual class OpenGL {
             val unit = state.activeTextureUnit
             if (target == WebGL2RenderingContext.TEXTURE_2D) state.boundTexture2D[unit] = tex
             else if (target == WebGL2RenderingContext.TEXTURE_CUBE_MAP) state.boundTextureCubeMap[unit] = tex
+            else if (target == GL_TEXTURE_3D) state.boundTexture3D[unit] = tex
+            // state.textureTarget (which drives uIs3D/uCubeMap) is otherwise only ever written
+            // by glEnable and is sticky - nothing clears it when a unit stops being used for a
+            // 3D/cube texture. If any other code path rebinds a plain 2D texture to the same
+            // logical unit without an exactly-matching glDisable/glEnable pair, the stale target
+            // silently persists and the next draw to reuse that unit (e.g. any other water tile,
+            // since they all share this uniform) samples through the wrong sampler. Deriving the
+            // target from the actual bind call too makes it self-healing regardless of
+            // enable/disable call ordering elsewhere.
+            texturingUnitIndex()?.let {
+                state.textureTarget[it] = target
+                state.texEnvDirty[it] = true
+            }
         }
 
         actual fun glTexParameteri(arg0: Int, arg1: Int, arg2: Int) = gl.texParameteri(fixTarget(arg0), arg1, arg2)
@@ -584,7 +643,9 @@ actual class OpenGL {
 
         actual fun glTexImage3Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: ByteArray?, arg10: Int) {
             val data = arg9?.asUint8Array()?.subarray(arg10, arg9.size)
-            gl.texImage3D(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, data)
+            val internalformat = sizedInternalFormat(arg2)
+            val format = unsizedFormatFor3D(arg7)
+            gl.texImage3D(arg0, arg1, internalformat, arg3, arg4, arg5, arg6, format, arg8, data)
         }
 
         actual fun glTexSubImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int) {
@@ -1021,6 +1082,10 @@ actual class OpenGL {
         }
 
         actual fun glGetProgramivARB(arg0: Int, arg1: Int, arg2: IntArray?, arg3: Int) {
+            if (arg1 == GL_PROGRAM_ERROR_POSITION_ARB) {
+                arg2?.set(arg3, state.arbErrorPosition)
+                return
+            }
             arg2?.set(arg3, 0)
         }
 
@@ -1046,14 +1111,69 @@ actual class OpenGL {
         actual fun glUniformMatrix4fvARB(arg0: Int, arg1: Int, arg2: Boolean, arg3: FloatArray?, arg4: Int) =
             gl.uniformMatrix4fv(state.uniforms[arg0], arg2, arg3.slice(arg4, 16 * arg1).asFloat32Array())
 
-        // ---- ARB vertex-program assembly (Phase 5: hand-port pending) --------
+        // ---- ARB vertex-program assembly (transpiled to GLSL ES 300) --------
+        // Programs load via glProgramRawARB/glProgramStringARB into the currently bound
+        // program handle, transpile at load time, and compile eagerly so that a failure is
+        // reported through GL_PROGRAM_ERROR_POSITION_ARB exactly like a driver error.
 
-        actual fun glGenProgramARB(): Int = state.arbPrograms.allocate("")
-        actual fun glDeleteProgramARB(arg0: Int) = state.arbPrograms.release(arg0)
-        actual fun glBindProgramARB(arg0: Int, arg1: Int) {}
-        actual fun glProgramStringARB(arg0: Int, arg1: Int, arg2: String?) {}
-        actual fun glProgramRawARB(arg0: Int, arg1: Int, arg2: ByteArray?) {}
-        actual fun glProgramLocalParameter4fARB(arg0: Int, arg1: Int, arg2: Float, arg3: Float, arg4: Float, arg5: Float) {}
-        actual fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
+        actual fun glGenProgramARB(): Int = state.arbPrograms.allocate(ArbProgramRuntime())
+
+        actual fun glDeleteProgramARB(arg0: Int) = exec {
+            state.arbPrograms[arg0]?.delete(state.gl)
+            state.arbPrograms.release(arg0)
+        }
+
+        actual fun glBindProgramARB(arg0: Int, arg1: Int) = exec {
+            if (arg0 == GL_VERTEX_PROGRAM_ARB) {
+                state.boundVertexProgram = if (arg1 == 0) null else state.arbPrograms[arg1]
+            }
+        }
+
+        actual fun glProgramStringARB(arg0: Int, arg1: Int, arg2: String?) = exec {
+            loadArbProgram(arg0, arg1, arg2, 0)
+        }
+
+        actual fun glProgramRawARB(arg0: Int, arg1: Int, arg2: ByteArray?) = exec {
+            if (arg2 == null) {
+                state.arbErrorPosition = 0
+            } else {
+                // The assembly is ASCII; strip any NUL padding before transpiling.
+                loadArbProgram(arg0, arg1, arg2.decodeToString().substringBefore('\u0000'), 0)
+            }
+        }
+
+        private fun loadArbProgram(target: Int, format: Int, text: String?, line: Int) {
+            if (target != GL_VERTEX_PROGRAM_ARB) {
+                // Fragment-program assembly (34820) has no emulation — fail the load so the
+                // caller falls back exactly as it would on unsupported hardware.
+                state.arbErrorPosition = if (target == GL_FRAGMENT_PROGRAM_ARB) 0 else line
+                return
+            }
+            if (format != GL_PROGRAM_FORMAT_ASCII_ARB || text.isNullOrEmpty()) {
+                state.arbErrorPosition = 0
+                return
+            }
+            val runtime = state.boundVertexProgram
+            if (runtime == null) {
+                state.arbErrorPosition = 0
+                return
+            }
+            state.arbErrorPosition = -1
+            if (!runtime.loadSource(state.gl, text, line)) {
+                state.arbErrorPosition = runtime.errorLine
+            }
+        }
+
+        actual fun glProgramLocalParameter4fARB(arg0: Int, arg1: Int, arg2: Float, arg3: Float, arg4: Float, arg5: Float) = exec {
+            if (arg0 == GL_VERTEX_PROGRAM_ARB) {
+                state.boundVertexProgram?.setLocalParameter(arg1, arg2, arg3, arg4, arg5)
+            }
+        }
+
+        actual fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
+            if (arg0 == GL_VERTEX_PROGRAM_ARB && arg2 != null && arg3 >= 0 && arg3 + 4 <= arg2.size) {
+                state.boundVertexProgram?.setLocalParameter(arg1, arg2[arg3], arg2[arg3 + 1], arg2[arg3 + 2], arg2[arg3 + 3])
+            }
+        }
     }
 }
