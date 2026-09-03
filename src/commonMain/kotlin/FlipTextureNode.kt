@@ -674,6 +674,8 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
         }
 
         var anInt1648: Int = 0
+
+        // Minimap rendering
         fun method1007(widgetComponent: WidgetComponent?, var_renderer: Renderer?, i: Int, i_1_: Int, i_2_: Int) {
             try {
                 anInt1648++
