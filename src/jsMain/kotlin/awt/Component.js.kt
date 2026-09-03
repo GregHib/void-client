@@ -142,6 +142,7 @@ actual abstract class Component : ImageObserver {
 
         element.addEventListener("mousedown", { event ->
             event.preventDefault()
+            element.focus()
             val mouseEvent = MouseEvent(event as org.w3c.dom.events.MouseEvent)
             mouseListeners.toList().forEach { it.mousePressed(mouseEvent) }
         })
