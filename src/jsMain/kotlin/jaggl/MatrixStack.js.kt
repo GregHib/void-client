@@ -38,6 +38,29 @@ object Mat4 {
         return m
     }
 
+    /**
+     * Equivalent to `multiply(a, translate(x, y, z))` but without building the throwaway identity
+     * matrix or running the general 4x4 multiply (most of whose terms are known to be zero for a
+     * translation) - same arithmetic, same operand order, so results are bit-identical.
+     */
+    fun translateBy(a: FloatArray, x: Float, y: Float, z: Float): FloatArray {
+        val r = a.copyOf()
+        r[12] = a[0] * x + a[4] * y + a[8] * z + a[12]
+        r[13] = a[1] * x + a[5] * y + a[9] * z + a[13]
+        r[14] = a[2] * x + a[6] * y + a[10] * z + a[14]
+        r[15] = a[3] * x + a[7] * y + a[11] * z + a[15]
+        return r
+    }
+
+    /** Equivalent to `multiply(a, scale(x, y, z))`, specialized the same way as [translateBy]. */
+    fun scaleBy(a: FloatArray, x: Float, y: Float, z: Float): FloatArray {
+        val r = a.copyOf()
+        r[0] = a[0] * x; r[1] = a[1] * x; r[2] = a[2] * x; r[3] = a[3] * x
+        r[4] = a[4] * y; r[5] = a[5] * y; r[6] = a[6] * y; r[7] = a[7] * y
+        r[8] = a[8] * z; r[9] = a[9] * z; r[10] = a[10] * z; r[11] = a[11] * z
+        return r
+    }
+
     fun rotate(angleDeg: Float, x: Float, y: Float, z: Float): FloatArray {
         val len = kotlin.math.sqrt(x * x + y * y + z * z)
         if (len == 0f) return identity()
@@ -124,8 +147,8 @@ class MatrixStack {
     fun loadIdentity() { setTop(Mat4.identity()) }
     fun loadMatrix(m: FloatArray) { setTop(m.copyOf(16)) }
     fun mult(m: FloatArray) { setTop(Mat4.multiply(top(), m)) }
-    fun translate(x: Float, y: Float, z: Float) { mult(Mat4.translate(x, y, z)) }
-    fun scale(x: Float, y: Float, z: Float) { mult(Mat4.scale(x, y, z)) }
+    fun translate(x: Float, y: Float, z: Float) { setTop(Mat4.translateBy(top(), x, y, z)) }
+    fun scale(x: Float, y: Float, z: Float) { setTop(Mat4.scaleBy(top(), x, y, z)) }
     fun rotate(a: Float, x: Float, y: Float, z: Float) { mult(Mat4.rotate(a, x, y, z)) }
     fun ortho(l: Double, r: Double, b: Double, t: Double, n: Double, f: Double) { mult(Mat4.ortho(l, r, b, t, n, f)) }
     fun frustum(l: Double, r: Double, b: Double, t: Double, n: Double, f: Double) { mult(Mat4.frustum(l, r, b, t, n, f)) }

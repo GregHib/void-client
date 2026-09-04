@@ -829,15 +829,33 @@ actual class OpenGL {
         private const val GL_PROJECTION_MATRIX_PNAME = 2983
         private const val GL_TEXTURE_MATRIX_PNAME = 2984
 
+        // Reused/grown across quad draws instead of allocating a fresh boxed ArrayList<Int> (plus a
+        // second Uint32Array copy pass) on every GL_QUADS/GL_QUAD_STRIP/GL_POLYGON draw call.
+        private var quadIndexScratch = IntArray(0)
+
+        private fun ensureQuadIndexCapacity(required: Int) {
+            if (required <= quadIndexScratch.size) return
+            var newSize = if (quadIndexScratch.isEmpty()) required else quadIndexScratch.size * 2
+            while (newSize < required) newSize *= 2
+            quadIndexScratch = IntArray(newSize)
+        }
+
         private fun quadIndices(mode: Int, first: Int, count: Int): Uint32Array? {
-            val out = ArrayList<Int>()
+            val maxOut = when (mode) {
+                GL_QUADS -> count / 4 * 6
+                GL_QUAD_STRIP -> count / 2 * 3
+                GL_POLYGON -> if (count >= 3) (count - 2) * 3 else 0
+                else -> return null
+            }
+            ensureQuadIndexCapacity(maxOut)
+            var out = 0
             when (mode) {
                 GL_QUADS -> {
                     var i = 0
                     while (i + 4 <= count) {
                         val b = first + i
-                        out.add(b); out.add(b + 1); out.add(b + 2)
-                        out.add(b); out.add(b + 2); out.add(b + 3)
+                        quadIndexScratch[out++] = b; quadIndexScratch[out++] = b + 1; quadIndexScratch[out++] = b + 2
+                        quadIndexScratch[out++] = b; quadIndexScratch[out++] = b + 2; quadIndexScratch[out++] = b + 3
                         i += 4
                     }
                 }
@@ -845,22 +863,18 @@ actual class OpenGL {
                     var i = 0
                     while (i + 4 <= count) {
                         val b = first + i
-                        out.add(b); out.add(b + 1); out.add(b + 3)
-                        out.add(b); out.add(b + 3); out.add(b + 2)
+                        quadIndexScratch[out++] = b; quadIndexScratch[out++] = b + 1; quadIndexScratch[out++] = b + 3
+                        quadIndexScratch[out++] = b; quadIndexScratch[out++] = b + 3; quadIndexScratch[out++] = b + 2
                         i += 2
                     }
                 }
                 GL_POLYGON -> {
                     for (i in 1..count - 2) {
-                        out.add(first); out.add(first + i); out.add(first + i + 1)
+                        quadIndexScratch[out++] = first; quadIndexScratch[out++] = first + i; quadIndexScratch[out++] = first + i + 1
                     }
                 }
-                else -> return null
             }
-            val array = Uint32Array(out.size)
-            val view = array.asDynamic()
-            for (i in out.indices) view[i] = out[i]
-            return array
+            return quadIndexScratch.asUint32ArrayView(out)
         }
 
         actual fun glDrawElements(arg0: Int, arg1: Int, arg2: Int, arg3: Long) = exec {
