@@ -20,8 +20,8 @@ object Config {
     const val FOV_MAX_FACTOR_DEN: Int = 1 // FOV maximum as a fraction of the base max (denominator).
     const val FOV_MIN_ABS: Int = 100 // Absolute minimum FOV clamp regardless of base settings.
 
-    const val RENDER_DISTANCE_MULTIPLIER: Double = 2.0 // Adjust how many tiles off in the distance are rendered
-    const val CULLING_DISTANCE_MULTIPLIER: Double = 2.0 // Adjust distance before objects go into fog
+    const val RENDER_DISTANCE_MULTIPLIER: Double = 1.0 // Adjust how many tiles off in the distance are rendered
+    const val CULLING_DISTANCE_MULTIPLIER: Double = 1.0 // Adjust distance before objects go into fog
 
     fun getDebug(id: Int): String {
         return if (Config.debug) " <col=00ff00>(</col>" + id + "<col=00ff00>)</col>" else ""
