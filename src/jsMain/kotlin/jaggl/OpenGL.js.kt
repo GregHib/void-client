@@ -64,10 +64,13 @@ actual class OpenGL {
         if (canvasEl == null) {
             return 0L
         }
-        // The canvas is always drawn fully opaque, so alpha:false skips the browser's per-frame
-        // compositing blend against the page (and avoids picking an integrated GPU on hybrid-GPU
-        // laptops via powerPreference) with no visual difference.
-        val contextOptions = js("({alpha: false, powerPreference: 'high-performance'})")
+        // NOTE: deliberately NOT setting alpha:false here. It looks like a free win (the canvas is
+        // usually drawn opaque, so skipping the browser's per-frame alpha-compositing blend should
+        // cost nothing) but at least one pass (the minimap) relies on the browser's default
+        // alpha:true/premultipliedAlpha:true compositing to display correctly - forcing the canvas
+        // opaque made it render solid black instead. Only powerPreference (GPU selection on
+        // hybrid-GPU laptops) is safe to request; it doesn't affect pixel/alpha semantics at all.
+        val contextOptions = js("({powerPreference: 'high-performance'})")
         var context = canvasEl.getContext("webgl2", contextOptions) as? WebGL2RenderingContext
         if (context == null) {
             context = arg0.replaceWithFreshCanvas().getContext("webgl2", contextOptions) as? WebGL2RenderingContext
