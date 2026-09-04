@@ -1,5 +1,7 @@
 package jaggl
 
+import org.khronos.webgl.Float32Array
+
 /**
  * Transpiles ARB_vertex_program (ARBvp1.0) assembly into GLSL ES 300 vertex shaders so
  * WebGL2 can execute the client's legacy water/fog/ground passes.
@@ -907,6 +909,22 @@ internal class ArbProgramRuntime {
     private var uModelViewMatrix: WebGLUniformLocation? = null
     private var uProjectionMatrix: WebGLUniformLocation? = null
     private var uTextureMatrices: Array<WebGLUniformLocation?> = arrayOfNulls(3)
+
+    // Per-program (this instance is 1:1 with a linked WebGLProgram) dirty tracking for
+    // useAndUpload(), mirroring GlState.prepareDraw()'s fixed-function/compat matrix caching.
+    // matrixStack.version() is an idempotent counter, safe for multiple independent readers to
+    // compare against their own last-seen value - unlike a single shared "dirty" boolean, which
+    // is exactly the pattern that caused the cross-program stale-lighting bug documented on
+    // GlState.ffpLightingDirty (one reader consuming the flag starved every other reader).
+    private var lastModelViewVersion = -1
+    private var lastProjectionVersion = -1
+    private val lastTextureMatrixVersion = intArrayOf(-1, -1, -1)
+
+    // Reused scratch buffers for the per-draw light-array uniform uploads, avoiding 3 fresh
+    // FloatArray allocations (lightsArray()) every single draw when usesLightState is true.
+    private val lightPositionScratch = FloatArray(MAX_LIGHTS * 4)
+    private val lightAmbientScratch = FloatArray(MAX_LIGHTS * 4)
+    private val lightDiffuseScratch = FloatArray(MAX_LIGHTS * 4)
     private var uProgramLocal: WebGLUniformLocation? = null
     private var uArbLightModelAmbient: WebGLUniformLocation? = null
     private var uArbLightAmbient: WebGLUniformLocation? = null
@@ -1035,10 +1053,23 @@ internal class ArbProgramRuntime {
         val prog = program
         if (!built || prog == null) return false
         gl.useProgram(prog)
-        gl.uniformMatrix4fv(uModelViewMatrix, false, state.matrixStack.modelview().asFloat32Array())
-        gl.uniformMatrix4fv(uProjectionMatrix, false, state.matrixStack.projection().asFloat32Array())
+
+        val mvVersion = state.matrixStack.version(GL_MODELVIEW)
+        if (mvVersion != lastModelViewVersion) {
+            lastModelViewVersion = mvVersion
+            gl.uniformMatrix4fv(uModelViewMatrix, false, state.matrixStack.modelview().asFloat32Array())
+        }
+        val projVersion = state.matrixStack.version(GL_PROJECTION)
+        if (projVersion != lastProjectionVersion) {
+            lastProjectionVersion = projVersion
+            gl.uniformMatrix4fv(uProjectionMatrix, false, state.matrixStack.projection().asFloat32Array())
+        }
         for (u in 0..2) {
-            uTextureMatrices[u]?.let { gl.uniformMatrix4fv(it, false, state.matrixStack.textureMatrix(u).asFloat32Array()) }
+            val loc = uTextureMatrices[u] ?: continue
+            val texVersion = state.matrixStack.version(GL_TEXTURE_MATRIX, u)
+            if (texVersion == lastTextureMatrixVersion[u]) continue
+            lastTextureMatrixVersion[u] = texVersion
+            gl.uniformMatrix4fv(loc, false, state.matrixStack.textureMatrix(u).asFloat32Array())
         }
         if (localDirty) {
             localDirty = false
@@ -1052,18 +1083,18 @@ internal class ArbProgramRuntime {
         }
         if (usesLightState) {
             val n = maxLightIndex + 1
-            uArbLightPosition?.let { loc -> gl.uniform4fv(loc, lightsArray(state.lightPosition, n).asFloat32Array()) }
-            uArbLightAmbient?.let { loc -> gl.uniform4fv(loc, lightsArray(state.lightAmbient, n).asFloat32Array()) }
-            uArbLightDiffuse?.let { loc -> gl.uniform4fv(loc, lightsArray(state.lightDiffuse, n).asFloat32Array()) }
+            uArbLightPosition?.let { loc -> gl.uniform4fv(loc, fillLightsArray(lightPositionScratch, state.lightPosition, n)) }
+            uArbLightAmbient?.let { loc -> gl.uniform4fv(loc, fillLightsArray(lightAmbientScratch, state.lightAmbient, n)) }
+            uArbLightDiffuse?.let { loc -> gl.uniform4fv(loc, fillLightsArray(lightDiffuseScratch, state.lightDiffuse, n)) }
         }
         val f = frag
         if (f != null) uploadFfFragmentUniforms(gl, state, f, prog, state.ffpStateDirty)
         return true
     }
 
-    private fun lightsArray(lights: Array<FloatArray>, count: Int): FloatArray {
-        val out = FloatArray(count * 4)
-        for (i in 0 until count) lights[i].copyInto(out, i * 4, 0, 4)
-        return out
+    /** Fills [scratch] (reused across draws) with [count] light vec4s and returns the used-prefix view. */
+    private fun fillLightsArray(scratch: FloatArray, lights: Array<FloatArray>, count: Int): Float32Array {
+        for (i in 0 until count) lights[i].copyInto(scratch, i * 4, 0, 4)
+        return scratch.asFloat32Array().subarray(0, count * 4)
     }
 }
