@@ -17,6 +17,17 @@ import kotlinx.browser.window
 import org.w3c.dom.HTMLCanvasElement
 import org.w3c.dom.HTMLElement
 
+/**
+ * Not part of Kotlin/JS's org.w3c.dom bindings. Used to keep [Component.getWidth]/[Component.getHeight]
+ * cheap: reading `clientWidth`/`clientHeight` directly forces a synchronous browser layout flush, which
+ * is expensive when polled every game tick (as Client.method116 does). Observing the element instead
+ * lets us cache the size and only refresh it when the browser reports an actual change.
+ */
+external class ResizeObserver(callback: (Array<dynamic>, ResizeObserver) -> Unit) {
+    fun observe(target: org.w3c.dom.Element)
+    fun disconnect()
+}
+
 actual abstract class Component : ImageObserver {
     abstract val element: HTMLElement
 
@@ -25,6 +36,10 @@ actual abstract class Component : ImageObserver {
     private var repaintScheduled: Boolean = false
     internal var ignoreRepaintFlag: Boolean = false
     internal var parent: Container? = null
+
+    private var cachedClientWidth: Int = -1
+    private var cachedClientHeight: Int = -1
+    private var sizeObserver: ResizeObserver? = null
 
     var onPaint: ((Graphics) -> Unit)? = null
 
@@ -43,11 +58,30 @@ actual abstract class Component : ImageObserver {
         element.style.height = "${height}px"
     }
 
-    actual fun getWidth(): Int =
-        (element as? HTMLCanvasElement)?.width ?: element.clientWidth
+    actual fun getWidth(): Int {
+        (element as? HTMLCanvasElement)?.let { return it.width }
+        ensureSizeObserved()
+        return cachedClientWidth
+    }
 
-    actual fun getHeight(): Int =
-        (element as? HTMLCanvasElement)?.height ?: element.clientHeight
+    actual fun getHeight(): Int {
+        (element as? HTMLCanvasElement)?.let { return it.height }
+        ensureSizeObserved()
+        return cachedClientHeight
+    }
+
+    /** Lazily starts observing [element]'s box size so [getWidth]/[getHeight] can return a cached value
+     * instead of forcing a synchronous layout read on every call. Only relevant for non-canvas elements
+     * (canvas width/height are plain field reads already). */
+    private fun ensureSizeObserved() {
+        if (sizeObserver != null) return
+        cachedClientWidth = element.clientWidth
+        cachedClientHeight = element.clientHeight
+        sizeObserver = ResizeObserver { _, _ ->
+            cachedClientWidth = element.clientWidth
+            cachedClientHeight = element.clientHeight
+        }.also { it.observe(element) }
+    }
 
     actual fun getX(): Int = element.offsetLeft
     actual fun getY(): Int = element.offsetTop

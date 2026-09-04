@@ -20,6 +20,16 @@ class CompatUniformLocations(gl: WebGL2RenderingContext, program: WebGLProgram) 
     val fogEnd = gl.getUniformLocation(program, "uFog.end")
     val fogScale = gl.getUniformLocation(program, "uFog.scale")
     val fogColor = gl.getUniformLocation(program, "uFog.color")
+
+    // Per-program dirty tracking for GlState.prepareDraw()'s compat branch. This program has its
+    // own independent uniform storage (a separate linked WebGLProgram), so these must live here
+    // rather than globally - re-uploads are only skippable against *this* program's last values.
+    var lastModelViewVersion = -1
+    var lastProjectionVersion = -1
+    var lastTextureMatrixVersion = -1
+    var lastFogStart = Float.NaN
+    var lastFogEnd = Float.NaN
+    val lastFogColor = floatArrayOf(Float.NaN, Float.NaN, Float.NaN, Float.NaN)
 }
 
 private const val SYNTHETIC_VERTEX_SOURCE = """
@@ -149,9 +159,6 @@ class GlState(val gl: WebGL2RenderingContext) {
     val fogColor = floatArrayOf(0f, 0f, 0f, 1f)
     var fogStart = 0f
     var fogEnd = 1f
-    private var lastLoggedFogStart = Float.NaN
-    private var lastLoggedFogEnd = Float.NaN
-    private val lastLoggedFogColor = floatArrayOf(Float.NaN, Float.NaN, Float.NaN)
     val globalAmbient = floatArrayOf(0.2f, 0.2f, 0.2f, 1f)
     val lightEnabled = BooleanArray(MAX_LIGHTS)
     val lightAmbient = Array(MAX_LIGHTS) { floatArrayOf(0f, 0f, 0f, 1f) }
@@ -224,24 +231,46 @@ class GlState(val gl: WebGL2RenderingContext) {
         val c = program.compat ?: return
         val mv = matrixStack.modelview()
         val proj = matrixStack.projection()
-        gl.uniformMatrix4fv(c.modelView, false, mv.asFloat32Array())
-        gl.uniformMatrix4fv(c.projection, false, proj.asFloat32Array())
-        gl.uniformMatrix4fv(c.modelViewProjection, false, Mat4.multiply(proj, mv).asFloat32Array())
-        gl.uniformMatrix3fv(c.normalMatrix, false, upperLeft3x3(mv).asFloat32Array())
-        gl.uniformMatrix4fv(c.textureMatrix, false, matrixStack.textureMatrix().asFloat32Array())
-        val fogRange = if (fogEnd - fogStart == 0f) 1f else 1f / (fogEnd - fogStart)
-        gl.uniform1f(c.fogDensity, 1f)
-        gl.uniform1f(c.fogStart, fogStart)
-        gl.uniform1f(c.fogEnd, fogEnd)
-        gl.uniform1f(c.fogScale, fogRange)
-        gl.uniform4fv(c.fogColor, fogColor.asFloat32Array())
-        if (fogStart != lastLoggedFogStart || fogEnd != lastLoggedFogEnd ||
-            fogColor[0] != lastLoggedFogColor[0] || fogColor[1] != lastLoggedFogColor[1] || fogColor[2] != lastLoggedFogColor[2]
+
+        val mvVersion = matrixStack.version(GL_MODELVIEW)
+        val mvChanged = mvVersion != c.lastModelViewVersion
+        if (mvChanged) {
+            c.lastModelViewVersion = mvVersion
+            gl.uniformMatrix4fv(c.modelView, false, mv.asFloat32Array())
+            gl.uniformMatrix3fv(c.normalMatrix, false, upperLeft3x3(mv).asFloat32Array())
+        }
+
+        val projVersion = matrixStack.version(GL_PROJECTION)
+        val projChanged = projVersion != c.lastProjectionVersion
+        if (projChanged) {
+            c.lastProjectionVersion = projVersion
+            gl.uniformMatrix4fv(c.projection, false, proj.asFloat32Array())
+        }
+
+        if (mvChanged || projChanged) {
+            gl.uniformMatrix4fv(c.modelViewProjection, false, Mat4.multiply(proj, mv).asFloat32Array())
+        }
+
+        val texVersion = matrixStack.version(GL_TEXTURE_MATRIX)
+        if (texVersion != c.lastTextureMatrixVersion) {
+            c.lastTextureMatrixVersion = texVersion
+            gl.uniformMatrix4fv(c.textureMatrix, false, matrixStack.textureMatrix().asFloat32Array())
+        }
+
+        if (fogStart != c.lastFogStart || fogEnd != c.lastFogEnd ||
+            fogColor[0] != c.lastFogColor[0] || fogColor[1] != c.lastFogColor[1] ||
+            fogColor[2] != c.lastFogColor[2] || fogColor[3] != c.lastFogColor[3]
         ) {
-            lastLoggedFogStart = fogStart
-            lastLoggedFogEnd = fogEnd
-            lastLoggedFogColor[0] = fogColor[0]; lastLoggedFogColor[1] = fogColor[1]; lastLoggedFogColor[2] = fogColor[2]
-            println("[FOGDBG] compat-shader draw using fogStart=$fogStart fogEnd=$fogEnd fogScale=$fogRange color=(${fogColor[0]}, ${fogColor[1]}, ${fogColor[2]})")
+            c.lastFogStart = fogStart
+            c.lastFogEnd = fogEnd
+            c.lastFogColor[0] = fogColor[0]; c.lastFogColor[1] = fogColor[1]
+            c.lastFogColor[2] = fogColor[2]; c.lastFogColor[3] = fogColor[3]
+            val fogRange = if (fogEnd - fogStart == 0f) 1f else 1f / (fogEnd - fogStart)
+            gl.uniform1f(c.fogDensity, 1f)
+            gl.uniform1f(c.fogStart, fogStart)
+            gl.uniform1f(c.fogEnd, fogEnd)
+            gl.uniform1f(c.fogScale, fogRange)
+            gl.uniform4fv(c.fogColor, fogColor.asFloat32Array())
         }
     }
 

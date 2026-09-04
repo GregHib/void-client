@@ -64,9 +64,13 @@ actual class OpenGL {
         if (canvasEl == null) {
             return 0L
         }
-        var context = canvasEl.getContext("webgl2") as? WebGL2RenderingContext
+        // The canvas is always drawn fully opaque, so alpha:false skips the browser's per-frame
+        // compositing blend against the page (and avoids picking an integrated GPU on hybrid-GPU
+        // laptops via powerPreference) with no visual difference.
+        val contextOptions = js("({alpha: false, powerPreference: 'high-performance'})")
+        var context = canvasEl.getContext("webgl2", contextOptions) as? WebGL2RenderingContext
         if (context == null) {
-            context = arg0.replaceWithFreshCanvas().getContext("webgl2") as? WebGL2RenderingContext
+            context = arg0.replaceWithFreshCanvas().getContext("webgl2", contextOptions) as? WebGL2RenderingContext
         }
         if (context == null) {
             return 0L
