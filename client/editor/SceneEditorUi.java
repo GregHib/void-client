@@ -673,12 +673,12 @@ final class SceneEditorUi {
         int controlsY = moveControlsY();
         font.drawText("Move one tile per click", 0xFFAAAAAA, controlsY - 10, sx, SHADOW, -110);
         int centerX = moveCenterX();
-        drawMoveButton(toolkit, font, centerX, controlsY, MOVE_BUTTON, "^");
+        drawMoveButton(toolkit, font, centerX, controlsY, MOVE_BUTTON, "up");
         drawMoveButton(toolkit, font, centerX - MOVE_BUTTON - MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
-                MOVE_BUTTON, "<");
-        drawMoveButton(toolkit, font, centerX, controlsY + MOVE_BUTTON + MOVE_GAP, MOVE_BUTTON, "v");
+                MOVE_BUTTON, "left");
+        drawMoveButton(toolkit, font, centerX, controlsY + MOVE_BUTTON + MOVE_GAP, MOVE_BUTTON, "down");
         drawMoveButton(toolkit, font, centerX + MOVE_BUTTON + MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
-                MOVE_BUTTON, ">");
+                MOVE_BUTTON, "right");
         drawMoveButton(toolkit, font, sx, moveRotateY(), innerW, MOVE_BUTTON, "Rotate");
         drawMoveButton(toolkit, font, sx, moveDoneY(), innerW, MOVE_DONE_H, "Done");
     }
@@ -691,8 +691,39 @@ final class SceneEditorUi {
                                        int width, int height, String label) {
         toolkit.fillRect2D(x, y, width, height, 0xB02A1A37, 1);
         toolkit.fillRect3D(x, y, width, height, BORDER, 0);
+        if ("up".equals(label) || "left".equals(label) || "down".equals(label) || "right".equals(label)) {
+            drawArrow(toolkit, x, y, width, height, label);
+            return;
+        }
         int textX = x + Math.max(6, (width - label.length() * 7) / 2);
         font.drawText(label, 0xFFFFFFFF, y + height / 2 + 6, textX, SHADOW, -110);
+    }
+
+    private static void drawArrow(GraphicsToolkit toolkit, int x, int y, int width, int height, String direction) {
+        int cx = x + width / 2;
+        int cy = y + height / 2;
+        int color = 0xFFFFFFFF;
+        if ("left".equals(direction)) {
+            toolkit.fillRect2D(cx - 7, cy - 2, 4, 4, color, 1);
+            toolkit.fillRect2D(cx - 4, cy - 5, 4, 4, color, 1);
+            toolkit.fillRect2D(cx - 4, cy + 3, 4, 4, color, 1);
+            toolkit.fillRect2D(cx - 1, cy - 2, 4, 4, color, 1);
+        } else if ("right".equals(direction)) {
+            toolkit.fillRect2D(cx + 3, cy - 2, 4, 4, color, 1);
+            toolkit.fillRect2D(cx, cy - 5, 4, 4, color, 1);
+            toolkit.fillRect2D(cx, cy + 3, 4, 4, color, 1);
+            toolkit.fillRect2D(cx - 3, cy - 2, 4, 4, color, 1);
+        } else if ("up".equals(direction)) {
+            toolkit.fillRect2D(cx - 2, cy - 7, 4, 4, color, 1);
+            toolkit.fillRect2D(cx - 5, cy - 4, 4, 4, color, 1);
+            toolkit.fillRect2D(cx + 3, cy - 4, 4, 4, color, 1);
+            toolkit.fillRect2D(cx - 2, cy - 1, 4, 4, color, 1);
+        } else {
+            toolkit.fillRect2D(cx - 2, cy + 3, 4, 4, color, 1);
+            toolkit.fillRect2D(cx - 5, cy, 4, 4, color, 1);
+            toolkit.fillRect2D(cx + 3, cy, 4, 4, color, 1);
+            toolkit.fillRect2D(cx - 2, cy - 3, 4, 4, color, 1);
+        }
     }
 
     private static void drawPalette(GraphicsToolkit toolkit, BitmapFont font) {
@@ -750,9 +781,9 @@ final class SceneEditorUi {
         String page = count > 0
                 ? "Results " + (resultOffset + 1) + "-" + Math.min(resultOffset + LIST_ROWS, count) + "/" + count
                 : "Results 0/0";
-        font.drawText(page, 0xFF999999, doneY() - 45, sx, SHADOW, -110);
+        font.drawText(page, 0xFF999999, doneY() - 32, sx, SHADOW, -110);
         font.drawText("Selected: " + selected.label + " (#" + selected.objectId + ")",
-                0xFFCCCCCC, doneY() - 31, sx, SHADOW, -110);
+                0xFFCCCCCC, doneY() - 16, sx, SHADOW, -110);
         int buttonFill = count == 0 ? 0xFF444444 : 0xFF006C78;
         toolkit.fillRect2D(sx, doneY(), innerW, DONE_H, buttonFill, 1);
         toolkit.fillRect3D(sx, doneY(), innerW, DONE_H, count == 0 ? 0xFF666666 : ACCENT, 0);
