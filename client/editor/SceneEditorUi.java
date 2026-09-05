@@ -1,5 +1,5 @@
 /**
- * In-world scene editor HUD: asset palette, click-to-place, select, drag-to-move.
+ * In-world scene editor component: searchable City Assets picker, selection, and Done-to-spawn.
  * Right-click Move / Remove / Rotate live in {@link SceneEditorMenu}.
  * <p>
  * Tile under cursor is read from the existing Walk-here menu tip (opcode 19)
@@ -9,35 +9,26 @@
  * world clicks are <b>not</b> eaten so Move/Remove/Rotate can fire.
  */
 final class SceneEditorUi {
-    /** Curated LocType palette (RS634-ish). Ids are adjustable via console. */
-    static final Asset[] ASSETS = {
-            new Asset("Tree", 1276),
-            new Asset("Oak", 1281),
-            new Asset("Dead tree", 1274),
-            new Asset("Bush", 1251),
-            new Asset("Bench", 10378),
-            new Asset("Lamp", 10827),
-            new Asset("Fountain", 879),
-            new Asset("Crate", 356),
-            new Asset("Barrel", 365),
-            new Asset("Cart", 794)
-    };
 
-    private static final int PANEL_W = 132;
-    private static final int PANEL_PAD = 6;
-    private static final int ROW_H = 18;
-    private static final int ASSET_COLS = 2;
-    private static final int ASSET_CELL = 58;
-    private static final int ASSET_GAP = 4;
-    private static final int BG = 0xC0121218;
+    private static final int PANEL_W = 250;
+    private static final int PANEL_PAD = 8;
+    private static final int ROW_H = 24;
+    private static final int SEARCH_H = 24;
+    private static final int LIST_TOP = 58;
+    private static final int LIST_ROWS = 8;
+    private static final int DONE_H = 28;
+    private static final int BG = 0xE0121218;
     private static final int ACCENT = 0xFF00E5FF;
     private static final int SELECT = 0xFFFF00AA;
     private static final int SHADOW = 0xFF000000;
     private static final int GHOST = 0x88AAAAAA;
     private static final int DRAG_LINE = 0xFFFF8800;
 
-    private static int selectedAsset;
+    private static final Asset selectedAsset = new Asset("Tree", 1276);
+    private static int resultOffset;
     private static long selectedId = -1L;
+    private static boolean searchFocused;
+    private static String searchText = "";
     private static boolean dragging;
     private static boolean moveArmed;
     private static int dragHoverAbsX = -1;
@@ -55,13 +46,38 @@ final class SceneEditorUi {
     }
 
     static Asset currentAsset() {
-        if (selectedAsset < 0 || selectedAsset >= ASSETS.length) {
-            selectedAsset = 0;
-        }
-        return ASSETS[selectedAsset];
+        return selectedAsset;
     }
 
+    private static int filteredCount() {
+        return SceneAssetCatalog.search(searchText);
+    }
+
+    private static SceneAssetCatalog.Entry filteredEntryAt(int row) {
+        return SceneAssetCatalog.resultAt(resultOffset + row);
+    }
+
+    private static void normalizeSelection() {
+        int count = filteredCount();
+        int maxOffset = Math.max(0, count - LIST_ROWS);
+        if (resultOffset > maxOffset) {
+            resultOffset = maxOffset;
+        }
+        if (count == 0 || SceneAssetCatalog.containsResult(selectedAsset.objectId)) {
+            return;
+        }
+        SceneAssetCatalog.Entry first = SceneAssetCatalog.resultAt(0);
+        if (first != null) {
+            selectAsset(first);
+        }
+    }
+
+    private static void selectAsset(SceneAssetCatalog.Entry entry) {
+        selectedAsset.objectId = entry.objectId;
+        selectedAsset.label = entry.name;
+    }
     static void onEditorEnabled() {
+        SceneAssetCatalog.start();
         if (!announced) {
             announced = true;
             try {
@@ -79,6 +95,7 @@ final class SceneEditorUi {
         selectedId = -1L;
         dragging = false;
         moveArmed = false;
+        searchFocused = false;
         announced = false;
     }
 
@@ -115,6 +132,7 @@ final class SceneEditorUi {
             if (font == null) {
                 return;
             }
+            normalizeSelection();
             refreshHoverTile();
             drawPalette(toolkit, font);
             drawWorldOverlay(toolkit, font);
@@ -137,9 +155,14 @@ final class SceneEditorUi {
             return;
         }
         try {
+            pollSearchInput();
             int mx = AbstractGlTextureSub4.mouseHandler.getCursorX(true);
             int my = AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 100);
             mouseOverUi = hitPalette(mx, my);
+            if (hitAssetList(mx, my) && Component233.scrollWheelDiff != 0) {
+                resultOffset -= Component233.scrollWheelDiff * 3;
+                normalizeSelection();
+            }
 
             refreshHoverTile();
 
@@ -180,6 +203,38 @@ final class SceneEditorUi {
             }
         } catch (Throwable t) {
             System.out.println("scene-editor ui input: " + t.getMessage());
+        }
+    }
+
+    private static void pollSearchInput() {
+        if (!searchFocused) {
+            return;
+        }
+        for (int i = 0; i < HashNodeSub19.anInt9699; i++) {
+            Interface6 event = DefinitionGroup.anInterface6Array9534[i];
+            int key = event.getKeyCode(false);
+            int type = event.getEventType(26276);
+            if (key == 84 && type == 0) {
+                spawnSelected();
+                continue;
+            }
+            if ((type == 0 || type == 2) && key == 85) {
+                if (searchText.length() > 0) {
+                    searchText = searchText.substring(0, searchText.length() - 1);
+                    resultOffset = 0;
+                    normalizeSelection();
+                }
+                continue;
+            }
+            if (type != 3) {
+                continue;
+            }
+            char c = event.getKeyChar((byte) 96);
+            if (Character.isLetterOrDigit(c) || c == ' ' || c == '-' || c == '_') {
+                searchText += Character.toLowerCase(c);
+                resultOffset = 0;
+                normalizeSelection();
+            }
         }
     }
 
@@ -358,8 +413,19 @@ final class SceneEditorUi {
     }
 
     private static int paletteHeight() {
-        int rows = (ASSETS.length + ASSET_COLS - 1) / ASSET_COLS;
-        return PANEL_PAD * 2 + 20 + rows * (ASSET_CELL + ASSET_GAP) + ROW_H;
+        return LIST_TOP + LIST_ROWS * ROW_H + 76;
+    }
+
+    private static int searchX() {
+        return paletteX() + PANEL_PAD;
+    }
+
+    private static int searchY() {
+        return paletteY() + 26;
+    }
+
+    private static int doneY() {
+        return paletteY() + paletteHeight() - PANEL_PAD - DONE_H;
     }
 
     private static boolean hitPalette(int x, int y) {
@@ -368,20 +434,57 @@ final class SceneEditorUi {
         return x >= px && x < px + PANEL_W && y >= py && y < py + paletteHeight();
     }
 
+    private static boolean hitSearch(int x, int y) {
+        return x >= searchX() && x < searchX() + PANEL_W - PANEL_PAD * 2
+                && y >= searchY() && y < searchY() + SEARCH_H;
+    }
+
+    private static boolean hitDone(int x, int y) {
+        return x >= searchX() && x < searchX() + PANEL_W - PANEL_PAD * 2
+                && y >= doneY() && y < doneY() + DONE_H;
+    }
+    private static boolean hitAssetList(int x, int y) {
+        int listY = paletteY() + LIST_TOP;
+        return x >= searchX() && x < searchX() + PANEL_W - PANEL_PAD * 2
+                && y >= listY && y < listY + LIST_ROWS * ROW_H;
+    }
+
+
     private static void onPaletteClick(int x, int y) {
-        int relX = x - paletteX() - PANEL_PAD;
-        int relY = y - paletteY() - PANEL_PAD - 20;
-        if (relY < 0) {
+        if (hitSearch(x, y)) {
+            searchFocused = true;
+            MobileKeyboard.requestShow("scene-editor-assets-search");
             return;
         }
-        int col = relX / (ASSET_CELL + ASSET_GAP);
-        int row = relY / (ASSET_CELL + ASSET_GAP);
-        if (col < 0 || col >= ASSET_COLS) {
+        if (hitDone(x, y)) {
+            searchFocused = false;
+            MobileKeyboard.requestHide("scene-editor-assets-done");
+            spawnSelected();
             return;
         }
-        int idx = row * ASSET_COLS + col;
-        if (idx >= 0 && idx < ASSETS.length) {
-            selectedAsset = idx;
+        if (hitAssetList(x, y)) {
+            int listY = paletteY() + LIST_TOP;
+            SceneAssetCatalog.Entry entry = filteredEntryAt((y - listY) / ROW_H);
+            if (entry != null) {
+                selectAsset(entry);
+                searchFocused = false;
+                MobileKeyboard.requestHide("scene-editor-assets-select");
+            }
+        }
+    }
+
+    private static void spawnSelected() {
+        if (filteredCount() == 0) {
+            chat("No City Assets match '" + searchText + "'.");
+            return;
+        }
+        try {
+            Asset asset = currentAsset();
+            SceneEditorHost.spawnAtPlayer(asset.objectId);
+            SceneEditorHost.persistQuiet();
+            chat("Spawned " + asset.label + " (#" + asset.objectId + ")");
+        } catch (Throwable t) {
+            chat("Spawn failed: " + t.getMessage());
         }
     }
 
@@ -389,26 +492,51 @@ final class SceneEditorUi {
         int px = paletteX();
         int py = paletteY();
         int ph = paletteHeight();
+        int innerW = PANEL_W - PANEL_PAD * 2;
+        int count = filteredCount();
         toolkit.fillRect2D(px, py, PANEL_W, ph, BG, 1);
         toolkit.fillRect2D(px, py, PANEL_W, 1, ACCENT, 1);
         font.drawText("City Assets", ACCENT, py + PANEL_PAD + 12, px + PANEL_PAD, SHADOW, -110);
-        int cellY = py + PANEL_PAD + 20;
-        for (int i = 0; i < ASSETS.length; i++) {
-            int col = i % ASSET_COLS;
-            int row = i / ASSET_COLS;
-            int cx = px + PANEL_PAD + col * (ASSET_CELL + ASSET_GAP);
-            int cy = cellY + row * (ASSET_CELL + ASSET_GAP);
-            int fill = i == selectedAsset ? 0xC0332255 : 0xC0222228;
-            toolkit.fillRect2D(cx, cy, ASSET_CELL, ASSET_CELL, fill, 1);
-            if (i == selectedAsset) {
-                toolkit.fillRect3D(cx, cy, ASSET_CELL, ASSET_CELL, SELECT, 0);
-            } else {
-                toolkit.fillRect3D(cx, cy, ASSET_CELL, ASSET_CELL, 0xFF444444, 0);
+
+        int sx = searchX();
+        int sy = searchY();
+        toolkit.fillRect2D(sx, sy, innerW, SEARCH_H, 0xC0222228, 1);
+        toolkit.fillRect3D(sx, sy, innerW, SEARCH_H, searchFocused ? ACCENT : 0xFF555555, 0);
+        String query = searchText.length() == 0 ? "Search all objects..." : searchText;
+        font.drawText(query, searchText.length() == 0 ? 0xFF999999 : 0xFFFFFFFF,
+                sy + 17, sx + 6, SHADOW, -110);
+
+        int listY = py + LIST_TOP;
+        for (int row = 0; row < LIST_ROWS; row++) {
+            SceneAssetCatalog.Entry entry = filteredEntryAt(row);
+            int cy = listY + row * ROW_H;
+            boolean selected = entry != null && entry.objectId == selectedAsset.objectId;
+            toolkit.fillRect2D(sx, cy, innerW, ROW_H - 2, selected ? 0xC0332255 : 0xC0222228, 1);
+            if (entry != null) {
+                toolkit.fillRect3D(sx, cy, innerW, ROW_H - 2,
+                        selected ? SELECT : 0xFF444444, 0);
+                String label = entry.name + " (#" + entry.objectId + ")";
+                font.drawText(label, 0xFFFFFFFF, cy + 16, sx + 6, SHADOW, -110);
             }
-            String label = ASSETS[i].label;
-            font.drawText(label.length() > 8 ? label.substring(0, 8) : label,
-                    0xFFFFFFFF, cy + ASSET_CELL / 2 + 4, cx + 4, SHADOW, -110);
         }
+        if (count == 0) {
+            String status = SceneAssetCatalog.isLoading()
+                    ? "Loading objects " + SceneAssetCatalog.scanned() + "/" + SceneAssetCatalog.total()
+                    : "No objects match this search";
+            font.drawText(status, 0xFFAAAAAA, listY + 16, sx + 6, SHADOW, -110);
+        }
+
+        Asset selected = currentAsset();
+        String page = count > 0
+                ? "Results " + (resultOffset + 1) + "-" + Math.min(resultOffset + LIST_ROWS, count) + "/" + count
+                : "Results 0/0";
+        font.drawText(page, 0xFF999999, doneY() - 45, sx, SHADOW, -110);
+        font.drawText("Selected: " + selected.label + " (#" + selected.objectId + ")",
+                0xFFCCCCCC, doneY() - 31, sx, SHADOW, -110);
+        int buttonFill = count == 0 ? 0xFF444444 : 0xFF006C78;
+        toolkit.fillRect2D(sx, doneY(), innerW, DONE_H, buttonFill, 1);
+        toolkit.fillRect3D(sx, doneY(), innerW, DONE_H, count == 0 ? 0xFF666666 : ACCENT, 0);
+        font.drawText("Done", 0xFFFFFFFF, doneY() + 19, sx + innerW / 2 - 14, SHADOW, -110);
     }
 
     private static void drawToolBanner(GraphicsToolkit toolkit, BitmapFont font) {
@@ -489,8 +617,8 @@ final class SceneEditorUi {
     }
 
     static final class Asset {
-        final String label;
-        final int objectId;
+        String label;
+        int objectId;
 
         Asset(String label, int objectId) {
             this.label = label;

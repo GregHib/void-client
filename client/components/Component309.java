@@ -38,6 +38,16 @@ final class Component309
         }
     }
 
+
+    /** Number of LocType archive groups available in the cache. */
+    final int definitionGroupCount() {
+        return aClass45_3343 == null ? 0 : aClass45_3343.getGroupCapacity(-1);
+    }
+
+    /** Number of LocType files in one archive group. */
+    final int definitionFileCount(int group) {
+        return aClass45_3343 == null ? 0 : aClass45_3343.getFileCount(0, group);
+    }
     final Component44 method2005(int i, int i_0_) {
         anInt3351++;
         Component44 class51;

@@ -1,7 +1,7 @@
 # Local scene editor
 
 Device-local object scene editor: model + JSON persistence + **live placer** +
-**in-game HUD** + **right-click edit**. Never writes JS5 and never sends packets.
+**searchable City Assets component** + **right-click edit**. Never writes JS5 and never sends packets.
 
 Placed objects **stay in the world** when you turn the editor off. Only
 `ed clear` / Remove clears them. Edits autosave to `~/void-scenes/autosave.json`
@@ -10,12 +10,14 @@ and restore on the next login.
 ## In-game
 
 1. Microbot → **Editor: ON** (or `ed mode editor`).
-2. Right panel **City Assets** — pick Tree / Bench / …
-3. **Click** empty ground → place current asset.
-4. **Right-click** any scenery → **Move** / **Remove** / **Rotate**.
-5. **Ctrl+click** scenery → claim + drag (including stock world objects).
-6. After **Move**: click a destination tile.
-7. Turn **Editor: OFF** — objects remain. Named save: `ed save demo`.
+2. Open the right-side **City Assets** component.
+3. Type an asset name in **Search assets...**, then select a result.
+4. Click **Done** to spawn the selected asset at the player tile.
+5. Click empty ground to place the current asset at another tile.
+6. **Right-click** any scenery → **Move** / **Remove** / **Rotate**.
+7. **Ctrl+click** scenery → claim + drag (including stock world objects).
+8. After **Move**: click a destination tile.
+9. Turn **Editor: OFF** — objects remain. Named save: `ed save demo`.
 
 ## Persistence
 
@@ -49,14 +51,14 @@ ed status
 | `SceneEditor` | Commands + undo/redo |
 | `SceneObjectAdapter` / `LiveSceneBridge` | `SceneManager.method1591` sync |
 | `SceneEditorHost` | Console / claim / tick (region + restore) |
-| `SceneEditorUi` | Palette + click/drag HUD |
+| `SceneEditorUi` | Searchable City Assets component + selection, Done spawn, click/drag editing |
 | `SceneEditorMenu` | Right-click Move/Remove/Rotate |
 
 ## Limits
 
 - Scenery type 10; free `z` / scale stored only
-- Stock objects you **Remover** without owning come back on region reload
-- Palette LocType ids: `SceneEditorUi.ASSETS`
+- Stock objects you **Remove** without owning come back on region reload
+- City Assets are indexed asynchronously from every cached LocType; search returns up to 100 matches
 
 ## Build
 
