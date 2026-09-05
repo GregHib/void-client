@@ -58,7 +58,11 @@ final class SceneObjectAdapter {
         int rot = object.rotation & 3;
         int id = object.objectId;
         SceneManager.method1591(lx, JUNK, CATEGORY_SCENERY, -1, id, TYPE_SCENERY, ly, rot, object.plane);
-        applyFractionalOffset(object, lx, ly);
+        try {
+            applyFractionalOffset(object, lx, ly);
+        } catch (RuntimeException transformFailure) {
+            System.out.println("scene-editor transform: " + transformFailure.getMessage());
+        }
         return true;
     }
 
@@ -75,19 +79,29 @@ final class SceneObjectAdapter {
         }
         renderable.x += Math.round(object.offsetX * 512.0f);
         renderable.y += Math.round(object.offsetY * 512.0f);
-        renderable.anInt6382 += Math.round(object.offsetZ * 512.0f);
+        renderable.anInt6382 += Math.round((object.z + object.offsetZ) * 512.0f);
 
         DisplayModeManagerContainer370 model = null;
         if (renderable instanceof Component349) {
             model = ((Component349) renderable).aClass64_10028;
         } else if (renderable instanceof Component29 && NodeSub8.toolkit != null) {
             Component29 staticObject = (Component29) renderable;
-            if (staticObject.aClass235_10045 != null) {
+            if (staticObject.editorModel != null) {
+                model = staticObject.editorModel;
+            } else if (staticObject.aClass235_10045 != null) {
                 model = staticObject.aClass235_10045.method1668(false, true, -127, 2048, NodeSub8.toolkit);
             }
         }
         if (model != null && object.scale != 1.0f) {
             int scale = Math.round(object.scale * 128.0f);
+            if ((model.ua() & 7) != 7) {
+                model = model.createRenderPass((byte) 0, model.ua() | 7, true);
+                if (renderable instanceof Component349) {
+                    ((Component349) renderable).aClass64_10028 = model;
+                } else if (renderable instanceof Component29) {
+                    ((Component29) renderable).editorModel = model;
+                }
+            }
             model.O(scale, scale, scale);
         }
     }
@@ -102,6 +116,8 @@ final class SceneObjectAdapter {
         if (!inSceneBounds(lx, ly)) {
             return false;
         }
+        SceneManager.method1591(lx, JUNK, CATEGORY_SCENERY, -1, -1, TYPE_SCENERY, ly, 0, object.plane);
+        // Clear a possible stale editor placement left by an earlier failed resync.
         SceneManager.method1591(lx, JUNK, CATEGORY_SCENERY, -1, -1, TYPE_SCENERY, ly, 0, object.plane);
         return true;
     }

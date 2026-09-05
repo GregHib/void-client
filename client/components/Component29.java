@@ -21,6 +21,7 @@ final class Component29
     static int anInt10049;
     static int anInt10050;
     private ComponentDownloader aClass30_10051;
+    DisplayModeManagerContainer370 editorModel;
     static int anInt10052;
     static int anInt10053;
     static int anInt10054;
@@ -66,8 +67,8 @@ final class Component29
     }
 
     final boolean method2391(GraphicsToolkit var_ha, int i, int i_11_, int i_12_) {
-        anInt10040++;
-        DisplayModeManagerContainer370 class64 = this.aClass235_10045.method1668(false, false, i_12_ + -127, 131072, var_ha);
+        DisplayModeManagerContainer370 class64 = editorModel != null ? editorModel
+                : this.aClass235_10045.method1668(false, false, i_12_ + -127, 131072, var_ha);
         if (class64 == null) return false;
         if (i_12_ != 0) return false;
         DisplayModeManagerContainer204 class101 = var_ha.method3705();
@@ -101,8 +102,8 @@ final class Component29
     }
 
     final RenderableSub4 method2386(int i, GraphicsToolkit var_ha) {
-        anInt10057++;
-        DisplayModeManagerContainer370 class64 = this.aClass235_10045.method1668(false, true, -127, 2048, var_ha);
+        DisplayModeManagerContainer370 class64 = editorModel != null ? editorModel
+                : this.aClass235_10045.method1668(false, true, -127, 2048, var_ha);
         if (class64 == null) return null;
         DisplayModeManagerContainer204 class101 = var_ha.method3705();
         class101.method894(this.x, this.anInt6382, this.y);
@@ -163,8 +164,8 @@ final class Component29
     }
 
     final void method2387(GraphicsToolkit var_ha, int i) {
-        anInt10039++;
-        DisplayModeManagerContainer370 class64 = this.aClass235_10045.method1668(true, true, -127, 262144, var_ha);
+        DisplayModeManagerContainer370 class64 = editorModel != null ? editorModel
+                : this.aClass235_10045.method1668(true, true, -127, 262144, var_ha);
         if (class64 != null) {
             DisplayModeManagerContainer204 class101 = var_ha.method3705();
             class101.method894(this.x, this.anInt6382, this.y);
