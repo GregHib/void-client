@@ -235,7 +235,7 @@ public final class client extends Applet_Sub1 {
         Component324.method1208(55);
         DisplayModeManagerContainer130.method2045((byte) 62);
         Component316.method1395((byte) 82);
-        Component309.method2011((byte) -71);
+        ObjectDefinitionProvider.method2011((byte) -71);
         Component258.method1179((byte) -124);
         ItemDefinitionProvider.method1931(true);
         Component38.method1407((byte) 124);
@@ -299,7 +299,7 @@ public final class client extends Applet_Sub1 {
         DisplayModeManagerContainer56.method1426(25165);
         Component80.method2254(i ^ ~0x39bf);
         Component121.method3613(64);
-        Component44.method486(-123);
+        ObjectDefinition.method486(-123);
         DisplayModeManagerContainer77.method1096(i ^ 0x11);
         Component245.method171((byte) 72);
         s.method3988(i + -182);

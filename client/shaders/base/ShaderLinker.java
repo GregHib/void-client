@@ -140,7 +140,7 @@ final class ShaderLinker extends Component203 implements Interface10 {
         anIntArray10172 = null;
     }
 
-    ShaderLinker(GraphicsToolkit var_ha, Component44 class51, int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_) {
+    ShaderLinker(GraphicsToolkit var_ha, ObjectDefinition class51, int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_, int i_10_, int i_11_, int i_12_, int i_13_) {
         super(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_);
         try {
             this.aClass235_10155 = new Component366(var_ha, class51, i_11_, i_12_, this.plane, i_5_, this, bool, i_13_);

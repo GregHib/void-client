@@ -89,10 +89,10 @@ final class DisplayModeManagerContainer292
     }
 
     static final void method1309(boolean bool, int i) {
-        if (Component44.aClass311_897 == null) DisplayModeManagerContainer88.method726(92);
+        if (ObjectDefinition.aClass311_897 == null) DisplayModeManagerContainer88.method726(92);
         if (i < 116) aClass237_Sub1_5067 = null;
         anInt5062++;
-        if (bool) Component44.aClass311_897.method2326(96);
+        if (bool) ObjectDefinition.aClass311_897.method2326(96);
     }
 
     public static void method1310(boolean bool) {

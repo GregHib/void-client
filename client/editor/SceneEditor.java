@@ -57,6 +57,28 @@ final class SceneEditor {
             SceneObject o = required(id); o.x = x; o.y = y; o.z = z; o.validate();
         }});
     }
+    void nudge(final long id, final float dx, final float dy) {
+        change(new Runnable() { public void run() {
+            SceneObject object = required(id);
+            object.nudge(dx, dy);
+            object.validate();
+        }});
+    }
+    void nudgeHeight(final long id, final float dz) {
+        change(new Runnable() { public void run() {
+            SceneObject object = required(id);
+            object.nudgeHeight(dz);
+            object.validate();
+        }});
+    }
+
+    void scaleBy(final long id, final float delta) {
+        change(new Runnable() { public void run() {
+            SceneObject object = required(id);
+            object.scale += delta;
+            object.validate();
+        }});
+    }
     void rotate(final long id, final int rotation) {
         change(new Runnable() { public void run() { SceneObject o = required(id); o.rotation = rotation; o.validate(); }});
     }

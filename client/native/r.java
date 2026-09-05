@@ -22,7 +22,7 @@ abstract class r
     }
 
     static final void method3284(boolean bool, double d) {
-        Component352.aClass101_624.method898(Component44.aClass101_905);
+        Component352.aClass101_624.method898(ObjectDefinition.aClass101_905);
         anInt9717++;
         if (bool != true) method3285(10);
         Component352.aClass101_624.method891(0, 0, (int) d);

@@ -68,7 +68,7 @@ final class InputStream_Sub2 extends InputStream {
             } else if (class74 == NodeSub35.aClass74_6977) {
                 int i_29_ = Component80.aClass348_Sub49_Sub2_3813.readUnsignedShort(842397944);
                 int i_30_ = Component80.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
-                GradientPreset.aClass263_9195.method2005(0, i_29_).method478(i_30_, -31076);
+                GradientPreset.aClass263_9195.getObjectDefinition(0, i_29_).method478(i_30_, -31076);
             } else if (GpiLogger.aClass74_8853 == class74) {
                 int i_31_ = Component80.aClass348_Sub49_Sub2_3813.readUnsignedByte(i + 247);
                 int i_32_ = DisplayModeManagerContainer347.anInt3581 + ((i_31_ & 0x7b) >> 4);

@@ -1,8 +1,8 @@
-/* Component44 - Decompiled by JODE
+/* ObjectDefinition - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
-final class Component44
+final class ObjectDefinition
 /**
  * RENAMED from `Class51` (JODE-obfuscated).
  * Evidence: root class; no distinctive extends/strings
@@ -75,7 +75,7 @@ final class Component44
     boolean aBoolean931;
     /** Ignore-list primary names (parallel arrays, length {@link MenuEntry#ignoreCount}). */
     static String[] ignoreNames = new String[100];
-    Component309 aClass263_933;
+    ObjectDefinitionProvider aClass263_933;
     private int anInt934;
     private int anInt935;
     int anInt936;
@@ -113,7 +113,7 @@ final class Component44
         }
         for (int i_0_ = 0; i_0_ < this.anIntArray945.length; i_0_++) {
             if (this.anIntArray945[i_0_] != -1) {
-                Component44 class51_1_ = this.aClass263_933.method2005(0, this.anIntArray945[i_0_]);
+                ObjectDefinition class51_1_ = this.aClass263_933.getObjectDefinition(0, this.anIntArray945[i_0_]);
                 if (class51_1_.anInt887 != -1 || class51_1_.anIntArray904 != null) return true;
             }
         }
@@ -130,7 +130,7 @@ final class Component44
         return class348_sub50.stringValue;
     }
 
-    final Component245 method476(GraphicsToolkit var_ha, s var_s, int i, int i_4_, int i_5_, boolean bool, s var_s_6_, int i_7_, int i_8_, int i_9_, int i_10_) {
+    final Component245 buildLocationModel(GraphicsToolkit var_ha, s var_s, int i, int i_4_, int i_5_, boolean bool, s var_s_6_, int i_7_, int i_8_, int i_9_, int i_10_) {
         try {
             if (Component65.method955(22311, i)) i = 4;
             anInt938++;
@@ -303,7 +303,7 @@ final class Component44
         if (i != 0) method486(-77);
     }
 
-    final Component44 method480(Interface17 interface17, byte i) {
+    final ObjectDefinition getTransformedDefinition(Interface17 interface17, byte i) {
         anInt870++;
         int i_34_ = -1;
         if (anInt934 == -1) {
@@ -313,9 +313,9 @@ final class Component44
         if (i_34_ < 0 || -1 + this.anIntArray945.length <= i_34_ || this.anIntArray945[i_34_] == -1) {
             int i_35_ = (this.anIntArray945[-1 + this.anIntArray945.length]);
             if (i_35_ == -1) return null;
-            return this.aClass263_933.method2005(0, i_35_);
+            return this.aClass263_933.getObjectDefinition(0, i_35_);
         }
-        return this.aClass263_933.method2005(i + -47, this.anIntArray945[i_34_]);
+        return this.aClass263_933.getObjectDefinition(i + -47, this.anIntArray945[i_34_]);
     }
 
     final boolean method481(byte i, int i_36_) {
@@ -666,7 +666,7 @@ final class Component44
         return -1;
     }
 
-    public Component44() {
+    public ObjectDefinition() {
         this.anInt869 = -1;
         anInt890 = 0;
         this.aBoolean896 = true;

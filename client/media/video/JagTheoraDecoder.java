@@ -298,7 +298,7 @@ abstract class JagTheoraDecoder {
 
     static final boolean method520(Interface10 interface10, int i) {
         anInt1000++;
-        Component44 class51 = GradientPreset.aClass263_9195.method2005(0, interface10.method42(-94));
+        ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-94));
         if (class51.anInt875 == -1) return true;
         SceneManager class218 = Component245.aClass141_117.method1173((byte) 31, class51.anInt875);
         if (i == class218.anInt2853) return true;

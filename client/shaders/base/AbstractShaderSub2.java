@@ -123,13 +123,13 @@ final class AbstractShaderSub2
             if (string_8_ != null) {
                 if (bool != true) method3536(9, 65, -72, 107, null);
                 for (int i = 0; (MenuEntry.ignoreCount > i); i++) {
-                    String string_9_ = Component44.ignoreNames[i];
+                    String string_9_ = ObjectDefinition.ignoreNames[i];
                     if (string_9_.startsWith("*")) string_9_ = string_9_.substring(1);
                     string_9_ = DebugPanicSub1.method2127(2, string_9_);
                     if (string_9_ != null && string_9_.equals(string_8_)) {
                         MenuEntry.ignoreCount--;
                         for (int i_10_ = i; MenuEntry.ignoreCount > i_10_; i_10_++) {
-                            Component44.ignoreNames[i_10_] = Component44.ignoreNames[i_10_ + 1];
+                            ObjectDefinition.ignoreNames[i_10_] = ObjectDefinition.ignoreNames[i_10_ + 1];
                             DisplayModeManagerContainer145.ignoreDisplayNames[i_10_] = DisplayModeManagerContainer145.ignoreDisplayNames[1 + i_10_];
                             DefinitionSub21.ignoreLastNames[i_10_] = (DefinitionSub21.ignoreLastNames[1 + i_10_]);
                             ShaderSub2.ignoreLastDisplayNames[i_10_] = ShaderSub2.ignoreLastDisplayNames[1 + i_10_];

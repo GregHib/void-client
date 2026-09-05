@@ -300,8 +300,8 @@ final class ColoredText extends Component339 {
                         }
                         if (class318_sub4.aClass318_Sub1_6410 instanceof Interface10) {
                             Interface10 interface10 = ((Interface10) (class318_sub4.aClass318_Sub1_6410));
-                            Component44 class51 = (GradientPreset.aClass263_9195.method2005(0, interface10.method42(-100)));
-                            if (class51.anIntArray945 != null) class51 = (class51.method480((DisplayModeManagerContainer58.aClass170_10209), (byte) 47));
+                            ObjectDefinition class51 = (GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-100)));
+                            if (class51.anIntArray945 != null) class51 = (class51.getTransformedDefinition((DisplayModeManagerContainer58.aClass170_10209), (byte) 47));
                             if (class51 != null) {
                                 if (r.aBoolean9722 && ((Component72.localPlayer.plane) == (class318_sub4.aClass318_Sub1_6410.plane))) {
                                     Component355 class254 = (Component163.anInt3176 != -1 ? (MatrixSub3.aClass326_5764.method2600(Component163.anInt3176, 28364)) : null);

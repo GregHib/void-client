@@ -8,8 +8,8 @@ import java.util.List;
  * packets. Coordinates are absolute world tiles ({@link SceneObject#x}/{@link SceneObject#y});
  * they are converted to the current region-local tile space before placement.
  * <p>
- * Stock placer supports rotation 0–3 and terrain height. Free {@code z} and
- * per-instance {@code scale} from {@link SceneObject} are ignored here.
+ * Stock placer supports rotation 0–3 and terrain height. Fractional x/y/z and
+ * per-instance {@code scale} are applied to the native renderable after placement.
  */
 final class SceneObjectAdapter {
     /** {@link SceneManager#method1591} removeCategory for scenery (type 10/11). */
@@ -58,7 +58,38 @@ final class SceneObjectAdapter {
         int rot = object.rotation & 3;
         int id = object.objectId;
         SceneManager.method1591(lx, JUNK, CATEGORY_SCENERY, -1, id, TYPE_SCENERY, ly, rot, object.plane);
+        applyFractionalOffset(object, lx, ly);
         return true;
+    }
+
+    /** Apply fractional position and per-instance scale to the native renderable. */
+    private static void applyFractionalOffset(SceneObject object, int localX, int localY) {
+        if (object.offsetX == 0.0f && object.offsetY == 0.0f
+                && object.offsetZ == 0.0f && object.scale == 1.0f) {
+            return;
+        }
+        Component327 renderable = DisplayModeManagerContainer249.method1353(
+                object.plane, localX, localY, Component327.class);
+        if (renderable == null) {
+            return;
+        }
+        renderable.x += Math.round(object.offsetX * 512.0f);
+        renderable.y += Math.round(object.offsetY * 512.0f);
+        renderable.anInt6382 += Math.round(object.offsetZ * 512.0f);
+
+        DisplayModeManagerContainer370 model = null;
+        if (renderable instanceof Component349) {
+            model = ((Component349) renderable).aClass64_10028;
+        } else if (renderable instanceof Component29 && NodeSub8.toolkit != null) {
+            Component29 staticObject = (Component29) renderable;
+            if (staticObject.aClass235_10045 != null) {
+                model = staticObject.aClass235_10045.method1668(false, true, -127, 2048, NodeSub8.toolkit);
+            }
+        }
+        if (model != null && object.scale != 1.0f) {
+            int scale = Math.round(object.scale * 128.0f);
+            model.O(scale, scale, scale);
+        }
     }
 
     /** Remove scenery category at the object's absolute tile (no place). */
@@ -81,7 +112,7 @@ final class SceneObjectAdapter {
             if (GradientPreset.aClass263_9195 == null) {
                 return null;
             }
-            Component44 def = GradientPreset.aClass263_9195.method2005(0, objectId);
+            ObjectDefinition def = GradientPreset.aClass263_9195.getObjectDefinition(0, objectId);
             return def != null ? def.aString884 : null;
         } catch (Throwable t) {
             return null;

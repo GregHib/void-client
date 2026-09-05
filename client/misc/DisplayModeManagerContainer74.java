@@ -37,7 +37,7 @@ final class DisplayModeManagerContainer74
             int i_4_ = 0x7fffffff & (int) (l >>> 32);
             if (i_2_ != 10 && i_2_ != 11 && i_2_ != 22) Component10.method2252(true, i_0_, i, (byte) -119, 0, 0, 0, i_2_, i_3_);
             else {
-                Component44 class51 = GradientPreset.aClass263_9195.method2005(0, i_4_);
+                ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, i_4_);
                 int i_5_;
                 int i_6_;
                 if (i_3_ == 0 || i_3_ == 2) {

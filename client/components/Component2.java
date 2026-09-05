@@ -58,7 +58,7 @@ final class Component2
 
     static final boolean method195(int i, boolean bool, int i_11_) {
         anInt8364++;
-        Component44 class51 = GradientPreset.aClass263_9195.method2005(0, i_11_);
+        ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, i_11_);
         if (i == 11) i = 10;
         if (bool != false) return false;
         if (i >= 5 && i <= 8) i = 4;

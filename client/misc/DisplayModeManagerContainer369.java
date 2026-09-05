@@ -38,7 +38,7 @@ final class DisplayModeManagerContainer369
         this.anInt2896 = i_1_;
     }
 
-    static final void method1614(int i, Npc npc, int i_2_, int i_3_, int i_4_, Player player, Component44 class51, int i_5_) {
+    static final void method1614(int i, Npc npc, int i_2_, int i_3_, int i_4_, Player player, ObjectDefinition class51, int i_5_) {
         try {
             anInt2898++;
             if (i != 979190089) aBoolean2895 = false;

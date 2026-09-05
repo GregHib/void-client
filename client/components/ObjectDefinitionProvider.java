@@ -1,8 +1,8 @@
-/* Component309 - Decompiled by JODE
+/* ObjectDefinitionProvider - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
-final class Component309
+final class ObjectDefinitionProvider
 /**
  * RENAMED from `Class263` (JODE-obfuscated).
  * Evidence: root class; no distinctive extends/strings
@@ -48,18 +48,18 @@ final class Component309
     final int definitionFileCount(int group) {
         return aClass45_3343 == null ? 0 : aClass45_3343.getFileCount(0, group);
     }
-    final Component44 method2005(int i, int i_0_) {
+    final ObjectDefinition getObjectDefinition(int i, int i_0_) {
         anInt3351++;
-        Component44 class51;
+        ObjectDefinition class51;
         synchronized (aClass60_3350) {
-            class51 = (Component44) aClass60_3350.get(i_0_, i ^ 0x32);
+            class51 = (ObjectDefinition) aClass60_3350.get(i_0_, i ^ 0x32);
         }
         if (class51 != null) return class51;
         byte[] is;
         synchronized (aClass45_3343) {
             is = aClass45_3343.getFile(i + -1860, Component284.method1850(i_0_, 111), Component364.method185(i_0_, (byte) -90));
         }
-        class51 = new Component44();
+        class51 = new ObjectDefinition();
         class51.anInt941 = i_0_;
         class51.aClass263_933 = this;
         if (is != null) class51.method479((byte) 0, new Buffer(is));
@@ -346,7 +346,7 @@ final class Component309
         if (bool != true) this.aClass60_3362 = null;
     }
 
-    Component309(GameType class230, int i, boolean bool, CacheStore class45, CacheStore class45_29_) {
+    ObjectDefinitionProvider(GameType class230, int i, boolean bool, CacheStore class45, CacheStore class45_29_) {
         aClass60_3350 = new NodeCache(64);
         this.aClass60_3360 = new NodeCache(500);
         this.aClass60_3361 = new NodeCache(30);

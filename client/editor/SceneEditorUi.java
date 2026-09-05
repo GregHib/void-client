@@ -27,10 +27,11 @@ final class SceneEditorUi {
     private static final int ACTION_H = 26;
     private static final int ACTION_GAP = 4;
 
-    private static final int MOVE_PANEL_H = 300;
+    private static final int MOVE_PANEL_H = 340;
     private static final int MOVE_BUTTON = 30;
     private static final int MOVE_GAP = 4;
     private static final int MOVE_DONE_H = 28;
+    private static final float SCALE_STEP = 0.1f;
     private static final int DONE_H = 28;
     private static final int BG = 0xD01A1028;
     private static final int HEADER_BG = 0xE023172E;
@@ -47,13 +48,14 @@ final class SceneEditorUi {
 
     private static final Asset selectedAsset = new Asset("Tree", 1276);
     private static int previewObjectId = -1;
-    private static Component44 previewDefinition;
+    private static ObjectDefinition previewDefinition;
     private static int resultOffset;
     private static long selectedId = -1L;
     private static boolean searchFocused;
     private static String searchText = "";
     private static boolean dragging;
     private static boolean moveArmed;
+    private static boolean microAdjust;
     private static int dragHoverAbsX = -1;
     private static int dragHoverAbsY = -1;
     private static int hoverAbsX = -1;
@@ -138,6 +140,7 @@ final class SceneEditorUi {
         selectedId = -1L;
         dragging = false;
         moveArmed = false;
+        microAdjust = false;
         searchFocused = false;
         announced = false;
     }
@@ -534,6 +537,9 @@ final class SceneEditorUi {
         return paletteY() + 220;
     }
 
+    private static int moveMicroAdjustY() {
+        return moveRotateY() + MOVE_BUTTON + MOVE_GAP;
+    }
     private static int moveDoneY() {
         return paletteY() + MOVE_PANEL_H - PANEL_PAD - MOVE_DONE_H;
     }
@@ -541,6 +547,19 @@ final class SceneEditorUi {
     private static int moveCenterX() {
         return searchX() + (PANEL_W - PANEL_PAD * 2 - MOVE_BUTTON) / 2;
     }
+    private static int moveSideX(boolean left) {
+        int centerX = moveCenterX();
+        return centerX + (left ? -2 : 2) * (MOVE_BUTTON + MOVE_GAP);
+    }
+
+    private static int moveSideTopY() {
+        return moveControlsY();
+    }
+
+    private static int moveSideBottomY() {
+        return moveControlsY() + MOVE_BUTTON + MOVE_GAP;
+    }
+
 
     private static boolean hitMoveButton(int x, int y, int buttonX, int buttonY, int width, int height) {
         return x >= buttonX && x < buttonX + width && y >= buttonY && y < buttonY + height;
@@ -634,7 +653,17 @@ final class SceneEditorUi {
     private static void onMovePanelClick(int x, int y) {
         int centerX = moveCenterX();
         int controlsY = moveControlsY();
-        if (hitMoveButton(x, y, centerX, controlsY, MOVE_BUTTON, MOVE_BUTTON)) {
+        int leftX = moveSideX(true);
+        int rightX = moveSideX(false);
+        if (hitMoveButton(x, y, leftX, moveSideTopY(), MOVE_BUTTON, MOVE_BUTTON)) {
+            nudgeSelectedHeight(microAdjust ? 0.1f : 1.0f);
+        } else if (hitMoveButton(x, y, leftX, moveSideBottomY(), MOVE_BUTTON, MOVE_BUTTON)) {
+            nudgeSelectedHeight(microAdjust ? -0.1f : -1.0f);
+        } else if (hitMoveButton(x, y, rightX, moveSideTopY(), MOVE_BUTTON, MOVE_BUTTON)) {
+            scaleSelectedBy(SCALE_STEP);
+        } else if (hitMoveButton(x, y, rightX, moveSideBottomY(), MOVE_BUTTON, MOVE_BUTTON)) {
+            scaleSelectedBy(-SCALE_STEP);
+        } else if (hitMoveButton(x, y, centerX, controlsY, MOVE_BUTTON, MOVE_BUTTON)) {
             moveSelectedBy(0, 1);
         } else if (hitMoveButton(x, y, centerX - MOVE_BUTTON - MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
                 MOVE_BUTTON, MOVE_BUTTON)) {
@@ -647,10 +676,11 @@ final class SceneEditorUi {
             moveSelectedBy(1, 0);
         } else if (hitMoveButton(x, y, searchX(), moveRotateY(), PANEL_W - PANEL_PAD * 2, MOVE_BUTTON)) {
             rotateSelected();
+        } else if (hitMoveButton(x, y, searchX(), moveMicroAdjustY(), PANEL_W - PANEL_PAD * 2, MOVE_BUTTON)) {
+            microAdjust = !microAdjust;
+            chat("Micro Adjust " + (microAdjust ? "ON (0.1 tile)" : "OFF (1 tile)"));
         } else if (hitMoveButton(x, y, searchX(), moveDoneY(), PANEL_W - PANEL_PAD * 2, MOVE_DONE_H)) {
-            moveArmed = false;
-            dragging = false;
-            chat("Move finished");
+            finishMove();
         }
     }
 
@@ -663,9 +693,44 @@ final class SceneEditorUi {
         if (object == null) {
             return;
         }
-        moveSelectedTo(object.x + dx, object.y + dy);
+        if (!microAdjust) {
+            moveSelectedTo(object.x + dx, object.y + dy);
+            return;
+        }
+        try {
+            SceneEditorHost.editor().nudge(selectedId, dx * 0.1f, dy * 0.1f);
+            SceneEditorHost.resync();
+            SceneEditorHost.persistQuiet();
+        } catch (Throwable t) {
+            System.out.println("scene-editor micro-move: " + t.getMessage());
+        }
+    }
+    private static void nudgeSelectedHeight(float delta) {
+        if (selectedObject() == null) {
+            return;
+        }
+        try {
+            SceneEditorHost.editor().nudgeHeight(selectedId, delta);
+            SceneEditorHost.resync();
+            SceneEditorHost.persistQuiet();
+        } catch (Throwable t) {
+            System.out.println("scene-editor height: " + t.getMessage());
+        }
     }
 
+    private static void scaleSelectedBy(float delta) {
+        SceneObject object = selectedObject();
+        if (object == null || object.scale + delta < 0.1f || object.scale + delta > 100.0f) {
+            return;
+        }
+        try {
+            SceneEditorHost.editor().scaleBy(selectedId, delta);
+            SceneEditorHost.resync();
+            SceneEditorHost.persistQuiet();
+        } catch (Throwable t) {
+            System.out.println("scene-editor scale: " + t.getMessage());
+        }
+    }
     private static void moveSelectedTo(int x, int y) {
         try {
             SceneObject object = selectedObject();
@@ -679,6 +744,13 @@ final class SceneEditorUi {
         } catch (Throwable t) {
             System.out.println("scene-editor move-to: " + t.getMessage());
         }
+    }
+    private static String formatCoordinate(int tile, float offset) {
+        int tenths = Math.round(offset * 10.0f);
+        if (tenths >= 10) {
+            return (tile + 1) + ".0";
+        }
+        return tile + "." + tenths;
     }
     private static void runEditorCommand(String command, String label) {
         boolean keepEditorMode = SceneEditorHost.isEditorMode();
@@ -736,7 +808,7 @@ final class SceneEditorUi {
         }
     }
 
-    private static Component44 previewDefinition(int objectId) {
+    private static ObjectDefinition previewDefinition(int objectId) {
         if (previewObjectId == objectId) {
             return previewDefinition;
         }
@@ -744,7 +816,7 @@ final class SceneEditorUi {
         previewDefinition = null;
         try {
             if (GradientPreset.aClass263_9195 != null) {
-                previewDefinition = GradientPreset.aClass263_9195.method2005(0, objectId);
+                previewDefinition = GradientPreset.aClass263_9195.getObjectDefinition(0, objectId);
             }
         } catch (Throwable ignored) {
             /* A missing model must not break the editor panel. */
@@ -753,7 +825,7 @@ final class SceneEditorUi {
     }
 
     private static void drawPreview(GraphicsToolkit toolkit, BitmapFont font, int x, int y, int width, int objectId) {
-        Component44 definition = previewDefinition(objectId);
+        ObjectDefinition definition = previewDefinition(objectId);
         if (definition != null && drawObjectModelPreview(toolkit, definition, x, y, width)) {
             return;
         }
@@ -767,13 +839,13 @@ final class SceneEditorUi {
      * map-scene id stored in anInt875. Build the location model directly and
      * use the same projection setup as type-6 interface model widgets.
      */
-    private static boolean drawObjectModelPreview(GraphicsToolkit toolkit, Component44 definition,
+    private static boolean drawObjectModelPreview(GraphicsToolkit toolkit, ObjectDefinition definition,
                                                   int x, int y, int width) {
         Component245 model = null;
         int[] modelTypes = {10, 22, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
         for (int modelType : modelTypes) {
             try {
-                model = definition.method476(toolkit, null, modelType, 2048, 0, false,
+                model = definition.buildLocationModel(toolkit, null, modelType, 2048, 0, false,
                         null, 0, 0, 0, 128);
                 if (model != null && model.aClass64_119 != null) {
                     break;
@@ -834,13 +906,24 @@ final class SceneEditorUi {
         font.drawText("PREVIEW", 0xFFAAAAAA, previewY + 15, sx + 6, SHADOW, -110);
         if (object != null) {
             drawPreview(toolkit, font, sx, previewY, innerW, object.objectId);
-            font.drawText("#" + object.objectId + " @ " + object.x + "," + object.y,
+            font.drawText("#" + object.objectId + " @ "
+                            + formatCoordinate(object.x, object.offsetX) + ","
+                            + formatCoordinate(object.y, object.offsetY),
                     0xFFCCCCCC, previewY + PREVIEW_H - 7, sx + 6, SHADOW, -110);
         }
 
         int controlsY = moveControlsY();
-        font.drawText("Move one tile per click", 0xFFAAAAAA, controlsY - 10, sx, SHADOW, -110);
+        font.drawText("Move " + (microAdjust ? "0.1" : "1") + " tile per click",
+                0xFFAAAAAA, controlsY - 10, sx, SHADOW, -110);
         int centerX = moveCenterX();
+        int leftX = moveSideX(true);
+        int rightX = moveSideX(false);
+        font.drawText("Y", 0xFFAAAAAA, controlsY - 10, leftX + 11, SHADOW, -110);
+        font.drawText("Scale", 0xFFAAAAAA, controlsY - 10, rightX - 2, SHADOW, -110);
+        drawMoveButton(toolkit, font, leftX, moveSideTopY(), MOVE_BUTTON, "Y+");
+        drawMoveButton(toolkit, font, leftX, moveSideBottomY(), MOVE_BUTTON, "Y-");
+        drawMoveButton(toolkit, font, rightX, moveSideTopY(), MOVE_BUTTON, "S+");
+        drawMoveButton(toolkit, font, rightX, moveSideBottomY(), MOVE_BUTTON, "S-");
         drawMoveButton(toolkit, font, centerX, controlsY, MOVE_BUTTON, "up");
         drawMoveButton(toolkit, font, centerX - MOVE_BUTTON - MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
                 MOVE_BUTTON, "left");
@@ -848,6 +931,8 @@ final class SceneEditorUi {
         drawMoveButton(toolkit, font, centerX + MOVE_BUTTON + MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
                 MOVE_BUTTON, "right");
         drawMoveButton(toolkit, font, sx, moveRotateY(), innerW, MOVE_BUTTON, "Rotate");
+        drawMoveButton(toolkit, font, sx, moveMicroAdjustY(), innerW, MOVE_BUTTON,
+                microAdjust ? "Micro Adjust: ON" : "Micro Adjust: OFF");
         drawMoveButton(toolkit, font, sx, moveDoneY(), innerW, MOVE_DONE_H, "Done");
     }
 

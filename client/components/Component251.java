@@ -26,7 +26,7 @@ final class Component251
             anInt5823++;
             if (Component192.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(i_3_ ^ ~0x7e6f) != 0 || Component255.method536(i_5_, false, i, Component385.anInt2204, i_2_)) {
                 if (this.anInt5824 > i_0_) this.anInt5824 = i_0_;
-                Component44 class51 = GradientPreset.aClass263_9195.method2005(0, i_1_);
+                ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, i_1_);
                 if (Component192.aClass348_Sub51_3959.aClass239_Sub24_7235.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {
                     int i_8_;
                     int i_9_;
@@ -239,7 +239,7 @@ final class Component251
                         } else if (i_4_ == 5) {
                             int i_27_ = 65;
                             Interface10 interface10 = ((Interface10) CacheNodeSub2.method3297(i_0_, i, i_5_));
-                            if (interface10 != null) i_27_ = 1 + (GradientPreset.aClass263_9195.method2005(0, interface10.method42(-93)).anInt883);
+                            if (interface10 != null) i_27_ = 1 + (GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-93)).anInt883);
                             Component203 class318_sub1_sub5;
                             if (bool_17_) {
                                 Component289 class318_sub1_sub5_sub1 = (new Component289(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * Component3.anIntArray2039[i_7_], (ToolbarRefreshDefinition.anIntArray9230[i_7_]) * i_27_, i_4_, i_7_));
@@ -250,7 +250,7 @@ final class Component251
                         } else if (i_4_ == 6) {
                             int i_28_ = 33;
                             Interface10 interface10 = ((Interface10) CacheNodeSub2.method3297(i_0_, i, i_5_));
-                            if (interface10 != null) i_28_ = 1 + (GradientPreset.aClass263_9195.method2005(0, interface10.method42(-117)).anInt883) / 2;
+                            if (interface10 != null) i_28_ = 1 + (GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-117)).anInt883) / 2;
                             Component203 class318_sub1_sub5;
                             if (bool_17_) {
                                 Component289 class318_sub1_sub5_sub1 = (new Component289(var_ha, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * Component3.anIntArray2039[i_7_], (ToolbarRefreshDefinition.anIntArray9230[i_7_]) * i_28_, i_4_, 4 + i_7_));
@@ -271,7 +271,7 @@ final class Component251
                             int i_30_ = 2 + i_7_ & 0x3;
                             int i_31_ = 33;
                             Interface10 interface10 = ((Interface10) CacheNodeSub2.method3297(i_0_, i, i_5_));
-                            if (interface10 != null) i_31_ = (GradientPreset.aClass263_9195.method2005(i_3_ + -50, interface10.method42(-122)).anInt883) / 2 + 1;
+                            if (interface10 != null) i_31_ = (GradientPreset.aClass263_9195.getObjectDefinition(i_3_ + -50, interface10.method42(-122)).anInt883) / 2 + 1;
                             Component203 class318_sub1_sub5;
                             Component203 class318_sub1_sub5_32_;
                             if (bool_17_) {
@@ -472,7 +472,7 @@ final class Component251
                     int i_88_ = i_87_ >> 2;
                     int i_89_ = i_87_ & 0x3;
                     if (i_74_ == i_86_ && i <= i_85_ && i - -8 > i_85_ && i_75_ <= i_84_ && i_75_ - -8 > i_84_) {
-                        Component44 class51 = GradientPreset.aClass263_9195.method2005(0, i_80_);
+                        ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, i_80_);
                         int i_90_ = Component217.method1908(0x7 & i_84_, i_85_ & 0x7, i_73_, true, class51.anInt926, class51.anInt961, i_89_) + i_77_;
                         int i_91_ = i_76_ + Component331.method1045(0x7 & i_85_, (class51.anInt926), i_89_, (class51.anInt961), i_84_ & 0x7, i_73_, (byte) 16);
                         if (i_90_ > 0 && i_91_ > 0 && i_90_ < -1 + this.anInt3117 && -1 + this.anInt3114 > i_91_) {
@@ -509,7 +509,7 @@ final class Component251
                     Interface10 interface10 = method1690(i, i_95_, i_94_, i_93_, 30987);
                     if (i_96_ <= 66) anInt5819 = -107;
                     if (interface10 == null) break while_77_;
-                    Component44 class51 = GradientPreset.aClass263_9195.method2005(0, interface10.method42(-89));
+                    ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-89));
                     int i_97_ = interface10.method39(-128);
                     int i_98_ = interface10.method41(-32228);
                     if (class51.method474((byte) -50)) Component112.method2336(class51, i_94_, i_95_, i_93_, -128);

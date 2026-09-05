@@ -104,7 +104,7 @@ final class Component119
         return anInterface7_3398;
     }
 
-    static final void method2028(int i, Component44 class51, int i_0_, GraphicsToolkit var_ha, int i_1_, int i_2_) {
+    static final void method2028(int i, ObjectDefinition class51, int i_0_, GraphicsToolkit var_ha, int i_1_, int i_2_) {
         try {
             anInt3395++;
             SceneManager class218 = Component245.aClass141_117.method1173((byte) 31, class51.anInt875);

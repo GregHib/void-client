@@ -117,7 +117,7 @@ final class Component141
         }
     }
 
-    Component141(GraphicsToolkit var_ha, Component44 class51, int i, int i_7_, int i_8_, int i_9_, int i_10_, boolean bool, int i_11_, int i_12_) {
+    Component141(GraphicsToolkit var_ha, ObjectDefinition class51, int i, int i_7_, int i_8_, int i_9_, int i_10_, boolean bool, int i_11_, int i_12_) {
         super(i_8_, i_9_, i_10_, i, i_7_, class51.anInt930);
         try {
             this.aClass235_9955 = new Component366(var_ha, class51, 22, i_11_, i, i_7_, this, bool, i_12_);

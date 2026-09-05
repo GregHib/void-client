@@ -91,7 +91,7 @@ final class SceneAssetCatalog {
     }
 
     private static void load() {
-        Component309 provider = GradientPreset.aClass263_9195;
+        ObjectDefinitionProvider provider = GradientPreset.aClass263_9195;
         if (provider == null) {
             loading = false;
             return;
@@ -110,7 +110,7 @@ final class SceneAssetCatalog {
                 for (int file = 0; file < files; file++) {
                     int objectId = group << 8 | file;
                     try {
-                        Component44 definition = provider.method2005(0, objectId);
+                        ObjectDefinition definition = provider.getObjectDefinition(0, objectId);
                         String name = definition == null ? null : definition.aString884;
                         if (name == null || name.length() == 0 || "null".equalsIgnoreCase(name)) {
                             name = "Unnamed object";

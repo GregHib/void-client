@@ -1,6 +1,6 @@
 /**
  * Scene object interact — scans tile nodes for {@link Interface10}, resolves
- * {@link Component44} via {@link GradientPreset#aClass263_9195}.
+ * {@link ObjectDefinition} via {@link GradientPreset#aClass263_9195}.
  */
 final class Rs2GameObject {
 
@@ -143,12 +143,12 @@ final class Rs2GameObject {
         }
         Interface10 iface = (Interface10) node;
         try {
-            Component44 def = GradientPreset.aClass263_9195.method2005(0, iface.method42(-100));
+            ObjectDefinition def = GradientPreset.aClass263_9195.getObjectDefinition(0, iface.method42(-100));
             if (def == null) {
                 return null;
             }
             if (def.anIntArray945 != null) {
-                def = def.method480(DisplayModeManagerContainer58.aClass170_10209, (byte) 47);
+                def = def.getTransformedDefinition(DisplayModeManagerContainer58.aClass170_10209, (byte) 47);
                 if (def == null) {
                     return null;
                 }
@@ -163,7 +163,7 @@ final class Rs2GameObject {
         }
     }
 
-    private static int opcodeFor(Component44 def, String action) {
+    private static int opcodeFor(ObjectDefinition def, String action) {
         if (def == null || def.aStringArray913 == null || action == null) {
             return -1;
         }
@@ -176,13 +176,13 @@ final class Rs2GameObject {
     }
 
     static final class SceneObjectHit {
-        final Component44 def;
+        final ObjectDefinition def;
         final Interface10 iface;
         final int localX;
         final int localY;
         final int plane;
 
-        SceneObjectHit(Component44 def, Interface10 iface, int localX, int localY, int plane) {
+        SceneObjectHit(ObjectDefinition def, Interface10 iface, int localX, int localY, int plane) {
             this.def = def;
             this.iface = iface;
             this.localX = localX;

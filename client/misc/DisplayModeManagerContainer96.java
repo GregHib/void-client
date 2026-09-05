@@ -66,10 +66,10 @@ final class DisplayModeManagerContainer96
                         }
                     } else if (Component71.method1813(8806, (class348_sub42_sub12.opcode))) {
                         Object object = null;
-                        Component44 class51;
-                        if ((class348_sub42_sub12.opcode) != 1001) class51 = (GradientPreset.aClass263_9195.method2005(0, (int) ((class348_sub42_sub12.identifier) >>> 32 & 0x7fffffffL)));
-                        else class51 = (GradientPreset.aClass263_9195.method2005(0, (int) (class348_sub42_sub12.identifier)));
-                        if (class51.anIntArray945 != null) class51 = class51.method480((DisplayModeManagerContainer58.aClass170_10209), (byte) 47);
+                        ObjectDefinition class51;
+                        if ((class348_sub42_sub12.opcode) != 1001) class51 = (GradientPreset.aClass263_9195.getObjectDefinition(0, (int) ((class348_sub42_sub12.identifier) >>> 32 & 0x7fffffffL)));
+                        else class51 = (GradientPreset.aClass263_9195.getObjectDefinition(0, (int) (class348_sub42_sub12.identifier)));
+                        if (class51.anIntArray945 != null) class51 = class51.getTransformedDefinition((DisplayModeManagerContainer58.aClass170_10209), (byte) 47);
                         if (class51 != null) is = class51.anIntArray917;
                     }
                 } else is = (Exception_Sub1.itemDefinitions.getItemDefinition(-73, (int) (class348_sub42_sub12.identifier)).anIntArray2772);

@@ -22,7 +22,7 @@ final class Component223
         anInt124++;
         int i_0_ = 9 / ((62 - i) / 47);
         DisplayModeManagerContainer91.anInt396 = -1;
-        Component44.aClass101_905 = null;
+        ObjectDefinition.aClass101_905 = null;
         Buffer.anInt7207 = -1;
         Component381.anInt8583 = -1;
         PacketReader.aClass76_10436.method775((byte) 69);

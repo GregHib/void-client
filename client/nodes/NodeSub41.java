@@ -46,7 +46,7 @@ final class NodeSub41
                     int i_13_ = i_11_ - -i_0_;
                     int i_14_ = i_2_ + i_10_;
                     if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i && -1 + i_1_ > i_14_) {
-                        Component44 class51 = GradientPreset.aClass263_9195.method2005(0, i_4_);
+                        ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, i_4_);
                         if (i_12_ != 22 || Component192.aClass348_Sub51_3959.aClass239_Sub4_7220.method1737(-32350) != 0 || class51.anInt874 != 0 || (class51.anInt920 == 1) || class51.aBoolean947) {
                             bool_7_ = true;
                             if (!class51.method485(9773)) {
@@ -242,7 +242,7 @@ final class NodeSub41
         anInt7051++;
         Interface10 interface10 = (Interface10) CacheNodeSub2.method3297(i_43_, i_45_, i_44_);
         if (interface10 != null) {
-            Component44 class51 = GradientPreset.aClass263_9195.method2005(0, interface10.method42(-124));
+            ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-124));
             int i_48_ = 0x3 & interface10.method41(-32228);
             int i_49_ = interface10.method39(35);
             if (class51.anInt875 == -1) {
@@ -276,7 +276,7 @@ final class NodeSub41
         if (bool != false) anInt7054 = 122;
         interface10 = ((Interface10) DisplayModeManagerContainer249.method1353(i_43_, i_45_, i_44_, (aClass7056 != null ? aClass7056 : (aClass7056 = Interface10.class))));
         if (interface10 != null) {
-            Component44 class51 = GradientPreset.aClass263_9195.method2005(0, interface10.method42(-88));
+            ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-88));
             int i_51_ = interface10.method41(-32228) & 0x3;
             int i_52_ = interface10.method39(-126);
             if (class51.anInt875 != -1) Component119.method2028(i_46_, class51, i_42_, var_ha, i_51_, -86);
@@ -289,7 +289,7 @@ final class NodeSub41
         }
         interface10 = (Interface10) BrowserUrlOpener.method2878(i_43_, i_45_, i_44_);
         if (interface10 != null) {
-            Component44 class51 = GradientPreset.aClass263_9195.method2005(0, interface10.method42(-118));
+            ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-118));
             int i_54_ = interface10.method41(-32228) & 0x3;
             if (class51.anInt875 != -1) Component119.method2028(i_46_, class51, i_42_, var_ha, i_54_, -5);
         }

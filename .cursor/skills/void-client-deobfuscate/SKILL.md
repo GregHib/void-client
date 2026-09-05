@@ -128,6 +128,66 @@ Count remaining:
 python3 .cursor/skills/void-client-deobfuscate/scripts/count_methods.py
 ```
 
+# Scene editor preview and world-position island
+
+The optional scene editor lives under `client/editor/` and keeps the Java unnamed-package convention. The main UI is `SceneEditorUi.java`.
+
+## City Assets panel geometry
+
+`SceneEditorUi` computes the custom City Assets HUD rather than loading a server-defined widget:
+
+- `PANEL_W` is the panel width; `paletteX()` anchors it to the right side of the canvas and `paletteY()` sets its top edge.
+- `searchX()` is the inner left edge of the panel.
+- `previewY()` is the top edge of the preview box.
+- `searchY()`, `listY()`, `doneY()`, `actionY()`, and `listControlsX()` place the search field, result rows, footer actions, Done button, and paging controls.
+- `drawPalette(...)` draws the complete City Assets panel; `drawMovePanel(...)` replaces it while Move mode is armed.
+
+When changing layout, adjust these geometry helpers/constants instead of scattering screen coordinates through input handlers. Hit testing uses the same helpers (`hitPalette`, `hitSearch`, `hitDone`, `hitAction`, and `hitListArrow`), so drawing and input must remain aligned.
+
+## Object preview rendering
+
+`drawPreview(...)` delegates ordinary location-object previews to `drawObjectModelPreview(...)`. Do not use `Component119.method2028(...)` as the general object preview path: that path expects a map-scene/interface model ID (`ObjectDefinition.anInt875`), not a normal location object model.
+
+The evidence-backed location-object path is:
+
+1. Load the object definition with `ObjectDefinitionProvider.getObjectDefinition(0, objectId)`.
+2. Read the display name from `ObjectDefinition.aString884`; null, empty, or the literal `"null"` should be presented as an unnamed object.
+3. Build the location model with `ObjectDefinition.buildLocationModel(...)`, trying the supported object model types as needed.
+4. Render `Component245.aClass64_119` using the interface projection and matrix.
+
+The preview's model center is controlled by:
+
+```java
+int centerX = x + width / 2;
+int centerY = y + PREVIEW_H / 2;
+```
+
+Use small explicit preview offsets when tuning visual placement; do not change `SceneObject.x`/`y`, because those are world coordinates. Large models are fitted by measuring `RA() - V()`, `EA() - fa()`, and `G() - HA()` and deriving `previewDepth` from the fixed preview height.
+
+### Matrix rotation units
+
+`MatrixSub1`, `MatrixSub2`, and `MatrixSub3` mask rotation arguments with `0x3fff` and index 14-bit sine/cosine tables. Therefore one full turn is 16384 units:
+
+- `method896(2048)` is approximately 45 degrees.
+- `method896(4096)` is approximately 90 degrees.
+- `method896(8192)` is approximately 180 degrees.
+
+For the City Assets preview, `method896(...)` is the horizontal orientation adjustment. Keep the pitch setup in `method902(...)` separate from horizontal orientation; `method900(...)` is another matrix-axis rotation and should not be changed casually while tuning the front view.
+
+## Scene object world positions
+
+`SceneObject.java` is the renderer-independent editor model:
+
+- `objectId`: cache object definition ID.
+- `x`, `y`: absolute tile coordinates.
+- `z`: fine vertical offset.
+- `plane`: level, validated from 0 to 3.
+- `rotation`: object orientation, masked to the client rotation range.
+
+`drawWorldOverlay(...)` highlights selected objects by passing `selected.x`, `selected.y`, and `selected.plane` to `projectAndBox(...)`. That method converts absolute coordinates with `SceneObjectAdapter.toLocalX/Y(...)`, projects them through `ShaderSub2.method165(...)`, and reads screen coordinates from `Component71.anIntArray6062`.
+
+Changing preview placement and changing an object's world position are intentionally separate operations: preview layout belongs in `SceneEditorUi`, while object placement belongs in `SceneObject`/`SceneObjectAdapter` and the scene store.
+
 ## Hot areas (still dense)
 
 | Area | Path hints |

@@ -24,7 +24,7 @@ final class SceneEditorMenu {
     /**
      * Add Move / Remove / Rotate under the hovered scenery name.
      */
-    static void inject(Component44 object, int localX, int localY, int plane, long packedId) {
+    static void inject(ObjectDefinition object, int localX, int localY, int plane, long packedId) {
         if (!SceneEditorHost.isEditorMode() || object == null) {
             return;
         }

@@ -111,7 +111,7 @@ final class PacketReader extends CacheNode {
             if (bool_3_) {
                 for (int i_7_ = 0; (i_7_ < MenuEntry.ignoreCount); i_7_++) {
                     if (DisplayModeManagerContainer145.ignoreDisplayNames[i_7_].equals(string_6_)) {
-                        Component44.ignoreNames[i_7_] = string;
+                        ObjectDefinition.ignoreNames[i_7_] = string;
                         DisplayModeManagerContainer145.ignoreDisplayNames[i_7_] = string_4_;
                         DefinitionSub21.ignoreLastNames[i_7_] = string_5_;
                         ShaderSub2.ignoreLastDisplayNames[i_7_] = string_6_;
@@ -119,7 +119,7 @@ final class PacketReader extends CacheNode {
                     }
                 }
             } else {
-                Component44.ignoreNames[MenuEntry.ignoreCount] = string;
+                ObjectDefinition.ignoreNames[MenuEntry.ignoreCount] = string;
                 DisplayModeManagerContainer145.ignoreDisplayNames[MenuEntry.ignoreCount] = string_4_;
                 DefinitionSub21.ignoreLastNames[(MenuEntry.ignoreCount)] = string_5_;
                 ShaderSub2.ignoreLastDisplayNames[MenuEntry.ignoreCount] = string_6_;
@@ -1080,9 +1080,9 @@ final class PacketReader extends CacheNode {
         if (Component218.aClass114_2331 == NodeSub3.aClass114_6584) {
             MenuEntry.ignoreCount = Component80.aClass348_Sub49_Sub2_3813.readUnsignedByte(255);
             for (int i = 0; MenuEntry.ignoreCount > i; i++) {
-                Component44.ignoreNames[i] = Component80.aClass348_Sub49_Sub2_3813.readString((byte) -36);
+                ObjectDefinition.ignoreNames[i] = Component80.aClass348_Sub49_Sub2_3813.readString((byte) -36);
                 DisplayModeManagerContainer145.ignoreDisplayNames[i] = Component80.aClass348_Sub49_Sub2_3813.readString((byte) 112);
-                if (DisplayModeManagerContainer145.ignoreDisplayNames[i].equals("")) DisplayModeManagerContainer145.ignoreDisplayNames[i] = Component44.ignoreNames[i];
+                if (DisplayModeManagerContainer145.ignoreDisplayNames[i].equals("")) DisplayModeManagerContainer145.ignoreDisplayNames[i] = ObjectDefinition.ignoreNames[i];
                 DefinitionSub21.ignoreLastNames[i] = Component80.aClass348_Sub49_Sub2_3813.readString((byte) 84);
                 ShaderSub2.ignoreLastDisplayNames[i] = Component80.aClass348_Sub49_Sub2_3813.readString((byte) -111);
                 if (ShaderSub2.ignoreLastDisplayNames[i].equals("")) ShaderSub2.ignoreLastDisplayNames[i] = DefinitionSub21.ignoreLastNames[i];

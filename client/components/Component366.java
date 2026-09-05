@@ -70,9 +70,9 @@ final class Component366
         int i_1_ = i_0_;
         boolean bool = false;
         if (i_1_ == -1) {
-            Component44 class51 = GradientPreset.aClass263_9195.method2005(i ^ 0x45, this.anInt3063);
-            Component44 class51_2_ = class51;
-            if (class51.anIntArray945 != null) class51 = class51.method480((DisplayModeManagerContainer58.aClass170_10209), (byte) 47);
+            ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(i ^ 0x45, this.anInt3063);
+            ObjectDefinition class51_2_ = class51;
+            if (class51.anIntArray945 != null) class51 = class51.getTransformedDefinition((DisplayModeManagerContainer58.aClass170_10209), (byte) 47);
             if (class51 == null) return;
             if (class51_2_ == class51) class51_2_ = null;
             if (class51.anIntArray943 == null) {
@@ -125,8 +125,8 @@ final class Component366
 
     final DisplayModeManagerContainer370 method1668(boolean bool, boolean bool_3_, int i, int i_4_, GraphicsToolkit var_ha) {
         anInt3082++;
-        Component44 class51 = GradientPreset.aClass263_9195.method2005(0, this.anInt3063);
-        if (class51.anIntArray945 != null) class51 = class51.method480(DisplayModeManagerContainer58.aClass170_10209, (byte) 47);
+        ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, this.anInt3063);
+        if (class51.anIntArray945 != null) class51 = class51.getTransformedDefinition(DisplayModeManagerContainer58.aClass170_10209, (byte) 47);
         if (class51 == null) {
             method1674(-1, var_ha);
             anInt3073 = -1;
@@ -161,7 +161,7 @@ final class Component366
         if (aClass17_3057 == null) {
             if (aClass64_3059 == null || i_4_ != (i_4_ & aClass64_3059.ua()) || (anInt3053 != class51.anInt941)) {
                 if (aClass64_3059 != null) i_4_ |= aClass64_3059.ua();
-                Component245 class2 = (class51.method476(var_ha, var_s_5_, (this.anInt3079 != 11 ? this.anInt3079 : 10), i_4_, aClass318_Sub1_3051.x, bool_3_, var_s, var_s.getInterpolatedHeight((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (byte) -114), aClass318_Sub1_3051.y, (this.anInt3079 == 11 ? 4 + this.anInt3052 : this.anInt3052), 128));
+                Component245 class2 = (class51.buildLocationModel(var_ha, var_s_5_, (this.anInt3079 != 11 ? this.anInt3079 : 10), i_4_, aClass318_Sub1_3051.x, bool_3_, var_s, var_s.getInterpolatedHeight((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (byte) -114), aClass318_Sub1_3051.y, (this.anInt3079 == 11 ? 4 + this.anInt3052 : this.anInt3052), 128));
                 if (class2 == null) {
                     anInt3055 = 0;
                     aBooleanArray3072 = null;
@@ -220,8 +220,8 @@ final class Component366
                 Component30[] class129s = class64.method619();
                 DisplayModeManagerContainer173[] class342s = class64.method604();
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081.aBoolean6470) && (class129s != null || class342s != null)) {
-                    Component44 class51 = GradientPreset.aClass263_9195.method2005(0, this.anInt3063);
-                    if (class51.anIntArray945 != null) class51 = class51.method480((DisplayModeManagerContainer58.aClass170_10209), (byte) 47);
+                    ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, this.anInt3063);
+                    if (class51.anIntArray945 != null) class51 = class51.getTransformedDefinition((DisplayModeManagerContainer58.aClass170_10209), (byte) 47);
                     if (class51 != null) this.aClass318_Sub10_3081 = RenderableSub10.method2526(OpenGlShader.clientCycle, true);
                 }
                 if (this.aClass318_Sub10_3081 == null) break;
@@ -305,7 +305,7 @@ final class Component366
         if (i >= -19) method1669(-110, -13);
     }
 
-    Component366(GraphicsToolkit var_ha, Component44 class51, int i, int i_15_, int i_16_, int i_17_, RenderableObject class318_sub1, boolean bool, int i_18_) {
+    Component366(GraphicsToolkit var_ha, ObjectDefinition class51, int i, int i_15_, int i_16_, int i_17_, RenderableObject class318_sub1, boolean bool, int i_18_) {
         anInt3055 = 0;
         aBoolean3064 = false;
         anInt3053 = -1;

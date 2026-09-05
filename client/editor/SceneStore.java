@@ -15,7 +15,7 @@ final class SceneStore {
     private static final String STRING = "\"%s\"\\s*:\\s*\"((?:\\\\.|[^\"\\\\])*)\"";
     private static final Pattern OBJECT = Pattern.compile("\\{((?:\"(?:\\\\.|[^\"\\\\])*\"|[^{}])*)\\}");
     private static final Map<String, Pattern> NUMBER_PATTERNS = patterns(NUMBER,
-            "version", "region", "id", "objectId", "x", "y", "z", "plane", "rotation", "scale");
+            "version", "region", "id", "objectId", "x", "y", "z", "plane", "rotation", "scale", "offsetX", "offsetY", "offsetZ");
     private static final Map<String, Pattern> STRING_PATTERNS = patterns(STRING, "name", "label");
     private final File directory;
 
@@ -91,6 +91,8 @@ final class SceneStore {
             out.append("{\"id\":").append(o.id).append(",\"objectId\":").append(o.objectId)
                     .append(",\"x\":").append(o.x).append(",\"y\":").append(o.y)
                     .append(",\"z\":").append(o.z).append(",\"plane\":").append(o.plane)
+                    .append(",\"offsetX\":").append(o.offsetX).append(",\"offsetY\":").append(o.offsetY)
+                    .append(",\"offsetZ\":").append(o.offsetZ)
                     .append(",\"rotation\":").append(o.rotation).append(",\"scale\":")
                     .append(o.scale).append(",\"visible\":").append(o.visible)
                     .append(",\"collision\":").append(o.collision);
@@ -127,6 +129,9 @@ final class SceneStore {
                 String item = matcher.group(1);
                 SceneObject object = new SceneObject(longValue(item, "id"), integer(item, "objectId"),
                         integer(item, "x"), integer(item, "y"), integer(item, "z"), integer(item, "plane"));
+                object.offsetX = (float) optionalDecimal(item, "offsetX", 0.0);
+                object.offsetY = (float) optionalDecimal(item, "offsetY", 0.0);
+                object.offsetZ = (float) optionalDecimal(item, "offsetZ", 0.0);
                 object.rotation = integer(item, "rotation");
                 object.scale = (float) decimal(item, "scale");
                 object.visible = bool(item, "visible");
@@ -176,6 +181,10 @@ final class SceneStore {
         Matcher m = NUMBER_PATTERNS.get(key).matcher(s);
         if (!m.find()) throw new IllegalArgumentException("missing " + key);
         return Double.parseDouble(m.group(1));
+    }
+    private static double optionalDecimal(String s, String key, double fallback) {
+        Matcher m = NUMBER_PATTERNS.get(key).matcher(s);
+        return m.find() ? Double.parseDouble(m.group(1)) : fallback;
     }
     private static boolean bool(String s, String key) {
         return s.matches("(?s).*\"" + key + "\"\\s*:\\s*true.*");

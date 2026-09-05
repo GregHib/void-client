@@ -35,7 +35,7 @@ final class SceneNode extends Node {
     NodeSub19Sub1 aClass348_Sub19_Sub1_6692;
     int anInt6693;
     int anInt6694;
-    Component44 aClass51_6695;
+    ObjectDefinition aClass51_6695;
     int anInt6696;
     int[] anIntArray6697;
     int anInt6698;
@@ -202,7 +202,7 @@ final class SceneNode extends Node {
                     }
                 }
             } else {
-                Component44 class51 = (this.aClass51_6695.method480(DisplayModeManagerContainer58.aClass170_10209, (byte) 47));
+                ObjectDefinition class51 = (this.aClass51_6695.getTransformedDefinition(DisplayModeManagerContainer58.aClass170_10209, (byte) 47));
                 if (class51 == null) {
                     this.anInt6681 = 256;
                     this.aBoolean6674 = false;

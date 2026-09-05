@@ -152,7 +152,7 @@ final class SceneEditorHost {
 
     /**
      * Spawn LocType {@code objectId} at the local player's absolute tile.
-     * {@code z}/{@code scale} are stored but ignored by the stock placer.
+     * Fractional offsets and scale are applied after the stock placement.
      */
     static String spawnAtPlayer(int objectId) throws IOException {
         if (Component72.localPlayer == null) {
@@ -302,6 +302,6 @@ final class SceneEditorHost {
         Applet_Sub1.printConsole("ed remove <id> | undo | redo | clear | apply", 80);
         Applet_Sub1.printConsole("ed save <name> | load <name> | status", 80);
         Applet_Sub1.printConsole("ed save (admin) pushes scene_remove+place+flush (collision/JS5)", 80);
-        Applet_Sub1.printConsole("(z/scale stored only; placer uses terrain height + rot 0-3)", 80);
+        Applet_Sub1.printConsole("(x/y/z offsets use 0.1-tile controls; scale uses 0.1 steps)", 80);
     }
 }

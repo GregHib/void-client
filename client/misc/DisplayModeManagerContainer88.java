@@ -23,9 +23,9 @@ final class DisplayModeManagerContainer88
         if (i <= 88) anIntArray1204 = null;
         anInt1206++;
         if (RSARequest.currentLoadingState != null) {
-            Component44.aClass311_897 = new ResourceLoader();
-            Component44.aClass311_897.method2316(RSARequest.currentLoadingState, RSARequest.currentLoadingState.aClass274_1012.getLocalized(ObjectDeserializer.languageId, 544), RSARequest.currentLoadingState.maxProgress, Component69.aLong3660, false);
-            NodeSub32.aThread6946 = new Thread(Component44.aClass311_897, "");
+            ObjectDefinition.aClass311_897 = new ResourceLoader();
+            ObjectDefinition.aClass311_897.method2316(RSARequest.currentLoadingState, RSARequest.currentLoadingState.aClass274_1012.getLocalized(ObjectDeserializer.languageId, 544), RSARequest.currentLoadingState.maxProgress, Component69.aLong3660, false);
+            NodeSub32.aThread6946 = new Thread(ObjectDefinition.aClass311_897, "");
             NodeSub32.aThread6946.start();
         }
     }

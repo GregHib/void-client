@@ -86,7 +86,7 @@ final class DefinitionSub30
                                 }
                             }
                             for (int i_5_ = 0; i_5_ < MenuEntry.ignoreCount; i_5_++) {
-                                String string_6_ = (DebugPanicSub1.method2127(2, Component44.ignoreNames[i_5_]));
+                                String string_6_ = (DebugPanicSub1.method2127(2, ObjectDefinition.ignoreNames[i_5_]));
                                 if (string_6_ != null && string_6_.equals(string_1_)) {
                                     DisplayModeManagerContainer213.method544(((FriendsIgnoreList.aClass274_3526.getLocalized(ObjectDeserializer.languageId, 544)) + string + (FriendsIgnoreList.aClass274_3527.getLocalized(ObjectDeserializer.languageId, 544))), false, 4);
                                     return;
