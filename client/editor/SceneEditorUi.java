@@ -160,7 +160,7 @@ final class SceneEditorUi {
             int my = AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 100);
             mouseOverUi = hitPalette(mx, my);
             if (hitAssetList(mx, my) && Component233.scrollWheelDiff != 0) {
-                resultOffset -= Component233.scrollWheelDiff * 3;
+                resultOffset += Component233.scrollWheelDiff * 3;
                 normalizeSelection();
             }
 
