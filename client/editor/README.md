@@ -11,7 +11,7 @@ and restore on the next login.
 
 1. Microbot → **Editor: ON** (or `ed mode editor`).
 2. Open the right-side **City Assets** component.
-3. Type an asset name in **Search assets...**, then select a result.
+3. Type an asset name in **Search all objects...**, select a result, and inspect its preview.
 4. Click **Done** to spawn the selected asset at the player tile.
 5. Click empty ground to place the current asset at another tile.
 6. **Right-click** any scenery → **Move** / **Remove** / **Rotate**.
@@ -51,7 +51,7 @@ ed status
 | `SceneEditor` | Commands + undo/redo |
 | `SceneObjectAdapter` / `LiveSceneBridge` | `SceneManager.method1591` sync |
 | `SceneEditorHost` | Console / claim / tick (region + restore) |
-| `SceneEditorUi` | Searchable City Assets component + selection, Done spawn, click/drag editing |
+| `SceneEditorUi` | Searchable City Assets panel, object preview, selection, Done spawn, click/drag editing |
 | `SceneEditorMenu` | Right-click Move/Remove/Rotate |
 
 ## Limits

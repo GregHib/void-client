@@ -10,21 +10,31 @@
  */
 final class SceneEditorUi {
 
-    private static final int PANEL_W = 250;
+    private static final int PANEL_W = 266;
     private static final int PANEL_PAD = 8;
+    private static final int HEADER_H = 30;
+    private static final int PREVIEW_H = 78;
     private static final int ROW_H = 24;
     private static final int SEARCH_H = 24;
-    private static final int LIST_TOP = 58;
+    private static final int LIST_TOP = 150;
     private static final int LIST_ROWS = 8;
     private static final int DONE_H = 28;
-    private static final int BG = 0xE0121218;
-    private static final int ACCENT = 0xFF00E5FF;
+    private static final int BG = 0xD01A1028;
+    private static final int HEADER_BG = 0xE023172E;
+    private static final int FIELD_BG = 0xC01A1224;
+    private static final int ROW_BG = 0xB01B1326;
+    private static final int PREVIEW_BG = 0xB0140E1D;
+    private static final int BORDER = 0xFF644B70;
+    private static final int ACCENT = 0xFF00FFFF;
     private static final int SELECT = 0xFFFF00AA;
     private static final int SHADOW = 0xFF000000;
     private static final int GHOST = 0x88AAAAAA;
     private static final int DRAG_LINE = 0xFFFF8800;
 
+
     private static final Asset selectedAsset = new Asset("Tree", 1276);
+    private static int previewObjectId = -1;
+    private static Component44 previewDefinition;
     private static int resultOffset;
     private static long selectedId = -1L;
     private static boolean searchFocused;
@@ -84,6 +94,8 @@ final class SceneEditorUi {
     private static void selectAsset(SceneAssetCatalog.Entry entry) {
         selectedAsset.objectId = entry.objectId;
         selectedAsset.label = entry.name;
+        previewObjectId = -1;
+        previewDefinition = null;
     }
     static void onEditorEnabled() {
         SceneAssetCatalog.start();
@@ -429,8 +441,12 @@ final class SceneEditorUi {
         return paletteX() + PANEL_PAD;
     }
 
+    private static int previewY() {
+        return paletteY() + HEADER_H + 6;
+    }
+
     private static int searchY() {
-        return paletteY() + 26;
+        return paletteY() + HEADER_H + PREVIEW_H + 10;
     }
 
     private static int doneY() {
@@ -497,33 +513,76 @@ final class SceneEditorUi {
         }
     }
 
+    private static Component44 previewDefinition() {
+        if (previewObjectId == selectedAsset.objectId) {
+            return previewDefinition;
+        }
+        previewObjectId = selectedAsset.objectId;
+        previewDefinition = null;
+        try {
+            if (GradientPreset.aClass263_9195 != null) {
+                previewDefinition = GradientPreset.aClass263_9195.method2005(0, selectedAsset.objectId);
+            }
+        } catch (Throwable ignored) {
+            /* A missing model must not break the editor panel. */
+        }
+        return previewDefinition;
+    }
+
+    private static void drawPreview(GraphicsToolkit toolkit, BitmapFont font, int x, int y, int width) {
+        Component44 definition = previewDefinition();
+        if (definition != null && definition.anInt875 != -1) {
+            try {
+                Component119.method2028(x + width / 2, definition, y + PREVIEW_H / 2,
+                        toolkit, 0, 126);
+                return;
+            } catch (Throwable ignored) {
+                /* Fall through to the text fallback. */
+            }
+        }
+        font.drawText("Preview unavailable", 0xFF999999, y + PREVIEW_H / 2 + 5,
+                x + 6, SHADOW, -110);
+    }
+
     private static void drawPalette(GraphicsToolkit toolkit, BitmapFont font) {
         int px = paletteX();
         int py = paletteY();
         int ph = paletteHeight();
         int innerW = PANEL_W - PANEL_PAD * 2;
         int count = filteredCount();
-        toolkit.fillRect2D(px, py, PANEL_W, ph, BG, 1);
-        toolkit.fillRect2D(px, py, PANEL_W, 1, ACCENT, 1);
-        font.drawText("City Assets", ACCENT, py + PANEL_PAD + 12, px + PANEL_PAD, SHADOW, -110);
-
         int sx = searchX();
         int sy = searchY();
-        toolkit.fillRect2D(sx, sy, innerW, SEARCH_H, 0xC0222228, 1);
-        toolkit.fillRect3D(sx, sy, innerW, SEARCH_H, searchFocused ? ACCENT : 0xFF555555, 0);
+        int previewY = previewY();
+        int listY = py + LIST_TOP;
+        int rowW = innerW - 10;
+
+        toolkit.fillRect3D(px, py, PANEL_W, ph, BORDER, 0);
+        toolkit.fillRect2D(px + 1, py + 1, PANEL_W - 2, ph - 2, BG, 1);
+        toolkit.fillRect2D(px + 1, py + 1, PANEL_W - 2, HEADER_H, HEADER_BG, 1);
+        toolkit.fillRect2D(px + 1, py + HEADER_H, PANEL_W - 2, 1, BORDER, 1);
+        toolkit.fillRect2D(px, py, PANEL_W, 2, ACCENT, 1);
+        font.drawText("City Assets", ACCENT, py + 20, px + PANEL_PAD, SHADOW, -110);
+        font.drawText("EDITOR", 0xFFAAAAAA, py + 20, px + PANEL_W - 53, SHADOW, -110);
+
+        toolkit.fillRect2D(sx, previewY, innerW, PREVIEW_H, PREVIEW_BG, 1);
+        toolkit.fillRect3D(sx, previewY, innerW, PREVIEW_H, BORDER, 0);
+        font.drawText("PREVIEW", 0xFFAAAAAA, previewY + 15, sx + 6, SHADOW, -110);
+        drawPreview(toolkit, font, sx, previewY, innerW);
+
+        toolkit.fillRect2D(sx, sy, innerW, SEARCH_H, FIELD_BG, 1);
+        toolkit.fillRect3D(sx, sy, innerW, SEARCH_H, searchFocused ? ACCENT : BORDER, 0);
         String query = searchText.length() == 0 ? "Search all objects..." : searchText;
         font.drawText(query, searchText.length() == 0 ? 0xFF999999 : 0xFFFFFFFF,
                 sy + 17, sx + 6, SHADOW, -110);
 
-        int listY = py + LIST_TOP;
         for (int row = 0; row < LIST_ROWS; row++) {
             SceneAssetCatalog.Entry entry = filteredEntryAt(row);
             int cy = listY + row * ROW_H;
             boolean selected = entry != null && entry.objectId == selectedAsset.objectId;
-            toolkit.fillRect2D(sx, cy, innerW, ROW_H - 2, selected ? 0xC0332255 : 0xC0222228, 1);
+            toolkit.fillRect2D(sx, cy, rowW, ROW_H - 2, selected ? 0xC0332255 : ROW_BG, 1);
             if (entry != null) {
-                toolkit.fillRect3D(sx, cy, innerW, ROW_H - 2,
-                        selected ? SELECT : 0xFF444444, 0);
+                toolkit.fillRect3D(sx, cy, rowW, ROW_H - 2,
+                        selected ? SELECT : BORDER, 0);
                 String label = entry.name + " (#" + entry.objectId + ")";
                 font.drawText(label, 0xFFFFFFFF, cy + 16, sx + 6, SHADOW, -110);
             }
@@ -534,6 +593,7 @@ final class SceneEditorUi {
                     : "No objects match this search";
             font.drawText(status, 0xFFAAAAAA, listY + 16, sx + 6, SHADOW, -110);
         }
+        drawScrollbar(toolkit, sx + rowW + 3, listY, LIST_ROWS * ROW_H, count);
 
         Asset selected = currentAsset();
         String page = count > 0
@@ -546,6 +606,18 @@ final class SceneEditorUi {
         toolkit.fillRect2D(sx, doneY(), innerW, DONE_H, buttonFill, 1);
         toolkit.fillRect3D(sx, doneY(), innerW, DONE_H, count == 0 ? 0xFF666666 : ACCENT, 0);
         font.drawText("Done", 0xFFFFFFFF, doneY() + 19, sx + innerW / 2 - 14, SHADOW, -110);
+    }
+
+    private static void drawScrollbar(GraphicsToolkit toolkit, int x, int y, int height, int count) {
+        toolkit.fillRect2D(x, y, 5, height, 0x663C2C46, 1);
+        if (count <= LIST_ROWS) {
+            toolkit.fillRect2D(x, y, 5, height, 0xAA80618F, 1);
+            return;
+        }
+        int thumbHeight = Math.max(18, height * LIST_ROWS / count);
+        int range = count - LIST_ROWS;
+        int thumbY = y + (height - thumbHeight) * resultOffset / range;
+        toolkit.fillRect2D(x, thumbY, 5, thumbHeight, ACCENT, 1);
     }
 
     private static void drawToolBanner(GraphicsToolkit toolkit, BitmapFont font) {
