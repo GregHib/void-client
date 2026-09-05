@@ -16,7 +16,7 @@ and restore on the next login.
 5. Click empty ground to place the current asset at another tile.
 6. **Right-click** any scenery → **Move** / **Remove** / **Rotate**.
 7. **Ctrl+click** scenery → claim + drag (including stock world objects).
-8. After **Move**: click a destination tile.
+8. In **Move**, click destinations repeatedly or use the arrow buttons for one-tile steps; click **Done** to finish.
 9. Turn **Editor: OFF** — objects remain. Named save: `ed save demo`.
 
 ## Persistence

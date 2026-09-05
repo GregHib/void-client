@@ -69,7 +69,7 @@ final class SceneEditorMenu {
             if (op == OPCODE_MOVE) {
                 SceneObject claimed = SceneEditorHost.claimAt(objectId, absX, absY, plane, rotation);
                 SceneEditorUi.beginMove(claimed.id);
-                chat("Move: " + label(claimed) + " — click destination tile");
+                chat("Move: click destinations repeatedly or use the arrow panel — Done to finish");
             } else if (op == OPCODE_REMOVE) {
                 SceneObject owned = SceneEditorHost.findOwned(objectId, absX, absY, plane);
                 if (owned != null) {

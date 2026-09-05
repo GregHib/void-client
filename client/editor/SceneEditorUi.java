@@ -18,6 +18,10 @@ final class SceneEditorUi {
     private static final int SEARCH_H = 24;
     private static final int LIST_TOP = 150;
     private static final int LIST_ROWS = 8;
+    private static final int MOVE_PANEL_H = 300;
+    private static final int MOVE_BUTTON = 30;
+    private static final int MOVE_GAP = 4;
+    private static final int MOVE_DONE_H = 28;
     private static final int DONE_H = 28;
     private static final int BG = 0xD01A1028;
     private static final int HEADER_BG = 0xE023172E;
@@ -155,7 +159,11 @@ final class SceneEditorUi {
             }
             normalizeSelection();
             refreshHoverTile();
-            drawPalette(toolkit, font);
+            if (moveArmed) {
+                drawMovePanel(toolkit, font);
+            } else {
+                drawPalette(toolkit, font);
+            }
             drawWorldOverlay(toolkit, font);
             drawToolBanner(toolkit, font);
         } catch (Throwable t) {
@@ -180,7 +188,7 @@ final class SceneEditorUi {
             int mx = AbstractGlTextureSub4.mouseHandler.getCursorX(true);
             int my = AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 100);
             mouseOverUi = hitPalette(mx, my);
-            if (hitAssetList(mx, my) && Component233.scrollWheelDiff != 0) {
+            if (!moveArmed && hitAssetList(mx, my) && Component233.scrollWheelDiff != 0) {
                 resultOffset += Component233.scrollWheelDiff * 3;
                 normalizeSelection();
             }
@@ -289,6 +297,12 @@ final class SceneEditorUi {
         if (tile == null) {
             return;
         }
+        // Move mode stays armed so each world click picks another destination.
+        if (moveArmed && selectedId >= 0) {
+            moveSelectedTo(tile[0], tile[1]);
+            chat("Moved to " + tile[0] + "," + tile[1]);
+            return;
+        }
         SceneObject hit = findAt(tile[0], tile[1], tile[2]);
         if (hit != null) {
             selectedId = hit.id;
@@ -296,22 +310,6 @@ final class SceneEditorUi {
             moveArmed = false;
             dragHoverAbsX = tile[0];
             dragHoverAbsY = tile[1];
-            return;
-        }
-        // Move armed via right-click → click destination tile
-        if (moveArmed && selectedId >= 0) {
-            try {
-                SceneObject o = SceneEditorHost.editor().scene().get(selectedId);
-                if (o != null) {
-                    SceneEditorHost.editor().move(selectedId, tile[0], tile[1], o.z);
-                    SceneEditorHost.resync();
-                    SceneEditorHost.persistQuiet();
-                    chat("Moved to " + tile[0] + "," + tile[1]);
-                }
-            } catch (Throwable t) {
-                System.out.println("scene-editor move-to: " + t.getMessage());
-            }
-            moveArmed = false;
             return;
         }
         placeAt(tile[0], tile[1], tile[2]);
@@ -452,11 +450,32 @@ final class SceneEditorUi {
     private static int doneY() {
         return paletteY() + paletteHeight() - PANEL_PAD - DONE_H;
     }
+    private static int moveControlsY() {
+        return paletteY() + 132;
+    }
+
+    private static int moveRotateY() {
+        return paletteY() + 220;
+    }
+
+    private static int moveDoneY() {
+        return paletteY() + MOVE_PANEL_H - PANEL_PAD - MOVE_DONE_H;
+    }
+
+    private static int moveCenterX() {
+        return searchX() + (PANEL_W - PANEL_PAD * 2 - MOVE_BUTTON) / 2;
+    }
+
+    private static boolean hitMoveButton(int x, int y, int buttonX, int buttonY, int width, int height) {
+        return x >= buttonX && x < buttonX + width && y >= buttonY && y < buttonY + height;
+    }
+
+
 
     private static boolean hitPalette(int x, int y) {
-        int px = paletteX();
-        int py = paletteY();
-        return x >= px && x < px + PANEL_W && y >= py && y < py + paletteHeight();
+        int height = moveArmed ? MOVE_PANEL_H : paletteHeight();
+        return x >= paletteX() && x < paletteX() + PANEL_W
+                && y >= paletteY() && y < paletteY() + height;
     }
 
     private static boolean hitSearch(int x, int y) {
@@ -476,6 +495,11 @@ final class SceneEditorUi {
 
 
     private static void onPaletteClick(int x, int y) {
+        if (moveArmed) {
+            onMovePanelClick(x, y);
+            return;
+        }
+
         if (hitSearch(x, y)) {
             searchFocused = true;
             MobileKeyboard.requestShow("scene-editor-assets-search");
@@ -498,6 +522,77 @@ final class SceneEditorUi {
         }
     }
 
+    private static void onMovePanelClick(int x, int y) {
+        int centerX = moveCenterX();
+        int controlsY = moveControlsY();
+        if (hitMoveButton(x, y, centerX, controlsY, MOVE_BUTTON, MOVE_BUTTON)) {
+            moveSelectedBy(0, 1);
+        } else if (hitMoveButton(x, y, centerX - MOVE_BUTTON - MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
+                MOVE_BUTTON, MOVE_BUTTON)) {
+            moveSelectedBy(-1, 0);
+        } else if (hitMoveButton(x, y, centerX, controlsY + MOVE_BUTTON + MOVE_GAP,
+                MOVE_BUTTON, MOVE_BUTTON)) {
+            moveSelectedBy(0, -1);
+        } else if (hitMoveButton(x, y, centerX + MOVE_BUTTON + MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
+                MOVE_BUTTON, MOVE_BUTTON)) {
+            moveSelectedBy(1, 0);
+        } else if (hitMoveButton(x, y, searchX(), moveRotateY(), PANEL_W - PANEL_PAD * 2, MOVE_BUTTON)) {
+            rotateSelected();
+        } else if (hitMoveButton(x, y, searchX(), moveDoneY(), PANEL_W - PANEL_PAD * 2, MOVE_DONE_H)) {
+            moveArmed = false;
+            dragging = false;
+            chat("Move finished");
+        }
+    }
+
+    private static SceneObject selectedObject() {
+        return selectedId >= 0 ? SceneEditorHost.editor().scene().get(selectedId) : null;
+    }
+
+    private static void moveSelectedBy(int dx, int dy) {
+        SceneObject object = selectedObject();
+        if (object == null) {
+            return;
+        }
+        moveSelectedTo(object.x + dx, object.y + dy);
+    }
+
+    private static void moveSelectedTo(int x, int y) {
+        try {
+            SceneObject object = selectedObject();
+            if (object == null) {
+                return;
+            }
+            SceneEditorHost.editor().move(selectedId, x, y, object.z);
+            SceneEditorHost.resync();
+            SceneEditorHost.persistQuiet();
+        } catch (Throwable t) {
+            System.out.println("scene-editor move-to: " + t.getMessage());
+        }
+    }
+
+    private static void rotateSelected() {
+        try {
+            SceneObject object = selectedObject();
+            if (object == null) {
+                return;
+            }
+            int next = (object.rotation + 1) & 3;
+            SceneEditorHost.editor().rotate(selectedId, next);
+            SceneEditorHost.resync();
+            SceneEditorHost.persistQuiet();
+            chat("Rotation " + next);
+        } catch (Throwable t) {
+            System.out.println("scene-editor rotate: " + t.getMessage());
+        }
+    }
+
+    private static void finishMove() {
+        moveArmed = false;
+        dragging = false;
+        chat("Move finished");
+    }
+
     private static void spawnSelected() {
         if (filteredCount() == 0) {
             chat("No City Assets match '" + searchText + "'.");
@@ -518,15 +613,15 @@ final class SceneEditorUi {
         }
     }
 
-    private static Component44 previewDefinition() {
-        if (previewObjectId == selectedAsset.objectId) {
+    private static Component44 previewDefinition(int objectId) {
+        if (previewObjectId == objectId) {
             return previewDefinition;
         }
-        previewObjectId = selectedAsset.objectId;
+        previewObjectId = objectId;
         previewDefinition = null;
         try {
             if (GradientPreset.aClass263_9195 != null) {
-                previewDefinition = GradientPreset.aClass263_9195.method2005(0, selectedAsset.objectId);
+                previewDefinition = GradientPreset.aClass263_9195.method2005(0, objectId);
             }
         } catch (Throwable ignored) {
             /* A missing model must not break the editor panel. */
@@ -534,8 +629,8 @@ final class SceneEditorUi {
         return previewDefinition;
     }
 
-    private static void drawPreview(GraphicsToolkit toolkit, BitmapFont font, int x, int y, int width) {
-        Component44 definition = previewDefinition();
+    private static void drawPreview(GraphicsToolkit toolkit, BitmapFont font, int x, int y, int width, int objectId) {
+        Component44 definition = previewDefinition(objectId);
         if (definition != null && definition.anInt875 != -1) {
             try {
                 Component119.method2028(x + width / 2, definition, y + PREVIEW_H / 2,
@@ -547,6 +642,57 @@ final class SceneEditorUi {
         }
         font.drawText("Preview unavailable", 0xFF999999, y + PREVIEW_H / 2 + 5,
                 x + 6, SHADOW, -110);
+    }
+
+
+    private static void drawMovePanel(GraphicsToolkit toolkit, BitmapFont font) {
+        int px = paletteX();
+        int py = paletteY();
+        int innerW = PANEL_W - PANEL_PAD * 2;
+        int sx = searchX();
+        int previewY = previewY();
+        SceneObject object = selectedObject();
+
+        toolkit.fillRect3D(px, py, PANEL_W, MOVE_PANEL_H, BORDER, 0);
+        toolkit.fillRect2D(px + 1, py + 1, PANEL_W - 2, MOVE_PANEL_H - 2, BG, 1);
+        toolkit.fillRect2D(px + 1, py + 1, PANEL_W - 2, HEADER_H, HEADER_BG, 1);
+        toolkit.fillRect2D(px + 1, py + HEADER_H, PANEL_W - 2, 1, BORDER, 1);
+        toolkit.fillRect2D(px, py, PANEL_W, 2, ACCENT, 1);
+        font.drawText("Move object", ACCENT, py + 20, px + PANEL_PAD, SHADOW, -110);
+        font.drawText("EDITOR", 0xFFAAAAAA, py + 20, px + PANEL_W - 53, SHADOW, -110);
+
+        toolkit.fillRect2D(sx, previewY, innerW, PREVIEW_H, PREVIEW_BG, 1);
+        toolkit.fillRect3D(sx, previewY, innerW, PREVIEW_H, BORDER, 0);
+        font.drawText("PREVIEW", 0xFFAAAAAA, previewY + 15, sx + 6, SHADOW, -110);
+        if (object != null) {
+            drawPreview(toolkit, font, sx, previewY, innerW, object.objectId);
+            font.drawText("#" + object.objectId + " @ " + object.x + "," + object.y,
+                    0xFFCCCCCC, previewY + PREVIEW_H - 7, sx + 6, SHADOW, -110);
+        }
+
+        int controlsY = moveControlsY();
+        font.drawText("Move one tile per click", 0xFFAAAAAA, controlsY - 10, sx, SHADOW, -110);
+        int centerX = moveCenterX();
+        drawMoveButton(toolkit, font, centerX, controlsY, MOVE_BUTTON, "^");
+        drawMoveButton(toolkit, font, centerX - MOVE_BUTTON - MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
+                MOVE_BUTTON, "<");
+        drawMoveButton(toolkit, font, centerX, controlsY + MOVE_BUTTON + MOVE_GAP, MOVE_BUTTON, "v");
+        drawMoveButton(toolkit, font, centerX + MOVE_BUTTON + MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
+                MOVE_BUTTON, ">");
+        drawMoveButton(toolkit, font, sx, moveRotateY(), innerW, MOVE_BUTTON, "Rotate");
+        drawMoveButton(toolkit, font, sx, moveDoneY(), innerW, MOVE_DONE_H, "Done");
+    }
+
+    private static void drawMoveButton(GraphicsToolkit toolkit, BitmapFont font, int x, int y, int size, String label) {
+        drawMoveButton(toolkit, font, x, y, size, size, label);
+    }
+
+    private static void drawMoveButton(GraphicsToolkit toolkit, BitmapFont font, int x, int y,
+                                       int width, int height, String label) {
+        toolkit.fillRect2D(x, y, width, height, 0xB02A1A37, 1);
+        toolkit.fillRect3D(x, y, width, height, BORDER, 0);
+        int textX = x + Math.max(6, (width - label.length() * 7) / 2);
+        font.drawText(label, 0xFFFFFFFF, y + height / 2 + 6, textX, SHADOW, -110);
     }
 
     private static void drawPalette(GraphicsToolkit toolkit, BitmapFont font) {
@@ -572,7 +718,7 @@ final class SceneEditorUi {
         toolkit.fillRect2D(sx, previewY, innerW, PREVIEW_H, PREVIEW_BG, 1);
         toolkit.fillRect3D(sx, previewY, innerW, PREVIEW_H, BORDER, 0);
         font.drawText("PREVIEW", 0xFFAAAAAA, previewY + 15, sx + 6, SHADOW, -110);
-        drawPreview(toolkit, font, sx, previewY, innerW);
+        drawPreview(toolkit, font, sx, previewY, innerW, selectedAsset.objectId);
 
         toolkit.fillRect2D(sx, sy, innerW, SEARCH_H, FIELD_BG, 1);
         toolkit.fillRect3D(sx, sy, innerW, SEARCH_H, searchFocused ? ACCENT : BORDER, 0);
@@ -612,9 +758,7 @@ final class SceneEditorUi {
         toolkit.fillRect3D(sx, doneY(), innerW, DONE_H, count == 0 ? 0xFF666666 : ACCENT, 0);
         font.drawText("Done", 0xFFFFFFFF, doneY() + 19, sx + innerW / 2 - 14, SHADOW, -110);
     }
-
     private static void drawScrollbar(GraphicsToolkit toolkit, int x, int y, int height, int count) {
-        toolkit.fillRect2D(x, y, 5, height, 0x663C2C46, 1);
         if (count <= LIST_ROWS) {
             toolkit.fillRect2D(x, y, 5, height, 0xAA80618F, 1);
             return;
@@ -628,7 +772,7 @@ final class SceneEditorUi {
     private static void drawToolBanner(GraphicsToolkit toolkit, BitmapFont font) {
         Asset a = currentAsset();
         String text = moveArmed
-                ? "Move: click destination tile"
+                ? "Move: click a tile or use the arrows — Done to finish"
                 : (a.label + " Tool Active");
         font.drawText(text, SELECT, 18, 160, SHADOW, -110);
     }
