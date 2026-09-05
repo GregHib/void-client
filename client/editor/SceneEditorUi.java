@@ -18,6 +18,9 @@ final class SceneEditorUi {
     private static final int SEARCH_H = 24;
     private static final int LIST_TOP = 150;
     private static final int LIST_ROWS = 8;
+    private static final int LIST_CONTROL_W = 18;
+    private static final int LIST_CONTROL_H = 26;
+    private static final int LIST_CONTROL_GAP = 4;
     private static final int PALETTE_FOOTER_H = 108;
     private static final int ACTION_H = 26;
     private static final int ACTION_GAP = 4;
@@ -75,14 +78,9 @@ final class SceneEditorUi {
         return SceneAssetCatalog.resultAt(resultOffset + row);
     }
 
-    /** Used before the normal input poll to keep the camera from consuming UI wheel input. */
+    /** Wheel input is left available for normal camera controls; the list uses arrows. */
     static boolean isScrollOverUi() {
-        if (!SceneEditorHost.isEditorMode() || AbstractGlTextureSub4.mouseHandler == null) {
-            return false;
-        }
-        int x = AbstractGlTextureSub4.mouseHandler.getCursorX(true);
-        int y = AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 100);
-        return hitPalette(x, y);
+        return false;
     }
     private static void normalizeSelection() {
         int count = filteredCount();
@@ -192,11 +190,6 @@ final class SceneEditorUi {
             int mx = AbstractGlTextureSub4.mouseHandler.getCursorX(true);
             int my = AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 100);
             mouseOverUi = hitPalette(mx, my);
-            if (!moveArmed && hitAssetList(mx, my) && Component233.scrollWheelDiff != 0) {
-                resultOffset += Component233.scrollWheelDiff * 3;
-                normalizeSelection();
-            }
-
             refreshHoverTile();
 
             // Let the open context menu consume left-clicks (Move/Remove/Rotate).
@@ -465,6 +458,37 @@ final class SceneEditorUi {
     private static int actionX(int column) {
         return searchX() + column * (actionWidth() + ACTION_GAP);
     }
+    private static int listRowWidth() {
+        return PANEL_W - PANEL_PAD * 2 - LIST_CONTROL_W - LIST_CONTROL_GAP;
+    }
+
+    private static int listControlsX() {
+        return searchX() + PANEL_W - PANEL_PAD * 2 - LIST_CONTROL_W;
+    }
+
+    private static int listY() {
+        return paletteY() + LIST_TOP;
+    }
+
+    private static int listUpY() {
+        return listY();
+    }
+
+    private static int listDownY() {
+        return listY() + LIST_ROWS * ROW_H - LIST_CONTROL_H;
+    }
+
+    private static boolean hitListArrow(int x, int y, boolean up) {
+        int arrowY = up ? listUpY() : listDownY();
+        return x >= listControlsX() && x < listControlsX() + LIST_CONTROL_W
+                && y >= arrowY && y < arrowY + LIST_CONTROL_H;
+    }
+
+    private static void moveResultOffset(int delta) {
+        resultOffset = Math.max(0, resultOffset + delta);
+        normalizeSelection();
+    }
+
     private static int moveControlsY() {
         return paletteY() + 132;
     }
@@ -508,8 +532,8 @@ final class SceneEditorUi {
     }
 
     private static boolean hitAssetList(int x, int y) {
-        int listY = paletteY() + LIST_TOP;
-        return x >= searchX() && x < searchX() + PANEL_W - PANEL_PAD * 2
+        int listY = listY();
+        return x >= searchX() && x < listControlsX() - LIST_CONTROL_GAP
                 && y >= listY && y < listY + LIST_ROWS * ROW_H;
     }
 
@@ -537,6 +561,14 @@ final class SceneEditorUi {
             runEditorCommand("redo", "Redo");
             return;
         }
+        if (hitListArrow(x, y, true)) {
+            moveResultOffset(-1);
+            return;
+        }
+        if (hitListArrow(x, y, false)) {
+            moveResultOffset(1);
+            return;
+        }
         if (hitDone(x, y)) {
             searchFocused = false;
             MobileKeyboard.requestHide("scene-editor-assets-done");
@@ -545,7 +577,7 @@ final class SceneEditorUi {
             return;
         }
         if (hitAssetList(x, y)) {
-            int listY = paletteY() + LIST_TOP;
+            int listY = listY();
             SceneAssetCatalog.Entry entry = filteredEntryAt((y - listY) / ROW_H);
             if (entry != null) {
                 selectAsset(entry);
@@ -782,8 +814,8 @@ final class SceneEditorUi {
         int sx = searchX();
         int sy = searchY();
         int previewY = previewY();
-        int listY = py + LIST_TOP;
-        int rowW = innerW - 10;
+        int listY = listY();
+        int rowW = listRowWidth();
 
         toolkit.fillRect3D(px, py, PANEL_W, ph, BORDER, 0);
         toolkit.fillRect2D(px + 1, py + 1, PANEL_W - 2, ph - 2, BG, 1);
@@ -822,7 +854,7 @@ final class SceneEditorUi {
                     : "No objects match this search";
             font.drawText(status, 0xFFAAAAAA, listY + 16, sx + 6, SHADOW, -110);
         }
-        drawScrollbar(toolkit, sx + rowW + 3, listY, LIST_ROWS * ROW_H, count);
+        drawListControls(toolkit, count);
 
         Asset selected = currentAsset();
         String page = count > 0
@@ -839,15 +871,18 @@ final class SceneEditorUi {
         toolkit.fillRect3D(sx, doneY(), innerW, DONE_H, count == 0 ? 0xFF666666 : ACCENT, 0);
         font.drawText("Done", 0xFFFFFFFF, doneY() + 19, sx + innerW / 2 - 14, SHADOW, -110);
     }
-    private static void drawScrollbar(GraphicsToolkit toolkit, int x, int y, int height, int count) {
-        if (count <= LIST_ROWS) {
-            toolkit.fillRect2D(x, y, 5, height, 0xAA80618F, 1);
-            return;
-        }
-        int thumbHeight = Math.max(18, height * LIST_ROWS / count);
-        int range = count - LIST_ROWS;
-        int thumbY = y + (height - thumbHeight) * resultOffset / range;
-        toolkit.fillRect2D(x, thumbY, 5, thumbHeight, ACCENT, 1);
+    private static void drawListControls(GraphicsToolkit toolkit, int count) {
+        int maxOffset = Math.max(0, count - LIST_ROWS);
+        drawListArrowButton(toolkit, listControlsX(), listUpY(), "up", resultOffset > 0);
+        drawListArrowButton(toolkit, listControlsX(), listDownY(), "down", resultOffset < maxOffset);
+    }
+
+    private static void drawListArrowButton(GraphicsToolkit toolkit, int x, int y, String direction, boolean enabled) {
+        int fill = enabled ? 0xFF3A2546 : 0xFF211823;
+        int border = enabled ? ACCENT : BORDER;
+        toolkit.fillRect2D(x, y, LIST_CONTROL_W, LIST_CONTROL_H, fill, 1);
+        toolkit.fillRect3D(x, y, LIST_CONTROL_W, LIST_CONTROL_H, border, 0);
+        drawArrow(toolkit, x, y, LIST_CONTROL_W, LIST_CONTROL_H, direction);
     }
 
     private static void drawToolBanner(GraphicsToolkit toolkit, BitmapFont font) {
