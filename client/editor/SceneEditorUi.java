@@ -1,5 +1,5 @@
 /**
- * In-world scene editor component: searchable City Assets picker, selection, and Done-to-spawn.
+ * In-world scene editor component: searchable City Assets picker, selection, and Done-to-close.
  * Right-click Move / Remove / Rotate live in {@link SceneEditorMenu}.
  * <p>
  * Tile under cursor is read from the existing Walk-here menu tip (opcode 19)
@@ -13,6 +13,8 @@ final class SceneEditorUi {
     private static final int PANEL_W = 266;
     private static final int PANEL_PAD = 8;
     private static final int HEADER_H = 30;
+    private static final int CLOSE_W = 28;
+    private static final int CLOSE_H = 24;
     private static final int PREVIEW_H = 78;
     private static final int ROW_H = 24;
     private static final int SEARCH_H = 24;
@@ -209,6 +211,9 @@ final class SceneEditorUi {
                         if (hitPalette(cx, cy)) {
                             click.unlink((byte) 97);
                             onPaletteClick(cx, cy);
+                            if (!SceneEditorHost.isEditorMode()) {
+                                return;
+                            }
                         } else if (!BuildInfo.isMouseOverConsole() && !MicrobotPanel.contains(cx, cy)) {
                             onWorldPress(cx, cy);
                             click.unlink((byte) 97);
@@ -427,6 +432,18 @@ final class SceneEditorUi {
     private static int paletteY() {
         return 48;
     }
+    private static int closeX() {
+        return paletteX() + PANEL_W - PANEL_PAD - CLOSE_W;
+    }
+
+    private static int closeY() {
+        return paletteY() + 3;
+    }
+
+    private static boolean hitEditorClose(int x, int y) {
+        return x >= closeX() && x < closeX() + CLOSE_W
+                && y >= closeY() && y < closeY() + CLOSE_H;
+    }
 
     private static int paletteHeight() {
         return LIST_TOP + LIST_ROWS * ROW_H + PALETTE_FOOTER_H;
@@ -538,7 +555,17 @@ final class SceneEditorUi {
     }
 
 
+    private static void closeEditor(String reason) {
+        searchFocused = false;
+        MobileKeyboard.requestHide(reason);
+        SceneEditorHost.setEditorMode(false);
+    }
+
     private static void onPaletteClick(int x, int y) {
+        if (hitEditorClose(x, y)) {
+            closeEditor("scene-editor-close");
+            return;
+        }
         if (moveArmed) {
             onMovePanelClick(x, y);
             return;
@@ -570,10 +597,7 @@ final class SceneEditorUi {
             return;
         }
         if (hitDone(x, y)) {
-            searchFocused = false;
-            MobileKeyboard.requestHide("scene-editor-assets-done");
-            spawnSelected();
-            SceneEditorHost.setEditorMode(false);
+            closeEditor("scene-editor-assets-done");
             return;
         }
         if (hitAssetList(x, y)) {
@@ -738,7 +762,7 @@ final class SceneEditorUi {
         toolkit.fillRect2D(px + 1, py + HEADER_H, PANEL_W - 2, 1, BORDER, 1);
         toolkit.fillRect2D(px, py, PANEL_W, 2, ACCENT, 1);
         font.drawText("Move object", ACCENT, py + 20, px + PANEL_PAD, SHADOW, -110);
-        font.drawText("EDITOR", 0xFFAAAAAA, py + 20, px + PANEL_W - 53, SHADOW, -110);
+        font.drawText("[X]", 0xFFFF6688, closeY() + 17, closeX() + 4, SHADOW, -110);
 
         toolkit.fillRect2D(sx, previewY, innerW, PREVIEW_H, PREVIEW_BG, 1);
         toolkit.fillRect3D(sx, previewY, innerW, PREVIEW_H, BORDER, 0);
@@ -823,7 +847,7 @@ final class SceneEditorUi {
         toolkit.fillRect2D(px + 1, py + HEADER_H, PANEL_W - 2, 1, BORDER, 1);
         toolkit.fillRect2D(px, py, PANEL_W, 2, ACCENT, 1);
         font.drawText("City Assets", ACCENT, py + 20, px + PANEL_PAD, SHADOW, -110);
-        font.drawText("EDITOR", 0xFFAAAAAA, py + 20, px + PANEL_W - 53, SHADOW, -110);
+        font.drawText("[X]", 0xFFFF6688, closeY() + 17, closeX() + 4, SHADOW, -110);
 
         toolkit.fillRect2D(sx, previewY, innerW, PREVIEW_H, PREVIEW_BG, 1);
         toolkit.fillRect3D(sx, previewY, innerW, PREVIEW_H, BORDER, 0);
