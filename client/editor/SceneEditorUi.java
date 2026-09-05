@@ -18,6 +18,10 @@ final class SceneEditorUi {
     private static final int SEARCH_H = 24;
     private static final int LIST_TOP = 150;
     private static final int LIST_ROWS = 8;
+    private static final int PALETTE_FOOTER_H = 108;
+    private static final int ACTION_H = 26;
+    private static final int ACTION_GAP = 4;
+
     private static final int MOVE_PANEL_H = 300;
     private static final int MOVE_BUTTON = 30;
     private static final int MOVE_GAP = 4;
@@ -432,7 +436,7 @@ final class SceneEditorUi {
     }
 
     private static int paletteHeight() {
-        return LIST_TOP + LIST_ROWS * ROW_H + 76;
+        return LIST_TOP + LIST_ROWS * ROW_H + PALETTE_FOOTER_H;
     }
 
     private static int searchX() {
@@ -449,6 +453,17 @@ final class SceneEditorUi {
 
     private static int doneY() {
         return paletteY() + paletteHeight() - PANEL_PAD - DONE_H;
+    }
+    private static int actionY() {
+        return doneY() - 34;
+    }
+
+    private static int actionWidth() {
+        return (PANEL_W - PANEL_PAD * 2 - ACTION_GAP * 2) / 3;
+    }
+
+    private static int actionX(int column) {
+        return searchX() + column * (actionWidth() + ACTION_GAP);
     }
     private static int moveControlsY() {
         return paletteY() + 132;
@@ -487,6 +502,11 @@ final class SceneEditorUi {
         return x >= searchX() && x < searchX() + PANEL_W - PANEL_PAD * 2
                 && y >= doneY() && y < doneY() + DONE_H;
     }
+    private static boolean hitAction(int x, int y, int column) {
+        return x >= actionX(column) && x < actionX(column) + actionWidth()
+                && y >= actionY() && y < actionY() + ACTION_H;
+    }
+
     private static boolean hitAssetList(int x, int y) {
         int listY = paletteY() + LIST_TOP;
         return x >= searchX() && x < searchX() + PANEL_W - PANEL_PAD * 2
@@ -505,9 +525,22 @@ final class SceneEditorUi {
             MobileKeyboard.requestShow("scene-editor-assets-search");
             return;
         }
+        if (hitAction(x, y, 0)) {
+            runEditorCommand("save demo", "Saved demo");
+            return;
+        }
+        if (hitAction(x, y, 1)) {
+            runEditorCommand("undo", "Undo");
+            return;
+        }
+        if (hitAction(x, y, 2)) {
+            runEditorCommand("redo", "Redo");
+            return;
+        }
         if (hitDone(x, y)) {
             searchFocused = false;
             MobileKeyboard.requestHide("scene-editor-assets-done");
+            SceneEditorHost.setEditorMode(true);
             spawnSelected();
             return;
         }
@@ -560,6 +593,7 @@ final class SceneEditorUi {
     private static void moveSelectedTo(int x, int y) {
         try {
             SceneObject object = selectedObject();
+
             if (object == null) {
                 return;
             }
@@ -568,6 +602,19 @@ final class SceneEditorUi {
             SceneEditorHost.persistQuiet();
         } catch (Throwable t) {
             System.out.println("scene-editor move-to: " + t.getMessage());
+        }
+    }
+    private static void runEditorCommand(String command, String label) {
+        boolean keepEditorMode = SceneEditorHost.isEditorMode();
+        try {
+            String result = SceneEditorHost.command(command);
+            chat(label + ": " + result);
+        } catch (Throwable t) {
+            chat(label + " failed: " + t.getMessage());
+        } finally {
+            if (keepEditorMode && !SceneEditorHost.isEditorMode()) {
+                SceneEditorHost.setEditorMode(true);
+            }
         }
     }
 
@@ -781,9 +828,12 @@ final class SceneEditorUi {
         String page = count > 0
                 ? "Results " + (resultOffset + 1) + "-" + Math.min(resultOffset + LIST_ROWS, count) + "/" + count
                 : "Results 0/0";
-        font.drawText(page, 0xFF999999, doneY() - 32, sx, SHADOW, -110);
+        font.drawText(page, 0xFF999999, doneY() - 62, sx, SHADOW, -110);
         font.drawText("Selected: " + selected.label + " (#" + selected.objectId + ")",
-                0xFFCCCCCC, doneY() - 16, sx, SHADOW, -110);
+                0xFFCCCCCC, doneY() - 46, sx, SHADOW, -110);
+        drawMoveButton(toolkit, font, actionX(0), actionY(), actionWidth(), ACTION_H, "Save");
+        drawMoveButton(toolkit, font, actionX(1), actionY(), actionWidth(), ACTION_H, "Undo");
+        drawMoveButton(toolkit, font, actionX(2), actionY(), actionWidth(), ACTION_H, "Redo");
         int buttonFill = count == 0 ? 0xFF444444 : 0xFF006C78;
         toolkit.fillRect2D(sx, doneY(), innerW, DONE_H, buttonFill, 1);
         toolkit.fillRect3D(sx, doneY(), innerW, DONE_H, count == 0 ? 0xFF666666 : ACCENT, 0);

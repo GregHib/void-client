@@ -17,7 +17,8 @@ and restore on the next login.
 6. **Right-click** any scenery → **Move** / **Remove** / **Rotate**.
 7. **Ctrl+click** scenery → claim + drag (including stock world objects).
 8. In **Move**, click destinations repeatedly or use the arrow buttons for one-tile steps; click **Done** to finish.
-9. Turn **Editor: OFF** — objects remain. Named save: `ed save demo`.
+9. In City Assets, **Save** runs `ed save demo`; **Undo** and **Redo** update the live scene and autosave.
+10. Turn **Editor: OFF** — objects remain. Named save: `ed save demo`.
 
 ## Persistence
 
