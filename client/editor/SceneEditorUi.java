@@ -787,7 +787,7 @@ final class SceneEditorUi {
         }
 
         int centerX = x + width / 2;
-        int centerY = y + PREVIEW_H / 2;
+        int centerY = y + PREVIEW_H / 2 + 30;
         int modelWidth = model.aClass64_119.RA() - model.aClass64_119.V();
         int modelHeight = model.aClass64_119.EA() - model.aClass64_119.fa();
         int modelDepth = model.aClass64_119.G() - model.aClass64_119.HA();
@@ -801,7 +801,7 @@ final class SceneEditorUi {
             toolkit.method3638(projection);
             toolkit.DA(centerX, centerY, 512, 512);
             toolkit.NativeHandle();
-            matrix.method902(-1024);
+            matrix.method902(-124);
             matrix.method896(2048);
             matrix.method891(0, 0, previewDepth);
             matrix.method900(0);
