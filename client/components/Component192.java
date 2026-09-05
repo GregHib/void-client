@@ -116,6 +116,7 @@ final class Component192
     static final String formatMenuEntry(byte i, MenuEntry class348_sub42_sub12) {
         anInt3962++;
         int i_41_ = 9 / ((79 - i) / 46);
+        if (class348_sub42_sub12 == null) return "";
         if (class348_sub42_sub12.extraTarget == null || class348_sub42_sub12.extraTarget.length() == 0) {
             if ((class348_sub42_sub12.target == null) || class348_sub42_sub12.target.length() <= 0) return (class348_sub42_sub12.option);
             return (class348_sub42_sub12.option + FriendsIgnoreList.aClass274_3515.getLocalized(ObjectDeserializer.languageId, 544) + (class348_sub42_sub12.target));
