@@ -802,7 +802,7 @@ final class SceneEditorUi {
             toolkit.DA(centerX, centerY, 512, 512);
             toolkit.NativeHandle();
             matrix.method902(-1024);
-            matrix.method896(0);
+            matrix.method896(2048);
             matrix.method891(0, 0, previewDepth);
             matrix.method900(0);
             model.aClass64_119.render(matrix, null, 1);
