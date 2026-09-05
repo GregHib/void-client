@@ -754,17 +754,56 @@ final class SceneEditorUi {
 
     private static void drawPreview(GraphicsToolkit toolkit, BitmapFont font, int x, int y, int width, int objectId) {
         Component44 definition = previewDefinition(objectId);
-        if (definition != null && definition.anInt875 != -1) {
-            try {
-                Component119.method2028(x + width / 2, definition, y + PREVIEW_H / 2,
-                        toolkit, 0, 126);
-                return;
-            } catch (Throwable ignored) {
-                /* Fall through to the text fallback. */
-            }
+        if (definition != null && drawObjectModelPreview(toolkit, definition, x, y, width)) {
+            return;
         }
         font.drawText("Preview unavailable", 0xFF999999, y + PREVIEW_H / 2 + 5,
                 x + 6, SHADOW, -110);
+    }
+
+    /**
+     * Object definitions are location models, not map-scene sprites. The old
+     * preview passed them through Component119, which only understands the
+     * map-scene id stored in anInt875. Build the location model directly and
+     * use the same projection setup as type-6 interface model widgets.
+     */
+    private static boolean drawObjectModelPreview(GraphicsToolkit toolkit, Component44 definition,
+                                                  int x, int y, int width) {
+        Component245 model = null;
+        int[] modelTypes = {10, 22, 0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        for (int modelType : modelTypes) {
+            try {
+                model = definition.method476(toolkit, null, modelType, 2048, 0, false,
+                        null, 0, 0, 0, 128);
+                if (model != null && model.aClass64_119 != null) {
+                    break;
+                }
+            } catch (Throwable ignored) {
+                model = null;
+            }
+        }
+        if (model == null || model.aClass64_119 == null) {
+            return false;
+        }
+
+        int centerX = x + width / 2;
+        int centerY = y + PREVIEW_H / 2;
+        DisplayModeManagerContainer204 projection = Component270.aClass101_2123;
+        DisplayModeManagerContainer204 matrix = Cp1252Decoder.aClass101_5209;
+        try {
+            projection.method910();
+            toolkit.method3638(projection);
+            toolkit.DA(centerX, centerY, 512, 512);
+            toolkit.NativeHandle();
+            matrix.method902(-1024);
+            matrix.method896(0);
+            matrix.method891(0, 0, 512);
+            matrix.method900(0);
+            model.aClass64_119.render(matrix, null, 1);
+            return true;
+        } catch (Throwable ignored) {
+            return false;
+        }
     }
 
 
