@@ -540,8 +540,8 @@ final class SceneEditorUi {
         if (hitDone(x, y)) {
             searchFocused = false;
             MobileKeyboard.requestHide("scene-editor-assets-done");
-            SceneEditorHost.setEditorMode(true);
             spawnSelected();
+            SceneEditorHost.setEditorMode(false);
             return;
         }
         if (hitAssetList(x, y)) {
