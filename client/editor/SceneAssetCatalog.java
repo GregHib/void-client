@@ -120,7 +120,7 @@ final class SceneAssetCatalog {
                         // A malformed definition must not stop the remaining cache scan.
                     }
                     scanned++;
-                    if ((scanned & 255) == 0) {
+                    if ((scanned & 1023) == 0) {
                         publish(loaded);
                     }
                 }
@@ -135,7 +135,18 @@ final class SceneAssetCatalog {
     }
 
     private static void publish(java.util.ArrayList<Entry> loaded) {
-        entries = loaded.toArray(new Entry[loaded.size()]);
+        Entry[] snapshot = loaded.toArray(new Entry[loaded.size()]);
+        java.util.Arrays.sort(snapshot, new java.util.Comparator<Entry>() {
+            @Override
+            public int compare(Entry left, Entry right) {
+                int byName = left.normalizedName.compareTo(right.normalizedName);
+                if (byName != 0) {
+                    return byName;
+                }
+                return left.objectId < right.objectId ? -1 : (left.objectId == right.objectId ? 0 : 1);
+            }
+        });
+        entries = snapshot;
         generation++;
     }
 
