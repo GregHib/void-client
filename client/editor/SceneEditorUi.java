@@ -84,6 +84,20 @@ final class SceneEditorUi {
     static boolean isScrollOverUi() {
         return false;
     }
+    private static boolean cursorOverUi() {
+        if (!SceneEditorHost.isEditorMode() || AbstractGlTextureSub4.mouseHandler == null) {
+            return false;
+        }
+        int x = AbstractGlTextureSub4.mouseHandler.getCursorX(true);
+        int y = AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 100);
+        return hitPalette(x, y);
+    }
+
+    private static void clearHoverTile() {
+        hoverAbsX = -1;
+        hoverAbsY = -1;
+    }
+
     private static void normalizeSelection() {
         int count = filteredCount();
         int maxOffset = Math.max(0, count - LIST_ROWS);
@@ -161,8 +175,12 @@ final class SceneEditorUi {
             if (font == null) {
                 return;
             }
-            normalizeSelection();
-            refreshHoverTile();
+            mouseOverUi = cursorOverUi();
+            if (mouseOverUi) {
+                clearHoverTile();
+            } else {
+                refreshHoverTile();
+            }
             if (moveArmed) {
                 drawMovePanel(toolkit, font);
             } else {
@@ -189,10 +207,12 @@ final class SceneEditorUi {
         }
         try {
             pollSearchInput();
-            int mx = AbstractGlTextureSub4.mouseHandler.getCursorX(true);
-            int my = AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 100);
-            mouseOverUi = hitPalette(mx, my);
-            refreshHoverTile();
+            mouseOverUi = cursorOverUi();
+            if (mouseOverUi) {
+                clearHoverTile();
+            } else {
+                refreshHoverTile();
+            }
 
             // Let the open context menu consume left-clicks (Move/Remove/Rotate).
             if (Component364.aBoolean8335) {
@@ -930,7 +950,7 @@ final class SceneEditorUi {
         if (dragging && dragHoverAbsX >= 0 && selected != null) {
             projectAndBox(toolkit, dragHoverAbsX, dragHoverAbsY, selected.plane, GHOST, 20);
             drawDragLine(toolkit, selected.x, selected.y, selected.plane, dragHoverAbsX, dragHoverAbsY);
-        } else if (hoverAbsX >= 0 && selectedId < 0 && !moveArmed) {
+        } else if (!mouseOverUi && hoverAbsX >= 0 && selectedId < 0 && !moveArmed) {
             projectAndBox(toolkit, hoverAbsX, hoverAbsY, MicrobotWidgets.localPlane(), 0x6600E5FF, 16);
         }
     }
