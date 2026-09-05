@@ -788,6 +788,12 @@ final class SceneEditorUi {
 
         int centerX = x + width / 2;
         int centerY = y + PREVIEW_H / 2;
+        int modelWidth = model.aClass64_119.RA() - model.aClass64_119.V();
+        int modelHeight = model.aClass64_119.EA() - model.aClass64_119.fa();
+        int modelDepth = model.aClass64_119.G() - model.aClass64_119.HA();
+        int modelSize = Math.max(modelWidth, Math.max(modelHeight, modelDepth));
+        int targetSize = Math.max(24, PREVIEW_H - 16);
+        int previewDepth = Math.max(512, modelSize * 512 / targetSize);
         DisplayModeManagerContainer204 projection = Component270.aClass101_2123;
         DisplayModeManagerContainer204 matrix = Cp1252Decoder.aClass101_5209;
         try {
@@ -797,7 +803,7 @@ final class SceneEditorUi {
             toolkit.NativeHandle();
             matrix.method902(-1024);
             matrix.method896(0);
-            matrix.method891(0, 0, 512);
+            matrix.method891(0, 0, previewDepth);
             matrix.method900(0);
             model.aClass64_119.render(matrix, null, 1);
             return true;
