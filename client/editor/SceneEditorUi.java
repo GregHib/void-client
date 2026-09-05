@@ -57,6 +57,15 @@ final class SceneEditorUi {
         return SceneAssetCatalog.resultAt(resultOffset + row);
     }
 
+    /** Used before the normal input poll to keep the camera from consuming UI wheel input. */
+    static boolean isScrollOverUi() {
+        if (!SceneEditorHost.isEditorMode() || AbstractGlTextureSub4.mouseHandler == null) {
+            return false;
+        }
+        int x = AbstractGlTextureSub4.mouseHandler.getCursorX(true);
+        int y = AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 100);
+        return hitPalette(x, y);
+    }
     private static void normalizeSelection() {
         int count = filteredCount();
         int maxOffset = Math.max(0, count - LIST_ROWS);

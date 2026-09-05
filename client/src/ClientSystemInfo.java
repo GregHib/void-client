@@ -330,7 +330,8 @@ final class ClientSystemInfo extends Node {
                         Component233.overGameScreen = false;
                         Component43.method1583((byte) -73);
                         ResourceLoader.anInt3918++;
-                        if (Component233.overGameScreen && Component233.scrollWheelDiff != 0 && !StringCache.devConsoleOpen) {
+                        if (Component233.overGameScreen && Component233.scrollWheelDiff != 0
+                                && !StringCache.devConsoleOpen && !SceneEditorUi.isScrollOverUi()) {
                             if (Component353.anInt2581 <= 0 || !Component280.aClass346_2449.isKeyDown(82, -125) || !Component280.aClass346_2449.isKeyDown(81, -126)) {
                                 Component233.zoomStep += -Component233.scrollWheelDiff * Loader.ZOOM_OFFSET_STEP;
                             }
