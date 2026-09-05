@@ -20,8 +20,8 @@ final class SceneEditorUi {
     private static final int SEARCH_H = 24;
     private static final int LIST_TOP = 150;
     private static final int LIST_ROWS = 8;
-    private static final int LIST_CONTROL_W = 18;
-    private static final int LIST_CONTROL_H = 26;
+    private static final int LIST_CONTROL_W = 24;
+    private static final int LIST_CONTROL_H = 28;
     private static final int LIST_CONTROL_GAP = 4;
     private static final int PALETTE_FOOTER_H = 108;
     private static final int ACTION_H = 26;
@@ -589,11 +589,11 @@ final class SceneEditorUi {
             return;
         }
         if (hitListArrow(x, y, true)) {
-            moveResultOffset(-1);
+            moveResultOffset(-LIST_ROWS);
             return;
         }
         if (hitListArrow(x, y, false)) {
-            moveResultOffset(1);
+            moveResultOffset(LIST_ROWS);
             return;
         }
         if (hitDone(x, y)) {
@@ -803,9 +803,13 @@ final class SceneEditorUi {
     }
 
     private static void drawArrow(GraphicsToolkit toolkit, int x, int y, int width, int height, String direction) {
+        drawArrow(toolkit, x, y, width, height, direction, 0xFFFFFFFF);
+    }
+
+    private static void drawArrow(GraphicsToolkit toolkit, int x, int y, int width, int height,
+                                  String direction, int color) {
         int cx = x + width / 2;
         int cy = y + height / 2;
-        int color = 0xFFFFFFFF;
         if ("left".equals(direction)) {
             toolkit.fillRect2D(cx - 7, cy - 2, 4, 4, color, 1);
             toolkit.fillRect2D(cx - 4, cy - 5, 4, 4, color, 1);
@@ -906,7 +910,8 @@ final class SceneEditorUi {
         int border = enabled ? ACCENT : BORDER;
         toolkit.fillRect2D(x, y, LIST_CONTROL_W, LIST_CONTROL_H, fill, 1);
         toolkit.fillRect3D(x, y, LIST_CONTROL_W, LIST_CONTROL_H, border, 0);
-        drawArrow(toolkit, x, y, LIST_CONTROL_W, LIST_CONTROL_H, direction);
+        drawArrow(toolkit, x, y, LIST_CONTROL_W, LIST_CONTROL_H, direction,
+                enabled ? ACCENT : 0xFF806E80);
     }
 
     private static void drawToolBanner(GraphicsToolkit toolkit, BitmapFont font) {
