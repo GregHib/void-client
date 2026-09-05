@@ -202,8 +202,8 @@ final class SceneEditorUi {
                     int cy = click.getY(33);
                     if (type == 0) {
                         if (hitPalette(cx, cy)) {
-                            onPaletteClick(cx, cy);
                             click.unlink((byte) 97);
+                            onPaletteClick(cx, cy);
                         } else if (!BuildInfo.isMouseOverConsole() && !MicrobotPanel.contains(cx, cy)) {
                             onWorldPress(cx, cy);
                             click.unlink((byte) 97);
@@ -503,6 +503,7 @@ final class SceneEditorUi {
             chat("No City Assets match '" + searchText + "'.");
             return;
         }
+        boolean keepEditorMode = SceneEditorHost.isEditorMode();
         try {
             Asset asset = currentAsset();
             SceneEditorHost.spawnAtPlayer(asset.objectId);
@@ -510,6 +511,10 @@ final class SceneEditorUi {
             chat("Spawned " + asset.label + " (#" + asset.objectId + ")");
         } catch (Throwable t) {
             chat("Spawn failed: " + t.getMessage());
+        } finally {
+            if (keepEditorMode && !SceneEditorHost.isEditorMode()) {
+                SceneEditorHost.setEditorMode(true);
+            }
         }
     }
 
