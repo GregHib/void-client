@@ -32,7 +32,7 @@ final class MicrobotPanel {
     private static final int SHADOW = 0xFF000000;
 
     /** When true, only the header row is drawn / clickable. */
-    private static boolean collapsed;
+    private static boolean collapsed = true;
     /**
      * Cursor currently over the panel bounds — refreshed each {@link #pollInput()}.
      * Used by {@link DisplayModeManagerContainer1} to suppress menus under the HUD.
