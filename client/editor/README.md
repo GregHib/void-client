@@ -18,7 +18,6 @@ and restore on the next login.
 7. **Ctrl+click** scenery → claim + drag (including stock world objects).
 8. In **Move**, click destinations repeatedly or use the arrow buttons for one-tile steps; click **Done** to finish.
    Enable **Micro Adjust** to make the arrow buttons move by `0.1` tile instead.
-   The side buttons adjust vertical Y/height and scale; `Micro Adjust` uses `0.1`-tile height steps.
 9. In City Assets, **Save** runs `ed save demo`; **Undo** and **Redo** update the live scene and autosave.
 10. Turn **Editor: OFF** — objects remain. Named save: `ed save demo`.
 
@@ -59,7 +58,7 @@ ed status
 
 ## Limits
 
-- Scenery type 10; x/y/z offsets and per-instance scale are local renderable adjustments
+- Scenery type 10; fractional x/y editor movement is available through Micro Adjust
 - Stock objects you **Remove** without owning come back on region reload
 - City Assets are indexed asynchronously from every cached LocType; search returns up to 100 matches
 

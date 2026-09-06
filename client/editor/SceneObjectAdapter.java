@@ -8,8 +8,8 @@ import java.util.List;
  * packets. Coordinates are absolute world tiles ({@link SceneObject#x}/{@link SceneObject#y});
  * they are converted to the current region-local tile space before placement.
  * <p>
- * Stock placer supports rotation 0–3 and terrain height. Fractional x/y/z and
- * per-instance {@code scale} are applied to the native renderable after placement.
+ * Stock placer supports rotation 0–3 and terrain height. Fractional x/y offsets
+ * are applied to the native renderable after placement.
  */
 final class SceneObjectAdapter {
     /** {@link SceneManager#method1591} removeCategory for scenery (type 10/11). */
@@ -66,43 +66,16 @@ final class SceneObjectAdapter {
         return true;
     }
 
-    /** Apply fractional position and per-instance scale to the native renderable. */
+    /** Apply only the supported fractional x/y editor offsets. */
     private static void applyFractionalOffset(SceneObject object, int localX, int localY) {
-        if (object.offsetX == 0.0f && object.offsetY == 0.0f
-                && object.offsetZ == 0.0f && object.scale == 1.0f) {
+        if (object.offsetX == 0.0f && object.offsetY == 0.0f) {
             return;
         }
         Component327 renderable = DisplayModeManagerContainer249.method1353(
                 object.plane, localX, localY, Component327.class);
-        if (renderable == null) {
-            return;
-        }
-        renderable.x += Math.round(object.offsetX * 512.0f);
-        renderable.y += Math.round(object.offsetY * 512.0f);
-        renderable.anInt6382 += Math.round((object.z + object.offsetZ) * 512.0f);
-
-        DisplayModeManagerContainer370 model = null;
-        if (renderable instanceof Component349) {
-            model = ((Component349) renderable).aClass64_10028;
-        } else if (renderable instanceof Component29 && NodeSub8.toolkit != null) {
-            Component29 staticObject = (Component29) renderable;
-            if (staticObject.editorModel != null) {
-                model = staticObject.editorModel;
-            } else if (staticObject.aClass235_10045 != null) {
-                model = staticObject.aClass235_10045.method1668(false, true, -127, 2048, NodeSub8.toolkit);
-            }
-        }
-        if (model != null && object.scale != 1.0f) {
-            int scale = Math.round(object.scale * 128.0f);
-            if ((model.ua() & 7) != 7) {
-                model = model.createRenderPass((byte) 0, model.ua() | 7, true);
-                if (renderable instanceof Component349) {
-                    ((Component349) renderable).aClass64_10028 = model;
-                } else if (renderable instanceof Component29) {
-                    ((Component29) renderable).editorModel = model;
-                }
-            }
-            model.O(scale, scale, scale);
+        if (renderable != null) {
+            renderable.x += Math.round(object.offsetX * 512.0f);
+            renderable.y += Math.round(object.offsetY * 512.0f);
         }
     }
 

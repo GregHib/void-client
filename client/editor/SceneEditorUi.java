@@ -31,7 +31,6 @@ final class SceneEditorUi {
     private static final int MOVE_BUTTON = 30;
     private static final int MOVE_GAP = 4;
     private static final int MOVE_DONE_H = 28;
-    private static final float SCALE_STEP = 0.1f;
     private static final int DONE_H = 28;
     private static final int BG = 0xD01A1028;
     private static final int HEADER_BG = 0xE023172E;
@@ -547,18 +546,6 @@ final class SceneEditorUi {
     private static int moveCenterX() {
         return searchX() + (PANEL_W - PANEL_PAD * 2 - MOVE_BUTTON) / 2;
     }
-    private static int moveSideX(boolean left) {
-        int centerX = moveCenterX();
-        return centerX + (left ? -2 : 2) * (MOVE_BUTTON + MOVE_GAP);
-    }
-
-    private static int moveSideTopY() {
-        return moveControlsY();
-    }
-
-    private static int moveSideBottomY() {
-        return moveControlsY() + MOVE_BUTTON + MOVE_GAP;
-    }
 
 
     private static boolean hitMoveButton(int x, int y, int buttonX, int buttonY, int width, int height) {
@@ -653,17 +640,7 @@ final class SceneEditorUi {
     private static void onMovePanelClick(int x, int y) {
         int centerX = moveCenterX();
         int controlsY = moveControlsY();
-        int leftX = moveSideX(true);
-        int rightX = moveSideX(false);
-        if (hitMoveButton(x, y, leftX, moveSideTopY(), MOVE_BUTTON, MOVE_BUTTON)) {
-            nudgeSelectedHeight(microAdjust ? 0.1f : 1.0f);
-        } else if (hitMoveButton(x, y, leftX, moveSideBottomY(), MOVE_BUTTON, MOVE_BUTTON)) {
-            nudgeSelectedHeight(microAdjust ? -0.1f : -1.0f);
-        } else if (hitMoveButton(x, y, rightX, moveSideTopY(), MOVE_BUTTON, MOVE_BUTTON)) {
-            scaleSelectedBy(SCALE_STEP);
-        } else if (hitMoveButton(x, y, rightX, moveSideBottomY(), MOVE_BUTTON, MOVE_BUTTON)) {
-            scaleSelectedBy(-SCALE_STEP);
-        } else if (hitMoveButton(x, y, centerX, controlsY, MOVE_BUTTON, MOVE_BUTTON)) {
+        if (hitMoveButton(x, y, centerX, controlsY, MOVE_BUTTON, MOVE_BUTTON)) {
             moveSelectedBy(0, 1);
         } else if (hitMoveButton(x, y, centerX - MOVE_BUTTON - MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
                 MOVE_BUTTON, MOVE_BUTTON)) {
@@ -703,32 +680,6 @@ final class SceneEditorUi {
             SceneEditorHost.persistQuiet();
         } catch (Throwable t) {
             System.out.println("scene-editor micro-move: " + t.getMessage());
-        }
-    }
-    private static void nudgeSelectedHeight(float delta) {
-        if (selectedObject() == null) {
-            return;
-        }
-        try {
-            SceneEditorHost.editor().nudgeHeight(selectedId, delta);
-            SceneEditorHost.resync();
-            SceneEditorHost.persistQuiet();
-        } catch (Throwable t) {
-            System.out.println("scene-editor height: " + t.getMessage());
-        }
-    }
-
-    private static void scaleSelectedBy(float delta) {
-        SceneObject object = selectedObject();
-        if (object == null || object.scale + delta < 0.1f || object.scale + delta > 100.0f) {
-            return;
-        }
-        try {
-            SceneEditorHost.editor().scaleBy(selectedId, delta);
-            SceneEditorHost.resync();
-            SceneEditorHost.persistQuiet();
-        } catch (Throwable t) {
-            System.out.println("scene-editor scale: " + t.getMessage());
         }
     }
     private static void moveSelectedTo(int x, int y) {
@@ -916,14 +867,6 @@ final class SceneEditorUi {
         font.drawText("Move " + (microAdjust ? "0.1" : "1") + " tile per click",
                 0xFFAAAAAA, controlsY - 10, sx, SHADOW, -110);
         int centerX = moveCenterX();
-        int leftX = moveSideX(true);
-        int rightX = moveSideX(false);
-        font.drawText("Y", 0xFFAAAAAA, controlsY - 10, leftX + 11, SHADOW, -110);
-        font.drawText("Scale", 0xFFAAAAAA, controlsY - 10, rightX - 2, SHADOW, -110);
-        drawMoveButton(toolkit, font, leftX, moveSideTopY(), MOVE_BUTTON, "Y+");
-        drawMoveButton(toolkit, font, leftX, moveSideBottomY(), MOVE_BUTTON, "Y-");
-        drawMoveButton(toolkit, font, rightX, moveSideTopY(), MOVE_BUTTON, "S+");
-        drawMoveButton(toolkit, font, rightX, moveSideBottomY(), MOVE_BUTTON, "S-");
         drawMoveButton(toolkit, font, centerX, controlsY, MOVE_BUTTON, "up");
         drawMoveButton(toolkit, font, centerX - MOVE_BUTTON - MOVE_GAP, controlsY + MOVE_BUTTON + MOVE_GAP,
                 MOVE_BUTTON, "left");

@@ -13,7 +13,6 @@ public final class SceneEditorDemo {
             "add 1278 3205 3200 0 0",
             "move 1 3210 3201 0",
             "rotate 1 2",
-            "scale 2 1.5",
             "undo",
             "redo",
             "save demo"

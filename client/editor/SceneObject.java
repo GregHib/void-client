@@ -17,8 +17,6 @@ final class SceneObject {
     /** Fractional tile offsets applied to the live renderable after placement. */
     float offsetX;
     float offsetY;
-    float offsetZ;
-    float scale = 1.0f;
     boolean visible = true;
     boolean collision = true;
     String name;
@@ -38,8 +36,6 @@ final class SceneObject {
         copy.rotation = rotation;
         copy.offsetX = offsetX;
         copy.offsetY = offsetY;
-        copy.offsetZ = offsetZ;
-        copy.scale = scale;
         copy.visible = visible;
         copy.collision = collision;
         copy.name = name;
@@ -56,14 +52,6 @@ final class SceneObject {
         normalizeOffsets();
     }
 
-    /** Move vertically by a fractional tile. */
-    void nudgeHeight(float dz) {
-        if (Float.isNaN(dz) || Float.isInfinite(dz)) {
-            throw new IllegalArgumentException("invalid fractional height");
-        }
-        offsetZ += dz;
-        normalizeOffsets();
-    }
 
     void validate() {
         if (id < 0 || id > MAX_ID || objectId < 0 || objectId > MAX_ID) {
@@ -73,15 +61,10 @@ final class SceneObject {
             throw new IllegalArgumentException("plane must be between 0 and 3");
         }
         if (Float.isNaN(offsetX) || Float.isInfinite(offsetX)
-                || Float.isNaN(offsetY) || Float.isInfinite(offsetY)
-                || Float.isNaN(offsetZ) || Float.isInfinite(offsetZ)) {
+                || Float.isNaN(offsetY) || Float.isInfinite(offsetY)) {
             throw new IllegalArgumentException("invalid fractional offset");
         }
         normalizeOffsets();
-        if (scale <= 0.0f || scale > 100.0f || Float.isNaN(scale)
-                || Float.isInfinite(scale)) {
-            throw new IllegalArgumentException("scale must be between 0 and 100");
-        }
         rotation &= 2047;
     }
 
@@ -101,14 +84,6 @@ final class SceneObject {
         while (offsetY < 0.0f) {
             y--;
             offsetY += 1.0f;
-        }
-        while (offsetZ >= 1.0f) {
-            z++;
-            offsetZ -= 1.0f;
-        }
-        while (offsetZ < 0.0f) {
-            z--;
-            offsetZ += 1.0f;
         }
     }
 }

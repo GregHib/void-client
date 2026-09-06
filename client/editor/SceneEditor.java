@@ -64,26 +64,8 @@ final class SceneEditor {
             object.validate();
         }});
     }
-    void nudgeHeight(final long id, final float dz) {
-        change(new Runnable() { public void run() {
-            SceneObject object = required(id);
-            object.nudgeHeight(dz);
-            object.validate();
-        }});
-    }
-
-    void scaleBy(final long id, final float delta) {
-        change(new Runnable() { public void run() {
-            SceneObject object = required(id);
-            object.scale += delta;
-            object.validate();
-        }});
-    }
     void rotate(final long id, final int rotation) {
         change(new Runnable() { public void run() { SceneObject o = required(id); o.rotation = rotation; o.validate(); }});
-    }
-    void scale(final long id, final float scale) {
-        change(new Runnable() { public void run() { SceneObject o = required(id); o.scale = scale; o.validate(); }});
     }
     void undo() {
         if (!undo.isEmpty()) {
@@ -138,7 +120,6 @@ final class SceneEditor {
         if ("add".equals(p[0]) && p.length == 6) return "added " + add(Integer.parseInt(p[1]), Integer.parseInt(p[2]), Integer.parseInt(p[3]), Integer.parseInt(p[4]), Integer.parseInt(p[5])).id;
         if ("move".equals(p[0]) && p.length == 5) { move(Long.parseLong(p[1]), Integer.parseInt(p[2]), Integer.parseInt(p[3]), Integer.parseInt(p[4])); return "moved"; }
         if ("rotate".equals(p[0]) && p.length == 3) { rotate(Long.parseLong(p[1]), Integer.parseInt(p[2])); return "rotated"; }
-        if ("scale".equals(p[0]) && p.length == 3) { scale(Long.parseLong(p[1]), Float.parseFloat(p[2])); return "scaled"; }
         if ("remove".equals(p[0]) && p.length == 2) { remove(Long.parseLong(p[1])); return "removed"; }
         if ("undo".equals(p[0]) && p.length == 1) { undo(); return "undone"; }
         if ("redo".equals(p[0]) && p.length == 1) { redo(); return "redone"; }
