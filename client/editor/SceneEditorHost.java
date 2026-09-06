@@ -1,5 +1,4 @@
 import java.io.IOException;
-import java.util.ArrayList;
 
 /**
  * Process-wide scene editor host: model ({@link SceneEditor}) + live adapter.
@@ -16,7 +15,6 @@ final class SceneEditorHost {
     private static boolean bootstrapped;
     private static int lastRegionX = Integer.MIN_VALUE;
     private static int lastRegionY = Integer.MIN_VALUE;
-    private static final ArrayList<LocalNpcSpawn> localNpcSpawns = new ArrayList<LocalNpcSpawn>();
 
     private SceneEditorHost() {
     }
@@ -55,7 +53,6 @@ final class SceneEditorHost {
             lastRegionY = Integer.MIN_VALUE;
             return;
         }
-        restoreNpcSpawns();
         if (!bootstrapped) {
             bootstrapped = true;
             tryRestoreAutosave();
@@ -160,10 +157,18 @@ final class SceneEditorHost {
         if (Component72.localPlayer == null) {
             throw new IllegalStateException("not logged in");
         }
-        int x = MicrobotWidgets.localAbsX();
-        int y = MicrobotWidgets.localAbsY();
-        int plane = MicrobotWidgets.localPlane();
-        SceneObject added = editor().add(objectId, x, y, 0, plane);
+        return spawnAt(objectId, MicrobotWidgets.localAbsX(), MicrobotWidgets.localAbsY(),
+                MicrobotWidgets.localPlane());
+    }
+
+    static SceneObject addAt(int objectId, int x, int y, int plane) {
+        SceneObject probe = new SceneObject(0, objectId, x, y, 0, plane);
+        SceneObjectAdapter.remove(probe);
+        return editor().add(objectId, x, y, 0, plane);
+    }
+
+    private static String spawnAt(int objectId, int x, int y, int plane) throws IOException {
+        SceneObject added = addAt(objectId, x, y, plane);
         int placed = resync();
         String name = SceneObjectAdapter.nameOf(objectId);
         return "added " + added.id + (name != null ? " (" + name + ")" : "")
@@ -181,156 +186,10 @@ final class SceneEditorHost {
         if (Component72.localPlayer == null) {
             throw new IllegalStateException("not logged in");
         }
-        LocalNpcSpawn spawn = new LocalNpcSpawn(npcId, absX, absY, plane);
-        injectNpc(spawn);
-        localNpcSpawns.add(spawn);
-        String name = spawn.definition.name == null ? "Unnamed NPC" : spawn.definition.name;
-        return "spawned " + name + " (#" + npcId + ") @ " + absX + "," + absY + "," + plane;
+        sendServerCommand("scene_npc_spawn " + npcId + " " + absX + " " + absY + " " + plane);
+        return "requested server NPC (#" + npcId + ") @ " + absX + "," + absY + "," + plane;
     }
 
-    static boolean isLocalNpcSlot(int slot) {
-        for (int i = 0; i < localNpcSpawns.size(); i++) {
-            if (localNpcSpawns.get(i).slot == slot) {
-                return true;
-            }
-        }
-        return false;
-    }
-
-    static int copyLocalNpcSlots(int[] target) {
-        int count = 0;
-        for (int i = 0; i < localNpcSpawns.size() && count < target.length; i++) {
-            LocalNpcSpawn spawn = localNpcSpawns.get(i);
-            if (spawn.slot >= 0 && spawn.node != null
-                    && Component21.aClass356_3654.get(spawn.slot, -6008) == spawn.node) {
-                target[count++] = spawn.slot;
-            }
-        }
-        return count;
-    }
-
-    /** Reinsert editor NPCs after a region reset removed their live nodes. */
-    static void restoreNpcSpawns() {
-        if (!Microbot.isLoggedIn()) {
-            localNpcSpawns.clear();
-            return;
-        }
-        for (int i = 0; i < localNpcSpawns.size(); i++) {
-            try {
-                LocalNpcSpawn spawn = localNpcSpawns.get(i);
-                if (spawn.node == null || Component21.aClass356_3654.get(spawn.slot, -6008) != spawn.node) {
-                    injectNpc(spawn);
-                }
-            } catch (Throwable t) {
-                System.out.println("scene-editor NPC restore: " + t.getMessage());
-            }
-        }
-    }
-
-    private static void injectNpc(LocalNpcSpawn spawn) {
-        DisplayModeManagerContainer347 provider = Component291.aClass278_2529;
-        if (provider == null) {
-            throw new IllegalStateException("NPC definitions are not loaded");
-        }
-        NpcComposition definition = provider.method2079(spawn.npcId, -1);
-        if (definition == null) {
-            throw new IllegalArgumentException("NPC not found: " + spawn.npcId);
-        }
-        int localX = spawn.absX - NodeBaseSub2.regionTileX;
-        int localY = spawn.absY - Component330.regionTileY;
-        if (!SceneObjectAdapter.inSceneBounds(localX, localY)) {
-            return;
-        }
-
-        NpcNode node = spawn.node;
-        Npc npc = node == null ? null : node.npc;
-        boolean fresh = npc == null;
-        if (fresh) {
-            npc = new Npc();
-        }
-        NpcNode active = spawn.slot < 0 ? null : (NpcNode) Component21.aClass356_3654.get(spawn.slot, -6008);
-        if (spawn.slot < 0 || (active != null && active != node)) {
-            spawn.slot = findFreeNpcSlot();
-        }
-        if (spawn.slot < 0 || DefinitionSub23.aClass348_Sub22Array9319 == null
-                || DisplayModeManagerContainer238.anIntArray1233 == null
-                || NodeSub32.anInt6930 >= DefinitionSub23.aClass348_Sub22Array9319.length
-                || Component324.anInt2057 >= DisplayModeManagerContainer238.anIntArray1233.length) {
-            throw new IllegalStateException("NPC scene is full");
-        }
-
-        npc.anInt10290 = spawn.slot;
-        if (fresh) {
-            node = new NpcNode(npc);
-            npc.anInt10306 = OpenGlShader.clientCycle;
-            npc.method2448(definition, -2);
-            npc.method2434((byte) 120, npc.definition.anInt1399);
-            npc.anInt10310 = npc.definition.anInt1329 << 3;
-            npc.method2435((byte) -108, (npc.definition.aByte1355 - -4 & ~0x631ffff8) << 11, true);
-            npc.method2444(localY, true, localX, 123, npc.getSize((byte) 54), spawn.plane);
-        }
-        spawn.definition = definition;
-        spawn.node = node;
-        Component21.aClass356_3654.put((byte) 91, spawn.slot, node);
-        DefinitionSub23.aClass348_Sub22Array9319[NodeSub32.anInt6930++] = node;
-        DisplayModeManagerContainer238.anIntArray1233[Component324.anInt2057++] = spawn.slot;
-    }
-
-    private static int findFreeNpcSlot() {
-        for (int candidate = 0; candidate < 1024; candidate++) {
-            if (Component21.aClass356_3654.get(candidate, -6008) == null) {
-                return candidate;
-            }
-        }
-        return -1;
-    }
-
-    private static void removeNpc(LocalNpcSpawn spawn) {
-        if (spawn.slot < 0) {
-            return;
-        }
-        NpcNode node = spawn.node;
-        if (node == null || Component21.aClass356_3654.get(spawn.slot, -6008) != node) {
-            spawn.node = null;
-            return;
-        }
-        node.unlink((byte) 113);
-        for (int i = 0; i < Component324.anInt2057; i++) {
-            if (DisplayModeManagerContainer238.anIntArray1233[i] == spawn.slot) {
-                for (int j = i + 1; j < Component324.anInt2057; j++) {
-                    DisplayModeManagerContainer238.anIntArray1233[j - 1] = DisplayModeManagerContainer238.anIntArray1233[j];
-                }
-                Component324.anInt2057--;
-                break;
-            }
-        }
-        for (int i = 0; i < NodeSub32.anInt6930; i++) {
-            if (DefinitionSub23.aClass348_Sub22Array9319[i] == node) {
-                for (int j = i + 1; j < NodeSub32.anInt6930; j++) {
-                    DefinitionSub23.aClass348_Sub22Array9319[j - 1] = DefinitionSub23.aClass348_Sub22Array9319[j];
-                }
-                DefinitionSub23.aClass348_Sub22Array9319[--NodeSub32.anInt6930] = null;
-                break;
-            }
-        }
-    }
-
-    private static final class LocalNpcSpawn {
-        final int npcId;
-        final int absX;
-        final int absY;
-        final int plane;
-        int slot = -1;
-        NpcNode node;
-        NpcComposition definition;
-
-        LocalNpcSpawn(int npcId, int absX, int absY, int plane) {
-            this.npcId = npcId;
-            this.absX = absX;
-            this.absY = absY;
-            this.plane = plane;
-        }
-    }
 
     /**
      * Run a model command then resync the live scene.

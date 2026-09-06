@@ -417,7 +417,7 @@ final class SceneEditorUi {
                 return;
             }
             Asset asset = currentAsset();
-            SceneObject added = SceneEditorHost.editor().add(asset.objectId, absX, absY, 0, plane);
+            SceneObject added = SceneEditorHost.addAt(asset.objectId, absX, absY, plane);
             selectedId = added.id;
             SceneEditorHost.resync();
             SceneEditorHost.persistQuiet();
@@ -816,9 +816,9 @@ final class SceneEditorUi {
         boolean keepEditorMode = SceneEditorHost.isEditorMode();
         try {
             Asset asset = currentAsset();
-            SceneEditorHost.spawnAtPlayer(asset.objectId);
+            String result = SceneEditorHost.spawnAtPlayer(asset.objectId);
             SceneEditorHost.persistQuiet();
-            chat("Spawned " + asset.label + " (#" + asset.objectId + ")");
+            chat(result);
         } catch (Throwable t) {
             chat("Spawn failed: " + t.getMessage());
         } finally {

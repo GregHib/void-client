@@ -53,8 +53,7 @@ final class GnpPositionLogger {
         }
         if (NodeSub32.anInt6930 - Component324.anInt2057 != 0) throw new RuntimeException("gnp3 mis:" + (NodeSub32.anInt6930 - Component324.anInt2057));
         for (int i_5_ = 0; i_5_ < NodeSub32.anInt6930; i_5_++) {
-            if (!SceneEditorHost.isLocalNpcSlot(DefinitionSub23.aClass348_Sub22Array9319[i_5_].npc.anInt10290)
-                    && DefinitionSub23.aClass348_Sub22Array9319[i_5_].npc.anInt10306 != OggStreamReader.anInt9041) {
+            if (DefinitionSub23.aClass348_Sub22Array9319[i_5_].npc.anInt10306 != OggStreamReader.anInt9041) {
                 throw new RuntimeException("gnp4 uk:" + (DefinitionSub23.aClass348_Sub22Array9319[i_5_].npc.anInt10290));
             }
         }

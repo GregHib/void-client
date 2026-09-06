@@ -53,6 +53,9 @@ final class SceneObjectAdapter {
         int lx = toLocalX(object.x);
         int ly = toLocalY(object.y);
         if (!inSceneBounds(lx, ly)) {
+            System.out.println("scene-editor object out of bounds id=" + object.objectId
+                    + " abs=" + object.x + "," + object.y + "," + object.plane
+                    + " local=" + lx + "," + ly);
             return false;
         }
         int rot = object.rotation & 3;
