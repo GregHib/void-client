@@ -105,6 +105,7 @@ final class SceneEditorMenu {
                     SceneEditorHost.persistQuiet();
                     chat("Removed: #" + objectId + " @ " + absX + "," + absY);
                 }
+                chat(SceneEditorHost.removeObjectAt(objectId, absX, absY, plane, rotation));
             } else {
                 SceneObject claimed = SceneEditorHost.claimAt(objectId, absX, absY, plane, rotation);
                 int next = (claimed.rotation + 1) & 3;

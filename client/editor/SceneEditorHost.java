@@ -132,6 +132,15 @@ final class SceneEditorHost {
         persistQuiet();
         return added;
     }
+    /** Queue a persistent server-side removal so stock objects do not reappear. */
+    static String removeObjectAt(int objectId, int absX, int absY, int plane, int rotation) {
+        if (Component72.localPlayer == null) {
+            throw new IllegalStateException("not logged in");
+        }
+        sendServerCommand("scene_remove " + objectId + " " + absX + " " + absY + " " + plane
+                + " " + (rotation & 3) + " " + SceneObjectAdapter.TYPE_SCENERY);
+        return "queued server removal #" + objectId + " @ " + absX + "," + absY + "," + plane;
+    }
 
     /** First owned object at tile matching LocType, or any owned object on that tile. */
     static SceneObject findOwned(int objectId, int absX, int absY, int plane) {
