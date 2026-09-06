@@ -26,6 +26,7 @@ final class SceneEditorUi {
     private static final int PALETTE_FOOTER_H = 108;
     private static final int ACTION_H = 26;
     private static final int ACTION_GAP = 4;
+    private static final int ACTION_COUNT = 4;
 
     private static final int MOVE_PANEL_H = 340;
     private static final int MOVE_BUTTON = 30;
@@ -46,6 +47,9 @@ final class SceneEditorUi {
 
 
     private static final Asset selectedAsset = new Asset("Tree", 1276);
+    private static boolean npcCatalog;
+    private static int selectedNpcId = -1;
+    private static String selectedNpcName = "";
     private static int previewObjectId = -1;
     private static ObjectDefinition previewDefinition;
     private static int resultOffset;
@@ -74,11 +78,15 @@ final class SceneEditorUi {
     }
 
     private static int filteredCount() {
-        return SceneAssetCatalog.search(searchText);
+        return npcCatalog ? SceneNpcCatalog.search(searchText) : SceneAssetCatalog.search(searchText);
     }
 
-    private static SceneAssetCatalog.Entry filteredEntryAt(int row) {
+    private static SceneAssetCatalog.Entry filteredObjectEntryAt(int row) {
         return SceneAssetCatalog.resultAt(resultOffset + row);
+    }
+
+    private static SceneNpcCatalog.Entry filteredNpcEntryAt(int row) {
+        return SceneNpcCatalog.resultAt(resultOffset + row);
     }
 
     /** Wheel input is left available for normal camera controls; the list uses arrows. */
@@ -105,10 +113,20 @@ final class SceneEditorUi {
         if (resultOffset > maxOffset) {
             resultOffset = maxOffset;
         }
-        if (count == 0 || SceneAssetCatalog.containsResult(selectedAsset.objectId)) {
+        if (count == 0) {
             return;
         }
-        SceneAssetCatalog.Entry first = SceneAssetCatalog.resultAt(0);
+        if (npcCatalog) {
+            SceneNpcCatalog.Entry first = filteredNpcEntryAt(0);
+            if (first != null && !SceneNpcCatalog.containsResult(selectedNpcId)) {
+                selectNpc(first);
+            }
+            return;
+        }
+        if (SceneAssetCatalog.containsResult(selectedAsset.objectId)) {
+            return;
+        }
+        SceneAssetCatalog.Entry first = filteredObjectEntryAt(0);
         if (first != null) {
             selectAsset(first);
         }
@@ -120,8 +138,26 @@ final class SceneEditorUi {
         previewObjectId = -1;
         previewDefinition = null;
     }
+
+    private static void selectNpc(SceneNpcCatalog.Entry entry) {
+        selectedNpcId = entry.npcId;
+        selectedNpcName = entry.name;
+    }
+
+    private static void nextCatalog() {
+        npcCatalog = !npcCatalog;
+        resultOffset = 0;
+        searchText = "";
+        searchFocused = false;
+        selectedNpcId = -1;
+        selectedNpcName = "";
+        normalizeSelection();
+        chat(npcCatalog ? "Catalog: NPCs" : "Catalog: City Assets");
+    }
+
     static void onEditorEnabled() {
         SceneAssetCatalog.start();
+        SceneNpcCatalog.start();
         if (!announced) {
             announced = true;
             try {
@@ -141,6 +177,11 @@ final class SceneEditorUi {
         moveArmed = false;
         microAdjust = false;
         searchFocused = false;
+        npcCatalog = false;
+        resultOffset = 0;
+        searchText = "";
+        selectedNpcId = -1;
+        selectedNpcName = "";
         announced = false;
     }
 
@@ -491,7 +532,7 @@ final class SceneEditorUi {
     }
 
     private static int actionWidth() {
-        return (PANEL_W - PANEL_PAD * 2 - ACTION_GAP * 2) / 3;
+        return (PANEL_W - PANEL_PAD * 2 - ACTION_GAP * (ACTION_COUNT - 1)) / ACTION_COUNT;
     }
 
     private static int actionX(int column) {
@@ -614,6 +655,10 @@ final class SceneEditorUi {
             runEditorCommand("redo", "Redo");
             return;
         }
+        if (hitAction(x, y, 3)) {
+            nextCatalog();
+            return;
+        }
         if (hitListArrow(x, y, true)) {
             moveResultOffset(-LIST_ROWS);
             return;
@@ -628,11 +673,21 @@ final class SceneEditorUi {
         }
         if (hitAssetList(x, y)) {
             int listY = listY();
-            SceneAssetCatalog.Entry entry = filteredEntryAt((y - listY) / ROW_H);
-            if (entry != null) {
-                selectAsset(entry);
-                searchFocused = false;
-                MobileKeyboard.requestHide("scene-editor-assets-select");
+            int row = (y - listY) / ROW_H;
+            if (npcCatalog) {
+                SceneNpcCatalog.Entry entry = filteredNpcEntryAt(row);
+                if (entry != null) {
+                    selectNpc(entry);
+                    searchFocused = false;
+                    MobileKeyboard.requestHide("scene-editor-npcs-select");
+                }
+            } else {
+                SceneAssetCatalog.Entry entry = filteredObjectEntryAt(row);
+                if (entry != null) {
+                    selectAsset(entry);
+                    searchFocused = false;
+                    MobileKeyboard.requestHide("scene-editor-assets-select");
+                }
             }
         }
     }
@@ -740,8 +795,12 @@ final class SceneEditorUi {
     }
 
     private static void spawnSelected() {
+        if (npcCatalog) {
+            chat("NPC catalog is browse-only.");
+            return;
+        }
         if (filteredCount() == 0) {
-            chat("No City Assets match '" + searchText + "'.");
+            chat("No catalog entries match '" + searchText + "'.");
             return;
         }
         boolean keepEditorMode = SceneEditorHost.isEditorMode();
@@ -932,6 +991,9 @@ final class SceneEditorUi {
         int ph = paletteHeight();
         int innerW = PANEL_W - PANEL_PAD * 2;
         int count = filteredCount();
+        if (count > 0) {
+            normalizeSelection();
+        }
         int sx = searchX();
         int sy = searchY();
         int previewY = previewY();
@@ -943,55 +1005,85 @@ final class SceneEditorUi {
         toolkit.fillRect2D(px + 1, py + 1, PANEL_W - 2, HEADER_H, HEADER_BG, 1);
         toolkit.fillRect2D(px + 1, py + HEADER_H, PANEL_W - 2, 1, BORDER, 1);
         toolkit.fillRect2D(px, py, PANEL_W, 2, ACCENT, 1);
-        font.drawText("City Assets", ACCENT, py + 20, px + PANEL_PAD, SHADOW, -110);
+        font.drawText(npcCatalog ? "NPCs" : "City Assets", ACCENT, py + 20, px + PANEL_PAD, SHADOW, -110);
         font.drawText("[X]", 0xFFFF6688, closeY() + 17, closeX() + 4, SHADOW, -110);
 
         toolkit.fillRect2D(sx, previewY, innerW, PREVIEW_H, PREVIEW_BG, 1);
         toolkit.fillRect3D(sx, previewY, innerW, PREVIEW_H, BORDER, 0);
-        font.drawText("PREVIEW", 0xFFAAAAAA, previewY + 15, sx + 6, SHADOW, -110);
-        drawPreview(toolkit, font, sx, previewY, innerW, selectedAsset.objectId);
+        font.drawText(npcCatalog ? "NPC CATALOG" : "PREVIEW", 0xFFAAAAAA, previewY + 15, sx + 6, SHADOW, -110);
+        if (npcCatalog) {
+            String npcLabel = selectedNpcName.length() == 0 ? "Select an NPC" : selectedNpcName;
+            font.drawText(npcLabel, 0xFFFFFFFF, previewY + 45, sx + 6, SHADOW, -110);
+        } else {
+            drawPreview(toolkit, font, sx, previewY, innerW, selectedAsset.objectId);
+        }
 
         toolkit.fillRect2D(sx, sy, innerW, SEARCH_H, FIELD_BG, 1);
         toolkit.fillRect3D(sx, sy, innerW, SEARCH_H, searchFocused ? ACCENT : BORDER, 0);
-        String query = searchText.length() == 0 ? "Search all objects..." : searchText;
+        String query = searchText.length() == 0
+                ? (npcCatalog ? "Search all NPCs..." : "Search all objects...") : searchText;
         font.drawText(query, searchText.length() == 0 ? 0xFF999999 : 0xFFFFFFFF,
                 sy + 17, sx + 6, SHADOW, -110);
 
         for (int row = 0; row < LIST_ROWS; row++) {
-            SceneAssetCatalog.Entry entry = filteredEntryAt(row);
             int cy = listY + row * ROW_H;
-            boolean selected = entry != null && entry.objectId == selectedAsset.objectId;
-            toolkit.fillRect2D(sx, cy, rowW, ROW_H - 2, selected ? 0xC0332255 : ROW_BG, 1);
-            if (entry != null) {
-                toolkit.fillRect3D(sx, cy, rowW, ROW_H - 2,
-                        selected ? SELECT : BORDER, 0);
-                String label = entry.name + " (#" + entry.objectId + ")";
-                font.drawText(label, 0xFFFFFFFF, cy + 16, sx + 6, SHADOW, -110);
+            if (npcCatalog) {
+                SceneNpcCatalog.Entry entry = filteredNpcEntryAt(row);
+                boolean selected = entry != null && entry.npcId == selectedNpcId;
+                toolkit.fillRect2D(sx, cy, rowW, ROW_H - 2, selected ? 0xC0332255 : ROW_BG, 1);
+                if (entry != null) {
+                    toolkit.fillRect3D(sx, cy, rowW, ROW_H - 2, selected ? SELECT : BORDER, 0);
+                    font.drawText(entry.name + " (#" + entry.npcId + ")", 0xFFFFFFFF,
+                            cy + 16, sx + 6, SHADOW, -110);
+                }
+            } else {
+                SceneAssetCatalog.Entry entry = filteredObjectEntryAt(row);
+                boolean selected = entry != null && entry.objectId == selectedAsset.objectId;
+                toolkit.fillRect2D(sx, cy, rowW, ROW_H - 2, selected ? 0xC0332255 : ROW_BG, 1);
+                if (entry != null) {
+                    toolkit.fillRect3D(sx, cy, rowW, ROW_H - 2, selected ? SELECT : BORDER, 0);
+                    font.drawText(entry.name + " (#" + entry.objectId + ")", 0xFFFFFFFF,
+                            cy + 16, sx + 6, SHADOW, -110);
+                }
             }
         }
         if (count == 0) {
-            String status = SceneAssetCatalog.isLoading()
-                    ? "Loading objects " + SceneAssetCatalog.scanned() + "/" + SceneAssetCatalog.total()
-                    : "No objects match this search";
+            boolean loading = npcCatalog ? SceneNpcCatalog.isLoading() : SceneAssetCatalog.isLoading();
+            String catalogName = npcCatalog ? "NPCs" : "objects";
+            String status = loading
+                    ? "Loading " + catalogName + " "
+                            + (npcCatalog ? SceneNpcCatalog.scanned() : SceneAssetCatalog.scanned()) + "/"
+                            + (npcCatalog ? SceneNpcCatalog.total() : SceneAssetCatalog.total())
+                    : "No " + catalogName + " match this search";
             font.drawText(status, 0xFFAAAAAA, listY + 16, sx + 6, SHADOW, -110);
         }
         drawListControls(toolkit, count);
 
-        Asset selected = currentAsset();
+        String selectedLabel = npcCatalog
+                ? (selectedNpcName.length() == 0 ? "None" : selectedNpcName + " (#" + selectedNpcId + ")")
+                : currentAsset().label + " (#" + currentAsset().objectId + ")";
         String page = count > 0
                 ? "Results " + (resultOffset + 1) + "-" + Math.min(resultOffset + LIST_ROWS, count) + "/" + count
                 : "Results 0/0";
         font.drawText(page, 0xFF999999, doneY() - 62, sx, SHADOW, -110);
-        font.drawText("Selected: " + selected.label + " (#" + selected.objectId + ")",
-                0xFFCCCCCC, doneY() - 46, sx, SHADOW, -110);
+        font.drawText("Selected: " + selectedLabel, 0xFFCCCCCC, doneY() - 46, sx, SHADOW, -110);
         drawMoveButton(toolkit, font, actionX(0), actionY(), actionWidth(), ACTION_H, "Save");
         drawMoveButton(toolkit, font, actionX(1), actionY(), actionWidth(), ACTION_H, "Undo");
         drawMoveButton(toolkit, font, actionX(2), actionY(), actionWidth(), ACTION_H, "Redo");
+        drawNextButton(toolkit, font, actionX(3), actionY(), actionWidth(), ACTION_H);
         int buttonFill = count == 0 ? 0xFF444444 : 0xFF006C78;
         toolkit.fillRect2D(sx, doneY(), innerW, DONE_H, buttonFill, 1);
         toolkit.fillRect3D(sx, doneY(), innerW, DONE_H, count == 0 ? 0xFF666666 : ACCENT, 0);
         font.drawText("Done", 0xFFFFFFFF, doneY() + 19, sx + innerW / 2 - 14, SHADOW, -110);
     }
+    private static void drawNextButton(GraphicsToolkit toolkit, BitmapFont font,
+                                       int x, int y, int width, int height) {
+        toolkit.fillRect2D(x, y, width, height, 0xFF16803C, 1);
+        toolkit.fillRect3D(x, y, width, height, 0xFF62E68A, 0);
+        font.drawText("Next", 0xFFFFFFFF, y + height / 2 + 6,
+                x + Math.max(4, (width - 28) / 2), SHADOW, -110);
+    }
+
     private static void drawListControls(GraphicsToolkit toolkit, int count) {
         int maxOffset = Math.max(0, count - LIST_ROWS);
         drawListArrowButton(toolkit, listControlsX(), listUpY(), "up", resultOffset > 0);
@@ -1008,10 +1100,12 @@ final class SceneEditorUi {
     }
 
     private static void drawToolBanner(GraphicsToolkit toolkit, BitmapFont font) {
-        Asset a = currentAsset();
+        String selected = npcCatalog
+                ? (selectedNpcName.length() == 0 ? "NPCs" : selectedNpcName)
+                : currentAsset().label;
         String text = moveArmed
                 ? "Move: click a tile or use the arrows — Done to finish"
-                : (a.label + " Tool Active");
+                : (selected + " Tool Active");
         font.drawText(text, SELECT, 18, 160, SHADOW, -110);
     }
 

@@ -123,6 +123,16 @@ final class DisplayModeManagerContainer347
         return class79;
     }
 
+    /** Number of NPC archive groups available to editor catalogs. */
+    final int definitionGroupCount() {
+        return aClass45_3585 == null ? 0 : aClass45_3585.getGroupCapacity(-1);
+    }
+
+    /** Number of NPC definitions in one archive group. */
+    final int definitionFileCount(int group) {
+        return aClass45_3585 == null ? 0 : aClass45_3585.getFileCount(0, group);
+    }
+
     final void method2080(int i) {
         anInt3587++;
         synchronized (aClass60_3577) {
