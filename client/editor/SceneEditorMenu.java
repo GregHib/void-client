@@ -33,8 +33,8 @@ final class SceneEditorMenu {
         long identifier = pack(object.anInt941, decodeRotation(packedId), plane);
         // Same arg layout as WorldMapTeleport / DefaultClickSwapper.
         addRow(target, localX, localY, OPCODE_MOVE, identifier, COL + "Move" + COL_END);
-        addRow(target, localX, localY, OPCODE_REMOVE, identifier, COL + "Remove" + COL_END);
         addRow(target, localX, localY, OPCODE_ROTATE, identifier, COL + "Rotate" + COL_END);
+        addRow(target, localX, localY, OPCODE_REMOVE, identifier, COL + "Remove" + COL_END);
     }
 
     private static void addRow(String target, int localX, int localY, int opcode, long identifier, String option) {
