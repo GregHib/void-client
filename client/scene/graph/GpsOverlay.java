@@ -16,17 +16,32 @@ final class GpsOverlay {
     short[] aShortArray1953;
     short[] aShortArray1954;
     static int anInt1955;
+    private static final int[] editorNpcSlots = new int[1024];
 
     static final void method1165(int i) {
         Component80.aClass348_Sub49_Sub2_3813.startBitAccess(i ^ ~0x79);
         anInt1950++;
         int i_0_ = Component80.aClass348_Sub49_Sub2_3813.readBits((byte) -24, 8);
         if (i == 1) {
-            if (i_0_ < Component324.anInt2057) {
-                for (int i_1_ = i_0_; Component324.anInt2057 > i_1_; i_1_++)
+            int editorCount = SceneEditorHost.copyLocalNpcSlots(editorNpcSlots);
+            int oldCount = Component324.anInt2057;
+            int serverCount = oldCount - editorCount;
+            int serverWrite = 0;
+            for (int oldIndex = 0; oldIndex < oldCount; oldIndex++) {
+                int slot = DisplayModeManagerContainer238.anIntArray1233[oldIndex];
+                if (!SceneEditorHost.isLocalNpcSlot(slot)) {
+                    DisplayModeManagerContainer238.anIntArray1233[serverWrite++] = slot;
+                }
+            }
+            for (int localIndex = 0; localIndex < editorCount; localIndex++) {
+                DisplayModeManagerContainer238.anIntArray1233[serverWrite++] = editorNpcSlots[localIndex];
+            }
+            if (serverWrite != oldCount) throw new RuntimeException("scene-editor NPC list mismatch");
+            if (i_0_ < serverCount) {
+                for (int i_1_ = i_0_; serverCount > i_1_; i_1_++)
                     Component305.anIntArray9932[Component142.anInt4411++] = DisplayModeManagerContainer238.anIntArray1233[i_1_];
             }
-            if (i_0_ > Component324.anInt2057) throw new RuntimeException("gnpov1");
+            if (i_0_ > serverCount) throw new RuntimeException("gnpov1");
             Component324.anInt2057 = 0;
             for (int i_2_ = 0; i_2_ < i_0_; i_2_++) {
                 int i_3_ = DisplayModeManagerContainer238.anIntArray1233[i_2_];
@@ -64,6 +79,9 @@ final class GpsOverlay {
                         if (i_11_ == 1) Component354.anIntArray224[DisplayModeManagerContainer204.anInt1597++] = i_3_;
                     } else if (i_5_ == 3) Component305.anIntArray9932[Component142.anInt4411++] = i_3_;
                 }
+            }
+            for (int localIndex = 0; localIndex < editorCount; localIndex++) {
+                DisplayModeManagerContainer238.anIntArray1233[Component324.anInt2057++] = editorNpcSlots[localIndex];
             }
         }
     }

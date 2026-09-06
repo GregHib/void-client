@@ -1877,7 +1877,16 @@ public final class client extends Applet_Sub1 {
             }
         }
         for (int i_115_ = 0; i_115_ < Component324.anInt2057; i_115_++) {
-            Npc npc = (((NpcNode) Component21.aClass356_3654.get(DisplayModeManagerContainer238.anIntArray1233[i_115_], -6008)).npc);
+            NpcNode npcNode = (NpcNode) Component21.aClass356_3654.get(DisplayModeManagerContainer238.anIntArray1233[i_115_], -6008);
+            if (npcNode == null || npcNode.npc == null) {
+                for (int i_117_ = i_115_ + 1; i_117_ < Component324.anInt2057; i_117_++) {
+                    DisplayModeManagerContainer238.anIntArray1233[i_117_ - 1] = DisplayModeManagerContainer238.anIntArray1233[i_117_];
+                }
+                Component324.anInt2057--;
+                i_115_--;
+                continue;
+            }
+            Npc npc = npcNode.npc;
             if (!npc.method2445((byte) -4) || !(npc.definition.method796(DisplayModeManagerContainer58.aClass170_10209, 18627))) npc.anInt10285 = -1;
             else {
                 npc.method2409((byte) -118);
