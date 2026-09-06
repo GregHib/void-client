@@ -254,6 +254,9 @@ final class ColoredText extends Component339 {
                                 }
                                 if (OpenGlShader.clientCycle == npc.anInt10215) continue;
                                 ParticleShader.addNpcMenuOptions((class318_sub4.aClass318_Sub1_6410.plane != (Component72.localPlayer.plane)), false, npc);
+                                // Scene editor: remove server-backed NPCs.
+                                SceneEditorMenu.injectNpc(npc,
+                                        i_33_, i_32_, class318_sub4.aClass318_Sub1_6410.plane);
                                 npc.anInt10215 = OpenGlShader.clientCycle;
                             }
                         }

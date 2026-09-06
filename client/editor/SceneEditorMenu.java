@@ -13,6 +13,7 @@ final class SceneEditorMenu {
     static final int OPCODE_MOVE = 1908;
     static final int OPCODE_REMOVE = 1909;
     static final int OPCODE_ROTATE = 1912;
+    static final int OPCODE_NPC_REMOVE = 1913;
 
     private static final String COL = "<col=00e5ff>";
     private static final String COL_END = "</col>";
@@ -31,10 +32,23 @@ final class SceneEditorMenu {
         String name = object.aString884 != null ? object.aString884 : ("obj " + object.anInt941);
         String target = "<col=00ffff>" + name + COL_END;
         long identifier = pack(object.anInt941, decodeRotation(packedId), plane);
-        // Same arg layout as WorldMapTeleport / DefaultClickSwapper.
-        addRow(target, localX, localY, OPCODE_MOVE, identifier, COL + "Move" + COL_END);
-        addRow(target, localX, localY, OPCODE_ROTATE, identifier, COL + "Rotate" + COL_END);
+        // Menu rows are rendered in reverse insertion order; add Remove first
+        // so it appears last in the visible context menu.
         addRow(target, localX, localY, OPCODE_REMOVE, identifier, COL + "Remove" + COL_END);
+        addRow(target, localX, localY, OPCODE_ROTATE, identifier, COL + "Rotate" + COL_END);
+        addRow(target, localX, localY, OPCODE_MOVE, identifier, COL + "Move" + COL_END);
+    }
+
+    /** Add Remove under a server-backed NPC while the scene editor is active. */
+    static void injectNpc(Npc npc, int localX, int localY, int plane) {
+        if (!SceneEditorHost.isEditorMode() || npc == null || npc.definition == null) {
+            return;
+        }
+        NpcComposition composition = npc.definition;
+        String name = composition.name != null ? composition.name : ("npc " + composition.id);
+        String target = "<col=ff9040>" + name + COL_END;
+        addRow(target, localX, localY, OPCODE_NPC_REMOVE, pack(composition.id, 0, plane),
+                COL + "Remove" + COL_END);
     }
 
     private static void addRow(String target, int localX, int localY, int opcode, long identifier, String option) {
@@ -49,7 +63,7 @@ final class SceneEditorMenu {
             return false;
         }
         int op = entry.opcode >= 2000 ? entry.opcode - 2000 : entry.opcode;
-        if (op != OPCODE_MOVE && op != OPCODE_REMOVE && op != OPCODE_ROTATE) {
+        if (op != OPCODE_MOVE && op != OPCODE_REMOVE && op != OPCODE_ROTATE && op != OPCODE_NPC_REMOVE) {
             return false;
         }
         if (!SceneEditorHost.isEditorMode()) {
@@ -66,6 +80,10 @@ final class SceneEditorMenu {
                 + " obj=" + objectId + " @" + absX + "," + absY + "," + plane
                 + " rot=" + rotation);
         try {
+            if (op == OPCODE_NPC_REMOVE) {
+                chat(SceneEditorHost.removeNpc(objectId, absX, absY, plane));
+                return true;
+            }
             if (op == OPCODE_MOVE) {
                 SceneObject claimed = SceneEditorHost.claimAt(objectId, absX, absY, plane, rotation);
                 SceneEditorUi.beginMove(claimed.id);

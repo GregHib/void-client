@@ -5,7 +5,7 @@ import java.util.Locale;
  * The editor uses this as the second catalog after City Assets.
  */
 final class SceneNpcCatalog {
-    static final int RESULT_LIMIT = 100;
+    static final int RESULT_LIMIT = 400;
 
     private static volatile Entry[] entries = new Entry[0];
     private static volatile int generation;

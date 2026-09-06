@@ -190,20 +190,47 @@ final class SceneEditorHost {
         return "requested server NPC (#" + npcId + ") @ " + absX + "," + absY + "," + plane;
     }
 
+    static String removeNpc(int npcId, int absX, int absY, int plane) {
+        if (Component72.localPlayer == null) {
+            throw new IllegalStateException("not logged in");
+        }
+        sendServerCommand("scene_npc_remove " + npcId + " " + absX + " " + absY + " " + plane);
+        return "requested NPC removal (#" + npcId + ") @ " + absX + "," + absY + "," + plane;
+    }
+
     static String dropItemAtPlayer(int itemId) {
+        return dropItemAtPlayer(itemId, 1);
+    }
+
+    static String dropItemAtPlayer(int itemId, int amount) {
         if (Component72.localPlayer == null) {
             throw new IllegalStateException("not logged in");
         }
         return dropItemAt(itemId, MicrobotWidgets.localAbsX(), MicrobotWidgets.localAbsY(),
-                MicrobotWidgets.localPlane());
+                MicrobotWidgets.localPlane(), amount);
     }
 
     static String dropItemAt(int itemId, int absX, int absY, int plane) {
+        return dropItemAt(itemId, absX, absY, plane, 1);
+    }
+
+    static String dropItemAt(int itemId, int absX, int absY, int plane, int amount) {
         if (Component72.localPlayer == null) {
             throw new IllegalStateException("not logged in");
         }
-        sendServerCommand("scene_item_drop " + itemId + " " + absX + " " + absY + " " + plane + " 1");
-        return "requested server item (#" + itemId + ") @ " + absX + "," + absY + "," + plane;
+        int safeAmount = Math.max(1, amount);
+        sendServerCommand("scene_item_drop " + itemId + " " + absX + " " + absY + " " + plane + " " + safeAmount);
+        return "requested server item (#" + itemId + ") x" + safeAmount
+                + " @ " + absX + "," + absY + "," + plane;
+    }
+
+    static String addItemToBag(int itemId, int amount) {
+        if (Component72.localPlayer == null) {
+            throw new IllegalStateException("not logged in");
+        }
+        int safeAmount = Math.max(1, amount);
+        sendServerCommand("scene_item_bag " + itemId + " " + safeAmount);
+        return "requested item (#" + itemId + ") x" + safeAmount + " in bag";
     }
 
 

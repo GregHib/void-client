@@ -5,7 +5,7 @@ import java.util.Locale;
  * The UI only receives immutable snapshots, so cache decoding never blocks drawing.
  */
 final class SceneAssetCatalog {
-    static final int RESULT_LIMIT = 100;
+    static final int RESULT_LIMIT = 400;
 
     private static final Object LOCK = new Object();
     private static volatile Entry[] entries = new Entry[0];

@@ -5,7 +5,7 @@ import java.util.Locale;
  * Selecting a result asks the server to drop one item at the player position.
  */
 final class SceneItemCatalog {
-    static final int RESULT_LIMIT = 100;
+    static final int RESULT_LIMIT = 400;
 
     private static volatile Entry[] entries = new Entry[0];
     private static volatile int generation;

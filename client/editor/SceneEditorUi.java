@@ -15,6 +15,8 @@ final class SceneEditorUi {
     private static final int HEADER_H = 30;
     private static final int CLOSE_W = 28;
     private static final int CLOSE_H = 24;
+    private static final int NEXT_W = 44;
+    private static final int NEXT_H = 24;
     private static final int PREVIEW_H = 78;
     private static final int ROW_H = 24;
     private static final int SEARCH_H = 24;
@@ -26,7 +28,10 @@ final class SceneEditorUi {
     private static final int PALETTE_FOOTER_H = 108;
     private static final int ACTION_H = 26;
     private static final int ACTION_GAP = 4;
-    private static final int ACTION_COUNT = 4;
+    private static final int ACTION_COUNT = 3;
+    private static final int ITEM_MENU_W = 156;
+    private static final int ITEM_MENU_H = 104;
+    private static final int ITEM_MENU_ROW_H = 26;
 
     private static final int MOVE_PANEL_H = 340;
     private static final int MOVE_BUTTON = 30;
@@ -71,6 +76,10 @@ final class SceneEditorUi {
     private static int hoverAbsY = -1;
     private static boolean mouseOverUi;
     private static boolean announced;
+    private static boolean itemMenuOpen;
+    private static int itemMenuX;
+    private static int itemMenuY;
+    private static int itemQuantity = 1;
 
     private SceneEditorUi() {
     }
@@ -115,7 +124,7 @@ final class SceneEditorUi {
         }
         int x = AbstractGlTextureSub4.mouseHandler.getCursorX(true);
         int y = AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 100);
-        return hitPalette(x, y);
+        return hitPalette(x, y) || hitItemMenu(x, y);
     }
 
     private static void clearHoverTile() {
@@ -186,6 +195,7 @@ final class SceneEditorUi {
         resultOffset = 0;
         searchText = "";
         searchFocused = false;
+        itemMenuOpen = false;
         selectedNpcId = -1;
         selectedNpcName = "";
         selectedItemId = -1;
@@ -225,6 +235,8 @@ final class SceneEditorUi {
         selectedNpcName = "";
         selectedItemId = -1;
         selectedItemName = "";
+        itemMenuOpen = false;
+        itemQuantity = 1;
         announced = false;
     }
 
@@ -313,6 +325,16 @@ final class SceneEditorUi {
                     int type = click.getEventType(86);
                     int cx = click.getX((byte) -128);
                     int cy = click.getY(33);
+                    if (type == 2 && itemCatalog && hitAssetList(cx, cy)) {
+                        openItemMenu(cx, cy);
+                        click.unlink((byte) 97);
+                        continue;
+                    }
+                    if (itemMenuOpen && type == 0) {
+                        handleItemMenuClick(cx, cy);
+                        click.unlink((byte) 97);
+                        continue;
+                    }
                     if (type == 0) {
                         if (hitPalette(cx, cy)) {
                             click.unlink((byte) 97);
@@ -430,7 +452,7 @@ final class SceneEditorUi {
                 return;
             }
             if (itemCatalog) {
-                chat(SceneEditorHost.dropItemAt(selectedItemId, absX, absY, plane));
+                chat(SceneEditorHost.dropItemAt(selectedItemId, absX, absY, plane, itemQuantity));
                 return;
             }
             Asset asset = currentAsset();
@@ -554,6 +576,18 @@ final class SceneEditorUi {
     private static int closeY() {
         return paletteY() + 3;
     }
+    private static int nextX() {
+        return closeX() - NEXT_W - 4;
+    }
+
+    private static int nextY() {
+        return closeY();
+    }
+
+    private static boolean hitNext(int x, int y) {
+        return x >= nextX() && x < nextX() + NEXT_W
+                && y >= nextY() && y < nextY() + NEXT_H;
+    }
 
     private static boolean hitEditorClose(int x, int y) {
         return x >= closeX() && x < closeX() + CLOSE_W
@@ -653,6 +687,52 @@ final class SceneEditorUi {
                 && y >= paletteY() && y < paletteY() + height;
     }
 
+    private static boolean hitItemMenu(int x, int y) {
+        return itemMenuOpen && x >= itemMenuX && x < itemMenuX + ITEM_MENU_W
+                && y >= itemMenuY && y < itemMenuY + ITEM_MENU_H;
+    }
+
+    private static void openItemMenu(int x, int y) {
+        int listY = listY();
+        int row = (y - listY) / ROW_H;
+        SceneItemCatalog.Entry entry = filteredItemEntryAt(row);
+        if (entry == null) {
+            return;
+        }
+        selectItem(entry);
+        searchFocused = false;
+        MobileKeyboard.requestHide("scene-editor-items-context");
+        itemMenuX = Math.max(4, Math.min(x, SocketConnector.canvasWidth - ITEM_MENU_W - 4));
+        itemMenuY = Math.max(4, Math.min(y, NpcNode.canvasHeight - ITEM_MENU_H - 4));
+        itemMenuOpen = true;
+    }
+
+    private static void handleItemMenuClick(int x, int y) {
+        if (!hitItemMenu(x, y)) {
+            itemMenuOpen = false;
+            return;
+        }
+        int localY = y - itemMenuY;
+        if (localY >= 24 && localY < 52) {
+            if (x < itemMenuX + 48) {
+                itemQuantity = Math.max(1, itemQuantity - 1);
+            } else if (x >= itemMenuX + ITEM_MENU_W - 48) {
+                itemQuantity = Math.min(Integer.MAX_VALUE, itemQuantity + 1);
+            }
+            return;
+        }
+        try {
+            if (localY >= 52 && localY < 76) {
+                chat(SceneEditorHost.addItemToBag(selectedItemId, itemQuantity));
+                itemMenuOpen = false;
+            } else if (localY >= 76 && localY < ITEM_MENU_H) {
+                chat(SceneEditorHost.dropItemAtPlayer(selectedItemId, itemQuantity));
+                itemMenuOpen = false;
+            }
+        } catch (Throwable t) {
+            chat("Item action failed: " + t.getMessage());
+        }
+    }
     private static boolean hitSearch(int x, int y) {
         return x >= searchX() && x < searchX() + PANEL_W - PANEL_PAD * 2
                 && y >= searchY() && y < searchY() + SEARCH_H;
@@ -685,6 +765,10 @@ final class SceneEditorUi {
             closeEditor("scene-editor-close");
             return;
         }
+        if (hitNext(x, y)) {
+            nextCatalog();
+            return;
+        }
         if (moveArmed) {
             onMovePanelClick(x, y);
             return;
@@ -696,7 +780,11 @@ final class SceneEditorUi {
             return;
         }
         if (hitAction(x, y, 0)) {
-            runEditorCommand("save demo", "Saved demo");
+            if (!npcCatalog && !itemCatalog) {
+                runEditorCommand("save demo", "Saved demo");
+            } else {
+                chat("Save is available for City Assets only");
+            }
             return;
         }
         if (hitAction(x, y, 1)) {
@@ -705,10 +793,6 @@ final class SceneEditorUi {
         }
         if (hitAction(x, y, 2)) {
             runEditorCommand("redo", "Redo");
-            return;
-        }
-        if (hitAction(x, y, 3)) {
-            nextCatalog();
             return;
         }
         if (hitListArrow(x, y, true)) {
@@ -869,7 +953,7 @@ final class SceneEditorUi {
         }
         if (itemCatalog) {
             try {
-                chat(SceneEditorHost.dropItemAtPlayer(selectedItemId));
+                chat(SceneEditorHost.dropItemAtPlayer(selectedItemId, itemQuantity));
             } catch (Throwable t) {
                 chat("Item drop failed: " + t.getMessage());
             }
@@ -1129,6 +1213,14 @@ final class SceneEditorUi {
         int textX = x + Math.max(6, (width - label.length() * 7) / 2);
         font.drawText(label, 0xFFFFFFFF, y + height / 2 + 6, textX, SHADOW, -110);
     }
+    private static void drawSaveButton(GraphicsToolkit toolkit, BitmapFont font,
+                                       int x, int y, int width, int height, boolean enabled) {
+        toolkit.fillRect2D(x, y, width, height, enabled ? 0xB02A1A37 : 0x80201824, 1);
+        toolkit.fillRect3D(x, y, width, height, enabled ? BORDER : 0xFF403545, 0);
+        int textX = x + Math.max(6, (width - 28) / 2);
+        font.drawText("Save", enabled ? 0xFFFFFFFF : 0xFF777777,
+                y + height / 2 + 6, textX, SHADOW, -110);
+    }
 
     private static void drawArrow(GraphicsToolkit toolkit, int x, int y, int width, int height, String direction) {
         drawArrow(toolkit, x, y, width, height, direction, 0xFFFFFFFF);
@@ -1184,6 +1276,7 @@ final class SceneEditorUi {
         String catalogTitle = npcCatalog ? "NPCs" : (itemCatalog ? "Items" : "City Assets");
         font.drawText(catalogTitle, ACCENT, py + 20, px + PANEL_PAD, SHADOW, -110);
         font.drawText("[X]", 0xFFFF6688, closeY() + 17, closeX() + 4, SHADOW, -110);
+        drawNextButton(toolkit, font, nextX(), nextY(), NEXT_W, NEXT_H);
 
         toolkit.fillRect2D(sx, previewY, innerW, PREVIEW_H, PREVIEW_BG, 1);
         toolkit.fillRect3D(sx, previewY, innerW, PREVIEW_H, BORDER, 0);
@@ -1269,14 +1362,30 @@ final class SceneEditorUi {
                 : "Results 0/0";
         font.drawText(page, 0xFF999999, doneY() - 62, sx, SHADOW, -110);
         font.drawText("Selected: " + selectedLabel, 0xFFCCCCCC, doneY() - 46, sx, SHADOW, -110);
-        drawMoveButton(toolkit, font, actionX(0), actionY(), actionWidth(), ACTION_H, "Save");
+        drawSaveButton(toolkit, font, actionX(0), actionY(), actionWidth(), ACTION_H,
+                !npcCatalog && !itemCatalog);
         drawMoveButton(toolkit, font, actionX(1), actionY(), actionWidth(), ACTION_H, "Undo");
         drawMoveButton(toolkit, font, actionX(2), actionY(), actionWidth(), ACTION_H, "Redo");
-        drawNextButton(toolkit, font, actionX(3), actionY(), actionWidth(), ACTION_H);
         int buttonFill = count == 0 ? 0xFF444444 : 0xFF006C78;
         toolkit.fillRect2D(sx, doneY(), innerW, DONE_H, buttonFill, 1);
         toolkit.fillRect3D(sx, doneY(), innerW, DONE_H, count == 0 ? 0xFF666666 : ACCENT, 0);
         font.drawText("Done", 0xFFFFFFFF, doneY() + 19, sx + innerW / 2 - 14, SHADOW, -110);
+        if (itemMenuOpen && itemCatalog) {
+            drawItemContextMenu(toolkit, font);
+        }
+    }
+
+    private static void drawItemContextMenu(GraphicsToolkit toolkit, BitmapFont font) {
+        int x = itemMenuX;
+        int y = itemMenuY;
+        toolkit.fillRect3D(x, y, ITEM_MENU_W, ITEM_MENU_H, ACCENT, 0);
+        toolkit.fillRect2D(x + 1, y + 1, ITEM_MENU_W - 2, ITEM_MENU_H - 2, 0xF01A1028, 1);
+        font.drawText("Item actions", 0xFFFFFFFF, y + 18, x + 8, SHADOW, -110);
+        drawMoveButton(toolkit, font, x + 6, y + 26, ITEM_MENU_W - 12, ITEM_MENU_ROW_H, "Quantity: " + itemQuantity);
+        font.drawText("-", 0xFFFFFFFF, y + 44, x + 16, SHADOW, -110);
+        font.drawText("+", 0xFFFFFFFF, y + 44, x + ITEM_MENU_W - 24, SHADOW, -110);
+        drawMoveButton(toolkit, font, x + 6, y + 52, ITEM_MENU_W - 12, ITEM_MENU_ROW_H, "Bag");
+        drawMoveButton(toolkit, font, x + 6, y + 78, ITEM_MENU_W - 12, ITEM_MENU_ROW_H, "Drop");
     }
     private static void drawNextButton(GraphicsToolkit toolkit, BitmapFont font,
                                        int x, int y, int width, int height) {
