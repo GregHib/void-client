@@ -114,3 +114,6 @@ hs_err_pid*
 widget-dumps/
 component-cards/
 deob-log*.ndjson
+
+build/reports/problems/problems-report.html
+client/build/tmp/compileJava/previous-compilation-data.bin

@@ -254,6 +254,9 @@ final class ColoredText extends Component339 {
                                 }
                                 if (OpenGlShader.clientCycle == npc.anInt10215) continue;
                                 ParticleShader.addNpcMenuOptions((class318_sub4.aClass318_Sub1_6410.plane != (Component72.localPlayer.plane)), false, npc);
+                                // Scene editor: remove server-backed NPCs.
+                                SceneEditorMenu.injectNpc(npc,
+                                        i_33_, i_32_, class318_sub4.aClass318_Sub1_6410.plane);
                                 npc.anInt10215 = OpenGlShader.clientCycle;
                             }
                         }
@@ -300,8 +303,8 @@ final class ColoredText extends Component339 {
                         }
                         if (class318_sub4.aClass318_Sub1_6410 instanceof Interface10) {
                             Interface10 interface10 = ((Interface10) (class318_sub4.aClass318_Sub1_6410));
-                            Component44 class51 = (GradientPreset.aClass263_9195.getDefinition(0, interface10.method42(-100)));
-                            if (class51.anIntArray945 != null) class51 = (class51.method480((DisplayModeManagerContainer58.aClass170_10209), (byte) 47));
+                            ObjectDefinition class51 = (GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-100)));
+                            if (class51.anIntArray945 != null) class51 = (class51.getTransformedDefinition((DisplayModeManagerContainer58.aClass170_10209), (byte) 47));
                             if (class51 != null) {
                                 if (r.aBoolean9722 && ((Component72.localPlayer.plane) == (class318_sub4.aClass318_Sub1_6410.plane))) {
                                     Component355 class254 = (Component163.anInt3176 != -1 ? (MatrixSub3.aClass326_5764.method2600(Component163.anInt3176, 28364)) : null);
@@ -334,6 +337,10 @@ final class ColoredText extends Component339 {
                                     DisplayModeManagerContainer368.addMenuEntry(((Component72.localPlayer.plane) != class318_sub4.aClass318_Sub1_6410.plane), ("<col=00ffff>" + class51.aString884 + Loader.getDebug(class51.anInt941, x, y, class318_sub4.aClass318_Sub1_6410.plane)), i_32_, (byte) -120, false, i_33_, -1, true, 1001, interface10.hashCode(), (FriendsIgnoreList.aClass274_3505.getLocalized(ObjectDeserializer.languageId, 544)), class51.anInt941, CookieManager.anInt6299);
                                     anInt6094++;
                                     DefaultClickSwapper.injectObjectMenu(class51);
+                                    // Scene editor: Move / Remove / Rotate on ground scenery.
+                                    SceneEditorMenu.inject(class51, i_33_, i_32_,
+                                            class318_sub4.aClass318_Sub1_6410.plane,
+                                            DefinitionSub21.method3107((byte) -116, interface10, i_32_, i_33_));
                                 }
                             }
                         }

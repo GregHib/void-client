@@ -119,9 +119,9 @@ final class HashTable {
                     for (int i_14_ = 0; (DefinitionSub38.anInt9479 > i_14_); i_14_++) {
                         int i_15_ = (ColorTagNode.anIntArray6770[i_14_] * 4 - -2 - i_4_ / 128);
                         int i_16_ = (-(i_3_ / 128) + DefinitionSub37.anIntArray9458[i_14_] * 4 - -2);
-                        Component44 class51 = (GradientPreset.aClass263_9195.getDefinition(0, Component309.anIntArray3347[i_14_]));
+                        ObjectDefinition class51 = (GradientPreset.aClass263_9195.getObjectDefinition(0, ObjectDefinitionProvider.anIntArray3347[i_14_]));
                         if (class51.anIntArray945 != null) {
-                            class51 = class51.method480((DisplayModeManagerContainer58.aClass170_10209), (byte) 47);
+                            class51 = class51.getTransformedDefinition((DisplayModeManagerContainer58.aClass170_10209), (byte) 47);
                             if (class51 == null || (class51.anInt921 == -1)) continue;
                         }
                         RenderableObject.method2385(class46, i_1_, var_aa, class51.anInt921, i_15_, i, (byte) -113, i_16_, var_ha);

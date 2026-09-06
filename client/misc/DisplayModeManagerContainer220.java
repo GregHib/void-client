@@ -321,7 +321,7 @@ final class DisplayModeManagerContainer220
     static final void method282(int i, GraphicsToolkit var_ha, int i_21_, byte i_22_, int i_23_, int i_24_, int i_25_, int i_26_) {
         anInt274++;
         Component158.aHa326 = var_ha;
-        Component44.aClass101_905 = Component158.aHa326.method3654();
+        ObjectDefinition.aClass101_905 = Component158.aHa326.method3654();
         Component352.aClass101_624 = Component158.aHa326.method3654();
         r.aClass101_9720 = Component158.aHa326.method3654();
         DisplayModeManagerContainer306.anInt4784 = i_26_;

@@ -237,8 +237,8 @@ final class GameType {
                         Component158.aHa326.la();
                         Component158.aHa326.NativeHandle();
                         Component158.aHa326.GA(DisplayModeManagerContainer123.anInt1290);
-                        Component44.aClass101_905.method903(SpriteSub1.anInt8422, Component336.anInt403, NodeSub21.anInt6849, Component381.anInt8583, DisplayModeManagerContainer61.anInt3760, DisplayModeManagerContainer91.anInt396);
-                        Component158.aHa326.loadModelviewMatrix(Component44.aClass101_905);
+                        ObjectDefinition.aClass101_905.method903(SpriteSub1.anInt8422, Component336.anInt403, NodeSub21.anInt6849, Component381.anInt8583, DisplayModeManagerContainer61.anInt3760, DisplayModeManagerContainer91.anInt396);
+                        Component158.aHa326.loadModelviewMatrix(ObjectDefinition.aClass101_905);
                         if (Buffer.anInt7207 == 1) {
                             ShaderCompilerSub1Sub1.anInt8799 = i_17_;
                             Component247.anInt4910 = i_16_;

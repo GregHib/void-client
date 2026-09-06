@@ -994,7 +994,7 @@ final class ClientScriptExecutor {
             if (i == 5424) {
                 intStackPointer -= 11;
                 Component235.anInt3376 = intStack[intStackPointer];
-                Component44.anInt948 = intStack[intStackPointer + 1];
+                ObjectDefinition.anInt948 = intStack[intStackPointer + 1];
                 Component235.anInt3374 = intStack[intStackPointer + 2];
                 HashNodeSub4.anInt9511 = intStack[intStackPointer + 3];
                 BuildType.anInt2996 = intStack[intStackPointer + 4];
@@ -4255,7 +4255,7 @@ final class ClientScriptExecutor {
                 if (i == 3622) {
                     int i_367_ = intStack[--intStackPointer];
                     if (Component15.anInt4930 != 0 && i_367_ < MenuEntry.ignoreCount) {
-                        stringStack[stringStackPointer++] = Component44.ignoreNames[i_367_];
+                        stringStack[stringStackPointer++] = ObjectDefinition.ignoreNames[i_367_];
                         if (DefinitionSub21.ignoreLastNames[i_367_] != null) stringStack[stringStackPointer++] = (DefinitionSub21.ignoreLastNames[i_367_]);
                         else stringStack[stringStackPointer++] = "";
                     } else {
@@ -4889,9 +4889,9 @@ final class ClientScriptExecutor {
                     int i_480_ = intStack[intStackPointer];
                     int i_481_ = intStack[intStackPointer + 1];
                     Component355 class254 = MatrixSub3.aClass326_5764.method2600(i_481_, 28364);
-                    if (class254.method1925(false)) stringStack[stringStackPointer++] = (GradientPreset.aClass263_9195.getDefinition(0, i_480_).method475(class254.aString3258, i_481_, -16));
+                    if (class254.method1925(false)) stringStack[stringStackPointer++] = (GradientPreset.aClass263_9195.getObjectDefinition(0, i_480_).method475(class254.aString3258, i_481_, -16));
                     else {
-                        intStack[intStackPointer++] = (GradientPreset.aClass263_9195.getDefinition(0, i_480_).method487(i_481_, class254.anInt3256, 81));
+                        intStack[intStackPointer++] = (GradientPreset.aClass263_9195.getObjectDefinition(0, i_480_).method487(i_481_, class254.anInt3256, 81));
                         return;
                     }
                     return;

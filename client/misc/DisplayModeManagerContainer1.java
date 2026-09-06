@@ -159,7 +159,8 @@ final class DisplayModeManagerContainer1
         // Don't open menus / walk through overlays drawn on top of the game.
         // Dev console (purple band) and Microbot HUD — script tip inject still allowed above.
         if (BuildInfo.isMouseOverConsole()
-                || (Loader.microbotEnabled && Microbot.targetMenu == null && MicrobotPanel.isMouseOver())) {
+                || (Loader.microbotEnabled && Microbot.targetMenu == null && MicrobotPanel.isMouseOver())
+                || SceneEditorUi.isMouseOver()) {
             Component192.menuTip = null;
             MenuOpener.menuTipSecondary = null;
             return;

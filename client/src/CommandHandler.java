@@ -37,11 +37,38 @@ final class CommandHandler {
                         Applet_Sub1.printConsole("displayfps - Toggle FPS and other information", -89);
                         Applet_Sub1.printConsole("renderer - Print graphics renderer information", 122);
                         Applet_Sub1.printConsole("heap - Print java memory information", -88);
+                        Applet_Sub1.printConsole("ed / spawn - Local scene editor (device-only)", 80);
                         return;
                     }
                     if (string.equalsIgnoreCase("cls")) {
                         Component94.consoleScroll = 0;
                         Component14.consoleLineCount = 0;
+                        return;
+                    }
+                    // Local scene editor — available without staff gate (device-local only).
+                    if (string.equalsIgnoreCase("ed") || string.equalsIgnoreCase("editor")) {
+                        SceneEditorHost.printHelp();
+                        Applet_Sub1.printConsole(SceneEditorHost.command("status"), 80);
+                        return;
+                    }
+                    if (string.length() > 3 && (string.regionMatches(true, 0, "ed ", 0, 3)
+                            || string.regionMatches(true, 0, "editor ", 0, 7))) {
+                        String payload = string.regionMatches(true, 0, "editor ", 0, 7)
+                                ? string.substring(7).trim()
+                                : string.substring(3).trim();
+                        try {
+                            Applet_Sub1.printConsole(SceneEditorHost.command(payload), 80);
+                        } catch (Throwable t) {
+                            Applet_Sub1.printConsole("ed: " + t.getMessage(), -80);
+                        }
+                        return;
+                    }
+                    if (string.regionMatches(true, 0, "spawn ", 0, 6)) {
+                        try {
+                            Applet_Sub1.printConsole(SceneEditorHost.command(string.trim()), 80);
+                        } catch (Throwable t) {
+                            Applet_Sub1.printConsole("spawn: " + t.getMessage(), -80);
+                        }
                         return;
                     }
                     if (string.equalsIgnoreCase("displayfps")) {

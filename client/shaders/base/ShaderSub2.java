@@ -24,7 +24,7 @@ final class ShaderSub2
     static final int method163(int i) {
         anInt5198++;
         if (i != 512) method165(122, 62, -125, 72, -74, 116, 43, (byte) 104, 62, -115);
-        return Component44.aClass311_897.getPulseCount((byte) -98);
+        return ObjectDefinition.aClass311_897.getPulseCount((byte) -98);
     }
 
     static final boolean method164(int i, int i_0_, byte i_1_, int i_2_) {

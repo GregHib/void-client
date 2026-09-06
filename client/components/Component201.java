@@ -57,7 +57,7 @@ final class Component201
                     Component221.aClass105_1800 = var_ha.method3691(class207, true);
                     class207.method1518();
                     NodeSub5.aClass105_6627 = var_ha.method3691(class207, true);
-                } else var_ha.fillRect2D(i_4_, i_5_, i, i_7_, (255 + -Component44.anInt948 << 24 | Component235.anInt3376), 1);
+                } else var_ha.fillRect2D(i_4_, i_5_, i, i_7_, (255 + -ObjectDefinition.anInt948 << 24 | Component235.anInt3376), 1);
             }
             anInt8709++;
             if (OutputStream_Sub2.aClass105_106 != null && Component221.aClass105_1800 != null) {
@@ -69,7 +69,7 @@ final class Component201
             }
             if (bool == false) {
                 NodeList.aClass324_3326.drawText(string, (StringDefinition.anInt9586) | ~0xffffff, 14 + i_5_, 3 + i_4_, -1, -127);
-                var_ha.fillRect2D(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Component235.anInt3376 | 255 + -Component44.anInt948 << 24), 1);
+                var_ha.fillRect2D(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (Component235.anInt3376 | 255 + -ObjectDefinition.anInt948 << 24), 1);
             }
         } catch (RuntimeException runtimeexception) {
             throw NpcDefinition.wrapThrowable(runtimeexception, ("kv.G(" + i + ',' + i_4_ + ',' + (var_ha != null ? "{...}" : "null") + ',' + (string != null ? "{...}" : "null") + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'));

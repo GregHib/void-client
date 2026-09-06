@@ -14,7 +14,7 @@ final class GradientPreset extends Definition {
     static int anInt9192;
     static int anInt9193;
     private int[][] anIntArrayArray9194;
-    static Component309 aClass263_9195;
+    static ObjectDefinitionProvider aClass263_9195;
     static int anInt9196;
     static Component183 aClass114_9197 = new Component183(61, -1);
     static int anInt9198;

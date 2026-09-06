@@ -235,7 +235,7 @@ public final class client extends Applet_Sub1 {
         Component324.method1208(55);
         DisplayModeManagerContainer130.method2045((byte) 62);
         Component316.method1395((byte) 82);
-        Component309.method2011((byte) -71);
+        ObjectDefinitionProvider.method2011((byte) -71);
         Component258.method1179((byte) -124);
         ItemDefinitionProvider.method1931(true);
         Component38.method1407((byte) 124);
@@ -299,7 +299,7 @@ public final class client extends Applet_Sub1 {
         DisplayModeManagerContainer56.method1426(25165);
         Component80.method2254(i ^ ~0x39bf);
         Component121.method3613(64);
-        Component44.method486(-123);
+        ObjectDefinition.method486(-123);
         DisplayModeManagerContainer77.method1096(i ^ 0x11);
         Component245.method171((byte) 72);
         s.method3988(i + -182);
@@ -1810,6 +1810,8 @@ public final class client extends Applet_Sub1 {
             }
             // Consume overlay clicks before menu/walk/iface handlers see them.
             if (Loader.microbotEnabled) MicrobotPanel.pollInput();
+            SceneEditorUi.pollInput();
+            SceneEditorHost.tick();
             // Purple console band: eat presses so they don't click-through to the game.
             BuildInfo.pollConsoleInput();
             if (HashNodeSub16Sub2.isDevConsoleOpen(true)) PauseTimer.processDevConsoleInput(125);
@@ -1875,7 +1877,16 @@ public final class client extends Applet_Sub1 {
             }
         }
         for (int i_115_ = 0; i_115_ < Component324.anInt2057; i_115_++) {
-            Npc npc = (((NpcNode) Component21.aClass356_3654.get(DisplayModeManagerContainer238.anIntArray1233[i_115_], -6008)).npc);
+            NpcNode npcNode = (NpcNode) Component21.aClass356_3654.get(DisplayModeManagerContainer238.anIntArray1233[i_115_], -6008);
+            if (npcNode == null || npcNode.npc == null) {
+                for (int i_117_ = i_115_ + 1; i_117_ < Component324.anInt2057; i_117_++) {
+                    DisplayModeManagerContainer238.anIntArray1233[i_117_ - 1] = DisplayModeManagerContainer238.anIntArray1233[i_117_];
+                }
+                Component324.anInt2057--;
+                i_115_--;
+                continue;
+            }
+            Npc npc = npcNode.npc;
             if (!npc.method2445((byte) -4) || !(npc.definition.method796(DisplayModeManagerContainer58.aClass170_10209, 18627))) npc.anInt10285 = -1;
             else {
                 npc.method2409((byte) -118);
@@ -2012,6 +2023,7 @@ public final class client extends Applet_Sub1 {
             if (HashNodeSub16Sub2.isDevConsoleOpen(bool)) BuildInfo.drawDevConsole(NodeSub8.toolkit, (byte) 124);
             // Microbot HUD — after console so it stays on top of game, under console if open.
             if (Loader.microbotEnabled) MicrobotPanel.draw(NodeSub8.toolkit);
+            SceneEditorUi.draw(NodeSub8.toolkit);
             if (OggUrlStream.aClass297_8992.useDirectDraw && Component92.method1977((byte) -79, Component49.clientState) && GlToolkitSub3.anInt8045 == 0 && MenuEntry.getWindowMode(-85) == 1 && !bool_120_) {
                 int i = 0;
                 for (int i_121_ = 0; (NodeSub38.anInt7008 > i_121_); i_121_++) {

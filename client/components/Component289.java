@@ -174,7 +174,7 @@ final class Component289
     private final Component245 method2491(byte i, boolean bool, int i_5_, GraphicsToolkit var_ha) {
         if (i != -51) aClass262_10125 = null;
         anInt10142++;
-        Component44 class51 = GradientPreset.aClass263_9195.getDefinition(0, 0xffff & aShort10129);
+        ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, 0xffff & aShort10129);
         s var_s;
         s var_s_6_;
         if (aBoolean10138) {
@@ -185,7 +185,7 @@ final class Component289
             if (this.aByte6376 < 3) var_s_6_ = (NodeSub1Sub1.aSArray8801[this.aByte6376 - -1]);
             else var_s_6_ = null;
         }
-        return class51.method476(var_ha, var_s_6_, aByte10145, i_5_, this.x, bool, var_s, this.anInt6382, this.y, aByte10118, 128);
+        return class51.buildLocationModel(var_ha, var_s_6_, aByte10145, i_5_, this.x, bool, var_s, this.anInt6382, this.y, aByte10118, 128);
     }
 
     final int method2394(boolean bool) {
@@ -195,7 +195,7 @@ final class Component289
         return 0;
     }
 
-    Component289(GraphicsToolkit var_ha, Component44 class51, int i, int i_7_, int i_8_, int i_9_, int i_10_, boolean bool, int i_11_, int i_12_, int i_13_, int i_14_) {
+    Component289(GraphicsToolkit var_ha, ObjectDefinition class51, int i, int i_7_, int i_8_, int i_9_, int i_10_, boolean bool, int i_11_, int i_12_, int i_13_, int i_14_) {
         super(i_8_, i_9_, i_10_, i, i_7_, i_11_, i_12_);
         do {
             try {

@@ -74,7 +74,7 @@ final class RSACipher implements Interface12 {
             Component69.aLong3660 = Component240.currentTimeMillis(-119);
         }
         anInt4900++;
-        if (Component44.aClass311_897 == null) DisplayModeManagerContainer88.method726(116);
+        if (ObjectDefinition.aClass311_897 == null) DisplayModeManagerContainer88.method726(116);
         LoadingState class56 = RSARequest.currentLoadingState;
         int i = LoadingManager.pulseLoading(-28660);
         if (class56 == RSARequest.currentLoadingState) {
@@ -88,7 +88,7 @@ final class RSACipher implements Interface12 {
                         + " stage=" + RSARequest.currentLoadingState.getStageId(-120));
             }
         } else if (RSARequest.currentLoadingState == LoadingState.aClass56_1043) {
-            Component44.aClass311_897 = null;
+            ObjectDefinition.aClass311_897 = null;
             Buffer.setClientState(2, 3);
         } else {
             DisplayModeManagerContainer190.aString5420 = class56.aClass274_1015.getLocalized(ObjectDeserializer.languageId, 544);
@@ -103,18 +103,18 @@ final class RSACipher implements Interface12 {
             }
         }
         if (bool == true) {
-            if (Component44.aClass311_897 != null) {
-                Component44.aClass311_897.method2316((RSARequest.currentLoadingState), DisplayModeManagerContainer190.aString5420, Component111.anInt3236, Component69.aLong3660, false);
+            if (ObjectDefinition.aClass311_897 != null) {
+                ObjectDefinition.aClass311_897.method2316((RSARequest.currentLoadingState), DisplayModeManagerContainer190.aString5420, Component111.anInt3236, Component69.aLong3660, false);
                 if (Component280.anInterface16Array2447 != null) {
                     for (int i_5_ = Component121.anInt4544 - -1; (Component280.anInterface16Array2447.length > i_5_); i_5_++) {
-                        if (Component280.anInterface16Array2447[i_5_].method60(-19079) >= 100 && Component121.anInt4544 == -1 + i_5_ && Component49.clientState >= 1 && Component44.aClass311_897.method2322(0)) {
+                        if (Component280.anInterface16Array2447[i_5_].method60(-19079) >= 100 && Component121.anInt4544 == -1 + i_5_ && Component49.clientState >= 1 && ObjectDefinition.aClass311_897.method2322(0)) {
                             try {
                                 Component280.anInterface16Array2447[i_5_].method57(117);
                             } catch (Exception exception) {
                                 Component280.anInterface16Array2447 = null;
                                 break;
                             }
-                            Component44.aClass311_897.method2321(10559, Component280.anInterface16Array2447[i_5_]);
+                            ObjectDefinition.aClass311_897.method2321(10559, Component280.anInterface16Array2447[i_5_]);
                             Component121.anInt4544++;
                             if ((Component121.anInt4544 >= (-1 + Component280.anInterface16Array2447.length)) && Component280.anInterface16Array2447.length > 1) Component121.anInt4544 = !Component134.aClass111_5813.method1044(26) ? -1 : 0;
                         }

@@ -22,7 +22,7 @@ abstract class Component112
         /** Download/load percent for group {@code i_0_} (0..100). */
     abstract int getGroupLoadPercent(int i, int i_0_);
 
-    static final void method2336(Component44 class51, int i, int i_1_, int i_2_, int i_3_) {
+    static final void method2336(ObjectDefinition class51, int i, int i_1_, int i_2_, int i_3_) {
         anInt3940++;
         if (i_3_ > -126) anInt3941 = 15;
         for (SceneNode class348_sub9 = (SceneNode) SceneManager.aClass262_2859.first(4); class348_sub9 != null; class348_sub9 = (SceneNode) SceneManager.aClass262_2859.next((byte) 123)) {

@@ -79,7 +79,7 @@ final class Component171
         return false;
     }
 
-    Component171(GraphicsToolkit var_ha, Component44 class51, int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_, int i_10_, int i_11_) {
+    Component171(GraphicsToolkit var_ha, ObjectDefinition class51, int i, int i_5_, int i_6_, int i_7_, int i_8_, boolean bool, int i_9_, int i_10_, int i_11_) {
         super(i_6_, i_7_, i_8_, i, i_5_, Component181.method868(i_9_, i_10_, false));
         try {
             this.aClass235_10115 = new Component366(var_ha, class51, i_9_, i_10_, this.plane, i_5_, this, bool, i_11_);

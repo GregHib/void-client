@@ -1,8 +1,8 @@
-/* Component309 - Decompiled by JODE
+/* ObjectDefinitionProvider - Decompiled by JODE
  * Visit http://jode.sourceforge.net/
  */
 
-final class Component309
+final class ObjectDefinitionProvider
 /**
  * RENAMED from `Class263` (JODE-obfuscated).
  * Evidence: root class; no distinctive extends/strings
@@ -38,19 +38,28 @@ final class Component309
         }
     }
 
-    /** Load and cache the scene-object definition identified by {@code i_0_}. */
-    final Component44 getDefinition(int i, int i_0_) {
+
+    /** Number of LocType archive groups available in the cache. */
+    final int definitionGroupCount() {
+        return aClass45_3343 == null ? 0 : aClass45_3343.getGroupCapacity(-1);
+    }
+
+    /** Number of LocType files in one archive group. */
+    final int definitionFileCount(int group) {
+        return aClass45_3343 == null ? 0 : aClass45_3343.getFileCount(0, group);
+    }
+    final ObjectDefinition getObjectDefinition(int i, int i_0_) {
         anInt3351++;
-        Component44 class51;
+        ObjectDefinition class51;
         synchronized (aClass60_3350) {
-            class51 = (Component44) aClass60_3350.get(i_0_, i ^ 0x32);
+            class51 = (ObjectDefinition) aClass60_3350.get(i_0_, i ^ 0x32);
         }
         if (class51 != null) return class51;
         byte[] is;
         synchronized (aClass45_3343) {
             is = aClass45_3343.getFile(i + -1860, Component284.method1850(i_0_, 111), Component364.method185(i_0_, (byte) -90));
         }
-        class51 = new Component44();
+        class51 = new ObjectDefinition();
         class51.anInt941 = i_0_;
         class51.aClass263_933 = this;
         if (is != null) class51.method479((byte) 0, new Buffer(is));
@@ -74,16 +83,16 @@ final class Component309
         if (i >= 68) {
             anInt3353++;
             synchronized (aClass60_3350) {
-                aClass60_3350.purgeSoftReferences(-106);
+                aClass60_3350.clear(-106);
             }
             synchronized (this.aClass60_3360) {
-                this.aClass60_3360.purgeSoftReferences(-125);
+                this.aClass60_3360.clear(-125);
             }
             synchronized (this.aClass60_3361) {
-                this.aClass60_3361.purgeSoftReferences(-122);
+                this.aClass60_3361.clear(-122);
             }
             synchronized (this.aClass60_3362) {
-                this.aClass60_3362.purgeSoftReferences(-101);
+                this.aClass60_3362.clear(-101);
             }
         }
     }
@@ -337,7 +346,7 @@ final class Component309
         if (bool != true) this.aClass60_3362 = null;
     }
 
-    Component309(GameType class230, int i, boolean bool, CacheStore class45, CacheStore class45_29_) {
+    ObjectDefinitionProvider(GameType class230, int i, boolean bool, CacheStore class45, CacheStore class45_29_) {
         aClass60_3350 = new NodeCache(64);
         this.aClass60_3360 = new NodeCache(500);
         this.aClass60_3361 = new NodeCache(30);

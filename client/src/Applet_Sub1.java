@@ -450,6 +450,9 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     static final void printConsole(String string, int i) {
         anInt6++;
         if (ArbShaderProgram.consoleLines == null) DisplayModeManagerContainer288.initDevConsole(2);
+        // createOutboundPacket's opaque arg can null this; restore so console never NPEs.
+        if (ParticleShader.aCalendar6221 == null)
+            ParticleShader.aCalendar6221 = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("GMT"));
         ParticleShader.aCalendar6221.setTime(new Date(Component240.currentTimeMillis(-102)));
         int i_8_ = ParticleShader.aCalendar6221.get(11);
         int i_9_ = ParticleShader.aCalendar6221.get(12);

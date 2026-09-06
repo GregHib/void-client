@@ -398,7 +398,7 @@ final class DisplayModeManagerContainer273
         Component261.anInt4826 = 0;
         Component237.anInt3017 = 0;
         GlToolkitSub3.anInt7904 = 0;
-        Component44.anInt867 = 0;
+        ObjectDefinition.anInt867 = 0;
         Component289.anInt10121 = 0;
         CacheNodeSub1.anInt10469 = 0;
         InterfaceRenderer.anInt5038 = 0;
@@ -520,7 +520,7 @@ final class DisplayModeManagerContainer273
         LogicError.anInt1461 = 0;
         Component212.anInt9970 = 0;
         GlToolkitSub3.anInt7946 = 0;
-        Component44.anInt958 = 0;
+        ObjectDefinition.anInt958 = 0;
         Component339.anInt3140 = 0;
         DisplayModeManagerContainer123.anInt1302 = 0;
         GlToolkitSub2.anInt7697 = 0;
@@ -559,7 +559,7 @@ final class DisplayModeManagerContainer273
         DisplayModeManagerContainer104.anInt10344 = 0;
         Component302.anInt6038 = 0;
         OpenGlShader.anInt7402 = 0;
-        Component44.anInt938 = 0;
+        ObjectDefinition.anInt938 = 0;
         JagTheoraDecoder.anInt1005 = 0;
         GraphicsToolkit.anInt4561 = 0;
         DisplayModeManagerContainer91.anInt393 = 0;
@@ -594,7 +594,7 @@ final class DisplayModeManagerContainer273
         SceneManager.anInt2850 = 0;
         GlExtensionManager.anInt9864 = 0;
         Component183.anInt1746 = 0;
-        Component309.anInt3348 = 0;
+        ObjectDefinitionProvider.anInt3348 = 0;
         BitmapFont.anInt4050 = 0;
         GlToolkitSub3.anInt8006 = 0;
         DisplayModeManagerContainer28.anInt8722 = 0;
@@ -626,7 +626,7 @@ final class DisplayModeManagerContainer273
         DisplayModeManagerContainer363.anInt4092 = 0;
         DisplayModeManagerContainer167.anInt257 = 0;
         Component19.anInt8606 = 0;
-        Component44.anInt891 = 0;
+        ObjectDefinition.anInt891 = 0;
         Component29.anInt10052 = 0;
         NodeSub18.anInt6804 = 0;
         HashNodeSub13.anInt9614 = 0;
@@ -705,7 +705,7 @@ final class DisplayModeManagerContainer273
         NodeSub1Sub3.anInt8819 = 0;
         DefinitionSub15.anInt9219 = 0;
         MenuOpener.anInt4844 = 0;
-        Component309.anInt3349 = 0;
+        ObjectDefinitionProvider.anInt3349 = 0;
         Component66.anInt6027 = 0;
         Component222.anInt2709 = 0;
         DefinitionSub38.anInt9469 = 0;
@@ -768,7 +768,7 @@ final class DisplayModeManagerContainer273
         RenderableSub4.anInt6407 = 0;
         Component162.anInt8382 = 0;
         NodeSub1Sub1.anInt8803 = 0;
-        Component309.anInt3346 = 0;
+        ObjectDefinitionProvider.anInt3346 = 0;
         Component298.anInt4628 = 0;
         Component19.anInt8610 = 0;
         AudioLine.anInt3600 = 0;
@@ -846,7 +846,7 @@ final class DisplayModeManagerContainer273
         ShaderProgramSub9.anInt6319 = 0;
         DisplayModeManagerContainer369.anInt2898 = 0;
         Buffer.anInt7201 = 0;
-        Component309.anInt3358 = 0;
+        ObjectDefinitionProvider.anInt3358 = 0;
         AudioLine.anInt3597 = 0;
         WaterShaderProgram.anInt6267 = 0;
         RadixText.anInt6124 = 0;
@@ -1322,7 +1322,7 @@ final class DisplayModeManagerContainer273
         DummyClass.anInt10173 = 0;
         ParametricDefinition.anInt9110 = 0;
         MatrixSub3.anInt5779 = 0;
-        Component44.anInt957 = 0;
+        ObjectDefinition.anInt957 = 0;
         GlToolkitSub2.anInt7672 = 0;
         Component171.anInt10098 = 0;
         SceneNode.anInt6690 = 0;
@@ -1379,7 +1379,7 @@ final class DisplayModeManagerContainer273
         DisplayModeManagerContainer174.anInt10380 = 0;
         Component162.anInt8380 = 0;
         AbstractShaderSub4.anInt7314 = 0;
-        Component309.anInt3354 = 0;
+        ObjectDefinitionProvider.anInt3354 = 0;
         HeapDumper.anInt1913 = 0;
         Component244.anInt4175 = 0;
         RadixParser.anInt2293 = 0;
@@ -1497,7 +1497,7 @@ final class DisplayModeManagerContainer273
         NodeSub51.anInt7237 = 0;
         DefinitionSub5.anInt9126 = 0;
         BasicMouseHandler.anInt7445 = 0;
-        Component44.anInt898 = 0;
+        ObjectDefinition.anInt898 = 0;
         Component383.anInt8578 = 0;
         DefinitionSub29.anInt9381 = 0;
         NodeList.anInt3324 = 0;
@@ -1553,10 +1553,10 @@ final class DisplayModeManagerContainer273
         Component212.anInt9985 = 0;
         StaticElementRenderer.anInt6442 = 0;
         GlWaterShader.anInt8823 = 0;
-        Component44.anInt960 = 0;
+        ObjectDefinition.anInt960 = 0;
         Component191.anInt2467 = 0;
         Buffer.anInt7190 = 0;
-        Component309.anInt3357 = 0;
+        ObjectDefinitionProvider.anInt3357 = 0;
         Component230.anInt5260 = 0;
         BufferCacheSub2.anInt8250 = 0;
         Component385.anInt2200 = 0;
@@ -2028,7 +2028,7 @@ final class DisplayModeManagerContainer273
         DefinitionSub11.anInt9188 = 0;
         DisplayModeManagerContainer282.anInt5630 = 0;
         Component323.anInt5873 = 0;
-        Component309.anInt3344 = 0;
+        ObjectDefinitionProvider.anInt3344 = 0;
         GlToolkitSub2.anInt7710 = 0;
         Component211.anInt1960 = 0;
         MatrixSub3.anInt5763 = 0;
@@ -2429,7 +2429,7 @@ final class DisplayModeManagerContainer273
         SceneNode.anInt6669 = 0;
         GlWaterShader.anInt8827 = 0;
         client.anInt5181 = 0;
-        Component44.anInt870 = 0;
+        ObjectDefinition.anInt870 = 0;
         Component235.anInt3369 = 0;
         Component210.anInt5282 = 0;
         Component102.anInt4805 = 0;
@@ -2651,7 +2651,7 @@ final class DisplayModeManagerContainer273
         NodeCache.anInt1090 = 0;
         Component296.anInt4652 = 0;
         ShaderCompilerSub3.anInt6521 = 0;
-        Component309.anInt3353 = 0;
+        ObjectDefinitionProvider.anInt3353 = 0;
         DefinitionSub9.anInt9172 = 0;
         Component302.anInt6036 = 0;
         Component281.anInt3827 = 0;
@@ -2804,7 +2804,7 @@ final class DisplayModeManagerContainer273
         Component184.anInt1982 = 0;
         MatrixSub2.anInt5718 = 0;
         MatrixSub1.anInt5659 = 0;
-        Component44.anInt866 = 0;
+        ObjectDefinition.anInt866 = 0;
         Component110.anInt232 = 0;
         DisplayModeManagerContainer292.anInt5075 = 0;
         Component364.anInt8340 = 0;
@@ -2973,7 +2973,7 @@ final class DisplayModeManagerContainer273
         LruCache.anInt4380 = 0;
         ItemDefinitionProvider.anInt3277 = 0;
         Component366.anInt3080 = 0;
-        Component309.anInt3356 = 0;
+        ObjectDefinitionProvider.anInt3356 = 0;
         Component82.anInt446 = 0;
         DisplayModeManagerContainer260.anInt3686 = 0;
         Component253.anInt3191 = 0;
@@ -3294,7 +3294,7 @@ final class DisplayModeManagerContainer273
         Buffer.anInt7177 = 0;
         BrowserUrlOpener.anInt8955 = 0;
         LibraryCreditsText.anInt5957 = 0;
-        Component44.anInt927 = 0;
+        ObjectDefinition.anInt927 = 0;
         Component14.anInt8593 = 0;
         Component315.anInt3168 = 0;
         VideoAdDisplay.anInt3180 = 0;
@@ -3356,7 +3356,7 @@ final class DisplayModeManagerContainer273
         Component156.anInt3702 = 0;
         DisplayModeManagerContainer109.anInt2337 = 0;
         NodeSub37.anInt6999 = 0;
-        Component44.anInt899 = 0;
+        ObjectDefinition.anInt899 = 0;
         DebugPanicSub2.anInt8496 = 0;
         client.anInt5177 = 0;
         ClientScriptExecutor.anInt1159 = 0;
@@ -3709,7 +3709,7 @@ final class DisplayModeManagerContainer273
         Buffer.anInt7186 = 0;
         GlToolkitSub3.anInt7980 = 0;
         Component140.anInt10445 = 0;
-        Component44.anInt910 = 0;
+        ObjectDefinition.anInt910 = 0;
         ReliefShader.anInt2515 = 0;
         Component25.anInt6016 = 0;
         Component142.anInt4413 = 0;
@@ -3766,9 +3766,9 @@ final class DisplayModeManagerContainer273
         Component239.anInt4549 = 0;
         GlExtensionManager.anInt9876 = 0;
         BufferCacheSub2.anInt8261 = 0;
-        Component44.anInt956 = 0;
+        ObjectDefinition.anInt956 = 0;
         Component141.anInt9957 = 0;
-        Component309.anInt3351 = 0;
+        ObjectDefinitionProvider.anInt3351 = 0;
         Component179.anInt9059 = 0;
         AbstractShaderSub1.anInt7283 = 0;
         WaterShaderProgram.anInt6263 = 0;
@@ -3852,7 +3852,7 @@ final class DisplayModeManagerContainer273
         LoadingState.anInt1014 = 0;
         BrowserUrlOpener.anInt8912 = 0;
         NameFormatter.anInt490 = 0;
-        Component44.anInt871 = 0;
+        ObjectDefinition.anInt871 = 0;
         DefinitionSub27.anInt9358 = 0;
         Component228.anInt3005 = 0;
         LibraryCreditsText.anInt5955 = 0;
@@ -3913,7 +3913,7 @@ final class DisplayModeManagerContainer273
         BrowserUrlOpener.anInt8949 = 0;
         Component289.anInt10142 = 0;
         Component128.anInt1106 = 0;
-        Component44.anInt901 = 0;
+        ObjectDefinition.anInt901 = 0;
         GraphicsToolkit.anInt4564 = 0;
         NodeList.anInt3336 = 0;
         Component134.anInt5806 = 0;

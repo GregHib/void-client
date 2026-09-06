@@ -21,7 +21,7 @@ final class Component350
 
     static final void method556(boolean bool) {
         anInt8656++;
-        if (Component44.aClass311_897 != null) Component44.aClass311_897.method2319((byte) -75);
+        if (ObjectDefinition.aClass311_897 != null) ObjectDefinition.aClass311_897.method2319((byte) -75);
         if (bool == false) {
             if (NodeSub32.aThread6946 != null) {
                 for (; ; ) {

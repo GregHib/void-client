@@ -422,6 +422,11 @@ final class ColoredTextBuilder {
                         ShaderProgramSub2.method2146((byte) 84);
                         break;
                     }
+                    // Client-only scene editor (Move / Remove / Rotate).
+                    if (SceneEditorMenu.handleMenuAction(class348_sub42_sub12)) {
+                        ShaderProgramSub2.method2146((byte) 84);
+                        break;
+                    }
                     // Clear Microbot targetMenu after any real (or attempted) menu consume.
                     MicrobotMenu.onMenuOptionClicked();
                     int i_74_ = (class348_sub42_sub12.param0);

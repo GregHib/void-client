@@ -56,6 +56,7 @@ java {
                 "media/video",
                 "script",
                 "ifaces",
+                "editor",
                 "native",
                 "text",
                 "display",

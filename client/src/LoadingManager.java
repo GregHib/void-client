@@ -157,7 +157,7 @@ final class LoadingManager {
         if (LoadingState.aClass56_1034 == RSARequest.currentLoadingState) {
             int i_10_ = LibraryCreditsText.method1770((byte) -25);
             if (i_10_ < 100) return i_10_;
-            Component309.method2013(WaterShaderSub8.aClass45_7362.getSingletonFile((byte) 73, 1), (byte) 112);
+            ObjectDefinitionProvider.method2013(WaterShaderSub8.aClass45_7362.getSingletonFile((byte) 73, 1), (byte) 112);
             RuntimeException_Sub1.method4012(WaterShaderSub8.aClass45_7362.getSingletonFile((byte) 73, 3), (byte) -111);
         }
         if (i != -28660) return 2;
@@ -174,7 +174,7 @@ final class LoadingManager {
             DefinitionSub25.aClass150_9342 = new Component324(PacketReader.currentGameType, ObjectDeserializer.languageId, Component181.aClass45_1541, ShaderSub3.aClass45_5207);
             Component162.aClass271_8378 = new DisplayModeManagerContainer130(PacketReader.currentGameType, ObjectDeserializer.languageId, Component181.aClass45_1541);
             NodeSub1.aClass185_6559 = new Component316(PacketReader.currentGameType, ObjectDeserializer.languageId, Component181.aClass45_1541);
-            GradientPreset.aClass263_9195 = new Component309(PacketReader.currentGameType, ObjectDeserializer.languageId, true, Component97.aClass45_1538, ShaderSub3.aClass45_5207);
+            GradientPreset.aClass263_9195 = new ObjectDefinitionProvider(PacketReader.currentGameType, ObjectDeserializer.languageId, true, Component97.aClass45_1538, ShaderSub3.aClass45_5207);
             DisplayModeManagerContainer64.aClass153_9031 = new Component62(PacketReader.currentGameType, ObjectDeserializer.languageId, Component181.aClass45_1541, Component158.aClass45_322);
             Component245.aClass141_117 = new Component258(PacketReader.currentGameType, ObjectDeserializer.languageId, Component181.aClass45_1541, Component158.aClass45_322);
             Component291.aClass278_2529 = new DisplayModeManagerContainer347(PacketReader.currentGameType, ObjectDeserializer.languageId, true, Component43.aClass45_4975, ShaderSub3.aClass45_5207);
@@ -257,7 +257,7 @@ final class LoadingManager {
         }
         if (LoadingState.aClass56_1041 == RSARequest.currentLoadingState) CacheNode.method3198(true, (byte) -45);
         if (RSARequest.currentLoadingState == LoadingState.aClass56_1042) {
-            Component44.aClass311_897.method2319((byte) -56);
+            ObjectDefinition.aClass311_897.method2319((byte) -56);
             try {
                 NodeSub32.aThread6946.join();
             } catch (InterruptedException interruptedexception) {
@@ -265,7 +265,7 @@ final class LoadingManager {
             }
             Component134.aClass111_5813 = null;
             DefinitionSub17Sub1.aClass45_10426 = null;
-            Component44.aClass311_897 = null;
+            ObjectDefinition.aClass311_897 = null;
             Component280.anInterface16Array2447 = null;
             NodeSub32.aThread6946 = null;
             ShaderProgramSub7.aClass45_6277 = null;

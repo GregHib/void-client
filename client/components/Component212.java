@@ -88,7 +88,7 @@ final class Component212
     private final Component245 buildRenderable2(GraphicsToolkit var_ha, int i, boolean bool, int i_4_) {
         anInt9985++;
         if (i_4_ != 22) method2404(null, -21, -25);
-        Component44 class51 = GradientPreset.aClass263_9195.getDefinition(0, aShort9991 & 0xffff);
+        ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, aShort9991 & 0xffff);
         s var_s;
         s var_s_5_;
         if (aBoolean9983) {
@@ -99,7 +99,7 @@ final class Component212
             if (this.aByte6376 < 3) var_s_5_ = (NodeSub1Sub1.aSArray8801[1 + this.aByte6376]);
             else var_s_5_ = null;
         }
-        return class51.method476(var_ha, var_s_5_, 22, i, this.x, bool, var_s, this.anInt6382, this.y, aByte9980, 128);
+        return class51.buildLocationModel(var_ha, var_s_5_, 22, i, this.x, bool, var_s, this.anInt6382, this.y, aByte9980, 128);
     }
 
     static final boolean isValidType(int i, byte i_6_) {
@@ -237,7 +237,7 @@ final class Component212
         return null;
     }
 
-    Component212(GraphicsToolkit var_ha, Component44 class51, int i, int i_20_, int i_21_, int i_22_, int i_23_, boolean bool, int i_24_, boolean bool_25_) {
+    Component212(GraphicsToolkit var_ha, ObjectDefinition class51, int i, int i_20_, int i_21_, int i_22_, int i_23_, boolean bool, int i_24_, boolean bool_25_) {
         super(i_21_, i_22_, i_23_, i, i_20_, class51.anInt930);
         do {
             try {

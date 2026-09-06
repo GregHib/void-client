@@ -136,7 +136,7 @@ final class DefinitionSub21
         anInt9270++;
         long l = 4194304L;
         long l_17_ = -9223372036854775808L;
-        Component44 class51 = GradientPreset.aClass263_9195.getDefinition(0, interface10.method42(-107));
+        ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-107));
         long l_18_ = interface10.method39(-14) << 14 | (i_16_ | i_15_ << 7) | interface10.method41(-32228) << 20 | 0x40000000;
         if (class51.anInt874 == 0) l_18_ |= l_17_;
         if (class51.anInt895 == 1) l_18_ |= l;

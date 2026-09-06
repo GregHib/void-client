@@ -94,7 +94,7 @@ final class DisplayModeManagerContainer91
                 String string_6_ = DebugPanicSub1.method2127(2, string);
                 if (string_6_ != null) {
                     for (int i_7_ = 0; (i_7_ < MenuEntry.ignoreCount); i_7_++) {
-                        String string_8_ = DebugPanicSub1.method2127(2, (Component44.ignoreNames[i_7_]));
+                        String string_8_ = DebugPanicSub1.method2127(2, (ObjectDefinition.ignoreNames[i_7_]));
                         if (string_8_ != null && string_8_.equals(string_6_)) {
                             DisplayModeManagerContainer213.method544((string + (FriendsIgnoreList.aClass274_3523.getLocalized(ObjectDeserializer.languageId, 544))), false, 4);
                             return;

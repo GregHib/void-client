@@ -41,7 +41,7 @@ final class Component197
     static int anInt10093;
     private r aR10094;
 
-    Component197(GraphicsToolkit var_ha, Component44 class51, int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool, int i_4_, int i_5_, boolean bool_6_) {
+    Component197(GraphicsToolkit var_ha, ObjectDefinition class51, int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool, int i_4_, int i_5_, boolean bool_6_) {
         super(i_1_, i_2_, i_3_, i, i_0_, ShaderProgramSub9.method2175(i_5_, (byte) -34, i_4_));
         do {
             try {
@@ -172,7 +172,7 @@ final class Component197
     private final Component245 method2481(boolean bool, int i, int i_15_, GraphicsToolkit var_ha) {
         if (i_15_ != -4) aClass30_10082 = null;
         anInt10086++;
-        Component44 class51 = GradientPreset.aClass263_9195.getDefinition(0, aShort10081 & 0xffff);
+        ObjectDefinition class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, aShort10081 & 0xffff);
         s var_s;
         s var_s_16_;
         if (aBoolean10066) {
@@ -183,7 +183,7 @@ final class Component197
             if (this.aByte6376 < 3) var_s = (NodeSub1Sub1.aSArray8801[1 + this.aByte6376]);
             else var_s = null;
         }
-        return class51.method476(var_ha, var_s, aByte10079, i, this.x, bool, var_s_16_, this.anInt6382, this.y, aByte10062, i_15_ + 132);
+        return class51.buildLocationModel(var_ha, var_s, aByte10079, i, this.x, bool, var_s_16_, this.anInt6382, this.y, aByte10062, i_15_ + 132);
     }
 
     final RenderableSub4 method2386(int i, GraphicsToolkit var_ha) {

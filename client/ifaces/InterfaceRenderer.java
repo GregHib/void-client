@@ -190,8 +190,8 @@ final class InterfaceRenderer implements Interface16 {
             Graphics graphics = DisplayModeManagerContainer50.gameCanvas.getGraphics();
             if (graphics != null) {
                 try {
-                    int i_5_ = Component44.aClass311_897.method2320((byte) 103);
-                    String string = Component44.aClass311_897.method2318(-9324);
+                    int i_5_ = ObjectDefinition.aClass311_897.method2320((byte) 103);
+                    String string = ObjectDefinition.aClass311_897.method2318(-9324);
                     if (DisplayModeManagerContainer173.anImage4249 == null) DisplayModeManagerContainer173.anImage4249 = (DisplayModeManagerContainer50.gameCanvas.createImage(Component236.canvasWidth, PacketReader.canvasHeight));
                     Graphics graphics_6_ = DisplayModeManagerContainer173.anImage4249.getGraphics();
                     graphics_6_.clearRect(0, 0, Component236.canvasWidth, PacketReader.canvasHeight);
@@ -268,7 +268,7 @@ final class InterfaceRenderer implements Interface16 {
 
     private final void method2219(int i) {
         anInt5031++;
-        HelveticaFont.method1455(Component44.aClass311_897.method2320((byte) 78), Component137.aColorArray1928[CursorDefinition.anInt2884], Component44.aClass311_897.method2318(-9324), (DefinitionSub8.aColorArray9163[CursorDefinition.anInt2884]), (byte) -100, DisplayModeManagerContainer368.aColorArray5242[CursorDefinition.anInt2884]);
+        HelveticaFont.method1455(ObjectDefinition.aClass311_897.method2320((byte) 78), Component137.aColorArray1928[CursorDefinition.anInt2884], ObjectDefinition.aClass311_897.method2318(-9324), (DefinitionSub8.aColorArray9163[CursorDefinition.anInt2884]), (byte) -100, DisplayModeManagerContainer368.aColorArray5242[CursorDefinition.anInt2884]);
         if (i != 33) method55((byte) 1);
     }
 

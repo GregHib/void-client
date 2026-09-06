@@ -89,7 +89,7 @@ final class DefaultClickSwapper {
         injectActionRows(actions, current, OPCODE_SET_NPC, OPCODE_RESET_NPC, compositionId);
     }
 
-    static void injectObjectMenu(Component44 object) {
+    static void injectObjectMenu(ObjectDefinition object) {
         if (object == null) {
             return;
         }

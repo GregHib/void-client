@@ -38,7 +38,7 @@ final class Component29
         return false;
     }
 
-    Component29(GraphicsToolkit var_ha, Component44 class51, int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_) {
+    Component29(GraphicsToolkit var_ha, ObjectDefinition class51, int i, int i_0_, int i_1_, int i_2_, int i_3_, boolean bool, int i_4_, int i_5_, int i_6_, int i_7_, int i_8_, int i_9_, int i_10_) {
         super(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, class51.anInt895 == 1, Component7.method1606(i_9_, -27939, i_8_));
         try {
             this.aClass235_10045 = new Component366(var_ha, class51, i_8_, i_9_, this.plane, i_0_, this, bool, i_10_);
@@ -66,7 +66,6 @@ final class Component29
     }
 
     final boolean method2391(GraphicsToolkit var_ha, int i, int i_11_, int i_12_) {
-        anInt10040++;
         DisplayModeManagerContainer370 class64 = this.aClass235_10045.method1668(false, false, i_12_ + -127, 131072, var_ha);
         if (class64 == null) return false;
         if (i_12_ != 0) return false;
@@ -101,7 +100,6 @@ final class Component29
     }
 
     final RenderableSub4 method2386(int i, GraphicsToolkit var_ha) {
-        anInt10057++;
         DisplayModeManagerContainer370 class64 = this.aClass235_10045.method1668(false, true, -127, 2048, var_ha);
         if (class64 == null) return null;
         DisplayModeManagerContainer204 class101 = var_ha.method3705();
@@ -163,7 +161,6 @@ final class Component29
     }
 
     final void method2387(GraphicsToolkit var_ha, int i) {
-        anInt10039++;
         DisplayModeManagerContainer370 class64 = this.aClass235_10045.method1668(true, true, -127, 262144, var_ha);
         if (class64 != null) {
             DisplayModeManagerContainer204 class101 = var_ha.method3705();
