@@ -167,6 +167,57 @@ final class SceneEditorHost {
                 + " @ " + x + "," + y + "," + plane
                 + " live=" + placed;
     }
+    static String spawnNpcAtPlayer(int npcId) {
+        if (Component72.localPlayer == null) {
+            throw new IllegalStateException("not logged in");
+        }
+        return spawnNpcAt(npcId, MicrobotWidgets.localAbsX(), MicrobotWidgets.localAbsY(),
+                MicrobotWidgets.localPlane());
+    }
+
+    static String spawnNpcAt(int npcId, int absX, int absY, int plane) {
+        if (Component72.localPlayer == null) {
+            throw new IllegalStateException("not logged in");
+        }
+        DisplayModeManagerContainer347 provider = Component291.aClass278_2529;
+        if (provider == null) {
+            throw new IllegalStateException("NPC definitions are not loaded");
+        }
+        int slot = -1;
+        for (int candidate = 0; candidate < 1024; candidate++) {
+            if (Component21.aClass356_3654.get(candidate, -6008) == null) {
+                slot = candidate;
+                break;
+            }
+        }
+        if (slot < 0 || DefinitionSub23.aClass348_Sub22Array9319 == null
+                || DisplayModeManagerContainer238.anIntArray1233 == null
+                || NodeSub32.anInt6930 >= DefinitionSub23.aClass348_Sub22Array9319.length
+                || Component324.anInt2057 >= DisplayModeManagerContainer238.anIntArray1233.length) {
+            throw new IllegalStateException("NPC scene is full");
+        }
+
+        NpcComposition definition = provider.method2079(npcId, -1);
+        if (definition == null) {
+            throw new IllegalArgumentException("NPC not found: " + npcId);
+        }
+        Npc npc = new Npc();
+        npc.anInt10290 = slot;
+        NpcNode node = new NpcNode(npc);
+        Component21.aClass356_3654.put((byte) 91, slot, node);
+        DefinitionSub23.aClass348_Sub22Array9319[NodeSub32.anInt6930++] = node;
+        DisplayModeManagerContainer238.anIntArray1233[Component324.anInt2057++] = slot;
+        npc.anInt10306 = OpenGlShader.clientCycle;
+        npc.method2448(definition, -2);
+        npc.method2434((byte) 120, npc.definition.anInt1399);
+        npc.anInt10310 = npc.definition.anInt1329 << 3;
+        npc.method2435((byte) -108, (npc.definition.aByte1355 - -4 & ~0x631ffff8) << 11, true);
+        int localX = absX - NodeBaseSub2.regionTileX;
+        int localY = absY - Component330.regionTileY;
+        npc.method2444(localY, true, localX, 123, npc.getSize((byte) 54), plane);
+        String name = definition.name == null ? "Unnamed NPC" : definition.name;
+        return "spawned " + name + " (#" + npcId + ") @ " + absX + "," + absY + "," + plane;
+    }
 
     /**
      * Run a model command then resync the live scene.

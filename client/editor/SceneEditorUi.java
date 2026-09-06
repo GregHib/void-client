@@ -45,13 +45,14 @@ final class SceneEditorUi {
     private static final int GHOST = 0x88AAAAAA;
     private static final int DRAG_LINE = 0xFFFF8800;
 
-
     private static final Asset selectedAsset = new Asset("Tree", 1276);
     private static boolean npcCatalog;
     private static int selectedNpcId = -1;
     private static String selectedNpcName = "";
     private static int previewObjectId = -1;
     private static ObjectDefinition previewDefinition;
+    private static int previewNpcId = -1;
+    private static NpcComposition previewNpcDefinition;
     private static int resultOffset;
     private static long selectedId = -1L;
     private static boolean searchFocused;
@@ -411,6 +412,10 @@ final class SceneEditorUi {
 
     private static void placeAt(int absX, int absY, int plane) {
         try {
+            if (npcCatalog) {
+                chat(SceneEditorHost.spawnNpcAt(selectedNpcId, absX, absY, plane));
+                return;
+            }
             Asset asset = currentAsset();
             SceneObject added = SceneEditorHost.editor().add(asset.objectId, absX, absY, 0, plane);
             selectedId = added.id;
@@ -795,12 +800,17 @@ final class SceneEditorUi {
     }
 
     private static void spawnSelected() {
-        if (npcCatalog) {
-            chat("NPC catalog is browse-only.");
-            return;
-        }
         if (filteredCount() == 0) {
             chat("No catalog entries match '" + searchText + "'.");
+            return;
+        }
+        if (npcCatalog) {
+            try {
+                String result = SceneEditorHost.spawnNpcAtPlayer(selectedNpcId);
+                chat(result);
+            } catch (Throwable t) {
+                chat("NPC spawn failed: " + t.getMessage());
+            }
             return;
         }
         boolean keepEditorMode = SceneEditorHost.isEditorMode();
@@ -841,6 +851,72 @@ final class SceneEditorUi {
         }
         font.drawText("Preview unavailable", 0xFF999999, y + PREVIEW_H / 2 + 5,
                 x + 6, SHADOW, -110);
+    }
+
+    private static NpcComposition previewNpcDefinition(int npcId) {
+        if (previewNpcId == npcId) {
+            return previewNpcDefinition;
+        }
+        previewNpcId = npcId;
+        previewNpcDefinition = null;
+        try {
+            if (Component291.aClass278_2529 != null) {
+                previewNpcDefinition = Component291.aClass278_2529.method2079(npcId, -1);
+            }
+        } catch (Throwable ignored) {
+            /* A missing NPC model must not break the editor panel. */
+        }
+        return previewNpcDefinition;
+    }
+
+    private static void drawNpcPreview(GraphicsToolkit toolkit, BitmapFont font,
+                                       int x, int y, int width, int npcId) {
+        NpcComposition definition = previewNpcDefinition(npcId);
+        if (definition != null && drawNpcModelPreview(toolkit, definition, x, y, width)) {
+            return;
+        }
+        font.drawText("NPC preview unavailable", 0xFF999999, y + PREVIEW_H / 2 + 5,
+                x + 6, SHADOW, -110);
+    }
+
+    private static boolean drawNpcModelPreview(GraphicsToolkit toolkit, NpcComposition definition,
+                                               int x, int y, int width) {
+        DisplayModeManagerContainer370 model;
+        try {
+            model = definition.method800(0, null, RunescapeInfo.aClass87_191, false, null, 0,
+                    DisplayModeManagerContainer282.aClass261_5558, 0, null,
+                    DisplayModeManagerContainer58.aClass170_10209, toolkit, 0, null,
+                    0, 0, 2048, 0);
+        } catch (Throwable ignored) {
+            return false;
+        }
+        if (model == null) {
+            return false;
+        }
+        int centerX = x + width / 2;
+        int centerY = y + PREVIEW_H / 2 + 30;
+        int modelWidth = model.RA() - model.V();
+        int modelHeight = model.EA() - model.fa();
+        int modelDepth = model.G() - model.HA();
+        int modelSize = Math.max(modelWidth, Math.max(modelHeight, modelDepth));
+        int targetSize = Math.max(24, PREVIEW_H - 16);
+        int previewDepth = Math.max(512, modelSize * 512 / targetSize);
+        DisplayModeManagerContainer204 projection = Component270.aClass101_2123;
+        DisplayModeManagerContainer204 matrix = Cp1252Decoder.aClass101_5209;
+        try {
+            projection.method910();
+            toolkit.method3638(projection);
+            toolkit.DA(centerX, centerY, 512, 512);
+            toolkit.NativeHandle();
+            matrix.method902(-124);
+            matrix.method896(2048);
+            matrix.method891(0, 0, previewDepth);
+            matrix.method900(0);
+            model.render(matrix, null, 1);
+            return true;
+        } catch (Throwable ignored) {
+            return false;
+        }
     }
 
     /**
@@ -1012,8 +1088,12 @@ final class SceneEditorUi {
         toolkit.fillRect3D(sx, previewY, innerW, PREVIEW_H, BORDER, 0);
         font.drawText(npcCatalog ? "NPC CATALOG" : "PREVIEW", 0xFFAAAAAA, previewY + 15, sx + 6, SHADOW, -110);
         if (npcCatalog) {
-            String npcLabel = selectedNpcName.length() == 0 ? "Select an NPC" : selectedNpcName;
-            font.drawText(npcLabel, 0xFFFFFFFF, previewY + 45, sx + 6, SHADOW, -110);
+            if (selectedNpcId >= 0) {
+                drawNpcPreview(toolkit, font, sx, previewY, innerW, selectedNpcId);
+            } else {
+                font.drawText("Select an NPC", 0xFF999999, previewY + PREVIEW_H / 2 + 5,
+                        sx + 6, SHADOW, -110);
+            }
         } else {
             drawPreview(toolkit, font, sx, previewY, innerW, selectedAsset.objectId);
         }
