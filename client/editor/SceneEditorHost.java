@@ -190,6 +190,22 @@ final class SceneEditorHost {
         return "requested server NPC (#" + npcId + ") @ " + absX + "," + absY + "," + plane;
     }
 
+    static String dropItemAtPlayer(int itemId) {
+        if (Component72.localPlayer == null) {
+            throw new IllegalStateException("not logged in");
+        }
+        return dropItemAt(itemId, MicrobotWidgets.localAbsX(), MicrobotWidgets.localAbsY(),
+                MicrobotWidgets.localPlane());
+    }
+
+    static String dropItemAt(int itemId, int absX, int absY, int plane) {
+        if (Component72.localPlayer == null) {
+            throw new IllegalStateException("not logged in");
+        }
+        sendServerCommand("scene_item_drop " + itemId + " " + absX + " " + absY + " " + plane + " 1");
+        return "requested server item (#" + itemId + ") @ " + absX + "," + absY + "," + plane;
+    }
+
 
     /**
      * Run a model command then resync the live scene.
