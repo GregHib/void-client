@@ -118,7 +118,9 @@ external class WebGL2RenderingContext {
         val TEXTURE0: Int
         val FLOAT: Int
         val UNSIGNED_BYTE: Int
+        val UNSIGNED_INT: Int
         val STREAM_DRAW: Int
+        val STATIC_DRAW: Int
         val TRIANGLES: Int
         val TRIANGLE_STRIP: Int
         val TRIANGLE_FAN: Int

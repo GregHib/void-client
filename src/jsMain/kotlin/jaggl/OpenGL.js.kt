@@ -194,10 +194,20 @@ actual class OpenGL {
             state.currentColor[3] = (arg3.toInt() and 0xFF) / 255f
         }
 
-        actual fun glTexCoord2f(arg0: Float, arg1: Float) = exec { state.currentTexCoord[0] = arg0; state.currentTexCoord[1] = arg1 }
-        actual fun glTexCoord2i(arg0: Int, arg1: Int) = exec { state.currentTexCoord[0] = arg0.toFloat(); state.currentTexCoord[1] = arg1.toFloat() }
-        actual fun glTexCoord3f(arg0: Float, arg1: Float, arg2: Float) = exec { state.currentTexCoord[0] = arg0; state.currentTexCoord[1] = arg1 }
-        actual fun glTexCoord3i(arg0: Int, arg1: Int, arg2: Int) = exec { state.currentTexCoord[0] = arg0.toFloat(); state.currentTexCoord[1] = arg1.toFloat() }
+        actual fun glTexCoord2f(arg0: Float, arg1: Float) = exec {
+            state.currentTexCoord[0] = arg0; state.currentTexCoord[1] = arg1; state.currentTexCoord[2] = 0f
+        }
+        actual fun glTexCoord2i(arg0: Int, arg1: Int) = exec {
+            state.currentTexCoord[0] = arg0.toFloat(); state.currentTexCoord[1] = arg1.toFloat()
+            state.currentTexCoord[2] = 0f
+        }
+        actual fun glTexCoord3f(arg0: Float, arg1: Float, arg2: Float) = exec {
+            state.currentTexCoord[0] = arg0; state.currentTexCoord[1] = arg1; state.currentTexCoord[2] = arg2
+        }
+        actual fun glTexCoord3i(arg0: Int, arg1: Int, arg2: Int) = exec {
+            state.currentTexCoord[0] = arg0.toFloat(); state.currentTexCoord[1] = arg1.toFloat()
+            state.currentTexCoord[2] = arg2.toFloat()
+        }
 
         actual fun glNormal3f(arg0: Float, arg1: Float, arg2: Float) = exec {
             state.currentNormal[0] = arg0; state.currentNormal[1] = arg1; state.currentNormal[2] = arg2
@@ -583,6 +593,7 @@ actual class OpenGL {
             when (arg0 - WebGL2RenderingContext.TEXTURE0) {
                 0 -> {
                     state.currentTexCoord[0] = arg1; state.currentTexCoord[1] = arg2
+                    state.currentTexCoord[2] = 0f
                 }
                 1 -> {
                     state.currentTexCoord1[0] = arg1; state.currentTexCoord1[1] = arg2
@@ -595,6 +606,7 @@ actual class OpenGL {
             when (arg0 - WebGL2RenderingContext.TEXTURE0) {
                 0 -> {
                     state.currentTexCoord[0] = arg1.toFloat(); state.currentTexCoord[1] = arg2.toFloat()
+                    state.currentTexCoord[2] = 0f
                 }
                 1 -> {
                     state.currentTexCoord1[0] = arg1.toFloat(); state.currentTexCoord1[1] = arg2.toFloat()
@@ -607,6 +619,7 @@ actual class OpenGL {
             when (arg0 - WebGL2RenderingContext.TEXTURE0) {
                 0 -> {
                     state.currentTexCoord[0] = arg1.toFloat(); state.currentTexCoord[1] = arg2.toFloat()
+                    state.currentTexCoord[2] = arg3.toFloat()
                 }
                 1 -> {
                     state.currentTexCoord1[0] = arg1.toFloat(); state.currentTexCoord1[1] = arg2.toFloat()
@@ -799,7 +812,9 @@ actual class OpenGL {
                         ATTRIB_COLOR -> gl.vertexAttrib4f(
                             loc, state.currentColor[0], state.currentColor[1], state.currentColor[2], state.currentColor[3]
                         )
-                        ATTRIB_TEXCOORD0 -> gl.vertexAttrib2f(loc, state.currentTexCoord[0], state.currentTexCoord[1])
+                        ATTRIB_TEXCOORD0 -> gl.vertexAttrib3f(
+                            loc, state.currentTexCoord[0], state.currentTexCoord[1], state.currentTexCoord[2]
+                        )
                         ATTRIB_TEXCOORD1 -> gl.vertexAttrib3f(
                             loc, state.currentTexCoord1[0], state.currentTexCoord1[1], state.currentTexCoord1[2]
                         )
@@ -807,6 +822,11 @@ actual class OpenGL {
                     }
                 }
             }
+            // The loop above leaves ARRAY_BUFFER bound to whichever client array came last.
+            // glBufferDataARB/glBufferSubDataARB act on the *currently bound* buffer rather than
+            // on state.boundArrayBuffer, so the real binding has to be put back - otherwise a
+            // later glBufferSubData with no intervening glBindBuffer writes into the wrong buffer.
+            gl.bindBuffer(WebGL2RenderingContext.ARRAY_BUFFER, state.boundArrayBuffer)
         }
 
         actual fun glDrawArrays(arg0: Int, arg1: Int, arg2: Int) = exec {
@@ -818,12 +838,12 @@ actual class OpenGL {
             } else {
                 gl.bindBuffer(WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER, state.quadIndexBuffer)
                 gl.bufferData(WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER, indices, WebGL2RenderingContext.STREAM_DRAW)
-                gl.drawElements(WebGL2RenderingContext.TRIANGLES, indices.length, GL_UNSIGNED_INT, 0)
+                gl.drawElements(
+                    WebGL2RenderingContext.TRIANGLES, indices.length, WebGL2RenderingContext.UNSIGNED_INT, 0
+                )
                 gl.bindBuffer(WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER, state.boundElementArrayBuffer)
             }
         }
-
-        private const val GL_UNSIGNED_INT = 5125
 
         // Fixed-function matrix *pname* values (as passed to glGetFloatv/glGetIntegerv).
         // These are shim-only state on JS (tracked by MatrixStack); WebGL2 has no such
@@ -846,7 +866,7 @@ actual class OpenGL {
         private fun quadIndices(mode: Int, first: Int, count: Int): Uint32Array? {
             val maxOut = when (mode) {
                 GL_QUADS -> count / 4 * 6
-                GL_QUAD_STRIP -> count / 2 * 3
+                GL_QUAD_STRIP -> if (count >= 4) (count - 2) / 2 * 6 else 0
                 GL_POLYGON -> if (count >= 3) (count - 2) * 3 else 0
                 else -> return null
             }

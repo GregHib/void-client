@@ -170,7 +170,9 @@ class GlState(val gl: WebGL2RenderingContext) {
     val lightAttenuation = Array(MAX_LIGHTS) { floatArrayOf(1f, 0f, 0f) }
 
     val currentColor = floatArrayOf(1f, 1f, 1f, 1f)
-    val currentTexCoord = floatArrayOf(0f, 0f)
+    // Three components: glTexCoord3f/3i and glMultiTexCoord3i(GL_TEXTURE0, ...) supply a real
+    // R coordinate for 3D-texture slice lookups and cube-map face directions.
+    val currentTexCoord = floatArrayOf(0f, 0f, 0f)
     val currentTexCoord1 = floatArrayOf(0f, 0f, 0f)
     val currentNormal = floatArrayOf(0f, 0f, 1f)
 
