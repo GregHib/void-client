@@ -337,7 +337,7 @@ final class ColoredText extends Component339 {
                                     DisplayModeManagerContainer368.addMenuEntry(((Component72.localPlayer.plane) != class318_sub4.aClass318_Sub1_6410.plane), ("<col=00ffff>" + class51.aString884 + Loader.getDebug(class51.anInt941, x, y, class318_sub4.aClass318_Sub1_6410.plane)), i_32_, (byte) -120, false, i_33_, -1, true, 1001, interface10.hashCode(), (FriendsIgnoreList.aClass274_3505.getLocalized(ObjectDeserializer.languageId, 544)), class51.anInt941, CookieManager.anInt6299);
                                     anInt6094++;
                                     DefaultClickSwapper.injectObjectMenu(class51);
-                                    // Scene editor: Move / Remove / Rotate on ground scenery.
+                                    // Scene editor: Move / Duplicate / Remove / Rotate on ground scenery.
                                     SceneEditorMenu.inject(class51, i_33_, i_32_,
                                             class318_sub4.aClass318_Sub1_6410.plane,
                                             DefinitionSub21.method3107((byte) -116, interface10, i_32_, i_33_));

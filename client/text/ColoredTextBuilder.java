@@ -422,7 +422,7 @@ final class ColoredTextBuilder {
                         ShaderProgramSub2.method2146((byte) 84);
                         break;
                     }
-                    // Client-only scene editor (Move / Remove / Rotate).
+                    // Client-only scene editor (Move / Duplicate / Remove / Rotate).
                     if (SceneEditorMenu.handleMenuAction(class348_sub42_sub12)) {
                         ShaderProgramSub2.method2146((byte) 84);
                         break;

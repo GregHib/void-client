@@ -175,6 +175,20 @@ final class SceneEditorHost {
         SceneObjectAdapter.remove(probe);
         return editor().add(objectId, x, y, 0, plane);
     }
+    /** Return the first east tile outside the source object's footprint. */
+    static int adjacentX(int objectId, int x, int rotation) {
+        int width = 1;
+        try {
+            ObjectDefinition definition = GradientPreset.aClass263_9195
+                    .getObjectDefinition(0, objectId);
+            if (definition != null) {
+                width = (rotation & 1) == 0 ? definition.anInt926 : definition.anInt961;
+            }
+        } catch (Throwable ignored) {
+            // Use one tile when the definition cache is unavailable.
+        }
+        return x + Math.max(1, width);
+    }
 
     private static String spawnAt(int objectId, int x, int y, int plane) throws IOException {
         SceneObject added = addAt(objectId, x, y, plane);

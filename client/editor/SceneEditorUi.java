@@ -1,12 +1,12 @@
 /**
  * In-world scene editor component: searchable City Assets picker, selection, and Done-to-close.
- * Right-click Move / Remove / Rotate live in {@link SceneEditorMenu}.
+ * Right-click Move / Duplicate / Remove / Rotate live in {@link SceneEditorMenu}.
  * <p>
  * Tile under cursor is read from the existing Walk-here menu tip (opcode 19)
  * built each frame by {@link ColoredText#method1823} — no custom raycast.
  * <p>
  * While the game right-click menu is open ({@link Component364#aBoolean8335}),
- * world clicks are <b>not</b> eaten so Move/Remove/Rotate can fire.
+ * world clicks are <b>not</b> eaten so Move/Duplicate/Remove/Rotate can fire.
  */
 final class SceneEditorUi {
 
@@ -212,7 +212,7 @@ final class SceneEditorUi {
             announced = true;
             try {
                 ShaderProgramSub2.addChatMessage("", 5, (byte) -100, 0,
-                        "[System] Scene editor ON. Right-click → Move / Remove / Rotate. "
+                        "[System] Scene editor ON. Right-click → Move / Duplicate / Remove / Rotate. "
                                 + "Ctrl+click = claim+drag. Objects stay when editor turns OFF.",
                         "", "");
             } catch (Throwable ignored) {
@@ -293,7 +293,7 @@ final class SceneEditorUi {
 
     /**
      * Eat palette / world clicks while editor mode is on — except when the
-     * right-click menu is open, so Move/Remove/Rotate receive the click.
+     * right-click menu is open, so Move/Duplicate/Remove/Rotate receive the click.
      */
     static void pollInput() {
         mouseOverUi = false;
@@ -312,7 +312,7 @@ final class SceneEditorUi {
                 refreshHoverTile();
             }
 
-            // Let the open context menu consume left-clicks (Move/Remove/Rotate).
+            // Let the open context menu consume left-clicks (Move/Duplicate/Remove/Rotate).
             if (Component364.aBoolean8335) {
                 return;
             }
@@ -389,7 +389,7 @@ final class SceneEditorUi {
                 continue;
             }
             char c = event.getKeyChar((byte) 96);
-            if (Character.isLetterOrDigit(c) || c == ' ' || c == '-' || c == '_') {
+            if (Character.isLetterOrDigit(c) || c == ' ' || c == '-' || c == '_' || c == '#' || c == ':' || c == '=') {
                 searchText += Character.toLowerCase(c);
                 resultOffset = 0;
                 normalizeSelection();
@@ -1303,7 +1303,7 @@ final class SceneEditorUi {
         toolkit.fillRect2D(sx, sy, innerW, SEARCH_H, FIELD_BG, 1);
         toolkit.fillRect3D(sx, sy, innerW, SEARCH_H, searchFocused ? ACCENT : BORDER, 0);
         String query = searchText.length() == 0
-                ? (npcCatalog ? "Search all NPCs..." : (itemCatalog ? "Search all items..." : "Search all objects..."))
+                ? (npcCatalog ? "Search NPCs by name or ID..." : (itemCatalog ? "Search items by name or ID..." : "Search objects by name or ID..."))
                 : searchText;
         font.drawText(query, searchText.length() == 0 ? 0xFF999999 : 0xFFFFFFFF,
                 sy + 17, sx + 6, SHADOW, -110);

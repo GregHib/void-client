@@ -52,7 +52,8 @@ final class SceneNpcCatalog {
     }
 
     static int search(String query) {
-        String normalized = query == null ? "" : query.toLowerCase(Locale.ROOT);
+        SceneCatalogQuery.Query parsed = SceneCatalogQuery.parse(query);
+        String normalized = parsed.text;
         int currentGeneration = generation;
         if (normalized.equals(resultQuery) && resultGeneration == currentGeneration) {
             return resultCount;
@@ -62,7 +63,10 @@ final class SceneNpcCatalog {
         Entry[] matches = new Entry[Math.min(RESULT_LIMIT, snapshot.length)];
         int count = 0;
         for (Entry entry : snapshot) {
-            if (entry.normalizedName.indexOf(normalized) == -1) {
+            boolean matchesQuery = parsed.idSearch
+                    ? parsed.id != null && entry.npcId == parsed.id
+                    : entry.normalizedName.indexOf(normalized) != -1;
+            if (!matchesQuery) {
                 continue;
             }
             if (count < RESULT_LIMIT) {

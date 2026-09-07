@@ -14,6 +14,7 @@ final class SceneEditorMenu {
     static final int OPCODE_REMOVE = 1909;
     static final int OPCODE_ROTATE = 1912;
     static final int OPCODE_NPC_REMOVE = 1913;
+    static final int OPCODE_DUPLICATE = 1914;
 
     private static final String COL = "<col=00e5ff>";
     private static final String COL_END = "</col>";
@@ -23,7 +24,7 @@ final class SceneEditorMenu {
     }
 
     /**
-     * Add Move / Remove / Rotate under the hovered scenery name.
+     * Add Move / Duplicate / Remove / Rotate under the hovered scenery name.
      */
     static void inject(ObjectDefinition object, int localX, int localY, int plane, long packedId) {
         if (!SceneEditorHost.isEditorMode() || object == null) {
@@ -36,6 +37,7 @@ final class SceneEditorMenu {
         // so it appears last in the visible context menu.
         addRow(target, localX, localY, OPCODE_REMOVE, identifier, COL + "Remove" + COL_END);
         addRow(target, localX, localY, OPCODE_ROTATE, identifier, COL + "Rotate" + COL_END);
+        addRow(target, localX, localY, OPCODE_DUPLICATE, identifier, COL + "Duplicate" + COL_END);
         addRow(target, localX, localY, OPCODE_MOVE, identifier, COL + "Move" + COL_END);
     }
 
@@ -63,7 +65,8 @@ final class SceneEditorMenu {
             return false;
         }
         int op = entry.opcode >= 2000 ? entry.opcode - 2000 : entry.opcode;
-        if (op != OPCODE_MOVE && op != OPCODE_REMOVE && op != OPCODE_ROTATE && op != OPCODE_NPC_REMOVE) {
+        if (op != OPCODE_MOVE && op != OPCODE_REMOVE && op != OPCODE_ROTATE
+                && op != OPCODE_DUPLICATE && op != OPCODE_NPC_REMOVE) {
             return false;
         }
         if (!SceneEditorHost.isEditorMode()) {
@@ -88,6 +91,13 @@ final class SceneEditorMenu {
                 SceneObject claimed = SceneEditorHost.claimAt(objectId, absX, absY, plane, rotation);
                 SceneEditorUi.beginMove(claimed.id);
                 chat("Move: click destinations repeatedly or use the arrow panel — Done to finish");
+            } else if (op == OPCODE_DUPLICATE) {
+                SceneObject duplicate = SceneEditorHost.addAt(
+                        objectId, SceneEditorHost.adjacentX(objectId, absX, rotation), absY, plane);
+                SceneEditorHost.resync();
+                SceneEditorHost.persistQuiet();
+                SceneEditorUi.beginMove(duplicate.id);
+                chat("Duplicated: " + label(duplicate) + " — Move: click a destination or use the arrow panel");
             } else if (op == OPCODE_REMOVE) {
                 SceneObject owned = SceneEditorHost.findOwned(objectId, absX, absY, plane);
                 if (owned != null) {
