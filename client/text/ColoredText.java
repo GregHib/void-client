@@ -303,8 +303,22 @@ final class ColoredText extends Component339 {
                         }
                         if (class318_sub4.aClass318_Sub1_6410 instanceof Interface10) {
                             Interface10 interface10 = ((Interface10) (class318_sub4.aClass318_Sub1_6410));
-                            ObjectDefinition class51 = (GradientPreset.aClass263_9195.getObjectDefinition(0, interface10.method42(-100)));
-                            if (class51.anIntArray945 != null) class51 = (class51.getTransformedDefinition((DisplayModeManagerContainer58.aClass170_10209), (byte) 47));
+                            int sceneObjectId = interface10.method42(-100);
+                            ObjectDefinition class51 = null;
+                            try {
+                                class51 = GradientPreset.aClass263_9195.getObjectDefinition(0, sceneObjectId);
+                                if (class51 != null && class51.anIntArray945 != null) {
+                                    class51 = class51.getTransformedDefinition(
+                                            DisplayModeManagerContainer58.aClass170_10209, (byte) 47);
+                                }
+                            } catch (Throwable ignored) {
+                                // Keep the scene object editable even if its definition cannot be resolved.
+                            }
+                            if (class318_sub4.aClass318_Sub1_6410.plane == (Component72.localPlayer.plane)) {
+                                SceneEditorMenu.inject(class51, sceneObjectId,
+                                        i_33_, i_32_, class318_sub4.aClass318_Sub1_6410.plane,
+                                        DefinitionSub21.method3107((byte) -116, interface10, i_32_, i_33_));
+                            }
                             if (class51 != null) {
                                 if (r.aBoolean9722 && ((Component72.localPlayer.plane) == (class318_sub4.aClass318_Sub1_6410.plane))) {
                                     Component355 class254 = (Component163.anInt3176 != -1 ? (MatrixSub3.aClass326_5764.method2600(Component163.anInt3176, 28364)) : null);
@@ -337,16 +351,12 @@ final class ColoredText extends Component339 {
                                     DisplayModeManagerContainer368.addMenuEntry(((Component72.localPlayer.plane) != class318_sub4.aClass318_Sub1_6410.plane), ("<col=00ffff>" + class51.aString884 + Loader.getDebug(class51.anInt941, x, y, class318_sub4.aClass318_Sub1_6410.plane)), i_32_, (byte) -120, false, i_33_, -1, true, 1001, interface10.hashCode(), (FriendsIgnoreList.aClass274_3505.getLocalized(ObjectDeserializer.languageId, 544)), class51.anInt941, CookieManager.anInt6299);
                                     anInt6094++;
                                     DefaultClickSwapper.injectObjectMenu(class51);
-                                    // Scene editor: Move / Duplicate / Remove / Rotate on ground scenery.
-                                    SceneEditorMenu.inject(class51, i_33_, i_32_,
-                                            class318_sub4.aClass318_Sub1_6410.plane,
-                                            DefinitionSub21.method3107((byte) -116, interface10, i_32_, i_33_));
-                                }
                             }
                         }
                     }
                 }
                 if (Component210.gameCanvasAttached) DebugPanicSub1.method2129((byte) 86);
+            }
             }
             Component127.method1626(1, false);
         }

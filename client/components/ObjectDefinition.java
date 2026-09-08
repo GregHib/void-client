@@ -106,6 +106,22 @@ final class ObjectDefinition
     int anInt961;
     int anInt962;
 
+    /**
+     * Returns the location shape used when the editor re-inserts this object.
+     * Definitions without an explicit model-shape table are regular scenery.
+     */
+    final int editorPlacementType() {
+        if (aByteArray885 != null) {
+            for (int i = 0; i < aByteArray885.length; i++) {
+                int type = aByteArray885[i] & 0xff;
+                if (type >= 0 && type <= 22) {
+                    return type;
+                }
+            }
+        }
+        return 10;
+    }
+
     final boolean method474(byte i) {
         anInt891++;
         if (this.anIntArray945 == null) {

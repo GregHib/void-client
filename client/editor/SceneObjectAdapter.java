@@ -41,6 +41,15 @@ final class SceneObjectAdapter {
                 && NodeSub8.toolkit != null;
     }
 
+    /** True when the live scene graph can accept local object placements. */
+    static boolean sceneReady() {
+        return Component335.aClass357ArrayArrayArray2029 != null
+                && Component103.aClass237_Sub1_4197 != null
+                && NodeSub8.toolkit != null
+                && AbstractShaderSub4.anInt7319 > 2
+                && ParametricDefinition.anInt9109 > 2;
+    }
+
     /**
      * Remove scenery at the object's tile, then place {@code objectId} if {@code >= 0}.
      *
@@ -60,7 +69,8 @@ final class SceneObjectAdapter {
         }
         int rot = object.rotation & 3;
         int id = object.objectId;
-        SceneManager.method1591(lx, JUNK, CATEGORY_SCENERY, -1, id, TYPE_SCENERY, ly, rot, object.plane);
+        int type = placementType(id);
+        SceneManager.method1591(lx, JUNK, removalCategory(type), -1, id, type, ly, rot, object.plane);
         try {
             applyFractionalOffset(object, lx, ly);
         } catch (RuntimeException transformFailure) {
@@ -92,10 +102,43 @@ final class SceneObjectAdapter {
         if (!inSceneBounds(lx, ly)) {
             return false;
         }
-        SceneManager.method1591(lx, JUNK, CATEGORY_SCENERY, -1, -1, TYPE_SCENERY, ly, 0, object.plane);
+        int type = placementType(object.objectId);
+        int category = removalCategory(type);
+        SceneManager.method1591(lx, JUNK, category, -1, -1, type, ly, 0, object.plane);
         // Clear a possible stale editor placement left by an earlier failed resync.
-        SceneManager.method1591(lx, JUNK, CATEGORY_SCENERY, -1, -1, TYPE_SCENERY, ly, 0, object.plane);
+        SceneManager.method1591(lx, JUNK, category, -1, -1, type, ly, 0, object.plane);
         return true;
+    }
+
+    /** Resolve a definition's location shape, falling back to normal scenery. */
+    private static int placementType(int objectId) {
+        try {
+            if (GradientPreset.aClass263_9195 == null) {
+                return TYPE_SCENERY;
+            }
+            ObjectDefinition definition = GradientPreset.aClass263_9195.getObjectDefinition(0, objectId);
+            if (definition != null && definition.anIntArray945 != null) {
+                definition = definition.getTransformedDefinition(
+                        DisplayModeManagerContainer58.aClass170_10209, (byte) 47);
+            }
+            return definition == null ? TYPE_SCENERY : definition.editorPlacementType();
+        } catch (Throwable ignored) {
+            return TYPE_SCENERY;
+        }
+    }
+
+    /** Map LocType shape to the scene slot used by method1694. */
+    private static int removalCategory(int type) {
+        if (type <= 3) {
+            return 0;
+        }
+        if (type <= 8) {
+            return 1;
+        }
+        if (type <= 21) {
+            return 2;
+        }
+        return 3;
     }
 
     /** Lookup LocType name for console feedback (may be null). */
@@ -105,7 +148,11 @@ final class SceneObjectAdapter {
                 return null;
             }
             ObjectDefinition def = GradientPreset.aClass263_9195.getObjectDefinition(0, objectId);
-            return def != null ? def.aString884 : null;
+            if (def == null || def.aString884 == null || def.aString884.length() == 0
+                    || "null".equalsIgnoreCase(def.aString884)) {
+                return null;
+            }
+            return def.aString884;
         } catch (Throwable t) {
             return null;
         }

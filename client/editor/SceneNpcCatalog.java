@@ -5,7 +5,6 @@ import java.util.Locale;
  * The editor uses this as the second catalog after City Assets.
  */
 final class SceneNpcCatalog {
-    static final int RESULT_LIMIT = 400;
 
     private static volatile Entry[] entries = new Entry[0];
     private static volatile int generation;
@@ -29,7 +28,12 @@ final class SceneNpcCatalog {
             }
             started = true;
             loading = true;
-            Thread worker = new Thread(SceneNpcCatalog::load, "void-npc-assets");
+            Thread worker = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    load();
+                }
+            }, "void-npc-assets");
             worker.setDaemon(true);
             worker.start();
         }
@@ -60,7 +64,7 @@ final class SceneNpcCatalog {
         }
 
         Entry[] snapshot = entries;
-        Entry[] matches = new Entry[Math.min(RESULT_LIMIT, snapshot.length)];
+        Entry[] matches = new Entry[snapshot.length];
         int count = 0;
         for (Entry entry : snapshot) {
             boolean matchesQuery = parsed.idSearch
@@ -69,9 +73,7 @@ final class SceneNpcCatalog {
             if (!matchesQuery) {
                 continue;
             }
-            if (count < RESULT_LIMIT) {
-                matches[count++] = entry;
-            }
+            matches[count++] = entry;
         }
         results = matches;
         resultCount = count;

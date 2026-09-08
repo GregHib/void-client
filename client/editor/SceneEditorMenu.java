@@ -26,19 +26,91 @@ final class SceneEditorMenu {
     /**
      * Add Move / Duplicate / Remove / Rotate under the hovered scenery name.
      */
-    static void inject(ObjectDefinition object, int localX, int localY, int plane, long packedId) {
-        if (!SceneEditorHost.isEditorMode() || object == null) {
+    static void inject(ObjectDefinition object, int objectId, int localX, int localY, int plane, long packedId) {
+        if (!SceneEditorHost.isEditorMode() || objectId < 0) {
             return;
         }
-        String name = object.aString884 != null ? object.aString884 : ("obj " + object.anInt941);
+        if (hasEditorEntry(objectId, localX, localY)) {
+            return;
+        }
+        String name = object == null ? null : object.aString884;
+        if (name == null || name.length() == 0 || "null".equalsIgnoreCase(name)) {
+            name = "Unnamed object";
+        }
         String target = "<col=00ffff>" + name + COL_END;
-        long identifier = pack(object.anInt941, decodeRotation(packedId), plane);
+        long identifier = pack(objectId, decodeRotation(packedId), plane);
+
+
         // Menu rows are rendered in reverse insertion order; add Remove first
         // so it appears last in the visible context menu.
         addRow(target, localX, localY, OPCODE_REMOVE, identifier, COL + "Remove" + COL_END);
         addRow(target, localX, localY, OPCODE_ROTATE, identifier, COL + "Rotate" + COL_END);
         addRow(target, localX, localY, OPCODE_DUPLICATE, identifier, COL + "Duplicate" + COL_END);
         addRow(target, localX, localY, OPCODE_MOVE, identifier, COL + "Move" + COL_END);
+    }
+
+    /** Add editor rows from the walk tile when renderable hit-testing misses a local object. */
+    static void injectFallbackAtWalkTile() {
+        if (!SceneEditorHost.isEditorMode()) {
+            return;
+        }
+        try {
+            MenuEntry walk = null;
+            for (Node node = DefinitionSub4.menuEntries.sentinel.previous;
+                 node != null && node != DefinitionSub4.menuEntries.sentinel;
+                 node = node.previous) {
+                if (!(node instanceof MenuEntry)) {
+                    continue;
+                }
+                MenuEntry entry = (MenuEntry) node;
+                int op = entry.opcode >= 2000 ? entry.opcode - 2000 : entry.opcode;
+                if (op == 19) {
+                    walk = entry;
+                    break;
+                }
+            }
+            if (walk == null || !SceneObjectAdapter.inSceneBounds(walk.param0, walk.param1)) {
+                return;
+            }
+            int plane = MicrobotWidgets.localPlane();
+            int absX = walk.param0 + NodeBaseSub2.regionTileX;
+            int absY = walk.param1 + Component330.regionTileY;
+            SceneObject object = SceneEditorHost.findOwned(-1, absX, absY, plane);
+            if (object == null || hasEditorEntry(object.objectId, walk.param0, walk.param1)) {
+                return;
+            }
+            ObjectDefinition definition = null;
+            try {
+                definition = GradientPreset.aClass263_9195.getObjectDefinition(0, object.objectId);
+                if (definition != null && definition.anIntArray945 != null) {
+                    definition = definition.getTransformedDefinition(
+                            DisplayModeManagerContainer58.aClass170_10209, (byte) 47);
+                }
+            } catch (Throwable ignored) {
+                // The fallback still has the authoritative object ID from the editor model.
+            }
+            inject(definition, object.objectId, walk.param0, walk.param1, plane,
+                    pack(object.objectId, object.rotation, plane));
+        } catch (Throwable ignored) {
+            // Menu construction must remain safe when the scene is changing regions.
+        }
+    }
+
+    private static boolean hasEditorEntry(int objectId, int localX, int localY) {
+        for (Node node = DefinitionSub4.menuEntries.sentinel.previous;
+             node != null && node != DefinitionSub4.menuEntries.sentinel;
+             node = node.previous) {
+            if (!(node instanceof MenuEntry)) {
+                continue;
+            }
+            MenuEntry entry = (MenuEntry) node;
+            int op = entry.opcode >= 2000 ? entry.opcode - 2000 : entry.opcode;
+            if (isEditorOpcode(op) && entry.param0 == localX && entry.param1 == localY
+                    && unpackObjectId(entry.identifier) == objectId) {
+                return true;
+            }
+        }
+        return false;
     }
 
     /** Add Remove under a server-backed NPC while the scene editor is active. */
@@ -101,6 +173,7 @@ final class SceneEditorMenu {
             } else if (op == OPCODE_REMOVE) {
                 SceneObject owned = SceneEditorHost.findOwned(objectId, absX, absY, plane);
                 if (owned != null) {
+                    SceneObjectAdapter.remove(owned);
                     SceneEditorHost.editor().remove(owned.id);
                     SceneEditorUi.clearSelection();
                     SceneEditorHost.resync();
@@ -109,13 +182,14 @@ final class SceneEditorMenu {
                 } else {
                     // Claim then delete so autosave keeps it gone across apply.
                     SceneObject claimed = SceneEditorHost.claimAt(objectId, absX, absY, plane, rotation);
+                    SceneObjectAdapter.remove(claimed);
                     SceneEditorHost.editor().remove(claimed.id);
                     SceneEditorUi.clearSelection();
                     SceneEditorHost.resync();
                     SceneEditorHost.persistQuiet();
                     chat("Removed: #" + objectId + " @ " + absX + "," + absY);
                 }
-                chat(SceneEditorHost.removeObjectAt(objectId, absX, absY, plane, rotation));
+                chat("Removed locally — click Save to publish.");
             } else {
                 SceneObject claimed = SceneEditorHost.claimAt(objectId, absX, absY, plane, rotation);
                 int next = (claimed.rotation + 1) & 3;
@@ -143,11 +217,11 @@ final class SceneEditorMenu {
             return tip;
         }
         try {
-            for (MenuEntry e = (MenuEntry) DefinitionSub4.menuEntries.sentinel.previous;
-                 e != null && e != DefinitionSub4.menuEntries.sentinel;
-                 e = (MenuEntry) e.previous) {
-                if (isObjectOpcode(e.opcode)) {
-                    return e;
+            for (Node node = DefinitionSub4.menuEntries.sentinel.previous;
+                 node != null && node != DefinitionSub4.menuEntries.sentinel;
+                 node = node.previous) {
+                if (node instanceof MenuEntry && isObjectOpcode(((MenuEntry) node).opcode)) {
+                    return (MenuEntry) node;
                 }
             }
         } catch (Throwable ignored) {
@@ -170,7 +244,8 @@ final class SceneEditorMenu {
     }
 
     static int decodeRotation(long packedId) {
-        return (int) ((packedId >>> 14) & 0x3f) & 3;
+        // Location UIDs store type at bits 14..19 and orientation at 20..21.
+        return (int) ((packedId >>> 20) & 3L);
     }
 
     /** objectId in low 32, rotation in 32..33, plane in 40..41. */
@@ -190,6 +265,11 @@ final class SceneEditorMenu {
 
     private static int unpackPlane(long id) {
         return (int) ((id >>> 40) & 3L);
+    }
+
+    private static boolean isEditorOpcode(int opcode) {
+        return opcode == OPCODE_MOVE || opcode == OPCODE_REMOVE || opcode == OPCODE_ROTATE
+                || opcode == OPCODE_DUPLICATE || opcode == OPCODE_NPC_REMOVE;
     }
 
     private static boolean isObjectOpcode(int opcode) {

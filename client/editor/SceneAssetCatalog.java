@@ -5,7 +5,6 @@ import java.util.Locale;
  * The UI only receives immutable snapshots, so cache decoding never blocks drawing.
  */
 final class SceneAssetCatalog {
-    static final int RESULT_LIMIT = 400;
 
     private static final Object LOCK = new Object();
     private static volatile Entry[] entries = new Entry[0];
@@ -30,7 +29,12 @@ final class SceneAssetCatalog {
             }
             started = true;
             loading = true;
-            Thread worker = new Thread(SceneAssetCatalog::load, "void-city-assets");
+            Thread worker = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    load();
+                }
+            }, "void-city-assets");
             worker.setDaemon(true);
             worker.start();
         }
@@ -61,7 +65,7 @@ final class SceneAssetCatalog {
         }
 
         Entry[] snapshot = entries;
-        Entry[] matches = new Entry[Math.min(RESULT_LIMIT, snapshot.length)];
+        Entry[] matches = new Entry[snapshot.length];
         int count = 0;
         for (Entry entry : snapshot) {
             boolean matchesQuery = parsed.idSearch
@@ -70,9 +74,7 @@ final class SceneAssetCatalog {
             if (!matchesQuery) {
                 continue;
             }
-            if (count < RESULT_LIMIT) {
-                matches[count++] = entry;
-            }
+            matches[count++] = entry;
         }
         results = matches;
         resultCount = count;

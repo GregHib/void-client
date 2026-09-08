@@ -101,7 +101,19 @@ final class SceneEditorUi {
         }
         return SceneAssetCatalog.search(searchText);
     }
+    private static boolean catalogLoading() {
+        if (npcCatalog) {
+            return SceneNpcCatalog.isLoading();
+        }
+        if (itemCatalog) {
+            return SceneItemCatalog.isLoading();
+        }
+        return SceneAssetCatalog.isLoading();
+    }
 
+    private static String catalogName() {
+        return npcCatalog ? "NPCs" : (itemCatalog ? "items" : "objects");
+    }
     private static SceneAssetCatalog.Entry filteredObjectEntryAt(int row) {
         return SceneAssetCatalog.resultAt(resultOffset + row);
     }
@@ -538,12 +550,16 @@ final class SceneEditorUi {
             }
         }
         try {
-            for (MenuEntry e = (MenuEntry) DefinitionSub4.menuEntries.sentinel.previous;
-                 e != null && e != DefinitionSub4.menuEntries.sentinel;
-                 e = (MenuEntry) e.previous) {
-                int op = e.opcode >= 2000 ? e.opcode - 2000 : e.opcode;
+            for (Node node = DefinitionSub4.menuEntries.sentinel.previous;
+                 node != null && node != DefinitionSub4.menuEntries.sentinel;
+                 node = node.previous) {
+                if (!(node instanceof MenuEntry)) {
+                    continue;
+                }
+                MenuEntry entry = (MenuEntry) node;
+                int op = entry.opcode >= 2000 ? entry.opcode - 2000 : entry.opcode;
                 if (op == 19) {
-                    return e;
+                    return entry;
                 }
             }
         } catch (Throwable ignored) {
@@ -651,6 +667,12 @@ final class SceneEditorUi {
     }
 
     private static void moveResultOffset(int delta) {
+        int count = filteredCount();
+        int maxOffset = Math.max(0, count - LIST_ROWS);
+        if (delta > 0 && resultOffset >= maxOffset && catalogLoading()) {
+            chat("Loading more " + catalogName() + "...");
+            return;
+        }
         resultOffset = Math.max(0, resultOffset + delta);
         normalizeSelection();
     }
@@ -1360,6 +1382,9 @@ final class SceneEditorUi {
         String page = count > 0
                 ? "Results " + (resultOffset + 1) + "-" + Math.min(resultOffset + LIST_ROWS, count) + "/" + count
                 : "Results 0/0";
+        if (catalogLoading()) {
+            page += " (loading...)";
+        }
         font.drawText(page, 0xFF999999, doneY() - 62, sx, SHADOW, -110);
         font.drawText("Selected: " + selectedLabel, 0xFFCCCCCC, doneY() - 46, sx, SHADOW, -110);
         drawSaveButton(toolkit, font, actionX(0), actionY(), actionWidth(), ACTION_H,
@@ -1397,8 +1422,10 @@ final class SceneEditorUi {
 
     private static void drawListControls(GraphicsToolkit toolkit, int count) {
         int maxOffset = Math.max(0, count - LIST_ROWS);
+        boolean loadingMore = count > 0 && catalogLoading();
         drawListArrowButton(toolkit, listControlsX(), listUpY(), "up", resultOffset > 0);
-        drawListArrowButton(toolkit, listControlsX(), listDownY(), "down", resultOffset < maxOffset);
+        drawListArrowButton(toolkit, listControlsX(), listDownY(), "down",
+                resultOffset < maxOffset || loadingMore);
     }
 
     private static void drawListArrowButton(GraphicsToolkit toolkit, int x, int y, String direction, boolean enabled) {

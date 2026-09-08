@@ -56,26 +56,32 @@ final class SceneEditorHost {
         if (!bootstrapped) {
             bootstrapped = true;
             tryRestoreAutosave();
-            if (!editor().scene().objects().isEmpty()) {
-                resync();
-            }
         }
         int rx = NodeBaseSub2.regionTileX;
         int ry = Component330.regionTileY;
         if (rx == lastRegionX && ry == lastRegionY) {
             return;
         }
-        boolean first = lastRegionX == Integer.MIN_VALUE;
-        lastRegionX = rx;
-        lastRegionY = ry;
-        if (first || editor().scene().objects().isEmpty()) {
+        if (editor().scene().objects().isEmpty()) {
+            lastRegionX = rx;
+            lastRegionY = ry;
+            return;
+        }
+        if (!SceneObjectAdapter.sceneReady()) {
+            // Keep the region marked as pending; the next tick retries after scene construction.
+            lastRegionX = Integer.MIN_VALUE;
+            lastRegionY = Integer.MIN_VALUE;
             return;
         }
         try {
             int live = resync();
             System.out.println("scene-editor region apply live=" + live);
+            lastRegionX = rx;
+            lastRegionY = ry;
         } catch (Throwable t) {
             System.out.println("scene-editor region apply: " + t.getMessage());
+            lastRegionX = Integer.MIN_VALUE;
+            lastRegionY = Integer.MIN_VALUE;
         }
     }
 
@@ -131,15 +137,6 @@ final class SceneEditorHost {
         resync();
         persistQuiet();
         return added;
-    }
-    /** Queue a persistent server-side removal so stock objects do not reappear. */
-    static String removeObjectAt(int objectId, int absX, int absY, int plane, int rotation) {
-        if (Component72.localPlayer == null) {
-            throw new IllegalStateException("not logged in");
-        }
-        sendServerCommand("scene_remove " + objectId + " " + absX + " " + absY + " " + plane
-                + " " + (rotation & 3) + " " + SceneObjectAdapter.TYPE_SCENERY);
-        return "queued server removal #" + objectId + " @ " + absX + "," + absY + "," + plane;
     }
 
     /** First owned object at tile matching LocType, or any owned object on that tile. */

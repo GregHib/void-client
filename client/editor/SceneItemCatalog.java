@@ -5,7 +5,6 @@ import java.util.Locale;
  * Selecting a result asks the server to drop one item at the player position.
  */
 final class SceneItemCatalog {
-    static final int RESULT_LIMIT = 400;
 
     private static volatile Entry[] entries = new Entry[0];
     private static volatile int generation;
@@ -29,7 +28,12 @@ final class SceneItemCatalog {
             }
             started = true;
             loading = true;
-            Thread worker = new Thread(SceneItemCatalog::load, "void-item-assets");
+            Thread worker = new Thread(new Runnable() {
+                @Override
+                public void run() {
+                    load();
+                }
+            }, "void-item-assets");
             worker.setDaemon(true);
             worker.start();
         }
@@ -56,7 +60,7 @@ final class SceneItemCatalog {
         }
 
         Entry[] snapshot = entries;
-        Entry[] matches = new Entry[Math.min(RESULT_LIMIT, snapshot.length)];
+        Entry[] matches = new Entry[snapshot.length];
         int count = 0;
         for (Entry entry : snapshot) {
             boolean matchesQuery = parsed.idSearch
@@ -65,9 +69,7 @@ final class SceneItemCatalog {
             if (!matchesQuery) {
                 continue;
             }
-            if (count < RESULT_LIMIT) {
-                matches[count++] = entry;
-            }
+            matches[count++] = entry;
         }
         results = matches;
         resultCount = count;

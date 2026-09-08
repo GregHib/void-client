@@ -25,10 +25,10 @@ and restore on the next login.
 
 | When | What happens |
 |---|---|
-| Place / duplicate / move / micro-adjust / rotate / remove | model updates + autosave |
+| Place / duplicate / move / micro-adjust / rotate / remove | model updates + local autosave; no server command |
 | Editor OFF | objects stay live locally; autosave |
 | `ed save <name>` (player) | local JSON only |
-| `ed save <name>` (**admin**) | local JSON + `scene_place` each object + `scene_flush` → server GameObjects, `data/area/scene/editor.obj-spawns.toml`, JS5 `lX_Y` |
+| `ed save <name>` (**admin**) | local JSON + `scene_remove` / `scene_place` + `scene_flush` → server GameObjects, `data/area/scene/editor.obj-spawns.toml`, JS5 `lX_Y` |
 | Walk to new region | auto re-apply from local model |
 | Next login | restore `autosave.json` and apply |
 
@@ -58,9 +58,9 @@ ed status
 
 ## Limits
 
-- Scenery type 10; fractional x/y editor movement is available through Micro Adjust
+- Objects use their cached location shape when placed; fractional x/y editor movement is available through Micro Adjust
 - Stock objects you **Remove** without owning come back on region reload
-- City Assets, NPCs, and Items are indexed asynchronously from their cached definitions; searches match names or exact IDs and return up to 400 matches.
+- City Assets, NPCs, and Items are indexed asynchronously from their cached definitions; searches match names or exact IDs, and results are revealed progressively as the index grows.
 
 ## Build
 

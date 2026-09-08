@@ -118,6 +118,8 @@ final class DisplayModeManagerContainer1
     static final void updateMenuTip(int i) {
         int i_12_ = 81 % ((i - -70) / 35);
         anInt3313++;
+        // Renderable hit-testing can miss locally reinserted objects; recover them from the walk tile.
+        SceneEditorMenu.injectFallbackAtWalkTile();
         if (!Component364.aBoolean8335) PauseHandler.aBoolean9535 = ((Component9.anInt4143 != -1 && DisplayModeManagerContainer306.menuEntryCount >= Component9.anInt4143) || (PacketReader.canvasHeight < 16 * DisplayModeManagerContainer306.menuEntryCount - -(!DisplayModeManagerContainer5.aBoolean1211 ? 22 : 26)));
         CursorDefinitionCache.aClass262_2187.clear(103);
         DefinitionSub38.aClass262_9478.clear(104);
