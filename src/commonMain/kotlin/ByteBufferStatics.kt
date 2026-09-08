@@ -81,7 +81,7 @@ object ByteBufferStatics {
         OpenGlModel.aString5600 = TextureGenerator.aString2496
         RenderableGroup.method1448(-56)
         Tooltip.anInt4458 = -1
-        CacheArchiveIndexLoader.method338(i + 45, StreamingResourceRequest.anInt10447)
+        EnumTypeList.method338(i + 45, StreamingResourceRequest.anInt10447)
         LocalPlayerState.aPlayer_1907 = Player()
         LocalPlayerState.aPlayer_1907!!.x = 512 * GlCubemapLightPass.anInt7319 / 2
         LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0] = GlCubemapLightPass.anInt7319 / 2
@@ -109,9 +109,9 @@ object ByteBufferStatics {
                 if (NullOggStream.aString9043 != null) GlElementArrayBuffer.method1157(TextureLoadExceptionStatics.anInt4596, (-81).toByte())
                 else method1922(TextureGenerator.aString2496, TextureLoadExceptionStatics.anInt4596, OpenGlModel.aString5600, true)
             }
-            if (i_71_ != 13 && ItemDefinition.aAbstractGameSocket_2773 != null) {
-                ItemDefinition.aAbstractGameSocket_2773!!.method1700(36.toByte())
-                ItemDefinition.aAbstractGameSocket_2773 = null
+            if (i_71_ != 13 && ItemType.aAbstractGameSocket_2773 != null) {
+                ItemType.aAbstractGameSocket_2773!!.method1700(36.toByte())
+                ItemType.aAbstractGameSocket_2773 = null
             }
             if (i_71_ == 3) method3198((GlBufferObject.anInt4737 != RenderNodeStatics.anInt9721), (-45).toByte())
             if (i_71_ == 7) method1006((RenderNodeStatics.anInt9721 != FloorOverlayDefinition.anInt970), 102.toByte())
@@ -129,28 +129,28 @@ object ByteBufferStatics {
             } else if (NullOggStream.aString9043 == null) method1922(TextureGenerator.aString2496, TextureLoadExceptionStatics.anInt4596, OpenGlModel.aString5600, true)
             else GlElementArrayBuffer.method1157(TextureLoadExceptionStatics.anInt4596, (-99).toByte())
             if (GroundDecorSceneEntity.method2402(WorldMapRenderer.anInt4674, (-78).toByte())) {
-                DirectionUtil.aJs5Archive_1541!!.anInt634 = 2
-                VideoAdChecker.aJs5Archive_3183!!.anInt634 = 2
-                AnimationFrameState.aJs5Archive_1538!!.anInt634 = 2
-                FloatGrid.aJs5Archive_4975!!.anInt634 = 2
-                ScriptOpcodeHolder.aJs5Archive_2306!!.anInt634 = 2
-                OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 2
-                BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 2
+                DirectionUtil.config!!.anInt634 = 2
+                VideoAdChecker.enums!!.anInt634 = 2
+                AnimationFrameState.objects!!.anInt634 = 2
+                FloatGrid.npcs!!.anInt634 = 2
+                ScriptOpcodeHolder.items!!.anInt634 = 2
+                OpenGlRenderNode.animations!!.anInt634 = 2
+                BufferedRandomAccessFile.gfx!!.anInt634 = 2
             }
             if (GroundDecorSceneEntity.method2402(i_71_, (-119).toByte())) {
                 ItemModelDefinition.anInt443 = 1
                 AnimationFrameTable.anInt489 = 0
                 StringValueNode.Companion.anInt7115 = 1
                 CompositeNpcModelBuilder.anInt2101 = 0
-                LocDefinitionCache.anInt3441 = 0
+                FloorOverlayTypeList.anInt3441 = 0
                 method3177(-111, true)
-                DirectionUtil.aJs5Archive_1541!!.anInt634 = 1
-                VideoAdChecker.aJs5Archive_3183!!.anInt634 = 1
-                AnimationFrameState.aJs5Archive_1538!!.anInt634 = 1
-                FloatGrid.aJs5Archive_4975!!.anInt634 = 1
-                ScriptOpcodeHolder.aJs5Archive_2306!!.anInt634 = 1
-                OpenGlRenderNode.aJs5Archive_10480!!.anInt634 = 1
-                BufferedRandomAccessFile.aJs5Archive_1322!!.anInt634 = 1
+                DirectionUtil.config!!.anInt634 = 1
+                VideoAdChecker.enums!!.anInt634 = 1
+                AnimationFrameState.objects!!.anInt634 = 1
+                FloatGrid.npcs!!.anInt634 = 1
+                ScriptOpcodeHolder.items!!.anInt634 = 1
+                OpenGlRenderNode.animations!!.anInt634 = 1
+                BufferedRandomAccessFile.gfx!!.anInt634 = 1
             }
             if (i_71_ == 11 || i_71_ == 3) method3088(9)
             val bool = (i == i_71_ || method3196(i_71_, i xor 0x58.inv()) || method2672(i_71_, -100))
@@ -159,7 +159,7 @@ object ByteBufferStatics {
                 if (bool) {
                     SlotBinding.anInt3428 = ParticleProcessor.anInt4270
                     if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350) != 0) {
-                        method2355(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, CachedRgbNoiseTexture.aJs5Archive_8667, ParticleProcessor.anInt4270, 0, 2)
+                        method2355(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7245!!.method1838(-32350), 50.toByte(), false, CachedRgbNoiseTexture.music, ParticleProcessor.anInt4270, 0, 2)
                         method3093(i xor 0x66)
                     } else method3007(2, 22684)
                     ClientMachineInfo.aMediaStreamClient_6601!!.method1892(-117, false)

@@ -28,7 +28,7 @@ class CachedRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
 
     companion object {
 
-        var aJs5Archive_8667: Js5Archive? = null
+        var music: Js5Archive? = null
 
         var anInt8668: Int = 0
 
@@ -149,7 +149,7 @@ class CachedRgbNoiseTexture : RgbNoiseTexture(12, 5, 16, 2, 2, 0.45f) {
         @JvmStatic
         fun method568(bool: Boolean) {
             SpotAnimDefCache.aJs5Archive_8670 = null
-            aJs5Archive_8667 = null
+            music = null
         }
     }
 }

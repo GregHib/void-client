@@ -330,7 +330,7 @@ class DisplaySettingsConfig : LinkedListNode {
     internal constructor(sceneProjector: SceneProjector?, i: Int) {
         try {
             aSceneProjector_7269 = sceneProjector
-            aLoadingScreenState_7221 = LoadingScreenState((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, ActorEntity.anInt9372, PrivilegedOperationWorker.aString3780!!.lowercase().indexOf("arm") != -1)
+            aLoadingScreenState_7221 = LoadingScreenState((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3777), QuickChatTypeList.anInt2964, ActorEntity.anInt9372, PrivilegedOperationWorker.aString3780!!.lowercase().indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = DisplayModeOptionState(i, this)
             method3423(true, 31286)
         } catch (runtimeexception: RuntimeException) {
@@ -341,7 +341,7 @@ class DisplaySettingsConfig : LinkedListNode {
     internal constructor(class348_sub49: ByteBuffer?, sceneProjector: SceneProjector?, i: Int) {
         try {
             aSceneProjector_7269 = sceneProjector
-            aLoadingScreenState_7221 = LoadingScreenState((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3777), TextureDefinitionCache.anInt2964, ActorEntity.anInt9372, PrivilegedOperationWorker.aString3780!!.indexOf("arm") != -1)
+            aLoadingScreenState_7221 = LoadingScreenState((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aBoolean3777), QuickChatTypeList.anInt2964, ActorEntity.anInt9372, PrivilegedOperationWorker.aString3780!!.indexOf("arm") != -1)
             this.aClass239_Sub25_7271 = DisplayModeOptionState(i, this)
             method3424(925, class348_sub49)
         } catch (runtimeexception: RuntimeException) {

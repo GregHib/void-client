@@ -145,7 +145,7 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
 
         var aConfigDefinitionLoader_9031: ConfigDefinitionLoader? = null
 
-        var aJs5Archive_9033: Js5Archive? = null
+        var jingles: Js5Archive? = null
 
         var aFontMetaRef_9034: FontMetaRef? = FontMetaRef(30, 4)
 
@@ -157,7 +157,7 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
         fun method2974(i: Int) {
             aFontMetaRef_9034 = null
             if (i != 1) aRenderConfigFactory_9011 = null
-            aJs5Archive_9033 = null
+            jingles = null
             aRenderConfigFactory_9011 = null
             aIsaacCipher_9029 = null
             aConfigDefinitionLoader_9031 = null

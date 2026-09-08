@@ -51,7 +51,7 @@ class CharacterRenderState : LinkedListNode() {
 
     var anInt6694: Int = 0
 
-    var aNpcConfig_6695: NpcConfig? = null
+    var aObjectType_6695: ObjectType? = null
 
     var anInt6696: Int = 0
 
@@ -66,7 +66,7 @@ class CharacterRenderState : LinkedListNode() {
         val i_11_ = this.anInt6685
         if (i.toInt() == 21) {
             val bool = this.aBoolean6674
-            if (this.aNpcConfig_6695 == null) {
+            if (this.aObjectType_6695 == null) {
                 if (this.aNpc_6691 == null) {
                     if ((this.aPlayer_6679) != null) {
                         this.anInt6685 = (CacheIndexManager.method2357(-1, (this.aPlayer_6679!!)))
@@ -98,7 +98,7 @@ class CharacterRenderState : LinkedListNode() {
                     }
                 }
             } else {
-                val class51 = (this.aNpcConfig_6695!!.method480(ProjectedGroundDecor.aVarpStore_10209!!, 47.toByte()))
+                val class51 = (this.aObjectType_6695!!.method480(ProjectedGroundDecor.aVarpStore_10209!!, 47.toByte()))
                 if (class51 == null) {
                     this.anInt6681 = 256
                     this.aBoolean6674 = false
@@ -163,7 +163,7 @@ class CharacterRenderState : LinkedListNode() {
                         if ((`is` != null && class318_sub1.plane >= i && (`is`[class318_sub1.plane.toInt()]!![i_5_]!![i_6_]) == i_0_) || !class318_sub1.method2378(0) || class318_sub1.method2382((-79).toByte())) {
                             if (!bool && i_5_ >= ActorEntity.anInt6111 - 16 && i_5_ <= ActorEntity.anInt6111 + 16 && i_6_ >= ActorEntity.anInt8502 - 16 && i_6_ <= ActorEntity.anInt8502 + 16) {
                                 if (VoronoiNoiseTextureNode.aBoolean9121) {
-                                    MapElementDefinitionCache.aCacheIndexManagerArray3982!![NpcSummaryDefinition.anInt1949++]!!.method2361(-15481, class318_sub1)
+                                    GfxTypeList.aCacheIndexManagerArray3982!![NpcSummaryDefinition.anInt1949++]!!.method2361(-15481, class318_sub1)
                                     NpcSummaryDefinition.anInt1949 %= ActiveMapRegion.anInt5652
                                 } else class318_sub1.method2387(NativeLibraryState.aRenderer171, -128)
                             }

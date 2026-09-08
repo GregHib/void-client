@@ -88,14 +88,14 @@ class ChatMessageStream : OutputStream() {
                         }
                     } else if (RemoveRoofsOptionState.method1813(8806, (class348_sub42_sub12.anInt9608))) {
                         val `object`: Any? = null
-                        var npcConfig: NpcConfig?
-                        if ((class348_sub42_sub12.anInt9608) == 1001) npcConfig = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
-                        else npcConfig = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
-                        if (npcConfig.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
-                        if (npcConfig != null) `is` = npcConfig.anIntArray917
+                        var objectType: ObjectType?
+                        if ((class348_sub42_sub12.anInt9608) == 1001) objectType = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
+                        else objectType = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
+                        if (objectType.anIntArray945 != null) objectType = objectType.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
+                        if (objectType != null) `is` = objectType.anIntArray917
                     }
-                } else `is` = (ClientException.aModelHeaderCache_112!!.method1940(-76, class348_sub42_sub12.anInt9599).anIntArray2772)
-            } else `is` = (ClientException.aModelHeaderCache_112!!.method1940(-115, class348_sub42_sub12.aLong9605.toInt()).anIntArray2772)
+                } else `is` = (ClientException.aItemTypeList_112!!.method1940(-76, class348_sub42_sub12.anInt9599).anIntArray2772)
+            } else `is` = (ClientException.aItemTypeList_112!!.method1940(-115, class348_sub42_sub12.aLong9605.toInt()).anIntArray2772)
             if (`is` != null) string += AudioResampler.method1273(`is`, true)
             var i = WorldMapLabel.aFontDefinition_4962!!.method1186(string, TileRenderState.aAbstractModelRendererArray4234, bool)
             if (class348_sub42_sub12.aBoolean9597) i += TextureOptionState.aAbstractModelRenderer_6097!!.method971() + 4

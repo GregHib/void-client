@@ -23,7 +23,7 @@ object AbstractCameraTransformStatics {
         val i_4_ = ((GlslMaterialPass.anInt6246 shr 12) - -(ArbVertexProgram.regionTileX shr 3))
         val i_5_ = ((RegionMapDecoder.regionTileY shr 3) + (CompositeRgbNoiseTexture.anInt8685 shr 12))
         LocalPlayerState.aPlayer_1907!!.plane = 0.toByte()
-        CompiledScriptCache.anInt4372 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
+        QuickChatMenuTypeList.anInt4372 = LocalPlayerState.aPlayer_1907!!.plane.toInt()
         LocalPlayerState.aPlayer_1907!!.method2449(8, 8, 118.toByte())
         if (i.toInt() != -49) anInt1597 = 115
         var i_6_ = 18
@@ -46,11 +46,11 @@ object AbstractCameraTransformStatics {
             while (((i_5_ + (RangeThresholdTextureNode.anInt9109 shr 4)) / 8 >= i_8_)) {
                 val i_9_ = i_8_ + (i_7_ shl 8)
                 NullOggStream.anIntArray9042!![i_6_] = i_9_
-                NativeSprite.anIntArray5192!![i_6_] = aJs5Archive_7382!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
-                GameAppletFrame.anIntArray38!![i_6_] = aJs5Archive_7382!!.method417("l" + i_7_ + "_" + i_8_, 0)
-                AbstractCameraTransformStatics.anIntArray4031!![i_6_] = aJs5Archive_7382!!.method417("n" + i_7_ + "_" + i_8_, 0)
-                LocalizedTextTriple.anIntArray3759!![i_6_] = aJs5Archive_7382!!.method417("um" + i_7_ + "_" + i_8_, 0)
-                RenderNodeStatics.anIntArray9724!![i_6_] = (aJs5Archive_7382!!.method417("ul" + i_7_ + "_" + i_8_, ModelDefinition.method2955(i.toInt(), -49)))
+                NativeSprite.anIntArray5192!![i_6_] = maps!!.method417("m" + i_7_ + "_" + i_8_, i + 49)
+                GameAppletFrame.anIntArray38!![i_6_] = maps!!.method417("l" + i_7_ + "_" + i_8_, 0)
+                AbstractCameraTransformStatics.anIntArray4031!![i_6_] = maps!!.method417("n" + i_7_ + "_" + i_8_, 0)
+                LocalizedTextTriple.anIntArray3759!![i_6_] = maps!!.method417("um" + i_7_ + "_" + i_8_, 0)
+                RenderNodeStatics.anIntArray9724!![i_6_] = (maps!!.method417("ul" + i_7_ + "_" + i_8_, ModelDefinition.method2955(i.toInt(), -49)))
                 if (AbstractCameraTransformStatics.anIntArray4031!![i_6_] == -1) {
                     NativeSprite.anIntArray5192!![i_6_] = -1
                     GameAppletFrame.anIntArray38!![i_6_] = -1
@@ -116,7 +116,7 @@ object AbstractCameraTransformStatics {
             if (i <= 42) method906(123)
             if (var_ha_Sub2!!.aBoolean7793 || (ModelDefinition.method1436(82, i_25_) && ModelDefinition.method1436(81, i_26_))) return GlTexture2DRegion(var_ha_Sub2, 3553, i_24_, i_25_, i_26_)
             if (var_ha_Sub2.aBoolean7837) return GlTexture2DRegion(var_ha_Sub2, 34037, i_24_, i_25_, i_26_)
-            return GlTexture2DRegion(var_ha_Sub2, i_24_, i_25_, i_26_, CacheArchiveIndexLoader.method340(i_25_, 108.toByte()), CacheArchiveIndexLoader.method340(i_26_, 108.toByte()))
+            return GlTexture2DRegion(var_ha_Sub2, i_24_, i_25_, i_26_, EnumTypeList.method340(i_25_, 108.toByte()), EnumTypeList.method340(i_26_, 108.toByte()))
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("bca.TA(" + i + ',' + (if (var_ha_Sub2 != null) "{...}" else "null") + ',' + i_24_ + ',' + i_25_ + ',' + i_26_ + ')'))
         }
@@ -146,10 +146,10 @@ object AbstractCameraTransformStatics {
             }
         }
     }
-    var aJs5Archive_7382: Js5Archive? = null
+    var maps: Js5Archive? = null
 
     @JvmStatic
     fun method3554(i: Int) {
-        aJs5Archive_7382 = null
+        maps = null
     }
 }

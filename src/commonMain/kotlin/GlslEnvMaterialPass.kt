@@ -146,7 +146,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
             } else string = "www-wtrc"
             var string_2_ = ""
             if (BloomGraphicsOptionState.aString5966 != null) string_2_ = "/p=" + BloomGraphicsOptionState.aString5966
-            return ("http://" + string + "." + (Client.aSceneProjector_10434?.aString2985) + ".com/l=" + ChatCommandProcessor.anInt6967 + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
+            return ("http://" + string + "." + (Client.mode?.aString2985) + ".com/l=" + ChatCommandProcessor.language + "/a=" + SocketStreamWorker.anInt2670 + string_2_ + "/")
         }
 
         var aSoundChannelMixer_8764: SoundChannelMixer? = null
@@ -159,10 +159,10 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
                         MaterialPass.Companion.aClass348_Sub2_3683 = MidiFileBuilder.method2734(ModelDefinition.aJs5Archive_1848!!, (NpcActorEntity.anInt10074), CacheIndexManager.anInt3971)
                         if (MaterialPass.Companion.aClass348_Sub2_3683 == null) return false
                     }
-                    if (TextureDefinitionLoader.aSpriteArchiveLoader_1977 == null) TextureDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(MinimapTileEntry.aJs5Archive_611, MapElementLookup.aJs5Archive_4147)
+                    if (MapSceneDefinitionLoader.aSpriteArchiveLoader_1977 == null) MapSceneDefinitionLoader.aSpriteArchiveLoader_1977 = SpriteArchiveLoader(MinimapTileEntry.aJs5Archive_611, MapElementLookup.aJs5Archive_4147)
                     var class348_sub16_sub3 = NodeDequeHolder.aClass348_Sub16_Sub3_1564!!
                     if (GlBufferObject.aClass348_Sub16_Sub3_4743 != null) class348_sub16_sub3 = GlBufferObject.aClass348_Sub16_Sub3_4743!!
-                    if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, TextureDefinitionLoader.aSpriteArchiveLoader_1977, GlEnvMappedWaterPass.aJs5Archive_7371, -35)) {
+                    if (class348_sub16_sub3.method2866((MaterialPass.Companion.aClass348_Sub2_3683), 22050, MapSceneDefinitionLoader.aSpriteArchiveLoader_1977, GlEnvMappedWaterPass.aJs5Archive_7371, -35)) {
                         NodeDequeHolder.aClass348_Sub16_Sub3_1564 = class348_sub16_sub3
                         NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2864(52.toByte())
                         if (DirectionalLightTextureNode.anInt9444 <= 0) {
@@ -190,7 +190,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
                         ModelDefinition.aJs5Archive_1848 = null
                         MaterialPass.Companion.aClass348_Sub2_3683 = null
                         BloomGraphicsOptionState.aLong5971 = 0L
-                        TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
+                        MapSceneDefinitionLoader.aSpriteArchiveLoader_1977 = null
                         GlBufferObject.aClass348_Sub16_Sub3_4743 = null
                         return true
                     }
@@ -200,7 +200,7 @@ class GlslEnvMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wate
                 exception.printStackTrace()
                 NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                 GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-                TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
+                MapSceneDefinitionLoader.aSpriteArchiveLoader_1977 = null
                 MaterialPass.Companion.aClass348_Sub2_3683 = null
                 ModelDefinition.aJs5Archive_1848 = null
                 SpriteDefinition.anInt7068 = 0

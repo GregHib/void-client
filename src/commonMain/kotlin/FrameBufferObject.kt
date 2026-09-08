@@ -130,7 +130,7 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
         return i_30_ == 36053
     }
 
-    fun method1508(i: Int, class348_sub42_sub2: RenderbufferObject, i_32_: Int) {
+    fun method1508(i: Int, class348_sub42_sub2: RenderBufferObject, i_32_: Int) {
         anInt4881++
         if (anInt4873 == -1) throw RuntimeException()
         val i_33_ = 1 shl i
@@ -213,14 +213,14 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
                     class10.anInt188--
                     if (class10.anInt188 >= (if (!class10.method220((-66).toByte())) -10 else -1500)) {
                         if (class10.aByte180.toInt() == 1 && class10.aAudioClipDefinition_183 == null) {
-                            class10.aAudioClipDefinition_183 = AudioClipDefinition.method2372(ClientLoadStateMachine.aJs5Archive_1878!!, class10.anInt185, 0)
+                            class10.aAudioClipDefinition_183 = AudioClipDefinition.method2372(ClientLoadStateMachine.soundEffects!!, class10.anInt185, 0)
                             if (class10.aAudioClipDefinition_183 == null) {
                                 i_4_++
                                 continue
                             }
                             class10.anInt188 += class10.aAudioClipDefinition_183!!.method2370()
                         } else if (class10.method220((-39).toByte()) && ((class10.aClass348_Sub10_192 == null) || (class10.aClass348_Sub19_Sub1_189) == null)) {
-                            if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = VorbisAudioDecoder.method2793((GroundDecorOptionState.aJs5Archive_5878!!), (class10.anInt185))
+                            if (class10.aClass348_Sub10_192 == null) class10.aClass348_Sub10_192 = VorbisAudioDecoder.method2793((GroundDecorOptionState.vorbis!!), (class10.anInt185))
                             if (class10.aClass348_Sub10_192 == null) {
                                 i_4_++
                                 continue
@@ -296,8 +296,8 @@ class FrameBufferObject internal constructor(var_ha_Sub2: OpenGlRenderer) : Stag
             anInt4890++
             if (RgbColorPalette.aBoolean1236 && !method1296(true)) {
                 if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350) != 0 && SlotBinding.anInt3428 != -1) {
-                    if (HeadIconRenderer.aClass348_Sub16_Sub3_2718 != null) method3086(2, HeadIconRenderer.aClass348_Sub16_Sub3_2718, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), CachedRgbNoiseTexture.aJs5Archive_8667, false, 0, SlotBinding.anInt3428)
-                    else method2732(0, SlotBinding.anInt3428, false, 124, CachedRgbNoiseTexture.aJs5Archive_8667, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
+                    if (HeadIconRenderer.aClass348_Sub16_Sub3_2718 != null) method3086(2, HeadIconRenderer.aClass348_Sub16_Sub3_2718, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350), CachedRgbNoiseTexture.music, false, 0, SlotBinding.anInt3428)
+                    else method2732(0, SlotBinding.anInt3428, false, 124, CachedRgbNoiseTexture.music, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260!!.method1838(-32350))
                 }
                 RgbColorPalette.aBoolean1236 = false
                 HeadIconRenderer.aClass348_Sub16_Sub3_2718 = null

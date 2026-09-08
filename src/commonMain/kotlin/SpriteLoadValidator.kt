@@ -39,13 +39,13 @@ class SpriteLoadValidator internal constructor(js5Archive: Js5Archive?, string: 
         var anInt4794: Int = 0
         var anInt4795: Int = 0
 
-        var aJs5Archive_4796: Js5Archive? = null
+        var shaders: Js5Archive? = null
 
         @JvmStatic
         fun method1159(i: Byte) {
             aShortArrayArray4791 = null
             aWorldMapImageBuilder_4787 = null
-            if (i >= 36) aJs5Archive_4796 = null
+            if (i >= 36) shaders = null
         }
     }
 }

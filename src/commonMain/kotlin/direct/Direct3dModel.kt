@@ -1143,7 +1143,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 class64_sub2_154_.aAsyncTaskHandle_5485!!.anInterface5_Impl2_2572 = aAsyncTaskHandle_5485!!.anInterface5_Impl2_2572
             } else if (method3563(i, 56.toByte(), anInt5472)) class64_sub2_154_.aAsyncTaskHandle_5485 = aAsyncTaskHandle_5485
             else class64_sub2_154_.aAsyncTaskHandle_5485 = null
-            if (BufferedMessageQueue.method2077(-122, anInt5472, i)) {
+            if (NpcTypeList.method2077(-122, anInt5472, i)) {
                 if (class64_sub2_153_!!.aShortArray5423 != null && class64_sub2_153_.aShortArray5423!!.size >= anInt5478) class64_sub2_154_.aShortArray5423 = class64_sub2_153_.aShortArray5423
                 else {
                     val i_172_ = anInt5478

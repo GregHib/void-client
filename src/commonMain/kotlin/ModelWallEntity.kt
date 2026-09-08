@@ -11,7 +11,7 @@ import ChatMessageStream.Companion.method136
 /* Class318_Sub1_Sub5_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig?, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int) : WallEntity(i_8_, i_9_, i_10_, i, i_7_, i_11_, i_12_), RenderTarget {
+class ModelWallEntity internal constructor(var_renderer: Renderer?, objectType: ObjectType?, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int, i_13_: Int, i_14_: Int) : WallEntity(i_8_, i_9_, i_10_, i, i_7_, i_11_, i_12_), RenderTarget {
     private val aByte10118: Byte
     private var aAbstractModel_10124: AbstractModel? = null
     private var aCircleHitbox_10127: CircleHitbox? = null
@@ -138,7 +138,7 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: N
     private fun method2491(i: Byte, bool: Boolean, i_5_: Int, var_renderer: Renderer?): ModelOrSpriteHolder? {
         if (i.toInt() != -51) aNodeDeque_10125 = null
         anInt10142++
-        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, 0xffff and aShort10129.toInt())
+        val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, 0xffff and aShort10129.toInt())
         val var_terrainTile: TerrainTile?
         val var_terrainTile_6_: TerrainTile?
         if (aBoolean10138) {
@@ -162,20 +162,20 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, npcConfig: N
     init {
         do {
             try {
-                aBoolean10130 = npcConfig!!.anInt874 != 0 && !bool
+                aBoolean10130 = objectType!!.anInt874 != 0 && !bool
                 aByte10145 = i_13_.toByte()
-                aShort10129 = npcConfig.anInt941.toShort()
+                aShort10129 = objectType.anInt941.toShort()
                 this.y = i_10_
                 aBoolean10138 = bool
                 this.x = i_8_
                 aByte10118 = i_14_.toByte()
-                aBoolean10137 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10138 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean10137 = (var_renderer!!.method3682() && objectType.aBoolean894 && !aBoolean10138 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 val class2 = method2491((-51).toByte(), aBoolean10137, 2048, var_renderer)
                 if (class2 == null) break
                 aAbstractModel_10124 = class2.aAbstractModel_119
                 aRenderNode10128 = class2.aRenderNode118
             } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("co.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("co.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (objectType != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + i_14_ + ')'))
             }
             break
         } while (false)

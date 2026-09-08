@@ -3595,7 +3595,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             if (i_324_ != -1) {
                                 var abstractModelRendererS_326_ = ((TextureMipDescriptor.aLruByteCache_4346!!.method583(i_324_.toLong(), i_316_ xor 0x79.inv())) as? Array<AbstractModelRenderer?>?)
                                 if (abstractModelRendererS_326_ == null) {
-                                    val spriteImages = SpriteImage.method1519(CameraRotationStub.aJs5Archive_322!!, i_324_, 0)
+                                    val spriteImages = SpriteImage.method1519(CameraRotationStub.sprites!!, i_324_, 0)
                                     if (spriteImages != null) {
                                         abstractModelRendererS_326_ = arrayOfNulls<AbstractModelRenderer>(spriteImages.size)
                                         var i_327_ = 0
@@ -3635,7 +3635,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 if (i_333_ != -1) {
                                     var abstractModelRenderers = (MaterialTypeMarker.aLruByteCache_6517!!.method583(i_333_.toLong(), -45) as? Array<AbstractModelRenderer?>)
                                     if (abstractModelRenderers == null) {
-                                        val spriteImages = SpriteImage.method1519((CameraRotationStub.aJs5Archive_322!!), i_333_, 0)
+                                        val spriteImages = SpriteImage.method1519((CameraRotationStub.sprites!!), i_333_, 0)
                                         if (spriteImages != null) {
                                             abstractModelRenderers = arrayOfNulls<AbstractModelRenderer>(spriteImages.size)
                                             var i_334_ = 0
@@ -4010,7 +4010,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor?
                 if (i_434_ >= 2048) class318_sub1_sub3_sub3 = ((NpcEntityUpdater.aHashtable_3654!!.method3480((-2048 + i_434_).toLong(), -6008) as? NpcReference)?.aNpc_6859)
                 else class318_sub1_sub3_sub3 = LoadingBarRenderer.aPlayerArray5058!![i_434_]
-                val i_435_ = LocDefinitionCache.anIntArray3432!![i_433_]
+                val i_435_ = FloorOverlayTypeList.anIntArray3432!![i_433_]
                 val class318_sub1_sub3_sub3_436_: ProjectedGroundDecor?
                 if (i_435_ >= 2048) class318_sub1_sub3_sub3_436_ = ((NpcEntityUpdater.aHashtable_3654!!.method3480((-2048 + i_435_).toLong(), -6008) as? NpcReference)?.aNpc_6859)
                 else class318_sub1_sub3_sub3_436_ = LoadingBarRenderer.aPlayerArray5058!![i_435_]
@@ -4136,7 +4136,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                     val `object`: Any? = null
                     var abstractModelRenderer = (TerrainTileShape.aLruByteCache_8807!!.method583(i_9_.toLong(), 118) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {
-                        val spriteImages = SpriteImage.method1519(CameraRotationStub.aJs5Archive_322!!, i_9_, 0)
+                        val spriteImages = SpriteImage.method1519(CameraRotationStub.sprites!!, i_9_, 0)
                         if (spriteImages == null) return
                         abstractModelRenderer = FacingDirectionNode.aRenderer6654!!.method3691(spriteImages[0], true)
                         TerrainTileShape.aLruByteCache_8807!!.method582(abstractModelRenderer, i_9_.toLong(), (-115).toByte())

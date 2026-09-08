@@ -118,7 +118,7 @@ class FogOptionState : GraphicsOptionState {
                             i_9_++
                         }
                         if (bool && player.anInt10286 != -1) {
-                            val class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835(player.anInt10286, 7))
+                            val class17 = (ParticleEmitterNode.aAnimationTypeList_191!!.method835(player.anInt10286, 7))
                             val i_10_ = class17.anInt248
                             if (i_10_ == 1) {
                                 player.anInt10232 = 0
@@ -136,7 +136,7 @@ class FogOptionState : GraphicsOptionState {
                     var i_11_ = 0
                     while (`is`!!.size > i_11_) {
                         if (`is`[i_11_] != -1) bool = false
-                        if (player.anIntArray10236 == null || (player.anIntArray10236!![i_11_]) == -1 || (ParticleEmitterNode.aWidgetCache_191!!.method835((player.anIntArray10236!![i_11_]), 7).anInt239 <= (ParticleEmitterNode.aWidgetCache_191!!.method835(`is`[i_11_], i xor 0x5d8d).anInt239))) {
+                        if (player.anIntArray10236 == null || (player.anIntArray10236!![i_11_]) == -1 || (ParticleEmitterNode.aAnimationTypeList_191!!.method835((player.anIntArray10236!![i_11_]), 7).anInt239 <= (ParticleEmitterNode.aAnimationTypeList_191!!.method835(`is`[i_11_], i xor 0x5d8d).anInt239))) {
                             player.anInt10218 = i_8_
                             player.anIntArray10236 = `is`
                             break

@@ -221,7 +221,7 @@ abstract class NoiseTextureGenerator(i: Int, i_73_: Int, i_74_: Int, i_75_: Int,
                     }
                     return -1
                 }
-                ItemDefinitionLoader.method1286(file, 64, string)
+                CursorTypeList.method1286(file, 64, string)
                 return 100
             }
             return -1

@@ -99,7 +99,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                 ScrollingWidgetComponentNode.anInt8387 = 0
             } else {
                 if (i != ((class318_sub1_sub3_sub3.anInt10286).inv()) && (class318_sub1_sub3_sub3.anInt10218) == 0) {
-                    val class17 = (ParticleEmitterNode.aWidgetCache_191!!.method835((class318_sub1_sub3_sub3.anInt10286), i + 7))
+                    val class17 = (ParticleEmitterNode.aAnimationTypeList_191!!.method835((class318_sub1_sub3_sub3.anInt10286), i + 7))
                     if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
                         SceneObjectAnimator.anInt3062 = -1
                         ScrollingWidgetComponentNode.anInt8387 = 0
@@ -114,9 +114,9 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                     }
                 }
                 if (class318_sub1_sub3_sub3.anInt10269 != -1 && (class318_sub1_sub3_sub3.anInt10225) <= GlGroundShaderPass.anInt7396) {
-                    val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(118.toByte(), (class318_sub1_sub3_sub3.anInt10269)))
+                    val class368 = (ConstantColourTextureNode.aGfxTypeList_9245!!.method2543(118.toByte(), (class318_sub1_sub3_sub3.anInt10269)))
                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
-                        val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(class368.anInt4503, 7)
+                        val class17 = ParticleEmitterNode.aAnimationTypeList_191!!.method835(class368.anInt4503, 7)
                         if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
                             ScrollingWidgetComponentNode.anInt8387 = 0
                             class318_sub1_sub3_sub3.anInt10326++
@@ -132,9 +132,9 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
                     }
                 }
                 if (class318_sub1_sub3_sub3.anInt10269 != -1 && ((class318_sub1_sub3_sub3.anInt10225) <= GlGroundShaderPass.anInt7396)) {
-                    val class368 = (ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2543(98.toByte(), (class318_sub1_sub3_sub3.anInt10269)))
+                    val class368 = (ConstantColourTextureNode.aGfxTypeList_9245!!.method2543(98.toByte(), (class318_sub1_sub3_sub3.anInt10269)))
                     if (class368.aBoolean4487 && class368.anInt4503 != -1) {
-                        val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835((class368.anInt4503), i xor 0x7)
+                        val class17 = ParticleEmitterNode.aAnimationTypeList_191!!.method835((class368.anInt4503), i xor 0x7)
                         if ((class318_sub1_sub3_sub3.anInt10322) > 0 && class17.anInt262 == 0) {
                             ScrollingWidgetComponentNode.anInt8387 = 0
                             class318_sub1_sub3_sub3.anInt10326++

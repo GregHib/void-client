@@ -5,7 +5,7 @@ import HashTileShape.Companion.method2729
 /* Class319 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_3_: Js5Archive?) {
+class GfxTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_3_: Js5Archive?) {
     private val aJs5Archive_3979: Js5Archive?
     var aJs5Archive_3981: Js5Archive? = null
     private val aLruByteCache_3989 = LruByteCache(64)
@@ -43,7 +43,7 @@ class MapElementDefinitionCache internal constructor(sceneProjector: SceneProjec
             aJs5Archive_3979.method410(-1860, method2419(127.toByte(), i_1_), method2729(i_1_, 16))
         }
         locConfigModelBuilder = LocConfigModelBuilder()
-        locConfigModelBuilder.aMapElementDefinitionCache_4513 = this
+        locConfigModelBuilder.aGfxTypeList_4513 = this
         locConfigModelBuilder.anInt4501 = i_1_
         if (`is` != null) locConfigModelBuilder.method3559(28105, ByteBuffer(`is`))
         withLock(aLruByteCache_3989) {

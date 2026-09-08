@@ -6,7 +6,7 @@ object DirectionUtil {
 
     var anInt1539: Int = 0
 
-    var aJs5Archive_1541: Js5Archive? = null
+    var config: Js5Archive? = null
 
     var aScreenAnchorAlignment_1542: ScreenAnchorAlignment? = null
 
@@ -22,7 +22,7 @@ object DirectionUtil {
 
     @JvmStatic
     fun method869(i: Int) {
-        aJs5Archive_1541 = null
+        config = null
         InboundPacketHeader.aInboundPacketHeader_1540 = null
         aClass348_Sub42_Sub17Array1543 = null
         aScreenAnchorAlignment_1542 = null

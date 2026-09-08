@@ -236,8 +236,8 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
                     anInt9391++
                     if (string != null) {
                         if (anInt9383 >= 200 && !FrameBufferObject.aBoolean4888 || anInt9383 >= 200) {
-                            method544((LocalizedText.aLocalizedText_3493!!.method2063(ChatCommandProcessor.anInt6967, 544)), false, 4)
-                            val string_0_ = LocalizedText.aLocalizedText_3494!!.method2063(ChatCommandProcessor.anInt6967, 544)
+                            method544((LocalizedText.aLocalizedText_3493!!.method2063(ChatCommandProcessor.language, 544)), false, 4)
+                            val string_0_ = LocalizedText.aLocalizedText_3494!!.method2063(ChatCommandProcessor.language, 544)
                             if (string_0_ != null) method544(string_0_, false, 4)
                         } else {
                             val string_1_ = method2127(2, string)
@@ -246,33 +246,33 @@ class HslAdjustTextureNode : AbstractProceduralTextureNode(1, false) {
                                 while ((anInt9383 > i_2_)) {
                                     val string_3_ = (method2127(2, WaterTextureSet.aStringArray1441!![i_2_]))
                                     if (string_3_ != null && string_3_ == string_1_) {
-                                        method544((string + (LocalizedText.aLocalizedText_3521!!.method2063((ChatCommandProcessor.anInt6967), 544))), false, 4)
+                                        method544((string + (LocalizedText.aLocalizedText_3521!!.method2063((ChatCommandProcessor.language), 544))), false, 4)
                                         return
                                     }
                                     if (FixedFunctionMaterialPass.aStringArray6205!![i_2_] != null) {
                                         val string_4_ = (method2127(2, (FixedFunctionMaterialPass.aStringArray6205!![i_2_])))
                                         if (string_4_ != null && string_4_ == string_1_) {
-                                            method544((string + (LocalizedText.aLocalizedText_3521!!.method2063(ChatCommandProcessor.anInt6967, 544))), false, 4)
+                                            method544((string + (LocalizedText.aLocalizedText_3521!!.method2063(ChatCommandProcessor.language, 544))), false, 4)
                                             return
                                         }
                                     }
                                     i_2_++
                                 }
                                 for (i_5_ in 0..<ContactEntry.anInt9604) {
-                                    val string_6_ = (method2127(2, NpcConfig.aStringArray932!![i_5_]))
+                                    val string_6_ = (method2127(2, ObjectType.aStringArray932!![i_5_]))
                                     if (string_6_ != null && string_6_ == string_1_) {
-                                        method544(((LocalizedText.aLocalizedText_3526!!.method2063(ChatCommandProcessor.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3527!!.method2063(ChatCommandProcessor.anInt6967, 544))), false, 4)
+                                        method544(((LocalizedText.aLocalizedText_3526!!.method2063(ChatCommandProcessor.language, 544)) + string + (LocalizedText.aLocalizedText_3527!!.method2063(ChatCommandProcessor.language, 544))), false, 4)
                                         return
                                     }
                                     if (WeaveTextureNode.Companion.aStringArray9275!![i_5_] != null) {
                                         val string_7_ = (method2127(2, (WeaveTextureNode.Companion.aStringArray9275!![i_5_])))
                                         if (string_7_ != null && string_7_ == string_1_) {
-                                            method544(((LocalizedText.aLocalizedText_3526!!.method2063(ChatCommandProcessor.anInt6967, 544)) + string + (LocalizedText.aLocalizedText_3527!!.method2063(ChatCommandProcessor.anInt6967, 544))), false, 4)
+                                            method544(((LocalizedText.aLocalizedText_3526!!.method2063(ChatCommandProcessor.language, 544)) + string + (LocalizedText.aLocalizedText_3527!!.method2063(ChatCommandProcessor.language, 544))), false, 4)
                                             return
                                         }
                                     }
                                 }
-                                if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_1_) method544((LocalizedText.aLocalizedText_3524!!.method2063(ChatCommandProcessor.anInt6967, 544)), false, 4)
+                                if (method2127(2, (LocalPlayerState.aPlayer_1907!!.aString10544)) == string_1_) method544((LocalizedText.aLocalizedText_3524!!.method2063(ChatCommandProcessor.language, 544)), false, 4)
                                 else {
                                     HitsplatDefinition.anInt2012++
                                     val class348_sub47 = (method2148(LoadingBarRenderer.aFontMetaRef_5057, TheoraVideoStream.aIsaacCipher_9029, -85))

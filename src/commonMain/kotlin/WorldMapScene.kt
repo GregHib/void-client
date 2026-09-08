@@ -11,19 +11,19 @@ import WorldMapPolygonIconLabel.Companion.method3576
 import DirectionPath.Companion.method536
 import GraphicsOptionState.Companion.anInt3141
 import NpcType.Companion.method802
-import WidgetCache.Companion.method837
+import AnimationTypeList.Companion.method837
 
 /* Class237 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDefinitionCache: LocDefinitionCache?, particleDefLoader: ParticleDefLoader?) {
+open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorOverlayTypeList: FloorOverlayTypeList?, particleDefLoader: ParticleDefLoader?) {
     var aByteArrayArrayArray3104: Array<Array<ByteArray?>?>? = null
     var aByteArrayArrayArray3108: Array<Array<ByteArray?>?>?
     var aBoolean3109: Boolean = false
     private val aByteArrayArrayArray3113: Array<Array<ByteArray?>?>
     var anInt3114: Int = 0
     var anInt3117: Int = 0
-    private val aLocDefinitionCache_3119: LocDefinitionCache?
+    private val aFloorOverlayTypeList_3119: FloorOverlayTypeList?
     private val aParticleDefLoader_3120: ParticleDefLoader?
     var anIntArrayArrayArray3122: Array<Array<IntArray?>?>
     private val aByteArrayArrayArray3123: Array<Array<ByteArray?>?>
@@ -41,7 +41,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     if (i > 0) {
                         val i_9_ = is_5_!![i + -1]!![i_1_ - 1].toInt() and 0xff
                         if (i_9_ > 0) {
-                            val class277_10_ = aLocDefinitionCache_3119!!.method2034(i_9_ - 1, false)
+                            val class277_10_ = aFloorOverlayTypeList_3119!!.method2034(i_9_ - 1, false)
                             if (class277_10_.anInt3563 != -1 && class277_10_.aBoolean3560) {
                                 val i_11_ = `is`!![-1 + i]!![i_1_ - 1]
                                 val i_12_ = 4 + is_2_!![i + -1]!![-1 + i_1_] * 2 and 0x7
@@ -60,7 +60,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     if (i < i_6_ + -1) {
                         val i_14_ = 0xff and is_5_!![1 + i]!![i_1_ - 1].toInt()
                         if (i_14_ > 0) {
-                            val class277_15_ = aLocDefinitionCache_3119!!.method2034(i_14_ - 1, false)
+                            val class277_15_ = aFloorOverlayTypeList_3119!!.method2034(i_14_ - 1, false)
                             if (class277_15_.anInt3563 != -1 && class277_15_.aBoolean3560) {
                                 val i_16_ = `is`!![i + 1]!![-1 + i_1_]
                                 val i_17_ = 0x7 and 2 * is_2_!![1 + i]!![i_1_ + -1] + 6
@@ -81,7 +81,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     if (i > 0) {
                         val i_19_ = is_5_!![-1 + i]!![1 + i_1_].toInt() and 0xff
                         if (i_19_ > 0) {
-                            val class277_20_ = aLocDefinitionCache_3119!!.method2034(-1 + i_19_, false)
+                            val class277_20_ = aFloorOverlayTypeList_3119!!.method2034(-1 + i_19_, false)
                             if (class277_20_.anInt3563 != -1 && class277_20_.aBoolean3560) {
                                 val i_21_ = `is`!![-1 + i]!![1 + i_1_]
                                 val i_22_ = 2 * is_2_!![-1 + i]!![1 + i_1_] + 2 and 0x7
@@ -100,7 +100,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                     if (i < i_6_ - 1) {
                         val i_24_ = is_5_!![i - -1]!![i_1_ + 1].toInt() and 0xff
                         if (i_24_ > 0) {
-                            val class277_25_ = aLocDefinitionCache_3119!!.method2034(-1 + i_24_, false)
+                            val class277_25_ = aFloorOverlayTypeList_3119!!.method2034(-1 + i_24_, false)
                             if (class277_25_.anInt3563 != -1 && class277_25_.aBoolean3560) {
                                 val i_26_ = `is`!![1 + i]!![i_1_ - -1]
                                 val i_27_ = 0x7 and  /*--*/(is_2_!![i - -1]!![1 + i_1_] * 2)
@@ -120,7 +120,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 if (i_1_ > 0) {
                     val i_29_ = 0xff and is_5_!![i]!![i_1_ + -1].toInt()
                     if (i_29_ > 0) {
-                        val class277_30_ = aLocDefinitionCache_3119!!.method2034(-1 + i_29_, false)
+                        val class277_30_ = aFloorOverlayTypeList_3119!!.method2034(-1 + i_29_, false)
                         if (class277_30_.anInt3563 != -1) {
                             val i_31_ = `is`!![i]!![-1 + i_1_]
                             val i_32_ = is_2_!![i]!![i_1_ - 1].toInt()
@@ -151,7 +151,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 if (i_1_ < -1 + i_0_) {
                     val i_37_ = is_5_!![i]!![i_1_ - -1].toInt() and 0xff
                     if (i_37_ > 0) {
-                        val class277_38_ = aLocDefinitionCache_3119!!.method2034(-1 + i_37_, false)
+                        val class277_38_ = aFloorOverlayTypeList_3119!!.method2034(-1 + i_37_, false)
                         if (class277_38_.anInt3563 != -1) {
                             val i_39_ = `is`!![i]!![i_1_ + 1]
                             var i_40_ = is_2_!![i]!![i_1_ - -1].toInt()
@@ -182,7 +182,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 if (i > 0) {
                     val i_45_ = 0xff and is_5_!![i + -1]!![i_1_].toInt()
                     if (i_45_ > 0) {
-                        val class277_46_ = aLocDefinitionCache_3119!!.method2034(-1 + i_45_, false)
+                        val class277_46_ = aFloorOverlayTypeList_3119!!.method2034(-1 + i_45_, false)
                         if (class277_46_.anInt3563 != -1) {
                             val i_47_ = `is`!![-1 + i]!![i_1_]
                             val i_48_ = is_2_!![-1 + i]!![i_1_].toInt()
@@ -213,7 +213,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                 if (i_6_ - 1 > i) {
                     val i_53_ = is_5_!![1 + i]!![i_1_].toInt() and 0xff
                     if (i_53_ > 0) {
-                        val class277_54_ = aLocDefinitionCache_3119!!.method2034(-1 + i_53_, false)
+                        val class277_54_ = aFloorOverlayTypeList_3119!!.method2034(-1 + i_53_, false)
                         if (class277_54_.anInt3563 != -1) {
                             val i_55_ = `is`!![i + 1]!![i_1_]
                             val i_56_ = is_2_!![1 + i]!![i_1_].toInt()
@@ -291,7 +291,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                         var i_81_ = is_69_[i_72_]!![i_74_].toInt() and 0xff
                         var i_82_ = is_69_[i_72_]!![i_73_].toInt() and 0xff
                         if (i_78_ != 0 || i_79_ != 0) {
-                            var class277 = (if (i_78_ == 0) null else aLocDefinitionCache_3119!!.method2034(i_78_ - 1, false))
+                            var class277 = (if (i_78_ == 0) null else aFloorOverlayTypeList_3119!!.method2034(i_78_ - 1, false))
                             val class22 = (if (i_79_ == 0) null else aParticleDefLoader_3120!!.method1380(true, -1 + i_79_))
                             if (i_76_.toInt() == 0 && class277 == null) i_76_ = 12.toByte()
                             var class277_83_ = class277
@@ -1000,7 +1000,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
                             val i_229_ = aByteArrayArrayArray3129[i]!![i_226_]!![i_227_]
                             val i_230_ = (aByteArrayArrayArray3123[i]!![i_226_]!![i_227_].toInt() and 0xff)
                             val i_231_ = 0xff and (aByteArrayArrayArray3113[i]!![i_226_]!![i_227_]).toInt()
-                            val class277 = (if (i_230_ != 0) aLocDefinitionCache_3119!!.method2034(-1 + i_230_, false) else null)
+                            val class277 = (if (i_230_ != 0) aFloorOverlayTypeList_3119!!.method2034(-1 + i_230_, false) else null)
                             if (i_228_.toInt() == 0 && class277 == null) i_228_ = 12.toByte()
                             val class22 = (if (i_231_ == 0) null else aParticleDefLoader_3120!!.method1380(true, i_231_ - 1))
                             var i_232_ = 0
@@ -1298,7 +1298,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
         anIntArray3124 = intArrayOf(0, 256, 512, 512, 512, 256, 0, 0, 128, 256, 128, 384, 256)
         try {
             this.aBoolean3109 = bool
-            aLocDefinitionCache_3119 = locDefinitionCache
+            aFloorOverlayTypeList_3119 = floorOverlayTypeList
             aParticleDefLoader_3120 = particleDefLoader
             this.anInt3117 = i_315_
             this.anInt3130 = i
@@ -1310,7 +1310,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, locDef
             aByteArrayArrayArray3126 = (Array<Array<ByteArray?>?>(this.anInt3130) { Array<ByteArray?>(this.anInt3117) { ByteArray(this.anInt3114) } })
             aByteArrayArrayArray3123 = (Array<Array<ByteArray?>?>(this.anInt3130) { Array<ByteArray?>(this.anInt3117) { ByteArray(this.anInt3114) } })
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("sr.<init>(" + i + ',' + i_315_ + ',' + i_316_ + ',' + bool + ',' + (if (locDefinitionCache != null) "{...}" else "null") + ',' + (if (particleDefLoader != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("sr.<init>(" + i + ',' + i_315_ + ',' + i_316_ + ',' + bool + ',' + (if (floorOverlayTypeList != null) "{...}" else "null") + ',' + (if (particleDefLoader != null) "{...}" else "null") + ')'))
         }
     }
 

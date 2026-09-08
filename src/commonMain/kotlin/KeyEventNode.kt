@@ -46,10 +46,10 @@ class KeyEventNode : LinkedListNode(), CharStreamReader {
         var anInt4765: Int = 0
         var anInt4768: Int = 0
         var anInt4769: Int = 0
-        var aJs5Archive_4770: Js5Archive? = null
+        var textureMaterials: Js5Archive? = null
         @JvmStatic
         fun method2796(i: Byte) {
-            aJs5Archive_4770 = null
+            textureMaterials = null
             if (i.toInt() != 104) Companion.method2796((-6).toByte())
         }
 

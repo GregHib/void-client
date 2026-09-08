@@ -4,7 +4,7 @@ import CameraConfigDefinition.Companion.method1920
 /* Class278 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, js5Archive: Js5Archive?, js5Archive_7_: Js5Archive?) {
+class NpcTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, js5Archive: Js5Archive?, js5Archive_7_: Js5Archive?) {
     var aJs5Archive_3576: Js5Archive? = null
     private var aLruByteCache_3577: LruByteCache? = LruByteCache(64)
     var aSceneProjector_3578: SceneProjector? = null
@@ -87,7 +87,7 @@ class BufferedMessageQueue internal constructor(sceneProjector: SceneProjector?,
         }
         npcType = NpcType()
         npcType.anInt1344 = i
-        npcType.aBufferedMessageQueue_1348 = this
+        npcType.aNpcTypeList_1348 = this
         if (`is` != null) npcType.method798(111, ByteBuffer(`is`))
         npcType.method799(-117)
         withLock(aLruByteCache_3577!!) {

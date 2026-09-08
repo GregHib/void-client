@@ -116,13 +116,13 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                                 RenderableEntry.anInt4337 = -5
                                 return
                             }
-                            ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
+                            ItemTypeList.aServerConnectionInfo_3285!!.method1259(0)
                             GlWaterRenderPass.anInt7297 = 1
                             HostPingThread.anInt2264 = 0
                             AnimatedModelRenderer.anInt8398++
                         }
                         if (GlWaterRenderPass.anInt7297 == 1) {
-                            FrameStatsReset.aLinkedQueueNode_5800 = (ModelHeaderCache.aServerConnectionInfo_3285!!.method1262(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!, 36.toByte()))
+                            FrameStatsReset.aLinkedQueueNode_5800 = (ItemTypeList.aServerConnectionInfo_3285!!.method1262(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!, 36.toByte()))
                             GlWaterRenderPass.anInt7297 = 2
                         }
                         if (GlWaterRenderPass.anInt7297 == 2) {
@@ -150,7 +150,7 @@ abstract class AbstractBloomEffect internal constructor(var aHa_Sub2_6618: OpenG
                         Client.aAbstractGameSocket_9165 = null
                     }
                     if (AnimatedModelRenderer.anInt8398 < 2) {
-                        ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
+                        ItemTypeList.aServerConnectionInfo_3285!!.method1259(0)
                         HostPingThread.anInt2264 = 0
                         AnimatedModelRenderer.anInt8398++
                         GlWaterRenderPass.anInt7297 = 1

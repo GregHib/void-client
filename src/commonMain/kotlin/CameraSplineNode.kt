@@ -43,7 +43,7 @@ class CameraSplineNode internal constructor(i: Int) : LinkedListNode() {
                 }
                 val f = CacheArchiveIndex.anInt1780.toFloat() / 65535.0f
                 val fs = FloatArray(3)
-                val i_1_ = 2 * ItemDefinition.anInt2798
+                val i_1_ = 2 * ItemType.anInt2798
                 for (i_2_ in 0..2) {
                     val i_3_ = 3 * (SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![i_2_])
                     val i_4_ = ((SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![1 + i_1_]!![i_2_]) * 3)

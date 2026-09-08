@@ -412,7 +412,7 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
         var anInt5763: Int = 0
 
-        var aEmoteDefCache_5764: EmoteDefCache? = null
+        var aParamTypeList_5764: ParamTypeList? = null
 
         var anInt5765: Int = 0
 
@@ -448,14 +448,14 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
 
         @JvmStatic
         fun method938(i: Int) {
-            aEmoteDefCache_5764 = null
-            if (i <= 8) aEmoteDefCache_5764 = null
+            aParamTypeList_5764 = null
+            if (i <= 8) aParamTypeList_5764 = null
         }
 
         fun method941(i: Int, i_48_: Int) {
             IsaacCipher.anInt1290 = i_48_
             anInt5755++
-            if (i <= 113) aEmoteDefCache_5764 = null
+            if (i <= 113) aParamTypeList_5764 = null
         }
 
         @JvmStatic

@@ -20,7 +20,7 @@ object CacheStateResetter {
         anInt124++
         val i_0_ = 9 / ((62 - i) / 47)
         ProjectileConfigUtil.anInt396 = -1
-        NpcConfig.aAbstractCameraTransform_905 = null
+        ObjectType.aAbstractCameraTransform_905 = null
         WhirlpoolHash.anInt7207 = -1
         WorldMapAreaLabel.anInt8583 = -1
         FireParticleStream.aSceneObjectSpawner_10436!!.method775(69.toByte())

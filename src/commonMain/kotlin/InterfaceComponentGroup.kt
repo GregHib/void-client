@@ -587,7 +587,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
             anInt9637++
             if (!ActorEntity.aBoolean9307 || !ActorEntity.aBoolean351) ParameterizedText.Companion.anInt9577 = 0
             else {
-                if (ColourKeyTextureNode.aBoolean9352) ItemDefinition.aLong2789 = MinimapLineDrawer.aNanoTimer_5262!!.method446(1)
+                if (ColourKeyTextureNode.aBoolean9352) ItemType.aLong2789 = MinimapLineDrawer.aNanoTimer_5262!!.method446(1)
                 ActorEntity.anInt562 = 0
                 ActorEntity.anInt9039 = 0
                 SourceRowTextureNode.anInt9112 = 0
@@ -637,7 +637,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                     }
                     ActorEntity.anInt4319 = 2
                 }
-                if (ColourKeyTextureNode.aBoolean9352) GlslEnvMaterialPass.aLong6276 = (MinimapLineDrawer.aNanoTimer_5262!!.method446(1) + -ItemDefinition.aLong2789)
+                if (ColourKeyTextureNode.aBoolean9352) GlslEnvMaterialPass.aLong6276 = (MinimapLineDrawer.aNanoTimer_5262!!.method446(1) + -ItemType.aLong2789)
             }
         }
 

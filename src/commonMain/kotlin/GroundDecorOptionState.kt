@@ -65,7 +65,7 @@ class GroundDecorOptionState : GraphicsOptionState {
 
         var anInt5877: Int = 0
 
-        var aJs5Archive_5878: Js5Archive? = null
+        var vorbis: Js5Archive? = null
 
         var anInt5879: Int = 0
 
@@ -77,7 +77,7 @@ class GroundDecorOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1738(i: Int) {
-            aJs5Archive_5878 = null
+            vorbis = null
             aFloatArray5874 = null
             aString5882 = null
             if (i != 21921) method1738(11)

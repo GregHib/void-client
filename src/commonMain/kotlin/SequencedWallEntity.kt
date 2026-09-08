@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import ModelHeaderCache.Companion.method1935
+import ItemTypeList.Companion.method1935
 import VorbisOggDecoder.Companion.method2967
 import ChatMessageStream.Companion.method136
 import jaggl.OpenGL.Companion.glAttachObjectARB
@@ -10,7 +10,7 @@ import jaggl.OpenGL.Companion.glGetInfoLogARB
 import jaggl.OpenGL.Companion.glGetObjectParameterivARB
 import jaggl.OpenGL.Companion.glLinkProgramARB
 
-class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int) : WallEntity(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_), RenderTarget {
+class SequencedWallEntity internal constructor(var_renderer: Renderer?, objectType: ObjectType?, i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, bool: Boolean, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int) : WallEntity(i_6_, i_7_, i_8_, i, i_5_, i_9_, i_10_), RenderTarget {
     private var aBoolean10148 = false
     private var aCircleHitbox_10150: CircleHitbox? = null
     private var aBoolean10153 = false
@@ -135,10 +135,10 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, npcConfi
 
     init {
         try {
-            this.aSceneObjectAnimator_10155 = SceneObjectAnimator(var_renderer, npcConfig, i_11_, i_12_, this.plane.toInt(), i_5_, this, bool, i_13_)
-            aBoolean10153 = npcConfig!!.anInt874 != 0 && !bool
+            this.aSceneObjectAnimator_10155 = SceneObjectAnimator(var_renderer, objectType, i_11_, i_12_, this.plane.toInt(), i_5_, this, bool, i_13_)
+            aBoolean10153 = objectType!!.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("pw.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("pw.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (objectType != null) "{...}" else "null") + ',' + i + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + bool + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ')'))
         }
     }
 

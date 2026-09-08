@@ -59,7 +59,7 @@ class RegionSceneShifter : LinkedListNode() {
                         val i_13_ = i_11_ - -i_0_
                         val i_14_ = i_2_ + i_10_
                         if (i_13_ > 0 && i_14_ > 0 && i_13_ < -1 + i && -1 + i_1_ > i_14_) {
-                            val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_4_)
+                            val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, i_4_)
                             if (i_12_ != 22 || IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub4_7220!!.method1737(-32350) != 0 || class51.anInt874 != 0 || (class51.anInt920 == 1) || class51.aBoolean947) {
                                 bool_7_ = true
                                 if (!class51.method485(9773)) {
@@ -89,13 +89,13 @@ class RegionSceneShifter : LinkedListNode() {
 
         fun method3157(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, bool: Boolean) {
             anInt7049++
-            if (bool || i_16_ != Renderer.anInt4581 || FileIoUtil.anInt4095 != i || (CompiledScriptCache.anInt4372 != ParticleSystemState.anInt2204 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
+            if (bool || i_16_ != Renderer.anInt4581 || FileIoUtil.anInt4095 != i || (QuickChatMenuTypeList.anInt4372 != ParticleSystemState.anInt2204 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) != 1)) {
                 Renderer.anInt4581 = i_16_
                 FileIoUtil.anInt4095 = i
-                ParticleSystemState.anInt2204 = CompiledScriptCache.anInt4372
+                ParticleSystemState.anInt2204 = QuickChatMenuTypeList.anInt4372
                 if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) ParticleSystemState.anInt2204 = 0
                 ByteBufferStatics.method3379(2, i_17_)
-                Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
+                Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.language, 544), 2, FacingDirectionNode.aRenderer6654)
                 val i_18_ = ArbVertexProgram.regionTileX
                 val i_19_ = RegionMapDecoder.regionTileY
                 ArbVertexProgram.regionTileX = (-(GlCubemapLightPass.anInt7319 shr 4) + Renderer.anInt4581) * 8
@@ -234,7 +234,7 @@ class RegionSceneShifter : LinkedListNode() {
             anInt7051++
             var renderTarget = method3297(i_43_, i_45_, i_44_) as RenderTarget?
             if (renderTarget != null) {
-                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-124))
+                val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, renderTarget.method42(-124))
                 val i_48_ = 0x3 and renderTarget.method41(-32228)
                 val i_49_ = renderTarget.method39(35)
                 if (class51.anInt875 == -1) {
@@ -267,7 +267,7 @@ class RegionSceneShifter : LinkedListNode() {
             }
             renderTarget = (method1353(i_43_, i_45_, i_44_, (if (aClass7056 != null) aClass7056 else (RenderTarget::class.jClass.also { aClass7056 = it }))) as RenderTarget?)
             if (renderTarget != null) {
-                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-88))
+                val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, renderTarget.method42(-88))
                 val i_51_ = renderTarget.method41(-32228) and 0x3
                 val i_52_ = renderTarget.method39(-126)
                 if (class51.anInt875 != -1) method2028(i_46_, class51, i_42_, var_renderer, i_51_, -86)
@@ -280,7 +280,7 @@ class RegionSceneShifter : LinkedListNode() {
             }
             renderTarget = method2878(i_43_, i_45_, i_44_) as RenderTarget?
             if (renderTarget != null) {
-                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-118))
+                val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, renderTarget.method42(-118))
                 val i_54_ = renderTarget.method41(-32228) and 0x3
                 if (class51.anInt875 != -1) method2028(i_46_, class51, i_42_, var_renderer, i_54_, -5)
             }

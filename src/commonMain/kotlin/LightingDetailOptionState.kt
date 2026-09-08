@@ -115,7 +115,7 @@ class LightingDetailOptionState : GraphicsOptionState {
                 if (bool && GlTextureCubeMap.anInt8537 >= 100) {
                     CompositeRgbNoiseTexture.anInt8685 = 256 + 512 * CollisionMapAccessor.anInt3550
                     GlslMaterialPass.anInt6246 = 256 + LightingDetailOptionState.anInt6981 * 512
-                    ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, CompositeRgbNoiseTexture.anInt8685) + -ShortMatrixNode.anInt9515)
+                    ParticleSystemRenderer.anInt3855 = (CollisionMapAccessor.method2064(GlslMaterialPass.anInt6246, QuickChatMenuTypeList.anInt4372, 11219, CompositeRgbNoiseTexture.anInt8685) + -ShortMatrixNode.anInt9515)
                 }
                 WeaveTextureNode.anInt9282 = 2
                 SequencedWallEntity.anInt10163 = -1
@@ -127,7 +127,7 @@ class LightingDetailOptionState : GraphicsOptionState {
         fun method1846(i: Int, i_18_: Int, i_19_: Int): Boolean {
             if (i_19_ <= 42) return true
             anInt6143++
-            return BufferedMessageQueue.method2075(i_18_, -126, i) or ((0x40000 and i_18_) != 0) || BoundsConstraintEntry.method2056(i_18_, 122, i)
+            return NpcTypeList.method2075(i_18_, -126, i) or ((0x40000 and i_18_) != 0) || BoundsConstraintEntry.method2056(i_18_, 122, i)
         }
 
         @JvmStatic

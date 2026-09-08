@@ -33,7 +33,7 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
             if (!method1414(35632)) return false
             val class206 = aHa_Sub2_2511.aFrameBufferObject_7778
             val i_3_ = 30 % ((-55 - i) / 59)
-            val class348_sub42_sub2 = RenderbufferObject(aHa_Sub2_2511, 6408, (class258_sub1!!.anInt8523), (class258_sub1.anInt8529))
+            val class348_sub42_sub2 = RenderBufferObject(aHa_Sub2_2511, 6408, (class258_sub1!!.anInt8523), (class258_sub1.anInt8529))
             aHa_Sub2_2511.method3773(-1, class206)
             var bool = false
             class206!!.method1508(0, class348_sub42_sub2, -12)
@@ -126,26 +126,26 @@ class GlowPostProcessor internal constructor(private val aHa_Sub2_2511: OpenGlRe
 
         @JvmStatic
         fun method1416(i: Int) {
-            RenderConfigFactory.aLocDefinitionCache_2979!!.method2032(5, -101)
+            RenderConfigFactory.aFloorOverlayTypeList_2979!!.method2032(5, -101)
             anInt2515++
             Tooltip.aParticleDefLoader_4460!!.method1383(i xor 0x804c, 5)
             RadialTextureNode.aModelDefinitionLoader_9342!!.method1207(-17452, 5)
-            GradientLookupEffect.aSeqDefinitionCache_9195!!.method2010(5, i + -6)
-            MapAreaDefinition.Companion.aBufferedMessageQueue_2529!!.method2076(5, true)
-            ClientException.aModelHeaderCache_112!!.method1937(5, false)
-            ParticleEmitterNode.aWidgetCache_191!!.method836(5, 93)
-            ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2544(5, (-41).toByte())
+            GradientLookupEffect.aObjectTypeList_9195!!.method2010(5, i + -6)
+            MapAreaDefinition.Companion.aNpcTypeList_2529!!.method2076(5, true)
+            ClientException.aItemTypeList_112!!.method1937(5, false)
+            ParticleEmitterNode.aAnimationTypeList_191!!.method836(5, 93)
+            ConstantColourTextureNode.aGfxTypeList_9245!!.method2544(5, (-41).toByte())
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1442(5, 1.toByte())
             NormalMapGenerator.aParticleAmountCache_3453!!.method1587(5, i xor 0xeab)
             OpenGlModel.aNpcDefinitionCache_5558!!.method1984(119.toByte(), 5)
             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1224(5, (-98).toByte())
-            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1176(5, 52.toByte())
-            ProjectionCameraTransform.aEmoteDefCache_5764!!.method2603(5, 11)
+            ModelOrSpriteHolder.aMapSceneDefinitionLoader_117!!.method1176(5, 52.toByte())
+            ProjectionCameraTransform.aParamTypeList_5764!!.method2603(5, 11)
             TheoraVideoStream.aLocTypeDefLoader_9036!!.method1409(5, -20721)
             Client.aMapSceneCache_413!!.method819(74.toByte(), 5)
             HoverActionEntry.aSpriteStore_1813!!.method299(5, 16)
             AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1392(88, 5)
-            CacheArchiveIndexLoader.aItemDefinitionLoader_3147!!.method1285(i, 8)
+            EnumTypeList.aCursorTypeList_3147!!.method1285(i, 8)
             SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method697(5, 26)
             FileExistsCondition.aModelDefinitionCache_4782!!.method1603(5, -66)
             method876(5, 0)

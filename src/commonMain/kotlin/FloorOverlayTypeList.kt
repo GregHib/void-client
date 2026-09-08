@@ -4,7 +4,7 @@ import WidgetDefinition.Companion.method268
 /* Class268 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class FloorOverlayTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     var anInt3429: Int = 0
     private val aLruByteCache_3433 = LruByteCache(64)
     private val aJs5Archive_3442: Js5Archive?
@@ -38,7 +38,7 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         }
         locTypeConfig = LocTypeConfig()
         locTypeConfig.anInt3573 = i
-        locTypeConfig.aLocDefinitionCache_3562 = this
+        locTypeConfig.aFloorOverlayTypeList_3562 = this
         if (`is` != null) locTypeConfig.method2070(true, ByteBuffer(`is`))
         locTypeConfig.method2067(-4860)
         withLock(aLruByteCache_3433) {
@@ -118,9 +118,9 @@ class LocDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
             } else {
                 var i_6_ = SceneObjectSpawner.aFloat1287.toInt()
                 if (i_6_ < CameraDistanceOptionState.anInt6979 shr 8) i_6_ = CameraDistanceOptionState.anInt6979 shr 8
-                if (MinimapStateReset.aBooleanArray2374!![4] && ModelHeaderCache.anIntArray3273!![4] - -128 > i_6_) i_6_ = ModelHeaderCache.anIntArray3273!![4] + 128
+                if (MinimapStateReset.aBooleanArray2374!![4] && ItemTypeList.anIntArray3273!![4] - -128 > i_6_) i_6_ = ItemTypeList.anIntArray3273!![4] + 128
                 val i_7_ = 0x3fff and CameraDistanceOptionState.aFloat3938.toInt() + RenderableGroup.anInt5016
-                method268(i_6_, -200 + (CollisionMapAccessor.method2064((LocalPlayerState.aPlayer_1907!!.x), CompiledScriptCache.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_7_, AsyncTaskHandle.anInt2578, i, -19360, FrameStatsReset.anInt5799, 3 * (i_6_ shr 3) + 600 shl 2)
+                method268(i_6_, -200 + (CollisionMapAccessor.method2064((LocalPlayerState.aPlayer_1907!!.x), QuickChatMenuTypeList.anInt4372, 11219, (LocalPlayerState.aPlayer_1907!!.y))), i_7_, AsyncTaskHandle.anInt2578, i, -19360, FrameStatsReset.anInt5799, 3 * (i_6_ shr 3) + 600 shl 2)
                 val f = (-(((100 + -i_5_) * (100 - i_5_) * (-i_5_ + 100)).toFloat() / 1000000.0f) + 1.0f)
                 GlslMaterialPass.anInt6246 = (SequencedGroundDecor.anInt10047.toFloat() + f * (-SequencedGroundDecor.anInt10047 + GlslMaterialPass.anInt6246).toFloat()).toInt()
                 ParticleSystemRenderer.anInt3855 = ((-SpriteComponent.anInt8368 + ParticleSystemRenderer.anInt3855).toFloat() * f + SpriteComponent.anInt8368.toFloat()).toInt()

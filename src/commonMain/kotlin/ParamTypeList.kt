@@ -1,7 +1,7 @@
 /* Class326 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class EmoteDefCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class ParamTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_4085: Js5Archive?
     private var aLruByteCache_4087: LruByteCache? = LruByteCache(64)
     fun method2600(i: Int, i_0_: Int): EmoteDefinition {

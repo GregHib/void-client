@@ -54,7 +54,7 @@ class HardKeyedCacheEntryReference internal constructor(keyedComparable: KeyedCo
                     class318_sub1_sub3_sub3.anInt10232 = 0
                     class318_sub1_sub3_sub3.anInt10294 = 0
                     class318_sub1_sub3_sub3.anInt10267 = 0
-                    if ((class318_sub1_sub3_sub3.anInt10286) != -1) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10267, (ParticleEmitterNode.aWidgetCache_191!!.method835(class318_sub1_sub3_sub3.anInt10286, 7)), -83)
+                    if ((class318_sub1_sub3_sub3.anInt10286) != -1) TypedRecordTable.method2178(class318_sub1_sub3_sub3, class318_sub1_sub3_sub3.anInt10267, (ParticleEmitterNode.aAnimationTypeList_191!!.method835(class318_sub1_sub3_sub3.anInt10286, 7)), -83)
                 }
             }
             if (i_2_ > -4) Companion.method3207((-83).toByte())

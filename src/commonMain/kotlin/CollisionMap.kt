@@ -795,7 +795,7 @@ class CollisionMap {
                         if (bool != true) method3498(44, null, -27, -91, true, -26)
                         val i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * StaticNoiseTexture.anInt8665 / MapRegionLoader.anInt1267)))
                         var i_48_ = -1996554240
-                        if (GlRectangleTexture.aSceneProjector_8638 == Client.aSceneProjector_10434) i_48_ = -1996488705
+                        if (GlRectangleTexture.aSceneProjector_8638 == Client.mode) i_48_ = -1996488705
                         var_renderer.aa(i_46_, i_47_, i_44_, i_45_, i_48_, 1)
                         var_renderer.method3628(i_46_, i_47_, i_44_, i_45_, i_48_, 0)
                         if (GlEnvMappedWaterPass.anInt7379 <= 0) break

@@ -107,7 +107,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                 val i_23_ = 0x3d01 and (4 + CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 3) shl 11)
                 val i_24_ = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 1)
                 if (i_24_ == 1) MinimapRectClipper.anIntArray224!![AbstractCameraTransformStatics.anInt1597++] = i_18_
-                npc.method2448((MapAreaDefinition.aBufferedMessageQueue_2529!!.method2079(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
+                npc.method2448((MapAreaDefinition.aNpcTypeList_2529!!.method2079(CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readBits((-24).toByte(), 14), -1)), i xor 0x2b297815)
                 npc.method2434(111.toByte(), npc.aNpcType_10505!!.anInt1399)
                 npc.anInt10310 = (npc.aNpcType_10505!!.anInt1329) shl 3
                 if (bool) npc.method2435((-108).toByte(), i_23_, true)
@@ -203,7 +203,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
 
         var anInt2898: Int = 0
         @JvmStatic
-        fun method1614(i: Int, npc: Npc?, i_2_: Int, i_3_: Int, i_4_: Int, player: Player?, npcConfig: NpcConfig?, i_5_: Int) {
+        fun method1614(i: Int, npc: Npc?, i_2_: Int, i_3_: Int, i_4_: Int, player: Player?, objectType: ObjectType?, i_5_: Int) {
             try {
                 anInt2898++
                 if (i != 979190089) aBoolean2895 = false
@@ -211,7 +211,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                 class348_sub9.anInt6678 = i_4_ shl 9
                 class348_sub9.anInt6693 = i_2_
                 class348_sub9.anInt6689 = i_3_ shl 9
-                if (npcConfig == null) {
+                if (objectType == null) {
                     if (npc != null) {
                         class348_sub9.aNpc_6691 = npc
                         var class79 = (npc.aNpcType_10505)
@@ -243,26 +243,26 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                         CompletedResourceRequest.aHashtable_10465!!.method3483(65.toByte(), player.anInt10290.toLong(), class348_sub9)
                     }
                 } else {
-                    class348_sub9.aNpcConfig_6695 = npcConfig
-                    var i_6_ = npcConfig.anInt961
-                    var i_7_ = npcConfig.anInt926
+                    class348_sub9.aObjectType_6695 = objectType
+                    var i_6_ = objectType.anInt961
+                    var i_7_ = objectType.anInt926
                     if (i_5_ == 1 || i_5_ == 3) {
-                        i_6_ = npcConfig.anInt926
-                        i_7_ = npcConfig.anInt961
+                        i_6_ = objectType.anInt926
+                        i_7_ = objectType.anInt961
                     }
                     class348_sub9.anInt6687 = i_7_ + i_3_ shl 9
-                    class348_sub9.anInt6680 = npcConfig.anInt962
-                    class348_sub9.anInt6685 = npcConfig.anInt887
-                    class348_sub9.anInt6681 = npcConfig.anInt916
-                    class348_sub9.anIntArray6697 = npcConfig.anIntArray904
-                    class348_sub9.anInt6696 = npcConfig.anInt878
-                    class348_sub9.aBoolean6699 = npcConfig.aBoolean903
-                    class348_sub9.anInt6694 = npcConfig.anInt889 shl 9
-                    class348_sub9.anInt6668 = npcConfig.anInt937
+                    class348_sub9.anInt6680 = objectType.anInt962
+                    class348_sub9.anInt6685 = objectType.anInt887
+                    class348_sub9.anInt6681 = objectType.anInt916
+                    class348_sub9.anIntArray6697 = objectType.anIntArray904
+                    class348_sub9.anInt6696 = objectType.anInt878
+                    class348_sub9.aBoolean6699 = objectType.aBoolean903
+                    class348_sub9.anInt6694 = objectType.anInt889 shl 9
+                    class348_sub9.anInt6668 = objectType.anInt937
                     class348_sub9.anInt6698 = i_6_ + i_4_ shl 9
-                    class348_sub9.anInt6677 = npcConfig.anInt936
-                    class348_sub9.aBoolean6674 = npcConfig.aBoolean888
-                    if (npcConfig.anIntArray945 != null) {
+                    class348_sub9.anInt6677 = objectType.anInt936
+                    class348_sub9.aBoolean6674 = objectType.aBoolean888
+                    if (objectType.anIntArray945 != null) {
                         class348_sub9.aBoolean6684 = true
                         class348_sub9.method2781(21.toByte())
                     }
@@ -270,7 +270,7 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
                     MapSceneIconDef.aNodeDeque_2859!!.method1999(class348_sub9, -20180)
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("ad.B(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (player != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i_5_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("ad.B(" + i + ',' + (if (npc != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + i_4_ + ',' + (if (player != null) "{...}" else "null") + ',' + (if (objectType != null) "{...}" else "null") + ',' + i_5_ + ')'))
             }
         }
     }

@@ -51,7 +51,7 @@ class ConstantColourTextureNode private constructor(i: Int) : AbstractProcedural
 
     companion object {
 
-        var aMapElementDefinitionCache_9245: MapElementDefinitionCache? = null
+        var aGfxTypeList_9245: GfxTypeList? = null
 
         var anInt9246: Int = 0
 
@@ -241,8 +241,8 @@ class ConstantColourTextureNode private constructor(i: Int) : AbstractProcedural
         @JvmStatic
         fun method3096(i: Int) {
             anIntArray9249 = null
-            aMapElementDefinitionCache_9245 = null
-            if (i != 32462) aMapElementDefinitionCache_9245 = null
+            aGfxTypeList_9245 = null
+            if (i != 32462) aGfxTypeList_9245 = null
         }
     }
 }

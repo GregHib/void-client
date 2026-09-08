@@ -350,7 +350,7 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
 
     companion object {
 
-        var aJs5Archive_10480: Js5Archive? = null
+        var animations: Js5Archive? = null
 
         var anInt10481: Int = 0
 
@@ -368,7 +368,7 @@ class OpenGlRenderNode(var_ha_Sub2: OpenGlRenderer?, i: Int, i_19_: Int) : Rende
 
         @JvmStatic
         fun method3295(i: Int) {
-            aJs5Archive_10480 = null
+            animations = null
             aSmoothingBuffer_10488 = null
             aNodeDeque_10492 = null
             if (i != -1) method3295(109)

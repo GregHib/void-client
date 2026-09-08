@@ -6,7 +6,7 @@ import util.random
 /* Class235 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, class318_sub1: SceneEntity?, bool: Boolean, i_18_: Int) {
+class SceneObjectAnimator internal constructor(var_renderer: Renderer?, objectType: ObjectType?, i: Int, i_15_: Int, i_16_: Int, i_17_: Int, class318_sub1: SceneEntity?, bool: Boolean, i_18_: Int) {
     private val aClass318_Sub1_3051: SceneEntity?
 
     var anInt3052: Int = 0
@@ -58,16 +58,16 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         var i_1_ = i_0_
         var bool = false
         if (i_1_ == -1) {
-            var npcConfig: NpcConfig? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(i.toInt() xor 0x45, this.anInt3063)
-            var class51_2_ = npcConfig
-            if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
-            if (npcConfig == null) return
-            if (class51_2_ == npcConfig) class51_2_ = null
-            if (npcConfig.anIntArray943 == null) {
-                if (npcConfig.anInt868 != -1) {
-                    if (anInt3053 != npcConfig.anInt941) {
-                        i_1_ = npcConfig.anInt868
-                        bool = npcConfig.aBoolean924
+            var objectType: ObjectType? = GradientLookupEffect.aObjectTypeList_9195!!.method2005(i.toInt() xor 0x45, this.anInt3063)
+            var class51_2_ = objectType
+            if (objectType!!.anIntArray945 != null) objectType = objectType.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
+            if (objectType == null) return
+            if (class51_2_ == objectType) class51_2_ = null
+            if (objectType.anIntArray943 == null) {
+                if (objectType.anInt868 != -1) {
+                    if (anInt3053 != objectType.anInt941) {
+                        i_1_ = objectType.anInt868
+                        bool = objectType.aBoolean924
                     }
                 } else if (class51_2_ != null && class51_2_.anIntArray943 != null) {
                     if (aWidgetDefinition_3057 != null && class51_2_.method481(105.toByte(), (aWidgetDefinition_3057!!.anInt269))) return
@@ -78,9 +78,9 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                     i_1_ = class51_2_.anInt868
                 }
             } else {
-                if (aWidgetDefinition_3057 != null && npcConfig.method481(73.toByte(), aWidgetDefinition_3057!!.anInt269)) return
-                i_1_ = npcConfig.method489(i + -70)
-                if (anInt3053 != npcConfig.anInt941) bool = npcConfig.aBoolean924
+                if (aWidgetDefinition_3057 != null && objectType.method481(73.toByte(), aWidgetDefinition_3057!!.anInt269)) return
+                i_1_ = objectType.method489(i + -70)
+                if (anInt3053 != objectType.anInt941) bool = objectType.aBoolean924
             }
         }
         if (i_1_ == -1) aWidgetDefinition_3057 = null
@@ -88,7 +88,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             aAbstractModel_3059 = null
             if (aWidgetDefinition_3057 != null && i_1_ == aWidgetDefinition_3057!!.anInt269) {
                 if (aWidgetDefinition_3057!!.anInt248 == 0) return
-            } else aWidgetDefinition_3057 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_1_, i + -62)
+            } else aWidgetDefinition_3057 = ParticleEmitterNode.aAnimationTypeList_191!!.method835(i_1_, i + -62)
             if (aWidgetDefinition_3057!!.anIntArray237 == null) aWidgetDefinition_3057 = null
             else {
                 if (bool) {
@@ -115,26 +115,26 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         var bool_3_ = bool_3_
         var i_4_ = i_4_
         anInt3082++
-        var npcConfig: NpcConfig? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
-        if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480(ProjectedGroundDecor.aVarpStore_10209!!, 47.toByte())
-        if (npcConfig == null) {
+        var objectType: ObjectType? = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, this.anInt3063)
+        if (objectType!!.anIntArray945 != null) objectType = objectType.method480(ProjectedGroundDecor.aVarpStore_10209!!, 47.toByte())
+        if (objectType == null) {
             method1674(-1, var_renderer)
             anInt3073 = -1
             anInt3056 = -1
             anInt3053 = -1
             return null
         }
-        if (!aBoolean3064 && npcConfig.anInt941 != anInt3053) {
+        if (!aBoolean3064 && objectType.anInt941 != anInt3053) {
             aAbstractModel_3059 = null
             method1666(69.toByte(), -1)
         }
         method1672(aClass318_Sub1_3051, true)
         if (bool_3_) {
             bool_3_ = bool_3_ and (aBoolean3065 and (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0))
-            bool_3_ = (bool_3_ and (npcConfig.anInt941 != anInt3056 || (aWidgetDefinition_3057 != null && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aWidgetDefinition_3057!!.aBoolean254 || ItemNameResolver.aBoolean5002) && (anInt3083 != anInt3084))))))
+            bool_3_ = (bool_3_ and (objectType.anInt941 != anInt3056 || (aWidgetDefinition_3057 != null && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) >= 2 && (anInt3084 != anInt3073 || ((aWidgetDefinition_3057!!.aBoolean254 || ItemNameResolver.aBoolean5002) && (anInt3083 != anInt3084))))))
         }
         if (bool && !bool_3_) {
-            anInt3053 = npcConfig.anInt941
+            anInt3053 = objectType.anInt941
             return null
         }
         if (bool_3_) {
@@ -149,9 +149,9 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         else var_terrainTile_5_ = TerrainTileShape.aTerrainTileArray8801!![0]
         var abstractModel: AbstractModel? = null
         if (aWidgetDefinition_3057 == null) {
-            if (aAbstractModel_3059 == null || i_4_ != (i_4_ and aAbstractModel_3059!!.ua()) || (anInt3053 != npcConfig.anInt941)) {
+            if (aAbstractModel_3059 == null || i_4_ != (i_4_ and aAbstractModel_3059!!.ua()) || (anInt3053 != objectType.anInt941)) {
                 if (aAbstractModel_3059 != null) i_4_ = i_4_ or aAbstractModel_3059!!.ua()
-                val class2 = (npcConfig.method476(var_renderer, var_terrainTile_5_, (if (this.anInt3079 != 11) this.anInt3079 else 10), i_4_, aClass318_Sub1_3051!!.x, bool_3_, var_s, var_s!!.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (-114).toByte()), aClass318_Sub1_3051.y, (if (this.anInt3079 == 11) 4 + this.anInt3052 else this.anInt3052), 128))
+                val class2 = (objectType.method476(var_renderer, var_terrainTile_5_, (if (this.anInt3079 != 11) this.anInt3079 else 10), i_4_, aClass318_Sub1_3051!!.x, bool_3_, var_s, var_s!!.method3986((aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), (-114).toByte()), aClass318_Sub1_3051.y, (if (this.anInt3079 == 11) 4 + this.anInt3052 else this.anInt3052), 128))
                 if (class2 == null) {
                     anInt3055 = 0
                     aBooleanArray3072 = null
@@ -166,7 +166,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                         aRenderNode3071 = class2.aRenderNode118
                         method1130(aRenderNode3071, aByte3067.toInt(), aClass318_Sub1_3051.x, aClass318_Sub1_3051.y, null)
                         anInt3073 = -1
-                        anInt3056 = npcConfig.anInt941
+                        anInt3056 = objectType.anInt941
                     }
                     anInt3060 = abstractModel!!.fa()
                     anInt3055 = abstractModel.ma()
@@ -174,7 +174,7 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
             } else abstractModel = aAbstractModel_3059
         } else {
             if (bool_3_) i_4_ = i_4_ or 0x40000
-            abstractModel = (npcConfig.method483(anInt3083, anInt3054, (if (this.anInt3079 == 11) 10 else this.anInt3079), var_s!!.method3986((aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), (-2).toByte()), var_renderer, (if (this.anInt3079 == 11) this.anInt3052 + 4 else this.anInt3052), i_4_, 76.toByte(), var_terrainTile_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aWidgetDefinition_3057, var_s))
+            abstractModel = (objectType.method483(anInt3083, anInt3054, (if (this.anInt3079 == 11) 10 else this.anInt3079), var_s!!.method3986((aClass318_Sub1_3051!!.x), (aClass318_Sub1_3051.y), (-2).toByte()), var_renderer, (if (this.anInt3079 == 11) this.anInt3052 + 4 else this.anInt3052), i_4_, 76.toByte(), var_terrainTile_5_, aClass318_Sub1_3051.y, anInt3084, aClass318_Sub1_3051.x, aWidgetDefinition_3057, var_s))
             if (abstractModel == null) {
                 anInt3055 = 0
                 aBooleanArray3072 = null
@@ -186,14 +186,14 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                     aRenderNode3071 = abstractModel.ba(aRenderNode3071)
                     method1130(aRenderNode3071, aByte3067.toInt(), (aClass318_Sub1_3051.x), (aClass318_Sub1_3051.y), aBooleanArray3072)
                     anInt3073 = anInt3084
-                    anInt3056 = npcConfig.anInt941
+                    anInt3056 = objectType.anInt941
                 }
                 anInt3060 = abstractModel.fa()
                 anInt3055 = abstractModel.ma()
             }
             aAbstractModel_3059 = null
         }
-        anInt3053 = npcConfig.anInt941
+        anInt3053 = objectType.anInt941
         return abstractModel
     }
 
@@ -205,9 +205,9 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
                 val class129s = abstractModel!!.method619()
                 val class342s = abstractModel.method604()
                 if ((this.aClass318_Sub10_3081 == null || this.aClass318_Sub10_3081!!.aBoolean6470) && (class129s != null || class342s != null)) {
-                    var npcConfig: NpcConfig? = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, this.anInt3063)
-                    if (npcConfig!!.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
-                    if (npcConfig != null) this.aClass318_Sub10_3081 = SceneGraphContainer.method2526(GlGroundShaderPass.anInt7396, true)
+                    var objectType: ObjectType? = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, this.anInt3063)
+                    if (objectType!!.anIntArray945 != null) objectType = objectType.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
+                    if (objectType != null) this.aClass318_Sub10_3081 = SceneGraphContainer.method2526(GlGroundShaderPass.anInt7396, true)
                 }
                 if (this.aClass318_Sub10_3081 == null) break
                 abstractModel.method620(abstractCameraTransform)
@@ -295,17 +295,17 @@ class SceneObjectAnimator internal constructor(var_renderer: Renderer?, npcConfi
         anInt3073 = -1
         try {
             this.anInt3079 = i
-            this.anInt3063 = npcConfig!!.anInt941
+            this.anInt3063 = objectType!!.anInt941
             aClass318_Sub1_3051 = class318_sub1
             aByte3085 = i_16_.toByte()
             aByte3067 = i_17_.toByte()
             aBoolean3069 = bool
             this.anInt3052 = i_15_
-            aBoolean3065 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean3069)
+            aBoolean3065 = (var_renderer!!.method3682() && objectType.aBoolean894 && !aBoolean3069)
             if (i_18_ != -1) aBoolean3064 = true
             method1666(69.toByte(), i_18_)
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("bv.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bv.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (objectType != null) "{...}" else "null") + ',' + i + ',' + i_15_ + ',' + i_16_ + ',' + i_17_ + ',' + (if (class318_sub1 != null) "{...}" else "null") + ',' + bool + ',' + i_18_ + ')'))
         }
     }
 

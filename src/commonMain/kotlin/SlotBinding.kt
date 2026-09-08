@@ -108,24 +108,24 @@ class SlotBinding private constructor(private val aCollisionFlagQuery_3392: Coll
         }
 
         @JvmStatic
-        fun method2028(i: Int, npcConfig: NpcConfig?, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int) {
+        fun method2028(i: Int, objectType: ObjectType?, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int) {
             var i_1_ = i_1_
             try {
                 anInt3395++
-                val class218 = ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1173(31.toByte(), npcConfig!!.anInt875)
+                val class218 = ModelOrSpriteHolder.aMapSceneDefinitionLoader_117!!.method1173(31.toByte(), objectType!!.anInt875)
                 if (class218!!.anInt2853 != -1) {
-                    if (npcConfig.aBoolean912) {
-                        i_1_ += npcConfig.anInt923
+                    if (objectType.aBoolean912) {
+                        i_1_ += objectType.anInt923
                         i_1_ = i_1_ and 0x3
                     } else i_1_ = 0
-                    val class105 = class218.method1596(i_1_, npcConfig.aBoolean925, 82, var_renderer!!)
+                    val class105 = class218.method1596(i_1_, objectType.aBoolean925, 82, var_renderer!!)
                     if (class105 != null) {
-                        var i_3_ = npcConfig.anInt961
-                        var i_4_ = npcConfig.anInt926
+                        var i_3_ = objectType.anInt961
+                        var i_4_ = objectType.anInt926
                         val i_5_ = 60 % ((52 - i_2_) / 56)
                         if ((0x1 and i_1_) == 1) {
-                            i_3_ = npcConfig.anInt926
-                            i_4_ = npcConfig.anInt961
+                            i_3_ = objectType.anInt926
+                            i_4_ = objectType.anInt961
                         }
                         var i_6_ = class105.method966()
                         var i_7_ = class105.method980()
@@ -138,7 +138,7 @@ class SlotBinding private constructor(private val aCollisionFlagQuery_3392: Coll
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("up.C(" + i + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("up.C(" + i + ',' + (if (objectType != null) "{...}" else "null") + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ')'))
             }
         }
 

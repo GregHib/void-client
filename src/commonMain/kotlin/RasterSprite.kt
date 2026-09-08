@@ -26,7 +26,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
 
         var anInt5205: Int = 0
 
-        var aJs5Archive_5207: Js5Archive? = null
+        var models: Js5Archive? = null
 
         /*synthetic*/
         var aClass5208: Class<*>? = null
@@ -44,7 +44,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
             aFontMetaRef_5200 = null
             aFontMetaRef_5204 = null
             SpriteSheetCache.aClass348_Sub6_5206 = null
-            aJs5Archive_5207 = null
+            models = null
         }
 
         fun method168(i: Byte) {
@@ -53,7 +53,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
                     try {
                         try {
                             val var_long = PlatformRuntime.maxMemory()
-                            TextureDefinitionCache.anInt2964 = 1 + (var_long / 1048576L).toInt()
+                            QuickChatTypeList.anInt2964 = 1 + (var_long / 1048576L).toInt()
                         } catch (throwable: Throwable) {
                             /* empty */
                         }
@@ -62,7 +62,7 @@ class RasterSprite(i: Int, i_3_: Int, `is`: IntArray?, is_4_: IntArray?) : Sprit
                         break
                     }
                 }
-                TextureDefinitionCache.anInt2964 = 96
+                QuickChatTypeList.anInt2964 = 96
             } while (false)
             val i_2_ = 15 % (i / 51)
             anInt5205++

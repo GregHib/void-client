@@ -1,6 +1,5 @@
 import kotlin.jvm.JvmStatic
 import ScrollbarComponent.Companion.method188
-import util.Locale
 
 /* Class178 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -53,13 +52,13 @@ object ScriptOpcodeHolder {
         var string_2_ = string_2_
         try {
             anInt2337++
-            aJs5Archive_2306!!.anInt634 = 1
+            items!!.anInt634 = 1
             string_2_ = string_2_!!.lowercase()
             var `is` = ShortArray(16)
             var i_4_ = -1
             var string_5_: String? = null
             if (i_0_ != -1) {
-                val class254 = ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(i_0_, 28364)
+                val class254 = ProjectionCameraTransform.aParamTypeList_5764!!.method2600(i_0_, 28364)
                 if (class254 == null || bool != class254.method1925(!bool_3_)) return
                 if (class254.method1925(!bool_3_)) string_5_ = class254.aString3258
                 else i_4_ = class254.anInt3256
@@ -67,8 +66,8 @@ object ScriptOpcodeHolder {
             var i_6_ = 0
             var i_7_ = 0
             if (bool_3_ != true) aConfigIdPair_2352 = null
-            while ( /**/i_7_ < ClientException.aModelHeaderCache_112!!.anInt3271) {
-                val class213 = ClientException.aModelHeaderCache_112!!.method1940(-74, i_7_)
+            while ( /**/i_7_ < ClientException.aItemTypeList_112!!.anInt3271) {
+                val class213 = ClientException.aItemTypeList_112!!.method1940(-74, i_7_)
                 if ((!bool_1_ || class213.aBoolean2755) && class213.anInt2833 == -1 && class213.anInt2812 == -1 && class213.anInt2799 == 0 && class213.aString2795!!.lowercase().indexOf(string_2_) != -1) {
                     if (i_0_ != -1) {
                         if (bool) {
@@ -101,12 +100,12 @@ object ScriptOpcodeHolder {
             val strings = arrayOfNulls<String>(SceneObjectSpawner.anInt1285)
             var i_10_ = 0
             while (SceneObjectSpawner.anInt1285 > i_10_) {
-                strings[i_10_] = ClientException.aModelHeaderCache_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
+                strings[i_10_] = ClientException.aItemTypeList_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
                 i_10_++
             }
             MapSceneCache.method1333(AsyncTaskHandle.aShortArray2579, 26073, strings)
-            aJs5Archive_2306!!.method412(116.toByte())
-            aJs5Archive_2306!!.anInt634 = 2
+            items!!.method412(116.toByte())
+            items!!.anInt634 = 2
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("qa.A(" + bool + ',' + (if (string != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + bool_1_ + ',' + (if (string_2_ != null) "{...}" else "null") + ',' + bool_3_ + ')'))
         }
@@ -116,13 +115,13 @@ object ScriptOpcodeHolder {
         val class29s = method188(59.toByte())
         for (i in class29s.indices) aConfigIdPairArray2354s!![class29s[i]!!.anInt400] = class29s[i]
     }
-    var aJs5Archive_2306: Js5Archive? = null
+    var items: Js5Archive? = null
 
     @JvmStatic
     fun method1334(i: Byte) {
         TypedRecordTable.aProjectileFactory_2307 = null
         InboundPacketHeader.aInboundPacketHeader_2305 = null
         MapSceneCache.aAbstractModelRenderer_2309 = null
-        aJs5Archive_2306 = null
+        items = null
     }
 }

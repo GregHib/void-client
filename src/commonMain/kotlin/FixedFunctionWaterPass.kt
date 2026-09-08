@@ -114,7 +114,7 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
 
         var aNamedIdRecord_7361: NamedIdRecord? = NamedIdRecord("WTRC", 1)
 
-        var aJs5Archive_7362: Js5Archive? = null
+        var defaults: Js5Archive? = null
 
 
         var anInt7364: Int = 0
@@ -140,12 +140,12 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
                     while (i_11_ != 0 && ((npc!!.aLoadProgressCountersArray10308)!!.size > i_13_)) {
                         if ((0x1 and i_11_) != 0) {
                             if (i_10_ != -1) {
-                                val class17 = ParticleEmitterNode.aWidgetCache_191!!.method835(i_10_, i + 7394)
+                                val class17 = ParticleEmitterNode.aAnimationTypeList_191!!.method835(i_10_, i + 7394)
                                 val i_14_ = class17.anInt248
                                 var class182 = (npc.aLoadProgressCountersArray10308!![i_13_])
                                 if (class182 != null) {
                                     if (i_10_ != class182.anInt2454) {
-                                        if (ParticleEmitterNode.aWidgetCache_191!!.method835(class182.anInt2454, 7).anInt239 <= class17.anInt239) {
+                                        if (ParticleEmitterNode.aAnimationTypeList_191!!.method835(class182.anInt2454, 7).anInt239 <= class17.anInt239) {
                                             npc.aLoadProgressCountersArray10308!![i_13_] = null
                                             class182 = npc.aLoadProgressCountersArray10308!![i_13_]
                                         }
@@ -196,7 +196,7 @@ class FixedFunctionWaterPass internal constructor(var_ha_Sub3: NativeRenderer, n
         @JvmStatic
         fun method3550(i: Byte) {
             InboundPacketHeader.aInboundPacketHeader_7363 = null
-            aJs5Archive_7362 = null
+            defaults = null
             val i_20_ = -90 % ((-54 - i) / 60)
             aNamedIdRecord_7361 = null
         }

@@ -24,7 +24,7 @@ object RenderNodeStatics {
 
     @JvmStatic
     fun method3284(bool: Boolean, d: Double) {
-        MapSceneRenderer.aAbstractCameraTransform_624!!.method898(NpcConfig.aAbstractCameraTransform_905)
+        MapSceneRenderer.aAbstractCameraTransform_624!!.method898(ObjectType.aAbstractCameraTransform_905)
         anInt9717++
         if (bool != true) method3285(10)
         MapSceneRenderer.aAbstractCameraTransform_624!!.method891(0, 0, d.toInt())

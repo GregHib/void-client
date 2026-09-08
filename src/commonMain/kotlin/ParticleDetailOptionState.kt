@@ -126,7 +126,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
         @JvmStatic
         fun method1797(i: Int, i_11_: Int, widgetComponent: WidgetComponent, i_12_: Byte) {
             if (RenderNodeStatics.aBoolean9722) {
-                val class254 = (if (ParticleEmitterFactoryStatics.anInt3176 != -1) ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactoryStatics.anInt3176, 28364) else null)
+                val class254 = (if (ParticleEmitterFactoryStatics.anInt3176 != -1) ProjectionCameraTransform.aParamTypeList_5764!!.method2600(ParticleEmitterFactoryStatics.anInt3176, 28364) else null)
                 if (Client.method105(widgetComponent)!!.method3303(1) && (WidgetTextConfig.anInt500 and 0x20) != 0 && (class254 == null || (widgetComponent.method428(class254.anInt3256, ParticleEmitterFactoryStatics.anInt3176, -128) != class254.anInt3256))) {
                     ItemModelDefinition.anInt436++
                     MinimapPolygonDrawer.method466(false, (ItemNameResolver.aString5000 + " -> " + widgetComponent.aString752) + Config.getDebug(widgetComponent.anInt830 shr 16, widgetComponent.anInt830 and 0xffff), widgetComponent.anInt830, (-90).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 6, (widgetComponent.anInt830 or (widgetComponent.anInt704 shl 0)).toLong(), ItemNameResolver.aString5001, 0L, FloatBuffer.anInt9747)
@@ -154,7 +154,7 @@ class ParticleDetailOptionState : GraphicsOptionState {
             }
             if (Client.method105(widgetComponent)!!.method3305(0)) {
                 if (widgetComponent.aString816 != null) MinimapPolygonDrawer.method466(false, "", widgetComponent.anInt830, (-118).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 16, ((widgetComponent.anInt704 shl 0) or widgetComponent.anInt830).toLong(), widgetComponent.aString816, 0L, -1)
-                else MinimapPolygonDrawer.method466(false, "", widgetComponent.anInt830, (-79).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 16, (widgetComponent.anInt704 shl 0 or widgetComponent.anInt830).toLong(), LocalizedText.aLocalizedText_3492!!.method2063(ChatCommandProcessor.anInt6967, 544), 0L, -1)
+                else MinimapPolygonDrawer.method466(false, "", widgetComponent.anInt830, (-79).toByte(), false, widgetComponent.anInt704, widgetComponent.anInt812, true, 16, (widgetComponent.anInt704 shl 0 or widgetComponent.anInt830).toLong(), LocalizedText.aLocalizedText_3492!!.method2063(ChatCommandProcessor.language, 544), 0L, -1)
                 TimedTileQueueEntry.anInt9655++
             }
         }

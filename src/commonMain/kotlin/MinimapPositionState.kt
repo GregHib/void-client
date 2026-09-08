@@ -3,7 +3,7 @@ import DelegatingRenderCanvas.Companion.method119
 import MinimapDrawController.method950
 import ScriptCompilerThread.Companion.method1053
 import SizeBoundedSoftCache.Companion.method1343
-import CacheArchiveIndexLoader.Companion.method338
+import EnumTypeList.Companion.method338
 import SolidFillComponent.Companion.method198
 import ActiveMapRegion.method769
 import ConfigArchiveLoader.Companion.method814
@@ -53,7 +53,7 @@ class MinimapPositionState {
                 OutgoingPacketNode.method3324(FacingDirectionNode.aRenderer6654, 83.toByte(), GlGroundShaderPass.anInt7396.toLong())
                 if (RenderNodeStatics.anInt9721 != -1) method769(RenderNodeStatics.anInt9721, 118.toByte())
                 for (i_3_ in 0..<TerrainShadowBuilderGl3.anInt7008) {
-                    if (OpenGlModel.aBooleanArray2076!![i_3_]) LocDefinitionCache.aBooleanArray3438!![i_3_] = true
+                    if (OpenGlModel.aBooleanArray2076!![i_3_]) FloorOverlayTypeList.aBooleanArray3438!![i_3_] = true
                     SizeBoundedSoftCache.aBooleanArray2326!![i_3_] = OpenGlModel.aBooleanArray2076!![i_3_]
                     OpenGlModel.aBooleanArray2076!![i_3_] = false
                 }

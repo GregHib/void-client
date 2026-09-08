@@ -37,11 +37,11 @@ class ModelLightingConfig {
         this.aFloat2536 = 1.2f
         this.aCircleRasterizer_2541 = ParameterizedText.aCircleRasterizer_9571
         this.anInt2546 = 0
-        this.anInt2549 = LocDefinitionCache.anInt3444
+        this.anInt2549 = FloorOverlayTypeList.anInt3444
         this.anInt2548 = -60
         this.anInt2538 = -50
         this.aFloat2544 = 0.69921875f
-        this.anInt2540 = LocDefinitionCache.anInt3439
+        this.anInt2540 = FloorOverlayTypeList.anInt3439
         this.aFloat2547 = 1.1523438f
     }
 
@@ -52,13 +52,13 @@ class ModelLightingConfig {
             if ((0x2 and i) != 0) class348_sub49.readUnsignedShort(842397944)
             if ((i and 0x4) != 0) class348_sub49.readUnsignedShort(842397944)
             if ((0x8 and i) != 0) class348_sub49.readUnsignedShort(842397944)
-            this.anInt2540 = LocDefinitionCache.anInt3439
+            this.anInt2540 = FloorOverlayTypeList.anInt3439
             this.aFloat2547 = 1.1523438f
             this.aFloat2544 = 0.69921875f
             this.aFloat2536 = 1.2f
         } else {
             if ((i and 0x1) != 0) this.anInt2540 = class348_sub49.readInt((-126).toByte())
-            else this.anInt2540 = LocDefinitionCache.anInt3439
+            else this.anInt2540 = FloorOverlayTypeList.anInt3439
             if ((0x2 and i) != 0) this.aFloat2547 = class348_sub49.readUnsignedShort(842397944).toFloat() / 256.0f
             else this.aFloat2547 = 1.1523438f
             if ((i and 0x4) == 0) this.aFloat2544 = 0.69921875f
@@ -75,7 +75,7 @@ class ModelLightingConfig {
             this.anInt2548 = class348_sub49.readShort(13638)
             this.anInt2535 = class348_sub49.readShort(13638)
         }
-        if ((0x20 and i) == 0) this.anInt2549 = LocDefinitionCache.anInt3444
+        if ((0x20 and i) == 0) this.anInt2549 = FloorOverlayTypeList.anInt3444
         else this.anInt2549 = class348_sub49.readInt((-126).toByte())
         if ((i and 0x40) != 0) this.anInt2546 = class348_sub49.readUnsignedShort(842397944)
         else this.anInt2546 = 0

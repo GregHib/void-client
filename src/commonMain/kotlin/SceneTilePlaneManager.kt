@@ -10,7 +10,7 @@ object SceneTilePlaneManager {
 
     var anInt232: Int = 0
 
-    var aJs5Archive_233: Js5Archive? = null
+    var huffman: Js5Archive? = null
 
     var anInt234: Int = 0
 
@@ -50,7 +50,7 @@ object SceneTilePlaneManager {
 
     @JvmStatic
     fun method260(bool: Boolean): Int {
-        if (bool != false) aJs5Archive_233 = null
+        if (bool != false) huffman = null
         anInt232++
         if (WhirlpoolHash.anInt7207 == 1) return FireParticleStream.anInt9157
         return 0
@@ -58,7 +58,7 @@ object SceneTilePlaneManager {
 
     @JvmStatic
     fun method261(i: Byte) {
-        aJs5Archive_233 = null
+        huffman = null
         aWidgetNodeLink_231 = null
         if (i.toInt() != -120) method262(-23)
     }

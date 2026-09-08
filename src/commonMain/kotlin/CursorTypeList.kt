@@ -5,7 +5,7 @@ import io.File
 /*
  * Class166
  */
-class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_9_: Js5Archive?) {
+class CursorTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_9_: Js5Archive?) {
 
     var aJs5Archive_2180: Js5Archive? = null
     private val aLruByteCache_2185 = LruByteCache(64)
@@ -46,7 +46,7 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
             aJs5Archive_2188.method410(-1860, 33, i_1_)
         }
         underlayDefinition = UnderlayDefinition()
-        underlayDefinition.aItemDefinitionLoader_2886 = this
+        underlayDefinition.aCursorTypeList_2886 = this
         if (`is` != null) underlayDefinition.method1611(ByteBuffer(`is`), false)
         withLock(aLruByteCache_2185) {
             aLruByteCache_2185.method582(underlayDefinition, i_1_.toLong(), (-116).toByte())
@@ -107,10 +107,10 @@ class ItemDefinitionLoader internal constructor(sceneProjector: SceneProjector?,
 
         fun method1288(i: Int, i_2_: Int) {
             anInt2186++
-            var class348 = TextureDefinitionCache.aHashtable_2959!!.method3484(0)
+            var class348 = QuickChatTypeList.aHashtable_2959!!.method3484(0)
             while (class348 != null) {
                 if ((class348.aLong4291 shr 48 and 0xffffL) == i_2_.toLong()) class348.method2715(119.toByte())
-                class348 = TextureDefinitionCache.aHashtable_2959!!.method3482(0)
+                class348 = QuickChatTypeList.aHashtable_2959!!.method3482(0)
             }
         }
 

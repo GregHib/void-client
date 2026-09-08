@@ -367,7 +367,7 @@ class WidgetComponent {
         return class348_sub50.aString7211
     }
 
-    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, widgetCache: WidgetCache?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, modelHeaderCache: ModelHeaderCache?, varResolver: VarResolver?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, npcDefinitionCache: NpcDefinitionCache?, bufferedMessageQueue: BufferedMessageQueue?, i_24_: Int): AbstractModel? {
+    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, animationTypeList: AnimationTypeList?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, itemTypeList: ItemTypeList?, varResolver: VarResolver?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, npcDefinitionCache: NpcDefinitionCache?, npcTypeList: NpcTypeList?, i_24_: Int): AbstractModel? {
         var i = i
         try {
             anInt684++
@@ -395,7 +395,7 @@ class WidgetComponent {
                 return abstractModel
             }
             if (this.anInt770 == 2) {
-                val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method803(varResolver, var_renderer, i_22_, i_24_, widgetDefinition, widgetCache, i_21_, 104, i))
+                val class64 = (npcTypeList!!.method2079(this.anInt753, -1).method803(varResolver, var_renderer, i_22_, i_24_, widgetDefinition, animationTypeList, i_21_, 104, i))
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -404,7 +404,7 @@ class WidgetComponent {
             }
             if (this.anInt770 == 3) {
                 if (compositeNpcModelBuilder == null) return null
-                val class64 = compositeNpcModelBuilder.method1230(modelHeaderCache, -402058072, widgetCache, modelDefinitionLoader, varResolver, bufferedMessageQueue, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
+                val class64 = compositeNpcModelBuilder.method1230(itemTypeList, -402058072, animationTypeList, modelDefinitionLoader, varResolver, npcTypeList, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -412,7 +412,7 @@ class WidgetComponent {
                 return class64
             }
             if (this.anInt770 == 4) {
-                val class213 = modelHeaderCache!!.method1940(i_23_ + -365, this.anInt753)
+                val class213 = itemTypeList!!.method1940(i_23_ + -365, this.anInt753)
                 val class64 = class213.method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_22_, 10, i_21_, 88.toByte(), i_24_)
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
@@ -421,7 +421,7 @@ class WidgetComponent {
                 return class64
             }
             if (this.anInt770 == 6) {
-                val class64 = (bufferedMessageQueue!!.method2079(this.anInt753, -1).method800(0, null, widgetCache, false, null, 0, npcDefinitionCache, i_21_, widgetDefinition, varResolver, var_renderer, 0, null, i_24_, 0, i, i_22_))
+                val class64 = (npcTypeList!!.method2079(this.anInt753, -1).method800(0, null, animationTypeList, false, null, 0, npcDefinitionCache, i_21_, widgetDefinition, varResolver, var_renderer, 0, null, i_24_, 0, i, i_22_))
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -433,7 +433,7 @@ class WidgetComponent {
                 val i_26_ = this.anInt753 ushr 16
                 val i_27_ = 0xffff and this.anInt753
                 val i_28_ = this.anInt779
-                val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, widgetCache, modelDefinitionLoader, -15331, i_26_, i_22_, var_renderer, i_21_, widgetDefinition)
+                val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, animationTypeList, modelDefinitionLoader, -15331, i_26_, i_22_, var_renderer, i_21_, widgetDefinition)
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -444,7 +444,7 @@ class WidgetComponent {
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(
                 runtimeexception,
-                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + i_24_ + ')')
+                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (itemTypeList != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
         }
     }

@@ -8,7 +8,7 @@ import ChatMessageStream.Companion.method136
 /* Class318_Sub1_Sub3_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, bool_10_: Boolean) : GroundDecorEntity(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, npcConfig.anInt895 == 1, method2782(i_9_, i_8_, 0)), RenderTarget {
+class ModelGroundDecor internal constructor(var_renderer: Renderer?, objectType: ObjectType, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, bool_10_: Boolean) : GroundDecorEntity(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, objectType.anInt895 == 1, method2782(i_9_, i_8_, 0)), RenderTarget {
     private val aBoolean10003: Boolean
     private val aBoolean10014: Boolean
     private var aByte10015: Byte = 0
@@ -51,14 +51,14 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
     init {
         do {
             try {
-                aShort10032 = npcConfig.anInt941.toShort()
+                aShort10032 = objectType.anInt941.toShort()
                 aByte10015 = i_9_.toByte()
                 aByte10024 = i_8_.toByte()
-                aBoolean10014 = npcConfig.anInt874 != 0 && !bool
+                aBoolean10014 = objectType.anInt874 != 0 && !bool
                 aBoolean10017 = bool
                 aBoolean10019 = bool_10_
                 this.aByte6376 = i_0_.toByte()
-                aBoolean10003 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean10017 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aBoolean10003 = (var_renderer!!.method3682() && objectType.aBoolean894 && !aBoolean10017 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 var i_11_ = 2048
                 if (aBoolean10019) i_11_ = i_11_ or 0x10000
                 val class2 = method2417(0, var_renderer, i_11_, aBoolean10003)
@@ -68,7 +68,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
                 if (!aBoolean10019) break
                 this.aAbstractModel_10028 = this.aAbstractModel_10028!!.method614(0.toByte(), i_11_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("dm.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + bool_10_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("dm.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (objectType != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + bool_10_ + ')'))
             }
             break
         } while (false)
@@ -174,7 +174,7 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: 
 
     private fun method2417(i: Int, var_renderer: Renderer?, i_20_: Int, bool: Boolean): ModelOrSpriteHolder? {
         anInt10007++
-        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(i, 0xffff and aShort10032.toInt())
+        val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(i, 0xffff and aShort10032.toInt())
         val var_terrainTile: TerrainTile?
         val var_terrainTile_21_: TerrainTile?
         if (aBoolean10017) {

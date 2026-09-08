@@ -43,7 +43,7 @@ object SoundCacheState {
         var i_9_ = 0
         while (TerrainShadowBuilderGl3.anInt7008 > i_9_) {
             val rectangle = HintIconState.aRectangleArray2371!![i_9_]
-            if (rectangle!!.w + rectangle.left > i_7_ && rectangle.left < i + i_7_ && rectangle.h + rectangle.top > i_6_ && rectangle.top < i_8_ + i_6_) LocDefinitionCache.aBooleanArray3438!![i_9_] = true
+            if (rectangle!!.w + rectangle.left > i_7_ && rectangle.left < i + i_7_ && rectangle.h + rectangle.top > i_6_ && rectangle.top < i_8_ + i_6_) FloorOverlayTypeList.aBooleanArray3438!![i_9_] = true
             i_9_++
         }
         MapTileShape.Companion.method2663(-5590, i_7_, i_7_ + i, i_6_, i_6_ - -i_8_)

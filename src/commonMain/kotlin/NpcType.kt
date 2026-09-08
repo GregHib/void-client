@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import CacheArchiveIndexLoader.Companion.method340
+import EnumTypeList.Companion.method340
 
 /* Class79 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -37,7 +37,7 @@ class NpcType {
 
     var aByte1347: Byte
 
-    var aBufferedMessageQueue_1348: BufferedMessageQueue? = null
+    var aNpcTypeList_1348: NpcTypeList? = null
     var aStringArray1349: Array<String?>
 
     var aShort1350: Short = 0
@@ -109,7 +109,7 @@ class NpcType {
         var i_0_ = i
         while (this.anIntArray1377!!.size > i_0_) {
             if (this.anIntArray1377!![i_0_] != -1) {
-                val class79_1_ = (this.aBufferedMessageQueue_1348!!.method2079(this.anIntArray1377!![i_0_], -1))
+                val class79_1_ = (this.aNpcTypeList_1348!!.method2079(this.anIntArray1377!![i_0_], -1))
                 if (class79_1_.anInt1343 != -1 || class79_1_.anInt1364 != -1 || class79_1_.anInt1327 != -1) return true
             }
             i_0_++
@@ -126,9 +126,9 @@ class NpcType {
         if (i_2_ < 0 || (-1 + this.anIntArray1377!!.size <= i_2_) || this.anIntArray1377!![i_2_] == -1) {
             val i_3_ = (this.anIntArray1377!![this.anIntArray1377!!.size - 1])
             if (i_3_ == -1) return null
-            return this.aBufferedMessageQueue_1348!!.method2079(i_3_, i)
+            return this.aNpcTypeList_1348!!.method2079(i_3_, i)
         }
-        return this.aBufferedMessageQueue_1348!!.method2079(this.anIntArray1377!![i_2_], -1)
+        return this.aNpcTypeList_1348!!.method2079(this.anIntArray1377!![i_2_], -1)
     }
 
     private fun method795(class348_sub49: ByteBuffer, i: Int, i_4_: Int) {
@@ -251,7 +251,7 @@ class NpcType {
                                                                         else if (i != 143) {
                                                                             if (i >= 150 && i < 155) {
                                                                                 this.aStringArray1349[-150 + i] = class348_sub49.readString((-73).toByte())
-                                                                                if (!this.aBufferedMessageQueue_1348!!.aBoolean3583) this.aStringArray1349[i + -150] = null
+                                                                                if (!this.aNpcTypeList_1348!!.aBoolean3583) this.aStringArray1349[i + -150] = null
                                                                             } else if (i == 155) {
                                                                                 aByte1376 = class348_sub49.readByte(i_4_ xor 0x16.inv())
                                                                                 aByte1360 = class348_sub49.readByte(-113)
@@ -336,18 +336,18 @@ class NpcType {
         if (i >= -75) aByte1376 = 102.toByte()
         anInt1334++
         if (this.aByte1384.toInt() == -1) {
-            if (ParticleEmitterNode.aSceneProjector_186 == this.aBufferedMessageQueue_1348!!.aSceneProjector_3578) this.aByte1384 = 1.toByte()
+            if (ParticleEmitterNode.aSceneProjector_186 == this.aNpcTypeList_1348!!.aSceneProjector_3578) this.aByte1384 = 1.toByte()
             else this.aByte1384 = 0.toByte()
         }
     }
 
-    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, widgetCache: WidgetCache?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, npcDefinitionCache: NpcDefinitionCache?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, varResolver: VarResolver?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): AbstractModel? {
+    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, animationTypeList: AnimationTypeList?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, npcDefinitionCache: NpcDefinitionCache?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, varResolver: VarResolver?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): AbstractModel? {
         try {
             anInt1341++
             if (this.anIntArray1377 != null) {
                 val class79_42_ = method794(varResolver!!, -1)
                 if (class79_42_ == null) return null
-                return class79_42_.method800(i, loadProgressCounters, widgetCache, false, widgetDefinition, i_34_, npcDefinitionCache, i_35_, widgetDefinition_36_, varResolver, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
+                return class79_42_.method800(i, loadProgressCounters, animationTypeList, false, widgetDefinition, i_34_, npcDefinitionCache, i_35_, widgetDefinition_36_, varResolver, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
             }
             var i_43_ = i_40_
             if (anInt1358 != 128) i_43_ = i_43_ or 0x2
@@ -361,14 +361,14 @@ class NpcType {
             for (i_50_ in 0..<i_49_) {
                 ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = null
                 if (loadProgressCounters!![i_50_] != null) {
-                    val class17_51_ = widgetCache!!.method835((loadProgressCounters[i_50_]!!.anInt2454), 7)
+                    val class17_51_ = animationTypeList!!.method835((loadProgressCounters[i_50_]!!.anInt2454), 7)
                     if (class17_51_.anIntArray237 != null) {
                         bool_44_ = true
                         AudioResampler.aWidgetDefinitionArray2169s!![i_50_] = class17_51_
                         val i_52_ = loadProgressCounters[i_50_]!!.anInt2451
                         val i_53_ = loadProgressCounters[i_50_]!!.anInt2455
                         var i_54_ = class17_51_.anIntArray237[i_52_]
-                        ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = widgetCache.method839(i_54_ ushr 16, 3)
+                        ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_] = animationTypeList.method839(i_54_ ushr 16, 3)
                         i_54_ = i_54_ and 0xffff
                         RegionMapDecoder.anIntArray1518!![i_50_] = i_54_
                         if ((ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_50_]) != null) {
@@ -381,7 +381,7 @@ class NpcType {
                             KaraokeSubtitleStream.anIntArray9050!![i_50_] = class17_51_.anIntArray267!![i_52_]
                             TooltipComponentRenderer.anIntArray4648!![i_50_] = loadProgressCounters[i_50_]!!.anInt2456
                             var i_55_ = class17_51_.anIntArray237[i_53_]
-                            NpcType.aClass348_Sub42_Sub17Array9672!![i_50_] = widgetCache.method839(i_55_ ushr 16, 3)
+                            NpcType.aClass348_Sub42_Sub17Array9672!![i_50_] = animationTypeList.method839(i_55_ ushr 16, 3)
                             i_55_ = i_55_ and 0xffff
                             ParticleDefLoader.anIntArray2466!![i_50_] = i_55_
                             if ((NpcType.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
@@ -414,7 +414,7 @@ class NpcType {
                     i_56_ = widgetDefinition_36_.anIntArray237[i_35_]
                     val i_65_ = i_56_ ushr 16
                     i_56_ = i_56_ and 0xffff
-                    class348_sub42_sub17 = widgetCache!!.method839(i_65_, 3)
+                    class348_sub42_sub17 = animationTypeList!!.method839(i_65_, 3)
                     if (class348_sub42_sub17 != null) {
                         bool_46_ = bool_46_ or class348_sub42_sub17.method3272(i_56_, 0)
                         bool_45_ = bool_45_ or class348_sub42_sub17.method3271(i_56_, 14)
@@ -426,7 +426,7 @@ class NpcType {
                         i_58_ = widgetDefinition_36_.anIntArray267!![i_35_]
                         val i_66_ = i_57_ ushr 16
                         if (i_65_ == i_66_) class348_sub42_sub17_59_ = class348_sub42_sub17
-                        else class348_sub42_sub17_59_ = widgetCache.method839(i_66_, 3)
+                        else class348_sub42_sub17_59_ = animationTypeList.method839(i_66_, 3)
                         i_57_ = i_57_ and 0xffff
                         if (class348_sub42_sub17_59_ != null) {
                             bool_46_ = bool_46_ or class348_sub42_sub17_59_.method3272(i_57_, 0)
@@ -438,7 +438,7 @@ class NpcType {
                 if (widgetDefinition != null) {
                     i_60_ = widgetDefinition.anIntArray237[i_39_]
                     val i_67_ = i_60_ ushr 16
-                    class348_sub42_sub17_63_ = widgetCache!!.method839(i_67_, 3)
+                    class348_sub42_sub17_63_ = animationTypeList!!.method839(i_67_, 3)
                     i_60_ = i_60_ and 0xffff
                     if (class348_sub42_sub17_63_ != null) {
                         bool_46_ = bool_46_ or class348_sub42_sub17_63_.method3272(i_60_, 0)
@@ -451,7 +451,7 @@ class NpcType {
                         i_61_ = widgetDefinition.anIntArray237[i_37_]
                         val i_68_ = i_61_ ushr 16
                         if (i_68_ == i_67_) class348_sub42_sub17_64_ = class348_sub42_sub17_63_
-                        else class348_sub42_sub17_64_ = widgetCache.method839(i_68_, 3)
+                        else class348_sub42_sub17_64_ = animationTypeList.method839(i_68_, 3)
                         i_61_ = i_61_ and 0xffff
                         if (class348_sub42_sub17_64_ != null) {
                             bool_46_ = bool_46_ or class348_sub42_sub17_64_.method3272(i_61_, 0)
@@ -466,8 +466,8 @@ class NpcType {
                 if (bool_48_) i_43_ = i_43_ or 0x400
             }
             val l = (var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong()
-            var abstractModel: AbstractModel? = withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
-                this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method583(l, 80) as AbstractModel?
+            var abstractModel: AbstractModel? = withLock(this.aNpcTypeList_1348!!.aLruByteCache_3590!!) {
+                this.aNpcTypeList_1348!!.aLruByteCache_3590!!.method583(l, 80) as AbstractModel?
             }
             var npcDefinition: NpcDefinition? = null
             if (this.anInt1366 != -1) npcDefinition = npcDefinitionCache!!.method1983(this.anInt1366, 32)
@@ -475,10 +475,10 @@ class NpcType {
                 if (abstractModel != null) i_43_ = i_43_ or abstractModel.ua()
                 var i_69_ = i_43_
                 var bool_70_ = false
-                withLock(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
+                withLock(this.aNpcTypeList_1348!!.aJs5Archive_3576!!) {
                     var i_71_ = 0
                     while ((anIntArray1402!!.size > i_71_)) {
-                        if (anIntArray1402!![i_71_] != -1 && !(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!.method420(-10499, anIntArray1402!![i_71_], 0))) bool_70_ = true
+                        if (anIntArray1402!![i_71_] != -1 && !(this.aNpcTypeList_1348!!.aJs5Archive_3576!!.method420(-10499, anIntArray1402!![i_71_], 0))) bool_70_ = true
                         i_71_++
                     }
                 }
@@ -486,8 +486,8 @@ class NpcType {
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray1402!!.size)
                 for (i_72_ in anIntArray1402!!.indices) {
                     if (anIntArray1402!![i_72_] != -1) {
-                        withLock(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
-                            modelDefinitions[i_72_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1402!![i_72_], -1)
+                        withLock(this.aNpcTypeList_1348!!.aJs5Archive_3576!!) {
+                            modelDefinitions[i_72_] = ParticleConfigParser.method2277(0, (this.aNpcTypeList_1348!!.aJs5Archive_3576!!), anIntArray1402!![i_72_], -1)
                         }
                         if (modelDefinitions[i_72_] != null) {
                             if (modelDefinitions[i_72_]!!.anInt1830 < 13) modelDefinitions[i_72_]!!.method1092(2, 115)
@@ -525,7 +525,7 @@ class NpcType {
                 if (aShortArray1328 != null) i_69_ = i_69_ or 0x4000
                 if (aShortArray1393 != null) i_69_ = i_69_ or 0x8000
                 if (aByte1405.toInt() != 0) i_69_ = i_69_ or 0x80000
-                abstractModel = var_renderer.method3625(modelDefinition, i_69_, (this.aBufferedMessageQueue_1348!!.anInt3593), 64 + anInt1398, 850 + anInt1406)
+                abstractModel = var_renderer.method3625(modelDefinition, i_69_, (this.aNpcTypeList_1348!!.anInt3593), 64 + anInt1398, 850 + anInt1406)
                 if (aShortArray1328 != null) {
                     var i_80_ = 0
                     while ((i_80_ < aShortArray1328!!.size)) {
@@ -543,8 +543,8 @@ class NpcType {
                 }
                 if (aByte1405.toInt() != 0) abstractModel.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
                 abstractModel.s(i_43_)
-                withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!) {
-                    this.aBufferedMessageQueue_1348!!.aLruByteCache_3590!!.method582(abstractModel, (this.anInt1344 or (var_renderer.anInt4567 shl 16)).toLong(), (-125).toByte())
+                withLock(this.aNpcTypeList_1348!!.aLruByteCache_3590!!) {
+                    this.aNpcTypeList_1348!!.aLruByteCache_3590!!.method582(abstractModel, (this.anInt1344 or (var_renderer.anInt4567 shl 16)).toLong(), (-125).toByte())
                 }
             }
             val class64_82_ = abstractModel.method614(4.toByte(), i_43_, true)
@@ -613,7 +613,7 @@ class NpcType {
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(
                 runtimeexception,
-                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
+                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
             )
         }
     }
@@ -627,37 +627,37 @@ class NpcType {
         return class348_sub50.aString7211
     }
 
-    fun method803(varResolver: VarResolver?, var_renderer: Renderer?, i: Int, i_94_: Int, widgetDefinition: WidgetDefinition?, widgetCache: WidgetCache?, i_95_: Int, i_96_: Int, i_97_: Int): AbstractModel? {
+    fun method803(varResolver: VarResolver?, var_renderer: Renderer?, i: Int, i_94_: Int, widgetDefinition: WidgetDefinition?, animationTypeList: AnimationTypeList?, i_95_: Int, i_96_: Int, i_97_: Int): AbstractModel? {
         try {
             anInt1389++
             if (this.anIntArray1377 != null) {
                 val class79_98_ = method794(varResolver!!, -1)
                 if (class79_98_ == null) return null
-                return class79_98_.method803(varResolver, var_renderer, i, i_94_, widgetDefinition, widgetCache, i_95_, 104, i_97_)
+                return class79_98_.method803(varResolver, var_renderer, i, i_94_, widgetDefinition, animationTypeList, i_95_, 104, i_97_)
             }
             if (anIntArray1380 == null) return null
             var i_99_ = i_97_
             if (widgetDefinition != null && i_95_ != -1) i_99_ = i_99_ or widgetDefinition.method263(i_94_, 97, i_95_, true)
-            var abstractModel: AbstractModel? = withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
-                ((this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as AbstractModel?)
+            var abstractModel: AbstractModel? = withLock(this.aNpcTypeList_1348!!.aLruByteCache_3592) {
+                ((this.aNpcTypeList_1348!!.aLruByteCache_3592.method583((var_renderer!!.anInt4567 shl 16 or this.anInt1344).toLong(), 64)) as AbstractModel?)
             }
             if (abstractModel == null || i_99_ != (abstractModel.ua() and i_99_)) {
                 if (abstractModel != null) i_99_ = i_99_ or abstractModel.ua()
                 var i_100_ = i_99_
                 var bool = false
-                withLock(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
+                withLock(this.aNpcTypeList_1348!!.aJs5Archive_3576!!) {
                     var i_101_ = 0
                     while ((anIntArray1380!!.size > i_101_)) {
-                        if (!this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!.method420(-10499, anIntArray1380!![i_101_], 0)) bool = true
+                        if (!this.aNpcTypeList_1348!!.aJs5Archive_3576!!.method420(-10499, anIntArray1380!![i_101_], 0)) bool = true
                         i_101_++
                     }
                 }
                 if (bool) return null
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray1380!!.size)
-                withLock(this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!) {
+                withLock(this.aNpcTypeList_1348!!.aJs5Archive_3576!!) {
                     var i_102_ = 0
                     while ((anIntArray1380!!.size > i_102_)) {
-                        modelDefinitions[i_102_] = ParticleConfigParser.method2277(0, (this.aBufferedMessageQueue_1348!!.aJs5Archive_3576!!), anIntArray1380!![i_102_], -1)
+                        modelDefinitions[i_102_] = ParticleConfigParser.method2277(0, (this.aNpcTypeList_1348!!.aJs5Archive_3576!!), anIntArray1380!![i_102_], -1)
                         i_102_++
                     }
                 }
@@ -672,7 +672,7 @@ class NpcType {
                 if (aShortArray1328 != null) i_100_ = i_100_ or 0x4000
                 if (aShortArray1393 != null) i_100_ = i_100_ or 0x8000
                 if (aByte1405.toInt() != 0) i_100_ = i_100_ or 0x80000
-                abstractModel = var_renderer!!.method3625(modelDefinition, i_100_, (this.aBufferedMessageQueue_1348!!.anInt3593), 64, 768)
+                abstractModel = var_renderer!!.method3625(modelDefinition, i_100_, (this.aNpcTypeList_1348!!.anInt3593), 64, 768)
                 if (aShortArray1328 != null) {
                     var i_104_ = 0
                     while ((aShortArray1328!!.size > i_104_)) {
@@ -690,15 +690,15 @@ class NpcType {
                 }
                 if (aByte1405.toInt() != 0) abstractModel.method624(aByte1376.toInt(), aByte1360.toInt(), aByte1330.toInt(), aByte1405.toInt() and 0xff)
                 abstractModel.s(i_99_)
-                withLock(this.aBufferedMessageQueue_1348!!.aLruByteCache_3592) {
-                    this.aBufferedMessageQueue_1348!!.aLruByteCache_3592.method582(abstractModel, (var_renderer.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
+                withLock(this.aNpcTypeList_1348!!.aLruByteCache_3592) {
+                    this.aNpcTypeList_1348!!.aLruByteCache_3592.method582(abstractModel, (var_renderer.anInt4567 shl 16 or this.anInt1344).toLong(), (-96).toByte())
                 }
             }
             if (widgetDefinition != null && i_95_ != -1) abstractModel = widgetDefinition.method269(-9, abstractModel, i_94_, i, i_99_, i_95_)
             abstractModel!!.s(i_97_)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("bb.H(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("bb.H(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_94_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i_95_ + ',' + i_96_ + ',' + i_97_ + ')'))
         }
     }
 

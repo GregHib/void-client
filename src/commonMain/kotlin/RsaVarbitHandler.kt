@@ -44,7 +44,7 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
             anInt4897++
             val minimapTileEntry = MinimapTileEntry()
             minimapTileEntry.anInt615 = class348_sub49.readUnsignedShort(842397944)
-            minimapTileEntry.aClass348_Sub42_Sub10_614 = BrightnessOptionState.aCompiledScriptCache_5900!!.method3471(minimapTileEntry.anInt615, (-90).toByte())
+            minimapTileEntry.aClass348_Sub42_Sub10_614 = BrightnessOptionState.aQuickChatMenuTypeList_5900!!.method3471(minimapTileEntry.anInt615, (-90).toByte())
             val i_0_ = -91 / ((9 - i) / 54)
             return minimapTileEntry
         }
@@ -94,14 +94,14 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
                 throw throwable
             }
             if (class56 == TimedTileQueueEntry.aConnectionStateType_9660) {
-                Direct3dModel.aString5420 = TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(ChatCommandProcessor.anInt6967, 544)
+                Direct3dModel.aString5420 = TimedTileQueueEntry.aConnectionStateType_9660!!.aLocalizedText_1012!!.method2063(ChatCommandProcessor.language, 544)
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016) ConfigFlagUtil.anInt3236 = (i * ((TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1021) + -(TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025)) / 100 + (TimedTileQueueEntry.aConnectionStateType_9660!!.anInt1025))
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += ConfigFlagUtil.anInt3236.toString() + "%"
             } else if (TimedTileQueueEntry.aConnectionStateType_9660 == ConnectionStateType.Companion.aConnectionStateType_1043) {
                 ActorEntity.aResourceLoaderThread_897 = null
                 ByteBufferStatics.method3379(2, 3)
             } else {
-                Direct3dModel.aString5420 = class56.aLocalizedText_1015!!.method2063(ChatCommandProcessor.anInt6967, 544)
+                Direct3dModel.aString5420 = class56.aLocalizedText_1015!!.method2063(ChatCommandProcessor.language, 544)
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1013) Direct3dModel.aString5420 += class56.anInt1021.toString() + "%"
                 ConfigFlagUtil.anInt3236 = class56.anInt1021
                 if (TimedTileQueueEntry.aConnectionStateType_9660!!.aBoolean1016 || class56.aBoolean1016) DataHolder.aLong3660 = GameClock.method599(-128)

@@ -167,7 +167,7 @@ class SceneNodeDeque {
                             GlRectangleTexture.method254(-5, (-111).toByte())
                             return
                         }
-                        if (BloomGraphicsOptionState.anInt5969 != 2) ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
+                        if (BloomGraphicsOptionState.anInt5969 != 2) ItemTypeList.aServerConnectionInfo_3285!!.method1259(0)
                         else CacheStateResetter.aServerConnectionInfo_125!!.method1259(0)
                         GroundDecorSceneEntity.anInt9971++
                         NpcDefinition.anInt2955 = 1
@@ -175,7 +175,7 @@ class SceneNodeDeque {
                     }
                     if (NpcDefinition.anInt2955 == 1) {
                         if (BloomGraphicsOptionState.anInt5969 == 2 && !Config.splitPorts) FrameStatsReset.aLinkedQueueNode_5800 = (CacheStateResetter.aServerConnectionInfo_125!!.method1262(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!, 36.toByte()))
-                        else FrameStatsReset.aLinkedQueueNode_5800 = (ModelHeaderCache.aServerConnectionInfo_3285!!.method1262(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!, 36.toByte()))
+                        else FrameStatsReset.aLinkedQueueNode_5800 = (ItemTypeList.aServerConnectionInfo_3285!!.method1262(VorbisOggDecoder.aPrivilegedOperationWorker_8992!!, 36.toByte()))
                         NpcDefinition.anInt2955 = 2
                     }
                     if (NpcDefinition.anInt2955 == 2) {
@@ -262,8 +262,8 @@ class SceneNodeDeque {
                             class348_sub49_sub2.writeBytes(class348_sub49.anInt7197, 0, class348_sub49.aByteArray7154!!, -109)
                             val i_5_ = class348_sub49_sub2.anInt7197
                             class348_sub49_sub2.writeString((-5).toByte(), OpenGlModel.aString5600!!)
-                            class348_sub49_sub2.writeByte(false, Client.aSceneProjector_10434!!.anInt2987)
-                            class348_sub49_sub2.writeByte(false, ChatCommandProcessor.anInt6967)
+                            class348_sub49_sub2.writeByte(false, Client.mode!!.anInt2987)
+                            class348_sub49_sub2.writeByte(false, ChatCommandProcessor.language)
                             method4002(class348_sub49_sub2, 55.toByte())
                             class348_sub49_sub2.writeString((-5).toByte(), BloomGraphicsOptionState.aString5966!!)
                             class348_sub49_sub2.writeInt(106.toByte(), SocketStreamWorker.anInt2670)
@@ -367,9 +367,9 @@ class SceneNodeDeque {
                                 FrameBufferObject.aBoolean4888 = class348_sub49_sub2.readUnsignedByte(255) == 1
                                 ModelDataCache.anInt359 = class348_sub49_sub2.method3369(125.toByte())
                                 ModelBatchBase.aBoolean1900 = class348_sub49_sub2.readUnsignedByte(255) == 1
-                                GradientLookupEffect.aSeqDefinitionCache_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
-                                ClientException.aModelHeaderCache_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
-                                MapAreaDefinition.aBufferedMessageQueue_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
+                                GradientLookupEffect.aObjectTypeList_9195!!.method2004(ModelBatchBase.aBoolean1900, 25.toByte())
+                                ClientException.aItemTypeList_112!!.method1934(11.toByte(), ModelBatchBase.aBoolean1900)
+                                MapAreaDefinition.aNpcTypeList_2529!!.method2072(88.toByte(), ModelBatchBase.aBoolean1900)
                             } else {
                                 if (!Client.aAbstractGameSocket_9165!!.method1705(SceneObjectSpawner.Companion.anInt1288, 107)) return
                                 Client.aAbstractGameSocket_9165!!.method1701(SceneObjectSpawner.Companion.anInt1288, 0, 85.toByte(), (class348_sub49_sub2!!.aByteArray7154!!))
@@ -505,7 +505,7 @@ class SceneNodeDeque {
                         GlRectangleTexture.method254(-4, (-87).toByte())
                         method1215(3.toByte())
                     } else {
-                        if (BloomGraphicsOptionState.anInt5969 != 2) ModelHeaderCache.aServerConnectionInfo_3285!!.method1259(0)
+                        if (BloomGraphicsOptionState.anInt5969 != 2) ItemTypeList.aServerConnectionInfo_3285!!.method1259(0)
                         else CacheStateResetter.aServerConnectionInfo_125!!.method1259(0)
                         GroundDecorSceneEntity.anInt9971++
                         SceneRegionState.anInt197 = 0

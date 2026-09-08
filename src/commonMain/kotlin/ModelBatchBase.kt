@@ -11,7 +11,7 @@ abstract class ModelBatchBase {
 
         var anInt1896: Int = 0
 
-        var aJs5Archive_1897: Js5Archive? = null
+        var quickChat: Js5Archive? = null
 
         var anInt1898: Int = 0
 
@@ -21,7 +21,7 @@ abstract class ModelBatchBase {
 
         @JvmStatic
         fun method1127(i: Int) {
-            aJs5Archive_1897 = null
+            quickChat = null
             aHashtable_1895 = null
             if (i == 5125) aLruByteCache_1894 = null
         }

@@ -3,7 +3,7 @@ import awt.Canvas
 
 object NodeDequeStatics {
 
-    var aJs5Archive_3323: Js5Archive? = null
+    var billboards: Js5Archive? = null
     var anInt3324: Int = 0
 
     var aRSFont_3326: RSFont? = null
@@ -92,7 +92,7 @@ object NodeDequeStatics {
         aModelLightingConfigArrayArray3335 = null
         anObject3331 = null
         if (i != -13722) method2000(-104, 106, null, null)
-        aJs5Archive_3323 = null
+        billboards = null
         aRSFont_3326 = null
     }
 

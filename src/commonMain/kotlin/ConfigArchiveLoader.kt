@@ -49,7 +49,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
 
     companion object {
 
-        var aJs5Archive_1434: Js5Archive? = null
+        var quickChatMenus: Js5Archive? = null
 
         var anInt1435: Int = 0
 
@@ -59,7 +59,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
         @JvmStatic
         fun method811(i: Byte) {
             if (i > -109) anInt1435 = 69
-            aJs5Archive_1434 = null
+            quickChatMenus = null
         }
 
         @JvmStatic
@@ -100,11 +100,11 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         return
                     }
                     if (string == "heap") {
-                        method94(("Heap: " + TextureDefinitionCache.anInt2964 + "MB"), 69)
+                        method94(("Heap: " + QuickChatTypeList.anInt2964 + "MB"), 69)
                         return
                     }
                 } catch (exception: Exception) {
-                    method94((LocalizedText.aLocalizedText_3485!!.method2063(ChatCommandProcessor.anInt6967, 544)!!), -99)
+                    method94((LocalizedText.aLocalizedText_3485!!.method2063(ChatCommandProcessor.language, 544)!!), -99)
                     return
                 }
                 if (NpcAnimationResolver.aNamedIdRecord_165 != OggCacheStream.aNamedIdRecord_5271 || AsyncTaskHandle.anInt2581 >= 2) {
@@ -303,7 +303,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             if (string.length < 6) method94("Invalid buildarea value", i + -36)
                             else {
                                 val i_6_ = (RegionSceneShifter.method3156(true, string.substring(6)))
-                                if (i_6_ < 0 || (LinkedListNodeStatics.method2710(-126, TextureDefinitionCache.anInt2964) < i_6_)) method94("Invalid buildarea value", 53)
+                                if (i_6_ < 0 || (LinkedListNodeStatics.method2710(-126, QuickChatTypeList.anInt2964) < i_6_)) method94("Invalid buildarea value", 53)
                                 else {
                                     IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub6_7226), i_6_)
                                     method243(37)
@@ -376,9 +376,9 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                         if (string.equals("resetminimap", ignoreCase = true)) {
-                            CameraRotationStub.aJs5Archive_322!!.method405(i.toInt() xor 0x4e.inv())
-                            CameraRotationStub.aJs5Archive_322!!.method412(127.toByte())
-                            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1175(125.toByte())
+                            CameraRotationStub.sprites!!.method405(i.toInt() xor 0x4e.inv())
+                            CameraRotationStub.sprites!!.method412(127.toByte())
+                            ModelOrSpriteHolder.aMapSceneDefinitionLoader_117!!.method1175(125.toByte())
                             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1219(7851)
                             method464(-1)
                             method94("Minimap reset", 70)
@@ -402,7 +402,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         if (string.startsWith("cachespace")) {
                             method94(("I(s): " + FontMetaRef.aLruByteCache_4327!!.method581(-18529) + "/" + FontMetaRef.aLruByteCache_4327!!.method577(-4)), -101)
                             method94(("I(m): " + ParticleGeometry.aLruByteCache_4417!!.method581(-18529) + "/" + ParticleGeometry.aLruByteCache_4417!!.method577(i.toInt() xor 0x4d)), 127)
-                            method94(("O(s): " + ClientException.aModelHeaderCache_112!!.aSizeBoundedSoftCache_3288.method1350(126.toByte()) + "/" + ClientException.aModelHeaderCache_112!!.aSizeBoundedSoftCache_3288.method1339(100)), i + 203)
+                            method94(("O(s): " + ClientException.aItemTypeList_112!!.aSizeBoundedSoftCache_3288.method1350(126.toByte()) + "/" + ClientException.aItemTypeList_112!!.aSizeBoundedSoftCache_3288.method1339(100)), i + 203)
                             return
                         }
                         if (string.equals("getcamerapos", ignoreCase = true)) {
@@ -685,7 +685,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                             return
                         }
                     } catch (exception: Exception) {
-                        method94(LocalizedText.aLocalizedText_3485!!.method2063(ChatCommandProcessor.anInt6967, 544)!!, -92)
+                        method94(LocalizedText.aLocalizedText_3485!!.method2063(ChatCommandProcessor.language, 544)!!, -92)
                         return
                     }
                 }
@@ -701,7 +701,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                 if (WorldMapRenderer.anInt4674 == 10) {
                     return
                 }
-                method94(LocalizedText.aLocalizedText_3486!!.method2063(ChatCommandProcessor.anInt6967, 544) + string, 57)
+                method94(LocalizedText.aLocalizedText_3486!!.method2063(ChatCommandProcessor.language, 544) + string, 57)
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("lba.B(" + (if (string != null) "{...}" else "null") + ',' + bool + ',' + bool_0_ + ',' + i + ')'))
             }
@@ -877,25 +877,25 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
         @JvmStatic
         fun method427(i: Int) {
             anInt837++
-            RenderConfigFactory.aLocDefinitionCache_2979!!.method2033(46.toByte())
+            RenderConfigFactory.aFloorOverlayTypeList_2979!!.method2033(46.toByte())
             Tooltip.aParticleDefLoader_4460!!.method1377(2)
             RadialTextureNode.aModelDefinitionLoader_9342!!.method1204(0)
-            GradientLookupEffect.aSeqDefinitionCache_9195!!.method2006(88)
-            MapAreaDefinition.aBufferedMessageQueue_2529!!.method2080(127)
-            ClientException.aModelHeaderCache_112!!.method1938(126)
-            ParticleEmitterNode.aWidgetCache_191!!.method838(7)
-            ConstantColourTextureNode.aMapElementDefinitionCache_9245!!.method2542(-101)
+            GradientLookupEffect.aObjectTypeList_9195!!.method2006(88)
+            MapAreaDefinition.aNpcTypeList_2529!!.method2080(127)
+            ClientException.aItemTypeList_112!!.method1938(126)
+            ParticleEmitterNode.aAnimationTypeList_191!!.method838(7)
+            ConstantColourTextureNode.aGfxTypeList_9245!!.method2542(-101)
             RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
             NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)
             OpenGlModel.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
-            ModelOrSpriteHolder.aTextureDefinitionLoader_117!!.method1174((-99).toByte())
+            ModelOrSpriteHolder.aMapSceneDefinitionLoader_117!!.method1174((-99).toByte())
             TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1222(true)
             TheoraVideoStream.aLocTypeDefLoader_9036!!.method1410(-27995)
-            ProjectionCameraTransform.aEmoteDefCache_5764!!.method2602(0)
+            ProjectionCameraTransform.aParamTypeList_5764!!.method2602(0)
             Client.aMapSceneCache_413!!.method816(false)
             HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
             AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1390(23)
-            CacheArchiveIndexLoader.aItemDefinitionLoader_3147!!.method1283(1)
+            EnumTypeList.aCursorTypeList_3147!!.method1283(1)
             SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method694(-1007)
             FileExistsCondition.aModelDefinitionCache_4782!!.method1598(111)
             CalendarUtil.method2638(-4631)

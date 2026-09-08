@@ -75,7 +75,7 @@ class EdgeDetectTextureNode : AbstractProceduralTextureNode(1, true) {
                 HeightMapNoise.method2280((-4 + TextureQualityOptionState.anInt6006 and 0xff).toByte(), 28587)
                 WidgetComponent.method440(2, (-61).toByte())
             }
-            TrackedGroundDecor.anInt10395 = CompiledScriptCache.anInt4372
+            TrackedGroundDecor.anInt10395 = QuickChatMenuTypeList.anInt4372
         }
 
         @JvmStatic

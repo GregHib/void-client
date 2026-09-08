@@ -71,14 +71,14 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
             if ((FileExistsCondition.anInt4776 >= 2 || RenderNodeStatics.aBoolean9722) && RegionSceneLoader.aWidgetComponent_3701 == null) {
                 if (i >= -71) method1077(null, (-41).toByte())
                 var string: String?
-                if (RenderNodeStatics.aBoolean9722 && FileExistsCondition.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.anInt6967, 544) + ItemNameResolver.aString5000 + " ->")
+                if (RenderNodeStatics.aBoolean9722 && FileExistsCondition.anInt4776 < 2) string = (ItemNameResolver.aString5001 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.language, 544) + ItemNameResolver.aString5000 + " ->")
                 else if (!InputSettingsState.shiftClick || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -121) || FileExistsCondition.anInt4776 <= 2) {
                     val class348_sub42_sub12 = IntHashSetStatics.aClass348_Sub42_Sub12_3963
                     if (class348_sub42_sub12 == null) return
                     string = IntHashSetStatics.method2367((-52).toByte(), class348_sub42_sub12)
                     var `is`: IntArray? = null
                     if (!WidgetNodeLink.method1197(-12081, class348_sub42_sub12.anInt9608)) {
-                        if (class348_sub42_sub12.anInt9599 != -1) `is` = ClientException.aModelHeaderCache_112!!.method1940(98, (class348_sub42_sub12.anInt9599)).anIntArray2772
+                        if (class348_sub42_sub12.anInt9599 != -1) `is` = ClientException.aItemTypeList_112!!.method1940(98, (class348_sub42_sub12.anInt9599)).anIntArray2772
                         else if (method3549((class348_sub42_sub12.anInt9608), 107.toByte())) {
                             val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(class348_sub42_sub12.aLong9605.toInt().toLong(), -6008)) as? NpcReference?)
                             if (class348_sub22 != null) {
@@ -89,16 +89,16 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
                             }
                         } else if (method1813(8806, (class348_sub42_sub12.anInt9608))) {
                             val `object`: Any? = null
-                            var npcConfig: NpcConfig?
-                            if ((class348_sub42_sub12.anInt9608) != 1001) npcConfig = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, ((class348_sub42_sub12.aLong9605) ushr 32 and 0x7fffffffL).toInt()))
-                            else npcConfig = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
-                            if (npcConfig.anIntArray945 != null) npcConfig = npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
-                            if (npcConfig != null) `is` = npcConfig.anIntArray917
+                            var objectType: ObjectType?
+                            if ((class348_sub42_sub12.anInt9608) != 1001) objectType = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, ((class348_sub42_sub12.aLong9605) ushr 32 and 0x7fffffffL).toInt()))
+                            else objectType = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
+                            if (objectType.anIntArray945 != null) objectType = objectType.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte())
+                            if (objectType != null) `is` = objectType.anIntArray917
                         }
-                    } else `is` = (ClientException.aModelHeaderCache_112!!.method1940(-73, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
+                    } else `is` = (ClientException.aItemTypeList_112!!.method1940(-73, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
                     if (`is` != null) string += AudioResampler.method1273(`is`, true)
                 } else string = IntHashSetStatics.method2367(125.toByte(), IntHashSetStatics.aClass348_Sub42_Sub12_3963!!)
-                if (FileExistsCondition.anInt4776 > 2) string += ("<col=ffffff> / " + (FileExistsCondition.anInt4776 - 2) + LocalizedText.aLocalizedText_3508!!.method2063(ChatCommandProcessor.anInt6967, 544))
+                if (FileExistsCondition.anInt4776 > 2) string += ("<col=ffffff> / " + (FileExistsCondition.anInt4776 - 2) + LocalizedText.aLocalizedText_3508!!.method2063(ChatCommandProcessor.language, 544))
                 if (WidgetActionEntry.aWidgetComponent_6990 != null) {
                     var class324 = WidgetActionEntry.aWidgetComponent_6990!!.method426(var_renderer, 68.toByte())
                     if (class324 == null) class324 = NodeDequeStatics.aRSFont_3326!!
@@ -120,7 +120,7 @@ class NativeIndexBuffer : NativeBufferWrapper, ByteBufferReader {
                         RenderableGroup.anIntArray5007
                     )
                     method226(RenderableGroup.anIntArray5007!![0], RenderableGroup.anIntArray5007!![2], RenderableGroup.anIntArray5007!![1], 0, RenderableGroup.anIntArray5007!![3])
-                } else if (CameraRotationStub.aWidgetComponent_323 != null && (Client.aSceneProjector_10434 == ParticleEmitterNode.aSceneProjector_186)) {
+                } else if (CameraRotationStub.aWidgetComponent_323 != null && (Client.mode == ParticleEmitterNode.aSceneProjector_186)) {
                     val i_1_ = (NodeDequeStatics.aRSFont_3326!!.method2571(-1, SpriteRenderEntry.anInt4383, SizeBoundedSoftCache.anIntArray2330, string, 16777215, 0, TileRenderState.aAbstractModelRendererArray4234, 16 + SocketGameConnection.anInt5832, 4 + ConfigValueProvider.Companion.anInt4911, FireParticleStream.aRandom93))
                     method226(ConfigValueProvider.Companion.anInt4911 - -4, (WorldMapLabel.aFontDefinition_4962!!.method1183(true, string) + i_1_), SocketGameConnection.anInt5832, 0, 16)
                 }

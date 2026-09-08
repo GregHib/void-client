@@ -124,7 +124,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                         if (VoronoiNoiseTextureNode.aBoolean9121) {
                             if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
                             else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
-                            for (i_15_ in 0..<Npc.anInt10503) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_15_]!!.method2359(SceneModelBuilder(i_7_ + 1), -1)
+                            for (i_15_ in 0..<Npc.anInt10503) GfxTypeList.aCacheIndexManagerArray3982!![i_15_]!!.method2359(SceneModelBuilder(i_7_ + 1), -1)
                         } else if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, false, i_1_, i_2_)
                         else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, false, i_2_)
                     } else {
@@ -145,7 +145,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                         if (VoronoiNoiseTextureNode.aBoolean9121) {
                             if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(0, 0, 0, null, false, i_1_, i_2_)
                             else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(0, 0, 0, null, false, i_2_)
-                            for (i_21_ in 0..<Npc.anInt10503) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_21_]!!.method2359(SceneModelBuilder(i_7_ + 1), -1)
+                            for (i_21_ in 0..<Npc.anInt10503) GfxTypeList.aCacheIndexManagerArray3982!![i_21_]!!.method2359(SceneModelBuilder(i_7_ + 1), -1)
                         } else if (i_1_ >= 0) ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3984(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, true, i_1_, i_2_)
                         else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, true, i_2_)
                     }

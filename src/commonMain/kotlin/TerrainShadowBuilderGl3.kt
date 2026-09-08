@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import CacheArchiveIndexLoader.Companion.method340
+import EnumTypeList.Companion.method340
 import jaclib.memory.Stream
 import jaclib.memory.Stream.Companion.c
 import kotlin.math.sqrt

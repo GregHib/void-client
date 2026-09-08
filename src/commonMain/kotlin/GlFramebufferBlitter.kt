@@ -24,9 +24,9 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
     private var aBoolean293: Boolean
     private var aBoolean294: Boolean
     private var aClass258_Sub3Array295: Array<GlTexture2D?>?
-    private var aClass348_Sub42_Sub2_296: RenderbufferObject? = null
+    private var aClass348_Sub42_Sub2_296: RenderBufferObject? = null
     private var aBoolean297: Boolean
-    private var aClass348_Sub42_Sub2_298: RenderbufferObject? = null
+    private var aClass348_Sub42_Sub2_298: RenderBufferObject? = null
     private var aBoolean299: Boolean
     private var aClass258_Sub3_300: GlTexture2D? = null
     private var anInt301: Int
@@ -161,9 +161,9 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 aClass258_Sub3_300!!.method1952(-19948)
                 aClass258_Sub3_300 = null
             }
-            if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_298 = RenderbufferObject(aHa_Sub2_290, 6402, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
+            if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_298 = RenderBufferObject(aHa_Sub2_290, 6402, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
             if (aBoolean303) aClass258_Sub3_300 = GlTexture2D(aHa_Sub2_290, 34037, 6402, anInt286, anInt275)
-            else if (aClass348_Sub42_Sub2_298 == null) aClass348_Sub42_Sub2_298 = RenderbufferObject(aHa_Sub2_290, 6402, anInt286, anInt275)
+            else if (aClass348_Sub42_Sub2_298 == null) aClass348_Sub42_Sub2_298 = RenderBufferObject(aHa_Sub2_290, 6402, anInt286, anInt275)
             aBoolean293 = false
             aBoolean294 = true
             aBoolean299 = true
@@ -182,7 +182,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 aClass258_Sub3Array295!![1]!!.method1952(-19948)
                 aClass258_Sub3Array295!![1] = null
             }
-            if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_296 = RenderbufferObject(aHa_Sub2_290, anInt301, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
+            if (aFrameBufferObject_285 != null) aClass348_Sub42_Sub2_296 = RenderBufferObject(aHa_Sub2_290, anInt301, anInt286, anInt275, (aHa_Sub2_290.anInt7713))
             aClass258_Sub3Array295!![0] = GlTexture2D(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275)
             aClass258_Sub3Array295!![1] = if (anInt302 > 1) GlTexture2D(aHa_Sub2_290, 34037, anInt301, anInt286, anInt275) else null
             aBoolean294 = true
@@ -364,7 +364,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             do {
                 try {
                     anInt6385++
-                    val bool = ((ClientException.aModelHeaderCache_112!!.method1941(widgetComponent!!.anInt672, (-74).toByte(), widgetComponent.anInt812, widgetComponent.anInt781, 0xffffff.inv() or widgetComponent.anInt809, widgetComponent.anInt678, var_renderer, (if (!widgetComponent.aBoolean720) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)))) == null)
+                    val bool = ((ClientException.aItemTypeList_112!!.method1941(widgetComponent!!.anInt672, (-74).toByte(), widgetComponent.anInt812, widgetComponent.anInt781, 0xffffff.inv() or widgetComponent.anInt809, widgetComponent.anInt678, var_renderer, (if (!widgetComponent.aBoolean720) null else (LocalPlayerState.aPlayer_1907!!.aCompositeNpcModelBuilder_10536)))) == null)
                     if (!bool) break
                     ProportionalScrollbarComponent.aNodeDeque_9931!!.method1999(RegionTileNode(widgetComponent.anInt812, widgetComponent.anInt781, widgetComponent.anInt672, (0xffffff.inv() or widgetComponent.anInt809), widgetComponent.anInt678, widgetComponent.aBoolean720), i xor 0x4ed2)
                     ConfigFlagUtil.method1916(-9343, widgetComponent)
@@ -389,7 +389,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
         fun method282(i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Byte, i_23_: Int, i_24_: Int, i_25_: Int, i_26_: Int) {
             anInt274++
             CameraRotationStub.aRenderer326 = var_renderer
-            NpcConfig.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
+            ObjectType.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
             MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
             RenderNodeStatics.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
             WhirlpoolHash.anInt4784 = i_26_

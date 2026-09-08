@@ -884,7 +884,7 @@ class OpenGlModel : AbstractModel {
                 }
                 for (i_220_ in 0..<anInt5632) class64_sub3_211_.aShortArray5580!![i_220_] = aShortArray5580!![i_220_]
             } else class64_sub3_211_.aShortArray5580 = aShortArray5580
-            if (BufferedMessageQueue.method2075(i, -128, anInt5556)) {
+            if (NpcTypeList.method2075(i, -128, anInt5556)) {
                 if (class64_sub3_213_!!.aByteArray5542 == null || (class64_sub3_213_.aByteArray5542!!.size < anInt5632)) {
                     class64_sub3_213_.aByteArray5542 = ByteArray(anInt5632)
                     class64_sub3_211_.aByteArray5542 = class64_sub3_213_.aByteArray5542

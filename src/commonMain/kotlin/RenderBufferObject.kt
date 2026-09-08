@@ -13,7 +13,7 @@ import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.launch
 import kotlin.math.sqrt
 
-class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
+class RenderBufferObject : HashLinkedListNode, IndexedDisposable {
     private var anInt8562 = -1
     private var anInt8563 = -1
     private val aHa_Sub2_8564: OpenGlRenderer?
@@ -173,8 +173,8 @@ class RenderbufferObject : HashLinkedListNode, IndexedDisposable {
                     i_7_ = 8
                     ActiveMapRegion.anInt5652 = 4
                 }
-                MapElementDefinitionCache.aCacheIndexManagerArray3982 = arrayOfNulls<CacheIndexManager>(i_7_)
-                for (i_8_ in 0..<i_7_) MapElementDefinitionCache.aCacheIndexManagerArray3982!![i_8_] = CacheIndexManager(TextureOptionState.aStringArrayArray6093!![(Npc.anInt10503 - 2)]!![i_8_])
+                GfxTypeList.aCacheIndexManagerArray3982 = arrayOfNulls<CacheIndexManager>(i_7_)
+                for (i_8_ in 0..<i_7_) GfxTypeList.aCacheIndexManagerArray3982!![i_8_] = CacheIndexManager(TextureOptionState.aStringArrayArray6093!![(Npc.anInt10503 - 2)]!![i_8_])
             } else ActiveMapRegion.anInt5652 = 1
             WidgetDefinition.anIntArray256 = IntArray(ActiveMapRegion.anInt5652 - 1)
             ParticleProcessor.anIntArray4271 = IntArray(ActiveMapRegion.anInt5652 - 1)

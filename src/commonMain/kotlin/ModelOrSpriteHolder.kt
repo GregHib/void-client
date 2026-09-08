@@ -14,7 +14,7 @@ class ModelOrSpriteHolder {
 
         var anInt116: Int = 0
 
-        var aTextureDefinitionLoader_117: TextureDefinitionLoader? = null
+        var aMapSceneDefinitionLoader_117: MapSceneDefinitionLoader? = null
 
         var anInt120: Int = 0
 
@@ -32,7 +32,7 @@ class ModelOrSpriteHolder {
 
         @JvmStatic
         fun method171(i: Byte) {
-            aTextureDefinitionLoader_117 = null
+            aMapSceneDefinitionLoader_117 = null
             if (i.toInt() != 72) method173(39, null, null)
         }
 
@@ -54,7 +54,7 @@ class ModelOrSpriteHolder {
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), widgetComponent_0_.anInt812)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, widgetComponent.anInt704)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, widgetComponent.anInt812)
-                if (i > -50) aTextureDefinitionLoader_117 = null
+                if (i > -50) aMapSceneDefinitionLoader_117 = null
                 InterfaceComponentGroup.method3243(-100, class348_sub47)
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("ak.E(" + i + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (widgetComponent_0_ != null) "{...}" else "null") + ')'))
@@ -63,7 +63,7 @@ class ModelOrSpriteHolder {
 
         @JvmStatic
         fun method174(i: Int, i_1_: Int) {
-            if (i_1_ != -30742) aTextureDefinitionLoader_117 = null
+            if (i_1_ != -30742) aMapSceneDefinitionLoader_117 = null
             anInt121++
             SoundCacheState.aLruByteCache_4139!!.method578(2, i)
         }

@@ -9,7 +9,7 @@ class RenderConfigFactory {
 
         var aJs5Archive_2978: Js5Archive? = null
 
-        var aLocDefinitionCache_2979: LocDefinitionCache? = null
+        var aFloorOverlayTypeList_2979: FloorOverlayTypeList? = null
         var anInt2980: Int = 0
 
         var aVarbitDefLoader_2981: VarbitDefLoader? = null
@@ -33,7 +33,7 @@ class RenderConfigFactory {
             aJs5Archive_2978 = null
             val i_1_ = -20 / ((-87 - i) / 34)
             aVarbitDefLoader_2981 = null
-            aLocDefinitionCache_2979 = null
+            aFloorOverlayTypeList_2979 = null
         }
 
         fun method1633(bool: Boolean, i: Int, i_2_: Int): Boolean {

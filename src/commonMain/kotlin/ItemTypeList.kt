@@ -4,7 +4,7 @@ import FloorOverlayDefinition.Companion.method500
 /* Class255 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, emoteDefCache: EmoteDefCache?, js5Archive: Js5Archive?, js5Archive_22_: Js5Archive?) {
+class ItemTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, paramTypeList: ParamTypeList?, js5Archive: Js5Archive?, js5Archive_22_: Js5Archive?) {
     private val aJs5Archive_3267: Js5Archive?
     var aJs5Archive_3268: Js5Archive? = null
     private var aBoolean3269 = false
@@ -16,7 +16,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     private var aCrc64Hashable_3289: Crc64Hashable? = Crc64Hashable()
     private val aStringArray3290: Array<String?>
     var anInt3291: Int = 0
-    private var aEmoteDefCache_3292: EmoteDefCache? = null
+    private var aParamTypeList_3292: ParamTypeList? = null
     private val aStringArray3293: Array<String?>
 
     fun method1930(i: Int) {
@@ -110,7 +110,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
 
     fun method1939(i: Int) {
         withLock(aLruByteCache_3278) {
-            if (i > -28) aEmoteDefCache_3292 = null
+            if (i > -28) aParamTypeList_3292 = null
             aLruByteCache_3278.method590(0)
         }
         anInt3277++
@@ -122,48 +122,48 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
         }
     }
 
-    fun method1940(i: Int, i_13_: Int): ItemDefinition {
+    fun method1940(i: Int, i_13_: Int): ItemType {
         anInt3283++
-        var itemDefinition: ItemDefinition? = withLock(aLruByteCache_3278) {
-            aLruByteCache_3278.method583(i_13_.toLong(), 90) as ItemDefinition?
+        var itemType: ItemType? = withLock(aLruByteCache_3278) {
+            aLruByteCache_3278.method583(i_13_.toLong(), 90) as ItemType?
         }
-        if (itemDefinition != null) return itemDefinition
+        if (itemType != null) return itemType
         val `is`: ByteArray? = withLock(aJs5Archive_3267!!) {
             aJs5Archive_3267.method410(-1860, method500(7, i_13_), ConfigFlagUtil.Companion.method1914(-23590, i_13_))
         }
-        itemDefinition = ItemDefinition()
-        itemDefinition.aModelHeaderCache_2761 = this
-        itemDefinition.anInt2769 = i_13_
-        itemDefinition.aStringArray2811 = arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null)
-        itemDefinition.aStringArray2763 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
-        if (`is` != null) itemDefinition.method1569(768, ByteBuffer(`is`))
-        itemDefinition.method1563(92.toByte())
+        itemType = ItemType()
+        itemType.aItemTypeList_2761 = this
+        itemType.anInt2769 = i_13_
+        itemType.aStringArray2811 = arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null)
+        itemType.aStringArray2763 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
+        if (`is` != null) itemType.method1569(768, ByteBuffer(`is`))
+        itemType.method1563(92.toByte())
         val i_14_ = 4 / ((i - 13) / 59)
-        if (itemDefinition.anInt2833 != -1) itemDefinition.method1570(1, method1940(90, itemDefinition.anInt2758), method1940(101, itemDefinition.anInt2833))
-        if (itemDefinition.anInt2812 != -1) itemDefinition.method1556(method1940(-58, itemDefinition.anInt2778), (-29).toByte(), method1940(-82, itemDefinition.anInt2812))
-        if (!aBoolean3269 && itemDefinition.aBoolean2783) {
-            itemDefinition.aString2795 = LocalizedText.aLocalizedText_3488!!.method2063(this.anInt3286, 544)
-            itemDefinition.anInt2827 = 0
-            itemDefinition.aStringArray2811 = aStringArray3290
-            itemDefinition.aStringArray2763 = aStringArray3293
-            itemDefinition.aBoolean2755 = false
-            itemDefinition.anIntArray2772 = null
-            if (itemDefinition.aHashtable_2757 != null) {
+        if (itemType.anInt2833 != -1) itemType.method1570(1, method1940(90, itemType.anInt2758), method1940(101, itemType.anInt2833))
+        if (itemType.anInt2812 != -1) itemType.method1556(method1940(-58, itemType.anInt2778), (-29).toByte(), method1940(-82, itemType.anInt2812))
+        if (!aBoolean3269 && itemType.aBoolean2783) {
+            itemType.aString2795 = LocalizedText.aLocalizedText_3488!!.method2063(this.anInt3286, 544)
+            itemType.anInt2827 = 0
+            itemType.aStringArray2811 = aStringArray3290
+            itemType.aStringArray2763 = aStringArray3293
+            itemType.aBoolean2755 = false
+            itemType.anIntArray2772 = null
+            if (itemType.aHashtable_2757 != null) {
                 var bool = false
-                var class348 = itemDefinition.aHashtable_2757!!.method3484(0)
+                var class348 = itemType.aHashtable_2757!!.method3484(0)
                 while (class348 != null) {
-                    val class254 = aEmoteDefCache_3292!!.method2600(class348.aLong4291.toInt(), 28364)
+                    val class254 = aParamTypeList_3292!!.method2600(class348.aLong4291.toInt(), 28364)
                     if (class254.aBoolean3261) class348.method2715(60.toByte())
                     else bool = true
-                    class348 = itemDefinition.aHashtable_2757!!.method3482(0)
+                    class348 = itemType.aHashtable_2757!!.method3482(0)
                 }
-                if (!bool) itemDefinition.aHashtable_2757 = null
+                if (!bool) itemType.aHashtable_2757 = null
             }
         }
         withLock(aLruByteCache_3278) {
-            aLruByteCache_3278.method582(itemDefinition, i_13_.toLong(), (-118).toByte())
+            aLruByteCache_3278.method582(itemType, i_13_.toLong(), (-118).toByte())
         }
-        return itemDefinition
+        return itemType
     }
 
     fun method1941(i: Int, i_15_: Byte, i_16_: Int, i_17_: Int, i_18_: Int, i_19_: Int, var_renderer: Renderer?, compositeNpcModelBuilder: CompositeNpcModelBuilder?): AbstractModelRenderer? {
@@ -195,7 +195,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
     init {
         try {
             aBoolean3269 = bool
-            aEmoteDefCache_3292 = emoteDefCache
+            aParamTypeList_3292 = paramTypeList
             this.aJs5Archive_3268 = js5Archive_22_
             this.anInt3286 = i
             aJs5Archive_3267 = js5Archive
@@ -206,7 +206,7 @@ class ModelHeaderCache internal constructor(sceneProjector: SceneProjector?, i: 
             aStringArray3290 = (arrayOf<String?>(null, null, LocalizedText.aLocalizedText_3490!!.method2063(this.anInt3286, 544), null, null))
             aStringArray3293 = (arrayOf<String?>(null, null, null, null, LocalizedText.aLocalizedText_3491!!.method2063(this.anInt3286, 544)))
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (emoteDefCache != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_22_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ub.<init>(" + (if (sceneProjector != null) "{...}" else "null") + ',' + i + ',' + bool + ',' + (if (paramTypeList != null) "{...}" else "null") + ',' + (if (js5Archive != null) "{...}" else "null") + ',' + (if (js5Archive_22_ != null) "{...}" else "null") + ')'))
         }
     }
 

@@ -40,14 +40,14 @@ class SceneModelBuilder internal constructor(var anInt6394: Int) : SceneLinkedLi
                                 }
                             } else if (method1813(8806, (class348_sub42_sub12.anInt9608))) {
                                 val `object`: Any? = null
-                                var npcConfig: NpcConfig?
-                                if (class348_sub42_sub12.anInt9608 != 1001) npcConfig = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
-                                else npcConfig = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
-                                if (npcConfig.anIntArray945 != null) npcConfig = (npcConfig.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte()))
-                                if (npcConfig != null) `is` = npcConfig.anIntArray917
+                                var objectType: ObjectType?
+                                if (class348_sub42_sub12.anInt9608 != 1001) objectType = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, (0x7fffffffL and ((class348_sub42_sub12.aLong9605) ushr 32)).toInt()))
+                                else objectType = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, (class348_sub42_sub12.aLong9605).toInt()))
+                                if (objectType.anIntArray945 != null) objectType = (objectType.method480((ProjectedGroundDecor.aVarpStore_10209!!), 47.toByte()))
+                                if (objectType != null) `is` = objectType.anIntArray917
                             }
-                        } else `is` = ClientException.aModelHeaderCache_112!!.method1940(113, (class348_sub42_sub12.anInt9599)).anIntArray2772
-                    } else `is` = (ClientException.aModelHeaderCache_112!!.method1940(-67, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
+                        } else `is` = ClientException.aItemTypeList_112!!.method1940(113, (class348_sub42_sub12.anInt9599)).anIntArray2772
+                    } else `is` = (ClientException.aItemTypeList_112!!.method1940(-67, (class348_sub42_sub12.aLong9605).toInt()).anIntArray2772)
                     var string = IntHashSetStatics.method2367(125.toByte(), class348_sub42_sub12)
                     if (`is` != null) string += method1273(`is`, true)
                     NodeDequeStatics.aRSFont_3326!!.method2567(i_1_, string, 116.toByte(), i_4_, 0, i_7_ - -3, TileRenderState.aAbstractModelRendererArray4234, SizeBoundedSoftCache.anIntArray2330)

@@ -44,7 +44,7 @@ abstract class SocketFactory {
             if (i > 49) {
                 if (WorldMapRenderer.anInt4674 == 7) NormalMapTextureNode.method3141(false, 11.toByte())
                 else {
-                    ItemDefinition.aAbstractGameSocket_2773 = Client.aAbstractGameSocket_9165
+                    ItemType.aAbstractGameSocket_2773 = Client.aAbstractGameSocket_9165
                     Client.aAbstractGameSocket_9165 = null
                     ByteBufferStatics.method3379(2, 13)
                 }

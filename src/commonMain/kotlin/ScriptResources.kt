@@ -4,7 +4,7 @@ import kotlin.jvm.JvmStatic
 */
 object ScriptResources {
     var aFontMetaRef_2638: FontMetaRef? = FontMetaRef(59, 8)
-    var aTextureDefinitionCache_2639: TextureDefinitionCache? = null
+    var aQuickChatTypeList_2639: QuickChatTypeList? = null
 
     var aAbstractModelRendererArray2640: Array<AbstractModelRenderer?>? = null
 
@@ -13,6 +13,6 @@ object ScriptResources {
         aFontMetaRef_2638 = null
         aAbstractModelRendererArray2640 = null
         if (i.toInt() != 25) aAbstractModelRendererArray2640 = null
-        aTextureDefinitionCache_2639 = null
+        aQuickChatTypeList_2639 = null
     }
 }

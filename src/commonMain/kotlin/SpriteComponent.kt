@@ -134,7 +134,7 @@ class SpriteComponent internal constructor(js5Archive: Js5Archive?, js5Archive_4
                             i_7_++
                         }
                         if (bool) break
-                        method544(((LocalizedText.aLocalizedText_3504!!.method2063(ChatCommandProcessor.anInt6967, 544)) + string), false, 4)
+                        method544(((LocalizedText.aLocalizedText_3504!!.method2063(ChatCommandProcessor.language, 544)) + string), false, 4)
                     }
                 } catch (runtimeexception: RuntimeException) {
                     throw TextureLoadException.method2929(runtimeexception, ("tq.A(" + i + ',' + i_5_ + ',' + (if (string != null) "{...}" else "null") + ')'))

@@ -1,5 +1,4 @@
 import kotlin.jvm.JvmStatic
-import ActorEntity.Companion.method2169
 import WhirlpoolHash.Companion.anInt1067
 import WhirlpoolHash.Companion.anInt3225
 import WhirlpoolHash.Companion.anInt425
@@ -55,7 +54,7 @@ object MinimapFlagRenderer {
     fun method1083(var_renderer: Renderer?, i: Int, i_2_: Byte, i_3_: Int, i_4_: Int, i_5_: Int) {
         anInt1798++
         CameraRotationStub.aRenderer326 = var_renderer
-        NpcConfig.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
+        ObjectType.aAbstractCameraTransform_905 = CameraRotationStub.aRenderer326!!.method3654()
         MapSceneRenderer.aAbstractCameraTransform_624 = CameraRotationStub.aRenderer326!!.method3654()
         RenderNodeStatics.aAbstractCameraTransform_9720 = CameraRotationStub.aRenderer326!!.method3654()
         WhirlpoolHash.anInt10444 = i_4_

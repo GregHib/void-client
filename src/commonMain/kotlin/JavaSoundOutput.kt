@@ -1,13 +1,11 @@
 import GlslMaterialPass.Companion.method2155
-import CacheArchiveIndexLoader.Companion.method340
+import EnumTypeList.Companion.method340
 import sound.AudioFormat
 import sound.AudioSystem
 import sound.DataLineInfo
 import sound.LineUnavailableException
 import sound.MixerInfo
 import sound.SourceDataLine
-import util.Locale
-import util.defaultLocale
 
 class JavaSoundOutput : SoundChannelMixer() {
     private var anInt6175 = 0

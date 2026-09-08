@@ -15,7 +15,7 @@ class ParameterizedText : HashLinkedListNode() {
     private lateinit var anIntArrayArray9565: Array<IntArray?>
     var anIntArray9566: IntArray? = null
 
-    var aCompiledScriptCache_9567: CompiledScriptCache? = null
+    var aQuickChatMenuTypeList_9567: QuickChatMenuTypeList? = null
     private var anIntArray9574: IntArray? = null
     fun method3209(bool: Boolean) {
         if (bool != false) anInt9577 = 26
@@ -112,7 +112,7 @@ class ParameterizedText : HashLinkedListNode() {
         if (anIntArray9574 != null) {
             for (i_13_ in anIntArray9574!!.indices) {
                 stringbuffer.append(aStringArray9564!![i_13_])
-                stringbuffer.append(this.aCompiledScriptCache_9567!!.method3472((class348_sub49.method3368((method2752(anIntArray9574!![i_13_], 0)!!.anInt1943), 3060)), anIntArrayArray9565[i_13_], -1, method3212(0, i_13_)))
+                stringbuffer.append(this.aQuickChatMenuTypeList_9567!!.method3472((class348_sub49.method3368((method2752(anIntArray9574!![i_13_], 0)!!.anInt1943), 3060)), anIntArrayArray9565[i_13_], -1, method3212(0, i_13_)))
             }
         }
         stringbuffer.append(aStringArray9564!![aStringArray9564!!.size + -1])

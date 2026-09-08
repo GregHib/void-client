@@ -81,7 +81,7 @@ class BrightnessGraphicsOptionState : GraphicsOptionState {
             if (RenderNodeStatics.anInt9721 != -1) ActiveMapRegion.method769(RenderNodeStatics.anInt9721, 118.toByte())
             var i_6_ = 0
             while (TerrainShadowBuilderGl3.anInt7008 > i_6_) {
-                if (OpenGlModel.aBooleanArray2076!![i_6_]) LocDefinitionCache.aBooleanArray3438!![i_6_] = true
+                if (OpenGlModel.aBooleanArray2076!![i_6_]) FloorOverlayTypeList.aBooleanArray3438!![i_6_] = true
                 SizeBoundedSoftCache.aBooleanArray2326!![i_6_] = OpenGlModel.aBooleanArray2076!![i_6_]
                 OpenGlModel.aBooleanArray2076!![i_6_] = false
                 i_6_++
@@ -96,7 +96,7 @@ class BrightnessGraphicsOptionState : GraphicsOptionState {
             var i_7_ = ScriptCompilerThread.method1053(3112)
             if (i_7_ == -1) i_7_ = Tooltip.anInt4458
             if (i_7_ == -1) i_7_ = StreamingResourceRequest.anInt10447
-            CacheArchiveIndexLoader.method338(0, i_7_)
+            EnumTypeList.method338(0, i_7_)
             DisplaySettingsConfig.anInt7267 = 0
         }
 

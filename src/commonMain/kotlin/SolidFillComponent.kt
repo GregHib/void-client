@@ -100,7 +100,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
         fun method195(i: Int, bool: Boolean, i_11_: Int): Boolean {
             var i = i
             anInt8364++
-            val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_11_)
+            val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, i_11_)
             if (i == 11) i = 10
             if (bool != false) return false
             if (i >= 5 && i <= 8) i = 4
@@ -137,7 +137,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
         }
         fun method2291(i: Byte, i_4_: Int, i_5_: Int) {
             anInt3849++
-            var i_6_ = (WorldMapLabel.aFontDefinition_4962!!.method1183(true, LocalizedText.aLocalizedText_3507!!.method2063(ChatCommandProcessor.anInt6967, 544)))
+            var i_6_ = (WorldMapLabel.aFontDefinition_4962!!.method1183(true, LocalizedText.aLocalizedText_3507!!.method2063(ChatCommandProcessor.language, 544)))
             val i_7_: Int
             if (ChatScriptListNode.aBoolean9535) {
                 var class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1011(-87) as? ContactList?)

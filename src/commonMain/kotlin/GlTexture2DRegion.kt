@@ -133,7 +133,7 @@ class GlTexture2DRegion : GlTexture2D {
 
         var anInt7388: Int = 0
         fun method3553(bool: Boolean, i: Byte, i_1_: Int) {
-            method1971(-2, LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544), bool, i_1_)
+            method1971(-2, LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.language, 544), bool, i_1_)
             anInt7388++
         }
         @JvmStatic
@@ -146,7 +146,7 @@ class GlTexture2DRegion : GlTexture2D {
             method2994(2)
             VarpStore.method1311(5139, FacingDirectionNode.aRenderer6654!!)
             method3568(FacingDirectionNode.aRenderer6654, 4)
-            ModelHeaderCache.method1933(CameraRotationStub.aJs5Archive_322, FacingDirectionNode.aRenderer6654, true)
+            ItemTypeList.method1933(CameraRotationStub.sprites, FacingDirectionNode.aRenderer6654, true)
             LocalizedTextStatics.method2061(-128)
             AbstractCameraTransformStatics.method901(CameraNodeList.aAbstractModelRendererArray1744, 515880227)
             TextureCache.method3466(i xor 0x4f.inv())

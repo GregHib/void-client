@@ -53,7 +53,7 @@ class MapAreaDefinition {
         var anInt2524: Int = 0
         var anInt2528: Int = 0
 
-        var aBufferedMessageQueue_2529: BufferedMessageQueue? = null
+        var aNpcTypeList_2529: NpcTypeList? = null
         var anInt2532: Int = 0
         fun method1420(i: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, i_11_: Int, i_12_: Int, collisionMap: CollisionMap, i_13_: Int, i_14_: Int): Boolean {
             anInt2521++
@@ -251,7 +251,7 @@ class MapAreaDefinition {
 
         @JvmStatic
         fun method1421(i: Byte) {
-            aBufferedMessageQueue_2529 = null
+            aNpcTypeList_2529 = null
             if (i.toInt() != -85) method1421(39.toByte())
             InboundPacketHeader.aInboundPacketHeader_2527 = null
         }

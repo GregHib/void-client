@@ -42,7 +42,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
         fun method247(i: Int): DisplaySettingsConfig? {
             anInt8632++
             var randomAccessFileOnDisk: RandomAccessFileOnDisk? = null
-            var class348_sub51 = DisplaySettingsConfig(Client.aSceneProjector_10434, 0)
+            var class348_sub51 = DisplaySettingsConfig(Client.mode, 0)
             try {
                 val class144 = VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2233((-46).toByte(), "", true)
                 while (class144!!.anInt1997 == 0) TexGenMaterialPass.method2161((-85).toByte(), 1L)
@@ -56,7 +56,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                         if (i_2_ == -1) throw IOException("EOF")
                         i_3_ += i_2_
                     }
-                    class348_sub51 = DisplaySettingsConfig(ByteBuffer(`is`), (Client.aSceneProjector_10434), 0)
+                    class348_sub51 = DisplaySettingsConfig(ByteBuffer(`is`), (Client.mode), 0)
                 }
             } catch (exception: Exception) {
                 /* empty */
@@ -210,7 +210,7 @@ class Gl3dTexture internal constructor(glRenderDevice: GlRenderDevice?, textureF
                 ArbFogMaterialPass.aStringArray6200!![i_4_] = ""
                 i_4_++
             }
-            method94(LocalizedText.aLocalizedText_3483!!.method2063(ChatCommandProcessor.anInt6967, 544)!!, 67)
+            method94(LocalizedText.aLocalizedText_3483!!.method2063(ChatCommandProcessor.language, 544)!!, 67)
         }
     }
 }

@@ -306,7 +306,7 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                 if (MapRegionLoader.aClass348_Sub42_Sub14_1243 != null) {
                     if (LinkedListNodeStatics.anInt4290 < 10) {
                         if (!MapRegionLoader.aJs5Archive_1237!!.method413(100, MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625!!)) {
-                            LinkedListNodeStatics.anInt4290 = (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method397((MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
+                            LinkedListNodeStatics.anInt4290 = (TerrainShadowBuilderGl2.worldMap!!.method397((MapRegionLoader.aClass348_Sub42_Sub14_1243!!.aString9625!!), 0)) / 10
                             return
                         }
                         method126(-16203)
@@ -383,8 +383,8 @@ class SpotAnimEntity internal constructor(var_renderer: Renderer?, modelFacePrio
                         if (MapRegionLoader.anInt1253 > 16) MapRegionLoader.anInt1253 = 16
                         MapRegionLoader.method764(var_renderConfig!!, (MapRegionLoader.anInt1250 shr 2 shl 10), MapRegionLoader.anInt1253 shr 1)
                         MapRegionLoader.aConfigDefinitionLoader_1238!!.method1220(73.toByte(), 256, 1024)
-                        MapRegionLoader.aTextureDefinitionLoader_1242!!.method1178(256, 1, 256)
-                        MapRegionLoader.aSeqDefinitionCache_1245!!.method2014(4096, true)
+                        MapRegionLoader.aMapSceneDefinitionLoader_1242!!.method1178(256, 1, 256)
+                        MapRegionLoader.aObjectTypeList_1245!!.method2014(4096, true)
                         RenderConfigFactory.aVarbitDefLoader_2981!!.method1444(256, 123)
                         LinkedListNodeStatics.anInt4290 = 20
                     } else if (LinkedListNodeStatics.anInt4290 == 20) {

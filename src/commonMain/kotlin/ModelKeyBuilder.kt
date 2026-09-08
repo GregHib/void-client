@@ -63,7 +63,7 @@ class ModelKeyBuilder : LinkedListNode() {
                 i_22_ = widgetDefinition.anIntArray237[i_10_]
                 i_15_ = i_15_ or 0x20
                 val i_26_ = i_22_ ushr 16
-                class348_sub42_sub17 = ParticleEmitterNode.aWidgetCache_191!!.method839(i_26_, i_14_ + 4)
+                class348_sub42_sub17 = ParticleEmitterNode.aAnimationTypeList_191!!.method839(i_26_, i_14_ + 4)
                 i_22_ = i_22_ and 0xffff
                 if (class348_sub42_sub17 != null) {
                     bool_19_ = bool_19_ or class348_sub42_sub17.method3272(i_22_, 0)
@@ -77,7 +77,7 @@ class ModelKeyBuilder : LinkedListNode() {
                     val i_27_ = i_23_ ushr 16
                     i_23_ = i_23_ and 0xffff
                     if (i_27_ == i_26_) class348_sub42_sub17_25_ = class348_sub42_sub17
-                    else class348_sub42_sub17_25_ = ParticleEmitterNode.aWidgetCache_191!!.method839(i_23_ ushr 16, 3)
+                    else class348_sub42_sub17_25_ = ParticleEmitterNode.aAnimationTypeList_191!!.method839(i_23_ ushr 16, 3)
                     if (class348_sub42_sub17_25_ != null) {
                         bool_19_ = bool_19_ or class348_sub42_sub17_25_.method3272(i_23_, 0)
                         bool_18_ = bool_18_ or class348_sub42_sub17_25_.method3271(i_23_, 14)
@@ -97,13 +97,13 @@ class ModelKeyBuilder : LinkedListNode() {
                 var bool_29_ = false
                 var i_30_ = 0
                 while (`is`!!.size > i_30_) {
-                    if (`is`[i_30_] != -1 && !ClientException.aModelHeaderCache_112!!.method1940(-91, `is`[i_30_]).method1565(bool, -1)) bool_29_ = true
+                    if (`is`[i_30_] != -1 && !ClientException.aItemTypeList_112!!.method1940(-91, `is`[i_30_]).method1565(bool, -1)) bool_29_ = true
                     i_30_++
                 }
                 if (bool_29_) return null
                 val modelDefinitions = arrayOfNulls<ModelDefinition>(`is`.size)
                 for (i_31_ in `is`.indices) {
-                    if (`is`[i_31_] != -1) modelDefinitions[i_31_] = ClientException.aModelHeaderCache_112!!.method1940(ModelDefinition.method2955(i_14_, -112), `is`[i_31_]).method1558(bool, false)
+                    if (`is`[i_31_] != -1) modelDefinitions[i_31_] = ClientException.aItemTypeList_112!!.method1940(ModelDefinition.method2955(i_14_, -112), `is`[i_31_]).method1558(bool, false)
                 }
                 if (npcDefinition != null && npcDefinition.anIntArrayArray2939 != null) {
                     var i_32_ = 0

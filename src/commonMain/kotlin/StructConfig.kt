@@ -1,4 +1,4 @@
-import CacheArchiveIndexLoader.Companion.method340
+import EnumTypeList.Companion.method340
 
 /* Class42 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

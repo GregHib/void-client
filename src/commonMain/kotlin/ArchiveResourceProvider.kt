@@ -426,7 +426,7 @@ class ArchiveResourceProvider internal constructor(i: Int, indexedFileCache: Ind
             anInt6353++
             if (i != -8454) method2352(44, -11, 126)
             val i_6_: Int
-            if (TextureDefinitionCache.anInt2964 < 96) {
+            if (QuickChatTypeList.anInt2964 < 96) {
                 GradientLookupEffect.method3076(0, true)
                 i_6_ = 1
             } else {

@@ -3,7 +3,7 @@ import kotlin.jvm.JvmStatic
 /* Class355 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, js5Archive_1_: Js5Archive?, textFormatter: TextFormatter?) {
+class QuickChatMenuTypeList internal constructor(i: Int, js5Archive: Js5Archive?, js5Archive_1_: Js5Archive?, textFormatter: TextFormatter?) {
     private val aLruByteCache_4362: LruByteCache
     var anInt4364: Int = 0
     var anInt4365: Int = 0
@@ -19,7 +19,7 @@ class CompiledScriptCache internal constructor(i: Int, js5Archive: Js5Archive?, 
         if (i >= 32768) `is` = aJs5Archive_4369!!.method410(-1860, 1, 0x7fff and i)
         else `is` = aJs5Archive_4368!!.method410(-1860, 1, i)
         class348_sub42_sub10 = ParameterizedText()
-        class348_sub42_sub10.aCompiledScriptCache_9567 = this
+        class348_sub42_sub10.aQuickChatMenuTypeList_9567 = this
         if (`is` != null) class348_sub42_sub10.method3218(ByteBuffer(`is`), 0)
         if (i_0_ >= -86) method3473(-12)
         if (i >= 32768) class348_sub42_sub10.method3209(false)

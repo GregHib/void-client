@@ -17,7 +17,7 @@ class CameraNodeList {
 
         var anInt1742: Int = 0
 
-        var aJs5Archive_1743: Js5Archive? = null
+        var clientScripts: Js5Archive? = null
 
         var aAbstractModelRendererArray1744: Array<AbstractModelRenderer?>? = null
 
@@ -36,7 +36,7 @@ class CameraNodeList {
 
         @JvmStatic
         fun method1057(bool: Boolean) {
-            aJs5Archive_1743 = null
+            clientScripts = null
             aAbstractModelRendererArray1744 = null
             if (bool != true) method1056(110, -57, '\uffd1')
         }

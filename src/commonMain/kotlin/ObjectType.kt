@@ -1,11 +1,11 @@
 ﻿import kotlin.jvm.JvmStatic
-import CacheArchiveIndexLoader.Companion.method340
+import EnumTypeList.Companion.method340
 import util.random
 
 /* Class51 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class NpcConfig {
+class ObjectType {
 
     var anInt868: Int = -1
     var anInt869: Int
@@ -93,7 +93,7 @@ class NpcConfig {
 
     var aBoolean931: Boolean = false
 
-    var aSeqDefinitionCache_933: SeqDefinitionCache? = null
+    var aObjectTypeList_933: ObjectTypeList? = null
     private var anInt934: Int
     private var anInt935 = 128
 
@@ -136,7 +136,7 @@ class NpcConfig {
         }
         for (i_0_ in this.anIntArray945!!.indices) {
             if (this.anIntArray945!![i_0_] != -1) {
-                val class51_1_ = this.aSeqDefinitionCache_933!!.method2005(0, this.anIntArray945!![i_0_])
+                val class51_1_ = this.aObjectTypeList_933!!.method2005(0, this.anIntArray945!![i_0_])
                 if (class51_1_.anInt887 != -1 || class51_1_.anIntArray904 != null) return true
             }
         }
@@ -168,8 +168,8 @@ class NpcConfig {
                 if (anInt890 != 0) i_11_ = i_11_ or 0x4
             }
             if (bool) i_11_ = i_11_ or 0x40000
-            var modelOrSpriteHolder: ModelOrSpriteHolder? = withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!) {
-                this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!.method583(l, i_10_ + -25) as ModelOrSpriteHolder?
+            var modelOrSpriteHolder: ModelOrSpriteHolder? = withLock(this.aObjectTypeList_933!!.aLruByteCache_3361!!) {
+                this.aObjectTypeList_933!!.aLruByteCache_3361!!.method583(l, i_10_ + -25) as ModelOrSpriteHolder?
             }
             var class64 = if (modelOrSpriteHolder == null) null else modelOrSpriteHolder.aAbstractModel_119
             var var_renderNode: RenderNode? = null
@@ -185,8 +185,8 @@ class NpcConfig {
                 modelOrSpriteHolder = ModelOrSpriteHolder()
                 modelOrSpriteHolder.aAbstractModel_119 = class64
                 modelOrSpriteHolder.aRenderNode118 = var_renderNode
-                withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!) {
-                    this.aSeqDefinitionCache_933!!.aLruByteCache_3361!!.method582(modelOrSpriteHolder, l, (-120).toByte())
+                withLock(this.aObjectTypeList_933!!.aLruByteCache_3361!!) {
+                    this.aObjectTypeList_933!!.aLruByteCache_3361!!.method582(modelOrSpriteHolder, l, (-120).toByte())
                 }
             } else {
                 class64 = modelOrSpriteHolder!!.aAbstractModel_119
@@ -251,8 +251,8 @@ class NpcConfig {
                 l = l * 67783L + anIntArrayArray907!![i_21_]!![i_24_].toLong()
                 i_24_++
             }
-            withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3360) {
-                abstractModel = this.aSeqDefinitionCache_933!!.aLruByteCache_3360.method583(l, 78) as AbstractModel?
+            withLock(this.aObjectTypeList_933!!.aLruByteCache_3360) {
+                abstractModel = this.aObjectTypeList_933!!.aLruByteCache_3360.method583(l, 78) as AbstractModel?
             }
             if (abstractModel != null) {
                 if (i_18_ != abstractModel.WA()) i_17_ = i_17_ or 0x1000
@@ -264,8 +264,8 @@ class NpcConfig {
                 var modelDefinition: ModelDefinition? = null
                 withLock(TileRenderState.aModelDefinitionArray4236s!!) {
                     for (i_26_ in 0..<i_23_) {
-                        withLock(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
-                            modelDefinition = ParticleConfigParser.method2277(0, (this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
+                        withLock(this.aObjectTypeList_933!!.aJs5Archive_3345!!) {
+                            modelDefinition = ParticleConfigParser.method2277(0, (this.aObjectTypeList_933!!.aJs5Archive_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
                         if (modelDefinition == null) return null
                         if (modelDefinition.anInt1830 < 13) modelDefinition.method1092(2, 96)
@@ -273,9 +273,9 @@ class NpcConfig {
                     }
                     if (i_23_ > 1) modelDefinition = ModelDefinition(TileRenderState.aModelDefinitionArray4236s!!, i_23_)
                 }
-                abstractModel = var_renderer.method3625(modelDefinition, i_25_, (this.aSeqDefinitionCache_933!!.anInt3363), i_18_, i_19_)
-                withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3360) {
-                    this.aSeqDefinitionCache_933!!.aLruByteCache_3360.method582(abstractModel, l, (-95).toByte())
+                abstractModel = var_renderer.method3625(modelDefinition, i_25_, (this.aObjectTypeList_933!!.anInt3363), i_18_, i_19_)
+                withLock(this.aObjectTypeList_933!!.aLruByteCache_3360) {
+                    this.aObjectTypeList_933!!.aLruByteCache_3360.method582(abstractModel, l, (-95).toByte())
                 }
             }
         }
@@ -314,13 +314,13 @@ class NpcConfig {
         if (i_30_ != -31076) return false
         anInt901++
         if (anIntArrayArray907 == null) return true
-        withLock(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
+        withLock(this.aObjectTypeList_933!!.aJs5Archive_3345!!) {
             var i_31_ = 0
             while (aByteArray885!!.size > i_31_) {
                 if (aByteArray885!![i_31_].toInt() == i) {
                     var i_32_ = 0
                     while ((anIntArrayArray907!![i_31_]!!.size > i_32_)) {
-                        if (!this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!.method420(i_30_ xor 0x5061, anIntArrayArray907!![i_31_]!![i_32_], 0)) return false
+                        if (!this.aObjectTypeList_933!!.aJs5Archive_3345!!.method420(i_30_ xor 0x5061, anIntArrayArray907!![i_31_]!![i_32_], 0)) return false
                         i_32_++
                     }
                     return true
@@ -341,7 +341,7 @@ class NpcConfig {
         if (i.toInt() != 0) method486(-77)
     }
 
-    fun method480(varResolver: VarResolver, i: Byte): NpcConfig? {
+    fun method480(varResolver: VarResolver, i: Byte): ObjectType? {
         anInt870++
         var i_34_ = -1
         if (anInt934 == -1) {
@@ -351,9 +351,9 @@ class NpcConfig {
         if (i_34_ < 0 || -1 + this.anIntArray945!!.size <= i_34_ || this.anIntArray945!![i_34_] == -1) {
             val i_35_ = (this.anIntArray945!![-1 + this.anIntArray945!!.size])
             if (i_35_ == -1) return null
-            return this.aSeqDefinitionCache_933!!.method2005(0, i_35_)
+            return this.aObjectTypeList_933!!.method2005(0, i_35_)
         }
-        return this.aSeqDefinitionCache_933!!.method2005(i + -47, this.anIntArray945!![i_34_])
+        return this.aObjectTypeList_933!!.method2005(i + -47, this.anIntArray945!![i_34_])
     }
 
     fun method481(i: Byte, i_36_: Int): Boolean {
@@ -372,7 +372,7 @@ class NpcConfig {
     private fun method482(class348_sub49: ByteBuffer, i: Int, i_38_: Byte) {
         anInt960++
         if (i == 1 || i == 5) {
-            if (i == 5 && this.aSeqDefinitionCache_933!!.aBoolean3355) method484(class348_sub49, -528)
+            if (i == 5 && this.aObjectTypeList_933!!.aBoolean3355) method484(class348_sub49, -528)
             val i_59_ = class348_sub49.readUnsignedByte(255)
             anIntArrayArray907 = arrayOfNulls<IntArray>(i_59_)
             aByteArray885 = ByteArray(i_59_)
@@ -382,7 +382,7 @@ class NpcConfig {
                 anIntArrayArray907!![i_60_] = IntArray(i_61_)
                 for (i_62_ in 0..<i_61_) anIntArrayArray907!![i_60_]!![i_62_] = class348_sub49.readUnsignedShort(842397944)
             }
-            if (i == 5 && !this.aSeqDefinitionCache_933!!.aBoolean3355) method484(class348_sub49, -528)
+            if (i == 5 && !this.aObjectTypeList_933!!.aBoolean3355) method484(class348_sub49, -528)
         } else if (i == 2) this.aString884 = class348_sub49.readString(121.toByte())
         else if (i == 14) this.anInt961 = class348_sub49.readUnsignedByte(255)
         else if (i != 15) {
@@ -495,7 +495,7 @@ class NpcConfig {
                                                                                     } else if (i != 107) {
                                                                                         if (i >= 150 && i < 155) {
                                                                                             this.aStringArray913!![i + -150] = class348_sub49.readString((-41).toByte())
-                                                                                            if (!this.aSeqDefinitionCache_933!!.aBoolean3359) this.aStringArray913!![-150 + i] = null
+                                                                                            if (!this.aObjectTypeList_933!!.aBoolean3359) this.aStringArray913!![-150 + i] = null
                                                                                         } else if (i == 160) {
                                                                                             val i_46_ = class348_sub49.readUnsignedByte(255)
                                                                                             this.anIntArray917 = IntArray(i_46_)
@@ -602,15 +602,15 @@ class NpcConfig {
                 if (anInt890 != 0) i_67_ = i_67_ or 0x4
             } else i_67_ = i_67_ or 0x7
             if (i_64_ == 10 && i_66_ > 3) i_67_ = i_67_ or 0x5
-            var abstractModel: AbstractModel? = withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!) {
-                this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!.method583(l, 100) as AbstractModel?
+            var abstractModel: AbstractModel? = withLock(this.aObjectTypeList_933!!.aLruByteCache_3362!!) {
+                this.aObjectTypeList_933!!.aLruByteCache_3362!!.method583(l, 100) as AbstractModel?
             }
             if (abstractModel == null || var_renderer.method3667(abstractModel.ua(), i_67_) != 0) {
                 if (abstractModel != null) i_67_ = var_renderer.method3679(i_67_, abstractModel.ua())
                 abstractModel = method477(i_66_, var_renderer, i_64_, -125, i_67_)
                 if (abstractModel == null) return null
-                withLock(this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!) {
-                    this.aSeqDefinitionCache_933!!.aLruByteCache_3362!!.method582(abstractModel, l, (-127).toByte())
+                withLock(this.aObjectTypeList_933!!.aLruByteCache_3362!!) {
+                    this.aObjectTypeList_933!!.aLruByteCache_3362!!.method582(abstractModel, l, (-127).toByte())
                 }
             }
             var bool = false
@@ -663,11 +663,11 @@ class NpcConfig {
         if (i != 9773) method485(-109)
         if (anIntArrayArray907 == null) return true
         var bool = true
-        withLock(this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!) {
+        withLock(this.aObjectTypeList_933!!.aJs5Archive_3345!!) {
             for (i_77_ in anIntArrayArray907!!.indices) {
                 var i_78_ = 0
                 while ((anIntArrayArray907!![i_77_]!!.size > i_78_)) {
-                    bool = bool and (this.aSeqDefinitionCache_933!!.aJs5Archive_3345!!.method420(-10499, anIntArrayArray907!![i_77_]!![i_78_], 0))
+                    bool = bool and (this.aObjectTypeList_933!!.aJs5Archive_3345!!.method420(-10499, anIntArrayArray907!![i_77_]!![i_78_], 0))
                     i_78_++
                 }
             }

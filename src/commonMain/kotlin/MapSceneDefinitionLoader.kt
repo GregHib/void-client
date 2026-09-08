@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class141 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_4_: Js5Archive?) {
+class MapSceneDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_4_: Js5Archive?) {
     private var aLruByteCache_1963 = LruByteCache(64)
 
     var aJs5Archive_1965: Js5Archive? = null
@@ -20,7 +20,7 @@ class TextureDefinitionLoader internal constructor(sceneProjector: SceneProjecto
         }
         mapSceneIconDef = MapSceneIconDef()
         if (i.toInt() != 31) return null
-        mapSceneIconDef.aTextureDefinitionLoader_2851 = this
+        mapSceneIconDef.aMapSceneDefinitionLoader_2851 = this
         if (`is` != null) mapSceneIconDef.method1597((-114).toByte(), ByteBuffer(`is`))
         withLock(aLruByteCache_1963) {
             aLruByteCache_1963.method582(mapSceneIconDef, i_0_.toLong(), (-108).toByte())

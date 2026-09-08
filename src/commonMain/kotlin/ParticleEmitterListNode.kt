@@ -16,7 +16,7 @@ class ParticleEmitterListNode internal constructor(var aClass318_Sub1_Sub3_Sub5_
             if (i > -55) method3275(117, -54, 56)
             ClientLoadStateMachine.aSoundChannelMixer_7042!!.method2088(false, class348_sub16_sub3)
             anInt9681++
-            if (bool) method2510(ClientLoadStateMachine.aJs5Archive_1878, class348_sub16_sub3, GroundDecorOptionState.aJs5Archive_5878, false, ClientLoadStateMachine.aSoundChannelMixer_7042, HoverActionEntry.aJs5Archive_1815)
+            if (bool) method2510(ClientLoadStateMachine.soundEffects, class348_sub16_sub3, GroundDecorOptionState.vorbis, false, ClientLoadStateMachine.aSoundChannelMixer_7042, HoverActionEntry.aJs5Archive_1815)
         }
 
         @JvmStatic
@@ -29,7 +29,7 @@ class ParticleEmitterListNode internal constructor(var aClass318_Sub1_Sub3_Sub5_
         fun method3275(i: Int, i_0_: Int, i_1_: Int) {
             anInt9683++
             if (i != 1) aFontMetaRef_9684 = null
-            if (Client.aSceneProjector_10434 != GlRectangleTexture.aSceneProjector_8638) {
+            if (Client.mode != GlRectangleTexture.aSceneProjector_8638) {
                 if (!PixelBlender.method2252(false, i_1_, i_0_, (-108).toByte(), 1, 0, 1, -3, 0)) PixelBlender.method2252(false, i_1_, i_0_, (-99).toByte(), 1, 0, 1, -2, 0)
             } else if (!PixelBlender.method2252(false, i_1_, i_0_, (-128).toByte(), 1, 0, 1, -2, 0)) PixelBlender.method2252(false, i_1_, i_0_, (-115).toByte(), 1, 0, 1, -3, 0)
         }

@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import BrightnessOptionState.Companion.method1745
-import ModelHeaderCache.Companion.method1935
+import ItemTypeList.Companion.method1935
 import WaterMaterialPass.Companion.method2148
 import VorbisOggDecoder.Companion.method2967
 import ChatMessageStream.Companion.method136
@@ -8,7 +8,7 @@ import ChatMessageStream.Companion.method136
 /* Class318_Sub1_Sub1_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int) : TileSceneEntity(i_8_, i_9_, i_10_, i, i_7_, npcConfig.anInt930), RenderTarget {
+class WallSceneEntity internal constructor(var_renderer: Renderer?, objectType: ObjectType, i: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int, bool: Boolean, i_11_: Int, i_12_: Int) : TileSceneEntity(i_8_, i_9_, i_10_, i, i_7_, objectType.anInt930), RenderTarget {
     private var aBoolean9945 = false
     private var aCircleHitbox_9950: CircleHitbox? = null
     var aSceneObjectAnimator_9955: SceneObjectAnimator? = null
@@ -82,10 +82,10 @@ class WallSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: N
 
     init {
         try {
-            this.aSceneObjectAnimator_9955 = SceneObjectAnimator(var_renderer, npcConfig, 22, i_11_, i, i_7_, this, bool, i_12_)
-            aBoolean9966 = npcConfig.anInt874 != 0 && !bool
+            this.aSceneObjectAnimator_9955 = SceneObjectAnimator(var_renderer, objectType, 22, i_11_, i, i_7_, this, bool, i_12_)
+            aBoolean9966 = objectType.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("saa.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("saa.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (objectType != null) "{...}" else "null") + ',' + i + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ',' + bool + ',' + i_11_ + ',' + i_12_ + ')'))
         }
     }
 

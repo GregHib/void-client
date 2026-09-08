@@ -332,7 +332,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (i_14_ != 32) anOpenGL9856 = null
             if (!aBoolean9926 && (!ModelDefinition.method1436(i_14_ xor 0x46, i_12_) || !ModelDefinition.method1436(i_14_ + 83, i))) {
                 if (aBoolean9919) return GlRectangleTexture(this, textureFormatInfo, i_12_, i, `is`, i_11_, i_13_)
-                val class14_sub1 = Gl2dTexture(this, textureFormatInfo, MovementDirection.aMovementDirection_1183, CacheArchiveIndexLoader.method340(i_12_, 108.toByte()), CacheArchiveIndexLoader.method340(i, 108.toByte()))
+                val class14_sub1 = Gl2dTexture(this, textureFormatInfo, MovementDirection.aMovementDirection_1183, EnumTypeList.method340(i_12_, 108.toByte()), EnumTypeList.method340(i, 108.toByte()))
                 class14_sub1.method70(0, i_11_, (-45).toByte(), i_13_, i, i_12_, 0, `is`, textureFormatInfo)
                 return class14_sub1
             }
@@ -839,7 +839,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9890++
             if (!aBoolean9926 && (!ModelDefinition.method1436(60, i) || !ModelDefinition.method1436(-73, i_57_))) {
                 if (aBoolean9919) return GlRectangleTexture(this, textureFormatInfo, i, i_57_, fs, i_54_, i_55_)
-                val class14_sub1 = Gl2dTexture(this, textureFormatInfo, MovementDirection.aMovementDirection_1187, CacheArchiveIndexLoader.method340(i, 108.toByte()), CacheArchiveIndexLoader.method340(i_57_, 108.toByte()))
+                val class14_sub1 = Gl2dTexture(this, textureFormatInfo, MovementDirection.aMovementDirection_1187, EnumTypeList.method340(i, 108.toByte()), EnumTypeList.method340(i_57_, 108.toByte()))
                 class14_sub1.method240(i_55_, (-126).toByte(), fs, textureFormatInfo, 0, i_54_, 0, i, i_57_)
                 return class14_sub1
             }
@@ -879,7 +879,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             anInt9830++
             if (aBoolean9926 || ModelDefinition.method1436(103, i) && ModelDefinition.method1436(-53, i_63_)) return Gl2dTexture(this, i, i_63_, bool, `is`, i_61_, i_62_)
             if (!aBoolean9919) {
-                val class14_sub1 = Gl2dTexture(this, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirection.aMovementDirection_1183, CacheArchiveIndexLoader.method340(i, 108.toByte()), CacheArchiveIndexLoader.method340(i_63_, 108.toByte()))
+                val class14_sub1 = Gl2dTexture(this, GroundItemRenderState.aTextureFormatInfo_1662, MovementDirection.aMovementDirection_1183, EnumTypeList.method340(i, 108.toByte()), EnumTypeList.method340(i_63_, 108.toByte()))
                 class14_sub1.method68(i_62_, 22809, `is`, 0, i_61_, i, 0, i_63_)
                 return class14_sub1
             }
@@ -1142,7 +1142,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
             if (i_88_.toInt() != -84) method3842(false)
             anInt9882++
             if (aBoolean9926 || (ModelDefinition.method1436(i_88_ + 15, i_89_) && ModelDefinition.method1436(65, i))) return Gl2dTexture(this, textureFormatInfo, movementDirection, i_89_, i)
-            if (!aBoolean9919) return Gl2dTexture(this, textureFormatInfo, movementDirection, CacheArchiveIndexLoader.method340(i_89_, 108.toByte()), CacheArchiveIndexLoader.method340(i, 108.toByte()))
+            if (!aBoolean9919) return Gl2dTexture(this, textureFormatInfo, movementDirection, EnumTypeList.method340(i_89_, 108.toByte()), EnumTypeList.method340(i, 108.toByte()))
             return GlRectangleTexture(this, textureFormatInfo, movementDirection, i_89_, i)
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("bga.NC(" + i + ',' + i_88_ + ',' + i_89_ + ',' + (if (movementDirection != null) "{...}" else "null") + ',' + (if (textureFormatInfo != null) "{...}" else "null") + ')'))

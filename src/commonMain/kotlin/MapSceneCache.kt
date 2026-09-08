@@ -162,13 +162,13 @@ class MapSceneCache internal constructor(sceneProjector: SceneProjector?, i: Int
 
         @JvmStatic
         fun method826(i: Int, i_24_: Int, i_25_: Int, i_26_: Int, i_27_: Int, i_28_: Int, var_renderer: Renderer) {
-            if ((MapSceneCache.aAbstractModelRenderer_2309 == null || TimedTileQueueEntry.aAbstractModelRenderer_9658 == null || TimedTileQueueEntry.aAbstractModelRenderer_9659 == null) && CameraRotationStub.aJs5Archive_322!!.method421(false, ProjectedGroundDecor.anInt10257) && CameraRotationStub.aJs5Archive_322!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.aJs5Archive_322!!.method421(false, NpcType.Companion.anInt1387)) {
-                val spriteImage = SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, SkyboxGradient.anInt3937, 0)
+            if ((MapSceneCache.aAbstractModelRenderer_2309 == null || TimedTileQueueEntry.aAbstractModelRenderer_9658 == null || TimedTileQueueEntry.aAbstractModelRenderer_9659 == null) && CameraRotationStub.sprites!!.method421(false, ProjectedGroundDecor.anInt10257) && CameraRotationStub.sprites!!.method421(false, SkyboxGradient.anInt3937) && CameraRotationStub.sprites!!.method421(false, NpcType.Companion.anInt1387)) {
+                val spriteImage = SpriteImage.method1521(CameraRotationStub.sprites!!, SkyboxGradient.anInt3937, 0)
                 TimedTileQueueEntry.aAbstractModelRenderer_9658 = var_renderer.method3691(spriteImage, true)
                 spriteImage!!.method1518()
                 ConfigVarProgress.aAbstractModelRenderer_4808 = var_renderer.method3691(spriteImage, true)
-                MapSceneCache.aAbstractModelRenderer_2309 = (var_renderer.method3691(SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, ProjectedGroundDecor.anInt10257, 0), true))
-                val spriteImage_29_ = SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, NpcType.Companion.anInt1387, 0)
+                MapSceneCache.aAbstractModelRenderer_2309 = (var_renderer.method3691(SpriteImage.method1521(CameraRotationStub.sprites!!, ProjectedGroundDecor.anInt10257, 0), true))
+                val spriteImage_29_ = SpriteImage.method1521(CameraRotationStub.sprites!!, NpcType.Companion.anInt1387, 0)
                 TimedTileQueueEntry.aAbstractModelRenderer_9659 = var_renderer.method3691(spriteImage_29_, true)
                 spriteImage_29_!!.method1518()
                 AbstractMenuEntryStatics.aAbstractModelRenderer_1706 = var_renderer.method3691(spriteImage_29_, true)

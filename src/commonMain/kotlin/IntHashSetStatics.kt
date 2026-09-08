@@ -78,10 +78,10 @@ object IntHashSetStatics {
         val i_41_ = 9 / ((79 - i) / 46)
         if (class348_sub42_sub12.aString9595 == null || class348_sub42_sub12.aString9595!!.length == 0) {
             if ((class348_sub42_sub12.aString9601 == null) || class348_sub42_sub12.aString9601!!.length <= 0) return (class348_sub42_sub12.aString9593)
-            return (class348_sub42_sub12.aString9593 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.anInt6967, 544) + (class348_sub42_sub12.aString9601))
+            return (class348_sub42_sub12.aString9593 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.language, 544) + (class348_sub42_sub12.aString9601))
         }
-        if (class348_sub42_sub12.aString9601 == null || class348_sub42_sub12.aString9601!!.length <= 0) return (class348_sub42_sub12.aString9593 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.anInt6967, 544) + (class348_sub42_sub12.aString9595))
-        return (class348_sub42_sub12.aString9593 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.anInt6967, 544) + class348_sub42_sub12.aString9601 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.anInt6967, 544) + class348_sub42_sub12.aString9595)
+        if (class348_sub42_sub12.aString9601 == null || class348_sub42_sub12.aString9601!!.length <= 0) return (class348_sub42_sub12.aString9593 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.language, 544) + (class348_sub42_sub12.aString9595))
+        return (class348_sub42_sub12.aString9593 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.language, 544) + class348_sub42_sub12.aString9601 + LocalizedText.aLocalizedText_3515!!.method2063(ChatCommandProcessor.language, 544) + class348_sub42_sub12.aString9595)
     }
 
     @JvmStatic

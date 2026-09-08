@@ -57,7 +57,7 @@ class Crc64Hashable : KeyedComparable {
 
     companion object {
 
-        var aJs5Archive_4984: Js5Archive? = null
+        var nativeLibraries: Js5Archive? = null
 
         var anInt4985: Int = 0
 
@@ -73,14 +73,14 @@ class Crc64Hashable : KeyedComparable {
         @JvmStatic
         fun method1112(i: Int) {
             if (i != 1) aSlotBindingArray4987 = null
-            aJs5Archive_4984 = null
+            nativeLibraries = null
             SoundEnvelope.anIntArray4983 = null
             aSlotBindingArray4987 = null
         }
 
         fun method1113(i: Int, i_0_: Int, i_1_: Int): Boolean {
             anInt4995++
-            if (i_1_ >= -3) aJs5Archive_4984 = null
+            if (i_1_ >= -3) nativeLibraries = null
             return (GlowPostProcessor.method1412((-35).toByte(), i_0_, i) and (LocalizedTextStatics.method2058(i, i_0_, 72) or ((i and 0x2000) != 0) or method3203(i_0_, 114.toByte(), i)))
         }
 

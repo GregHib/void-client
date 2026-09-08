@@ -230,11 +230,11 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                 if (class79.aBoolean1396) {
                     var string = class79.aString1372
                     if (class79.anInt1361 != 0) {
-                        val string_15_ = (if (GlRectangleTexture.aSceneProjector_8638 != Client.aSceneProjector_10434) LocalizedText.aLocalizedText_3511!!.method2063(ChatCommandProcessor.anInt6967, 544) else LocalizedText.aLocalizedText_3513!!.method2063(ChatCommandProcessor.anInt6967, 544))
+                        val string_15_ = (if (GlRectangleTexture.aSceneProjector_8638 != Client.mode) LocalizedText.aLocalizedText_3511!!.method2063(ChatCommandProcessor.language, 544) else LocalizedText.aLocalizedText_3513!!.method2063(ChatCommandProcessor.language, 544))
                         string += ((GlRectangleTexture.method250((LocalPlayerState.aPlayer_1907!!.anInt10516), true, class79.anInt1361)) + " (" + string_15_ + class79.anInt1361 + ")")
                     }
                     if (RenderNodeStatics.aBoolean9722 && !bool) {
-                        val class254 = (if (ParticleEmitterFactoryStatics.anInt3176 == -1) null else ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(ParticleEmitterFactoryStatics.anInt3176, 28364))
+                        val class254 = (if (ParticleEmitterFactoryStatics.anInt3176 == -1) null else ProjectionCameraTransform.aParamTypeList_5764!!.method2600(ParticleEmitterFactoryStatics.anInt3176, 28364))
                         if ((WidgetTextConfig.anInt500 and 0x2) != 0 && (class254 == null || (class79.method805((class254.anInt3256), ParticleEmitterFactoryStatics.anInt3176, 61) != class254.anInt3256))) {
                             MinimapPolygonDrawer.method466(false, ItemNameResolver.aString5000 + " -> <col=ffff00>" + string, 0, (-81).toByte(), false, 0, -1, true, 30, npc.anInt10290.toLong(), ItemNameResolver.aString5001, npc.anInt10290.toLong(), FloatBuffer.anInt9747)
                             TextureHandle.anInt2586++
@@ -245,7 +245,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                         if (ArbVertexProgram.aBoolean9783) strings = method1847(strings, 0)
                         if (strings != null) {
                             for (i in 4 downTo 0) {
-                                if (strings[i] != null && (class79.aByte1384.toInt() == 0 || !(strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.anInt6967, 544), ignoreCase = true)))) {
+                                if (strings[i] != null && (class79.aByte1384.toInt() == 0 || !(strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.language, 544), ignoreCase = true)))) {
                                     var i_16_ = 0
                                     if (i == 0) i_16_ = 25
                                     var i_17_ = WidgetTextConfig.anInt506
@@ -256,13 +256,13 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                     if (i == 4) i_16_ = 60
                                     if (i == class79.anInt1385) i_17_ = class79.anInt1338
                                     RenderConfigFactory.anInt2976++
-                                    MinimapPolygonDrawer.method466(false, "<col=ffff00>" + string, 0, (-93).toByte(), false, 0, -1, true, i_16_, npc.anInt10290.toLong(), strings[i], npc.anInt10290.toLong(), (if (!(strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.anInt6967, 544), ignoreCase = true))) i_17_ else class79.anInt1401))
+                                    MinimapPolygonDrawer.method466(false, "<col=ffff00>" + string, 0, (-93).toByte(), false, 0, -1, true, i_16_, npc.anInt10290.toLong(), strings[i], npc.anInt10290.toLong(), (if (!(strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.language, 544), ignoreCase = true))) i_17_ else class79.anInt1401))
                                 }
                             }
                         }
                         if (class79.aByte1384.toInt() == 1 && strings != null) {
                             for (i in 4 downTo 0) {
-                                if (strings[i] != null && (strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.anInt6967, 544), ignoreCase = true))) {
+                                if (strings[i] != null && (strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.language, 544), ignoreCase = true))) {
                                     var i_18_: Short = 0
                                     if ((LocalPlayerState.aPlayer_1907!!.anInt10516) < class79.anInt1361) i_18_ = 2000.toShort()
                                     var i_19_: Short = 0
@@ -281,7 +281,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                     CircleDrawer.anInt2690++
                     val npcX = (npc.x shr 9) + ArbVertexProgram.regionTileX - npc.aNpcType_10505!!.anInt1399 + 1
                     val npcY = (npc.y shr 9) + RegionMapDecoder.regionTileY - npc.aNpcType_10505!!.anInt1399 + 1
-                    MinimapPolygonDrawer.method466(bool, "<col=ffff00>" + string + Config.getDebug(class79.anInt1344, npcX, npcY, npc.plane.toInt()), 0, (-105).toByte(), bool_14_, 0, -1, true, 1008, npc.anInt10290.toLong(), LocalizedText.aLocalizedText_3505!!.method2063(ChatCommandProcessor.anInt6967, 544), npc.anInt10290.toLong(), CubeMapMaterialPass.Companion.anInt6299)
+                    MinimapPolygonDrawer.method466(bool, "<col=ffff00>" + string + Config.getDebug(class79.anInt1344, npcX, npcY, npc.plane.toInt()), 0, (-105).toByte(), bool_14_, 0, -1, true, 1008, npc.anInt10290.toLong(), LocalizedText.aLocalizedText_3505!!.method2063(ChatCommandProcessor.language, 544), npc.anInt10290.toLong(), CubeMapMaterialPass.Companion.anInt6299)
                 }
             }
         }

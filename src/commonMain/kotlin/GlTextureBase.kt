@@ -1,6 +1,5 @@
 import kotlin.jvm.JvmStatic
 import jaggl.OpenGL.Companion.glBindTexture
-import jaggl.OpenGL.Companion.glDisable
 import jaggl.OpenGL.Companion.glEnable
 import jaggl.OpenGL.Companion.glGenTextures
 import jaggl.OpenGL.Companion.glTexImage2Df
@@ -313,8 +312,8 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
             this.aMovementDirection_5088 = movementDirection
             aBoolean5099 = bool
             this.anInt5093 = i
-            glGenTextures(1, TextureDefinitionLoader.anIntArray1975, 0)
-            anInt5096 = TextureDefinitionLoader.anIntArray1975!![0]
+            glGenTextures(1, MapSceneDefinitionLoader.anIntArray1975, 0)
+            anInt5096 = MapSceneDefinitionLoader.anIntArray1975!![0]
             method229(true)
             method236(0, (-126).toByte())
         } catch (runtimeexception: RuntimeException) {

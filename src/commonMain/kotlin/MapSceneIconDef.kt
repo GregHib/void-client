@@ -7,7 +7,7 @@ import NpcType.Companion.method802
 * Visit http://jode.sourceforge.net/
 */
 class MapSceneIconDef {
-    var aTextureDefinitionLoader_2851: TextureDefinitionLoader? = null
+    var aMapSceneDefinitionLoader_2851: MapSceneDefinitionLoader? = null
 
     var anInt2853: Int = 0
 
@@ -15,9 +15,9 @@ class MapSceneIconDef {
 
     var anInt2856: Int = 0
     fun method1593(i: Int): Boolean {
-        if (i != 106) this.aTextureDefinitionLoader_2851 = null
+        if (i != 106) this.aMapSceneDefinitionLoader_2851 = null
         anInt2858++
-        return this.aTextureDefinitionLoader_2851!!.aJs5Archive_1965!!.method421(false, this.anInt2853)
+        return this.aMapSceneDefinitionLoader_2851!!.aJs5Archive_1965!!.method421(false, this.anInt2853)
     }
 
     private fun method1595(i: Byte, i_17_: Int, class348_sub49: ByteBuffer) {
@@ -35,10 +35,10 @@ class MapSceneIconDef {
         anInt2857++
         if (i_18_ < 51) InboundPacketHeader.aInboundPacketHeader_2860 = null
         val l = (var_renderer.anInt4567 shl 19 or (this.anInt2853 or (i shl 16) or (if (!bool) 0 else 262144))).toLong()
-        var abstractModelRenderer = this.aTextureDefinitionLoader_2851!!.aLruByteCache_1976.method583(l, -87) as AbstractModelRenderer?
+        var abstractModelRenderer = this.aMapSceneDefinitionLoader_2851!!.aLruByteCache_1976.method583(l, -87) as AbstractModelRenderer?
         if (abstractModelRenderer != null) return abstractModelRenderer
-        if (!this.aTextureDefinitionLoader_2851!!.aJs5Archive_1965!!.method421(false, this.anInt2853)) return null
-        val spriteImage = SpriteImage.method1521(this.aTextureDefinitionLoader_2851!!.aJs5Archive_1965!!, this.anInt2853, 0)
+        if (!this.aMapSceneDefinitionLoader_2851!!.aJs5Archive_1965!!.method421(false, this.anInt2853)) return null
+        val spriteImage = SpriteImage.method1521(this.aMapSceneDefinitionLoader_2851!!.aJs5Archive_1965!!, this.anInt2853, 0)
         if (spriteImage != null) {
             spriteImage.anInt2700 = 0
             spriteImage.anInt2698 = spriteImage.anInt2700
@@ -48,7 +48,7 @@ class MapSceneIconDef {
             for (i_19_ in 0..<i) spriteImage.method1520()
         }
         abstractModelRenderer = var_renderer.method3691(spriteImage, true)
-        if (abstractModelRenderer != null) this.aTextureDefinitionLoader_2851!!.aLruByteCache_1976.method582(abstractModelRenderer, l, (-101).toByte())
+        if (abstractModelRenderer != null) this.aMapSceneDefinitionLoader_2851!!.aLruByteCache_1976.method582(abstractModelRenderer, l, (-101).toByte())
         return abstractModelRenderer
     }
 

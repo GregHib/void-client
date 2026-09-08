@@ -10,14 +10,14 @@ object VideoAdChecker {
     var aCameraRotationStub_3181: CameraRotationStub? = CameraRotationStub()
     var aDouble3182: Double = 0.0
 
-    var aJs5Archive_3183: Js5Archive? = null
+    var enums: Js5Archive? = null
     var anInt3184: Int = 0
 
     @JvmStatic
     fun method1889(i: Int) {
         if (i != 255) method1889(-18)
         aCameraRotationStub_3181 = null
-        aJs5Archive_3183 = null
+        enums = null
     }
 
     fun method1890(i: Int, i_0_: Byte, i_1_: Int, i_2_: Int): Int {

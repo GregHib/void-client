@@ -64,30 +64,30 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
             anInt6866++
             LocTypeDefLoader.method1406(true)
             if (i == 0) {
-                FacingDirectionNode.aRenderer6654 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350) * 2, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aJs5Archive_4796)
+                FacingDirectionNode.aRenderer6654 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350) * 2, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.shaders)
                 if (string != null) {
                     FacingDirectionNode.aRenderer6654!!.GA(0)
                     val class143 = method1819(WidgetDefinition.anInt235, 0, -117, SoftwareSpriteRaster.aJs5Archive_1627!!)
-                    val class324 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1519(CameraRotationStub.aJs5Archive_322!!, WidgetDefinition.anInt235, 0), true))
+                    val class324 = (FacingDirectionNode.aRenderer6654!!.method3686(class143, SpriteImage.method1519(CameraRotationStub.sprites!!, WidgetDefinition.anInt235, 0), true))
                     ScreenBorderFiller.method1170((-89).toByte())
                     Tooltip.method3511(true, class324, class143, string, 2, FacingDirectionNode.aRenderer6654)
                 }
             } else {
                 var var_renderer: Renderer? = null
                 if (string != null) {
-                    var_renderer = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aJs5Archive_4796)!!
+                    var_renderer = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, 0, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.shaders)!!
                     var_renderer.GA(0)
                     val class143 = method1819(WidgetDefinition.anInt235, 0, -115, SoftwareSpriteRaster.aJs5Archive_1627!!)
-                    val class324 = var_renderer.method3686(class143, SpriteImage.method1519((CameraRotationStub.aJs5Archive_322!!), WidgetDefinition.anInt235, 0), true)
+                    val class324 = var_renderer.method3686(class143, SpriteImage.method1519((CameraRotationStub.sprites!!), WidgetDefinition.anInt235, 0), true)
                     ScreenBorderFiller.method1170((-107).toByte())
                     Tooltip.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
                 }
                 try {
-                    FacingDirectionNode.aRenderer6654 = SoftwareSpriteRaster.method958(true, i, SourceRowTextureNode.aRenderConfig9113, 2 * IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(i_1_ + -32350), ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.aJs5Archive_4796)
+                    FacingDirectionNode.aRenderer6654 = SoftwareSpriteRaster.method958(true, i, SourceRowTextureNode.aRenderConfig9113, 2 * IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(i_1_ + -32350), ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.shaders)
                     if (string != null) {
                         var_renderer!!.GA(0)
                         val class143 = method1819(WidgetDefinition.anInt235, 0, -51, SoftwareSpriteRaster.aJs5Archive_1627!!)
-                        val class324 = (var_renderer.method3686(class143, SpriteImage.method1519(CameraRotationStub.aJs5Archive_322!!, WidgetDefinition.anInt235, 0), true))
+                        val class324 = (var_renderer.method3686(class143, SpriteImage.method1519(CameraRotationStub.sprites!!, WidgetDefinition.anInt235, 0), true))
                         ScreenBorderFiller.method1170((-26).toByte())
                         Tooltip.method3511(true, class324, class143, string, i_1_ + 2, var_renderer)
                     }

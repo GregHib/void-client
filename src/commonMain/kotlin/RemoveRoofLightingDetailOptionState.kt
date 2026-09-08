@@ -86,14 +86,14 @@ class RemoveRoofLightingDetailOptionState : GraphicsOptionState {
             anInt5983++
             if (AbstractFrameBufferSurface.anInt6923 == -1) return 1
             if (i != IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) {
-                GlTexture2DRegion.method1971(-2, LocalizedText.aLocalizedText_3496!!.method2063(ChatCommandProcessor.anInt6967, 544), true, i)
+                GlTexture2DRegion.method1971(-2, LocalizedText.aLocalizedText_3496!!.method2063(ChatCommandProcessor.language, 544), true, i)
                 if (i != IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350)) return -1
             }
             try {
                 val width = ParticleSystemRenderer.aCanvas3869!!.getWidth()
                 val height = ParticleSystemRenderer.aCanvas3869!!.getHeight()
-                Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(ChatCommandProcessor.anInt6967, 544), 2, FacingDirectionNode.aRenderer6654)
-                val class124 = ParticleConfigParser.method2277(0, RasterSprite.aJs5Archive_5207!!, AbstractFrameBufferSurface.anInt6923, -1)
+                Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(ChatCommandProcessor.language, 544), 2, FacingDirectionNode.aRenderer6654)
+                val class124 = ParticleConfigParser.method2277(0, RasterSprite.models!!, AbstractFrameBufferSurface.anInt6923, -1)
                 val l = GameClock.method599(-88)
                 FacingDirectionNode.aRenderer6654!!.la()
                 SettingsCrcWriter.aAbstractCameraTransform_2123!!.method894(0, ActorEntity.anInt9037, 0)

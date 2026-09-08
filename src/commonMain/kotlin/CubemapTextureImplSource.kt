@@ -46,13 +46,13 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
         fun method2270(i: Int, i_4_: Int, var_renderer: Renderer?, string: String?, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int) {
             try {
                 if (ChatMessageStream.aAbstractModelRenderer_106 == null || MinimapFlagRenderer.aAbstractModelRenderer_1800 == null) {
-                    if (CameraRotationStub.aJs5Archive_322!!.method421(false, HudTabPanel.anInt2996) && CameraRotationStub.aJs5Archive_322!!.method421(false, CombineTextureNode.anInt9231)) {
-                        ChatMessageStream.aAbstractModelRenderer_106 = (var_renderer!!.method3691(SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, HudTabPanel.anInt2996, 0), true))
-                        val spriteImage = SpriteImage.method1521(CameraRotationStub.aJs5Archive_322!!, CombineTextureNode.anInt9231, 0)
+                    if (CameraRotationStub.sprites!!.method421(false, HudTabPanel.anInt2996) && CameraRotationStub.sprites!!.method421(false, CombineTextureNode.anInt9231)) {
+                        ChatMessageStream.aAbstractModelRenderer_106 = (var_renderer!!.method3691(SpriteImage.method1521(CameraRotationStub.sprites!!, HudTabPanel.anInt2996, 0), true))
+                        val spriteImage = SpriteImage.method1521(CameraRotationStub.sprites!!, CombineTextureNode.anInt9231, 0)
                         MinimapFlagRenderer.aAbstractModelRenderer_1800 = var_renderer.method3691(spriteImage, true)
                         spriteImage!!.method1518()
                         AbstractBloomEffect.aAbstractModelRenderer_6627 = var_renderer.method3691(spriteImage, true)
-                    } else var_renderer!!.aa(i_4_, i_5_, i, i_7_, (255 + -NpcConfig.anInt948 shl 24 or CompassSmoother.anInt3376), 1)
+                    } else var_renderer!!.aa(i_4_, i_5_, i, i_7_, (255 + -ObjectType.anInt948 shl 24 or CompassSmoother.anInt3376), 1)
                 }
                 anInt8709++
                 if (ChatMessageStream.aAbstractModelRenderer_106 != null && MinimapFlagRenderer.aAbstractModelRenderer_1800 != null) {
@@ -63,7 +63,7 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
                 }
                 if (bool == false) {
                     NodeDequeStatics.aRSFont_3326!!.method2576(string, (CharCodeMap.anInt9586) or 0xffffff.inv(), 14 + i_5_, 3 + i_4_, -1, -127)
-                    var_renderer!!.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (CompassSmoother.anInt3376 or (255 + -NpcConfig.anInt948 shl 24)), 1)
+                    var_renderer!!.aa(i_4_, i_7_ + i_5_, i, i_6_ + -i_7_, (CompassSmoother.anInt3376 or (255 + -ObjectType.anInt948 shl 24)), 1)
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("kv.G(" + i + ',' + i_4_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (string != null) "{...}" else "null") + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ')'))

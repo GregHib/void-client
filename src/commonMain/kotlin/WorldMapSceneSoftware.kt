@@ -19,7 +19,7 @@ import MapSceneRenderer.method388
 import DirectionPath.Companion.method536
 import SolidFillComponent.Companion.method192
 import ActiveMapRegion.method770
-import WidgetCache.Companion.method837
+import AnimationTypeList.Companion.method837
 import NativeBufferHandle.Companion.method850
 import OpenGlRenderNode.Companion.method3297
 import PositionedSceneNode.Companion.method2519
@@ -29,14 +29,14 @@ import lang.jClass
 /* Class237_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: Int, bool: Boolean) : WorldMapScene(i, i_114_, i_115_, bool, RenderConfigFactory.aLocDefinitionCache_2979, Tooltip.aParticleDefLoader_4460) {
+class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: Int, bool: Boolean) : WorldMapScene(i, i_114_, i_115_, bool, RenderConfigFactory.aFloorOverlayTypeList_2979, Tooltip.aParticleDefLoader_4460) {
     var anInt5824: Int = 99
     fun method1689(i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, collisionMap: CollisionMap?) {
         try {
             anInt5823++
             if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i_3_ xor 0x7e6f.inv()) != 0 || method536(i_5_, false, i, ParticleSystemState.anInt2204, i_2_)) {
                 if (this.anInt5824 > i_0_) this.anInt5824 = i_0_
-                val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_1_)
+                val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, i_1_)
                 if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub24_7235!!.method1820(i_3_ + -32400) != 0 || !class51.aBoolean931) {
                     val i_8_: Int
                     val i_9_: Int
@@ -254,7 +254,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                         } else if (i_4_ == 5) {
                             var i_27_ = 65
                             val renderTarget = (method3297(i_0_, i, i_5_) as RenderTarget?)
-                            if (renderTarget != null) i_27_ = 1 + (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-93)).anInt883)
+                            if (renderTarget != null) i_27_ = 1 + (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, renderTarget.method42(-93)).anInt883)
                             val class318_sub1_sub5: WallEntity?
                             if (bool_17_) {
                                 val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_27_ * WidgetNodeLink.anIntArray2039!![i_7_], (CombineTextureNode.anIntArray9230!![i_7_]) * i_27_, i_4_, i_7_))
@@ -265,7 +265,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                         } else if (i_4_ == 6) {
                             var i_28_ = 33
                             val renderTarget = (method3297(i_0_, i, i_5_) as RenderTarget?)
-                            if (renderTarget != null) i_28_ = 1 + (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-117)).anInt883) / 2
+                            if (renderTarget != null) i_28_ = 1 + (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, renderTarget.method42(-117)).anInt883) / 2
                             val class318_sub1_sub5: WallEntity?
                             if (bool_17_) {
                                 val class318_sub1_sub5_sub1 = (ModelWallEntity(var_renderer, class51, i_0_, i_2_, i_15_, i_14_, i_16_, this.aBoolean3109, i_28_ * WidgetNodeLink.anIntArray2039!![i_7_], (CombineTextureNode.anIntArray9230!![i_7_]) * i_28_, i_4_, 4 + i_7_))
@@ -286,7 +286,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                             val i_30_ = 2 + i_7_ and 0x3
                             var i_31_ = 33
                             val renderTarget = (method3297(i_0_, i, i_5_) as RenderTarget?)
-                            if (renderTarget != null) i_31_ = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(i_3_ + -50, renderTarget.method42(-122)).anInt883) / 2 + 1
+                            if (renderTarget != null) i_31_ = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(i_3_ + -50, renderTarget.method42(-122)).anInt883) / 2 + 1
                             val class318_sub1_sub5: WallEntity?
                             val class318_sub1_sub5_32_: WallEntity?
                             if (bool_17_) {
@@ -499,7 +499,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val i_88_ = i_87_ shr 2
                     val i_89_ = i_87_ and 0x3
                     if (i_74_ == i_86_ && i <= i_85_ && i - -8 > i_85_ && i_75_ <= i_84_ && i_75_ - -8 > i_84_) {
-                        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, i_80_)
+                        val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, i_80_)
                         val i_90_ = TileTransform.method1908(0x7 and i_84_, i_85_ and 0x7, i_73_, true, class51.anInt926, class51.anInt961, i_89_) + i_77_
                         val i_91_ = i_76_ + method1045(0x7 and i_85_, (class51.anInt926), i_89_, (class51.anInt961), i_84_ and 0x7, i_73_, 16.toByte())
                         if (i_90_ > 0 && i_91_ > 0 && i_90_ < -1 + this.anInt3117 && -1 + this.anInt3114 > i_91_) {
@@ -527,7 +527,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     val interface10 = method1690(i, i_95_, i_94_, i_93_, 30987)
                     if (i_96_ <= 66) anInt5819 = -107
                     if (interface10 == null) break@while_77_
-                    val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, interface10.method42(-89))
+                    val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, interface10.method42(-89))
                     val i_97_ = interface10.method39(-128)
                     val i_98_ = interface10.method41(-32228)
                     if (class51.method474((-50).toByte())) method2336(class51, i_94_, i_95_, i_93_, -128)
@@ -851,12 +851,12 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         }
 
         var anInt3940: Int = 0
-        fun method2336(npcConfig: NpcConfig, i: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
+        fun method2336(objectType: ObjectType, i: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             anInt3940++
             if (i_3_ > -126) FloorOverlayDefinition.anInt3941 = 15
             var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState?
             while (class348_sub9 != null) {
-                if (i_2_ == class348_sub9.anInt6693 && (class348_sub9.anInt6678 == i shl 9) && (i_1_ shl 9 == class348_sub9.anInt6689) && (class348_sub9.aNpcConfig_6695!!.anInt941 == npcConfig.anInt941)) {
+                if (i_2_ == class348_sub9.anInt6693 && (class348_sub9.anInt6678 == i shl 9) && (i_1_ shl 9 == class348_sub9.anInt6689) && (class348_sub9.aObjectType_6695!!.anInt941 == objectType.anInt941)) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
                         SpriteDefinition.aClass348_Sub16_Sub4_7065!!.method2880(class348_sub9.aClass348_Sub16_Sub5_6676!!)
                         class348_sub9.aClass348_Sub16_Sub5_6676 = null

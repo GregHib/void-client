@@ -86,7 +86,7 @@ class StereoSoundOptionState : GraphicsOptionState {
             player.y = (((player.anIntArray10317!![0]) shl 9) - -(player.method2436(85.toByte()) shl 8))
             player.aByte6376 = i_5_
             player.plane = player.aByte6376
-            CompiledScriptCache.anInt4372 = player.plane.toInt()
+            QuickChatMenuTypeList.anInt4372 = player.plane.toInt()
             if (NpcType.method802((player.anIntArray10317!![0]), (player.anIntArray10320!![0]), true)) player.aByte6376++
             if (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_3_] != null) player.method2452(84.toByte(), (CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_3_]!!))
             ShaderState.anInt6513 = 0

@@ -32,14 +32,14 @@ class WorldMapTextLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRende
 
         var anInt8588: Int = 0
 
-        var aJs5Archive_8589: Js5Archive? = null
+        var textures: Js5Archive? = null
 
         var anObject8592: Any? = null
 
         var anInt8593: Int = 0
 
         @JvmStatic
-        fun method3571(bool: Boolean, i: Int, i_0_: Byte, i_1_: Int): Js5Archive? {
+        fun createIndex(bool: Boolean, i: Int, i_0_: Byte, i_1_: Int): Js5Archive? {
             anInt8593++
             if (i_0_.toInt() != -23) return null
             var indexedFileCache: IndexedFileCache? = null
@@ -52,8 +52,8 @@ class WorldMapTextLabel(screenAnchorAlignment: ScreenAnchorAlignment?, tileRende
         @JvmStatic
         fun method3572(i: Int) {
             InboundPacketHeader.aInboundPacketHeader_8590 = null
-            aJs5Archive_8589 = null
-            if (i != 1000000) method3571(false, -66, 13.toByte(), 13)
+            textures = null
+            if (i != 1000000) createIndex(false, -66, 13.toByte(), 13)
             aWidgetComponentArrayArray8584 = null
             anObject8592 = null
         }

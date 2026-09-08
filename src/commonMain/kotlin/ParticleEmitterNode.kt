@@ -37,7 +37,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
 
         var anInt190: Int = 0
 
-        var aWidgetCache_191: WidgetCache? = null
+        var aAnimationTypeList_191: AnimationTypeList? = null
         @JvmStatic
         fun method217(i: Byte): String? {
             anInt175++
@@ -52,7 +52,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
             anIntArray187 = null
             SoundEnvelope.anIntArray179 = null
             aSceneProjector_186 = null
-            aWidgetCache_191 = null
+            aAnimationTypeList_191 = null
             anIntArrayArray174 = null
         }
 
@@ -60,7 +60,7 @@ class ParticleEmitterNode internal constructor(@JvmField var aByte180: Byte, @Jv
         fun method219(i: Int, bool: Boolean, i_0_: Int): Boolean {
             if (bool != false) return false
             anInt190++
-            return ((i and 0x800) != 0) or BufferedMessageQueue.method2077(-106, i_0_, i) || Direct3dModel.method3200(i, i_0_, 88.toByte())
+            return ((i and 0x800) != 0) or NpcTypeList.method2077(-106, i_0_, i) || Direct3dModel.method3200(i, i_0_, 88.toByte())
         }
 
         init {

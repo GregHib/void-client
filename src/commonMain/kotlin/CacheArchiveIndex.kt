@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import CacheArchiveIndexLoader.Companion.method340
+import EnumTypeList.Companion.method340
 import MinimapSquareDrawer.Companion.method462
 
 /* Class117 - Decompiled by JODE

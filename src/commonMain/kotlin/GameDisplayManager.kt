@@ -104,7 +104,7 @@ object GameDisplayManager {
                         }
                         NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2877(-128)
                         NodeDequeHolder.aClass348_Sub16_Sub3_1564!!.method2867(i xor 0x1eaf)
-                        TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
+                        MapSceneDefinitionLoader.aSpriteArchiveLoader_1977 = null
                         if (ModelDefinition.aJs5Archive_1848 != null) SpriteDefinition.anInt7068 = 2
                         else SpriteDefinition.anInt7068 = 0
                         MaterialPass.aClass348_Sub2_3683 = null
@@ -125,7 +125,7 @@ object GameDisplayManager {
                     ModelDefinition.aJs5Archive_1848 = null
                     MaterialPass.aClass348_Sub2_3683 = null
                     GlBufferObject.aClass348_Sub16_Sub3_4743 = null
-                    TextureDefinitionLoader.aSpriteArchiveLoader_1977 = null
+                    MapSceneDefinitionLoader.aSpriteArchiveLoader_1977 = null
                     SpriteDefinition.anInt7068 = 0
                     break
                 }

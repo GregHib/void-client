@@ -65,7 +65,7 @@ class MapRegionLoaderThread : Runnable {
         if (aLinkedQueueNode_4201 == null) {
             try {
                 val i_15_ = (if (NpcAnimationResolver.aNamedIdRecord_165 == OggCacheStream.aNamedIdRecord_5271) 80 else 7000 - -(GlElementArrayBuffer.aServerConnectionInfo_4839!!.anInt2143))
-                aLinkedQueueNode_4201 = (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Client.aSceneProjector_10434!!.anInt2987), 8362))
+                aLinkedQueueNode_4201 = (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.method2237(URL("http://" + (GlElementArrayBuffer.aServerConnectionInfo_4839!!.aString2147) + ":" + i_15_ + "/news.ws?game=" + Client.mode!!.anInt2987), 8362))
             } catch (malformedurlexception: MalformedURLException) {
                 return true
             }

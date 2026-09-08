@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import CacheArchiveIndexLoader.Companion.method340
+import EnumTypeList.Companion.method340
 
 /* Class348_Sub42_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/

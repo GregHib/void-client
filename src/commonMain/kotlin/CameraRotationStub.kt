@@ -15,7 +15,7 @@ class CameraRotationStub {
 
         var anInt321: Int = 0
 
-        var aJs5Archive_322: Js5Archive? = null
+        var sprites: Js5Archive? = null
 
         var aWidgetComponent_323: WidgetComponent? = null
 
@@ -29,7 +29,7 @@ class CameraRotationStub {
 
         @JvmStatic
         fun method288(i: Byte) {
-            aJs5Archive_322 = null
+            sprites = null
             if (i > 93) {
                 aRenderer326 = null
                 aWidgetComponent_323 = null
@@ -56,7 +56,7 @@ class CameraRotationStub {
                 if (i != -15902) Companion.method288((-120).toByte())
                 ProceduralTextureGraph.aDouble9531 = d_7_ * -d_4_
                 SceneCollisionEntry.aDouble4404 = d_5_
-                MapElementDefinitionCache.aDouble3980 = 0.0
+                GfxTypeList.aDouble3980 = 0.0
                 NoiseTextureGenerator.aDouble1083 = d_6_ * -d_5_
                 TheoraVideoStream.aDouble9023 = d_5_ * d_7_
             }

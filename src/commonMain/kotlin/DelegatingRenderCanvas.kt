@@ -130,7 +130,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             var abstractModel = CharCountUtil.aLruByteCache_225!!.method583(l, 81) as AbstractModel?
             val i_18_ = 2055
             if (abstractModel == null) {
-                val class124 = ParticleConfigParser.method2277(0, RasterSprite.aJs5Archive_5207!!, i_16_, -1)
+                val class124 = ParticleConfigParser.method2277(0, RasterSprite.models!!, i_16_, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 105)
                 abstractModel = var_renderer.method3625(class124, i_18_, RefCountedHandle.anInt2275, 64, 768)
@@ -148,53 +148,53 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
         fun method123(i: Int) {
             anInt63++
             RegionSceneLoader.method2193(false, (-125).toByte())
-            LocDefinitionCache.anInt3441 = 0
+            FloorOverlayTypeList.anInt3441 = 0
             var bool = true
             var i_19_ = 0
             while (DragDropController.aByteArrayArray4281!!.size > i_19_) {
                 if (NativeSprite.anIntArray5192!![i_19_] != -1 && DragDropController.aByteArrayArray4281!![i_19_] == null) {
-                    DragDropController.aByteArrayArray4281!![i_19_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method410(-1860, NativeSprite.anIntArray5192!![i_19_], 0)
+                    DragDropController.aByteArrayArray4281!![i_19_] = AbstractCameraTransformStatics.maps!!.method410(-1860, NativeSprite.anIntArray5192!![i_19_], 0)
                     if (DragDropController.aByteArrayArray4281!![i_19_] == null) {
                         bool = false
-                        LocDefinitionCache.anInt3441++
+                        FloorOverlayTypeList.anInt3441++
                     }
                 }
                 if (GameAppletFrame.anIntArray38!![i_19_] != -1 && GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
-                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (AbstractCameraTransformStatics.aJs5Archive_7382!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
+                    GlRectangleTexture.aByteArrayArray8642!![i_19_] = (AbstractCameraTransformStatics.maps!!.method393(GameAppletFrame.anIntArray38!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (GlRectangleTexture.aByteArrayArray8642!![i_19_] == null) {
-                        LocDefinitionCache.anInt3441++
+                        FloorOverlayTypeList.anInt3441++
                         bool = false
                     }
                 }
                 if (LocalizedTextTriple.anIntArray3759!![i_19_] != -1 && RegionMapDecoder.aByteArrayArray1887!![i_19_] == null) {
-                    RegionMapDecoder.aByteArrayArray1887!![i_19_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
+                    RegionMapDecoder.aByteArrayArray1887!![i_19_] = AbstractCameraTransformStatics.maps!!.method410(-1860, LocalizedTextTriple.anIntArray3759!![i_19_], 0)
                     if (RegionMapDecoder.aByteArrayArray1887!![i_19_] == null) {
-                        LocDefinitionCache.anInt3441++
+                        FloorOverlayTypeList.anInt3441++
                         bool = false
                     }
                 }
                 if (RenderNodeStatics.anIntArray9724!![i_19_] != -1 && VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
-                    VorbisOggDecoder.aByteArrayArray8996!![i_19_] = AbstractCameraTransformStatics.aJs5Archive_7382!!.method410(-1860, RenderNodeStatics.anIntArray9724!![i_19_], 0)
+                    VorbisOggDecoder.aByteArrayArray8996!![i_19_] = AbstractCameraTransformStatics.maps!!.method410(-1860, RenderNodeStatics.anIntArray9724!![i_19_], 0)
                     if (VorbisOggDecoder.aByteArrayArray8996!![i_19_] == null) {
                         bool = false
-                        LocDefinitionCache.anInt3441++
+                        FloorOverlayTypeList.anInt3441++
                     }
                 }
                 if (AbstractCameraTransformStatics.anIntArray4031 != null && StringCacheNode.aByteArrayArray7212!![i_19_] == null && AbstractCameraTransformStatics.anIntArray4031!![i_19_] != -1) {
-                    StringCacheNode.aByteArrayArray7212!![i_19_] = (AbstractCameraTransformStatics.aJs5Archive_7382!!.method393(AbstractCameraTransformStatics.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
+                    StringCacheNode.aByteArrayArray7212!![i_19_] = (AbstractCameraTransformStatics.maps!!.method393(AbstractCameraTransformStatics.anIntArray4031!![i_19_], 0, i + 2, BrightnessOptionState.anIntArrayArray5894!![i_19_]))
                     if (StringCacheNode.aByteArrayArray7212!![i_19_] == null) {
                         bool = false
-                        LocDefinitionCache.anInt3441++
+                        FloorOverlayTypeList.anInt3441++
                     }
                 }
                 i_19_++
             }
             if (OpenGlRenderNode.aSmoothingBuffer_10488 == null) {
-                if (NamedIdEntry.aClass348_Sub42_Sub14_6885 != null && (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method400(-18308, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"))) {
-                    if (TerrainShadowBuilderGl2.aJs5Archive_6950!!.method413(100, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aSmoothingBuffer_10488 = SkeletonSequenceLoader.method2300(TerrainShadowBuilderGl2.aJs5Archive_6950, ((NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), ModelBatchBase.aBoolean1900, (-91).toByte())
+                if (NamedIdEntry.aClass348_Sub42_Sub14_6885 != null && (TerrainShadowBuilderGl2.worldMap!!.method400(-18308, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"))) {
+                    if (TerrainShadowBuilderGl2.worldMap!!.method413(100, (NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements")) OpenGlRenderNode.aSmoothingBuffer_10488 = SkeletonSequenceLoader.method2300(TerrainShadowBuilderGl2.worldMap, ((NamedIdEntry.aClass348_Sub42_Sub14_6885!!.aString9625) + "_staticelements"), ModelBatchBase.aBoolean1900, (-91).toByte())
                     else {
                         bool = false
-                        LocDefinitionCache.anInt3441++
+                        FloorOverlayTypeList.anInt3441++
                     }
                 } else OpenGlRenderNode.aSmoothingBuffer_10488 = SmoothingBuffer(0)
             }
@@ -224,7 +224,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 }
                 if (bool) {
-                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.anInt6967, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
+                    if (AnimationFrameTable.anInt489 != 0) Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, ((LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.language, 544)) + "<br>(100%)"), 2, FacingDirectionNode.aRenderer6654)
                     method3570(false)
                     InterfaceBounds.method2938(102.toByte())
                     method1772(i xor 0x41)
@@ -244,7 +244,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     else i_27_ = (CubeMapMaterialPass.anIntArray6296!![MenuActionNode.anInt6769])
                     if (FacingDirectionNode.aRenderer6654!!.method3670()) i_27_++
                     i_27_ = (Config.RENDER_DISTANCE_MULTIPLIER * i_27_).toInt()
-                    RenderbufferObject.method3171(FacingDirectionNode.aRenderer6654, FogOptionState.anInt6012, 9, 4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNode.aRenderer6654!!.method3704() > 0)
+                    RenderBufferObject.method3171(FacingDirectionNode.aRenderer6654, FogOptionState.anInt6012, 9, 4, GlCubemapLightPass.anInt7319, RangeThresholdTextureNode.anInt9109, i_27_, bool_25_, FacingDirectionNode.aRenderer6654!!.method3704() > 0)
                     TerrainShadowBuilderGl2.method3018(SequencedActorEntity.anInt10096)
                     if (SequencedActorEntity.anInt10096 != 0) ModelResourceBundle.method3328(WorldMapRenderer.aRSFont_4684)
                     else ModelResourceBundle.method3328(null)
@@ -259,7 +259,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     RegionSceneLoader.method2193(true, (-128).toByte())
                     AnimationFrameTable.method354(2)
                     anInt3720 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350)
-                    HuffmanCodec.aBoolean3767 = TextureDefinitionCache.anInt2964 >= 96
+                    HuffmanCodec.aBoolean3767 = QuickChatTypeList.anInt2964 >= 96
                     WorldMapLabel.aBoolean4972 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) == 2
                     TextureGenerator.aBoolean2492 = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(i + -32350) == 1
                     ChatMessageStream.anInt101 = if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 1) -1 else ParticleSystemState.anInt2204
@@ -294,7 +294,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         ProjectionCameraTransform.method944(i + -8212, GlRectangleTexture.aByteArrayArray8642, MapTileShape.aClass237_Sub1_4197)
                     }
                     InterfaceBounds.method2938(66.toByte())
-                    if (TextureDefinitionCache.anInt2964 < 96) method2271(31268)
+                    if (QuickChatTypeList.anInt2964 < 96) method2271(31268)
                     RegionSceneLoader.method2193(true, (-119).toByte())
                     MapTileShape.aClass237_Sub1_4197!!.method1680(null, (-125).toByte(), (if (!bool_25_) null else (ActorEntity.aTerrainTileArray4142!![0])), FacingDirectionNode.aRenderer6654)
                     MapTileShape.aClass237_Sub1_4197!!.method1697(false, FacingDirectionNode.aRenderer6654, -36)
@@ -313,8 +313,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                     StringCacheNode.method3419(13022)
                     var i_29_ = MapTileShape.aClass237_Sub1_4197!!.anInt5824
-                    if (i_29_ > CompiledScriptCache.anInt4372) i_29_ = CompiledScriptCache.anInt4372
-                    if (i_29_ < -1 + CompiledScriptCache.anInt4372) i_29_ = CompiledScriptCache.anInt4372 - 1
+                    if (i_29_ > QuickChatMenuTypeList.anInt4372) i_29_ = QuickChatMenuTypeList.anInt4372
+                    if (i_29_ < -1 + QuickChatMenuTypeList.anInt4372) i_29_ = QuickChatMenuTypeList.anInt4372 - 1
                     if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0) MapSceneCache.method824(i_29_)
                     else MapSceneCache.method824(0)
                     for (i_30_ in 0..3) {
@@ -347,8 +347,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                         for (i_37_ in i_33_ - 1..i_34_ - -1) {
                             for (i_38_ in i_35_ + -1..i_36_ - -1) {
                                 if (i_33_ > i_37_ || i_34_ < i_37_ || i_38_ < i_35_ || i_38_ > i_36_) {
-                                    AbstractCameraTransformStatics.aJs5Archive_7382!!.method409("m" + i_37_ + "_" + i_38_, true)
-                                    AbstractCameraTransformStatics.aJs5Archive_7382!!.method409("l" + i_37_ + "_" + i_38_, true)
+                                    AbstractCameraTransformStatics.maps!!.method409("m" + i_37_ + "_" + i_38_, true)
+                                    AbstractCameraTransformStatics.maps!!.method409("l" + i_37_ + "_" + i_38_, true)
                                 }
                             }
                         }

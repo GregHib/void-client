@@ -59,13 +59,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                         i -= i_7_
                         i_7_ = this.anInt10466 * i_7_
                         while (--i >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                            EnumTypeList.method339(i_7_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                             i_9_ += i_10_
                             i_7_ += this.anInt10466
                             i_6_ += i_11_
                         }
                         while (--i_8_ >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                            EnumTypeList.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                             i_6_ += i_11_
                             i_7_ += this.anInt10466
                             i_5_ += i_13_
@@ -75,13 +75,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                         i -= i_7_
                         i_7_ = this.anInt10466 * i_7_
                         while (--i >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                            EnumTypeList.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                             i_7_ += this.anInt10466
                             i_6_ += i_11_
                             i_9_ += i_10_
                         }
                         while (--i_8_ >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                            EnumTypeList.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                             i_6_ += i_11_
                             i_5_ += i_13_
                             i_7_ += this.anInt10466
@@ -105,13 +105,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                         i_8_ -= i_7_
                         i_7_ *= this.anInt10466
                         while (--i_8_ >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                            EnumTypeList.method339(i_7_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                             i_7_ += this.anInt10466
                             i_5_ += i_10_
                             i_6_ += i_11_
                         }
                         while (--i >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                            EnumTypeList.method339(i_7_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                             i_7_ += this.anInt10466
                             i_5_ += i_10_
                             i_9_ += i_13_
@@ -121,13 +121,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                         i_8_ -= i_7_
                         i_7_ *= this.anInt10466
                         while (--i_8_ >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                            EnumTypeList.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                             i_6_ += i_11_
                             i_7_ += this.anInt10466
                             i_5_ += i_10_
                         }
                         while (--i >= 0) {
-                            CacheArchiveIndexLoader.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                            EnumTypeList.method339(i_7_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                             i_7_ += this.anInt10466
                             i_9_ += i_13_
                             i_5_ += i_10_
@@ -152,13 +152,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                     i -= i_8_
                     i_8_ *= this.anInt10466
                     while (--i >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                        EnumTypeList.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                         i_8_ += this.anInt10466
                         i_6_ += i_11_
                         i_9_ += i_13_
                     }
                     while (--i_7_ >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                        EnumTypeList.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                         i_5_ += i_10_
                         i_8_ += this.anInt10466
                         i_6_ += i_11_
@@ -168,13 +168,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                     i -= i_8_
                     i_8_ = this.anInt10466 * i_8_
                     while (--i >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                        EnumTypeList.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                         i_6_ += i_11_
                         i_8_ += this.anInt10466
                         i_9_ += i_13_
                     }
                     while (--i_7_ >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                        EnumTypeList.method339(i_8_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                         i_5_ += i_10_
                         i_8_ += this.anInt10466
                         i_6_ += i_11_
@@ -198,13 +198,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                     i_7_ -= i_8_
                     i_8_ = this.anInt10466 * i_8_
                     while (--i_7_ >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                        EnumTypeList.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                         i_8_ += this.anInt10466
                         i_5_ += i_11_
                         i_9_ += i_13_
                     }
                     while (--i >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                        EnumTypeList.method339(i_8_, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                         i_6_ += i_10_
                         i_9_ += i_13_
                         i_8_ += this.anInt10466
@@ -214,13 +214,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                     i_7_ -= i_8_
                     i_8_ = this.anInt10466 * i_8_
                     while (--i_7_ >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                        EnumTypeList.method339(i_8_, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                         i_5_ += i_11_
                         i_9_ += i_13_
                         i_8_ += this.anInt10466
                     }
                     while (--i >= 0) {
-                        CacheArchiveIndexLoader.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                        EnumTypeList.method339(i_8_, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                         i_9_ += i_13_
                         i_8_ += this.anInt10466
                         i_6_ += i_10_
@@ -245,13 +245,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                 i_8_ -= i
                 i = this.anInt10466 * i
                 while (--i_8_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                    EnumTypeList.method339(i, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                     i += this.anInt10466
                     i_5_ += i_10_
                     i_6_ += i_13_
                 }
                 while (--i_7_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                    EnumTypeList.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                     i += this.anInt10466
                     i_9_ += i_11_
                     i_5_ += i_10_
@@ -261,13 +261,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                 i_8_ -= i
                 i *= this.anInt10466
                 while (--i_8_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                    EnumTypeList.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                     i_6_ += i_13_
                     i_5_ += i_10_
                     i += this.anInt10466
                 }
                 while (--i_7_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                    EnumTypeList.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                     i += this.anInt10466
                     i_9_ += i_11_
                     i_5_ += i_10_
@@ -291,13 +291,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                 i_7_ -= i
                 i = this.anInt10466 * i
                 while (--i_7_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                    EnumTypeList.method339(i, i_5_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                     i_9_ += i_13_
                     i += this.anInt10466
                     i_5_ += i_10_
                 }
                 while (--i_8_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
+                    EnumTypeList.method339(i, i_6_ shr 16, this.aByteArray10471, 0, 1354705384, i_9_ shr 16)
                     i_6_ += i_11_
                     i += this.anInt10466
                     i_9_ += i_13_
@@ -307,13 +307,13 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
                 i_7_ -= i
                 i *= this.anInt10466
                 while (--i_7_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
+                    EnumTypeList.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_5_ shr 16)
                     i_5_ += i_10_
                     i_9_ += i_13_
                     i += this.anInt10466
                 }
                 while (--i_8_ >= 0) {
-                    CacheArchiveIndexLoader.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
+                    EnumTypeList.method339(i, i_9_ shr 16, this.aByteArray10471, 0, 1354705384, i_6_ shr 16)
                     i += this.anInt10466
                     i_9_ += i_13_
                     i_6_ += i_11_

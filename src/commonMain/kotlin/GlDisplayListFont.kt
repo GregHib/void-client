@@ -52,9 +52,9 @@ class GlDisplayListFont internal constructor(var_ha_Sub2: OpenGlRenderer?, i: In
             var i_3_ = 0
             var i_4_ = 0
             while ((class348_sub13.anIntArray6757!!.size > i_4_)) {
-                if (class348_sub13.anIntArray6757!![i_4_] >= 0 && (ClientException.aModelHeaderCache_112!!.anInt3271 > class348_sub13.anIntArray6757!![i_4_])) {
-                    val class213 = (ClientException.aModelHeaderCache_112!!.method1940(-127, (class348_sub13.anIntArray6757!![i_4_])))
-                    val i_5_ = class213.method1567((ProjectionCameraTransform.aEmoteDefCache_5764!!.method2600(i_2_, 28364).anInt3256), 107, i_2_)
+                if (class348_sub13.anIntArray6757!![i_4_] >= 0 && (ClientException.aItemTypeList_112!!.anInt3271 > class348_sub13.anIntArray6757!![i_4_])) {
+                    val class213 = (ClientException.aItemTypeList_112!!.method1940(-127, (class348_sub13.anIntArray6757!![i_4_])))
+                    val i_5_ = class213.method1567((ProjectionCameraTransform.aParamTypeList_5764!!.method2600(i_2_, 28364).anInt3256), 107, i_2_)
                     if (!bool) i_3_ += i_5_
                     else i_3_ += i_5_ * (class348_sub13.anIntArray6758[i_4_])
                 }

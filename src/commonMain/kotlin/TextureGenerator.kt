@@ -7,7 +7,7 @@ abstract class TextureGenerator {
 
     companion object {
 
-        var aJs5Archive_2490: Js5Archive? = null
+        var animationSekeletons: Js5Archive? = null
 
         var aRgbColorPalette_2491: RgbColorPalette?
 
@@ -25,7 +25,7 @@ abstract class TextureGenerator {
 
         @JvmStatic
         fun method1396(i: Int) {
-            aJs5Archive_2490 = null
+            animationSekeletons = null
             aRgbColorPalette_2491 = null
             aStringArray2494 = null
             anIntArray2497 = null

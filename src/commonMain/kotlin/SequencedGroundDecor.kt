@@ -1,12 +1,12 @@
 import TrigLookupInit.method1606
-import ModelHeaderCache.Companion.method1935
+import ItemTypeList.Companion.method1935
 import VorbisOggDecoder.Companion.method2967
 import ChatMessageStream.Companion.method136
 
 /* Class318_Sub1_Sub3_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SequencedGroundDecor internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) : GroundDecorEntity(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, npcConfig.anInt895 == 1, method1606(i_9_, -27939, i_8_)), RenderTarget {
+class SequencedGroundDecor internal constructor(var_renderer: Renderer?, objectType: ObjectType, i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int, bool: Boolean, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, i_9_: Int, i_10_: Int) : GroundDecorEntity(i, i_0_, i_1_, i_2_, i_3_, i_4_, i_5_, i_6_, i_7_, objectType.anInt895 == 1, method1606(i_9_, -27939, i_8_)), RenderTarget {
     var aSceneObjectAnimator_10045: SceneObjectAnimator? = null
     private var aCircleHitbox_10051: CircleHitbox? = null
     private var aBoolean10055 = false
@@ -19,10 +19,10 @@ class SequencedGroundDecor internal constructor(var_renderer: Renderer?, npcConf
 
     init {
         try {
-            this.aSceneObjectAnimator_10045 = SceneObjectAnimator(var_renderer, npcConfig, i_8_, i_9_, this.plane.toInt(), i_0_, this, bool, i_10_)
-            aBoolean10056 = npcConfig.anInt874 != 0 && !bool
+            this.aSceneObjectAnimator_10045 = SceneObjectAnimator(var_renderer, objectType, i_8_, i_9_, this.plane.toInt(), i_0_, this, bool, i_10_)
+            aBoolean10056 = objectType.anInt874 != 0 && !bool
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("fea.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fea.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (objectType != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + i_2_ + ',' + i_3_ + ',' + bool + ',' + i_4_ + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + i_9_ + ',' + i_10_ + ')'))
         }
     }
 

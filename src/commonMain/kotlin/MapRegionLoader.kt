@@ -14,17 +14,17 @@ open class MapRegionLoader {
         var aJs5Archive_1237: Js5Archive? = null
 
         var aConfigDefinitionLoader_1238: ConfigDefinitionLoader? = null
-        private var aLocDefinitionCache_1239: LocDefinitionCache? = null
+        private var aFloorOverlayTypeList_1239: FloorOverlayTypeList? = null
         private var aParticleDefLoader_1240: ParticleDefLoader? = null
         private var aHashtable_1241: Hashtable? = Hashtable(16)
 
-        var aTextureDefinitionLoader_1242: TextureDefinitionLoader? = null
+        var aMapSceneDefinitionLoader_1242: MapSceneDefinitionLoader? = null
 
         var aClass348_Sub42_Sub14_1243: InterfaceComponentGroup? = null
 
         var anVarResolver_1244: VarResolver? = null
 
-        var aSeqDefinitionCache_1245: SeqDefinitionCache? = null
+        var aObjectTypeList_1245: ObjectTypeList? = null
 
         var aSmoothingBuffer_1246: SmoothingBuffer? = null
 
@@ -135,11 +135,11 @@ open class MapRegionLoader {
 
         @JvmStatic
         fun method746() {
-            aLocDefinitionCache_1239 = null
+            aFloorOverlayTypeList_1239 = null
             aParticleDefLoader_1240 = null
-            aSeqDefinitionCache_1245 = null
+            aObjectTypeList_1245 = null
             aConfigDefinitionLoader_1238 = null
-            aTextureDefinitionLoader_1242 = null
+            aMapSceneDefinitionLoader_1242 = null
             anVarResolver_1244 = null
             aClass348_Sub42_Sub14_1243 = null
             aJs5Archive_1237 = null
@@ -270,13 +270,13 @@ open class MapRegionLoader {
         }
 
         @JvmStatic
-        fun method752(js5Archive: Js5Archive?, locDefinitionCache: LocDefinitionCache?, particleDefLoader: ParticleDefLoader?, seqDefinitionCache: SeqDefinitionCache?, configDefinitionLoader: ConfigDefinitionLoader?, textureDefinitionLoader: TextureDefinitionLoader?, varResolver: VarResolver?) {
+        fun method752(js5Archive: Js5Archive?, floorOverlayTypeList: FloorOverlayTypeList?, particleDefLoader: ParticleDefLoader?, objectTypeList: ObjectTypeList?, configDefinitionLoader: ConfigDefinitionLoader?, mapSceneDefinitionLoader: MapSceneDefinitionLoader?, varResolver: VarResolver?) {
             aJs5Archive_1237 = js5Archive
-            aLocDefinitionCache_1239 = locDefinitionCache
+            aFloorOverlayTypeList_1239 = floorOverlayTypeList
             aParticleDefLoader_1240 = particleDefLoader
-            aSeqDefinitionCache_1245 = seqDefinitionCache
+            aObjectTypeList_1245 = objectTypeList
             aConfigDefinitionLoader_1238 = configDefinitionLoader
-            aTextureDefinitionLoader_1242 = textureDefinitionLoader
+            aMapSceneDefinitionLoader_1242 = mapSceneDefinitionLoader
             anVarResolver_1244 = varResolver
             aHashtable_1241!!.method3481(0)
             val i: Int = aJs5Archive_1237!!.method417("details", 0)
@@ -299,11 +299,11 @@ open class MapRegionLoader {
                             val class348_sub39 = (aHashtable_1271!!.method3480((i shl 16 or i_48_).toLong(), -6008) as ShortByteArrayPair?)
                             if (class348_sub39 != null) {
                                 for (i_50_ in (class348_sub39.aShortArray7024)!!.indices) {
-                                    var npcConfig: NpcConfig? = (aSeqDefinitionCache_1245!!.method2005(0, (class348_sub39.aShortArray7024!![i_50_]).toInt() and 0xffff))
-                                    var i_51_ = npcConfig!!.anInt921
-                                    if (npcConfig.anIntArray945 != null) {
-                                        npcConfig = npcConfig.method480(anVarResolver_1244!!, 47.toByte())
-                                        if (npcConfig != null) i_51_ = npcConfig.anInt921
+                                    var objectType: ObjectType? = (aObjectTypeList_1245!!.method2005(0, (class348_sub39.aShortArray7024!![i_50_]).toInt() and 0xffff))
+                                    var i_51_ = objectType!!.anInt921
+                                    if (objectType.anIntArray945 != null) {
+                                        objectType = objectType.method480(anVarResolver_1244!!, 47.toByte())
+                                        if (objectType != null) i_51_ = objectType.anInt921
                                     }
                                     if (i_51_ != -1) {
                                         val class348_sub21 = CameraSplineNode(i_51_)
@@ -314,11 +314,11 @@ open class MapRegionLoader {
                                 }
                             }
                         } else {
-                            var npcConfig: NpcConfig? = aSeqDefinitionCache_1245!!.method2005(0, i_49_ - 1)
-                            var i_52_ = npcConfig!!.anInt921
-                            if (npcConfig.anIntArray945 != null) {
-                                npcConfig = npcConfig.method480(anVarResolver_1244!!, 47.toByte())
-                                if (npcConfig != null) i_52_ = npcConfig.anInt921
+                            var objectType: ObjectType? = aObjectTypeList_1245!!.method2005(0, i_49_ - 1)
+                            var i_52_ = objectType!!.anInt921
+                            if (objectType.anIntArray945 != null) {
+                                objectType = objectType.method480(anVarResolver_1244!!, 47.toByte())
+                                if (objectType != null) i_52_ = objectType.anInt921
                             }
                             if (i_52_ != -1) {
                                 val class348_sub21 = CameraSplineNode(i_52_)
@@ -339,11 +339,11 @@ open class MapRegionLoader {
                             while (class318_sub8 != null) {
                                 if (class318_sub8.aShortArray6461 != null) {
                                     for (i_55_ in (class318_sub8.aShortArray6461!!).indices) {
-                                        var npcConfig: NpcConfig? = (aSeqDefinitionCache_1245!!.method2005(0, (class318_sub8.aShortArray6461!![i_55_]).toInt() and 0xffff))
-                                        var i_56_ = npcConfig!!.anInt921
-                                        if (npcConfig.anIntArray945 != null) {
-                                            npcConfig = (npcConfig.method480(anVarResolver_1244!!, 47.toByte()))
-                                            if (npcConfig != null) i_56_ = npcConfig.anInt921
+                                        var objectType: ObjectType? = (aObjectTypeList_1245!!.method2005(0, (class318_sub8.aShortArray6461!![i_55_]).toInt() and 0xffff))
+                                        var i_56_ = objectType!!.anInt921
+                                        if (objectType.anIntArray945 != null) {
+                                            objectType = (objectType.method480(anVarResolver_1244!!, 47.toByte()))
+                                            if (objectType != null) i_56_ = objectType.anInt921
                                         }
                                         if (i_56_ != -1) {
                                             val class348_sub21 = CameraSplineNode(i_56_)
@@ -389,10 +389,10 @@ open class MapRegionLoader {
                 for (i_69_ in `is`.indices) {
                     val i_70_ = is_63_!![i_69_].toInt() and 0x3f
                     if (i_70_ == 0 || i_70_ == 2 || i_70_ == 3 || i_70_ == 9) {
-                        val npcConfig: NpcConfig = aSeqDefinitionCache_1245!!.method2005(0, `is`[i_69_].toInt() and 0xffff)
-                        if (npcConfig.anInt875 == -1) {
+                        val objectType: ObjectType = aObjectTypeList_1245!!.method2005(0, `is`[i_69_].toInt() and 0xffff)
+                        if (objectType.anInt875 == -1) {
                             var i_71_ = -3355444
-                            if (npcConfig.anInt874 == 1) i_71_ = -3407872
+                            if (objectType.anInt874 == 1) i_71_ = -3407872
                             val i_72_ = is_63_[i_69_].toInt() shr 6 and 0x3
                             if (i_70_ == 0) {
                                 if (i_72_ == 0) var_renderer.P(i, i_57_, i_59_, i_71_, 0)
@@ -517,7 +517,7 @@ open class MapRegionLoader {
         }
 
         private fun method759(var_renderConfig: RenderConfig, i: Int, i_105_: Int, i_106_: Int): Int {
-            val locTypeConfig: LocTypeConfig = aLocDefinitionCache_1239!!.method2034(i, false)
+            val locTypeConfig: LocTypeConfig = aFloorOverlayTypeList_1239!!.method2034(i, false)
             if (locTypeConfig == null) return 0
             var i_107_ = locTypeConfig.anInt3575
             if (i_107_ >= 0 && var_renderConfig.method3(i_107_, -6662)!!.aBoolean209) i_107_ = -1
@@ -551,7 +551,7 @@ open class MapRegionLoader {
             aByteArray1258 = ByteArray(anInt1259 * anInt1267)
             aHashtable_1271 = Hashtable(1024)
             aDoublyLinkedNodeListArrayArrayArray1269 = Array<Array<Array<DoublyLinkedNodeList?>?>?>(3) { Array<Array<DoublyLinkedNodeList?>?>(anInt1259 shr 6) { arrayOfNulls<DoublyLinkedNodeList>(anInt1267 shr 6) } }
-            anIntArray1260 = IntArray(aLocDefinitionCache_1239!!.anInt3429 + 1)
+            anIntArray1260 = IntArray(aFloorOverlayTypeList_1239!!.anInt3429 + 1)
         }
 
         @JvmStatic
@@ -580,17 +580,17 @@ open class MapRegionLoader {
         private fun method763(var_renderer: Renderer?, i: Int, i_118_: Int, i_119_: Int, i_120_: Int, `is`: ShortArray?, is_121_: ByteArray?) {
             if (`is` != null) {
                 for (i_122_ in `is`.indices) {
-                    val npcConfig: NpcConfig = aSeqDefinitionCache_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
-                    val i_123_ = npcConfig.anInt875
+                    val objectType: ObjectType = aObjectTypeList_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
+                    val i_123_ = objectType.anInt875
                     if (i_123_ != -1) {
-                        val mapSceneIconDef: MapSceneIconDef? = aTextureDefinitionLoader_1242!!.method1173(31.toByte(), i_123_)
-                        val class105 = mapSceneIconDef!!.method1596((if (npcConfig.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (npcConfig.aBoolean925 && (npcConfig.aBoolean902)), 125, var_renderer!!)
+                        val mapSceneIconDef: MapSceneIconDef? = aMapSceneDefinitionLoader_1242!!.method1173(31.toByte(), i_123_)
+                        val class105 = mapSceneIconDef!!.method1596((if (objectType.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (objectType.aBoolean925 && (objectType.aBoolean902)), 125, var_renderer!!)
                         if (class105 != null) {
                             var i_124_ = i_119_ * class105.method966() shr 2
                             var i_125_ = i_120_ * class105.method980() shr 2
                             if (mapSceneIconDef.aBoolean2854) {
-                                var i_126_ = npcConfig.anInt961
-                                var i_127_ = npcConfig.anInt926
+                                var i_126_ = objectType.anInt961
+                                var i_127_ = objectType.anInt926
                                 if ((is_121_!![i_122_].toInt() shr 6 and 0x1) == 1) {
                                     val i_128_ = i_126_
                                     i_126_ = i_127_
@@ -611,7 +611,7 @@ open class MapRegionLoader {
 
         @JvmStatic
         fun method764(var_renderConfig: RenderConfig, i: Int, i_129_: Int) {
-            for (i_130_ in 0..<aLocDefinitionCache_1239!!.anInt3429) anIntArray1260!![i_130_ + 1] = method759(var_renderConfig, i_130_, i, i_129_)
+            for (i_130_ in 0..<aFloorOverlayTypeList_1239!!.anInt3429) anIntArray1260!![i_130_ + 1] = method759(var_renderConfig, i_130_, i, i_129_)
         }
 
         private fun method765(var_renderer: Renderer, i: Int, i_131_: Int, i_132_: Int, i_133_: Int) {
@@ -645,7 +645,7 @@ open class MapRegionLoader {
                                 if (i_152_ == 0 && i_153_ == 0 && i_154_ == 0) {
                                     if (aClass348_Sub42_Sub14_1243!!.anInt9634 != -1) i_152_ = (0xffffff.inv() or (aClass348_Sub42_Sub14_1243!!.anInt9634))
                                     else if ((i_136_ + anInt1274 and 0x4) != (i_146_ + anInt1277 and 0x4)) i_152_ = -11840664
-                                    else i_152_ = (anIntArray1260!![(aLocDefinitionCache_1239!!.anInt3447) + 1])
+                                    else i_152_ = (anIntArray1260!![(aFloorOverlayTypeList_1239!!.anInt3447) + 1])
                                     if (i_152_ == 0) i_152_ = -16777216
                                     var_renderer.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0)
                                 } else if (i_154_ > 0) {
@@ -668,7 +668,7 @@ open class MapRegionLoader {
                             var i_145_: Int
                             if (aClass348_Sub42_Sub14_1243!!.anInt9634 != -1) i_145_ = 0xffffff.inv() or (aClass348_Sub42_Sub14_1243!!.anInt9634)
                             else if ((i_136_ + anInt1274 and 0x4) != (i_141_ + anInt1277 and 0x4)) i_145_ = -11840664
-                            else i_145_ = anIntArray1260!![(aLocDefinitionCache_1239!!.anInt3447) + 1]
+                            else i_145_ = anIntArray1260!![(aFloorOverlayTypeList_1239!!.anInt3447) + 1]
                             if (i_145_ == 0) i_145_ = -16777216
                             var_renderer.aa(i_137_, i_142_, i_139_, i_144_, i_145_, 0)
                         }

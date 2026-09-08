@@ -264,11 +264,11 @@ class BufferedRandomAccessFile internal constructor(private val aRandomAccessFil
 
         var anInt1318: Int = 0
 
-        var aJs5Archive_1322: Js5Archive? = null
+        var gfx: Js5Archive? = null
         @JvmStatic
         fun method786(i: Byte) {
-            if (i.toInt() != 0) aJs5Archive_1322 = null
-            aJs5Archive_1322 = null
+            if (i.toInt() != 0) gfx = null
+            gfx = null
         }
     }
 }

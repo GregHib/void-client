@@ -140,7 +140,7 @@ class CharCodeMap : HashLinkedListNode() {
                         i_8_++
                     }
                 }
-                if (CompiledScriptCache.anInt4372 != 3) {
+                if (QuickChatMenuTypeList.anInt4372 != 3) {
                     for (i_9_ in 0..1) {
                         FileIoUtil.anIntArray4097!![i_9_] = -1000000
                         LinkedListIterator.anIntArray2117!![i_9_] = 1000000
@@ -156,7 +156,7 @@ class CharCodeMap : HashLinkedListNode() {
                                 i_11_ = SequencedWallEntity.anInt10163
                                 i_10_ = NativeLibraryState.anInt167
                             }
-                            if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_10_ shr 9]!![i_11_ shr 9]).toInt()) != 0) method3542(i_11_ shr 9, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, i_10_ shr 9, 0, 0, false)
+                            if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_10_ shr 9]!![i_11_ shr 9]).toInt()) != 0) method3542(i_11_ shr 9, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, i_10_ shr 9, 0, 0, false)
                             if (MinimapAreaMarkerNode.Companion.anInt9701 < 2560) {
                                 var i_12_ = GlslMaterialPass.anInt6246 shr 9
                                 var i_13_ = CompositeRgbNoiseTexture.anInt8685 shr 9
@@ -175,7 +175,7 @@ class CharCodeMap : HashLinkedListNode() {
                                     while (i_15_ != i_13_) {
                                         if (i_15_ > i_13_) i_13_++
                                         else if (i_15_ < i_13_) i_13_--
-                                        if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_12_]!![i_13_]).toInt()) != 0) {
+                                        if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_12_]!![i_13_]).toInt()) != 0) {
                                             method3542(i_13_, (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029), i_12_, 0, 1, false)
                                             break
                                         }
@@ -184,7 +184,7 @@ class CharCodeMap : HashLinkedListNode() {
                                             if (i_12_ < i_14_) i_12_++
                                             else if (i_14_ < i_12_) i_12_--
                                             i_19_ -= 65536
-                                            if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_12_]!![i_13_]).toInt()) != 0) {
+                                            if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_12_]!![i_13_]).toInt()) != 0) {
                                                 method3542(i_13_, (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029), i_12_, 0, 1, false)
                                                 break
                                             }
@@ -197,7 +197,7 @@ class CharCodeMap : HashLinkedListNode() {
                                         if (i_12_ >= i_14_) {
                                             if (i_12_ > i_14_) i_12_--
                                         } else i_12_++
-                                        if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_12_]!![i_13_]).toInt()) != 0) {
+                                        if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_12_]!![i_13_]).toInt()) != 0) {
                                             method3542(i_13_, (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029), i_12_, 0, 1, false)
                                             break
                                         }
@@ -206,7 +206,7 @@ class CharCodeMap : HashLinkedListNode() {
                                             if (i_15_ > i_13_) i_13_++
                                             else if (i_13_ > i_15_) i_13_--
                                             i_21_ -= 65536
-                                            if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_12_]!![i_13_]).toInt()) != 0) {
+                                            if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_12_]!![i_13_]).toInt()) != 0) {
                                                 method3542(i_13_, (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029), i_12_, 0, 1, false)
                                                 break
                                             }
@@ -215,8 +215,8 @@ class CharCodeMap : HashLinkedListNode() {
                                 }
                             }
                         } else {
-                            val i_22_ = method2064(GlslMaterialPass.anInt6246, CompiledScriptCache.anInt4372, 11219, CompositeRgbNoiseTexture.anInt8685)
-                            if (i_22_ - ParticleSystemRenderer.anInt3855 < 3200 && ((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![GlslMaterialPass.anInt6246 shr 9]!![CompositeRgbNoiseTexture.anInt8685 shr 9]).toInt() and 0x4) != 0) method3542(CompositeRgbNoiseTexture.anInt8685 shr 9, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, GlslMaterialPass.anInt6246 shr 9, 0, 1, false)
+                            val i_22_ = method2064(GlslMaterialPass.anInt6246, QuickChatMenuTypeList.anInt4372, 11219, CompositeRgbNoiseTexture.anInt8685)
+                            if (i_22_ - ParticleSystemRenderer.anInt3855 < 3200 && ((GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![GlslMaterialPass.anInt6246 shr 9]!![CompositeRgbNoiseTexture.anInt8685 shr 9]).toInt() and 0x4) != 0) method3542(CompositeRgbNoiseTexture.anInt8685 shr 9, HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029, GlslMaterialPass.anInt6246 shr 9, 0, 1, false)
                         }
                     }
                 }

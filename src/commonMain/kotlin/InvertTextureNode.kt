@@ -76,7 +76,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                 if (i_3_.toInt() != 12) method3134(9)
                 anInt9418++
                 if (!var_ha_Sub2!!.aBoolean7793 && (!ModelDefinition.method1436(-74, i_2_) || !ModelDefinition.method1436(127, i_1_))) {
-                    if (!var_ha_Sub2.aBoolean7837) return (GlTexture2DRegion(var_ha_Sub2, i_2_, i_1_, CacheArchiveIndexLoader.method340(i_2_, 108.toByte()), CacheArchiveIndexLoader.method340(i_1_, 108.toByte()), `is`))
+                    if (!var_ha_Sub2.aBoolean7837) return (GlTexture2DRegion(var_ha_Sub2, i_2_, i_1_, EnumTypeList.method340(i_2_, 108.toByte()), EnumTypeList.method340(i_1_, 108.toByte()), `is`))
                     return GlTexture2DRegion(var_ha_Sub2, 34037, i_2_, i_1_, bool, `is`, i_0_, i)
                 }
                 return GlTexture2DRegion(var_ha_Sub2, 3553, i_2_, i_1_, bool, `is`, i_0_, i)

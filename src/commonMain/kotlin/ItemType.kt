@@ -1,10 +1,10 @@
 import kotlin.jvm.JvmStatic
-import CacheArchiveIndexLoader.Companion.method340
+import EnumTypeList.Companion.method340
 
 /* Class213 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ItemDefinition {
+class ItemType {
     var anInt2752: Int = -1
     private var anInt2753 = 0
 
@@ -17,7 +17,7 @@ class ItemDefinition {
     var anInt2759: Int
     private var anInt2760: Int
 
-    var aModelHeaderCache_2761: ModelHeaderCache? = null
+    var aItemTypeList_2761: ItemTypeList? = null
 
     var anIntArray2762: IntArray? = null
 
@@ -96,10 +96,10 @@ class ItemDefinition {
             i_0_ = anInt2822
         }
         if (i_0_ == -1) return null
-        var class124 = ParticleConfigParser.method2277(0, this.aModelHeaderCache_2761!!.aJs5Archive_3268!!, i_0_, -1)
+        var class124 = ParticleConfigParser.method2277(0, this.aItemTypeList_2761!!.aJs5Archive_3268!!, i_0_, -1)
         if ((class124!!.anInt1830.inv()) > i) class124.method1092(2, 54)
         if (i_1_ != -1) {
-            val class124_2_ = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), i_1_, -1)
+            val class124_2_ = ParticleConfigParser.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), i_1_, -1)
             if (class124_2_!!.anInt1830 < 13) class124_2_.method1092(2, i xor 0x78.inv())
             val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_2_)
             class124 = ModelDefinition(modelDefinitions, 2)
@@ -124,56 +124,56 @@ class ItemDefinition {
         }
         if (i_5_ == -1) return true
         var bool_8_ = true
-        if (!this.aModelHeaderCache_2761!!.aJs5Archive_3268!!.method420(-10499, i_5_, 0)) bool_8_ = false
-        if (i_7_ != -1 && !this.aModelHeaderCache_2761!!.aJs5Archive_3268!!.method420(-10499, i_7_, 0)) bool_8_ = false
+        if (!this.aItemTypeList_2761!!.aJs5Archive_3268!!.method420(-10499, i_5_, 0)) bool_8_ = false
+        if (i_7_ != -1 && !this.aItemTypeList_2761!!.aJs5Archive_3268!!.method420(-10499, i_7_, 0)) bool_8_ = false
         return bool_8_
     }
 
-    fun method1556(itemDefinition_9_: ItemDefinition?, i: Byte, itemDefinition_10_: ItemDefinition?) {
+    fun method1556(itemType_9_: ItemType?, i: Byte, itemType_10_: ItemType?) {
         try {
-            anInt2808 = itemDefinition_9_!!.anInt2808
-            this.anInt2779 = itemDefinition_10_!!.anInt2779
+            anInt2808 = itemType_9_!!.anInt2808
+            this.anInt2779 = itemType_10_!!.anInt2779
             this.anInt2819 = 0
-            aShortArray2785 = itemDefinition_9_.aShortArray2785
-            this.anInt2788 = itemDefinition_9_.anInt2788
-            this.anInt2781 = itemDefinition_10_.anInt2781
-            this.aStringArray2811 = itemDefinition_9_.aStringArray2811
-            anInt2797 = itemDefinition_9_.anInt2797
-            aByteArray2821 = itemDefinition_9_.aByteArray2821
-            aShortArray2771 = itemDefinition_9_.aShortArray2771
-            this.aString2795 = itemDefinition_9_.aString2795
-            anInt2756 = itemDefinition_10_.anInt2756
-            anInt2770 = itemDefinition_9_.anInt2770
-            aShortArray2777 = itemDefinition_9_.aShortArray2777
-            this.anInt2815 = itemDefinition_9_.anInt2815
-            anInt2822 = itemDefinition_9_.anInt2822
-            anInt2804 = itemDefinition_9_.anInt2804
-            this.anInt2825 = itemDefinition_10_.anInt2825
-            anInt2767 = itemDefinition_9_.anInt2767
-            aShortArray2801 = itemDefinition_9_.aShortArray2801
-            this.aBoolean2783 = itemDefinition_9_.aBoolean2783
-            this.anInt2810 = itemDefinition_10_.anInt2810
+            aShortArray2785 = itemType_9_.aShortArray2785
+            this.anInt2788 = itemType_9_.anInt2788
+            this.anInt2781 = itemType_10_.anInt2781
+            this.aStringArray2811 = itemType_9_.aStringArray2811
+            anInt2797 = itemType_9_.anInt2797
+            aByteArray2821 = itemType_9_.aByteArray2821
+            aShortArray2771 = itemType_9_.aShortArray2771
+            this.aString2795 = itemType_9_.aString2795
+            anInt2756 = itemType_10_.anInt2756
+            anInt2770 = itemType_9_.anInt2770
+            aShortArray2777 = itemType_9_.aShortArray2777
+            this.anInt2815 = itemType_9_.anInt2815
+            anInt2822 = itemType_9_.anInt2822
+            anInt2804 = itemType_9_.anInt2804
+            this.anInt2825 = itemType_10_.anInt2825
+            anInt2767 = itemType_9_.anInt2767
+            aShortArray2801 = itemType_9_.aShortArray2801
+            this.aBoolean2783 = itemType_9_.aBoolean2783
+            this.anInt2810 = itemType_10_.anInt2810
             this.aStringArray2763 = arrayOfNulls<String>(5)
             if (i > -5) method1554(false, -92)
-            anInt2823 = itemDefinition_9_.anInt2823
-            anInt2775 = itemDefinition_9_.anInt2775
+            anInt2823 = itemType_9_.anInt2823
+            anInt2775 = itemType_9_.anInt2775
             anInt2832++
-            anInt2807 = itemDefinition_9_.anInt2807
-            anInt2792 = itemDefinition_9_.anInt2792
-            this.aHashtable_2757 = itemDefinition_9_.aHashtable_2757
-            anInt2805 = itemDefinition_9_.anInt2805
-            this.anInt2827 = itemDefinition_9_.anInt2827
-            this.anInt2787 = itemDefinition_10_.anInt2787
-            anInt2760 = itemDefinition_9_.anInt2760
-            anInt2753 = itemDefinition_9_.anInt2753
-            anInt2803 = itemDefinition_9_.anInt2803
-            this.anInt2826 = itemDefinition_10_.anInt2826
-            if (itemDefinition_9_.aStringArray2763 != null) {
-                for (i_11_ in 0..3) this.aStringArray2763!![i_11_] = itemDefinition_9_.aStringArray2763!![i_11_]
+            anInt2807 = itemType_9_.anInt2807
+            anInt2792 = itemType_9_.anInt2792
+            this.aHashtable_2757 = itemType_9_.aHashtable_2757
+            anInt2805 = itemType_9_.anInt2805
+            this.anInt2827 = itemType_9_.anInt2827
+            this.anInt2787 = itemType_10_.anInt2787
+            anInt2760 = itemType_9_.anInt2760
+            anInt2753 = itemType_9_.anInt2753
+            anInt2803 = itemType_9_.anInt2803
+            this.anInt2826 = itemType_10_.anInt2826
+            if (itemType_9_.aStringArray2763 != null) {
+                for (i_11_ in 0..3) this.aStringArray2763!![i_11_] = itemType_9_.aStringArray2763!![i_11_]
             }
-            this.aStringArray2763!![4] = LocalizedText.aLocalizedText_3489!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544)
+            this.aStringArray2763!![4] = LocalizedText.aLocalizedText_3489!!.method2063((this.aItemTypeList_2761!!.anInt3286), 544)
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("rq.G(" + (if (itemDefinition_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemDefinition_10_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.G(" + (if (itemType_9_ != null) "{...}" else "null") + ',' + i + ',' + (if (itemType_10_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -181,8 +181,8 @@ class ItemDefinition {
         anInt2816++
         if (i_12_ != -11619) this.anInt2788 = -113
         if (i < 100000) return "<col=ffff00>" + i + "</col>"
-        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + LocalizedText.aLocalizedText_3519!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
-        return ("<col=00ff80>" + i / 1000000 + LocalizedText.aLocalizedText_3517!!.method2063((this.aModelHeaderCache_2761!!.anInt3286), 544) + "</col>")
+        if (i < 10000000) return ("<col=ffffff>" + i / 1000 + LocalizedText.aLocalizedText_3519!!.method2063((this.aItemTypeList_2761!!.anInt3286), 544) + "</col>")
+        return ("<col=00ff80>" + i / 1000000 + LocalizedText.aLocalizedText_3517!!.method2063((this.aItemTypeList_2761!!.anInt3286), 544) + "</col>")
     }
 
     fun method1558(bool: Boolean, bool_13_: Boolean): ModelDefinition? {
@@ -197,16 +197,16 @@ class ItemDefinition {
             i_14_ = anInt2760
         }
         if (i == -1) return null
-        var class124 = ParticleConfigParser.method2277(0, this.aModelHeaderCache_2761!!.aJs5Archive_3268!!, i, -1)
+        var class124 = ParticleConfigParser.method2277(0, this.aItemTypeList_2761!!.aJs5Archive_3268!!, i, -1)
         if (class124!!.anInt1830 < 13) class124.method1092(2, 64)
         if (i_14_ != -1) {
-            val class124_16_ = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), i_14_, -1)
+            val class124_16_ = ParticleConfigParser.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), i_14_, -1)
             if (class124_16_!!.anInt1830 < 13) class124_16_.method1092(2, 89)
             if (i_15_ == -1) {
                 val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_)
                 class124 = ModelDefinition(modelDefinitions, 2)
             } else {
-                val class124_17_ = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), i_15_, -1)
+                val class124_17_ = ParticleConfigParser.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), i_15_, -1)
                 if (class124_17_!!.anInt1830 < 13) class124_17_.method1092(2, 109)
                 val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_, class124_17_)
                 class124 = ModelDefinition(modelDefinitions, 3)
@@ -240,13 +240,13 @@ class ItemDefinition {
                 for (i_26_ in 0..9) {
                     if (i_21_ >= this.anIntArray2831[i_26_] && this.anIntArray2831[i_26_] != 0) i_25_ = this.anIntArray2762!![i_26_]
                 }
-                if (i_25_ != -1) return (this.aModelHeaderCache_2761!!.method1940(103, i_25_).method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_20_, 1, i_22_, 88.toByte(), i_24_))
+                if (i_25_ != -1) return (this.aItemTypeList_2761!!.method1940(103, i_25_).method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_20_, 1, i_22_, 88.toByte(), i_24_))
             }
             if (i_23_.toInt() != 88) this.aString2795 = null
             var i_27_ = i
             if (widgetDefinition != null) i_27_ = i_27_ or widgetDefinition.method263(i_24_, 105, i_22_, true)
-            var abstractModel: AbstractModel? = withLock(this.aModelHeaderCache_2761!!.aLruByteCache_3287) {
-                (this.aModelHeaderCache_2761!!.aLruByteCache_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as AbstractModel?
+            var abstractModel: AbstractModel? = withLock(this.aItemTypeList_2761!!.aLruByteCache_3287) {
+                (this.aItemTypeList_2761!!.aLruByteCache_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as AbstractModel?
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_27_) != 0) {
                 if (abstractModel != null) i_27_ = var_renderer!!.method3679(i_27_, abstractModel.ua())
@@ -256,10 +256,10 @@ class ItemDefinition {
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x1
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x2
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x4
-                val class124 = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), anInt2756, -1)
+                val class124 = ParticleConfigParser.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), anInt2756, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 97)
-                abstractModel = var_renderer!!.method3625(class124, i_28_, (this.aModelHeaderCache_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824)
+                abstractModel = var_renderer!!.method3625(class124, i_28_, (this.aItemTypeList_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824)
                 if (anInt2786 != 128 || anInt2794 != 128 || anInt2765 != 128) abstractModel.O(anInt2786, anInt2794, anInt2765)
                 if (aShortArray2777 != null) {
                     var i_29_ = 0
@@ -286,8 +286,8 @@ class ItemDefinition {
                     }
                 }
                 abstractModel.s(i_27_)
-                withLock(this.aModelHeaderCache_2761!!.aLruByteCache_3287) {
-                    this.aModelHeaderCache_2761!!.aLruByteCache_3287.method582(abstractModel, (var_renderer.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
+                withLock(this.aItemTypeList_2761!!.aLruByteCache_3287) {
+                    this.aItemTypeList_2761!!.aLruByteCache_3287.method582(abstractModel, (var_renderer.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
                 }
             }
             if (widgetDefinition != null) abstractModel = widgetDefinition.method269(116, abstractModel, i_24_, i_20_, i_27_, i_22_)
@@ -298,7 +298,7 @@ class ItemDefinition {
         }
     }
 
-    fun method1560(i: Int, i_33_: Byte): ItemDefinition {
+    fun method1560(i: Int, i_33_: Byte): ItemType {
         if (i_33_.toInt() != 97) this.anIntArray2762 = null
         anInt2768++
         if (this.anIntArray2762 != null && i > 1) {
@@ -306,7 +306,7 @@ class ItemDefinition {
             for (i_35_ in 0..9) {
                 if (i >= this.anIntArray2831[i_35_] && this.anIntArray2831[i_35_] != 0) i_34_ = this.anIntArray2762!![i_35_]
             }
-            if (i_34_ != -1) return this.aModelHeaderCache_2761!!.method1940(95, i_34_)
+            if (i_34_ != -1) return this.aItemTypeList_2761!!.method1940(95, i_34_)
         }
         return this
     }
@@ -327,7 +327,7 @@ class ItemDefinition {
     fun method1562(i: Int, bool: Boolean, i_37_: Int, var_renderer: Renderer?, var_renderer_38_: Renderer?, RSFont: RSFont?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_39_: Int, i_40_: Byte, i_41_: Int): IntArray? {
         try {
             anInt2806++
-            val class124 = ParticleConfigParser.method2277(0, (this.aModelHeaderCache_2761!!.aJs5Archive_3268!!), anInt2756, i_40_.toInt() xor 0x65)
+            val class124 = ParticleConfigParser.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), anInt2756, i_40_.toInt() xor 0x65)
             if (class124 == null) return null
             if (class124.anInt1830 < 13) class124.method1092(2, i_40_.toInt() xor 0xb.inv())
             if (aShortArray2777 != null) {
@@ -366,11 +366,11 @@ class ItemDefinition {
             var abstractModelRenderer: AbstractModelRenderer? = null
             if (this.anInt2833 == -1) {
                 if (this.anInt2812 != -1) {
-                    abstractModelRenderer = (this.aModelHeaderCache_2761!!.method1932(var_renderer_38_, i_37_, i, RSFont, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2778, false, i_41_))
+                    abstractModelRenderer = (this.aItemTypeList_2761!!.method1932(var_renderer_38_, i_37_, i, RSFont, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2778, false, i_41_))
                     if (abstractModelRenderer == null) return null
                 }
             } else {
-                abstractModelRenderer = (this.aModelHeaderCache_2761!!.method1932(var_renderer_38_, 0, 10, RSFont, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2758, true, 1))
+                abstractModelRenderer = (this.aItemTypeList_2761!!.method1932(var_renderer_38_, 0, 10, RSFont, compositeNpcModelBuilder, 0, true, 83.toByte(), var_renderer, this.anInt2758, true, 1))
                 if (abstractModelRenderer == null) return null
             }
             val i_48_: Int
@@ -437,9 +437,9 @@ class ItemDefinition {
         }
         if (i_53_ == -1) return true
         var bool_56_ = true
-        if (!this.aModelHeaderCache_2761!!.aJs5Archive_3268!!.method420(-10499, i_53_, 0)) bool_56_ = false
-        if (i_54_ != -1 && !this.aModelHeaderCache_2761!!.aJs5Archive_3268!!.method420(i xor 0x2902, i_54_, 0)) bool_56_ = false
-        if (i != i_55_ && !this.aModelHeaderCache_2761!!.aJs5Archive_3268!!.method420(-10499, i_55_, 0)) bool_56_ = false
+        if (!this.aItemTypeList_2761!!.aJs5Archive_3268!!.method420(-10499, i_53_, 0)) bool_56_ = false
+        if (i_54_ != -1 && !this.aItemTypeList_2761!!.aJs5Archive_3268!!.method420(i xor 0x2902, i_54_, 0)) bool_56_ = false
+        if (i != i_55_ && !this.aItemTypeList_2761!!.aJs5Archive_3268!!.method420(-10499, i_55_, 0)) bool_56_ = false
         return bool_56_
     }
 
@@ -601,27 +601,27 @@ class ItemDefinition {
         }
     }
 
-    fun method1570(i: Int, itemDefinition_94_: ItemDefinition?, itemDefinition_95_: ItemDefinition?) {
+    fun method1570(i: Int, itemType_94_: ItemType?, itemType_95_: ItemType?) {
         try {
-            aShortArray2771 = itemDefinition_95_!!.aShortArray2771
-            aShortArray2785 = itemDefinition_95_.aShortArray2785
-            aByteArray2821 = itemDefinition_95_.aByteArray2821
-            this.aBoolean2783 = itemDefinition_94_!!.aBoolean2783
-            this.anInt2787 = itemDefinition_95_.anInt2787
-            this.anInt2810 = itemDefinition_95_.anInt2810
+            aShortArray2771 = itemType_95_!!.aShortArray2771
+            aShortArray2785 = itemType_95_.aShortArray2785
+            aByteArray2821 = itemType_95_.aByteArray2821
+            this.aBoolean2783 = itemType_94_!!.aBoolean2783
+            this.anInt2787 = itemType_95_.anInt2787
+            this.anInt2810 = itemType_95_.anInt2810
             anInt2776++
-            this.anInt2779 = itemDefinition_95_.anInt2779
-            aShortArray2801 = itemDefinition_95_.aShortArray2801
-            this.anInt2781 = itemDefinition_95_.anInt2781
-            this.anInt2819 = itemDefinition_94_.anInt2819
-            this.anInt2826 = itemDefinition_95_.anInt2826
+            this.anInt2779 = itemType_95_.anInt2779
+            aShortArray2801 = itemType_95_.aShortArray2801
+            this.anInt2781 = itemType_95_.anInt2781
+            this.anInt2819 = itemType_94_.anInt2819
+            this.anInt2826 = itemType_95_.anInt2826
             this.anInt2820 = i
-            aShortArray2777 = itemDefinition_95_.aShortArray2777
-            this.anInt2825 = itemDefinition_95_.anInt2825
-            this.aString2795 = itemDefinition_94_.aString2795
-            anInt2756 = itemDefinition_95_.anInt2756
+            aShortArray2777 = itemType_95_.aShortArray2777
+            this.anInt2825 = itemType_95_.anInt2825
+            this.aString2795 = itemType_94_.aString2795
+            anInt2756 = itemType_95_.anInt2756
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("rq.F(" + i + ',' + (if (itemDefinition_94_ != null) "{...}" else "null") + ',' + (if (itemDefinition_95_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.F(" + i + ',' + (if (itemType_94_ != null) "{...}" else "null") + ',' + (if (itemType_95_ != null) "{...}" else "null") + ')'))
         }
     }
 

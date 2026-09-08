@@ -18,7 +18,7 @@ class RegionTileNode internal constructor(@JvmField var anInt6649: Int, @JvmFiel
 
         var anInt6652: Int = 0
 
-        var aCacheArchiveIndexLoader_6653: CacheArchiveIndexLoader? = null
+        var aEnumTypeList_6653: EnumTypeList? = null
 
         @JvmStatic
         fun method2772(i: Int, i_0_: Byte) {
@@ -40,7 +40,7 @@ class RegionTileNode internal constructor(@JvmField var anInt6649: Int, @JvmFiel
         fun method2773(i: Int) {
             aSpriteImage_6643 = null
             aRenderConfigFactory_6644 = null
-            if (i == 0) aCacheArchiveIndexLoader_6653 = null
+            if (i == 0) aEnumTypeList_6653 = null
         }
     }
 }

@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import CacheArchiveIndexLoader.Companion.method340
+import EnumTypeList.Companion.method340
 import kotlinx.coroutines.Job
 import kotlin.math.sqrt
 
@@ -295,7 +295,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
         var anInt6939: Int = 0
         var anInt6941: Int = 0
         var job: Job? = null
-        var aJs5Archive_6950: Js5Archive? = null
+        var worldMap: Js5Archive? = null
         fun method3018(i: Int) {
             InterfaceBounds.Companion.anInt6818 = i
         }
@@ -303,7 +303,7 @@ class TerrainShadowBuilderGl2 internal constructor(var_ha_Sub2: OpenGlRenderer?,
         @JvmStatic
         fun method3020(i: Byte) {
             if (i.toInt() == -64) {
-                aJs5Archive_6950 = null
+                worldMap = null
                 job = null
             }
         }

@@ -97,7 +97,7 @@ object LinkedListNodeStatics {
             var class348_sub42_sub17: TextureMaterialGroup? = null
             if (widgetDefinition != null) {
                 i_5_ = widgetDefinition.anIntArray237[i_5_]
-                class348_sub42_sub17 = ParticleEmitterNode.aWidgetCache_191!!.method839(i_5_ shr 16, 3)
+                class348_sub42_sub17 = ParticleEmitterNode.aAnimationTypeList_191!!.method839(i_5_ shr 16, 3)
                 i_5_ = i_5_ and 0xffff
             }
             if (class348_sub42_sub17 == null) {

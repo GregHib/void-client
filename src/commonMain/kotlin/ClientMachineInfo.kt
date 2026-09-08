@@ -145,7 +145,7 @@ class ClientMachineInfo : LinkedListNode {
             }
             aBoolean6607 = !privilegedOperationWorker.aBoolean3777
             anInt6612 = i_3_
-            anInt6592 = TextureDefinitionCache.anInt2964
+            anInt6592 = QuickChatTypeList.anInt2964
             if (anInt6616 <= 3) anInt6599 = 0
             else anInt6599 = ActorEntity.anInt9372
             try {

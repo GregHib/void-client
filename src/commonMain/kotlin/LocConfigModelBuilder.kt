@@ -23,15 +23,15 @@ class LocConfigModelBuilder {
     private var anInt4508 = 0
     private var anInt4512 = 0
 
-    var aMapElementDefinitionCache_4513: MapElementDefinitionCache? = null
+    var aGfxTypeList_4513: GfxTypeList? = null
 
-    fun method3558(i: Int, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int, widgetCache: WidgetCache?, i_3_: Int): AbstractModel? {
+    fun method3558(i: Int, i_0_: Int, var_renderer: Renderer?, i_1_: Int, i_2_: Int, animationTypeList: AnimationTypeList?, i_3_: Int): AbstractModel? {
         try {
             if (i_2_ != 3172) aShortArray4504 = null
             anInt4505++
-            return method3566(var_renderer, i_3_, i_1_, null, 0, widgetCache, i, 5.toByte(), null, 0, false, 0, (-68).toByte(), i_0_)
+            return method3566(var_renderer, i_3_, i_1_, null, 0, animationTypeList, i, 5.toByte(), null, 0, false, 0, (-68).toByte(), i_0_)
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_3_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fk.B(" + i + ',' + i_0_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_1_ + ',' + i_2_ + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i_3_ + ')'))
         }
     }
 
@@ -46,13 +46,13 @@ class LocConfigModelBuilder {
         }
     }
 
-    fun method3562(i: Int, var_renderer: Renderer?, i_5_: Int, i_6_: Int, i_7_: Int, widgetCache: WidgetCache?, i_8_: Byte): AbstractModel? {
+    fun method3562(i: Int, var_renderer: Renderer?, i_5_: Int, i_6_: Int, i_7_: Int, animationTypeList: AnimationTypeList?, i_8_: Byte): AbstractModel? {
         try {
             if (i_8_ <= 24) return null
             anInt4511++
-            return method3566(var_renderer, i, i_6_, null, 0, widgetCache, i_5_, 2.toByte(), null, 0, false, 0, (-68).toByte(), i_7_)
+            return method3566(var_renderer, i, i_6_, null, 0, animationTypeList, i_5_, 2.toByte(), null, 0, false, 0, (-68).toByte(), i_7_)
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("fk.A(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_8_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fk.A(" + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i_8_ + ')'))
         }
     }
 
@@ -113,13 +113,13 @@ class LocConfigModelBuilder {
         }
     }
 
-    fun method3565(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, var_renderer: Renderer?, i_19_: Int, i_20_: Int, i_21_: Int, widgetCache: WidgetCache?, var_terrainTile: TerrainTile?, i_22_: Int, var_terrainTile_23_: TerrainTile?): AbstractModel? {
+    fun method3565(i: Int, i_16_: Int, i_17_: Int, i_18_: Int, bool: Boolean, var_renderer: Renderer?, i_19_: Int, i_20_: Int, i_21_: Int, animationTypeList: AnimationTypeList?, var_terrainTile: TerrainTile?, i_22_: Int, var_terrainTile_23_: TerrainTile?): AbstractModel? {
         try {
             anInt4496++
             if (i_21_ != -129) method3566(null, 36, -84, null, 43, null, 2, 54.toByte(), null, -17, true, -42, 95.toByte(), -81)
-            return method3566(var_renderer, i_16_, i_18_, var_terrainTile, i_22_, widgetCache, i, 2.toByte(), var_terrainTile_23_, i_17_, bool, i_20_, (-68).toByte(), i_19_)
+            return method3566(var_renderer, i_16_, i_18_, var_terrainTile, i_22_, animationTypeList, i, 2.toByte(), var_terrainTile_23_, i_17_, bool, i_20_, (-68).toByte(), i_19_)
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fk.F(" + i + ',' + i_16_ + ',' + i_17_ + ',' + i_18_ + ',' + bool + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_19_ + ',' + i_20_ + ',' + i_21_ + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_22_ + ',' + (if (var_terrainTile_23_ != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -128,30 +128,30 @@ class LocConfigModelBuilder {
         anInt4507 = -1
     }
 
-    private fun method3566(var_renderer: Renderer?, i: Int, i_24_: Int, var_terrainTile: TerrainTile?, i_25_: Int, widgetCache: WidgetCache?, i_26_: Int, i_27_: Byte, var_terrainTile_28_: TerrainTile?, i_29_: Int, bool: Boolean, i_30_: Int, i_31_: Byte, i_32_: Int): AbstractModel? {
+    private fun method3566(var_renderer: Renderer?, i: Int, i_24_: Int, var_terrainTile: TerrainTile?, i_25_: Int, animationTypeList: AnimationTypeList?, i_26_: Int, i_27_: Byte, var_terrainTile_28_: TerrainTile?, i_29_: Int, bool: Boolean, i_30_: Int, i_31_: Byte, i_32_: Int): AbstractModel? {
         var bool = bool
         try {
             anInt4491++
             var i_33_ = i_24_
-            val class17 = (if (this.anInt4503 != -1 && i != -1) widgetCache!!.method835(this.anInt4503, 7) else null)
+            val class17 = (if (this.anInt4503 != -1 && i != -1) animationTypeList!!.method835(this.anInt4503, 7) else null)
             bool = bool and (this.aByte4488.toInt() != 0)
             if (class17 != null) i_33_ = i_33_ or class17.method263(i_32_, 110, i, false)
             if (bool) i_33_ = i_33_ or (if (this.aByte4488.toInt() != 3) 2 else 7)
             if (anInt4492 != 128) i_33_ = i_33_ or 0x2
             if (anInt4498 != 128 || anInt4508 != 0) i_33_ = i_33_ or 0x5
             this.anInt4501 = this.anInt4501 or (var_renderer!!.anInt4567 shl 29)
-            var abstractModel: AbstractModel? = withLock(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
-                ((this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method583(this.anInt4501.toLong(), -122)) as AbstractModel?)
+            var abstractModel: AbstractModel? = withLock(this.aGfxTypeList_4513!!.aLruByteCache_3990) {
+                ((this.aGfxTypeList_4513!!.aLruByteCache_3990.method583(this.anInt4501.toLong(), -122)) as AbstractModel?)
             }
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_33_) != 0) {
                 if (abstractModel != null) i_33_ = var_renderer!!.method3679(i_33_, abstractModel.ua())
                 var i_34_ = i_33_
                 if (aShortArray4490 != null) i_34_ = i_34_ or 0x4000
                 if (aShortArray4499 != null) i_34_ = i_34_ or 0x8000
-                val class124 = ParticleConfigParser.method2277(0, (this.aMapElementDefinitionCache_4513!!.aJs5Archive_3981!!), anInt4506, -1)
+                val class124 = ParticleConfigParser.method2277(0, (this.aGfxTypeList_4513!!.aJs5Archive_3981!!), anInt4506, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 114)
-                abstractModel = var_renderer!!.method3625(class124, i_34_, (this.aMapElementDefinitionCache_4513!!.anInt3991), 64 + anInt4489, anInt4512 - -850)
+                abstractModel = var_renderer!!.method3625(class124, i_34_, (this.aGfxTypeList_4513!!.anInt3991), 64 + anInt4489, anInt4512 - -850)
                 if (aShortArray4490 != null) {
                     var i_35_ = 0
                     while ((i_35_ < aShortArray4490!!.size)) {
@@ -167,8 +167,8 @@ class LocConfigModelBuilder {
                     }
                 }
                 abstractModel.s(i_33_)
-                withLock(this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990) {
-                    this.aMapElementDefinitionCache_4513!!.aLruByteCache_3990.method582(abstractModel, this.anInt4501.toLong(), (-113).toByte())
+                withLock(this.aGfxTypeList_4513!!.aLruByteCache_3990) {
+                    this.aGfxTypeList_4513!!.aLruByteCache_3990.method582(abstractModel, this.anInt4501.toLong(), (-113).toByte())
                 }
             }
             if (i_31_.toInt() != -68) return null
@@ -183,7 +183,7 @@ class LocConfigModelBuilder {
             class64_37_!!.s(i_24_)
             return class64_37_
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("fk.I(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_24_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_25_ + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i_26_ + ',' + i_27_ + ',' + (if (var_terrainTile_28_ != null) "{...}" else "null") + ',' + i_29_ + ',' + bool + ',' + i_30_ + ',' + i_31_ + ',' + i_32_ + ')'))
         }
     }
 

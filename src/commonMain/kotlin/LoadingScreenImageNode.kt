@@ -127,8 +127,8 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
                     MapRegionLoader.aConfigDefinitionLoader_1238!!.method1219(7851)
                     MapRegionLoader.aConfigDefinitionLoader_1238!!.method1220((-100).toByte(), 64, 128)
                 }
-                if (MapRegionLoader.aTextureDefinitionLoader_1242 != null) MapRegionLoader.aTextureDefinitionLoader_1242!!.method1178(64, 1, 64)
-                if (MapRegionLoader.aSeqDefinitionCache_1245 != null) MapRegionLoader.aSeqDefinitionCache_1245!!.method2014(64, true)
+                if (MapRegionLoader.aMapSceneDefinitionLoader_1242 != null) MapRegionLoader.aMapSceneDefinitionLoader_1242!!.method1178(64, 1, 64)
+                if (MapRegionLoader.aObjectTypeList_1245 != null) MapRegionLoader.aObjectTypeList_1245!!.method2014(64, true)
                 RenderConfigFactory.aVarbitDefLoader_2981!!.method1444(64, -124)
             }
         }

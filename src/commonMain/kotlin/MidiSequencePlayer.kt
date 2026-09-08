@@ -410,7 +410,7 @@ class MidiSequencePlayer : AudioStreamNode {
     private fun method2854(i: Int, i_54_: Int, i_55_: Int) {
         anInt8943++
         anIntArray8945[i_54_] = i
-        if (i_55_ < 39) aJs5Archive_8926 = null
+        if (i_55_ < 39) varbits = null
         anIntArray8947!![i_54_] = WhirlpoolHash.method1166(i, -128)
         method2873((-21).toByte(), i, i_54_)
     }
@@ -942,7 +942,7 @@ class MidiSequencePlayer : AudioStreamNode {
 
         var anInt8924: Int = 0
 
-        var aJs5Archive_8926: Js5Archive? = null
+        var varbits: Js5Archive? = null
 
         var anInt8927: Int = 0
 
@@ -1048,7 +1048,7 @@ class MidiSequencePlayer : AudioStreamNode {
         fun method2871(i: Int) {
             anIntArrayArray8910 = null
             if (i != -65) method2862(null, null, 96, -71)
-            aJs5Archive_8926 = null
+            varbits = null
         }
 
         @JvmStatic

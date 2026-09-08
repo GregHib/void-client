@@ -12,12 +12,12 @@ public class ClientException : Exception() {
 
         var anIntArrayArray111: Array<IntArray?>? = arrayOf<IntArray?>(intArrayOf(0, 2, 4, 6), intArrayOf(6, 0, 2, 4), intArrayOf(6, 0, 2), intArrayOf(2, 6, 0), intArrayOf(0, 2, 6), intArrayOf(6, 0, 2), intArrayOf(5, 6, 0, 1, 2, 4), intArrayOf(7, 2, 4, 4), intArrayOf(2, 4, 4, 7), intArrayOf(6, 6, 4, 0, 2, 2), intArrayOf(0, 2, 2, 6, 6, 4), intArrayOf(0, 2, 2, 4, 6, 6), intArrayOf(0, 2, 4, 6))
 
-        var aModelHeaderCache_112: ModelHeaderCache? = null
+        var aItemTypeList_112: ItemTypeList? = null
 
 
         @JvmStatic
         fun method140(i: Byte) {
-            aModelHeaderCache_112 = null
+            aItemTypeList_112 = null
             anIntArray110 = null
             if (i.toInt() == -126) anIntArrayArray111 = null
         }

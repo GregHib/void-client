@@ -1,6 +1,4 @@
 import kotlin.jvm.JvmStatic
-import GrowableStringList.Companion.anInt2361
-import Js5Archive.Companion.method3873
 import Js5Archive.Companion.method461
 import SolidFillComponent.Companion.method194
 
@@ -21,7 +19,7 @@ class WaterTextureSet internal constructor(var_ha_Sub2: OpenGlRenderer) {
         if (this.aBoolean1442) {
             var `is` = method461(false, GlShaderProgramHandle.anObject4177, 53146732)
             this.aClass258_Sub1_1440 = GlTexture3D(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
-            `is` = method461(false, MapElementDefinitionCache.anObject3985, 53146732)
+            `is` = method461(false, GfxTypeList.anObject3985, 53146732)
             this.aClass258_Sub1_1446 = GlTexture3D(var_ha_Sub2, 6410, 128, 128, 16, `is`, 6410)
             val class188 = var_ha_Sub2.aGlowPostProcessor_7736
             if (class188!!.method1414(35632)) {
@@ -42,7 +40,7 @@ class WaterTextureSet internal constructor(var_ha_Sub2: OpenGlRenderer) {
             }
             this.aClass258_Sub3Array1448 = arrayOfNulls<GlTexture2D>(16)
             for (i in 0..15) {
-                val `is` = ObjectByteSerializerHolder.method1331(110.toByte(), MapElementDefinitionCache.anObject3985, 2 * i * 16384, 32768)
+                val `is` = ObjectByteSerializerHolder.method1331(110.toByte(), GfxTypeList.anObject3985, 2 * i * 16384, 32768)
                 this.aClass258_Sub3Array1448!![i] = GlTexture2D(var_ha_Sub2, 3553, 6410, 128, 128, true, `is`, 6410, false)
             }
         }
@@ -69,10 +67,10 @@ class WaterTextureSet internal constructor(var_ha_Sub2: OpenGlRenderer) {
                 val `is` = class59_sub1_sub2.method562(128, 128, 121.toByte(), 16)
                 GlShaderProgramHandle.anObject4177 = Js5Archive.method1357(`is`, false, 81.toByte())
             }
-            if (MapElementDefinitionCache.anObject3985 == null) {
+            if (GfxTypeList.anObject3985 == null) {
                 val class59_sub2_sub1 = CachedRgbNoiseTexture()
                 val `is` = class59_sub2_sub1.method567(128, 111.toByte(), 16, 128)
-                MapElementDefinitionCache.anObject3985 = Js5Archive.method1357(`is`, false, 103.toByte())
+                GfxTypeList.anObject3985 = Js5Archive.method1357(`is`, false, 103.toByte())
             }
             val class188 = var_ha_Sub2.aGlowPostProcessor_7736
             if (class188!!.method1414(35632) && WorldMapTextLabel.anObject8592 == null) {

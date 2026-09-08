@@ -5,7 +5,7 @@ import MultiLevelOptionState.Companion.method1850
 /* Class263 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, js5Archive: Js5Archive?, js5Archive_29_: Js5Archive?) {
+class ObjectTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, bool: Boolean, js5Archive: Js5Archive?, js5Archive_29_: Js5Archive?) {
     private val aJs5Archive_3343: Js5Archive?
     var aJs5Archive_3345: Js5Archive? = null
     private var aLruByteCache_3350: LruByteCache?
@@ -25,33 +25,33 @@ class SeqDefinitionCache internal constructor(sceneProjector: SceneProjector?, i
         }
     }
 
-    fun method2005(i: Int, i_0_: Int): NpcConfig {
+    fun method2005(i: Int, i_0_: Int): ObjectType {
         anInt3351++
-        var npcConfig: NpcConfig? = withLock(aLruByteCache_3350!!) {
-            aLruByteCache_3350!!.method583(i_0_.toLong(), i xor 0x32) as NpcConfig?
+        var objectType: ObjectType? = withLock(aLruByteCache_3350!!) {
+            aLruByteCache_3350!!.method583(i_0_.toLong(), i xor 0x32) as ObjectType?
         }
-        if (npcConfig != null) return npcConfig
+        if (objectType != null) return objectType
         val `is`: ByteArray? = withLock(aJs5Archive_3343!!) {
             aJs5Archive_3343.method410(i + -1860, method1850(i_0_, 111), ScrollbarComponent.method185(i_0_, (-90).toByte()))
         }
-        npcConfig = NpcConfig()
-        npcConfig.anInt941 = i_0_
-        npcConfig.aSeqDefinitionCache_933 = this
-        if (`is` != null) npcConfig.method479(0.toByte(), ByteBuffer(`is`))
-        npcConfig.method488(-105)
+        objectType = ObjectType()
+        objectType.anInt941 = i_0_
+        objectType.aObjectTypeList_933 = this
+        if (`is` != null) objectType.method479(0.toByte(), ByteBuffer(`is`))
+        objectType.method488(-105)
         if (i != 0) this.aLruByteCache_3361 = null
-        if (!this.aBoolean3359 && npcConfig.aBoolean942) {
-            npcConfig.anIntArray917 = null
-            npcConfig.aStringArray913 = null
+        if (!this.aBoolean3359 && objectType.aBoolean942) {
+            objectType.anIntArray917 = null
+            objectType.aStringArray913 = null
         }
-        if (npcConfig.aBoolean876) {
-            npcConfig.anInt920 = 0
-            npcConfig.aBoolean896 = false
+        if (objectType.aBoolean876) {
+            objectType.anInt920 = 0
+            objectType.aBoolean896 = false
         }
         withLock(aLruByteCache_3350!!) {
-            aLruByteCache_3350!!.method582(npcConfig, i_0_.toLong(), (-109).toByte())
+            aLruByteCache_3350!!.method582(objectType, i_0_.toLong(), (-109).toByte())
         }
-        return npcConfig
+        return objectType
     }
 
     fun method2006(i: Int) {

@@ -7,7 +7,7 @@ import ChatMessageStream.Companion.method136
 /* Class318_Sub1_Sub1_Sub2 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcConfig: NpcConfig, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bool: Boolean, i_24_: Int, bool_25_: Boolean) : TileSceneEntity(i_21_, i_22_, i_23_, i, i_20_, npcConfig.anInt930), RenderTarget {
+class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, objectType: ObjectType, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Int, bool: Boolean, i_24_: Int, bool_25_: Boolean) : TileSceneEntity(i_21_, i_22_, i_23_, i, i_20_, objectType.anInt930), RenderTarget {
     private val aBoolean9974: Boolean
     private var aRenderNode9976: RenderNode? = null
     private val aByte9980: Byte
@@ -56,7 +56,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
 
     private fun method2401(var_renderer: Renderer?, i: Int, bool: Boolean, i_4_: Int): ModelOrSpriteHolder? {
         anInt9985++
-        val class51 = GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, aShort9991.toInt() and 0xffff)
+        val class51 = GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, aShort9991.toInt() and 0xffff)
         val var_terrainTile: TerrainTile?
         val var_terrainTile_5_: TerrainTile?
         if (aBoolean9983) {
@@ -184,13 +184,13 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
         do {
             try {
                 aBoolean9983 = bool
-                aBoolean9974 = (npcConfig.anInt874 != 0 && !bool)
+                aBoolean9974 = (objectType.anInt874 != 0 && !bool)
                 this.y = i_23_
                 aBoolean9989 = bool_25_
                 this.x = i_21_
                 aByte9980 = i_24_.toByte()
-                aShort9991 = npcConfig.anInt941.toShort()
-                aBoolean9988 = (var_renderer!!.method3682() && npcConfig.aBoolean894 && !aBoolean9983 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
+                aShort9991 = objectType.anInt941.toShort()
+                aBoolean9988 = (var_renderer!!.method3682() && objectType.aBoolean894 && !aBoolean9983 && IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) != 0)
                 var i_26_ = 2048
                 if (aBoolean9989) i_26_ = i_26_ or 0x10000
                 val class2 = method2401(var_renderer, i_26_, aBoolean9988, 22)
@@ -200,7 +200,7 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, npcCo
                 if (!aBoolean9989) break
                 aAbstractModel_9993 = aAbstractModel_9993!!.method614(0.toByte(), i_26_, false)
             } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("uo.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcConfig != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + i_24_ + ',' + bool_25_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("uo.<init>(" + (if (var_renderer != null) "{...}" else "null") + ',' + (if (objectType != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + bool + ',' + i_24_ + ',' + bool_25_ + ')'))
             }
             break
         } while (false)

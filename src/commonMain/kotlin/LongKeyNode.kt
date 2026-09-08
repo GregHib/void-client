@@ -209,14 +209,14 @@ class LongKeyNode : LinkedListNode {
                                     if (renderTarget == null) renderTarget = (method3297(i_39_, i_37_, i_38_) as RenderTarget?)
                                     if (renderTarget == null) renderTarget = ((method3135(i_39_, i_37_, i_38_)) as RenderTarget?)
                                     if (renderTarget != null) {
-                                        val class51 = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, renderTarget.method42(-99)))
+                                        val class51 = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, renderTarget.method42(-99)))
                                         if (!class51.aBoolean942 || ModelBatchBase.aBoolean1900) {
                                             var i_40_ = class51.anInt921
                                             if (class51.anIntArray945 != null) {
                                                 var i_41_ = 0
                                                 while (((class51.anIntArray945!!).size > i_41_)) {
                                                     if ((class51.anIntArray945!![i_41_]) != -1) {
-                                                        val class51_42_ = (GradientLookupEffect.aSeqDefinitionCache_9195!!.method2005(0, (class51.anIntArray945!![i_41_])))
+                                                        val class51_42_ = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, (class51.anIntArray945!![i_41_])))
                                                         if (class51_42_.anInt921 >= 0) i_40_ = (class51_42_.anInt921)
                                                     }
                                                     i_41_++
@@ -242,7 +242,7 @@ class LongKeyNode : LinkedListNode {
                                                         if (i_50_ == 3 && (104 + i_6_ - 1 > i_45_) && 3 + i_38_ > i_45_ && ((0x2c0120 and (is_46_[i_44_ - i_47_]!![(-i_48_ + 1 + i_45_)])) == 0)) i_45_++
                                                     }
                                                 }
-                                                SeqDefinitionCache.anIntArray3347!![(LongKeyNode.anInt9479)] = class51.anInt941
+                                                ObjectTypeList.anIntArray3347!![(LongKeyNode.anInt9479)] = class51.anInt941
                                                 MenuActionNode.Companion.anIntArray6770!![(LongKeyNode.anInt9479)] = i_44_
                                                 BoxBlurTextureNode.anIntArray9458!![(LongKeyNode.anInt9479)] = i_45_
                                                 LongKeyNode.anInt9479++
@@ -257,7 +257,7 @@ class LongKeyNode : LinkedListNode {
                         i_37_++
                     }
                     if (OpenGlRenderNode.aSmoothingBuffer_10488 != null) {
-                        DirectionUtil.aJs5Archive_1541!!.anInt634 = 1
+                        DirectionUtil.config!!.anInt634 = 1
                         TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1220(116.toByte(), 64, 1024)
                         for (i_51_ in 0..<OpenGlRenderNode.aSmoothingBuffer_10488!!.anInt3241) {
                             val i_52_ = (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_51_])
@@ -272,8 +272,8 @@ class LongKeyNode : LinkedListNode {
                             }
                         }
                         TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1220(13.toByte(), 64, 128)
-                        DirectionUtil.aJs5Archive_1541!!.anInt634 = 2
-                        DirectionUtil.aJs5Archive_1541!!.method412((-126).toByte())
+                        DirectionUtil.config!!.anInt634 = 2
+                        DirectionUtil.config!!.method412((-126).toByte())
                     }
                 }
                 return true

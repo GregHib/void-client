@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class226 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class TextureDefinitionCache internal constructor(i: Int, js5Archive: Js5Archive?, js5Archive_3_: Js5Archive?) {
+class QuickChatTypeList internal constructor(i: Int, js5Archive: Js5Archive?, js5Archive_3_: Js5Archive?) {
     private val aLruByteCache_2960 = LruByteCache(64)
     private val aJs5Archive_2961: Js5Archive?
     private var aJs5Archive_2965: Js5Archive? = null

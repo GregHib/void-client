@@ -123,32 +123,32 @@ class GlVertexBufferArb internal constructor(glRenderDevice: GlRenderDevice, boo
         fun method2131(i: Int) {
             if (i == 0) {
                 if (Npc.anInt10503 == 2) {
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![0])
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![1]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![1])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![0])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![1]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![1])
                 } else if (Npc.anInt10503 == 3) {
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![0])
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![1]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![1])
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![2]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![2])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![0])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![1]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![1])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![2]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![2])
                 } else {
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![0])
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![1]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![1])
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![2]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![2])
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![3]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![3])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![0])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![1]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![1])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![2]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![2])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![3]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![3])
                 }
             } else if (i == 1) {
-                if (Npc.anInt10503 == 2) NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![2])
+                if (Npc.anInt10503 == 2) NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![2])
                 else if (Npc.anInt10503 == 3) {
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![3])
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![1]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![4])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![3])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![1]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![4])
                 } else {
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![4])
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![1]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![5])
-                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![2]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![6])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![4])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![1]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![5])
+                    NormalMapTextureNode.aSceneLoaderThreadArray9432!![2]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![6])
                 }
             } else if (i == 2) {
-                if (Npc.anInt10503 == 2) NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![3])
-                else if (Npc.anInt10503 == 3) NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![5])
-                else NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(MapElementDefinitionCache.aCacheIndexManagerArray3982!![7])
+                if (Npc.anInt10503 == 2) NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![3])
+                else if (Npc.anInt10503 == 3) NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![5])
+                else NormalMapTextureNode.aSceneLoaderThreadArray9432!![0]!!.method2206(GfxTypeList.aCacheIndexManagerArray3982!![7])
             }
         }
     }

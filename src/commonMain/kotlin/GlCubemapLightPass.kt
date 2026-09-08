@@ -186,13 +186,13 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         fun method3542(i: Int, sceneCollisionEntries: Array<Array<Array<SceneCollisionEntry?>?>?>?, i_13_: Int, i_14_: Int, i_15_: Int, bool: Boolean): Boolean {
             anInt7310++
             val i_16_ = if (bool) 1.toByte() else (TextureQualityOptionState.anInt6006 and 0xff).toByte()
-            if (i_16_ == RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_13_]!![i]) return false
-            if (((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_13_]!![i]).toInt() and 0x4) == 0) return false
+            if (i_16_ == RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_13_]!![i]) return false
+            if (((GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_13_]!![i]).toInt() and 0x4) == 0) return false
             var i_17_ = i_14_
             var i_18_ = 0
             PcmStreamBuffer.anIntArray8862!![i_17_] = i_13_
             ClientException.anIntArray110!![i_17_++] = i
-            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_13_]!![i] = i_16_
+            RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_13_]!![i] = i_16_
             while (i_17_ != i_18_) {
                 val i_19_ = 0xffff and PcmStreamBuffer.anIntArray8862!![i_18_]
                 val i_20_ = ((PcmStreamBuffer.anIntArray8862!![i_18_] and 0xff3677) shr 16)
@@ -201,10 +201,10 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                 val i_23_ = ((0xff5347 and ClientException.anIntArray110!![i_18_]) shr 16)
                 i_18_ = i_18_ + 1 and 0xfff
                 var bool_24_ = false
-                if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0) bool_24_ = true
+                if ((0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0) bool_24_ = true
                 var bool_25_ = false
                 if (sceneCollisionEntries != null) {
-                    var i_26_ = CompiledScriptCache.anInt4372 + 1
+                    var i_26_ = QuickChatMenuTypeList.anInt4372 + 1
                     while_223_@ while ( /**/i_26_ <= 3) {
                         if (sceneCollisionEntries[i_26_] != null && (0x8 and (GraphicsOptionState.aByteArrayArrayArray6962!![i_26_]!![i_19_]!![i_22_]).toInt()) == 0) {
                             if (bool_24_ && sceneCollisionEntries[i_26_]!![i_19_]!![i_22_] != null) {
@@ -275,7 +275,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                     }
                 }
                 if (bool_25_) {
-                    val i_35_ = ActorEntity.aTerrainTileArray5191!![1 + CompiledScriptCache.anInt4372]!!.method3982((-86).toByte(), i_22_, i_19_)
+                    val i_35_ = ActorEntity.aTerrainTileArray5191!![1 + QuickChatMenuTypeList.anInt4372]!!.method3982((-86).toByte(), i_22_, i_19_)
                     if (i_35_ > FileIoUtil.anIntArray4097!![i_15_]) FileIoUtil.anIntArray4097!![i_15_] = i_35_
                     val i_36_ = i_19_ shl 9
                     if (i_36_ < LinkedListIterator.anIntArray2117!![i_15_]) LinkedListIterator.anIntArray2117!![i_15_] = i_36_
@@ -286,56 +286,56 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                     } else CharCodeMap.anIntArray1127!![i_15_] = i_37_
                 }
                 if (!bool_24_) {
-                    if (i_19_ >= 1 && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) != i_16_) {
+                    if (i_19_ >= 1 && (RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_ - 1]!![i_22_]) != i_16_) {
                         PcmStreamBuffer.anIntArray8862!![i_17_] = WhirlpoolHash.method2057(WhirlpoolHash.method2057(1179648, i_19_ + -1), -754974720)
                         ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 1245184)
                         i_17_ = 0xfff and 1 + i_17_
-                        RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
+                        RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
                     }
                     if (++i_22_ < RangeThresholdTextureNode.anInt9109) {
-                        if (i_19_ - 1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![i_22_]) && ((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![-1 + i_22_]).toInt()) == 0) {
+                        if (i_19_ - 1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![-1 + i_19_]!![i_22_]) && ((GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![-1 + i_19_]!![-1 + i_22_]).toInt()) == 0) {
                             PcmStreamBuffer.anIntArray8862!![i_17_] = (WhirlpoolHash.method2057(1375731712, WhirlpoolHash.method2057(i_19_ + -1, 1179648)))
                             ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 1245184)
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![i_22_] = i_16_
+                            RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![-1 + i_19_]!![i_22_] = i_16_
                             i_17_ = 0xfff and 1 + i_17_
                         }
-                        if ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]) != i_16_) {
+                        if ((RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_]!![i_22_]) != i_16_) {
                             PcmStreamBuffer.anIntArray8862!![i_17_] = (WhirlpoolHash.method2057(318767104, WhirlpoolHash.method2057(i_19_, 5373952)))
                             ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 5439488)
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_] = i_16_
+                            RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_]!![i_22_] = i_16_
                             i_17_ = i_17_ + 1 and 0xfff
                         }
-                        if (1 + i_19_ < anInt7319 && ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ + 1]!![i_22_]) != i_16_) && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![1 + i_19_]!![i_22_ + -1]).toInt()) == 0) {
+                        if (1 + i_19_ < anInt7319 && ((RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_ + 1]!![i_22_]) != i_16_) && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![1 + i_19_]!![i_22_ + -1]).toInt()) == 0) {
                             PcmStreamBuffer.anIntArray8862!![i_17_] = (WhirlpoolHash.method2057(-1845493760, WhirlpoolHash.method2057(1 + i_19_, 5373952)))
                             ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(5439488, i_22_)
                             i_17_ = 1 + i_17_ and 0xfff
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
+                            RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
                         }
                     }
                     i_22_--
-                    if (i_19_ - -1 < anInt7319 && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_]) != i_16_) {
+                    if (i_19_ - -1 < anInt7319 && (RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_ - -1]!![i_22_]) != i_16_) {
                         PcmStreamBuffer.anIntArray8862!![i_17_] = WhirlpoolHash.method2057(1392508928, WhirlpoolHash.method2057(9568256, 1 + i_19_))
                         ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 9633792)
                         i_17_ = 1 + i_17_ and 0xfff
-                        RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
+                        RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
                     }
                     if (--i_22_ >= 0) {
-                        if (i_19_ + -1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_]) && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![-1 + i_19_]!![1 + i_22_]).toInt()) == 0) {
+                        if (i_19_ + -1 >= 0 && i_16_ != (RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_ - 1]!![i_22_]) && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_19_]!![i_22_]).toInt()) == 0 && (0x4 and (GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![-1 + i_19_]!![1 + i_22_]).toInt()) == 0) {
                             PcmStreamBuffer.anIntArray8862!![i_17_] = (WhirlpoolHash.method2057(301989888, WhirlpoolHash.method2057(13762560, -1 + i_19_)))
                             ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 13828096)
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
+                            RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_ - 1]!![i_22_] = i_16_
                             i_17_ = i_17_ - -1 and 0xfff
                         }
-                        if ((RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]) != i_16_) {
+                        if ((RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_]!![i_22_]) != i_16_) {
                             PcmStreamBuffer.anIntArray8862!![i_17_] = WhirlpoolHash.method2057(WhirlpoolHash.method2057(13762560, i_19_), -1828716544)
                             ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(13828096, i_22_)
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_] = i_16_
+                            RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_]!![i_22_] = i_16_
                             i_17_ = 0xfff and i_17_ - -1
                         }
-                        if (anInt7319 > 1 + i_19_ && (RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![1 + i_19_]!![i_22_]) != i_16_ && ((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && ((GraphicsOptionState.aByteArrayArrayArray6962!![CompiledScriptCache.anInt4372]!![i_19_ + 1]!![i_22_ + 1]).toInt() and 0x4) == 0) {
+                        if (anInt7319 > 1 + i_19_ && (RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![1 + i_19_]!![i_22_]) != i_16_ && ((GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_19_]!![i_22_]).toInt() and 0x4) == 0 && ((GraphicsOptionState.aByteArrayArrayArray6962!![QuickChatMenuTypeList.anInt4372]!![i_19_ + 1]!![i_22_ + 1]).toInt() and 0x4) == 0) {
                             PcmStreamBuffer.anIntArray8862!![i_17_] = (WhirlpoolHash.method2057(-771751936, WhirlpoolHash.method2057(i_19_ - -1, 9568256)))
                             ClientException.anIntArray110!![i_17_] = WhirlpoolHash.method2057(i_22_, 9633792)
-                            RegionSceneLoader.aByteArrayArrayArray3700!![CompiledScriptCache.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
+                            RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_ - -1]!![i_22_] = i_16_
                             i_17_ = 0xfff and i_17_ - -1
                         }
                     }

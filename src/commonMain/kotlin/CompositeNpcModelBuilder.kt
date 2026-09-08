@@ -11,10 +11,10 @@ class CompositeNpcModelBuilder {
     var aBoolean2100: Boolean = false
     private var aLong2102: Long = 0
     private var anInt2103 = 0
-    fun method1226(varResolver: VarResolver?, widgetDefinition: WidgetDefinition?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, modelHeaderCache: ModelHeaderCache?, i: Int, widgetDefinition_0_: WidgetDefinition?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, bufferedMessageQueue: BufferedMessageQueue?, widgetCache: WidgetCache?, i_6_: Int, i_7_: Int, i_8_: Int, npcDefinitionCache: NpcDefinitionCache?): AbstractModel? {
+    fun method1226(varResolver: VarResolver?, widgetDefinition: WidgetDefinition?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, itemTypeList: ItemTypeList?, i: Int, widgetDefinition_0_: WidgetDefinition?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, modelDefinitionLoader: ModelDefinitionLoader?, i_5_: Int, var_renderer: Renderer?, npcTypeList: NpcTypeList?, animationTypeList: AnimationTypeList?, i_6_: Int, i_7_: Int, i_8_: Int, npcDefinitionCache: NpcDefinitionCache?): AbstractModel? {
         try {
             anInt2097++
-            if (this.anInt2093 != -1) return (bufferedMessageQueue!!.method2079(this.anInt2093, -1).method800(i, loadProgressCounters, widgetCache, !bool_2_, widgetDefinition, i_8_, npcDefinitionCache, i_7_, widgetDefinition_0_, varResolver, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
+            if (this.anInt2093 != -1) return (npcTypeList!!.method2079(this.anInt2093, -1).method800(i, loadProgressCounters, animationTypeList, !bool_2_, widgetDefinition, i_8_, npcDefinitionCache, i_7_, widgetDefinition_0_, varResolver, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
             var i_9_ = i_4_
             var l = aLong2102
             var is_10_ = anIntArray2092
@@ -49,14 +49,14 @@ class CompositeNpcModelBuilder {
             while (i_16_ > i_17_) {
                 DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_] = null
                 if (loadProgressCounters!![i_17_] != null) {
-                    val class17_18_ = widgetCache!!.method835((loadProgressCounters[i_17_]!!.anInt2454), 7)
+                    val class17_18_ = animationTypeList!!.method835((loadProgressCounters[i_17_]!!.anInt2454), 7)
                     if (class17_18_.anIntArray237 != null) {
                         bool_15_ = true
                         MapSceneTile.aWidgetDefinitionArray1048s!![i_17_] = class17_18_
                         val i_19_ = loadProgressCounters[i_17_]!!.anInt2451
                         val i_20_ = loadProgressCounters[i_17_]!!.anInt2455
                         var i_21_ = class17_18_.anIntArray237[i_19_]
-                        DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_] = widgetCache.method839(i_21_ ushr 16, 3)
+                        DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_] = animationTypeList.method839(i_21_ ushr 16, 3)
                         i_21_ = i_21_ and 0xffff
                         ScanlineRasterFiller.anIntArray2471!![i_17_] = i_21_
                         if (DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_17_] != null) {
@@ -68,7 +68,7 @@ class CompositeNpcModelBuilder {
                             MinimapRenderer.anIntArray1583!![i_17_] = class17_18_.anIntArray267!![i_19_]
                             MinimapPolygonDrawer.anIntArray5241!![i_17_] = loadProgressCounters[i_17_]!!.anInt2456
                             var i_22_ = class17_18_.anIntArray237[i_20_]
-                            LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_] = widgetCache.method839(i_22_ ushr 16, 3)
+                            LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_] = animationTypeList.method839(i_22_ ushr 16, 3)
                             i_22_ = i_22_ and 0xffff
                             BoxedIntHolder.anIntArray2967!![i_17_] = i_22_
                             if (LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_17_] != null) {
@@ -100,7 +100,7 @@ class CompositeNpcModelBuilder {
                 if (widgetDefinition_0_ != null) {
                     i_23_ = widgetDefinition_0_.anIntArray237[i_7_]
                     val i_32_ = i_23_ ushr 16
-                    class348_sub42_sub17 = widgetCache!!.method839(i_32_, 3)
+                    class348_sub42_sub17 = animationTypeList!!.method839(i_32_, 3)
                     i_23_ = i_23_ and 0xffff
                     if (class348_sub42_sub17 != null) {
                         bool_13_ = bool_13_ or class348_sub42_sub17.method3272(i_23_, 0)
@@ -111,7 +111,7 @@ class CompositeNpcModelBuilder {
                         i_24_ = widgetDefinition_0_.anIntArray237[i_1_]
                         i_25_ = widgetDefinition_0_.anIntArray267!![i_7_]
                         val i_33_ = i_24_ ushr 16
-                        class348_sub42_sub17_26_ = (if (i_32_ == i_33_) class348_sub42_sub17 else widgetCache.method839(i_33_, 3))
+                        class348_sub42_sub17_26_ = (if (i_32_ == i_33_) class348_sub42_sub17 else animationTypeList.method839(i_33_, 3))
                         i_24_ = i_24_ and 0xffff
                         if (class348_sub42_sub17_26_ != null) {
                             bool_13_ = bool_13_ or class348_sub42_sub17_26_.method3272(i_24_, 0)
@@ -125,7 +125,7 @@ class CompositeNpcModelBuilder {
                     i_27_ = widgetDefinition.anIntArray237[i_6_]
                     val i_34_ = i_27_ ushr 16
                     i_27_ = i_27_ and 0xffff
-                    class348_sub42_sub17_30_ = widgetCache!!.method839(i_34_, 3)
+                    class348_sub42_sub17_30_ = animationTypeList!!.method839(i_34_, 3)
                     if (class348_sub42_sub17_30_ != null) {
                         bool_13_ = bool_13_ or class348_sub42_sub17_30_.method3272(i_27_, 0)
                         bool_12_ = bool_12_ or class348_sub42_sub17_30_.method3271(i_27_, 14)
@@ -136,7 +136,7 @@ class CompositeNpcModelBuilder {
                         i_29_ = widgetDefinition.anIntArray267!![i_6_]
                         val i_35_ = i_28_ ushr 16
                         i_28_ = i_28_ and 0xffff
-                        class348_sub42_sub17_31_ = (if (i_35_ == i_34_) class348_sub42_sub17_30_ else widgetCache.method839(i_35_, 3))
+                        class348_sub42_sub17_31_ = (if (i_35_ == i_34_) class348_sub42_sub17_30_ else animationTypeList.method839(i_35_, 3))
                         if (class348_sub42_sub17_31_ != null) {
                             bool_13_ = bool_13_ or class348_sub42_sub17_31_.method3272(i_28_, 0)
                             bool_12_ = bool_12_ or class348_sub42_sub17_31_.method3271(i_28_, 14)
@@ -162,7 +162,7 @@ class CompositeNpcModelBuilder {
                     val i_39_ = is_10_!![i_38_]
                     if ((0x40000000 and i_39_) == 0) {
                         if ((0x7fffffff.inv() and i_39_) != 0 && !modelDefinitionLoader!!.method1203(33.toByte(), i_39_ and 0x3fffffff).method348(34.toByte())) bool_37_ = true
-                    } else if (!modelHeaderCache!!.method1940(94, 0x3fffffff and i_39_).method1565(this.aBoolean2100, -1)) bool_37_ = true
+                    } else if (!itemTypeList!!.method1940(94, 0x3fffffff and i_39_).method1565(this.aBoolean2100, -1)) bool_37_ = true
                 }
                 if (bool_37_) {
                     if (aLong2094 != -1L) {
@@ -181,7 +181,7 @@ class CompositeNpcModelBuilder {
                                 if (class124 != null) modelDefinitions[i_40_] = class124
                             }
                         } else {
-                            val class124 = (modelHeaderCache!!.method1940(104, i_41_ and 0x3fffffff).method1558(this.aBoolean2100, !bool_2_))
+                            val class124 = (itemTypeList!!.method1940(104, i_41_ and 0x3fffffff).method1558(this.aBoolean2100, !bool_2_))
                             if (class124 != null) modelDefinitions[i_40_] = class124
                         }
                     }
@@ -280,23 +280,23 @@ class CompositeNpcModelBuilder {
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(
                 runtimeexception,
-                ("oo.C(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ')')
+                ("oo.C(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (itemTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ')')
             )
         }
     }
 
-    fun method1227(i: Byte, i_61_: Int, i_62_: Int, modelHeaderCache: ModelHeaderCache?) {
+    fun method1227(i: Byte, i_61_: Int, i_62_: Int, itemTypeList: ItemTypeList?) {
         try {
             if (i.toInt() == 42) {
                 anInt2099++
                 if (i_62_ == -1) anIntArray2092!![i_61_] = 0
-                else if (modelHeaderCache!!.method1940(-125, i_62_) != null) {
+                else if (itemTypeList!!.method1940(-125, i_62_) != null) {
                     anIntArray2092!![i_61_] = WhirlpoolHash.method2057(1073741824, i_62_)
                     method1234(-100)
                 }
             }
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (if (modelHeaderCache != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oo.H(" + i + ',' + i_61_ + ',' + i_62_ + ',' + (if (itemTypeList != null) "{...}" else "null") + ')'))
         }
     }
 
@@ -322,10 +322,10 @@ class CompositeNpcModelBuilder {
         method1234(-78)
     }
 
-    fun method1230(modelHeaderCache: ModelHeaderCache?, i: Int, widgetCache: WidgetCache?, modelDefinitionLoader: ModelDefinitionLoader?, varResolver: VarResolver?, bufferedMessageQueue: BufferedMessageQueue?, i_66_: Int, i_67_: Int, i_68_: Int, widgetDefinition: WidgetDefinition?, i_69_: Int, var_renderer: Renderer?): AbstractModel? {
+    fun method1230(itemTypeList: ItemTypeList?, i: Int, animationTypeList: AnimationTypeList?, modelDefinitionLoader: ModelDefinitionLoader?, varResolver: VarResolver?, npcTypeList: NpcTypeList?, i_66_: Int, i_67_: Int, i_68_: Int, widgetDefinition: WidgetDefinition?, i_69_: Int, var_renderer: Renderer?): AbstractModel? {
         try {
             anInt2107++
-            if (this.anInt2093 != -1) return (bufferedMessageQueue!!.method2079(this.anInt2093, -1).method803(varResolver, var_renderer, i_69_, i_67_, widgetDefinition, widgetCache, i_66_, 121, i_68_))
+            if (this.anInt2093 != -1) return (npcTypeList!!.method2079(this.anInt2093, -1).method803(varResolver, var_renderer, i_69_, i_67_, widgetDefinition, animationTypeList, i_66_, 121, i_68_))
             var i_70_ = i_68_
             if (widgetDefinition != null) {
                 var bool = false
@@ -340,7 +340,7 @@ class CompositeNpcModelBuilder {
                 i_74_ = widgetDefinition.anIntArray237[i_66_]
                 val i_77_ = i_74_ ushr 16
                 i_74_ = i_74_ and 0xffff
-                val class348_sub42_sub17 = widgetCache!!.method839(i_77_, 3)
+                val class348_sub42_sub17 = animationTypeList!!.method839(i_77_, 3)
                 if (class348_sub42_sub17 != null) {
                     bool_71_ = bool_71_ or class348_sub42_sub17.method3272(i_74_, 0)
                     bool = bool or class348_sub42_sub17.method3271(i_74_, 14)
@@ -350,7 +350,7 @@ class CompositeNpcModelBuilder {
                 if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_67_ != -1 && i_67_ < widgetDefinition.anIntArray237.size) {
                     i_75_ = widgetDefinition.anIntArray237[i_67_]
                     val i_78_ = i_75_ ushr 16
-                    val class348_sub42_sub17_79_ = (if (i_78_ != i_77_) widgetCache.method839(i_78_, i xor 0x17f6eb54.inv()) else class348_sub42_sub17)
+                    val class348_sub42_sub17_79_ = (if (i_78_ != i_77_) animationTypeList.method839(i_78_, i xor 0x17f6eb54.inv()) else class348_sub42_sub17)
                     i_75_ = i_75_ and 0xffff
                     if (class348_sub42_sub17_79_ != null) {
                         bool_71_ = bool_71_ or class348_sub42_sub17_79_.method3272(i_75_, 0)
@@ -375,7 +375,7 @@ class CompositeNpcModelBuilder {
                 for (i_81_ in 0..11) {
                     val i_82_ = anIntArray2092!![i_81_]
                     if ((i_82_ and 0x40000000) != 0) {
-                        if (!modelHeaderCache!!.method1940(i xor 0x17f6eb2c, 0x3fffffff and i_82_).method1555(97.toByte(), this.aBoolean2100)) bool = true
+                        if (!itemTypeList!!.method1940(i xor 0x17f6eb2c, 0x3fffffff and i_82_).method1555(97.toByte(), this.aBoolean2100)) bool = true
                     } else if ((0x7fffffff.inv() and i_82_) != 0 && !modelDefinitionLoader!!.method1203(33.toByte(), i_82_ and 0x3fffffff).method342(110.toByte())) bool = true
                 }
                 if (bool) return null
@@ -389,7 +389,7 @@ class CompositeNpcModelBuilder {
                             if (class124 != null) modelDefinitions[i_83_++] = class124
                         }
                     } else {
-                        val class124 = (modelHeaderCache!!.method1940(-107, i_85_ and 0x3fffffff).method1554(this.aBoolean2100, -14))
+                        val class124 = (itemTypeList!!.method1940(-107, i_85_ and 0x3fffffff).method1554(this.aBoolean2100, -14))
                         if (class124 != null) modelDefinitions[i_83_++] = class124
                     }
                 }
@@ -415,7 +415,7 @@ class CompositeNpcModelBuilder {
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(
                 runtimeexception,
-                ("oo.J(" + (if (modelHeaderCache != null) "{...}" else "null") + ',' + i + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (bufferedMessageQueue != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
+                ("oo.J(" + (if (itemTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
             )
         }
     }
@@ -428,7 +428,7 @@ class CompositeNpcModelBuilder {
         }
     }
 
-    fun method1232(i: Int, i_91_: Int, i_92_: Int, i_93_: Int, widgetCache: WidgetCache?, modelDefinitionLoader: ModelDefinitionLoader?, i_94_: Int, i_95_: Int, i_96_: Int, var_renderer: Renderer?, i_97_: Int, widgetDefinition: WidgetDefinition?): AbstractModel? {
+    fun method1232(i: Int, i_91_: Int, i_92_: Int, i_93_: Int, animationTypeList: AnimationTypeList?, modelDefinitionLoader: ModelDefinitionLoader?, i_94_: Int, i_95_: Int, i_96_: Int, var_renderer: Renderer?, i_97_: Int, widgetDefinition: WidgetDefinition?): AbstractModel? {
         try {
             anInt2106++
             var i_98_ = i_91_
@@ -444,7 +444,7 @@ class CompositeNpcModelBuilder {
                 i_98_ = i_98_ or 0x20
                 i_102_ = widgetDefinition.anIntArray237[i_97_]
                 val i_105_ = i_102_ ushr 16
-                val class348_sub42_sub17 = widgetCache!!.method839(i_105_, 3)
+                val class348_sub42_sub17 = animationTypeList!!.method839(i_105_, 3)
                 i_102_ = i_102_ and 0xffff
                 if (class348_sub42_sub17 != null) {
                     bool_99_ = bool_99_ or class348_sub42_sub17.method3272(i_102_, i_94_ xor 0x3be2.inv())
@@ -457,7 +457,7 @@ class CompositeNpcModelBuilder {
                     val i_106_ = i_103_ ushr 16
                     i_103_ = i_103_ and 0xffff
                     val class348_sub42_sub17_107_: TextureMaterialGroup?
-                    if (i_105_ != i_106_) class348_sub42_sub17_107_ = widgetCache.method839(i_103_ ushr 16, 3)
+                    if (i_105_ != i_106_) class348_sub42_sub17_107_ = animationTypeList.method839(i_103_ ushr 16, 3)
                     else class348_sub42_sub17_107_ = class348_sub42_sub17
                     if (class348_sub42_sub17_107_ != null) {
                         bool_99_ = bool_99_ or class348_sub42_sub17_107_.method3272(i_103_, 0)
@@ -508,7 +508,7 @@ class CompositeNpcModelBuilder {
             abstractModel = widgetDefinition.method269(-32, abstractModel!!, i, i_96_, i_91_, i_97_)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (widgetCache != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
         }
     }
 

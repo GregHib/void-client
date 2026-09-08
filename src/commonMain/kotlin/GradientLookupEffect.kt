@@ -336,7 +336,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
 
         var anInt9193: Int = 0
 
-        var aSeqDefinitionCache_9195: SeqDefinitionCache? = null
+        var aObjectTypeList_9195: ObjectTypeList? = null
 
         var anInt9196: Int = 0
 
@@ -379,7 +379,7 @@ class GradientLookupEffect : AbstractProceduralTextureNode(1, false) {
             aFontMetaRef_9189 = null
             InboundPacketHeader.aInboundPacketHeader_9197 = null
             if (i.toInt() != -98) method3077(27.toByte())
-            aSeqDefinitionCache_9195 = null
+            aObjectTypeList_9195 = null
         }
     }
 }
