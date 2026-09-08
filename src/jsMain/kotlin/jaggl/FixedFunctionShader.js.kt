@@ -382,7 +382,6 @@ fun uploadFfFragmentUniforms(gl: WebGL2RenderingContext, state: GlState, L: FfFr
         gl.uniform4fv(L.fogColor, state.fogColor.asFloat32Array())
         gl.uniform1f(L.fogStart, state.fogStart)
         gl.uniform1f(L.fogEnd, state.fogEnd)
-//        println("[FOGDBG] uploadFfFragmentUniforms programChanged=$programChanged fogEnabled=${state.fogEnabled} fogColor=(${state.fogColor[0]}, ${state.fogColor[1]}, ${state.fogColor[2]}) fogStart=${state.fogStart} fogEnd=${state.fogEnd}")
     }
     for (unit in 0 until 3) {
         val cube = state.textureTarget[unit] == GL_TEXTURE_CUBE_MAP
@@ -393,7 +392,6 @@ fun uploadFfFragmentUniforms(gl: WebGL2RenderingContext, state: GlState, L: FfFr
             gl.uniform1i(L.is3D[unit], if (state.texturingEnabled[unit] && is3d) 1 else 0)
             gl.uniform1i(L.cubeMap[unit], if (cube) 1 else 0)
             if (state.texturingEnabled[unit]) uploadFfCombine(gl, L, state, unit)
-//            println("[FOGDBG] texenv[$unit] programChanged=$programChanged texturingEnabled=${state.texturingEnabled[unit]} is3d=$is3d cube=$cube useTextureLocNull=${L.useTexture[unit] == null} boundTex2D=${state.boundTexture2D[unit] != null} boundTex3D=${state.boundTexture3D[unit] != null}")
         }
         // Copy the logical-unit binding onto the reserved sampler unit (2D samplers read
         // their logical unit directly, cube/3D samplers read the reserved ones).

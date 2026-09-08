@@ -431,7 +431,7 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             ParticleTileShape.anInt8818 = i_21_
             FacingDirectionNode.anApplet6662 = null
             RsaVarbitHandler.aFrame4904 = Frame()
-            RsaVarbitHandler.aFrame4904!!.setTitle("Jagex")
+            RsaVarbitHandler.aFrame4904!!.setTitle("Void")
             RsaVarbitHandler.aFrame4904!!.setResizable(true)
             RsaVarbitHandler.aFrame4904!!.addWindowListener(this)
             RsaVarbitHandler.aFrame4904!!.setVisible(true)

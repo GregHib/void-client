@@ -650,7 +650,7 @@ class Client : GameAppletFrame() {
     public override fun method92(i: Int) {
         if (ServerConnectionInfo.aBoolean2151) TextureDefinitionCache.anInt2964 = 64
         anInt5177++
-        val frame = Frame("Jagex")
+        val frame = Frame("Void")
         frame.pack()
         frame.dispose()
         method3556(false)

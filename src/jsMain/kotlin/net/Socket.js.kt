@@ -5,18 +5,11 @@ import io.InputStream
 import io.OutputStream
 import io.asUint8Array
 import io.checkBounds
+import kotlinx.browser.window
 import org.khronos.webgl.ArrayBuffer
 import org.khronos.webgl.Int8Array
 import org.w3c.dom.MessageEvent
 import org.w3c.dom.WebSocket
-
-/**
- * Test relay: tailscale serve fronts a fixed WebSocket<->TCP bridge that always forwards to "the
- * games tcp server", so the host/port a caller asks for is not sent anywhere - every Socket opens
- * the same WebSocket. When there's a real JS5 bridge that can route by target, this constant (and
- * the ignored host/port) is what needs to grow a query string or path segment.
- */
-private const val RELAY_URL = "ws://localhost:8081/bridge"
 
 /**
  * A browser cannot open a raw TCP socket, so this tunnels through a WebSocket relay instead. The
@@ -35,7 +28,7 @@ actual open class Socket actual constructor(host: String?, port: Int) {
     private var closed = false
     private var error: IOException? = null
 
-    private val ws: WebSocket = WebSocket(RELAY_URL)
+    private val ws: WebSocket = WebSocket("${window.asDynamic().CONFIG.url}")
     private val outQueue = mutableListOf<ByteArray>()
     private val inChunks = ArrayDeque<Int8Array>()
     private var inChunkOffset = 0

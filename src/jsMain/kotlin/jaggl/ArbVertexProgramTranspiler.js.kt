@@ -968,12 +968,6 @@ internal class ArbProgramRuntime {
             return false
         }
         status = Status.OK
-        println(
-            "ARBvp program loaded (locals[0..$maxLocalIndex], lights[0..$maxLightIndex]" +
-                (if (usesLightState) ", lightState" else "") +
-                (if (usesLightModelAmbient) ", lightModelAmbient" else "") +
-                ")"
-        )
         return true
     }
 
