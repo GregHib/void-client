@@ -291,7 +291,7 @@ class FlipTextureNode : AbstractProceduralTextureNode(1, false) {
                                                         i_38_ += 12
                                                         WorldMapRenderer.aRSFont_4684!!.method2569("Region id: " + (((playerX shr 6) shl 8) + (playerY shr 6)) + " (" + (playerX shr 6) + ", " + (playerY shr 6) + ")", i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
-                                                        WorldMapRenderer.aRSFont_4684!!.method2569("Chunk: " + (playerX shr 3) + ", " + (playerY shr 3), i_38_, -256, i_37_, -127, -1)
+                                                        WorldMapRenderer.aRSFont_4684!!.method2569("Zone: " + (playerX shr 3) + ", " + (playerY shr 3), i_38_, -256, i_37_, -127, -1)
                                                         i_38_ += 12
                                                     }
                                                 }
