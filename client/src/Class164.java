@@ -125,6 +125,7 @@ final class Class164 {
             Class126.aClass45_4984 = Class369_Sub2.method3571(true, 30, (byte) -23, 1);
             Class136.aClass45_4796 = Class369_Sub2.method3571(true, 31, (byte) -23, 1);
             Class146.aClass45_2015 = Class369_Sub2.method3571(true, 36, (byte) -23, 2);
+            MidiSongDumper.dumpAll(Class59_Sub2_Sub1.aClass45_8667);
         }
         if (Class56.aClass56_1031 == Class348_Sub42_Sub15.aClass56_9660) {
             int i_8_ = 0;
