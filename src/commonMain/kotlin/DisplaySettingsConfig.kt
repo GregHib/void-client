@@ -1,6 +1,3 @@
-import lang.Class
-import lang.IllegalAccessException
-import lang.jClass
 import kotlin.jvm.JvmStatic
 import kotlin.math.max
 
@@ -247,26 +244,46 @@ class DisplaySettingsConfig : LinkedListNode {
         return this.aClass239_Sub25_7271!!.method1830((-120).toByte()) && (this.aClass239_Sub25_7271!!.method1829(-32350) == 0) && aLoadingScreenState_7221!!.method1458(-23688) < 96
     }
 
+    /**
+     * Every GraphicsOptionState field of this class, listed explicitly.
+     *
+     * [method3426] used to discover these with `getDeclaredFields()`. Kotlin/JS erases field
+     * metadata, so `Class.getDeclaredFields()` returns an empty array there (see
+     * jsMain/lang/Class.js.kt) and the post-load validation pass silently did nothing on the
+     * web client. Listing the fields keeps both platforms identical and independent of
+     * reflection. Keep in sync when adding an option.
+     */
+    private fun graphicsOptions(): Array<GraphicsOptionState?> = arrayOf(
+        this.aClass239_Sub26_7215, this.aClass239_Sub20_7216, this.aClass239_Sub4_7220,
+        this.aClass239_Sub3_7222, this.aClass239_Sub15_7224, this.aClass239_Sub6_7226,
+        this.aClass239_Sub8_7227, this.aClass239_Sub2_7228, this.aClass239_Sub29_7229,
+        this.aClass239_Sub28_7230, this.aClass239_Sub23_7231, this.brightnessSetting,
+        this.aClass239_Sub26_7234, this.aClass239_Sub24_7235, this.aClass239_Sub13_7236,
+        this.aClass239_Sub7_7238, this.aClass239_Sub5_7240, this.aClass239_Sub12_7243,
+        this.aClass239_Sub26_7245, this.aClass239_Sub1_7246, this.aClass239_Sub16_7247,
+        this.aClass239_Sub20_7248, this.aClass239_Sub14_7250, this.aClass239_Sub25_7251,
+        this.aClass239_Sub22_7253, this.aClass239_Sub8_7254, this.aClass239_Sub27_7255,
+        this.aClass239_Sub9_7256, this.aClass239_Sub19_7257, this.aClass239_Sub18_7259,
+        this.aClass239_Sub26_7260, this.aClass239_Sub27_7261, this.aClass239_Sub17_7263,
+        this.aClass239_Sub14_7264, this.aClass239_Sub11_7265, this.aClass239_Sub21_7270,
+        this.aClass239_Sub25_7271, this.aClass239_Sub26_7272,
+    )
+
+    /**
+     * Re-validates every graphics option after they have been loaded or changed: each
+     * [GraphicsOptionState.method1716] clamps an out-of-range saved value and forces options
+     * the hardware cannot honour. DefaultGraphicsOptionState recomputes unconditionally,
+     * because it is derived from the renderer's capabilities rather than a user preference -
+     * and its value selects which of an opcode-5 ObjectType's two model-id lists is read
+     * (ObjectTypeList.aBoolean3355). While this pass was a no-op on JS, a stale saved value
+     * survived and the client loaded the wrong model for many walls and roofs, which then
+     * drew nothing visible.
+     */
     private fun method3426(i: Byte) {
         anInt7219++
-        try {
-            val fields = this.jClass.getDeclaredFields()
-            if (i.toInt() != 36) aLoadingScreenState_7221 = null
-            val fields_5_ = fields
-            var i_6_ = 0
-            while (fields_5_.size > i_6_) {
-                val field = fields_5_[i_6_]
-                if ((if (aClass7273 != null) aClass7273 else (GraphicsOptionState::class.jClass.also { aClass7273 = it }))!!.isAssignableFrom(field.getType())) {
-                    val graphicsOptionState = field.get(this) as GraphicsOptionState
-                    graphicsOptionState.method1716(false)
-                }
-                i_6_++
-            }
-        } catch (illegalaccessexception: IllegalAccessException) {
-            if (Config.trace) {
-                illegalaccessexception.printStackTrace()
-            }
-            /* empty */
+        if (i.toInt() != 36) aLoadingScreenState_7221 = null
+        for (graphicsOptionState in graphicsOptions()) {
+            graphicsOptionState?.method1716(false)
         }
     }
 
@@ -2944,9 +2961,6 @@ class DisplaySettingsConfig : LinkedListNode {
 
         var anInt7267: Int
         private var aShortArrayArray7268: Array<ShortArray?>?
-
-        /*synthetic*/
-        var aClass7273: Class<*>? = null
 
         @JvmStatic
         fun method3430(bool: Boolean) {
