@@ -1,0 +1,37 @@
+---
+description: On any evidenced understanding of obfuscated client code, run void-client-deobfuscate skill
+alwaysApply: true
+---
+
+# Deobfuscate when you learn
+
+When you **figure out** what an obfuscated class / method / field / constant / flow does (call sites, strings, protocol, bit flags — not guesses), **do not leave the names as-is**.
+
+## Mandatory next step
+
+1. Read and follow the skill:
+   `.cursor/skills/void-client-deobfuscate/SKILL.md`
+2. Also follow the workspace rename+comment rule (`void-client-deobfuscate.mdc`).
+3. Apply a small lote: rename with evidence, comment densely, sync reflection strings if needed, verify.
+
+## Triggers (any of these)
+
+- Bugfix that reveals intent (`item` console echo, camera, packets, …)
+- You can explain a `method####` / `anInt####` / `aBoolean####` / opaque class in plain English
+- A misnamed type (e.g. “NumberFormatter” that is actually an item def)
+- User asks to clarify / rename / “desofuscar”
+
+## Do not skip
+
+- Waiting for the user to say `/void-client-deobfuscate` — if you learned it, deobfuscate in the same turn (or immediately after the fix).
+- Renaming without evidence, global replace of non-unique `methodNNN`, or skipping `check_reflection.py` when hosts look up members by string.
+
+## Verify before claiming done
+
+```bash
+python3 .cursor/skills/void-client-deobfuscate/scripts/check_reflection.py
+./gradlew :client:compileJava
+cd ios && ./gradlew compileJava
+```
+
+Commit / push only when the user asks.

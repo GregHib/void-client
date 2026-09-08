@@ -1,0 +1,2 @@
+void-osrs widget-map group=750
+750:0 t0 'layer' 57x34 @0,0 opt=' '

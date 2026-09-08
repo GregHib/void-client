@@ -1,0 +1,5 @@
+void-osrs widget-map group=884
+884:0 t4 'Unarmed' 180x17 @4,4
+884:1 t4 'Combat Lvl: 0' 180x12 @4,25
+884:2 t0 'layer' 190x261 @0,0
+884:9 t0 'layer' 190x261 @0,0

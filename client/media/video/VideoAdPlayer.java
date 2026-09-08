@@ -1,0 +1,98 @@
+/* VideoAdPlayer - Decompiled by JODE
+ * Visit http://jode.sourceforge.net/
+ */
+
+/**
+ * RENAMED from `Class67` (JODE-obfuscated).
+ * Video advertisement player. Implements Interface1; starts/stops ad playback ('showVideoAd') and reports playback state back to the ad display.
+ */
+
+final class VideoAdPlayer implements Interface1 {
+    static int anInt4642;
+    static Component24 aClass105_4643;
+    static int anInt4644;
+    static int anInt4645;
+    private final HeapDumpHelper aClass158_4646;
+    static int anInt4647;
+    static int[] anIntArray4648 = new int[14];
+    private BitmapFont aClass324_4649;
+    private final CacheStore aClass45_4650;
+    private final CacheStore aClass45_4651;
+
+    public static void method716(int i) {
+        if (i == 1) {
+            aClass105_4643 = null;
+            anIntArray4648 = null;
+        }
+    }
+
+    public final void method9(byte i, boolean bool) {
+        if (bool) {
+            int i_0_ = ((aClass158_4646.aClass221_4948.method1607(DisplayModeManagerContainer23.canvasWidth, aClass158_4646.anInt4931, (byte) -119)) + aClass158_4646.anInt4947);
+            int i_1_ = ((aClass158_4646.aClass341_4945.getAlignedOffset(GlToolkitSub2.canvasHeight, aClass158_4646.anInt4936, i + 1644)) + aClass158_4646.anInt4932);
+            aClass324_4649.method2584(null, aClass158_4646.anInt4937, aClass158_4646.anInt4940, null, aClass158_4646.anInt4935, aClass158_4646.anInt4946, aClass158_4646.anInt4936, null, i_1_, 0, 0, aClass158_4646.anInt4931, i_0_, false, aClass158_4646.anInt4943, aClass158_4646.aString4942);
+        }
+        if (i == -49) anInt4642++;
+    }
+
+    public final boolean method8(byte i) {
+        anInt4644++;
+        boolean bool = true;
+        if (!aClass45_4650.isSingletonFileReady(false, aClass158_4646.anInt4944)) bool = false;
+        if (!aClass45_4651.isSingletonFileReady(false, aClass158_4646.anInt4944)) bool = false;
+        int i_2_ = -53 % ((i - 25) / 52);
+        return bool;
+    }
+
+    static final boolean method717(int i) {
+        anInt4645++;
+        if (Component156.aBoolean3697) {
+            try {
+                AppletInvoker.callAppletNoArgs((byte) 125, ToolkitFactory.anApplet1530, "showVideoAd");
+                return true;
+            } catch (Throwable throwable) {
+                /* empty */
+            }
+        }
+        if (i != -2511) method716(-67);
+        return false;
+    }
+
+    public final void method7(int i) {
+        anInt4647++;
+        Component184 class143 = Component98.method1766((byte) -45, aClass158_4646.anInt4944, aClass45_4651);
+        if (i == 10286) aClass324_4649 = (NodeSub8.toolkit.method3686(class143, Component170.method1523(aClass45_4650, aClass158_4646.anInt4944), true));
+    }
+
+    VideoAdPlayer(CacheStore class45, CacheStore class45_3_, HeapDumpHelper class158) {
+        try {
+            aClass45_4651 = class45_3_;
+            aClass158_4646 = class158;
+            aClass45_4650 = class45;
+        } catch (RuntimeException runtimeexception) {
+            throw NpcDefinition.wrapThrowable(runtimeexception, ("kd.<init>(" + (class45 != null ? "{...}" : "null") + ',' + (class45_3_ != null ? "{...}" : "null") + ',' + (class158 != null ? "{...}" : "null") + ')'));
+        }
+    }
+
+    static final void method718(RenderableObject[] class318_sub1s, int i, int i_4_) {
+        if (i < i_4_) {
+            int i_5_ = (i + i_4_) / 2;
+            int i_6_ = i;
+            RenderableObject class318_sub1 = class318_sub1s[i_5_];
+            class318_sub1s[i_5_] = class318_sub1s[i_4_];
+            class318_sub1s[i_4_] = class318_sub1;
+            int i_7_ = class318_sub1.anInt6389;
+            for (int i_8_ = i; i_8_ < i_4_; i_8_++) {
+                if (class318_sub1s[i_8_].anInt6389 > i_7_ + (i_8_ & 0x1)) {
+                    RenderableObject class318_sub1_9_ = class318_sub1s[i_8_];
+                    class318_sub1s[i_8_] = class318_sub1s[i_6_];
+                    class318_sub1s[i_6_++] = class318_sub1_9_;
+                }
+            }
+            class318_sub1s[i_4_] = class318_sub1s[i_6_];
+            class318_sub1s[i_6_] = class318_sub1;
+            method718(class318_sub1s, i, i_6_ - 1);
+            method718(class318_sub1s, i_6_ + 1, i_4_);
+        }
+    }
+}

@@ -1,0 +1,9 @@
+void-osrs widget-map group=192
+192:0 t0 'layer' 190x229 @0,0
+192:1 t0 'layer' 190x261 @0,0 opt=' '
+192:4 t0 'layer' 190x261 @0,0
+192:5 t0 'layer' 190x261 @0,0
+192:6 t0 'layer' 190x261 @0,0
+192:94 t0 'layer' 16x228 @173,1 opt='  '
+192:95 t0 'layer' 180x40 @5,196 opt='  '
+192:97 t0 'layer' 190x261 @0,0

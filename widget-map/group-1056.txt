@@ -1,0 +1,5 @@
+void-osrs widget-map group=1056
+1056:96 t0 'layer' 174x262 @0,0
+1056:97 t0 'layer' 190x41 @0,0
+1056:98 t0 'layer' 190x203 @0,41
+1056:102 t0 'Open' 182x18 @4,241 opt='Open'

@@ -1,0 +1,19 @@
+void-osrs widget-map group=34
+34:0 t3 'iface' 190x201 @0,30 opt=' '
+34:1 t4 'Notes' 74x14 @58,7 opt=' '
+34:2 t4 'Delete' 165x27 @10,234
+34:3 t5 'Add note' 18x18 @9,4 spr=1842 opt='Add note'
+34:4 t5 'sprite:851' 190x32 @0,14 spr=851 opt=' '
+34:5 t5 'sprite:851' 190x32 @0,218 spr=851 opt='  '
+34:6 t0 'layer' 160x231 @10,30
+34:7 t0 'layer' 18x18 @166,239
+34:8 t5 'Delete' 18x18 @166,239 spr=1845 opt='Delete'
+34:15 t0 'layer' 16x201 @174,30 kids=6
+  34:15 t5 'sprite:792' 16x169 @0,16 spr=792
+  34:15 t5 'sprite:790' 16x169 @0,16 spr=790
+  34:15 t5 'sprite:789' 16x5 @0,16 spr=789
+  34:15 t5 'sprite:791' 16x5 @0,180 spr=791
+  34:15 t5 'sprite:773' 16x16 @0,0 spr=773
+  34:15 t5 'sprite:788' 16x16 @0,185 spr=788
+34:18 t0 'layer' 190x75 @0,0
+34:20 t0 'layer' 190x75 @0,186

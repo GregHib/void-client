@@ -1,0 +1,35 @@
+# Build outputs
+build/
+**/build/
+out/
+**/intermediates/
+
+# Gradle caches
+.gradle/
+**/.gradle/
+
+# Android NDK / local machine config
+**/.cxx/
+**/local.properties
+android/debug-screenshots/
+android/**/*.png
+
+# IDE / tooling caches
+.idea/
+**/*.iml
+.omo/
+.codegraph/
+
+# Compiled / packaged artifacts
+*.class
+*.dex
+*.apk
+*.aab
+*.ipa
+*.war
+*.ear
+*.nar
+
+# Logs / crash dumps
+*.log
+hs_err_pid*

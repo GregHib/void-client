@@ -107,3 +107,13 @@ hs_err_pid*
 # End of https://www.gitignore.io/api/java,intellij
 !/graphics/graphics.iml
 !/client/client.iml
+
+.gradle/
+
+# Local lab / dump artifacts
+widget-dumps/
+component-cards/
+deob-log*.ndjson
+
+build/reports/problems/problems-report.html
+client/build/tmp/compileJava/previous-compilation-data.bin

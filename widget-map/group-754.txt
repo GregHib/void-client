@@ -1,0 +1,2 @@
+void-osrs widget-map group=754
+754:0 t0 'layer' 512x69 @0,0

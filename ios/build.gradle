@@ -1,0 +1,128 @@
+buildscript {
+    ext.roboVMVersion = '2.3.25'
+    repositories {
+        mavenCentral()
+        gradlePluginPortal()
+    }
+    dependencies {
+        classpath files('tools/robovm-gradle-plugin-2.3.25-patched.jar')
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'robovm'
+
+repositories {
+    mavenCentral()
+}
+
+ext {
+    mainClassName = 'world.gregs.voidosrs.ios.Main'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+dependencies {
+    implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
+    implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
+}
+
+def generatedClient = layout.buildDirectory.dir('generated/client')
+def generatedShared = layout.buildDirectory.dir('generated/shared')
+
+sourceSets {
+    main {
+        java {
+            srcDir generatedShared
+            srcDir generatedClient
+            srcDir 'src/main/java'
+        }
+    }
+}
+
+tasks.register('prepareClientSources', Sync) {
+    // Flat merge into generated/client (all default package). Nested domain folders
+    // under client/ are organizational only — each .java must land at the dest root.
+    // Sync (not Copy) so excludes remove stale files (e.g. DeobProbe after desktop-only).
+    from(fileTree('../client') {
+        include '**/*.java'
+        exclude 'build/**'
+        // Real java.awt MouseWheelEvent ≠ voidawt — desktop-only poller.
+        exclude '**/DesktopGamepad.java'
+        exclude '**/DesktopAffiliationDisclaimer.java'
+        // Desktop-only deob NDJSON logger (lambdas / Function break RoboVM Soot AOT).
+        exclude '**/DeobProbe.java'
+        // Desktop-only widget crop dump (java.awt.Robot + ImageIO).
+        exclude '**/WidgetDump.java'
+    }) {
+        eachFile { details ->
+            details.path = details.name
+        }
+        includeEmptyDirs = false
+    }
+    into(generatedClient)
+    filter { String line ->
+        line
+            .replace('javax.swing', 'voidswing')
+            .replace('javax.sound', 'voidsound')
+            .replace('java.applet', 'voidapplet')
+            .replace('java.lang.management', 'voidmgmt')
+            .replace('com.sun.management', 'voidsun.management')
+            .replace('sun.net', 'voidsun.net')
+            .replace('java.awt', 'voidawt')
+    }
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    outputs.dir(generatedClient)
+}
+
+tasks.register('prepareSharedSources', Copy) {
+    from(file('../android/app/src/main/java')) {
+        exclude 'world/gregs/voidosrs/android/**'
+        exclude 'voidawt/AwtHost.java'
+        exclude 'voidawt/Graphics.java'
+        exclude 'voidawt/Font.java'
+        exclude 'voidawt/FontMetrics.java'
+        exclude 'voidawt/Toolkit.java'
+        exclude 'voidsound/sampled/PcmSourceDataLine.java'
+    }
+    into(generatedShared)
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
+    // Track output dir so a partial clean of generated/ invalidates UP-TO-DATE
+    // (avoids compile seeing AppletInvoker without netscape.javascript.JSObject).
+    outputs.dir(generatedShared)
+}
+
+tasks.named('compileJava') {
+    dependsOn 'prepareClientSources', 'prepareSharedSources'
+    options.encoding = 'UTF-8'
+}
+
+// void.platform=ios (default) | tvos — Apple TV uses AppleTVOS.sdk via patched RoboVM.
+def voidPlatform = (findProperty('void.platform') ?: 'ios').toString()
+def isTvOS = voidPlatform.equalsIgnoreCase('tvos')
+if (isTvOS) {
+    // Must be set before any RoboVM task resolves SDKs (same Gradle JVM).
+    System.setProperty('robovm.iosPlatform', 'AppleTVOS')
+    // Runtime TvHost.isTvOS() also checks this when idiom isn't available yet.
+    System.setProperty('void.platform', 'tvos')
+    System.out.println('void-osrs: RoboVM platform=AppleTVOS (tvOS flavor)')
+}
+
+robovm {
+    // Simulator can skip signing; device needs a development identity + profile.
+    iosSkipSigning = (findProperty('robovm.iosSkipSigning') ?: 'true').toString().toBoolean()
+    if (isTvOS) {
+        // Absolute paths — RoboVM resolves relative configFile against JVM CWD
+        // (Gradle daemon home), not the project dir.
+        configFile = file('robovm-tvos.xml').absolutePath
+        propertiesFile = file('robovm-tvos.properties').absolutePath
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.encoding = 'UTF-8'
+    options.compilerArgs << '-Xlint:none'
+}

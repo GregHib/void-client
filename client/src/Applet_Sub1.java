@@ -35,7 +35,7 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     private boolean aBoolean17 = false;
     static int anInt18;
     static int anInt19;
-    static Class324 aClass324_20;
+    static BitmapFont aClass324_20;
     static int anInt21;
     static int anInt22;
     static int anInt23;
@@ -76,17 +76,18 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
     public static boolean aBoolean58;
     public static int anInt59;
 
-    abstract void method80(int i);
+    /** Close toolkit, sockets, and cache files. */
+    abstract void closeResources(int i);
 
     public final void stop() {
         anInt24++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = Class62.method599(-73) - -4000L;
+        if (this == DefinitionSub9.anApplet_Sub1_9169 && !AssetCacheLoader.shuttingDown) Component22.aLong1739 = Component240.currentTimeMillis(-73) - -4000L;
     }
 
     public final String getParameter(String string) {
         anInt3++;
-        if (Class52.aFrame4904 != null) return null;
-        if (Class93.anApplet1530 != null && Class93.anApplet1530 != this) return Class93.anApplet1530.getParameter(string);
+        if (RSACipher.aFrame4904 != null) return null;
+        if (ToolkitFactory.anApplet1530 != null && ToolkitFactory.anApplet1530 != this) return ToolkitFactory.anApplet1530.getParameter(string);
         return super.getParameter(string);
     }
 
@@ -96,14 +97,15 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         return null;
     }
 
-    final void method82(int i, String string) {
+    /** Print {@code error_game_<string>} and redirect to error page once. */
+    final void reportGameError(int i, String string) {
         int i_0_ = 88 / ((i - -5) / 54);
         anInt22++;
         if (!aBoolean27) {
             aBoolean27 = true;
             System.out.println("error_game_" + string);
             try {
-                Class224.method1617((byte) 125, Class93.anApplet1530, "loggedout");
+                AppletInvoker.callAppletNoArgs((byte) 125, ToolkitFactory.anApplet1530, "loggedout");
             } catch (Throwable throwable) {
                 /* empty */
             }
@@ -119,30 +121,32 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         anInt16++;
     }
 
-    final boolean method83(boolean bool) {
+    /** Load the {@code jagmisc} native (timing / system helpers). */
+    final boolean tryLoadJagmisc(boolean bool) {
         if (bool != true) getDocumentBase();
         anInt5++;
-        return Class348_Sub40_Sub19.method3098(-30282, "jagmisc");
+        return DefinitionSub19.tryLoadNativeLibrary(-30282, "jagmisc");
     }
 
     public final void focusLost(FocusEvent focusevent) {
         anInt9++;
-        Class348_Sub40_Sub16.aBoolean9229 = false;
+        ToolbarRefreshDefinition.aBoolean9229 = false;
     }
 
-    private final void method84(int i) {
+    /** One logic-frame sample: record timestamp ring, sync focus flag, then {@link #pulseGame}. */
+    private final void pulseLogicFrame(int i) {
         anInt8++;
-        long l = Class62.method599(i + -88);
-        long l_1_ = Class328_Sub2_Sub1.aLongArray8800[Class244.anInt4613];
-        Class328_Sub2_Sub1.aLongArray8800[Class244.anInt4613] = l;
-        Class244.anInt4613 = 0x1f & 1 + Class244.anInt4613;
+        long l = Component240.currentTimeMillis(i + -88);
+        long l_1_ = ShaderCompilerSub2Sub1.aLongArray8800[ModelStore.anInt4613];
+        ShaderCompilerSub2Sub1.aLongArray8800[ModelStore.anInt4613] = l;
+        ModelStore.anInt4613 = 0x1f & 1 + ModelStore.anInt4613;
         if (l_1_ != 0L && l > l_1_) {
             /* empty */
         }
         synchronized (this) {
-            Class175.aBoolean2329 = Class348_Sub40_Sub16.aBoolean9229;
+            Component143.aBoolean2329 = ToolbarRefreshDefinition.aBoolean9229;
         }
-        method99((byte) 93);
+        pulseGame((byte) 93);
         if (i != -1) aBoolean27 = true;
     }
 
@@ -151,9 +155,10 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         paint(graphics);
     }
 
-    static final void method85(int i, Class45 class45) {
+    /** Bind the cache store jagmisc uses for optional native-backed IO. */
+    static final void setJagmiscCacheStore(int i, CacheStore class45) {
         anInt32++;
-        Class369_Sub3.aClass45_8601 = class45;
+        Component76.aClass45_8601 = class45;
         if (i != 0) anInt37 = 101;
     }
 
@@ -164,52 +169,54 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final URL getDocumentBase() {
         anInt30++;
-        if (Class52.aFrame4904 != null) return null;
-        if (Class93.anApplet1530 != null && this != Class93.anApplet1530) return Class93.anApplet1530.getDocumentBase();
+        if (RSACipher.aFrame4904 != null) return null;
+        if (ToolkitFactory.anApplet1530 != null && this != ToolkitFactory.anApplet1530) return ToolkitFactory.anApplet1530.getDocumentBase();
         return super.getDocumentBase();
     }
 
-    static final boolean method86(String string, int i) {
+    /** True if {@code string} (e.g. {@code jagdx}) was already extracted/cached this session. */
+    static final boolean isNativeLibraryCached(String string, int i) {
         anInt13++;
         if (i != 0) return true;
-        return Class275.aHashtable3548.containsKey(string);
+        return Component300.aHashtable3548.containsKey(string);
     }
 
     public final void windowDeactivated(WindowEvent windowevent) {
         anInt12++;
     }
 
-    synchronized void method87(byte i) {
+    /** Tear down and recreate {@link DisplayModeManagerContainer50#gameCanvas} on the current host container. */
+    synchronized void recreateGameCanvas(byte i) {
         if (i > -11) paint(null);
-        if (Class305.aCanvas3869 != null) {
-            Class305.aCanvas3869.removeFocusListener(this);
-            Class305.aCanvas3869.getParent().setBackground(Color.black);
-            Class305.aCanvas3869.getParent().remove(Class305.aCanvas3869);
+        if (DisplayModeManagerContainer50.gameCanvas != null) {
+            DisplayModeManagerContainer50.gameCanvas.removeFocusListener(this);
+            DisplayModeManagerContainer50.gameCanvas.getParent().setBackground(Color.black);
+            DisplayModeManagerContainer50.gameCanvas.getParent().remove(DisplayModeManagerContainer50.gameCanvas);
         }
         anInt7++;
         Container container;
-        if (Class34.aFrame476 == null) {
-            if (Class52.aFrame4904 == null) {
-                if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
-                else container = Class93.anApplet1530;
-            } else container = Class52.aFrame4904;
-        } else container = Class34.aFrame476;
+        if (Component225.aFrame476 == null) {
+            if (RSACipher.aFrame4904 == null) {
+                if (ToolkitFactory.anApplet1530 == null) container = DefinitionSub9.anApplet_Sub1_9169;
+                else container = ToolkitFactory.anApplet1530;
+            } else container = RSACipher.aFrame4904;
+        } else container = Component225.aFrame476;
         container.setLayout(null);
-        Class305.aCanvas3869 = new Canvas_Sub1(this);
-        container.add(Class305.aCanvas3869);
-        Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
-        Class305.aCanvas3869.setVisible(true);
-        if (container == Class52.aFrame4904) {
-            Insets insets = Class52.aFrame4904.getInsets();
-            Class305.aCanvas3869.setLocation((insets.left + Class348_Sub48.anInt7129), insets.top - -Class335.anInt4167);
-        } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
-        Class305.aCanvas3869.addFocusListener(this);
-        Class305.aCanvas3869.requestFocus();
-        Class348_Sub40_Sub16.aBoolean9229 = true;
-        Class175.aBoolean2329 = true;
-        Class49.aBoolean4726 = true;
-        Class203.aBoolean2674 = false;
-        Class348_Sub12.aLong6748 = Class62.method599(-106);
+        DisplayModeManagerContainer50.gameCanvas = new Canvas_Sub1(this);
+        container.add(DisplayModeManagerContainer50.gameCanvas);
+        DisplayModeManagerContainer50.gameCanvas.setSize(Component236.canvasWidth, PacketReader.canvasHeight);
+        DisplayModeManagerContainer50.gameCanvas.setVisible(true);
+        if (container == RSACipher.aFrame4904) {
+            Insets insets = RSACipher.aFrame4904.getInsets();
+            DisplayModeManagerContainer50.gameCanvas.setLocation((insets.left + NodeSub48.perFrameReset), insets.top - -DisplayModeManagerContainer147.perDrawReset);
+        } else DisplayModeManagerContainer50.gameCanvas.setLocation(NodeSub48.perFrameReset, DisplayModeManagerContainer147.perDrawReset);
+        DisplayModeManagerContainer50.gameCanvas.addFocusListener(this);
+        DisplayModeManagerContainer50.gameCanvas.requestFocus();
+        ToolbarRefreshDefinition.aBoolean9229 = true;
+        Component143.aBoolean2329 = true;
+        Component297.aBoolean4726 = true;
+        DisplayModeManagerContainer351.aBoolean2674 = false;
+        NodeSub12.aLong6748 = Component240.currentTimeMillis(-106);
     }
 
     public final void windowOpened(WindowEvent windowevent) {
@@ -218,37 +225,38 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final synchronized void paint(Graphics graphics) {
         anInt18++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) {
-            Class49.aBoolean4726 = true;
-            if (Class367_Sub4.aBoolean7320 && -Class348_Sub12.aLong6748 + Class62.method599(-57) > 1000) {
+        if (this == DefinitionSub9.anApplet_Sub1_9169 && !AssetCacheLoader.shuttingDown) {
+            Component297.aBoolean4726 = true;
+            if (AbstractShaderSub4.aBoolean7320 && -NodeSub12.aLong6748 + Component240.currentTimeMillis(-57) > 1000) {
                 Rectangle rectangle = graphics.getClipBounds();
-                if (rectangle == null || (rectangle.width >= Class272.anInt3473 && (Class348_Sub22.anInt6857 <= rectangle.height))) Class203.aBoolean2674 = true;
+                if (rectangle == null || (rectangle.width >= SocketConnector.canvasWidth && (NpcNode.canvasHeight <= rectangle.height))) DisplayModeManagerContainer351.aBoolean2674 = true;
             }
         }
     }
 
-    private final void method88(int i) {
+    /** Sample frame timestamps into the FPS ring and update {@code DisplayModeManagerContainer348.fps}. */
+    private final void updateFpsCounter(int i) {
         anInt2++;
-        long l = Class62.method599(-119);
-        long l_2_ = Class348_Sub49.aLongArray7206[Class152.anInt2071];
-        Class348_Sub49.aLongArray7206[Class152.anInt2071] = l;
+        long l = Component240.currentTimeMillis(-119);
+        long l_2_ = Buffer.aLongArray7206[InflaterDecompressor.anInt2071];
+        Buffer.aLongArray7206[InflaterDecompressor.anInt2071] = l;
         if (l_2_ != 0L && l_2_ < l) {
             int i_3_ = (int) (l - l_2_);
-            Class239_Sub5.anInt5891 = (32000 + (i_3_ >> 1)) / i_3_;
+            DisplayModeManagerContainer348.fps = (32000 + (i_3_ >> 1)) / i_3_;
         }
-        Class152.anInt2071 = Class152.anInt2071 - -1 & 0x1f;
-        if (Class159.anInt2127++ > 50) {
-            Class159.anInt2127 -= 50;
-            Class49.aBoolean4726 = true;
-            Class305.aCanvas3869.setSize(Class321.anInt4017, Class348_Sub42_Sub8_Sub2.anInt10432);
-            Class305.aCanvas3869.setVisible(true);
-            if (Class52.aFrame4904 != null && Class34.aFrame476 == null) {
-                Insets insets = Class52.aFrame4904.getInsets();
-                Class305.aCanvas3869.setLocation((insets.left - -Class348_Sub48.anInt7129), (insets.top + Class335.anInt4167));
-            } else Class305.aCanvas3869.setLocation(Class348_Sub48.anInt7129, Class335.anInt4167);
+        InflaterDecompressor.anInt2071 = InflaterDecompressor.anInt2071 - -1 & 0x1f;
+        if (Component146.anInt2127++ > 50) {
+            Component146.anInt2127 -= 50;
+            Component297.aBoolean4726 = true;
+            DisplayModeManagerContainer50.gameCanvas.setSize(Component236.canvasWidth, PacketReader.canvasHeight);
+            DisplayModeManagerContainer50.gameCanvas.setVisible(true);
+            if (RSACipher.aFrame4904 != null && Component225.aFrame476 == null) {
+                Insets insets = RSACipher.aFrame4904.getInsets();
+                DisplayModeManagerContainer50.gameCanvas.setLocation((insets.left - -NodeSub48.perFrameReset), (insets.top + DisplayModeManagerContainer147.perDrawReset));
+            } else DisplayModeManagerContainer50.gameCanvas.setLocation(NodeSub48.perFrameReset, DisplayModeManagerContainer147.perDrawReset);
         }
-        method93(-11018);
-        if (i > -107) method90(true, true);
+        pulseDrawFrame(-11018);
+        if (i > -107) shutdown(true, true);
     }
 
     public final void windowDeiconified(WindowEvent windowevent) {
@@ -257,15 +265,16 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final void focusGained(FocusEvent focusevent) {
         anInt23++;
-        Class348_Sub40_Sub16.aBoolean9229 = true;
-        Class49.aBoolean4726 = true;
+        ToolbarRefreshDefinition.aBoolean9229 = true;
+        Component297.aBoolean4726 = true;
     }
 
     public final void windowClosed(WindowEvent windowevent) {
         anInt33++;
     }
 
-    final boolean method89(int i) {
+    /** Host allow-list check (currently always true; original jagex.com/127.0.0.1 checks remain commented). */
+    final boolean validateHost(int i) {
         anInt40++;
         return true;
         /*if (i <= 19) return true;
@@ -280,21 +289,22 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
             }
         }
         if (string.endsWith("192.168.1.")) return true;
-        method82(53, "invalidhost");
+        reportGameError(53, "invalidhost");
         return false;*/
     }
 
-    private final void method90(boolean bool, boolean bool_4_) {
+    /** Begin client shutdown ({@code clean=}{@code bool}); calls {@link #cleanup}. */
+    private final void shutdown(boolean bool, boolean bool_4_) {
         anInt26++;
         synchronized (this) {
-            if (Class26.aBoolean384) return;
-            Class26.aBoolean384 = true;
+            if (AssetCacheLoader.shuttingDown) return;
+            AssetCacheLoader.shuttingDown = true;
         }
         System.out.println("Shutdown start - clean:" + bool);
-        if (Class93.anApplet1530 != null) Class93.anApplet1530.destroy();
+        if (ToolkitFactory.anApplet1530 != null) ToolkitFactory.anApplet1530.destroy();
         if (bool_4_ != false) aBoolean17 = false;
         try {
-            method80(0);
+            closeResources(0);
         } catch (Exception exception) {
             /* empty */
         }
@@ -306,50 +316,51 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
             }
             aBoolean17 = false;
         }
-        Class257.method1945((byte) -128, true);
-        Class228.method1629(!bool_4_);
-        if (Class305.aCanvas3869 != null) {
+        Component36.method1945((byte) -128, true);
+        NativeLibraryLoader.unloadNativeLibraries(!bool_4_);
+        if (DisplayModeManagerContainer50.gameCanvas != null) {
             try {
-                Class305.aCanvas3869.removeFocusListener(this);
-                Class305.aCanvas3869.getParent().remove(Class305.aCanvas3869);
+                DisplayModeManagerContainer50.gameCanvas.removeFocusListener(this);
+                DisplayModeManagerContainer50.gameCanvas.getParent().remove(DisplayModeManagerContainer50.gameCanvas);
             } catch (Exception exception) {
                 /* empty */
             }
         }
-        if (Class348_Sub23_Sub1.aClass297_8992 != null) {
+        if (OggUrlStream.aClass297_8992 != null) {
             try {
-                Class348_Sub23_Sub1.aClass297_8992.method2234((byte) 103);
+                OggUrlStream.aClass297_8992.shutdown((byte) 103);
             } catch (Exception exception) {
                 /* empty */
             }
         }
-        method91((byte) 108);
-        if (Class52.aFrame4904 != null) {
-            Class52.aFrame4904.setVisible(false);
-            Class52.aFrame4904.dispose();
-            Class52.aFrame4904 = null;
+        cleanup((byte) 108);
+        if (RSACipher.aFrame4904 != null) {
+            RSACipher.aFrame4904.setVisible(false);
+            RSACipher.aFrame4904.dispose();
+            RSACipher.aFrame4904 = null;
         }
         System.out.println("Shutdown complete - clean:" + bool);
     }
 
     public static final void provideLoaderApplet(Applet applet) {
         anInt11++;
-        Class93.anApplet1530 = applet;
+        ToolkitFactory.anApplet1530 = applet;
     }
 
-    abstract void method91(byte i);
+    /** Subclass static-table / resource teardown after {@link #closeResources}. */
+    abstract void cleanup(byte i);
 
     public final AppletContext getAppletContext() {
         anInt19++;
-        if (Class52.aFrame4904 != null) return null;
-        if (Class93.anApplet1530 != null && this != Class93.anApplet1530) return Class93.anApplet1530.getAppletContext();
+        if (RSACipher.aFrame4904 != null) return null;
+        if (ToolkitFactory.anApplet1530 != null && this != ToolkitFactory.anApplet1530) return ToolkitFactory.anApplet1530.getAppletContext();
         return super.getAppletContext();
     }
 
     public final URL getCodeBase() {
         anInt29++;
-        if (Class52.aFrame4904 != null) return null;
-        if (Class93.anApplet1530 != null && this != Class93.anApplet1530) return Class93.anApplet1530.getCodeBase();
+        if (RSACipher.aFrame4904 != null) return null;
+        if (ToolkitFactory.anApplet1530 != null && this != ToolkitFactory.anApplet1530) return ToolkitFactory.anApplet1530.getCodeBase();
         return super.getCodeBase();
     }
 
@@ -357,11 +368,11 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
 
     public final void destroy() {
         anInt21++;
-        if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == this && !Class26.aBoolean384) {
-            Class113.aLong1739 = Class62.method599(-108);
-            Class286_Sub5.method2161((byte) 77, 5000L);
-            Class231.aClass297_2993 = null;
-            method90(false, false);
+        if (DefinitionSub9.anApplet_Sub1_9169 == this && !AssetCacheLoader.shuttingDown) {
+            Component22.aLong1739 = Component240.currentTimeMillis(-108);
+            SpriteAtlasShader.sleep((byte) 77, 5000L);
+            BuildType.aClass297_2993 = null;
+            shutdown(false, false);
         }
     }
 
@@ -369,33 +380,33 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         anInt28++;
         do {
             try {
-                if (Class297.aString3782 != null) {
-                    String string = Class297.aString3782.toLowerCase();
+                if (ReflectionInvoker.javaVendor != null) {
+                    String string = ReflectionInvoker.javaVendor.toLowerCase();
                     if (string.indexOf("sun") != -1 || string.indexOf("apple") != -1) {
-                        String string_5_ = Class297.aString3796;
+                        String string_5_ = ReflectionInvoker.javaVersion;
                         if (string_5_.equals("1.1") || string_5_.startsWith("1.1.") || string_5_.equals("1.2") || string_5_.startsWith("1.2.")) {
-                            method82(-119, "wrongjava");
+                            reportGameError(-119, "wrongjava");
                             break;
                         }
-                    } else if (string.indexOf("ibm") != -1 && (Class297.aString3796 == null || Class297.aString3796.equals("1.4.2"))) {
-                        method82(81, "wrongjava");
+                    } else if (string.indexOf("ibm") != -1 && (ReflectionInvoker.javaVersion == null || ReflectionInvoker.javaVersion.equals("1.4.2"))) {
+                        reportGameError(81, "wrongjava");
                         break;
                     }
                 }
-                if (Class297.aString3796 != null && Class297.aString3796.startsWith("1.")) {
+                if (ReflectionInvoker.javaVersion != null && ReflectionInvoker.javaVersion.startsWith("1.")) {
                     int i = 2;
                     int i_6_ = 0;
-                    while (Class297.aString3796.length() > i) {
-                        int i_7_ = Class297.aString3796.charAt(i);
+                    while (ReflectionInvoker.javaVersion.length() > i) {
+                        int i_7_ = ReflectionInvoker.javaVersion.charAt(i);
                         if (i_7_ < 48 || i_7_ > 57) break;
                         i++;
                         i_6_ = 10 * i_6_ - (-i_7_ + 48);
                     }
-                    if (i_6_ >= 5) Class367_Sub4.aBoolean7320 = true;
+                    if (i_6_ >= 5) AbstractShaderSub4.aBoolean7320 = true;
                 }
-                Applet applet = Class348_Sub40_Sub9.anApplet_Sub1_9169;
-                if (Class93.anApplet1530 != null) applet = Class93.anApplet1530;
-                Method method = Class297.aMethod3786;
+                Applet applet = DefinitionSub9.anApplet_Sub1_9169;
+                if (ToolkitFactory.anApplet1530 != null) applet = ToolkitFactory.anApplet1530;
+                Method method = ReflectionInvoker.aMethod3786;
                 if (method != null) {
                     try {
                         method.invoke(applet, Boolean.TRUE);
@@ -403,113 +414,121 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
                         /* empty */
                     }
                 }
-                aa_Sub3.method168((byte) 103);
-                Class127_Sub1.method1119(false);
-                method87((byte) -97);
-                method92(28740);
-                Class348_Sub8.aClass241_6660 = Class229.method1631(false);
-                while (Class113.aLong1739 == 0L || (Class62.method599(-124) < Class113.aLong1739)) {
-                    Class101_Sub2.anInt5744 = Class348_Sub8.aClass241_6660.method1861(0, Class73.aLong4783);
-                    for (int i = 0; Class101_Sub2.anInt5744 > i; i++)
-                        method84(-1);
-                    method88(-119);
-                    Class369_Sub3_Sub1.method3578((byte) -42, Class305.aCanvas3869, (Class348_Sub23_Sub1.aClass297_8992));
+                ShaderSub3.method168((byte) 103);
+                Component162.method1119(false);
+                recreateGameCanvas((byte) -97);
+                initializeClient(28740);
+                NodeSub8.aClass241_6660 = Component267.method1631(false);
+                while (Component22.aLong1739 == 0L || (Component240.currentTimeMillis(-124) < Component22.aLong1739)) {
+                    MatrixSub2.anInt5744 = NodeSub8.aClass241_6660.method1861(0, DisplayModeManagerContainer306.aLong4783);
+                    for (int i = 0; MatrixSub2.anInt5744 > i; i++)
+                        pulseLogicFrame(-1);
+                    updateFpsCounter(-119);
+                    DummyClass.pulseAwtQueue((byte) -42, DisplayModeManagerContainer50.gameCanvas, (OggUrlStream.aClass297_8992));
                 }
             } catch (Throwable throwable) {
-                Class156.method1242(method81((byte) 109), throwable, 15004);
-                method82(123, "crash");
+                ClientErrorReporter.reportError(method81((byte) 109), throwable, 15004);
+                reportGameError(123, "crash");
             } finally {
-                method90(true, false);
+                shutdown(true, false);
             }
         } while (false);
     }
 
-    abstract void method92(int i);
+    /** One-shot client bootstrap (prefs, hosts, palettes). Implemented by {@code client}. */
+    abstract void initializeClient(int i);
 
-    abstract void method93(int i);
+    /** Draw/present pulse; implemented by {@code client} (safe-mode catch around the real draw path). */
+    abstract void pulseDrawFrame(int i);
 
     static final void set(String string) {
-        Class363.aString4461 = string;
-        Class348_Sub38.anInt7006 = string.length();
+        Component126.consoleInput = string;
+        NodeSub38.consoleCursor = string.length();
     }
 
-    static final void method94(String string, int i) {
+    /** Append timestamped line(s) to the client console (and optional log stream). */
+    static final void printConsole(String string, int i) {
         anInt6++;
-        if (Class286_Sub1.aStringArray6200 == null) Class14_Sub3.method249(2);
-        Class286_Sub3.aCalendar6221.setTime(new Date(Class62.method599(-102)));
-        int i_8_ = Class286_Sub3.aCalendar6221.get(11);
-        int i_9_ = Class286_Sub3.aCalendar6221.get(12);
-        int i_10_ = Class286_Sub3.aCalendar6221.get(13);
+        if (ArbShaderProgram.consoleLines == null) DisplayModeManagerContainer288.initDevConsole(2);
+        // createOutboundPacket's opaque arg can null this; restore so console never NPEs.
+        if (ParticleShader.aCalendar6221 == null)
+            ParticleShader.aCalendar6221 = java.util.Calendar.getInstance(java.util.TimeZone.getTimeZone("GMT"));
+        ParticleShader.aCalendar6221.setTime(new Date(Component240.currentTimeMillis(-102)));
+        int i_8_ = ParticleShader.aCalendar6221.get(11);
+        int i_9_ = ParticleShader.aCalendar6221.get(12);
+        int i_10_ = ParticleShader.aCalendar6221.get(13);
         String string_11_ = (Integer.toString(i_8_ / 10) + i_8_ % 10 + ":" + i_9_ / 10 + i_9_ % 10 + ":" + i_10_ / 10 + i_10_ % 10);
-        String[] strings = Class348_Sub40_Sub23.method3113('\n', true, string);
+        String[] strings = DefinitionSub23.splitByChar('\n', true, string);
         for (int i_12_ = 0; i_12_ < strings.length; i_12_++) {
-            for (int i_13_ = Class369_Sub2.anInt8587; i_13_ > 0; i_13_--)
-                Class286_Sub1.aStringArray6200[i_13_] = Class286_Sub1.aStringArray6200[-1 + i_13_];
-            Class286_Sub1.aStringArray6200[0] = string_11_ + ": " + strings[i_12_];
-            if (Class299_Sub1.aFileOutputStream6323 != null) {
+            for (int i_13_ = Component14.consoleLineCount; i_13_ > 0; i_13_--)
+                ArbShaderProgram.consoleLines[i_13_] = ArbShaderProgram.consoleLines[-1 + i_13_];
+            ArbShaderProgram.consoleLines[0] = string_11_ + ": " + strings[i_12_];
+            if (Component40.consoleLogStream != null) {
                 try {
-                    Class299_Sub1.aFileOutputStream6323.write(Class348_Sub24.method2992(((Class286_Sub1.aStringArray6200[0]) + "\n"), (byte) -20));
+                    Component40.consoleLogStream.write(ClientSystemInfo.encodeCp1252(((ArbShaderProgram.consoleLines[0]) + "\n"), (byte) -20));
                 } catch (java.io.IOException ioexception) {
                     /* empty */
                 }
             }
-            if (-1 + Class286_Sub1.aStringArray6200.length > Class369_Sub2.anInt8587) {
-                Class369_Sub2.anInt8587++;
-                if (Class284.anInt3676 > 0) Class284.anInt3676++;
+            if (-1 + ArbShaderProgram.consoleLines.length > Component14.consoleLineCount) {
+                Component14.consoleLineCount++;
+                if (Component94.consoleScroll > 0) Component94.consoleScroll++;
             }
         }
         int i_14_ = 85 / ((i - -1) / 52);
     }
 
-    final void method95(int i, int i_15_, int i_16_, int i_17_, int i_18_, String string, int i_19_) {
+    /** Boot as an embedded applet: size the canvas and start the game thread via {@link ReflectionInvoker}. */
+    final void startFromApplet(int i, int i_15_, int i_16_, int i_17_, int i_18_, String string, int i_19_) {
         anInt25++;
         try {
-            if (Class348_Sub40_Sub9.anApplet_Sub1_9169 == null) {
-                Class348_Sub48.anInt7129 = 0;
-                Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432 = i_16_;
-                Class272.anInt3473 = Class321.anInt4017 = i;
-                Class335.anInt4167 = 0;
-                Class348_Sub1_Sub3.anInt8818 = i_15_;
-                Class348_Sub40_Sub9.anApplet_Sub1_9169 = this;
-                Class348_Sub8.anApplet6662 = Class93.anApplet1530;
-                Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i_17_, string, i_18_, Class93.anApplet1530 != null);
-                Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, -10240, 1);
+            if (DefinitionSub9.anApplet_Sub1_9169 == null) {
+                NodeSub48.perFrameReset = 0;
+                NpcNode.canvasHeight = PacketReader.canvasHeight = i_16_;
+                SocketConnector.canvasWidth = Component236.canvasWidth = i;
+                DisplayModeManagerContainer147.perDrawReset = 0;
+                NodeSub1Sub3.anInt8818 = i_15_;
+                DefinitionSub9.anApplet_Sub1_9169 = this;
+                NodeSub8.anApplet6662 = ToolkitFactory.anApplet1530;
+                BuildType.aClass297_2993 = OggUrlStream.aClass297_8992 = new ReflectionInvoker(i_17_, string, i_18_, ToolkitFactory.anApplet1530 != null);
+                Task class144 = OggUrlStream.aClass297_8992.startThread(this, -10240, 1);
                 if (i_19_ != 50) anInt37 = -13;
-                while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) -126, 10L);
+                while (class144.status == 0) SpriteAtlasShader.sleep((byte) -126, 10L);
             } else {
-                Class348_Sub51.anInt7252++;
-                if (Class348_Sub51.anInt7252 >= 3) method82(112, "alreadyloaded");
+                NodeSub51.anInt7252++;
+                if (NodeSub51.anInt7252 >= 3) reportGameError(112, "alreadyloaded");
                 else getAppletContext().showDocument(getDocumentBase(), "_self");
             }
         } catch (Throwable throwable) {
-            Class156.method1242(null, throwable, 15004);
-            method82(52, "crash");
+            ClientErrorReporter.reportError(null, throwable, 15004);
+            reportGameError(52, "crash");
         }
     }
 
-    final void method96(int i, int i_20_, boolean bool, int i_21_, int i_22_, String string, int i_23_, int i_24_) {
+    /** Boot as a standalone {@link Frame} titled {@code Jagex}; used by desktop {@code Loader}. */
+    final void startFromFrame(int i, int i_20_, boolean bool, int i_21_, int i_22_, String string, int i_23_, int i_24_) {
         try {
             if (i_23_ != 23499) return;
-            Class272.anInt3473 = Class321.anInt4017 = i_20_;
-            Class348_Sub22.anInt6857 = Class348_Sub42_Sub8_Sub2.anInt10432 = i_24_;
-            Class348_Sub40_Sub9.anApplet_Sub1_9169 = this;
-            Class335.anInt4167 = 0;
-            Class348_Sub48.anInt7129 = 0;
-            Class348_Sub1_Sub3.anInt8818 = i_21_;
-            Class348_Sub8.anApplet6662 = null;
-            Class52.aFrame4904 = new Frame();
-            Class52.aFrame4904.setTitle("Jagex");
-            Class52.aFrame4904.setResizable(true);
-            Class52.aFrame4904.addWindowListener(this);
-            Class52.aFrame4904.setVisible(true);
-            Class52.aFrame4904.toFront();
-            Insets insets = Class52.aFrame4904.getInsets();
-            Class52.aFrame4904.setSize(insets.right + (insets.left + Class272.anInt3473), (insets.bottom + (Class348_Sub22.anInt6857 + insets.top)));
-            Class231.aClass297_2993 = Class348_Sub23_Sub1.aClass297_8992 = new Class297(i, string, i_22_, true);
-            Class144 class144 = Class348_Sub23_Sub1.aClass297_8992.method2236(this, i_23_ + -33739, 1);
-            while (class144.anInt1997 == 0) Class286_Sub5.method2161((byte) 21, 10L);
+            SocketConnector.canvasWidth = Component236.canvasWidth = i_20_;
+            NpcNode.canvasHeight = PacketReader.canvasHeight = i_24_;
+            DefinitionSub9.anApplet_Sub1_9169 = this;
+            DisplayModeManagerContainer147.perDrawReset = 0;
+            NodeSub48.perFrameReset = 0;
+            NodeSub1Sub3.anInt8818 = i_21_;
+            NodeSub8.anApplet6662 = null;
+            RSACipher.aFrame4904 = new Frame();
+            RSACipher.aFrame4904.setTitle("Jagex");
+            RSACipher.aFrame4904.setResizable(true);
+            RSACipher.aFrame4904.addWindowListener(this);
+            RSACipher.aFrame4904.setVisible(true);
+            RSACipher.aFrame4904.toFront();
+            Insets insets = RSACipher.aFrame4904.getInsets();
+            RSACipher.aFrame4904.setSize(insets.right + (insets.left + SocketConnector.canvasWidth), (insets.bottom + (NpcNode.canvasHeight + insets.top)));
+            BuildType.aClass297_2993 = OggUrlStream.aClass297_8992 = new ReflectionInvoker(i, string, i_22_, true);
+            Task class144 = OggUrlStream.aClass297_8992.startThread(this, i_23_ + -33739, 1);
+            while (class144.status == 0) SpriteAtlasShader.sleep((byte) 21, 10L);
         } catch (Exception exception) {
-            Class156.method1242(null, exception, i_23_ + -8495);
+            ClientErrorReporter.reportError(null, exception, i_23_ + -8495);
         }
         anInt31++;
     }
@@ -518,28 +537,31 @@ public abstract class Applet_Sub1 extends Applet implements Runnable, FocusListe
         anInt14++;
     }
 
-    final boolean method97(int i) {
-        if (i != -1) method88(-104);
+    /** Load the {@code jaclib} native. */
+    final boolean tryLoadJaclib(int i) {
+        if (i != -1) updateFpsCounter(-104);
         anInt4++;
-        return Class348_Sub40_Sub19.method3098(-30282, "jaclib");
+        return DefinitionSub19.tryLoadNativeLibrary(-30282, "jaclib");
     }
 
-    public static void method98(int i) {
+    public static void clearStatics(int i) {
         anIntArray38 = null;
         aClass324_20 = null;
-        if (i != 32717) method86(null, 65);
+        if (i != 32717) isNativeLibraryCached(null, 65);
     }
 
     public final void start() {
         anInt36++;
-        if (this == Class348_Sub40_Sub9.anApplet_Sub1_9169 && !Class26.aBoolean384) Class113.aLong1739 = 0L;
+        if (this == DefinitionSub9.anApplet_Sub1_9169 && !AssetCacheLoader.shuttingDown) Component22.aLong1739 = 0L;
     }
 
-    abstract void method99(byte i);
+    /** Per-logic-tick game pulse; implemented by {@code client} → {@code processGameTick}. */
+    abstract void pulseGame(byte i);
 
-    final boolean method100(int i) {
+    /** Load the {@code jagtheora} native (video ads). */
+    final boolean tryLoadJagtheora(int i) {
         anInt10++;
         if (i != 10) return true;
-        return Class348_Sub40_Sub19.method3098(-30282, "jagtheora");
+        return DefinitionSub19.tryLoadNativeLibrary(-30282, "jagtheora");
     }
 }

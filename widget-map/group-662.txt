@@ -1,0 +1,17 @@
+void-osrs widget-map group=662
+662:0 t3 'iface' 0x0 @0,0
+662:2 t3 'iface' 0x0 @0,0
+662:3 t3 'iface' 0x0 @0,0
+662:4 t0 'layer' 0x0 @0,0
+662:5 t5 'sprite:856' 0x0 @0,0 spr=856
+662:6 t5 'sprite:851' 0x0 @0,0 spr=851
+662:7 t5 'sprite:857' 0x0 @0,0 spr=857
+662:8 t5 'sprite:852' 0x0 @0,0 spr=852
+662:9 t5 'sprite:859' 0x0 @0,0 spr=859
+662:10 t5 'sprite:851' 0x0 @0,0 spr=851
+662:11 t5 'sprite:858' 0x0 @0,0 spr=858
+662:12 t5 'sprite:852' 0x0 @0,0 spr=852
+662:13 t5 'sprite:1075' 0x0 @0,0 spr=1075
+662:14 t5 'sprite:1075' 0x0 @0,0 spr=1075 opt=' '
+662:53 t5 'sprite:1196' 0x0 @0,0 spr=1196
+662:214 t0 'layer' 0x0 @0,0

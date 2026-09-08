@@ -24,7 +24,7 @@ public final class client extends Applet_Sub1 {
     static int anInt5182;
     static int anInt5183;
     static int anInt5184;
-    static Class262 aClass262_5185 = new Class262();
+    static NodeList aClass262_5185 = new NodeList();
     static int anInt5186;
     static int anInt5187;
     static int anInt5188;
@@ -33,760 +33,769 @@ public final class client extends Applet_Sub1 {
 
     private final void method101(byte i) {
         anInt5179++;
-        if (Class348_Sub4.aClass248_6601.anInt3213 > Class239_Sub11.anInt5959) {
-            Class3.aClass161_125.method1259(0);
-            Class341.anInt4235 = (Class348_Sub4.aClass248_6601.anInt3213 * 50 + -50) * 5;
-            if (Class341.anInt4235 > 3000) Class341.anInt4235 = 3000;
-            if (Class348_Sub4.aClass248_6601.anInt3213 >= 2 && Class348_Sub4.aClass248_6601.anInt3214 == 6) {
-                this.method82(-80, "js5connect_outofdate");
-                Class240.anInt4674 = 14;
+        if (HardwareProbe.aClass248_6601.errorCount > LibraryCreditsText.anInt5959) {
+            Component223.aClass161_125.method1259(0);
+            DisplayModeManagerContainer196.anInt4235 = (HardwareProbe.aClass248_6601.errorCount * 50 + -50) * 5;
+            if (DisplayModeManagerContainer196.anInt4235 > 3000) DisplayModeManagerContainer196.anInt4235 = 3000;
+            if (HardwareProbe.aClass248_6601.errorCount >= 2 && HardwareProbe.aClass248_6601.disconnectCode == 6) {
+                this.reportGameError(-80, "js5connect_outofdate");
+                Component49.clientState = 14;
                 return;
             }
-            if (Class348_Sub4.aClass248_6601.anInt3213 >= 4 && Class348_Sub4.aClass248_6601.anInt3214 == -1) {
-                this.method82(81, "js5crc");
-                Class240.anInt4674 = 14;
+            if (HardwareProbe.aClass248_6601.errorCount >= 4 && HardwareProbe.aClass248_6601.disconnectCode == -1) {
+                this.reportGameError(81, "js5crc");
+                Component49.clientState = 14;
                 return;
             }
-            if (Class348_Sub4.aClass248_6601.anInt3213 >= 4 && Class139.method1167(Class240.anInt4674, (byte) -81)) {
-                if (Class348_Sub4.aClass248_6601.anInt3214 != 7 && Class348_Sub4.aClass248_6601.anInt3214 != 9) {
-                    if (Class348_Sub4.aClass248_6601.anInt3214 <= 0) this.method82(72, "js5io");
-                    else if (Class348_Sub31.aString6926 == null) this.method82(-116, "js5connect");
-                    else this.method82(113, ("js5proxy_" + Class348_Sub31.aString6926.trim()));
-                } else this.method82(-93, "js5connect_full");
-                Class240.anInt4674 = 14;
+            if (HardwareProbe.aClass248_6601.errorCount >= 4 && GpsOverlay.method1167(Component49.clientState, (byte) -81)) {
+                if (HardwareProbe.aClass248_6601.disconnectCode != 7 && HardwareProbe.aClass248_6601.disconnectCode != 9) {
+                    if (HardwareProbe.aClass248_6601.disconnectCode <= 0) this.reportGameError(72, "js5io");
+                    else if (Sprite.aString6926 == null) this.reportGameError(-116, "js5connect");
+                    else this.reportGameError(113, ("js5proxy_" + Sprite.aString6926.trim()));
+                } else this.reportGameError(-93, "js5connect_full");
+                Component49.clientState = 14;
                 return;
             }
         }
-        Class239_Sub11.anInt5959 = Class348_Sub4.aClass248_6601.anInt3213;
-        if (Class341.anInt4235 > 0) Class341.anInt4235--;
+        LibraryCreditsText.anInt5959 = HardwareProbe.aClass248_6601.errorCount;
+        if (DisplayModeManagerContainer196.anInt4235 > 0) DisplayModeManagerContainer196.anInt4235--;
         else {
             try {
-                if (Class47.anInt846 == 0) {
-                    aa.aClass144_114 = Class3.aClass161_125.method1262((Class348_Sub23_Sub1.aClass297_8992), (byte) 36);
-                    Class47.anInt846++;
+                if (DisplayModeManagerContainer32.anInt846 == 0) {
+                    Shader.aClass144_114 = Component223.aClass161_125.method1262((OggUrlStream.aClass297_8992), (byte) 36);
+                    DisplayModeManagerContainer32.anInt846++;
                 }
-                if (Class47.anInt846 == 1) {
-                    if (aa.aClass144_114.anInt1997 == 2) {
-                        if (aa.aClass144_114.anObject1998 != null) Class348_Sub31.aString6926 = (String) aa.aClass144_114.anObject1998;
-                        method103(1000, (byte) 100);
+                if (DisplayModeManagerContainer32.anInt846 == 1) {
+                    if (Shader.aClass144_114.status == 2) {
+                        if (Shader.aClass144_114.result != null) Sprite.aString6926 = (String) Shader.aClass144_114.result;
+                        onJs5Failure(1000, (byte) 100);
                         return;
                     }
-                    if (aa.aClass144_114.anInt1997 == 1) Class47.anInt846++;
+                    if (Shader.aClass144_114.status == 1) DisplayModeManagerContainer32.anInt846++;
                 }
-                if (Class47.anInt846 == 2) {
-                    Class193.aClass202_2589 = new Class202((Socket) aa.aClass144_114.anObject1998, Class348_Sub23_Sub1.aClass297_8992, 25000);
-                    Class348_Sub49 class348_sub49 = new Class348_Sub49(5);
-                    class348_sub49.writeByte(false, (Class178.aClass29_2341.anInt400));
+                if (DisplayModeManagerContainer32.anInt846 == 2) {
+                    Component321.aClass202_2589 = new Connection((Socket) Shader.aClass144_114.result, OggUrlStream.aClass297_8992, 25000);
+                    Buffer class348_sub49 = new Buffer(5);
+                    class348_sub49.writeByte(false, (DisplayModeManagerContainer109.aClass29_2341.anInt400));
                     class348_sub49.writeInt((byte) 103, 634);
-                    Class193.aClass202_2589.method1470((class348_sub49.aByteArray7154), 5, 0, -1);
-                    Class47.anInt846++;
-                    Class45.aLong667 = Class62.method599(-70);
+                    Component321.aClass202_2589.write((class348_sub49.payload), 5, 0, -1);
+                    DisplayModeManagerContainer32.anInt846++;
+                    CacheStore.aLong667 = Component240.currentTimeMillis(-70);
                 }
-                if (Class47.anInt846 == 3) {
-                    if (Class139.method1167(Class240.anInt4674, (byte) -100) || Class193.aClass202_2589.method1467((byte) 83) > 0) {
-                        int i_0_ = Class193.aClass202_2589.method1473(0);
+                if (DisplayModeManagerContainer32.anInt846 == 3) {
+                    if (GpsOverlay.method1167(Component49.clientState, (byte) -100) || Component321.aClass202_2589.available((byte) 83) > 0) {
+                        int i_0_ = Component321.aClass202_2589.read(0);
                         if (i_0_ != 0) {
-                            method103(i_0_, (byte) 111);
+                            onJs5Failure(i_0_, (byte) 111);
                             return;
                         }
-                        Class47.anInt846++;
-                    } else if (Class62.method599(-63) - Class45.aLong667 > 30000) {
-                        method103(1001, (byte) 85);
+                        DisplayModeManagerContainer32.anInt846++;
+                    } else if (Component240.currentTimeMillis(-63) - CacheStore.aLong667 > 30000) {
+                        onJs5Failure(1001, (byte) 85);
                         return;
                     }
                 }
-                if (Class47.anInt846 == 4) {
-                    boolean bool = (Class139.method1167(Class240.anInt4674, (byte) -100) || Class348_Sub42_Sub8.method3196(Class240.anInt4674, -87) || Class340.method2672(Class240.anInt4674, -127));
-                    Class267[] class267s = Class267.method2029(105);
-                    Class348_Sub49 class348_sub49 = new Class348_Sub49(class267s.length * 4);
-                    Class193.aClass202_2589.method1474(class348_sub49.aByteArray7154, 0, (byte) -72, (class348_sub49.aByteArray7154).length);
+                if (DisplayModeManagerContainer32.anInt846 == 4) {
+                    boolean bool = (GpsOverlay.method1167(Component49.clientState, (byte) -100) || CacheNode.method3196(Component49.clientState, -87) || CacheFileStore.isReconnectState(Component49.clientState, -127));
+                    Component119[] class267s = Component119.method2029(105);
+                    Buffer class348_sub49 = new Buffer(class267s.length * 4);
+                    Component321.aClass202_2589.readFully(class348_sub49.payload, 0, (byte) -72, (class348_sub49.payload).length);
                     for (int i_1_ = 0; i_1_ < class267s.length; i_1_++)
                         class267s[i_1_].method2030(1, class348_sub49.readInt((byte) -126));
-                    Class348_Sub4.aClass248_6601.method1903(false, !bool, Class193.aClass202_2589);
-                    Class47.anInt846 = 0;
-                    aa.aClass144_114 = null;
-                    Class193.aClass202_2589 = null;
+                    HardwareProbe.aClass248_6601.setConnection(false, !bool, Component321.aClass202_2589);
+                    DisplayModeManagerContainer32.anInt846 = 0;
+                    Shader.aClass144_114 = null;
+                    Component321.aClass202_2589 = null;
                 }
                 int i_2_ = 127 / ((1 - i) / 60);
             } catch (java.io.IOException ioexception) {
-                method103(1002, (byte) 127);
+                onJs5Failure(1002, (byte) 127);
             }
         }
     }
 
-    final void method92(int i) {
-        if (Class161.aBoolean2151) Class226.anInt2964 = 64;
+    /** Bootstrap hosts, client prefs, colour tables, and cache workers for this game type. */
+    final void initializeClient(int i) {
+        if (DisplayModeManagerContainer254.aBoolean2151) Component127.anInt2964 = 64;
         anInt5177++;
         Frame frame = new Frame("Jagex");
         frame.pack();
         frame.dispose();
-        Class367_Sub11.method3556(false);
-        Class39.aClass112_520 = new Class112(Class348_Sub23_Sub1.aClass297_8992);
-        Class348_Sub4.aClass248_6601 = new Class248();
-        Class348_Sub42_Sub12.method3230(new int[]{20, 260}, new int[]{1000, 100}, 0);
-        if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class308.aByteArrayArray3882 = new byte[50][];
-        Class316.aClass348_Sub51_3959 = Class14_Sub3.method247(24916);
-        if (Class8.aClass364_165 == Class55_Sub1.aClass364_5271) Class135_Sub2.aClass161_4839.aString2147 = this.getCodeBase().getHost();
-        else if (Class315.method2354(Class8.aClass364_165, i ^ ~0x7044)) {
-            Class135_Sub2.aClass161_4839.aString2147 = this.getCodeBase().getHost();
-            Class135_Sub2.aClass161_4839.anInt2148 = 40000 - -Class135_Sub2.aClass161_4839.anInt2143;
-            Class255.aClass161_3285.anInt2148 = Class255.aClass161_3285.anInt2143 + 40000;
-            Class135_Sub2.aClass161_4839.anInt2138 = 50000 - -Class135_Sub2.aClass161_4839.anInt2143;
-            Class348_Sub40_Sub35.aClass161_9443.anInt2148 = (Class348_Sub40_Sub35.aClass161_9443.anInt2143 + 40000);
-            Class255.aClass161_3285.anInt2138 = 50000 - -Class255.aClass161_3285.anInt2143;
-            Class348_Sub40_Sub35.aClass161_9443.anInt2138 = (Class348_Sub40_Sub35.aClass161_9443.anInt2143 + 50000);
-        } else if (Class76.aClass364_1279 == Class8.aClass364_165) {
-            Class135_Sub2.aClass161_4839.aString2147 = "127.0.0.1";
-            Class255.aClass161_3285.aString2147 = "127.0.0.1";
-            Class135_Sub2.aClass161_4839.anInt2148 = (40000 + Class135_Sub2.aClass161_4839.anInt2143);
-            Class348_Sub40_Sub35.aClass161_9443.aString2147 = "127.0.0.1";
-            Class255.aClass161_3285.anInt2148 = 40000 - -Class255.aClass161_3285.anInt2143;
-            Class348_Sub40_Sub35.aClass161_9443.anInt2148 = 40000 - -Class348_Sub40_Sub35.aClass161_9443.anInt2143;
-            Class135_Sub2.aClass161_4839.anInt2138 = (Class135_Sub2.aClass161_4839.anInt2143 + 50000);
-            Class255.aClass161_3285.anInt2138 = Class255.aClass161_3285.anInt2143 + 50000;
-            Class348_Sub40_Sub35.aClass161_9443.anInt2138 = 50000 - -Class348_Sub40_Sub35.aClass161_9443.anInt2143;
+        OpenGlShader.method3556(false);
+        DisplayModeManagerContainer271.aClass112_520 = new DisplayModeManagerContainer67(OggUrlStream.aClass297_8992);
+        HardwareProbe.aClass248_6601 = new Component253();
+        MenuEntry.initArrayPools(new int[]{20, 260}, new int[]{1000, 100}, 0);
+        if (DisplayModeManagerContainer345.aClass364_165 != Component326.LIVE) Component17.aByteArrayArray3882 = new byte[50][];
+        Component192.preferences = DisplayModeManagerContainer288.method247(24916);
+        if (DisplayModeManagerContainer345.aClass364_165 == Component326.LIVE) MenuOpener.aClass161_4839.aString2147 = this.getCodeBase().getHost();
+        else if (Component168.method2354(DisplayModeManagerContainer345.aClass364_165, i ^ ~0x7044)) {
+            MenuOpener.aClass161_4839.aString2147 = this.getCodeBase().getHost();
+            MenuOpener.aClass161_4839.anInt2148 = 40000 - -MenuOpener.aClass161_4839.anInt2143;
+            ItemDefinitionProvider.aClass161_3285.anInt2148 = ItemDefinitionProvider.aClass161_3285.anInt2143 + 40000;
+            MenuOpener.aClass161_4839.anInt2138 = 50000 - -MenuOpener.aClass161_4839.anInt2143;
+            DefinitionSub35.aClass161_9443.anInt2148 = (DefinitionSub35.aClass161_9443.anInt2143 + 40000);
+            ItemDefinitionProvider.aClass161_3285.anInt2138 = 50000 - -ItemDefinitionProvider.aClass161_3285.anInt2143;
+            DefinitionSub35.aClass161_9443.anInt2138 = (DefinitionSub35.aClass161_9443.anInt2143 + 50000);
+        } else if (DisplayModeManagerContainer154.LOCAL == DisplayModeManagerContainer345.aClass364_165) {
+            MenuOpener.aClass161_4839.aString2147 = "127.0.0.1";
+            ItemDefinitionProvider.aClass161_3285.aString2147 = "127.0.0.1";
+            MenuOpener.aClass161_4839.anInt2148 = (40000 + MenuOpener.aClass161_4839.anInt2143);
+            DefinitionSub35.aClass161_9443.aString2147 = "127.0.0.1";
+            ItemDefinitionProvider.aClass161_3285.anInt2148 = 40000 - -ItemDefinitionProvider.aClass161_3285.anInt2143;
+            DefinitionSub35.aClass161_9443.anInt2148 = 40000 - -DefinitionSub35.aClass161_9443.anInt2143;
+            MenuOpener.aClass161_4839.anInt2138 = (MenuOpener.aClass161_4839.anInt2143 + 50000);
+            ItemDefinitionProvider.aClass161_3285.anInt2138 = ItemDefinitionProvider.aClass161_3285.anInt2143 + 50000;
+            DefinitionSub35.aClass161_9443.anInt2138 = 50000 - -DefinitionSub35.aClass161_9443.anInt2143;
         }
-        Class318_Sub6.aShortArray6428 = Class348_Sub26.aShortArray6889 = Class348_Sub42_Sub3.aShortArray9502 = Class336.aShortArray4172 = new short[256];
-        if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class10.aClass230_186) RuntimeException_Sub1.aBoolean4599 = false;
-        if (Class14_Sub4.aClass230_8638 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
-            Class116.shiftClick = true;
-            Class136.aShortArrayArray4791 = Class348_Sub8.aShortArrayArray6664;
-            Class268.anInt3439 = 16777215;
-            Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub51.aShortArrayArrayArray7262;
-            Class268.anInt3444 = 0;
-        } else if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class239_Sub9.aClass230_5932) {
-            Class136.aShortArrayArray4791 = Class268.aShortArrayArray3443;
-            Class367_Sub2.aShortArrayArrayArray7290 = Class318_Sub1_Sub3_Sub3.aShortArrayArrayArray10253;
+        RenderableSub6.aShortArray6428 = Request.aShortArray6889 = HashNodeSub3.aShortArray9502 = Component226.aShortArray4172 = new short[256];
+        if (PacketReader.currentGameType == RunescapeInfo.RUNESCAPE) RuntimeException_Sub1.aBoolean4599 = false;
+        if (WorldNameText.STELLARDAWN == PacketReader.currentGameType) {
+            Component262.shiftClick = true;
+            Component257.aShortArrayArray4791 = NodeSub8.aShortArrayArray6664;
+            DisplayModeManagerContainer259.anInt3439 = 16777215;
+            AbstractShaderSub2.aShortArrayArrayArray7290 = NodeSub51.aShortArrayArrayArray7262;
+            DisplayModeManagerContainer259.anInt3444 = 0;
+        } else if (PacketReader.currentGameType == Component379.GAME4) {
+            Component257.aShortArrayArray4791 = DisplayModeManagerContainer259.aShortArrayArray3443;
+            AbstractShaderSub2.aShortArrayArrayArray7290 = DisplayModeManagerContainer58.aShortArrayArrayArray10253;
         } else {
-            Class136.aShortArrayArray4791 = Class348_Sub40_Sub32.aShortArrayArray9424;
-            Class367_Sub2.aShortArrayArrayArray7290 = Class348_Sub12.aShortArrayArrayArray6736;
+            Component257.aShortArrayArray4791 = DefinitionSub32.aShortArrayArray9424;
+            AbstractShaderSub2.aShortArrayArrayArray7290 = NodeSub12.aShortArrayArrayArray6736;
         }
-        Class3.aClass161_125 = Class135_Sub2.aClass161_4839;
+        Component223.aClass161_125 = MenuOpener.aClass161_4839;
         try {
-            Class348_Sub40_Sub27.aClipboard9357 = Class79.aClient1367.getToolkit().getSystemClipboard();
+            DefinitionSub27.aClipboard9357 = NpcComposition.aClient1367.getToolkit().getSystemClipboard();
         } catch (Exception exception) {
             /* empty */
         }
-        Class182.aClass346_2449 = Class348_Sub3.method2743(Class305.aCanvas3869, (byte) -124);
-        Class258_Sub4.aClass373_8552 = Class348_Sub18.method2941(Class305.aCanvas3869, 0, true);
+        Component280.aClass346_2449 = NodeSub3.method2743(DisplayModeManagerContainer50.gameCanvas, (byte) -124);
+        AbstractGlTextureSub4.mouseHandler = NodeSub18.createMouseHandler(DisplayModeManagerContainer50.gameCanvas, 0, true);
         try {
-            if (Class348_Sub23_Sub1.aClass297_8992.aClass234_3785 != null) {
-                Class299_Sub2.aClass78_6328 = new Class78((Class348_Sub23_Sub1.aClass297_8992.aClass234_3785), 5200, 0);
+            if (OggUrlStream.aClass297_8992.cacheDat2 != null) {
+                DisplayModeManagerContainer356.aClass78_6328 = new SeekableFile((OggUrlStream.aClass297_8992.cacheDat2), 5200, 0);
                 for (int i_3_ = 0; i_3_ < 37; i_3_++)
-                    Class100.aClass78Array1579[i_3_] = new Class78((Class348_Sub23_Sub1.aClass297_8992.aClass234Array3795[i_3_]), 6000, 0);
-                Class235.aClass78_3075 = new Class78((Class348_Sub23_Sub1.aClass297_8992.aClass234_3779), 6000, 0);
-                Class277.aClass137_3568 = new Class137(255, Class299_Sub2.aClass78_6328, Class235.aClass78_3075, 500000);
-                Class374.aClass78_4538 = new Class78((Class348_Sub23_Sub1.aClass297_8992.aClass234_3788), 24, 0);
-                Class348_Sub23_Sub1.aClass297_8992.aClass234_3779 = null;
-                Class348_Sub23_Sub1.aClass297_8992.aClass234_3785 = null;
-                Class348_Sub23_Sub1.aClass297_8992.aClass234Array3795 = null;
-                Class348_Sub23_Sub1.aClass297_8992.aClass234_3788 = null;
+                    Component265.aClass78Array1579[i_3_] = new SeekableFile((OggUrlStream.aClass297_8992.cacheIndexFiles[i_3_]), 6000, 0);
+                Component366.aClass78_3075 = new SeekableFile((OggUrlStream.aClass297_8992.cacheIdx255), 6000, 0);
+                Component11.aClass137_3568 = new CacheIndexReader(255, DisplayModeManagerContainer356.aClass78_6328, Component366.aClass78_3075, 500000);
+                DisplayModeManagerContainer152.aClass78_4538 = new SeekableFile((OggUrlStream.aClass297_8992.randomDat), 24, 0);
+                OggUrlStream.aClass297_8992.cacheIdx255 = null;
+                OggUrlStream.aClass297_8992.cacheDat2 = null;
+                OggUrlStream.aClass297_8992.cacheIndexFiles = null;
+                OggUrlStream.aClass297_8992.randomDat = null;
             }
         } catch (java.io.IOException ioexception) {
-            Class299_Sub2.aClass78_6328 = null;
-            Class235.aClass78_3075 = null;
-            Class374.aClass78_4538 = null;
-            Class277.aClass137_3568 = null;
+            DisplayModeManagerContainer356.aClass78_6328 = null;
+            Component366.aClass78_3075 = null;
+            DisplayModeManagerContainer152.aClass78_4538 = null;
+            Component11.aClass137_3568 = null;
         }
-        if (Class8.aClass364_165 != Class55_Sub1.aClass364_5271) Class298.aBoolean3811 = true;
-        Class348_Sub42_Sub16.aString9665 = Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544);
+        if (DisplayModeManagerContainer345.aClass364_165 != Component326.LIVE) Component10.fpsOverlayEnabled = true;
+        HashNodeSub16.aString9665 = FriendsIgnoreList.aClass274_3495.getLocalized(ObjectDeserializer.languageId, 544);
     }
 
-    final void method91(byte i) {
+    /** Null static caches during shutdown. */
+    final void cleanup(byte i) {
         int i_4_ = anInt5190;
         anInt5181++;
         method110(31);
-        Class205.method1497(16384);
-        Class260.method1979((byte) 125);
-        Class348_Sub42_Sub15.method3247(-74);
-        Class274.method2059(i ^ ~0x1f);
-        Class9.method216(false);
-        Class267.method2026(23377);
-        Class31.method328(i ^ 0x6c);
-        Class219.method1604(11868);
-        Class157.method1246(-83);
-        Class348_Sub42.method3161(0);
-        Class348.method2713(0);
-        Class107.method1004((byte) 16);
-        Class356.method3478(false);
-        Applet_Sub1.method98(i + 32609);
-        Class241.method1860((byte) -89);
-        Class231.method1641((byte) 85);
-        Class101.method906(-31777);
-        ha.method3680(-24016);
-        Class348_Sub51.method3430(false);
-        Class348_Sub4.method2748(-86);
-        Class170.method1310(true);
-        Class262.method1994(-13722);
-        Class202.method1471((byte) 124);
-        Class248.method1897((byte) 119);
-        Class112.method1052((byte) -124);
-        Class340.method2671(0);
-        Class314_Sub1.method2344(i + -108);
-        Class45.method390((byte) 10);
-        Class78.method786((byte) 0);
-        Class60.method584((byte) 116);
-        Class261.method1980(i ^ 0xe);
-        Class166.method1284(-21165);
-        Class268.method2036((byte) 121);
-        Class183.method1378(14);
-        Class150.method1208(55);
-        Class271.method2045((byte) 62);
-        Class185.method1395((byte) 82);
-        Class263.method2011((byte) -71);
-        Class141.method1179((byte) -124);
-        Class255.method1931(true);
-        Class187.method1407((byte) 124);
-        Class84.method825(i + -204);
-        Class25.method305((byte) 79);
-        Class319.method2545(true);
-        Class65.method698(i + -106);
-        Class82.method811((byte) -123);
-        Class259.method1975((byte) -15);
-        Class194.method1441((byte) 18);
-        Class217.method1585(-1);
-        Class226.method1624(28962);
-        Class355.method3473(12949);
-        Class238.method1704((byte) -95);
-        Class77.method782(1);
-        Class348_Sub49_Sub2.method3414(21515);
-        Class169.method1300((byte) -128);
-        Class348_Sub26.method2998((byte) -35);
-        Class361.method3508(2);
-        Class237_Sub1.method1698(1);
-        Class348_Sub42_Sub14.method3237((byte) 42);
-        Class252.method1917(40960);
-        Class305.method2294(126);
-        Class243.method1873((byte) -120);
-        Class46.method442((byte) -84);
-        Class57.method530(14);
+        Component275.method1497(16384);
+        Component92.method1979((byte) 125);
+        RSARequest.method3247(-74);
+        FriendsIgnoreList.clearStatics(i ^ ~0x1f);
+        JaclibLoader.clearStatics(false);
+        Component119.method2026(23377);
+        Component82.method328(i ^ 0x6c);
+        Component386.method1604(11868);
+        Component270.method1246(-83);
+        HashNode.method3161(0);
+        Node.method2713(0);
+        HashTable.method1004((byte) 16);
+        LruCache.method3478(false);
+        Applet_Sub1.clearStatics(i + 32609);
+        Component41.method1860((byte) -89);
+        BuildType.method1641((byte) 85);
+        DisplayModeManagerContainer204.method906(-31777);
+        GraphicsToolkit.method3680(-24016);
+        NodeSub51.method3430(false);
+        HardwareProbe.method2748(-86);
+        DisplayModeManagerContainer292.method1310(true);
+        NodeList.method1994(-13722);
+        Connection.method1471((byte) 124);
+        Component253.clearStatics((byte) 119);
+        DisplayModeManagerContainer67.clearStatics((byte) -124);
+        CacheFileStore.clearStatics(0);
+        Component219.clearStatics(i + -108);
+        CacheStore.clearStatics((byte) 10);
+        SeekableFile.method786((byte) 0);
+        NodeCache.method584((byte) 116);
+        DisplayModeManagerContainer1.clearStatics(i ^ 0xe);
+        CursorDefinitionCache.method1284(-21165);
+        DisplayModeManagerContainer259.method2036((byte) 121);
+        Component191.method1378(14);
+        Component324.method1208(55);
+        DisplayModeManagerContainer130.method2045((byte) 62);
+        Component316.method1395((byte) 82);
+        ObjectDefinitionProvider.method2011((byte) -71);
+        Component258.method1179((byte) -124);
+        ItemDefinitionProvider.method1931(true);
+        Component38.method1407((byte) 124);
+        DisplayModeManagerContainer26.method825(i + -204);
+        Component361.method305((byte) 79);
+        Component144.method2545(true);
+        Component304.method698(i + -106);
+        CommandHandler.clearStatics((byte) -123);
+        Component293.method1975((byte) -15);
+        Component276.method1441((byte) 18);
+        Component46.method1585(-1);
+        Component127.method1624(28962);
+        Component117.method3473(12949);
+        SocketStream.method1704((byte) -95);
+        DisplayModeManagerContainer123.method782(1);
+        DisplayModeManagerContainer207.method3414(21515);
+        RequestProcessor.method1300((byte) -128);
+        Request.method2998((byte) -35);
+        CollisionMap.method3508(2);
+        Component251.method1698(1);
+        HashNodeSub14.method3237((byte) 42);
+        Component278.method1917(40960);
+        DisplayModeManagerContainer50.method2294(126);
+        Component315.method1873((byte) -120);
+        DisplayModeManagerContainer57.method442((byte) -84);
+        DisplayModeInfo.method530(14);
         Player.method2458(true);
-        Class227.method1627((byte) 116);
-        Class19.method284((byte) 51);
-        Class54.method501(1);
-        Class348_Sub49.method3376(i ^ ~0x6d);
-        Class348_Sub47.method3323(-44);
-        Class318_Sub1_Sub3_Sub3.method2429(-123);
-        Class357.method3487(-65);
-        Class74.method744((byte) 115);
-        Class348_Sub27.method3001(0);
-        Class348_Sub34.method3026(true);
-        Class348_Sub41.method3155(i + -113);
-        Class348_Sub42_Sub8.method3199(i ^ 0x70);
-        Class94.method866(-14603);
-        Class93.method861(-76);
-        Class318.method2374((byte) -125);
-        Class81.method810(true);
-        Class62.method597((byte) -122);
-        Class122.method1086(true);
-        Class13.method225((byte) 57);
-        Class110_Sub1.method1040(i + 404);
-        Class298.method2251(16711680);
-        Class161.method1261((byte) 108);
-        Class306.method2299((byte) -128);
-        RuntimeException_Sub1.method4010(-3);
-        Class99.method883((byte) 66);
-        Class348_Sub42_Sub16_Sub2.method3264((byte) -24);
-        Class172.method1325(-128);
-        Class154.method1235((byte) 7);
-        Class348_Sub42_Sub17.method3269(true);
-        Class17.method265(false);
-        Class182.method1375(5616);
-        Class64.method609((byte) -52);
-        Class36.method355(i + 4189);
-        Class190.method1426(25165);
-        Class299.method2254(i ^ ~0x39bf);
-        Class375.method3613(64);
-        Class51.method486(-123);
-        Class124.method1096(i ^ 0x11);
-        Class2.method171((byte) 72);
+        Component150.method1627((byte) 116);
+        Component248.method284((byte) 51);
+        Component285.method501(1);
+        Buffer.clearStatics(i ^ ~0x6d);
+        ParticleSystem.method3323(-44);
+        DisplayModeManagerContainer58.clearStatic2(-123);
+        Component186.method3487(-65);
+        DisplayModeManagerContainer238.method744((byte) 115);
+        NodeSub27.method3001(0);
+        NodeSub34.method3026(true);
+        NodeSub41.method3155(i + -113);
+        CacheNode.method3199(i ^ 0x70);
+        Component97.method866(-14603);
+        ToolkitFactory.clearStatics(-76);
+        Renderable.method2374((byte) -125);
+        Component268.method810(true);
+        Component240.method597((byte) -122);
+        DisplayModeManagerContainer145.clearStatics(true);
+        Component354.method225((byte) 57);
+        Component362.method1040(i + 404);
+        Component10.method2251(16711680);
+        DisplayModeManagerContainer254.method1261((byte) 108);
+        Component314.method2299((byte) -128);
+        RuntimeException_Sub1.clearStatics(-3);
+        DisplayModeManagerContainer153.method883((byte) 66);
+        HashNodeSub16Sub2.method3264((byte) -24);
+        Component16.method1325(-128);
+        Component101.method1235((byte) 7);
+        HashNodeSub17.method3269(true);
+        DisplayModeManagerContainer167.method265(false);
+        Component280.method1375(5616);
+        DisplayModeManagerContainer370.method609((byte) -52);
+        Component129.method355(i + 4189);
+        DisplayModeManagerContainer56.method1426(25165);
+        Component80.method2254(i ^ ~0x39bf);
+        Component121.method3613(64);
+        ObjectDefinition.method486(-123);
+        DisplayModeManagerContainer77.method1096(i ^ 0x11);
+        Component245.method171((byte) 72);
         s.method3988(i + -182);
-        Class79.method804(-3752);
-        Class213.method1564(104);
-        Class324.method2572((byte) 23);
-        Class234.method1659((byte) -71);
-        Class199.method1461((byte) 112);
-        Class239_Sub20.method1807((byte) -121);
-        Class239_Sub12.method1773((byte) 120);
-        Class239_Sub10.method1763(-15596);
-        Class239_Sub6.method1746(-15628);
-        Class239_Sub1.method1723((byte) 119);
-        Class239_Sub9.method1758(-16211);
-        Class239_Sub4.method1738(i + 21813);
-        Class239_Sub15.method1785(i ^ 0x64);
-        Class239_Sub14.method1780(i + -48);
-        Class239_Sub21.method1814((byte) -70);
-        Class239_Sub2.method1724(-4);
-        Class239_Sub24.method1822((byte) 110);
-        Class239_Sub25.method1832(1);
-        Class239_Sub27.method1841(16878);
-        Class239_Sub18.method1799(124);
-        Class239_Sub8.method1755(i + -107);
-        Class239_Sub22.method1816(1);
-        Class239_Sub17.method1794(63);
-        Class239_Sub11.method1769(100);
-        Class239_Sub26.method1835(i + -28702);
-        Class239.method1715(103);
-        Class90.method852(6);
-        Class365.method3518(i ^ 0x34);
+        NpcComposition.method804(-3752);
+        ItemDefinition.method1564(104);
+        BitmapFont.method2572((byte) 23);
+        RandomAccessFileReader.clearStatics((byte) -71);
+        HelveticaFont.method1461((byte) 112);
+        Component20.method1807((byte) -121);
+        Component205.method1773((byte) 120);
+        Component98.method1763(-15596);
+        Component31.method1746(-15628);
+        Component175.method1723((byte) 119);
+        Component379.method1758(-16211);
+        Component323.method1738(i + 21813);
+        DisplayModeManagerContainer341.method1785(i ^ 0x64);
+        Component329.method1780(i + -48);
+        Component71.method1814((byte) -70);
+        DisplayModeManagerContainer199.method1724(-4);
+        ColoredText.method1822((byte) 110);
+        Component256.method1832(1);
+        Component139.method1841(16878);
+        Component302.method1799(124);
+        DisplayModeManagerContainer295.method1755(i + -107);
+        CustomCursorSetting.method1816(1);
+        Component66.method1794(63);
+        LibraryCreditsText.method1769(100);
+        RadixText.method1835(i + -28702);
+        Component339.method1715(103);
+        Component330.method852(6);
+        Component6.method3518(i ^ 0x34);
         Exception_Sub1.method140((byte) -126);
-        aa.method158((byte) -67);
-        za.method3438((byte) 59);
-        Class143.method1180((byte) -76);
-        Class98.method879(96);
-        Class348_Sub1.method2719(11339);
-        Class318_Sub1_Sub3.method2412(true);
-        Class318_Sub1.method2389(1);
-        Class348_Sub16_Sub3.method2871(-65);
-        Class163.method1276(i + -199);
-        Class10.method218((byte) 119);
-        Class66.method713();
-        Class351.method3457(true);
-        Class273.method2055(1);
-        Class348_Sub23_Sub4.method2990((byte) 125);
-        Class55_Sub1.method523(119);
-        Class348_Sub23_Sub2.method2974(1);
-        Class348_Sub23_Sub1.method2968((byte) -116);
-        Class348_Sub16_Sub2.method2830(i ^ 0x6c);
-        Class363.method3516(124);
-        Class15.method255(6725);
-        Class20.method287(51);
-        Class56.method526(85);
-        Class336.method2657((byte) 124);
-        Class16.method261((byte) -120);
-        Class244.method1880(i + -221);
-        Class296.method2225(i + -76);
-        Class131.method1136((byte) -98);
-        Class106.method999(21745);
-        Class28.method318(122);
-        Class111.method1047(1);
-        Class160.method1254((byte) 62);
-        Class75.method746();
-        Class311.method2317((byte) 79);
-        Class301.method2281(1);
-        Class140.method1169(false);
-        Class176.method1351(1);
-        Class26.method306(true);
-        Class250.method1910(0);
-        Class121.method1081((byte) 121);
-        Class132.method1137(3);
-        Class341.method2677(i ^ 0x33);
-        Class149.method1200(false);
-        Class180.method1366((byte) -43);
-        Class76.method772((byte) -113);
-        Class30.method322(1);
-        Class264.method2018(0);
-        Class318_Sub10.method2527();
-        Class225.method1619((byte) 108);
-        Class27.method316((byte) -94);
-        Class291.method2199((byte) 63);
-        Class152.method1216((byte) -97);
-        Class303.method2286(114);
-        Class333.method2645(i + -16777324);
-        Class312.method2331(true);
-        Class348_Sub21.method2956((byte) 53);
-        Class323.method2562();
-        Class69.method722(13569);
-        Class184.method1386(true);
-        Class43.method380(0);
-        Class348_Sub36.method3029(126);
-        Class348_Sub42_Sub19.method3278(1);
-        Class168.method1298(-1);
-        Class348_Sub42_Sub16.method3252(353);
-        Class47.method445(i ^ 0x6e);
-        Class211.method1543(-4524);
-        Class318_Sub1_Sub1.method2395((byte) 50);
-        Class318_Sub1_Sub2.method2406(i ^ ~0x12);
-        Class318_Sub1_Sub4.method2479(i + 19316);
-        Class318_Sub1_Sub5.method2484(0);
-        Class148.method1198(1010);
+        Shader.method158((byte) -67);
+        NodeBase.method3438((byte) 59);
+        Component184.method1180((byte) -76);
+        Component122.method879(96);
+        NodeSub1.method2719(11339);
+        Component327.method2412(true);
+        RenderableObject.method2389(1);
+        BrowserUrlOpener.method2871(-65);
+        ImageTagText.method1276(i + -199);
+        RunescapeInfo.clearStatics((byte) 119);
+        ClientScriptExecutor.shutdown();
+        StringCache.clearStatics(true);
+        Component224.method2055(1);
+        Component179.method2990((byte) 125);
+        Component326.method523(119);
+        DisplayModeManagerContainer64.method2974(1);
+        OggUrlStream.method2968((byte) -116);
+        NodeSub16Sub2.method2830(i ^ 0x6c);
+        Component126.method3516(124);
+        Component279.method255(6725);
+        Component120.clearStatics(51);
+        LoadingState.getProgress(85);
+        Component226.method2657((byte) 124);
+        Component110.method261((byte) -120);
+        ModelStore.method1880(i + -221);
+        HuffmanDecoder.clearStatics(i + -76);
+        Component286.method1136((byte) -98);
+        KeyStoreLoader.clearStatics(21745);
+        DisplayModeManagerContainer332.method318(122);
+        Component331.method1047(1);
+        Component214.method1254((byte) 62);
+        DisplayModeManagerContainer229.clearWorld();
+        ResourceLoader.method2317((byte) 79);
+        Component281.method2281(1);
+        Component211.method1169(false);
+        Component218.clearStatics(1);
+        AssetCacheLoader.method306(true);
+        AudioMixer.method1910(0);
+        Component221.method1081((byte) 121);
+        Component72.method1137(3);
+        DisplayModeManagerContainer196.method2677(i ^ 0x33);
+        Component90.method1200(false);
+        Component166.method1366((byte) -43);
+        DisplayModeManagerContainer154.method772((byte) -113);
+        ComponentDownloader.method322(1);
+        Component235.method2018(0);
+        RenderableSub10.method2527();
+        Component241.method1619((byte) 108);
+        DisplayModeManagerContainer91.method316((byte) -94);
+        ReferenceTable.clearStatics((byte) 63);
+        InflaterDecompressor.clearStatics((byte) -97);
+        DisplayModeManagerContainer165.method2286(114);
+        Component79.method2645(i + -16777324);
+        Component37.method2331(true);
+        NodeSub21.method2956((byte) 53);
+        FontGlyphCache.clearCharsetMap();
+        Component325.method722(13569);
+        Component357.method1386(true);
+        CookieBuilder.clearStatics(0);
+        NodeSub36.method3029(126);
+        HashNodeSub19.method3278(1);
+        Component39.method1298(-1);
+        HashNodeSub16.method3252(353);
+        DisplayModeManagerContainer32.method445(i ^ 0x6e);
+        DisplayModeManagerContainer159.method1543(-4524);
+        DisplayModeManagerContainer28.method2395((byte) 50);
+        DisplayModeManagerContainer343.method2406(i ^ ~0x12);
+        Component269.method2479(i + 19316);
+        Component203.method2484(0);
+        Component3.method1198(1010);
         r.method3285(88);
-        Class178.method1355(-108);
-        Class72.method731();
-        Class129.method1126(32);
-        Class342.method2682(i ^ 0x29);
-        Class162.method1267((byte) 85);
-        Class348_Sub33.method3024(-100);
-        Class4.method177();
-        Class222.method1609((byte) -121);
-        Class175.method1349((byte) -121);
-        Class368.method3560(-13);
-        Class116.method1062((byte) 35);
-        Class108.method1013((byte) 114);
-        Class348_Sub10.method2785();
-        Class359.method3491(1);
-        Class348_Sub14.method2805((byte) 113);
-        Class277.method2071(-128);
-        Class22.method293((byte) -83);
-        Class34.method351(80);
-        Class146.method1194(10);
-        Class218.method1594(-1966608624);
-        Class254.method1926(-127);
-        Class321.method2549((byte) -85);
-        Class348_Sub42_Sub1.method3165((byte) 44);
-        Class181.method1369((byte) 2);
-        Class174.method1334((byte) -110);
-        Class115.method1061(16711680);
-        Class308.method2306((byte) -90);
-        Class103.method948(false);
-        Class281.method2107((byte) 77);
-        Class282.method2111((byte) 68);
-        Class147.method1195((byte) 127);
-        Class91.method857(126);
-        Class289.method2191(0);
-        Class155.method1236((byte) -110);
-        Class200.method1463((byte) 25);
-        Class318_Sub6.method2506((byte) -46);
-        Class318_Sub1_Sub3_Sub4.method2469(true);
-        Class332.method2640(true);
-        Class95.method869(3);
-        Class327.method2604((byte) -102);
-        Class348_Sub42_Sub10.method3217((byte) 61);
-        Class138.method1164((byte) -52);
-        Class318_Sub1_Sub2_Sub1.method2407(false);
-        Class235.method1673(i ^ ~0x75);
-        Class318_Sub1_Sub5_Sub2.method2492(1);
-        Class318_Sub1_Sub1_Sub1.method2398((byte) -83);
-        Class247.method1889(255);
-        Class346_Sub1.method2705(i + 14537);
-        Class373_Sub2.method3609((byte) 48);
-        Class223.method1612((byte) -9);
-        Class287.method2180((byte) -72);
-        Class195.method1447(i ^ 0x20);
-        Class52.method492(i + -216);
-        Class369_Sub3.method3574(i ^ 0x4c47);
-        Class125.method1109((byte) -22);
-        Class288_Sub1.method2190(true);
-        Class369_Sub2.method3572(1000000);
-        Class288.method2185(2);
-        Class158.method1249(true);
-        Class339.method2664(i ^ 0x6f);
-        Class348_Sub42_Sub5.method3187((byte) -52);
-        Class117.method1064(-3);
-        Class189.method1421((byte) -85);
-        Class348_Sub42_Sub11.method3220((byte) 102);
+        DisplayModeManagerContainer109.method1355(-108);
+        DisplayModeManagerContainer365.method731();
+        Component30.method1126(32);
+        DisplayModeManagerContainer173.method2682(i ^ 0x29);
+        DisplayModeManagerContainer133.method1267((byte) 85);
+        ObjectDeserializer.clearStatics(-100);
+        Component376.method177();
+        CursorDefinition.clearStatics((byte) -121);
+        Component143.method1349((byte) -121);
+        Component63.method3560(-13);
+        Component262.clearStatics((byte) 35);
+        Component83.method1013((byte) 114);
+        NodeSub10.method2785();
+        Component135.method3491(1);
+        NodeSub14.method2805((byte) 113);
+        Component11.method2071(-128);
+        Component231.method293((byte) -83);
+        Component225.method351(80);
+        Component334.method1194(10);
+        SceneManager.method1594(-1966608624);
+        Component355.method1926(-127);
+        Component236.method2549((byte) -85);
+        HashNodeSub1.method3165((byte) 44);
+        Component113.method1369((byte) 2);
+        RadixParser.method1334((byte) -110);
+        Component95.method1061(16711680);
+        Component17.method2306((byte) -90);
+        Component99.method948(false);
+        Component337.method2107((byte) 77);
+        Component21.method2111((byte) 68);
+        Component335.method1195((byte) 127);
+        GnpPositionLogger.method857(126);
+        Component156.method2191(0);
+        Component177.method1236((byte) -110);
+        Component33.method1463((byte) 25);
+        RenderableSub6.clearStatics((byte) -46);
+        DisplayModeManagerContainer104.method2469(true);
+        Component9.method2640(true);
+        Component181.method869(3);
+        DisplayModeManagerContainer363.method2604((byte) -102);
+        HashNodeSub10.method3217((byte) 61);
+        Component161.method1164((byte) -52);
+        Component252.method2407(false);
+        Component366.method1673(i ^ ~0x75);
+        ShaderLinker.method2492(1);
+        Component141.clearStatic4((byte) -83);
+        VideoAdDisplay.method1889(255);
+        KeyFocusHandler.clearStatics(i + 14537);
+        BasicMouseHandler.clearStatics((byte) 48);
+        DisplayModeManagerContainer369.method1612((byte) -9);
+        DisplayModeManagerContainer260.method2180((byte) -72);
+        Component195.method1447(i ^ 0x20);
+        RSACipher.method492(i + -216);
+        Component76.method3574(i ^ 0x4c47);
+        Component15.method1109((byte) -22);
+        Component383.method2190(true);
+        Component14.method3572(1000000);
+        Component118.method2185(2);
+        HeapDumpHelper.method1249(true);
+        NewsFetcher.method2664(i ^ 0x6f);
+        DefinitionGroup.method3187((byte) -52);
+        Component208.clearStatics(-3);
+        Component291.method1421((byte) -85);
+        StringDefinition.method3220((byte) 102);
         if (i != 108) anInt5171 = -60;
-        Class348_Sub23.method2962(-31055);
-        Class256.method1944(1);
-        Class338.method2662(4);
-        Canvas_Sub1.method120(false);
-        Class44.method387(67);
-        Class272.method2048(1);
-        IOException_Sub1.method130(i + -100);
-        Class331.method2637(i + -108);
-        Class313.method2333(false);
-        Class24.method296((byte) -99);
-        Class3.method176(-1);
-        Class316.method2366(true);
-        Class344.method2690(-124);
-        Class212.method1551();
-        Class40.method370(true);
-        Class348_Sub42_Sub8_Sub2.method3202((byte) 79);
-        Class246.method1886(4908);
-        Class348_Sub42_Sub9.method3204(-112);
-        Class348_Sub40_Sub8.method3068(i + 13607);
-        Class318_Sub1_Sub1_Sub2.method2400((byte) 3);
-        Class318_Sub1_Sub3_Sub1.method2415(61);
-        Class92.method860((byte) 44);
-        Class318_Sub1_Sub5_Sub1.method2490(4);
-        Class348_Sub18.method2936((byte) -25);
-        Class348_Sub35.method3028(-11677);
-        Class348_Sub50.method3418(114);
-        Class110.method1030(-24);
-        Class283.method2113((byte) 74);
-        Class348_Sub43.method3300(0);
-        Class204.method1493();
-        Class348_Sub16_Sub1.method2823(i + -108);
-        Class348_Sub17.method2930((byte) -87);
-        Class80.method808();
-        Class210.method1536();
-        Class348_Sub8.method2775((byte) -127);
-        Class279_Sub2.method2097();
-        Class245.method1882(25365);
-        Class348_Sub23_Sub3.method2981(false);
-        Class133.method1139(2767);
-        Class348_Sub40.method3040(true);
-        Class309.method2310((byte) 69);
-        Class292.method2202(-17902);
-        Class73.method741((byte) -128);
-        Class136.method1159((byte) 112);
-        Class177.method1354((byte) -22);
-        Class240.method1853((byte) 48);
-        Class127.method1117(105);
-        Class127_Sub1.method1120(1);
-        Class5_Sub2.method193(i + -78);
-        Class5.method180(-19960);
-        Class369.method3567(i ^ ~0x24);
-        Class5_Sub1.method189((byte) 121);
-        Class67.method716(1);
-        Class265.method2023((byte) -78);
-        Class5_Sub1_Sub1.method190((byte) 32);
-        Class295.method2223(i ^ 0x5);
-        Class71.method728(true);
-        Class329.method2621();
-        Class294.method2214(0);
-        Class128.method1123(-1);
-        Class374.method3611(true);
-        Class348_Sub42_Sub20.method3280(-109);
-        Class318_Sub9_Sub2.method2518(137);
-        Class318_Sub7.method2508(i ^ 0x7f93);
-        Class156.method1239(30114);
-        Class318_Sub2.method2495((byte) 113);
-        Class275.method2065(31913);
-        Class59.method548(10);
-        Class322.method2555((byte) 28);
-        Class191.method1431(0);
-        Class348_Sub42_Sub9_Sub1.method3207((byte) -120);
-        Class345.method2693(3);
-        Class348_Sub40_Sub15.method3085(0);
-        Class348_Sub40_Sub17.method3091(true);
-        Class348_Sub46.method3318((byte) -80);
-        Class348_Sub31.method3010(-1316);
-        Class49.method453(-2001);
-        Class101_Sub1.method911(0);
-        Class167.method1293(1);
-        ha_Sub2.method3736((byte) 100);
-        Class354.method3468(-1401);
-        Class100.method886(16);
-        Class18.method277((byte) 115);
-        Class348_Sub5_Sub1.method2765(2048);
-        Class233.method1653(i + 1489574628);
-        Class101_Sub3.method938(47);
-        Class188.method1411(true);
-        Class206.method1499(i + -235);
-        Class299_Sub1.method2258((byte) -122);
-        Class64_Sub3.method681(i + -14);
-        Class123.method1091(-9341);
-        Class348_Sub49_Sub1.method3403(84);
-        Class258_Sub2.method1962(-1);
-        ha_Sub3.method3870(113);
-        Class325.method2597(-27327);
-        Class68.method719((byte) 72);
-        Class269.method2042((byte) -67);
-        Class101_Sub2.method925(i + -6105);
-        Class251.method1912(8549);
-        Class229.method1632(-11);
-        Class299_Sub2.method2268(-24054);
-        Class173.method1329(4);
-        Class280.method2104(88);
-        Class130.method1127(5125);
-        Class64_Sub2.method676(126);
-        Class70.method725(16384);
-        Class113.method1057(true);
-        Class21.method288((byte) 119);
-        Class377.method3968(15);
-        Class349.method3450();
-        Class348_Sub40_Sub18.method3096(i ^ 0x7ea2);
-        Class348_Sub40_Sub19.method3099((byte) -121);
-        Class348_Sub40_Sub4.method3057((byte) -54);
-        Class348_Sub40_Sub22.method3110(-1633784916);
-        Class348_Sub40_Sub37.method3148(true);
-        Class348_Sub40_Sub38.method3149(104);
-        Class348_Sub40_Sub16.method3087(false);
-        Class348_Sub40_Sub7.method3066(-1);
-        Class348_Sub40_Sub12.method3077((byte) -98);
-        Class348_Sub40_Sub26.method3118((byte) 127);
-        Class348_Sub40_Sub36.method3145(0);
-        Class348_Sub40_Sub20.method3104(false);
-        Class348_Sub40_Sub11.method3075(false);
-        Class348_Sub40_Sub5.method3059(-120);
-        Class348_Sub40_Sub2.method3053(4);
-        Class348_Sub40_Sub17_Sub1.method3092(-1);
-        Class348_Sub40_Sub6.method3062(true);
-        Class348_Sub40_Sub27.method3121((byte) 104);
-        Class348_Sub40_Sub32.method3133((byte) -109);
-        Class348_Sub40_Sub33.method3138((byte) -115);
-        Class348_Sub40_Sub13.method3080((byte) 111);
-        Class348_Sub40_Sub1.method3050(true);
-        Class348_Sub40_Sub24.method3115(-114);
-        Class348_Sub40_Sub23.method3114((byte) -123);
-        Class348_Sub40_Sub39.method3152(255);
-        Class348_Sub40_Sub10.method3074(i ^ 0x6c);
-        Class348_Sub40_Sub25.method3117(109);
-        Class348_Sub40_Sub35.method3144((byte) 119);
-        Class348_Sub40_Sub34.method3142(0);
-        Class348_Sub40_Sub9.method3071((byte) 59);
-        Class348_Sub40_Sub21.method3106((byte) 97);
-        Class348_Sub40_Sub28.method3123(i + -108);
-        Class348_Sub25.method2996();
-        Class216.method1584((byte) -64);
-        aa_Sub3.method167(19612);
-        Class6.method208((byte) 0);
-        Class348_Sub31_Sub2.method3016(65280);
-        Class348_Sub1_Sub2.method2731((byte) -23);
-        Class11.method221(0);
-        Class232.method1645(121);
-        Class104.method953((byte) 9);
-        s_Sub2.method4000(i ^ 0x216c);
-        Class337.method2658(true);
-        Class258_Sub1.method1959(-112);
-        Class348_Sub5.method2762(108);
-        Class286.method2135(0);
-        Class83.method815(false);
-        Class286_Sub1.method2142((byte) -126);
-        Class118.method1075((byte) 17);
-        Class48.method448((byte) -16);
-        r_Sub2.method3295(i + -109);
-        za_Sub1.method3441(1);
-        aa_Sub1.method161(114);
-        Class348_Sub20.method2950(71);
-        Class171.method1322((byte) -28);
-        Class348_Sub1_Sub1.method2728((byte) 9);
-        Class299_Sub1_Sub2.method2265(-10794);
-        Class135_Sub2.method1155((byte) -125);
-        Class135.method1149(99);
-        Class135_Sub1.method1154((byte) 11);
-        Class286_Sub3.method2151(-86);
-        Class286_Sub7.method2166(i ^ 0x18ac);
-        Class258_Sub4.method1973(24885);
-        Class286_Sub5.method2160(0);
-        Class286_Sub2.method2147(i ^ ~0x6c);
-        Class286_Sub8.method2171(i + -108);
-        Class286_Sub6.method2164(true);
-        Class286_Sub4.method2156(77);
-        Class242.method1866(0);
-        Class228.method1628((byte) 54);
-        Class209.method1529(true);
-        za_Sub2.method3444(i + -198);
-        Class353.method3462(-30094);
-        Class334.method2654(-6896);
-        r_Sub1.method3288((byte) 74);
-        Class362.method3512(4);
-        Class186_Sub1.method1400(i + -107);
-        aa_Sub2.method162((byte) -112);
-        s_Sub3.method4006(-43);
-        Class348_Sub3.method2738((byte) 82);
-        Class330.method2631(127);
-        Class299_Sub2_Sub1.method2272(88);
-        Class367_Sub3.method3539((byte) -32);
-        Class367_Sub4.method3541((byte) 23);
-        Class367_Sub8.method3550((byte) -122);
-        Class367_Sub10.method3554(i + -107);
-        Class59_Sub1.method553(0);
-        Class59_Sub2.method564((byte) -54);
-        Class186.method1396(25);
-        Class249.method1907((byte) 49);
-        Class14_Sub1.method242(true);
-        Class14.method237(false);
-        Class14_Sub4.method251((byte) 2);
-        Class367_Sub11.method3557(true);
-        Class193.method1440(-127);
-        Class367_Sub2.method3537(i ^ 0x864c);
-        Class367_Sub9.method3552(i ^ 0x3b);
-        Class89.method851(i + -107);
-        Class285.method2124(0);
-        Class285_Sub2.method2132(-125);
-        Class130_Sub1.method1133(96);
-        Class328_Sub1.method2610(true);
-        Class328_Sub1_Sub1.method2611(-123);
-        Class328_Sub3.method2617((byte) 93);
-        Class328_Sub2_Sub1.method2614(i ^ 0x4d);
-        Class328_Sub2.method2613(-1);
-        Class348_Sub29.method3003(-4587);
-        Class348_Sub32.method3020((byte) -64);
-        Class348_Sub38.method3035(1);
-        Class39.method367(-15833);
-        Class318_Sub9_Sub1.method2517((byte) 4);
-        Class348_Sub42_Sub18.method3274(true);
-        Class348_Sub42_Sub6.method3190(false);
-        Class348_Sub45.method3314(5);
-        Class348_Sub15.method2810((byte) 79);
-        Class352.method3458(i + 2564);
+        OggStream.method2962(-31055);
+        Component52.method1944(1);
+        Component103.method2662(4);
+        Canvas_Sub1.clearStatics(false);
+        Component352.method387(67);
+        SocketConnector.clearStatics(1);
+        IOException_Sub1.clearStatics(i + -100);
+        Component374.method2637(i + -108);
+        Component55.method2333(false);
+        DisplayModeManagerContainer310.method296((byte) -99);
+        Component223.method176(-1);
+        Component192.clearStatics(true);
+        AbstractBuffer.clearStatics(-124);
+        Component187.method1551();
+        DisplayModeManagerContainer172.method370(true);
+        PacketReader.softDisconnect((byte) 79);
+        Component163.method1886(4908);
+        ReferenceHolder.clearStatics(-112);
+        DefinitionSub8.method3068(i + 13607);
+        Component212.clearStatic3((byte) 3);
+        Component349.clearStatic(61);
+        DisplayModeManagerContainer23.method860((byte) 44);
+        Component289.method2490(4);
+        NodeSub18.method2936((byte) -25);
+        NodeSub35.method3028(-11677);
+        NodeSub50.method3418(114);
+        Component338.method1030(-24);
+        Component69.method2113((byte) 74);
+        PlayerState.method3300(0);
+        Component198.method1493();
+        GpiLogger.method2823(i + -108);
+        NpcDefinition.method2930((byte) -87);
+        Component202.method808();
+        Component116.method1536();
+        NodeSub8.method2775((byte) -127);
+        AudioLineSub2.clearNativeAudio();
+        DebugOverlay.clear(25365);
+        OggStreamReader.method2981(false);
+        HeapDumper.clearStatics(2767);
+        Definition.method3040(true);
+        DisplayModeManagerContainer74.method2310((byte) 69);
+        Component102.method2202(-17902);
+        DisplayModeManagerContainer306.method741((byte) -128);
+        Component257.method1159((byte) 112);
+        DisplayModeManagerContainer249.method1354((byte) -22);
+        Component49.method1853((byte) 48);
+        Component296.method1117(105);
+        Component162.method1120(1);
+        Component2.method193(i + -78);
+        Component298.method180(-19960);
+        Component27.method3567(i ^ ~0x24);
+        Component364.method189((byte) 121);
+        VideoAdPlayer.method716(1);
+        DisplayModeManagerContainer232.method2023((byte) -78);
+        Component305.method190((byte) 32);
+        DisplayModeManagerContainer61.method2223(i ^ 0x5);
+        DisplayModeManagerContainer5.method728(true);
+        Component68.method2621();
+        InterfaceRenderer.method2214(0);
+        Component59.method1123(-1);
+        DisplayModeManagerContainer152.method3611(true);
+        HashNodeSub20.method3280(-109);
+        RenderableSub9Sub2.method2518(137);
+        StaticElementRenderer.method2508(i ^ 0x7f93);
+        ClientErrorReporter.clearStatics(30114);
+        RenderableSub2.method2495((byte) 113);
+        Component300.method2065(31913);
+        DisplayModeManagerContainer213.method548(10);
+        ImageCacheStore.method2555((byte) 28);
+        ImageCache.method1431(0);
+        Component140.method3207((byte) -120);
+        Component35.method2693(3);
+        DefinitionSub15.method3085(0);
+        DefinitionSub17.method3091(true);
+        NodeSub46.method3318((byte) -80);
+        Sprite.method3010(-1316);
+        Component297.method453(-2001);
+        MatrixSub1.method911(0);
+        Component385.method1293(1);
+        GlToolkitSub2.method3736((byte) 100);
+        Component160.method3468(-1401);
+        Component265.method886(16);
+        DisplayModeManagerContainer220.method277((byte) 115);
+        GlWaterShader.method2765(2048);
+        Component237.method1653(i + 1489574628);
+        MatrixSub3.method938(47);
+        ReliefShader.method1411(true);
+        DisplayModeManagerContainer105.method1499(i + -235);
+        Component40.method2258((byte) -122);
+        DisplayModeManagerContainer282.clearStatic(i + -14);
+        Component132.method1091(-9341);
+        Component182.method3403(84);
+        GlFramebufferTexture.method1962(-1);
+        GlToolkitSub3.getInternalFormat(113);
+        ColoredTextBuilder.method2597(-27327);
+        Component342.method719((byte) 72);
+        Component209.method2042((byte) -67);
+        MatrixSub2.method925(i + -6105);
+        Component111.clearStatics(8549);
+        Component267.method1632(-11);
+        DisplayModeManagerContainer356.method2268(-24054);
+        Component75.method1329(4);
+        Component333.method2104(88);
+        Component387.method1127(5125);
+        DisplayModeManagerContainer190.clearString(126);
+        DisplayModeManagerContainer88.method725(16384);
+        Component22.method1057(true);
+        Component158.method288((byte) 119);
+        GlExtensionManager.method3968(15);
+        Component13.method3450();
+        NsnDefinition.method3096(i ^ 0x7ea2);
+        DefinitionSub19.method3099((byte) -121);
+        DefinitionSub4.method3057((byte) -54);
+        DefinitionSub22.method3110(-1633784916);
+        DefinitionSub37.method3148(true);
+        DefinitionSub38.method3149(104);
+        ToolbarRefreshDefinition.method3087(false);
+        ImageDefinition.method3066(-1);
+        GradientPreset.method3077((byte) -98);
+        DefinitionSub26.method3118((byte) 127);
+        DefinitionSub36.method3145(0);
+        DefinitionSub20.method3104(false);
+        DefinitionSub11.method3075(false);
+        DefinitionSub5.method3059(-120);
+        DefinitionSub2.method3053(4);
+        DefinitionSub17Sub1.method3092(-1);
+        DefinitionSub6.method3062(true);
+        DefinitionSub27.method3121((byte) 104);
+        DefinitionSub32.method3133((byte) -109);
+        DefinitionSub33.method3138((byte) -115);
+        DefinitionSub13.method3080((byte) 111);
+        PrimitiveTypeDefinition.method3050(true);
+        DefinitionSub24.method3115(-114);
+        DefinitionSub23.method3114((byte) -123);
+        DefinitionSub39.method3152(255);
+        DefinitionSub10.method3074(i ^ 0x6c);
+        DefinitionSub25.method3117(109);
+        DefinitionSub35.method3144((byte) 119);
+        LoggedOutDefinition.method3142(0);
+        DefinitionSub9.method3071((byte) 59);
+        DefinitionSub21.method3106((byte) 97);
+        DefinitionSub28.method3123(i + -108);
+        NodeSub25.method2996();
+        Component43.method1584((byte) -64);
+        ShaderSub3.method167(19612);
+        BuildInfo.method208((byte) 0);
+        ImageProducerSprite.method3016(65280);
+        NodeSub1Sub2.method2731((byte) -23);
+        Component53.method221(0);
+        Component228.method1645(121);
+        Component65.method953((byte) 9);
+        BufferCacheSub2.method4000(i ^ 0x216c);
+        Component244.method2658(true);
+        AbstractGlTextureSub1.method1959(-112);
+        NodeSub5.method2762(108);
+        ShaderProgram.method2135(0);
+        Component178.method815(false);
+        ArbShaderProgram.method2142((byte) -126);
+        Component151.method1075((byte) 17);
+        Component377.method448((byte) -16);
+        CacheNodeSub2.method3295(i + -109);
+        NodeBaseSub1.method3441(1);
+        ShaderSub1.method161(114);
+        NodeSub20.method2950(71);
+        Component382.method1322((byte) -28);
+        NodeSub1Sub1.method2728((byte) 9);
+        Component264.method2265(-10794);
+        MenuOpener.method1155((byte) -125);
+        Component137.method1149(99);
+        DisplayModeManagerContainer136.method1154((byte) 11);
+        ParticleShader.method2151(-86);
+        ShaderProgramSub7.method2166(i ^ 0x18ac);
+        AbstractGlTextureSub4.method1973(24885);
+        SpriteAtlasShader.method2160(0);
+        ShaderProgramSub2.method2147(i ^ ~0x6c);
+        CookieManager.method2171(i + -108);
+        WaterShaderProgram.method2164(true);
+        WaterSurfaceShader.method2156(77);
+        Component359.method1866(0);
+        NativeLibraryLoader.clearStatics((byte) 54);
+        Component246.method1529(true);
+        NodeBaseSub2.method3444(i + -198);
+        Component45.method3462(-30094);
+        NativeLibLoader.method2654(-6896);
+        CacheNodeSub1.method3288((byte) 74);
+        Component149.method3512(4);
+        Component134.method1400(i + -107);
+        ShaderSub2.method162((byte) -112);
+        BufferCacheSub3.method4006(-43);
+        NodeSub3.method2738((byte) 82);
+        Component301.method2631(127);
+        Component201.method2272(88);
+        AbstractShaderSub3.method3539((byte) -32);
+        AbstractShaderSub4.method3541((byte) 23);
+        WaterShaderSub8.method3550((byte) -122);
+        SoftwareFallbackShader.method3554(i + -107);
+        Component210.method553(0);
+        Component185.method564((byte) -54);
+        DisplayModeManagerContainer51.method1396(25);
+        Component217.method1907((byte) 49);
+        Component19.method242(true);
+        DisplayModeManagerContainer194.method237(false);
+        WorldNameText.method251((byte) 2);
+        OpenGlShader.method3557(true);
+        Component321.method1440(-127);
+        AbstractShaderSub2.clearStatics(i ^ 0x864c);
+        WaterShader.method3552(i ^ 0x3b);
+        Component84.method851(i + -107);
+        DebugPanic.method2124(0);
+        DebugPanicSub2.method2132(-125);
+        DisplayModeManagerContainer273.method1133(96);
+        ShaderCompilerSub1.method2610(true);
+        ShaderCompilerSub1Sub1.method2611(-123);
+        ShaderCompilerSub3.method2617((byte) 93);
+        ShaderCompilerSub2Sub1.method2614(i ^ 0x4d);
+        ShaderCompilerSub2.method2613(-1);
+        NodeSub29.method3003(-4587);
+        NodeSub32.method3020((byte) -64);
+        NodeSub38.method3035(1);
+        DisplayModeManagerContainer271.method367(-15833);
+        FriendLoginMessage.method2517((byte) 4);
+        HashNodeSub18.method3274(true);
+        PauseHandler.clearStatics(false);
+        NodeSub45.method3314(5);
+        ColorTagNode.method2810((byte) 79);
+        Component48.method3458(i + 2564);
         InputStream_Sub2.method127((byte) 118);
         OutputStream_Sub2.method139(88);
-        Class126.method1112(1);
-        Class358.method3488(64);
-        Class348_Sub42_Sub4.method3181((byte) 2);
-        Class348_Sub7.method2773(0);
-        Class348_Sub12.method2798(122);
-        Class348_Sub42_Sub12.method3228(75);
-        Class348_Sub11.method2796((byte) 104);
-        Class208.method1525((byte) 4);
+        Component380.method1112(1);
+        Component142.method3488(64);
+        HashNodeSub4.method3181((byte) 2);
+        NodeSub7.method2773(0);
+        NodeSub12.method2798(122);
+        MenuEntry.clearStatics(75);
+        NodeSub11.method2796((byte) 104);
+        Component222.method1525((byte) 4);
         OutputStream_Sub1.method133((byte) -41);
         InputStream_Sub1.method124(i ^ 0x6e);
-        Class284.method2117(0);
-        Class348_Sub24.method2993((byte) 50);
-        Class348_Sub6.method2768(3);
-        Class348_Sub42_Sub3.method3176(true);
-        Class347.method2707(false);
-        Class8.method213((byte) -106);
-        Class270.method2043(true);
-        Class59_Sub2_Sub2.method570(105);
-        Class192.method1438(-120);
-        Class63.method601((byte) -85);
-        Class151.method1209(i + -51);
-        Class50.method458(-14487);
-        Class50_Sub4.method471(i ^ ~0x751c);
-        Class50_Sub3.method469((byte) -62);
-        Class50_Sub1.method460(i ^ 0x6e);
-        Class59_Sub1_Sub2.method561(120);
-        Class59_Sub2_Sub1.method568(true);
+        Component94.method2117(0);
+        ClientSystemInfo.method2993((byte) 50);
+        NodederUtil.method2768(3);
+        HashNodeSub3.method3176(true);
+        DisplayModeManagerContainer322.method2707(false);
+        DisplayModeManagerContainer345.method213((byte) -106);
+        Component148.method2043(true);
+        Component317.method570(105);
+        Component353.method1438(-120);
+        Component227.method601((byte) -85);
+        DisplayModeManagerContainer346.method1209(i + -51);
+        Component47.method458(-14487);
+        Component230.method471(i ^ ~0x751c);
+        DisplayModeManagerContainer368.method469((byte) -62);
+        Cp1252Decoder.method460(i ^ 0x6e);
+        DisplayModeManagerContainer34.method561(120);
+        Component54.method568(true);
         if (Applet_Sub1.aBoolean41) anInt5190 = ++i_4_;
     }
 
     private final void method102(byte i) {
         if (i != 61) method106();
         anInt5184++;
-        boolean bool = Class348_Sub4.aClass248_6601.method1893((byte) 99);
+        boolean bool = HardwareProbe.aClass248_6601.process((byte) 99);
         if (!bool) method101((byte) -112);
     }
 
-    private final void method103(int i, byte i_5_) {
+    /** Handle JS5 connection failure ({@code js5 fail code=}{@code i}). */
+    private final void onJs5Failure(int i, byte i_5_) {
         anInt5182++;
-        Class348_Sub4.aClass248_6601.anInt3213++;
-        aa.aClass144_114 = null;
-        Class348_Sub4.aClass248_6601.anInt3214 = i;
+        HardwareProbe.aClass248_6601.errorCount++;
+        Shader.aClass144_114 = null;
+        HardwareProbe.aClass248_6601.disconnectCode = i;
+        if (Loader.debug) {
+            System.out.println("js5 fail code=" + i
+                    + " attempts=" + HardwareProbe.aClass248_6601.errorCount
+                    + " handshake=" + DisplayModeManagerContainer32.anInt846);
+        }
         if (i_5_ > 74) {
-            Class47.anInt846 = 0;
-            Class193.aClass202_2589 = null;
+            DisplayModeManagerContainer32.anInt846 = 0;
+            Component321.aClass202_2589 = null;
         }
     }
 
-    final void method80(int i) {
-        if (Class184.aBoolean2469) Class318_Sub1_Sub2.method2405(i + -110);
+    /** Close toolkit, sockets, and cache files. */
+    final void closeResources(int i) {
+        if (Component357.aBoolean2469) DisplayModeManagerContainer343.saveClientPreferences(i + -110);
         anInt5170++;
-        Class59_Sub1_Sub1.method556(false);
-        if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654.method3635((byte) 89);
-        if (Class34.aFrame476 != null) {
-            Class56.method527(Class34.aFrame476, Class348_Sub23_Sub1.aClass297_8992, false);
-            Class34.aFrame476 = null;
+        Component350.method556(false);
+        if (NodeSub8.toolkit != null) NodeSub8.toolkit.method3635((byte) 89);
+        if (Component225.aFrame476 != null) {
+            LoadingState.startLoadingTask(Component225.aFrame476, OggUrlStream.aClass297_8992, false);
+            Component225.aFrame476 = null;
         }
-        if (Class348_Sub40_Sub8.aClass238_9165 != null) {
-            Class348_Sub40_Sub8.aClass238_9165.method1700((byte) 36);
-            Class348_Sub40_Sub8.aClass238_9165 = null;
+        if (DefinitionSub8.aClass238_9165 != null) {
+            DefinitionSub8.aClass238_9165.close((byte) 36);
+            DefinitionSub8.aClass238_9165 = null;
         }
-        Class162.method1265(16);
-        Class348_Sub4.aClass248_6601.method1901(i ^ ~0x44);
-        Class39.aClass112_520.method1051(true);
-        if (Class76.aClass169_1286 != null) {
-            Class76.aClass169_1286.method1303((byte) 16);
-            Class76.aClass169_1286 = null;
+        DisplayModeManagerContainer133.method1265(16);
+        HardwareProbe.aClass248_6601.closeConnection(i ^ ~0x44);
+        DisplayModeManagerContainer271.aClass112_520.shutdown(true);
+        if (DisplayModeManagerContainer154.aClass169_1286 != null) {
+            DisplayModeManagerContainer154.aClass169_1286.method1303((byte) 16);
+            DisplayModeManagerContainer154.aClass169_1286 = null;
         }
         try {
-            Class299_Sub2.aClass78_6328.method790((byte) -62);
+            DisplayModeManagerContainer356.aClass78_6328.close((byte) -62);
             for (int i_6_ = i; i_6_ < 37; i_6_++)
-                Class100.aClass78Array1579[i_6_].method790((byte) 118);
-            Class235.aClass78_3075.method790((byte) -84);
-            Class374.aClass78_4538.method790((byte) 80);
-            Class348_Sub46.method3317((byte) -53);
+                Component265.aClass78Array1579[i_6_].close((byte) 118);
+            Component366.aClass78_3075.close((byte) -84);
+            DisplayModeManagerContainer152.aClass78_4538.close((byte) 80);
+            NodeSub46.closeConsoleLogStream((byte) -53);
         } catch (Exception exception) {
             /* empty */
         }
     }
 
     static final void method104(int i) {
-        int i_7_ = Class328_Sub1.anInt6513;
-        int[] is = Class286_Sub7.anIntArray6290;
-        int i_8_ = Class373_Sub2.aBoolean7444 ? i_7_ : i_7_ + Class150.anInt2057;
+        int i_7_ = ShaderCompilerSub1.anInt6513;
+        int[] is = ShaderProgramSub7.anIntArray6290;
+        int i_8_ = BasicMouseHandler.aBoolean7444 ? i_7_ : i_7_ + Component324.anInt2057;
         for (int i_9_ = 0; i_9_ < i_8_; i_9_++) {
-            Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
-            if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_9_]]);
-            else class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_9_ - i_7_], -6008)).aNpc_6859);
+            DisplayModeManagerContainer58 class318_sub1_sub3_sub3;
+            if (i_9_ < i_7_) class318_sub1_sub3_sub3 = (InterfaceRenderer.players[is[i_9_]]);
+            else class318_sub1_sub3_sub3 = (((NpcNode) Component21.aClass356_3654.get(DisplayModeManagerContainer238.anIntArray1233[i_9_ - i_7_], -6008)).npc);
             if (class318_sub1_sub3_sub3.plane == i) {
                 class318_sub1_sub3_sub3.anInt10261 = 0;
                 if ((class318_sub1_sub3_sub3.anInt10285) < 0) class318_sub1_sub3_sub3.aBoolean10309 = false;
                 else {
-                    int i_10_ = class318_sub1_sub3_sub3.method2436((byte) 71);
+                    int i_10_ = class318_sub1_sub3_sub3.getSize((byte) 71);
                     if ((i_10_ & 0x1) == 0) {
                         if (((class318_sub1_sub3_sub3.x) & 0x1ff) != 0 || ((class318_sub1_sub3_sub3.y) & 0x1ff) != 0) {
                             class318_sub1_sub3_sub3.aBoolean10309 = false;
@@ -799,12 +808,12 @@ public final class client extends Applet_Sub1 {
                     if (i_10_ == 1) {
                         int i_11_ = ((class318_sub1_sub3_sub3.x) >> 9);
                         int i_12_ = ((class318_sub1_sub3_sub3.y) >> 9);
-                        if (class318_sub1_sub3_sub3.anInt10285 != (Class348_Sub42_Sub17.anIntArrayArray9678[i_11_][i_12_])) {
+                        if (class318_sub1_sub3_sub3.anInt10285 != (HashNodeSub17.anIntArrayArray9678[i_11_][i_12_])) {
                             class318_sub1_sub3_sub3.aBoolean10309 = true;
                             continue;
                         }
-                        if (Class239_Sub8.anIntArrayArray5921[i_11_][i_12_] > 1) {
-                            Class239_Sub8.anIntArrayArray5921[i_11_][i_12_]--;
+                        if (DisplayModeManagerContainer295.anIntArrayArray5921[i_11_][i_12_] > 1) {
+                            DisplayModeManagerContainer295.anIntArrayArray5921[i_11_][i_12_]--;
                             class318_sub1_sub3_sub3.aBoolean10309 = true;
                             continue;
                         }
@@ -814,10 +823,10 @@ public final class client extends Applet_Sub1 {
                         int i_15_ = ((class318_sub1_sub3_sub3.y) - i_13_ >> 9);
                         int i_16_ = ((class318_sub1_sub3_sub3.x) + i_13_ >> 9);
                         int i_17_ = ((class318_sub1_sub3_sub3.y) + i_13_ >> 9);
-                        if (!Class103.method949(i_15_, i_16_, (class318_sub1_sub3_sub3.anInt10285), (byte) 124, i_14_, i_17_)) {
+                        if (!Component99.method949(i_15_, i_16_, (class318_sub1_sub3_sub3.anInt10285), (byte) 124, i_14_, i_17_)) {
                             for (int i_18_ = i_14_; i_18_ <= i_16_; i_18_++) {
                                 for (int i_19_ = i_15_; i_19_ <= i_17_; i_19_++) {
-                                    if (class318_sub1_sub3_sub3.anInt10285 == (Class348_Sub42_Sub17.anIntArrayArray9678[i_18_][i_19_])) Class239_Sub8.anIntArrayArray5921[i_18_][i_19_]--;
+                                    if (class318_sub1_sub3_sub3.anInt10285 == (HashNodeSub17.anIntArrayArray9678[i_18_][i_19_])) DisplayModeManagerContainer295.anIntArrayArray5921[i_18_][i_19_]--;
                                 }
                             }
                             class318_sub1_sub3_sub3.aBoolean10309 = true;
@@ -825,187 +834,193 @@ public final class client extends Applet_Sub1 {
                         }
                     }
                     class318_sub1_sub3_sub3.aBoolean10309 = false;
-                    class318_sub1_sub3_sub3.anInt6382 = Class275.method2064((class318_sub1_sub3_sub3.x), (class318_sub1_sub3_sub3.plane), 11219, (class318_sub1_sub3_sub3.y));
-                    Class89.method850(class318_sub1_sub3_sub3, true);
+                    class318_sub1_sub3_sub3.anInt6382 = Component300.method2064((class318_sub1_sub3_sub3.x), (class318_sub1_sub3_sub3.plane), 11219, (class318_sub1_sub3_sub3.y));
+                    Component84.method850(class318_sub1_sub3_sub3, true);
                 }
             }
         }
     }
 
-    static final Class348_Sub44 method105(Class46 class46) {
-        Class348_Sub44 class348_sub44 = (Class348_Sub44) (Class226.aClass356_2959.method3480((((long) class46.anInt830 << 32) + (long) class46.anInt704), -6008));
+    /**
+     * Settings / click-mask for {@code class46}: IF-packet override keyed by
+     * {@code (packedId << 32) | childIndex}, else {@link DisplayModeManagerContainer57#settings}.
+     */
+    static final ComponentSettings getComponentSettings(DisplayModeManagerContainer57 class46) {
+        ComponentSettings class348_sub44 = (ComponentSettings) (Component127.aClass356_2959.get((((long) class46.packedId << 32) + (long) class46.childIndex), -6008));
         if (class348_sub44 != null) return class348_sub44;
-        return class46.aClass348_Sub44_748;
+        return class46.settings;
     }
 
     static final void method106() {
-        Class45.anInt669 = 0;
-        for (int i = 0; i < Class150.anInt2057; i++) {
-            Npc npc = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i], -6008)).aNpc_6859);
+        CacheStore.anInt669 = 0;
+        for (int i = 0; i < Component324.anInt2057; i++) {
+            Npc npc = (((NpcNode) Component21.aClass356_3654.get(DisplayModeManagerContainer238.anIntArray1233[i], -6008)).npc);
             if ((npc.aBoolean10309) && npc.method2425(-1) != -1) {
-                int i_20_ = ((npc.method2436((byte) 119) - 1) * 256 + 252);
+                int i_20_ = ((npc.getSize((byte) 119) - 1) * 256 + 252);
                 int i_21_ = (npc.x - i_20_) >> 9;
                 int i_22_ = (npc.y - i_20_) >> 9;
-                Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3 = Class84.method817(252, i_21_, (npc.plane), i_22_);
+                DisplayModeManagerContainer58 class318_sub1_sub3_sub3 = DisplayModeManagerContainer26.method817(252, i_21_, (npc.plane), i_22_);
                 if (class318_sub1_sub3_sub3 != null) {
                     int i_23_ = (class318_sub1_sub3_sub3.anInt10290);
                     if (class318_sub1_sub3_sub3 instanceof Npc) i_23_ += 2048;
                     if ((class318_sub1_sub3_sub3.anInt10261) == 0 && class318_sub1_sub3_sub3.method2425(-1) != -1) {
-                        Class258_Sub4.anIntArray8557[Class45.anInt669] = i_23_;
-                        Class268.anIntArray3432[Class45.anInt669] = i_23_;
-                        Class45.anInt669++;
+                        AbstractGlTextureSub4.anIntArray8557[CacheStore.anInt669] = i_23_;
+                        DisplayModeManagerContainer259.anIntArray3432[CacheStore.anInt669] = i_23_;
+                        CacheStore.anInt669++;
                         class318_sub1_sub3_sub3.anInt10261++;
                     }
-                    Class258_Sub4.anIntArray8557[Class45.anInt669] = i_23_;
-                    Class268.anIntArray3432[Class45.anInt669] = npc.anInt10290 + 2048;
-                    Class45.anInt669++;
+                    AbstractGlTextureSub4.anIntArray8557[CacheStore.anInt669] = i_23_;
+                    DisplayModeManagerContainer259.anIntArray3432[CacheStore.anInt669] = npc.anInt10290 + 2048;
+                    CacheStore.anInt669++;
                     class318_sub1_sub3_sub3.anInt10261++;
                 }
             }
         }
-        Class34.method347(Class268.anIntArray3432, Class258_Sub4.anIntArray8557, 0, -22222, Class45.anInt669 - 1);
+        Component225.method347(DisplayModeManagerContainer259.anIntArray3432, AbstractGlTextureSub4.anIntArray8557, 0, -22222, CacheStore.anInt669 - 1);
     }
 
     public static final void main(String[] strings) {
         try {
             try {
-                if (strings.length != 6) Class55.method518("Argument count", (byte) 44);
-                Class135_Sub2.aClass161_4839 = new Class161();
-                Class135_Sub2.aClass161_4839.anInt2143 = Integer.parseInt(strings[0]);
-                Class255.aClass161_3285 = new Class161();
-                Class255.aClass161_3285.anInt2143 = Integer.parseInt(strings[1]);
-                Class348_Sub40_Sub35.aClass161_9443 = new Class161();
-                Class348_Sub40_Sub35.aClass161_9443.anInt2143 = Integer.parseInt(strings[2]);
-                Class8.aClass364_165 = Class76.aClass364_1279;
-                if (strings[3].equals("live")) Class11.aClass231_196 = Class68.aClass231_1189;
+                if (strings.length != 6) JagTheoraDecoder.method518("Argument count", (byte) 44);
+                MenuOpener.aClass161_4839 = new DisplayModeManagerContainer254();
+                MenuOpener.aClass161_4839.anInt2143 = Integer.parseInt(strings[0]);
+                ItemDefinitionProvider.aClass161_3285 = new DisplayModeManagerContainer254();
+                ItemDefinitionProvider.aClass161_3285.anInt2143 = Integer.parseInt(strings[1]);
+                DefinitionSub35.aClass161_9443 = new DisplayModeManagerContainer254();
+                DefinitionSub35.aClass161_9443.anInt2143 = Integer.parseInt(strings[2]);
+                DisplayModeManagerContainer345.aClass364_165 = DisplayModeManagerContainer154.LOCAL;
+                if (strings[3].equals("live")) Component53.currentBuildType = Component342.LIVE;
                 else if (!strings[3].equals("rc")) {
-                    if (strings[3].equals("wip")) Class11.aClass231_196 = Class288.aClass231_4953;
-                    else Class55.method518("modewhat", (byte) 41);
-                } else Class11.aClass231_196 = Class348_Sub40_Sub20.aClass231_9263;
-                Class348_Sub33.anInt6967 = Class27.method315((byte) 103, strings[4]);
-                if (Class348_Sub33.anInt6967 == -1) {
+                    if (strings[3].equals("wip")) Component53.currentBuildType = Component118.WIP;
+                    else JagTheoraDecoder.method518("modewhat", (byte) 41);
+                } else Component53.currentBuildType = DefinitionSub20.RC;
+                ObjectDeserializer.languageId = DisplayModeManagerContainer91.languageIdFromName((byte) 103, strings[4]);
+                if (ObjectDeserializer.languageId == -1) {
                     if (!strings[4].equals("english")) {
-                        if (strings[4].equals("german")) Class348_Sub33.anInt6967 = 1;
-                        else Class55.method518("language", (byte) -128);
-                    } else Class348_Sub33.anInt6967 = 0;
+                        if (strings[4].equals("german")) ObjectDeserializer.languageId = 1;
+                        else JagTheoraDecoder.method518("language", (byte) -128);
+                    } else ObjectDeserializer.languageId = 0;
                 }
-                Class348_Sub37.aBoolean6997 = false;
-                Class289.aBoolean3697 = false;
+                NodeSub37.aBoolean6997 = false;
+                Component156.aBoolean3697 = false;
                 if (!strings[5].equals("game0")) {
                     if (!strings[5].equals("game1")) {
                         if (!strings[5].equals("game2")) {
-                            if (!strings[5].equals("game3")) Class55.method518("game", (byte) -124);
-                            else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class239_Sub9.aClass230_5932;
-                        } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class286_Sub6.aClass230_6262;
-                    } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class14_Sub4.aClass230_8638;
-                } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class10.aClass230_186;
-                Class161.aBoolean2151 = false;
-                Class239_Sub12.aString5966 = "";
-                Class244.aLong4615 = 0L;
-                Class348_Sub23_Sub3.aString9043 = null;
-                Class202.anInt2670 = 0;
-                Class206.aBoolean4888 = Class155.aBoolean2110 = true;
-                Class375.aBoolean4540 = false;
-                Class251.anInt3234 = 0;
-                Class222.anInt2884 = (Class348_Sub42_Sub8_Sub2.aClass230_10434.anInt2987);
-                ha.anInt4583 = 0;
-                Class14_Sub1.aString8605 = null;
+                            if (!strings[5].equals("game3")) JagTheoraDecoder.method518("game", (byte) -124);
+                            else PacketReader.currentGameType = Component379.GAME4;
+                        } else PacketReader.currentGameType = WaterShaderProgram.GAME3;
+                    } else PacketReader.currentGameType = WorldNameText.STELLARDAWN;
+                } else PacketReader.currentGameType = RunescapeInfo.RUNESCAPE;
+                DisplayModeManagerContainer254.aBoolean2151 = false;
+                Component205.settingsCookie = "";
+                ModelStore.aLong4615 = 0L;
+                OggStreamReader.aString9043 = null;
+                Connection.affiliateId = 0;
+                DisplayModeManagerContainer105.aBoolean4888 = Component177.aBoolean2110 = true;
+                Component121.aBoolean4540 = false;
+                Component111.anInt3234 = 0;
+                CursorDefinition.anInt2884 = (PacketReader.currentGameType.id);
+                GraphicsToolkit.anInt4583 = 0;
+                Component19.aString8605 = null;
                 client var_client = new client();
-                Class79.aClient1367 = var_client;
-                var_client.method96(Class11.aClass231_196.method1640(0) + 32, 1024, false, 634, 37, (Class348_Sub42_Sub8_Sub2.aClass230_10434.aString2985), 23499, 768);
-                Class52.aFrame4904.setLocation(40, 40);
+                NpcComposition.aClient1367 = var_client;
+                var_client.startFromFrame(Component53.currentBuildType.getId(0) + 32, 1024, false, 634, 37, (PacketReader.currentGameType.domain), 23499, 768);
+                RSACipher.aFrame4904.setLocation(40, 40);
             } catch (Exception exception) {
-                Class156.method1242(null, exception, 15004);
+                ClientErrorReporter.reportError(null, exception, 15004);
             }
             anInt5178++;
         } catch (RuntimeException runtimeexception) {
-            throw Class348_Sub17.method2929(runtimeexception, "client.main(" + (strings != null ? "{...}" : "null") + ')');
+            throw NpcDefinition.wrapThrowable(runtimeexception, "client.main(" + (strings != null ? "{...}" : "null") + ')');
         }
     }
 
-    final void method99(byte i) {
+    /** Logic tick: call {@code processGameTick}, optionally catching toolkit-safe-mode failures. */
+    final void pulseGame(byte i) {
         if (i != 93) anIntArray5176 = null;
         anInt5183++;
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
+        if (Component192.preferences.aClass239_Sub25_7271.getPreferenceValue(-32350) == 2) {
             try {
-                method114(i ^ 0x66);
+                processGameTick(i ^ 0x66);
             } catch (Throwable throwable) {
-                Class156.method1242((throwable.getMessage() + " (Recovered) " + method81((byte) 115)), throwable, 15004);
-                Class139.aBoolean1952 = true;
-                Class367_Sub10.method3553(false, (byte) 102, 0);
+                ClientErrorReporter.reportError((throwable.getMessage() + " (Recovered) " + method81((byte) 115)), throwable, 15004);
+                GpsOverlay.aBoolean1952 = true;
+                SoftwareFallbackShader.method3553(false, (byte) 102, 0);
             }
-        } else method114(123);
+        } else processGameTick(123);
+        DialogueTts.pulse();
     }
 
     public final void init() {
         anInt5180++;
-        if (this.method89(48)) {
-            Class135_Sub2.aClass161_4839 = new Class161();
-            Class135_Sub2.aClass161_4839.anInt2143 = Integer.parseInt(this.getParameter("worldid"));
-            Class255.aClass161_3285 = new Class161();
-            Class255.aClass161_3285.anInt2143 = Integer.parseInt(this.getParameter("lobbyid"));
-            Class255.aClass161_3285.aString2147 = this.getParameter("lobbyaddress");
-            Class348_Sub40_Sub35.aClass161_9443 = new Class161();
-            Class348_Sub40_Sub35.aClass161_9443.anInt2143 = Integer.parseInt(this.getParameter("demoid"));
-            Class348_Sub40_Sub35.aClass161_9443.aString2147 = this.getParameter("demoaddress");
-            Class8.aClass364_165 = (Class348_Sub8.method2776((byte) -93, Integer.parseInt(this.getParameter("modewhere"))));
-            if (Class76.aClass364_1279 == Class8.aClass364_165) {
-                Class8.aClass364_165 = Class108.aClass364_1657;
+        if (this.validateHost(48)) {
+            MenuOpener.aClass161_4839 = new DisplayModeManagerContainer254();
+            MenuOpener.aClass161_4839.anInt2143 = Integer.parseInt(this.getParameter("worldid"));
+            ItemDefinitionProvider.aClass161_3285 = new DisplayModeManagerContainer254();
+            ItemDefinitionProvider.aClass161_3285.anInt2143 = Integer.parseInt(this.getParameter("lobbyid"));
+            ItemDefinitionProvider.aClass161_3285.aString2147 = this.getParameter("lobbyaddress");
+            DefinitionSub35.aClass161_9443 = new DisplayModeManagerContainer254();
+            DefinitionSub35.aClass161_9443.anInt2143 = Integer.parseInt(this.getParameter("demoid"));
+            DefinitionSub35.aClass161_9443.aString2147 = this.getParameter("demoaddress");
+            DisplayModeManagerContainer345.aClass364_165 = (NodeSub8.method2776((byte) -93, Integer.parseInt(this.getParameter("modewhere"))));
+            if (DisplayModeManagerContainer154.LOCAL == DisplayModeManagerContainer345.aClass364_165) {
+                DisplayModeManagerContainer345.aClass364_165 = Component83.WTWIP;
             }
-            else if (!Class315.method2354(Class8.aClass364_165, -1) && Class55_Sub1.aClass364_5271 != Class8.aClass364_165) {
-                Class8.aClass364_165 = Class55_Sub1.aClass364_5271;
+            else if (!Component168.method2354(DisplayModeManagerContainer345.aClass364_165, -1) && Component326.LIVE != DisplayModeManagerContainer345.aClass364_165) {
+                DisplayModeManagerContainer345.aClass364_165 = Component326.LIVE;
             }
-            Class11.aClass231_196 = (Class237.method1677(-121, Integer.parseInt(this.getParameter("modewhat"))));
-            if (Class11.aClass231_196 != Class288.aClass231_4953 && Class11.aClass231_196 != Class348_Sub40_Sub20.aClass231_9263 && Class68.aClass231_1189 != Class11.aClass231_196) Class11.aClass231_196 = Class68.aClass231_1189;
+            Component53.currentBuildType = (DisplayModeManagerContainer87.getById(-121, Integer.parseInt(this.getParameter("modewhat"))));
+            if (Component53.currentBuildType != Component118.WIP && Component53.currentBuildType != DefinitionSub20.RC && Component342.LIVE != Component53.currentBuildType) Component53.currentBuildType = Component342.LIVE;
             try {
-                Class348_Sub33.anInt6967 = Integer.parseInt(this.getParameter("lang"));
+                ObjectDeserializer.languageId = Integer.parseInt(this.getParameter("lang"));
             } catch (Exception exception) {
-                Class348_Sub33.anInt6967 = 0;
+                ObjectDeserializer.languageId = 0;
             }
             String string = this.getParameter("objecttag");
-            Class348_Sub37.aBoolean6997 = string != null && string.equals("1");
+            NodeSub37.aBoolean6997 = string != null && string.equals("1");
             String string_24_ = this.getParameter("js");
-            Class289.aBoolean3697 = string_24_ != null && string_24_.equals("1");
+            Component156.aBoolean3697 = string_24_ != null && string_24_.equals("1");
             String string_25_ = this.getParameter("advert");
-            Class318_Sub1_Sub5.aBoolean8773 = string_25_ != null && string_25_.equals("1");
+            Component203.aBoolean8773 = string_25_ != null && string_25_.equals("1");
             String string_26_ = this.getParameter("game");
             if (string_26_ != null) {
-                if (string_26_.equals("0")) Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class10.aClass230_186;
-                else if (string_26_.equals("1")) Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class14_Sub4.aClass230_8638;
+                if (string_26_.equals("0")) PacketReader.currentGameType = RunescapeInfo.RUNESCAPE;
+                else if (string_26_.equals("1")) PacketReader.currentGameType = WorldNameText.STELLARDAWN;
                 else if (!string_26_.equals("2")) {
-                    if (string_26_.equals("3")) Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class239_Sub9.aClass230_5932;
-                } else Class348_Sub42_Sub8_Sub2.aClass230_10434 = Class286_Sub6.aClass230_6262;
+                    if (string_26_.equals("3")) PacketReader.currentGameType = Component379.GAME4;
+                } else PacketReader.currentGameType = WaterShaderProgram.GAME3;
             }
             try {
-                Class202.anInt2670 = Integer.parseInt(this.getParameter("affid"));
+                Connection.affiliateId = Integer.parseInt(this.getParameter("affid"));
             } catch (Exception exception) {
-                Class202.anInt2670 = 0;
+                Connection.affiliateId = 0;
             }
-            Class116.aString1761 = this.getParameter("quiturl");
-            Class239_Sub12.aString5966 = this.getParameter("settings");
-            if (Class239_Sub12.aString5966 == null) Class239_Sub12.aString5966 = "";
-            Class330.aBoolean4127 = "1".equals(this.getParameter("under"));
+            Component262.quitUrl = this.getParameter("quiturl");
+            Component205.settingsCookie = this.getParameter("settings");
+            if (Component205.settingsCookie == null) Component205.settingsCookie = "";
+            Component301.aBoolean4127 = "1".equals(this.getParameter("under"));
             String string_27_ = this.getParameter("country");
             if (string_27_ != null) {
                 try {
-                    ha.anInt4583 = Integer.parseInt(string_27_);
+                    GraphicsToolkit.anInt4583 = Integer.parseInt(string_27_);
                 } catch (Exception exception) {
-                    ha.anInt4583 = 0;
+                    GraphicsToolkit.anInt4583 = 0;
                 }
             }
-            Class222.anInt2884 = Integer.parseInt(this.getParameter("colourid"));
-            if (Class222.anInt2884 < 0 || Class135.aColorArray1928.length <= Class222.anInt2884) Class222.anInt2884 = 0;
-            if (Integer.parseInt(this.getParameter("sitesettings_member")) == 1) Class206.aBoolean4888 = Class155.aBoolean2110 = true;
+            CursorDefinition.anInt2884 = Integer.parseInt(this.getParameter("colourid"));
+            if (CursorDefinition.anInt2884 < 0 || Component137.aColorArray1928.length <= CursorDefinition.anInt2884) CursorDefinition.anInt2884 = 0;
+            if (Integer.parseInt(this.getParameter("sitesettings_member")) == 1) DisplayModeManagerContainer105.aBoolean4888 = Component177.aBoolean2110 = true;
             String string_28_ = this.getParameter("frombilling");
-            if (string_28_ != null && string_28_.equals("true")) Class375.aBoolean4540 = true;
-            Class348_Sub23_Sub3.aString9043 = this.getParameter("sskey");
-            if (Class348_Sub23_Sub3.aString9043 != null && Class348_Sub23_Sub3.aString9043.length() < 2) Class348_Sub23_Sub3.aString9043 = null;
+            if (string_28_ != null && string_28_.equals("true")) Component121.aBoolean4540 = true;
+            OggStreamReader.aString9043 = this.getParameter("sskey");
+            if (OggStreamReader.aString9043 != null && OggStreamReader.aString9043.length() < 2) OggStreamReader.aString9043 = null;
             String string_29_ = this.getParameter("force64mb");
-            if (string_29_ != null && string_29_.equals("true")) Class161.aBoolean2151 = true;
+            if (string_29_ != null && string_29_.equals("true")) DisplayModeManagerContainer254.aBoolean2151 = true;
             String string_30_ = this.getParameter("worldflags");
             if (string_30_ != null) {
                 try {
-                    Class251.anInt3234 = Integer.parseInt(string_30_);
+                    Component111.anInt3234 = Integer.parseInt(string_30_);
                 } catch (Exception exception) {
                     /* empty */
                 }
@@ -1013,44 +1028,47 @@ public final class client extends Applet_Sub1 {
             String string_31_ = this.getParameter("userFlow");
             if (string_31_ != null) {
                 try {
-                    Class244.aLong4615 = Long.parseLong(string_31_);
+                    ModelStore.aLong4615 = Long.parseLong(string_31_);
                 } catch (NumberFormatException numberformatexception) {
                     /* empty */
                 }
             }
-            Class14_Sub1.aString8605 = this.getParameter("additionalInfo");
-            if (Class14_Sub1.aString8605 != null && Class14_Sub1.aString8605.length() > 50) Class14_Sub1.aString8605 = null;
-            if (Class10.aClass230_186 == Class348_Sub42_Sub8_Sub2.aClass230_10434) {
-                ha_Sub2.anInt7666 = 503;
-                Class92.anInt1524 = 765;
-            } else if (Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class14_Sub4.aClass230_8638) {
-                Class92.anInt1524 = 640;
-                ha_Sub2.anInt7666 = 480;
+            Component19.aString8605 = this.getParameter("additionalInfo");
+            if (Component19.aString8605 != null && Component19.aString8605.length() > 50) Component19.aString8605 = null;
+            if (RunescapeInfo.RUNESCAPE == PacketReader.currentGameType) {
+                GlToolkitSub2.canvasHeight = 503;
+                DisplayModeManagerContainer23.canvasWidth = 765;
+            } else if (PacketReader.currentGameType == WorldNameText.STELLARDAWN) {
+                DisplayModeManagerContainer23.canvasWidth = 640;
+                GlToolkitSub2.canvasHeight = 480;
             }
-            Class79.aClient1367 = this;
-            this.method95(Class92.anInt1524, 634, ha_Sub2.anInt7666, Class11.aClass231_196.method1640(0) + 32, 37, Class348_Sub42_Sub8_Sub2.aClass230_10434.aString2985, 50);
+            NpcComposition.aClient1367 = this;
+            this.startFromApplet(DisplayModeManagerContainer23.canvasWidth, 634, GlToolkitSub2.canvasHeight, Component53.currentBuildType.getId(0) + 32, 37, PacketReader.currentGameType.domain, 50);
         }
     }
 
-    static final void method107(Class46[] class46s, int i, int i_32_, int i_33_, int i_34_, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_, int i_40_, int i_41_) {
+    static final void method107(DisplayModeManagerContainer57[] class46s, int i, int i_32_, int i_33_, int i_34_, int i_35_, int i_36_, int i_37_, int i_38_, int i_39_, int i_40_, int i_41_) {
         for (int i_42_ = 0; i_42_ < class46s.length; i_42_++) {
-            Class46 class46 = class46s[i_42_];
-            if (class46 != null && class46.anInt834 == i) {
-                int i_43_ = class46.anInt800 + i_36_;
-                int i_44_ = class46.anInt750 + i_37_;
+            DisplayModeManagerContainer57 class46 = class46s[i_42_];
+            if (class46 != null && class46.parentId == i) {
+                int i_43_ = class46.absoluteX + i_36_;
+                int i_44_ = class46.absoluteY + i_37_;
+                int rawY = i_44_;
+                i_44_ -= MobileKeyboard.liftPx(class46, i_43_, i_44_);
+                i_44_ -= MobileKeyboard.loginHitShift(class46);
                 int i_45_;
                 int i_46_;
                 int i_47_;
                 int i_48_;
-                if (class46.anInt774 == 2) {
+                if (class46.type == 2) {
                     i_45_ = i_32_;
                     i_46_ = i_33_;
                     i_47_ = i_34_;
                     i_48_ = i_35_;
                 } else {
-                    int i_49_ = i_43_ + class46.anInt709;
-                    int i_50_ = i_44_ + class46.anInt789;
-                    if (class46.anInt774 == 9) {
+                    int i_49_ = i_43_ + class46.width;
+                    int i_50_ = i_44_ + class46.height;
+                    if (class46.type == 9) {
                         i_49_++;
                         i_50_++;
                     }
@@ -1059,467 +1077,475 @@ public final class client extends Applet_Sub1 {
                     i_47_ = Math.min(i_49_, i_34_);
                     i_48_ = Math.min(i_50_, i_35_);
                 }
-                if (class46.anInt774 != 0 && !class46.aBoolean682 && method105(class46).anInt7098 == 0 && class46 != Class331.aClass46_4130 && class46.anInt765 != Class290.anInt3717 && (class46.anInt765 != Class348_Sub47.anInt7125)) {
-                    if (i_45_ < i_47_ && i_46_ < i_48_) Class18.method273(class46, -2835);
+                if (class46.type != 0 && !class46.aBoolean682 && getComponentSettings(class46).optionFlags == 0 && class46 != Component374.aClass46_4130 && class46.contentType != Component200.anInt3717 && (class46.contentType != ParticleSystem.anInt7125)) {
+                    if (i_45_ < i_47_ && i_46_ < i_48_) DisplayModeManagerContainer220.method273(class46, -2835);
                 } else if (!method111(class46)) {
                     int i_51_ = 0;
                     int i_52_ = 0;
-                    if (Class59_Sub1.aBoolean5300) {
-                        i_51_ = s_Sub3.method4008((byte) -128);
-                        i_52_ = Class16.method260(false);
+                    if (Component210.gameCanvasAttached) {
+                        i_51_ = BufferCacheSub3.method4008((byte) -128);
+                        i_52_ = Component110.method260(false);
                     }
-                    if (class46 == Class289.aClass46_3701 && Exception_Sub1.method141(Class289.aClass46_3701, (byte) 125) != null) {
-                        Class50_Sub1.aBoolean5221 = true;
-                        ha_Sub3.anInt8001 = i_43_;
-                        Class348_Sub40_Sub13.anInt9203 = i_44_;
+                    if (class46 == Component156.aClass46_3701 && Exception_Sub1.method141(Component156.aClass46_3701, (byte) 125) != null) {
+                        Cp1252Decoder.aBoolean5221 = true;
+                        GlToolkitSub3.anInt8001 = i_43_;
+                        DefinitionSub13.anInt9203 = i_44_;
                     }
                     if (class46.aBoolean676 || i_45_ < i_47_ && i_46_ < i_48_) {
                         if (class46.aBoolean776 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
-                            for (Class348_Sub36 class348_sub36 = (Class348_Sub36) Class348_Sub1_Sub2.aClass262_8810.method1995(4); class348_sub36 != null; class348_sub36 = ((Class348_Sub36) Class348_Sub1_Sub2.aClass262_8810.method1990((byte) 71))) {
+                            for (NodeSub36 class348_sub36 = (NodeSub36) NodeSub1Sub2.aClass262_8810.first(4); class348_sub36 != null; class348_sub36 = ((NodeSub36) NodeSub1Sub2.aClass262_8810.next((byte) 71))) {
                                 if (class348_sub36.aBoolean6993) {
-                                    class348_sub36.method2715((byte) 65);
+                                    class348_sub36.unlink((byte) 65);
                                     class348_sub36.aClass46_6989.aBoolean737 = false;
                                 }
                             }
-                            if (Class318_Sub1.anInt6392 == 0) {
-                                Class289.aClass46_3701 = null;
-                                Class331.aClass46_4130 = null;
+                            if (RenderableObject.anInt6392 == 0) {
+                                Component156.aClass46_3701 = null;
+                                Component374.aClass46_4130 = null;
                             }
-                            Class348_Sub42.anInt7059 = 0;
-                            Class246.aBoolean3174 = false;
-                            Class237.aBoolean3103 = false;
-                            if (!Class5_Sub1.aBoolean8335) Class64_Sub2.method661((byte) 111);
+                            HashNode.anInt7059 = 0;
+                            Component163.aBoolean3174 = false;
+                            DisplayModeManagerContainer87.aBoolean3103 = false;
+                            if (!Component364.aBoolean8335) DisplayModeManagerContainer190.resetNodeStates((byte) 111);
                         }
                         boolean bool;
-                        bool = (Class258_Sub4.aClass373_8552.method3597(true) + i_51_) >= i_45_ && Class258_Sub4.aClass373_8552.method3594((byte) 89) + i_52_ >= i_46_ && (Class258_Sub4.aClass373_8552.method3597(true) + i_51_) < i_47_ && Class258_Sub4.aClass373_8552.method3594((byte) 74) + i_52_ < i_48_;
+                        bool = (AbstractGlTextureSub4.mouseHandler.getCursorX(true) + i_51_) >= i_45_ && AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 89) + i_52_ >= i_46_ && (AbstractGlTextureSub4.mouseHandler.getCursorX(true) + i_51_) < i_47_ && AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 74) + i_52_ < i_48_;
                         if (!r.aBoolean9722 && bool) {
-                            if (class46.anInt719 >= 0) Class362.anInt4458 = class46.anInt719;
-                            else if (class46.aBoolean776) Class362.anInt4458 = -1;
+                            if (class46.anInt719 >= 0) Component149.widgetCursorId = class46.anInt719;
+                            else if (class46.aBoolean776) Component149.widgetCursorId = -1;
                         }
                         if (class46.aBoolean737 && (i == 48889856 || i == 35913731)) {
-                            Class320.overGameScreen = true;
+                            Component233.overGameScreen = true;
                         }
-                        if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) Class239_Sub17.method1797(i_41_ - i_44_, i_40_ - i_43_, class46, (byte) -95);
+                        if (!Component364.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) Component66.buildComponentMenu(i_41_ - i_44_, i_40_ - i_43_, class46, (byte) -95);
                         boolean bool_53_ = false;
-                        if (Class258_Sub4.aClass373_8552.method3595(-91) && bool) bool_53_ = true;
+                        if (AbstractGlTextureSub4.mouseHandler.isLeftButtonDown(-91) && bool) bool_53_ = true;
                         boolean bool_54_ = false;
-                        Class348_Sub45 class348_sub45 = ((Class348_Sub45) Class318_Sub1_Sub3.aClass262_8744.method1995(4));
-                        if (class348_sub45 != null && class348_sub45.method3310(109) == 0 && (class348_sub45.method3308((byte) -128) + i_51_ >= i_45_) && class348_sub45.method3311(33) + i_52_ >= i_46_ && (class348_sub45.method3308((byte) -127) + i_51_ < i_47_) && class348_sub45.method3311(8) + i_52_ < i_48_)
+                        NodeSub45 class348_sub45 = ((NodeSub45) Component327.aClass262_8744.first(4));
+                        if (class348_sub45 != null && class348_sub45.getEventType(109) == 0 && (class348_sub45.getX((byte) -128) + i_51_ >= i_45_) && class348_sub45.getY(33) + i_52_ >= i_46_ && (class348_sub45.getX((byte) -127) + i_51_ < i_47_) && class348_sub45.getY(8) + i_52_ < i_48_)
                             bool_54_ = true;
-                        if (class46.aByteArray746 != null && !Class348_Sub42_Sub16_Sub2.method3263(true)) {
+                        if (class46.aByteArray746 != null && !HashNodeSub16Sub2.isDevConsoleOpen(true)) {
                             for (int i_55_ = 0; (i_55_ < class46.aByteArray746.length); i_55_++) {
-                                if (!Class182.aClass346_2449.method2696(class46.aByteArray746[i_55_], -122)) {
+                                if (!Component280.aClass346_2449.isKeyDown(class46.aByteArray746[i_55_], -122)) {
                                     if (class46.anIntArray801 != null) class46.anIntArray801[i_55_] = 0;
-                                } else if ((class46.anIntArray801 == null) || (Class367_Sub11.anInt7396 >= (class46.anIntArray801[i_55_]))) {
+                                } else if ((class46.anIntArray801 == null) || (OpenGlShader.clientCycle >= (class46.anIntArray801[i_55_]))) {
                                     byte i_56_ = (class46.aByteArray832[i_55_]);
-                                    if (i_56_ == 0 || (((i_56_ & 0x8) == 0 || (!Class182.aClass346_2449.method2696(86, -124) && !Class182.aClass346_2449.method2696(82, -123) && !(Class182.aClass346_2449.method2696(81, -122)))) && ((i_56_ & 0x2) == 0 || Class182.aClass346_2449.method2696(86, -127)) && ((i_56_ & 0x1) == 0 || Class182.aClass346_2449.method2696(82, -124)) && ((i_56_ & 0x4) == 0 || (Class182.aClass346_2449.method2696(81, -126))))) {
-                                        if (i_55_ < 10) Class348_Sub9.method2780(-1, "", (byte) 122, i_55_ + 1, class46.anInt830);
+                                    if (i_56_ == 0 || (((i_56_ & 0x8) == 0 || (!Component280.aClass346_2449.isKeyDown(86, -124) && !Component280.aClass346_2449.isKeyDown(82, -123) && !(Component280.aClass346_2449.isKeyDown(81, -122)))) && ((i_56_ & 0x2) == 0 || Component280.aClass346_2449.isKeyDown(86, -127)) && ((i_56_ & 0x1) == 0 || Component280.aClass346_2449.isKeyDown(82, -124)) && ((i_56_ & 0x4) == 0 || (Component280.aClass346_2449.isKeyDown(81, -126))))) {
+                                        if (i_55_ < 10) SceneNode.method2780(-1, "", (byte) 122, i_55_ + 1, class46.packedId);
                                         else if (i_55_ == 10) {
-                                            Class341.method2678(-2049);
-                                            Class348_Sub44 class348_sub44 = method105(class46);
-                                            Class339.method2666(class348_sub44.anInt7093, class348_sub44.method3307(110), class46, (byte) 21);
-                                            Class28.aString5001 = Class239_Sub8.method1753(0, class46);
-                                            if (Class28.aString5001 == null) Class28.aString5001 = "Null";
-                                            Class28.aString5000 = ((class46.aString752) + "<col=ffffff>");
+                                            DisplayModeManagerContainer196.method2678(-2049);
+                                            ComponentSettings class348_sub44 = getComponentSettings(class46);
+                                            NewsFetcher.method2666(class348_sub44.anInt7093, class348_sub44.getClickMask(110), class46, (byte) 21);
+                                            DisplayModeManagerContainer332.aString5001 = DisplayModeManagerContainer295.getUseOption(0, class46);
+                                            if (DisplayModeManagerContainer332.aString5001 == null) DisplayModeManagerContainer332.aString5001 = "Null";
+                                            DisplayModeManagerContainer332.aString5000 = ((class46.text) + "<col=ffffff>");
                                         }
                                         int i_57_ = (class46.anIntArray707[i_55_]);
                                         if (class46.anIntArray801 == null) class46.anIntArray801 = (new int
                                                 [(class46.aByteArray746).length]);
-                                        if (i_57_ != 0) class46.anIntArray801[i_55_] = (Class367_Sub11.anInt7396 + i_57_);
+                                        if (i_57_ != 0) class46.anIntArray801[i_55_] = (OpenGlShader.clientCycle + i_57_);
                                         else class46.anIntArray801[i_55_] = 2147483647;
                                     }
                                 }
                             }
                         }
-                        if (bool_54_) Class100.method887(class46, (i_51_ + class348_sub45.method3308((byte) -127) - i_43_), (i_52_ + class348_sub45.method3311(-114) - i_44_), 2147483647);
-                        if (Class289.aClass46_3701 != null && Class289.aClass46_3701 != class46 && bool && method105(class46).method3302(17356)) Class318_Sub1_Sub3_Sub4.aClass46_10336 = class46;
-                        if (class46 == Class331.aClass46_4130) {
-                            Class127_Sub1.aBoolean8386 = true;
-                            Class348_Sub40_Sub37.anInt9461 = i_43_;
-                            Class40.anInt558 = i_44_;
+                        if (bool_54_) Component265.method887(class46, (i_51_ + class348_sub45.getX((byte) -127) - i_43_), (i_52_ + class348_sub45.getY(-114) - i_44_), 2147483647);
+                        if (Component156.aClass46_3701 != null && Component156.aClass46_3701 != class46 && bool && getComponentSettings(class46).hasHoverHighlight(17356)) DisplayModeManagerContainer104.aClass46_10336 = class46;
+                        if (class46 == Component374.aClass46_4130) {
+                            Component162.aBoolean8386 = true;
+                            DefinitionSub37.anInt9461 = i_43_;
+                            DisplayModeManagerContainer172.anInt558 = i_44_;
                         }
-                        if (class46.aBoolean682 || class46.anInt765 != 0) {
-                            if (bool && Class98.anInt1565 != 0 && (class46.anObjectArray803 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                        if (class46.aBoolean682 || class46.contentType != 0) {
+                            if (bool && Component122.mouseWheelDelta != 0 && (class46.anObjectArray803 != null)) {
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aBoolean6993 = true;
                                 class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anInt6995 = Class98.anInt1565;
+                                class348_sub36.anInt6995 = Component122.mouseWheelDelta;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray803;
-                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
-                                Class320.overGameScreen = false;
+                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
+                                Component233.overGameScreen = false;
                             }
-                            if (Class289.aClass46_3701 != null || Class5_Sub1.aBoolean8335 || ((class46.anInt765 != Class348_Sub45.anInt7102) && Class348_Sub42.anInt7059 > 0)) {
+                            if (Component156.aClass46_3701 != null || Component364.aBoolean8335 || ((class46.contentType != NodeSub45.anInt7102) && HashNode.anInt7059 > 0)) {
                                 bool_54_ = false;
                                 bool_53_ = false;
                                 bool = false;
                             }
-                            if (class46.anInt765 != 0) {
-                                if ((class46.anInt765 == Class239_Sub10.anInt5943) || (class46.anInt765 == Class312.anInt3932)) {
-                                    Class348_Sub1.aClass46_6561 = class46;
-                                    if (Class259.aClass305_3304 != null) Class259.aClass305_3304.method2292(123, Class348_Sub8.aHa6654, class46.anInt789);
-                                    if (class46.anInt765 == Class239_Sub10.anInt5943) {
-                                        if (!Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
-                                            Class239_Sub24.method1823(Class348_Sub8.aHa6654, i_38_, i_39_, (byte) -50);
-                                            for (Class318_Sub6 class318_sub6 = ((Class318_Sub6) InputStream_Sub2.aClass243_83.method1872(8)); class318_sub6 != null; class318_sub6 = ((Class318_Sub6) (InputStream_Sub2.aClass243_83.method1878((byte) -67)))) {
+                            if (class46.contentType != 0) {
+                                if ((class46.contentType == Component98.anInt5943) || (class46.contentType == Component37.anInt3932)) {
+                                    NodeSub1.aClass46_6561 = class46;
+                                    if (Component293.aClass305_3304 != null) Component293.aClass305_3304.method2292(123, NodeSub8.toolkit, class46.height);
+                                    if (class46.contentType == Component98.anInt5943) {
+                                        if (!Component364.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
+                                            ColoredText.method1823(NodeSub8.toolkit, i_38_, i_39_, (byte) -50);
+                                            for (RenderableSub6 class318_sub6 = ((RenderableSub6) InputStream_Sub2.aClass243_83.method1872(8)); class318_sub6 != null; class318_sub6 = ((RenderableSub6) (InputStream_Sub2.aClass243_83.method1878((byte) -67)))) {
                                                 if (i_40_ >= (class318_sub6.anInt6429) && (i_40_ < (class318_sub6.anInt6426)) && (i_41_ >= (class318_sub6.anInt6427)) && (i_41_ < (class318_sub6.anInt6425))) {
-                                                    Class64_Sub2.method661((byte) 107);
-                                                    Class239_Sub13.method1777(-3, (class318_sub6.aClass318_Sub1_Sub3_Sub3_6431));
+                                                    DisplayModeManagerContainer190.resetNodeStates((byte) 107);
+                                                    Component266.method1777(-3, (class318_sub6.aClass318_Sub1_Sub3_Sub3_6431));
                                                 }
                                             }
                                         }
                                         continue;
                                     }
                                 }
-                                if (class46.anInt765 == Class290.anInt3717) {
-                                    if (class46.method425((Class348_Sub8.aHa6654), (byte) 3) != null && (Class259.anInt3306 == 0 || Class259.anInt3306 == 3) && !Class5_Sub1.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
+                                if (class46.contentType == Component200.anInt3717) {
+                                    if (class46.method425((NodeSub8.toolkit), (byte) 3) != null && (Component293.anInt3306 == 0 || Component293.anInt3306 == 3) && !Component364.aBoolean8335 && i_40_ >= i_45_ && i_41_ >= i_46_ && i_40_ < i_47_ && i_41_ < i_48_) {
                                         int i_58_ = i_40_ - i_43_;
                                         int i_59_ = i_41_ - i_44_;
                                         int i_60_ = (class46.anIntArray677[i_59_]);
                                         if (i_58_ >= i_60_ && (i_58_ <= i_60_ + (class46.anIntArray772[i_59_]))) {
-                                            i_58_ -= (class46.anInt709) / 2;
-                                            i_59_ -= (class46.anInt789) / 2;
+                                            i_58_ -= (class46.width) / 2;
+                                            i_59_ -= (class46.height) / 2;
                                             int i_61_;
-                                            if (Class348_Sub40_Sub21.anInt9282 == 4) i_61_ = ((int) (Class314.aFloat3938) & 0x3fff);
-                                            else i_61_ = (((int) (Class314.aFloat3938) + r_Sub2.anInt10483) & 0x3fff);
-                                            int i_62_ = (Class70.anIntArray1207[i_61_]);
-                                            int i_63_ = (Class70.anIntArray1204[i_61_]);
-                                            if (Class348_Sub40_Sub21.anInt9282 != 4) {
-                                                i_62_ = (i_62_ * ((Class348_Sub49_Sub1.anInt9750) + 256)) >> 8;
-                                                i_63_ = (i_63_ * ((Class348_Sub49_Sub1.anInt9750) + 256)) >> 8;
+                                            if (DefinitionSub21.cameraMode == 4) i_61_ = ((int) (Component112.cameraYaw) & 0x3fff);
+                                            else i_61_ = (((int) (Component112.cameraYaw) + CacheNodeSub2.anInt10483) & 0x3fff);
+                                            int i_62_ = (DisplayModeManagerContainer88.anIntArray1207[i_61_]);
+                                            int i_63_ = (DisplayModeManagerContainer88.anIntArray1204[i_61_]);
+                                            if (DefinitionSub21.cameraMode != 4) {
+                                                i_62_ = (i_62_ * ((Component182.anInt9750) + 256)) >> 8;
+                                                i_63_ = (i_63_ * ((Component182.anInt9750) + 256)) >> 8;
                                             }
                                             int i_64_ = ((i_59_ * i_62_ + i_58_ * i_63_) >> 14);
                                             int i_65_ = ((i_59_ * i_63_ - i_58_ * i_62_) >> 14);
                                             int i_66_;
                                             int i_67_;
-                                            if (Class348_Sub40_Sub21.anInt9282 == 4) {
-                                                i_66_ = (Class348_Sub6.anInt6633 >> 9) + (i_64_ >> 2);
-                                                i_67_ = (Class348_Sub7.anInt6652 >> 9) - (i_65_ >> 2);
+                                            if (DefinitionSub21.cameraMode == 4) {
+                                                i_66_ = (NodederUtil.anInt6633 >> 9) + (i_64_ >> 2);
+                                                i_67_ = (NodeSub7.anInt6652 >> 9) - (i_65_ >> 2);
                                             } else {
-                                                int i_68_ = ((Class132.aPlayer_1907.method2436((byte) 51)) - 1) * 256;
-                                                i_66_ = ((Class132.aPlayer_1907.x) - i_68_ >> 9) + (i_64_ >> 2);
-                                                i_67_ = ((Class132.aPlayer_1907.y) - i_68_ >> 9) - (i_65_ >> 2);
+                                                int i_68_ = ((Component72.localPlayer.getSize((byte) 51)) - 1) * 256;
+                                                i_66_ = ((Component72.localPlayer.x) - i_68_ >> 9) + (i_64_ >> 2);
+                                                i_67_ = ((Component72.localPlayer.y) - i_68_ >> 9) - (i_65_ >> 2);
                                             }
-                                            if (r.aBoolean9722 && ((Class38.anInt500 & 0x40) != 0)) {
-                                                Class46 class46_69_ = (Class348_Sub22.method2957(Class9.anInt169, (byte) -54, Class149.anInt2046));
-                                                if (class46_69_ != null) Class50_Sub3.method466(false, " ->", i_67_, (byte) -109, true, i_66_, (class46.anInt812), true, 15, ((class46.anInt704) << 0) | (class46.anInt830), Class28.aString5001, 1L, (Class348_Sub49_Sub1.anInt9747));
-                                                else Class341.method2678(-2049);
+                                            if (r.aBoolean9722 && ((PauseTimer.anInt500 & 0x40) != 0)) {
+                                                DisplayModeManagerContainer57 class46_69_ = (NpcNode.getChildComponent(JaclibLoader.anInt169, (byte) -54, Component90.anInt2046));
+                                                if (class46_69_ != null) DisplayModeManagerContainer368.addMenuEntry(false, " ->", i_67_, (byte) -109, true, i_66_, (class46.itemId), true, 15, ((class46.childIndex) << 0) | (class46.packedId), DisplayModeManagerContainer332.aString5001, 1L, (Component182.anInt9747));
+                                                else DisplayModeManagerContainer196.method2678(-2049);
                                             } else {
-                                                if ((Class348_Sub42_Sub8_Sub2.aClass230_10434) == (Class14_Sub4.aClass230_8638)) Class50_Sub3.method466(false, "", i_67_, (byte) -116, true, i_66_, -1, true, 12, 0L, (Class274.aClass274_3510.method2063((Class348_Sub33.anInt6967), 544)), 1L, -1);
-                                                Class50_Sub3.method466(false, "", i_67_, (byte) -93, true, i_66_, -1, true, 19, 0L, Class239_Sub4.aString5882, 1L, Class333.anInt4144);
+                                                if ((PacketReader.currentGameType) == (WorldNameText.STELLARDAWN)) DisplayModeManagerContainer368.addMenuEntry(false, "", i_67_, (byte) -116, true, i_66_, -1, true, 12, 0L, (FriendsIgnoreList.aClass274_3510.getLocalized((ObjectDeserializer.languageId), 544)), 1L, -1);
+                                                DisplayModeManagerContainer368.addMenuEntry(false, "", i_67_, (byte) -93, true, i_66_, -1, true, 19, 0L, Component323.aString5882, 1L, Component79.anInt4144);
                                             }
                                         }
                                     }
                                     continue;
                                 }
-                                if (class46.anInt765 == Class348_Sub45.anInt7102) {
-                                    Class168.aClass46_2249 = class46;
-                                    if (bool) Class246.aBoolean3174 = true;
+                                if (class46.contentType == NodeSub45.anInt7102) {
+                                    Component39.aClass46_2249 = class46;
+                                    if (bool) {
+                                        Component163.aBoolean3174 = true;
+                                        // Admin: right-click anywhere on the map → Teleport to here.
+                                        WorldMapTeleport.injectAtSurface(
+                                                i_51_ + AbstractGlTextureSub4.mouseHandler.getCursorX(true) - i_43_,
+                                                i_52_ + AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 72) - i_44_,
+                                                class46.width, class46.height);
+                                    }
                                     if (bool_54_) {
-                                        int i_70_ = (int) ((double) (i_51_ + (class348_sub45.method3308((byte) -127)) - i_43_ - ((class46.anInt709) / 2)) * 2.0 / (double) (Class75.aFloat1247));
-                                        int i_71_ = (int) -((double) (i_52_ + (class348_sub45.method3311(-111)) - i_44_ - ((class46.anInt789) / 2)) * 2.0 / (double) (Class75.aFloat1247));
-                                        int i_72_ = (Class348_Sub36.anInt6992 + i_70_ + Class75.anInt1266);
-                                        int i_73_ = (Class245.anInt3170 + i_71_ + Class75.anInt1263);
-                                        Class348_Sub42_Sub14 class348_sub42_sub14 = Class163.method1269(-17096);
+                                        int i_70_ = (int) ((double) (i_51_ + (class348_sub45.getX((byte) -127)) - i_43_ - ((class46.width) / 2)) * 2.0 / (double) (DisplayModeManagerContainer229.aFloat1247));
+                                        int i_71_ = (int) -((double) (i_52_ + (class348_sub45.getY(-111)) - i_44_ - ((class46.height) / 2)) * 2.0 / (double) (DisplayModeManagerContainer229.aFloat1247));
+                                        int i_72_ = (NodeSub36.anInt6992 + i_70_ + DisplayModeManagerContainer229.anInt1266);
+                                        int i_73_ = (DebugOverlay.anInt3170 + i_71_ + DisplayModeManagerContainer229.anInt1263);
+                                        HashNodeSub14 class348_sub42_sub14 = ImageTagText.method1269(-17096);
                                         if (class348_sub42_sub14 != null) {
                                             int[] is = new int[3];
                                             class348_sub42_sub14.method3239(true, i_73_, i_72_, is);
                                             if (is != null) {
-                                                if (Class182.aClass346_2449.method2696(82, -128) && (Class192.anInt2581 > 0)) {
-                                                    Class361.method3502(is[2], 2, is[0], is[1]);
+                                                if (Component280.aClass346_2449.isKeyDown(82, -128) && (Component353.anInt2581 > 0)) {
+                                                    CollisionMap.method3502(is[2], 2, is[0], is[1]);
                                                     continue;
                                                 }
-                                                Class237.aBoolean3103 = true;
-                                                Class348_Sub40_Sub26.anInt9349 = is[0];
+                                                DisplayModeManagerContainer87.aBoolean3103 = true;
+                                                DefinitionSub26.anInt9349 = is[0];
                                                 InputStream_Sub2.anInt85 = is[1];
-                                                Class79.anInt1404 = is[2];
+                                                NpcComposition.anInt1404 = is[2];
                                             }
-                                            Class348_Sub42.anInt7059 = 1;
-                                            Class348_Sub17.aBoolean6788 = false;
-                                            Class318_Sub4.anInt6411 = Class258_Sub4.aClass373_8552.method3597(true);
-                                            Class219.anInt2872 = Class258_Sub4.aClass373_8552.method3594((byte) 72);
+                                            HashNode.anInt7059 = 1;
+                                            NpcDefinition.aBoolean6788 = false;
+                                            RenderableSub4.anInt6411 = AbstractGlTextureSub4.mouseHandler.getCursorX(true);
+                                            Component386.anInt2872 = AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 72);
                                         }
-                                    } else if (bool_53_ && (Class348_Sub42.anInt7059 > 0)) {
-                                        if (Class348_Sub42.anInt7059 == 1 && ((Class318_Sub4.anInt6411 != Class258_Sub4.aClass373_8552.method3597(true)) || (Class219.anInt2872 != (Class258_Sub4.aClass373_8552.method3594((byte) 117))))) {
-                                            Class183.anInt2464 = Class348_Sub36.anInt6992;
-                                            s_Sub2.anInt8237 = Class245.anInt3170;
-                                            Class348_Sub42.anInt7059 = 2;
+                                    } else if (bool_53_ && (HashNode.anInt7059 > 0)) {
+                                        if (HashNode.anInt7059 == 1 && ((RenderableSub4.anInt6411 != AbstractGlTextureSub4.mouseHandler.getCursorX(true)) || (Component386.anInt2872 != (AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 117))))) {
+                                            Component191.anInt2464 = NodeSub36.anInt6992;
+                                            BufferCacheSub2.anInt8237 = DebugOverlay.anInt3170;
+                                            HashNode.anInt7059 = 2;
                                         }
-                                        if (Class348_Sub42.anInt7059 == 2) {
-                                            Class348_Sub17.aBoolean6788 = true;
-                                            Class64_Sub3.method689((byte) -59, (Class183.anInt2464 + (int) ((double) ((Class318_Sub4.anInt6411) - (Class258_Sub4.aClass373_8552.method3597(true))) * 2.0 / (double) (Class75.aFloat1249))));
-                                            Class286_Sub8.method2170((s_Sub2.anInt8237 - (int) ((double) ((Class219.anInt2872) - (Class258_Sub4.aClass373_8552.method3594((byte) 83))) * 2.0 / (double) (Class75.aFloat1249))), (byte) 3);
+                                        if (HashNode.anInt7059 == 2) {
+                                            NpcDefinition.aBoolean6788 = true;
+                                            DisplayModeManagerContainer282.clearPosition((byte) -59, (Component191.anInt2464 + (int) ((double) ((RenderableSub4.anInt6411) - (AbstractGlTextureSub4.mouseHandler.getCursorX(true))) * 2.0 / (double) (DisplayModeManagerContainer229.aFloat1249))));
+                                            CookieManager.method2170((BufferCacheSub2.anInt8237 - (int) ((double) ((Component386.anInt2872) - (AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 83))) * 2.0 / (double) (DisplayModeManagerContainer229.aFloat1249))), (byte) 3);
                                         }
                                     } else {
-                                        if (Class348_Sub42.anInt7059 > 0 && !Class348_Sub17.aBoolean6788) {
-                                            if (((Class318_Sub1_Sub5.anInt8770 == 1) || Class318_Sub1_Sub5.method2485(-124)) && Class73.anInt4776 > 2) Class5_Sub2.method191(true, Class318_Sub4.anInt6411, Class219.anInt2872);
-                                            else if (Class101_Sub1.method913((byte) 117)) Class5_Sub2.method191(true, Class318_Sub4.anInt6411, Class219.anInt2872);
+                                        if (HashNode.anInt7059 > 0 && !NpcDefinition.aBoolean6788) {
+                                            if (((Component203.anInt8770 == 1) || Component203.method2485(-124)) && DisplayModeManagerContainer306.menuEntryCount > 2) Component2.method191(true, RenderableSub4.anInt6411, Component386.anInt2872);
+                                            else if (MatrixSub1.method913((byte) 117)) Component2.method191(true, RenderableSub4.anInt6411, Component386.anInt2872);
                                         }
-                                        Class348_Sub42.anInt7059 = 0;
+                                        HashNode.anInt7059 = 0;
                                     }
                                     continue;
                                 }
-                                if (class46.anInt765 == Class218.anInt2861) {
-                                    if (bool_53_) Class341.method2676(class46.anInt709, class46.anInt789, (i_51_ + Class258_Sub4.aClass373_8552.method3597(true) - i_43_), (byte) 58, (i_52_ + Class258_Sub4.aClass373_8552.method3594((byte) 111) - i_44_));
+                                if (class46.contentType == SceneManager.anInt2861) {
+                                    if (bool_53_) DisplayModeManagerContainer196.method2676(class46.width, class46.height, (i_51_ + AbstractGlTextureSub4.mouseHandler.getCursorX(true) - i_43_), (byte) 58, (i_52_ + AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 111) - i_44_));
                                     continue;
                                 }
-                                if (class46.anInt765 == Class348_Sub47.anInt7125) {
-                                    Class175.method1343(i_44_, class46, 1, i_43_);
+                                if (class46.contentType == ParticleSystem.anInt7125) {
+                                    Component143.method1343(i_44_, class46, 1, i_43_);
                                     continue;
                                 }
                             }
                             if (!class46.aBoolean793 && bool_54_) {
                                 class46.aBoolean793 = true;
+                                MobileKeyboard.onInterfacePress(class46, i_43_, rawY);
                                 if (class46.anObjectArray763 != null) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                    NodeSub36 class348_sub36 = new NodeSub36();
                                     class348_sub36.aBoolean6993 = true;
                                     class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anInt6984 = (i_51_ + class348_sub45.method3308((byte) -128) - i_43_);
-                                    class348_sub36.anInt6995 = (i_52_ + class348_sub45.method3311(-123) - i_44_);
+                                    class348_sub36.anInt6984 = (i_51_ + class348_sub45.getX((byte) -128) - i_43_);
+                                    class348_sub36.anInt6995 = (i_52_ + class348_sub45.getY(-123) - i_44_);
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray763;
-                                    Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                    NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                 }
                             }
                             if (class46.aBoolean793 && bool_53_ && (class46.anObjectArray785 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aBoolean6993 = true;
                                 class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anInt6984 = i_51_ + Class258_Sub4.aClass373_8552.method3597(true) - i_43_;
-                                class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.aClass373_8552.method3594((byte) 98) - i_44_);
+                                class348_sub36.anInt6984 = i_51_ + AbstractGlTextureSub4.mouseHandler.getCursorX(true) - i_43_;
+                                class348_sub36.anInt6995 = (i_52_ + AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 98) - i_44_);
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray785;
-                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                             }
                             if (class46.aBoolean793 && !bool_53_) {
                                 class46.aBoolean793 = false;
                                 if (class46.anObjectArray742 != null) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                    NodeSub36 class348_sub36 = new NodeSub36();
                                     class348_sub36.aBoolean6993 = true;
                                     class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anInt6984 = (i_51_ + Class258_Sub4.aClass373_8552.method3597(true) - i_43_);
-                                    class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.aClass373_8552.method3594((byte) 75) - i_44_);
+                                    class348_sub36.anInt6984 = (i_51_ + AbstractGlTextureSub4.mouseHandler.getCursorX(true) - i_43_);
+                                    class348_sub36.anInt6995 = (i_52_ + AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 75) - i_44_);
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray742;
-                                    Class365.aClass262_4473.method1999(class348_sub36, -20180);
+                                    Component6.aClass262_4473.addTail(class348_sub36, -20180);
                                 }
                             }
                             if (bool_53_ && (class46.anObjectArray805 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aBoolean6993 = true;
                                 class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anInt6984 = i_51_ + Class258_Sub4.aClass373_8552.method3597(true) - i_43_;
-                                class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.aClass373_8552.method3594((byte) 80) - i_44_);
+                                class348_sub36.anInt6984 = i_51_ + AbstractGlTextureSub4.mouseHandler.getCursorX(true) - i_43_;
+                                class348_sub36.anInt6995 = (i_52_ + AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 80) - i_44_);
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray805;
-                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                             }
                             if (!class46.aBoolean737 && bool) {
                                 class46.aBoolean737 = true;
                                 if (class46.anObjectArray811 != null) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                    NodeSub36 class348_sub36 = new NodeSub36();
                                     class348_sub36.aBoolean6993 = true;
                                     class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anInt6984 = (i_51_ + Class258_Sub4.aClass373_8552.method3597(true) - i_43_);
-                                    class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.aClass373_8552.method3594((byte) 112) - i_44_);
+                                    class348_sub36.anInt6984 = (i_51_ + AbstractGlTextureSub4.mouseHandler.getCursorX(true) - i_43_);
+                                    class348_sub36.anInt6995 = (i_52_ + AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 112) - i_44_);
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray811;
-                                    Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                    NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                 }
                             }
                             if (class46.aBoolean737 && bool && (class46.anObjectArray839 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aBoolean6993 = true;
                                 class348_sub36.aClass46_6989 = class46;
-                                class348_sub36.anInt6984 = i_51_ + Class258_Sub4.aClass373_8552.method3597(true) - i_43_;
-                                class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.aClass373_8552.method3594((byte) 95) - i_44_);
+                                class348_sub36.anInt6984 = i_51_ + AbstractGlTextureSub4.mouseHandler.getCursorX(true) - i_43_;
+                                class348_sub36.anInt6995 = (i_52_ + AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 95) - i_44_);
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray839;
-                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                             }
                             if (class46.aBoolean737 && !bool) {
                                 class46.aBoolean737 = false;
                                 if (class46.anObjectArray683 != null) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                    NodeSub36 class348_sub36 = new NodeSub36();
                                     class348_sub36.aBoolean6993 = true;
                                     class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anInt6984 = (i_51_ + Class258_Sub4.aClass373_8552.method3597(true) - i_43_);
-                                    class348_sub36.anInt6995 = (i_52_ + Class258_Sub4.aClass373_8552.method3594((byte) 90) - i_44_);
+                                    class348_sub36.anInt6984 = (i_51_ + AbstractGlTextureSub4.mouseHandler.getCursorX(true) - i_43_);
+                                    class348_sub36.anInt6995 = (i_52_ + AbstractGlTextureSub4.mouseHandler.getCursorY((byte) 90) - i_44_);
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray683;
-                                    Class365.aClass262_4473.method1999(class348_sub36, -20180);
+                                    Component6.aClass262_4473.addTail(class348_sub36, -20180);
                                 }
                             }
                             if (class46.anObjectArray764 != null) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aClass46_6989 = class46;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray764;
-                                Class208.aClass262_2707.method1999(class348_sub36, -20180);
+                                Component222.aClass262_2707.addTail(class348_sub36, -20180);
                             }
-                            if (class46.anObjectArray685 != null && (Class5_Sub1.anInt8352 > class46.anInt738)) {
-                                if (class46.anIntArray818 == null || (Class5_Sub1.anInt8352 - class46.anInt738) > 32) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if (class46.anObjectArray685 != null && (Component364.anInt8352 > class46.anInt738)) {
+                                if (class46.anIntArray818 == null || (Component364.anInt8352 - class46.anInt738) > 32) {
+                                    NodeSub36 class348_sub36 = new NodeSub36();
                                     class348_sub36.aClass46_6989 = class46;
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray685;
-                                    Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                    NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                 } else {
                                     while_224_:
-                                    for (int i_74_ = class46.anInt738; i_74_ < Class5_Sub1.anInt8352; i_74_++) {
-                                        int i_75_ = (Class348_Sub26.anIntArray6890[i_74_ & 0x1f]);
+                                    for (int i_74_ = class46.anInt738; i_74_ < Component364.anInt8352; i_74_++) {
+                                        int i_75_ = (Request.anIntArray6890[i_74_ & 0x1f]);
                                         for (int i_76_ = 0; i_76_ < (class46.anIntArray818).length; i_76_++) {
                                             if ((class46.anIntArray818[i_76_]) == i_75_) {
-                                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                                NodeSub36 class348_sub36 = new NodeSub36();
                                                 class348_sub36.aClass46_6989 = class46;
                                                 class348_sub36.anObjectArray6987 = (class46.anObjectArray685);
-                                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                                 break while_224_;
                                             }
                                         }
                                     }
                                 }
-                                class46.anInt738 = Class5_Sub1.anInt8352;
+                                class46.anInt738 = Component364.anInt8352;
                             }
-                            if (class46.anObjectArray708 != null && (Class348_Sub40_Sub30.anInt9385 > class46.anInt814)) {
-                                if (class46.anIntArray831 == null || (Class348_Sub40_Sub30.anInt9385 - class46.anInt814) > 32) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if (class46.anObjectArray708 != null && (DefinitionSub30.anInt9385 > class46.anInt814)) {
+                                if (class46.anIntArray831 == null || (DefinitionSub30.anInt9385 - class46.anInt814) > 32) {
+                                    NodeSub36 class348_sub36 = new NodeSub36();
                                     class348_sub36.aClass46_6989 = class46;
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray708;
-                                    Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                    NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                 } else {
                                     while_225_:
-                                    for (int i_77_ = class46.anInt814; (i_77_ < Class348_Sub40_Sub30.anInt9385); i_77_++) {
-                                        int i_78_ = (Class239_Sub21.anIntArray6061[i_77_ & 0x1f]);
+                                    for (int i_77_ = class46.anInt814; (i_77_ < DefinitionSub30.anInt9385); i_77_++) {
+                                        int i_78_ = (Component71.anIntArray6061[i_77_ & 0x1f]);
                                         for (int i_79_ = 0; i_79_ < (class46.anIntArray831).length; i_79_++) {
                                             if ((class46.anIntArray831[i_79_]) == i_78_) {
-                                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                                NodeSub36 class348_sub36 = new NodeSub36();
                                                 class348_sub36.aClass46_6989 = class46;
                                                 class348_sub36.anObjectArray6987 = (class46.anObjectArray708);
-                                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                                 break while_225_;
                                             }
                                         }
                                     }
                                 }
-                                class46.anInt814 = Class348_Sub40_Sub30.anInt9385;
+                                class46.anInt814 = DefinitionSub30.anInt9385;
                             }
-                            if (class46.anObjectArray777 != null && (Class287.anInt3695 > class46.anInt725)) {
-                                if (class46.anIntArray686 == null || (Class287.anInt3695 - class46.anInt725) > 32) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if (class46.anObjectArray777 != null && (DisplayModeManagerContainer260.anInt3695 > class46.anInt725)) {
+                                if (class46.anIntArray686 == null || (DisplayModeManagerContainer260.anInt3695 - class46.anInt725) > 32) {
+                                    NodeSub36 class348_sub36 = new NodeSub36();
                                     class348_sub36.aClass46_6989 = class46;
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray777;
-                                    Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                    NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                 } else {
                                     while_226_:
-                                    for (int i_80_ = class46.anInt725; i_80_ < Class287.anInt3695; i_80_++) {
-                                        int i_81_ = (Class327.anIntArray4096[i_80_ & 0x1f]);
+                                    for (int i_80_ = class46.anInt725; i_80_ < DisplayModeManagerContainer260.anInt3695; i_80_++) {
+                                        int i_81_ = (DisplayModeManagerContainer363.anIntArray4096[i_80_ & 0x1f]);
                                         for (int i_82_ = 0; i_82_ < (class46.anIntArray686).length; i_82_++) {
                                             if ((class46.anIntArray686[i_82_]) == i_81_) {
-                                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                                NodeSub36 class348_sub36 = new NodeSub36();
                                                 class348_sub36.aClass46_6989 = class46;
                                                 class348_sub36.anObjectArray6987 = (class46.anObjectArray777);
-                                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                                 break while_226_;
                                             }
                                         }
                                     }
                                 }
-                                class46.anInt725 = Class287.anInt3695;
+                                class46.anInt725 = DisplayModeManagerContainer260.anInt3695;
                             }
-                            if (class46.anObjectArray751 != null && (Class106.anInt1631 > class46.anInt723)) {
-                                if (class46.anIntArray771 == null || (Class106.anInt1631 - class46.anInt723) > 32) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if (class46.anObjectArray751 != null && (KeyStoreLoader.anInt1631 > class46.anInt723)) {
+                                if (class46.anIntArray771 == null || (KeyStoreLoader.anInt1631 - class46.anInt723) > 32) {
+                                    NodeSub36 class348_sub36 = new NodeSub36();
                                     class348_sub36.aClass46_6989 = class46;
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray751;
-                                    Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                    NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                 } else {
                                     while_227_:
-                                    for (int i_83_ = class46.anInt723; i_83_ < Class106.anInt1631; i_83_++) {
-                                        int i_84_ = (Class199.anIntArray2633[i_83_ & 0x1f]);
+                                    for (int i_83_ = class46.anInt723; i_83_ < KeyStoreLoader.anInt1631; i_83_++) {
+                                        int i_84_ = (HelveticaFont.anIntArray2633[i_83_ & 0x1f]);
                                         for (int i_85_ = 0; i_85_ < (class46.anIntArray771).length; i_85_++) {
                                             if ((class46.anIntArray771[i_85_]) == i_84_) {
-                                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                                NodeSub36 class348_sub36 = new NodeSub36();
                                                 class348_sub36.aClass46_6989 = class46;
                                                 class348_sub36.anObjectArray6987 = (class46.anObjectArray751);
-                                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                                 break while_227_;
                                             }
                                         }
                                     }
                                 }
-                                class46.anInt723 = Class106.anInt1631;
+                                class46.anInt723 = KeyStoreLoader.anInt1631;
                             }
-                            if (class46.anObjectArray671 != null && (Class326.anInt4086 > class46.anInt715)) {
-                                if (class46.anIntArray731 == null || (Class326.anInt4086 - class46.anInt715) > 32) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if (class46.anObjectArray671 != null && (Component311.anInt4086 > class46.anInt715)) {
+                                if (class46.anIntArray731 == null || (Component311.anInt4086 - class46.anInt715) > 32) {
+                                    NodeSub36 class348_sub36 = new NodeSub36();
                                     class348_sub36.aClass46_6989 = class46;
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray671;
-                                    Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                    NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                 } else {
                                     while_228_:
-                                    for (int i_86_ = class46.anInt715; i_86_ < Class326.anInt4086; i_86_++) {
-                                        int i_87_ = (Class199.anIntArray2632[i_86_ & 0x1f]);
+                                    for (int i_86_ = class46.anInt715; i_86_ < Component311.anInt4086; i_86_++) {
+                                        int i_87_ = (HelveticaFont.anIntArray2632[i_86_ & 0x1f]);
                                         for (int i_88_ = 0; i_88_ < (class46.anIntArray731).length; i_88_++) {
                                             if ((class46.anIntArray731[i_88_]) == i_87_) {
-                                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                                NodeSub36 class348_sub36 = new NodeSub36();
                                                 class348_sub36.aClass46_6989 = class46;
                                                 class348_sub36.anObjectArray6987 = (class46.anObjectArray671);
-                                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                                 break while_228_;
                                             }
                                         }
                                     }
                                 }
-                                class46.anInt715 = Class326.anInt4086;
+                                class46.anInt715 = Component311.anInt4086;
                             }
-                            if ((Class348_Sub42_Sub3.anInt9501 > class46.anInt726) && (class46.anObjectArray820 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if ((HashNodeSub3.anInt9501 > class46.anInt726) && (class46.anObjectArray820 != null)) {
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aClass46_6989 = class46;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray820;
-                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                             }
-                            if ((Class126.anInt4985 > class46.anInt726) && (class46.anObjectArray734 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if ((Component380.anInt4985 > class46.anInt726) && (class46.anObjectArray734 != null)) {
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aClass46_6989 = class46;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray734;
-                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                             }
-                            if ((Class230.anInt2986 > class46.anInt726) && (class46.anObjectArray761 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if ((GameType.anInt2986 > class46.anInt726) && (class46.anObjectArray761 != null)) {
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aClass46_6989 = class46;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray761;
-                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                             }
-                            if ((Class189.anInt2523 > class46.anInt726) && (class46.anObjectArray807 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if ((Component291.anInt2523 > class46.anInt726) && (class46.anObjectArray807 != null)) {
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aClass46_6989 = class46;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray807;
-                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                             }
-                            if ((Class348_Sub40_Sub23.anInt9313 > class46.anInt726) && (class46.anObjectArray836 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if ((DefinitionSub23.anInt9313 > class46.anInt726) && (class46.anObjectArray836 != null)) {
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aClass46_6989 = class46;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray836;
-                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                             }
-                            class46.anInt726 = Class311.anInt3918;
+                            class46.anInt726 = ResourceLoader.anInt3918;
                             if (class46.anObjectArray822 != null) {
-                                for (int i_89_ = 0; i_89_ < Class348_Sub42_Sub19.anInt9699; i_89_++) {
-                                    Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                                for (int i_89_ = 0; i_89_ < HashNodeSub19.anInt9699; i_89_++) {
+                                    NodeSub36 class348_sub36 = new NodeSub36();
                                     class348_sub36.aClass46_6989 = class46;
-                                    class348_sub36.anInt6991 = Class348_Sub42_Sub5.anInterface6Array9534[i_89_].method30(false);
-                                    class348_sub36.anInt6982 = Class348_Sub42_Sub5.anInterface6Array9534[i_89_].method28((byte) 39);
+                                    class348_sub36.anInt6991 = DefinitionGroup.anInterface6Array9534[i_89_].getKeyCode(false);
+                                    class348_sub36.anInt6982 = DefinitionGroup.anInterface6Array9534[i_89_].getKeyChar((byte) 39);
                                     class348_sub36.anObjectArray6987 = class46.anObjectArray822;
-                                    Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                    NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                                 }
                             }
-                            if (Class347.aBoolean4284 && (class46.anObjectArray687 != null)) {
-                                Class348_Sub36 class348_sub36 = new Class348_Sub36();
+                            if (DisplayModeManagerContainer322.aBoolean4284 && (class46.anObjectArray687 != null)) {
+                                NodeSub36 class348_sub36 = new NodeSub36();
                                 class348_sub36.aClass46_6989 = class46;
                                 class348_sub36.anObjectArray6987 = class46.anObjectArray687;
-                                Class348_Sub1_Sub2.aClass262_8810.method1999(class348_sub36, -20180);
+                                NodeSub1Sub2.aClass262_8810.addTail(class348_sub36, -20180);
                             }
                         }
-                        if (class46.anInt774 == 5 && class46.anInt705 != -1) class46.method444(false, Class123.aClass25_1813, Class30.aClass84_413).method2292(84, Class348_Sub8.aHa6654, class46.anInt789);
-                        Class18.method273(class46, -2835);
-                        if (class46.anInt774 == 0) {
-                            method107(class46s, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_);
-                            if (class46.aClass46Array798 != null) method107(class46.aClass46Array798, class46.anInt830, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.anInt747, i_44_ - class46.anInt755, i_38_, i_39_, i_40_, i_41_);
-                            Class348_Sub41 class348_sub41 = ((Class348_Sub41) (Class125.aClass356_4915.method3480(class46.anInt830, -6008)));
+                        if (class46.type == 5 && class46.anInt705 != -1) class46.method444(false, Component132.aClass25_1813, ComponentDownloader.aClass84_413).method2292(84, NodeSub8.toolkit, class46.height);
+                        DisplayModeManagerContainer220.method273(class46, -2835);
+                        if (class46.type == 0) {
+                            method107(class46s, class46.packedId, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.scrollX, i_44_ - class46.scrollY, i_38_, i_39_, i_40_, i_41_);
+                            if (class46.children != null) method107(class46.children, class46.packedId, i_45_, i_46_, i_47_, i_48_, i_43_ - class46.scrollX, i_44_ - class46.scrollY, i_38_, i_39_, i_40_, i_41_);
+                            NodeSub41 class348_sub41 = ((NodeSub41) (Component15.aClass356_4915.get(class46.packedId, -6008)));
                             if (class348_sub41 != null) {
-                                if ((Class348_Sub42_Sub8_Sub2.aClass230_10434 == Class10.aClass230_186) && (class348_sub41.anInt7053) == 0 && !Class5_Sub1.aBoolean8335 && bool && !Class299_Sub2.aBoolean6327) Class64_Sub2.method661((byte) 105);
-                                Class182.method1373(class348_sub41.anInt7050, i_43_, i_45_, i_47_, i_39_, i_38_, -1391, i_40_, i_48_, i_44_, i_41_, i_46_);
+                                if ((PacketReader.currentGameType == RunescapeInfo.RUNESCAPE) && (class348_sub41.anInt7053) == 0 && !Component364.aBoolean8335 && bool && !DisplayModeManagerContainer356.aBoolean6327) DisplayModeManagerContainer190.resetNodeStates((byte) 105);
+                                Component280.method1373(class348_sub41.anInt7050, i_43_, i_45_, i_47_, i_39_, i_38_, -1391, i_40_, i_48_, i_44_, i_41_, i_46_);
                             }
                         }
                     }
@@ -1528,20 +1554,24 @@ public final class client extends Applet_Sub1 {
         }
     }
 
-    static final Class46 method108(Class46 class46) {
-        int i = method105(class46).method3304((byte) 125);
+    /**
+     * Walk {@link ComponentSettings#getParentDepth} parent hops (via
+     * {@link DisplayModeManagerContainer57#parentId}). Null if the chain breaks.
+     */
+    static final DisplayModeManagerContainer57 getAncestorComponent(DisplayModeManagerContainer57 class46) {
+        int i = getComponentSettings(class46).getParentDepth((byte) 125);
         if (i == 0) return null;
         for (int i_90_ = 0; i_90_ < i; i_90_++) {
-            class46 = Class324.method2570(1512932720, class46.anInt834);
+            class46 = BitmapFont.getComponent(1512932720, class46.parentId);
             if (class46 == null) return null;
         }
         return class46;
     }
 
     static final void method109() {
-        for (int i = 0; i < Class367_Sub4.anInt7319; i++) {
-            int[] is = Class348_Sub42_Sub17.anIntArrayArray9678[i];
-            for (int i_91_ = 0; i_91_ < Class348_Sub40_Sub3.anInt9109; i_91_++)
+        for (int i = 0; i < AbstractShaderSub4.anInt7319; i++) {
+            int[] is = HashNodeSub17.anIntArrayArray9678[i];
+            for (int i_91_ = 0; i_91_ < ParametricDefinition.anInt9109; i_91_++)
                 is[i_91_] = 0;
         }
     }
@@ -1551,164 +1581,165 @@ public final class client extends Applet_Sub1 {
         if (i == 31) anIntArray5176 = null;
     }
 
-    static final boolean method111(Class46 class46) {
-        if (Class299_Sub2.aBoolean6327) {
-            if (method105(class46).anInt7098 != 0) return false;
-            if (class46.anInt774 == 0) return false;
+    static final boolean method111(DisplayModeManagerContainer57 class46) {
+        if (DisplayModeManagerContainer356.aBoolean6327) {
+            if (getComponentSettings(class46).optionFlags != 0) return false;
+            if (class46.type == 0) return false;
         }
-        return class46.aBoolean813;
+        return class46.hidden;
     }
 
-    final void method93(int i) {
-        if (i != -11018) method80(9);
+    /** Draw tick: call the present path ({@code method116}), optionally with safe-mode recovery. */
+    final void pulseDrawFrame(int i) {
+        if (i != -11018) closeResources(9);
         anInt5186++;
-        if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
+        if (Component192.preferences.aClass239_Sub25_7271.getPreferenceValue(-32350) == 2) {
             try {
                 method116(true);
             } catch (Throwable throwable) {
-                Class156.method1242((throwable.getMessage() + " (Recovered) " + method81((byte) 52)), throwable, 15004);
-                Class139.aBoolean1952 = true;
-                Class367_Sub10.method3553(false, (byte) 123, 0);
+                ClientErrorReporter.reportError((throwable.getMessage() + " (Recovered) " + method81((byte) 52)), throwable, 15004);
+                GpsOverlay.aBoolean1952 = true;
+                SoftwareFallbackShader.method3553(false, (byte) 123, 0);
             }
         } else method116(true);
     }
 
     static final void method112() {
-        int i = Class328_Sub1.anInt6513;
-        int[] is = Class286_Sub7.anIntArray6290;
-        int i_92_ = Class373_Sub2.aBoolean7444 ? i : i + Class150.anInt2057;
+        int i = ShaderCompilerSub1.anInt6513;
+        int[] is = ShaderProgramSub7.anIntArray6290;
+        int i_92_ = BasicMouseHandler.aBoolean7444 ? i : i + Component324.anInt2057;
         for (int i_93_ = 0; i_93_ < i_92_; i_93_++) {
-            Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
-            if (i_93_ < i) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_93_]]);
-            else class318_sub1_sub3_sub3 = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_93_ - i], -6008)).aNpc_6859);
+            DisplayModeManagerContainer58 class318_sub1_sub3_sub3;
+            if (i_93_ < i) class318_sub1_sub3_sub3 = (InterfaceRenderer.players[is[i_93_]]);
+            else class318_sub1_sub3_sub3 = (((NpcNode) Component21.aClass356_3654.get(DisplayModeManagerContainer238.anIntArray1233[i_93_ - i], -6008)).npc);
             if (class318_sub1_sub3_sub3.anInt10285 >= 0) {
-                int i_94_ = class318_sub1_sub3_sub3.method2436((byte) 74);
+                int i_94_ = class318_sub1_sub3_sub3.getSize((byte) 74);
                 if ((i_94_ & 0x1) == 0) {
                     if ((class318_sub1_sub3_sub3.x & 0x1ff) == 0 && (class318_sub1_sub3_sub3.y & 0x1ff) == 0) continue;
                 } else if ((class318_sub1_sub3_sub3.x & 0x1ff) == 256 && ((class318_sub1_sub3_sub3.y) & 0x1ff) == 256) continue;
-                class318_sub1_sub3_sub3.anInt6382 = (Class275.method2064(class318_sub1_sub3_sub3.x, class318_sub1_sub3_sub3.plane, 11219, class318_sub1_sub3_sub3.y));
-                Class89.method850(class318_sub1_sub3_sub3, true);
+                class318_sub1_sub3_sub3.anInt6382 = (Component300.method2064(class318_sub1_sub3_sub3.x, class318_sub1_sub3_sub3.plane, 11219, class318_sub1_sub3_sub3.y));
+                Component84.method850(class318_sub1_sub3_sub3, true);
             }
         }
     }
 
     private final void method113(byte i) {
-        if (Class240.anInt4674 == 7 && Class225.anInt2955 == 0) {
-            if (Class289.anInt3699 > 1) {
-                Class348_Sub40_Sub23.anInt9313 = Class311.anInt3918;
-                Class289.anInt3699--;
+        if (Component49.clientState == 7 && Component241.anInt2955 == 0) {
+            if (Component156.anInt3699 > 1) {
+                DefinitionSub23.anInt9313 = ResourceLoader.anInt3918;
+                Component156.anInt3699--;
             }
-            if (!Class5_Sub1.aBoolean8335) Class64_Sub2.method661((byte) 111);
+            if (!Component364.aBoolean8335) DisplayModeManagerContainer190.resetNodeStates((byte) 111);
             for (int i_95_ = 0; i_95_ < 100; i_95_++) {
-                if (!Class292.method2203((byte) -85)) break;
+                if (!Component102.method2203((byte) -85)) break;
             }
         }
         anInt5174++;
-        Class348_Sub51.anInt7267++;
-        Class5_Sub2.method198(null, false, -1, -1);
-        Class175.method1343(-1, null, 1, -1);
-        Class216.method1583((byte) -73);
-        Class311.anInt3918++;
-        for (int i_96_ = 0; Class348_Sub32.anInt6930 > i_96_; i_96_++) {
-            Npc npc = (Class348_Sub40_Sub23.aClass348_Sub22Array9319[i_96_].aNpc_6859);
+        NodeSub51.anInt7267++;
+        Component2.method198(null, false, -1, -1);
+        Component143.method1343(-1, null, 1, -1);
+        Component43.method1583((byte) -73);
+        ResourceLoader.anInt3918++;
+        for (int i_96_ = 0; NodeSub32.anInt6930 > i_96_; i_96_++) {
+            Npc npc = (DefinitionSub23.aClass348_Sub22Array9319[i_96_].npc);
             if (npc != null) {
-                byte i_97_ = (npc.aClass79_10505.aByte1325);
+                byte i_97_ = (npc.definition.aByte1325);
                 if ((i_97_ & 0x1) != 0) {
-                    int i_98_ = npc.method2436((byte) 117);
+                    int i_98_ = npc.getSize((byte) 117);
                     if ((0x2 & i_97_) != 0 && npc.anInt10319 == 0 && Math.random() * 1000.0 < 10.0) {
                         int i_99_ = (int) Math.round(-5.0 + 10.0 * Math.random());
                         int i_100_ = (int) Math.round(10.0 * Math.random() - 5.0);
                         if (i_99_ != 0 || i_100_ != 0) {
                             int i_101_ = ((npc.anIntArray10320[0]) - -i_99_);
                             if (i_101_ < 0) i_101_ = 0;
-                            else if (i_101_ > Class367_Sub4.anInt7319 + -i_98_ + -1) i_101_ = -1 + (-i_98_ + Class367_Sub4.anInt7319);
+                            else if (i_101_ > AbstractShaderSub4.anInt7319 + -i_98_ + -1) i_101_ = -1 + (-i_98_ + AbstractShaderSub4.anInt7319);
                             int i_102_ = i_100_ + (npc.anIntArray10317[0]);
                             if (i_102_ < 0) i_102_ = 0;
-                            else if ((-i_98_ + Class348_Sub40_Sub3.anInt9109 - 1) < i_102_) i_102_ = (-i_98_ + Class348_Sub40_Sub3.anInt9109 - 1);
-                            int i_103_ = (Class59_Sub2_Sub2.method574(i_101_, i_98_, i_98_, Class348_Sub40_Sub11.anIntArray9185, true, (byte) 120, -1, (npc.anIntArray10320[0]), (npc.anIntArray10317[0]), Class348_Sub42_Sub14.anIntArray9626, i_102_, (Class348_Sub45.aClass361Array7108[(npc.plane)]), i_98_, 0, 0));
+                            else if ((-i_98_ + ParametricDefinition.anInt9109 - 1) < i_102_) i_102_ = (-i_98_ + ParametricDefinition.anInt9109 - 1);
+                            int i_103_ = (Component317.method574(i_101_, i_98_, i_98_, DefinitionSub11.anIntArray9185, true, (byte) 120, -1, (npc.anIntArray10320[0]), (npc.anIntArray10317[0]), HashNodeSub14.anIntArray9626, i_102_, (NodeSub45.aClass361Array7108[(npc.plane)]), i_98_, 0, 0));
                             if (i_103_ > 0) {
                                 if (i_103_ > 9) i_103_ = 9;
                                 for (int i_104_ = 0; i_103_ > i_104_; i_104_++) {
-                                    npc.anIntArray10320[i_104_] = (Class348_Sub42_Sub14.anIntArray9626[-1 + (-i_104_ + i_103_)]);
-                                    npc.anIntArray10317[i_104_] = (Class348_Sub40_Sub11.anIntArray9185[-1 + (-i_104_ + i_103_)]);
+                                    npc.anIntArray10320[i_104_] = (HashNodeSub14.anIntArray9626[-1 + (-i_104_ + i_103_)]);
+                                    npc.anIntArray10317[i_104_] = (DefinitionSub11.anIntArray9185[-1 + (-i_104_ + i_103_)]);
                                     npc.aByteArray10321[i_104_] = (byte) 1;
                                 }
                                 npc.anInt10319 = i_103_;
                             }
                         }
                     }
-                    Class219.method1600(true, 0, npc);
-                    int i_105_ = (Class348_Sub8.method2774((byte) 108, npc));
-                    za_Sub2.method3443(true, npc);
-                    Class71.method729(Class235.anInt3062, i_105_, (byte) 122, npc, Class127_Sub1.anInt8387);
-                    Class348_Sub42_Sub9_Sub1.method3208(npc, Class235.anInt3062, -84);
-                    Class230.method1635(-106, npc);
+                    Component386.method1600(true, 0, npc);
+                    int i_105_ = (NodeSub8.method2774((byte) 108, npc));
+                    NodeBaseSub2.method3443(true, npc);
+                    DisplayModeManagerContainer5.method729(Component366.anInt3062, i_105_, (byte) 122, npc, Component162.anInt8387);
+                    Component140.method3208(npc, Component366.anInt3062, -84);
+                    GameType.method1635(-106, npc);
                 }
             }
         }
-        if (Class225.anInt2955 == 0 && Class367_Sub2.anInt7297 == 0) {
-            if (Class348_Sub40_Sub21.anInt9282 == 2) Class14_Sub1.method241((byte) 127);
-            else Class348_Sub21.method2954((byte) -127);
-            if (Class286_Sub4.anInt6246 >> 9 < 14 || (Class286_Sub4.anInt6246 >> 9 >= -14 + Class367_Sub4.anInt7319) || (Class59_Sub2_Sub2.anInt8685 >> 9 < 14) || (Class348_Sub40_Sub3.anInt9109 + -14 <= Class59_Sub2_Sub2.anInt8685 >> 9))
-                Class101.method893((byte) -49);
+        if (Component241.anInt2955 == 0 && AbstractShaderSub2.anInt7297 == 0) {
+            if (DefinitionSub21.cameraMode == 2) Component19.method241((byte) 127);
+            else NodeSub21.method2954((byte) -127);
+            if (WaterSurfaceShader.anInt6246 >> 9 < 14 || (WaterSurfaceShader.anInt6246 >> 9 >= -14 + AbstractShaderSub4.anInt7319) || (Component317.anInt8685 >> 9 < 14) || (ParametricDefinition.anInt9109 + -14 <= Component317.anInt8685 >> 9))
+                DisplayModeManagerContainer204.method893((byte) -49);
         }
         if (i != 112) anInt5171 = 22;
         for (; ; ) {
-            Class348_Sub36 class348_sub36 = (Class348_Sub36) Class208.aClass262_2707.method1997(8);
+            NodeSub36 class348_sub36 = (NodeSub36) Component222.aClass262_2707.peekFirst(8);
             if (class348_sub36 == null) break;
-            Class46 class46 = class348_sub36.aClass46_6989;
-            if (class46.anInt704 >= 0) {
-                Class46 class46_106_ = Class324.method2570(i ^ 0x5a2d8500, class46.anInt834);
-                if (class46_106_ == null || class46_106_.aClass46Array798 == null || (class46_106_.aClass46Array798.length <= class46.anInt704) || class46 != (class46_106_.aClass46Array798[class46.anInt704])) continue;
+            DisplayModeManagerContainer57 class46 = class348_sub36.aClass46_6989;
+            if (class46.childIndex >= 0) {
+                DisplayModeManagerContainer57 class46_106_ = BitmapFont.getComponent(i ^ 0x5a2d8500, class46.parentId);
+                if (class46_106_ == null || class46_106_.children == null || (class46_106_.children.length <= class46.childIndex) || class46 != (class46_106_.children[class46.childIndex])) continue;
             }
-            Class66.method705(class348_sub36);
+            ClientScriptExecutor.runHook(class348_sub36);
         }
         for (; ; ) {
-            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class365.aClass262_4473.method1997(i + -104));
+            NodeSub36 class348_sub36 = ((NodeSub36) Component6.aClass262_4473.peekFirst(i + -104));
             if (class348_sub36 == null) break;
-            Class46 class46 = class348_sub36.aClass46_6989;
-            if (class46.anInt704 >= 0) {
-                Class46 class46_107_ = Class324.method2570(1512932720, class46.anInt834);
-                if (class46_107_ == null || class46_107_.aClass46Array798 == null || (class46_107_.aClass46Array798.length <= class46.anInt704) || class46 != (class46_107_.aClass46Array798[class46.anInt704])) continue;
+            DisplayModeManagerContainer57 class46 = class348_sub36.aClass46_6989;
+            if (class46.childIndex >= 0) {
+                DisplayModeManagerContainer57 class46_107_ = BitmapFont.getComponent(1512932720, class46.parentId);
+                if (class46_107_ == null || class46_107_.children == null || (class46_107_.children.length <= class46.childIndex) || class46 != (class46_107_.children[class46.childIndex])) continue;
             }
-            Class66.method705(class348_sub36);
+            ClientScriptExecutor.runHook(class348_sub36);
         }
         for (; ; ) {
-            Class348_Sub36 class348_sub36 = ((Class348_Sub36) Class348_Sub1_Sub2.aClass262_8810.method1997(i ^ 0x78));
+            NodeSub36 class348_sub36 = ((NodeSub36) NodeSub1Sub2.aClass262_8810.peekFirst(i ^ 0x78));
             if (class348_sub36 == null) break;
-            Class46 class46 = class348_sub36.aClass46_6989;
-            if (class46.anInt704 >= 0) {
-                Class46 class46_108_ = Class324.method2570(1512932720, class46.anInt834);
-                if (class46_108_ == null || class46_108_.aClass46Array798 == null || (class46_108_.aClass46Array798.length <= class46.anInt704) || class46 != (class46_108_.aClass46Array798[class46.anInt704])) continue;
+            DisplayModeManagerContainer57 class46 = class348_sub36.aClass46_6989;
+            if (class46.childIndex >= 0) {
+                DisplayModeManagerContainer57 class46_108_ = BitmapFont.getComponent(1512932720, class46.parentId);
+                if (class46_108_ == null || class46_108_.children == null || (class46_108_.children.length <= class46.childIndex) || class46 != (class46_108_.children[class46.childIndex])) continue;
             }
-            Class66.method705(class348_sub36);
+            ClientScriptExecutor.runHook(class348_sub36);
         }
-        if (Class289.aClass46_3701 != null) Class347.method2708(-30206);
-        if (Class367_Sub11.anInt7396 % 1500 == 0) Class348_Sub40_Sub16.method3088(9);
-        if (Class240.anInt4674 == 7 && Class225.anInt2955 == 0) Class261.method1987(-124);
-        Class101.method909(3553);
-        if (Class184.aBoolean2469 && (Class34.aLong482 < Class62.method599(-107) + -60000L)) Class318_Sub1_Sub2.method2405(41);
-        for (Class318_Sub9_Sub1 class318_sub9_sub1 = ((Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1872(8)); class318_sub9_sub1 != null; class318_sub9_sub1 = (Class318_Sub9_Sub1) Class348_Sub42_Sub14.aClass243_9642.method1878((byte) -43)) {
-            if ((long) class318_sub9_sub1.anInt8787 < -5L + Class62.method599(-80) / 1000L) {
-                if (class318_sub9_sub1.aShort8786 > 0) Class286_Sub2.method2144("", 5, (byte) -91, 0, (class318_sub9_sub1.aString8783 + Class274.aClass274_3502.method2063(Class348_Sub33.anInt6967, 544)), "", "");
-                if (class318_sub9_sub1.aShort8786 == 0) Class286_Sub2.method2144("", 5, (byte) -105, 0, (class318_sub9_sub1.aString8783 + Class274.aClass274_3503.method2063((Class348_Sub33.anInt6967), i ^ 0x250)), "", "");
-                class318_sub9_sub1.method2373(false);
+        if (Component156.aClass46_3701 != null) DisplayModeManagerContainer322.method2708(-30206);
+        if (OpenGlShader.clientCycle % 1500 == 0) ToolbarRefreshDefinition.method3088(9);
+        if (Component49.clientState == 7 && Component241.anInt2955 == 0) DisplayModeManagerContainer1.updateMenuTip(-124);
+        DisplayModeManagerContainer204.method909(3553);
+        if (Component357.aBoolean2469 && (Component225.aLong482 < Component240.currentTimeMillis(-107) + -60000L)) DisplayModeManagerContainer343.saveClientPreferences(41);
+        for (FriendLoginMessage class318_sub9_sub1 = ((FriendLoginMessage) HashNodeSub14.friendLoginMessages.method1872(8)); class318_sub9_sub1 != null; class318_sub9_sub1 = (FriendLoginMessage) HashNodeSub14.friendLoginMessages.method1878((byte) -43)) {
+            if ((long) class318_sub9_sub1.timestampSeconds < -5L + Component240.currentTimeMillis(-80) / 1000L) {
+                if (class318_sub9_sub1.worldId > 0) ShaderProgramSub2.addChatMessage("", 5, (byte) -91, 0, (class318_sub9_sub1.username + FriendsIgnoreList.aClass274_3502.getLocalized(ObjectDeserializer.languageId, 544)), "", "");
+                if (class318_sub9_sub1.worldId == 0) ShaderProgramSub2.addChatMessage("", 5, (byte) -105, 0, (class318_sub9_sub1.username + FriendsIgnoreList.aClass274_3503.getLocalized((ObjectDeserializer.languageId), i ^ 0x250)), "", "");
+                class318_sub9_sub1.unlink(false);
             }
         }
         do {
-            if (Class240.anInt4674 == 7 && Class225.anInt2955 == 0) {
-                if (Class348_Sub40_Sub8.aClass238_9165 == null) Class348_Sub40_Sub34.method3141(false, (byte) 11);
+            if (Component49.clientState == 7 && Component241.anInt2955 == 0) {
+                if (DefinitionSub8.aClass238_9165 == null) LoggedOutDefinition.disconnectAndReset(false, (byte) 11);
                 else {
-                    Class11.anInt193++;
-                    if (Class11.anInt193 > 50) {
+                    Component53.anInt193++;
+                    if (Component53.anInt193 > 50) {
                         IOException_Sub1.anInt88++;
-                        Class348_Sub47 class348_sub47 = Class286_Sub3.method2148((Class239_Sub10.aClass351_5938), (Class348_Sub23_Sub2.aClass77_9029), -104);
-                        Class348_Sub42_Sub14.method3243(-49, class348_sub47);
+                        ParticleSystem class348_sub47 = ParticleShader.createOutboundPacket((Component98.aClass351_5938), (DisplayModeManagerContainer64.aClass77_9029), -104);
+                        HashNodeSub14.enqueueOutboundPacket(-49, class348_sub47);
                     }
                     try {
-                        Class239_Sub18.method1802(0);
+                        Component302.method1802(0);
                     } catch (java.io.IOException ioexception) {
-                        Class348_Sub40_Sub34.method3141(false, (byte) 11);
+                        LoggedOutDefinition.disconnectAndReset(false, (byte) 11);
                         break;
                     }
                     break;
@@ -1718,114 +1749,125 @@ public final class client extends Applet_Sub1 {
         } while (false);
     }
 
-    private final void method114(int i) {
+    private final void processGameTick(int i) {
         anInt5188++;
-        if (Class240.anInt4674 != 14) {
-            Class367_Sub11.anInt7396++;
-            if (Class367_Sub11.anInt7396 % 1000 == 1) {
+        if (Component49.clientState != 14) {
+            OpenGlShader.clientCycle++;
+            if (OpenGlShader.clientCycle % 1000 == 1) {
                 GregorianCalendar gregoriancalendar = new GregorianCalendar();
-                Class356.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6);
-                OutputStream_Sub1.aRandom93.setSeed(Class356.anInt4383);
+                LruCache.anInt4383 = (gregoriancalendar.get(11) * 600 + gregoriancalendar.get(12) * 10 + gregoriancalendar.get(13) / 6);
+                OutputStream_Sub1.aRandom93.setSeed(LruCache.anInt4383);
             }
-            if (Class367_Sub11.anInt7396 % 50 == 0) {
-                Class348_Sub48.anInt7134 = Class81.anInt1433;
-                Class81.anInt1433 = 0;
-                Class264.anInt3372 = Class13.anInt221;
-                Class13.anInt221 = 0;
+            if (OpenGlShader.clientCycle % 50 == 0) {
+                NodeSub48.anInt7134 = Component268.anInt1433;
+                Component268.anInt1433 = 0;
+                Component235.anInt3372 = Component354.anInt221;
+                Component354.anInt221 = 0;
             }
             method102((byte) 61);
-            if (Class175.aClass340_2327 != null) Class175.aClass340_2327.method2670(0);
-            Class296.method2228(0);
-            Class348_Sub42_Sub16_Sub1.method3260(66);
-            Class182.aClass346_2449.method2695(67);
-            Class258_Sub4.aClass373_8552.method3589(0);
-            if (Class348_Sub8.aHa6654 != null) Class348_Sub8.aHa6654.method3646((int) Class62.method599(-74));
-            Class170.method1315(93);
-            Class253.anInt3246 = 0;
-            Class348_Sub42_Sub19.anInt9699 = 0;
-            for (Interface6 interface6 = Class182.aClass346_2449.method2697(0); interface6 != null; interface6 = Class182.aClass346_2449.method2697(0)) {
-                int i_109_ = interface6.method27(26276);
+            if (Component143.aClass340_2327 != null) Component143.aClass340_2327.reload(0);
+            HuffmanDecoder.method2228(0);
+            HashNodeSub16Sub1.method3260(66);
+            Component280.aClass346_2449.sync(67);
+            AbstractGlTextureSub4.mouseHandler.syncEvents(0);
+            if (NodeSub8.toolkit != null) NodeSub8.toolkit.method3646((int) Component240.currentTimeMillis(-74));
+            DisplayModeManagerContainer292.method1315(93);
+            Component193.anInt3246 = 0;
+            HashNodeSub19.anInt9699 = 0;
+            for (Interface6 interface6 = Component280.aClass346_2449.popKeyEvent(0); interface6 != null; interface6 = Component280.aClass346_2449.popKeyEvent(0)) {
+                int i_109_ = interface6.getEventType(26276);
                 if (i_109_ == 2 || i_109_ == 3) {
-                    int i_110_ = interface6.method28((byte) 96);
-                    if (!Class275.method2066((byte) 116) || (i_110_ != 96 && i_110_ != 167 && i_110_ != 178)) {
-                        if (Class348_Sub42_Sub19.anInt9699 < 128) {
-                            Class348_Sub42_Sub5.anInterface6Array9534[Class348_Sub42_Sub19.anInt9699] = interface6;
-                            Class348_Sub42_Sub19.anInt9699++;
+                    int i_110_ = interface6.getKeyChar((byte) 96);
+                    if (!Component300.method2066((byte) 116) || (i_110_ != 96 && i_110_ != 167 && i_110_ != 178)) {
+                        if (HashNodeSub19.anInt9699 < 128) {
+                            DefinitionGroup.anInterface6Array9534[HashNodeSub19.anInt9699] = interface6;
+                            HashNodeSub19.anInt9699++;
                         }
-                    } else if (!Class348_Sub42_Sub16_Sub2.method3263(true)) Class316.method2363(-84);
-                    else Class367_Sub4.method3543((byte) -89);
-                } else if (i_109_ == 0 && Class253.anInt3246 < 75) {
-                    Class308.anInterface6Array3884[Class253.anInt3246] = interface6;
-                    Class253.anInt3246++;
+                    } else if (!HashNodeSub16Sub2.isDevConsoleOpen(true)) Component192.openDevConsole(-84);
+                    else AbstractShaderSub4.closeDevConsole((byte) -89);
+                } else if (i_109_ == 0 && Component193.anInt3246 < 75) {
+                    Component17.anInterface6Array3884[Component193.anInt3246] = interface6;
+                    Component193.anInt3246++;
                 }
             }
-            Class98.anInt1565 = 0;
-            Class320.scrollWheelDiff = 0;
-            for (Class348_Sub45 class348_sub45 = Class258_Sub4.aClass373_8552.method3596(0); class348_sub45 != null; class348_sub45 = Class258_Sub4.aClass373_8552.method3596(0)) {
-                int i_111_ = class348_sub45.method3310(86);
+            Component122.mouseWheelDelta = 0;
+            Component233.scrollWheelDiff = 0;
+            for (NodeSub45 class348_sub45 = AbstractGlTextureSub4.mouseHandler.popEvent(0); class348_sub45 != null; class348_sub45 = AbstractGlTextureSub4.mouseHandler.popEvent(0)) {
+                int i_111_ = class348_sub45.getEventType(86);
                 if (i_111_ != -1) {
                     if (i_111_ != 6) {
-                        if (Class371.method3584(i_111_, 1)) {
-                            Class318_Sub1_Sub3.aClass262_8744.method1999(class348_sub45, -20180);
-                            if (Class318_Sub1_Sub3.aClass262_8744.method1998(0) > 10) Class318_Sub1_Sub3.aClass262_8744.method1997(8);
+                        if (Component307.method3584(i_111_, 1)) {
+                            Component327.aClass262_8744.addTail(class348_sub45, -20180);
+                            if (Component327.aClass262_8744.size(0) > 10) Component327.aClass262_8744.peekFirst(8);
                         }
                     } else {
-                        int anInt1565 = class348_sub45.method3315(0);
-                        Class320.scrollWheelDiff = anInt1565;
-                        Class98.anInt1565 += anInt1565;
+                        // Event type 6 = mouse wheel; notches feed UI scroll + console + plane.
+                        int notches = class348_sub45.getClickCount(0);
+                        Component233.scrollWheelDiff = notches;
+                        Component122.mouseWheelDelta += notches;
                     }
-                } else r_Sub1.aClass262_10479.method1999(class348_sub45, -20180);
+                } else CacheNodeSub1.aClass262_10479.addTail(class348_sub45, -20180);
             }
-            if (Class348_Sub42_Sub16_Sub2.method3263(true)) Class38.method363(125);
-            if (Class139.method1167(Class240.anInt4674, (byte) -51)) {
-                Class52.method493(true);
-                Class94.method867(true);
-            } else if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -120)) Canvas_Sub1.method123(0);
+            // Consume overlay clicks before menu/walk/iface handlers see them.
+            if (Loader.microbotEnabled) MicrobotPanel.pollInput();
+            SceneEditorUi.pollInput();
+            SceneEditorHost.tick();
+            // Purple console band: eat presses so they don't click-through to the game.
+            BuildInfo.pollConsoleInput();
+            if (HashNodeSub16Sub2.isDevConsoleOpen(true)) PauseTimer.processDevConsoleInput(125);
+            if (GpsOverlay.method1167(Component49.clientState, (byte) -51)) {
+                RSACipher.method493(true);
+                Component97.method867(true);
+            } else if (Component212.isValidType(Component49.clientState, (byte) -120)) Canvas_Sub1.loadAndBuildScene(0);
             if (i < 32) aClass262_5185 = null;
-            if (Class348_Sub42_Sub8.method3196(Class240.anInt4674, -74) && !Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -55)) {
+            if (CacheNode.method3196(Component49.clientState, -74) && !Component212.isValidType(Component49.clientState, (byte) -55)) {
                 method113((byte) 112);
-                Class348_Sub5.method2757(110);
-                Class88.method843((byte) 102);
-            } else if (!Class340.method2672(Class240.anInt4674, -123) || Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -115)) {
-                if (Class240.anInt4674 == 12) Class88.method843((byte) 113);
-                else if (Class334.method2653(true, Class240.anInt4674) && !Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -86)) Class348_Sub24.method2991(11432);
-                else if (Class240.anInt4674 == 13) {
-                    Class88.method843((byte) -75);
-                    if (Class348_Sub6.anInt6634 != -3 && Class348_Sub6.anInt6634 != 2 && Class348_Sub6.anInt6634 != 15) Class348_Sub40_Sub34.method3141(false, (byte) 11);
+                NodeSub5.method2757(110);
+                TheoraVideoPlayer.method843((byte) 102);
+            } else if (!CacheFileStore.isReconnectState(Component49.clientState, -123) || Component212.isValidType(Component49.clientState, (byte) -115)) {
+                if (Component49.clientState == 12) TheoraVideoPlayer.method843((byte) 113);
+                else if (NativeLibLoader.isPostLoginState(true, Component49.clientState) && !Component212.isValidType(Component49.clientState, (byte) -86)) ClientSystemInfo.method2991(11432);
+                else if (Component49.clientState == 13) {
+                    TheoraVideoPlayer.method843((byte) -75);
+                    if (NodederUtil.anInt6634 != -3 && NodederUtil.anInt6634 != 2 && NodederUtil.anInt6634 != 15) LoggedOutDefinition.disconnectAndReset(false, (byte) 11);
                 }
             } else {
                 method113((byte) 112);
-                Class88.method843((byte) 67);
+                TheoraVideoPlayer.method843((byte) 67);
             }
-            Class22.method294(Class348_Sub8.aHa6654, 0);
-            Class318_Sub1_Sub3.aClass262_8744.method1997(8);
+            Component231.method294(NodeSub8.toolkit, 0);
+            Component327.aClass262_8744.peekFirst(8);
+            // Microbot: refresh caches + pending menu inject (after input drain / menu tip).
+            MicrobotRuntime.tick();
+            // Joystick aliases: drain pad-queued fires on the client thread (CS2-safe).
+            JoystickAlias.clientTick();
         }
     }
 
     static final void method115() {
-        int i = Class328_Sub1.anInt6513;
-        int[] is = Class286_Sub7.anIntArray6290;
-        int i_112_ = Class316.aClass348_Sub51_3959.aClass239_Sub13_7236.method1776(-32350);
+        int i = ShaderCompilerSub1.anInt6513;
+        int[] is = ShaderProgramSub7.anIntArray6290;
+        int i_112_ = Component192.preferences.aClass239_Sub13_7236.method1776(-32350);
         boolean bool = i_112_ == 1 && i > 200 || i_112_ == 0 && i > 50;
         for (int i_113_ = 0; i_113_ < i; i_113_++) {
-            Player player = Class294.aPlayerArray5058[is[i_113_]];
+            Player player = InterfaceRenderer.players[is[i_113_]];
             if (!player.method2457((byte) -90)) player.anInt10285 = -1;
             else if (player.aBoolean10551) player.anInt10285 = -1;
             else {
                 player.method2409((byte) -126);
-                if ((player.aShort8743) < 0 || (player.aShort8750) < 0 || (player.aShort8751) >= Class367_Sub4.anInt7319 || (player.aShort8747) >= Class348_Sub40_Sub3.anInt9109)
+                if ((player.aShort8743) < 0 || (player.aShort8750) < 0 || (player.aShort8751) >= AbstractShaderSub4.anInt7319 || (player.aShort8747) >= ParametricDefinition.anInt9109)
                     player.anInt10285 = -1;
                 else {
                     player.aBoolean10521 = (player.aBoolean10213 && bool);
-                    if (player == Class132.aPlayer_1907) player.anInt10285 = 2147483647;
+                    if (player == Component72.localPlayer) player.anInt10285 = 2147483647;
                     else {
                         int i_114_ = 0;
                         if (!player.aBoolean10309) i_114_++;
-                        if (player.anInt10223 > Class367_Sub11.anInt7396) i_114_ += 2;
-                        i_114_ += 5 - player.method2436((byte) 101) << 2;
+                        if (player.anInt10223 > OpenGlShader.clientCycle) i_114_ += 2;
+                        i_114_ += 5 - player.getSize((byte) 101) << 2;
                         if (player.aBoolean10554) i_114_ += 512;
                         else {
-                            if (Class37.anInt495 == 0) i_114_ += 32;
+                            if (NameFormatter.anInt495 == 0) i_114_ += 32;
                             else i_114_ += 128;
                             i_114_ += 256;
                         }
@@ -1834,197 +1876,214 @@ public final class client extends Applet_Sub1 {
                 }
             }
         }
-        for (int i_115_ = 0; i_115_ < Class150.anInt2057; i_115_++) {
-            Npc npc = (((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_115_], -6008)).aNpc_6859);
-            if (!npc.method2445((byte) -4) || !(npc.aClass79_10505.method796(Class318_Sub1_Sub3_Sub3.aClass170_10209, 18627))) npc.anInt10285 = -1;
+        for (int i_115_ = 0; i_115_ < Component324.anInt2057; i_115_++) {
+            NpcNode npcNode = (NpcNode) Component21.aClass356_3654.get(DisplayModeManagerContainer238.anIntArray1233[i_115_], -6008);
+            if (npcNode == null || npcNode.npc == null) {
+                for (int i_117_ = i_115_ + 1; i_117_ < Component324.anInt2057; i_117_++) {
+                    DisplayModeManagerContainer238.anIntArray1233[i_117_ - 1] = DisplayModeManagerContainer238.anIntArray1233[i_117_];
+                }
+                Component324.anInt2057--;
+                i_115_--;
+                continue;
+            }
+            Npc npc = npcNode.npc;
+            if (!npc.method2445((byte) -4) || !(npc.definition.method796(DisplayModeManagerContainer58.aClass170_10209, 18627))) npc.anInt10285 = -1;
             else {
                 npc.method2409((byte) -118);
-                if ((npc.aShort8743) < 0 || (npc.aShort8750) < 0 || (npc.aShort8751) >= Class367_Sub4.anInt7319 || (npc.aShort8747) >= Class348_Sub40_Sub3.anInt9109)
+                if ((npc.aShort8743) < 0 || (npc.aShort8750) < 0 || (npc.aShort8751) >= AbstractShaderSub4.anInt7319 || (npc.aShort8747) >= ParametricDefinition.anInt9109)
                     npc.anInt10285 = -1;
                 else {
                     int i_116_ = 0;
                     if (!npc.aBoolean10309) i_116_++;
-                    if (npc.anInt10223 > Class367_Sub11.anInt7396) i_116_ += 2;
-                    i_116_ += 5 - npc.method2436((byte) 82) << 2;
-                    if (Class37.anInt495 == 0) {
-                        if (npc.aClass79_10505.aBoolean1362) i_116_ += 64;
+                    if (npc.anInt10223 > OpenGlShader.clientCycle) i_116_ += 2;
+                    i_116_ += 5 - npc.getSize((byte) 82) << 2;
+                    if (NameFormatter.anInt495 == 0) {
+                        if (npc.definition.aBoolean1362) i_116_ += 64;
                         else i_116_ += 128;
-                    } else if (Class37.anInt495 == 1) {
-                        if (npc.aClass79_10505.aBoolean1362) i_116_ += 32;
+                    } else if (NameFormatter.anInt495 == 1) {
+                        if (npc.definition.aBoolean1362) i_116_ += 32;
                         else i_116_ += 64;
                     }
-                    if (npc.aClass79_10505.aBoolean1345) i_116_ += 1024;
-                    else if (!npc.aClass79_10505.aBoolean1381) i_116_ += 256;
+                    if (npc.definition.aBoolean1345) i_116_ += 1024;
+                    else if (!npc.definition.aBoolean1381) i_116_ += 256;
                     npc.anInt10285 = i_116_ + 1;
                 }
             }
         }
-        for (int i_117_ = 0; i_117_ < Class348_Sub27.aClass302Array6897.length; i_117_++) {
-            Class302 class302 = Class348_Sub27.aClass302Array6897[i_117_];
+        for (int i_117_ = 0; i_117_ < NodeSub27.aClass302Array6897.length; i_117_++) {
+            Component114 class302 = NodeSub27.aClass302Array6897[i_117_];
             if (class302 != null) {
                 if (class302.anInt3840 == 1) {
-                    Class348_Sub22 class348_sub22 = ((Class348_Sub22) (Class282.aClass356_3654.method3480(class302.anInt3833, -6008)));
+                    NpcNode class348_sub22 = ((NpcNode) (Component21.aClass356_3654.get(class302.anInt3833, -6008)));
                     if (class348_sub22 != null) {
-                        Npc npc = (class348_sub22.aNpc_6859);
+                        Npc npc = (class348_sub22.npc);
                         if (npc.anInt10285 >= 0) npc.anInt10285 += 2048;
                     }
                 } else if (class302.anInt3840 == 10) {
-                    Player player = (Class294.aPlayerArray5058[class302.anInt3833]);
-                    if (player != null && (player != Class132.aPlayer_1907) && player.anInt10285 >= 0) player.anInt10285 += 2048;
+                    Player player = (InterfaceRenderer.players[class302.anInt3833]);
+                    if (player != null && (player != Component72.localPlayer) && player.anInt10285 >= 0) player.anInt10285 += 2048;
                 }
             }
         }
     }
 
-    final synchronized void method87(byte i) {
+    /** Prefer stealing Loader's canvas via reflection; otherwise recreate via {@link Applet_Sub1#recreateGameCanvas}. */
+    final synchronized void recreateGameCanvas(byte i) {
         if (i > -11) aClass262_5185 = null;
         anInt5173++;
-        if (Class93.anApplet1530 != null && Class305.aCanvas3869 == null && !Class348_Sub23_Sub1.aClass297_8992.aBoolean3794) {
+        if (ToolkitFactory.anApplet1530 != null && DisplayModeManagerContainer50.gameCanvas == null && !OggUrlStream.aClass297_8992.useDirectDraw) {
             try {
-                Class var_class = Class93.anApplet1530.getClass();
+                Class var_class = ToolkitFactory.anApplet1530.getClass();
                 Field field = var_class.getDeclaredField("canvas");
-                Class305.aCanvas3869 = (Canvas) field.get(Class93.anApplet1530);
-                field.set(Class93.anApplet1530, null);
-                if (Class305.aCanvas3869 != null) return;
+                DisplayModeManagerContainer50.gameCanvas = (Canvas) field.get(ToolkitFactory.anApplet1530);
+                field.set(ToolkitFactory.anApplet1530, null);
+                if (DisplayModeManagerContainer50.gameCanvas != null) return;
             } catch (Exception exception) {
                 if (Loader.trace) {
                     exception.printStackTrace();
                 }
             }
         }
-        super.method87((byte) -28);
+        super.recreateGameCanvas((byte) -28);
     }
 
     private final void method116(boolean bool) {
         anInt5172++;
-        if (Class240.anInt4674 != 14) {
-            long l = (Class241.method1857((byte) -45) / 1000000L + -Class348_Sub42_Sub2.aLong8573);
-            Class348_Sub42_Sub2.aLong8573 = Class241.method1857((byte) -45) / 1000000L;
-            boolean bool_118_ = Class286_Sub6.method2163(!bool);
-            if (bool_118_ && Class74.aBoolean1236 && Class348_Sub40.aClass279_7042 != null) Class348_Sub40.aClass279_7042.method2087(-115);
-            if (Class260.method1977((byte) -79, Class240.anInt4674)) {
-                if ((Class348_Sub16_Sub2.aLong8866 != 0) && Class62.method599(-98) > Class348_Sub16_Sub2.aLong8866) Class85.method830(Class348_Sub42_Sub12.method3229(-128), Class321.anInt4005, (byte) 102, false, Class348_Sub40_Sub25.anInt9335);
-                else if (!Class348_Sub8.aHa6654.method3655() && Class203.aBoolean2674) Class348_Sub47.method3327(1406);
+        if (Component49.clientState != 14) {
+            long l = (Component41.method1857((byte) -45) / 1000000L + -HashNodeSub2.aLong8573);
+            HashNodeSub2.aLong8573 = Component41.method1857((byte) -45) / 1000000L;
+            boolean bool_118_ = WaterShaderProgram.method2163(!bool);
+            if (bool_118_ && DisplayModeManagerContainer238.aBoolean1236 && Definition.aClass279_7042 != null) Definition.aClass279_7042.method2087(-115);
+            if (Component92.method1977((byte) -79, Component49.clientState)) {
+                if ((NodeSub16Sub2.aLong8866 != 0) && Component240.currentTimeMillis(-98) > NodeSub16Sub2.aLong8866) LogicError.method830(MenuEntry.getWindowMode(-128), Component236.anInt4005, (byte) 102, false, DefinitionSub25.anInt9335);
+                else if (!NodeSub8.toolkit.method3655() && DisplayModeManagerContainer351.aBoolean2674) ParticleSystem.method3327(1406);
             }
-            if (Class34.aFrame476 == null) {
+            if (Component225.aFrame476 == null) {
                 java.awt.Container container;
-                if (Class52.aFrame4904 == null) {
-                    if (Class93.anApplet1530 == null) container = Class348_Sub40_Sub9.anApplet_Sub1_9169;
-                    else container = Class93.anApplet1530;
-                } else container = Class52.aFrame4904;
+                if (RSACipher.aFrame4904 == null) {
+                    if (ToolkitFactory.anApplet1530 == null) container = DefinitionSub9.anApplet_Sub1_9169;
+                    else container = ToolkitFactory.anApplet1530;
+                } else container = RSACipher.aFrame4904;
                 int i = container.getSize().width;
                 int i_119_ = container.getSize().height;
-                if (container == Class52.aFrame4904) {
-                    Insets insets = Class52.aFrame4904.getInsets();
+                if (container == RSACipher.aFrame4904) {
+                    Insets insets = RSACipher.aFrame4904.getInsets();
                     i -= insets.left + insets.right;
                     i_119_ -= insets.top - -insets.bottom;
                 }
-                if (i != Class272.anInt3473 || i_119_ != Class348_Sub22.anInt6857 || RuntimeException_Sub1.aBoolean4604) {
-                    if (Class348_Sub8.aHa6654 == null || Class348_Sub8.aHa6654.method3695()) Class367_Sub11.method3556(false);
+                if (i != SocketConnector.canvasWidth || i_119_ != NpcNode.canvasHeight || RuntimeException_Sub1.aBoolean4604) {
+                    if (NodeSub8.toolkit == null || NodeSub8.toolkit.method3695()) OpenGlShader.method3556(false);
                     else {
-                        Class348_Sub22.anInt6857 = i_119_;
-                        Class272.anInt3473 = i;
+                        NpcNode.canvasHeight = i_119_;
+                        SocketConnector.canvasWidth = i;
                     }
-                    Class348_Sub16_Sub2.aLong8866 = Class62.method599(-66) - -500L;
+                    NodeSub16Sub2.aLong8866 = Component240.currentTimeMillis(-66) - -500L;
                     RuntimeException_Sub1.aBoolean4604 = false;
                 }
             }
-            if (Class34.aFrame476 != null && !Class175.aBoolean2329 && Class260.method1977((byte) -79, Class240.anInt4674)) Class85.method830(Class316.aClass348_Sub51_3959.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
+            if (Component225.aFrame476 != null && !Component143.aBoolean2329 && Component92.method1977((byte) -79, Component49.clientState)) LogicError.method830(Component192.preferences.aClass239_Sub8_7227.method1751(-32350), -1, (byte) 102, false, -1);
             boolean bool_120_ = false;
-            if (Class49.aBoolean4726) {
+            if (Component297.aBoolean4726) {
                 bool_120_ = true;
-                Class49.aBoolean4726 = false;
+                Component297.aBoolean4726 = false;
             }
-            if (bool_120_) Class140.method1170((byte) -116);
-            if ((Class348_Sub8.aHa6654 != null && Class348_Sub8.aHa6654.method3655()) || Class348_Sub42_Sub12.method3229(-91) != 1) Class354.method3466(-77);
-            if (Class139.method1167(Class240.anInt4674, (byte) -113)) Class170.method1309(bool_120_, 117);
-            else if (!Class283.method2114(Class240.anInt4674, bool)) {
-                if (!Class348_Sub42_Sub8.method3197(Class240.anInt4674, (byte) 56)) {
-                    if (Class318_Sub1_Sub1_Sub2.method2402(Class240.anInt4674, (byte) -78)) {
-                        if (Class36.anInt489 == 1) {
-                            if (Class268.anInt3441 > Class348_Sub46.anInt7115) Class348_Sub46.anInt7115 = Class268.anInt3441;
-                            int i = ((-Class268.anInt3441 + Class348_Sub46.anInt7115) * 50 / Class348_Sub46.anInt7115);
-                            Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654);
-                        } else if (Class36.anInt489 == 2) {
-                            if (Class31.anInt443 < Class154.anInt2101) Class31.anInt443 = Class154.anInt2101;
-                            int i = (((Class31.anInt443 - Class154.anInt2101) * 50 / Class31.anInt443) + 50);
-                            Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)) + "<br>(" + i + "%)", 2, Class348_Sub8.aHa6654);
-                        } else Class362.method3511(true, Applet_Sub1.aClass324_20, Class246.aClass143_3179, (Class274.aClass274_3495.method2063(Class348_Sub33.anInt6967, 544)), 2, Class348_Sub8.aHa6654);
-                    } else if (Class240.anInt4674 != 10) {
-                        if (Class240.anInt4674 == 13)
-                            Class362.method3511(false, Applet_Sub1.aClass324_20, Class246.aClass143_3179, ((Class274.aClass274_3497.method2063(Class348_Sub33.anInt6967, 544)) + "<br>" + (Class274.aClass274_3498.method2063(Class348_Sub33.anInt6967, 544))), 2, Class348_Sub8.aHa6654);
-                    } else Class302.method2284((byte) -43, l);
-                } else Class239_Sub10.method1761(85);
-            } else Class239_Sub10.method1761(85);
-            if (ha_Sub3.anInt8045 == 3) {
-                for (int i = 0; Class348_Sub38.anInt7008 > i; i++) {
-                    Rectangle rectangle = Class180.aRectangleArray2371[i];
-                    if (Class175.aBooleanArray2326[i]) Class348_Sub8.aHa6654.method3668(rectangle.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46);
-                    else if (!Class268.aBooleanArray3438[i]) Class348_Sub8.aHa6654.method3668(rectangle.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66);
-                    else Class348_Sub8.aHa6654.method3668(rectangle.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40);
+            if (bool_120_) Component211.method1170((byte) -116);
+            if ((NodeSub8.toolkit != null && NodeSub8.toolkit.method3655()) || MenuEntry.getWindowMode(-91) != 1) Component160.method3466(-77);
+            if (GpsOverlay.method1167(Component49.clientState, (byte) -113)) DisplayModeManagerContainer292.method1309(bool_120_, 117);
+            else if (!Component69.method2114(Component49.clientState, bool)) {
+                if (!CacheNode.method3197(Component49.clientState, (byte) 56)) {
+                    if (Component212.isValidType(Component49.clientState, (byte) -78)) {
+                        if (Component129.anInt489 == 1) {
+                            if (DisplayModeManagerContainer259.anInt3441 > NodeSub46.anInt7115) NodeSub46.anInt7115 = DisplayModeManagerContainer259.anInt3441;
+                            int i = ((-DisplayModeManagerContainer259.anInt3441 + NodeSub46.anInt7115) * 50 / NodeSub46.anInt7115);
+                            Component149.method3511(true, Applet_Sub1.aClass324_20, Component163.aClass143_3179, (FriendsIgnoreList.aClass274_3495.getLocalized(ObjectDeserializer.languageId, 544)) + "<br>(" + i + "%)", 2, NodeSub8.toolkit);
+                        } else if (Component129.anInt489 == 2) {
+                            if (Component82.anInt443 < Component101.anInt2101) Component82.anInt443 = Component101.anInt2101;
+                            int i = (((Component82.anInt443 - Component101.anInt2101) * 50 / Component82.anInt443) + 50);
+                            Component149.method3511(true, Applet_Sub1.aClass324_20, Component163.aClass143_3179, (FriendsIgnoreList.aClass274_3495.getLocalized(ObjectDeserializer.languageId, 544)) + "<br>(" + i + "%)", 2, NodeSub8.toolkit);
+                        } else Component149.method3511(true, Applet_Sub1.aClass324_20, Component163.aClass143_3179, (FriendsIgnoreList.aClass274_3495.getLocalized(ObjectDeserializer.languageId, 544)), 2, NodeSub8.toolkit);
+                    } else if (Component49.clientState != 10) {
+                        if (Component49.clientState == 13)
+                            Component149.method3511(false, Applet_Sub1.aClass324_20, Component163.aClass143_3179, ((FriendsIgnoreList.aClass274_3497.getLocalized(ObjectDeserializer.languageId, 544)) + "<br>" + (FriendsIgnoreList.aClass274_3498.getLocalized(ObjectDeserializer.languageId, 544))), 2, NodeSub8.toolkit);
+                    } else Component114.pulseCameraAndHud((byte) -43, l);
+                } else Component98.redrawHud(85);
+                // States 3/5/6 below: while logging in, show "Please wait..." instead of
+                // the idle title UI (otherwise auto-login looks frozen for several seconds).
+            } else if (Component241.anInt2955 != 0 || Component49.clientState == 5 || Component49.clientState == 6) {
+                Component149.method3511(true, Applet_Sub1.aClass324_20, Component163.aClass143_3179, (FriendsIgnoreList.aClass274_3514.getLocalized(ObjectDeserializer.languageId, 544)), 2, NodeSub8.toolkit);
+            } else Component98.redrawHud(85);
+            if (GlToolkitSub3.anInt8045 == 3) {
+                for (int i = 0; NodeSub38.anInt7008 > i; i++) {
+                    Rectangle rectangle = Component166.aRectangleArray2371[i];
+                    if (Component143.aBooleanArray2326[i]) NodeSub8.toolkit.method3668(rectangle.width, rectangle.y, -65281, rectangle.x, rectangle.height, 46);
+                    else if (!DisplayModeManagerContainer259.aBooleanArray3438[i]) NodeSub8.toolkit.method3668(rectangle.width, rectangle.y, -16711936, rectangle.x, rectangle.height, 66);
+                    else NodeSub8.toolkit.method3668(rectangle.width, rectangle.y, -65536, rectangle.x, rectangle.height, 40);
                 }
             }
-            if (Class348_Sub42_Sub16_Sub2.method3263(bool)) Class6.method207(Class348_Sub8.aHa6654, (byte) 124);
-            if (Class348_Sub23_Sub1.aClass297_8992.aBoolean3794 && Class260.method1977((byte) -79, Class240.anInt4674) && ha_Sub3.anInt8045 == 0 && Class348_Sub42_Sub12.method3229(-85) == 1 && !bool_120_) {
+            if (HashNodeSub16Sub2.isDevConsoleOpen(bool)) BuildInfo.drawDevConsole(NodeSub8.toolkit, (byte) 124);
+            // Microbot HUD — after console so it stays on top of game, under console if open.
+            if (Loader.microbotEnabled) MicrobotPanel.draw(NodeSub8.toolkit);
+            SceneEditorUi.draw(NodeSub8.toolkit);
+            if (OggUrlStream.aClass297_8992.useDirectDraw && Component92.method1977((byte) -79, Component49.clientState) && GlToolkitSub3.anInt8045 == 0 && MenuEntry.getWindowMode(-85) == 1 && !bool_120_) {
                 int i = 0;
-                for (int i_121_ = 0; (Class348_Sub38.anInt7008 > i_121_); i_121_++) {
-                    if (Class268.aBooleanArray3438[i_121_]) {
-                        Class268.aBooleanArray3438[i_121_] = false;
-                        Class190.aRectangleArray2554[i++] = Class180.aRectangleArray2371[i_121_];
+                for (int i_121_ = 0; (NodeSub38.anInt7008 > i_121_); i_121_++) {
+                    if (DisplayModeManagerContainer259.aBooleanArray3438[i_121_]) {
+                        DisplayModeManagerContainer259.aBooleanArray3438[i_121_] = false;
+                        DisplayModeManagerContainer56.aRectangleArray2554[i++] = Component166.aRectangleArray2371[i_121_];
                     }
                 }
                 try {
-                    if (!Class59_Sub1.aBoolean5300) Class348_Sub8.aHa6654.method3657(Class190.aRectangleArray2554, i, 66);
-                    else Class140.method1168(i, 0, Class190.aRectangleArray2554);
+                    if (!Component210.gameCanvasAttached) NodeSub8.toolkit.method3657(DisplayModeManagerContainer56.aRectangleArray2554, i, 66);
+                    else Component211.method1168(i, 0, DisplayModeManagerContainer56.aRectangleArray2554);
                 } catch (Exception_Sub1 exception_sub1) {
                     /* empty */
                 }
-            } else if (!Class139.method1167(Class240.anInt4674, (byte) -59)) {
-                for (int i = 0; Class348_Sub38.anInt7008 > i; i++)
-                    Class268.aBooleanArray3438[i] = false;
+            } else if (!GpsOverlay.method1167(Component49.clientState, (byte) -59)) {
+                for (int i = 0; NodeSub38.anInt7008 > i; i++)
+                    DisplayModeManagerContainer259.aBooleanArray3438[i] = false;
                 try {
-                    if (Class59_Sub1.aBoolean5300) Class45.method395(107);
-                    else Class348_Sub8.aHa6654.method3689((byte) 104);
+                    if (Component210.gameCanvasAttached) CacheStore.method395(107);
+                    else NodeSub8.toolkit.method3689((byte) 104);
                 } catch (Exception_Sub1 exception_sub1) {
-                    Class156.method1242((exception_sub1.getMessage() + " (Recovered) " + method81((byte) 79)), exception_sub1, 15004);
-                    Class367_Sub10.method3553(false, (byte) 113, 0);
+                    ClientErrorReporter.reportError((exception_sub1.getMessage() + " (Recovered) " + method81((byte) 79)), exception_sub1, 15004);
+                    SoftwareFallbackShader.method3553(false, (byte) 113, 0);
                 }
             }
-            Class62.method598(9013);
-            int i = Class316.aClass348_Sub51_3959.aClass239_Sub17_7263.method1798(-32350);
-            if (i == 0) Class286_Sub5.method2161((byte) -127, 15L);
+            Component240.method598(9013);
+            int i = Component192.preferences.aClass239_Sub17_7263.method1798(-32350);
+            if (i == 0) SpriteAtlasShader.sleep((byte) -127, 15L);
             else if (i != 1) {
                 if (i != 2) {
-                    if (i == 3) Class286_Sub5.method2161((byte) -102, 2L);
-                } else Class286_Sub5.method2161((byte) -97, 5L);
-            } else Class286_Sub5.method2161((byte) -104, 10L);
-            if (Class319.aBoolean3988) Class188.method1416(5);
-            if (Class316.aClass348_Sub51_3959.aClass239_Sub11_7265.method1768(-32350) == 1 && Class240.anInt4674 == 3 && r.anInt9721 != -1) {
-                Class316.aClass348_Sub51_3959.method3429((byte) 74, (Class316.aClass348_Sub51_3959.aClass239_Sub11_7265), 0);
-                Class14_Sub2.method243(37);
+                    if (i == 3) SpriteAtlasShader.sleep((byte) -102, 2L);
+                } else SpriteAtlasShader.sleep((byte) -97, 5L);
+            } else SpriteAtlasShader.sleep((byte) -104, 10L);
+            if (Component144.aBoolean3988) ReliefShader.method1416(5);
+            if (Component192.preferences.aClass239_Sub11_7265.method1768(-32350) == 1 && Component49.clientState == 3 && r.anInt9721 != -1) {
+                Component192.preferences.applyPreference((byte) 74, (Component192.preferences.aClass239_Sub11_7265), 0);
+                DisplayModeManagerContainer389.savePreferences(37);
             }
         }
     }
 
     static final void method117(int i) {
-        int i_122_ = Class328_Sub1.anInt6513;
-        int[] is = Class286_Sub7.anIntArray6290;
-        for (int i_123_ = 0; i_123_ < i_122_ + Class150.anInt2057; i_123_++) {
-            Class318_Sub1_Sub3_Sub3 class318_sub1_sub3_sub3;
-            if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (Class294.aPlayerArray5058[is[i_123_]]);
-            else class318_sub1_sub3_sub3 = ((Class348_Sub22) Class282.aClass356_3654.method3480(Class74.anIntArray1233[i_123_ - i_122_], -6008)).aNpc_6859;
+        int i_122_ = ShaderCompilerSub1.anInt6513;
+        int[] is = ShaderProgramSub7.anIntArray6290;
+        for (int i_123_ = 0; i_123_ < i_122_ + Component324.anInt2057; i_123_++) {
+            DisplayModeManagerContainer58 class318_sub1_sub3_sub3;
+            if (i_123_ < i_122_) class318_sub1_sub3_sub3 = (InterfaceRenderer.players[is[i_123_]]);
+            else class318_sub1_sub3_sub3 = ((NpcNode) Component21.aClass356_3654.get(DisplayModeManagerContainer238.anIntArray1233[i_123_ - i_122_], -6008)).npc;
             if (class318_sub1_sub3_sub3.plane == i && (class318_sub1_sub3_sub3.anInt10285) >= 0) {
-                int i_124_ = class318_sub1_sub3_sub3.method2436((byte) 114);
+                int i_124_ = class318_sub1_sub3_sub3.getSize((byte) 114);
                 if ((i_124_ & 0x1) == 0) {
                     if ((class318_sub1_sub3_sub3.x & 0x1ff) != 0 || (class318_sub1_sub3_sub3.y & 0x1ff) != 0) continue;
                 } else if ((class318_sub1_sub3_sub3.x & 0x1ff) != 256 || ((class318_sub1_sub3_sub3.y) & 0x1ff) != 256) continue;
                 if (i_124_ == 1) {
                     int i_125_ = (class318_sub1_sub3_sub3.x >> 9);
                     int i_126_ = (class318_sub1_sub3_sub3.y >> 9);
-                    if ((class318_sub1_sub3_sub3.anInt10285) > (Class348_Sub42_Sub17.anIntArrayArray9678[i_125_][i_126_])) {
-                        Class348_Sub42_Sub17.anIntArrayArray9678[i_125_][i_126_] = class318_sub1_sub3_sub3.anInt10285;
-                        Class239_Sub8.anIntArrayArray5921[i_125_][i_126_] = 1;
-                    } else if (class318_sub1_sub3_sub3.anInt10285 == (Class348_Sub42_Sub17.anIntArrayArray9678[i_125_][i_126_])) Class239_Sub8.anIntArrayArray5921[i_125_][i_126_]++;
+                    if ((class318_sub1_sub3_sub3.anInt10285) > (HashNodeSub17.anIntArrayArray9678[i_125_][i_126_])) {
+                        HashNodeSub17.anIntArrayArray9678[i_125_][i_126_] = class318_sub1_sub3_sub3.anInt10285;
+                        DisplayModeManagerContainer295.anIntArrayArray5921[i_125_][i_126_] = 1;
+                    } else if (class318_sub1_sub3_sub3.anInt10285 == (HashNodeSub17.anIntArrayArray9678[i_125_][i_126_])) DisplayModeManagerContainer295.anIntArrayArray5921[i_125_][i_126_]++;
                 } else {
                     int i_127_ = (i_124_ - 1) * 256 + 60;
                     int i_128_ = ((class318_sub1_sub3_sub3.x - i_127_) >> 9);
@@ -2033,10 +2092,10 @@ public final class client extends Applet_Sub1 {
                     int i_131_ = ((class318_sub1_sub3_sub3.y + i_127_) >> 9);
                     for (int i_132_ = i_128_; i_132_ <= i_130_; i_132_++) {
                         for (int i_133_ = i_129_; i_133_ <= i_131_; i_133_++) {
-                            if (class318_sub1_sub3_sub3.anInt10285 > (Class348_Sub42_Sub17.anIntArrayArray9678[i_132_][i_133_])) {
-                                Class348_Sub42_Sub17.anIntArrayArray9678[i_132_][i_133_] = class318_sub1_sub3_sub3.anInt10285;
-                                Class239_Sub8.anIntArrayArray5921[i_132_][i_133_] = 1;
-                            } else if (class318_sub1_sub3_sub3.anInt10285 == (Class348_Sub42_Sub17.anIntArrayArray9678[i_132_][i_133_])) Class239_Sub8.anIntArrayArray5921[i_132_][i_133_]++;
+                            if (class318_sub1_sub3_sub3.anInt10285 > (HashNodeSub17.anIntArrayArray9678[i_132_][i_133_])) {
+                                HashNodeSub17.anIntArrayArray9678[i_132_][i_133_] = class318_sub1_sub3_sub3.anInt10285;
+                                DisplayModeManagerContainer295.anIntArrayArray5921[i_132_][i_133_] = 1;
+                            } else if (class318_sub1_sub3_sub3.anInt10285 == (HashNodeSub17.anIntArrayArray9678[i_132_][i_133_])) DisplayModeManagerContainer295.anIntArrayArray5921[i_132_][i_133_]++;
                         }
                     }
                 }
@@ -2048,22 +2107,22 @@ public final class client extends Applet_Sub1 {
         anInt5175++;
         String string = null;
         try {
-            string = ("[1)" + za_Sub2.regionTileX + "," + Class90.regionTileY + "," + Class367_Sub4.anInt7319 + "," + Class348_Sub40_Sub3.anInt9109 + "|");
+            string = ("[1)" + NodeBaseSub2.regionTileX + "," + Component330.regionTileY + "," + AbstractShaderSub4.anInt7319 + "," + ParametricDefinition.anInt9109 + "|");
             if (i < 40) aClass262_5185 = null;
-            if (Class132.aPlayer_1907 != null)
-                string += ("2)" + Class355.anInt4372 + "," + (za_Sub2.regionTileX + (Class132.aPlayer_1907.anIntArray10320[0])) + "," + (Class90.regionTileY + (Class132.aPlayer_1907.anIntArray10317[0])) + "|");
-            string += ("3)" + Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) + "|4)" + Class316.aClass348_Sub51_3959.aClass239_Sub20_7216.method1808(-32350) + "|5)" + Class348_Sub42_Sub12.method3229(-65) + "|6)" + Class321.anInt4017 + "," + Class348_Sub42_Sub8_Sub2.anInt10432 + "|");
-            string += "7)" + Class316.aClass348_Sub51_3959.aClass239_Sub28_7230.method1845(-32350) + "|";
-            string += "8)" + Class316.aClass348_Sub51_3959.aClass239_Sub7_7238.method1748(-32350) + "|";
-            string += "9)" + Class316.aClass348_Sub51_3959.aClass239_Sub18_7259.method1800(-32350) + "|";
-            string += "10)" + Class316.aClass348_Sub51_3959.aClass239_Sub24_7235.method1820(-32350) + "|";
-            string += "11)" + Class316.aClass348_Sub51_3959.aClass239_Sub12_7243.method1771(-32350) + "|";
-            string += "12)" + Class316.aClass348_Sub51_3959.aClass239_Sub27_7261.method1840(-32350) + "|";
-            string += "13)" + Class226.anInt2964 + "|";
-            string += "14)" + Class240.anInt4674;
-            if (Class348_Sub40_Sub20.aClass348_Sub4_9264 != null) string += "|15)" + (Class348_Sub40_Sub20.aClass348_Sub4_9264.anInt6609);
+            if (Component72.localPlayer != null)
+                string += ("2)" + Component117.anInt4372 + "," + (NodeBaseSub2.regionTileX + (Component72.localPlayer.anIntArray10320[0])) + "," + (Component330.regionTileY + (Component72.localPlayer.anIntArray10317[0])) + "|");
+            string += ("3)" + Component192.preferences.aClass239_Sub25_7271.getPreferenceValue(-32350) + "|4)" + Component192.preferences.aClass239_Sub20_7216.method1808(-32350) + "|5)" + MenuEntry.getWindowMode(-65) + "|6)" + Component236.canvasWidth + "," + PacketReader.canvasHeight + "|");
+            string += "7)" + Component192.preferences.aClass239_Sub28_7230.method1845(-32350) + "|";
+            string += "8)" + Component192.preferences.aClass239_Sub7_7238.method1748(-32350) + "|";
+            string += "9)" + Component192.preferences.aClass239_Sub18_7259.method1800(-32350) + "|";
+            string += "10)" + Component192.preferences.aClass239_Sub24_7235.method1820(-32350) + "|";
+            string += "11)" + Component192.preferences.aClass239_Sub12_7243.method1771(-32350) + "|";
+            string += "12)" + Component192.preferences.aClass239_Sub27_7261.method1840(-32350) + "|";
+            string += "13)" + Component127.anInt2964 + "|";
+            string += "14)" + Component49.clientState;
+            if (DefinitionSub20.aClass348_Sub4_9264 != null) string += "|15)" + (DefinitionSub20.aClass348_Sub4_9264.anInt6609);
             try {
-                if (Class316.aClass348_Sub51_3959.aClass239_Sub25_7271.method1829(-32350) == 2) {
+                if (Component192.preferences.aClass239_Sub25_7271.getPreferenceValue(-32350) == 2) {
                     Field field = ClassLoader.class.getDeclaredField("nativeLibraries");
                     field.setAccessible(true);
                     Vector vector = ((Vector) field.get((aClass5189 != null ? aClass5189 : (aClass5189 = client.class)).getClassLoader()));

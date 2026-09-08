@@ -1,0 +1,7 @@
+<!-- lean-ctx -->
+# lean-ctx
+
+Prefer lean-ctx MCP tools: ctx_read > Read/cat, ctx_search > Grep/rg, ctx_shell > bash, ctx_tree > ls/find.
+Edit/Write/Glob stay native; ctx_edit only when Edit needs an unavailable Read.
+Full rules: ~/.cursor/rules/lean-ctx.mdc (auto-loaded) — do not duplicate here.
+<!-- /lean-ctx -->

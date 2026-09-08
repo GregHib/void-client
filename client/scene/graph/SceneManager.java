@@ -1,0 +1,117 @@
+/* SceneManager - Decompiled by JODE
+ * Visit http://jode.sourceforge.net/
+ */
+
+/**
+ * RENAMED from `Class218` (JODE-obfuscated).
+ * Scene/world manager. Holds the master NodeList of scene nodes (aClass262_2859) and builds the 3D scene (method1591) using the GraphicsToolkit and tile data.
+ */
+
+final class SceneManager {
+    static int anInt2849;
+    static int anInt2850;
+    Component258 aClass141_2851;
+    static int anInt2852;
+    int anInt2853;
+    boolean aBoolean2854 = false;
+    static int anInt2855;
+    int anInt2856;
+    static int anInt2857;
+    static int anInt2858;
+    static NodeList aClass262_2859 = new NodeList();
+    static Component183 aClass114_2860;
+    static int anInt2861 = 1401;
+
+    static final void method1591(int i, int i_0_, int i_1_, int i_2_, int i_3_, int i_4_, int i_5_, int i_6_, int i_7_) {
+        anInt2855++;
+        if (i >= 1 && i_5_ >= 1 && -2 + AbstractShaderSub4.anInt7319 >= i && i_5_ <= -2 + ParametricDefinition.anInt9109) {
+            int i_8_ = i_7_;
+            if (i_8_ < 3 && NpcComposition.method802(i_5_, i, true)) i_8_++;
+            if ((Component192.preferences.aClass239_Sub27_7261.method1840(-32350) == 0 && !Component255.method536(i_5_, false, i, Component385.anInt2204, i_8_)) || Component335.aClass357ArrayArrayArray2029 == null) return;
+            Component103.aClass237_Sub1_4197.method1694((NodeSub45.aClass361Array7108[i_7_]), i_1_, i_7_, NodeSub8.toolkit, i, i_5_, (byte) 106);
+            if (i_3_ >= 0) {
+                int i_9_ = Component192.preferences.aClass239_Sub4_7220.method1737(-32350);
+                Component192.preferences.applyPreference((byte) 74, (Component192.preferences.aClass239_Sub4_7220), 1);
+                Component103.aClass237_Sub1_4197.method1689(i, i_7_, i_3_, NodeSub8.toolkit, i_8_, 50, i_4_, i_5_, i_2_, i_6_, (NodeSub45.aClass361Array7108[i_7_]));
+                Component192.preferences.applyPreference((byte) 74, (Component192.preferences.aClass239_Sub4_7220), i_9_);
+            }
+        }
+        if (i_0_ < 12) aClass262_2859 = null;
+    }
+
+    static final void method1592(byte i, int i_10_, int i_11_, int i_12_, Player player) {
+        anInt2849++;
+        int i_13_ = (player.anIntArray10320[0]);
+        int i_14_ = (player.anIntArray10317[0]);
+        if (i_13_ >= 0 && AbstractShaderSub4.anInt7319 > i_13_ && i_14_ >= 0 && i_14_ < ParametricDefinition.anInt9109 && (i_12_ >= 0 && i_12_ < AbstractShaderSub4.anInt7319 && i_10_ >= 0 && ParametricDefinition.anInt9109 > i_10_)) {
+            int i_15_ = (Component317.method574(i_12_, player.getSize((byte) 62), 0, DefinitionSub11.anIntArray9185, true, (byte) 120, -4, i_13_, i_14_, HashNodeSub14.anIntArray9626, i_10_, (NodeSub45.aClass361Array7108[(player.plane)]), 0, 0, 0));
+            if (i_15_ >= 1) {
+                if (i_11_ != 4) aClass262_2859 = null;
+                if (i_15_ <= 3) {
+                    for (int i_16_ = 0; i_16_ < -1 + i_15_; i_16_++)
+                        player.advanceMovement(i, HashNodeSub14.anIntArray9626[i_16_], i_11_ + -29038, DefinitionSub11.anIntArray9185[i_16_]);
+                }
+            }
+        }
+    }
+
+    public SceneManager() {
+        /* empty */
+    }
+
+    final boolean method1593(int i) {
+        if (i != 106) this.aClass141_2851 = null;
+        anInt2858++;
+        return this.aClass141_2851.aClass45_1965.isSingletonFileReady(false, this.anInt2853);
+    }
+
+    public static void method1594(int i) {
+        aClass262_2859 = null;
+        if (i != -1966608624) aClass262_2859 = null;
+        aClass114_2860 = null;
+    }
+
+    private final void method1595(byte i, int i_17_, Buffer class348_sub49) {
+        anInt2852++;
+        if (i >= 5) {
+            if (i_17_ == 1) this.anInt2853 = class348_sub49.readUnsignedShort(842397944);
+            else if (i_17_ != 2) {
+                if (i_17_ == 3) this.aBoolean2854 = true;
+                else if (i_17_ == 4) this.anInt2853 = -1;
+            } else this.anInt2856 = class348_sub49.readMedium(-1);
+        }
+    }
+
+    final Component24 method1596(int i, boolean bool, int i_18_, GraphicsToolkit var_ha) {
+        anInt2857++;
+        if (i_18_ < 51) aClass114_2860 = null;
+        long l = var_ha.anInt4567 << 19 | (this.anInt2853 | i << 16 | (!bool ? 0 : 262144));
+        Component24 class105 = (Component24) this.aClass141_2851.aClass60_1976.get(l, -87);
+        if (class105 != null) return class105;
+        if (!this.aClass141_2851.aClass45_1965.isSingletonFileReady(false, this.anInt2853)) return null;
+        Component170 class207 = Component170.method1521(this.aClass141_2851.aClass45_1965, this.anInt2853, 0);
+        if (class207 != null) {
+            class207.anInt2701 = class207.anInt2703 = class207.anInt2698 = class207.anInt2700 = 0;
+            if (bool) class207.method1514();
+            for (int i_19_ = 0; i_19_ < i; i_19_++)
+                class207.method1520();
+        }
+        class105 = var_ha.method3691(class207, true);
+        if (class105 != null) this.aClass141_2851.aClass60_1976.putOne(class105, l, (byte) -101);
+        return class105;
+    }
+
+    final void method1597(byte i, Buffer class348_sub49) {
+        anInt2850++;
+        for (; ; ) {
+            int i_20_ = class348_sub49.readUnsignedByte(255);
+            if (i_20_ == 0) break;
+            method1595((byte) 61, i_20_, class348_sub49);
+        }
+        if (i != -114) aClass262_2859 = null;
+    }
+
+    static {
+        aClass114_2860 = new Component183(106, 8);
+    }
+}

@@ -1,0 +1,248 @@
+/*
+ * Copyright (C) 2013 RoboVM AB
+ *
+ * This program is free software; you can redistribute it and/or
+ * modify it under the terms of the GNU General Public License
+ * as published by the Free Software Foundation; either version 2
+ * of the License, or (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/gpl-2.0.html>.
+ */
+package org.robovm.compiler.target.ios;
+
+import com.dd.plist.NSDictionary;
+import com.dd.plist.NSObject;
+import com.dd.plist.PropertyListParser;
+import org.apache.commons.exec.util.StringUtils;
+import org.robovm.compiler.util.ToolchainUtil;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.List;
+
+/**
+ * Contains info on an SDK installed on the system.
+ */
+public class SDK implements Comparable<SDK> {
+    private String displayName;
+    private String minimalDisplayName;
+    private String canonicalName;
+    private String version;
+    private File root;
+    private NSDictionary defaultProperties;
+    private int major;
+    private int minor;
+    private int revision;
+    private String build;
+    private String platformBuild;
+    private String platformVersion;
+    private String platformName;
+
+    /**
+     * Create an SDK instance for an SDK root bundled with Xcode.
+     */
+    public static SDK create(File root) throws Exception {
+        File sdkSettingsFile = new File(root, "SDKSettings.plist");
+        File sdkSysVersionFile = new File(root, "System/Library/CoreServices/SystemVersion.plist");
+        File platformVersionFile = new File(root, "../../../version.plist");
+        File platformInfoFile = new File(root, "../../../Info.plist");
+        if (sdkSettingsFile.exists() && platformInfoFile.exists()) {
+            NSDictionary sdkSettingsDict = (NSDictionary) PropertyListParser.parse(sdkSettingsFile);
+            NSDictionary sdkSysVersionDict = (NSDictionary) PropertyListParser.parse(sdkSysVersionFile);
+            NSDictionary platformInfoDict = (NSDictionary) PropertyListParser.parse(platformInfoFile);
+
+            SDK sdk = new SDK();
+
+            sdk.root = root;
+
+            sdk.displayName = toString(sdkSettingsDict.objectForKey("DisplayName"));
+            sdk.minimalDisplayName = toString(sdkSettingsDict.objectForKey("MinimalDisplayName"));
+            sdk.canonicalName = toString(sdkSettingsDict.objectForKey("CanonicalName"));
+            sdk.version = toString(sdkSettingsDict.objectForKey("Version"));
+            sdk.defaultProperties = (NSDictionary) sdkSettingsDict.objectForKey("DefaultProperties");
+
+            sdk.build = toString(sdkSysVersionDict.objectForKey("ProductBuildVersion"));
+
+            if (platformVersionFile.exists()) {
+                NSDictionary platformVersionDict = (NSDictionary) PropertyListParser.parse(platformVersionFile);
+                sdk.platformBuild = toString(platformVersionDict.objectForKey("ProductBuildVersion"));
+            } else {
+                // iOS 9 and above, there's no version.plist file anymore
+                // however, the ProductBuildVersion in SystemVersion.plist
+                // seems to always be the same as the ProductBuildVersion
+                // in the now missing version.plist file
+                sdk.platformBuild = sdk.build;
+            }
+
+            NSDictionary additionalInfo = (NSDictionary) platformInfoDict.objectForKey("AdditionalInfo");
+            sdk.platformVersion = toString(additionalInfo.objectForKey("DTPlatformVersion"));
+            sdk.platformName = toString(additionalInfo.objectForKey("DTPlatformName"));
+
+            String[] parts = StringUtils.split(sdk.version, ".");
+            sdk.major = Integer.parseInt(parts[0]);
+            sdk.minor = parts.length >= 2 ? Integer.parseInt(parts[1]) : 0;
+            sdk.revision = parts.length >= 3 ? Integer.parseInt(parts[2]) : 0;
+
+            return sdk;
+        }
+        throw new IllegalArgumentException(root.getAbsolutePath() + " is not an SDK root path");
+    }
+
+    private static String toString(NSObject o) {
+        return o != null ? o.toString() : null;
+    }
+
+    private static List<SDK> listSDKs(String platform) {
+        List<SDK> allSdks = new ArrayList<>(listBundledFileFormatSdks(platform));
+        return allSdks;
+    }
+
+    /**
+     * List SDKs bundled with Xcode.
+     */
+    private static Collection<? extends SDK> listBundledFileFormatSdks(String platform) {
+        try {
+            List<SDK> sdks = new ArrayList<SDK>();
+            File sdksDir = new File(ToolchainUtil.findXcodePath() + "/Platforms/"
+                    + platform + ".platform/Developer/SDKs");
+            if (sdksDir.exists() && sdksDir.isDirectory()) {
+                for (File root : sdksDir.listFiles()) {
+                    try {
+                        sdks.add(SDK.create(root));
+                    } catch (Exception e) {
+                    }
+                }
+            }
+
+            return sdks;
+        } catch (RuntimeException e) {
+            throw e;
+        } catch (Throwable t) {
+            throw new RuntimeException(t);
+        }
+    }
+
+    /**
+     * Device SDK platform for <em>linking</em>. Always iPhoneOS — RoboVM's
+     * {@code lib/vm/ios/arm64} objects are built for iOS and modern ld rejects
+     * them against AppleTVOS.sdk. tvOS builds still set
+     * {@code -Drobovm.iosPlatform=AppleTVOS} so {@link #isTvOSBuild()} is true;
+     * the final binary is re-stamped to tvOS with {@code vtool} before codesign.
+     */
+    public static List<SDK> listDeviceSDKs() {
+        return listSDKs("iPhoneOS");
+    }
+
+    public static List<SDK> listSimulatorSDKs() {
+        return listSDKs("iPhoneSimulator");
+    }
+
+    /**
+     * True when the void-client tvOS flavor asked for Apple TV
+     * ({@code -Drobovm.iosPlatform=AppleTVOS} / {@code -Pvoid.platform=tvos}).
+     */
+    public static boolean isTvOSBuild() {
+        String p = System.getProperty("robovm.iosPlatform", "iPhoneOS");
+        return p != null && (p.equalsIgnoreCase("AppleTVOS") || p.equalsIgnoreCase("tvos"));
+    }
+
+    public String getDisplayName() {
+        return displayName;
+    }
+
+    public String getMinimalDisplayName() {
+        return minimalDisplayName;
+    }
+
+    public String getCanonicalName() {
+        return canonicalName;
+    }
+
+    public String getVersion() {
+        return version;
+    }
+
+    public File getRoot() {
+        return root;
+    }
+
+    public NSDictionary getDefaultProperties() {
+        return defaultProperties;
+    }
+
+    public NSObject getDefaultProperty(String key) {
+        return defaultProperties.objectForKey(key);
+    }
+
+    public String getBuild() {
+        return build;
+    }
+
+    public String getPlatformBuild() {
+        return platformBuild;
+    }
+
+    public String getPlatformVersion() {
+        return platformVersion;
+    }
+
+    public String getPlatformName() {
+        return platformName;
+    }
+
+    public int getMajor() {
+        return major;
+    }
+
+    public int getMinor() {
+        return minor;
+    }
+
+    public int getRevision() {
+        return revision;
+    }
+
+    /**
+     * @return version code packed in int as it is used widely in Apple Mach-o
+     */
+    public int getVersionCode() {
+        // there is overflow possible but this should not happen if SDK is not corrupted
+        return (major << 16) | (minor << 8) | revision;
+    }
+
+    @Override
+    public int compareTo(SDK o) {
+        int c = major < o.major ? -1 : (major > o.major ? 1 : 0);
+        if (c == 0) {
+            c = minor < o.minor ? -1 : (minor > o.minor ? 1 : 0);
+            if (c == 0) {
+                c = revision < o.revision ? -1 : (revision > o.revision ? 1 : 0);
+                if (c == 0) {
+                    // exactly same
+                    // special sorting case: but if the path contains iPhoneOS.sdk without version make version lower
+                    c = getRoot().getAbsolutePath().contains("iPhoneOS.sdk") ? 0 : 1;
+                    c -= o.getRoot().getAbsolutePath().contains("iPhoneOS.sdk") ? 0 : 1;
+                }
+            }
+        }
+        return c;
+    }
+
+    @Override
+    public String toString() {
+        return "SDK [displayName=" + displayName + ", minimalDisplayName="
+                + minimalDisplayName + ", canonicalName=" + canonicalName
+                + ", version=" + version + ", root=" + root + ", major="
+                + major + ", minor=" + minor + ", revision=" + revision
+                + ", build=" + build + ", platformBuild=" + platformBuild
+                + ", platformVersion=" + platformVersion + ", platformName="
+                + platformName + "]";
+    }
+}

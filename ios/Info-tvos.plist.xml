@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleDevelopmentRegion</key>
+    <string>en</string>
+    <key>CFBundleDisplayName</key>
+    <string>${app.name}</string>
+    <key>CFBundleExecutable</key>
+    <string>${app.executable}</string>
+    <key>CFBundleIdentifier</key>
+    <string>${app.id}</string>
+    <key>CFBundleInfoDictionaryVersion</key>
+    <string>6.0</string>
+    <key>CFBundleName</key>
+    <string>${app.name}</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <!-- Primary icon comes from Assets.xcassets brandassets via actool partial plist. -->
+    <key>CFBundleIconName</key>
+    <string>App Icon &amp; Top Shelf Image</string>
+    <key>CFBundleShortVersionString</key>
+    <string>${app.version}</string>
+    <key>CFBundleSignature</key>
+    <string>????</string>
+    <key>CFBundleVersion</key>
+    <string>${app.build}</string>
+    <!-- Apple TV = UIDeviceFamily 3. Do not set LSRequiresIPhoneOS. -->
+    <key>MinimumOSVersion</key>
+    <string>13.0</string>
+    <key>UIDeviceFamily</key>
+    <array>
+        <integer>3</integer>
+    </array>
+    <key>UIRequiredDeviceCapabilities</key>
+    <array>
+        <string>arm64</string>
+    </array>
+    <key>UILaunchScreen</key>
+    <dict/>
+    <key>NSAppTransportSecurity</key>
+    <dict>
+        <key>NSAllowsArbitraryLoads</key>
+        <true/>
+        <key>NSAllowsLocalNetworking</key>
+        <true/>
+    </dict>
+</dict>
+</plist>

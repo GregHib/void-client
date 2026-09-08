@@ -15,9 +15,13 @@ public class Loader extends Applet {
     public static boolean loadRunescape = false;
     public static boolean showCoordinates = true;
     public static boolean skipLobby = true;
+    /** When saved credentials exist, log in as soon as the title screen opens. */
+    public static boolean autoLogin = true;
     public static boolean splitPorts = false;
     public static boolean debug = false;
     public static boolean trace = false;
+    /** Enable Microbot runtime (menu-inject bot API). Desktop default on. */
+    public static boolean microbotEnabled = true;
     public static String address = "127.0.0.1";
     public static int port = 43594;
     public static final BigInteger LOGIN_SERVER_RSA_MODULUS = new BigInteger("ea3680fdebf2621da7a33601ba39925ee203b3fc80775cd3727bf27fd8c0791c803e0bdb42b8b5257567177f8569024569da9147cef59009ed016af6007e57a556f1754f09ca84dd39a03287f7e41e8626fd78ab3b53262bd63f2e37403a549980bf3077bd402b82ef5fac269eb3c04d2a9b7712a67a018321ceba6c3bfb8f7f", 16);
@@ -36,6 +40,8 @@ public class Loader extends Applet {
     static final double CULLING_DISTANCE_MULTIPLIER = 1.8; // Adjust distance before objects go into fog
 
     public static void main(String[] args) {
+        // libsw3d.dylib + modern macOS JAWT: Finalizer crashes in canvas::~canvas.
+        disableSw3dOnMacOs();
         for (int i = 0; i < args.length; i++) {
             String arg = args[i];
             switch (arg) {
@@ -57,8 +63,75 @@ public class Loader extends Applet {
                     break;
             }
         }
+        // First launch only — blocks until the user accepts (persisted under user.home).
+        if (!showAffiliationDisclaimerIfNeeded()) {
+            return;
+        }
         Loader l = new Loader();
         l.doFrame();
+    }
+
+    /**
+     * Desktop-only Swing modal via {@code DesktopAffiliationDisclaimer} (excluded from
+     * mobile source copy — voidswing has no JOptionPane). Reflection keeps Android/iOS Loader compiling.
+     */
+    static boolean showAffiliationDisclaimerIfNeeded() {
+        try {
+            Object ok = Class.forName("DesktopAffiliationDisclaimer")
+                    .getDeclaredMethod("showIfNeeded")
+                    .invoke(null);
+            return ok instanceof Boolean && ((Boolean) ok).booleanValue();
+        } catch (ClassNotFoundException ignored) {
+            // Mobile hosts show the disclaimer in MainActivity / GameController.
+            return true;
+        } catch (Throwable t) {
+            System.out.println("void-osrs: disclaimer dialog failed: " + t);
+            try {
+                AffiliationDisclaimer.markAccepted();
+            } catch (Throwable ignored) {
+            }
+            return true;
+        }
+    }
+
+    /**
+     * Desktop-only — {@code DesktopGamepad} is excluded from Android/iOS source copy
+     * (real {@code java.awt} wheel ctor ≠ voidawt). Reflection keeps mobile Loader compiling.
+     */
+    static void startDesktopGamepad() {
+        try {
+            Class.forName("DesktopGamepad").getDeclaredMethod("startIfDesktop").invoke(null);
+        } catch (ClassNotFoundException ignored) {
+            // Mobile hosts: class not on classpath / not generated.
+        } catch (Throwable t) {
+            System.out.println("void-osrs: desktop gamepad start failed: " + t);
+        }
+    }
+
+    /**
+     * Native SW3D / jaggl toolkits are unsafe on modern macOS JAWT (Finalize crash
+     * or noisy RuntimeException during Auto Setup probes). Force software GraphicsToolkit.
+     */
+    static void disableSw3dOnMacOs() {
+        try {
+            String os = System.getProperty("os.name", "").toLowerCase();
+            if (!os.startsWith("mac") && os.indexOf("darwin") < 0) {
+                return;
+            }
+            Component85.aBoolean2881 = true; // skip SW3D (toolkit 2) in method2478
+            Component301.aBoolean4117 = true; // skip OpenGL (toolkit 1) probe — GlToolkitSub2 JAWT fail
+            System.out.println("void-osrs: native toolkits disabled on macOS (use software)");
+        } catch (Throwable ignored) {
+        }
+    }
+
+    static boolean isMacOs() {
+        try {
+            String os = System.getProperty("os.name", "").toLowerCase();
+            return os.startsWith("mac") || os.indexOf("darwin") >= 0;
+        } catch (Throwable ignored) {
+            return false;
+        }
     }
 
     @Override
@@ -74,6 +147,9 @@ public class Loader extends Applet {
     public void doFrame() {
         setParms();
         openFrame();
+        // After the JFrame is up — SDL/GameController sees already-paired DualShock/Xbox
+        // more reliably once AWT/AppKit is running (macOS).
+        startDesktopGamepad();
         startClient();
     }
 

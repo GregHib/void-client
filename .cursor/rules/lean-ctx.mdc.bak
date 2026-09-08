@@ -1,0 +1,42 @@
+---
+description: "lean-ctx: context compression layer. Tools replace native Read/Grep/Shell — see tool descriptions."
+globs: **/*
+alwaysApply: true
+---
+
+# lean-ctx — Context Engineering Layer
+<!-- lean-ctx-rules-v12 -->
+
+## Tool Mapping (MANDATORY — use instead of native equivalents)
+| Instead of | Use | Example |
+|------------|-----|---------|
+| Read/cat/head/tail | `ctx_read(path, mode)` | `ctx_read("src/main.rs")` (omit mode = auto) |
+| Grep/rg/find | `ctx_search(pattern, path)` | `ctx_search("fn handle", "src/")` |
+| Shell/bash | `ctx_shell(command)` | `ctx_shell("cargo test")` |
+| ls/find (tree) | `lean-ctx ls [path]` or `ctx_tree(path)` | `ctx_tree("src", depth=3)` |
+| Edit (when Read unavailable) | `ctx_edit(path, old, new)` | `ctx_edit("f.rs", "old", "new")` |
+
+## ctx_read Mode Selection (omit mode to auto-select — recommended)
+| Goal | Mode | When |
+|------|------|------|
+| Exploring / unsure | `auto` (default) | Omit mode; system picks optimal |
+| Edit this file | `full` | Right before an edit |
+| Understand API | `signatures` | Context-only, won't edit |
+| Large file overview | `map` | >500 lines, won't edit |
+| Re-read after edit | `diff` | Post-edit verification |
+| Specific region | `lines:N-M` | Know exact location |
+
+## Workflow
+1. **Orient:** `ctx_overview(task)` or `ctx_compose(task, path)`
+2. **Locate:** `ctx_search(pattern, path)` or `ctx_semantic_search(query)`
+3. **Read:** `ctx_read(path, mode)` — pick mode from table above
+4. **Edit:** `ctx_edit(path, old, new)` or native Edit
+5. **Verify:** `ctx_read(path, "diff")` + `ctx_shell("test command")`
+6. **Record:** `ctx_knowledge(action="remember", content="...")`
+
+## Session
+- **Start:** `ctx_session(action="status")` + `ctx_knowledge(action="wakeup")`
+- **End:** `ctx_session(action="decision", content="what was done + next steps")`
+
+NEVER use native Read/Grep/Shell when ctx_* equivalents are available.
+<!-- /lean-ctx -->

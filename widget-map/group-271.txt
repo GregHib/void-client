@@ -1,0 +1,4 @@
+void-osrs widget-map group=271
+271:0 t0 'layer' 190x22 @0,239
+271:3 t5 'sprite:851' 190x32 @0,225 spr=851 opt='    '
+271:4 t0 'layer' 190x261 @0,0

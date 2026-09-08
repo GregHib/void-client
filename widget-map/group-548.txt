@@ -1,0 +1,13 @@
+void-osrs widget-map group=548
+548:2 t0 'layer' 0x0 @0,0
+548:3 t0 'layer' 0x0 @0,0
+548:65 t0 'layer' 0x0 @0,0
+548:69 t0 'layer' 0x0 @0,0
+548:115 t0 'layer' 0x0 @0,0
+548:163 t0 'layer' 0x0 @0,0
+548:165 t0 'layer' 0x0 @0,0
+548:167 t0 'layer' 0x0 @0,0
+548:168 t0 'layer' 0x0 @0,0
+548:171 t0 'layer' 0x0 @0,0
+548:191 t0 'layer' 0x0 @0,0
+548:194 t0 'layer' 0x0 @0,0

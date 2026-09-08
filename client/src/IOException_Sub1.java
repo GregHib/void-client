@@ -9,10 +9,11 @@ final class IOException_Sub1 extends IOException {
     static int anInt87;
     static int anInt88;
     static int anInt89;
-    static Class114 aClass114_90 = new Class114(42, -1);
+    static Component183 aClass114_90 = new Component183(42, -1);
     static int[] anIntArray91 = new int[8];
 
-    static final void method129(int i, int i_0_, long[] ls, int i_1_, int[] is) {
+    /** Quick-sort {@code ls[i..i_1_]} and mirror swaps into parallel {@code is}. */
+    static final void quickSortParallel(int i, int i_0_, long[] ls, int i_1_, int[] is) {
         do {
             try {
                 anInt89++;
@@ -40,32 +41,33 @@ final class IOException_Sub1 extends IOException {
                     ls[i_3_] = l;
                     is[i_1_] = is[i_3_];
                     is[i_3_] = i_4_;
-                    method129(i, -126, ls, -1 + i_3_, is);
-                    method129(1 + i_3_, -81, ls, i_1_, is);
+                    quickSortParallel(i, -126, ls, -1 + i_3_, is);
+                    quickSortParallel(1 + i_3_, -81, ls, i_1_, is);
                 }
                 if (i_0_ < -72) break;
-                method130(99);
+                clearStatics(99);
             } catch (RuntimeException runtimeexception) {
-                throw Class348_Sub17.method2929(runtimeexception, ("gv.A(" + i + ',' + i_0_ + ',' + (ls != null ? "{...}" : "null") + ',' + i_1_ + ',' + (is != null ? "{...}" : "null") + ')'));
+                throw NpcDefinition.wrapThrowable(runtimeexception, ("gv.A(" + i + ',' + i_0_ + ',' + (ls != null ? "{...}" : "null") + ',' + i_1_ + ',' + (is != null ? "{...}" : "null") + ')'));
             }
             break;
         } while (false);
     }
 
-    public static void method130(int i) {
+    public static void clearStatics(int i) {
         if (i == 8) {
             anIntArray91 = null;
             aClass114_90 = null;
         }
     }
 
-    static final void method131(boolean bool, int i, boolean bool_9_, int i_10_) {
+    /** Set {@link Component21#stereo}, {@link Component231#sampleRate}, and mixer thread priority. */
+    static final void configureAudio(boolean bool, int i, boolean bool_9_, int i_10_) {
         anInt87++;
         if (i_10_ < 8000 || i_10_ > 48000) throw new IllegalArgumentException();
-        Class253.anInt3248 = i;
-        Class22.anInt339 = i_10_;
-        Class282.aBoolean3652 = bool;
-        if (bool_9_ != true) method130(-125);
+        Component193.audioThreadPriority = i;
+        Component231.sampleRate = i_10_;
+        Component21.stereo = bool;
+        if (bool_9_ != true) clearStatics(-125);
     }
 
     IOException_Sub1(String string) {

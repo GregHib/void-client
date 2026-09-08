@@ -1,0 +1,2 @@
+void-osrs widget-map group=190
+190:0 t0 'layer' 190x261 @0,0
