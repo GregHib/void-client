@@ -1,5 +1,5 @@
 object Config {
-    var loadRunescape: Boolean = false
+    var localDev: Boolean = false
     var showCoordinates: Boolean = true
     var skipLobby: Boolean = true
     var splitPorts: Boolean = false
@@ -24,14 +24,14 @@ object Config {
     const val CULLING_DISTANCE_MULTIPLIER: Double = 1.0 // Adjust distance before objects go into fog
 
     fun getDebug(id: Int): String {
-        return if (Config.debug) " <col=00ff00>(</col>" + id + "<col=00ff00>)</col>" else ""
+        return if (debug) " <col=00ff00>(</col>" + id + "<col=00ff00>)</col>" else ""
     }
 
     fun getDebug(id: Int, component: Int): String {
-        return if (Config.debug) " <col=00ff00>(</col>" + id + " - " + component + "<col=00ff00>)</col>" else ""
+        return if (debug) " <col=00ff00>(</col>" + id + " - " + component + "<col=00ff00>)</col>" else ""
     }
 
     fun getDebug(id: Int, x: Int, y: Int, plane: Int): String {
-        return if (Config.debug) " <col=00ff00>(</col>" + id + " - " + x + ", " + y + ", " + plane + "<col=00ff00>)</col>" else ""
+        return if (debug) " <col=00ff00>(</col>" + id + " - " + x + ", " + y + ", " + plane + "<col=00ff00>)</col>" else ""
     }
 }

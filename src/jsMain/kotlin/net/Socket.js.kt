@@ -8,7 +8,6 @@ import io.checkBounds
 import kotlinx.browser.window
 import org.khronos.webgl.ArrayBuffer
 import org.khronos.webgl.Int8Array
-import org.w3c.dom.MessageEvent
 import org.w3c.dom.WebSocket
 
 /**
@@ -28,7 +27,7 @@ actual open class Socket actual constructor(host: String?, port: Int) {
     private var closed = false
     private var error: IOException? = null
 
-    private val ws: WebSocket = WebSocket("${window.asDynamic().CONFIG.url}")
+    private val ws: WebSocket = WebSocket("${if (Config.localDev) "ws://localhost:8081/proxy" else window.asDynamic().CONFIG.url}")
     private val outQueue = mutableListOf<ByteArray>()
     private val inChunks = ArrayDeque<Int8Array>()
     private var inChunkOffset = 0
