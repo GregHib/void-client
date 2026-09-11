@@ -45,7 +45,10 @@ final class ItemSpriteDumper {
     }
 
     static void dump() {
-        File dir = new File("item_sprites");
+        dump(new File("item_sprites"));
+    }
+
+    static void dump(File dir) {
         dir.mkdirs();
         int count = Exception_Sub1.aClass255_112.anInt3271;
         int dumped = 0;
