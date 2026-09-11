@@ -198,6 +198,7 @@ final class Class164 {
             }
             Class348_Sub8.aClass241_6660 = Class229.method1631(false);
             Class348_Sub40_Sub20.aClass348_Sub4_9264 = new Class348_Sub4(true, Class348_Sub23_Sub1.aClass297_8992);
+            ItemSpriteDumper.dump();
         }
         if (Class348_Sub42_Sub15.aClass56_9660 == Class56.aClass56_1037) {
             int i_11_ = (Class348_Sub22.method2958(22388, Class21.aClass45_322) + Class348_Sub49_Sub2.method3405(2012104999, true));
