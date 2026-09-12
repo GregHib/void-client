@@ -1,6 +1,7 @@
 plugins {
     application
     id("com.gradleup.shadow") version "8.3.10"
+    jacoco
 }
 
 group = "world.gregs.void"
@@ -37,6 +38,31 @@ tasks.shadowJar {
     archiveBaseName.set("void-client")
     archiveClassifier.set("")
     minimize()
+}
+
+// Runs CacheItemSpriteDumper standalone and records, via JaCoCo, exactly which
+// classes/methods actually execute - useful for figuring out what a slice of
+// this codebase (e.g. "just render item icons") actually depends on so it can
+// be extracted on its own.
+val dumpItemSprites = tasks.register<JavaExec>("dumpItemSprites") {
+    group = "tools"
+    description = "Dumps every item's inventory icon from a local cache directory (see CacheItemSpriteDumper.java for the hardcoded cache path)."
+    classpath = sourceSets["main"].runtimeClasspath
+    mainClass.set("CacheItemSpriteDumper")
+}
+jacoco.applyTo(dumpItemSprites.get())
+
+tasks.register<JacocoReport>("dumpItemSpritesCoverageReport") {
+    group = "tools"
+    description = "HTML/CSV report of every class and method touched by the dumpItemSprites task."
+    dependsOn("dumpItemSprites")
+    executionData(layout.buildDirectory.file("jacoco/dumpItemSprites.exec"))
+    sourceSets(sourceSets["main"])
+    reports {
+        html.required.set(true)
+        csv.required.set(true)
+        xml.required.set(false)
+    }
 }
 
 // Must be a 32-bit jre - ideally with jlink
