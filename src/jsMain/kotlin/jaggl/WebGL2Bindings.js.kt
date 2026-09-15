@@ -43,6 +43,7 @@ external class WebGL2RenderingContext {
 
     fun enable(cap: Int)
     fun disable(cap: Int)
+    fun isEnabled(cap: Int): Boolean
     fun hint(target: Int, mode: Int)
     fun lineWidth(width: Float)
     fun blendFunc(sfactor: Int, dfactor: Int)
@@ -61,6 +62,7 @@ external class WebGL2RenderingContext {
     fun flush()
     fun getError(): Int
     fun getParameter(pname: Int): Any?
+    fun getContextAttributes(): dynamic
     fun getSupportedExtensions(): Array<String>?
     fun pixelStorei(pname: Int, param: Int)
     fun readPixels(x: Int, y: Int, width: Int, height: Int, format: Int, type: Int, pixels: ArrayBufferView)
@@ -104,6 +106,7 @@ external class WebGL2RenderingContext {
     fun uniform2f(location: WebGLUniformLocation?, x: Float, y: Float)
     fun uniform3f(location: WebGLUniformLocation?, x: Float, y: Float, z: Float)
     fun uniform4f(location: WebGLUniformLocation?, x: Float, y: Float, z: Float, w: Float)
+    fun uniform4i(location: WebGLUniformLocation?, x: Int, y: Int, z: Int, w: Int)
     fun uniform3fv(location: WebGLUniformLocation?, value: ArrayBufferView)
     fun uniform4fv(location: WebGLUniformLocation?, value: ArrayBufferView)
     fun uniformMatrix2fv(location: WebGLUniformLocation?, transpose: Boolean, value: ArrayBufferView)
