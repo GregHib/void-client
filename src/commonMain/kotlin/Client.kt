@@ -1311,6 +1311,7 @@ class Client : GameAppletFrame() {
     public override fun method99(i: Byte) {
         if (i.toInt() != 93) anIntArray5176 = null
         anInt5183++
+        DevAutoLogin.tick()
         if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 2) {
             try {
                 method114(i.toInt() xor 0x66)
