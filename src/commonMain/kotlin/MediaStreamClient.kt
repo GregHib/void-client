@@ -92,7 +92,7 @@ class MediaStreamClient {
                 aLinkedNodeListIterator_3206.method1005(true, class348_sub42_sub16_sub1)
                 class348_sub42_sub16_sub1 = (aLinkedNodeListIterator_3205.method1003(102.toByte()) as StreamingResourceRequest?)
             }
-            for (i_1_ in 0..99) {
+            for (i_1_ in 0..<js5ReadsPerPump) {
                 val i_2_ = aSocketStreamWorker_3209!!.method1467(83.toByte())
                 if (i_2_ < 0) throw IOException()
                 if (i_2_ == 0) break
@@ -345,6 +345,9 @@ class MediaStreamClient {
 
     init {
         aClass348_Sub49_3211 = ByteBuffer(8)
+        // On JS also run the pump whenever socket data arrives, not just once per game tick, so
+        // JS5 responses (and therefore swapped-in scene objects) are not gated on the frame rate.
+        registerJs5Pump { method1893(99.toByte()) }
     }
 
     companion object {
