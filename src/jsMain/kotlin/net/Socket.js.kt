@@ -6,6 +6,7 @@ import io.OutputStream
 import io.asUint8Array
 import io.checkBounds
 import kotlinx.browser.window
+import notifyInboundData
 import org.khronos.webgl.ArrayBuffer
 import org.khronos.webgl.Int8Array
 import org.w3c.dom.WebSocket
@@ -45,6 +46,9 @@ actual open class Socket actual constructor(host: String?, port: Int) {
             if (data is ArrayBuffer) {
                 val chunk = Int8Array(data)
                 inChunks.addLast(chunk)
+                // Let the JS5 pump consume this immediately instead of waiting for the next game
+                // tick, which may be seconds away on a throttled tab - see PlatformLoop.js.kt.
+                notifyInboundData()
             }
             Unit
         }

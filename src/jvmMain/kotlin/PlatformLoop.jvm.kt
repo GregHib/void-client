@@ -19,3 +19,10 @@ actual fun runLoop(
 }
 
 actual val executeWorkerTasksInline: Boolean = false
+
+/** The original 634 read budget; the socket can refill mid-loop on a real thread, so keep the cap. */
+actual val js5ReadsPerPump: Int = 100
+
+/** The tick owns a real thread at a steady rate, so the pump needs no second driver. */
+actual fun registerJs5Pump(pump: () -> Unit) {
+}

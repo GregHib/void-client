@@ -29,3 +29,26 @@ expect fun runLoop(
  * every one of those loops becomes a zero-iteration no-op with no edits at the call sites.
  */
 expect val executeWorkerTasksInline: Boolean
+
+/**
+ * Upper bound on the number of 512-byte JS5 reads MediaStreamClient.method1893 performs per call.
+ *
+ * The original client hardcodes 100, which caps JS5 throughput at ~51 KB per game tick. On the
+ * JVM the socket can keep refilling while the loop runs, so the cap is what stops one pump from
+ * starving the tick. On JS the WebSocket only delivers between macrotasks, so `available()` is a
+ * fixed snapshot and draining it completely is already bounded - the cap just throws throughput away.
+ */
+expect val js5ReadsPerPump: Int
+
+/**
+ * Registers the JS5 pump (MediaStreamClient.method1893) to be driven by inbound socket data as
+ * well as by the game tick.
+ *
+ * On the JVM this is a no-op: the tick runs at a steady 50/s on its own thread and the cap above
+ * already gives ~2.5 MB/s. On JS the tick is a setTimeout chain whose rate collapses with a slow
+ * software-rendered frame or a hidden tab, and with it every JS5 response that a swapped-in scene
+ * object is waiting on. Servicing the pump from the socket's `onmessage` keeps streaming
+ * independent of the frame rate. The pump is idempotent and single-threaded on JS, so running it
+ * outside the tick is safe.
+ */
+expect fun registerJs5Pump(pump: () -> Unit)
