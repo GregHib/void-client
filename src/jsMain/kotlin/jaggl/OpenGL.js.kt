@@ -3,6 +3,9 @@ package jaggl
 import awt.Canvas
 import lang.Thread
 import util.Hashtable
+import org.khronos.webgl.Float32Array
+import org.khronos.webgl.get
+import org.khronos.webgl.set
 import org.khronos.webgl.Uint8Array
 import org.khronos.webgl.Uint32Array
 import org.w3c.dom.HTMLCanvasElement
@@ -66,12 +69,23 @@ actual class OpenGL {
         }
         // NOTE: deliberately NOT setting alpha:false here. It looks like a free win (the canvas is
         // usually drawn opaque, so skipping the browser's per-frame alpha-compositing blend should
-        // cost nothing) but at least one pass (the minimap) relies on the browser's default
-        // alpha:true/premultipliedAlpha:true compositing to display correctly - forcing the canvas
-        // opaque made it render solid black instead. Only powerPreference (GPU selection on
-        // hybrid-GPU laptops) is safe to request; it doesn't affect pixel/alpha semantics at all.
+        // cost nothing) but at least one pass (the minimap) relies on an RGBA drawing buffer
+        // (copyTexImage2D(RGBA) from the default framebuffer) - forcing the canvas opaque made it
+        // render solid black instead. The compositing problems that alpha:false would solve (sky
+        // showing the page, low-alpha water blown out) are handled by [swapBuffers] forcing the
+        // presented alpha to 1 instead. Only powerPreference (GPU selection on hybrid-GPU laptops)
+        // is safe to request; it doesn't affect pixel/alpha semantics at all.
+        // arg1..arg6 mirror the JNI surface request: red/green/blue bits, depth bits, stencil bits
+        // and the multisample count from the client's Anti-aliasing option. The JVM gets exactly
+        // that pixel format; ask the browser for MSAA only when the client asked for it, otherwise
+        // alpha-tested foliage gets coverage-resolved rims the native client never shows.
+        val wantAntialias = arg6 > 0
         val contextOptions = js("({powerPreference: 'high-performance'})")
+        contextOptions.antialias = wantAntialias
         var context = canvasEl.getContext("webgl2", contextOptions) as? WebGL2RenderingContext
+        // Context attributes are fixed once a canvas has a context; a re-init with a different
+        // sample count (settings change) needs a fresh canvas to take effect.
+        if (context != null && context.getContextAttributes().antialias != wantAntialias) context = null
         if (context == null) {
             context = arg0.replaceWithFreshCanvas().getContext("webgl2", contextOptions) as? WebGL2RenderingContext
         }
@@ -92,7 +106,20 @@ actual class OpenGL {
 
     actual fun b(): Boolean = true
     actual fun createPbuffer(arg0: Int, arg1: Int): Long = 0L
-    actual fun swapBuffers() {}
+    /**
+     * End of frame. The JVM presents an opaque window surface, so whatever alpha the client leaves
+     * in the colour buffer is never seen. The browser composites the canvas *with* its alpha
+     * (`alpha:true`, premultiplied), and the client writes alpha it never meant to display: the
+     * frame clear is the fog colour with alpha 0, and translucent passes (HD water) leave
+     * fractional alpha. The result is compositor dependent: a black sky where the page shows
+     * through, and low-alpha water blown out to white by the premultiply. Force alpha to 1 on the
+     * default framebuffer before the browser takes the frame so RGB displays exactly as rendered.
+     * See [init] for why `alpha:false` is not used instead.
+     */
+    actual fun swapBuffers() {
+        if (peerValue == 0L) return
+        presentOpaque()
+    }
     actual fun a(arg0: String?): Boolean {
         if (arg0 == null) return false
         if (arg0 in CORE_IN_WEBGL2) return true
@@ -131,6 +158,31 @@ actual class OpenGL {
             if (type == GL_UNSIGNED_INT_8_8_8_8_REV) WebGL2RenderingContext.UNSIGNED_BYTE else type
 
         private const val GL_RGB = 6407
+
+        private const val GL_COLOR_BUFFER_BIT = 0x4000
+        private const val GL_SCISSOR_TEST = 0x0C11
+        private const val GL_COLOR_CLEAR_VALUE = 0x0C22
+        private const val GL_COLOR_WRITEMASK = 0x0C23
+        private const val GL_FRAMEBUFFER = 0x8D40
+        private const val GL_FRAMEBUFFER_BINDING = 0x8CA6
+
+        /** Masked clear of the default framebuffer's alpha to 1, leaving every other state as it was. */
+        private fun presentOpaque() {
+            val gl = gl
+            val prevFbo = gl.getParameter(GL_FRAMEBUFFER_BINDING).unsafeCast<WebGLFramebuffer?>()
+            if (prevFbo != null) gl.bindFramebuffer(GL_FRAMEBUFFER, null)
+            val mask = gl.getParameter(GL_COLOR_WRITEMASK).unsafeCast<Array<Boolean>>()
+            val clear = gl.getParameter(GL_COLOR_CLEAR_VALUE).unsafeCast<Float32Array>()
+            val scissor = gl.isEnabled(GL_SCISSOR_TEST)
+            if (scissor) gl.disable(GL_SCISSOR_TEST)
+            gl.colorMask(false, false, false, true)
+            gl.clearColor(0f, 0f, 0f, 1f)
+            gl.clear(GL_COLOR_BUFFER_BIT)
+            gl.colorMask(mask[0], mask[1], mask[2], mask[3])
+            gl.clearColor(clear[0], clear[1], clear[2], clear[3])
+            if (scissor) gl.enable(GL_SCISSOR_TEST)
+            if (prevFbo != null) gl.bindFramebuffer(GL_FRAMEBUFFER, prevFbo)
+        }
 
         private fun bgraToRgb(data: Uint8Array): Uint8Array {
             val texels = data.length / 4
@@ -273,7 +325,7 @@ actual class OpenGL {
                     }
                 GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
                     texturingUnitIndex()?.let {
-                        state.texGenEnabled[it] = true
+                        state.texGenEnabled[it][arg0 - GL_TEXTURE_GEN_S] = true
                         state.texEnvDirty[it] = true
                         state.texGenDirty[it] = true
                     }
@@ -298,7 +350,7 @@ actual class OpenGL {
                     -> texturingUnitIndex()?.let { state.texturingEnabled[it] = false; state.texEnvDirty[it] = true }
                 GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
                     texturingUnitIndex()?.let {
-                        state.texGenEnabled[it] = false
+                        state.texGenEnabled[it][arg0 - GL_TEXTURE_GEN_S] = false
                         state.texEnvDirty[it] = true
                         state.texGenDirty[it] = true
                     }
@@ -402,12 +454,36 @@ actual class OpenGL {
             if (arg1 != GL_TEXTURE_GEN_MODE) return@exec
             if (arg0 !in GL_S..GL_Q) return@exec
             texturingUnitIndex()?.let {
-                state.texGenMode[it] = arg2
+                state.texGenMode[it][arg0 - GL_S] = arg2
                 state.texEnvDirty[it] = true
                 state.texGenDirty[it] = true
             }
         }
-        actual fun glTexGenfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
+
+        actual fun glTexGenfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
+            if (arg2 == null || arg0 !in GL_S..GL_Q) return
+            if (arg1 != GL_OBJECT_PLANE && arg1 != GL_EYE_PLANE) return
+            // Copy now: callers reuse and mutate the array, and display lists replay this later.
+            val plane = floatArrayOf(arg2[arg3], arg2[arg3 + 1], arg2[arg3 + 2], arg2[arg3 + 3])
+            exec {
+                val unit = texturingUnitIndex() ?: return@exec
+                val coord = arg0 - GL_S
+                if (arg1 == GL_OBJECT_PLANE) {
+                    plane.copyInto(state.texGenObjectPlane[unit][coord])
+                } else {
+                    // GL_EYE_PLANE: stored as plane * inverse(modelview at specification time), so
+                    // the plane stays fixed in eye space whatever the modelview does afterwards.
+                    val inv = Mat4.invert(state.matrixStack.modelview()) ?: Mat4.identity()
+                    val dst = state.texGenEyePlane[unit][coord]
+                    for (j in 0 until 4) {
+                        var sum = 0f
+                        for (i in 0 until 4) sum += plane[i] * inv[j * 4 + i]
+                        dst[j] = sum
+                    }
+                }
+                state.texGenDirty[unit] = true
+            }
+        }
         actual fun glTexEnvi(arg0: Int, arg1: Int, arg2: Int) = exec {
             if (arg0 != GL_TEXTURE_ENV) return@exec
             val unit = texturingUnitIndex() ?: return@exec
@@ -637,6 +713,7 @@ actual class OpenGL {
             val data = arg8?.asUint8Array()?.subarray(arg9, arg8.size)
             gl.texImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
             state.recordTextureInternalFormat(fixTarget(arg0), arg2)
+            if (arg1 == 0) state.recordTextureSize(fixTarget(arg0), arg3, arg4)
         }
 
         actual fun glTexImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int) {
@@ -653,6 +730,7 @@ actual class OpenGL {
             }
             gl.texImage2D(target, arg1, internalformat, arg3, arg4, arg5, format, type, data)
             state.recordTextureInternalFormat(target, internalformat)
+            if (arg1 == 0) state.recordTextureSize(target, arg3, arg4)
         }
 
         actual fun glTexImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int) {
@@ -671,6 +749,65 @@ actual class OpenGL {
         actual fun glTexSubImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int) {
             val data = arg8?.asUint8Array()?.subarray(arg9, arg8.size)
             gl.texSubImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
+            if (data != null) replicateSpriteEdges(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
+        }
+
+        private const val GL_UNPACK_ROW_LENGTH = 0x0CF2
+        private const val GL_UNPACK_ALIGNMENT = 0x0CF5
+        private const val GL_LUMINANCE_ALPHA = 6410
+        private const val GL_LUMINANCE = 6409
+        private const val GL_ALPHA = 6406
+
+        private fun bytesPerPixel(format: Int): Int = when (format) {
+            GL_RGBA, GL_BGRA -> 4
+            GL_RGB -> 3
+            GL_LUMINANCE_ALPHA, WebGL2RenderingContext.RG -> 2
+            GL_ALPHA, GL_LUMINANCE, WebGL2RenderingContext.RED -> 1
+            else -> 0
+        }
+
+        /**
+         * The client asks for `GL_ARB_texture_rectangle` and, when it is missing (always, on WebGL),
+         * pads every sprite up to a power-of-two texture and samples only the sprite's sub-rectangle.
+         * Stretched sprites are drawn with LINEAR filtering, so the texels just inside the sprite's
+         * right/bottom edge blend with the transparent black padding: a dark seam at the end of any
+         * stretched strip (the login button's middle piece, for one). A rectangle texture has no
+         * padding to bleed, so give the padding the same content clamp-to-edge would produce:
+         * replicate the sprite's last column and row one texel outwards. Only sprites uploaded at
+         * the origin into a larger texture qualify, which leaves atlas sub-uploads untouched.
+         */
+        private fun replicateSpriteEdges(target: Int, level: Int, x: Int, y: Int, w: Int, h: Int, format: Int, type: Int, data: Uint8Array) {
+            if (level != 0 || x != 0 || y != 0 || w <= 0 || h <= 0) return
+            if (type != WebGL2RenderingContext.UNSIGNED_BYTE) return
+            val bpp = bytesPerPixel(format)
+            if (bpp == 0) return
+            val size = state.textureSize(target) ?: return
+            val padRight = w < size[0]
+            val padBottom = h < size[1]
+            if (!padRight && !padBottom) return
+            if (data.length < w * h * bpp) return
+            val prevAlign = gl.getParameter(GL_UNPACK_ALIGNMENT).unsafeCast<Int>()
+            val prevRowLength = gl.getParameter(GL_UNPACK_ROW_LENGTH).unsafeCast<Int>()
+            gl.pixelStorei(GL_UNPACK_ALIGNMENT, 1)
+            gl.pixelStorei(GL_UNPACK_ROW_LENGTH, 0)
+            if (padRight) {
+                val col = Uint8Array(h * bpp)
+                for (row in 0 until h) {
+                    val src = (row * w + (w - 1)) * bpp
+                    for (b in 0 until bpp) col[row * bpp + b] = data[src + b]
+                }
+                gl.texSubImage2D(target, 0, w, 0, 1, h, format, type, col)
+            }
+            if (padBottom) {
+                val rowW = if (padRight) w + 1 else w
+                val rowData = Uint8Array(rowW * bpp)
+                val src = (h - 1) * w * bpp
+                for (i in 0 until w * bpp) rowData[i] = data[src + i]
+                if (padRight) for (b in 0 until bpp) rowData[w * bpp + b] = data[src + (w - 1) * bpp + b]
+                gl.texSubImage2D(target, 0, 0, h, rowW, 1, format, type, rowData)
+            }
+            gl.pixelStorei(GL_UNPACK_ALIGNMENT, prevAlign)
+            gl.pixelStorei(GL_UNPACK_ROW_LENGTH, prevRowLength)
         }
 
         actual fun glTexSubImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int) {
@@ -685,6 +822,7 @@ actual class OpenGL {
                 data = if (toRgb) bgraToRgb(data) else swapRedBlue(data)
             }
             gl.texSubImage2D(target, arg1, arg2, arg3, arg4, arg5, format, type, data)
+            if (data is Uint8Array) replicateSpriteEdges(target, arg1, arg2, arg3, arg4, arg5, format, type, data)
         }
 
         actual fun glTexSubImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int) {

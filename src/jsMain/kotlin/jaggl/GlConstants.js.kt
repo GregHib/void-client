@@ -90,3 +90,8 @@ const val GL_NORMAL_MAP = 34065
 const val GL_REFLECTION_MAP = 34066
 const val GL_SPHERE_MAP = 9218
 const val GL_TEXTURE_CUBE_MAP = 34067
+
+const val GL_OBJECT_LINEAR = 9217
+const val GL_EYE_LINEAR = 9216
+const val GL_OBJECT_PLANE = 9473
+const val GL_EYE_PLANE = 9474

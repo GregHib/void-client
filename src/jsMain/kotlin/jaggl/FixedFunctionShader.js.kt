@@ -15,9 +15,12 @@ layout(location = 4) in vec3 aTexCoord1;
 
 uniform mat4 uModelView;
 uniform mat4 uProjection;
-uniform mat4 uTextureMatrix;
 uniform mat4 uTextureMatrixU[3];
-uniform highp int uTexGenMode[3];
+// Per unit, per coordinate (s, t, r, q) GL_TEXTURE_GEN_MODE, or 0 where that coordinate's
+// texgen is disabled and the vertex attribute passes through.
+uniform highp ivec4 uTexGenMode[3];
+uniform vec4 uTexGenObjPlane[12];
+uniform vec4 uTexGenEyePlane[12];
 uniform bool uLightingEnabled;
 uniform vec4 uGlobalAmbient;
 uniform bool uLightEnabled[$MAX_LIGHTS];
@@ -70,24 +73,26 @@ void main() {
         vColor = aColor;
     }
 
-    vTexCoord0 = (uTextureMatrix * vec4(aTexCoord0, 0.0, 1.0)).xyz;
-
     vec3 reflected = reflect(normalize(viewPos.xyz), eyeNormal);
-    for (int i = 1; i < 3; i++) {
-        vec4 gen;
-        if (uTexGenMode[i] == 34065) {
-            gen = vec4(eyeNormal, 1.0);
-        } else if (uTexGenMode[i] == 34066) {
-            gen = vec4(reflected, 1.0);
-        } else if (uTexGenMode[i] == 9218) {
-            float m = 2.0 * sqrt(reflected.x * reflected.x + reflected.y * reflected.y +
-                                 (reflected.z + 1.0) * (reflected.z + 1.0));
-            gen = vec4(reflected.x / m + 0.5, reflected.y / m + 0.5, 0.0, 1.0);
-        } else {
-            gen = vec4(aTexCoord1, 1.0);
+    float sphereM = 2.0 * sqrt(reflected.x * reflected.x + reflected.y * reflected.y +
+                               (reflected.z + 1.0) * (reflected.z + 1.0));
+    vec4 sphere = vec4(reflected.x / sphereM + 0.5, reflected.y / sphereM + 0.5, 0.0, 1.0);
+    for (int i = 0; i < 3; i++) {
+        vec4 gen = i == 0 ? vec4(aTexCoord0, 0.0, 1.0) : vec4(aTexCoord1, 1.0);
+        ivec4 mode = uTexGenMode[i];
+        for (int c = 0; c < 4; c++) {
+            int m = mode[c];
+            if (m == 0) continue;
+            float v;
+            if (m == 9217) v = dot(uTexGenObjPlane[i * 4 + c], aPosition);      // GL_OBJECT_LINEAR
+            else if (m == 9216) v = dot(uTexGenEyePlane[i * 4 + c], viewPos);   // GL_EYE_LINEAR
+            else if (m == 34065) v = c < 3 ? eyeNormal[c] : 1.0;                // GL_NORMAL_MAP
+            else if (m == 34066) v = c < 3 ? reflected[c] : 1.0;                // GL_REFLECTION_MAP
+            else v = sphere[c];                                                 // GL_SPHERE_MAP
+            gen[c] = v;
         }
         vec3 coord = (uTextureMatrixU[i] * gen).xyz;
-        if (i == 1) vTexCoord1 = coord; else vTexCoord2 = coord;
+        if (i == 0) vTexCoord0 = coord; else if (i == 1) vTexCoord1 = coord; else vTexCoord2 = coord;
     }
 }
 """
@@ -249,7 +254,6 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
 
     val uModelView: WebGLUniformLocation?
     val uProjection: WebGLUniformLocation?
-    val uTextureMatrix: WebGLUniformLocation?
     val uLightingEnabled: WebGLUniformLocation?
     val uGlobalAmbient: WebGLUniformLocation?
     val uLightEnabled: Array<WebGLUniformLocation?>
@@ -259,6 +263,8 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
     val uLightAttenuation: Array<WebGLUniformLocation?>
     val uTextureMatrixU: Array<WebGLUniformLocation?>
     val uTexGenMode: Array<WebGLUniformLocation?>
+    val uTexGenObjPlane: Array<WebGLUniformLocation?>
+    val uTexGenEyePlane: Array<WebGLUniformLocation?>
     // Fragment-stage locations (shared layout with the transpiled ARB programs).
     val frag: FfFragmentUniformLocations
 
@@ -277,9 +283,10 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
 
         uModelView = gl.getUniformLocation(program, "uModelView")
         uProjection = gl.getUniformLocation(program, "uProjection")
-        uTextureMatrix = gl.getUniformLocation(program, "uTextureMatrix")
         uTextureMatrixU = perUnit("uTextureMatrixU")
         uTexGenMode = perUnit("uTexGenMode")
+        uTexGenObjPlane = Array(12) { gl.getUniformLocation(program, "uTexGenObjPlane[$it]") }
+        uTexGenEyePlane = Array(12) { gl.getUniformLocation(program, "uTexGenEyePlane[$it]") }
         uLightingEnabled = gl.getUniformLocation(program, "uLightingEnabled")
         uGlobalAmbient = gl.getUniformLocation(program, "uGlobalAmbient")
         uLightEnabled = perLight("uLightEnabled")

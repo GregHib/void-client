@@ -52,6 +52,9 @@ class ClientArrayPointer {
 
 internal const val CUBE_SAMPLER_UNIT = 5
 
+private fun defaultTexGenPlanes(): Array<FloatArray> =
+    arrayOf(floatArrayOf(1f, 0f, 0f, 0f), floatArrayOf(0f, 1f, 0f, 0f), FloatArray(4), FloatArray(4))
+
 class GlState(val gl: WebGL2RenderingContext) {
     val textures = IntHandleTable<WebGLTexture>()
     val buffers = IntHandleTable<WebGLBuffer>()
@@ -137,8 +140,13 @@ class GlState(val gl: WebGL2RenderingContext) {
 
     val texturingEnabled = booleanArrayOf(false, false, false)
     val textureTarget = IntArray(3) { WebGL2RenderingContext.TEXTURE_2D }
-    val texGenEnabled = booleanArrayOf(false, false, false)
-    val texGenMode = intArrayOf(0, 0, 0)
+    // GL texgen state per unit and per coordinate (s, t, r, q). Defaults follow the GL spec:
+    // mode GL_EYE_LINEAR, planes S = (1,0,0,0), T = (0,1,0,0), R = Q = 0. Eye planes are stored
+    // already transformed by the inverse modelview current when they were specified.
+    val texGenEnabled = Array(3) { BooleanArray(4) }
+    val texGenMode = Array(3) { IntArray(4) { GL_EYE_LINEAR } }
+    val texGenObjectPlane = Array(3) { defaultTexGenPlanes() }
+    val texGenEyePlane = Array(3) { defaultTexGenPlanes() }
     val combineRgb = IntArray(3) { GL_MODULATE }
     val combineAlpha = IntArray(3) { GL_MODULATE }
     val source0Rgb = IntArray(3) { GL_TEXTURE }
@@ -202,9 +210,7 @@ class GlState(val gl: WebGL2RenderingContext) {
                 val version = matrixStack.version(GL_TEXTURE_MATRIX, unit)
                 if (version == lastTextureMatrixVersion[unit]) continue
                 lastTextureMatrixVersion[unit] = version
-                val m = matrixStack.textureMatrix(unit).asFloat32Array()
-                if (unit == 0) gl.uniformMatrix4fv(s.uTextureMatrix, false, m)
-                gl.uniformMatrix4fv(s.uTextureMatrixU[unit], false, m)
+                gl.uniformMatrix4fv(s.uTextureMatrixU[unit], false, matrixStack.textureMatrix(unit).asFloat32Array())
             }
 
             if (ffpLightingDirty) {
@@ -224,7 +230,17 @@ class GlState(val gl: WebGL2RenderingContext) {
             for (unit in 0 until 3) {
                 if (texGenDirty[unit]) {
                     texGenDirty[unit] = false
-                    gl.uniform1i(s.uTexGenMode[unit], if (texGenEnabled[unit]) texGenMode[unit] else 0)
+                    val en = texGenEnabled[unit]
+                    val md = texGenMode[unit]
+                    gl.uniform4i(
+                        s.uTexGenMode[unit],
+                        if (en[0]) md[0] else 0, if (en[1]) md[1] else 0,
+                        if (en[2]) md[2] else 0, if (en[3]) md[3] else 0,
+                    )
+                    for (c in 0 until 4) {
+                        gl.uniform4fv(s.uTexGenObjPlane[unit * 4 + c], texGenObjectPlane[unit][c].asFloat32Array())
+                        gl.uniform4fv(s.uTexGenEyePlane[unit * 4 + c], texGenEyePlane[unit][c].asFloat32Array())
+                    }
                 }
             }
             uploadFfFragmentUniforms(gl, this, s.frag, s.program, ffpWasDirty)
@@ -298,6 +314,21 @@ class GlState(val gl: WebGL2RenderingContext) {
     fun textureInternalFormat(target: Int): Int {
         val v = boundTextureFor(target)?.asDynamic()?.__jagglInternalFormat
         return if (v == null || v == undefined) 0 else v as Int
+    }
+
+    fun recordTextureSize(target: Int, width: Int, height: Int) {
+        val t = boundTextureFor(target)?.asDynamic() ?: return
+        t.__jagglWidth = width
+        t.__jagglHeight = height
+    }
+
+    /** Level-0 size recorded by the last glTexImage2D on the bound texture, or null if unknown. */
+    fun textureSize(target: Int): IntArray? {
+        val t = boundTextureFor(target)?.asDynamic() ?: return null
+        val w = t.__jagglWidth
+        val h = t.__jagglHeight
+        if (w == null || w == undefined || h == null || h == undefined) return null
+        return intArrayOf(w as Int, h as Int)
     }
 
     fun transformLightPosition(v: FloatArray): FloatArray {
