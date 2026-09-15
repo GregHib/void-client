@@ -1,3 +1,4 @@
+import java.security.MessageDigest
 plugins {
     kotlin("multiplatform") version "2.2.20"
 }
@@ -38,6 +39,18 @@ kotlin {
         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:1.11.0")
         implementation("org.jetbrains.kotlinx:kotlinx-datetime:0.7.1")
     }
+}
+
+// webpack.config.d/dev-credentials.js inlines VOID_DEV_USERNAME/VOID_DEV_PASSWORD from the build
+// environment. Gradle does not see environment variables as task inputs, so without this a bundle
+// built once with credentials would stay up-to-date (credentials included) until a source changed.
+// A hash keeps the values themselves out of the task history.
+tasks.withType<org.jetbrains.kotlin.gradle.targets.js.webpack.KotlinWebpack>().configureEach {
+    val credentials = (System.getenv("VOID_DEV_USERNAME") ?: "") + "\u0000" + (System.getenv("VOID_DEV_PASSWORD") ?: "")
+    inputs.property(
+        "devCredentialsHash",
+        MessageDigest.getInstance("SHA-256").digest(credentials.toByteArray()).joinToString("") { "%02x".format(it) },
+    )
 }
 
 // jsBrowserDevelopmentWebpack emits only the bundle, so index.html would be missing from its
