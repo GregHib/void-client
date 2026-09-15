@@ -16,8 +16,6 @@ import jaggl.OpenGL.Companion.glUseProgramObjectARB
 import jaggl.OpenGL.Companion.glVertex2i
 import jaggl.OpenGL.Companion.glViewport
 import io.IOException
-import io.StringWriter
-import io.PrintWriter
 import io.BufferedReader
 import io.StringReader
 
@@ -340,12 +338,7 @@ class GlBloomEffect internal constructor(var_ha_Sub2: OpenGlRenderer) : Abstract
                 string = (runtimeexception_sub1.aString4594 + " | ")
                 throwable = (runtimeexception_sub1.aThrowable4595!!)
             } else string = ""
-            val stringwriter = StringWriter()
-            val printwriter = PrintWriter(stringwriter)
-            throwable.printStackTrace()
-//            throwable.printStackTrace(printwriter)
-            printwriter.close()
-            val string_8_ = stringwriter.toString()
+            val string_8_ = throwable.stackTraceToString()
             val bufferedreader = BufferedReader(StringReader(string_8_))
             if (bool != false) method2765(-61)
             val string_9_ = bufferedreader.readLine()
