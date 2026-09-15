@@ -6,13 +6,24 @@ import kotlin.reflect.KClass
 
 actual class Class<T> internal constructor(
     internal val ctor: dynamic,
-//    actual val name: String
+    /**
+     * The Kotlin view of the same type, when known. Kotlin/JS does not put interfaces in the
+     * prototype chain: a class records the interfaces it implements as a bitmask (`$imask$`) on
+     * its prototype, and `x is SomeInterface` consults that mask. `instanceof` and
+     * `isPrototypeOf` therefore only see the class hierarchy, and every [isInstance] /
+     * [isAssignableFrom] against an interface returned false. The scene graph filters tile
+     * entities with `RenderTarget::class` (an interface) in ClickFeedbackTask.method1353 and
+     * AsyncResourceRequest.method3253, so on the web client no server-side object removal or
+     * replacement could find the object it was meant to remove (GregHib/void-client#23).
+     * Going through the public [KClass.isInstance] gives the same answer as `is`.
+     */
+    private val kClass: KClass<*>? = null,
 ) {
-//    actual val simpleName: String
-//        get() = name.substringAfterLast('.')
 
     actual fun isInstance(obj: Any?): Boolean {
         if (obj == null) return false
+        val k = kClass
+        if (k != null) return k.isInstance(obj)
         val c = ctor
         return js("obj instanceof c") as Boolean
     }
@@ -21,7 +32,14 @@ actual class Class<T> internal constructor(
         if (ctor === other.ctor) return true
         val c = ctor
         val oc = other.ctor
-        return js("c.prototype.isPrototypeOf(oc.prototype)") as Boolean
+        // Class-to-class: the ordinary prototype chain.
+        if (js("c.prototype != null && oc.prototype != null && c.prototype.isPrototypeOf(oc.prototype)") as Boolean) return true
+        // Interface-to-class: build an object that shares `other`'s prototype (and so its
+        // `$imask$`) and ask Kotlin whether that would be an instance of this type.
+        val k = kClass ?: return false
+        if (js("oc.prototype == null") as Boolean) return false
+        val probe: Any = js("Object.create(oc.prototype)")
+        return k.isInstance(probe)
     }
 
     actual override fun toString(): String = "class "
@@ -53,8 +71,7 @@ actual val <T : Any> T.jClass: Class<T>
 
 actual val <T : Any> KClass<T>.jClass: Class<T>
     get() {
-        val js = this.js
-        return Class(js/*, js.name*/)
+        return Class(this.js, this)
     }
 
 actual fun forName(name: String?): Class<*> =
