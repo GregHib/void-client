@@ -67,7 +67,7 @@ class NoOpGraphicsOptionState : GraphicsOptionState {
 
         @JvmStatic
         fun method1804(i: Int) {
-            ParameterizedText.method3211(60.toByte())
+            QuickChatMenuType.method3211(60.toByte())
             if (i != 8839) anInt6042 = 63
             anInt6040++
         }

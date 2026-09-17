@@ -48,7 +48,7 @@ abstract class CircleRasterizer {
 
         @JvmStatic
         fun method2255(i: Int, i_3_: Int, i_4_: Byte, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
-            CacheArchiveIndex.method1070(117.toByte(), i)
+            EnumType.method1070(117.toByte(), i)
             anInt3812++
             if (i_4_ >= -65) Companion.method2255(-118, -20, (-121).toByte(), 100, -62, 77, -119)
             var i_9_ = 0
@@ -60,7 +60,7 @@ abstract class CircleRasterizer {
             var i_14_ = -i_10_
             var i_15_ = -1
             var i_16_ = -1
-            val `is` = WidgetDefinition.anIntArrayArray255!![i_6_]!!
+            val `is` = AnimationType.anIntArrayArray255!![i_6_]!!
             val i_17_ = i_3_ + -i_10_
             val i_18_ = i_10_ + i_3_
             GlElementArrayBuffer.method1156(-27, i_17_, `is`, -i + i_3_, i_8_)
@@ -81,15 +81,15 @@ abstract class CircleRasterizer {
                     i_11_--
                     i_12_ -= i_11_ shl 1
                     if (i_10_ <= i_11_) {
-                        val is_19_ = WidgetDefinition.anIntArrayArray255!![i_11_ + i_6_]!!
-                        val is_20_ = WidgetDefinition.anIntArrayArray255!![i_6_ + -i_11_]!!
+                        val is_19_ = AnimationType.anIntArrayArray255!![i_11_ + i_6_]!!
+                        val is_20_ = AnimationType.anIntArrayArray255!![i_6_ + -i_11_]!!
                         val i_21_ = i_3_ - -i_9_
                         val i_22_ = -i_9_ + i_3_
                         GlElementArrayBuffer.method1156(-27, i_21_, is_19_, i_22_, i_8_)
                         GlElementArrayBuffer.method1156(-27, i_21_, is_20_, i_22_, i_8_)
                     } else {
-                        val is_23_ = WidgetDefinition.anIntArrayArray255!![i_6_ - -i_11_]!!
-                        val is_24_ = WidgetDefinition.anIntArrayArray255!![-i_11_ + i_6_]!!
+                        val is_23_ = AnimationType.anIntArrayArray255!![i_6_ - -i_11_]!!
+                        val is_24_ = AnimationType.anIntArrayArray255!![-i_11_ + i_6_]!!
                         val i_25_ = CipheredPacketBuffer.anIntArray9757!![i_11_]
                         val i_26_ = i_9_ + i_3_
                         val i_27_ = i_3_ - i_9_
@@ -103,8 +103,8 @@ abstract class CircleRasterizer {
                         GlElementArrayBuffer.method1156(-27, i_26_, is_24_, i_28_, i_8_)
                     }
                 }
-                val is_30_ = WidgetDefinition.anIntArrayArray255!![i_6_ + i_9_]!!
-                val is_31_ = WidgetDefinition.anIntArrayArray255!![-i_9_ + i_6_]!!
+                val is_30_ = AnimationType.anIntArrayArray255!![i_6_ + i_9_]!!
+                val is_31_ = AnimationType.anIntArrayArray255!![-i_9_ + i_6_]!!
                 val i_32_ = i_3_ - -i_11_
                 val i_33_ = i_3_ - i_11_
                 if (i_10_ > i_9_) {

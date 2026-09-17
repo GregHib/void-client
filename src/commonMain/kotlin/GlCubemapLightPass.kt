@@ -71,7 +71,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         if (i != 15192) method3527(-85, null, -72)
         if (anInterface18_Impl2Array7315 != null && bool) {
             this.aHa_Sub3_4479.method3897(1, -4382)
-            this.aHa_Sub3_4479.method3871(ItemModelDefinition.aCameraNodeList_430, 0)
+            this.aHa_Sub3_4479.method3871(HitsplatType.aCameraNodeList_430, 0)
             val class101_sub2 = this.aHa_Sub3_4479.method3820(false)
             class101_sub2.method899(1024)
             this.aHa_Sub3_4479.method3853(-32, GlCubemapLightPass.aConfigFlagUtil_9477)
@@ -281,9 +281,9 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                     if (i_36_ < LinkedListIterator.anIntArray2117!![i_15_]) LinkedListIterator.anIntArray2117!![i_15_] = i_36_
                     else if (i_36_ > BlankTextureNode.anIntArray9259!![i_15_]) BlankTextureNode.anIntArray9259!![i_15_] = i_36_
                     val i_37_ = i_22_ shl 9
-                    if (i_37_ >= CharCodeMap.anIntArray1127!![i_15_]) {
+                    if (i_37_ >= QuickChatType.anIntArray1127!![i_15_]) {
                         if (ConnectionStateType.anIntArray1045!![i_15_] < i_37_) ConnectionStateType.anIntArray1045!![i_15_] = i_37_
-                    } else CharCodeMap.anIntArray1127!![i_15_] = i_37_
+                    } else QuickChatType.anIntArray1127!![i_15_] = i_37_
                 }
                 if (!bool_24_) {
                     if (i_19_ >= 1 && (RegionSceneLoader.aByteArrayArrayArray3700!![QuickChatMenuTypeList.anInt4372]!![i_19_ - 1]!![i_22_]) != i_16_) {
@@ -346,7 +346,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
                 LinkedListIterator.anIntArray2117!![i_15_] -= 512
                 BlankTextureNode.anIntArray9259!![i_15_] += 512
                 ConnectionStateType.anIntArray1045!![i_15_] += 512
-                CharCodeMap.anIntArray1127!![i_15_] -= 512
+                QuickChatType.anIntArray1127!![i_15_] -= 512
             }
             return true
         }

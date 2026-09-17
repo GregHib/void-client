@@ -214,7 +214,7 @@ class Player : ProjectedGroundDecor() {
             this.x = (this.anIntArray10320!![0] shl 9) - -(method2436(89.toByte()) shl 8)
             this.y = (this.anIntArray10317!![0] shl 9) - -(method2436(98.toByte()) shl 8)
         }
-        if ((CharCodeMap.anInt9591 == this.anInt10290) && is_30_ != null) {
+        if ((QuickChatType.anInt9591 == this.anInt10290) && is_30_ != null) {
             for (i_31_ in is_20_.indices) {
                 if (is_20_[i_31_] != is_30_[i_31_]) {
                     ClientException.aItemTypeList_112!!.method1936(72)
@@ -315,7 +315,7 @@ class Player : ProjectedGroundDecor() {
         this.anInt10524 = -1
         if (i_52_ >= 0 && GlCubemapLightPass.anInt7319 > i_52_ && i >= 0 && RangeThresholdTextureNode.anInt9109 > i) {
             if (this.anIntArray10320!![0] >= 0 && (this.anIntArray10320!![0] < GlCubemapLightPass.anInt7319) && this.anIntArray10317!![0] >= 0 && (RangeThresholdTextureNode.anInt9109 > this.anIntArray10317!![0])) {
-                if (i_51_.toInt() == 2) MapSceneIconDef.method1592(2.toByte(), i, 4, i_52_, this)
+                if (i_51_.toInt() == 2) MapSceneType.method1592(2.toByte(), i, 4, i_52_, this)
                 method2451(i_51_, i_52_, -29034, i)
             } else method2449(i, i_52_, 111.toByte())
         } else method2449(i, i_52_, 112.toByte())

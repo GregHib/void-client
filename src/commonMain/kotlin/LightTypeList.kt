@@ -13,22 +13,22 @@ class LightTypeList internal constructor(sceneProjector: SceneProjector?, i: Int
         anInt2486++
     }
 
-    fun method1391(i: Byte, i_1_: Int): CameraConfigDefinition {
+    fun method1391(i: Byte, i_1_: Int): LightType {
         anInt2485++
-        var cameraConfigDefinition: CameraConfigDefinition? = withLock(aLruByteCache_2479) {
-            aLruByteCache_2479.method583(i_1_.toLong(), 96) as CameraConfigDefinition?
+        var lightType: LightType? = withLock(aLruByteCache_2479) {
+            aLruByteCache_2479.method583(i_1_.toLong(), 96) as LightType?
         }
-        if (cameraConfigDefinition != null) return cameraConfigDefinition
+        if (lightType != null) return lightType
         val `is`: ByteArray? = withLock(aJs5Archive_2480!!) {
             aJs5Archive_2480.method410(-1860, 31, i_1_)
         }
-        cameraConfigDefinition = CameraConfigDefinition()
+        lightType = LightType()
         val i_2_ = 50 / ((i - -63) / 56)
-        if (`is` != null) cameraConfigDefinition.method1921((-69).toByte(), ByteBuffer(`is`))
+        if (`is` != null) lightType.method1921((-69).toByte(), ByteBuffer(`is`))
         withLock(aLruByteCache_2479) {
-            aLruByteCache_2479.method582(cameraConfigDefinition, i_1_.toLong(), (-108).toByte())
+            aLruByteCache_2479.method582(lightType, i_1_.toLong(), (-108).toByte())
         }
-        return cameraConfigDefinition
+        return lightType
     }
 
     fun method1392(i: Int, i_3_: Int) {

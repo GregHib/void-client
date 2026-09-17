@@ -145,11 +145,11 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 NodeDequeStatics.billboards!!.method412(112.toByte())
                 Crc64Hashable.nativeLibraries!!.method412(85.toByte())
                 SpriteLoadValidator.shaders!!.method412(93.toByte())
-                HitsplatDefinition.aJs5Archive_2015!!.method412((-122).toByte())
+                VarbitType.aJs5Archive_2015!!.method412((-122).toByte())
                 TextureMipDescriptor.aLruByteCache_4346!!.method590(0)
                 MaterialTypeMarker.aLruByteCache_6517!!.method590(0)
                 TerrainTileShape.aLruByteCache_8807!!.method590(0)
-                SkeletalAnimFrameLoader.aLruByteCache_463!!.method590(0)
+                IdentityKitType.aLruByteCache_463!!.method590(0)
             }
         }
 
@@ -174,7 +174,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                     widgetComponent.anInt757 = 150
                     widgetComponent.anInt675 = 0x7ff and (256.0 * sin((GlGroundShaderPass.anInt7396).toDouble() / 40.0)).toInt()
                     widgetComponent.anInt770 = 5
-                    widgetComponent.anInt753 = CharCodeMap.anInt9591
+                    widgetComponent.anInt753 = QuickChatType.anInt9591
                     widgetComponent.anInt779 = (ModelGroundDecor.method2418((LocalPlayerState.aPlayer_1907!!.aString10544!!), (-41).toByte()))
                     widgetComponent.anInt699 = LocalPlayerState.aPlayer_1907!!.anInt10268
                     widgetComponent.anInt841 = 0

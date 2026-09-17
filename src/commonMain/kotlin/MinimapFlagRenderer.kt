@@ -78,8 +78,8 @@ object MinimapFlagRenderer {
             val i_16_ = anInt3225
             method1752(-1, i_13_, i_14_)
             if (anInt7207 == 0) {
-                WidgetDefinition.anSpriteDrawTarget_252 = null
-                WidgetDefinition.anSpriteDrawTarget_252 = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665((anInt8854), anInt6008), CameraRotationStub.aRenderer326!!.method3624((anInt8854), anInt6008)))
+                AnimationType.anSpriteDrawTarget_252 = null
+                AnimationType.anSpriteDrawTarget_252 = (CameraRotationStub.aRenderer326!!.method3634(CameraRotationStub.aRenderer326!!.method3665((anInt8854), anInt6008), CameraRotationStub.aRenderer326!!.method3624((anInt8854), anInt6008)))
             } else if (anInt7207 == 1 && (NpcSpawnDecoder.anSpriteDrawTargetArray1525 == null || i_15_ != anInt425 || i_16_ != anInt3225)) {
                 NpcSpawnDecoder.anSpriteDrawTargetArray1525 = arrayOfNulls<SpriteDrawTarget>(anInt3225 * anInt425)
                 var i_17_ = 0

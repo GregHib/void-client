@@ -6,7 +6,7 @@ import kotlin.math.max
 class ScreenAnchorAlignment {
     fun method1607(i: Int, i_0_: Int, i_1_: Byte): Int {
         anInt2882++
-        val i_2_ = (max(LocTypeDefinition.anInt4017, i))
+        val i_2_ = (max(QuestType.anInt4017, i))
         if (ScrollbarComponent.aScreenAnchorAlignment_8344 == this) return 0
         if (i_1_ >= -103) aBoolean2881 = true
         if (this == HeapInfoRecord.aScreenAnchorAlignment_2893) return i_2_ - i_0_

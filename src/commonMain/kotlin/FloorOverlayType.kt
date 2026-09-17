@@ -4,7 +4,7 @@ import NormalMapTextureNode.Companion.method3140
 /* Class277 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class LocTypeConfig {
+class FloorOverlayType {
     var anInt3558: Int = 64
     var anInt3559: Int = 1190717
     var aBoolean3560: Boolean = false

@@ -6,23 +6,23 @@ class IDKTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, 
     private var aJs5Archive_2048: Js5Archive? = null
     private val aLruByteCache_2050 = LruByteCache(64)
     var aJs5Archive_2054: Js5Archive? = null
-    fun method1203(i: Byte, i_3_: Int): SkeletalAnimFrameLoader {
+    fun method1203(i: Byte, i_3_: Int): IdentityKitType {
         anInt2056++
         if (i.toInt() != 33) aJs5Archive_2048 = null
-        var skeletalAnimFrameLoader: SkeletalAnimFrameLoader? = withLock(aLruByteCache_2050) {
-            aLruByteCache_2050.method583(i_3_.toLong(), -58) as SkeletalAnimFrameLoader?
+        var identityKitType: IdentityKitType? = withLock(aLruByteCache_2050) {
+            aLruByteCache_2050.method583(i_3_.toLong(), -58) as IdentityKitType?
         }
-        if (skeletalAnimFrameLoader != null) return skeletalAnimFrameLoader
+        if (identityKitType != null) return identityKitType
         val `is`: ByteArray? = withLock(aJs5Archive_2048!!) {
             aJs5Archive_2048!!.method410(i + -1893, 3, i_3_)
         }
-        skeletalAnimFrameLoader = SkeletalAnimFrameLoader()
-        skeletalAnimFrameLoader.aIDKTypeList_475 = this
-        if (`is` != null) skeletalAnimFrameLoader.method346(i.toInt().inv(), ByteBuffer(`is`))
+        identityKitType = IdentityKitType()
+        identityKitType.aIDKTypeList_475 = this
+        if (`is` != null) identityKitType.method346(i.toInt().inv(), ByteBuffer(`is`))
         withLock(aLruByteCache_2050) {
-            aLruByteCache_2050.method582(skeletalAnimFrameLoader, i_3_.toLong(), (-109).toByte())
+            aLruByteCache_2050.method582(identityKitType, i_3_.toLong(), (-109).toByte())
         }
-        return skeletalAnimFrameLoader
+        return identityKitType
     }
 
     fun method1204(i: Int) {

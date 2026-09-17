@@ -214,7 +214,7 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
             var i_17_ = i_15_
             var i_18_ = -i_15_
             var i_19_ = -1
-            GlElementArrayBuffer.method1156(i_13_ + 621, i_12_ + i_15_, WidgetDefinition.anIntArrayArray255!![i]!!, i_12_ + -i_15_, i_14_)
+            GlElementArrayBuffer.method1156(i_13_ + 621, i_12_ + i_15_, AnimationType.anIntArrayArray255!![i]!!, i_12_ + -i_15_, i_14_)
             while (i_16_ < i_17_) {
                 i_19_ += 2
                 i_18_ += i_19_
@@ -222,8 +222,8 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
                 if (i_18_ >= 0) {
                     i_17_--
                     i_18_ -= i_17_ shl 1
-                    val `is` = WidgetDefinition.anIntArrayArray255!![i - -i_17_]!!
-                    val is_20_ = WidgetDefinition.anIntArrayArray255!![i + -i_17_]!!
+                    val `is` = AnimationType.anIntArrayArray255!![i - -i_17_]!!
+                    val is_20_ = AnimationType.anIntArrayArray255!![i + -i_17_]!!
                     val i_21_ = i_16_ + i_12_
                     val i_22_ = i_12_ + -i_16_
                     GlElementArrayBuffer.method1156(-27, i_21_, `is`, i_22_, i_14_)
@@ -231,8 +231,8 @@ class GlRectangleTexture : GlTextureBase, Renderable2dTexture {
                 }
                 val i_23_ = i_17_ + i_12_
                 val i_24_ = i_12_ - i_17_
-                val `is` = WidgetDefinition.anIntArrayArray255!![i_16_ + i]!!
-                val is_25_ = WidgetDefinition.anIntArrayArray255!![-i_16_ + i]!!
+                val `is` = AnimationType.anIntArrayArray255!![i_16_ + i]!!
+                val is_25_ = AnimationType.anIntArrayArray255!![-i_16_ + i]!!
                 GlElementArrayBuffer.method1156(i_13_ + 621, i_23_, `is`, i_24_, i_14_)
                 GlElementArrayBuffer.method1156(-27, i_23_, is_25_, i_24_, i_14_)
             }

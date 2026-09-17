@@ -212,7 +212,7 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
         fun method2411(cameraNodeList: CameraNodeList?, i: Int): Int {
             anInt8742++
             if (cameraNodeList == NativeShaderProgram.aCameraNodeList_9773) return 9216
-            if (cameraNodeList == ItemModelDefinition.aCameraNodeList_430) return 34065
+            if (cameraNodeList == HitsplatType.aCameraNodeList_430) return 34065
             if (RenderAnimTypeList.aCameraNodeList_3314 == cameraNodeList) return 34066
             throw IllegalArgumentException()
         }

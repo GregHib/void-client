@@ -129,7 +129,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
         var anInt2166: Int = 0
         var anInt2167: Int = 0
         var anInt2168: Int = 0
-        var aWidgetDefinitionArray2169s: Array<WidgetDefinition?>? = arrayOfNulls<WidgetDefinition>(14)
+        var aAnimationTypeArray2169s: Array<AnimationType?>? = arrayOfNulls<AnimationType>(14)
         var anInt2170: Int = 0
         var anInt2171: Int = 0
 
@@ -157,12 +157,12 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
             while (`is`.size > i_24_) {
                 val class321 = TheoraVideoStream.aQuestTypeList_9036!!.method1408(-12637, `is`[i_24_])
                 if (class321.anInt4000 != -1) {
-                    var abstractModelRenderer = (SkeletalAnimFrameLoader.aLruByteCache_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
+                    var abstractModelRenderer = (IdentityKitType.aLruByteCache_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {
                         val spriteImage = SpriteImage.method1521(CameraRotationStub.sprites!!, class321.anInt4000, 0)
                         if (spriteImage != null) {
                             abstractModelRenderer = FacingDirectionNode.aRenderer6654!!.method3691(spriteImage, true)
-                            SkeletalAnimFrameLoader.aLruByteCache_463!!.method582(abstractModelRenderer, class321.anInt4000.toLong(), (-127).toByte())
+                            IdentityKitType.aLruByteCache_463!!.method582(abstractModelRenderer, class321.anInt4000.toLong(), (-127).toByte())
                         }
                     }
                     if (abstractModelRenderer != null) {
@@ -185,7 +185,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
         @JvmStatic
         fun method1276(i: Int) {
             val i_35_ = 101 % ((i - -20) / 49)
-            aWidgetDefinitionArray2169s = null
+            aAnimationTypeArray2169s = null
             anIntArrayArray2165 = null
             aBooleanArray2162 = null
         }

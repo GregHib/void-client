@@ -183,7 +183,7 @@ class MidiSequencePlayer : AudioStreamNode {
                 val d = sin(((class348_sub43.anInt7076) and 0x1ff).toDouble() * 0.01227184630308513)
                 i_30_ += (d * i_31_.toDouble()).toInt()
             }
-            val i_33_ = (((class348_sub43.aClass348_Sub19_Sub1_7077!!.anInt8988 * 256).toDouble() * 2.0.pow(3.255208333333333E-4 * i_30_.toDouble()) / HslColorConfig.anInt339.toDouble()) + 0.5).toInt()
+            val i_33_ = (((class348_sub43.aClass348_Sub19_Sub1_7077!!.anInt8988 * 256).toDouble() * 2.0.pow(3.255208333333333E-4 * i_30_.toDouble()) / FloorUnderlayType.anInt339.toDouble()) + 0.5).toInt()
             return max(i_33_, 1)
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("ma.JA(" + i + ',' + (if (class348_sub43 != null) "{...}" else "null") + ')'))
@@ -288,7 +288,7 @@ class MidiSequencePlayer : AudioStreamNode {
 
     fun method2852(`is`: IntArray?, i: Int, class348_sub43: SpriteDefinition?, i_46_: Int, i_47_: Byte): Boolean {
         try {
-            class348_sub43!!.anInt7086 = HslColorConfig.anInt339 / 100
+            class348_sub43!!.anInt7086 = FloorUnderlayType.anInt339 / 100
             anInt8952++
             if (class348_sub43.anInt7087 >= 0 && ((class348_sub43.aClass348_Sub16_Sub5_7081) == null || class348_sub43.aClass348_Sub16_Sub5_7081!!.method2890())) {
                 class348_sub43.method3299(36.toByte())
@@ -504,7 +504,7 @@ class MidiSequencePlayer : AudioStreamNode {
         var i = i
         anInt8908++
         if (aMidiTrackReader_8944!!.method1491()) {
-            val i_63_ = (aMidiTrackReader_8944!!.anInt2683 * anInt8921 / HslColorConfig.anInt339)
+            val i_63_ = (aMidiTrackReader_8944!!.anInt2683 * anInt8921 / FloorUnderlayType.anInt339)
             do {
                 val l = aLong8959 + i_63_.toLong() * i.toLong()
                 if (-l + aLong8957 >= 0L) {
@@ -540,7 +540,7 @@ class MidiSequencePlayer : AudioStreamNode {
         try {
             anInt8898++
             if (aMidiTrackReader_8944!!.method1491()) {
-                val i_68_ = (anInt8921 * aMidiTrackReader_8944!!.anInt2683 / HslColorConfig.anInt339)
+                val i_68_ = (anInt8921 * aMidiTrackReader_8944!!.anInt2683 / FloorUnderlayType.anInt339)
                 do {
                     val l = aLong8959 + i_67_.toLong() * i_68_.toLong()
                     if (aLong8957 + -l >= 0L) {
@@ -727,7 +727,7 @@ class MidiSequencePlayer : AudioStreamNode {
         while (class348_sub43 != null) {
             if (i_90_ < 0 || (class348_sub43.anInt7067 == i_90_)) {
                 if (class348_sub43.aClass348_Sub16_Sub5_7081 != null) {
-                    class348_sub43.aClass348_Sub16_Sub5_7081!!.method2902(HslColorConfig.anInt339 / 100)
+                    class348_sub43.aClass348_Sub16_Sub5_7081!!.method2902(FloorUnderlayType.anInt339 / 100)
                     if (class348_sub43.aClass348_Sub16_Sub5_7081!!.method2895()) aClass348_Sub16_Sub1_8958!!.aClass348_Sub16_Sub4_8855.method2883(class348_sub43.aClass348_Sub16_Sub5_7081!!)
                     class348_sub43.method3299(72.toByte())
                 }

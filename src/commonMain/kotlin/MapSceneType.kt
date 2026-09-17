@@ -6,7 +6,7 @@ import NpcType.Companion.method802
 /* Class218 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MapSceneIconDef {
+class MapSceneType {
     var aMapSceneTypeList_2851: MapSceneTypeList? = null
 
     var anInt2853: Int = 0

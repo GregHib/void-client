@@ -32,11 +32,11 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
     private val anIntArray3128 = intArrayOf(0, 0, 0, 256, 512, 512, 512, 256, 256, 384, 128, 128, 256)
     private val aByteArrayArrayArray3129: Array<Array<ByteArray?>?>
     var anInt3130: Int = 0
-    private fun method1675(i: Int, i_0_: Int, `is`: Array<ByteArray?>?, i_1_: Int, is_2_: Array<ByteArray?>?, i_3_: Int, locTypeConfig: LocTypeConfig?, hslColorConfig: HslColorConfig?, bools: BooleanArray?, i_4_: Int, is_5_: Array<ByteArray?>?, i_6_: Int, i_7_: Int, var_renderer: Renderer?) {
+    private fun method1675(i: Int, i_0_: Int, `is`: Array<ByteArray?>?, i_1_: Int, is_2_: Array<ByteArray?>?, i_3_: Int, floorOverlayType: FloorOverlayType?, floorUnderlayType: FloorUnderlayType?, bools: BooleanArray?, i_4_: Int, is_5_: Array<ByteArray?>?, i_6_: Int, i_7_: Int, var_renderer: Renderer?) {
         do {
             try {
                 anInt3112++
-                val bools_8_: BooleanArray = (if (locTypeConfig != null && locTypeConfig.aBoolean3560) MinimapSquareDrawer.aBooleanArrayArray5225!![i_7_] else SplashImageLoadable.aBooleanArrayArray4693!![i_7_])!!
+                val bools_8_: BooleanArray = (if (floorOverlayType != null && floorOverlayType.aBoolean3560) MinimapSquareDrawer.aBooleanArrayArray5225!![i_7_] else SplashImageLoadable.aBooleanArrayArray4693!![i_7_])!!
                 if (i_1_ > 0) {
                     if (i > 0) {
                         val i_9_ = is_5_!![i + -1]!![i_1_ - 1].toInt() and 0xff
@@ -46,7 +46,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                 val i_11_ = `is`!![-1 + i]!![i_1_ - 1]
                                 val i_12_ = 4 + is_2_!![i + -1]!![-1 + i_1_] * 2 and 0x7
                                 val i_13_ = (method3266(var_renderer, 127, class277_10_))
-                                if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_11_.toInt()]!![i_12_]) {
+                                if (VarcType.aBooleanArrayArray2133!![i_11_.toInt()]!![i_12_]) {
                                     MenuActionNode.anIntArray6775!![0] = class277_10_.anInt3563
                                     anIntArray9480!![0] = i_13_
                                     ProjectileFactory.anIntArray2899!![0] = class277_10_.anInt3575
@@ -65,7 +65,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                 val i_16_ = `is`!![i + 1]!![-1 + i_1_]
                                 val i_17_ = 0x7 and 2 * is_2_!![1 + i]!![i_1_ + -1] + 6
                                 val i_18_ = (method3266(var_renderer, 125, class277_15_))
-                                if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_16_.toInt()]!![i_17_]) {
+                                if (VarcType.aBooleanArrayArray2133!![i_16_.toInt()]!![i_17_]) {
                                     MenuActionNode.anIntArray6775!![2] = class277_15_.anInt3563
                                     anIntArray9480!![2] = i_18_
                                     ProjectileFactory.anIntArray2899!![2] = class277_15_.anInt3575
@@ -86,7 +86,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                 val i_21_ = `is`!![-1 + i]!![1 + i_1_]
                                 val i_22_ = 2 * is_2_!![-1 + i]!![1 + i_1_] + 2 and 0x7
                                 val i_23_ = (method3266(var_renderer, i_3_ xor 0x7c.inv(), class277_20_))
-                                if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_21_.toInt()]!![i_22_]) {
+                                if (VarcType.aBooleanArrayArray2133!![i_21_.toInt()]!![i_22_]) {
                                     MenuActionNode.anIntArray6775!![6] = class277_20_.anInt3563
                                     anIntArray9480!![6] = i_23_
                                     ProjectileFactory.anIntArray2899!![6] = class277_20_.anInt3575
@@ -105,7 +105,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                 val i_26_ = `is`!![1 + i]!![i_1_ - -1]
                                 val i_27_ = 0x7 and  /*--*/(is_2_!![i - -1]!![1 + i_1_] * 2)
                                 val i_28_ = (method3266(var_renderer, i_3_ + 127, class277_25_))
-                                if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_26_.toInt()]!![i_27_]) {
+                                if (VarcType.aBooleanArrayArray2133!![i_26_.toInt()]!![i_27_]) {
                                     MenuActionNode.anIntArray6775!![4] = class277_25_.anInt3563
                                     anIntArray9480!![4] = i_28_
                                     ProjectileFactory.anIntArray2899!![4] = class277_25_.anInt3575
@@ -131,7 +131,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                 for (i_36_ in 0..2) {
                                     i_33_ = i_33_ and 0x7
                                     i_34_ = 0x7 and i_34_
-                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_31_.toInt()]!![i_34_]) && (WorldMapToggle.anIntArray3873!![i_33_] <= (class277_30_.anInt3564))) {
+                                    if ((VarcType.aBooleanArrayArray2133!![i_31_.toInt()]!![i_34_]) && (WorldMapToggle.anIntArray3873!![i_33_] <= (class277_30_.anInt3564))) {
                                         MenuActionNode.anIntArray6775!![i_33_] = (class277_30_.anInt3563)
                                         anIntArray9480!![i_33_] = i_35_
                                         ProjectileFactory.anIntArray2899!![i_33_] = (class277_30_.anInt3575)
@@ -162,7 +162,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                 for (i_44_ in 0..2) {
                                     i_41_ = i_41_ and 0x7
                                     i_42_ = 0x7 and i_42_
-                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_39_.toInt()]!![i_42_]) && ((class277_38_.anInt3564) >= WorldMapToggle.anIntArray3873!![i_41_])) {
+                                    if ((VarcType.aBooleanArrayArray2133!![i_39_.toInt()]!![i_42_]) && ((class277_38_.anInt3564) >= WorldMapToggle.anIntArray3873!![i_41_])) {
                                         MenuActionNode.anIntArray6775!![i_41_] = (class277_38_.anInt3563)
                                         anIntArray9480!![i_41_] = i_43_
                                         ProjectileFactory.anIntArray2899!![i_41_] = (class277_38_.anInt3575)
@@ -193,7 +193,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                 for (i_52_ in 0..2) {
                                     i_50_ = i_50_ and 0x7
                                     i_49_ = 0x7 and i_49_
-                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_47_.toInt()]!![i_50_]) && (WorldMapToggle.anIntArray3873!![i_49_] <= (class277_46_.anInt3564))) {
+                                    if ((VarcType.aBooleanArrayArray2133!![i_47_.toInt()]!![i_50_]) && (WorldMapToggle.anIntArray3873!![i_49_] <= (class277_46_.anInt3564))) {
                                         MenuActionNode.anIntArray6775!![i_49_] = (class277_46_.anInt3563)
                                         anIntArray9480!![i_49_] = i_51_
                                         ProjectileFactory.anIntArray2899!![i_49_] = (class277_46_.anInt3575)
@@ -224,7 +224,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                 for (i_60_ in 0..2) {
                                     i_57_ = 0x7 and i_57_
                                     i_58_ = 0x7 and i_58_
-                                    if ((KeyboardLayoutConfig.aBooleanArrayArray2133!![i_55_.toInt()]!![i_58_]) && (WorldMapToggle.anIntArray3873!![i_57_] <= (class277_54_.anInt3564))) {
+                                    if ((VarcType.aBooleanArrayArray2133!![i_55_.toInt()]!![i_58_]) && (WorldMapToggle.anIntArray3873!![i_57_] <= (class277_54_.anInt3564))) {
                                         MenuActionNode.anIntArray6775!![i_57_] = (class277_54_.anInt3563)
                                         anIntArray9480!![i_57_] = i_59_
                                         ProjectileFactory.anIntArray2899!![i_57_] = (class277_54_.anInt3575)
@@ -241,25 +241,25 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                         }
                     }
                 }
-                if (locTypeConfig == null) break
-                val i_61_ = method3266(var_renderer, i_3_ xor 0x7e.inv(), locTypeConfig)
-                if (!locTypeConfig.aBoolean3560) break
+                if (floorOverlayType == null) break
+                val i_61_ = method3266(var_renderer, i_3_ xor 0x7e.inv(), floorOverlayType)
+                if (!floorOverlayType.aBoolean3560) break
                 for (i_62_ in 0..7) {
                     val i_63_ = -(i_4_ * 2) + i_62_ and 0x7
-                    if (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_7_]!![i_62_] && (WorldMapToggle.anIntArray3873!![i_63_] <= locTypeConfig.anInt3564)) {
-                        MenuActionNode.anIntArray6775!![i_63_] = locTypeConfig.anInt3563
+                    if (VarcType.aBooleanArrayArray2133!![i_7_]!![i_62_] && (WorldMapToggle.anIntArray3873!![i_63_] <= floorOverlayType.anInt3564)) {
+                        MenuActionNode.anIntArray6775!![i_63_] = floorOverlayType.anInt3563
                         anIntArray9480!![i_63_] = i_61_
-                        ProjectileFactory.anIntArray2899!![i_63_] = locTypeConfig.anInt3575
-                        anIntArray6631!![i_63_] = locTypeConfig.anInt3570
-                        if (WorldMapToggle.anIntArray3873!![i_63_] != locTypeConfig.anInt3564) HintIconState.anIntArray2370!![i_63_] = 2
+                        ProjectileFactory.anIntArray2899!![i_63_] = floorOverlayType.anInt3575
+                        anIntArray6631!![i_63_] = floorOverlayType.anInt3570
+                        if (WorldMapToggle.anIntArray3873!![i_63_] != floorOverlayType.anInt3564) HintIconState.anIntArray2370!![i_63_] = 2
                         else HintIconState.anIntArray2370!![i_63_] = WhirlpoolHash.method2057((HintIconState.anIntArray2370!![i_63_]), 2)
-                        WorldMapToggle.anIntArray3873!![i_63_] = locTypeConfig.anInt3564
+                        WorldMapToggle.anIntArray3873!![i_63_] = floorOverlayType.anInt3564
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(
                     runtimeexception,
-                    ("sr.M(" + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (locTypeConfig != null) "{...}" else "null") + ',' + (if (hslColorConfig != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
+                    ("sr.M(" + i + ',' + i_0_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_1_ + ',' + (if (is_2_ != null) "{...}" else "null") + ',' + i_3_ + ',' + (if (floorOverlayType != null) "{...}" else "null") + ',' + (if (floorUnderlayType != null) "{...}" else "null") + ',' + (if (bools != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (is_5_ != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
                 )
             }
             break
@@ -522,14 +522,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                             }
                                             is_106_[i_103_] = i_126_
                                             is_107_[i_103_] = i_125_
-                                            if (is_111_ != null && (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_76_.toInt()]!![i_121_])) {
+                                            if (is_111_ != null && (VarcType.aBooleanArrayArray2133!![i_76_.toInt()]!![i_121_])) {
                                                 val i_127_ = (i_126_ + (i_71_ shl 9))
                                                 val i_128_ = i_125_ + (i_73_ shl 9)
                                                 is_111_[i_103_] = ((var_terrainTile!!.method3986(i_127_, i_128_, 124.toByte())) + -(var_terrainTile_64_!!.method3986(i_127_, i_128_, (-118).toByte())))
                                             }
                                             if (is_112_ != null) {
-                                                if (var_terrainTile == null || (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_76_.toInt()]!![i_121_])) {
-                                                    if (var_terrainTile_65_ != null && !(ParamMap.aBooleanArrayArray9495!![i_76_.toInt()]!![i_121_])) {
+                                                if (var_terrainTile == null || (VarcType.aBooleanArrayArray2133!![i_76_.toInt()]!![i_121_])) {
+                                                    if (var_terrainTile_65_ != null && !(StructType.aBooleanArrayArray9495!![i_76_.toInt()]!![i_121_])) {
                                                         val i_129_ = ((i_71_ shl 9) - -i_126_)
                                                         val i_130_ = ((i_73_ shl 9) + i_125_)
                                                         is_112_[i_103_] = ((var_terrainTile_65_.method3986(i_129_, i_130_, (-105).toByte())) + -(var_terrainTile_64_!!.method3986(i_129_, i_130_, (-109).toByte())))
@@ -639,14 +639,14 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                             }
                                             is_106_[i_103_] = i_146_
                                             is_107_[i_103_] = i_145_
-                                            if (is_111_ != null && (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {
+                                            if (is_111_ != null && (VarcType.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {
                                                 val i_147_ = (i_146_ + (i_71_ shl 9))
                                                 val i_148_ = ((i_73_ shl 9) - -i_145_)
                                                 is_111_[i_103_] = ((var_terrainTile!!.method3986(i_147_, i_148_, (-95).toByte())) - (var_terrainTile_64_!!.method3986(i_147_, i_148_, 69.toByte())))
                                             }
                                             if (is_112_ != null) {
-                                                if (var_terrainTile == null || (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {
-                                                    if (var_terrainTile_65_ != null && !(ParamMap.aBooleanArrayArray9495!![i_76_.toInt()]!![i_141_])) {
+                                                if (var_terrainTile == null || (VarcType.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {
+                                                    if (var_terrainTile_65_ != null && !(StructType.aBooleanArrayArray9495!![i_76_.toInt()]!![i_141_])) {
                                                         val i_149_ = ((i_71_ shl 9) - -i_146_)
                                                         val i_150_ = (i_145_ + (i_73_ shl 9))
                                                         is_112_[i_103_] = ((var_terrainTile_65_.method3986(i_149_, i_150_, 92.toByte())) + -(var_terrainTile_64_!!.method3986(i_149_, i_150_, 127.toByte())))
@@ -663,7 +663,7 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                                 is_109_[i_103_] = (ProjectileFactory.anIntArray2899!![i_142_])
                                                 is_108_[i_103_] = (MenuActionNode.anIntArray6775!![i_142_])
                                             } else {
-                                                if (!bool_75_ || !(KeyboardLayoutConfig.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {
+                                                if (!bool_75_ || !(VarcType.aBooleanArrayArray2133!![i_76_.toInt()]!![i_141_])) {
                                                     if ((i_146_ == 0) && i_145_ == 0) {
                                                         is_108_[i_103_] = `is`!![i_71_]!![i_73_]
                                                         is_109_[i_103_] = (class22_133_!!.anInt331)
@@ -1089,17 +1089,17 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
                                         val i_255_ = i_253_
                                         is_249_[i_252_] = i_255_
                                     }
-                                    if (is_250_ != null && (KeyboardLayoutConfig.aBooleanArrayArray2133!![i_228_.toInt()]!![i_252_])) {
+                                    if (is_250_ != null && (VarcType.aBooleanArrayArray2133!![i_228_.toInt()]!![i_252_])) {
                                         val i_257_ = (is_248_[i_252_] + (i_226_ shl 9))
                                         val i_258_ = ((i_227_ shl 9) - -is_249_[i_252_])
                                         is_250_[i_252_] = (var_terrainTile!!.method3986(i_257_, i_258_, (-101).toByte()) + -(var_terrainTile_224_!!.method3986(i_257_, i_258_, (-12).toByte())))
                                     }
                                     if (is_251_ != null) {
-                                        if (var_terrainTile != null && !(KeyboardLayoutConfig.aBooleanArrayArray2133!![i_228_.toInt()]!![i_252_])) {
+                                        if (var_terrainTile != null && !(VarcType.aBooleanArrayArray2133!![i_228_.toInt()]!![i_252_])) {
                                             val i_259_ = (is_248_[i_252_] + (i_226_ shl 9))
                                             val i_260_ = ((i_227_ shl 9) + is_249_[i_252_])
                                             is_251_[i_252_] = ((var_terrainTile_224_!!.method3986(i_259_, i_260_, 87.toByte())) - (var_terrainTile.method3986(i_259_, i_260_, (-90).toByte())))
-                                        } else if (var_terrainTile_225_ != null && !(ParamMap.aBooleanArrayArray9495!![i_228_.toInt()]!![i_252_])) {
+                                        } else if (var_terrainTile_225_ != null && !(StructType.aBooleanArrayArray9495!![i_228_.toInt()]!![i_252_])) {
                                             val i_261_ = (is_248_[i_252_] + (i_226_ shl 9))
                                             val i_262_ = (is_249_[i_252_] + (i_227_ shl 9))
                                             is_251_[i_252_] = ((var_terrainTile_225_.method3986(i_261_, i_262_, (-128).toByte())) + -(var_terrainTile_224_!!.method3986(i_261_, i_262_, (-1).toByte())))
@@ -1371,19 +1371,19 @@ open class WorldMapScene(i: Int, i_315_: Int, i_316_: Int, bool: Boolean, floorO
         }
 
         var anInt9674: Int = 0
-        fun method3266(var_renderer: Renderer?, i: Int, locTypeConfig: LocTypeConfig?): Int {
+        fun method3266(var_renderer: Renderer?, i: Int, floorOverlayType: FloorOverlayType?): Int {
             try {
                 anInt9674++
-                if (locTypeConfig!!.anInt3569 == -1) {
-                    if (locTypeConfig.anInt3575 != -1) {
-                        val class12 = var_renderer!!.aRenderConfig4579!!.method3(locTypeConfig.anInt3575, -6662)
+                if (floorOverlayType!!.anInt3569 == -1) {
+                    if (floorOverlayType.anInt3575 != -1) {
+                        val class12 = var_renderer!!.aRenderConfig4579!!.method3(floorOverlayType.anInt3575, -6662)
                         if (!class12!!.aBoolean209) return class12.aShort208.toInt()
                     }
-                } else return locTypeConfig.anInt3569
+                } else return floorOverlayType.anInt3569
                 if (i <= 123) return -68
-                return locTypeConfig.anInt3563
+                return floorOverlayType.anInt3563
             } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("gw.F(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (locTypeConfig != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("gw.F(" + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + (if (floorOverlayType != null) "{...}" else "null") + ')'))
             }
         }
         var anIntArray6631: IntArray? = IntArray(13)

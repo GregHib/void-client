@@ -67,7 +67,7 @@ class RemoveRoofLightingDetailOptionState : GraphicsOptionState {
             if (i <= 89) anInt5994 = -75
             TextureOptionState.aCircleRasterizer_6098 = null
             HeapInfoRecord.aCircleRasterizer_4938 = null
-            ParameterizedText.aCircleRasterizer_9571 = null
+            QuickChatMenuType.aCircleRasterizer_9571 = null
         }
 
         @JvmStatic
@@ -93,7 +93,7 @@ class RemoveRoofLightingDetailOptionState : GraphicsOptionState {
                 val width = ParticleSystemRenderer.aCanvas3869!!.getWidth()
                 val height = ParticleSystemRenderer.aCanvas3869!!.getHeight()
                 Tooltip.method3511(true, GameAppletFrame.aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, LocalizedText.aLocalizedText_3496!!.method2063(ChatCommandProcessor.language, 544), 2, FacingDirectionNode.aRenderer6654)
-                val class124 = ParticleConfigParser.method2277(0, RasterSprite.models!!, AbstractFrameBufferSurface.anInt6923, -1)
+                val class124 = SkyBoxType.method2277(0, RasterSprite.models!!, AbstractFrameBufferSurface.anInt6923, -1)
                 val l = GameClock.method599(-88)
                 FacingDirectionNode.aRenderer6654!!.la()
                 SettingsCrcWriter.aAbstractCameraTransform_2123!!.method894(0, ActorEntity.anInt9037, 0)

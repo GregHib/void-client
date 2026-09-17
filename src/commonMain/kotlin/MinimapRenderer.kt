@@ -112,7 +112,7 @@ class MinimapRenderer internal constructor(private val aHa_Sub2_1581: OpenGlRend
                     DragDropController.anInt6392 = 0
                     HitsplatTypeList.anInt2872 = i_5_
                     SceneEntityModel.anInt6411 = i
-                    ParticleConfigParser.aBoolean3819 = false
+                    SkyBoxType.aBoolean3819 = false
                 }
             }
         }

@@ -9,7 +9,7 @@ import lang.StringBuffer
 /* Class348_Sub42_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParameterizedText : HashLinkedListNode() {
+class QuickChatMenuType : HashLinkedListNode() {
     var aBoolean9562: Boolean = true
     private var aStringArray9564: Array<String?>? = null
     private lateinit var anIntArrayArray9565: Array<IntArray?>

@@ -14,7 +14,7 @@ class MapSceneTile {
 
     companion object {
 
-        var aWidgetDefinitionArray1048s: Array<WidgetDefinition?>? = arrayOfNulls<WidgetDefinition>(14)
+        var aAnimationTypeArray1048s: Array<AnimationType?>? = arrayOfNulls<AnimationType>(14)
 
         var anInt1049: Int = 0
 
@@ -35,7 +35,7 @@ class MapSceneTile {
 
         @JvmStatic
         fun method530(i: Int) {
-            aWidgetDefinitionArray1048s = null
+            aAnimationTypeArray1048s = null
             aBoxedIntHolder_1055 = null
             aAudioResampler_1050 = null
             aConfigFlagUtil_1051 = null

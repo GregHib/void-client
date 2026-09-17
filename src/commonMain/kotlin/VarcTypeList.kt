@@ -6,22 +6,22 @@ class VarcTypeList internal constructor(sceneProjector: SceneProjector?, i: Int,
     private val aJs5Archive_3299: Js5Archive?
     private val aLruByteCache_3303 = LruByteCache(64)
     var anInt3305: Int = 0
-    fun method1976(i: Int, i_1_: Int): KeyboardLayoutConfig {
+    fun method1976(i: Int, i_1_: Int): VarcType {
         anInt3302++
-        var keyboardLayoutConfig: KeyboardLayoutConfig? = withLock(aLruByteCache_3303) {
-            aLruByteCache_3303.method583(i.toLong(), -51) as KeyboardLayoutConfig?
+        var varcType: VarcType? = withLock(aLruByteCache_3303) {
+            aLruByteCache_3303.method583(i.toLong(), -51) as VarcType?
         }
-        if (keyboardLayoutConfig != null) return keyboardLayoutConfig
+        if (varcType != null) return varcType
         val i_2_ = 44 % ((-41 - i_1_) / 33)
         val `is`: ByteArray? = withLock(aJs5Archive_3299!!) {
             aJs5Archive_3299.method410(-1860, 19, i)
         }
-        keyboardLayoutConfig = KeyboardLayoutConfig()
-        if (`is` != null) keyboardLayoutConfig.method1255(ByteBuffer(`is`), -1)
+        varcType = VarcType()
+        if (`is` != null) varcType.method1255(ByteBuffer(`is`), -1)
         withLock(aLruByteCache_3303) {
-            aLruByteCache_3303.method582(keyboardLayoutConfig, i.toLong(), (-120).toByte())
+            aLruByteCache_3303.method582(varcType, i.toLong(), (-120).toByte())
         }
-        return keyboardLayoutConfig
+        return varcType
     }
 
     init {

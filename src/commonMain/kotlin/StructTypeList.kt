@@ -30,22 +30,22 @@ class StructTypeList internal constructor(sceneProjector: SceneProjector?, i: In
         }
     }
 
-    fun method700(i: Int, i_8_: Int): ParamMap {
+    fun method700(i: Int, i_8_: Int): StructType {
         anInt1143++
         val i_9_ = -128 / ((-3 - i_8_) / 49)
-        var class348_sub42_sub1: ParamMap? = withLock(aLruByteCache_1145) {
-            aLruByteCache_1145.method583(i.toLong(), -101) as ParamMap?
+        var structType: StructType? = withLock(aLruByteCache_1145) {
+            aLruByteCache_1145.method583(i.toLong(), -101) as StructType?
         }
-        if (class348_sub42_sub1 != null) return class348_sub42_sub1
+        if (structType != null) return structType
         val `is`: ByteArray? = withLock(aJs5Archive_1141!!) {
             aJs5Archive_1141.method410(-1860, 26, i)
         }
-        class348_sub42_sub1 = ParamMap()
-        if (`is` != null) class348_sub42_sub1.method3168(ByteBuffer(`is`), (-101).toByte())
+        structType = StructType()
+        if (`is` != null) structType.method3168(ByteBuffer(`is`), (-101).toByte())
         withLock(aLruByteCache_1145) {
-            aLruByteCache_1145.method582(class348_sub42_sub1, i.toLong(), (-114).toByte())
+            aLruByteCache_1145.method582(structType, i.toLong(), (-114).toByte())
         }
-        return class348_sub42_sub1
+        return structType
     }
 
     init {

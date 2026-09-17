@@ -48,27 +48,27 @@ class WorldMapInfoTypeList internal constructor(sceneProjector: SceneProjector?,
         }
     }
 
-    fun method1225(i: Int, i_9_: Byte): StructConfig? {
+    fun method1225(i: Int, i_9_: Byte): WorldMapInfoType? {
         anInt2085++
-        var structConfig: StructConfig? = null
+        var worldMapInfoType: WorldMapInfoType? = null
         withLock(aLruByteCache_2083) {
-            structConfig = aLruByteCache_2083.method583(i.toLong(), 91) as StructConfig?
+            worldMapInfoType = aLruByteCache_2083.method583(i.toLong(), 91) as WorldMapInfoType?
         }
-        if (structConfig != null) return structConfig
+        if (worldMapInfoType != null) return worldMapInfoType
         if (i_9_ < 36) return null
         var `is`: ByteArray? = null
         withLock(aJs5Archive_2084!!) {
             `is` = aJs5Archive_2084.method410(-1860, 36, i)
         }
-        structConfig = StructConfig()
-        structConfig.aWorldMapInfoTypeList_593 = this
-        structConfig.anInt581 = i
-        if (`is` != null) structConfig.method379(ByteBuffer(`is`), 109)
-        structConfig.method372(-25359)
+        worldMapInfoType = WorldMapInfoType()
+        worldMapInfoType.aWorldMapInfoTypeList_593 = this
+        worldMapInfoType.anInt581 = i
+        if (`is` != null) worldMapInfoType.method379(ByteBuffer(`is`), 109)
+        worldMapInfoType.method372(-25359)
         withLock(aLruByteCache_2083) {
-            aLruByteCache_2083.method582(structConfig, i.toLong(), (-106).toByte())
+            aLruByteCache_2083.method582(worldMapInfoType, i.toLong(), (-106).toByte())
         }
-        return structConfig
+        return worldMapInfoType
     }
 
     init {

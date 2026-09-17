@@ -20,7 +20,7 @@ import CollisionMapRegion.Companion.method1047
 import CameraNodeList.Companion.method1057
 import OverlayColorTable.method1061
 import InputSettingsState.method1062
-import CacheArchiveIndex.Companion.method1064
+import EnumType.Companion.method1064
 import MapSceneTileDefinition.Companion.method1075
 import MinimapFlagRenderer.method1081
 import ObjectSpawnDecoder.method1086
@@ -42,7 +42,7 @@ import SpriteLoadValidator.Companion.method1159
 import GlTextureBase.Companion.method237
 import ScreenBorderFiller.method1168
 import ScreenBorderFiller.method1169
-import HitsplatDefinition.Companion.method1194
+import VarbitType.Companion.method1194
 import HintArrowOrMessage.Companion.method1195
 import WidgetNodeLink.Companion.method1198
 import OrientationRotator.method1200
@@ -60,7 +60,7 @@ import LinkedListIterator.Companion.method1242
 import SettingsCrcWriter.method1246
 import HeapInfoRecord.Companion.method1249
 import SceneTilePlaneManager.method260
-import KeyboardLayoutConfig.Companion.method1254
+import VarcType.Companion.method1254
 import ServerConnectionInfo.Companion.method1261
 import ClientLoadStateMachine.method1265
 import RgbColorPalette.Companion.method1267
@@ -69,7 +69,7 @@ import AudioResampler.Companion.method1276
 import CursorTypeList.Companion.method1284
 import ParticleSystemState.Companion.method1293
 import HeapDiagnosticsHolder.method1298
-import WidgetDefinition.Companion.method265
+import AnimationType.Companion.method265
 import VarpStore.Companion.method1309
 import VarpStore.Companion.method1310
 import VarpStore.Companion.method1315
@@ -111,11 +111,11 @@ import VorbisFloorDecoder.Companion.method1536
 import CompressedBlockDecoder.method1551
 import ItemType.Companion.method1564
 import VarPlayerTypeList.Companion.method1585
-import MapSceneIconDef.Companion.method1594
+import MapSceneType.Companion.method1594
 import HitsplatTypeList.Companion.method1600
 import HitsplatTypeList.Companion.method1604
-import HslColorConfig.Companion.method294
-import NpcDefinition.Companion.method1619
+import FloorUnderlayType.Companion.method294
+import RenderAnimType.Companion.method1619
 import QuickChatTypeList.Companion.method1624
 import BoxedIntHolder.Companion.method1627
 import NativeLibraryUnloader.method1628
@@ -159,7 +159,7 @@ import TileTransform.method1907
 import BackgroundWorkerThread.Companion.method1910
 import ConfigFlagUtil.Companion.method1912
 import SmoothingBuffer.Companion.method1917
-import EmoteDefinition.Companion.method1926
+import ParamType.Companion.method1926
 import ItemTypeList.Companion.method1931
 import ChatCommandProcessor.method1944
 import GlTexture3D.Companion.method1959
@@ -181,7 +181,7 @@ import BoundsConstraintEntry.Companion.method2055
 import CollisionMapAccessor.method2064
 import CollisionMapAccessor.method2065
 import CollisionMapAccessor.method2066
-import LocTypeConfig.Companion.method2071
+import FloorOverlayType.Companion.method2071
 import NativeSoundOutput.Companion.method2097
 import ItemNameResolver.Companion.method318
 import GroundDecorRenderer.Companion.method2104
@@ -221,7 +221,7 @@ import HeightMapNoise.method2281
 import ProjectileDefinition.method2286
 import ParticleSystemRenderer.Companion.method2294
 import ConfigVarProgress.Companion.method2310
-import ItemModelDefinition.Companion.method328
+import HitsplatType.Companion.method328
 import ResourceLoaderThread.Companion.method2317
 import WidgetRedrawTracker.Companion.method2331
 import SkyboxGradient.method2333
@@ -269,8 +269,8 @@ import GlShaderProgramHandle.Companion.method2658
 import MapTileShape.Companion.method2662
 import MapRegionLoaderThread.Companion.method2664
 import MapRegionLoaderThread.Companion.method2666
-import SkeletalAnimFrameLoader.Companion.method347
-import SkeletalAnimFrameLoader.Companion.method351
+import IdentityKitType.Companion.method347
+import IdentityKitType.Companion.method351
 import RsaPacketDecoder.Companion.method2671
 import RsaPacketDecoder.Companion.method2672
 import TileRenderState.Companion.method2676
@@ -338,9 +338,9 @@ import DisplaceTextureNode.Companion.method3062
 import FlipTextureNode.Companion.method3066
 import EdgeDetectTextureNode.Companion.method3071
 import RegionSceneShifter.Companion.method3155
-import ParamMap.Companion.method3165
-import ParameterizedText.Companion.method3217
-import CharCodeMap.Companion.method3220
+import StructType.Companion.method3165
+import QuickChatMenuType.Companion.method3217
+import QuickChatType.Companion.method3220
 import ContactEntry.Companion.method3228
 import ContactEntry.Companion.method3229
 import InterfaceComponentGroup.Companion.method3237
@@ -395,7 +395,7 @@ import GlGroundShaderPass.Companion.method3557
 import GlWaterRenderPass.Companion.method3537
 import GlCubemapLightPass.Companion.method3541
 import GlEnvMappedWaterPass.Companion.method3552
-import LocConfigModelBuilder.Companion.method3560
+import GfxType.Companion.method3560
 import WorldMapLabel.Companion.method3567
 import WorldMapTextLabel.Companion.method3572
 import WorldMapIconLabel.Companion.method3574
@@ -404,7 +404,7 @@ import MouseInputTracker.Companion.method3609
 import BufferedFileReader.method3611
 import PlayerAppearanceUpdateDecoder.method3613
 import GlRenderDevice.Companion.method3968
-import WidgetTextConfig.Companion.method363
+import SkyboxSphereType.Companion.method363
 import GlShaderObjectHandle.Companion.method367
 import NpcModelTransform.Companion.method177
 import MinimapTileEntry.Companion.method380
@@ -512,14 +512,14 @@ import MaterialPass.Companion.method2138
 import MultiLevelOptionState.Companion.method1851
 import NoOpGraphicsOptionState.Companion.method1803
 import FogOptionState.Companion.method1788
-import SkeletalAnimFrameLoader.Companion.method349
+import IdentityKitType.Companion.method349
 import SkyboxGradient.method2334
 import SocketFactory.Companion.method2049
 import TextureGenerator.Companion.method1397
 import TileSceneEntity.Companion.method2396
 import LightingDetailOptionState.Companion.method1844
 import WhirlpoolHash.Companion.method1166
-import WidgetTextConfig.Companion.method362
+import SkyboxSphereType.Companion.method362
 import awt.Canvas
 import awt.Component
 import awt.Container
@@ -710,7 +710,7 @@ class Client : GameAppletFrame() {
             TextureCubeProvider.aBufferedRandomAccessFile_6328 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785!!), 5200, 0)
             for (i_3_ in 0..36) MinimapRenderer.aBufferedRandomAccessFileArray1579!![i_3_] = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDiskArray3795!![i_3_]!!), 6000, 0)
             SceneObjectAnimator.aBufferedRandomAccessFile_3075 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779!!), 6000, 0)
-            LocTypeConfig.aIndexedFileCache_3568 = IndexedFileCache(255, TextureCubeProvider.aBufferedRandomAccessFile_6328, SceneObjectAnimator.aBufferedRandomAccessFile_3075, 500000)
+            FloorOverlayType.aIndexedFileCache_3568 = IndexedFileCache(255, TextureCubeProvider.aBufferedRandomAccessFile_6328, SceneObjectAnimator.aBufferedRandomAccessFile_3075, 500000)
             BufferedFileReader.aBufferedRandomAccessFile_4538 = BufferedRandomAccessFile((VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3788!!), 24, 0)
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3779 = null
             VorbisOggDecoder.aPrivilegedOperationWorker_8992!!.aRandomAccessFileOnDisk_3785 = null
@@ -827,7 +827,7 @@ class Client : GameAppletFrame() {
         NpcType.method3269(true)
         method265(false)
         method1375(5616)
-        CharCodeMap.method609((-52).toByte())
+        QuickChatType.method609((-52).toByte())
         method355(i + 4189)
         method1426(25165)
         method2254(i.toInt() xor 0x39bf.inv())
@@ -943,7 +943,7 @@ class Client : GameAppletFrame() {
         method1267(85.toByte())
         GraphicsOptionState.method3024(-100)
         method177()
-        UnderlayDefinition.method1609((-121).toByte())
+        CursorType.method1609((-121).toByte())
         SizeBoundedSoftCache.method1349((-121).toByte())
         method3560(-13)
         method1062(35.toByte())
@@ -952,12 +952,12 @@ class Client : GameAppletFrame() {
         method3491(1)
         method2805(113.toByte())
         method2071(-128)
-        HslColorConfig.method293((-83).toByte())
+        FloorUnderlayType.method293((-83).toByte())
         method351(80)
         method1194(10)
         method1594(-1966608624)
         method1926(-127)
-        LocTypeDefinition.method2549((-85).toByte())
+        QuestType.method2549((-85).toByte())
         method3165(44.toByte())
         MinimapStateReset.method1369(2.toByte())
         ScriptOpcodeHolder.method1334((-110).toByte())
@@ -1282,9 +1282,9 @@ class Client : GameAppletFrame() {
         anInt5170++
         method556(false)
         if (FacingDirectionNode.aRenderer6654 != null) FacingDirectionNode.aRenderer6654!!.method3635(89.toByte())
-        if (SkeletalAnimFrameLoader.aFrame476 != null) {
-            method527(SkeletalAnimFrameLoader.aFrame476, VorbisOggDecoder.aPrivilegedOperationWorker_8992, false)
-            SkeletalAnimFrameLoader.aFrame476 = null
+        if (IdentityKitType.aFrame476 != null) {
+            method527(IdentityKitType.aFrame476, VorbisOggDecoder.aPrivilegedOperationWorker_8992, false)
+            IdentityKitType.aFrame476 = null
         }
         if (Client.aAbstractGameSocket_9165 != null) {
             Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
@@ -1381,8 +1381,8 @@ class Client : GameAppletFrame() {
                     Renderer.anInt4583 = 0
                 }
             }
-            UnderlayDefinition.anInt2884 = this.getParameter("colourid")!!.toInt()
-            if (UnderlayDefinition.anInt2884 < 0 || GlVertexBufferBase.aColorArray1928!!.size <= UnderlayDefinition.anInt2884) UnderlayDefinition.anInt2884 = 0
+            CursorType.anInt2884 = this.getParameter("colourid")!!.toInt()
+            if (CursorType.anInt2884 < 0 || GlVertexBufferBase.aColorArray1928!!.size <= CursorType.anInt2884) CursorType.anInt2884 = 0
             if (this.getParameter("sitesettings_member")!!.toInt() == 1) {
                 ItemActionPacketSender.aBoolean2110 = true
                 FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
@@ -1438,7 +1438,7 @@ class Client : GameAppletFrame() {
     }
 
     private fun method113(i: Byte) {
-        if (WorldMapRenderer.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) {
+        if (WorldMapRenderer.anInt4674 == 7 && RenderAnimType.anInt2955 == 0) {
             if (RegionSceneLoader.anInt3699 > 1) {
                 TurbulenceTextureNode.anInt9313 = ResourceLoaderThread.anInt3918
                 RegionSceneLoader.anInt3699--
@@ -1495,7 +1495,7 @@ class Client : GameAppletFrame() {
             }
             i_96_++
         }
-        if (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0) {
+        if (RenderAnimType.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0) {
             if (WeaveTextureNode.anInt9282 == 2) method241(127.toByte())
             else CameraSplineNode.method2954((-127).toByte())
             if (GlslMaterialPass.anInt6246 shr 9 < 14 || (GlslMaterialPass.anInt6246 shr 9 >= -14 + GlCubemapLightPass.anInt7319) || (CompositeRgbNoiseTexture.anInt8685 shr 9 < 14) || (RangeThresholdTextureNode.anInt9109 + -14 <= CompositeRgbNoiseTexture.anInt8685 shr 9)) AbstractCameraTransformStatics.method893((-49).toByte())
@@ -1539,9 +1539,9 @@ class Client : GameAppletFrame() {
         }
         if (RegionSceneLoader.aWidgetComponent_3701 != null) method2708(-30206)
         if (GlGroundShaderPass.anInt7396 % 1500 == 0) method3088(9)
-        if (WorldMapRenderer.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) method1987(-124)
+        if (WorldMapRenderer.anInt4674 == 7 && RenderAnimType.anInt2955 == 0) method1987(-124)
         AbstractCameraTransformStatics.method909(3553)
-        if (ScanlineRasterFiller.aBoolean2469 && (SkeletalAnimFrameLoader.aLong482 < method599(-107) + -60000L)) method2405(41)
+        if (ScanlineRasterFiller.aBoolean2469 && (IdentityKitType.aLong482 < method599(-107) + -60000L)) method2405(41)
         var class318_sub9_sub1 = (InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1872(8) as NamedTimedNode?)
         while (class318_sub9_sub1 != null) {
             if (class318_sub9_sub1.anInt8787.toLong() < -5L + method599(-80) / 1000L) {
@@ -1552,7 +1552,7 @@ class Client : GameAppletFrame() {
             class318_sub9_sub1 = InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1878((-43).toByte()) as NamedTimedNode?
         }
         do {
-            if (WorldMapRenderer.anInt4674 == 7 && NpcDefinition.anInt2955 == 0) {
+            if (WorldMapRenderer.anInt4674 == 7 && RenderAnimType.anInt2955 == 0) {
                 if (Client.aAbstractGameSocket_9165 == null) method3141(false, 11.toByte())
                 else {
                     SceneRegionState.anInt193++
@@ -1598,7 +1598,7 @@ class Client : GameAppletFrame() {
             GlTexture1D.aInputTracker_8552!!.method3589(0)
             if (FacingDirectionNode.aRenderer6654 != null) FacingDirectionNode.aRenderer6654!!.method3646(method599(-74).toInt())
             method1315(93)
-            CameraConfigDefinition.anInt3246 = 0
+            LightType.anInt3246 = 0
             MinimapAreaMarkerNode.anInt9699 = 0
             var interface6 = LoadProgressCounters.aKeyboardInputSource_2449!!.method2697(0)
             while (interface6 != null) {
@@ -1612,9 +1612,9 @@ class Client : GameAppletFrame() {
                         }
                     } else if (!method3263(true)) IntHashSetStatics.method2363(-84)
                     else GlCubemapLightPass.method3543((-89).toByte())
-                } else if (i_109_ == 0 && CameraConfigDefinition.anInt3246 < 75) {
-                    CacheLruCache.anCharStreamReaderArray3884s!![CameraConfigDefinition.anInt3246] = interface6
-                    CameraConfigDefinition.anInt3246++
+                } else if (i_109_ == 0 && LightType.anInt3246 < 75) {
+                    CacheLruCache.anCharStreamReaderArray3884s!![LightType.anInt3246] = interface6
+                    LightType.anInt3246++
                 }
                 interface6 = LoadProgressCounters.aKeyboardInputSource_2449!!.method2697(0)
             }
@@ -1691,10 +1691,10 @@ class Client : GameAppletFrame() {
             val bool_118_ = method2163(!bool)
             if (bool_118_ && RgbColorPalette.aBoolean1236 && ClientLoadStateMachine.aSoundChannelMixer_7042 != null) ClientLoadStateMachine.aSoundChannelMixer_7042!!.method2087(-115)
             if (WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) {
-                if ((PcmStreamBuffer.aLong8866 != 0L) && method599(-98) > PcmStreamBuffer.aLong8866) ChatCommandProcessor.method830(method3229(-128), LocTypeDefinition.anInt4005, 102.toByte(), false, RadialTextureNode.anInt9335)
+                if ((PcmStreamBuffer.aLong8866 != 0L) && method599(-98) > PcmStreamBuffer.aLong8866) ChatCommandProcessor.method830(method3229(-128), QuestType.anInt4005, 102.toByte(), false, RadialTextureNode.anInt9335)
                 else if (!FacingDirectionNode.aRenderer6654!!.method3655() && ProjectileSpawner.aBoolean2674) method3327(1406)
             }
-            if (SkeletalAnimFrameLoader.aFrame476 == null) {
+            if (IdentityKitType.aFrame476 == null) {
                 val container: Container?
                 if (RsaVarbitHandler.aFrame4904 == null) {
                     if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
@@ -1717,7 +1717,7 @@ class Client : GameAppletFrame() {
                     TextureLoadExceptionStatics.aBoolean4604 = false
                 }
             }
-            if (SkeletalAnimFrameLoader.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+            if (IdentityKitType.aFrame476 != null && !SizeBoundedSoftCache.aBoolean2329 && WalkingTypeUtil.method1977((-79).toByte(), WorldMapRenderer.anInt4674)) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
             var bool_120_ = false
             if (SpriteRenderable.aBoolean4726) {
                 bool_120_ = true
@@ -1734,8 +1734,8 @@ class Client : GameAppletFrame() {
                             val i = ((-FloorOverlayTypeList.anInt3441 + StringValueNode.anInt7115) * 50 / StringValueNode.anInt7115)
                             method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.language, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
                         } else if (AnimationFrameTable.anInt489 == 2) {
-                            if (ItemModelDefinition.anInt443 < CompositeNpcModelBuilder.anInt2101) ItemModelDefinition.anInt443 = CompositeNpcModelBuilder.anInt2101
-                            val i = (((ItemModelDefinition.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / ItemModelDefinition.anInt443) + 50)
+                            if (HitsplatType.anInt443 < CompositeNpcModelBuilder.anInt2101) HitsplatType.anInt443 = CompositeNpcModelBuilder.anInt2101
+                            val i = (((HitsplatType.anInt443 - CompositeNpcModelBuilder.anInt2101) * 50 / HitsplatType.anInt443) + 50)
                             method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.language, 544)) + "<br>(" + i + "%)", 2, FacingDirectionNode.aRenderer6654)
                         } else method3511(true, aRSFont_20, ParticleEmitterFactoryStatics.aFontDefinition_3179, (LocalizedText.aLocalizedText_3495!!.method2063(ChatCommandProcessor.language, 544)), 2, FacingDirectionNode.aRenderer6654)
                     } else if (WorldMapRenderer.anInt4674 != 10) {
@@ -1812,7 +1812,7 @@ class Client : GameAppletFrame() {
             string = ("[1)" + ArbVertexProgram.regionTileX + "," + RegionMapDecoder.regionTileY + "," + GlCubemapLightPass.anInt7319 + "," + RangeThresholdTextureNode.anInt9109 + "|")
             if (i < 40) aNodeDeque_5185 = null
             if (LocalPlayerState.aPlayer_1907 != null) string += ("2)" + QuickChatMenuTypeList.anInt4372 + "," + (ArbVertexProgram.regionTileX + (LocalPlayerState.aPlayer_1907!!.anIntArray10320!![0])) + "," + (RegionMapDecoder.regionTileY + (LocalPlayerState.aPlayer_1907!!.anIntArray10317!![0])) + "|")
-            string += ("3)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + LocTypeDefinition.anInt4017 + "," + GameDisplayManager.anInt10432 + "|")
+            string += ("3)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) + "|4)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7216!!.method1808(-32350) + "|5)" + method3229(-65) + "|6)" + QuestType.anInt4017 + "," + GameDisplayManager.anInt10432 + "|")
             string += "7)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub28_7230!!.method1845(-32350) + "|"
             string += "8)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub7_7238!!.method1748(-32350) + "|"
             string += "9)" + IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub18_7259!!.method1800(-32350) + "|"
@@ -2041,7 +2041,7 @@ class Client : GameAppletFrame() {
                     FrameBufferObject.aBoolean4888 = ItemActionPacketSender.aBoolean2110
                     PlayerAppearanceUpdateDecoder.aBoolean4540 = false
                     ConfigFlagUtil.anInt3234 = 0
-                    UnderlayDefinition.anInt2884 = (mode!!.anInt2987)
+                    CursorType.anInt2884 = (mode!!.anInt2987)
                     Renderer.anInt4583 = 0
                     Gl2dTexture.aString8605 = null
                     val var_client = Client()
@@ -2232,7 +2232,7 @@ class Client : GameAppletFrame() {
                                                     i_66_ = ((LocalPlayerState.aPlayer_1907!!.x) - i_68_ shr 9) + (i_64_ shr 2)
                                                     i_67_ = ((LocalPlayerState.aPlayer_1907!!.y) - i_68_ shr 9) - (i_65_ shr 2)
                                                 }
-                                                if (RenderNodeStatics.aBoolean9722 && ((WidgetTextConfig.anInt500 and 0x40) != 0)) {
+                                                if (RenderNodeStatics.aBoolean9722 && ((SkyboxSphereType.anInt500 and 0x40) != 0)) {
                                                     val class46_69_ = (NpcReference.method2957(NativeLibraryState.anInt169, (-54).toByte(), OrientationRotator.anInt2046))
                                                     if (class46_69_ != null) MinimapPolygonDrawer.method466(false, " ->", i_67_, (-109).toByte(), true, i_66_, (class46.anInt812), true, 15, (((class46.anInt704) shl 0) or (class46.anInt830)).toLong(), ItemNameResolver.aString5001, 1L, (FloatBuffer.anInt9747))
                                                     else method2678(-2049)
@@ -2291,7 +2291,7 @@ class Client : GameAppletFrame() {
                                         }
                                         continue
                                     }
-                                    if (class46.anInt765 == MapSceneIconDef.anInt2861) {
+                                    if (class46.anInt765 == MapSceneType.anInt2861) {
                                         if (bool_53_) method2676(class46.anInt709, class46.anInt789, (i_51_ + GlTexture1D.aInputTracker_8552!!.method3597(true) - i_43_), 58.toByte(), (i_52_ + GlTexture1D.aInputTracker_8552!!.method3594(111.toByte()) - i_44_))
                                         continue
                                     }
@@ -2994,7 +2994,7 @@ class Client : GameAppletFrame() {
                 TrigLookupTables.method727((-63).toByte(), i_29_, i, i_28_)
                 val class213 = ClientException.aItemTypeList_112!!.method1940(-126, i)
                 ObjectSpawnDecoder.method1085(class213.anInt2825, class213.anInt2787, (-59).toByte(), class213.anInt2781, i_28_)
-                SkeletalAnimFrameLoader.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810)
+                IdentityKitType.method350(class213.anInt2779, class213.anInt2826, 125, i_28_, class213.anInt2810)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -3110,7 +3110,7 @@ class Client : GameAppletFrame() {
                     } else if (i_40_ shr 28 != 0) {
                         val i_52_ = i_40_ and 0xffff
                         val player: Player?
-                        if (CharCodeMap.anInt9591 != i_52_) player = (LoadingBarRenderer.aPlayerArray5058!![i_52_])
+                        if (QuickChatType.anInt9591 != i_52_) player = (LoadingBarRenderer.aPlayerArray5058!![i_52_])
                         else player = LocalPlayerState.aPlayer_1907
                         if (player != null) {
                             if (i_38_ == 65535) i_38_ = -1
@@ -3369,7 +3369,7 @@ class Client : GameAppletFrame() {
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_3842) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readIntInverseMiddle(255)
                 WallSceneEntity.method2397((-128).toByte())
-                AbstractGameSocketStatics.method1703(5, i, CharCodeMap.anInt9591, 4, 0)
+                AbstractGameSocketStatics.method1703(5, i, QuickChatType.anInt9591, 4, 0)
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -3480,7 +3480,7 @@ class Client : GameAppletFrame() {
             if (InboundPacketHeader.aInboundPacketHeader_6584 == InboundPacketHeader.aInboundPacketHeader_1901) {
                 val i = CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedShort(842397944)
                 val player: Player?
-                if (i != CharCodeMap.anInt9591) player = LoadingBarRenderer.aPlayerArray5058!![i]
+                if (i != QuickChatType.anInt9591) player = LoadingBarRenderer.aPlayerArray5058!![i]
                 else player = LocalPlayerState.aPlayer_1907
                 if (player == null) {
                     InboundPacketHeader.aInboundPacketHeader_6584 = null
@@ -3755,7 +3755,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_1540 == InboundPacketHeader.aInboundPacketHeader_6584) {
-                MapSceneTile.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
+                MapSceneTile.aBoxedIntHolder_1055 = SkyboxSphereType.method360((-57).toByte(), CircleRasterizer.aClass348_Sub49_Sub2_3813!!.readUnsignedByte(255))
                 InboundPacketHeader.aInboundPacketHeader_6584 = null
                 return true
             }
@@ -3965,7 +3965,7 @@ class Client : GameAppletFrame() {
                 return true
             }
             if (InboundPacketHeader.aInboundPacketHeader_8683 == InboundPacketHeader.aInboundPacketHeader_6584) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (IdentityKitType.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val `is` = ByteArray(RadialTextureNode.anInt9341)
                 CircleRasterizer.aClass348_Sub49_Sub2_3813!!.method3409(RadialTextureNode.anInt9341, `is`, 0, -32769)
                 val string = ByteBuffer.method3546(`is`, 0, RadialTextureNode.anInt9341, 0)
@@ -4844,7 +4844,7 @@ class Client : GameAppletFrame() {
                             if (OpenGlTerrainTile.anInt8270 != i_5_ || i_4_ != anInt4032) {
                                 if (class348_sub47 == null) {
                                     CollisionMap.anInt4450++
-                                    class348_sub47 = (method2148(CharCodeMap.aFontMetaRef_9590, TheoraVideoStream.aIsaacCipher_9029, -94))
+                                    class348_sub47 = (method2148(QuickChatType.aFontMetaRef_9590, TheoraVideoStream.aIsaacCipher_9029, -94))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 0)
                                     i_2_ = class348_sub47.aClass348_Sub49_Sub2_7116!!.anInt7197
                                 }
@@ -4902,12 +4902,12 @@ class Client : GameAppletFrame() {
                         class348_sub47.aClass348_Sub49_Sub2_7116!!.writeInt(121.toByte(), i_9_ shl 16 or i_10_)
                         InterfaceComponentGroup.method3243(25, class348_sub47)
                     }
-                    if (CameraConfigDefinition.anInt3246 > 0) {
+                    if (LightType.anInt3246 > 0) {
                         ColourKeyTextureNode.anInt9348++
                         val class348_sub47 = method2148((ShaderStateVariant.aFontMetaRef_8798), (TheoraVideoStream.aIsaacCipher_9029), -111)
-                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * CameraConfigDefinition.anInt3246)
+                        class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 3 * LightType.anInt3246)
                         var i_13_ = 0
-                        while ((i_13_ < CameraConfigDefinition.anInt3246)) {
+                        while ((i_13_ < LightType.anInt3246)) {
                             val interface6 = CacheLruCache.anCharStreamReaderArray3884s!![i_13_]
                             var l = ((interface6!!.method29((-29).toByte()) + -RegionTileNode.aLong6651) / 50L)
                             RegionTileNode.aLong6651 = interface6.method29(106.toByte())
@@ -4950,8 +4950,8 @@ class Client : GameAppletFrame() {
                         if (WeaveTextureNode.anInt9282 == 2) method241(127.toByte())
                         else if (WeaveTextureNode.anInt9282 == 3) CameraSplineNode.Companion.method2954((-4).toByte())
                     }
-                    if (!KeyboardLayoutConfig.aBoolean2130) CircleDrawer.aFloat2687 /= 2.0f
-                    else KeyboardLayoutConfig.aBoolean2130 = false
+                    if (!VarcType.aBoolean2130) CircleDrawer.aFloat2687 /= 2.0f
+                    else VarcType.aBoolean2130 = false
                     if (!MinimapSquareDrawer.aBoolean5224) MultiFieldRecord.Companion.aFloat6898 /= 2.0f
                     else MinimapSquareDrawer.aBoolean5224 = false
                     method3027(33.toByte())
@@ -5178,7 +5178,7 @@ class Client : GameAppletFrame() {
                                     GroundDecorSceneEntity.anIntArray9981!![i_31_] = GroundDecorSceneEntity.anIntArray9981!![i_31_] + 1
                                     i_31_++
                                 }
-                                if (ScanlineRasterFiller.aBoolean2469 && (-60000L + method599(-84) > SkeletalAnimFrameLoader.aLong482)) method2405(i + -11313)
+                                if (ScanlineRasterFiller.aBoolean2469 && (-60000L + method599(-84) > IdentityKitType.aLong482)) method2405(i + -11313)
                                 var class318_sub9_sub1 = (InterfaceComponentGroup.aDoublyLinkedNodeList_9642!!.method1872(i + -11424) as? NamedTimedNode?)
                                 while (class318_sub9_sub1 != null) {
                                     if ((method599(i xor 0x2ce9.inv()) / 1000L + -5L) > class318_sub9_sub1.anInt8787.toLong()) {

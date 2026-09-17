@@ -13,7 +13,7 @@ import kotlin.math.min
 /*
  * Class38
  */
-class WidgetTextConfig {
+class SkyboxSphereType {
 
     var anInt498: Int = 0
 
@@ -99,14 +99,14 @@ class WidgetTextConfig {
                 if (class348_sub27.anInt6893 != 0) {
                     if (class348_sub27.anInt6894 > 0) class348_sub27.anInt6894--
                     if (class348_sub27.anInt6894 == 0 && class348_sub27.anInt6905 >= 1 && class348_sub27.anInt6896 >= 1 && (class348_sub27.anInt6905 <= -2 + GlCubemapLightPass.anInt7319) && (class348_sub27.anInt6896 <= -2 + RangeThresholdTextureNode.anInt9109) && (class348_sub27.anInt6907 < 0 || (method195(class348_sub27.anInt6895, false, class348_sub27.anInt6907)))) {
-                        MapSceneIconDef.method1591(class348_sub27.anInt6905, 70, class348_sub27.anInt6904, -1, class348_sub27.anInt6907, class348_sub27.anInt6895, class348_sub27.anInt6896, class348_sub27.anInt6900, class348_sub27.anInt6899)
+                        MapSceneType.method1591(class348_sub27.anInt6905, 70, class348_sub27.anInt6904, -1, class348_sub27.anInt6907, class348_sub27.anInt6895, class348_sub27.anInt6896, class348_sub27.anInt6900, class348_sub27.anInt6899)
                         class348_sub27.anInt6894 = -1
                         if ((class348_sub27.anInt6907 != class348_sub27.anInt6902) || class348_sub27.anInt6902 != -1) {
                             if ((class348_sub27.anInt6907 == class348_sub27.anInt6902) && (class348_sub27.anInt6892 == class348_sub27.anInt6900) && (class348_sub27.anInt6895 == (class348_sub27.anInt6903))) class348_sub27.method2715(75.toByte())
                         } else class348_sub27.method2715(86.toByte())
                     }
                 } else if (class348_sub27.anInt6902 < 0 || (method195(class348_sub27.anInt6903, false, class348_sub27.anInt6902))) {
-                    MapSceneIconDef.method1591(class348_sub27.anInt6905, 112, class348_sub27.anInt6904, -1, class348_sub27.anInt6902, class348_sub27.anInt6903, class348_sub27.anInt6896, class348_sub27.anInt6892, class348_sub27.anInt6899)
+                    MapSceneType.method1591(class348_sub27.anInt6905, 112, class348_sub27.anInt6904, -1, class348_sub27.anInt6902, class348_sub27.anInt6903, class348_sub27.anInt6896, class348_sub27.anInt6892, class348_sub27.anInt6899)
                     class348_sub27.method2715(49.toByte())
                 }
                 class348_sub27 = SpriteRenderEntry.aNodeDeque_9711!!.method1990(81.toByte()) as? MultiFieldRecord?
@@ -275,7 +275,7 @@ class WidgetTextConfig {
                     i_6_++
                 }
                 MinimapAreaMarkerNode.anInt9699 = 0
-                CameraConfigDefinition.anInt3246 = 0
+                LightType.anInt3246 = 0
                 TextureCache.method3466(89)
             }
         }

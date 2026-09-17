@@ -21,22 +21,22 @@ class HitsplatTypeList internal constructor(sceneProjector: SceneProjector?, i: 
         }
     }
 
-    fun method1601(i: Int, i_15_: Int): ItemModelDefinition {
+    fun method1601(i: Int, i_15_: Int): HitsplatType {
         anInt2874++
-        var itemModelDefinition: ItemModelDefinition? = withLock(aLruByteCache_2875) {
-            aLruByteCache_2875.method583(i_15_.toLong(), i + -148) as ItemModelDefinition?
+        var hitsplatType: HitsplatType? = withLock(aLruByteCache_2875) {
+            aLruByteCache_2875.method583(i_15_.toLong(), i + -148) as HitsplatType?
         }
-        if (itemModelDefinition != null) return itemModelDefinition
+        if (hitsplatType != null) return hitsplatType
         val `is`: ByteArray? = withLock(aJs5Archive_2866!!) {
             aJs5Archive_2866.method410(-1860, i, i_15_)
         }
-        itemModelDefinition = ItemModelDefinition()
-        itemModelDefinition.aHitsplatTypeList_438 = this
-        if (`is` != null) itemModelDefinition.method332(i xor 0x55.inv(), ByteBuffer(`is`))
+        hitsplatType = HitsplatType()
+        hitsplatType.aHitsplatTypeList_438 = this
+        if (`is` != null) hitsplatType.method332(i xor 0x55.inv(), ByteBuffer(`is`))
         withLock(aLruByteCache_2875) {
-            aLruByteCache_2875.method582(itemModelDefinition, i_15_.toLong(), (-109).toByte())
+            aLruByteCache_2875.method582(hitsplatType, i_15_.toLong(), (-109).toByte())
         }
-        return itemModelDefinition
+        return hitsplatType
     }
 
     fun method1602(i: Int) {

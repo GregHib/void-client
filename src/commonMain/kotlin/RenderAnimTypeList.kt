@@ -13,21 +13,21 @@ import lang.StringBuffer
 class RenderAnimTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_3319: Js5Archive?
     private val aLruByteCache_3321 = LruByteCache(64)
-    fun method1983(i: Int, i_9_: Int): NpcDefinition {
+    fun method1983(i: Int, i_9_: Int): RenderAnimType {
         anInt3320++
-        var npcDefinition: NpcDefinition? = withLock(aLruByteCache_3321) {
-            aLruByteCache_3321.method583(i.toLong(), 69) as NpcDefinition?
+        var renderAnimType: RenderAnimType? = withLock(aLruByteCache_3321) {
+            aLruByteCache_3321.method583(i.toLong(), 69) as RenderAnimType?
         }
-        if (npcDefinition != null) return npcDefinition
+        if (renderAnimType != null) return renderAnimType
         val `is`: ByteArray? = withLock(aJs5Archive_3319!!) {
             aJs5Archive_3319.method410(-1860, i_9_, i)
         }
-        npcDefinition = NpcDefinition()
-        if (`is` != null) npcDefinition.method1620(ByteBuffer(`is`), -108)
+        renderAnimType = RenderAnimType()
+        if (`is` != null) renderAnimType.method1620(ByteBuffer(`is`), -108)
         withLock(aLruByteCache_3321) {
-            aLruByteCache_3321.method582(npcDefinition, i.toLong(), (-109).toByte())
+            aLruByteCache_3321.method582(renderAnimType, i.toLong(), (-109).toByte())
         }
-        return npcDefinition
+        return renderAnimType
     }
 
     fun method1984(i: Byte, i_10_: Int) {
@@ -113,7 +113,7 @@ class RenderAnimTypeList internal constructor(sceneProjector: SceneProjector?, i
         fun method1982(i: Int, i_8_: Int, string: String) {
             ContactEntry.anInt9594++
             anInt3318++
-            val class348_sub47 = method2148(CacheArchiveIndex.aFontMetaRef_1766, TheoraVideoStream.aIsaacCipher_9029, i + -107)
+            val class348_sub47 = method2148(EnumType.aFontMetaRef_1766, TheoraVideoStream.aIsaacCipher_9029, i + -107)
             class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByte(false, 1 - -method1745(string, -65))
             if (i == 16) {
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeByteSubtract((-70).toByte(), i_8_)

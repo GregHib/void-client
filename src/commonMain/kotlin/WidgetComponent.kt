@@ -367,7 +367,7 @@ class WidgetComponent {
         return class348_sub50.aString7211
     }
 
-    fun method430(IDKTypeList: IDKTypeList?, animationTypeList: AnimationTypeList?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, itemTypeList: ItemTypeList?, varResolver: VarResolver?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, renderAnimTypeList: RenderAnimTypeList?, npcTypeList: NpcTypeList?, i_24_: Int): AbstractModel? {
+    fun method430(IDKTypeList: IDKTypeList?, animationTypeList: AnimationTypeList?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, itemTypeList: ItemTypeList?, varResolver: VarResolver?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, animationType: AnimationType?, renderAnimTypeList: RenderAnimTypeList?, npcTypeList: NpcTypeList?, i_24_: Int): AbstractModel? {
         var i = i
         try {
             anInt684++
@@ -376,12 +376,12 @@ class WidgetComponent {
             if (this.anInt770 == 1 && this.anInt753 == -1) return null
             if (this.anInt770 == 1) {
                 val i_25_ = i
-                if (widgetDefinition != null) i = i or widgetDefinition.method263(i_24_, 106, i_21_, true)
+                if (animationType != null) i = i or animationType.method263(i_24_, 106, i_21_, true)
                 val l = (this.anInt753 + ((this.anInt770 shl 16) + (var_renderer!!.anInt4567 shl 29))).toLong()
                 var abstractModel = ParticleGeometry.aLruByteCache_4417!!.method583(l, -90) as AbstractModel?
                 if (abstractModel == null || var_renderer.method3667(abstractModel.ua(), i) != 0) {
                     if (abstractModel != null) i = var_renderer.method3679(i, abstractModel.ua())
-                    val class124 = ParticleConfigParser.method2277(0, (ScatterTextureNode.aJs5Archive_9365!!), this.anInt753, -1)
+                    val class124 = SkyBoxType.method2277(0, (ScatterTextureNode.aJs5Archive_9365!!), this.anInt753, -1)
                     if (class124 == null) {
                         ContactList.aBoolean9616 = true
                         return null
@@ -390,12 +390,12 @@ class WidgetComponent {
                     abstractModel = var_renderer.method3625(class124, i, Gl3dTexture.anInt8628, 64, 768)
                     ParticleGeometry.aLruByteCache_4417!!.method582(abstractModel, l, (-125).toByte())
                 }
-                if (widgetDefinition != null) abstractModel = widgetDefinition.method269(-101, abstractModel, i_24_, i_22_, i, i_21_)
+                if (animationType != null) abstractModel = animationType.method269(-101, abstractModel, i_24_, i_22_, i, i_21_)
                 abstractModel!!.s(i_25_)
                 return abstractModel
             }
             if (this.anInt770 == 2) {
-                val class64 = (npcTypeList!!.method2079(this.anInt753, -1).method803(varResolver, var_renderer, i_22_, i_24_, widgetDefinition, animationTypeList, i_21_, 104, i))
+                val class64 = (npcTypeList!!.method2079(this.anInt753, -1).method803(varResolver, var_renderer, i_22_, i_24_, animationType, animationTypeList, i_21_, 104, i))
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -404,7 +404,7 @@ class WidgetComponent {
             }
             if (this.anInt770 == 3) {
                 if (compositeNpcModelBuilder == null) return null
-                val class64 = compositeNpcModelBuilder.method1230(itemTypeList, -402058072, animationTypeList, IDKTypeList, varResolver, npcTypeList, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
+                val class64 = compositeNpcModelBuilder.method1230(itemTypeList, -402058072, animationTypeList, IDKTypeList, varResolver, npcTypeList, i_21_, i_24_, i, animationType, i_22_, var_renderer)
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -413,7 +413,7 @@ class WidgetComponent {
             }
             if (this.anInt770 == 4) {
                 val class213 = itemTypeList!!.method1940(i_23_ + -365, this.anInt753)
-                val class64 = class213.method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_22_, 10, i_21_, 88.toByte(), i_24_)
+                val class64 = class213.method1559(compositeNpcModelBuilder, animationType, var_renderer, i, i_22_, 10, i_21_, 88.toByte(), i_24_)
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -421,7 +421,7 @@ class WidgetComponent {
                 return class64
             }
             if (this.anInt770 == 6) {
-                val class64 = (npcTypeList!!.method2079(this.anInt753, -1).method800(0, null, animationTypeList, false, null, 0, renderAnimTypeList, i_21_, widgetDefinition, varResolver, var_renderer, 0, null, i_24_, 0, i, i_22_))
+                val class64 = (npcTypeList!!.method2079(this.anInt753, -1).method800(0, null, animationTypeList, false, null, 0, renderAnimTypeList, i_21_, animationType, varResolver, var_renderer, 0, null, i_24_, 0, i, i_22_))
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -433,7 +433,7 @@ class WidgetComponent {
                 val i_26_ = this.anInt753 ushr 16
                 val i_27_ = 0xffff and this.anInt753
                 val i_28_ = this.anInt779
-                val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, animationTypeList, IDKTypeList, -15331, i_26_, i_22_, var_renderer, i_21_, widgetDefinition)
+                val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, animationTypeList, IDKTypeList, -15331, i_26_, i_22_, var_renderer, i_21_, animationType)
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -444,7 +444,7 @@ class WidgetComponent {
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(
                 runtimeexception,
-                ("at.G(" + (if (IDKTypeList != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (itemTypeList != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (renderAnimTypeList != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + i_24_ + ')')
+                ("at.G(" + (if (IDKTypeList != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (itemTypeList != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (animationType != null) "{...}" else "null") + ',' + (if (renderAnimTypeList != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
         }
     }
@@ -943,7 +943,7 @@ class WidgetComponent {
                 ConnectionStateType.anIntArray1045 = IntArray(i)
                 LinkedListIterator.anIntArray2117 = IntArray(i)
                 anInt825++
-                CharCodeMap.anIntArray1127 = IntArray(i)
+                QuickChatType.anIntArray1127 = IntArray(i)
                 FileIoUtil.anIntArray4097 = IntArray(i)
             }
         }

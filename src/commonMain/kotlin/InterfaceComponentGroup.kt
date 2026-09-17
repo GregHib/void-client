@@ -585,7 +585,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
 
         fun method3241(i: Int, i_7_: Byte, var_renderer: Renderer) {
             anInt9637++
-            if (!ActorEntity.aBoolean9307 || !ActorEntity.aBoolean351) ParameterizedText.Companion.anInt9577 = 0
+            if (!ActorEntity.aBoolean9307 || !ActorEntity.aBoolean351) QuickChatMenuType.Companion.anInt9577 = 0
             else {
                 if (ColourKeyTextureNode.aBoolean9352) ItemType.aLong2789 = MinimapLineDrawer.aNanoTimer_5262!!.method446(1)
                 ActorEntity.anInt562 = 0
@@ -603,7 +603,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                     ActorEntity.anInt1202 = ActorEntity.anInt3872 shr 1
                 }
                 ActorEntity.aAbstractCameraTransform_9114 = var_renderer.method3640()
-                ParameterizedText.Companion.anInt9577 = 0
+                QuickChatMenuType.Companion.anInt9577 = 0
                 var i_8_ = 0
                 while ( /**/SoundLevelOptionState.anInt6115 > i_8_) {
                     SceneModelBuilder.method2498(HintArrowOrMessage.aMapTileShapeArray2034!![i_8_], var_renderer, (-112).toByte(), i)
@@ -612,7 +612,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                 for (i_9_ in 0..<CollisionFlagQuery.anInt1200) SceneModelBuilder.method2498((MapElementDecor.aMapTileShapeArray10330!![i_9_]), var_renderer, (-127).toByte(), i)
                 for (i_10_ in 0..<PackedFlagsAccessor.anInt7101) SceneModelBuilder.method2498(LoadingBarRenderer.aMapTileShapeArray5060!![i_10_], var_renderer, (-128).toByte(), i)
                 ActorEntity.anInt2946 = 0
-                if (ParameterizedText.Companion.anInt9577 > 0) {
+                if (QuickChatMenuType.Companion.anInt9577 > 0) {
                     val i_11_ = ActorEntity.anIntArray5091!!.size
                     val i_12_ = i_11_ + -i_11_ and 0x7
                     var i_13_ = 0
@@ -629,7 +629,7 @@ class InterfaceComponentGroup internal constructor(i: Int, string: String?, stri
                     while (i_11_ > i_13_) ActorEntity.anIntArray5091!![i_13_++] = 2147483647
                     ActorEntity.anInt4319 = 1
                     var i_14_ = 0
-                    while ((i_14_ < ParameterizedText.Companion.anInt9577)) {
+                    while ((i_14_ < QuickChatMenuType.Companion.anInt9577)) {
                         val mapTileShape: MapTileShape = MinimapAreaMarkerNode.Companion.aMapTileShapeArray9700!![i_14_]!!
                         ActorEntity.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![0].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![1].toInt(), (-105).toByte(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4188!![0].toInt(), mapTileShape.aShortArray4194!![0].toInt(), mapTileShape.aShortArray4183!![3].toInt())
                         ActorEntity.method3125(mapTileShape.aShortArray4194!![3].toInt(), mapTileShape.aShortArray4183!![1].toInt(), mapTileShape.aShortArray4194!![2].toInt(), mapTileShape.aShortArray4188!![3].toInt(), mapTileShape.aShortArray4188!![2].toInt(), (-118).toByte(), mapTileShape.aShortArray4183!![2].toInt(), mapTileShape.aShortArray4188!![1].toInt(), mapTileShape.aShortArray4194!![1].toInt(), mapTileShape.aShortArray4183!![3].toInt())

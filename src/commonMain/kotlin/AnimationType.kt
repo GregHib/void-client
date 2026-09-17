@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class17 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class WidgetDefinition {
+class AnimationType {
 
     var anIntArray236: IntArray? = null
 

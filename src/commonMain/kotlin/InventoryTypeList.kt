@@ -5,16 +5,16 @@ import kotlin.jvm.JvmStatic
 class InventoryTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aLruByteCache_3466 = LruByteCache(64)
     private val aJs5Archive_3468: Js5Archive?
-    fun method2044(i: Int, i_0_: Int): ConfigShortValueNode {
+    fun method2044(i: Int, i_0_: Int): InventoryType {
         anInt3469++
-        var class348_sub42_sub7: ConfigShortValueNode? = withLock(aLruByteCache_3466) {
-            aLruByteCache_3466.method583(i_0_.toLong(), -85) as ConfigShortValueNode?
+        var class348_sub42_sub7: InventoryType? = withLock(aLruByteCache_3466) {
+            aLruByteCache_3466.method583(i_0_.toLong(), -85) as InventoryType?
         }
         if (class348_sub42_sub7 != null) return class348_sub42_sub7
         val `is`: ByteArray? = withLock(aJs5Archive_3468!!) {
             aJs5Archive_3468.method410(-1860, 5, i_0_)
         }
-        class348_sub42_sub7 = ConfigShortValueNode()
+        class348_sub42_sub7 = InventoryType()
         if (i < 78) method2046()
         if (`is` != null) class348_sub42_sub7.method3192(16.toByte(), ByteBuffer(`is`))
         withLock(aLruByteCache_3466) {

@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 import AbstractFrameBufferSurface.Companion.method3007
 import Client.Companion.method3196
 import CacheIndexManager.Companion.method2355
-import CameraConfigDefinition.Companion.method1922
+import LightType.Companion.method1922
 import ChatCommandProcessor.method703
 import CombineTextureNode.Companion.method3088
 import GlTextureBase.Companion.method235
@@ -98,7 +98,7 @@ object ByteBufferStatics {
 
     @JvmStatic
     fun method1713(bool: Boolean, i: Int) {
-        method1728(GameDisplayManager.anInt10432, -1, RenderNodeStatics.anInt9721, bool, LocTypeDefinition.anInt4017)
+        method1728(GameDisplayManager.anInt10432, -1, RenderNodeStatics.anInt9721, bool, QuestType.anInt4017)
         if (i == 520) anInt3137++
     }
 
@@ -138,7 +138,7 @@ object ByteBufferStatics {
                 BufferedRandomAccessFile.gfx!!.anInt634 = 2
             }
             if (GroundDecorSceneEntity.method2402(i_71_, (-119).toByte())) {
-                ItemModelDefinition.anInt443 = 1
+                HitsplatType.anInt443 = 1
                 AnimationFrameTable.anInt489 = 0
                 StringValueNode.Companion.anInt7115 = 1
                 CompositeNpcModelBuilder.anInt2101 = 0

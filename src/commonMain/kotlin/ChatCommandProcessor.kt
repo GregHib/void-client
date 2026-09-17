@@ -28,7 +28,7 @@ import WaterMaterialPass.Companion.method2153
 import GlslEnvMaterialPass.Companion.method2162
 import ScrollTexMaterialPass.Companion.method2165
 import CubeMapMaterialPass.Companion.method2172
-import ItemModelDefinition.Companion.method326
+import HitsplatType.Companion.method326
 import TileSceneEntity.Companion.method2396
 import SceneObjectEntity.Companion.method2405
 import VarcstrTypeList.Companion.method2478
@@ -67,7 +67,7 @@ import FlickeringEffectsOptionState.Companion.method1750
 import GlTexture1D.Companion.method1974
 import MidiSequencePlayer.Companion.method2862
 import OpenGlModel.Companion.method690
-import LocTypeConfig.Companion.method160
+import FloorOverlayType.Companion.method160
 import NullRenderPass.Companion.method3535
 import ProjectedGroundDecor.Companion.method2420
 import awt.datatransfer.STRING_FLAVOR
@@ -255,7 +255,7 @@ object ChatCommandProcessor {
             if (i == 5001) {
                 anInt1173 -= 3
                 ShaderProgram.anInt7276 = anIntArray1149!![anInt1173]
-                MapSceneTile.aBoxedIntHolder_1055 = WidgetTextConfig.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
+                MapSceneTile.aBoxedIntHolder_1055 = SkyboxSphereType.method360((-57).toByte(), anIntArray1149!![anInt1173 + 1])
                 if (MapSceneTile.aBoxedIntHolder_1055 == null) MapSceneTile.aBoxedIntHolder_1055 = MinimapRenderer.aBoxedIntHolder_1591
                 BufferToggleState.anInt3713 = anIntArray1149!![anInt1173 + 2]
                 anInt1156++
@@ -956,11 +956,11 @@ object ChatCommandProcessor {
                 val i_97_ = anIntArray1149!![anInt1173]
                 val i_98_ = anIntArray1149!![anInt1173 + 1]
                 ChatCommandProcessor.method830(3, i_97_, 102.toByte(), false, i_98_)
-                anIntArray1149!![anInt1173++] = if (SkeletalAnimFrameLoader.aFrame476 != null) 1 else 0
+                anIntArray1149!![anInt1173++] = if (IdentityKitType.aFrame476 != null) 1 else 0
                 return
             }
             if (i == 5301) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (IdentityKitType.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 return
             }
             if (i == 5302) {
@@ -1068,7 +1068,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5411) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (IdentityKitType.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 if (RsaVarbitHandler.aFrame4904 == null) {
                     val string = (if (InputSettingsState.aString1761 != null) InputSettingsState.aString1761 else method2162(false))
                     ChatCommandProcessor.method1360(string, VorbisOggDecoder.aPrivilegedOperationWorker_8992, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub25_7271!!.method1829(-32350) == 1, false, -47)
@@ -1093,7 +1093,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5421) {
-                if (SkeletalAnimFrameLoader.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
+                if (IdentityKitType.aFrame476 != null) ChatCommandProcessor.method830(IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1, 102.toByte(), false, -1)
                 val string = aStringArray1152!![--anInt1170]
                 val bool_118_ = anIntArray1149!![--anInt1173] == 1
                 val string_119_ = method2162(false) + string
@@ -1130,7 +1130,7 @@ object ChatCommandProcessor {
                 ProjectedGroundDecor.anInt10257 = anIntArray1149!![anInt1173 + 6]
                 SkyboxGradient.anInt3937 = anIntArray1149!![anInt1173 + 7]
                 NpcType.anInt1387 = anIntArray1149!![anInt1173 + 8]
-                CharCodeMap.anInt9586 = anIntArray1149!![anInt1173 + 9]
+                QuickChatType.anInt9586 = anIntArray1149!![anInt1173 + 9]
                 SolidFillComponent.anInt8363 = anIntArray1149!![anInt1173 + 10]
                 CameraRotationStub.sprites!!.method421(false, HudTabPanel.anInt2996)
                 CameraRotationStub.sprites!!.method421(false, CombineTextureNode.anInt9231)
@@ -1156,7 +1156,7 @@ object ChatCommandProcessor {
             if (i == 5426) {
                 anInt1173 -= 2
                 StreamingResourceRequest.anInt10447 = anIntArray1149!![anInt1173]
-                WidgetTextConfig.anInt506 = anIntArray1149!![anInt1173 + 1]
+                SkyboxSphereType.anInt506 = anIntArray1149!![anInt1173 + 1]
                 return
             }
             if (i == 5427) {
@@ -1238,7 +1238,7 @@ object ChatCommandProcessor {
                 val i_133_ = anIntArray1149!![anInt1173 + 1]
                 if (i_133_ + 1 >= (SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775])!!.size shr 1) throw RuntimeException()
                 ItemType.anInt2798 = i_133_
-                CacheArchiveIndex.anInt1780 = 0
+                EnumType.anInt1780 = 0
                 RenderableGroup.anInt5019 = anIntArray1149!![anInt1173 + 2]
                 CalendarUtil.anInt4133 = anIntArray1149!![anInt1173 + 3]
                 val i_134_ = anIntArray1149!![anInt1173 + 4]
@@ -1344,7 +1344,7 @@ object ChatCommandProcessor {
                 val string = aStringArray1152!![anInt1170]!!
                 val string_142_ = aStringArray1152!![anInt1170 + 1]
                 val i_143_ = anIntArray1149!![--anInt1173]
-                if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
+                if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (RenderAnimType.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     OpenGlModel.aString5600 = string
                     TextureGenerator.aString2496 = string_142_
                     TextureLoadExceptionStatics.anInt4596 = i_143_
@@ -1358,7 +1358,7 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5602) {
-                if (NpcDefinition.anInt2955 == 0) {
+                if (RenderAnimType.anInt2955 == 0) {
                     GlRectangleTexture.anInt1645 = -2
                     Client.anInt6634 = -2
                 }
@@ -1366,7 +1366,7 @@ object ChatCommandProcessor {
             }
             if (i == 5604) {
                 anInt1170--
-                if (WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
+                if (WorldMapRenderer.anInt4674 == 3 && (RenderAnimType.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     ClanChatRequestSender.method2106(aStringArray1152!![anInt1170], 101)
                     return
                 }
@@ -1375,7 +1375,7 @@ object ChatCommandProcessor {
             if (i == 5605) {
                 anInt1170 -= 2
                 anInt1173 -= 2
-                if (WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
+                if (WorldMapRenderer.anInt4674 == 3 && (RenderAnimType.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     method449(aStringArray1152!![anInt1170 + 1], aStringArray1152!![anInt1170], false, anIntArray1149!![anInt1173], anIntArray1149!![anInt1173 + 1] == 1)
                     return
                 }
@@ -1398,12 +1398,12 @@ object ChatCommandProcessor {
                 return
             }
             if (i == 5611) {
-                anIntArray1149!![anInt1173++] = ConfigShortValueNode.anInt9541
+                anIntArray1149!![anInt1173++] = InventoryType.anInt9541
                 return
             }
             if (i == 5612) {
                 val i_144_ = anIntArray1149!![--anInt1173]
-                if (WorldMapRenderer.anInt4674 == 7 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
+                if (WorldMapRenderer.anInt4674 == 7 && (RenderAnimType.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     if (Client.aAbstractGameSocket_9165 != null) {
                         Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
                         Client.aAbstractGameSocket_9165 = null
@@ -1422,7 +1422,7 @@ object ChatCommandProcessor {
                 anInt1170 -= 2
                 val string = aStringArray1152!![anInt1170]!!
                 val string_145_ = aStringArray1152!![anInt1170 + 1]
-                if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (NpcDefinition.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
+                if (string.length <= 320 && WorldMapRenderer.anInt4674 == 3 && (RenderAnimType.anInt2955 == 0 && GlWaterRenderPass.anInt7297 == 0)) {
                     if (Client.aAbstractGameSocket_9165 != null) {
                         Client.aAbstractGameSocket_9165!!.method1700(36.toByte())
                         Client.aAbstractGameSocket_9165 = null
@@ -1594,7 +1594,7 @@ object ChatCommandProcessor {
                         } else if (i_149_ == 0) {
                             SoftwareSpriteRaster.method960(1)
                             RgbColorPalette.Companion.aBoolean1236 = false
-                        } else SkeletalAnimFrameLoader.method345(i_149_, (-49).toByte())
+                        } else IdentityKitType.method345(i_149_, (-49).toByte())
                     }
                     IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7260), i_149_)
                     method243(37)
@@ -1713,7 +1713,7 @@ object ChatCommandProcessor {
                         } else if (i_158_ == 0) {
                             SoftwareSpriteRaster.method960(1)
                             RgbColorPalette.Companion.aBoolean1236 = false
-                        } else SkeletalAnimFrameLoader.method345(i_158_, (-52).toByte())
+                        } else IdentityKitType.method345(i_158_, (-52).toByte())
                     }
                     IntHashSetStatics.aClass348_Sub51_3959!!.method3429(74.toByte(), (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub26_7245), i_158_)
                     method243(37)
@@ -1985,7 +1985,7 @@ object ChatCommandProcessor {
             }
         } else if (i < 6600) {
             if (i == 6500) {
-                if (WorldMapRenderer.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || GlWaterRenderPass.anInt7297 != 0) anIntArray1149!![anInt1173++] = 1
+                if (WorldMapRenderer.anInt4674 != 7 || RenderAnimType.anInt2955 != 0 || GlWaterRenderPass.anInt7297 != 0) anIntArray1149!![anInt1173++] = 1
                 else {
                     if (ModelBatchBase.aBoolean1899) anIntArray1149!![anInt1173++] = 0
                     else {
@@ -2057,7 +2057,7 @@ object ChatCommandProcessor {
             if (i == 6503) {
                 val i_168_ = anIntArray1149!![--anInt1173]
                 val string = aStringArray1152!![--anInt1170]
-                if (WorldMapRenderer.anInt4674 != 7 || NpcDefinition.anInt2955 != 0 || GlWaterRenderPass.anInt7297 != 0) anIntArray1149!![anInt1173++] = 0
+                if (WorldMapRenderer.anInt4674 != 7 || RenderAnimType.anInt2955 != 0 || GlWaterRenderPass.anInt7297 != 0) anIntArray1149!![anInt1173++] = 0
                 else {
                     anIntArray1149!![anInt1173++] = (if (method2972(string, i_168_, -42)) 1 else 0)
                     return
@@ -3263,7 +3263,7 @@ object ChatCommandProcessor {
             }
             if (i == 1211) {
                 widgetComponent!!.anInt770 = 5
-                widgetComponent.anInt753 = CharCodeMap.anInt9591
+                widgetComponent.anInt753 = QuickChatType.anInt9591
                 widgetComponent.anInt779 = 0
                 if (widgetComponent.anInt704 == -1) method3569(widgetComponent.anInt830, 66)
                 return
@@ -4447,7 +4447,7 @@ object ChatCommandProcessor {
                 if (i == 3628) {
                     var string = aStringArray1152!![--anInt1170]!!
                     if (string.startsWith("<img=0>") || string.startsWith("<img=1>")) string = string.substring(7)
-                    anIntArray1149!![anInt1173++] = ParticleConfigParser.method2274(string, -91)
+                    anIntArray1149!![anInt1173++] = SkyBoxType.method2274(string, -91)
                     return
                 }
                 if (i == 3629) {

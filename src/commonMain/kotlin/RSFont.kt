@@ -79,7 +79,7 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
                             else i_15_ = `is`[i_6_]
                             if (c.code != 32) {
                                 if ((ConnectionStateRefs.anInt320 and 0xffffff.inv()) != 0) fa(c, 1 + i - -i_14_, i_2_ - -1 + i_15_, ConnectionStateRefs.anInt320, true)
-                                fa(c, i + i_14_, i_2_ + i_15_, ParamMap.anInt9492, false)
+                                fa(c, i + i_14_, i_2_ + i_15_, StructType.anInt9492, false)
                             } else if (ParserSpecialCharsHolder.anInt1902 > 0) {
                                 GlTexture.anInt4848 += ParserSpecialCharsHolder.anInt1902
                                 i += GlTexture.anInt4848 shr 8
@@ -205,29 +205,29 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
         anInt4046++
         try {
             if (i <= -78) {
-                if (string.startsWith("col=")) ParamMap.anInt9492 = (ParamMap.anInt9492 and 0xffffff.inv() or (ColourAdjustment.method450(-20188, string.substring(4), 16) and 0xffffff))
-                else if (string == "/col") ParamMap.anInt9492 = (ParamMap.anInt9492 and 0xffffff.inv() or (0xffffff and PerlinTextureProvider.anInt5807))
-                if (string.startsWith("argb=")) ParamMap.anInt9492 = ColourAdjustment.method450(-20188, string.substring(5), 16)
+                if (string.startsWith("col=")) StructType.anInt9492 = (StructType.anInt9492 and 0xffffff.inv() or (ColourAdjustment.method450(-20188, string.substring(4), 16) and 0xffffff))
+                else if (string == "/col") StructType.anInt9492 = (StructType.anInt9492 and 0xffffff.inv() or (0xffffff and PerlinTextureProvider.anInt5807))
+                if (string.startsWith("argb=")) StructType.anInt9492 = ColourAdjustment.method450(-20188, string.substring(5), 16)
                 else if (string != "/argb") {
                     if (!string.startsWith("str=")) {
-                        if (string == "str") Player.anInt10567 = (ParamMap.anInt9492 and 0xffffff.inv() or 0x800000)
+                        if (string == "str") Player.anInt10567 = (StructType.anInt9492 and 0xffffff.inv() or 0x800000)
                         else if (string != "/str") {
                             if (!string.startsWith("u=")) {
                                 if (string != "u") {
                                     if (string != "/u") {
                                         if (!string.equals("shad=-1", ignoreCase = true)) {
-                                            if (string.startsWith("shad=")) ConnectionStateRefs.anInt320 = ((0xffffff.inv() and (ParamMap.anInt9492)) or (ColourAdjustment.method450(-20188, string.substring(5), 16)))
-                                            else if (string == "shad") ConnectionStateRefs.anInt320 = (0xffffff.inv() and (ParamMap.anInt9492))
+                                            if (string.startsWith("shad=")) ConnectionStateRefs.anInt320 = ((0xffffff.inv() and (StructType.anInt9492)) or (ColourAdjustment.method450(-20188, string.substring(5), 16)))
+                                            else if (string == "shad") ConnectionStateRefs.anInt320 = (0xffffff.inv() and (StructType.anInt9492))
                                             else if (string != "/shad") {
                                                 if (string == "br") method2579((HeadIconRenderer.anInt2061), 117, (PerlinTextureProvider.anInt5807))
                                             } else ConnectionStateRefs.anInt320 = HeadIconRenderer.anInt2061
                                         } else ConnectionStateRefs.anInt320 = 0
                                     } else DirectionalStripeTextureNode.anInt9101 = -1
-                                } else DirectionalStripeTextureNode.anInt9101 = (ParamMap.anInt9492 and 0xffffff.inv())
-                            } else DirectionalStripeTextureNode.anInt9101 = ((ParamMap.anInt9492 and 0xffffff.inv()) or ColourAdjustment.method450(-20188, string.substring(2), 16))
+                                } else DirectionalStripeTextureNode.anInt9101 = (StructType.anInt9492 and 0xffffff.inv())
+                            } else DirectionalStripeTextureNode.anInt9101 = ((StructType.anInt9492 and 0xffffff.inv()) or ColourAdjustment.method450(-20188, string.substring(2), 16))
                         } else Player.anInt10567 = -1
-                    } else Player.anInt10567 = (ParamMap.anInt9492 and 0xffffff.inv() or ColourAdjustment.method450(-20188, string.substring(4), 16))
-                } else ParamMap.anInt9492 = PerlinTextureProvider.anInt5807
+                    } else Player.anInt10567 = (StructType.anInt9492 and 0xffffff.inv() or ColourAdjustment.method450(-20188, string.substring(4), 16))
+                } else StructType.anInt9492 = PerlinTextureProvider.anInt5807
             }
         } catch (exception: Exception) {
             /* empty */
@@ -290,7 +290,7 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
         DirectionalStripeTextureNode.anInt9101 = -1
         if (i == -1) i = 0
         PerlinTextureProvider.anInt5807 = i_86_
-        ParamMap.anInt9492 = PerlinTextureProvider.anInt5807
+        StructType.anInt9492 = PerlinTextureProvider.anInt5807
         GlTexture.anInt4848 = 0
         ParserSpecialCharsHolder.anInt1902 = 0
         val i_87_ = -28 / ((56 - i_85_) / 49)
@@ -364,7 +364,7 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
                                                     val i_112_ = (RegionSceneShifter.method3156(true, (string_111_.substring(4))))
                                                     val class105 = abstractModelRenderers!![i_112_]!!
                                                     val i_113_ = (if (`is` == null) class105.method980() else `is`[i_112_])
-                                                    if (((ParamMap.anInt9492) and 0xffffff.inv()) != -16777216) class105.method964(i_106_, (-i_113_ + (aFontDefinition_4063!!.anInt1992) + i_103_), 0, (0xffffff or (0xffffff.inv() and (ParamMap.anInt9492))), 1)
+                                                    if (((StructType.anInt9492) and 0xffffff.inv()) != -16777216) class105.method964(i_106_, (-i_113_ + (aFontDefinition_4063!!.anInt1992) + i_103_), 0, (0xffffff or (0xffffff.inv() and (StructType.anInt9492))), 1)
                                                     else class105.method964(i_106_, ((aFontDefinition_4063!!.anInt1992) + (i_103_ - i_113_)), 1, 0, 1)
                                                     i_108_ = -1
                                                     i_106_ += abstractModelRenderers[i_112_]!!.method966()
@@ -384,10 +384,10 @@ abstract class RSFont internal constructor(var_renderer: Renderer?, fontDefiniti
                             if (c.code != 32) {
                                 if (var_sprite == null) {
                                     if ((ConnectionStateRefs.anInt320 and 0xffffff.inv()) != 0) fa(c, i_106_ + 1, 1 + i_103_, ConnectionStateRefs.anInt320, true)
-                                    fa(c, i_106_, i_103_, ParamMap.anInt9492, false)
+                                    fa(c, i_106_, i_103_, StructType.anInt9492, false)
                                 } else {
                                     if ((0xffffff.inv() and ConnectionStateRefs.anInt320) != 0) method2578(c, 1 + i_106_, i_103_ + 1, ConnectionStateRefs.anInt320, true, var_sprite, i_104_, i)
-                                    method2578(c, i_106_, i_103_, ParamMap.anInt9492, false, var_sprite, i_104_, i)
+                                    method2578(c, i_106_, i_103_, StructType.anInt9492, false, var_sprite, i_104_, i)
                                 }
                             } else if (ParserSpecialCharsHolder.anInt1902 > 0) {
                                 GlTexture.anInt4848 += ParserSpecialCharsHolder.anInt1902

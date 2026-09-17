@@ -48,7 +48,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(125.toByte(), SpriteLoadValidator.shaders!!.method389(-118))
         class348_sub49_sub2.writeInt(90.toByte(), NpcCountAccessor.method1327(31))
         class348_sub49_sub2.writeInt(120.toByte(), method912(0))
-        class348_sub49_sub2.writeInt(87.toByte(), HitsplatDefinition.aJs5Archive_2015!!.method389(-94))
+        class348_sub49_sub2.writeInt(87.toByte(), VarbitType.aJs5Archive_2015!!.method389(-94))
     }
 
     fun method1245(string: String, bool: Boolean): String {

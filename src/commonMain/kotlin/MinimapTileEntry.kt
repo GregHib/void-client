@@ -6,7 +6,7 @@ import StreamingResourceRequest.Companion.method3261
 */
 class MinimapTileEntry {
 
-    var aClass348_Sub42_Sub10_614: ParameterizedText? = null
+    var aClass348_Sub42_Sub10_614: QuickChatMenuType? = null
 
     var anInt615: Int = 0
 

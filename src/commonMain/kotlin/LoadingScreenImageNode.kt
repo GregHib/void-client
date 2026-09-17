@@ -151,10 +151,10 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             val i_16_ = IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1727(-32350)
             do {
                 if (i_16_ == 2) {
-                    method1083(FacingDirectionNode.aRenderer6654, 100, 9.toByte(), GameDisplayManager.anInt10432, 100, LocTypeDefinition.anInt4017)
+                    method1083(FacingDirectionNode.aRenderer6654, 100, 9.toByte(), GameDisplayManager.anInt10432, 100, QuestType.anInt4017)
                     break
                 } else if (i_16_ != 3) break
-                method282(2, FacingDirectionNode.aRenderer6654, LocTypeDefinition.anInt4017, 73.toByte(), Js5Archive.anInt666, PerlinTextureProvider.anInt5812, GameDisplayManager.anInt10432, 2)
+                method282(2, FacingDirectionNode.aRenderer6654, QuestType.anInt4017, 73.toByte(), Js5Archive.anInt666, PerlinTextureProvider.anInt5812, GameDisplayManager.anInt10432, 2)
             } while (false)
             if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub3_7222!!.method1735(false)) TerrainTileStatics.method3980(i + 93, ParticleSystemRenderer.aCanvas3869!!)
             if (FacingDirectionNode.aRenderer6654 != null) BufferToggleState.method2196((-9).toByte())

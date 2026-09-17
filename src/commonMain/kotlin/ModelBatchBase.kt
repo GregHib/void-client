@@ -50,7 +50,7 @@ abstract class ModelBatchBase {
         fun method1129(i: Int, i_0_: Int) {
             GlEnvMappedWaterPass.anInt7379 = 3
             ClientLoadStateMachine.anInt2173 = i_0_
-            SkeletalAnimFrameLoader.anInt481 = -1
+            IdentityKitType.anInt481 = -1
             HslAdjustTextureNode.anInt9399 = i
             anInt1898++
         }

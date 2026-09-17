@@ -1,5 +1,5 @@
 import GlslMaterialPass.Companion.method2154
-import WidgetTextConfig.Companion.method365
+import SkyboxSphereType.Companion.method365
 import kotlinx.coroutines.channels.Channel
 import kotlin.concurrent.Volatile
 

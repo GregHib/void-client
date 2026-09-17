@@ -130,7 +130,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
             var abstractModel = CharCountUtil.aLruByteCache_225!!.method583(l, 81) as AbstractModel?
             val i_18_ = 2055
             if (abstractModel == null) {
-                val class124 = ParticleConfigParser.method2277(0, RasterSprite.models!!, i_16_, -1)
+                val class124 = SkyBoxType.method2277(0, RasterSprite.models!!, i_16_, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 105)
                 abstractModel = var_renderer.method3625(class124, i_18_, RefCountedHandle.anInt2275, 64, 768)

@@ -23,21 +23,21 @@ class SkyBoxTypeList internal constructor(sceneProjector: SceneProjector?, i: In
         anInt1457++
     }
 
-    private fun method820(i: Int, i_15_: Int): ParticleConfigParser {
+    private fun method820(i: Int, i_15_: Int): SkyBoxType {
         anInt1458++
-        var particleConfigParser: ParticleConfigParser? = withLock(aLruByteCache_1449) {
-            aLruByteCache_1449.method583(i.toLong(), 116) as ParticleConfigParser?
+        var skyBoxType: SkyBoxType? = withLock(aLruByteCache_1449) {
+            aLruByteCache_1449.method583(i.toLong(), 116) as SkyBoxType?
         }
-        if (particleConfigParser != null) return particleConfigParser!!
+        if (skyBoxType != null) return skyBoxType!!
         val `is`: ByteArray? = withLock(aJs5Archive_1460!!) {
             aJs5Archive_1460.method410(-1860, i_15_, i)
         }
-        particleConfigParser = ParticleConfigParser()
-        if (`is` != null) particleConfigParser!!.method2275(ByteBuffer(`is`), (-123).toByte())
+        skyBoxType = SkyBoxType()
+        if (`is` != null) skyBoxType!!.method2275(ByteBuffer(`is`), (-123).toByte())
         withLock(aLruByteCache_1449) {
-            aLruByteCache_1449.method582(particleConfigParser, i.toLong(), (-106).toByte())
+            aLruByteCache_1449.method582(skyBoxType, i.toLong(), (-106).toByte())
         }
-        return particleConfigParser!!
+        return skyBoxType!!
     }
 
     fun method822(i: Byte) {

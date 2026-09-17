@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class222 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class UnderlayDefinition {
+class CursorType {
     var anInt2883: Int = 0
     var aCursorTypeList_2886: CursorTypeList? = null
     var anInt2890: Int = 0

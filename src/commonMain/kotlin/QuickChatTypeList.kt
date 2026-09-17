@@ -7,14 +7,14 @@ class QuickChatTypeList internal constructor(i: Int, js5Archive: Js5Archive?, js
     private val aJs5Archive_2961: Js5Archive?
     private var aJs5Archive_2965: Js5Archive? = null
 
-    fun method1625(i: Int, i_0_: Int): CharCodeMap {
+    fun method1625(i: Int, i_0_: Int): QuickChatType {
         anInt2963++
-        var class348_sub42_sub11 = aLruByteCache_2960.method583(i_0_.toLong(), -51) as CharCodeMap?
+        var class348_sub42_sub11 = aLruByteCache_2960.method583(i_0_.toLong(), -51) as QuickChatType?
         if (class348_sub42_sub11 != null) return class348_sub42_sub11
         val `is`: ByteArray?
         if (i_0_ < 32768) `is` = aJs5Archive_2961!!.method410(-1860, 0, i_0_)
         else `is` = aJs5Archive_2965!!.method410(-1860, 0, 0x7fff and i_0_)
-        class348_sub42_sub11 = CharCodeMap()
+        class348_sub42_sub11 = QuickChatType()
         if (`is` != null) class348_sub42_sub11.method3221(117, ByteBuffer(`is`))
         if (i_0_ >= 32768) class348_sub42_sub11.method3224(104.toByte())
         if (i != 0) aJs5Archive_2965 = null

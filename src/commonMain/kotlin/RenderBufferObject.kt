@@ -176,7 +176,7 @@ class RenderBufferObject : HashLinkedListNode, IndexedDisposable {
                 GfxTypeList.aCacheIndexManagerArray3982 = arrayOfNulls<CacheIndexManager>(i_7_)
                 for (i_8_ in 0..<i_7_) GfxTypeList.aCacheIndexManagerArray3982!![i_8_] = CacheIndexManager(TextureOptionState.aStringArrayArray6093!![(Npc.anInt10503 - 2)]!![i_8_])
             } else ActiveMapRegion.anInt5652 = 1
-            WidgetDefinition.anIntArray256 = IntArray(ActiveMapRegion.anInt5652 - 1)
+            AnimationType.anIntArray256 = IntArray(ActiveMapRegion.anInt5652 - 1)
             ParticleProcessor.anIntArray4271 = IntArray(ActiveMapRegion.anInt5652 - 1)
         }
     }

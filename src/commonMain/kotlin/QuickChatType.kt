@@ -7,7 +7,7 @@ import MinimapSquareDrawer.Companion.method462
 /* Class348_Sub42_Sub11 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class CharCodeMap : HashLinkedListNode() {
+class QuickChatType : HashLinkedListNode() {
     var anIntArray9580: IntArray? = null
     lateinit var aCharArray9582: CharArray
     var aString9587: String? = null
@@ -145,7 +145,7 @@ class CharCodeMap : HashLinkedListNode() {
                         FileIoUtil.anIntArray4097!![i_9_] = -1000000
                         LinkedListIterator.anIntArray2117!![i_9_] = 1000000
                         BlankTextureNode.anIntArray9259!![i_9_] = 0
-                        CharCodeMap.anIntArray1127!![i_9_] = 1000000
+                        QuickChatType.anIntArray1127!![i_9_] = 1000000
                         ConnectionStateType.anIntArray1045!![i_9_] = 0
                     }
                     var i_10_ = (LocalPlayerState.aPlayer_1907!!.x)

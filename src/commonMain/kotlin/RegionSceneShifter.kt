@@ -223,7 +223,7 @@ class RegionSceneShifter : LinkedListNode() {
                     method464(-1)
                     OpenGlRenderNode.aNodeDeque_10492!!.method1996(107)
                     SpriteTextureNode.aNodeDeque_9240!!.method1996(103)
-                    NpcDefinition.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())
+                    RenderAnimType.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())
                     method1911(99.toByte())
                 }
             }

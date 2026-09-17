@@ -34,8 +34,8 @@ object DebugOverlayRenderer {
         val i_1_ = 30
         if (InterfaceBounds.anInt6818 != 0 && Tooltip.aRSFont_4456 != null) {
             NativeLibraryState.aRenderer171!!.K(BrightnessContrastEffect.anIntArray9183)
-            for (i_2_ in WidgetDefinition.anIntArray256!!.indices) NativeLibraryState.aRenderer171!!.method3660((WidgetDefinition.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_]), -256, (BrightnessContrastEffect.anIntArray9183!![3] - BrightnessContrastEffect.anIntArray9183!![1]), BrightnessContrastEffect.anIntArray9183!![1], true)
-            for (i_3_ in 0..<ParameterizedText.anInt9577) {
+            for (i_2_ in AnimationType.anIntArray256!!.indices) NativeLibraryState.aRenderer171!!.method3660((AnimationType.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_]), -256, (BrightnessContrastEffect.anIntArray9183!![3] - BrightnessContrastEffect.anIntArray9183!![1]), BrightnessContrastEffect.anIntArray9183!![1], true)
+            for (i_3_ in 0..<QuickChatMenuType.anInt9577) {
                 val class338 = MinimapAreaMarkerNode.aMapTileShapeArray9700!![i_3_]!!
                 NativeLibraryState.aRenderer171!!.H(class338.anIntArray4187!![0], class338.anIntArray4191[0], class338.anIntArray4184[0], ClickFeedbackTask.anIntArray4670)
                 NativeLibraryState.aRenderer171!!.H(class338.anIntArray4187!![1], class338.anIntArray4191[1], class338.anIntArray4184[1], MinimapRectClipper.anIntArray222)
@@ -54,7 +54,7 @@ object DebugOverlayRenderer {
             Tooltip.aRSFont_4456!!.method2576(("Dynamic: " + DrawListState.anInt1477 + "/" + 5000), -256, i_1_ + 45, i, -16777216, -120)
             Tooltip.aRSFont_4456!!.method2576(("Total Opaque Onscreen: " + ProportionalScrollbarComponent.anInt9930 + "/" + 10000), -256, i_1_ + 60, i, -16777216, -124)
             Tooltip.aRSFont_4456!!.method2576(("Total Trans Onscreen: " + LoadingScreenImageNode.anInt9504 + "/" + 5000), -256, i_1_ + 75, i, -16777216, -111)
-            Tooltip.aRSFont_4456!!.method2576(("Occluders: " + (SoundLevelOptionState.anInt6115 + CollisionFlagQuery.anInt1200) + " Active: " + (ParameterizedText.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
+            Tooltip.aRSFont_4456!!.method2576(("Occluders: " + (SoundLevelOptionState.anInt6115 + CollisionFlagQuery.anInt1200) + " Active: " + (QuickChatMenuType.anInt9577)), -256, i_1_ + 90, i, -16777216, -111)
             Tooltip.aRSFont_4456!!.method2576(("Occluded: Ground:" + ActorEntity.anInt9039 + " Walls: " + ActorEntity.anInt562 + " CPs: " + SourceRowTextureNode.anInt9112 + " Pixels: " + ActorEntity.anInt2946), -256, i_1_ + 105, i, -16777216, -115)
             Tooltip.aRSFont_4456!!.method2576(("Occlude Calc Took: " + (GlslEnvMaterialPass.aLong6276 / 1000L) + "us"), -256, i_1_ + 120, i, -16777216, -123)
             if (InterfaceBounds.anInt6818 == 2 && ActorEntity.anIntArray5091 != null) {

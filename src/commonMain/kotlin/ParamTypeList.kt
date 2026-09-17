@@ -4,22 +4,22 @@
 class ParamTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_4085: Js5Archive?
     private var aLruByteCache_4087: LruByteCache? = LruByteCache(64)
-    fun method2600(i: Int, i_0_: Int): EmoteDefinition {
+    fun method2600(i: Int, i_0_: Int): ParamType {
         anInt4084++
-        var emoteDefinition: EmoteDefinition? = withLock(aLruByteCache_4087!!) {
-            aLruByteCache_4087!!.method583(i.toLong(), -67) as EmoteDefinition?
+        var paramType: ParamType? = withLock(aLruByteCache_4087!!) {
+            aLruByteCache_4087!!.method583(i.toLong(), -67) as ParamType?
         }
-        if (emoteDefinition != null) return emoteDefinition
+        if (paramType != null) return paramType
         if (i_0_ != 28364) anInt4086 = 117
         val `is`: ByteArray? = withLock(aJs5Archive_4085!!) {
             aJs5Archive_4085.method410(-1860, 11, i)
         }
-        emoteDefinition = EmoteDefinition()
-        if (`is` != null) emoteDefinition.method1924(ByteBuffer(`is`), (-127).toByte())
+        paramType = ParamType()
+        if (`is` != null) paramType.method1924(ByteBuffer(`is`), (-127).toByte())
         withLock(aLruByteCache_4087!!) {
-            aLruByteCache_4087!!.method582(emoteDefinition, i.toLong(), (-114).toByte())
+            aLruByteCache_4087!!.method582(paramType, i.toLong(), (-114).toByte())
         }
-        return emoteDefinition
+        return paramType
     }
 
     fun method2601(i: Byte) {

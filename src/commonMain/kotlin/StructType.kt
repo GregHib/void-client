@@ -4,7 +4,7 @@ import EnumTypeList.Companion.method340
 /* Class348_Sub42_Sub1 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParamMap : HashLinkedListNode() {
+class StructType : HashLinkedListNode() {
     private var aHashtable_9494: Hashtable? = null
     fun method3166(i: Int, i_0_: Int, i_1_: Byte): Int {
         anInt9490++

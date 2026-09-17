@@ -60,11 +60,11 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                     if (color_0_ == null) color_0_ = Color(140, 17, 17)
                     if (color_2_ == null) color_2_ = Color(255, 255, 255)
                     try {
-                        if (LoadingBarRenderer.anImage4249 == null) LoadingBarRenderer.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432))
+                        if (LoadingBarRenderer.anImage4249 == null) LoadingBarRenderer.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(QuestType.anInt4017, GameDisplayManager.anInt10432))
                         val graphics_3_ = LoadingBarRenderer.anImage4249!!.getGraphics()
                         graphics_3_.setColor(COLOR_BLACK)
-                        graphics_3_.fillRect(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
-                        val i_4_ = -152 + LocTypeDefinition.anInt4017 / 2
+                        graphics_3_.fillRect(0, 0, QuestType.anInt4017, GameDisplayManager.anInt10432)
+                        val i_4_ = -152 + QuestType.anInt4017 / 2
                         val i_5_ = -18 + GameDisplayManager.anInt10432 / 2
                         graphics_3_.setColor(color_0_)
                         graphics_3_.drawRect(i_4_, i_5_, 303, 33)
@@ -79,13 +79,13 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         if (AsyncResourceRequest.aString9665 != null) {
                             graphics_3_.setFont(LoadingBarRenderer.aFont4329)
                             graphics_3_.setColor(color_2_)
-                            graphics_3_.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 - (AsyncResourceRequest.aString9665!!.length * 6 / 2)), -26 + GameDisplayManager.anInt10432 / 2)
+                            graphics_3_.drawString(AsyncResourceRequest.aString9665, (QuestType.anInt4017 / 2 - (AsyncResourceRequest.aString9665!!.length * 6 / 2)), -26 + GameDisplayManager.anInt10432 / 2)
                         }
                         graphics.drawImage(LoadingBarRenderer.anImage4249, 0, 0, null)
                     } catch (exception: Exception) {
                         graphics.setColor(COLOR_BLACK)
-                        graphics.fillRect(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
-                        val i_6_ = -152 + LocTypeDefinition.anInt4017 / 2
+                        graphics.fillRect(0, 0, QuestType.anInt4017, GameDisplayManager.anInt10432)
+                        val i_6_ = -152 + QuestType.anInt4017 / 2
                         val i_7_ = GameDisplayManager.anInt10432 / 2 + -18
                         graphics.setColor(color_0_)
                         graphics.drawRect(i_6_, i_7_, 303, 33)
@@ -99,7 +99,7 @@ class LoadingScreenState internal constructor(private val aBoolean2629: Boolean,
                         if (AsyncResourceRequest.aString9665 != null) {
                             graphics.setFont(LoadingBarRenderer.aFont4329)
                             graphics.setColor(color_2_)
-                            graphics.drawString(AsyncResourceRequest.aString9665, (LocTypeDefinition.anInt4017 / 2 + -(6 * AsyncResourceRequest.aString9665!!.length / 2)), GameDisplayManager.anInt10432 / 2 - 26)
+                            graphics.drawString(AsyncResourceRequest.aString9665, (QuestType.anInt4017 / 2 + -(6 * AsyncResourceRequest.aString9665!!.length / 2)), GameDisplayManager.anInt10432 / 2 - 26)
                         }
                         graphics.drawString(string, i_6_ - -((304 + -(string!!.length * 6)) / 2), 22 + i_7_)
                     }

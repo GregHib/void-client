@@ -58,9 +58,9 @@ class DragDropController {
                         if (RegionSceneLoader.aWidgetComponent_3701!!.anInt703 < DragDropController.anInt6392) {
                             val i_6_ = i_2_ + -NativeRenderer.anInt8001
                             val i_7_ = -GrayscaleEffect.anInt9203 + i_3_
-                            if (RegionSceneLoader.aWidgetComponent_3701!!.anInt729 < i_6_ || (-RegionSceneLoader.aWidgetComponent_3701!!.anInt729 > i_6_) || (i_7_ > RegionSceneLoader.aWidgetComponent_3701!!.anInt729) || i_7_ < -RegionSceneLoader.aWidgetComponent_3701!!.anInt729) ParticleConfigParser.aBoolean3819 = true
+                            if (RegionSceneLoader.aWidgetComponent_3701!!.anInt729 < i_6_ || (-RegionSceneLoader.aWidgetComponent_3701!!.anInt729 > i_6_) || (i_7_ > RegionSceneLoader.aWidgetComponent_3701!!.anInt729) || i_7_ < -RegionSceneLoader.aWidgetComponent_3701!!.anInt729) SkyBoxType.aBoolean3819 = true
                         }
-                        if ((RegionSceneLoader.aWidgetComponent_3701!!.anObjectArray823 != null) && ParticleConfigParser.aBoolean3819) {
+                        if ((RegionSceneLoader.aWidgetComponent_3701!!.anObjectArray823 != null) && SkyBoxType.aBoolean3819) {
                             val class348_sub36 = WidgetActionEntry()
                             class348_sub36.aWidgetComponent_6989 = RegionSceneLoader.aWidgetComponent_3701
                             class348_sub36.anInt6984 = i_4_
@@ -69,7 +69,7 @@ class DragDropController {
                             method705(class348_sub36)
                         }
                     } else {
-                        if (ParticleConfigParser.aBoolean3819) {
+                        if (SkyBoxType.aBoolean3819) {
                             TileRenderState.Companion.method2678(-2049)
                             if (RegionSceneLoader.aWidgetComponent_3701!!.anObjectArray692 != null) {
                                 val class348_sub36 = WidgetActionEntry()

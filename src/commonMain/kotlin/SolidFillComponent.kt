@@ -92,7 +92,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
             anInt8353++
             if (i_3_ != -1922) aBoundsConstraintEntry_8356 = null
             val `is` = ByteArray(i * i_5_ * i_10_)
-            CameraConfigDefinition.method1919(i, f_8_, `is`, f_6_, 0, f_9_, textureGenerator, f_7_, i_4_, 119.toByte(), i_10_, f, i_5_)
+            LightType.method1919(i, f_8_, `is`, f_6_, 0, f_9_, textureGenerator, f_7_, i_4_, 119.toByte(), i_10_, f, i_5_)
             return `is`
         }
 
@@ -112,7 +112,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
             var i = i
             var i_14_ = i_14_
             if (bool != true) method192(null, -119, 63, 12)
-            if (LocalPlayerState.anInt1910 <= i_15_ && WidgetTextConfig.anInt513 >= i_15_) {
+            if (LocalPlayerState.anInt1910 <= i_15_ && SkyboxSphereType.anInt513 >= i_15_) {
                 i_14_ = WhirlpoolHash.method831(CameraNodeList.anInt1745, i_14_, WorldMapLabel.anInt4960, 71)
                 i = WhirlpoolHash.method831(CameraNodeList.anInt1745, i, WorldMapLabel.anInt4960, -87)
                 method223(i, i_13_, i_15_, i_14_, 39.toByte())
@@ -163,7 +163,7 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
                 i_7_ = 21 + FileExistsCondition.anInt4776 * 16
             }
             var i_10_ = -(i_6_ / 2) + i_4_
-            if (LocTypeDefinition.anInt4017 < i_6_ + i_10_) i_10_ = -i_6_ + LocTypeDefinition.anInt4017
+            if (QuestType.anInt4017 < i_6_ + i_10_) i_10_ = -i_6_ + QuestType.anInt4017
             if (i_10_ < 0) i_10_ = 0
             var i_11_ = i_5_
             if (i_11_ + i_7_ > GameDisplayManager.anInt10432) i_11_ = GameDisplayManager.anInt10432 + -i_7_
@@ -177,8 +177,8 @@ class SolidFillComponent internal constructor(js5Archive: Js5Archive, js5Archive
 
         var anInt214: Int = 0
         fun method223(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Byte) {
-            if (i_2_ > i) GlElementArrayBuffer.method1156(-27, i_2_, WidgetDefinition.anIntArrayArray255!![i_1_]!!, i, i_0_)
-            else GlElementArrayBuffer.method1156(-27, i, WidgetDefinition.anIntArrayArray255!![i_1_]!!, i_2_, i_0_)
+            if (i_2_ > i) GlElementArrayBuffer.method1156(-27, i_2_, AnimationType.anIntArrayArray255!![i_1_]!!, i, i_0_)
+            else GlElementArrayBuffer.method1156(-27, i, AnimationType.anIntArrayArray255!![i_1_]!!, i_2_, i_0_)
             anInt214++
             if (i_3_ >= 20) {
                 /* empty */

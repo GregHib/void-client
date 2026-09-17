@@ -22,25 +22,25 @@ class AnimationTypeList internal constructor(sceneProjector: SceneProjector?, i:
         }
     }
 
-    fun method835(i: Int, i_0_: Int): WidgetDefinition {
+    fun method835(i: Int, i_0_: Int): AnimationType {
         anInt1483++
-        var widgetDefinition: WidgetDefinition? = withLock(aLruByteCache_1487!!) {
-            aLruByteCache_1487!!.method583(i.toLong(), i_0_ + -68) as WidgetDefinition?
+        var animationType: AnimationType? = withLock(aLruByteCache_1487!!) {
+            aLruByteCache_1487!!.method583(i.toLong(), i_0_ + -68) as AnimationType?
         }
         if (i_0_ != 7) aLruByteCache_1491 = null
-        if (widgetDefinition != null) return widgetDefinition
+        if (animationType != null) return animationType
         val `is`: ByteArray? = withLock(aJs5Archive_1488!!) {
             aJs5Archive_1488.method410(-1860, method256(i, 125.toByte()), method494(i_0_ xor 0x55, i))
         }
-        widgetDefinition = WidgetDefinition()
-        widgetDefinition.anInt269 = i
-        widgetDefinition.aAnimationTypeList_251 = this
-        if (`is` != null) widgetDefinition.method267(ByteBuffer(`is`), false)
-        widgetDefinition.method270(124.toByte())
+        animationType = AnimationType()
+        animationType.anInt269 = i
+        animationType.aAnimationTypeList_251 = this
+        if (`is` != null) animationType.method267(ByteBuffer(`is`), false)
+        animationType.method270(124.toByte())
         withLock(aLruByteCache_1487!!) {
-            aLruByteCache_1487!!.method582(widgetDefinition, i.toLong(), (-126).toByte())
+            aLruByteCache_1487!!.method582(animationType, i.toLong(), (-126).toByte())
         }
-        return widgetDefinition
+        return animationType
     }
 
     fun method836(i: Int, i_1_: Int) {

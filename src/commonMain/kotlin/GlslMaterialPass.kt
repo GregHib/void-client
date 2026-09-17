@@ -140,7 +140,7 @@ class GlslMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterTe
         fun method2154(i: Int): Int {
             var i_1_ = -1
             for (i_2_ in 0..<ActiveMapRegion.anInt5652 - 1) {
-                if (i < (WidgetDefinition.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_])) {
+                if (i < (AnimationType.anIntArray256!![i_2_] + ParticleProcessor.anIntArray4271!![i_2_])) {
                     i_1_ = i_2_
                     break
                 }

@@ -132,16 +132,16 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
         }
         anInt7++
         val container: Container
-        if (SkeletalAnimFrameLoader.aFrame476 == null) {
+        if (IdentityKitType.aFrame476 == null) {
             if (RsaVarbitHandler.aFrame4904 == null) {
                 if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169!!
                 else container = JagGlToolkitFactory.anApplet1530!!.getPulseComponent() as Container
             } else container = RsaVarbitHandler.aFrame4904 as Container
-        } else container = SkeletalAnimFrameLoader.aFrame476 as Container
+        } else container = IdentityKitType.aFrame476 as Container
 //        container.setLayout(null)
         ParticleSystemRenderer.aCanvas3869 = DelegatingRenderCanvas(this)
         container.add(ParticleSystemRenderer.aCanvas3869!!)
-        ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
+        ParticleSystemRenderer.aCanvas3869!!.setSize(QuestType.anInt4017, GameDisplayManager.anInt10432)
         ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
         if (container === RsaVarbitHandler.aFrame4904) {
             val insets = (RsaVarbitHandler.aFrame4904 as Container).getInsets()
@@ -182,12 +182,12 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
             StereoSoundOptionState.anInt5891 = (32000 + (i_3_ shr 1)) / i_3_
         }
         anInt2071 = anInt2071 - -1 and 0x1f
-        if (ParticleAmountConfig.anInt2127++ > 50) {
-            ParticleAmountConfig.anInt2127 -= 50
+        if (VarPlayerType.anInt2127++ > 50) {
+            VarPlayerType.anInt2127 -= 50
             SpriteRenderable.aBoolean4726 = true
-            ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
+            ParticleSystemRenderer.aCanvas3869!!.setSize(QuestType.anInt4017, GameDisplayManager.anInt10432)
             ParticleSystemRenderer.aCanvas3869!!.setVisible(true)
-            if (RsaVarbitHandler.aFrame4904 != null && SkeletalAnimFrameLoader.aFrame476 == null) {
+            if (RsaVarbitHandler.aFrame4904 != null && IdentityKitType.aFrame476 == null) {
                 val insets = RsaVarbitHandler.aFrame4904!!.getInsets()
                 ParticleSystemRenderer.aCanvas3869!!.setLocation((insets.left - -ModelResourceBundle.anInt7129), (insets.top + TimingCounters.anInt4167))
             } else ParticleSystemRenderer.aCanvas3869!!.setLocation(ModelResourceBundle.anInt7129, TimingCounters.anInt4167)
@@ -396,8 +396,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
                 ModelResourceBundle.anInt7129 = 0
                 GameDisplayManager.anInt10432 = i_16_
                 NpcReference.anInt6857 = GameDisplayManager.anInt10432
-                LocTypeDefinition.anInt4017 = i
-                SocketFactory.anInt3473 = LocTypeDefinition.anInt4017
+                QuestType.anInt4017 = i
+                SocketFactory.anInt3473 = QuestType.anInt4017
                 TimingCounters.anInt4167 = 0
                 ParticleTileShape.anInt8818 = i_15_
                 EdgeDetectTextureNode.anGameApplet_Frame_9169 = this
@@ -421,8 +421,8 @@ abstract class GameAppletFrame : Panel(), GameApplet, Runnable, FocusListener, W
     fun method96(i: Int, i_20_: Int, bool: Boolean, i_21_: Int, i_22_: Int, string: String?, i_23_: Int, i_24_: Int) {
         try {
             if (i_23_ != 23499) return
-            LocTypeDefinition.anInt4017 = i_20_
-            SocketFactory.anInt3473 = LocTypeDefinition.anInt4017
+            QuestType.anInt4017 = i_20_
+            SocketFactory.anInt3473 = QuestType.anInt4017
             GameDisplayManager.anInt10432 = i_24_
             NpcReference.anInt6857 = GameDisplayManager.anInt10432
             EdgeDetectTextureNode.anGameApplet_Frame_9169 = this

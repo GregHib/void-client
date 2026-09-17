@@ -97,8 +97,8 @@ class OggCacheStream private constructor(i: Int, js5Archive: Js5Archive, i_1_: I
         fun method524(i: Int, bool: Boolean, i_2_: Int, i_3_: Int) {
             if (i_3_ > -108) aBoolean5265 = false
             if (ProjectileConfigUtil.aHashtable_389!!.method3480(i_2_.toLong(), -6008) == null) {
-                if (WidgetTextConfig.aBoolean510) {
-                    val class348_sub15 = MenuActionNode(i_2_, OggCacheStream(4096, (HitsplatDefinition.aJs5Archive_2015!!), i_2_), i, bool)
+                if (SkyboxSphereType.aBoolean510) {
+                    val class348_sub15 = MenuActionNode(i_2_, OggCacheStream(4096, (VarbitType.aJs5Archive_2015!!), i_2_), i, bool)
                     class348_sub15.aClass55_Sub1_6768!!.method509(-92, RgbNoiseTexture.aStringArray5305!![ChatCommandProcessor.language])
                     ProjectileConfigUtil.aHashtable_389!!.method3483(35.toByte(), i_2_.toLong(), class348_sub15)
                 } else ProjectileDefinition.method2285(bool, (-90).toByte(), i_2_)

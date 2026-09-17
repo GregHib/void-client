@@ -32,19 +32,19 @@ class ModelKeyBuilder : LinkedListNode() {
         }
     }
 
-    fun method2803(widgetDefinition: WidgetDefinition?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_renderer: Renderer?, bool: Boolean, i_14_: Int): AbstractModel? {
+    fun method2803(animationType: AnimationType?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i: Int, i_10_: Int, i_11_: Int, i_12_: Int, i_13_: Int, var_renderer: Renderer?, bool: Boolean, i_14_: Int): AbstractModel? {
         try {
             anInt6756++
             var abstractModel: AbstractModel? = null
             var i_15_ = i_13_
-            var npcDefinition: NpcDefinition? = null
-            if (i != -1) npcDefinition = OpenGlModel.aRenderAnimTypeList_5558!!.method1983(i, 32)
+            var renderAnimType: RenderAnimType? = null
+            if (i != -1) renderAnimType = OpenGlModel.aRenderAnimTypeList_5558!!.method1983(i, 32)
             var `is` = this.anIntArray6757
-            if (npcDefinition != null && npcDefinition.anIntArray2906 != null) {
-                `is` = IntArray(npcDefinition.anIntArray2906.size)
+            if (renderAnimType != null && renderAnimType.anIntArray2906 != null) {
+                `is` = IntArray(renderAnimType.anIntArray2906.size)
                 var i_16_ = 0
-                while ((i_16_ < npcDefinition.anIntArray2906.size)) {
-                    val i_17_ = npcDefinition.anIntArray2906[i_16_]
+                while ((i_16_ < renderAnimType.anIntArray2906.size)) {
+                    val i_17_ = renderAnimType.anIntArray2906[i_16_]
                     if (i_17_ >= 0 && i_17_ < this.anIntArray6757!!.size) `is`[i_16_] = this.anIntArray6757!![i_17_]
                     else `is`[i_16_] = -1
                     i_16_++
@@ -59,8 +59,8 @@ class ModelKeyBuilder : LinkedListNode() {
             var i_24_ = 0
             var class348_sub42_sub17: TextureMaterialGroup? = null
             var class348_sub42_sub17_25_: TextureMaterialGroup? = null
-            if (widgetDefinition != null) {
-                i_22_ = widgetDefinition.anIntArray237[i_10_]
+            if (animationType != null) {
+                i_22_ = animationType.anIntArray237[i_10_]
                 i_15_ = i_15_ or 0x20
                 val i_26_ = i_22_ ushr 16
                 class348_sub42_sub17 = ParticleEmitterNode.aAnimationTypeList_191!!.method839(i_26_, i_14_ + 4)
@@ -69,11 +69,11 @@ class ModelKeyBuilder : LinkedListNode() {
                     bool_19_ = bool_19_ or class348_sub42_sub17.method3272(i_22_, 0)
                     bool_18_ = bool_18_ or class348_sub42_sub17.method3271(i_22_, 14)
                     bool_21_ = bool_21_ or class348_sub42_sub17.method3267((-112).toByte(), i_22_)
-                    bool_20_ = bool_20_ or widgetDefinition.aBoolean242
+                    bool_20_ = bool_20_ or animationType.aBoolean242
                 }
-                if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_12_ != -1 && widgetDefinition.anIntArray237.size > i_12_) {
-                    i_23_ = widgetDefinition.anIntArray237[i_12_]
-                    i_24_ = widgetDefinition.anIntArray267!![i_10_]
+                if ((animationType.aBoolean241 || ItemNameResolver.aBoolean5002) && i_12_ != -1 && animationType.anIntArray237.size > i_12_) {
+                    i_23_ = animationType.anIntArray237[i_12_]
+                    i_24_ = animationType.anIntArray267!![i_10_]
                     val i_27_ = i_23_ ushr 16
                     i_23_ = i_23_ and 0xffff
                     if (i_27_ == i_26_) class348_sub42_sub17_25_ = class348_sub42_sub17
@@ -105,16 +105,16 @@ class ModelKeyBuilder : LinkedListNode() {
                 for (i_31_ in `is`.indices) {
                     if (`is`[i_31_] != -1) modelDefinitions[i_31_] = ClientException.aItemTypeList_112!!.method1940(ModelDefinition.method2955(i_14_, -112), `is`[i_31_]).method1558(bool, false)
                 }
-                if (npcDefinition != null && npcDefinition.anIntArrayArray2939 != null) {
+                if (renderAnimType != null && renderAnimType.anIntArrayArray2939 != null) {
                     var i_32_ = 0
-                    while ((npcDefinition.anIntArrayArray2939!!.size > i_32_)) {
-                        if ((npcDefinition.anIntArrayArray2939!![i_32_] != null) && modelDefinitions[i_32_] != null) {
-                            val i_33_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![0])
-                            val i_34_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![1])
-                            val i_35_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![2])
-                            val i_36_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![3])
-                            val i_37_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![4])
-                            val i_38_ = (npcDefinition.anIntArrayArray2939!![i_32_]!![5])
+                    while ((renderAnimType.anIntArrayArray2939!!.size > i_32_)) {
+                        if ((renderAnimType.anIntArrayArray2939!![i_32_] != null) && modelDefinitions[i_32_] != null) {
+                            val i_33_ = (renderAnimType.anIntArrayArray2939!![i_32_]!![0])
+                            val i_34_ = (renderAnimType.anIntArrayArray2939!![i_32_]!![1])
+                            val i_35_ = (renderAnimType.anIntArrayArray2939!![i_32_]!![2])
+                            val i_36_ = (renderAnimType.anIntArrayArray2939!![i_32_]!![3])
+                            val i_37_ = (renderAnimType.anIntArrayArray2939!![i_32_]!![4])
+                            val i_38_ = (renderAnimType.anIntArrayArray2939!![i_32_]!![5])
                             if (i_36_ != 0 || i_37_ != 0 || i_38_ != 0) modelDefinitions[i_32_]!!.method1107(6875, i_37_, i_38_, i_36_)
                             if (i_33_ != 0 || i_34_ != 0 || i_35_ != 0) modelDefinitions[i_32_]!!.method1099((-91).toByte(), i_35_, i_33_, i_34_)
                         }
@@ -123,7 +123,7 @@ class ModelKeyBuilder : LinkedListNode() {
                 }
                 if (compositeNpcModelBuilder != null) i_28_ = i_28_ or 0x4000
                 val modelDefinition = ModelDefinition(modelDefinitions, modelDefinitions.size)
-                abstractModel = var_renderer!!.method3625(modelDefinition, i_28_, ParamMap.anInt9488, 64, 850)
+                abstractModel = var_renderer!!.method3625(modelDefinition, i_28_, StructType.anInt9488, 64, 850)
                 if (compositeNpcModelBuilder != null) {
                     for (i_39_ in 0..4) {
                         for (i_40_ in (GlWaterRenderPass.aShortArrayArrayArray7290)!!.indices) {
@@ -136,12 +136,12 @@ class ModelKeyBuilder : LinkedListNode() {
                     SocketStreamWorker.aLruByteCache_2671!!.method582(abstractModel, l, (-128).toByte())
                 }
             }
-            if (widgetDefinition == null || class348_sub42_sub17 == null) return abstractModel
+            if (animationType == null || class348_sub42_sub17 == null) return abstractModel
             val class64_41_ = abstractModel.method614(1.toByte(), i_15_, true)
-            class64_41_!!.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, widgetDefinition.aBoolean242, i_23_, i_11_ + i_14_)
+            class64_41_!!.method617(i_22_, i_24_, class348_sub42_sub17_25_, 0, class348_sub42_sub17, false, animationType.aBoolean242, i_23_, i_11_ + i_14_)
             return class64_41_
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("ie.B(" + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ',' + i_14_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("ie.B(" + (if (animationType != null) "{...}" else "null") + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + i + ',' + i_10_ + ',' + i_11_ + ',' + i_12_ + ',' + i_13_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + bool + ',' + i_14_ + ')'))
         }
     }
 

@@ -11,14 +11,14 @@ class QuickChatMenuTypeList internal constructor(i: Int, js5Archive: Js5Archive?
     private val aJs5Archive_4369: Js5Archive?
     private var anTextFormatter_4373: TextFormatter?
 
-    fun method3471(i: Int, i_0_: Byte): ParameterizedText {
+    fun method3471(i: Int, i_0_: Byte): QuickChatMenuType {
         anInt4363++
-        var class348_sub42_sub10 = aLruByteCache_4362.method583(i.toLong(), 70) as ParameterizedText?
+        var class348_sub42_sub10 = aLruByteCache_4362.method583(i.toLong(), 70) as QuickChatMenuType?
         if (class348_sub42_sub10 != null) return class348_sub42_sub10
         val `is`: ByteArray?
         if (i >= 32768) `is` = aJs5Archive_4369!!.method410(-1860, 1, 0x7fff and i)
         else `is` = aJs5Archive_4368!!.method410(-1860, 1, i)
-        class348_sub42_sub10 = ParameterizedText()
+        class348_sub42_sub10 = QuickChatMenuType()
         class348_sub42_sub10.aQuickChatMenuTypeList_9567 = this
         if (`is` != null) class348_sub42_sub10.method3218(ByteBuffer(`is`), 0)
         if (i_0_ >= -86) method3473(-12)

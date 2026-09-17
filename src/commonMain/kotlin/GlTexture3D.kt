@@ -163,7 +163,7 @@ class GlTexture3D : GlTexture {
                 RsaVarbitHandler.anIntArray4906 = NativeLibraryState.aRenderer171!!.Y()
                 NativeLibraryState.aRenderer171!!.K(BrightnessContrastEffect.anIntArray9183)
                 val i_43_ = ((BrightnessContrastEffect.anIntArray9183!![2] - BrightnessContrastEffect.anIntArray9183!![0]) / ActiveMapRegion.anInt5652)
-                for (i_44_ in 0..<ActiveMapRegion.anInt5652 - 1) WidgetDefinition.anIntArray256!![i_44_] = i_43_ * (i_44_ + 1) + ParticleProcessor.anIntArray4271!![i_44_]
+                for (i_44_ in 0..<ActiveMapRegion.anInt5652 - 1) AnimationType.anIntArray256!![i_44_] = i_43_ * (i_44_ + 1) + ParticleProcessor.anIntArray4271!![i_44_]
                 for (i_45_ in NormalMapTextureNode.aSceneLoaderThreadArray9432!!.indices) NormalMapTextureNode.aSceneLoaderThreadArray9432!![i_45_]!!.method2209()
             }
             if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) {
@@ -185,9 +185,9 @@ class GlTexture3D : GlTexture {
                 method2290()
                 for (i_48_ in 0..<MapAreaDefinition.anInt2524) OverlayColorTable.aBooleanArrayArrayArray1751!![i_48_] = SolidFillComponent.aBooleanArrayArrayArray8361!![i_48_]!!
                 if (Npc.anInt10503 == 2) {
-                    if (HitsplatDefinition.aLongArray2013!![0] < HitsplatDefinition.aLongArray2013!![1]) {
-                        if (WidgetDefinition.anIntArray256!![0] + ParticleProcessor.anIntArray4271!![0] > BrightnessContrastEffect.anIntArray9183!![0]) ParticleProcessor.anIntArray4271!![0]++
-                    } else if ((HitsplatDefinition.aLongArray2013!![0] > HitsplatDefinition.aLongArray2013!![1]) && ((WidgetDefinition.anIntArray256!![0] + ParticleProcessor.anIntArray4271!![0]) < BrightnessContrastEffect.anIntArray9183!![2])) ParticleProcessor.anIntArray4271!![0]--
+                    if (VarbitType.aLongArray2013!![0] < VarbitType.aLongArray2013!![1]) {
+                        if (AnimationType.anIntArray256!![0] + ParticleProcessor.anIntArray4271!![0] > BrightnessContrastEffect.anIntArray9183!![0]) ParticleProcessor.anIntArray4271!![0]++
+                    } else if ((VarbitType.aLongArray2013!![0] > VarbitType.aLongArray2013!![1]) && ((AnimationType.anIntArray256!![0] + ParticleProcessor.anIntArray4271!![0]) < BrightnessContrastEffect.anIntArray9183!![2])) ParticleProcessor.anIntArray4271!![0]--
                 }
             }
             if (!SpriteTextureNode.aBoolean9242) {
@@ -223,7 +223,7 @@ class GlTexture3D : GlTexture {
                     if (!NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2210()) {
                         NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.signal()
                         bool = false
-                    } else HitsplatDefinition.aLongArray2013!![i] = NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2204()
+                    } else VarbitType.aLongArray2013!![i] = NormalMapTextureNode.aSceneLoaderThreadArray9432!![i]!!.method2204()
                 }
                 if (bool) break
                 try {

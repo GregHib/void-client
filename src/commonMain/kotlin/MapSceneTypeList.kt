@@ -9,23 +9,23 @@ class MapSceneTypeList internal constructor(sceneProjector: SceneProjector?, i: 
     private val aJs5Archive_1971: Js5Archive?
 
     var aLruByteCache_1976: LruByteCache = LruByteCache(64)
-    fun method1173(i: Byte, i_0_: Int): MapSceneIconDef? {
+    fun method1173(i: Byte, i_0_: Int): MapSceneType? {
         anInt1964++
-        var mapSceneIconDef: MapSceneIconDef? = withLock(aLruByteCache_1963) {
-            aLruByteCache_1963.method583(i_0_.toLong(), 118) as MapSceneIconDef?
+        var mapSceneType: MapSceneType? = withLock(aLruByteCache_1963) {
+            aLruByteCache_1963.method583(i_0_.toLong(), 118) as MapSceneType?
         }
-        if (mapSceneIconDef != null) return mapSceneIconDef
+        if (mapSceneType != null) return mapSceneType
         val `is`: ByteArray? = withLock(aJs5Archive_1971!!) {
             aJs5Archive_1971.method410(i + -1891, 34, i_0_)
         }
-        mapSceneIconDef = MapSceneIconDef()
+        mapSceneType = MapSceneType()
         if (i.toInt() != 31) return null
-        mapSceneIconDef.aMapSceneTypeList_2851 = this
-        if (`is` != null) mapSceneIconDef.method1597((-114).toByte(), ByteBuffer(`is`))
+        mapSceneType.aMapSceneTypeList_2851 = this
+        if (`is` != null) mapSceneType.method1597((-114).toByte(), ByteBuffer(`is`))
         withLock(aLruByteCache_1963) {
-            aLruByteCache_1963.method582(mapSceneIconDef, i_0_.toLong(), (-108).toByte())
+            aLruByteCache_1963.method582(mapSceneType, i_0_.toLong(), (-108).toByte())
         }
-        return mapSceneIconDef
+        return mapSceneType
     }
 
     fun method1174(i: Byte) {

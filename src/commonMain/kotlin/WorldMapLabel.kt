@@ -69,8 +69,8 @@ public open class WorldMapLabel(screenAnchorAlignment: ScreenAnchorAlignment?, t
             WorldMapRenderer.aRSFont_4684 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, ConnectionStateType.anInt1044)
             GlTexture3D.aFontDefinition_8527 = GlVertexBufferBase.method1151(-25411, var_renderer, ConnectionStateType.anInt1044)
             if (i != 4) aFontDefinition_4962 = null
-            GameAppletFrame.aRSFont_20 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, WidgetDefinition.anInt235)
-            ParticleEmitterFactoryStatics.aFontDefinition_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, WidgetDefinition.anInt235)
+            GameAppletFrame.aRSFont_20 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, AnimationType.anInt235)
+            ParticleEmitterFactoryStatics.aFontDefinition_3179 = GlVertexBufferBase.method1151(-25411, var_renderer, AnimationType.anInt235)
             NodeDequeStatics.aRSFont_3326 = GlTextureBase.method232(var_renderer, (-53).toByte(), true, DualMaterialContainer.anInt3736)
             aFontDefinition_4962 = GlVertexBufferBase.method1151(-25411, var_renderer, DualMaterialContainer.anInt3736)
         }

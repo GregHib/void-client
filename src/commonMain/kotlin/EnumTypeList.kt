@@ -9,20 +9,20 @@ import awt.Point
 class EnumTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_458: Js5Archive?
     private val aLruByteCache_460 = LruByteCache(128)
-    fun method337(bool: Boolean, i: Int): CacheArchiveIndex {
+    fun method337(bool: Boolean, i: Int): EnumType {
         anInt457++
-        var cacheArchiveIndex: CacheArchiveIndex? = null
+        var enumType: EnumType? = null
         withLock(aLruByteCache_460) {
-            cacheArchiveIndex = aLruByteCache_460.method583(i.toLong(), 111) as CacheArchiveIndex?
+            enumType = aLruByteCache_460.method583(i.toLong(), 111) as EnumType?
         }
-        if (cacheArchiveIndex != null) return cacheArchiveIndex
+        if (enumType != null) return enumType
         val `is` = aJs5Archive_458!!.method410(-1860, method200(-107, i), method3013(i, bool))
-        cacheArchiveIndex = CacheArchiveIndex()
-        if (`is` != null) cacheArchiveIndex.method1069(0, ByteBuffer(`is`))
+        enumType = EnumType()
+        if (`is` != null) enumType.method1069(0, ByteBuffer(`is`))
         withLock(aLruByteCache_460) {
-            aLruByteCache_460.method582(cacheArchiveIndex, i.toLong(), (-102).toByte())
+            aLruByteCache_460.method582(enumType, i.toLong(), (-102).toByte())
         }
-        return cacheArchiveIndex
+        return enumType
     }
 
     init {

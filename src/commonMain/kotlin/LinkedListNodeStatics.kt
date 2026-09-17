@@ -28,15 +28,15 @@ object LinkedListNodeStatics {
     }
 
     @JvmStatic
-    fun method2711(i: Int, i_3_: Int, abstractModel: AbstractModel?, i_4_: Int, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, var_renderer: Renderer?, i_9_: Int, i_10_: Int, i_11_: Int, widgetDefinition: WidgetDefinition?): AbstractModel? {
+    fun method2711(i: Int, i_3_: Int, abstractModel: AbstractModel?, i_4_: Int, bool: Boolean, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int, var_renderer: Renderer?, i_9_: Int, i_10_: Int, i_11_: Int, animationType: AnimationType?): AbstractModel? {
         var i_5_ = i_5_
         try {
             anInt4298++
             if (abstractModel == null) return null
             var i_12_ = 2055
             if (bool != false) return null
-            if (widgetDefinition != null) {
-                i_12_ = i_12_ or widgetDefinition.method263(-1, 103, i_5_, false)
+            if (animationType != null) {
+                i_12_ = i_12_ or animationType.method263(-1, 103, i_5_, false)
                 i_12_ = i_12_ and 0x200.inv()
             }
             val l = ((i_10_.toLong() shl 48) + (i_7_ + ((i_9_ shl 16) + (i_11_ shl 24))).toLong() - -(i_6_.toLong() shl 32))
@@ -95,8 +95,8 @@ object LinkedListNodeStatics {
             val i_33_ = abstractModel.HA()
             val i_34_ = abstractModel.G()
             var class348_sub42_sub17: TextureMaterialGroup? = null
-            if (widgetDefinition != null) {
-                i_5_ = widgetDefinition.anIntArray237[i_5_]
+            if (animationType != null) {
+                i_5_ = animationType.anIntArray237[i_5_]
                 class348_sub42_sub17 = ParticleEmitterNode.aAnimationTypeList_191!!.method839(i_5_ shr 16, 3)
                 i_5_ = i_5_ and 0xffff
             }
@@ -115,7 +115,7 @@ object LinkedListNodeStatics {
             if (i_8_ != 0) abstractModel_13_.H(0, i_8_, 0)
             return abstractModel_13_
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("eh.PC(" + i + ',' + i_3_ + ',' + (if (abstractModel != null) "{...}" else "null") + ',' + i_4_ + ',' + bool + ',' + i_5_ + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_9_ + ',' + i_10_ + ',' + i_11_ + ',' + (if (animationType != null) "{...}" else "null") + ')'))
         }
     }
 

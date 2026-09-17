@@ -61,7 +61,7 @@ class ContactEntry internal constructor(string: String?, string_15_: String?, i:
         @JvmStatic
         fun method3229(i: Int): Int {
             anInt9596++
-            if (SkeletalAnimFrameLoader.aFrame476 != null) return 3
+            if (IdentityKitType.aFrame476 != null) return 3
             if (i >= -59) anInt9604 = 79
             if (!MinimapSquareDrawer.aBoolean5219) return 1
             return 2

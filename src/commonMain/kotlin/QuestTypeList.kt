@@ -15,23 +15,23 @@ class QuestTypeList internal constructor(sceneProjector: SceneProjector?, i: Int
         anInt2508++
     }
 
-    fun method1408(i: Int, i_3_: Int): LocTypeDefinition {
+    fun method1408(i: Int, i_3_: Int): QuestType {
         anInt2504++
-        var locTypeDefinition: LocTypeDefinition? = withLock(aLruByteCache_2501!!) {
-            aLruByteCache_2501!!.method583(i_3_.toLong(), 76) as LocTypeDefinition?
+        var questType: QuestType? = withLock(aLruByteCache_2501!!) {
+            aLruByteCache_2501!!.method583(i_3_.toLong(), 76) as QuestType?
         }
-        if (locTypeDefinition != null) return locTypeDefinition
+        if (questType != null) return questType
         val `is`: ByteArray? = withLock(aJs5Archive_2498!!) {
             aJs5Archive_2498!!.method410(-1860, 35, i_3_)
         }
-        locTypeDefinition = LocTypeDefinition()
-        if (`is` != null) locTypeDefinition.method2551(-125, ByteBuffer(`is`))
+        questType = QuestType()
+        if (`is` != null) questType.method2551(-125, ByteBuffer(`is`))
         if (i != -12637) aLruByteCache_2501 = null
-        locTypeDefinition.method2548(127.toByte())
+        questType.method2548(127.toByte())
         withLock(aLruByteCache_2501!!) {
-            aLruByteCache_2501!!.method582(locTypeDefinition, i_3_.toLong(), (-99).toByte())
+            aLruByteCache_2501!!.method582(questType, i_3_.toLong(), (-99).toByte())
         }
-        return locTypeDefinition
+        return questType
     }
 
     fun method1409(i: Int, i_4_: Int) {

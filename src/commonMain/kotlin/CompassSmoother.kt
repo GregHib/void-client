@@ -97,20 +97,20 @@ class CompassSmoother {
         }
 
         @JvmStatic
-        fun method2017(i: Int, widgetDefinition: WidgetDefinition?, i_3_: Int) {
+        fun method2017(i: Int, animationType: AnimationType?, i_3_: Int) {
             anInt3367++
-            if (HintArrowOrMessage.anInt2021 < 50 && (widgetDefinition != null && widgetDefinition.anIntArrayArray264 != null && (widgetDefinition.anIntArrayArray264!!.size > i) && widgetDefinition.anIntArrayArray264!![i] != null)) {
-                val i_4_ = widgetDefinition.anIntArrayArray264!![i]!![0]
+            if (HintArrowOrMessage.anInt2021 < 50 && (animationType != null && animationType.anIntArrayArray264 != null && (animationType.anIntArrayArray264!!.size > i) && animationType.anIntArrayArray264!![i] != null)) {
+                val i_4_ = animationType.anIntArrayArray264!![i]!![0]
                 var i_5_ = i_4_ shr 8
-                if (widgetDefinition.anIntArrayArray264!![i]!!.size > 1) {
-                    val i_6_ = (random() * (widgetDefinition.anIntArrayArray264!![i])!!.size.toDouble()).toInt()
-                    if (i_6_ > 0) i_5_ = widgetDefinition.anIntArrayArray264!![i]!![i_6_]
+                if (animationType.anIntArrayArray264!![i]!!.size > 1) {
+                    val i_6_ = (random() * (animationType.anIntArrayArray264!![i])!!.size.toDouble()).toInt()
+                    if (i_6_ > 0) i_5_ = animationType.anIntArrayArray264!![i]!![i_6_]
                 }
                 val i_7_ = 0x7 and (i_4_ shr 5)
                 if (i_3_ > 8) {
                     var i_8_ = 256
-                    if (widgetDefinition.anIntArray236 != null && widgetDefinition.anIntArray265 != null) i_8_ = Texture2DProvider.method2257((widgetDefinition.anIntArray265!![i]), (widgetDefinition.anIntArray236!![i]), (-125).toByte())
-                    if (widgetDefinition.aBoolean268) SoundChannelMixer.method2090(i_7_, i_8_, false, (-35).toByte(), 255, 0, i_5_)
+                    if (animationType.anIntArray236 != null && animationType.anIntArray265 != null) i_8_ = Texture2DProvider.method2257((animationType.anIntArray265!![i]), (animationType.anIntArray236!![i]), (-125).toByte())
+                    if (animationType.aBoolean268) SoundChannelMixer.method2090(i_7_, i_8_, false, (-35).toByte(), 255, 0, i_5_)
                     else TextureTileRenderer.method2947(true, 255, i_5_, i_7_, 0, i_8_)
                 }
             }

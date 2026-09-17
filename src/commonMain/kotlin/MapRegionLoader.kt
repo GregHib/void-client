@@ -79,17 +79,17 @@ open class MapRegionLoader {
         var anInt1277: Int = 0
 
         @JvmStatic
-        fun method745(var_renderer: Renderer, class348_sub21: CameraSplineNode, structConfig: StructConfig) {
-            if (structConfig.anIntArray591 != null) {
-                val `is` = IntArray(structConfig.anIntArray591!!.size)
+        fun method745(var_renderer: Renderer, class348_sub21: CameraSplineNode, worldMapInfoType: WorldMapInfoType) {
+            if (worldMapInfoType.anIntArray591 != null) {
+                val `is` = IntArray(worldMapInfoType.anIntArray591!!.size)
                 for (i in 0..<`is`.size / 2) {
-                    val i_0_ = (structConfig.anIntArray591!![i * 2] + class348_sub21.anInt6852)
-                    val i_1_ = (structConfig.anIntArray591!![i * 2 + 1] + class348_sub21.anInt6851)
+                    val i_0_ = (worldMapInfoType.anIntArray591!![i * 2] + class348_sub21.anInt6852)
+                    val i_1_ = (worldMapInfoType.anIntArray591!![i * 2 + 1] + class348_sub21.anInt6851)
                     `is`[i * 2] = anInt1272 + ((anInt1276 - anInt1272) * (i_0_ - anInt1274) / (anInt1265 - anInt1274))
                     `is`[i * 2 + 1] = anInt1268 - ((anInt1268 - anInt1262) * (i_1_ - anInt1257) / (anInt1277 - anInt1257))
                 }
-                PolygonFiller.method2620(var_renderer, `is`, structConfig.anInt582)
-                if (structConfig.anInt584 > 0) {
+                PolygonFiller.method2620(var_renderer, `is`, worldMapInfoType.anInt582)
+                if (worldMapInfoType.anInt584 > 0) {
                     for (i in 0..<`is`.size / 2 - 1) {
                         var i_2_ = `is`[i * 2]
                         var i_3_ = `is`[i * 2 + 1]
@@ -107,7 +107,7 @@ open class MapRegionLoader {
                             i_3_ = i_5_
                             i_5_ = i_8_
                         }
-                        var_renderer.method3674(i_2_, i_3_, i_4_, i_5_, (structConfig.anIntArray572[(structConfig.aByteArray564[i].toInt() and 0xff)]), 1, structConfig.anInt584, structConfig.anInt575, structConfig.anInt601)
+                        var_renderer.method3674(i_2_, i_3_, i_4_, i_5_, (worldMapInfoType.anIntArray572[(worldMapInfoType.aByteArray564[i].toInt() and 0xff)]), 1, worldMapInfoType.anInt584, worldMapInfoType.anInt575, worldMapInfoType.anInt601)
                     }
                     var i = `is`[`is`.size - 2]
                     var i_9_ = `is`[`is`.size - 1]
@@ -125,10 +125,10 @@ open class MapRegionLoader {
                         i_9_ = i_11_
                         i_11_ = i_14_
                     }
-                    var_renderer.method3674(i, i_9_, i_10_, i_11_, (structConfig.anIntArray572[(structConfig.aByteArray564[(structConfig.aByteArray564.size - 1)]).toInt() and 0xff]), 1, structConfig.anInt584, structConfig.anInt575, structConfig.anInt601)
+                    var_renderer.method3674(i, i_9_, i_10_, i_11_, (worldMapInfoType.anIntArray572[(worldMapInfoType.aByteArray564[(worldMapInfoType.aByteArray564.size - 1)]).toInt() and 0xff]), 1, worldMapInfoType.anInt584, worldMapInfoType.anInt575, worldMapInfoType.anInt601)
                 } else {
-                    for (i in 0..<`is`.size / 2 - 1) var_renderer.method3645(`is`[i * 2 + 1], `is`[i * 2], `is`[(i + 1) * 2], -8003, (structConfig.anIntArray572[(structConfig.aByteArray564[i].toInt() and 0xff)]), `is`[(i + 1) * 2 + 1])
-                    var_renderer.method3645(`is`[`is`.size - 1], `is`[`is`.size - 2], `is`[0], -8003, (structConfig.anIntArray572[(structConfig.aByteArray564[(structConfig.aByteArray564.size - 1)]).toInt() and 0xff]), `is`[1])
+                    for (i in 0..<`is`.size / 2 - 1) var_renderer.method3645(`is`[i * 2 + 1], `is`[i * 2], `is`[(i + 1) * 2], -8003, (worldMapInfoType.anIntArray572[(worldMapInfoType.aByteArray564[i].toInt() and 0xff)]), `is`[(i + 1) * 2 + 1])
+                    var_renderer.method3645(`is`[`is`.size - 1], `is`[`is`.size - 2], `is`[0], -8003, (worldMapInfoType.anIntArray572[(worldMapInfoType.aByteArray564[(worldMapInfoType.aByteArray564.size - 1)]).toInt() and 0xff]), `is`[1])
                 }
             }
         }
@@ -517,22 +517,22 @@ open class MapRegionLoader {
         }
 
         private fun method759(var_renderConfig: RenderConfig, i: Int, i_105_: Int, i_106_: Int): Int {
-            val locTypeConfig: LocTypeConfig = aFloorOverlayTypeList_1239!!.method2034(i, false)
-            if (locTypeConfig == null) return 0
-            var i_107_ = locTypeConfig.anInt3575
+            val floorOverlayType: FloorOverlayType = aFloorOverlayTypeList_1239!!.method2034(i, false)
+            if (floorOverlayType == null) return 0
+            var i_107_ = floorOverlayType.anInt3575
             if (i_107_ >= 0 && var_renderConfig.method3(i_107_, -6662)!!.aBoolean209) i_107_ = -1
             val i_108_: Int
-            if (locTypeConfig.anInt3569 >= 0) {
-                val i_109_ = locTypeConfig.anInt3569
+            if (floorOverlayType.anInt3569 >= 0) {
+                val i_109_ = floorOverlayType.anInt3569
                 var i_110_ = (i_109_ and 0x7f) + i_106_
                 if (i_110_ < 0) i_110_ = 0
                 else if (i_110_ > 127) i_110_ = 127
                 val i_111_ = (i_109_ + i_105_ and 0xfc00) + (i_109_ and 0x380) + i_110_
                 i_108_ = 0xffffff.inv() or (SoundEnvelope.anIntArray4983!![method303(method353(96, -119, i_111_), 30).toInt() and 0xffff])
             } else if (i_107_ >= 0) i_108_ = (0xffffff.inv() or (SoundEnvelope.anIntArray4983!![(method303(method353(96, -85, (var_renderConfig.method3(i_107_, -6662)!!.aShort208).toInt()), 30)).toInt() and 0xffff]))
-            else if (locTypeConfig.anInt3563 == -1) i_108_ = 0
+            else if (floorOverlayType.anInt3563 == -1) i_108_ = 0
             else {
-                val i_112_ = locTypeConfig.anInt3563
+                val i_112_ = floorOverlayType.anInt3563
                 var i_113_ = (i_112_ and 0x7f) + i_106_
                 if (i_113_ < 0) i_113_ = 0
                 else if (i_113_ > 127) i_113_ = 127
@@ -583,12 +583,12 @@ open class MapRegionLoader {
                     val objectType: ObjectType = aObjectTypeList_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
                     val i_123_ = objectType.anInt875
                     if (i_123_ != -1) {
-                        val mapSceneIconDef: MapSceneIconDef? = aMapSceneTypeList_1242!!.method1173(31.toByte(), i_123_)
-                        val class105 = mapSceneIconDef!!.method1596((if (objectType.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (objectType.aBoolean925 && (objectType.aBoolean902)), 125, var_renderer!!)
+                        val mapSceneType: MapSceneType? = aMapSceneTypeList_1242!!.method1173(31.toByte(), i_123_)
+                        val class105 = mapSceneType!!.method1596((if (objectType.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (objectType.aBoolean925 && (objectType.aBoolean902)), 125, var_renderer!!)
                         if (class105 != null) {
                             var i_124_ = i_119_ * class105.method966() shr 2
                             var i_125_ = i_120_ * class105.method980() shr 2
-                            if (mapSceneIconDef.aBoolean2854) {
+                            if (mapSceneType.aBoolean2854) {
                                 var i_126_ = objectType.anInt961
                                 var i_127_ = objectType.anInt926
                                 if ((is_121_!![i_122_].toInt() shr 6 and 0x1) == 1) {
@@ -600,7 +600,7 @@ open class MapRegionLoader {
                                 i_125_ = i_127_ * i_120_
                             }
                             if (i_124_ != 0 && i_125_ != 0) {
-                                if (mapSceneIconDef.anInt2856 != 0) class105.method970(i, i_118_ - i_125_ + i_120_, i_124_, i_125_, 0, (0xffffff.inv() or (mapSceneIconDef.anInt2856)), 1)
+                                if (mapSceneType.anInt2856 != 0) class105.method970(i, i_118_ - i_125_ + i_120_, i_124_, i_125_, 0, (0xffffff.inv() or (mapSceneType.anInt2856)), 1)
                                 else class105.method973(i, i_118_ - i_125_ + i_120_, i_124_, i_125_)
                             }
                         }
@@ -791,22 +791,22 @@ open class MapRegionLoader {
                     if (i_202_ < anInt1259) {
                         val i_205_ = `is`[i_202_ + i_204_ * anInt1259].toInt() and 0xff
                         if (i_205_ > 0) {
-                            val hslColorConfig: HslColorConfig? = aFloorUnderlayTypeList_1240!!.method1380(true, i_205_ - 1)
-                            is_196_[i_204_] += hslColorConfig!!.anInt341
-                            is_197_[i_204_] += hslColorConfig.anInt332
-                            is_198_[i_204_] += hslColorConfig.anInt335
-                            is_199_[i_204_] += hslColorConfig.anInt343
+                            val floorUnderlayType: FloorUnderlayType? = aFloorUnderlayTypeList_1240!!.method1380(true, i_205_ - 1)
+                            is_196_[i_204_] += floorUnderlayType!!.anInt341
+                            is_197_[i_204_] += floorUnderlayType.anInt332
+                            is_198_[i_204_] += floorUnderlayType.anInt335
+                            is_199_[i_204_] += floorUnderlayType.anInt343
                             is_200_[i_204_]++
                         }
                     }
                     if (i_203_ >= 0) {
                         val i_206_ = `is`[i_203_ + i_204_ * anInt1259].toInt() and 0xff
                         if (i_206_ > 0) {
-                            val hslColorConfig: HslColorConfig? = aFloorUnderlayTypeList_1240!!.method1380(true, i_206_ - 1)
-                            is_196_[i_204_] -= hslColorConfig!!.anInt341
-                            is_197_[i_204_] -= hslColorConfig.anInt332
-                            is_198_[i_204_] -= hslColorConfig.anInt335
-                            is_199_[i_204_] -= hslColorConfig.anInt343
+                            val floorUnderlayType: FloorUnderlayType? = aFloorUnderlayTypeList_1240!!.method1380(true, i_206_ - 1)
+                            is_196_[i_204_] -= floorUnderlayType!!.anInt341
+                            is_197_[i_204_] -= floorUnderlayType.anInt332
+                            is_198_[i_204_] -= floorUnderlayType.anInt335
+                            is_199_[i_204_] -= floorUnderlayType.anInt343
                             is_200_[i_204_]--
                         }
                     }

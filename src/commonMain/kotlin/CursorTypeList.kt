@@ -35,23 +35,23 @@ class CursorTypeList internal constructor(sceneProjector: SceneProjector?, i: In
         }
     }
 
-    fun method1287(i: Byte, i_1_: Int): UnderlayDefinition {
+    fun method1287(i: Byte, i_1_: Int): CursorType {
         anInt2182++
-        var underlayDefinition: UnderlayDefinition? = withLock(aLruByteCache_2185) {
-            aLruByteCache_2185.method583(i_1_.toLong(), i.toInt() xor 0x1d.inv()) as? UnderlayDefinition?
+        var cursorType: CursorType? = withLock(aLruByteCache_2185) {
+            aLruByteCache_2185.method583(i_1_.toLong(), i.toInt() xor 0x1d.inv()) as? CursorType?
         }
-        if (underlayDefinition != null) return underlayDefinition
+        if (cursorType != null) return cursorType
         if (i.toInt() != -104) this.aLruByteCache_2190 = null
         val `is`: ByteArray? = withLock(aJs5Archive_2188!!) {
             aJs5Archive_2188.method410(-1860, 33, i_1_)
         }
-        underlayDefinition = UnderlayDefinition()
-        underlayDefinition.aCursorTypeList_2886 = this
-        if (`is` != null) underlayDefinition.method1611(ByteBuffer(`is`), false)
+        cursorType = CursorType()
+        cursorType.aCursorTypeList_2886 = this
+        if (`is` != null) cursorType.method1611(ByteBuffer(`is`), false)
         withLock(aLruByteCache_2185) {
-            aLruByteCache_2185.method582(underlayDefinition, i_1_.toLong(), (-116).toByte())
+            aLruByteCache_2185.method582(cursorType, i_1_.toLong(), (-116).toByte())
         }
-        return underlayDefinition
+        return cursorType
     }
 
     fun method1290(i: Int) {

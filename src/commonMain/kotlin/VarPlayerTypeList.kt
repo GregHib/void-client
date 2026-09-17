@@ -17,23 +17,23 @@ class VarPlayerTypeList internal constructor(sceneProjector: SceneProjector?, i:
         anInt2841++
     }
 
-    fun method1588(i: Int, i_1_: Int): ParticleAmountConfig {
+    fun method1588(i: Int, i_1_: Int): VarPlayerType {
         anInt2847++
-        var particleAmountConfig: ParticleAmountConfig? = withLock(aLruByteCache_2848!!) {
-            aLruByteCache_2848!!.method583(i_1_.toLong(), -126) as ParticleAmountConfig?
+        var varPlayerType: VarPlayerType? = withLock(aLruByteCache_2848!!) {
+            aLruByteCache_2848!!.method583(i_1_.toLong(), -126) as VarPlayerType?
         }
-        if (particleAmountConfig != null) return particleAmountConfig
+        if (varPlayerType != null) return varPlayerType
         val `is`: ByteArray? = withLock(aJs5Archive_2842!!) {
             val temp = aJs5Archive_2842.method410(-1860, 16, i_1_)
             if (i >= -17) aLruByteCache_2848 = null
             temp
         }
-        particleAmountConfig = ParticleAmountConfig()
-        if (`is` != null) particleAmountConfig.method1253(ByteBuffer(`is`), true)
+        varPlayerType = VarPlayerType()
+        if (`is` != null) varPlayerType.method1253(ByteBuffer(`is`), true)
         withLock(aLruByteCache_2848!!) {
-            aLruByteCache_2848!!.method582(particleAmountConfig, i_1_.toLong(), (-124).toByte())
+            aLruByteCache_2848!!.method582(varPlayerType, i_1_.toLong(), (-124).toByte())
         }
-        return particleAmountConfig
+        return varPlayerType
     }
 
     fun method1589(i: Byte) {

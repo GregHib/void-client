@@ -20,22 +20,22 @@ class SkyboxSphereTypeList internal constructor(sceneProjector: SceneProjector?,
         }
     }
 
-    fun method301(i: Int, i_2_: Int): WidgetTextConfig {
+    fun method301(i: Int, i_2_: Int): SkyboxSphereType {
         anInt361++
-        var widgetTextConfig: WidgetTextConfig? = withLock(aLruByteCache_360!!) {
-            aLruByteCache_360!!.method583(i.toLong(), -91) as WidgetTextConfig?
+        var skyboxSphereType: SkyboxSphereType? = withLock(aLruByteCache_360!!) {
+            aLruByteCache_360!!.method583(i.toLong(), -91) as SkyboxSphereType?
         }
-        if (widgetTextConfig != null) return widgetTextConfig
+        if (skyboxSphereType != null) return skyboxSphereType
         val `is`: ByteArray? = withLock(aJs5Archive_366!!) {
             aJs5Archive_366!!.method410(-1860, 30, i)
         }
         if (i_2_ < 6) aLruByteCache_360 = null
-        widgetTextConfig = WidgetTextConfig()
-        if (`is` != null) widgetTextConfig.method364(ByteBuffer(`is`), 54.toByte())
+        skyboxSphereType = SkyboxSphereType()
+        if (`is` != null) skyboxSphereType.method364(ByteBuffer(`is`), 54.toByte())
         withLock(aLruByteCache_360!!) {
-            aLruByteCache_360!!.method582(widgetTextConfig, i.toLong(), (-109).toByte())
+            aLruByteCache_360!!.method582(skyboxSphereType, i.toLong(), (-109).toByte())
         }
-        return widgetTextConfig
+        return skyboxSphereType
     }
 
     fun method302(i: Int) {

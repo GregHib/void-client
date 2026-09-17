@@ -3,7 +3,7 @@ import EnumTypeList.Companion.method340
 /* Class42 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class StructConfig {
+class WorldMapInfoType {
 
     var aByteArray564: ByteArray = byteArrayOf()
 

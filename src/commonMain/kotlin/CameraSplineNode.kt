@@ -31,17 +31,17 @@ class CameraSplineNode internal constructor(i: Int) : LinkedListNode() {
         fun method2954(i: Byte) {
             anInt6856++
             if (NativeShaderProgram.anInt9775 != -1 && MapArchiveSource.anInt4803 != -1) {
-                val i_0_ = ((CacheArchiveIndex.anInt1780 * (CalendarUtil.anInt4133 + -RenderableGroup.anInt5019) shr 16) + RenderableGroup.anInt5019)
-                CacheArchiveIndex.anInt1780 += i_0_
-                if (CacheArchiveIndex.anInt1780 < 65535) {
+                val i_0_ = ((EnumType.anInt1780 * (CalendarUtil.anInt4133 + -RenderableGroup.anInt5019) shr 16) + RenderableGroup.anInt5019)
+                EnumType.anInt1780 += i_0_
+                if (EnumType.anInt1780 < 65535) {
                     DragDropController.aBoolean4284 = false
                     SkyboxSphereTypeList.aBoolean368 = false
                 } else {
                     DragDropController.aBoolean4284 = !SkyboxSphereTypeList.aBoolean368
-                    CacheArchiveIndex.anInt1780 = 65535
+                    EnumType.anInt1780 = 65535
                     SkyboxSphereTypeList.aBoolean368 = true
                 }
-                val f = CacheArchiveIndex.anInt1780.toFloat() / 65535.0f
+                val f = EnumType.anInt1780.toFloat() / 65535.0f
                 val fs = FloatArray(3)
                 val i_1_ = 2 * ItemType.anInt2798
                 for (i_2_ in 0..2) {
@@ -76,7 +76,7 @@ class CameraSplineNode internal constructor(i: Int) : LinkedListNode() {
                 val d = sqrt((f_21_ * f_21_ + f_23_ * f_23_).toDouble())
                 MinimapAreaMarkerNode.anInt9701 = 0x3fff and (2607.5945876176133 * atan2(f_22_.toDouble(), d)).toInt()
                 WorldMapElement.anInt4638 = 0x3fff and (2607.5945876176133 * -atan2(f_21_.toDouble(), f_23_.toDouble())).toInt()
-                MapTileShape.anInt4186 = ((SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (((-(SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![3])) * CacheArchiveIndex.anInt1780) shr 16))
+                MapTileShape.anInt4186 = ((SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (((-(SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![i_1_]!![3]) + (SpriteDefinition.anIntArrayArrayArray7079!![NativeShaderProgram.anInt9775]!![2 + i_1_]!![3])) * EnumType.anInt1780) shr 16))
             }
         }
 

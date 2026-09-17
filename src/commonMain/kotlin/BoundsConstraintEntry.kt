@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
 import ObjectSpawnDecoder.method1087
-import HitsplatDefinition.Companion.method1193
+import VarbitType.Companion.method1193
 import LinkedListIterator.Companion.method1241
 import FlickeringGraphicsOptionState.Companion.method1722
 

@@ -791,7 +791,7 @@ class CollisionMap {
                         TooltipComponentRenderer.aAbstractModelRenderer_4643!!.method974(i_39_, i_41_)
                         val i_44_ = SkyboxSphereTypeList.anInt370 * i_42_ / MapRegionLoader.anInt1259
                         val i_45_ = i_43_ * LoadProgressCounters.anInt2446 / MapRegionLoader.anInt1267
-                        val i_46_ = i_39_ - -(i_42_ * LocConfigModelBuilder.anInt4509 / MapRegionLoader.anInt1259)
+                        val i_46_ = i_39_ - -(i_42_ * GfxType.anInt4509 / MapRegionLoader.anInt1259)
                         if (bool != true) method3498(44, null, -27, -91, true, -26)
                         val i_47_ = (-i_45_ + i_41_ - (-i_43_ + (i_43_ * StaticNoiseTexture.anInt8665 / MapRegionLoader.anInt1267)))
                         var i_48_ = -1996554240
@@ -810,7 +810,7 @@ class CollisionMap {
                                     val i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / MapRegionLoader.anInt1259))
                                     val i_51_ = (((MapRegionLoader.anInt1267 - (class348_sub21.anInt6851)) * i_43_ / MapRegionLoader.anInt1267) + i_41_)
                                     var_renderer.method3675(4, (-125).toByte(), i_50_ - 2, -2 + i_51_, 4, (i_49_ shl 24 or 0xffff00))
-                                } else if (SkeletalAnimFrameLoader.anInt481 != -1 && (class42!!.anInt596 == SkeletalAnimFrameLoader.anInt481)) {
+                                } else if (IdentityKitType.anInt481 != -1 && (class42!!.anInt596 == IdentityKitType.anInt481)) {
                                     val i_52_ = (i_39_ - -((class348_sub21.anInt6852) * i_42_ / MapRegionLoader.anInt1259))
                                     val i_53_ = i_41_ - -(i_43_ * (MapRegionLoader.anInt1267 + -(class348_sub21.anInt6851)) / MapRegionLoader.anInt1267)
                                     var_renderer.method3675(4, (-125).toByte(), i_52_ + -2, -2 + i_53_, 4, (i_49_ shl 24 or 0xffff00))

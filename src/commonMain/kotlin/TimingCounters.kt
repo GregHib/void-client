@@ -10,10 +10,10 @@ object TimingCounters {
     fun method2655(i: Int, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
         anInt4166++
         run {
-            var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as CharacterRenderState?
+            var class348_sub9 = MapSceneType.aNodeDeque_2859!!.method1995(4) as CharacterRenderState?
             while (class348_sub9 != null) {
                 SocketGameConnection.method1708(i_1_, i_3_, i_0_, i_2_, (-78).toByte(), class348_sub9)
-                class348_sub9 = (MapSceneIconDef.aNodeDeque_2859!!.method1990(97.toByte()) as CharacterRenderState?)
+                class348_sub9 = (MapSceneType.aNodeDeque_2859!!.method1990(97.toByte()) as CharacterRenderState?)
             }
         }
         run {

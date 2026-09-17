@@ -40,22 +40,22 @@ class VarbitTypeList internal constructor(sceneProjector: SceneProjector?, i: In
         }
     }
 
-    fun method1446(i: Int, i_4_: Int): HitsplatDefinition? {
+    fun method1446(i: Int, i_4_: Int): VarbitType? {
         anInt2593++
-        var hitsplatDefinition: HitsplatDefinition? = withLock(aLruByteCache_2594!!) {
-            aLruByteCache_2594!!.method583(i.toLong(), 76) as HitsplatDefinition?
+        var varbitType: VarbitType? = withLock(aLruByteCache_2594!!) {
+            aLruByteCache_2594!!.method583(i.toLong(), 76) as VarbitType?
         }
-        if (hitsplatDefinition != null) return hitsplatDefinition
+        if (varbitType != null) return varbitType
         val `is`: ByteArray? = withLock(aJs5Archive_2597!!) {
             aJs5Archive_2597.method410(i_4_ xor 0x743, method1359(true, i), LongKeyNode.method2806(false, i))
         }
-        hitsplatDefinition = HitsplatDefinition()
+        varbitType = VarbitType()
         if (i_4_ != -1) return null
-        if (`is` != null) hitsplatDefinition.method1191(i_4_ xor 0x800.inv(), ByteBuffer(`is`))
+        if (`is` != null) varbitType.method1191(i_4_ xor 0x800.inv(), ByteBuffer(`is`))
         withLock(aLruByteCache_2594!!) {
-            aLruByteCache_2594!!.method582(hitsplatDefinition, i.toLong(), (-105).toByte())
+            aLruByteCache_2594!!.method582(varbitType, i.toLong(), (-105).toByte())
         }
-        return hitsplatDefinition
+        return varbitType
     }
 
     init {

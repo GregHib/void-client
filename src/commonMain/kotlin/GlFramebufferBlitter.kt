@@ -398,7 +398,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             WhirlpoolHash.anInt4267 = i_23_
             MaterialPass.anInt3682 = 0
             WhirlpoolHash.anInt1067 = i_24_
-            WidgetDefinition.anSpriteDrawTarget_252 = null
+            AnimationType.anSpriteDrawTarget_252 = null
             WhirlpoolHash.anInt7207 = 1
             WhirlpoolHash.anInt5965 = i
             MinimapFlagRenderer.method828(38.toByte(), i_25_, i_21_)

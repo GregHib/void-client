@@ -47,7 +47,7 @@ class ScanlineRasterFiller {
             CubemapTextureGlSource.aClass348_Sub49_8698!!.writeBytes(`is`.size, 0, `is`, 97)
             if (bool) {
                 ParticleSystemState.method1294((-113).toByte(), (CubemapTextureGlSource.aClass348_Sub49_8698!!.aByteArray7154))
-                StructTypeList.aClass110_Sub1Array1146 = arrayOfNulls<MapLabelMenuEntry>(NpcDefinition.anInt2956)
+                StructTypeList.aClass110_Sub1Array1146 = arrayOfNulls<MapLabelMenuEntry>(RenderAnimType.anInt2956)
                 var i_2_ = 0
                 var i_3_ = SceneObjectEntity.anInt8731
                 while ((MultiLevelOptionState.anInt6151 >= i_3_)) {
@@ -93,13 +93,13 @@ class ScanlineRasterFiller {
         fun method1388(i: Int, i_4_: Int, i_5_: Int, i_6_: Int, i_7_: Int, i_8_: Int) {
             var i = i
             var i_8_ = i_8_
-            method1156(-27, i_6_, WidgetDefinition.anIntArrayArray255!![i++]!!, i_7_, i_4_)
+            method1156(-27, i_6_, AnimationType.anIntArrayArray255!![i++]!!, i_7_, i_4_)
             anInt2472++
-            method1156(-27, i_6_, WidgetDefinition.anIntArrayArray255!![i_8_--]!!, i_7_, i_4_)
+            method1156(-27, i_6_, AnimationType.anIntArrayArray255!![i_8_--]!!, i_7_, i_4_)
             val i_9_ = -52 / ((i_5_ - -32) / 55)
             var i_10_ = i
             while (i_8_ >= i_10_) {
-                val `is` = WidgetDefinition.anIntArrayArray255!![i_10_]!!
+                val `is` = AnimationType.anIntArrayArray255!![i_10_]!!
                 `is`[i_6_] = i_4_
                 `is`[i_7_] = `is`[i_6_]
                 i_10_++

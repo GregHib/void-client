@@ -41,7 +41,7 @@ abstract class TimedRecordAccessor : LinkedListNode() {
             SoundLevelOptionState.anInt6115 = 0
             LoadingBarRenderer.aMapTileShapeArray5060 = arrayOfNulls<MapTileShape>(1000)
             if (i > -113) aTextureFormatInfo_7103 = null
-            ParameterizedText.anInt9577 = 0
+            QuickChatMenuType.anInt9577 = 0
             MinimapAreaMarkerNode.aMapTileShapeArray9700 = arrayOfNulls<MapTileShape>((500 * Config.RENDER_DISTANCE_MULTIPLIER).toInt())
             ActorEntity.aBoolean9307 = NativeLibraryState.aRenderer171 !is oa
         }

@@ -34,11 +34,11 @@ object LocalPlayerState {
                 val i_1_ = 34 % ((16 - i) / 55)
                 if (BloomGraphicsOptionState.anInt5969 != 1) {
                     SceneTileBounds.anInt1121 = 0
-                    ConfigShortValueNode.anInt9541 = -1
+                    InventoryType.anInt9541 = -1
                 }
                 AbstractMenuEntryStatics.aBoolean1712 = false
                 GlRectangleTexture.method254(-3, (-94).toByte())
-                NpcDefinition.anInt2955 = 1
+                RenderAnimType.anInt2955 = 1
                 SceneRegionState.anInt197 = 0
                 GroundDecorSceneEntity.anInt9971 = 0
             }

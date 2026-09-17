@@ -142,7 +142,7 @@ class VarcstrTypeList internal constructor(sceneProjector: SceneProjector?, i: I
                             return
                         }
                         if (string.equals("cleartext", ignoreCase = true)) {
-                            NpcDefinition.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())
+                            RenderAnimType.aDoublyLinkedNodeList_2957!!.method1876((-45).toByte())
                             method94("Text coords cleared", i + 21)
                             return
                         }
@@ -541,7 +541,7 @@ class VarcstrTypeList internal constructor(sceneProjector: SceneProjector?, i: I
                             val strings = (method3113(' ', true, string.substring(12)))
                             if (strings.size >= 2) {
                                 val i_17_ = (if (strings.size > 2) strings[2]!!.toInt() else 0)
-                                CameraConfigDefinition.method1922(strings[1], i_17_, strings[0], true)
+                                LightType.method1922(strings[1], i_17_, strings[0], true)
                                 return
                             }
                         }
@@ -906,7 +906,7 @@ class VarcstrTypeList internal constructor(sceneProjector: SceneProjector?, i: I
             TextureMipDescriptor.aLruByteCache_4346!!.method587(-108)
             MaterialTypeMarker.aLruByteCache_6517!!.method587(-109)
             TerrainTileShape.aLruByteCache_8807!!.method587(-113)
-            SkeletalAnimFrameLoader.aLruByteCache_463!!.method587(-83)
+            IdentityKitType.aLruByteCache_463!!.method587(-83)
             ChatCommandProcessor.aLruByteCache_1174!!.method587(-91)
             val i_17_ = 54 / ((26 - i) / 53)
         }

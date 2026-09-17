@@ -854,7 +854,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
         fun method2336(objectType: ObjectType, i: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
             anInt3940++
             if (i_3_ > -126) FloorOverlayDefinition.anInt3941 = 15
-            var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState?
+            var class348_sub9 = MapSceneType.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState?
             while (class348_sub9 != null) {
                 if (i_2_ == class348_sub9.anInt6693 && (class348_sub9.anInt6678 == i shl 9) && (i_1_ shl 9 == class348_sub9.anInt6689) && (class348_sub9.aObjectType_6695!!.anInt941 == objectType.anInt941)) {
                     if (class348_sub9.aClass348_Sub16_Sub5_6676 != null) {
@@ -868,7 +868,7 @@ class WorldMapSceneSoftware internal constructor(i: Int, i_114_: Int, i_115_: In
                     class348_sub9.method2715(125.toByte())
                     break
                 }
-                class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(123.toByte()) as? CharacterRenderState?
+                class348_sub9 = MapSceneType.aNodeDeque_2859!!.method1990(123.toByte()) as? CharacterRenderState?
             }
         }
 

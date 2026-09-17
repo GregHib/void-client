@@ -12,7 +12,7 @@ import lang.PlatformRuntime
 
 class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: Int, i_35_: Int, i_36_: Int, i_37_: Int, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int, i_42_: Int, i_43_: Int, i_44_: Int, i_45_: Int) : GroundDecorEntity(i_36_, i_37_, i_38_, i_39_, i_40_, i_41_, i_42_, i_43_, i_44_, false, 0.toByte()) {
     private var anInt10331 = 0
-    private var aWidgetDefinition_10332: WidgetDefinition? = null
+    private var aAnimationType_10332: AnimationType? = null
     private var anInt10334 = 0
     private var anInt10335 = 0
     private var aBoolean10338 = true
@@ -67,7 +67,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
 
     public override fun method2392(bool: Boolean) {
         anInt10343++
-        if (bool != true) aWidgetDefinition_10332 = null
+        if (bool != true) aAnimationType_10332 = null
         throw IllegalStateException()
     }
 
@@ -163,10 +163,10 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
         val i_46_ = class368.anInt4503
         if (i_46_ == -1) this.aBoolean10345 = true
         else {
-            aWidgetDefinition_10332 = ParticleEmitterNode.aAnimationTypeList_191!!.method835(i_46_, 7)
+            aAnimationType_10332 = ParticleEmitterNode.aAnimationTypeList_191!!.method835(i_46_, 7)
             this.aBoolean10345 = false
         }
-        if (this.anInt10349 == i_35_) method2178(this, anInt10335, aWidgetDefinition_10332, -99)
+        if (this.anInt10349 == i_35_) method2178(this, anInt10335, aAnimationType_10332, -99)
     }
 
     fun method2470(i: Int, i_47_: Byte) {
@@ -174,15 +174,15 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
             anInt10333++
             if (!this.aBoolean10345) {
                 anInt10339 += i
-                while (aWidgetDefinition_10332!!.anIntArray267!![anInt10335] < anInt10339) {
-                    anInt10339 -= (aWidgetDefinition_10332!!.anIntArray267!![anInt10335])
+                while (aAnimationType_10332!!.anIntArray267!![anInt10335] < anInt10339) {
+                    anInt10339 -= (aAnimationType_10332!!.anIntArray267!![anInt10335])
                     anInt10335++
-                    if (aWidgetDefinition_10332!!.anIntArray237.size <= anInt10335) {
+                    if (aAnimationType_10332!!.anIntArray237.size <= anInt10335) {
                         this.aBoolean10345 = true
                         break
                     }
                 }
-                if (!this.aBoolean10345) method2178(this, anInt10335, aWidgetDefinition_10332, -59)
+                if (!this.aBoolean10345) method2178(this, anInt10335, aAnimationType_10332, -59)
             }
         }
     }
@@ -278,15 +278,15 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         val i_16_ = i_12_ / 2 + i_11_
                         val i_17_ = i_14_ - -(i_13_ / 2) - 18 - i_15_
                         var_renderer.aa(i_11_, i_14_, i_12_, i_13_, -16777216, 0)
-                        var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, LoadingBarRenderer.aColorArray9163!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
-                        var_renderer.aa(i_16_ - 150, 2 + i_17_, LinkedListNodeStatics.anInt4290 * 3, 30, GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884]!!.getRGB(), 0)
-                        NodeDequeStatics.aRSFont_3326!!.method2575((-116).toByte(), i_16_, MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(ChatCommandProcessor.language, i + 551), -1, i_15_ + i_17_)
+                        var_renderer.method3628(-152 + i_16_, i_17_, 304, 34, LoadingBarRenderer.aColorArray9163!![CursorType.anInt2884]!!.getRGB(), 0)
+                        var_renderer.aa(i_16_ - 150, 2 + i_17_, LinkedListNodeStatics.anInt4290 * 3, 30, GlVertexBufferBase.aColorArray1928!![CursorType.anInt2884]!!.getRGB(), 0)
+                        NodeDequeStatics.aRSFont_3326!!.method2575((-116).toByte(), i_16_, MinimapPolygonDrawer.aColorArray5242!![CursorType.anInt2884]!!.getRGB(), LocalizedText.aLocalizedText_3501!!.method2063(ChatCommandProcessor.language, i + 551), -1, i_15_ + i_17_)
                     } else {
                         val i_18_ = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoader.aFloat1247).toInt())
                         val i_19_ = ((i_13_.toFloat() / MapRegionLoader.aFloat1247).toInt() + DebugOverlayRenderer.anInt3170)
                         val i_20_ = ((i_12_.toFloat() / MapRegionLoader.aFloat1247).toInt() + WidgetActionEntry.anInt6992)
                         StaticNoiseTexture.anInt8665 = DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoader.aFloat1247).toInt()
-                        LocConfigModelBuilder.anInt4509 = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoader.aFloat1247).toInt())
+                        GfxType.anInt4509 = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoader.aFloat1247).toInt())
                         val i_21_ = (DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoader.aFloat1247).toInt())
                         LoadProgressCounters.anInt2446 = ((2 * i_13_).toFloat() / MapRegionLoader.aFloat1247).toInt()
                         SkyboxSphereTypeList.anInt370 = ((i_12_ * 2).toFloat() / MapRegionLoader.aFloat1247).toInt()

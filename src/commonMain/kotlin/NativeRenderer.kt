@@ -381,7 +381,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 bool_30_ = true
             } else {
                 bool_30_ = false
-                objectByteSerializerHolder = NpcDefinition.aObjectByteSerializerHolder_2944
+                objectByteSerializerHolder = RenderAnimType.aObjectByteSerializerHolder_2944
                 bool = false
             }
             if (bool != this.aBoolean8141) {
@@ -2901,11 +2901,11 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                     val renderTarget_42_ = VarcstrTypeList.method813(i_40_, i_37_, i) as RenderTarget?
                     if (renderTarget != null && i_36_ != 2) {
                         if (renderTarget is SequencedActorEntity) renderTarget.aSceneObjectAnimator_10115!!.method1671(262144, i_35_)
-                        else MapSceneIconDef.method1591(i_37_, 89, i_41_, i_35_, renderTarget.method42(-76), i_36_, i, i_38_, i_40_)
+                        else MapSceneType.method1591(i_37_, 89, i_41_, i_35_, renderTarget.method42(-76), i_36_, i, i_38_, i_40_)
                     }
                     if (renderTarget_42_ != null) {
                         if (renderTarget_42_ is SequencedActorEntity) renderTarget_42_.aSceneObjectAnimator_10115!!.method1671(262144, i_35_)
-                        else MapSceneIconDef.method1591(i_37_, 92, i_41_, i_35_, renderTarget_42_.method42(-71), i_36_, i, i_38_, i_40_)
+                        else MapSceneType.method1591(i_37_, 92, i_41_, i_35_, renderTarget_42_.method42(-71), i_36_, i, i_38_, i_40_)
                     }
                 } else if (i_41_ == 1) {
                     val renderTarget = (method3135(i_40_, i_37_, i) as RenderTarget?)
@@ -2915,27 +2915,27 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                             val i_43_ = renderTarget.method42(-83)
                             if (i_36_ != 4 && i_36_ != 5) {
                                 if (i_36_ != 6) {
-                                    if (i_36_ == 7) MapSceneIconDef.method1591(i_37_, 50, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and 2 + i_38_), i_40_)
+                                    if (i_36_ == 7) MapSceneType.method1591(i_37_, 50, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and 2 + i_38_), i_40_)
                                     else if (i_36_ == 8) {
-                                        MapSceneIconDef.method1591(i_37_, 116, i_41_, i_35_, i_43_, 4, i, 4 + i_38_, i_40_)
-                                        MapSceneIconDef.method1591(i_37_, 91, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and i_38_ - -2), i_40_)
+                                        MapSceneType.method1591(i_37_, 116, i_41_, i_35_, i_43_, 4, i, 4 + i_38_, i_40_)
+                                        MapSceneType.method1591(i_37_, 91, i_41_, i_35_, i_43_, 4, i, 4 + (0x3 and i_38_ - -2), i_40_)
                                     }
-                                } else MapSceneIconDef.method1591(i_37_, 22, i_41_, i_35_, i_43_, 4, i, i_38_ + 4, i_40_)
-                            } else MapSceneIconDef.method1591(i_37_, 86, i_41_, i_35_, i_43_, 4, i, i_38_, i_40_)
+                                } else MapSceneType.method1591(i_37_, 22, i_41_, i_35_, i_43_, 4, i, i_38_ + 4, i_40_)
+                            } else MapSceneType.method1591(i_37_, 86, i_41_, i_35_, i_43_, 4, i, i_38_, i_40_)
                         }
                     }
                 } else if (i_41_ == 2) {
                     val renderTarget = ((ClickFeedbackTask.method1353(i_40_, i_37_, i, (if (aClass8211 != null) aClass8211 else (RenderTarget::class.jClass.also { aClass8211 = it })))) as RenderTarget?)
                     if (renderTarget != null) {
                         if (i_36_ == 11) i_36_ = 10
-                        if (renderTarget !is SequencedGroundDecor) MapSceneIconDef.method1591(i_37_, 43, i_41_, i_35_, renderTarget.method42(-107), i_36_, i, i_38_, i_40_)
+                        if (renderTarget !is SequencedGroundDecor) MapSceneType.method1591(i_37_, 43, i_41_, i_35_, renderTarget.method42(-107), i_36_, i, i_38_, i_40_)
                         else renderTarget.aSceneObjectAnimator_10045!!.method1671(262144, i_35_)
                     }
                 } else if (i_41_ == 3) {
                     val renderTarget = (method2878(i_40_, i_37_, i) as RenderTarget?)
                     if (renderTarget != null) {
                         if (renderTarget is WallSceneEntity) renderTarget.aSceneObjectAnimator_9955!!.method1671(262144, i_35_)
-                        else MapSceneIconDef.method1591(i_37_, 28, i_41_, i_35_, renderTarget.method42(-123), i_36_, i, i_38_, i_40_)
+                        else MapSceneType.method1591(i_37_, 28, i_41_, i_35_, renderTarget.method42(-123), i_36_, i, i_38_, i_40_)
                     }
                 }
             }

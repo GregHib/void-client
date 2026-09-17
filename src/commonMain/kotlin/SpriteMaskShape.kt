@@ -983,7 +983,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                     AntiAliasingOptionState.anInt6048 = 2
                                     SpriteArchiveLoader.anInt385 = i_73_
                                     LinkedListNodeStatics.anInt4292 = 0
-                                    ParticleConfigParser.anInt3820++
+                                    SkyBoxType.anInt3820++
                                     JagGlToolkitFactory.anInt1534 = i_72_
                                     val class348_sub47 = (method2148(GlowPostProcessor.aFontMetaRef_2512, TheoraVideoStream.aIsaacCipher_9029, -91))
                                     class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAdd(-108, i_75_ - -RegionMapDecoder.regionTileY)

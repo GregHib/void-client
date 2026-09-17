@@ -37,7 +37,7 @@ object NpcUpdateProcessor {
             val i_3_ = ProportionalScrollbarComponent.anIntArray9932!![i_2_]
             val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_3_.toLong(), -6008) as NpcReference)
             val npc = (class348_sub22.aNpc_6859)!!
-            if (ScrollbarComponent.aBoolean8335 && ParamMap.method3169(i_3_, 0)) method2146(84.toByte())
+            if (ScrollbarComponent.aBoolean8335 && StructType.method3169(i_3_, 0)) method2146(84.toByte())
             if (NullOggStream.anInt9041 != (npc.anInt10306)) {
                 if (npc.aNpcType_10505!!.method793(0)) method181(true, npc)
                 npc.method2448(null, -2)

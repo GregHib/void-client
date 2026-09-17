@@ -150,7 +150,7 @@ class RenderListTextureNode : AbstractProceduralTextureNode(0, true) {
         }
         var anInt210: Int = 0
         fun method224(i: Byte, `is`: Array<IntArray?>?) {
-            WidgetDefinition.anIntArrayArray255 = `is`
+            AnimationType.anIntArrayArray255 = `is`
             anInt210++
         }
     }

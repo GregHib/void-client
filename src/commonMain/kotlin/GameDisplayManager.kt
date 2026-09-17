@@ -21,27 +21,27 @@ object GameDisplayManager {
     var anInt2839: Int = 0
 
     fun method1580(i: Byte, bool: Boolean, i_0_: Int, i_1_: Int, i_2_: Int, i_3_: Int) {
-        if (SkeletalAnimFrameLoader.aFrame476 != null && (i_2_ != 3 || i_0_ != KeyboardInputSource.anInt4276 || i_3_ != FlickeringEffectsOptionState.anInt5911)) {
-            method527(SkeletalAnimFrameLoader.aFrame476, VorbisOggDecoder.aPrivilegedOperationWorker_8992, false)
-            SkeletalAnimFrameLoader.aFrame476 = null
+        if (IdentityKitType.aFrame476 != null && (i_2_ != 3 || i_0_ != KeyboardInputSource.anInt4276 || i_3_ != FlickeringEffectsOptionState.anInt5911)) {
+            method527(IdentityKitType.aFrame476, VorbisOggDecoder.aPrivilegedOperationWorker_8992, false)
+            IdentityKitType.aFrame476 = null
         }
         anInt2839++
         val i_4_ = -33 / ((-74 - i) / 51)
-        if (i_2_ == 3 && SkeletalAnimFrameLoader.aFrame476 == null) {
-            SkeletalAnimFrameLoader.aFrame476 = MapElementDecor.method2463(i_3_, i_0_, (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!), 0, 14199, 0)
-            if (SkeletalAnimFrameLoader.aFrame476 != null) {
+        if (i_2_ == 3 && IdentityKitType.aFrame476 == null) {
+            IdentityKitType.aFrame476 = MapElementDecor.method2463(i_3_, i_0_, (VorbisOggDecoder.aPrivilegedOperationWorker_8992!!), 0, 14199, 0)
+            if (IdentityKitType.aFrame476 != null) {
                 KeyboardInputSource.anInt4276 = i_0_
                 FlickeringEffectsOptionState.anInt5911 = i_3_
                 method243(37)
             }
         }
-        if (i_2_ == 3 && SkeletalAnimFrameLoader.aFrame476 == null) GameDisplayManager.method1580((-126).toByte(), true, -1, i_1_, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1)
+        if (i_2_ == 3 && IdentityKitType.aFrame476 == null) GameDisplayManager.method1580((-126).toByte(), true, -1, i_1_, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub8_7227!!.method1751(-32350), -1)
         else {
             val container: Container?
-            if (SkeletalAnimFrameLoader.aFrame476 != null) {
+            if (IdentityKitType.aFrame476 != null) {
                 NpcReference.anInt6857 = i_3_
                 SocketFactory.anInt3473 = i_0_
-                container = SkeletalAnimFrameLoader.aFrame476
+                container = IdentityKitType.aFrame476
             } else if (RsaVarbitHandler.aFrame4904 == null) {
                 if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169
                 else container = JagGlToolkitFactory.anApplet1530 as? Container
@@ -54,20 +54,20 @@ object GameDisplayManager {
                 container = RsaVarbitHandler.aFrame4904
             }
             if (i_2_ == 1) {
-                LocTypeDefinition.anInt4017 = NpcSpawnDecoder.anInt1524
+                QuestType.anInt4017 = NpcSpawnDecoder.anInt1524
                 GameDisplayManager.anInt10432 = OpenGlRenderer.anInt7666
                 ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 + -NpcSpawnDecoder.anInt1524) / 2
                 TimingCounters.anInt4167 = 0
             } else method2158(56.toByte())
             if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {
-                if (LocTypeDefinition.anInt4017 < 1024 && (GameDisplayManager.anInt10432 < 768)) {
+                if (QuestType.anInt4017 < 1024 && (GameDisplayManager.anInt10432 < 768)) {
                     /* empty */
                 }
             }
             if (bool) OutgoingPacketNode.method3327(1406)
             else {
-                ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (GameDisplayManager.anInt10432))
-                if (!GrayscaleNoiseTexture.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, (GameDisplayManager.anInt10432))
+                ParticleSystemRenderer.aCanvas3869!!.setSize(QuestType.anInt4017, (GameDisplayManager.anInt10432))
+                if (!GrayscaleNoiseTexture.aBoolean5300) FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, QuestType.anInt4017, (GameDisplayManager.anInt10432))
                 else TerrainTileStatics.method3980(86, ParticleSystemRenderer.aCanvas3869!!)
                 if (RsaVarbitHandler.aFrame4904 === container) {
                     val insets = RsaVarbitHandler.aFrame4904!!.getInsets()

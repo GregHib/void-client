@@ -3,7 +3,7 @@ import kotlin.jvm.JvmStatic
 /* Class225 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class NpcDefinition {
+class RenderAnimType {
     var anInt2901: Int = 0
     var anInt2904: Int = 0
     var anInt2905: Int
@@ -273,7 +273,7 @@ class NpcDefinition {
         var anInt2902: Int = 0
         var anInt2903: Int = 0
         var anInt2921: Int = 0
-        var aNpcDefinition_2931: NpcDefinition? = NpcDefinition()
+        var aRenderAnimType_2931: RenderAnimType? = RenderAnimType()
         var anInt2933: Int = 0
         var aObjectByteSerializerHolder_2944: ObjectByteSerializerHolder?
         var anInt2952: Int = 0
@@ -285,7 +285,7 @@ class NpcDefinition {
         var aDoublyLinkedNodeList_2957: DoublyLinkedNodeList?
         @JvmStatic
         fun method1619(i: Byte) {
-            aNpcDefinition_2931 = null
+            aRenderAnimType_2931 = null
             aObjectByteSerializerHolder_2944 = null
             val i_7_ = 86 / ((i - 41) / 40)
             aDoublyLinkedNodeList_2957 = null

@@ -16,22 +16,22 @@ class FloorUnderlayTypeList internal constructor(sceneProjector: SceneProjector?
         }
     }
 
-    fun method1380(bool: Boolean, i: Int): HslColorConfig? {
+    fun method1380(bool: Boolean, i: Int): FloorUnderlayType? {
         anInt2460++
         if (bool != true) return null
-        var hslColorConfig: HslColorConfig? = withLock(aLruByteCache_2458) {
-            aLruByteCache_2458.method583(i.toLong(), 77) as HslColorConfig?
+        var floorUnderlayType: FloorUnderlayType? = withLock(aLruByteCache_2458) {
+            aLruByteCache_2458.method583(i.toLong(), 77) as FloorUnderlayType?
         }
-        if (hslColorConfig != null) return hslColorConfig
+        if (floorUnderlayType != null) return floorUnderlayType
         val `is`: ByteArray? = withLock(aJs5Archive_2461!!) {
             aJs5Archive_2461.method410(-1860, 1, i)
         }
-        hslColorConfig = HslColorConfig()
-        if (`is` != null) hslColorConfig.method290(ByteBuffer(`is`), -1)
+        floorUnderlayType = FloorUnderlayType()
+        if (`is` != null) floorUnderlayType.method290(ByteBuffer(`is`), -1)
         withLock(aLruByteCache_2458) {
-            aLruByteCache_2458.method582(hslColorConfig, i.toLong(), (-124).toByte())
+            aLruByteCache_2458.method582(floorUnderlayType, i.toLong(), (-124).toByte())
         }
-        return hslColorConfig
+        return floorUnderlayType
     }
 
     fun method1381(bool: Boolean) {

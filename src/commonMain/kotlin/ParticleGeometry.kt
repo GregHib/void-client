@@ -39,7 +39,7 @@ class ParticleGeometry internal constructor(`is`: IntArray?, is_1_: IntArray?, i
             TerrainChunkBuilder.aRenderer1098!!.ZA(FloorOverlayTypeList.anInt3439, 0.69921875f, 1.2f, -200.0f, -240.0f, -200.0f)
             TerrainChunkBuilder.aRenderer1098!!.L(FloorOverlayTypeList.anInt3444, -1, 0)
             val i_0_ = -35 / ((45 - i) / 44)
-            TerrainChunkBuilder.aRenderer1098!!.method3653(ParameterizedText.aCircleRasterizer_9571)
+            TerrainChunkBuilder.aRenderer1098!!.method3653(QuickChatMenuType.aCircleRasterizer_9571)
         }
     }
 }

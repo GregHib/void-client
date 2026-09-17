@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import WidgetDefinition.Companion.method268
+import AnimationType.Companion.method268
 
 /* Class268 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -26,25 +26,25 @@ class FloorOverlayTypeList internal constructor(sceneProjector: SceneProjector?,
         }
     }
 
-    fun method2034(i: Int, bool: Boolean): LocTypeConfig {
+    fun method2034(i: Int, bool: Boolean): FloorOverlayType {
         if (bool != false) aShortArray3437 = null
         anInt3431++
-        var locTypeConfig: LocTypeConfig? = withLock(aLruByteCache_3433) {
-            aLruByteCache_3433.method583(i.toLong(), 64) as LocTypeConfig?
+        var floorOverlayType: FloorOverlayType? = withLock(aLruByteCache_3433) {
+            aLruByteCache_3433.method583(i.toLong(), 64) as FloorOverlayType?
         }
-        if (locTypeConfig != null) return locTypeConfig
+        if (floorOverlayType != null) return floorOverlayType
         val `is`: ByteArray? = withLock(aJs5Archive_3442!!) {
             aJs5Archive_3442.method410(-1860, 4, i)
         }
-        locTypeConfig = LocTypeConfig()
-        locTypeConfig.anInt3573 = i
-        locTypeConfig.aFloorOverlayTypeList_3562 = this
-        if (`is` != null) locTypeConfig.method2070(true, ByteBuffer(`is`))
-        locTypeConfig.method2067(-4860)
+        floorOverlayType = FloorOverlayType()
+        floorOverlayType.anInt3573 = i
+        floorOverlayType.aFloorOverlayTypeList_3562 = this
+        if (`is` != null) floorOverlayType.method2070(true, ByteBuffer(`is`))
+        floorOverlayType.method2067(-4860)
         withLock(aLruByteCache_3433) {
-            aLruByteCache_3433.method582(locTypeConfig, i.toLong(), (-111).toByte())
+            aLruByteCache_3433.method582(floorOverlayType, i.toLong(), (-111).toByte())
         }
-        return locTypeConfig
+        return floorOverlayType
     }
 
     fun method2037(i: Int) {
@@ -126,11 +126,11 @@ class FloorOverlayTypeList internal constructor(sceneProjector: SceneProjector?,
                 ParticleSystemRenderer.anInt3855 = ((-SpriteComponent.anInt8368 + ParticleSystemRenderer.anInt3855).toFloat() * f + SpriteComponent.anInt8368.toFloat()).toInt()
                 MinimapAreaMarkerNode.anInt9701 = (DataHolder.anInt3662.toFloat() + (MinimapAreaMarkerNode.anInt9701 - DataHolder.anInt3662).toFloat() * f).toInt()
                 CompositeRgbNoiseTexture.anInt8685 = (TextureAtlasState.anInt4424.toFloat() + f * (-TextureAtlasState.anInt4424 + CompositeRgbNoiseTexture.anInt8685).toFloat()).toInt()
-                var i_8_ = WorldMapElement.anInt4638 - CameraConfigDefinition.anInt3253
+                var i_8_ = WorldMapElement.anInt4638 - LightType.anInt3253
                 if (i_8_ <= 8192) {
                     if (i_8_ < -8192) i_8_ += 16384
                 } else i_8_ -= 16384
-                WorldMapElement.anInt4638 = (i_8_.toFloat() * f + CameraConfigDefinition.anInt3253.toFloat()).toInt()
+                WorldMapElement.anInt4638 = (i_8_.toFloat() * f + LightType.anInt3253.toFloat()).toInt()
                 WorldMapElement.anInt4638 = WorldMapElement.anInt4638 and 0x3fff
             }
         }

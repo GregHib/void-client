@@ -11,31 +11,31 @@ class CompositeNpcModelBuilder {
     var aBoolean2100: Boolean = false
     private var aLong2102: Long = 0
     private var anInt2103 = 0
-    fun method1226(varResolver: VarResolver?, widgetDefinition: WidgetDefinition?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, itemTypeList: ItemTypeList?, i: Int, widgetDefinition_0_: WidgetDefinition?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, IDKTypeList: IDKTypeList?, i_5_: Int, var_renderer: Renderer?, npcTypeList: NpcTypeList?, animationTypeList: AnimationTypeList?, i_6_: Int, i_7_: Int, i_8_: Int, renderAnimTypeList: RenderAnimTypeList?): AbstractModel? {
+    fun method1226(varResolver: VarResolver?, animationType: AnimationType?, loadProgressCounters: Array<LoadProgressCounters?>?, bool: Boolean, itemTypeList: ItemTypeList?, i: Int, animationType_0_: AnimationType?, i_1_: Int, bool_2_: Boolean, i_3_: Int, `is`: IntArray?, i_4_: Int, IDKTypeList: IDKTypeList?, i_5_: Int, var_renderer: Renderer?, npcTypeList: NpcTypeList?, animationTypeList: AnimationTypeList?, i_6_: Int, i_7_: Int, i_8_: Int, renderAnimTypeList: RenderAnimTypeList?): AbstractModel? {
         try {
             anInt2097++
-            if (this.anInt2093 != -1) return (npcTypeList!!.method2079(this.anInt2093, -1).method800(i, loadProgressCounters, animationTypeList, !bool_2_, widgetDefinition, i_8_, renderAnimTypeList, i_7_, widgetDefinition_0_, varResolver, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
+            if (this.anInt2093 != -1) return (npcTypeList!!.method2079(this.anInt2093, -1).method800(i, loadProgressCounters, animationTypeList, !bool_2_, animationType, i_8_, renderAnimTypeList, i_7_, animationType_0_, varResolver, var_renderer, i_3_, `is`, i_1_, i_6_, i_4_, i_5_))
             var i_9_ = i_4_
             var l = aLong2102
             var is_10_ = anIntArray2092
-            if (widgetDefinition_0_ != null && (widgetDefinition_0_.anInt249 >= 0 || widgetDefinition_0_.anInt261 >= 0)) {
+            if (animationType_0_ != null && (animationType_0_.anInt249 >= 0 || animationType_0_.anInt261 >= 0)) {
                 is_10_ = IntArray(12)
                 for (i_11_ in 0..11) is_10_[i_11_] = anIntArray2092!![i_11_]
-                if (widgetDefinition_0_.anInt249 >= 0) {
-                    if (widgetDefinition_0_.anInt249 == 65535) {
+                if (animationType_0_.anInt249 >= 0) {
+                    if (animationType_0_.anInt249 == 65535) {
                         is_10_[5] = 0
                         l = l xor 0xffffffffL.inv()
                     } else {
-                        is_10_[5] = WhirlpoolHash.method2057((widgetDefinition_0_.anInt249), 1073741824)
+                        is_10_[5] = WhirlpoolHash.method2057((animationType_0_.anInt249), 1073741824)
                         l = l xor (is_10_[5].toLong() shl 32)
                     }
                 }
-                if (widgetDefinition_0_.anInt261 >= 0) {
-                    if (widgetDefinition_0_.anInt261 == 65535) {
+                if (animationType_0_.anInt261 >= 0) {
+                    if (animationType_0_.anInt261 == 65535) {
                         is_10_[3] = 0
                         l = l xor 0xffffffffL
                     } else {
-                        is_10_[3] = WhirlpoolHash.method2057((widgetDefinition_0_.anInt261), 1073741824)
+                        is_10_[3] = WhirlpoolHash.method2057((animationType_0_.anInt261), 1073741824)
                         l = l xor is_10_[3].toLong()
                     }
                 }
@@ -43,7 +43,7 @@ class CompositeNpcModelBuilder {
             var bool_12_ = false
             var bool_13_ = false
             var bool_14_ = false
-            var bool_15_ = widgetDefinition_0_ != null || widgetDefinition != null
+            var bool_15_ = animationType_0_ != null || animationType != null
             val i_16_ = if (loadProgressCounters != null) loadProgressCounters.size else 0
             var i_17_ = 0
             while (i_16_ > i_17_) {
@@ -52,7 +52,7 @@ class CompositeNpcModelBuilder {
                     val class17_18_ = animationTypeList!!.method835((loadProgressCounters[i_17_]!!.anInt2454), 7)
                     if (class17_18_.anIntArray237 != null) {
                         bool_15_ = true
-                        MapSceneTile.aWidgetDefinitionArray1048s!![i_17_] = class17_18_
+                        MapSceneTile.aAnimationTypeArray1048s!![i_17_] = class17_18_
                         val i_19_ = loadProgressCounters[i_17_]!!.anInt2451
                         val i_20_ = loadProgressCounters[i_17_]!!.anInt2455
                         var i_21_ = class17_18_.anIntArray237[i_19_]
@@ -97,8 +97,8 @@ class CompositeNpcModelBuilder {
             var class348_sub42_sub17_30_: TextureMaterialGroup? = null
             var class348_sub42_sub17_31_: TextureMaterialGroup? = null
             if (bool_15_) {
-                if (widgetDefinition_0_ != null) {
-                    i_23_ = widgetDefinition_0_.anIntArray237[i_7_]
+                if (animationType_0_ != null) {
+                    i_23_ = animationType_0_.anIntArray237[i_7_]
                     val i_32_ = i_23_ ushr 16
                     class348_sub42_sub17 = animationTypeList!!.method839(i_32_, 3)
                     i_23_ = i_23_ and 0xffff
@@ -107,9 +107,9 @@ class CompositeNpcModelBuilder {
                         bool_12_ = bool_12_ or class348_sub42_sub17.method3271(i_23_, 14)
                         bool_14_ = bool_14_ or class348_sub42_sub17.method3267((-110).toByte(), i_23_)
                     }
-                    if ((widgetDefinition_0_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_1_ != -1 && i_1_ < widgetDefinition_0_.anIntArray237.size) {
-                        i_24_ = widgetDefinition_0_.anIntArray237[i_1_]
-                        i_25_ = widgetDefinition_0_.anIntArray267!![i_7_]
+                    if ((animationType_0_.aBoolean241 || ItemNameResolver.aBoolean5002) && i_1_ != -1 && i_1_ < animationType_0_.anIntArray237.size) {
+                        i_24_ = animationType_0_.anIntArray237[i_1_]
+                        i_25_ = animationType_0_.anIntArray267!![i_7_]
                         val i_33_ = i_24_ ushr 16
                         class348_sub42_sub17_26_ = (if (i_32_ == i_33_) class348_sub42_sub17 else animationTypeList.method839(i_33_, 3))
                         i_24_ = i_24_ and 0xffff
@@ -121,8 +121,8 @@ class CompositeNpcModelBuilder {
                     }
                 }
                 i_9_ = i_9_ or 0x20
-                if (widgetDefinition != null) {
-                    i_27_ = widgetDefinition.anIntArray237[i_6_]
+                if (animationType != null) {
+                    i_27_ = animationType.anIntArray237[i_6_]
                     val i_34_ = i_27_ ushr 16
                     i_27_ = i_27_ and 0xffff
                     class348_sub42_sub17_30_ = animationTypeList!!.method839(i_34_, 3)
@@ -131,9 +131,9 @@ class CompositeNpcModelBuilder {
                         bool_12_ = bool_12_ or class348_sub42_sub17_30_.method3271(i_27_, 14)
                         bool_14_ = bool_14_ or class348_sub42_sub17_30_.method3267((-123).toByte(), i_27_)
                     }
-                    if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_3_ != -1 && i_3_ < widgetDefinition.anIntArray237.size) {
-                        i_28_ = widgetDefinition.anIntArray237[i_3_]
-                        i_29_ = widgetDefinition.anIntArray267!![i_6_]
+                    if ((animationType.aBoolean241 || ItemNameResolver.aBoolean5002) && i_3_ != -1 && i_3_ < animationType.anIntArray237.size) {
+                        i_28_ = animationType.anIntArray237[i_3_]
+                        i_29_ = animationType.anIntArray267!![i_6_]
                         val i_35_ = i_28_ ushr 16
                         i_28_ = i_28_ and 0xffff
                         class348_sub42_sub17_31_ = (if (i_35_ == i_34_) class348_sub42_sub17_30_ else animationTypeList.method839(i_35_, 3))
@@ -152,8 +152,8 @@ class CompositeNpcModelBuilder {
             withLock(ModelDataCache.aLruByteCache_355!!) {
                 abstractModel = ModelDataCache.aLruByteCache_355!!.method583(l, -47) as AbstractModel?
             }
-            var npcDefinition: NpcDefinition? = null
-            if (anInt2103 != -1) npcDefinition = renderAnimTypeList!!.method1983(anInt2103, 32)
+            var renderAnimType: RenderAnimType? = null
+            if (anInt2103 != -1) renderAnimType = renderAnimTypeList!!.method1983(anInt2103, 32)
             if (abstractModel == null || var_renderer!!.method3667(abstractModel.ua(), i_9_) != 0) {
                 if (abstractModel != null) i_9_ = var_renderer!!.method3679(i_9_, abstractModel.ua())
                 var i_36_ = i_9_
@@ -185,9 +185,9 @@ class CompositeNpcModelBuilder {
                             if (class124 != null) modelDefinitions[i_40_] = class124
                         }
                     }
-                    if (npcDefinition != null && npcDefinition.anIntArrayArray2939 != null) {
+                    if (renderAnimType != null && renderAnimType.anIntArrayArray2939 != null) {
                         var i_42_ = 0
-                        while (((npcDefinition.anIntArrayArray2939!!).size > i_42_)) {
+                        while (((renderAnimType.anIntArrayArray2939!!).size > i_42_)) {
                             if (modelDefinitions[i_42_] != null) {
                                 var i_43_ = 0
                                 var i_44_ = 0
@@ -195,13 +195,13 @@ class CompositeNpcModelBuilder {
                                 var i_46_ = 0
                                 var i_47_ = 0
                                 var i_48_ = 0
-                                if ((npcDefinition.anIntArrayArray2939!![i_42_]) != null) {
-                                    i_47_ = ((npcDefinition.anIntArrayArray2939!![i_42_]!![4]) shl 3)
-                                    i_44_ = (npcDefinition.anIntArrayArray2939!![i_42_]!![1])
-                                    i_48_ = ((npcDefinition.anIntArrayArray2939!![i_42_]!![5]) shl 3)
-                                    i_43_ = (npcDefinition.anIntArrayArray2939!![i_42_]!![0])
-                                    i_46_ = ((npcDefinition.anIntArrayArray2939!![i_42_]!![3]) shl 3)
-                                    i_45_ = (npcDefinition.anIntArrayArray2939!![i_42_]!![2])
+                                if ((renderAnimType.anIntArrayArray2939!![i_42_]) != null) {
+                                    i_47_ = ((renderAnimType.anIntArrayArray2939!![i_42_]!![4]) shl 3)
+                                    i_44_ = (renderAnimType.anIntArrayArray2939!![i_42_]!![1])
+                                    i_48_ = ((renderAnimType.anIntArrayArray2939!![i_42_]!![5]) shl 3)
+                                    i_43_ = (renderAnimType.anIntArrayArray2939!![i_42_]!![0])
+                                    i_46_ = ((renderAnimType.anIntArrayArray2939!![i_42_]!![3]) shl 3)
+                                    i_45_ = (renderAnimType.anIntArrayArray2939!![i_42_]!![2])
                                 }
                                 if (i_46_ != 0 || i_47_ != 0 || i_48_ != 0) modelDefinitions[i_42_]!!.method1107(6875, i_47_, i_48_, i_46_)
                                 if (i_43_ != 0 || i_44_ != 0 || i_45_ != 0) modelDefinitions[i_42_]!!.method1099((-82).toByte(), i_45_, i_43_, i_44_)
@@ -237,7 +237,7 @@ class CompositeNpcModelBuilder {
             }
             if (!bool_15_ && !bool_52_) return class64_51_
             var abstractCameraTransforms: Array<AbstractCameraTransform?>? = null
-            if (npcDefinition != null) abstractCameraTransforms = npcDefinition.method1618(var_renderer, 0) as Array<AbstractCameraTransform?>?
+            if (renderAnimType != null) abstractCameraTransforms = renderAnimType.method1618(var_renderer, 0) as Array<AbstractCameraTransform?>?
             if (bool_52_ && abstractCameraTransforms != null) {
                 for (i_54_ in 0..11) {
                     if (abstractCameraTransforms[i_54_] != null) class64_51_!!.method610(abstractCameraTransforms[i_54_]!!, 1 shl i_54_, true)
@@ -266,21 +266,21 @@ class CompositeNpcModelBuilder {
                     if (abstractCameraTransforms[i_59_] != null) class64_51_!!.method610(abstractCameraTransforms[i_59_]!!, 1 shl i_59_, false)
                 }
             }
-            if (class348_sub42_sub17 != null && class348_sub42_sub17_30_ != null) class64_51_!!.method625(class348_sub42_sub17_26_, i_25_, 121.toByte(), i_29_, class348_sub42_sub17_30_, i_23_, i_27_, i_5_ - 1, class348_sub42_sub17, false, i_24_, class348_sub42_sub17_31_, i_8_ + -1, widgetDefinition_0_!!.aBooleanArray263, i_28_)
+            if (class348_sub42_sub17 != null && class348_sub42_sub17_30_ != null) class64_51_!!.method625(class348_sub42_sub17_26_, i_25_, 121.toByte(), i_29_, class348_sub42_sub17_30_, i_23_, i_27_, i_5_ - 1, class348_sub42_sub17, false, i_24_, class348_sub42_sub17_31_, i_8_ + -1, animationType_0_!!.aBooleanArray263, i_28_)
             else if (class348_sub42_sub17 != null) class64_51_!!.method617(i_23_, i_25_, class348_sub42_sub17_26_, 0, class348_sub42_sub17, false, false, i_24_, i_5_ + -1)
             else if (class348_sub42_sub17_30_ != null) class64_51_!!.method617(i_27_, i_29_, class348_sub42_sub17_31_, 0, class348_sub42_sub17_30_, false, false, i_28_, i_8_ + -1)
             var i_60_ = 0
             while (i_16_ > i_60_) {
                 DirectionUtil.aClass348_Sub42_Sub17Array1543!![i_60_] = null
                 LocalizedTextTriple.aClass348_Sub42_Sub17Array3753!![i_60_] = null
-                MapSceneTile.aWidgetDefinitionArray1048s!![i_60_] = null
+                MapSceneTile.aAnimationTypeArray1048s!![i_60_] = null
                 i_60_++
             }
             return class64_51_
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(
                 runtimeexception,
-                ("oo.C(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (itemTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (widgetDefinition_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (IDKTypeList != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (renderAnimTypeList != null) "{...}" else "null") + ')')
+                ("oo.C(" + (if (varResolver != null) "{...}" else "null") + ',' + (if (animationType != null) "{...}" else "null") + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + bool + ',' + (if (itemTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (animationType_0_ != null) "{...}" else "null") + ',' + i_1_ + ',' + bool_2_ + ',' + i_3_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_4_ + ',' + (if (IDKTypeList != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i_6_ + ',' + i_7_ + ',' + i_8_ + ',' + (if (renderAnimTypeList != null) "{...}" else "null") + ')')
             )
         }
     }
@@ -322,12 +322,12 @@ class CompositeNpcModelBuilder {
         method1234(-78)
     }
 
-    fun method1230(itemTypeList: ItemTypeList?, i: Int, animationTypeList: AnimationTypeList?, IDKTypeList: IDKTypeList?, varResolver: VarResolver?, npcTypeList: NpcTypeList?, i_66_: Int, i_67_: Int, i_68_: Int, widgetDefinition: WidgetDefinition?, i_69_: Int, var_renderer: Renderer?): AbstractModel? {
+    fun method1230(itemTypeList: ItemTypeList?, i: Int, animationTypeList: AnimationTypeList?, IDKTypeList: IDKTypeList?, varResolver: VarResolver?, npcTypeList: NpcTypeList?, i_66_: Int, i_67_: Int, i_68_: Int, animationType: AnimationType?, i_69_: Int, var_renderer: Renderer?): AbstractModel? {
         try {
             anInt2107++
-            if (this.anInt2093 != -1) return (npcTypeList!!.method2079(this.anInt2093, -1).method803(varResolver, var_renderer, i_69_, i_67_, widgetDefinition, animationTypeList, i_66_, 121, i_68_))
+            if (this.anInt2093 != -1) return (npcTypeList!!.method2079(this.anInt2093, -1).method803(varResolver, var_renderer, i_69_, i_67_, animationType, animationTypeList, i_66_, 121, i_68_))
             var i_70_ = i_68_
-            if (widgetDefinition != null) {
+            if (animationType != null) {
                 var bool = false
                 var bool_71_ = false
                 var bool_72_ = false
@@ -337,7 +337,7 @@ class CompositeNpcModelBuilder {
                 val `object`: Any? = null
                 i_70_ = i_70_ or 0x20
                 val object_76_: Any? = null
-                i_74_ = widgetDefinition.anIntArray237[i_66_]
+                i_74_ = animationType.anIntArray237[i_66_]
                 val i_77_ = i_74_ ushr 16
                 i_74_ = i_74_ and 0xffff
                 val class348_sub42_sub17 = animationTypeList!!.method839(i_77_, 3)
@@ -345,10 +345,10 @@ class CompositeNpcModelBuilder {
                     bool_71_ = bool_71_ or class348_sub42_sub17.method3272(i_74_, 0)
                     bool = bool or class348_sub42_sub17.method3271(i_74_, 14)
                     bool_73_ = bool_73_ or class348_sub42_sub17.method3267((-125).toByte(), i_74_)
-                    bool_72_ = bool_72_ or widgetDefinition.aBoolean242
+                    bool_72_ = bool_72_ or animationType.aBoolean242
                 }
-                if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i_67_ != -1 && i_67_ < widgetDefinition.anIntArray237.size) {
-                    i_75_ = widgetDefinition.anIntArray237[i_67_]
+                if ((animationType.aBoolean241 || ItemNameResolver.aBoolean5002) && i_67_ != -1 && i_67_ < animationType.anIntArray237.size) {
+                    i_75_ = animationType.anIntArray237[i_67_]
                     val i_78_ = i_75_ ushr 16
                     val class348_sub42_sub17_79_ = (if (i_78_ != i_77_) animationTypeList.method839(i_78_, i xor 0x17f6eb54.inv()) else class348_sub42_sub17)
                     i_75_ = i_75_ and 0xffff
@@ -408,14 +408,14 @@ class CompositeNpcModelBuilder {
                     ModelBatchBase.aLruByteCache_1894!!.method582(abstractModel, aLong2102, (-97).toByte())
                 }
             }
-            if (widgetDefinition == null) return abstractModel
+            if (animationType == null) return abstractModel
             var class64_88_ = abstractModel.method614(4.toByte(), i_70_, true)
-            class64_88_ = widgetDefinition.method269(123, abstractModel, i_67_, i_69_, i_68_, i_66_)
+            class64_88_ = animationType.method269(123, abstractModel, i_67_, i_69_, i_68_, i_66_)
             return class64_88_
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(
                 runtimeexception,
-                ("oo.J(" + (if (itemTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + (if (IDKTypeList != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
+                ("oo.J(" + (if (itemTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + (if (IDKTypeList != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (animationType != null) "{...}" else "null") + ',' + i_69_ + ',' + (if (var_renderer != null) "{...}" else "null") + ')')
             )
         }
     }
@@ -428,11 +428,11 @@ class CompositeNpcModelBuilder {
         }
     }
 
-    fun method1232(i: Int, i_91_: Int, i_92_: Int, i_93_: Int, animationTypeList: AnimationTypeList?, IDKTypeList: IDKTypeList?, i_94_: Int, i_95_: Int, i_96_: Int, var_renderer: Renderer?, i_97_: Int, widgetDefinition: WidgetDefinition?): AbstractModel? {
+    fun method1232(i: Int, i_91_: Int, i_92_: Int, i_93_: Int, animationTypeList: AnimationTypeList?, IDKTypeList: IDKTypeList?, i_94_: Int, i_95_: Int, i_96_: Int, var_renderer: Renderer?, i_97_: Int, animationType: AnimationType?): AbstractModel? {
         try {
             anInt2106++
             var i_98_ = i_91_
-            if (widgetDefinition != null) {
+            if (animationType != null) {
                 var bool = false
                 var bool_99_ = false
                 var bool_100_ = false
@@ -442,7 +442,7 @@ class CompositeNpcModelBuilder {
                 val `object`: Any? = null
                 val object_104_: Any? = null
                 i_98_ = i_98_ or 0x20
-                i_102_ = widgetDefinition.anIntArray237[i_97_]
+                i_102_ = animationType.anIntArray237[i_97_]
                 val i_105_ = i_102_ ushr 16
                 val class348_sub42_sub17 = animationTypeList!!.method839(i_105_, 3)
                 i_102_ = i_102_ and 0xffff
@@ -450,10 +450,10 @@ class CompositeNpcModelBuilder {
                     bool_99_ = bool_99_ or class348_sub42_sub17.method3272(i_102_, i_94_ xor 0x3be2.inv())
                     bool = bool or class348_sub42_sub17.method3271(i_102_, 14)
                     bool_101_ = bool_101_ or class348_sub42_sub17.method3267((-125).toByte(), i_102_)
-                    bool_100_ = bool_100_ or widgetDefinition.aBoolean242
+                    bool_100_ = bool_100_ or animationType.aBoolean242
                 }
-                if ((widgetDefinition.aBoolean241 || ItemNameResolver.aBoolean5002) && i != -1 && i < widgetDefinition.anIntArray237.size) {
-                    i_103_ = widgetDefinition.anIntArray237[i]
+                if ((animationType.aBoolean241 || ItemNameResolver.aBoolean5002) && i != -1 && i < animationType.anIntArray237.size) {
+                    i_103_ = animationType.anIntArray237[i]
                     val i_106_ = i_103_ ushr 16
                     i_103_ = i_103_ and 0xffff
                     val class348_sub42_sub17_107_: TextureMaterialGroup?
@@ -502,13 +502,13 @@ class CompositeNpcModelBuilder {
                     ModelBatchBase.aLruByteCache_1894!!.method582(abstractModel, l, (-109).toByte())
                 }
             }
-            if (widgetDefinition == null) return abstractModel
+            if (animationType == null) return abstractModel
             if (i_94_ != -15331) return null
             abstractModel = abstractModel.method614(4.toByte(), i_98_, true)
-            abstractModel = widgetDefinition.method269(-32, abstractModel!!, i, i_96_, i_91_, i_97_)
+            abstractModel = animationType.method269(-32, abstractModel!!, i, i_96_, i_91_, i_97_)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + (if (IDKTypeList != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("oo.G(" + i + ',' + i_91_ + ',' + i_92_ + ',' + i_93_ + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + (if (IDKTypeList != null) "{...}" else "null") + ',' + i_94_ + ',' + i_95_ + ',' + i_96_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_97_ + ',' + (if (animationType != null) "{...}" else "null") + ')'))
         }
     }
 

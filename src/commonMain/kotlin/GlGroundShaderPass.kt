@@ -190,7 +190,7 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
             anInt7405++
             if (bool == false) {
                 withLock(NpcType.aClient1367!!) {
-                    if (SkeletalAnimFrameLoader.aFrame476 == null) {
+                    if (IdentityKitType.aFrame476 == null) {
                         val container: Container
                         if (RsaVarbitHandler.aFrame4904 != null) container = RsaVarbitHandler.aFrame4904!!
                         else if (JagGlToolkitFactory.anApplet1530 == null) container = EdgeDetectTextureNode.anGameApplet_Frame_9169!!
@@ -203,20 +203,20 @@ class GlGroundShaderPass internal constructor(glRenderDevice: GlRenderDevice, js
                             NpcReference.anInt6857 -= insets.bottom + insets.top
                         }
                         if (ContactEntry.method3229(-86) == 1) {
-                            LocTypeDefinition.anInt4017 = NpcSpawnDecoder.anInt1524
+                            QuestType.anInt4017 = NpcSpawnDecoder.anInt1524
                             TimingCounters.anInt4167 = 0
                             ModelResourceBundle.anInt7129 = (SocketFactory.anInt3473 - NpcSpawnDecoder.anInt1524) / 2
                             GameDisplayManager.anInt10432 = OpenGlRenderer.anInt7666
                         } else method2158(56.toByte())
                         if (OggCacheStream.aNamedIdRecord_5271 != NpcAnimationResolver.aNamedIdRecord_165) {
-                            if (LocTypeDefinition.anInt4017 < 1024 && GameDisplayManager.anInt10432 < 768) {
+                            if (QuestType.anInt4017 < 1024 && GameDisplayManager.anInt10432 < 768) {
                                 /* empty */
                             }
                         }
-                        ParticleSystemRenderer.aCanvas3869!!.setSize(LocTypeDefinition.anInt4017, (GameDisplayManager.anInt10432))
+                        ParticleSystemRenderer.aCanvas3869!!.setSize(QuestType.anInt4017, (GameDisplayManager.anInt10432))
                         if (FacingDirectionNode.aRenderer6654 != null) {
                             if (GrayscaleNoiseTexture.aBoolean5300) TerrainTileStatics.method3980(120, ParticleSystemRenderer.aCanvas3869!!)
-                            else FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
+                            else FacingDirectionNode.aRenderer6654!!.method3669(ParticleSystemRenderer.aCanvas3869, QuestType.anInt4017, GameDisplayManager.anInt10432)
                         }
                         if (RsaVarbitHandler.aFrame4904 === container) {
                             val insets = RsaVarbitHandler.aFrame4904!!.getInsets()

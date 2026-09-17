@@ -145,7 +145,7 @@ object NativeLibraryUnloader {
                 ClientLoadStateMachine.anInt2173 = 100
             }
         } else {
-            SkeletalAnimFrameLoader.anInt481 = -1
+            IdentityKitType.anInt481 = -1
             HslAdjustTextureNode.anInt9399 = -1
         }
         if (ParticleEmitterFactoryStatics.aBoolean3174 && RegionSceneLoader.aNodeDeque_3705 != null) {

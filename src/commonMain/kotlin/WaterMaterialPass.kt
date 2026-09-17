@@ -40,10 +40,10 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
             }
             this.aHa_Sub2_3684.method3738(-15039, 0)
             if ((0x40 and i) == 0) {
-                ParamMap.aFloatArray9491!![2] = (this.aHa_Sub2_3684.aFloat7823 * (this.aHa_Sub2_3684.aFloat7768))
-                ParamMap.aFloatArray9491!![0] = (this.aHa_Sub2_3684.aFloat7781 * (this.aHa_Sub2_3684.aFloat7768))
-                ParamMap.aFloatArray9491!![1] = (this.aHa_Sub2_3684.aFloat7768 * (this.aHa_Sub2_3684.aFloat7816))
-                glProgramLocalParameter4fvARB(34336, 66, (ParamMap.aFloatArray9491), 0)
+                StructType.aFloatArray9491!![2] = (this.aHa_Sub2_3684.aFloat7823 * (this.aHa_Sub2_3684.aFloat7768))
+                StructType.aFloatArray9491!![0] = (this.aHa_Sub2_3684.aFloat7781 * (this.aHa_Sub2_3684.aFloat7768))
+                StructType.aFloatArray9491!![1] = (this.aHa_Sub2_3684.aFloat7768 * (this.aHa_Sub2_3684.aFloat7816))
+                glProgramLocalParameter4fvARB(34336, 66, (StructType.aFloatArray9491), 0)
             } else glProgramLocalParameter4fARB(34336, 66, 1.0f, 1.0f, 1.0f, 1.0f)
             val i_3_ = i and 0x3
             if (i_3_ == 2) glProgramLocalParameter4fARB(34336, 64, 0.05f, 1.0f, 1.0f, 1.0f)
@@ -196,7 +196,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
         fun method2148(fontMetaRef: FontMetaRef?, isaacCipher: IsaacCipher?, i: Int): OutgoingPacketNode {
             try {
                 anInt6230++
-                val class348_sub47 = ParticleConfigParser.method2273((-103).toByte())!!
+                val class348_sub47 = SkyBoxType.method2273((-103).toByte())!!
                 if (i >= -80) aCalendar6221 = null
                 class348_sub47.anInt7122 = fontMetaRef!!.anInt4323
                 class348_sub47.aFontMetaRef_7118 = fontMetaRef
@@ -235,7 +235,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                     }
                     if (RenderNodeStatics.aBoolean9722 && !bool) {
                         val class254 = (if (ParticleEmitterFactoryStatics.anInt3176 == -1) null else ProjectionCameraTransform.aParamTypeList_5764!!.method2600(ParticleEmitterFactoryStatics.anInt3176, 28364))
-                        if ((WidgetTextConfig.anInt500 and 0x2) != 0 && (class254 == null || (class79.method805((class254.anInt3256), ParticleEmitterFactoryStatics.anInt3176, 61) != class254.anInt3256))) {
+                        if ((SkyboxSphereType.anInt500 and 0x2) != 0 && (class254 == null || (class79.method805((class254.anInt3256), ParticleEmitterFactoryStatics.anInt3176, 61) != class254.anInt3256))) {
                             MinimapPolygonDrawer.method466(false, ItemNameResolver.aString5000 + " -> <col=ffff00>" + string, 0, (-81).toByte(), false, 0, -1, true, 30, npc.anInt10290.toLong(), ItemNameResolver.aString5001, npc.anInt10290.toLong(), FloatBuffer.anInt9747)
                             TextureHandle.anInt2586++
                         }
@@ -248,7 +248,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                 if (strings[i] != null && (class79.aByte1384.toInt() == 0 || !(strings[i].equals(LocalizedText.aLocalizedText_3506!!.method2063(ChatCommandProcessor.language, 544), ignoreCase = true)))) {
                                     var i_16_ = 0
                                     if (i == 0) i_16_ = 25
-                                    var i_17_ = WidgetTextConfig.anInt506
+                                    var i_17_ = SkyboxSphereType.anInt506
                                     if (i == 1) i_16_ = 20
                                     if (i == 2) i_16_ = 44
                                     if (i == 3) i_16_ = 46
@@ -272,7 +272,7 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
                                     if (i == 3) i_19_ = 46.toShort()
                                     if (i == 4) i_19_ = 60.toShort()
                                     if (i_19_.toInt() != 0) i_19_ = (i_19_ + i_18_).toShort()
-                                    LocConfigModelBuilder.anInt4510++
+                                    GfxType.anInt4510++
                                     MinimapPolygonDrawer.method466(false, "<col=ffff00>" + string, 0, (-101).toByte(), false, 0, -1, true, i_19_.toInt(), npc.anInt10290.toLong(), strings[i], npc.anInt10290.toLong(), class79.anInt1401)
                                 }
                             }
@@ -409,8 +409,8 @@ class WaterMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, waterT
         @JvmStatic
         fun method2153(i: Int) {
             anInt6214++
-            if (!KeyboardLayoutConfig.aBoolean2130 && i <= -37) {
-                KeyboardLayoutConfig.aBoolean2130 = true
+            if (!VarcType.aBoolean2130 && i <= -37) {
+                VarcType.aBoolean2130 = true
                 CircleDrawer.aFloat2687 += (-CircleDrawer.aFloat2687 + 24.0f) / 2.0f
                 WorldMapPolygonIconLabel.aBoolean10174 = true
             }

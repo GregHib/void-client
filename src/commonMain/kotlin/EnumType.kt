@@ -5,7 +5,7 @@ import MinimapSquareDrawer.Companion.method462
 /* Class117 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class CacheArchiveIndex {
+class EnumType {
     private var anInt1764 = 0
     var aHashtable_1767: Hashtable? = null
     private var aHashtable_1770: Hashtable? = null

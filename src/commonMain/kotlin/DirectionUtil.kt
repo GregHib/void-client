@@ -16,7 +16,7 @@ object DirectionUtil {
     fun method868(i: Int, i_0_: Int, bool: Boolean): Int {
         anInt1539++
         if (bool != false) method868(89, 115, true)
-        if (i == 1 || i == 3) return ParameterizedText.anIntArray9572!![i_0_ and 0x3]
+        if (i == 1 || i == 3) return QuickChatMenuType.anIntArray9572!![i_0_ and 0x3]
         return SpriteRenderEntry.anIntArray9714!![i_0_ and 0x3]
     }
 

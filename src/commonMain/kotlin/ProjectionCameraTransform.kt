@@ -505,10 +505,10 @@ class ProjectionCameraTransform : AbstractCameraTransform() {
             anInt5783++
             if (i.toInt() != 41) anInt5768 = 38
             run {
-                var class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState
+                var class348_sub9 = MapSceneType.aNodeDeque_2859!!.method1995(4) as? CharacterRenderState
                 while (class348_sub9 != null) {
                     if (class348_sub9!!.aBoolean6684) class348_sub9!!.method2781(21.toByte())
-                    class348_sub9 = MapSceneIconDef.aNodeDeque_2859!!.method1990(117.toByte()) as? CharacterRenderState
+                    class348_sub9 = MapSceneType.aNodeDeque_2859!!.method1990(117.toByte()) as? CharacterRenderState
                 }
             }
             var class348_sub9 = Client.aNodeDeque_5185!!.method1995(4) as? CharacterRenderState

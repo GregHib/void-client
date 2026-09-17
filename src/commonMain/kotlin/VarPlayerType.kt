@@ -3,7 +3,7 @@ import FlipTextureNode.Companion.method3064
 /* Class159 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParticleAmountConfig {
+class VarPlayerType {
 
     var anInt2125: Int = 0
     private fun method1251(class348_sub49: ByteBuffer, i: Int, i_0_: Int) {

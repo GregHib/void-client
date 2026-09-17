@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import ProjectedGroundDecor.Companion.method2433
 import AbstractFrameBufferSurface.Companion.method3007
-import LocTypeConfig.Companion.method160
+import FloorOverlayType.Companion.method160
 import lang.gc
 import kotlin.math.sqrt
 
@@ -106,7 +106,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
                 Client.aAbstractGameSocket_9165 = null
             }
             anInt9437++
-            NpcDefinition.anInt2955 = 0
+            RenderAnimType.anInt2955 = 0
             InterfaceBounds.method2938(87.toByte())
             method2433()
             if (i.toInt() != 11) anIntArray9436 = null

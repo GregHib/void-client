@@ -188,12 +188,12 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
 
     abstract fun method2421(i: Byte): Int
 
-    fun method2422(i: Byte): NpcDefinition {
+    fun method2422(i: Byte): RenderAnimType {
         if (i.toInt() != 72) method2438(-88, 93, -127, 68, 7, -76, 116, 122.toByte())
         anInt10249++
         val i_1_ = method2421(127.toByte())
         if (i_1_ != -1) return OpenGlModel.aRenderAnimTypeList_5558!!.method1983(i_1_, 32)
-        return NpcDefinition.aNpcDefinition_2931!!
+        return RenderAnimType.aRenderAnimType_2931!!
     }
 
     override fun method2409(i: Byte) {

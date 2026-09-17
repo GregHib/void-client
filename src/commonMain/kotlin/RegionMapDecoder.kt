@@ -106,7 +106,7 @@ object RegionMapDecoder {
 
     fun method854(i: Byte) {
         anInt1513++
-        if (NpcDefinition.anInt2955 == 5 && i < -48) NpcDefinition.anInt2955 = 6
+        if (RenderAnimType.anInt2955 == 5 && i < -48) RenderAnimType.anInt2955 = 6
     }
     var aByteArrayArray1887: Array<ByteArray?>? = null
 }

@@ -4,7 +4,7 @@ import awt.Frame
 /*
  * Class34
  */
-class SkeletalAnimFrameLoader {
+class IdentityKitType {
     private val anIntArray464 = intArrayOf(-1, -1, -1, -1, -1)
     private var aShortArray465: ShortArray? = null
     private var anIntArray472: IntArray? = null
@@ -19,7 +19,7 @@ class SkeletalAnimFrameLoader {
         if (anIntArray472 == null) return null
         val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray472!!.size)
         withLock(this.aIDKTypeList_475!!.aJs5Archive_2054!!) {
-            for (i_0_ in anIntArray472!!.indices) modelDefinitions[i_0_] = ParticleConfigParser.method2277(0, (this.aIDKTypeList_475!!.aJs5Archive_2054!!), anIntArray472!![i_0_], -1)
+            for (i_0_ in anIntArray472!!.indices) modelDefinitions[i_0_] = SkyBoxType.method2277(0, (this.aIDKTypeList_475!!.aJs5Archive_2054!!), anIntArray472!![i_0_], -1)
         }
         var i_1_ = 0
         while (anIntArray472!!.size > i_1_) {
@@ -58,7 +58,7 @@ class SkeletalAnimFrameLoader {
         var i_5_ = 0
         withLock(this.aIDKTypeList_475!!.aJs5Archive_2054!!) {
             for (i_6_ in 0..4) {
-                if (anIntArray464[i_6_] != -1) modelDefinitions[i_5_++] = ParticleConfigParser.method2277(0, (this.aIDKTypeList_475!!.aJs5Archive_2054!!), anIntArray464[i_6_], -1)
+                if (anIntArray464[i_6_] != -1) modelDefinitions[i_5_++] = SkyBoxType.method2277(0, (this.aIDKTypeList_475!!.aJs5Archive_2054!!), anIntArray464[i_6_], -1)
             }
         }
         for (i_7_ in 0..4) {

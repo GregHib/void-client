@@ -125,7 +125,7 @@ class LoadingBarRenderer : CursorController {
     private fun method2215(i: Byte, i_2_: Int): Int {
         anInt5033++
         if (i < 23) anImage5030 = null
-        if (aBoolean5020) return (-i_2_ + LocTypeDefinition.anInt4017) / 2
+        if (aBoolean5020) return (-i_2_ + QuestType.anInt4017) / 2
         return 0
     }
 
@@ -172,9 +172,9 @@ class LoadingBarRenderer : CursorController {
                 try {
                     val i_5_ = ActorEntity.aResourceLoaderThread_897!!.method2320(103.toByte())
                     val string = ActorEntity.aResourceLoaderThread_897!!.method2318(-9324)
-                    if (LoadingBarRenderer.anImage4249 == null) LoadingBarRenderer.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432))
+                    if (LoadingBarRenderer.anImage4249 == null) LoadingBarRenderer.anImage4249 = (ParticleSystemRenderer.aCanvas3869!!.createImage(QuestType.anInt4017, GameDisplayManager.anInt10432))
                     val graphics_6_ = LoadingBarRenderer.anImage4249!!.getGraphics()
-                    graphics_6_.clearRect(0, 0, LocTypeDefinition.anInt4017, GameDisplayManager.anInt10432)
+                    graphics_6_.clearRect(0, 0, QuestType.anInt4017, GameDisplayManager.anInt10432)
                     val i_7_ = anImage5030!!.getWidth(null)
                     val i_8_ = anImage5026!!.getWidth(null)
                     val i_9_ = anImage5056!!.getWidth(null)
@@ -263,7 +263,7 @@ class LoadingBarRenderer : CursorController {
 
     private fun method2219(i: Int) {
         anInt5031++
-        LoadingScreenState.method1455(ActorEntity.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![UnderlayDefinition.anInt2884], ActorEntity.aResourceLoaderThread_897!!.method2318(-9324), (LoadingBarRenderer.aColorArray9163!![UnderlayDefinition.anInt2884]), (-100).toByte(), MinimapPolygonDrawer.aColorArray5242!![UnderlayDefinition.anInt2884])
+        LoadingScreenState.method1455(ActorEntity.aResourceLoaderThread_897!!.method2320(78.toByte()), GlVertexBufferBase.aColorArray1928!![CursorType.anInt2884], ActorEntity.aResourceLoaderThread_897!!.method2318(-9324), (LoadingBarRenderer.aColorArray9163!![CursorType.anInt2884]), (-100).toByte(), MinimapPolygonDrawer.aColorArray5242!![CursorType.anInt2884])
         if (i != 33) method55(1.toByte())
     }
 

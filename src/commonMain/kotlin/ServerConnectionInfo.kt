@@ -80,7 +80,7 @@ class ServerConnectionInfo {
                 FrameBufferObject.anInt4889 = TexGenMaterialPass.anInt6248
                 if (FrameBufferObject.anInt4889 == 0) method3134(-1)
                 else {
-                    TileSceneEntity.aFloat8725 = KeyboardLayoutConfig.Companion.aFloat2137
+                    TileSceneEntity.aFloat8725 = VarcType.Companion.aFloat2137
                     DelegatingRenderCanvas.anInt70 = QuestTypeList.anInt2500
                     TextureOptionState.aCircleRasterizer_6098 = HeapInfoRecord.aCircleRasterizer_4938
                     AbstractModel.aFloat1136 = TextureMetadataProvider.aFloat4626

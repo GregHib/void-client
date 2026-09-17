@@ -5,7 +5,7 @@ import awt.Canvas
 /*
  * Class22
  */
-class HslColorConfig {
+class FloorUnderlayType {
 
     var anInt331: Int = -1
 

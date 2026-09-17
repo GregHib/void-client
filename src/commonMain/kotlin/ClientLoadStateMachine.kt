@@ -151,7 +151,7 @@ object ClientLoadStateMachine {
             NodeDequeStatics.billboards = WorldMapTextLabel.createIndex(false, 29, (-23).toByte(), 1)
             Crc64Hashable.nativeLibraries = WorldMapTextLabel.createIndex(true, 30, (-23).toByte(), 1)
             SpriteLoadValidator.shaders = WorldMapTextLabel.createIndex(true, 31, (-23).toByte(), 1)
-            HitsplatDefinition.aJs5Archive_2015 = WorldMapTextLabel.createIndex(true, 36, (-23).toByte(), 2)
+            VarbitType.aJs5Archive_2015 = WorldMapTextLabel.createIndex(true, 36, (-23).toByte(), 2)
         }
         if (ConnectionStateType.aConnectionStateType_1031 == TimedTileQueueEntry.aConnectionStateType_9660) {
             var i_8_ = 0

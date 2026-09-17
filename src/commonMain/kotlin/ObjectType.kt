@@ -265,7 +265,7 @@ class ObjectType {
                 withLock(TileRenderState.aModelDefinitionArray4236s!!) {
                     for (i_26_ in 0..<i_23_) {
                         withLock(this.aObjectTypeList_933!!.aJs5Archive_3345!!) {
-                            modelDefinition = ParticleConfigParser.method2277(0, (this.aObjectTypeList_933!!.aJs5Archive_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
+                            modelDefinition = SkyBoxType.method2277(0, (this.aObjectTypeList_933!!.aJs5Archive_3345!!), (0xffff and (anIntArrayArray907!![i_21_]!![i_26_])), -1)
                         }
                         if (modelDefinition == null) return null
                         if (modelDefinition.anInt1830 < 13) modelDefinition.method1092(2, 96)
@@ -586,7 +586,7 @@ class ObjectType {
         if (i_38_ >= -93) aByteArray885 = null
     }
 
-    fun method483(i: Int, i_63_: Int, i_64_: Int, i_65_: Int, var_renderer: Renderer?, i_66_: Int, i_67_: Int, i_68_: Byte, var_terrainTile: TerrainTile?, i_69_: Int, i_70_: Int, i_71_: Int, widgetDefinition: WidgetDefinition?, var_terrainTile_72_: TerrainTile?): AbstractModel? {
+    fun method483(i: Int, i_63_: Int, i_64_: Int, i_65_: Int, var_renderer: Renderer?, i_66_: Int, i_67_: Int, i_68_: Byte, var_terrainTile: TerrainTile?, i_69_: Int, i_70_: Int, i_71_: Int, animationType: AnimationType?, var_terrainTile_72_: TerrainTile?): AbstractModel? {
         var i_64_ = i_64_
         var i_67_ = i_67_
         try {
@@ -595,7 +595,7 @@ class ObjectType {
             var l = ((this.anInt941 shl 10) + ((i_64_ shl 3) - -i_66_)).toLong()
             val i_73_ = i_67_
             l = l or (var_renderer!!.anInt4567 shl 29).toLong()
-            if (widgetDefinition != null) i_67_ = i_67_ or widgetDefinition.method263(i, 123, i_70_, false)
+            if (animationType != null) i_67_ = i_67_ or animationType.method263(i, 123, i_70_, false)
             if (aByte886.toInt() != 3) {
                 if (aByte886.toInt() != 0 || anInt954 != 0) i_67_ = i_67_ or 0x2
                 if (anInt893 != 0) i_67_ = i_67_ or 0x1
@@ -615,8 +615,8 @@ class ObjectType {
             }
             var bool = false
             if (i_68_ <= 38) return null
-            if (widgetDefinition != null) {
-                abstractModel = widgetDefinition.method266(abstractModel, 0x3 and i_66_, i, 1.toByte(), i_70_, i_63_, 663780816, i_67_)
+            if (animationType != null) {
+                abstractModel = animationType.method266(abstractModel, 0x3 and i_66_, i, 1.toByte(), i_70_, i_63_, 663780816, i_67_)
                 bool = true
             }
             if (i_64_ == 10 && i_66_ > 3) {
@@ -643,7 +643,7 @@ class ObjectType {
             if (bool) abstractModel!!.s(i_73_)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_terrainTile_72_ != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("iv.L(" + i + ',' + i_63_ + ',' + i_64_ + ',' + i_65_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_66_ + ',' + i_67_ + ',' + i_68_ + ',' + (if (var_terrainTile != null) "{...}" else "null") + ',' + i_69_ + ',' + i_70_ + ',' + i_71_ + ',' + (if (animationType != null) "{...}" else "null") + ',' + (if (var_terrainTile_72_ != null) "{...}" else "null") + ')'))
         }
     }
 

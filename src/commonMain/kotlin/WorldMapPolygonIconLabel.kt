@@ -38,7 +38,7 @@ class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, ti
             var i_2_ = i_2_
             var i_3_ = i_3_
             var i_4_ = i_4_
-            if (i_3_ <= WidgetTextConfig.anInt513 && i_2_ >= LocalPlayerState.anInt1910) {
+            if (i_3_ <= SkyboxSphereType.anInt513 && i_2_ >= LocalPlayerState.anInt1910) {
                 val bool: Boolean
                 if (WorldMapLabel.Companion.anInt4960 <= i_4_) {
                     if (i_4_ <= CameraNodeList.anInt1745) bool = true
@@ -59,19 +59,19 @@ class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, ti
                     bool_5_ = false
                 } else bool_5_ = true
                 if (i_3_ < LocalPlayerState.anInt1910) i_3_ = LocalPlayerState.anInt1910
-                else GlElementArrayBuffer.method1156(-27, i_0_, WidgetDefinition.anIntArrayArray255!![i_3_++]!!, i_4_, i_1_)
-                if (WidgetTextConfig.anInt513 >= i_2_) GlElementArrayBuffer.method1156(-27, i_0_, WidgetDefinition.anIntArrayArray255!![i_2_--]!!, i_4_, i_1_)
-                else i_2_ = WidgetTextConfig.anInt513
+                else GlElementArrayBuffer.method1156(-27, i_0_, AnimationType.anIntArrayArray255!![i_3_++]!!, i_4_, i_1_)
+                if (SkyboxSphereType.anInt513 >= i_2_) GlElementArrayBuffer.method1156(-27, i_0_, AnimationType.anIntArrayArray255!![i_2_--]!!, i_4_, i_1_)
+                else i_2_ = SkyboxSphereType.anInt513
                 if (!bool || !bool_5_) {
                     if (bool) {
-                        for (i_7_ in i_3_..i_2_) WidgetDefinition.anIntArrayArray255!![i_7_]!![i_4_] = i_1_
+                        for (i_7_ in i_3_..i_2_) AnimationType.anIntArrayArray255!![i_7_]!![i_4_] = i_1_
                     } else if (bool_5_) {
-                        for (i_6_ in i_3_..i_2_) WidgetDefinition.anIntArrayArray255!![i_6_]!![i_0_] = i_1_
+                        for (i_6_ in i_3_..i_2_) AnimationType.anIntArrayArray255!![i_6_]!![i_0_] = i_1_
                     }
                 } else {
                     var i_8_ = i_3_
                     while (i_2_ >= i_8_) {
-                        val `is` = WidgetDefinition.anIntArrayArray255!![i_8_]!!
+                        val `is` = AnimationType.anIntArrayArray255!![i_8_]!!
                         `is`[i_0_] = i_1_
                         `is`[i_4_] = `is`[i_0_]
                         i_8_++

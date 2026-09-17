@@ -1,7 +1,7 @@
 import kotlin.jvm.JvmStatic
 import WaterMaterialPass.Companion.method2148
 import StreamingResourceRequest.Companion.method3262
-import LocConfigModelBuilder.Companion.method3563
+import GfxType.Companion.method3563
 import PlayerAppearanceUpdateDecoder.method3614
 
 /* Class348_Sub9 - Decompiled by JODE
@@ -235,7 +235,7 @@ class CharacterRenderState : LinkedListNode() {
                             }
                             if (i_8_ == 6) {
                                 WorldMapRenderer.anInt4680++
-                                val class348_sub47 = method2148((UnderlayDefinition.aFontMetaRef_2892), (TheoraVideoStream.aIsaacCipher_9029), -100)
+                                val class348_sub47 = method2148((CursorType.aFontMetaRef_2892), (TheoraVideoStream.aIsaacCipher_9029), -100)
                                 method3614(i_9_, i, class46.anInt812, class348_sub47, -19692)
                                 InterfaceComponentGroup.method3243(-4, class348_sub47)
                             }

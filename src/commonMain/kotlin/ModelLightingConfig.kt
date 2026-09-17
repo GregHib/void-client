@@ -35,7 +35,7 @@ class ModelLightingConfig {
     constructor() {
         this.anInt2535 = -50
         this.aFloat2536 = 1.2f
-        this.aCircleRasterizer_2541 = ParameterizedText.aCircleRasterizer_9571
+        this.aCircleRasterizer_2541 = QuickChatMenuType.aCircleRasterizer_9571
         this.anInt2546 = 0
         this.anInt2549 = FloorOverlayTypeList.anInt3444
         this.anInt2548 = -60
@@ -87,7 +87,7 @@ class ModelLightingConfig {
             val i_31_ = class348_sub49.readUnsignedShort(842397944)
             val i_32_ = class348_sub49.readUnsignedShort(842397944)
             this.aCircleRasterizer_2541 = ModelLightingConfig.method1636(i_31_, i_30_, i_27_, i_32_, i_28_, -1, i_29_)
-        } else this.aCircleRasterizer_2541 = ParameterizedText.aCircleRasterizer_9571
+        } else this.aCircleRasterizer_2541 = QuickChatMenuType.aCircleRasterizer_9571
     }
 
     companion object {
@@ -102,18 +102,18 @@ class ModelLightingConfig {
 
 
         @JvmStatic
-        fun method1425(i: Byte, structConfig: StructConfig?, class348_sub21: CameraSplineNode?, i_5_: Int, var_renderer: Renderer?, i_6_: Int): Boolean {
+        fun method1425(i: Byte, worldMapInfoType: WorldMapInfoType?, class348_sub21: CameraSplineNode?, i_5_: Int, var_renderer: Renderer?, i_6_: Int): Boolean {
             try {
                 anInt2537++
                 var i_7_ = 2147483647
                 var i_8_ = -2147483648
                 var i_9_ = 2147483647
                 var i_10_ = -2147483648
-                if (structConfig!!.anIntArray591 != null) {
-                    i_8_ = (MapRegionLoader.anInt1272 + ((-MapRegionLoader.anInt1274 + (class348_sub21!!.anInt6852 + structConfig.anInt595)) * (MapRegionLoader.anInt1276 - MapRegionLoader.anInt1272) / (-MapRegionLoader.anInt1274 + MapRegionLoader.anInt1265)))
-                    i_9_ = (-((-MapRegionLoader.anInt1262 + MapRegionLoader.anInt1268) * (structConfig.anInt570 + (class348_sub21.anInt6851 - MapRegionLoader.anInt1257)) / (MapRegionLoader.anInt1277 + -MapRegionLoader.anInt1257)) + MapRegionLoader.anInt1268)
-                    i_10_ = (-((-MapRegionLoader.anInt1262 + MapRegionLoader.anInt1268) * (class348_sub21.anInt6851 + (structConfig.anInt607 + -MapRegionLoader.anInt1257)) / (MapRegionLoader.anInt1277 - MapRegionLoader.anInt1257)) + MapRegionLoader.anInt1268)
-                    i_7_ = (((-MapRegionLoader.anInt1272 + MapRegionLoader.anInt1276) * (-MapRegionLoader.anInt1274 + class348_sub21.anInt6852 + structConfig.anInt603) / (-MapRegionLoader.anInt1274 + MapRegionLoader.anInt1265)) + MapRegionLoader.anInt1272)
+                if (worldMapInfoType!!.anIntArray591 != null) {
+                    i_8_ = (MapRegionLoader.anInt1272 + ((-MapRegionLoader.anInt1274 + (class348_sub21!!.anInt6852 + worldMapInfoType.anInt595)) * (MapRegionLoader.anInt1276 - MapRegionLoader.anInt1272) / (-MapRegionLoader.anInt1274 + MapRegionLoader.anInt1265)))
+                    i_9_ = (-((-MapRegionLoader.anInt1262 + MapRegionLoader.anInt1268) * (worldMapInfoType.anInt570 + (class348_sub21.anInt6851 - MapRegionLoader.anInt1257)) / (MapRegionLoader.anInt1277 + -MapRegionLoader.anInt1257)) + MapRegionLoader.anInt1268)
+                    i_10_ = (-((-MapRegionLoader.anInt1262 + MapRegionLoader.anInt1268) * (class348_sub21.anInt6851 + (worldMapInfoType.anInt607 + -MapRegionLoader.anInt1257)) / (MapRegionLoader.anInt1277 - MapRegionLoader.anInt1257)) + MapRegionLoader.anInt1268)
+                    i_7_ = (((-MapRegionLoader.anInt1272 + MapRegionLoader.anInt1276) * (-MapRegionLoader.anInt1274 + class348_sub21.anInt6852 + worldMapInfoType.anInt603) / (-MapRegionLoader.anInt1274 + MapRegionLoader.anInt1265)) + MapRegionLoader.anInt1272)
                 }
                 var abstractModelRenderer: AbstractModelRenderer? = null
                 var i_11_ = 0
@@ -121,9 +121,9 @@ class ModelLightingConfig {
                 var i_12_ = 0
                 var i_13_ = 0
                 var i_14_ = 0
-                if (structConfig.anInt578 != -1) {
-                    if (class348_sub21!!.aBoolean6848 && structConfig.anInt605 != -1) abstractModelRenderer = structConfig.method374(true, var_renderer!!, 127.toByte())
-                    else abstractModelRenderer = structConfig.method374(false, var_renderer!!, 127.toByte())
+                if (worldMapInfoType.anInt578 != -1) {
+                    if (class348_sub21!!.aBoolean6848 && worldMapInfoType.anInt605 != -1) abstractModelRenderer = worldMapInfoType.method374(true, var_renderer!!, 127.toByte())
+                    else abstractModelRenderer = worldMapInfoType.method374(false, var_renderer!!, 127.toByte())
                     if (abstractModelRenderer != null) {
                         i_11_ = (class348_sub21.anInt6853 + -(abstractModelRenderer.method966() - -1 shr 1))
                         i_12_ = (class348_sub21.anInt6853 + (1 + abstractModelRenderer.method966() shr 1))
@@ -144,12 +144,12 @@ class ModelLightingConfig {
                 var i_20_ = 0
                 var i_21_ = 0
                 var i_22_ = 0
-                if (structConfig.aString597 != null) {
-                    systemFontGlyphs = method1782(structConfig.anInt576, 10144)
+                if (worldMapInfoType.aString597 != null) {
+                    systemFontGlyphs = method1782(worldMapInfoType.anInt576, 10144)
                     if (systemFontGlyphs != null) {
-                        i_15_ = (GlTexture3D.aFontDefinition_8527!!.method1188(structConfig.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
-                        i_17_ = (class348_sub21!!.anInt6855 - (structConfig.anInt568 * (MapRegionLoader.anInt1268 + -MapRegionLoader.anInt1262) / (MapRegionLoader.anInt1277 - MapRegionLoader.anInt1257)))
-                        i_16_ = (class348_sub21.anInt6853 + ((-MapRegionLoader.anInt1272 + MapRegionLoader.anInt1276) * structConfig.anInt566 / (MapRegionLoader.anInt1265 + -MapRegionLoader.anInt1274)))
+                        i_15_ = (GlTexture3D.aFontDefinition_8527!!.method1188(worldMapInfoType.aString597, null, NativeRenderer.aStringArray8019, 87.toByte(), null))
+                        i_17_ = (class348_sub21!!.anInt6855 - (worldMapInfoType.anInt568 * (MapRegionLoader.anInt1268 + -MapRegionLoader.anInt1262) / (MapRegionLoader.anInt1277 - MapRegionLoader.anInt1257)))
+                        i_16_ = (class348_sub21.anInt6853 + ((-MapRegionLoader.anInt1272 + MapRegionLoader.anInt1276) * worldMapInfoType.anInt566 / (MapRegionLoader.anInt1265 + -MapRegionLoader.anInt1274)))
                         if (abstractModelRenderer == null) i_17_ -= i_15_ * systemFontGlyphs.method2560() / 2
                         else i_17_ -= ((abstractModelRenderer.method980() shr 1) - -(i_15_ * systemFontGlyphs.method2565()))
                         var i_23_ = 0
@@ -171,9 +171,9 @@ class ModelLightingConfig {
                     }
                 }
                 if (MapRegionLoader.anInt1272 > i_8_ || i_7_ > MapRegionLoader.anInt1276 || i_10_ < MapRegionLoader.anInt1262 || i_9_ > MapRegionLoader.anInt1268) return true
-                MapRegionLoader.method745(var_renderer!!, class348_sub21!!, structConfig)
+                MapRegionLoader.method745(var_renderer!!, class348_sub21!!, worldMapInfoType)
                 if (abstractModelRenderer != null) {
-                    if (GlEnvMappedWaterPass.anInt7379 > 0 && ((HslAdjustTextureNode.anInt9399 != -1 && (HslAdjustTextureNode.anInt9399 == class348_sub21.anInt6847)) || (SkeletalAnimFrameLoader.anInt481 != -1 && (structConfig.anInt596 == SkeletalAnimFrameLoader.anInt481)))) {
+                    if (GlEnvMappedWaterPass.anInt7379 > 0 && ((HslAdjustTextureNode.anInt9399 != -1 && (HslAdjustTextureNode.anInt9399 == class348_sub21.anInt6847)) || (IdentityKitType.anInt481 != -1 && (worldMapInfoType.anInt596 == IdentityKitType.anInt481)))) {
                         val i_25_: Int
                         if (ClientLoadStateMachine.anInt2173 <= 50) i_25_ = 2 * ClientLoadStateMachine.anInt2173
                         else i_25_ = -(ClientLoadStateMachine.anInt2173 * 2) + 200
@@ -186,8 +186,8 @@ class ModelLightingConfig {
                     }
                     abstractModelRenderer.method974((class348_sub21.anInt6853 + -(abstractModelRenderer.method966() shr 1)), (class348_sub21.anInt6855 + -(abstractModelRenderer.method980() shr 1)))
                 }
-                if (structConfig.aString597 != null && systemFontGlyphs != null) method2683(systemFontGlyphs, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, structConfig)
-                if (structConfig.anInt578 != -1 || structConfig.aString597 != null) {
+                if (worldMapInfoType.aString597 != null && systemFontGlyphs != null) method2683(systemFontGlyphs, class348_sub21, i_16_, 64, i_15_, var_renderer, i_17_, i_18_, worldMapInfoType)
+                if (worldMapInfoType.anInt578 != -1 || worldMapInfoType.aString597 != null) {
                     val class348_sub12 = BoundingBoxNode(class348_sub21)
                     class348_sub12.anInt6746 = i_13_
                     class348_sub12.anInt6753 = i_21_
@@ -201,7 +201,7 @@ class ModelLightingConfig {
                 }
                 return false
             } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("bp.C(" + i + ',' + (if (structConfig != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_6_ + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("bp.C(" + i + ',' + (if (worldMapInfoType != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i_5_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_6_ + ')'))
             }
         }
 
@@ -214,17 +214,17 @@ class ModelLightingConfig {
         }
 
         var anInt4242: Int = 0
-        fun method2683(systemFontGlyphs: SystemFontGlyphs?, class348_sub21: CameraSplineNode?, i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, structConfig: StructConfig?) {
+        fun method2683(systemFontGlyphs: SystemFontGlyphs?, class348_sub21: CameraSplineNode?, i: Int, i_0_: Int, i_1_: Int, var_renderer: Renderer?, i_2_: Int, i_3_: Int, worldMapInfoType: WorldMapInfoType?) {
             var i_2_ = i_2_
             try {
                 if (i_0_ == 64) {
                     anInt4242++
                     val i_4_ = -5 + i - i_3_ / 2
                     val i_5_ = i_2_ - -2
-                    if (structConfig!!.anInt602 != 0) var_renderer!!.method3675(i_3_ + 10, (-125).toByte(), i_4_, i_5_, (i_2_ - -(systemFontGlyphs!!.method2565() * i_1_) - (i_5_ - 1)), structConfig.anInt602)
-                    if (structConfig.anInt604 != 0) var_renderer!!.method3668(i_3_ + 10, i_5_, structConfig.anInt604, i_4_, (i_1_ * systemFontGlyphs!!.method2565() + i_2_ - (i_5_ + -1)), 92)
-                    var i_6_ = structConfig.anInt580
-                    if (class348_sub21!!.aBoolean6848 && structConfig.anInt567 != -1) i_6_ = structConfig.anInt567
+                    if (worldMapInfoType!!.anInt602 != 0) var_renderer!!.method3675(i_3_ + 10, (-125).toByte(), i_4_, i_5_, (i_2_ - -(systemFontGlyphs!!.method2565() * i_1_) - (i_5_ - 1)), worldMapInfoType.anInt602)
+                    if (worldMapInfoType.anInt604 != 0) var_renderer!!.method3668(i_3_ + 10, i_5_, worldMapInfoType.anInt604, i_4_, (i_1_ * systemFontGlyphs!!.method2565() + i_2_ - (i_5_ + -1)), 92)
+                    var i_6_ = worldMapInfoType.anInt580
+                    if (class348_sub21!!.aBoolean6848 && worldMapInfoType.anInt567 != -1) i_6_ = worldMapInfoType.anInt567
                     var i_7_ = 0
                     while (i_1_ > i_7_) {
                         var string = NativeRenderer.aStringArray8019!![i_7_]
@@ -235,7 +235,7 @@ class ModelLightingConfig {
                     }
                 }
             } catch (runtimeexception: RuntimeException) {
-                throw TextureLoadException.method2929(runtimeexception, ("eca.A(" + (if (systemFontGlyphs != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (structConfig != null) "{...}" else "null") + ')'))
+                throw TextureLoadException.method2929(runtimeexception, ("eca.A(" + (if (systemFontGlyphs != null) "{...}" else "null") + ',' + (if (class348_sub21 != null) "{...}" else "null") + ',' + i + ',' + i_0_ + ',' + i_1_ + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_2_ + ',' + i_3_ + ',' + (if (worldMapInfoType != null) "{...}" else "null") + ')'))
             }
         }
 

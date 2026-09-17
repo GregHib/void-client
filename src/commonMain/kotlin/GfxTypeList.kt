@@ -32,24 +32,24 @@ class GfxTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, 
         }
     }
 
-    fun method2543(i: Byte, i_1_: Int): LocConfigModelBuilder {
+    fun method2543(i: Byte, i_1_: Int): GfxType {
         if (i <= 38) method2542(-73)
         anInt3983++
-        var locConfigModelBuilder: LocConfigModelBuilder? = withLock(aLruByteCache_3989) {
-            aLruByteCache_3989.method583(i_1_.toLong(), 101) as LocConfigModelBuilder?
+        var gfxType: GfxType? = withLock(aLruByteCache_3989) {
+            aLruByteCache_3989.method583(i_1_.toLong(), 101) as GfxType?
         }
-        if (locConfigModelBuilder != null) return locConfigModelBuilder
+        if (gfxType != null) return gfxType
         val `is`: ByteArray? = withLock(aJs5Archive_3979!!) {
             aJs5Archive_3979.method410(-1860, method2419(127.toByte(), i_1_), method2729(i_1_, 16))
         }
-        locConfigModelBuilder = LocConfigModelBuilder()
-        locConfigModelBuilder.aGfxTypeList_4513 = this
-        locConfigModelBuilder.anInt4501 = i_1_
-        if (`is` != null) locConfigModelBuilder.method3559(28105, ByteBuffer(`is`))
+        gfxType = GfxType()
+        gfxType.aGfxTypeList_4513 = this
+        gfxType.anInt4501 = i_1_
+        if (`is` != null) gfxType.method3559(28105, ByteBuffer(`is`))
         withLock(aLruByteCache_3989) {
-            aLruByteCache_3989.method582(locConfigModelBuilder, i_1_.toLong(), (-127).toByte())
+            aLruByteCache_3989.method582(gfxType, i_1_.toLong(), (-127).toByte())
         }
-        return locConfigModelBuilder
+        return gfxType
     }
 
     fun method2544(i: Int, i_2_: Byte) {

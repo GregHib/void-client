@@ -4,7 +4,7 @@ import MinimapSquareDrawer.Companion.method462
 /* Class254 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class EmoteDefinition {
+class ParamType {
     var anInt3256: Int = 0
     var aString3258: String? = null
     private var aChar3259 = 0.toChar()

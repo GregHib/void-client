@@ -1,7 +1,7 @@
 /* Class348_Sub42_Sub7 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ConfigShortValueNode : HashLinkedListNode() {
+class InventoryType : HashLinkedListNode() {
     var anInt9542: Int = 0
     private fun method3191(i: Int, class348_sub49: ByteBuffer, i_0_: Byte) {
         if (i == 2) this.anInt9542 = class348_sub49.readUnsignedShort(842397944)

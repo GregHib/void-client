@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class146 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class HitsplatDefinition {
+class VarbitType {
 
     var anInt2016: Int = 0
 

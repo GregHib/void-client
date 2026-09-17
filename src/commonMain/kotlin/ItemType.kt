@@ -96,10 +96,10 @@ class ItemType {
             i_0_ = anInt2822
         }
         if (i_0_ == -1) return null
-        var class124 = ParticleConfigParser.method2277(0, this.aItemTypeList_2761!!.aJs5Archive_3268!!, i_0_, -1)
+        var class124 = SkyBoxType.method2277(0, this.aItemTypeList_2761!!.aJs5Archive_3268!!, i_0_, -1)
         if ((class124!!.anInt1830.inv()) > i) class124.method1092(2, 54)
         if (i_1_ != -1) {
-            val class124_2_ = ParticleConfigParser.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), i_1_, -1)
+            val class124_2_ = SkyBoxType.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), i_1_, -1)
             if (class124_2_!!.anInt1830 < 13) class124_2_.method1092(2, i xor 0x78.inv())
             val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_2_)
             class124 = ModelDefinition(modelDefinitions, 2)
@@ -197,16 +197,16 @@ class ItemType {
             i_14_ = anInt2760
         }
         if (i == -1) return null
-        var class124 = ParticleConfigParser.method2277(0, this.aItemTypeList_2761!!.aJs5Archive_3268!!, i, -1)
+        var class124 = SkyBoxType.method2277(0, this.aItemTypeList_2761!!.aJs5Archive_3268!!, i, -1)
         if (class124!!.anInt1830 < 13) class124.method1092(2, 64)
         if (i_14_ != -1) {
-            val class124_16_ = ParticleConfigParser.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), i_14_, -1)
+            val class124_16_ = SkyBoxType.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), i_14_, -1)
             if (class124_16_!!.anInt1830 < 13) class124_16_.method1092(2, 89)
             if (i_15_ == -1) {
                 val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_)
                 class124 = ModelDefinition(modelDefinitions, 2)
             } else {
-                val class124_17_ = ParticleConfigParser.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), i_15_, -1)
+                val class124_17_ = SkyBoxType.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), i_15_, -1)
                 if (class124_17_!!.anInt1830 < 13) class124_17_.method1092(2, 109)
                 val modelDefinitions = arrayOf<ModelDefinition?>(class124, class124_16_, class124_17_)
                 class124 = ModelDefinition(modelDefinitions, 3)
@@ -232,7 +232,7 @@ class ItemType {
         return class124
     }
 
-    fun method1559(compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, var_renderer: Renderer?, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Byte, i_24_: Int): AbstractModel? {
+    fun method1559(compositeNpcModelBuilder: CompositeNpcModelBuilder?, animationType: AnimationType?, var_renderer: Renderer?, i: Int, i_20_: Int, i_21_: Int, i_22_: Int, i_23_: Byte, i_24_: Int): AbstractModel? {
         try {
             anInt2813++
             if (this.anIntArray2762 != null && i_21_ > 1) {
@@ -240,11 +240,11 @@ class ItemType {
                 for (i_26_ in 0..9) {
                     if (i_21_ >= this.anIntArray2831[i_26_] && this.anIntArray2831[i_26_] != 0) i_25_ = this.anIntArray2762!![i_26_]
                 }
-                if (i_25_ != -1) return (this.aItemTypeList_2761!!.method1940(103, i_25_).method1559(compositeNpcModelBuilder, widgetDefinition, var_renderer, i, i_20_, 1, i_22_, 88.toByte(), i_24_))
+                if (i_25_ != -1) return (this.aItemTypeList_2761!!.method1940(103, i_25_).method1559(compositeNpcModelBuilder, animationType, var_renderer, i, i_20_, 1, i_22_, 88.toByte(), i_24_))
             }
             if (i_23_.toInt() != 88) this.aString2795 = null
             var i_27_ = i
-            if (widgetDefinition != null) i_27_ = i_27_ or widgetDefinition.method263(i_24_, 105, i_22_, true)
+            if (animationType != null) i_27_ = i_27_ or animationType.method263(i_24_, 105, i_22_, true)
             var abstractModel: AbstractModel? = withLock(this.aItemTypeList_2761!!.aLruByteCache_3287) {
                 (this.aItemTypeList_2761!!.aLruByteCache_3287.method583((var_renderer!!.anInt4567 shl 29 or this.anInt2769).toLong(), 69)) as AbstractModel?
             }
@@ -256,7 +256,7 @@ class ItemType {
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x1
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x2
                 if (anInt2786 != 128) i_28_ = i_28_ or 0x4
-                val class124 = ParticleConfigParser.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), anInt2756, -1)
+                val class124 = SkyBoxType.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), anInt2756, -1)
                 if (class124 == null) return null
                 if (class124.anInt1830 < 13) class124.method1092(2, 97)
                 abstractModel = var_renderer!!.method3625(class124, i_28_, (this.aItemTypeList_2761!!.anInt3291), anInt2791 + 64, 850 - -anInt2824)
@@ -290,11 +290,11 @@ class ItemType {
                     this.aItemTypeList_2761!!.aLruByteCache_3287.method582(abstractModel, (var_renderer.anInt4567 shl 29 or this.anInt2769).toLong(), (-111).toByte())
                 }
             }
-            if (widgetDefinition != null) abstractModel = widgetDefinition.method269(116, abstractModel, i_24_, i_20_, i_27_, i_22_)
+            if (animationType != null) abstractModel = animationType.method269(116, abstractModel, i_24_, i_20_, i_27_, i_22_)
             abstractModel!!.s(i)
             return abstractModel
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("rq.S(" + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (animationType != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i + ',' + i_20_ + ',' + i_21_ + ',' + i_22_ + ',' + i_23_ + ',' + i_24_ + ')'))
         }
     }
 
@@ -327,7 +327,7 @@ class ItemType {
     fun method1562(i: Int, bool: Boolean, i_37_: Int, var_renderer: Renderer?, var_renderer_38_: Renderer?, RSFont: RSFont?, compositeNpcModelBuilder: CompositeNpcModelBuilder?, i_39_: Int, i_40_: Byte, i_41_: Int): IntArray? {
         try {
             anInt2806++
-            val class124 = ParticleConfigParser.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), anInt2756, i_40_.toInt() xor 0x65)
+            val class124 = SkyBoxType.method2277(0, (this.aItemTypeList_2761!!.aJs5Archive_3268!!), anInt2756, i_40_.toInt() xor 0x65)
             if (class124 == null) return null
             if (class124.anInt1830 < 13) class124.method1092(2, i_40_.toInt() xor 0xb.inv())
             if (aShortArray2777 != null) {

@@ -1,5 +1,5 @@
 import OverlayColorTable.method1060
-import CameraConfigDefinition.Companion.method1920
+import LightType.Companion.method1920
 
 /* Class278 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
