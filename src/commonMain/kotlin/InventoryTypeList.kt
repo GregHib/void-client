@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class271 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParticleEffectCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class InventoryTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aLruByteCache_3466 = LruByteCache(64)
     private val aJs5Archive_3468: Js5Archive?
     fun method2044(i: Int, i_0_: Int): ConfigShortValueNode {

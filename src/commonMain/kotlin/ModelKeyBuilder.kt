@@ -38,7 +38,7 @@ class ModelKeyBuilder : LinkedListNode() {
             var abstractModel: AbstractModel? = null
             var i_15_ = i_13_
             var npcDefinition: NpcDefinition? = null
-            if (i != -1) npcDefinition = OpenGlModel.aNpcDefinitionCache_5558!!.method1983(i, 32)
+            if (i != -1) npcDefinition = OpenGlModel.aRenderAnimTypeList_5558!!.method1983(i, 32)
             var `is` = this.anIntArray6757
             if (npcDefinition != null && npcDefinition.anIntArray2906 != null) {
                 `is` = IntArray(npcDefinition.anIntArray2906.size)

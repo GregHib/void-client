@@ -131,7 +131,7 @@ class NormalMapTextureNode : AbstractProceduralTextureNode(1, false) {
             }
             HashLinkedListNodeStatics.method3163((-114).toByte())
             for (i_4_ in 0..2047) LoadingBarRenderer.aPlayerArray5058!![i_4_] = null
-            ModelDefinitionLoader.anInt2057 = 0
+            IDKTypeList.anInt2057 = 0
             NpcEntityUpdater.aHashtable_3654!!.method3481(i.toInt() xor 0xb)
             TerrainShadowBuilderGl2.anInt6930 = 0
             ModelBatchBase.aHashtable_1895!!.method3481(0)

@@ -5,7 +5,7 @@ import direct.Direct3dModel
 /* Class183 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParticleDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class FloorUnderlayTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aLruByteCache_2458 = LruByteCache(128)
     private val aJs5Archive_2461: Js5Archive?
     fun method1377(i: Int) {

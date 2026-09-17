@@ -1,5 +1,3 @@
-import GlTexture2DRegion.Companion.method1971
-
 /* Class367_Sub10 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
@@ -19,7 +17,7 @@ class GlShadowRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         if (interface18_impl2 != null && bool) {
             this.aHa_Sub3_4479.method3897(1, i + -19574)
             this.aHa_Sub3_4479.method3850(96.toByte(), interface18_impl2)
-            this.aHa_Sub3_4479.method3871(NpcDefinitionCache.aCameraNodeList_3314, i + -15192)
+            this.aHa_Sub3_4479.method3871(RenderAnimTypeList.aCameraNodeList_3314, i + -15192)
             this.aHa_Sub3_4479.method3897(1, -4382)
             this.aHa_Sub3_4479.method3874(RenderQueueState.aRenderConfigFactory_6519, 104, MediaStreamClient.aRenderConfigFactory_3196)
             this.aHa_Sub3_4479.method3924(true, false, 2, (SceneObjectEntity.aTrigLookupTables_8737), false)
@@ -36,7 +34,7 @@ class GlShadowRenderPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         anInt7386++
         if (aBoolean7385) {
             this.aHa_Sub3_4479.method3897(1, -4382)
-            this.aHa_Sub3_4479.method3871(ModelDefinitionLoader.aCameraNodeList_2047, i.toInt() xor 0x57)
+            this.aHa_Sub3_4479.method3871(IDKTypeList.aCameraNodeList_2047, i.toInt() xor 0x57)
             this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 103, (ParticleSystemState.aRenderConfigFactory_2207))
             this.aHa_Sub3_4479.method3849(47.toByte(), 2, RenderListTextureNode.aTrigLookupTables_9485)
             this.aHa_Sub3_4479.method3885(0, true, LoadingBarRenderer.aTrigLookupTables_4247)

@@ -86,7 +86,7 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
 
         var anInt3451: Int = 0
 
-        var aParticleAmountCache_3453: ParticleAmountCache? = null
+        var aVarPlayerTypeList_3453: VarPlayerTypeList? = null
         var anInt3456: Int = 0
 
         var anInt3460: Int = 0
@@ -94,7 +94,7 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
         var aFloat3462: Float = 0f
 
         fun method2040(i: Int, bool: Boolean) {
-            MapSceneDefLoader.anInt2482 = i
+            LightTypeList.anInt2482 = i
             if (bool != true) aFloat3462 = -0.54794437f
             anInt3450++
             withLock(LoadingBarRenderer.aLruByteCache_4254!!) {
@@ -104,7 +104,7 @@ class NormalMapGenerator internal constructor(private val aHa_Sub3_3457: NativeR
 
         @JvmStatic
         fun method2042(i: Byte) {
-            if (i.toInt() == -67) aParticleAmountCache_3453 = null
+            if (i.toInt() == -67) aVarPlayerTypeList_3453 = null
         }
 
         var aTextureFormatInfo_2571: TextureFormatInfo? = TextureFormatInfo(2)

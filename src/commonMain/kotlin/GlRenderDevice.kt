@@ -350,7 +350,7 @@ class GlRenderDevice(opengl: OpenGL?, canvas: Canvas?, l: Long, var_renderConfig
         try {
             if (i == 0) {
                 anInt9836++
-                if (cameraNodeList == ModelDefinitionLoader.aCameraNodeList_2047) {
+                if (cameraNodeList == IDKTypeList.aCameraNodeList_2047) {
                     glDisable(3168)
                     glDisable(3169)
                     glDisable(3170)

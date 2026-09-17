@@ -74,7 +74,7 @@ class CubemapTextureImplSource internal constructor(private val aHa_Sub3_8718: N
         fun method2271(i: Int) {
             anInt8710++
             if (!OggCacheStream.aBoolean5265) {
-                method1217(0, WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!!)
+                method1217(0, StructTypeList.aSceneCollisionEntryArrayArrayArray1148!!)
                 if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) method1217(0, (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!!))
                 OggCacheStream.aBoolean5265 = true
             }

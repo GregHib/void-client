@@ -289,7 +289,7 @@ class MapElementDecor internal constructor(private val anInt10355: Int, i_34_: I
                         LocConfigModelBuilder.anInt4509 = (WidgetActionEntry.anInt6992 + -(i_12_.toFloat() / MapRegionLoader.aFloat1247).toInt())
                         val i_21_ = (DebugOverlayRenderer.anInt3170 + -(i_13_.toFloat() / MapRegionLoader.aFloat1247).toInt())
                         LoadProgressCounters.anInt2446 = ((2 * i_13_).toFloat() / MapRegionLoader.aFloat1247).toInt()
-                        SpriteStore.anInt370 = ((i_12_ * 2).toFloat() / MapRegionLoader.aFloat1247).toInt()
+                        SkyboxSphereTypeList.anInt370 = ((i_12_ * 2).toFloat() / MapRegionLoader.aFloat1247).toInt()
                         method751(i_18_ + MapRegionLoader.anInt1266, i_19_ + MapRegionLoader.anInt1263, i_20_ - -MapRegionLoader.anInt1266, MapRegionLoader.anInt1263 + i_21_, i_11_, i_14_, i_12_ + i_11_, i_13_ + i_14_ + 1)
                         MapRegionLoader.method748(var_renderer)
                         if (i.toInt() != -7) method2462(63, -7, -14)

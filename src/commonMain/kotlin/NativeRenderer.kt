@@ -2216,9 +2216,9 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
     abstract fun method3931(bool: Boolean, textureFormatInfo: TextureFormatInfo?, movementDirection: MovementDirection?): Boolean
 
     fun method3932(i: Byte) {
-        if (this.aSingletonMarker_8184 != ModelDefinitionCache.aSingletonMarker_2864) {
+        if (this.aSingletonMarker_8184 != HitsplatTypeList.aSingletonMarker_2864) {
             val class196 = this.aSingletonMarker_8184
-            this.aSingletonMarker_8184 = ModelDefinitionCache.aSingletonMarker_2864!!
+            this.aSingletonMarker_8184 = HitsplatTypeList.aSingletonMarker_2864!!
             if (class196.method1450(-116)) method3913((-100).toByte())
             anInt8100 = anInt8100 and 0x1f.inv()
             this.aFloatArray8135 = aFloatArray8111
@@ -2492,7 +2492,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
         this.aFloat8174 = -1.0f
         this.aFloatArray8170 = floatArrayOf(0.0f, 0.0f, 1.0f, 0.0f)
         this.anInt8181 = 0
-        this.aSingletonMarker_8184 = ModelDefinitionCache.aSingletonMarker_2864!!
+        this.aSingletonMarker_8184 = HitsplatTypeList.aSingletonMarker_2864!!
         this.aFloat8180 = 1.0f
         this.aFloat8186 = -1.0f
         anInt8172 = 16777215
@@ -2898,7 +2898,7 @@ abstract class NativeRenderer(canvas: Canvas?, `object`: Any?, var_renderConfig:
                 if (HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029 == null) return
                 if (i_41_ == 0) {
                     val renderTarget = method3297(i_40_, i_37_, i) as RenderTarget?
-                    val renderTarget_42_ = ConfigArchiveLoader.method813(i_40_, i_37_, i) as RenderTarget?
+                    val renderTarget_42_ = VarcstrTypeList.method813(i_40_, i_37_, i) as RenderTarget?
                     if (renderTarget != null && i_36_ != 2) {
                         if (renderTarget is SequencedActorEntity) renderTarget.aSceneObjectAnimator_10115!!.method1671(262144, i_35_)
                         else MapSceneIconDef.method1591(i_37_, 89, i_41_, i_35_, renderTarget.method42(-76), i_36_, i, i_38_, i_40_)

@@ -7,7 +7,7 @@ import DisplayModeOptionState.Companion.method1828
 import ModelDataCache.method297
 import CompassSmoother.Companion.method2017
 import WorldMapIconLabel.Companion.method3573
-import MapSceneCache.Companion.method821
+import SkyBoxTypeList.Companion.method821
 import awt.Component
 import lang.Class
 //import lang.reflect.Constructor
@@ -71,26 +71,26 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
         fun method2938(i: Byte) {
             anInt6804++
             RenderConfigFactory.aFloorOverlayTypeList_2979!!.method2037(10205)
-            Tooltip.aParticleDefLoader_4460!!.method1381(true)
-            RadialTextureNode.aModelDefinitionLoader_9342!!.method1206((-37).toByte())
+            Tooltip.aFloorUnderlayTypeList_4460!!.method1381(true)
+            RadialTextureNode.aIDKTypeList_9342!!.method1206((-37).toByte())
             GradientLookupEffect.aObjectTypeList_9195!!.method2012(-23828)
             MapAreaDefinition.aNpcTypeList_2529!!.method2078(-6080)
             ClientException.aItemTypeList_112!!.method1939(-110)
             ParticleEmitterNode.aAnimationTypeList_191!!.method834((-116).toByte())
             ConstantColourTextureNode.aGfxTypeList_9245!!.method2546(60)
-            RenderConfigFactory.aVarbitDefLoader_2981!!.method1445(64)
-            NormalMapGenerator.aParticleAmountCache_3453!!.method1589(127.toByte())
-            OpenGlModel.aNpcDefinitionCache_5558!!.method1985(0)
-            ModelOrSpriteHolder.aMapSceneDefinitionLoader_117!!.method1175(125.toByte())
-            TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1219(7851)
-            TheoraVideoStream.aLocTypeDefLoader_9036!!.method1404((-82).toByte())
+            RenderConfigFactory.aVarbitTypeList_2981!!.method1445(64)
+            NormalMapGenerator.aVarPlayerTypeList_3453!!.method1589(127.toByte())
+            OpenGlModel.aRenderAnimTypeList_5558!!.method1985(0)
+            ModelOrSpriteHolder.aMapSceneTypeList_117!!.method1175(125.toByte())
+            TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1219(7851)
+            TheoraVideoStream.aQuestTypeList_9036!!.method1404((-82).toByte())
             ProjectionCameraTransform.aParamTypeList_5764!!.method2601((-44).toByte())
-            Client.aMapSceneCache_413!!.method822((-120).toByte())
-            HoverActionEntry.aSpriteStore_1813!!.method300((-123).toByte())
-            AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1393((-13).toByte())
+            Client.aSkyBoxTypeList_413!!.method822((-120).toByte())
+            HoverActionEntry.aSkyboxSphereTypeList_1813!!.method300((-123).toByte())
+            AbstractTileShapeStatics.aLightTypeList_6559!!.method1393((-13).toByte())
             EnumTypeList.aCursorTypeList_3147!!.method1290(-8)
-            SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method695(true)
-            FileExistsCondition.aModelDefinitionCache_4782!!.method1602(0)
+            SpriteLoadValidator.aStructTypeList_4787!!.method695(true)
+            FileExistsCondition.aHitsplatTypeList_4782!!.method1602(0)
             method3573(-15326)
             method1277(62.toByte())
             method821(-126)
@@ -138,7 +138,7 @@ class InterfaceBounds internal constructor(private val anInt6815: Int, private v
                 MidiSequencePlayer.varbits!!.method412((-114).toByte())
                 TerrainShadowBuilderGl2.Companion.worldMap!!.method412(36.toByte())
                 ModelBatchBase.quickChat!!.method412((-114).toByte())
-                ConfigArchiveLoader.quickChatMenus!!.method412((-117).toByte())
+                VarcstrTypeList.quickChatMenus!!.method412((-117).toByte())
                 KeyEventNode.Companion.textureMaterials!!.method412(78.toByte())
                 ClientLoadStateMachine.particles!!.method412(88.toByte())
                 FixedFunctionWaterPass.defaults!!.method412((-109).toByte())

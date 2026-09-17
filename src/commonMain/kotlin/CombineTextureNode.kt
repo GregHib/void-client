@@ -411,7 +411,7 @@ class CombineTextureNode : AbstractProceduralTextureNode(2, false) {
             TerrainChunkBuilder.anInt1548 = -1
             CameraOrModelTransform.anInt4155 = -1
             anInt9222++
-            KeyboardLayoutCache.anInt3306 = 0
+            VarcTypeList.anInt3306 = 0
             val i_67_ = -95 % ((i - -46) / 52)
         }
     }

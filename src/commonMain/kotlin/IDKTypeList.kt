@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class150 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_9_: Js5Archive?) {
+class IDKTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_9_: Js5Archive?) {
     private var aJs5Archive_2048: Js5Archive? = null
     private val aLruByteCache_2050 = LruByteCache(64)
     var aJs5Archive_2054: Js5Archive? = null
@@ -17,7 +17,7 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
             aJs5Archive_2048!!.method410(i + -1893, 3, i_3_)
         }
         skeletalAnimFrameLoader = SkeletalAnimFrameLoader()
-        skeletalAnimFrameLoader.aModelDefinitionLoader_475 = this
+        skeletalAnimFrameLoader.aIDKTypeList_475 = this
         if (`is` != null) skeletalAnimFrameLoader.method346(i.toInt().inv(), ByteBuffer(`is`))
         withLock(aLruByteCache_2050) {
             aLruByteCache_2050.method582(skeletalAnimFrameLoader, i_3_.toLong(), (-109).toByte())
@@ -82,8 +82,8 @@ class ModelDefinitionLoader internal constructor(sceneProjector: SceneProjector?
                 if (class213.anInt2815 >= 0 || class213.anInt2788 >= 0) `is`[i_0_++] = i_1_
                 i_1_++
             }
-            SpriteStore.anIntArray369 = IntArray(i_0_)
-            for (i_2_ in 0..<i_0_) SpriteStore.anIntArray369!![i_2_] = `is`[i_2_]
+            SkyboxSphereTypeList.anIntArray369 = IntArray(i_0_)
+            for (i_2_ in 0..<i_0_) SkyboxSphereTypeList.anIntArray369!![i_2_] = `is`[i_2_]
         }
 
         fun method1205(i: Int, bool: Boolean, js5Archive: Js5Archive, i_4_: Int): InterfaceComponentGroup {

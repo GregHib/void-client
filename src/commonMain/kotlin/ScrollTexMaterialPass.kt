@@ -218,8 +218,8 @@ class ScrollTexMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer, wa
         fun method2168(i: Int, i_7_: Int, i_8_: Int) {
             val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_7_]!![i_8_]
             if (class357 != null) {
-                ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub5_4395)
-                ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub5_4407)
+                FloorUnderlayTypeList.method1376(class357.aClass318_Sub1_Sub5_4395)
+                FloorUnderlayTypeList.method1376(class357.aClass318_Sub1_Sub5_4407)
                 if (class357.aClass318_Sub1_Sub5_4395 != null) class357.aClass318_Sub1_Sub5_4395 = null
                 if (class357.aClass318_Sub1_Sub5_4407 != null) class357.aClass318_Sub1_Sub5_4407 = null
             }

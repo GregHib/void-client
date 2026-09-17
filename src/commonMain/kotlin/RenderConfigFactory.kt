@@ -12,11 +12,11 @@ class RenderConfigFactory {
         var aFloorOverlayTypeList_2979: FloorOverlayTypeList? = null
         var anInt2980: Int = 0
 
-        var aVarbitDefLoader_2981: VarbitDefLoader? = null
+        var aVarbitTypeList_2981: VarbitTypeList? = null
 
         fun method1631(bool: Boolean): BufferPositionTracker {
             anInt2980++
-            if (bool != false) aVarbitDefLoader_2981 = null
+            if (bool != false) aVarbitTypeList_2981 = null
             try {
                 return NanoTimerJagex()
             } catch (throwable: Throwable) {
@@ -32,7 +32,7 @@ class RenderConfigFactory {
         fun method1632(i: Int) {
             aJs5Archive_2978 = null
             val i_1_ = -20 / ((-87 - i) / 34)
-            aVarbitDefLoader_2981 = null
+            aVarbitTypeList_2981 = null
             aFloorOverlayTypeList_2979 = null
         }
 

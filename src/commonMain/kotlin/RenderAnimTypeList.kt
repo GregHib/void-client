@@ -10,7 +10,7 @@ import lang.StringBuffer
 /* Class261 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class NpcDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class RenderAnimTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_3319: Js5Archive?
     private val aLruByteCache_3321 = LruByteCache(64)
     fun method1983(i: Int, i_9_: Int): NpcDefinition {

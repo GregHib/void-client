@@ -4,7 +4,7 @@ import GlTexture1D.Companion.method1974
 /* Class187 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class LocTypeDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class QuestTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private var aJs5Archive_2498: Js5Archive? = null
     private var aLruByteCache_2501: LruByteCache? = LruByteCache(64)
     fun method1404(i: Byte) {

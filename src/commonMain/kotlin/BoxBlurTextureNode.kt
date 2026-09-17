@@ -189,7 +189,7 @@ class BoxBlurTextureNode : AbstractProceduralTextureNode(1, false) {
             if (i.toInt() != 27) method3146(-85, 87, 91.toByte(), 46, -77, 54, null, null, -117)
             MediaStreamClient.anInt3203 = -1
             TerrainChunkBuilder.anInt1548 = -1
-            KeyboardLayoutCache.anInt3306 = 0
+            VarcTypeList.anInt3306 = 0
             anInt9459++
         }
 

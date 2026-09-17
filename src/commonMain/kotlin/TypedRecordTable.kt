@@ -18,17 +18,17 @@ class TypedRecordTable {
     private fun method2182(bool: Boolean, projectileFactory: ProjectileFactory?, class348_sub49: ByteBuffer?): ConfigTypeProvider? {
         try {
             anInt3692++
-            if (ModelDefinitionCache.aProjectileFactory_2868 == projectileFactory) return VarpStore.method1312(64.toByte(), class348_sub49!!)
+            if (HitsplatTypeList.aProjectileFactory_2868 == projectileFactory) return VarpStore.method1312(64.toByte(), class348_sub49!!)
             if (ByteBufferStatics.aProjectileFactory_7175 == projectileFactory) return AnimatedModelRenderer.method987(743571200, class348_sub49!!)
             if (MatrixCameraTransform.aProjectileFactory_5689 == projectileFactory) return ProjectileDefinition.method2287(class348_sub49!!, (-112).toByte())
             if (projectileFactory == ItemNameResolver.aProjectileFactory_4997) return GlShaderProgramHandle.method2660(26.toByte(), class348_sub49!!)
             if (bool != true) Companion.method2180((-104).toByte())
             if (projectileFactory == WeaveTextureNode.aProjectileFactory_9274) return ParticleEmitterDefExt.Companion.method2189(class348_sub49!!, 86)
             if (projectileFactory == SkyboxGradient.aProjectileFactory_3934) return WorldMapElement.method179(16533, class348_sub49!!)
-            if (MapSceneDefLoader.aProjectileFactory_2489 == projectileFactory) return StringValueNode.method3322(0, class348_sub49!!)
+            if (LightTypeList.aProjectileFactory_2489 == projectileFactory) return StringValueNode.method3322(0, class348_sub49!!)
             if (projectileFactory == aProjectileFactory_2307) return MinimapLineDrawer.method472(-27794, class348_sub49!!)
             if (OrientationRotator.aProjectileFactory_2045 == projectileFactory) return MaterialTypeMarker.method2612(class348_sub49!!, true)
-            if (LocTypeDefLoader.aProjectileFactory_2507 == projectileFactory) return GlVertexBufferArb.method2128(-1730, class348_sub49!!)
+            if (QuestTypeList.aProjectileFactory_2507 == projectileFactory) return GlVertexBufferArb.method2128(-1730, class348_sub49!!)
             return null
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("vp.F(" + bool + ',' + (if (projectileFactory != null) "{...}" else "null") + ',' + (if (class348_sub49 != null) "{...}" else "null") + ')'))

@@ -43,7 +43,7 @@ object NpcSpawnDecoder {
                     val class348_sub49 = ByteBuffer(StringCacheNode.aByteArrayArray7212!![i_1_])
                     var i_4_ = 0
                     while (class348_sub49.anInt7197 < StringCacheNode.aByteArrayArray7212!![i_1_]!!.size) {
-                        if (i_4_ >= 511 || ModelDefinitionLoader.anInt2057 >= 1023) break
+                        if (i_4_ >= 511 || IDKTypeList.anInt2057 >= 1023) break
                         val i_5_ = i_2_ or (i_4_++ shl 6)
                         val i_6_ = class348_sub49.readUnsignedShort(842397944)
                         val i_7_ = i_6_ shr 14
@@ -59,7 +59,7 @@ object NpcSpawnDecoder {
                             val class348_sub22_12_ = (NpcReference(npc))
                             NpcEntityUpdater.aHashtable_3654!!.method3483(91.toByte(), i_5_.toLong(), class348_sub22_12_)
                             TurbulenceTextureNode.aClass348_Sub22Array9319!![TerrainShadowBuilderGl2.anInt6930++] = class348_sub22_12_
-                            Client.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = i_5_
+                            Client.anIntArray1233!![IDKTypeList.anInt2057++] = i_5_
                             npc.anInt10306 = GlGroundShaderPass.anInt7396
                             npc.method2448(class79, -2)
                             npc.method2434(120.toByte(), npc.aNpcType_10505!!.anInt1399)

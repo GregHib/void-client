@@ -6,9 +6,9 @@ import CircleRasterizer.Companion.method2253
 import ConfigVarProgress.Companion.method2307
 import FlipTextureNode.Companion.method3065
 import CharacterRenderState.Companion.method2780
-import SpriteStore.Companion.aAbstractModelRendererArray367
-import SpriteStore.Companion.anIntArray369
-import WorldMapImageBuilder.Companion.method696
+import SkyboxSphereTypeList.Companion.aAbstractModelRendererArray367
+import SkyboxSphereTypeList.Companion.anIntArray369
+import StructTypeList.Companion.method696
 
 /* Class325 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
@@ -564,7 +564,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                             val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(i_77_.toLong(), -6008) as NpcReference?)
                             if (class348_sub22 != null) {
                                 LinkedListNodeStatics.anInt4292 = 0
-                                LocTypeDefLoader.anInt2499++
+                                QuestTypeList.anInt2499++
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 AntiAliasingOptionState.anInt6048 = 2
                                 JagGlToolkitFactory.anInt1534 = i_72_
@@ -873,7 +873,7 @@ class SpriteMaskShape private constructor(i: Int, i_78_: Int, movementDirection:
                                 JagGlToolkitFactory.anInt1534 = i_72_
                                 SpriteArchiveLoader.anInt385 = i_73_
                                 LinkedListNodeStatics.anInt4292 = 0
-                                val class348_sub47 = method2148((WorldMapImageBuilder.aFontMetaRef_1144), (TheoraVideoStream.aIsaacCipher_9029), -96)
+                                val class348_sub47 = method2148((StructTypeList.aFontMetaRef_1144), (TheoraVideoStream.aIsaacCipher_9029), -96)
                                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), i_77_)
                                 InterfaceComponentGroup.method3243(125, class348_sub47)
                             }

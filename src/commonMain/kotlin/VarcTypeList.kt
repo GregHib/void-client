@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class259 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class KeyboardLayoutCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class VarcTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_3299: Js5Archive?
     private val aLruByteCache_3303 = LruByteCache(64)
     var anInt3305: Int = 0

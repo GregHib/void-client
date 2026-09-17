@@ -1,5 +1,5 @@
 import kotlin.jvm.JvmStatic
-import LocTypeDefLoader.Companion.method1406
+import QuestTypeList.Companion.method1406
 import RemoveRoofLightingDetailOptionState.Companion.method1779
 import ConfigFlagUtil.Companion.method1916
 import TextureCubeProvider.Companion.method2269
@@ -113,7 +113,7 @@ class TileRenderState {
             BoundingBoxNode.aAbstractModelRendererArray6742 = null
             WorldMapRenderer.aAbstractModelRendererArray4679 = null
             NpcType.aAbstractModelRenderer_1365 = null
-            SpriteStore.aAbstractModelRendererArray367 = null
+            SkyboxSphereTypeList.aAbstractModelRendererArray367 = null
             GroundBlendingOptionState.aAbstractModelRendererArray5933 = null
             ScriptResources.aAbstractModelRendererArray2640 = null
             BoxBlurTextureNode.aAbstractModelRendererArray9467 = null
@@ -141,7 +141,7 @@ class TileRenderState {
                     LocalizedTextStatics.method2061(-127)
                     MapElementManager.method3513(-113)
                     method1779(124.toByte())
-                    if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2295(96.toByte())
+                    if (VarcTypeList.aParticleSystemRenderer_3304 != null) VarcTypeList.aParticleSystemRenderer_3304!!.method2295(96.toByte())
                     method2269(true)
                     InterfaceBounds.method2938(127.toByte())
                     method369(-29776)

@@ -87,7 +87,7 @@ class ConstantColourTextureNode private constructor(i: Int) : AbstractProcedural
                 val i_8_ = -ArbVertexProgram.regionTileX + i_2_ + (i_6_ shl 6)
                 player.aBoolean10554 = class359.aBoolean4426
                 val i_9_ = -RegionMapDecoder.regionTileY + i_3_ + (i_7_ shl 6)
-                player.aByteArray10321!![0] = KeyboardLayoutCache.aByteArray3300!![i]
+                player.aByteArray10321!![0] = VarcTypeList.aByteArray3300!![i]
                 player.aByte6376 = i_5_.toByte()
                 player.plane = player.aByte6376
                 if (method802(i_9_, i_8_, true)) player.aByte6376++

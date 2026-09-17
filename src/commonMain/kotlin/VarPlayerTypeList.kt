@@ -4,7 +4,7 @@ import SceneTilePlaneManager.method259
 /* Class217 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ParticleAmountCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class VarPlayerTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_2842: Js5Archive?
     var anInt2845: Int = 0
     private var aLruByteCache_2848: LruByteCache? = LruByteCache(64)

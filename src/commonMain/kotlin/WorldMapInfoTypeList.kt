@@ -1,9 +1,7 @@
-import Texture2DProvider.Companion.method2259
-
 /* Class153 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_10_: Js5Archive?) {
+class WorldMapInfoTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_10_: Js5Archive?) {
     private var aLruByteCache_2083 = LruByteCache(128)
     private val aJs5Archive_2084: Js5Archive?
     var aJs5Archive_2087: Js5Archive? = null
@@ -63,7 +61,7 @@ class ConfigDefinitionLoader internal constructor(sceneProjector: SceneProjector
             `is` = aJs5Archive_2084.method410(-1860, 36, i)
         }
         structConfig = StructConfig()
-        structConfig.aConfigDefinitionLoader_593 = this
+        structConfig.aWorldMapInfoTypeList_593 = this
         structConfig.anInt581 = i
         if (`is` != null) structConfig.method379(ByteBuffer(`is`), 109)
         structConfig.method372(-25359)

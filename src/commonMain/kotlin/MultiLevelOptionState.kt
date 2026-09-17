@@ -64,7 +64,7 @@ class MultiLevelOptionState : GraphicsOptionState {
             anInt6149++
             if (c.isISOControl()) return false
             if (Npc.method2446(c, 105.toByte())) return true
-            val cs = MapSceneDefLoader.aCharArray2488!!
+            val cs = LightTypeList.aCharArray2488!!
             var i_2_ = 0
             while (cs.size > i_2_) {
                 val i_3_ = cs[i_2_].code

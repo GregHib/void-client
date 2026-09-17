@@ -123,13 +123,13 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             if (i <= -44) {
                 TextureMetadataProvider.anInt4609 = -1
                 WorldMapRenderer.aSystemFontGlyphs_4672 = null
-                if (MapRegionLoader.aConfigDefinitionLoader_1238 != null) {
-                    MapRegionLoader.aConfigDefinitionLoader_1238!!.method1219(7851)
-                    MapRegionLoader.aConfigDefinitionLoader_1238!!.method1220((-100).toByte(), 64, 128)
+                if (MapRegionLoader.aWorldMapInfoTypeList_1238 != null) {
+                    MapRegionLoader.aWorldMapInfoTypeList_1238!!.method1219(7851)
+                    MapRegionLoader.aWorldMapInfoTypeList_1238!!.method1220((-100).toByte(), 64, 128)
                 }
-                if (MapRegionLoader.aMapSceneDefinitionLoader_1242 != null) MapRegionLoader.aMapSceneDefinitionLoader_1242!!.method1178(64, 1, 64)
+                if (MapRegionLoader.aMapSceneTypeList_1242 != null) MapRegionLoader.aMapSceneTypeList_1242!!.method1178(64, 1, 64)
                 if (MapRegionLoader.aObjectTypeList_1245 != null) MapRegionLoader.aObjectTypeList_1245!!.method2014(64, true)
-                RenderConfigFactory.aVarbitDefLoader_2981!!.method1444(64, -124)
+                RenderConfigFactory.aVarbitTypeList_2981!!.method1444(64, -124)
             }
         }
 

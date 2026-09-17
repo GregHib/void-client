@@ -15,7 +15,7 @@ class HoverActionEntry internal constructor(var anByteBufferReader_1811: ByteBuf
 
     companion object {
 
-        var aSpriteStore_1813: SpriteStore? = null
+        var aSkyboxSphereTypeList_1813: SkyboxSphereTypeList? = null
 
         var aJs5Archive_1815: Js5Archive? = null
 
@@ -23,7 +23,7 @@ class HoverActionEntry internal constructor(var anByteBufferReader_1811: ByteBuf
         fun method1091(i: Int) {
             if (i != -9341) method1091(-16)
             aJs5Archive_1815 = null
-            aSpriteStore_1813 = null
+            aSkyboxSphereTypeList_1813 = null
         }
     }
 }

@@ -341,13 +341,13 @@ class NpcType {
         }
     }
 
-    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, animationTypeList: AnimationTypeList?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, npcDefinitionCache: NpcDefinitionCache?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, varResolver: VarResolver?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): AbstractModel? {
+    fun method800(i: Int, loadProgressCounters: Array<LoadProgressCounters?>?, animationTypeList: AnimationTypeList?, bool: Boolean, widgetDefinition: WidgetDefinition?, i_34_: Int, renderAnimTypeList: RenderAnimTypeList?, i_35_: Int, widgetDefinition_36_: WidgetDefinition?, varResolver: VarResolver?, var_renderer: Renderer?, i_37_: Int, `is`: IntArray?, i_38_: Int, i_39_: Int, i_40_: Int, i_41_: Int): AbstractModel? {
         try {
             anInt1341++
             if (this.anIntArray1377 != null) {
                 val class79_42_ = method794(varResolver!!, -1)
                 if (class79_42_ == null) return null
-                return class79_42_.method800(i, loadProgressCounters, animationTypeList, false, widgetDefinition, i_34_, npcDefinitionCache, i_35_, widgetDefinition_36_, varResolver, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
+                return class79_42_.method800(i, loadProgressCounters, animationTypeList, false, widgetDefinition, i_34_, renderAnimTypeList, i_35_, widgetDefinition_36_, varResolver, var_renderer, i_37_, `is`, i_38_, i_39_, i_40_, i_41_)
             }
             var i_43_ = i_40_
             if (anInt1358 != 128) i_43_ = i_43_ or 0x2
@@ -383,7 +383,7 @@ class NpcType {
                             var i_55_ = class17_51_.anIntArray237[i_53_]
                             NpcType.aClass348_Sub42_Sub17Array9672!![i_50_] = animationTypeList.method839(i_55_ ushr 16, 3)
                             i_55_ = i_55_ and 0xffff
-                            ParticleDefLoader.anIntArray2466!![i_50_] = i_55_
+                            FloorUnderlayTypeList.anIntArray2466!![i_50_] = i_55_
                             if ((NpcType.aClass348_Sub42_Sub17Array9672!![i_50_]) != null) {
                                 bool_46_ = bool_46_ or NpcType.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3272(i_55_, 0)
                                 bool_45_ = bool_45_ or NpcType.aClass348_Sub42_Sub17Array9672!![i_50_]!!.method3271(i_55_, 14)
@@ -393,7 +393,7 @@ class NpcType {
                             KaraokeSubtitleStream.anIntArray9050!![i_50_] = 0
                             TooltipComponentRenderer.anIntArray4648!![i_50_] = 0
                             NpcType.aClass348_Sub42_Sub17Array9672!![i_50_] = null
-                            ParticleDefLoader.anIntArray2466!![i_50_] = -1
+                            FloorUnderlayTypeList.anIntArray2466!![i_50_] = -1
                         }
                     }
                 }
@@ -470,7 +470,7 @@ class NpcType {
                 this.aNpcTypeList_1348!!.aLruByteCache_3590!!.method583(l, 80) as AbstractModel?
             }
             var npcDefinition: NpcDefinition? = null
-            if (this.anInt1366 != -1) npcDefinition = npcDefinitionCache!!.method1983(this.anInt1366, 32)
+            if (this.anInt1366 != -1) npcDefinition = renderAnimTypeList!!.method1983(this.anInt1366, 32)
             if (abstractModel == null || i_43_ != (i_43_ and abstractModel.ua())) {
                 if (abstractModel != null) i_43_ = i_43_ or abstractModel.ua()
                 var i_69_ = i_43_
@@ -571,7 +571,7 @@ class NpcType {
                     null,
                     i_87_,
                     RegionMapDecoder.anIntArray1518!![i_86_],
-                    ParticleDefLoader.anIntArray2466!![i_86_],
+                    FloorUnderlayTypeList.anIntArray2466!![i_86_],
                     (NpcType.aClass348_Sub42_Sub17Array9672!![i_86_]),
                     0,
                     (ModelGroundDecor.aClass348_Sub42_Sub17Array10010!![i_86_]),
@@ -613,7 +613,7 @@ class NpcType {
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(
                 runtimeexception,
-                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
+                ("bb.F(" + i + ',' + (if (loadProgressCounters != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + bool + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + i_34_ + ',' + (if (renderAnimTypeList != null) "{...}" else "null") + ',' + i_35_ + ',' + (if (widgetDefinition_36_ != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_37_ + ',' + (if (`is` != null) "{...}" else "null") + ',' + i_38_ + ',' + i_39_ + ',' + i_40_ + ',' + i_41_ + ')')
             )
         }
     }

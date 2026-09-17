@@ -103,7 +103,7 @@ class ColourKeyTextureNode : AbstractProceduralTextureNode(1, false) {
             anInt4030++
             if (WidgetRedrawTracker.anInt3931 == 1 || WidgetRedrawTracker.anInt3931 == 3 || (WidgetRedrawTracker.anInt3931 != WaterTextureSet.anInt1447 && (WidgetRedrawTracker.anInt3931 == 0 || WaterTextureSet.anInt1447 == 0))) {
                 TerrainShadowBuilderGl2.anInt6930 = 0
-                ModelDefinitionLoader.anInt2057 = 0
+                IDKTypeList.anInt2057 = 0
                 NpcEntityUpdater.aHashtable_3654!!.method3481(0)
             }
             WaterTextureSet.anInt1447 = WidgetRedrawTracker.anInt3931

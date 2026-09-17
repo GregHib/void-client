@@ -185,16 +185,16 @@ class SequencedWallEntity internal constructor(var_renderer: Renderer?, objectTy
                     i_17_++
                 }
                 glLinkProgramARB(l)
-                glGetObjectParameterivARB(l, 35714, LocTypeDefLoader.anIntArray2509, 0)
-                if ((LocTypeDefLoader.anIntArray2509!![0].inv()) == i) {
-                    if (LocTypeDefLoader.anIntArray2509!![0] == 0) println("Shader linking failed:")
-                    glGetObjectParameterivARB(l, 35716, LocTypeDefLoader.anIntArray2509, 1)
-                    if (LocTypeDefLoader.anIntArray2509!![1] > 1) {
-                        val `is` = ByteArray(LocTypeDefLoader.anIntArray2509!![1])
-                        glGetInfoLogARB(l, LocTypeDefLoader.anIntArray2509!![1], LocTypeDefLoader.anIntArray2509, 0, `is`, 0)
+                glGetObjectParameterivARB(l, 35714, QuestTypeList.anIntArray2509, 0)
+                if ((QuestTypeList.anIntArray2509!![0].inv()) == i) {
+                    if (QuestTypeList.anIntArray2509!![0] == 0) println("Shader linking failed:")
+                    glGetObjectParameterivARB(l, 35716, QuestTypeList.anIntArray2509, 1)
+                    if (QuestTypeList.anIntArray2509!![1] > 1) {
+                        val `is` = ByteArray(QuestTypeList.anIntArray2509!![1])
+                        glGetInfoLogARB(l, QuestTypeList.anIntArray2509!![1], QuestTypeList.anIntArray2509, 0, `is`, 0)
                         println(`is`.map { it.toInt().toChar() }.toCharArray().concatToString())
                     }
-                    if (LocTypeDefLoader.anIntArray2509!![0] == 0) {
+                    if (QuestTypeList.anIntArray2509!![0] == 0) {
                         var i_18_ = 0
                         while (managedGlResources.size > i_18_) {
                             glDetachObjectARB(l, (managedGlResources[i_18_]!!.aLong3156))

@@ -3527,7 +3527,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                 class348_sub42_sub13 = (ContactEntry.aHashtable_9603!!.method3476(true) as? ContactList?)
                             }
                             if (class348_sub42_sub13 == null) {
-                                class348_sub42_sub13 = (KeyboardLayoutCache.aLruByteCache_3301!!.method583(l, i.toInt() xor 0x3a) as? ContactList?)
+                                class348_sub42_sub13 = (VarcTypeList.aLruByteCache_3301!!.method583(l, i.toInt() xor 0x3a) as? ContactList?)
                                 if (class348_sub42_sub13 != null && !(class348_sub42_sub13.aString9617 == class348_sub42_sub12.aString9601)) class348_sub42_sub13 = null
                                 if (class348_sub42_sub13 == null) class348_sub42_sub13 = (ContactList(class348_sub42_sub12.aString9601))
                                 ContactEntry.aHashtable_9603!!.method3483(71.toByte(), l, class348_sub42_sub13)
@@ -3551,7 +3551,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             SceneNodeDeque.anInt1497 = 0
             val `is` = ScrollTexMaterialPass.anIntArray6290!!
             var i_322_ = 0
-            while ((i_322_ < ModelDefinitionLoader.anInt2057 + i_321_)) {
+            while ((i_322_ < IDKTypeList.anInt2057 + i_321_)) {
                 var npcType: NpcType? = null
                 val class318_sub1_sub3_sub3: ProjectedGroundDecor
                 if (i_321_ > i_322_) class318_sub1_sub3_sub3 = (LoadingBarRenderer.aPlayerArray5058!![`is`[i_322_]]!!)
@@ -3738,7 +3738,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                                     i_344_++
                                     continue
                                 }
-                                itemModelDefinition = (FileExistsCondition.aModelDefinitionCache_4782!!.method1601(46, (class318_sub1_sub3_sub3.anIntArray10259[i_344_])))
+                                itemModelDefinition = (FileExistsCondition.aHitsplatTypeList_4782!!.method1601(46, (class318_sub1_sub3_sub3.anIntArray10259[i_344_])))
                                 i_347_ = itemModelDefinition.anInt434
                             } else if (i_345_ < 0) {
                                 i_344_++
@@ -3746,7 +3746,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
                             }
                             val i_348_ = (class318_sub1_sub3_sub3.anIntArray10304[i_344_])
                             var itemModelDefinition_349_: ItemModelDefinition? = null
-                            if (i_348_ >= 0) itemModelDefinition_349_ = FileExistsCondition.aModelDefinitionCache_4782!!.method1601(46, i_348_)
+                            if (i_348_ >= 0) itemModelDefinition_349_ = FileExistsCondition.aHitsplatTypeList_4782!!.method1601(46, i_348_)
                             if (-i_347_ + i_345_ <= GlGroundShaderPass.anInt7396) {
                                 val i_350_ = (class318_sub1_sub3_sub3.anIntArray10303[i_344_])
                                 if (i_350_ >= 0) {

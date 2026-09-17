@@ -10,7 +10,7 @@ class SkeletalAnimFrameLoader {
     private var anIntArray472: IntArray? = null
     private var aShortArray474: ShortArray? = null
 
-    var aModelDefinitionLoader_475: ModelDefinitionLoader? = null
+    var aIDKTypeList_475: IDKTypeList? = null
     private lateinit var aShortArray477: ShortArray
     private lateinit var aShortArray480: ShortArray
 
@@ -18,8 +18,8 @@ class SkeletalAnimFrameLoader {
         anInt468++
         if (anIntArray472 == null) return null
         val modelDefinitions = arrayOfNulls<ModelDefinition>(anIntArray472!!.size)
-        withLock(this.aModelDefinitionLoader_475!!.aJs5Archive_2054!!) {
-            for (i_0_ in anIntArray472!!.indices) modelDefinitions[i_0_] = ParticleConfigParser.method2277(0, (this.aModelDefinitionLoader_475!!.aJs5Archive_2054!!), anIntArray472!![i_0_], -1)
+        withLock(this.aIDKTypeList_475!!.aJs5Archive_2054!!) {
+            for (i_0_ in anIntArray472!!.indices) modelDefinitions[i_0_] = ParticleConfigParser.method2277(0, (this.aIDKTypeList_475!!.aJs5Archive_2054!!), anIntArray472!![i_0_], -1)
         }
         var i_1_ = 0
         while (anIntArray472!!.size > i_1_) {
@@ -43,9 +43,9 @@ class SkeletalAnimFrameLoader {
     fun method342(i: Byte): Boolean {
         anInt470++
         var bool = true
-        withLock(this.aModelDefinitionLoader_475!!.aJs5Archive_2054!!) {
+        withLock(this.aIDKTypeList_475!!.aJs5Archive_2054!!) {
             for (i_4_ in 0..4) {
-                if (anIntArray464[i_4_] != -1 && !this.aModelDefinitionLoader_475!!.aJs5Archive_2054!!.method420(-10499, anIntArray464[i_4_], 0)) bool = false
+                if (anIntArray464[i_4_] != -1 && !this.aIDKTypeList_475!!.aJs5Archive_2054!!.method420(-10499, anIntArray464[i_4_], 0)) bool = false
             }
             if (i <= 87) method351(96)
         }
@@ -56,9 +56,9 @@ class SkeletalAnimFrameLoader {
         anInt471++
         val modelDefinitions = arrayOfNulls<ModelDefinition>(5)
         var i_5_ = 0
-        withLock(this.aModelDefinitionLoader_475!!.aJs5Archive_2054!!) {
+        withLock(this.aIDKTypeList_475!!.aJs5Archive_2054!!) {
             for (i_6_ in 0..4) {
-                if (anIntArray464[i_6_] != -1) modelDefinitions[i_5_++] = ParticleConfigParser.method2277(0, (this.aModelDefinitionLoader_475!!.aJs5Archive_2054!!), anIntArray464[i_6_], -1)
+                if (anIntArray464[i_6_] != -1) modelDefinitions[i_5_++] = ParticleConfigParser.method2277(0, (this.aIDKTypeList_475!!.aJs5Archive_2054!!), anIntArray464[i_6_], -1)
             }
         }
         for (i_7_ in 0..4) {
@@ -130,10 +130,10 @@ class SkeletalAnimFrameLoader {
         if (i.toInt() != 34) method348((-15).toByte())
         if (anIntArray472 == null) return true
         var bool = true
-        withLock(this.aModelDefinitionLoader_475!!.aJs5Archive_2054!!) {
+        withLock(this.aIDKTypeList_475!!.aJs5Archive_2054!!) {
             var i_31_ = 0
             while (anIntArray472!!.size > i_31_) {
-                if (!this.aModelDefinitionLoader_475!!.aJs5Archive_2054!!.method420(-10499, anIntArray472!![i_31_], 0)) bool = false
+                if (!this.aIDKTypeList_475!!.aJs5Archive_2054!!.method420(-10499, anIntArray472!![i_31_], 0)) bool = false
                 i_31_++
             }
         }

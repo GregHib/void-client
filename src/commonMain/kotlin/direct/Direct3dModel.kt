@@ -1105,7 +1105,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
                 class64_sub2_154_.aFloatArray5476 = aFloatArray5476
                 class64_sub2_154_.aFloatArray5506 = aFloatArray5506
             }
-            if (ParticleDefLoader.method1379(4, anInt5472, i)) {
+            if (FloorUnderlayTypeList.method1379(4, anInt5472, i)) {
                 class64_sub2_154_.aBufferToggleState_5460 = class64_sub2_153_!!.aBufferToggleState_5460
                 class64_sub2_154_.aBufferToggleState_5460!!.anInterface5_Impl1_3711 = aBufferToggleState_5460!!.anInterface5_Impl1_3711
                 class64_sub2_154_.aBufferToggleState_5460!!.aBoolean3714 = aBufferToggleState_5460!!.aBoolean3714
@@ -1857,7 +1857,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
     public override fun s(i: Int) {
         anInt5445++
         if (aBufferToggleState_5520 != null) aBufferToggleState_5520!!.aBoolean3709 = CompassSmoother.method2015(i, anInt5472, 7)
-        if (aBufferToggleState_5460 != null) aBufferToggleState_5460!!.aBoolean3709 = ParticleDefLoader.method1379(4, anInt5472, i)
+        if (aBufferToggleState_5460 != null) aBufferToggleState_5460!!.aBoolean3709 = FloorUnderlayTypeList.method1379(4, anInt5472, i)
         if (aBufferToggleState_5482 != null) aBufferToggleState_5482!!.aBoolean3709 = method3200(i, anInt5472, 73.toByte())
         if (aBufferToggleState_5424 != null) aBufferToggleState_5424!!.aBoolean3709 = Crc64Hashable.method1113(i, anInt5472, -10)
         anInt5463 = i
@@ -3371,7 +3371,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             anInt5472 = i_764_
             aHa_Sub3_5419 = var_ha_Sub3
             if (bool || ServerConnectionInfo.method1258(anInt5463, -9301, anInt5472)) aBufferToggleState_5520 = BufferToggleState(CompassSmoother.method2015(anInt5463, anInt5472, 7))
-            if (bool || method1837(anInt5472, 102, anInt5463)) aBufferToggleState_5460 = BufferToggleState(ParticleDefLoader.method1379(4, anInt5472, anInt5463))
+            if (bool || method1837(anInt5472, 102, anInt5463)) aBufferToggleState_5460 = BufferToggleState(FloorUnderlayTypeList.method1379(4, anInt5472, anInt5463))
             if (bool || HuffmanCodec.method2224(anInt5463, 110.toByte(), anInt5472)) aBufferToggleState_5482 = BufferToggleState(method3200(anInt5463, anInt5472, (-82).toByte()))
             if (bool || GlowPostProcessor.method1412((-35).toByte(), anInt5472, anInt5463)) aBufferToggleState_5424 = BufferToggleState(Crc64Hashable.method1113(anInt5463, anInt5472, -21))
             if (bool || method3563(anInt5463, 56.toByte(), anInt5472)) aAsyncTaskHandle_5485 = AsyncTaskHandle(method2783(anInt5472, (-97).toByte(), anInt5463))
@@ -3518,7 +3518,7 @@ class Direct3dModel internal constructor(var_ha_Sub3: NativeRenderer?, i: Int, i
             while (class348_sub42_sub13 != null) {
                 if (class348_sub42_sub13.anInt9615 > 1) {
                     class348_sub42_sub13.anInt9615 = 0
-                    KeyboardLayoutCache.aLruByteCache_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).aLong9600, (-124).toByte())
+                    VarcTypeList.aLruByteCache_3301!!.method582(class348_sub42_sub13, (class348_sub42_sub13.aLinkedNodeListIterator_9621.aClass348_Sub42_1647.aClass348_Sub42_7063 as ContactEntry).aLong9600, (-124).toByte())
                     class348_sub42_sub13.aLinkedNodeListIterator_9621.method1009(2110355138)
                 }
                 class348_sub42_sub13 = (ParticleSortRenderer.aLinkedNodeListIterator_3022!!.method1003(46.toByte()) as ContactList?)

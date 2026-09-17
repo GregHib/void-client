@@ -192,7 +192,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
         if (i.toInt() != 72) method2438(-88, 93, -127, 68, 7, -76, 116, 122.toByte())
         anInt10249++
         val i_1_ = method2421(127.toByte())
-        if (i_1_ != -1) return OpenGlModel.aNpcDefinitionCache_5558!!.method1983(i_1_, 32)
+        if (i_1_ != -1) return OpenGlModel.aRenderAnimTypeList_5558!!.method1983(i_1_, 32)
         return NpcDefinition.aNpcDefinition_2931!!
     }
 
@@ -610,7 +610,7 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
             var i_109_ = -1
             var i_110_ = 0
             if (i_100_ >= 0) {
-                val class31 = FileExistsCondition.aModelDefinitionCache_4782!!.method1601(46, i_100_)
+                val class31 = FileExistsCondition.aHitsplatTypeList_4782!!.method1601(46, i_100_)
                 i_109_ = class31.anInt431
                 i_110_ = class31.anInt434
             }
@@ -824,17 +824,17 @@ abstract class ProjectedGroundDecor : GroundDecorEntity(0, 0, 0, 0, 0, 0, 0, 0, 
 
         @JvmStatic
         fun method2433() {
-            if (WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 != null) {
-                for (i in WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!!.indices) {
+            if (StructTypeList.aSceneCollisionEntryArrayArrayArray1148 != null) {
+                for (i in StructTypeList.aSceneCollisionEntryArrayArrayArray1148!!.indices) {
                     for (i_80_ in 0..<ActorEntity.anInt6451) {
                         for (i_81_ in 0..<ActorEntity.anInt7054) {
-                            if ((WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
-                            WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
+                            if ((StructTypeList.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]) != null) StructTypeList.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_]!!.method3485(true)
+                            StructTypeList.aSceneCollisionEntryArrayArrayArray1148!![i]!![i_80_]!![i_81_] = null
                         }
                     }
                 }
             }
-            WorldMapImageBuilder.aSceneCollisionEntryArrayArrayArray1148 = null
+            StructTypeList.aSceneCollisionEntryArrayArrayArray1148 = null
             TerrainTileShape.aTerrainTileArray8801 = null
             if (ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082 != null) {
                 for (i in ProducerImageSurface.aSceneCollisionEntryArrayArrayArray9082!!.indices) {

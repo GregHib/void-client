@@ -43,7 +43,7 @@ class FileExistsCondition internal constructor(js5Archive: Js5Archive?, string: 
 
         var anInt4781: Int = 0
 
-        var aModelDefinitionCache_4782: ModelDefinitionCache? = null
+        var aHitsplatTypeList_4782: HitsplatTypeList? = null
 
         var aLong4783: Long = 20000000L
         var anInt4786: Int = 0
@@ -54,18 +54,18 @@ class FileExistsCondition internal constructor(js5Archive: Js5Archive?, string: 
             anIntArray4780 = null
             if (i.toInt() != -128) method743(113, -98)
             InboundPacketHeader.aInboundPacketHeader_4779 = null
-            aModelDefinitionCache_4782 = null
+            aHitsplatTypeList_4782 = null
         }
 
         fun method742(i: Int, i_0_: Int): MapAreaDefinition {
             anInt4777++
-            var mapAreaDefinition = ParticleAmountCache.aLruByteCache_2844!!.method583(i_0_.toLong(), -104) as MapAreaDefinition?
+            var mapAreaDefinition = VarPlayerTypeList.aLruByteCache_2844!!.method583(i_0_.toLong(), -104) as MapAreaDefinition?
             if (mapAreaDefinition != null) return mapAreaDefinition
             val `is` = WorldMapIconLabel.aJs5Archive_8601!!.method410(-1860, 0, i_0_)
             if (i != 104) method741(98.toByte())
             mapAreaDefinition = MapAreaDefinition()
             if (`is` != null) mapAreaDefinition.method1419(i_0_, ByteBuffer(`is`), 64.toByte())
-            ParticleAmountCache.aLruByteCache_2844!!.method582(mapAreaDefinition, i_0_.toLong(), (-114).toByte())
+            VarPlayerTypeList.aLruByteCache_2844!!.method582(mapAreaDefinition, i_0_.toLong(), (-114).toByte())
             return mapAreaDefinition
         }
 

@@ -217,7 +217,7 @@ class TextureOptionState : GraphicsOptionState {
                                     val i_35_ = (player.x - (-1 + player.method2436(82.toByte()) shl 8))
                                     val i_36_ = (player.y + -(-1 + player.method2436(105.toByte()) shl 8))
                                     var i_37_ = 0
-                                    while ((ModelDefinitionLoader.anInt2057 > i_37_)) {
+                                    while ((IDKTypeList.anInt2057 > i_37_)) {
                                         val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_37_].toLong(), -6008)) as? NpcReference?)
                                         if (class348_sub22 != null) {
                                             val npc = (class348_sub22.aNpc_6859)!!
@@ -261,7 +261,7 @@ class TextureOptionState : GraphicsOptionState {
                                     if (((npc.aNpcType_10505!!.anInt1399 and 0x1) == 0 && (0x1ff and (npc.x)) == 0 && (0x1ff and (npc.y)) == 0) || ((0x1 and npc.aNpcType_10505!!.anInt1399) == 1 && (0x1ff and (npc.x)) == 256 && ((npc.y) and 0x1ff) == 256)) {
                                         val i_45_ = ((npc.x) - ((-1 + npc.aNpcType_10505!!.anInt1399) shl 8))
                                         val i_46_ = ((npc.y) - (npc.aNpcType_10505!!.anInt1399 - 1 shl 8))
-                                        for (i_47_ in 0..<ModelDefinitionLoader.anInt2057) {
+                                        for (i_47_ in 0..<IDKTypeList.anInt2057) {
                                             val class348_sub22 = ((NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_47_].toLong(), -6008)) as NpcReference?)
                                             if (class348_sub22 != null) {
                                                 val npc_48_ = (class348_sub22.aNpc_6859)!!

@@ -49,7 +49,7 @@ class VarpStore : VarResolver {
 
     override fun method62(i: Int, i_3_: Int): Int {
         anInt5068++
-        val class146 = RenderConfigFactory.aVarbitDefLoader_2981!!.method1446(i, -1)
+        val class146 = RenderConfigFactory.aVarbitTypeList_2981!!.method1446(i, -1)
         val i_4_ = class146!!.anInt2019
         if (i_3_ != -65536) return -52
         val i_5_ = class146.anInt2016
@@ -61,7 +61,7 @@ class VarpStore : VarResolver {
     fun method1307(i: Int, i_8_: Int, i_9_: Int) {
         var i_9_ = i_9_
         anInt5074++
-        val class146 = RenderConfigFactory.aVarbitDefLoader_2981!!.method1446(i, -1)
+        val class146 = RenderConfigFactory.aVarbitTypeList_2981!!.method1446(i, -1)
         val i_10_ = class146!!.anInt2019
         val i_11_ = class146.anInt2016
         val i_12_ = class146.anInt2020
@@ -84,8 +84,8 @@ class VarpStore : VarResolver {
 
     fun method1314(i: Byte) {
         var i_26_ = 0
-        while ((i_26_ < NormalMapGenerator.aParticleAmountCache_3453!!.anInt2845)) {
-            val class159 = NormalMapGenerator.aParticleAmountCache_3453!!.method1588(-105, i_26_)
+        while ((i_26_ < NormalMapGenerator.aVarPlayerTypeList_3453!!.anInt2845)) {
+            val class159 = NormalMapGenerator.aVarPlayerTypeList_3453!!.method1588(-105, i_26_)
             if (class159 != null && class159.anInt2125 == 0) {
                 anIntArray5078[i_26_] = 0
                 this.anIntArray5063[i_26_] = 0
@@ -106,7 +106,7 @@ class VarpStore : VarResolver {
     fun method1316(i: Byte, i_30_: Int, i_31_: Int) {
         var i_31_ = i_31_
         anInt5069++
-        val class146 = RenderConfigFactory.aVarbitDefLoader_2981!!.method1446(i_30_, -1)
+        val class146 = RenderConfigFactory.aVarbitTypeList_2981!!.method1446(i_30_, -1)
         val i_32_ = class146!!.anInt2019
         val i_33_ = class146.anInt2016
         if (i < -56) {
@@ -119,8 +119,8 @@ class VarpStore : VarResolver {
     }
 
     init {
-        this.anIntArray5063 = IntArray(NormalMapGenerator.aParticleAmountCache_3453!!.anInt2845)
-        anIntArray5078 = IntArray(NormalMapGenerator.aParticleAmountCache_3453!!.anInt2845)
+        this.anIntArray5063 = IntArray(NormalMapGenerator.aVarPlayerTypeList_3453!!.anInt2845)
+        anIntArray5078 = IntArray(NormalMapGenerator.aVarPlayerTypeList_3453!!.anInt2845)
     }
 
     companion object {

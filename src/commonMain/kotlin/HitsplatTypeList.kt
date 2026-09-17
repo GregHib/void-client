@@ -4,7 +4,7 @@ import kotlin.math.max
 /* Class219 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_17_: Js5Archive?) {
+class HitsplatTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?, js5Archive_17_: Js5Archive?) {
     var aLruByteCache_2862: LruByteCache = LruByteCache(20)
     private val aJs5Archive_2866: Js5Archive?
     var aJs5Archive_2873: Js5Archive? = null
@@ -31,7 +31,7 @@ class ModelDefinitionCache internal constructor(sceneProjector: SceneProjector?,
             aJs5Archive_2866.method410(-1860, i, i_15_)
         }
         itemModelDefinition = ItemModelDefinition()
-        itemModelDefinition.aModelDefinitionCache_438 = this
+        itemModelDefinition.aHitsplatTypeList_438 = this
         if (`is` != null) itemModelDefinition.method332(i xor 0x55.inv(), ByteBuffer(`is`))
         withLock(aLruByteCache_2875) {
             aLruByteCache_2875.method582(itemModelDefinition, i_15_.toLong(), (-109).toByte())

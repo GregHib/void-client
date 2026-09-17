@@ -112,7 +112,7 @@ class SlotBinding private constructor(private val aCollisionFlagQuery_3392: Coll
             var i_1_ = i_1_
             try {
                 anInt3395++
-                val class218 = ModelOrSpriteHolder.aMapSceneDefinitionLoader_117!!.method1173(31.toByte(), objectType!!.anInt875)
+                val class218 = ModelOrSpriteHolder.aMapSceneTypeList_117!!.method1173(31.toByte(), objectType!!.anInt875)
                 if (class218!!.anInt2853 != -1) {
                     if (objectType.aBoolean912) {
                         i_1_ += objectType.anInt923

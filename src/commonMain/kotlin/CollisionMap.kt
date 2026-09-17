@@ -789,7 +789,7 @@ class CollisionMap {
                             TooltipComponentRenderer.aAbstractModelRenderer_4643 = var_renderer.method3683(i_39_, i_41_, i_42_, i_43_, false)
                         }
                         TooltipComponentRenderer.aAbstractModelRenderer_4643!!.method974(i_39_, i_41_)
-                        val i_44_ = SpriteStore.anInt370 * i_42_ / MapRegionLoader.anInt1259
+                        val i_44_ = SkyboxSphereTypeList.anInt370 * i_42_ / MapRegionLoader.anInt1259
                         val i_45_ = i_43_ * LoadProgressCounters.anInt2446 / MapRegionLoader.anInt1267
                         val i_46_ = i_39_ - -(i_42_ * LocConfigModelBuilder.anInt4509 / MapRegionLoader.anInt1259)
                         if (bool != true) method3498(44, null, -27, -91, true, -26)
@@ -804,7 +804,7 @@ class CollisionMap {
                         else i_49_ = -(5 * ClientLoadStateMachine.anInt2173) + 500
                         var class348_sub21 = (MapRegionLoader.aNodeDeque_1254!!.method1995(4) as CameraSplineNode?)
                         while (class348_sub21 != null) {
-                            val class42 = (MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))
+                            val class42 = (MapRegionLoader.aWorldMapInfoTypeList_1238!!.method1225(class348_sub21.anInt6847, 71.toByte()))
                             if (FlipTextureNode.method589(class42, -4)) {
                                 if (HslAdjustTextureNode.anInt9399 == (class348_sub21.anInt6847)) {
                                     val i_50_ = (i_39_ + (i_42_ * (class348_sub21.anInt6852) / MapRegionLoader.anInt1259))
@@ -831,7 +831,7 @@ class CollisionMap {
             anInt4439++
             val string = ("tele " + i_62_ + "," + (i_63_ shr 6) + "," + (i shr 6) + "," + (0x3f and i_63_) + "," + (0x3f and i))
             if (i_61_ != 2) method3502(-25, -23, 24, 63)
-            ConfigArchiveLoader.method812(string, true, false, (-79).toByte())
+            VarcstrTypeList.method812(string, true, false, (-79).toByte())
         }
 
         @JvmStatic

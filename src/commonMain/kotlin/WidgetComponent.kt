@@ -367,7 +367,7 @@ class WidgetComponent {
         return class348_sub50.aString7211
     }
 
-    fun method430(modelDefinitionLoader: ModelDefinitionLoader?, animationTypeList: AnimationTypeList?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, itemTypeList: ItemTypeList?, varResolver: VarResolver?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, npcDefinitionCache: NpcDefinitionCache?, npcTypeList: NpcTypeList?, i_24_: Int): AbstractModel? {
+    fun method430(IDKTypeList: IDKTypeList?, animationTypeList: AnimationTypeList?, i: Int, var_renderer: Renderer?, i_21_: Int, i_22_: Int, itemTypeList: ItemTypeList?, varResolver: VarResolver?, i_23_: Int, compositeNpcModelBuilder: CompositeNpcModelBuilder?, widgetDefinition: WidgetDefinition?, renderAnimTypeList: RenderAnimTypeList?, npcTypeList: NpcTypeList?, i_24_: Int): AbstractModel? {
         var i = i
         try {
             anInt684++
@@ -404,7 +404,7 @@ class WidgetComponent {
             }
             if (this.anInt770 == 3) {
                 if (compositeNpcModelBuilder == null) return null
-                val class64 = compositeNpcModelBuilder.method1230(itemTypeList, -402058072, animationTypeList, modelDefinitionLoader, varResolver, npcTypeList, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
+                val class64 = compositeNpcModelBuilder.method1230(itemTypeList, -402058072, animationTypeList, IDKTypeList, varResolver, npcTypeList, i_21_, i_24_, i, widgetDefinition, i_22_, var_renderer)
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -421,7 +421,7 @@ class WidgetComponent {
                 return class64
             }
             if (this.anInt770 == 6) {
-                val class64 = (npcTypeList!!.method2079(this.anInt753, -1).method800(0, null, animationTypeList, false, null, 0, npcDefinitionCache, i_21_, widgetDefinition, varResolver, var_renderer, 0, null, i_24_, 0, i, i_22_))
+                val class64 = (npcTypeList!!.method2079(this.anInt753, -1).method800(0, null, animationTypeList, false, null, 0, renderAnimTypeList, i_21_, widgetDefinition, varResolver, var_renderer, 0, null, i_24_, 0, i, i_22_))
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -433,7 +433,7 @@ class WidgetComponent {
                 val i_26_ = this.anInt753 ushr 16
                 val i_27_ = 0xffff and this.anInt753
                 val i_28_ = this.anInt779
-                val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, animationTypeList, modelDefinitionLoader, -15331, i_26_, i_22_, var_renderer, i_21_, widgetDefinition)
+                val class64 = compositeNpcModelBuilder.method1232(i_24_, i, i_28_, i_27_, animationTypeList, IDKTypeList, -15331, i_26_, i_22_, var_renderer, i_21_, widgetDefinition)
                 if (class64 == null) {
                     ContactList.aBoolean9616 = true
                     return null
@@ -444,7 +444,7 @@ class WidgetComponent {
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(
                 runtimeexception,
-                ("at.G(" + (if (modelDefinitionLoader != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (itemTypeList != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (npcDefinitionCache != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + i_24_ + ')')
+                ("at.G(" + (if (IDKTypeList != null) "{...}" else "null") + ',' + (if (animationTypeList != null) "{...}" else "null") + ',' + i + ',' + (if (var_renderer != null) "{...}" else "null") + ',' + i_21_ + ',' + i_22_ + ',' + (if (itemTypeList != null) "{...}" else "null") + ',' + (if (varResolver != null) "{...}" else "null") + ',' + i_23_ + ',' + (if (compositeNpcModelBuilder != null) "{...}" else "null") + ',' + (if (widgetDefinition != null) "{...}" else "null") + ',' + (if (renderAnimTypeList != null) "{...}" else "null") + ',' + (if (npcTypeList != null) "{...}" else "null") + ',' + i_24_ + ')')
             )
         }
     }
@@ -827,7 +827,7 @@ class WidgetComponent {
         return abstractModelRenderer
     }
 
-    fun method444(bool: Boolean, spriteStore: SpriteStore?, mapSceneCache: MapSceneCache?): ParticleSystemRenderer? {
+    fun method444(bool: Boolean, skyboxSphereTypeList: SkyboxSphereTypeList?, skyBoxTypeList: SkyBoxTypeList?): ParticleSystemRenderer? {
         try {
             if (bool != false) method424(122, -123, null, -111, 40, 28, -109, null, 76, 127, -66, 8, -45)
             anInt804++
@@ -835,12 +835,12 @@ class WidgetComponent {
             val l = ((this.anInt693.toLong() shl 16 and (65535L shl 16)) or ((this.anInt733.toLong() shl 32 and (65535L shl 32)) or (this.anInt674.toLong() shl 48 and (65535L shl 48))) or (this.anInt705.toLong() and 0xffffL))
             var particleSystemRenderer = (EdgeDetectTextureNode.aLruByteCache_9171!!.method583(l, 78) as ParticleSystemRenderer?)
             if (particleSystemRenderer == null) {
-                particleSystemRenderer = mapSceneCache!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, spriteStore!!, this.anInt705)
+                particleSystemRenderer = skyBoxTypeList!!.method823(this.anInt733, this.anInt693, this.anInt674, -43, skyboxSphereTypeList!!, this.anInt705)
                 EdgeDetectTextureNode.aLruByteCache_9171!!.method582(particleSystemRenderer, l, (-120).toByte())
             }
             return particleSystemRenderer
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (spriteStore != null) "{...}" else "null") + ',' + (if (mapSceneCache != null) "{...}" else "null") + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("at.N(" + bool + ',' + (if (skyboxSphereTypeList != null) "{...}" else "null") + ',' + (if (skyBoxTypeList != null) "{...}" else "null") + ')'))
         }
     }
 

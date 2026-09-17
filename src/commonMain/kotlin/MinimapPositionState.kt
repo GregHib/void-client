@@ -6,7 +6,7 @@ import SizeBoundedSoftCache.Companion.method1343
 import EnumTypeList.Companion.method338
 import SolidFillComponent.Companion.method198
 import ActiveMapRegion.method769
-import ConfigArchiveLoader.Companion.method814
+import VarcstrTypeList.Companion.method814
 import SceneNodeDeque.Companion.method842
 
 /* Class302 - Decompiled by JODE
@@ -35,7 +35,7 @@ class MinimapPositionState {
         var anInt3841: Int = 0
 
         fun method2283(bool: Boolean, i: Int, i_0_: Int, i_1_: Int, bool_2_: Boolean) {
-            method950(i_0_, 0, WorldMapImageBuilder.aClass110_Sub1Array1146!!.size + -1, bool, 56.toByte(), i_1_, bool_2_)
+            method950(i_0_, 0, StructTypeList.aClass110_Sub1Array1146!!.size + -1, bool, 56.toByte(), i_1_, bool_2_)
             anInt3836++
             GameDisplayManager.anInt2834 = i
             PingHostListHolder.aClass348_Sub26_2332 = null

@@ -151,7 +151,7 @@ object NativeLibraryUnloader {
         if (ParticleEmitterFactoryStatics.aBoolean3174 && RegionSceneLoader.aNodeDeque_3705 != null) {
             var class348_sub12 = RegionSceneLoader.aNodeDeque_3705!!.method1995(4) as BoundingBoxNode?
             while (class348_sub12 != null) {
-                val class42 = (MapRegionLoader.aConfigDefinitionLoader_1238!!.method1225(class348_sub12.aClass348_Sub21_6751!!.anInt6847, 125.toByte()))
+                val class42 = (MapRegionLoader.aWorldMapInfoTypeList_1238!!.method1225(class348_sub12.aClass348_Sub21_6751!!.anInt6847, 125.toByte()))
                 if (class348_sub12.method2799(i_6_, i_7_, 95)) {
                     if (class42!!.aStringArray577 != null) {
                         if (class42.aStringArray577[4] != null) MinimapPolygonDrawer.method466(false, class42.aString565, 0, (-100).toByte(), false, class42.anInt596, -1, true, 1006, class348_sub12.aClass348_Sub21_6751!!.anInt6847.toLong(), class42.aStringArray577[4], class348_sub12.aClass348_Sub21_6751!!.anInt6847.toLong(), -1)

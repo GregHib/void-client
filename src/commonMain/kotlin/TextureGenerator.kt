@@ -46,7 +46,7 @@ abstract class TextureGenerator {
                     if ((player.anInt10264) == 0) player.aString10292 = null
                 }
             }
-            for (i_2_ in i..<ModelDefinitionLoader.anInt2057) {
+            for (i_2_ in i..<IDKTypeList.anInt2057) {
                 val l = Client.anIntArray1233!![i_2_].toLong()
                 val class348_sub22 = (NpcEntityUpdater.aHashtable_3654!!.method3480(l, -6008) as? NpcReference?)
                 if (class348_sub22 != null) {

@@ -19,7 +19,7 @@ public open class WorldMapIconLabel(screenAnchorAlignment: ScreenAnchorAlignment
     override fun method51(i: Byte): ProjectileFactory? {
         anInt8594++
         if (i <= 116) return null
-        return MapSceneDefLoader.aProjectileFactory_2489
+        return LightTypeList.aProjectileFactory_2489
     }
 
     init {

@@ -14,7 +14,7 @@ class ModelOrSpriteHolder {
 
         var anInt116: Int = 0
 
-        var aMapSceneDefinitionLoader_117: MapSceneDefinitionLoader? = null
+        var aMapSceneTypeList_117: MapSceneTypeList? = null
 
         var anInt120: Int = 0
 
@@ -26,13 +26,13 @@ class ModelOrSpriteHolder {
         fun method170(bool: Boolean): MapLabelMenuEntry? {
             if (bool != true) method174(-106, -36)
             anInt122++
-            if (WidgetActionEntry.anInt6985 < WorldMapImageBuilder.aClass110_Sub1Array1146!!.size) return WorldMapImageBuilder.aClass110_Sub1Array1146!![WidgetActionEntry.anInt6985++]
+            if (WidgetActionEntry.anInt6985 < StructTypeList.aClass110_Sub1Array1146!!.size) return StructTypeList.aClass110_Sub1Array1146!![WidgetActionEntry.anInt6985++]
             return null
         }
 
         @JvmStatic
         fun method171(i: Byte) {
-            aMapSceneDefinitionLoader_117 = null
+            aMapSceneTypeList_117 = null
             if (i.toInt() != 72) method173(39, null, null)
         }
 
@@ -54,7 +54,7 @@ class ModelOrSpriteHolder {
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShort(107.toByte(), widgetComponent_0_.anInt812)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, widgetComponent.anInt704)
                 class348_sub47.aClass348_Sub49_Sub2_7116!!.writeShortAddLittle(4325, widgetComponent.anInt812)
-                if (i > -50) aMapSceneDefinitionLoader_117 = null
+                if (i > -50) aMapSceneTypeList_117 = null
                 InterfaceComponentGroup.method3243(-100, class348_sub47)
             } catch (runtimeexception: RuntimeException) {
                 throw TextureLoadException.method2929(runtimeexception, ("ak.E(" + i + ',' + (if (widgetComponent != null) "{...}" else "null") + ',' + (if (widgetComponent_0_ != null) "{...}" else "null") + ')'))
@@ -63,7 +63,7 @@ class ModelOrSpriteHolder {
 
         @JvmStatic
         fun method174(i: Int, i_1_: Int) {
-            if (i_1_ != -30742) aMapSceneDefinitionLoader_117 = null
+            if (i_1_ != -30742) aMapSceneTypeList_117 = null
             anInt121++
             SoundCacheState.aLruByteCache_4139!!.method578(2, i)
         }

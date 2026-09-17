@@ -389,9 +389,9 @@ class NativeRenderNode(var_ha_Sub3: NativeRenderer?, i: Int, i_19_: Int) : Rende
             anInt10470++
             ClientLoadStateMachine.aSoundChannelMixer_7042 = TextureHandle.method1439(22050, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 0, 7)
             ParticleEmitterListNode.method3273(true, -114, NpcCountAccessor.method1326(null, 9))
-            VarbitDefLoader.aSoundChannelMixer_2596 = TextureHandle.method1439(2048, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 1, 7)
+            VarbitTypeList.aSoundChannelMixer_2596 = TextureHandle.method1439(2048, VorbisOggDecoder.aPrivilegedOperationWorker_8992, ParticleSystemRenderer.aCanvas3869, 1, 7)
             SpriteDefinition.aClass348_Sub16_Sub4_7065 = AudioMixerScheduler()
-            VarbitDefLoader.aSoundChannelMixer_2596!!.method2088(false, SpriteDefinition.aClass348_Sub16_Sub4_7065)
+            VarbitTypeList.aSoundChannelMixer_2596!!.method2088(false, SpriteDefinition.aClass348_Sub16_Sub4_7065)
             MapSceneTile.aAudioResampler_1050 = AudioResampler(22050, HslColorConfig.anInt339)
             SpriteRgbTextureNode.method3093(110)
         }

@@ -85,7 +85,7 @@ object LinkedListNodeStatics {
                     }
                     i_25_++
                 }
-                abstractModel_13_ = var_renderer!!.method3625(modelDefinition, i_12_, MapSceneDefLoader.anInt2482, 64, 768)
+                abstractModel_13_ = var_renderer!!.method3625(modelDefinition, i_12_, LightTypeList.anInt2482, 64, 768)
                 withLock(LoadingBarRenderer.aLruByteCache_4254!!) {
                     LoadingBarRenderer.aLruByteCache_4254!!.method582(abstractModel_13_, l, (-103).toByte())
                 }

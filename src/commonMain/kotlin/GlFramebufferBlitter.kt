@@ -354,7 +354,7 @@ class GlFramebufferBlitter internal constructor(var_ha_Sub2: OpenGlRenderer) {
             val var_aa = widgetComponent.method425(FacingDirectionNode.aRenderer6654!!, 19.toByte())
             if (var_aa != null) {
                 FacingDirectionNode.aRenderer6654!!.KA(i_1_, i, widgetComponent.anInt709 + i_1_, i - -widgetComponent.anInt789)
-                if (KeyboardLayoutCache.anInt3306 >= 3) FacingDirectionNode.aRenderer6654!!.A(-16777216, var_aa, i_1_, i)
+                if (VarcTypeList.anInt3306 >= 3) FacingDirectionNode.aRenderer6654!!.A(-16777216, var_aa, i_1_, i)
                 else NpcType.aAbstractModelRenderer_1365!!.method976((widgetComponent.anInt709.toFloat() / 2.0f + i_1_.toFloat()), i.toFloat() + widgetComponent.anInt789.toFloat() / 2.0f, 4096, (0x3fff and -CameraDistanceOptionState.aFloat3938.toInt()) shl 2, var_aa, i_1_, i)
             }
         }

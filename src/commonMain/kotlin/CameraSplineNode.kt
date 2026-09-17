@@ -35,11 +35,11 @@ class CameraSplineNode internal constructor(i: Int) : LinkedListNode() {
                 CacheArchiveIndex.anInt1780 += i_0_
                 if (CacheArchiveIndex.anInt1780 < 65535) {
                     DragDropController.aBoolean4284 = false
-                    SpriteStore.aBoolean368 = false
+                    SkyboxSphereTypeList.aBoolean368 = false
                 } else {
-                    DragDropController.aBoolean4284 = !SpriteStore.aBoolean368
+                    DragDropController.aBoolean4284 = !SkyboxSphereTypeList.aBoolean368
                     CacheArchiveIndex.anInt1780 = 65535
-                    SpriteStore.aBoolean368 = true
+                    SkyboxSphereTypeList.aBoolean368 = true
                 }
                 val f = CacheArchiveIndex.anInt1780.toFloat() / 65535.0f
                 val fs = FloatArray(3)

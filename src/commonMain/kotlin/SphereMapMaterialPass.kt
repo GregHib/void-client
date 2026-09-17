@@ -215,7 +215,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
             anInt6319++
             if (i_3_ >= -14) return 64
             if (i_4_ == 1 || i_4_ == 3) return TextureTileRenderer.anIntArray6830!![i and 0x3]
-            return MapSceneCache.anIntArray1450!![0x3 and i]
+            return SkyBoxTypeList.anIntArray1450!![0x3 and i]
         }
 
         @JvmStatic
@@ -267,7 +267,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     player.anInt10531 = i_26_
                     player.aBoolean10539 = true
                     player.anInt10549 = i_25_
-                } else player.method2455(i_26_, -26443, (KeyboardLayoutCache.aByteArray3300!![i_22_]), i_25_)
+                } else player.method2455(i_26_, -26443, (VarcTypeList.aByteArray3300!![i_22_]), i_25_)
             } else if (i_23_ == 2) {
                 val i_27_ = class348_sub49_sub2.readBits((-24).toByte(), 4)
                 var i_28_ = (player.anIntArray10320!![0])
@@ -319,7 +319,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                     player.aBoolean10539 = true
                     player.anInt10549 = i_28_
                     player.anInt10531 = i_29_
-                } else player.method2455(i_29_, -26443, (KeyboardLayoutCache.aByteArray3300!![i_22_]), i_28_)
+                } else player.method2455(i_29_, -26443, (VarcTypeList.aByteArray3300!![i_22_]), i_28_)
             } else {
                 val i_30_ = class348_sub49_sub2.readBits((-24).toByte(), 1)
                 if (i_30_ == 0) {
@@ -335,7 +335,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                         player.anInt10531 = i_36_
                         player.anInt10549 = i_35_
                         player.aBoolean10539 = true
-                    } else player.method2455(i_36_, -26443, (KeyboardLayoutCache.aByteArray3300!![i_22_]), i_35_)
+                    } else player.method2455(i_36_, -26443, (VarcTypeList.aByteArray3300!![i_22_]), i_35_)
                     player.aByte6376 = (0x3 and (player.plane) + i_32_).toByte()
                     player.plane = player.aByte6376
                     if (NpcType.method802(i_36_, i_35_, true)) player.aByte6376++
@@ -354,7 +354,7 @@ class SphereMapMaterialPass internal constructor(var_ha_Sub2: OpenGlRenderer) : 
                         player.aBoolean10539 = true
                         player.anInt10531 = i_42_
                         player.anInt10549 = i_41_
-                    } else player.method2455(i_42_, -26443, (KeyboardLayoutCache.aByteArray3300!![i_22_]), i_41_)
+                    } else player.method2455(i_42_, -26443, (VarcTypeList.aByteArray3300!![i_22_]), i_41_)
                     player.aByte6376 = ((player.plane) + i_38_ and 0x3).toByte()
                     player.plane = player.aByte6376
                     if (NpcType.method802(i_42_, i_41_, true)) player.aByte6376++

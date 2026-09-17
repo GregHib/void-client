@@ -106,7 +106,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
         if (aBoolean7317) {
             this.aHa_Sub3_4479.method3897(1, i.toInt() xor 0x114a.inv())
             this.aHa_Sub3_4479.method3850((-121).toByte(), null)
-            this.aHa_Sub3_4479.method3871(ModelDefinitionLoader.aCameraNodeList_2047, 0)
+            this.aHa_Sub3_4479.method3871(IDKTypeList.aCameraNodeList_2047, 0)
             this.aHa_Sub3_4479.method3879(-8629)
             if (aBoolean7311) {
                 this.aHa_Sub3_4479.method3874(ParticleSystemState.aRenderConfigFactory_2207, 120, ParticleSystemState.aRenderConfigFactory_2207)
@@ -365,7 +365,7 @@ class GlCubemapLightPass internal constructor(var_ha_Sub3: NativeRenderer) : Abs
             try {
                 anInt7321++
                 val i_38_ = class348_sub49!!.anInt7197
-                val `is` = ConfigArchiveLoader.method2992(string, (-20).toByte())
+                val `is` = VarcstrTypeList.method2992(string, (-20).toByte())
                 val i_39_ = 1 % ((-6 - i) / 63)
                 class348_sub49.method3381(5537, `is`.size)
                 class348_sub49.anInt7197 += (NativeRenderer.aHuffmanCodec_1131!!.method2227(`is`.size, 0, class348_sub49.anInt7197, `is`, 103, class348_sub49.aByteArray7154))

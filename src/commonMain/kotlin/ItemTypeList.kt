@@ -280,7 +280,7 @@ class ItemTypeList internal constructor(sceneProjector: SceneProjector?, i: Int,
                         i++
                     }
                 }
-                spriteImages = SpriteImage.method1519(js5Archive, ConfigArchiveLoader.anInt1435, 0)
+                spriteImages = SpriteImage.method1519(js5Archive, VarcstrTypeList.anInt1435, 0)
                 CompassSmoother.aAbstractModelRendererArray3378 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
@@ -302,11 +302,11 @@ class ItemTypeList internal constructor(sceneProjector: SceneProjector?, i: Int,
                     }
                 }
                 spriteImages = SpriteImage.method1519(js5Archive, DrawListState.anInt1481, 0)
-                SpriteStore.aAbstractModelRendererArray367 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
+                SkyboxSphereTypeList.aAbstractModelRendererArray367 = arrayOfNulls<AbstractModelRenderer>(spriteImages!!.size)
                 run {
                     var i = 0
                     while (spriteImages.size > i) {
-                        SpriteStore.aAbstractModelRendererArray367!![i] = var_renderer!!.method3691(spriteImages[i], true)
+                        SkyboxSphereTypeList.aAbstractModelRendererArray367!![i] = var_renderer!!.method3691(spriteImages[i], true)
                         i++
                     }
                 }

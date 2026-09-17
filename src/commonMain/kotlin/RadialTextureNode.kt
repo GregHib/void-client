@@ -72,10 +72,10 @@ class RadialTextureNode : AbstractProceduralTextureNode(0, true) {
 
         var anInt9341: Int = 0
 
-        var aModelDefinitionLoader_9342: ModelDefinitionLoader? = null
+        var aIDKTypeList_9342: IDKTypeList? = null
         @JvmStatic
         fun method3117(i: Int) {
-            aModelDefinitionLoader_9342 = null
+            aIDKTypeList_9342 = null
             if (i < 10) anInt9335 = 113
         }
     }

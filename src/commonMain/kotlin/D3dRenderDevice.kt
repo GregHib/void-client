@@ -636,7 +636,7 @@ class D3dRenderDevice private constructor(i: Int, i_38_: Int, canvas: Canvas?, v
         var i_68_ = i
         if (ItemModelDefinition.aCameraNodeList_430 == cameraNodeList) i_68_ = 65536
         else if (NativeShaderProgram.aCameraNodeList_9773 == cameraNodeList) i_68_ = 131072
-        else if (cameraNodeList == NpcDefinitionCache.aCameraNodeList_3314) i_68_ = 196608
+        else if (cameraNodeList == RenderAnimTypeList.aCameraNodeList_3314) i_68_ = 196608
         this.anIDirect3DDevice9810!!.SetTextureStageState(this.anInt8175, 11, this.anInt8175 or i_68_)
     }
 

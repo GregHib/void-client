@@ -61,7 +61,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
         fun method1767(bool: Boolean, i: Int) {
             anInt5953++
             ProjectionCameraTransform.method947(41.toByte())
-            val i_0_ = (NormalMapGenerator.aParticleAmountCache_3453!!.method1588(-51, i).anInt2125)
+            val i_0_ = (NormalMapGenerator.aVarPlayerTypeList_3453!!.method1588(-51, i).anInt2125)
             if (i_0_ != 0) {
                 if (bool != true) method1769(-43)
                 val i_1_ = (ProjectedGroundDecor.aVarpStore_10209!!.anIntArray5063[i])
@@ -106,7 +106,7 @@ class BinaryGraphicsOptionState : GraphicsOptionState {
                 SlotBinding.aSlotBinding_3416!!.method2025(MapArchiveSource(BufferedRandomAccessFile.gfx!!), false)
                 SlotBinding.aSlotBinding_3417!!.method2025(MapArchiveSource(MidiSequencePlayer.varbits!!), false)
                 SlotBinding.aSlotBinding_3418!!.method2025(MapArchiveSource(ModelBatchBase.quickChat!!), false)
-                SlotBinding.aSlotBinding_3419!!.method2025(MapArchiveSource(ConfigArchiveLoader.quickChatMenus!!), false)
+                SlotBinding.aSlotBinding_3419!!.method2025(MapArchiveSource(VarcstrTypeList.quickChatMenus!!), false)
                 SlotBinding.aSlotBinding_3420!!.method2025(MapArchiveSource(ClientLoadStateMachine.particles!!), false)
                 SlotBinding.aSlotBinding_3421!!.method2025(MapArchiveSource(NodeDequeStatics.billboards!!), false)
                 SlotBinding.aSlotBinding_3422!!.method2025(FileExistsCondition((SceneTilePlaneManager.huffman), "huffman"), false)

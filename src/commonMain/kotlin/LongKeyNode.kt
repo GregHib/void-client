@@ -225,7 +225,7 @@ class LongKeyNode : LinkedListNode {
                                             if (i_40_ >= 0) {
                                                 var bool_43_ = false
                                                 if (i_40_ >= 0) {
-                                                    val class42 = (TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225(i_40_, 126.toByte()))
+                                                    val class42 = (TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1225(i_40_, 126.toByte()))
                                                     if (class42 != null && (class42.aBoolean599)) bool_43_ = true
                                                 }
                                                 var i_44_ = i_37_
@@ -258,7 +258,7 @@ class LongKeyNode : LinkedListNode {
                     }
                     if (OpenGlRenderNode.aSmoothingBuffer_10488 != null) {
                         DirectionUtil.config!!.anInt634 = 1
-                        TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1220(116.toByte(), 64, 1024)
+                        TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1220(116.toByte(), 64, 1024)
                         for (i_51_ in 0..<OpenGlRenderNode.aSmoothingBuffer_10488!!.anInt3241) {
                             val i_52_ = (OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3238!![i_51_])
                             if ((LocalPlayerState.aPlayer_1907!!.plane).toInt() == i_52_ shr 28) {
@@ -266,12 +266,12 @@ class LongKeyNode : LinkedListNode {
                                 val i_54_ = (i_52_ and 0x3fff) + -RegionMapDecoder.regionTileY
                                 if (i_53_ >= 0 && i_53_ < GlCubemapLightPass.anInt7319 && i_54_ >= 0 && (RangeThresholdTextureNode.anInt9109 > i_54_)) ModelWallEntity.aNodeDeque_10125!!.method1999(IntKeyNode(i_51_), -20180)
                                 else {
-                                    val class42 = (TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1225((OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3239!![i_51_]), 120.toByte()))
+                                    val class42 = (TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1225((OpenGlRenderNode.aSmoothingBuffer_10488!!.anIntArray3239!![i_51_]), 120.toByte()))
                                     if (class42!!.anIntArray591 != null && (i_53_ + class42.anInt595 >= 0) && (GlCubemapLightPass.anInt7319 > class42.anInt603 + i_53_) && i_54_ + class42.anInt570 >= 0 && (RangeThresholdTextureNode.anInt9109 > (i_54_ - -class42.anInt607))) ModelWallEntity.aNodeDeque_10125!!.method1999(IntKeyNode(i_51_), -20180)
                                 }
                             }
                         }
-                        TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1220(13.toByte(), 64, 128)
+                        TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1220(13.toByte(), 64, 128)
                         DirectionUtil.config!!.anInt634 = 2
                         DirectionUtil.config!!.method412((-126).toByte())
                     }

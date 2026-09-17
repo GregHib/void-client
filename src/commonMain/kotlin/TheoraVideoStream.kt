@@ -143,13 +143,13 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
 
         var anInt9030: Int = 0
 
-        var aConfigDefinitionLoader_9031: ConfigDefinitionLoader? = null
+        var aWorldMapInfoTypeList_9031: WorldMapInfoTypeList? = null
 
         var jingles: Js5Archive? = null
 
         var aFontMetaRef_9034: FontMetaRef? = FontMetaRef(30, 4)
 
-        var aLocTypeDefLoader_9036: LocTypeDefLoader? = null
+        var aQuestTypeList_9036: QuestTypeList? = null
 
         var aBoolean9038: Boolean = false
 
@@ -160,8 +160,8 @@ class TheoraVideoStream internal constructor(oggstreamstate: OggStreamState) : O
             jingles = null
             aRenderConfigFactory_9011 = null
             aIsaacCipher_9029 = null
-            aConfigDefinitionLoader_9031 = null
-            aLocTypeDefLoader_9036 = null
+            aWorldMapInfoTypeList_9031 = null
+            aQuestTypeList_9036 = null
         }
     }
 }

@@ -1062,7 +1062,7 @@ class MidiSequencePlayer : AudioStreamNode {
         fun method2879(i: Int, i_105_: Int, i_106_: Int) {
             val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_105_]!![i_106_]
             if (class357 != null) {
-                ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub1_4402)
+                FloorUnderlayTypeList.method1376(class357.aClass318_Sub1_Sub1_4402)
                 if (class357.aClass318_Sub1_Sub1_4402 != null) class357.aClass318_Sub1_Sub1_4402 = null
             }
         }

@@ -120,7 +120,7 @@ class RegionSceneShifter : LinkedListNode() {
                         i_22_++
                     }
                 } else {
-                    ModelDefinitionLoader.anInt2057 = 0
+                    IDKTypeList.anInt2057 = 0
                     var bool_24_ = false
                     val i_25_ = GlCubemapLightPass.anInt7319 * 512 - 512
                     val i_26_ = 512 * (-1 + RangeThresholdTextureNode.anInt9109)
@@ -146,7 +146,7 @@ class RegionSceneShifter : LinkedListNode() {
                                     npc.method2448(null, -2)
                                     bool_24_ = true
                                     class348_sub22.method2715(113.toByte())
-                                } else Client.anIntArray1233!![ModelDefinitionLoader.anInt2057++] = (npc.anInt10290)
+                                } else Client.anIntArray1233!![IDKTypeList.anInt2057++] = (npc.anInt10290)
                             }
                         }
                         i_27_++

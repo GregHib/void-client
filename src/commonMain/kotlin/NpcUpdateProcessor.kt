@@ -15,7 +15,7 @@ object NpcUpdateProcessor {
 
     var anInt1522: Int = 0
 
-    var aConfigArchiveLoader_1523: ConfigArchiveLoader? = null
+    var aVarcstrTypeList_1523: VarcstrTypeList? = null
 
     fun method855(i: Int, i_0_: Int, i_1_: Int) {
         anInt1520++
@@ -52,11 +52,11 @@ object NpcUpdateProcessor {
         if (RadialTextureNode.anInt9341 != CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) throw RuntimeException("gnp1 pos:" + (CircleRasterizer.aClass348_Sub49_Sub2_3813!!.anInt7197) + " psize:" + RadialTextureNode.anInt9341)
         if (i <= 47) aRgbColorPalette_1519 = null
         var i_4_ = 0
-        while (ModelDefinitionLoader.anInt2057 > i_4_) {
-            if (NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + ModelDefinitionLoader.anInt2057)
+        while (IDKTypeList.anInt2057 > i_4_) {
+            if (NpcEntityUpdater.aHashtable_3654!!.method3480(Client.anIntArray1233!![i_4_].toLong(), -6008) == null) throw RuntimeException("gnp2 pos:" + i_4_ + " size:" + IDKTypeList.anInt2057)
             i_4_++
         }
-        if (TerrainShadowBuilderGl2.anInt6930 - ModelDefinitionLoader.anInt2057 != 0) throw RuntimeException("gnp3 mis:" + (TerrainShadowBuilderGl2.anInt6930 - ModelDefinitionLoader.anInt2057))
+        if (TerrainShadowBuilderGl2.anInt6930 - IDKTypeList.anInt2057 != 0) throw RuntimeException("gnp3 mis:" + (TerrainShadowBuilderGl2.anInt6930 - IDKTypeList.anInt2057))
         for (i_5_ in 0..<TerrainShadowBuilderGl2.anInt6930) {
             if (TurbulenceTextureNode.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859!!.anInt10306 != NullOggStream.anInt9041) throw RuntimeException("gnp4 uk:" + (TurbulenceTextureNode.aClass348_Sub22Array9319!![i_5_]!!.aNpc_6859!!.anInt10290))
         }
@@ -65,7 +65,7 @@ object NpcUpdateProcessor {
     @JvmStatic
     fun method857(i: Int) {
         anIntArray1521 = null
-        aConfigArchiveLoader_1523 = null
+        aVarcstrTypeList_1523 = null
         aRgbColorPalette_1519 = null
         if (i < 121) method856(((-72).toByte()).toByte())
     }

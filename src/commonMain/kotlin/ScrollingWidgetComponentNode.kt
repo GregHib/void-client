@@ -16,7 +16,7 @@ class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?,
 
     companion object {
 
-        var aParticleEffectCache_8378: ParticleEffectCache? = null
+        var aInventoryTypeList_8378: InventoryTypeList? = null
 
         var anInt8379: Int = 0
 
@@ -81,7 +81,7 @@ class ScrollingWidgetComponentNode internal constructor(js5Archive: Js5Archive?,
         @JvmStatic
         fun method1120(i: Int) {
             InboundPacketHeader.aInboundPacketHeader_8384 = null
-            aParticleEffectCache_8378 = null
+            aInventoryTypeList_8378 = null
             InboundPacketHeader.aInboundPacketHeader_8385 = null
             if (i != 1) method1119(true)
         }

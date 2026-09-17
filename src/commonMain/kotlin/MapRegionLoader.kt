@@ -13,12 +13,12 @@ open class MapRegionLoader {
 
         var aJs5Archive_1237: Js5Archive? = null
 
-        var aConfigDefinitionLoader_1238: ConfigDefinitionLoader? = null
+        var aWorldMapInfoTypeList_1238: WorldMapInfoTypeList? = null
         private var aFloorOverlayTypeList_1239: FloorOverlayTypeList? = null
-        private var aParticleDefLoader_1240: ParticleDefLoader? = null
+        private var aFloorUnderlayTypeList_1240: FloorUnderlayTypeList? = null
         private var aHashtable_1241: Hashtable? = Hashtable(16)
 
-        var aMapSceneDefinitionLoader_1242: MapSceneDefinitionLoader? = null
+        var aMapSceneTypeList_1242: MapSceneTypeList? = null
 
         var aClass348_Sub42_Sub14_1243: InterfaceComponentGroup? = null
 
@@ -136,10 +136,10 @@ open class MapRegionLoader {
         @JvmStatic
         fun method746() {
             aFloorOverlayTypeList_1239 = null
-            aParticleDefLoader_1240 = null
+            aFloorUnderlayTypeList_1240 = null
             aObjectTypeList_1245 = null
-            aConfigDefinitionLoader_1238 = null
-            aMapSceneDefinitionLoader_1242 = null
+            aWorldMapInfoTypeList_1238 = null
+            aMapSceneTypeList_1242 = null
             anVarResolver_1244 = null
             aClass348_Sub42_Sub14_1243 = null
             aJs5Archive_1237 = null
@@ -270,20 +270,20 @@ open class MapRegionLoader {
         }
 
         @JvmStatic
-        fun method752(js5Archive: Js5Archive?, floorOverlayTypeList: FloorOverlayTypeList?, particleDefLoader: ParticleDefLoader?, objectTypeList: ObjectTypeList?, configDefinitionLoader: ConfigDefinitionLoader?, mapSceneDefinitionLoader: MapSceneDefinitionLoader?, varResolver: VarResolver?) {
+        fun method752(js5Archive: Js5Archive?, floorOverlayTypeList: FloorOverlayTypeList?, floorUnderlayTypeList: FloorUnderlayTypeList?, objectTypeList: ObjectTypeList?, worldMapInfoTypeList: WorldMapInfoTypeList?, mapSceneTypeList: MapSceneTypeList?, varResolver: VarResolver?) {
             aJs5Archive_1237 = js5Archive
             aFloorOverlayTypeList_1239 = floorOverlayTypeList
-            aParticleDefLoader_1240 = particleDefLoader
+            aFloorUnderlayTypeList_1240 = floorUnderlayTypeList
             aObjectTypeList_1245 = objectTypeList
-            aConfigDefinitionLoader_1238 = configDefinitionLoader
-            aMapSceneDefinitionLoader_1242 = mapSceneDefinitionLoader
+            aWorldMapInfoTypeList_1238 = worldMapInfoTypeList
+            aMapSceneTypeList_1242 = mapSceneTypeList
             anVarResolver_1244 = varResolver
             aHashtable_1241!!.method3481(0)
             val i: Int = aJs5Archive_1237!!.method417("details", 0)
             val `is`: IntArray? = aJs5Archive_1237!!.method396(i, 0)
             if (`is` != null) {
                 for (i_47_ in `is`.indices) {
-                    val class348_sub42_sub14 = ModelDefinitionLoader.method1205(`is`[i_47_], true, aJs5Archive_1237!!, i)
+                    val class348_sub42_sub14 = IDKTypeList.method1205(`is`[i_47_], true, aJs5Archive_1237!!, i)
                     aHashtable_1241!!.method3483(25.toByte(), class348_sub42_sub14.anInt9628.toLong(), class348_sub42_sub14)
                 }
             }
@@ -583,7 +583,7 @@ open class MapRegionLoader {
                     val objectType: ObjectType = aObjectTypeList_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
                     val i_123_ = objectType.anInt875
                     if (i_123_ != -1) {
-                        val mapSceneIconDef: MapSceneIconDef? = aMapSceneDefinitionLoader_1242!!.method1173(31.toByte(), i_123_)
+                        val mapSceneIconDef: MapSceneIconDef? = aMapSceneTypeList_1242!!.method1173(31.toByte(), i_123_)
                         val class105 = mapSceneIconDef!!.method1596((if (objectType.aBoolean912) is_121_!![i_122_].toInt() shr 6 and 0x3 else 0), (objectType.aBoolean925 && (objectType.aBoolean902)), 125, var_renderer!!)
                         if (class105 != null) {
                             var i_124_ = i_119_ * class105.method966() shr 2
@@ -791,7 +791,7 @@ open class MapRegionLoader {
                     if (i_202_ < anInt1259) {
                         val i_205_ = `is`[i_202_ + i_204_ * anInt1259].toInt() and 0xff
                         if (i_205_ > 0) {
-                            val hslColorConfig: HslColorConfig? = aParticleDefLoader_1240!!.method1380(true, i_205_ - 1)
+                            val hslColorConfig: HslColorConfig? = aFloorUnderlayTypeList_1240!!.method1380(true, i_205_ - 1)
                             is_196_[i_204_] += hslColorConfig!!.anInt341
                             is_197_[i_204_] += hslColorConfig.anInt332
                             is_198_[i_204_] += hslColorConfig.anInt335
@@ -802,7 +802,7 @@ open class MapRegionLoader {
                     if (i_203_ >= 0) {
                         val i_206_ = `is`[i_203_ + i_204_ * anInt1259].toInt() and 0xff
                         if (i_206_ > 0) {
-                            val hslColorConfig: HslColorConfig? = aParticleDefLoader_1240!!.method1380(true, i_206_ - 1)
+                            val hslColorConfig: HslColorConfig? = aFloorUnderlayTypeList_1240!!.method1380(true, i_206_ - 1)
                             is_196_[i_204_] -= hslColorConfig!!.anInt341
                             is_197_[i_204_] -= hslColorConfig.anInt332
                             is_198_[i_204_] -= hslColorConfig.anInt335

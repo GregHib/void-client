@@ -10,7 +10,7 @@ class RsaVarbitHandler internal constructor(@JvmField var anInt4899: Int) : Conf
     override fun method51(i: Byte): ProjectileFactory? {
         anInt4894++
         if (i < 116) return null
-        return ModelDefinitionCache.aProjectileFactory_2868
+        return HitsplatTypeList.aProjectileFactory_2868
     }
 
     companion object {

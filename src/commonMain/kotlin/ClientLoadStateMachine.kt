@@ -3,7 +3,7 @@ import GameAppletFrame.Companion.method85
 import AnimatedModelRenderer.Companion.method988
 import InputSettingsState.method1063
 import GlCubeMapTexture.Companion.method243
-import ModelDefinitionLoader.Companion.method1202
+import IDKTypeList.Companion.method1202
 import OggBitstreamDecoder.Companion.method2965
 import ChatCommandProcessor.method3038
 import DisplaceTextureNode.Companion.method3063
@@ -144,7 +144,7 @@ object ClientLoadStateMachine {
             MidiSequencePlayer.varbits = WorldMapTextLabel.createIndex(false, 22, (-23).toByte(), 1)
             TerrainShadowBuilderGl2.worldMap = WorldMapTextLabel.createIndex(true, 23, (-23).toByte(), 1)
             ModelBatchBase.quickChat = WorldMapTextLabel.createIndex(false, 24, (-23).toByte(), 1)
-            ConfigArchiveLoader.quickChatMenus = WorldMapTextLabel.createIndex(false, 25, (-23).toByte(), 1)
+            VarcstrTypeList.quickChatMenus = WorldMapTextLabel.createIndex(false, 25, (-23).toByte(), 1)
             KeyEventNode.textureMaterials = WorldMapTextLabel.createIndex(true, 26, (-23).toByte(), 1)
             ClientLoadStateMachine.particles = WorldMapTextLabel.createIndex(false, 27, (-23).toByte(), 1)
             FixedFunctionWaterPass.defaults = WorldMapTextLabel.createIndex(true, 28, (-23).toByte(), 1)
@@ -182,34 +182,34 @@ object ClientLoadStateMachine {
             if (AbstractFrameBufferSurface.anInt6923 != -1 && !RasterSprite.models!!.method420(-10499, AbstractFrameBufferSurface.anInt6923, 0)) return 99
             SourceRowTextureNode.aRenderConfig9113 = TextureMetadataProvider(KeyEventNode.textureMaterials, WorldMapTextLabel.textures, CameraRotationStub.sprites)
             ProjectionCameraTransform.aParamTypeList_5764 = ParamTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
-            OpenGlModel.aNpcDefinitionCache_5558 = NpcDefinitionCache(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            OpenGlModel.aRenderAnimTypeList_5558 = RenderAnimTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
             EnumTypeList.aCursorTypeList_3147 = CursorTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config, CameraRotationStub.sprites)
             RegionTileNode.aEnumTypeList_6653 = EnumTypeList(Client.mode, ChatCommandProcessor.language, VideoAdChecker.enums)
             RenderConfigFactory.aFloorOverlayTypeList_2979 = FloorOverlayTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
-            Tooltip.aParticleDefLoader_4460 = ParticleDefLoader(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
-            FileExistsCondition.aModelDefinitionCache_4782 = ModelDefinitionCache(Client.mode, ChatCommandProcessor.language, DirectionUtil.config, CameraRotationStub.sprites)
-            RadialTextureNode.aModelDefinitionLoader_9342 = ModelDefinitionLoader(Client.mode, ChatCommandProcessor.language, DirectionUtil.config, RasterSprite.models)
-            ScrollingWidgetComponentNode.aParticleEffectCache_8378 = ParticleEffectCache(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
-            AbstractTileShapeStatics.aMapSceneDefLoader_6559 = MapSceneDefLoader(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            Tooltip.aFloorUnderlayTypeList_4460 = FloorUnderlayTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            FileExistsCondition.aHitsplatTypeList_4782 = HitsplatTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config, CameraRotationStub.sprites)
+            RadialTextureNode.aIDKTypeList_9342 = IDKTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config, RasterSprite.models)
+            ScrollingWidgetComponentNode.aInventoryTypeList_8378 = InventoryTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            AbstractTileShapeStatics.aLightTypeList_6559 = LightTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
             GradientLookupEffect.aObjectTypeList_9195 = ObjectTypeList(Client.mode, ChatCommandProcessor.language, true, AnimationFrameState.objects, RasterSprite.models)
-            TheoraVideoStream.aConfigDefinitionLoader_9031 = ConfigDefinitionLoader(Client.mode, ChatCommandProcessor.language, DirectionUtil.config, CameraRotationStub.sprites)
-            ModelOrSpriteHolder.aMapSceneDefinitionLoader_117 = MapSceneDefinitionLoader(Client.mode, ChatCommandProcessor.language, DirectionUtil.config, CameraRotationStub.sprites)
+            TheoraVideoStream.aWorldMapInfoTypeList_9031 = WorldMapInfoTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config, CameraRotationStub.sprites)
+            ModelOrSpriteHolder.aMapSceneTypeList_117 = MapSceneTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config, CameraRotationStub.sprites)
             MapAreaDefinition.aNpcTypeList_2529 = NpcTypeList(Client.mode, ChatCommandProcessor.language, true, FloatGrid.npcs, RasterSprite.models)
             ClientException.aItemTypeList_112 = ItemTypeList(Client.mode, ChatCommandProcessor.language, true, ProjectionCameraTransform.aParamTypeList_5764, ScriptOpcodeHolder.items, RasterSprite.models)
-            TheoraVideoStream.aLocTypeDefLoader_9036 = LocTypeDefLoader(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            TheoraVideoStream.aQuestTypeList_9036 = QuestTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
             ParticleEmitterNode.aAnimationTypeList_191 = AnimationTypeList(Client.mode, ChatCommandProcessor.language, OpenGlRenderNode.animations, ShortKeyNode.animationFrames, TextureGenerator.animationSekeletons)
-            Client.aMapSceneCache_413 = MapSceneCache(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
-            HoverActionEntry.aSpriteStore_1813 = SpriteStore(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            Client.aSkyBoxTypeList_413 = SkyBoxTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            HoverActionEntry.aSkyboxSphereTypeList_1813 = SkyboxSphereTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
             ConstantColourTextureNode.aGfxTypeList_9245 = GfxTypeList(Client.mode, ChatCommandProcessor.language, BufferedRandomAccessFile.gfx, RasterSprite.models)
-            SpriteLoadValidator.aWorldMapImageBuilder_4787 = WorldMapImageBuilder(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
-            NpcUpdateProcessor.aConfigArchiveLoader_1523 = ConfigArchiveLoader(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
-            RemoveRoofLightingDetailOptionState.aKeyboardLayoutCache_5995 = KeyboardLayoutCache(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
-            RenderConfigFactory.aVarbitDefLoader_2981 = VarbitDefLoader(Client.mode, ChatCommandProcessor.language, MidiSequencePlayer.varbits)
-            NormalMapGenerator.aParticleAmountCache_3453 = ParticleAmountCache(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
-            WorldMapImageBuilder.method699(SoftwareSpriteRaster.aJs5Archive_1627, (-100).toByte(), ClientLoadStateMachine.interfaces, CameraRotationStub.sprites, RasterSprite.models)
+            SpriteLoadValidator.aStructTypeList_4787 = StructTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            NpcUpdateProcessor.aVarcstrTypeList_1523 = VarcstrTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            RemoveRoofLightingDetailOptionState.aVarcTypeList_5995 = VarcTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            RenderConfigFactory.aVarbitTypeList_2981 = VarbitTypeList(Client.mode, ChatCommandProcessor.language, MidiSequencePlayer.varbits)
+            NormalMapGenerator.aVarPlayerTypeList_3453 = VarPlayerTypeList(Client.mode, ChatCommandProcessor.language, DirectionUtil.config)
+            StructTypeList.method699(SoftwareSpriteRaster.aJs5Archive_1627, (-100).toByte(), ClientLoadStateMachine.interfaces, CameraRotationStub.sprites, RasterSprite.models)
             method85(0, NodeDequeStatics.billboards)
-            ScriptResources.aQuickChatTypeList_2639 = QuickChatTypeList(ChatCommandProcessor.language, ModelBatchBase.quickChat, ConfigArchiveLoader.quickChatMenus)
-            BrightnessOptionState.aQuickChatMenuTypeList_5900 = QuickChatMenuTypeList(ChatCommandProcessor.language, ModelBatchBase.quickChat, ConfigArchiveLoader.quickChatMenus, ItemNameResolver())
+            ScriptResources.aQuickChatTypeList_2639 = QuickChatTypeList(ChatCommandProcessor.language, ModelBatchBase.quickChat, VarcstrTypeList.quickChatMenus)
+            BrightnessOptionState.aQuickChatMenuTypeList_5900 = QuickChatMenuTypeList(ChatCommandProcessor.language, ModelBatchBase.quickChat, VarcstrTypeList.quickChatMenus, ItemNameResolver())
             method1202(0)
             GradientLookupEffect.aObjectTypeList_9195!!.method2008(i + 28539, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(i + -3690) == 0)
             ProjectedGroundDecor.aVarpStore_10209 = VarpStore()
@@ -231,15 +231,15 @@ object ClientLoadStateMachine {
             val i_12_ = (ParticleEmitterDefExt.method2188(-30477) - -method3256(2))
             if (i_11_ < i_12_) return i_11_ * 100 / i_12_
         }
-        if (ConnectionStateType.aConnectionStateType_1038 == TimedTileQueueEntry.aConnectionStateType_9660) method752(TerrainShadowBuilderGl2.worldMap, RenderConfigFactory.aFloorOverlayTypeList_2979, Tooltip.aParticleDefLoader_4460, GradientLookupEffect.aObjectTypeList_9195, TheoraVideoStream.aConfigDefinitionLoader_9031, ModelOrSpriteHolder.aMapSceneDefinitionLoader_117, ProjectedGroundDecor.aVarpStore_10209)
+        if (ConnectionStateType.aConnectionStateType_1038 == TimedTileQueueEntry.aConnectionStateType_9660) method752(TerrainShadowBuilderGl2.worldMap, RenderConfigFactory.aFloorOverlayTypeList_2979, Tooltip.aFloorUnderlayTypeList_4460, GradientLookupEffect.aObjectTypeList_9195, TheoraVideoStream.aWorldMapInfoTypeList_9031, ModelOrSpriteHolder.aMapSceneTypeList_117, ProjectedGroundDecor.aVarpStore_10209)
         if (ConnectionStateType.aConnectionStateType_1039 == TimedTileQueueEntry.aConnectionStateType_9660) {
             // TODO make cache edit to extend these or change id's
-            IsaacCipher.anIntArray1303 = (IntArray(RemoveRoofLightingDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
-            GlslEnvMaterialPass.aBooleanArray6270 = (BooleanArray(RemoveRoofLightingDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000))
-            GlTextureCubeMap.aStringArray8532 = arrayOfNulls<String>(NpcUpdateProcessor.aConfigArchiveLoader_1523!!.anInt1439)
+            IsaacCipher.anIntArray1303 = (IntArray(RemoveRoofLightingDetailOptionState.aVarcTypeList_5995!!.anInt3305 + 1000))
+            GlslEnvMaterialPass.aBooleanArray6270 = (BooleanArray(RemoveRoofLightingDetailOptionState.aVarcTypeList_5995!!.anInt3305 + 1000))
+            GlTextureCubeMap.aStringArray8532 = arrayOfNulls<String>(NpcUpdateProcessor.aVarcstrTypeList_1523!!.anInt1439)
             var i_13_ = 0
-            while (RemoveRoofLightingDetailOptionState.aKeyboardLayoutCache_5995!!.anInt3305 + 1000 > i_13_) {
-                if (RemoveRoofLightingDetailOptionState.aKeyboardLayoutCache_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
+            while (RemoveRoofLightingDetailOptionState.aVarcTypeList_5995!!.anInt3305 + 1000 > i_13_) {
+                if (RemoveRoofLightingDetailOptionState.aVarcTypeList_5995!!.method1976(i_13_, i xor 0x6fc0.inv()).anInt2135 == 0) {
                     GlslEnvMaterialPass.aBooleanArray6270!![i_13_] = true
                     TimingCounters.anInt4168++
                 }
@@ -347,7 +347,7 @@ object ClientLoadStateMachine {
     fun method1265(i: Int) {
         anInt2152++
         if (ClientLoadStateMachine.aSoundChannelMixer_7042 != null) ClientLoadStateMachine.aSoundChannelMixer_7042!!.method2093(true)
-        if (VarbitDefLoader.aSoundChannelMixer_2596 != null) VarbitDefLoader.aSoundChannelMixer_2596!!.method2093(true)
+        if (VarbitTypeList.aSoundChannelMixer_2596 != null) VarbitTypeList.aSoundChannelMixer_2596!!.method2093(true)
     }
 
     var particles: Js5Archive? = null

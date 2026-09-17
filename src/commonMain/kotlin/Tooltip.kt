@@ -11,7 +11,7 @@ object Tooltip {
     var anInt4457: Int = 0
 
     var anInt4458: Int = -1
-    var aParticleDefLoader_4460: ParticleDefLoader? = null
+    var aFloorUnderlayTypeList_4460: FloorUnderlayTypeList? = null
 
     @JvmStatic
     fun method3511(bool: Boolean, RSFont: RSFont?, fontDefinition: FontDefinition?, string: String?, i: Int, var_renderer: Renderer?) {
@@ -85,7 +85,7 @@ object Tooltip {
 
     @JvmStatic
     fun method3512(i: Int) {
-        aParticleDefLoader_4460 = null
+        aFloorUnderlayTypeList_4460 = null
         if (i != 4) anInt4458 = 96
         aRSFont_4456 = null
     }

@@ -81,7 +81,7 @@ class ServerConnectionInfo {
                 if (FrameBufferObject.anInt4889 == 0) method3134(-1)
                 else {
                     TileSceneEntity.aFloat8725 = KeyboardLayoutConfig.Companion.aFloat2137
-                    DelegatingRenderCanvas.anInt70 = LocTypeDefLoader.anInt2500
+                    DelegatingRenderCanvas.anInt70 = QuestTypeList.anInt2500
                     TextureOptionState.aCircleRasterizer_6098 = HeapInfoRecord.aCircleRasterizer_4938
                     AbstractModel.aFloat1136 = TextureMetadataProvider.aFloat4626
                     DebugOverlayRenderer.aFloat3172 = NormalMapGenerator.aFloat3462

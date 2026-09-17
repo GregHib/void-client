@@ -33,8 +33,8 @@ class SourceRowTextureNode : AbstractProceduralTextureNode(0, true) {
         fun method3058(i: Int, i_1_: Int, i_2_: Int) {
             val class357 = HintArrowOrMessage.aSceneCollisionEntryArrayArrayArray2029!![i]!![i_1_]!![i_2_]
             if (class357 != null) {
-                ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub4_4406)
-                ParticleDefLoader.method1376(class357.aClass318_Sub1_Sub4_4403)
+                FloorUnderlayTypeList.method1376(class357.aClass318_Sub1_Sub4_4406)
+                FloorUnderlayTypeList.method1376(class357.aClass318_Sub1_Sub4_4403)
                 if (class357.aClass318_Sub1_Sub4_4406 != null) class357.aClass318_Sub1_Sub4_4406 = null
                 if (class357.aClass318_Sub1_Sub4_4403 != null) class357.aClass318_Sub1_Sub4_4403 = null
             }

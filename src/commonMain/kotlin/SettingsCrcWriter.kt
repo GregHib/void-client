@@ -39,7 +39,7 @@ object SettingsCrcWriter {
         class348_sub49_sub2.writeInt(97.toByte(), MidiSequencePlayer.varbits!!.method389(-96))
         class348_sub49_sub2.writeInt(111.toByte(), TerrainShadowBuilderGl2.worldMap!!.method389(109))
         class348_sub49_sub2.writeInt(108.toByte(), ModelBatchBase.quickChat!!.method389(-106))
-        class348_sub49_sub2.writeInt(102.toByte(), ConfigArchiveLoader.quickChatMenus!!.method389(102))
+        class348_sub49_sub2.writeInt(102.toByte(), VarcstrTypeList.quickChatMenus!!.method389(102))
         class348_sub49_sub2.writeInt(113.toByte(), KeyEventNode.textureMaterials!!.method389(-122))
         class348_sub49_sub2.writeInt(86.toByte(), ClientLoadStateMachine.particles!!.method389(97))
         class348_sub49_sub2.writeInt(96.toByte(), FixedFunctionWaterPass.defaults!!.method389(-6))

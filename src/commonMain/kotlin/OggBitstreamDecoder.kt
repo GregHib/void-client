@@ -62,7 +62,7 @@ abstract class OggBitstreamDecoder internal constructor(var anOggStreamState6869
         @JvmStatic
         fun method2965(string: String?, i: Int, bool: Boolean, i_1_: Int) {
             anInt6866++
-            LocTypeDefLoader.method1406(true)
+            QuestTypeList.method1406(true)
             if (i == 0) {
                 FacingDirectionNode.aRenderer6654 = SoftwareSpriteRaster.method958(true, 0, SourceRowTextureNode.aRenderConfig9113, IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub20_7248!!.method1808(-32350) * 2, ParticleSystemRenderer.aCanvas3869, SpriteLoadValidator.shaders)
                 if (string != null) {

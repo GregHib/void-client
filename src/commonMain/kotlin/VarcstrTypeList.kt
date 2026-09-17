@@ -32,7 +32,7 @@ import util.random
 /*
  * Class82
  */
-class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class VarcstrTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aJs5Archive_1436: Js5Archive?
 
     var anInt1439: Int = 0
@@ -378,8 +378,8 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                         if (string.equals("resetminimap", ignoreCase = true)) {
                             CameraRotationStub.sprites!!.method405(i.toInt() xor 0x4e.inv())
                             CameraRotationStub.sprites!!.method412(127.toByte())
-                            ModelOrSpriteHolder.aMapSceneDefinitionLoader_117!!.method1175(125.toByte())
-                            TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1219(7851)
+                            ModelOrSpriteHolder.aMapSceneTypeList_117!!.method1175(125.toByte())
+                            TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1219(7851)
                             method464(-1)
                             method94("Minimap reset", 70)
                             return
@@ -672,7 +672,7 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
                                 method94("Failed to read file", 119)
                                 return
                             }
-                            val strings = (method3113('\n', true, (NpcDefinitionCache.method1981(method1795(`is`, true), (-89).toByte(), '\r', ""))!!))
+                            val strings = (method3113('\n', true, (RenderAnimTypeList.method1981(method1795(`is`, true), (-89).toByte(), '\r', ""))!!))
                             ChatScriptListNode.method3189(0, strings)
                         }
                         if (string.startsWith("zoom ")) {
@@ -878,26 +878,26 @@ class ConfigArchiveLoader internal constructor(sceneProjector: SceneProjector?, 
         fun method427(i: Int) {
             anInt837++
             RenderConfigFactory.aFloorOverlayTypeList_2979!!.method2033(46.toByte())
-            Tooltip.aParticleDefLoader_4460!!.method1377(2)
-            RadialTextureNode.aModelDefinitionLoader_9342!!.method1204(0)
+            Tooltip.aFloorUnderlayTypeList_4460!!.method1377(2)
+            RadialTextureNode.aIDKTypeList_9342!!.method1204(0)
             GradientLookupEffect.aObjectTypeList_9195!!.method2006(88)
             MapAreaDefinition.aNpcTypeList_2529!!.method2080(127)
             ClientException.aItemTypeList_112!!.method1938(126)
             ParticleEmitterNode.aAnimationTypeList_191!!.method838(7)
             ConstantColourTextureNode.aGfxTypeList_9245!!.method2542(-101)
-            RenderConfigFactory.aVarbitDefLoader_2981!!.method1443(83)
-            NormalMapGenerator.aParticleAmountCache_3453!!.method1590(0)
-            OpenGlModel.aNpcDefinitionCache_5558!!.method1986((-91).toByte())
-            ModelOrSpriteHolder.aMapSceneDefinitionLoader_117!!.method1174((-99).toByte())
-            TheoraVideoStream.aConfigDefinitionLoader_9031!!.method1222(true)
-            TheoraVideoStream.aLocTypeDefLoader_9036!!.method1410(-27995)
+            RenderConfigFactory.aVarbitTypeList_2981!!.method1443(83)
+            NormalMapGenerator.aVarPlayerTypeList_3453!!.method1590(0)
+            OpenGlModel.aRenderAnimTypeList_5558!!.method1986((-91).toByte())
+            ModelOrSpriteHolder.aMapSceneTypeList_117!!.method1174((-99).toByte())
+            TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1222(true)
+            TheoraVideoStream.aQuestTypeList_9036!!.method1410(-27995)
             ProjectionCameraTransform.aParamTypeList_5764!!.method2602(0)
-            Client.aMapSceneCache_413!!.method816(false)
-            HoverActionEntry.aSpriteStore_1813!!.method302(-797644856)
-            AbstractTileShapeStatics.aMapSceneDefLoader_6559!!.method1390(23)
+            Client.aSkyBoxTypeList_413!!.method816(false)
+            HoverActionEntry.aSkyboxSphereTypeList_1813!!.method302(-797644856)
+            AbstractTileShapeStatics.aLightTypeList_6559!!.method1390(23)
             EnumTypeList.aCursorTypeList_3147!!.method1283(1)
-            SpriteLoadValidator.aWorldMapImageBuilder_4787!!.method694(-1007)
-            FileExistsCondition.aModelDefinitionCache_4782!!.method1598(111)
+            SpriteLoadValidator.aStructTypeList_4787!!.method694(-1007)
+            FileExistsCondition.aHitsplatTypeList_4782!!.method1598(111)
             CalendarUtil.method2638(-4631)
             NpcCountAccessor.method1328(-26162)
             method3102(22385)

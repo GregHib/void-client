@@ -111,13 +111,13 @@ class FireParticleStream : OutputStream() {
                 FacingDirectionNode.aRenderer6654!!.KA(i_1_, i_3_, i_1_ - -i_0_, i_3_ + i_2_)
                 QuickChatTypeList.method1626(1, true)
                 if (GrayscaleNoiseTexture.aBoolean5300) {
-                    ProjectionCameraTransform.method941(124, LocTypeDefLoader.anInt2500)
+                    ProjectionCameraTransform.method941(124, QuestTypeList.anInt2500)
                     if (LocalPlayerState.anInt1906 != PlayerAppearanceUpdateDecoder.anInt4545) PcmStreamBuffer.aBoolean8870 = true
                     PlayerAppearanceUpdateDecoder.anInt4545 = LocalPlayerState.anInt1906
                 } else {
                     FacingDirectionNode.aRenderer6654!!.ya()
-                    val i_15_ = LocTypeDefLoader.anInt2500
-                    if (KeyboardLayoutCache.aParticleSystemRenderer_3304 != null) KeyboardLayoutCache.aParticleSystemRenderer_3304!!.method2293(MapSceneDefLoader.anInt2481 shl 3, FacingDirectionNode.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, WorldMapElement.anInt4638, MinimapAreaMarkerNode.anInt9701, i_15_, i_2_)
+                    val i_15_ = QuestTypeList.anInt2500
+                    if (VarcTypeList.aParticleSystemRenderer_3304 != null) VarcTypeList.aParticleSystemRenderer_3304!!.method2293(LightTypeList.anInt2481 shl 3, FacingDirectionNode.aRenderer6654!!, (-72).toByte(), i_1_, i_0_, i_3_, WorldMapElement.anInt4638, MinimapAreaMarkerNode.anInt9701, i_15_, i_2_)
                     else FacingDirectionNode.aRenderer6654!!.GA(i_15_)
                 }
                 WorldMapAreaLabel.method3570(false)
@@ -411,7 +411,7 @@ class FireParticleStream : OutputStream() {
                                         method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
                                     }
                                     CameraRotationStub.aRenderer326!!.la()
-                                    ParticleEffectCache.method2046()
+                                    InventoryTypeList.method2046()
                                     if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
                                     ModelVertexColorBuffer.anInt6568 += i_34_
                                     ShaderObject.anInt4100 += i_33_
@@ -471,7 +471,7 @@ class FireParticleStream : OutputStream() {
                             aSceneObjectSpawner_10436!!.method775(69.toByte())
                             method1274(aSceneObjectSpawner_10436)
                             method1960(i_12_, i_4_, i_6_, i_5_, is_0_, is_3_, is_8_, is_9_, is_11_, `is`, i_2_, i_10_, i_7_, i_1_, bool, bool_13_, i_14_, 1, false)
-                            ParticleEffectCache.method2046()
+                            InventoryTypeList.method2046()
                             PcmStreamBuffer.aBoolean8870 = false
                             if (WhirlpoolHash.anInt7207 == 0) CameraRotationStub.aRenderer326!!.method3672()
                             if (WhirlpoolHash.anInt7207 == 1) method1469(-117)

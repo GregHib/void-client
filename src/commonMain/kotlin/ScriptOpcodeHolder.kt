@@ -103,7 +103,7 @@ object ScriptOpcodeHolder {
                 strings[i_10_] = ClientException.aItemTypeList_112!!.method1940(123, `is`[i_10_].toInt()).aString2795
                 i_10_++
             }
-            MapSceneCache.method1333(AsyncTaskHandle.aShortArray2579, 26073, strings)
+            SkyBoxTypeList.method1333(AsyncTaskHandle.aShortArray2579, 26073, strings)
             items!!.method412(116.toByte())
             items!!.anInt634 = 2
         } catch (runtimeexception: RuntimeException) {
@@ -121,7 +121,7 @@ object ScriptOpcodeHolder {
     fun method1334(i: Byte) {
         TypedRecordTable.aProjectileFactory_2307 = null
         InboundPacketHeader.aInboundPacketHeader_2305 = null
-        MapSceneCache.aAbstractModelRenderer_2309 = null
+        SkyBoxTypeList.aAbstractModelRenderer_2309 = null
         items = null
     }
 }

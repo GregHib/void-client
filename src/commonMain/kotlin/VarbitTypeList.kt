@@ -3,7 +3,7 @@ import kotlin.jvm.JvmStatic
 /* Class194 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class VarbitDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class VarbitTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private var aLruByteCache_2594: LruByteCache? = LruByteCache(64)
     private val aJs5Archive_2597: Js5Archive?
     fun method1442(i: Int, i_0_: Byte) {

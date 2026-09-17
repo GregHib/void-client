@@ -9,7 +9,7 @@ class WorldMapPolygonIconLabel(screenAnchorAlignment: ScreenAnchorAlignment?, ti
     override fun method51(i: Byte): ProjectileFactory? {
         anInt10175++
         if (i < 116) this.anInt10177 = -10
-        return LocTypeDefLoader.aProjectileFactory_2507
+        return QuestTypeList.aProjectileFactory_2507
     }
 
     init {

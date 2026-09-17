@@ -45,7 +45,7 @@ class DragDropController {
                 }
                 var i_2_ = i_0_ + GlTexture1D.aInputTracker_8552!!.method3597(true)
                 var i_3_ = i_1_ + GlTexture1D.aInputTracker_8552!!.method3594(80.toByte())
-                i_3_ -= ModelDefinitionCache.anInt2872
+                i_3_ -= HitsplatTypeList.anInt2872
                 i_2_ -= SceneEntityModel.anInt6411
                 if (i_2_ < BoxBlurTextureNode.anInt9461) i_2_ = BoxBlurTextureNode.anInt9461
                 if (i == -30206) {
@@ -81,8 +81,8 @@ class DragDropController {
                                 method705(class348_sub36)
                             }
                             if (MapElementDecor.aWidgetComponent_10336 != null && (Client.method108(RegionSceneLoader.aWidgetComponent_3701) != null)) method173(-67, RegionSceneLoader.aWidgetComponent_3701, (MapElementDecor.aWidgetComponent_10336))
-                        } else if ((WallEntity.anInt8770 == 1 || method2485(-113)) && FileExistsCondition.anInt4776 > 2) method191(true, (NativeRenderer.anInt8001 + SceneEntityModel.anInt6411), (ModelDefinitionCache.anInt2872 - -(GrayscaleEffect.anInt9203)))
-                        else if (method913(127.toByte())) method191(true, (NativeRenderer.anInt8001 + SceneEntityModel.anInt6411), (ModelDefinitionCache.anInt2872 + (GrayscaleEffect.anInt9203)))
+                        } else if ((WallEntity.anInt8770 == 1 || method2485(-113)) && FileExistsCondition.anInt4776 > 2) method191(true, (NativeRenderer.anInt8001 + SceneEntityModel.anInt6411), (HitsplatTypeList.anInt2872 - -(GrayscaleEffect.anInt9203)))
+                        else if (method913(127.toByte())) method191(true, (NativeRenderer.anInt8001 + SceneEntityModel.anInt6411), (HitsplatTypeList.anInt2872 + (GrayscaleEffect.anInt9203)))
                         RegionSceneLoader.aWidgetComponent_3701 = null
                     }
                 }

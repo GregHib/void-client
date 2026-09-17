@@ -114,7 +114,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                     AnimationFrameTable.anInt486 = (i_4_ * NoOpGraphicsOptionState.anInt6042 + (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2546 * i_5_)) shr 8
                     KeyboardLayoutConfig.aFloat2137 = (TileSceneEntity.aFloat8725 + (-TileSceneEntity.aFloat8725 + (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2547)) * f_6_)
                     TextureMetadataProvider.aFloat4626 = (AbstractModel.aFloat1136 + f_6_ * ((RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2544) - AbstractModel.aFloat1136))
-                    LocTypeDefLoader.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2549)))))) ushr 8
+                    QuestTypeList.anInt2500 = (((i_4_ * (0xff00 and DelegatingRenderCanvas.anInt70) + (0xff00 and (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2549)) * i_5_) and 0xff0000) + (0xff00ff.inv() and (i_4_ * (0xff00ff and DelegatingRenderCanvas.anInt70) - -(i_5_ * (0xff00ff and (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2549)))))) ushr 8
                     CollisionMap.aFloat4455 = (ParticleEmitterFactoryStatics.aFloat3177 + f_6_ * (-ParticleEmitterFactoryStatics.aFloat3177 + (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2536)))
                     NormalMapGenerator.aFloat3462 = (DebugOverlayRenderer.aFloat3172 + (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2542 - DebugOverlayRenderer.aFloat3172) * f_6_)
                     if (TextureOptionState.aCircleRasterizer_6098 !== (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541)) HeapInfoRecord.aCircleRasterizer_4938 = (TerrainChunkBuilder.aRenderer1098!!.method3706(TextureOptionState.aCircleRasterizer_6098, (RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aCircleRasterizer_2541), f_6_, HeapInfoRecord.aCircleRasterizer_4938))
@@ -127,7 +127,7 @@ class InvertTextureNode : AbstractProceduralTextureNode(1, false) {
                     NormalMapGenerator.aFloat3462 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2542
                     CollisionMap.aFloat4455 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2536
                     TexGenMaterialPass.anInt6248 = -1
-                    LocTypeDefLoader.anInt2500 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2549
+                    QuestTypeList.anInt2500 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2549
                     NativeIndexBuffer.anInt4703 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.anInt2540
                     KeyboardLayoutConfig.aFloat2137 = RemoveRoofLightingDetailOptionState.aModelLightingConfig_5990!!.aFloat2547
                 }

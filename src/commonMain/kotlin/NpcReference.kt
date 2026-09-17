@@ -29,7 +29,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             if (js5Archive.method421(false, DualMaterialContainer.anInt1639)) i_2_++
             if (js5Archive.method421(false, MouseInputTracker.anInt7429)) i_2_++
             if (js5Archive.method421(false, Renderer.anInt4562)) i_2_++
-            if (js5Archive.method421(false, ConfigArchiveLoader.anInt1435)) i_2_++
+            if (js5Archive.method421(false, VarcstrTypeList.anInt1435)) i_2_++
             if (js5Archive.method421(false, OverlayColorTable.anInt1756)) i_2_++
             if (js5Archive.method421(false, TexGenMaterialPass.anInt3739)) i_2_++
             if (js5Archive.method421(false, DrawListState.anInt1481)) i_2_++
@@ -38,7 +38,7 @@ class NpcReference internal constructor(@JvmField var aNpc_6859: Npc?) : LinkedL
             if (js5Archive.method421(false, NamedIdRecord.anInt4469)) i_2_++
             if (i != 22388) return 8
             if (js5Archive.method421(false, TexGenMaterialPass.anInt9473)) i_2_++
-            if (js5Archive.method421(false, LocTypeDefLoader.anInt2510)) i_2_++
+            if (js5Archive.method421(false, QuestTypeList.anInt2510)) i_2_++
             if (js5Archive.method421(false, RsaVarbitHandler.anInt4895)) i_2_++
             if (js5Archive.method421(false, PerlinTextureProvider.anInt5814)) i_2_++
             if (js5Archive.method421(false, SpriteComponent.anInt8370)) i_2_++

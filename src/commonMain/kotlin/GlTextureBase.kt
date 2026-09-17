@@ -312,8 +312,8 @@ abstract class GlTextureBase(glRenderDevice: GlRenderDevice?, i: Int, textureFor
             this.aMovementDirection_5088 = movementDirection
             aBoolean5099 = bool
             this.anInt5093 = i
-            glGenTextures(1, MapSceneDefinitionLoader.anIntArray1975, 0)
-            anInt5096 = MapSceneDefinitionLoader.anIntArray1975!![0]
+            glGenTextures(1, MapSceneTypeList.anIntArray1975, 0)
+            anInt5096 = MapSceneTypeList.anIntArray1975!![0]
             method229(true)
             method236(0, (-126).toByte())
         } catch (runtimeexception: RuntimeException) {

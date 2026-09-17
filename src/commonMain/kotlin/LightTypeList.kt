@@ -2,7 +2,7 @@ import kotlin.jvm.JvmStatic
 /* Class185 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class MapSceneDefLoader internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class LightTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private val aLruByteCache_2479 = LruByteCache(64)
     private val aJs5Archive_2480: Js5Archive?
     fun method1390(i: Int) {

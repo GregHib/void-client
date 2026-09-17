@@ -56,7 +56,7 @@ class RemoveRoofLightingDetailOptionState : GraphicsOptionState {
 
         var anInt5994: Int = 0
 
-        var aKeyboardLayoutCache_5995: KeyboardLayoutCache? = null
+        var aVarcTypeList_5995: VarcTypeList? = null
 
         @JvmStatic
         fun method1779(i: Byte) {
@@ -76,7 +76,7 @@ class RemoveRoofLightingDetailOptionState : GraphicsOptionState {
             val i_0_ = 108 % ((-24 - i) / 54)
             aConfigFlagUtil_5989 = null
             anIntArrayArray5991 = null
-            aKeyboardLayoutCache_5995 = null
+            aVarcTypeList_5995 = null
             SceneEntity.aSoundEnvelopeArray5993 = null
             aModelLightingConfig_5990 = null
         }

@@ -155,7 +155,7 @@ class AudioResampler internal constructor(i: Int, i_27_: Int) {
             var i = FlickeringGraphicsOptionState.anInt5850
             var i_24_ = 0
             while (`is`.size > i_24_) {
-                val class321 = TheoraVideoStream.aLocTypeDefLoader_9036!!.method1408(-12637, `is`[i_24_])
+                val class321 = TheoraVideoStream.aQuestTypeList_9036!!.method1408(-12637, `is`[i_24_])
                 if (class321.anInt4000 != -1) {
                     var abstractModelRenderer = (SkeletalAnimFrameLoader.aLruByteCache_463!!.method583(class321.anInt4000.toLong(), -74) as? AbstractModelRenderer?)
                     if (abstractModelRenderer == null) {

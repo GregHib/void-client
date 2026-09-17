@@ -30,7 +30,7 @@ class SpriteLoadValidator internal constructor(js5Archive: Js5Archive?, string: 
 
     companion object {
 
-        var aWorldMapImageBuilder_4787: WorldMapImageBuilder? = null
+        var aStructTypeList_4787: StructTypeList? = null
         var anInt4790: Int = 0
 
         var aShortArrayArray4791: Array<ShortArray?>? = null
@@ -44,7 +44,7 @@ class SpriteLoadValidator internal constructor(js5Archive: Js5Archive?, string: 
         @JvmStatic
         fun method1159(i: Byte) {
             aShortArrayArray4791 = null
-            aWorldMapImageBuilder_4787 = null
+            aStructTypeList_4787 = null
             if (i >= 36) shaders = null
         }
     }

@@ -9,7 +9,7 @@ object AbstractTileShapeStatics {
 
     var aBoolean6558: Boolean = false
 
-    var aMapSceneDefLoader_6559: MapSceneDefLoader? = null
+    var aLightTypeList_6559: LightTypeList? = null
 
     var anInt6560: Int = 0
 
@@ -30,6 +30,6 @@ object AbstractTileShapeStatics {
         if (i != 11339) method2719(87)
         aWidgetComponent_6561 = null
         anIntArray6547 = null
-        aMapSceneDefLoader_6559 = null
+        aLightTypeList_6559 = null
     }
 }

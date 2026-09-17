@@ -252,7 +252,7 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     RsaVarbitHandler.method491((-86).toByte())
                     FloatCameraTransform.method921(99.toByte(), false)
                     method3936(i + i)
-                    KeyboardLayoutCache.aParticleSystemRenderer_3304 = null
+                    VarcTypeList.aParticleSystemRenderer_3304 = null
                     OggCacheStream.aBoolean5265 = false
                     method3570(false)
                     gc()
@@ -315,8 +315,8 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     var i_29_ = MapTileShape.aClass237_Sub1_4197!!.anInt5824
                     if (i_29_ > QuickChatMenuTypeList.anInt4372) i_29_ = QuickChatMenuTypeList.anInt4372
                     if (i_29_ < -1 + QuickChatMenuTypeList.anInt4372) i_29_ = QuickChatMenuTypeList.anInt4372 - 1
-                    if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0) MapSceneCache.method824(i_29_)
-                    else MapSceneCache.method824(0)
+                    if (IntHashSetStatics.aClass348_Sub51_3959!!.aClass239_Sub27_7261!!.method1840(-32350) == 0) SkyBoxTypeList.method824(i_29_)
+                    else SkyBoxTypeList.method824(0)
                     for (i_30_ in 0..3) {
                         var i_31_ = 0
                         while (GlCubemapLightPass.anInt7319 > i_31_) {

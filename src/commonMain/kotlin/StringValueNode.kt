@@ -1,6 +1,6 @@
 import kotlin.jvm.JvmStatic
-import ParticleDefLoader.Companion.method1376
-import MapSceneDefLoader.Companion.method1394
+import FloorUnderlayTypeList.Companion.method1376
+import LightTypeList.Companion.method1394
 import LongKeyNode.Companion.method2808
 import io.IOException
 

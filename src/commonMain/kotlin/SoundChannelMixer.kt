@@ -234,18 +234,18 @@ open class SoundChannelMixer {
 //    @Synchronized
     fun method2093(bool: Boolean) {
         anInt3609++
-        if (ParticleDefLoader.aBackgroundWorkerThread_2462 != null) {
+        if (FloorUnderlayTypeList.aBackgroundWorkerThread_2462 != null) {
             var bool_35_ = true
             for (i in 0..1) {
-                if (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] === this) ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] = null
-                if (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] != null) bool_35_ = false
+                if (FloorUnderlayTypeList.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] === this) FloorUnderlayTypeList.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] = null
+                if (FloorUnderlayTypeList.aBackgroundWorkerThread_2462!!.aSoundChannelMixerArray3218s[i] != null) bool_35_ = false
             }
             if (bool_35_) {
-                ParticleDefLoader.aBackgroundWorkerThread_2462!!.aBoolean3221 = true
+                FloorUnderlayTypeList.aBackgroundWorkerThread_2462!!.aBoolean3221 = true
                 if (!executeWorkerTasksInline) {
-                    while (ParticleDefLoader.aBackgroundWorkerThread_2462!!.aBoolean3223) method2161(68.toByte(), 50L)
+                    while (FloorUnderlayTypeList.aBackgroundWorkerThread_2462!!.aBoolean3223) method2161(68.toByte(), 50L)
                 }
-                ParticleDefLoader.aBackgroundWorkerThread_2462 = null
+                FloorUnderlayTypeList.aBackgroundWorkerThread_2462 = null
             }
         }
         method2091()

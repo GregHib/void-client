@@ -1029,7 +1029,7 @@ class OpenGlModel : AbstractModel {
                     i_231_++
                 }
             } else class64_sub3_211_.aShortArray5601 = aShortArray5601
-            if (ModelDefinitionCache.method1599((-113).toByte(), i, anInt5556)) {
+            if (HitsplatTypeList.method1599((-113).toByte(), i, anInt5556)) {
                 if (class64_sub3_213_!!.aColourAdjustmentArray5596 != null && (class64_sub3_213_.aColourAdjustmentArray5596!!.size >= anInt5536)) {
                     class64_sub3_211_.aColourAdjustmentArray5596 = class64_sub3_213_.aColourAdjustmentArray5596
                     for (i_232_ in 0..<anInt5536) class64_sub3_211_.aColourAdjustmentArray5596!![i_232_]!!.method451(aColourAdjustmentArray5596!![i_232_]!!, (-110).toByte())
@@ -3485,7 +3485,7 @@ class OpenGlModel : AbstractModel {
 
         var anInt5551: Int = 0
 
-        var aNpcDefinitionCache_5558: NpcDefinitionCache? = null
+        var aRenderAnimTypeList_5558: RenderAnimTypeList? = null
 
         var anInt5560: Int = 0
 
@@ -3590,7 +3590,7 @@ class OpenGlModel : AbstractModel {
 
         @JvmStatic
         fun method681(i: Int) {
-            aNpcDefinitionCache_5558 = null
+            aRenderAnimTypeList_5558 = null
             if (i <= 75) aString5600 = null
             aString5600 = null
         }

@@ -1,7 +1,7 @@
 /* Class25 - Decompiled by JODE
 * Visit http://jode.sourceforge.net/
 */
-class SpriteStore internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
+class SkyboxSphereTypeList internal constructor(sceneProjector: SceneProjector?, i: Int, js5Archive: Js5Archive?) {
     private var aLruByteCache_360: LruByteCache? = LruByteCache(16)
     private var aJs5Archive_366: Js5Archive? = null
     fun method299(i: Int, i_0_: Int) {

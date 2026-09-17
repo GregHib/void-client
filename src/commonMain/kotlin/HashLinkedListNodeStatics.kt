@@ -17,7 +17,7 @@ object HashLinkedListNodeStatics {
         if (i.toInt() == -114) {
             for (i_0_ in 0..2047) {
                 CompositeNpcModelBuilder.aClass348_Sub49Array2105!![i_0_] = null
-                KeyboardLayoutCache.aByteArray3300!![i_0_] = 1.toByte()
+                VarcTypeList.aByteArray3300!![i_0_] = 1.toByte()
                 SoundBankPatch.aTextureAtlasStateArray6802s!![i_0_] = null
             }
         }

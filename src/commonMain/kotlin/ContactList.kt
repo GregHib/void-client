@@ -1,7 +1,6 @@
 import kotlin.jvm.JvmStatic
 import CollisionFlagQuery.Companion.aCollisionFlagQuery_1199
 import SceneModelBuilder.Companion.method2496
-import ContactList.Companion.method721
 import kotlin.math.min
 import kotlin.math.pow
 
@@ -42,7 +41,7 @@ class ContactList internal constructor(var aString9617: String?) : HashLinkedLis
             this.method2715(112.toByte())
             this.method3162(true)
             NpcAnimationResolver.anInt166--
-            KeyboardLayoutCache.aLruByteCache_3301!!.method582(this, class348_sub42_sub12.aLong9600, (-128).toByte())
+            VarcTypeList.aLruByteCache_3301!!.method582(this, class348_sub42_sub12.aLong9600, (-128).toByte())
             return false
         }
         return i_5_ != method3235(-17937)
