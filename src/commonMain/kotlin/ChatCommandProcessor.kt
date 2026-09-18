@@ -397,7 +397,7 @@ object ChatCommandProcessor {
                 val string: String?
                 if (LocalPlayerState.aPlayer_1907 != null && (LocalPlayerState.aPlayer_1907!!.aString10537) != null) string = LocalPlayerState.aPlayer_1907!!.method2450(false, -78)
                 else string = ""
-                aStringArray1152!![anInt1170++] = string!!
+                aStringArray1152!![anInt1170++] = string
                 return
             }
             if (i == 5023) {
@@ -1085,7 +1085,7 @@ object ChatCommandProcessor {
                     if (ChatScriptListNode.aLinkedQueueNode_9536!!.anObject1998 != null) string = (ChatScriptListNode.aLinkedQueueNode_9536!!.anObject1998) as String?
                     else string = SceneObjectAnimator.method1669(-19918, (ChatScriptListNode.aLinkedQueueNode_9536!!.anInt2000))
                 }
-                aStringArray1152!![anInt1170++] = string!!
+                aStringArray1152!![anInt1170++] = string
                 return
             }
             if (i == 5420) {
@@ -2282,7 +2282,7 @@ object ChatCommandProcessor {
                     val class42 = TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1225(i_215_, 96.toByte())
                     if (class42!!.aString597 == null) aStringArray1152!![anInt1170++] = ""
                     else {
-                        aStringArray1152!![anInt1170++] = class42.aString597!!
+                        aStringArray1152!![anInt1170++] = class42.aString597
                         return
                     }
                     return
@@ -2310,7 +2310,7 @@ object ChatCommandProcessor {
                     val i_219_ = anIntArray1149!![anInt1173]
                     val i_220_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = ProjectionCameraTransform.aParamTypeList_5764!!.method2600(i_220_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1225(i_219_, 79.toByte())!!.method376(class254.aString3258, i_220_, 126.toByte())!!)
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1225(i_219_, 79.toByte())!!.method376(class254.aString3258, i_220_, 126.toByte()))
                     else {
                         anIntArray1149!![anInt1173++] = (TheoraVideoStream.aWorldMapInfoTypeList_9031!!.method1225(i_219_, 50.toByte())!!.method378(class254.anInt3256, i_220_, false))
                         return
@@ -2344,7 +2344,7 @@ object ChatCommandProcessor {
                         if (ChatScriptListNode.aLinkedQueueNode_9536!!.anObject1998 != null) string = (ChatScriptListNode.aLinkedQueueNode_9536!!.anObject1998) as String?
                         else string = SceneObjectAnimator.method1669(-19918, (ChatScriptListNode.aLinkedQueueNode_9536!!.anInt2000))
                     }
-                    aStringArray1152!![anInt1170++] = string!!
+                    aStringArray1152!![anInt1170++] = string
                     return
                 }
                 if (i == 6906) {
@@ -3494,7 +3494,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 1602) {
-                    aStringArray1152!![anInt1170++] = class46.aString792!!
+                    aStringArray1152!![anInt1170++] = class46.aString792
                     return
                 }
                 if (i == 1603) {
@@ -3540,7 +3540,7 @@ object ChatCommandProcessor {
                 if (i == 1613) {
                     val i_295_ = anIntArray1149!![--anInt1173]
                     val class254 = ProjectionCameraTransform.aParamTypeList_5764!!.method2600(i_295_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = class46.method429(i_295_, (class254.aString3258), -1)!!
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = class46.method429(i_295_, (class254.aString3258), -1)
                     else {
                         anIntArray1149!![anInt1173++] = class46.method428((class254.anInt3256), i_295_, -126)
                         return
@@ -3583,7 +3583,7 @@ object ChatCommandProcessor {
                     i_296_--
                     if (class46.aStringArray833 == null || i_296_ >= class46.aStringArray833!!.size || class46.aStringArray833!![i_296_] == null) aStringArray1152!![anInt1170++] = ""
                     else {
-                        aStringArray1152!![anInt1170++] = class46.aStringArray833!![i_296_]!!
+                        aStringArray1152!![anInt1170++] = class46.aStringArray833!![i_296_]
                         return
                     }
                     return
@@ -3591,7 +3591,7 @@ object ChatCommandProcessor {
                 if (i == 1802) {
                     if (class46.aString752 == null) aStringArray1152!![anInt1170++] = ""
                     else {
-                        aStringArray1152!![anInt1170++] = class46.aString752!!
+                        aStringArray1152!![anInt1170++] = class46.aString752
                         return
                     }
                     return
@@ -3656,7 +3656,7 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 2602) {
-                    aStringArray1152!![anInt1170++] = class46!!.aString792!!
+                    aStringArray1152!![anInt1170++] = class46!!.aString792
                     return
                 }
                 if (i == 2603) {
@@ -3771,7 +3771,7 @@ object ChatCommandProcessor {
                     i_303_--
                     if (class46!!.aStringArray833 == null || i_303_ >= class46.aStringArray833!!.size || class46.aStringArray833!![i_303_] == null) aStringArray1152!![anInt1170++] = ""
                     else {
-                        aStringArray1152!![anInt1170++] = class46.aStringArray833!![i_303_]!!
+                        aStringArray1152!![anInt1170++] = class46.aStringArray833!![i_303_]
                         return
                     }
                     return
@@ -3779,7 +3779,7 @@ object ChatCommandProcessor {
                 if (i == 2802) {
                     if (class46!!.aString752 == null) aStringArray1152!![anInt1170++] = ""
                     else {
-                        aStringArray1152!![anInt1170++] = class46.aString752!!
+                        aStringArray1152!![anInt1170++] = class46.aString752
                         return
                     }
                     return
@@ -4160,11 +4160,11 @@ object ChatCommandProcessor {
                     return
                 }
                 if (i == 3344) {
-                    aStringArray1152!![anInt1170++] = ArchiveResourceProvider.method2347((-119).toByte())!!
+                    aStringArray1152!![anInt1170++] = ArchiveResourceProvider.method2347((-119).toByte())
                     return
                 }
                 if (i == 3345) {
-                    aStringArray1152!![anInt1170++] = method217(112.toByte())!!
+                    aStringArray1152!![anInt1170++] = method217(112.toByte())
                     return
                 }
                 if (i == 3346) {
@@ -4252,7 +4252,7 @@ object ChatCommandProcessor {
                     val i_359_ = anIntArray1149!![--anInt1173]
                     if (MinimapSpriteRenderer.anInt4930 == 2 && i_359_ < HslAdjustTextureNode.anInt9383) {
                         aStringArray1152!![anInt1170++] = WaterTextureSet.aStringArray1441!![i_359_]
-                        if (FixedFunctionMaterialPass.aStringArray6205!![i_359_] != null) aStringArray1152!![anInt1170++] = FixedFunctionMaterialPass.aStringArray6205!![i_359_]!!
+                        if (FixedFunctionMaterialPass.aStringArray6205!![i_359_] != null) aStringArray1152!![anInt1170++] = FixedFunctionMaterialPass.aStringArray6205!![i_359_]
                         else aStringArray1152!![anInt1170++] = ""
                     } else {
                         aStringArray1152!![anInt1170++] = ""
@@ -4313,7 +4313,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3610) {
                     val i_363_ = anIntArray1149!![--anInt1173]
-                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_363_ < HslAdjustTextureNode.anInt9383) aStringArray1152!![anInt1170++] = GlBufferObject.aStringArray4744!![i_363_]!!
+                    if (MinimapSpriteRenderer.anInt4930 == 2 && i_363_ < HslAdjustTextureNode.anInt9383) aStringArray1152!![anInt1170++] = GlBufferObject.aStringArray4744!![i_363_]
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4336,7 +4336,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3613) {
                     val i_364_ = anIntArray1149!![--anInt1173]
-                    if (MinimapShapeDrawer.aString863 != null && i_364_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_364_]!!.aString314!!)
+                    if (MinimapShapeDrawer.aString863 != null && i_364_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_364_]!!.aString314)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4394,8 +4394,8 @@ object ChatCommandProcessor {
                 if (i == 3622) {
                     val i_367_ = anIntArray1149!![--anInt1173]
                     if (MinimapSpriteRenderer.anInt4930 != 0 && i_367_ < ContactEntry.anInt9604) {
-                        aStringArray1152!![anInt1170++] = ObjectType.aStringArray932!![i_367_]!!
-                        if (WeaveTextureNode.aStringArray9275!![i_367_] != null) aStringArray1152!![anInt1170++] = (WeaveTextureNode.aStringArray9275!![i_367_]!!)
+                        aStringArray1152!![anInt1170++] = ObjectType.aStringArray932!![i_367_]
+                        if (WeaveTextureNode.aStringArray9275!![i_367_] != null) aStringArray1152!![anInt1170++] = (WeaveTextureNode.aStringArray9275!![i_367_])
                         else aStringArray1152!![anInt1170++] = ""
                     } else {
                         aStringArray1152!![anInt1170++] = ""
@@ -4428,7 +4428,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3626) {
                     val i_369_ = anIntArray1149!![--anInt1173]
-                    if (MinimapShapeDrawer.aString863 != null && i_369_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_369_]!!.aString313!!)
+                    if (MinimapShapeDrawer.aString863 != null && i_369_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_369_]!!.aString313)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -4466,7 +4466,7 @@ object ChatCommandProcessor {
                 }
                 if (i == 3632) {
                     val i_372_ = anIntArray1149!![--anInt1173]
-                    if (MinimapShapeDrawer.aString863 != null && i_372_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_372_]!!.aString306!!)
+                    if (MinimapShapeDrawer.aString863 != null && i_372_ < ByteArrayPool.anInt496) aStringArray1152!![anInt1170++] = (HostPingThread.aWorldListEntryArray2261!![i_372_]!!.aString306)
                     else {
                         aStringArray1152!![anInt1170++] = ""
                         return
@@ -5028,7 +5028,7 @@ object ChatCommandProcessor {
                     val i_480_ = anIntArray1149!![anInt1173]
                     val i_481_ = anIntArray1149!![anInt1173 + 1]
                     val class254 = ProjectionCameraTransform.aParamTypeList_5764!!.method2600(i_481_, 28364)
-                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16)!!)
+                    if (class254.method1925(false)) aStringArray1152!![anInt1170++] = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, i_480_).method475(class254.aString3258, i_481_, -16))
                     else {
                         anIntArray1149!![anInt1173++] = (GradientLookupEffect.aObjectTypeList_9195!!.method2005(0, i_480_).method487(i_481_, class254.anInt3256, 81))
                         return
@@ -5130,7 +5130,7 @@ object ChatCommandProcessor {
                         if (anIntArray1149!![anInt1173] >= anIntArray1149!![anInt1173 + 1]) i_488_ += is_489_[i_488_]
                     } else if (i_490_ == 33) anIntArray1149!![anInt1173++] = anIntArray1164!![is_489_[i_488_]]
                     else if (i_490_ == 34) anIntArray1164!![is_489_[i_488_]] = anIntArray1149!![--anInt1173]
-                    else if (i_490_ == 35) aStringArray1152!![anInt1170++] = aStringArray1155!![is_489_[i_488_]]!!
+                    else if (i_490_ == 35) aStringArray1152!![anInt1170++] = aStringArray1155!![is_489_[i_488_]]
                     else if (i_490_ == 36) aStringArray1155!![is_489_[i_488_]] = aStringArray1152!![--anInt1170]
                     else if (i_490_ == 37) {
                         val i_496_ = is_489_[i_488_]
