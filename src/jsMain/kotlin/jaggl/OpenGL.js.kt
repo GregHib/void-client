@@ -93,6 +93,11 @@ actual class OpenGL {
             return 0L
         }
         try {
+            attribStack.clear()
+            viewportX = 0
+            viewportY = 0
+            viewportW = canvasEl.width
+            viewportH = canvasEl.height
             val newState = GlState(context)
             newState.immediateMode = ImmediateModeEmulator(context, newState)
             newState.fixedFunctionShader = FixedFunctionShader(context)
@@ -138,6 +143,15 @@ actual class OpenGL {
     actual companion object {
         lateinit var state: GlState
         private val gl: WebGL2RenderingContext get() = state.gl
+
+        private const val GL_VIEWPORT_BIT = 0x800
+
+        /** Mirror of the current GL viewport, kept for [glPushAttrib]/[glPopAttrib]. */
+        private var viewportX = 0
+        private var viewportY = 0
+        private var viewportW = 0
+        private var viewportH = 0
+        private val attribStack = ArrayList<IntArray?>()
 
         actual val b: Hashtable<Any?, Any?> = Hashtable()
 
@@ -377,8 +391,25 @@ actual class OpenGL {
         actual fun glPointSize(arg0: Float) {}
         actual fun glLineWidth(arg0: Float) = gl.lineWidth(arg0)
         actual fun glPolygonMode(arg0: Int, arg1: Int) {}
-        actual fun glPushAttrib(arg0: Int) {}
-        actual fun glPopAttrib() {}
+        /**
+         * The client brackets its offscreen passes - the sky cubemap (CubemapTextureGlSource),
+         * bloom and glow - with `glPushAttrib(GL_VIEWPORT_BIT)` / `glPopAttrib()` around a
+         * `glViewport` of the offscreen target's size, and relies on the pop to put the window
+         * viewport back. Nothing else re-issues `glViewport` during normal play, so leaving these
+         * as no-ops left the last offscreen viewport (128x128 for the cubemap) latched: the whole
+         * frame rendered into that corner of the canvas until a window resize or a display-mode
+         * change happened to call `glViewport` again. WebGL2 has no attribute stack, so keep a
+         * minimal one here. `GL_VIEWPORT_BIT` is the only bit the client ever pushes; any other
+         * mask still pushes a frame so pushes and pops stay balanced.
+         */
+        actual fun glPushAttrib(arg0: Int) {
+            attribStack.add(if (arg0 and GL_VIEWPORT_BIT != 0) intArrayOf(viewportX, viewportY, viewportW, viewportH) else null)
+        }
+
+        actual fun glPopAttrib() {
+            val saved = attribStack.removeLastOrNull() ?: return
+            glViewport(saved[0], saved[1], saved[2], saved[3])
+        }
 
         actual fun glAlphaFunc(arg0: Int, arg1: Float) = exec {
             state.alphaFunc = arg0
@@ -395,7 +426,10 @@ actual class OpenGL {
         actual fun glStencilFunc(arg0: Int, arg1: Int, arg2: Int) = gl.stencilFunc(arg0, arg1, arg2)
         actual fun glStencilOp(arg0: Int, arg1: Int, arg2: Int) = gl.stencilOp(arg0, arg1, arg2)
 
-        actual fun glViewport(arg0: Int, arg1: Int, arg2: Int, arg3: Int) = gl.viewport(arg0, arg1, arg2, arg3)
+        actual fun glViewport(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
+            viewportX = arg0; viewportY = arg1; viewportW = arg2; viewportH = arg3
+            gl.viewport(arg0, arg1, arg2, arg3)
+        }
         actual fun glClearColor(arg0: Float, arg1: Float, arg2: Float, arg3: Float) = gl.clearColor(arg0, arg1, arg2, arg3)
         actual fun glClearDepth(arg0: Float) = gl.clearDepth(arg0)
         actual fun glClear(arg0: Int) = gl.clear(arg0)
