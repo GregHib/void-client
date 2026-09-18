@@ -51,18 +51,31 @@ class SystemFontGlyphs internal constructor(var_renderer: Renderer, i: Int, bool
         }
         image.flush()
         val `object`: Any? = null
+        // The glyph is drawn white-on-black, so a pixel's brightness is its coverage. The
+        // original code keyed out only exact-black pixels, which is lossless while the platform
+        // draws text aliased (AWT into an offscreen image) but leaves every antialiased edge
+        // pixel fully opaque where it does not (canvas fillText always antialiases). Those
+        // opaque edges are then painted solid black by the +1/+1 shadow pass in method2561,
+        // which is what haloes the world map labels. Turning brightness into alpha leaves the
+        // aliased case bit-identical - coverage is only ever 0 or 255 there - and gives the
+        // antialiased case a real coverage mask for the alpha-blending sprite renderers.
+        for (i_9_ in `is`.indices) {
+            val i_10_ = `is`[i_9_]
+            var i_11_ = i_10_ shr 16 and 0xff
+            val i_12_ = i_10_ shr 8 and 0xff
+            val i_13_ = i_10_ and 0xff
+            if (i_12_ > i_11_) i_11_ = i_12_
+            if (i_13_ > i_11_) i_11_ = i_13_
+            `is`[i_9_] = if (i_11_ < 8) 0 else i_11_ shl 24 or 0xffffff
+        }
         var i_5_ = 0
         while_113_@ for (i_6_ in 0..<i_3_) {
             for (i_7_ in 0..<i_0_) {
-                val i_8_ = `is`[i_7_ + i_6_ * i_0_]
-                if ((i_8_ and 0xffffff) != 0) {
+                if (`is`[i_7_ + i_6_ * i_0_] != 0) {
                     i_5_ = i_6_
                     break@while_113_
                 }
             }
-        }
-        for (i_9_ in `is`.indices) {
-            if ((`is`[i_9_] and 0xffffff) == 0) `is`[i_9_] = 0
         }
         anInt4041 = i_2_ - i_5_
         anInt4040 = i_4_
