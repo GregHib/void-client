@@ -41,6 +41,22 @@ private fun IntArray?.slice(offset: Int, count: Int): IntArray {
     return IntArray(count) { src[offset + it] }
 }
 
+/**
+ * Copies [count] elements out of a caller-owned array.
+ *
+ * **Call this outside `exec`, never inside it.** The client hands these entry points a shared
+ * scratch array - `InputStream_Sub2.aFloatArray84`, a single FloatArray(4) that all 32 of
+ * OpenGlRenderer's texenv, light, light-model and fog writers take turns filling - and overwrites
+ * it immediately afterwards. `exec` defers its body when a display list is being compiled, so a
+ * read left inside the lambda samples the array at *replay* time and picks up whichever unrelated
+ * writer touched it last.
+ *
+ * That is not hypothetical: WaterMaterialPass compiles its setup into a display list, and its
+ * unit-1 GL_TEXTURE_ENV_COLOR is the water's alpha (COMBINE_ALPHA = REPLACE from GL_CONSTANT) and
+ * an additive RGB term. Reading it late made low-detail water take its opacity from the fog colour
+ * or, with flickering effects on, from an animating light intensity - water that flickered as the
+ * camera moved.
+ */
 private fun FloatArray?.slice(offset: Int, count: Int): FloatArray {
     val src = this ?: return FloatArray(count)
     return FloatArray(count) { src[offset + it] }
@@ -337,13 +353,19 @@ actual class OpenGL {
         // batching (each is bracketed by glTranslatef / glLoadIdentity) - correctly so.
         actual fun glMatrixMode(arg0: Int) = exec { flushBatch(); state.matrixStack.mode = arg0 }
         actual fun glLoadIdentity() = exec { flushBatch(); state.matrixStack.loadIdentity() }
-        actual fun glLoadMatrixf(arg0: FloatArray?, arg1: Int) = exec {
-            flushBatch()
-            state.matrixStack.loadMatrix(arg0.slice(arg1, 16))
+        actual fun glLoadMatrixf(arg0: FloatArray?, arg1: Int) {
+            val m = arg0.slice(arg1, 16)
+            exec {
+                flushBatch()
+                state.matrixStack.loadMatrix(m)
+            }
         }
-        actual fun glMultMatrixf(arg0: FloatArray?, arg1: Int) = exec {
-            flushBatch()
-            state.matrixStack.mult(arg0.slice(arg1, 16))
+        actual fun glMultMatrixf(arg0: FloatArray?, arg1: Int) {
+            val m = arg0.slice(arg1, 16)
+            exec {
+                flushBatch()
+                state.matrixStack.mult(m)
+            }
         }
         actual fun glPushMatrix() = exec { flushBatch(); state.matrixStack.push() }
         actual fun glPopMatrix() = exec { flushBatch(); state.matrixStack.pop() }
@@ -632,21 +654,23 @@ actual class OpenGL {
                 GL_QUADRATIC_ATTENUATION -> state.setLightScalar(state.lightAttenuation[light], 2, arg2)
             }
         }
-        actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
+        actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
             val light = arg0 - GL_LIGHT0
-            if (light !in 0 until MAX_LIGHTS) return@exec
+            if (light !in 0 until MAX_LIGHTS) return
             val v = arg2.slice(arg3, 4)
-            when (arg1) {
-                GL_AMBIENT -> state.setLightVector(state.lightAmbient[light], v)
-                GL_DIFFUSE -> state.setLightVector(state.lightDiffuse[light], v)
-                GL_POSITION -> state.setLightVector(state.lightPosition[light], state.transformLightPosition(v))
+            exec {
+                when (arg1) {
+                    GL_AMBIENT -> state.setLightVector(state.lightAmbient[light], v)
+                    GL_DIFFUSE -> state.setLightVector(state.lightDiffuse[light], v)
+                    GL_POSITION -> state.setLightVector(state.lightPosition[light], state.transformLightPosition(v))
+                }
             }
         }
 
-        actual fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
-            if (arg0 == GL_LIGHT_MODEL_AMBIENT) {
-                state.setLightVector(state.globalAmbient, arg1.slice(arg2, 4))
-            }
+        actual fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int) {
+            if (arg0 != GL_LIGHT_MODEL_AMBIENT) return
+            val ambient = arg1.slice(arg2, 4)
+            exec { state.setLightVector(state.globalAmbient, ambient) }
         }
 
         actual fun glMaterialfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
@@ -660,13 +684,17 @@ actual class OpenGL {
         }
 
         actual fun glFogi(arg0: Int, arg1: Int) {}
-        actual fun glFogfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
-            flushBatch()
-            state.ffpStateDirty = true
-            when (arg0) {
-                GL_FOG_COLOR -> arg1.slice(arg2, 4).copyInto(state.fogColor)
-                GL_FOG_START -> state.fogStart = arg1?.get(arg2) ?: state.fogStart
-                GL_FOG_END -> state.fogEnd = arg1?.get(arg2) ?: state.fogEnd
+        actual fun glFogfv(arg0: Int, arg1: FloatArray?, arg2: Int) {
+            val colour = if (arg0 == GL_FOG_COLOR) arg1.slice(arg2, 4) else null
+            val scalar = arg1?.getOrNull(arg2)
+            exec {
+                flushBatch()
+                state.ffpStateDirty = true
+                when (arg0) {
+                    GL_FOG_COLOR -> colour!!.copyInto(state.fogColor)
+                    GL_FOG_START -> state.fogStart = scalar ?: state.fogStart
+                    GL_FOG_END -> state.fogEnd = scalar ?: state.fogEnd
+                }
             }
         }
 
@@ -679,7 +707,7 @@ actual class OpenGL {
         actual fun glTexGenfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
             if (arg2 == null || arg0 !in GL_S..GL_Q) return
             if (arg1 != GL_OBJECT_PLANE && arg1 != GL_EYE_PLANE) return
-            // Copy now: callers reuse and mutate the array, and display lists replay this later.
+            // Copy now, outside exec - see the note on slice() above.
             val plane = floatArrayOf(arg2[arg3], arg2[arg3 + 1], arg2[arg3 + 2], arg2[arg3 + 3])
             exec {
                 val unit = texturingUnitIndex() ?: return@exec
@@ -731,10 +759,12 @@ actual class OpenGL {
                 GL_ALPHA_SCALE -> state.setTexEnvFloat(state.alphaScale, unit, arg2)
             }
         }
-        actual fun glTexEnvfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
-            if (arg0 == GL_TEXTURE_ENV && arg1 == GL_TEXTURE_ENV_COLOR) {
+        actual fun glTexEnvfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
+            if (arg0 != GL_TEXTURE_ENV || arg1 != GL_TEXTURE_ENV_COLOR) return
+            val colour = arg2.slice(arg3, 4)
+            exec {
                 val unit = texturingUnitIndex() ?: return@exec
-                state.setTexEnvVector(unit, state.textureEnvColor[unit], arg2.slice(arg3, 4))
+                state.setTexEnvVector(unit, state.textureEnvColor[unit], colour)
             }
         }
 
@@ -1546,12 +1576,12 @@ actual class OpenGL {
             loadArbProgram(arg0, arg1, arg2, 0)
         }
 
-        actual fun glProgramRawARB(arg0: Int, arg1: Int, arg2: ByteArray?) = exec {
-            if (arg2 == null) {
-                state.arbErrorPosition = 0
-            } else {
-                // The assembly is ASCII; strip any NUL padding before transpiling.
-                loadArbProgram(arg0, arg1, arg2.decodeToString().substringBefore('\u0000'), 0)
+        actual fun glProgramRawARB(arg0: Int, arg1: Int, arg2: ByteArray?) {
+            // The assembly is ASCII; strip any NUL padding before transpiling.
+            val text = arg2?.decodeToString()?.substringBefore('\u0000')
+            exec {
+                if (text == null) state.arbErrorPosition = 0
+                else loadArbProgram(arg0, arg1, text, 0)
             }
         }
 
@@ -1591,10 +1621,12 @@ actual class OpenGL {
             }
         }
 
-        actual fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
-            if (arg0 == GL_VERTEX_PROGRAM_ARB && arg2 != null && arg3 >= 0 && arg3 + 4 <= arg2.size) {
+        actual fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
+            if (arg0 != GL_VERTEX_PROGRAM_ARB || arg2 == null || arg3 < 0 || arg3 + 4 > arg2.size) return
+            val x = arg2[arg3]; val y = arg2[arg3 + 1]; val z = arg2[arg3 + 2]; val w = arg2[arg3 + 3]
+            exec {
                 flushBatch()
-                state.boundVertexProgram?.setLocalParameter(arg1, arg2[arg3], arg2[arg3 + 1], arg2[arg3 + 2], arg2[arg3 + 3])
+                state.boundVertexProgram?.setLocalParameter(arg1, x, y, z, w)
             }
         }
     }
