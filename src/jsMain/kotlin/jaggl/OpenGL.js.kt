@@ -41,6 +41,22 @@ private fun IntArray?.slice(offset: Int, count: Int): IntArray {
     return IntArray(count) { src[offset + it] }
 }
 
+/**
+ * Copies [count] elements out of a caller-owned array.
+ *
+ * **Call this outside `exec`, never inside it.** The client hands these entry points a shared
+ * scratch array - `InputStream_Sub2.aFloatArray84`, a single FloatArray(4) that all 32 of
+ * OpenGlRenderer's texenv, light, light-model and fog writers take turns filling - and overwrites
+ * it immediately afterwards. `exec` defers its body when a display list is being compiled, so a
+ * read left inside the lambda samples the array at *replay* time and picks up whichever unrelated
+ * writer touched it last.
+ *
+ * That is not hypothetical: WaterMaterialPass compiles its setup into a display list, and its
+ * unit-1 GL_TEXTURE_ENV_COLOR is the water's alpha (COMBINE_ALPHA = REPLACE from GL_CONSTANT) and
+ * an additive RGB term. Reading it late made low-detail water take its opacity from the fog colour
+ * or, with flickering effects on, from an animating light intensity - water that flickered as the
+ * camera moved.
+ */
 private fun FloatArray?.slice(offset: Int, count: Int): FloatArray {
     val src = this ?: return FloatArray(count)
     return FloatArray(count) { src[offset + it] }
@@ -94,6 +110,8 @@ actual class OpenGL {
         }
         try {
             attribStack.clear()
+            // A fresh context starts from GL defaults; the mirror simply starts out unknown.
+            resetStateCache()
             viewportX = 0
             viewportY = 0
             viewportW = canvasEl.width
@@ -142,7 +160,22 @@ actual class OpenGL {
 
     actual companion object {
         lateinit var state: GlState
-        private val gl: WebGL2RenderingContext get() = state.gl
+        /**
+         * The GL context, with any deferred immediate-mode batch drawn first.
+         *
+         * ImmediateModeEmulator holds a run of quads back after glEnd so consecutive same-state
+         * primitives merge into one draw (see its end()). That is only correct if the batch goes
+         * out *before* anything else touches GL, because it has to be drawn under the state it was
+         * recorded with. Every gl.* call in this file reads the context through here, so that
+         * ordering is structural rather than a list of flush points somebody has to keep complete.
+         *
+         * The emulator itself holds its own context reference, so flushing from here cannot
+         * recurse; it also guards re-entry internally.
+         */
+        private val gl: WebGL2RenderingContext get() {
+            state.immediateMode.flushPending()
+            return state.gl
+        }
 
         private const val GL_VIEWPORT_BIT = 0x800
 
@@ -155,12 +188,39 @@ actual class OpenGL {
 
         actual val b: Hashtable<Any?, Any?> = Hashtable()
 
+        /**
+         * Runs a shim operation, or records it when a display list is being built.
+         *
+         * Deliberately does *not* drain the pending immediate-mode batch. Flushing here would be
+         * the safe blanket rule, but it would also defeat the batching entirely: the per-quad
+         * preamble in GlSpriteRenderer is a run of state calls that are all no-ops the second time
+         * round (GlTexture.method1957, OpenGlRenderer.method3792/3753/3771/3738 all cache, and the
+         * texenv setters are value-gated here), so a blanket flush would fire on every quad
+         * without a single GL call having been issued.
+         *
+         * Draining instead happens at the two points where it is actually needed, and both are
+         * structural rather than a list somebody has to keep complete:
+         *  - the [gl] accessor, which every real WebGL call in this file goes through;
+         *  - the value-gated setters in GlState, which flush on the change path only.
+         *
+         * What neither covers is shim-side state with no cheap redundancy check - the matrix
+         * stack, the ARB program bindings and their local parameters, fog, alpha test. Those flush
+         * explicitly at their call sites below, each with a comment saying so.
+         */
         private inline fun exec(crossinline op: () -> Unit) {
             if (state.displayLists.isRecording) {
                 state.displayLists.record { op() }
             } else {
                 op()
             }
+        }
+
+        /**
+         * Draws any deferred immediate-mode batch. Named for use at the explicit flush points -
+         * shim state that has no redundancy check and never reaches WebGL on its own.
+         */
+        private fun flushBatch() {
+            state.immediateMode.flushPending()
         }
 
         private const val GL_BGRA = 32993
@@ -196,6 +256,9 @@ actual class OpenGL {
             gl.clearColor(clear[0], clear[1], clear[2], clear[3])
             if (scissor) gl.enable(GL_SCISSOR_TEST)
             if (prevFbo != null) gl.bindFramebuffer(GL_FRAMEBUFFER, prevFbo)
+            // Touched colour mask, clear colour and scissor without going through the mirrors, so
+            // the mirror no longer describes GL. Drop it rather than reason about what survived.
+            resetStateCache()
         }
 
         private fun bgraToRgb(data: Uint8Array): Uint8Array {
@@ -285,20 +348,37 @@ actual class OpenGL {
 
         // ---- Matrix stack -----------------------------------------------------
 
-        actual fun glMatrixMode(arg0: Int) = exec { state.matrixStack.mode = arg0 }
-        actual fun glLoadIdentity() = exec { state.matrixStack.loadIdentity() }
-        actual fun glLoadMatrixf(arg0: FloatArray?, arg1: Int) = exec { state.matrixStack.loadMatrix(arg0.slice(arg1, 16)) }
-        actual fun glMultMatrixf(arg0: FloatArray?, arg1: Int) = exec { state.matrixStack.mult(arg0.slice(arg1, 16)) }
-        actual fun glPushMatrix() = exec { state.matrixStack.push() }
-        actual fun glPopMatrix() = exec { state.matrixStack.pop() }
-        actual fun glTranslatef(arg0: Float, arg1: Float, arg2: Float) = exec { state.matrixStack.translate(arg0, arg1, arg2) }
-        actual fun glScalef(arg0: Float, arg1: Float, arg2: Float) = exec { state.matrixStack.scale(arg0, arg1, arg2) }
-        actual fun glRotatef(arg0: Float, arg1: Float, arg2: Float, arg3: Float) = exec { state.matrixStack.rotate(arg0, arg1, arg2, arg3) }
+        // Matrix state has no cheap redundancy check and is uploaded as a uniform at draw time,
+        // so a pending batch has to go out before any of these. This is what stops a run of glyphs
+        // batching (each is bracketed by glTranslatef / glLoadIdentity) - correctly so.
+        actual fun glMatrixMode(arg0: Int) = exec { flushBatch(); state.matrixStack.mode = arg0 }
+        actual fun glLoadIdentity() = exec { flushBatch(); state.matrixStack.loadIdentity() }
+        actual fun glLoadMatrixf(arg0: FloatArray?, arg1: Int) {
+            val m = arg0.slice(arg1, 16)
+            exec {
+                flushBatch()
+                state.matrixStack.loadMatrix(m)
+            }
+        }
+        actual fun glMultMatrixf(arg0: FloatArray?, arg1: Int) {
+            val m = arg0.slice(arg1, 16)
+            exec {
+                flushBatch()
+                state.matrixStack.mult(m)
+            }
+        }
+        actual fun glPushMatrix() = exec { flushBatch(); state.matrixStack.push() }
+        actual fun glPopMatrix() = exec { flushBatch(); state.matrixStack.pop() }
+        actual fun glTranslatef(arg0: Float, arg1: Float, arg2: Float) = exec { flushBatch(); state.matrixStack.translate(arg0, arg1, arg2) }
+        actual fun glScalef(arg0: Float, arg1: Float, arg2: Float) = exec { flushBatch(); state.matrixStack.scale(arg0, arg1, arg2) }
+        actual fun glRotatef(arg0: Float, arg1: Float, arg2: Float, arg3: Float) = exec { flushBatch(); state.matrixStack.rotate(arg0, arg1, arg2, arg3) }
         actual fun glOrtho(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double) = exec {
+            flushBatch()
             state.matrixStack.ortho(arg0, arg1, arg2, arg3, arg4, arg5)
         }
 
         actual fun glFrustum(arg0: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double, arg5: Double) = exec {
+            flushBatch()
             state.matrixStack.frustum(arg0, arg1, arg2, arg3, arg4, arg5)
         }
 
@@ -307,10 +387,16 @@ actual class OpenGL {
         actual fun glGenLists(arg0: Int): Int = state.displayLists.genLists(arg0)
         actual fun glDeleteLists(arg0: Int, arg1: Int) = state.displayLists.deleteLists(arg0, arg1)
         actual fun glNewList(arg0: Int, arg1: Int) {
+            // Neither of these touches WebGL, so they miss the flush in the `gl` accessor. A batch
+            // left pending across a list boundary would otherwise be concatenated with the list's
+            // own first primitive when the list is replayed, long after the state it was recorded
+            // under has gone.
+            state.immediateMode.flushPending()
             state.displayLists.newList(arg0)
         }
 
         actual fun glEndList() {
+            state.immediateMode.flushPending()
             state.displayLists.endList()
         }
 
@@ -325,57 +411,54 @@ actual class OpenGL {
 
         actual fun glEnable(arg0: Int) = exec {
             when (arg0) {
-                GL_VERTEX_PROGRAM_ARB -> state.vertexProgramEnabled = true
+                GL_VERTEX_PROGRAM_ARB -> if (!state.vertexProgramEnabled) {
+                    flushBatch()
+                    state.vertexProgramEnabled = true
+                }
                 // Fragment-program assembly has no WebGL2 emulation; absorb the enable so
                 // the caller's enable/disable pairing never produces INVALID_ENUM noise.
                 GL_FRAGMENT_PROGRAM_ARB -> {}
-                GL_LIGHTING -> { state.lightingEnabled = true; state.ffpLightingDirty = true }
+                GL_LIGHTING -> state.setLightingEnabled(true)
                 WebGL2RenderingContext.TEXTURE_2D, WebGL2RenderingContext.TEXTURE_CUBE_MAP,
                 GL_TEXTURE_1D, GL_TEXTURE_3D,
                     -> texturingUnitIndex()?.let {
-                        state.texturingEnabled[it] = true
-                        state.textureTarget[it] = fixTarget(arg0)
-                        state.texEnvDirty[it] = true
+                        state.setTexturingEnabled(it, true)
+                        state.setTextureTarget(it, fixTarget(arg0))
                     }
                 GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
-                    texturingUnitIndex()?.let {
-                        state.texGenEnabled[it][arg0 - GL_TEXTURE_GEN_S] = true
-                        state.texEnvDirty[it] = true
-                        state.texGenDirty[it] = true
-                    }
-                GL_FOG -> { state.fogEnabled = true; state.ffpStateDirty = true }
-                GL_ALPHA_TEST -> { state.alphaTestEnabled = true; state.ffpStateDirty = true }
+                    texturingUnitIndex()?.let { state.setTexGenEnabled(it, arg0 - GL_TEXTURE_GEN_S, true) }
+                GL_FOG -> state.setFogEnabled(true)
+                GL_ALPHA_TEST -> state.setAlphaTestEnabled(true)
                 in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let {
-                    if (it in 0 until MAX_LIGHTS) { state.lightEnabled[it] = true; state.ffpLightingDirty = true }
+                    if (it in 0 until MAX_LIGHTS) state.setLightEnabled(it, true)
                 }
                 GL_COLOR_MATERIAL, GL_NORMALIZE, GL_MULTISAMPLE -> {
                 }
-                else -> gl.enable(arg0)
+                else -> setCapability(arg0, true)
             }
         }
 
         actual fun glDisable(arg0: Int) = exec {
             when (arg0) {
-                GL_VERTEX_PROGRAM_ARB -> state.vertexProgramEnabled = false
+                GL_VERTEX_PROGRAM_ARB -> if (state.vertexProgramEnabled) {
+                    flushBatch()
+                    state.vertexProgramEnabled = false
+                }
                 GL_FRAGMENT_PROGRAM_ARB -> {}
-                GL_LIGHTING -> { state.lightingEnabled = false; state.ffpLightingDirty = true }
+                GL_LIGHTING -> state.setLightingEnabled(false)
                 WebGL2RenderingContext.TEXTURE_2D, WebGL2RenderingContext.TEXTURE_CUBE_MAP,
                 GL_TEXTURE_1D, GL_TEXTURE_3D,
-                    -> texturingUnitIndex()?.let { state.texturingEnabled[it] = false; state.texEnvDirty[it] = true }
+                    -> texturingUnitIndex()?.let { state.setTexturingEnabled(it, false) }
                 GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
-                    texturingUnitIndex()?.let {
-                        state.texGenEnabled[it][arg0 - GL_TEXTURE_GEN_S] = false
-                        state.texEnvDirty[it] = true
-                        state.texGenDirty[it] = true
-                    }
-                GL_FOG -> { state.fogEnabled = false; state.ffpStateDirty = true }
-                GL_ALPHA_TEST -> { state.alphaTestEnabled = false; state.ffpStateDirty = true }
+                    texturingUnitIndex()?.let { state.setTexGenEnabled(it, arg0 - GL_TEXTURE_GEN_S, false) }
+                GL_FOG -> state.setFogEnabled(false)
+                GL_ALPHA_TEST -> state.setAlphaTestEnabled(false)
                 in GL_LIGHT0..GL_LIGHT7 -> (arg0 - GL_LIGHT0).let {
-                    if (it in 0 until MAX_LIGHTS) { state.lightEnabled[it] = false; state.ffpLightingDirty = true }
+                    if (it in 0 until MAX_LIGHTS) state.setLightEnabled(it, false)
                 }
                 GL_COLOR_MATERIAL, GL_NORMALIZE, GL_MULTISAMPLE -> {
                 }
-                else -> gl.disable(arg0)
+                else -> setCapability(arg0, false)
             }
         }
 
@@ -412,19 +495,145 @@ actual class OpenGL {
         }
 
         actual fun glAlphaFunc(arg0: Int, arg1: Float) = exec {
+            if (state.alphaFunc == arg0 && state.alphaRef == arg1) return@exec
+            flushBatch()
             state.alphaFunc = arg0
             state.alphaRef = arg1
             state.ffpStateDirty = true
         }
 
-        actual fun glBlendFunc(arg0: Int, arg1: Int) = gl.blendFunc(arg0, arg1)
-        actual fun glDepthFunc(arg0: Int) = gl.depthFunc(arg0)
-        actual fun glDepthMask(arg0: Boolean) = gl.depthMask(arg0)
-        actual fun glCullFace(arg0: Int) = gl.cullFace(arg0)
-        actual fun glColorMask(arg0: Boolean, arg1: Boolean, arg2: Boolean, arg3: Boolean) = gl.colorMask(arg0, arg1, arg2, arg3)
-        actual fun glScissor(arg0: Int, arg1: Int, arg2: Int, arg3: Int) = gl.scissor(arg0, arg1, arg2, arg3)
-        actual fun glStencilFunc(arg0: Int, arg1: Int, arg2: Int) = gl.stencilFunc(arg0, arg1, arg2)
-        actual fun glStencilOp(arg0: Int, arg1: Int, arg2: Int) = gl.stencilOp(arg0, arg1, arg2)
+        // ---- Mirrored non-programmable GL state ------------------------------------------
+        //
+        // OpenGlRenderer deliberately re-issues state rather than eliding it (see the "Always
+        // re-issue rather than eliding" comments on method3728 / method3729) because a native
+        // driver dedupes redundant calls almost for free. WebGL does not: every call is a JS ->
+        // browser boundary crossing with validation. With the renderer's own caches gone, this is
+        // the only layer left that can see real GL state, so the filtering happens here.
+        //
+        // Every field below must be invalidated by [resetStateCache] anywhere the shim changes
+        // real GL state behind the client's back, and on context creation. [presentOpaque] is the
+        // one such place today; it restores what it touched, but it resets the cache anyway
+        // rather than relying on that.
+        //
+        // Every mirror therefore needs a value meaning "unknown", distinct from both settings.
+        // Resetting a boolean mirror to `false` does not mean "ask again" - it means "GL is
+        // definitely disabled", and the next glDisable for that capability gets elided against a
+        // GL that still has it enabled. Since the reset runs once a frame, that left blending and
+        // depth writes stuck on from the previous frame: a washed-out scene with geometry in the
+        // wrong depth order. Booleans are mirrored as tri-state ints for that reason.
+
+        private const val UNKNOWN = -1
+        private const val OFF = 0
+        private const val ON = 1
+
+        private fun flagOf(value: Boolean): Int = if (value) ON else OFF
+
+        /** Capabilities whose enable/disable state is mirrored. */
+        private val cachedCaps = intArrayOf(
+            GL_BLEND, GL_DEPTH_TEST, GL_CULL_FACE, GL_SCISSOR_TEST, GL_STENCIL_TEST,
+            GL_POLYGON_OFFSET_FILL,
+        )
+        private val cachedCapState = IntArray(cachedCaps.size) { UNKNOWN }
+
+
+        private var blendSrc = UNKNOWN
+        private var blendDst = UNKNOWN
+        private var depthFunc = UNKNOWN
+        private var depthMask = UNKNOWN
+        private var cullFace = UNKNOWN
+        private var colorMaskR = UNKNOWN
+        private var colorMaskG = UNKNOWN
+        private var colorMaskB = UNKNOWN
+        private var colorMaskA = UNKNOWN
+        private var scissorX = UNKNOWN
+        private var scissorY = UNKNOWN
+        private var scissorW = UNKNOWN
+        private var scissorH = UNKNOWN
+        private var stencilFunc = UNKNOWN
+        private var stencilRef = UNKNOWN
+        private var stencilMask = UNKNOWN
+        private var stencilFail = UNKNOWN
+        private var stencilZFail = UNKNOWN
+        private var stencilZPass = UNKNOWN
+
+        /** Drops every mirrored value, so the next call of each kind is issued for real. */
+        private fun resetStateCache() {
+            for (i in cachedCapState.indices) cachedCapState[i] = UNKNOWN
+            blendSrc = UNKNOWN; blendDst = UNKNOWN
+            depthFunc = UNKNOWN
+            depthMask = UNKNOWN
+            cullFace = UNKNOWN
+            colorMaskR = UNKNOWN; colorMaskG = UNKNOWN; colorMaskB = UNKNOWN; colorMaskA = UNKNOWN
+            scissorX = UNKNOWN; scissorY = UNKNOWN; scissorW = UNKNOWN; scissorH = UNKNOWN
+            stencilFunc = UNKNOWN; stencilRef = UNKNOWN; stencilMask = UNKNOWN
+            stencilFail = UNKNOWN; stencilZFail = UNKNOWN; stencilZPass = UNKNOWN
+        }
+
+        /** Index of [cap] in [cachedCaps], or -1 when it is not mirrored and must pass through. */
+        private fun capIndex(cap: Int): Int {
+            for (i in cachedCaps.indices) if (cachedCaps[i] == cap) return i
+            return -1
+        }
+
+        private fun setCapability(cap: Int, enable: Boolean) {
+            val index = capIndex(cap)
+            if (index >= 0) {
+                val wanted = flagOf(enable)
+                if (cachedCapState[index] == wanted) return
+                cachedCapState[index] = wanted
+            }
+            if (enable) gl.enable(cap) else gl.disable(cap)
+        }
+
+        actual fun glBlendFunc(arg0: Int, arg1: Int) {
+            if (blendSrc == arg0 && blendDst == arg1) return
+            blendSrc = arg0; blendDst = arg1
+            gl.blendFunc(arg0, arg1)
+        }
+
+        actual fun glDepthFunc(arg0: Int) {
+            if (depthFunc == arg0) return
+            depthFunc = arg0
+            gl.depthFunc(arg0)
+        }
+
+        actual fun glDepthMask(arg0: Boolean) {
+            val wanted = flagOf(arg0)
+            if (depthMask == wanted) return
+            depthMask = wanted
+            gl.depthMask(arg0)
+        }
+
+        actual fun glCullFace(arg0: Int) {
+            if (cullFace == arg0) return
+            cullFace = arg0
+            gl.cullFace(arg0)
+        }
+
+        actual fun glColorMask(arg0: Boolean, arg1: Boolean, arg2: Boolean, arg3: Boolean) {
+            val r = flagOf(arg0); val g = flagOf(arg1); val b = flagOf(arg2); val a = flagOf(arg3)
+            if (colorMaskR == r && colorMaskG == g && colorMaskB == b && colorMaskA == a) return
+            colorMaskR = r; colorMaskG = g; colorMaskB = b; colorMaskA = a
+            gl.colorMask(arg0, arg1, arg2, arg3)
+        }
+
+        actual fun glScissor(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
+            if (scissorX == arg0 && scissorY == arg1 && scissorW == arg2 && scissorH == arg3) return
+            scissorX = arg0; scissorY = arg1; scissorW = arg2; scissorH = arg3
+            gl.scissor(arg0, arg1, arg2, arg3)
+        }
+
+        actual fun glStencilFunc(arg0: Int, arg1: Int, arg2: Int) {
+            if (stencilFunc == arg0 && stencilRef == arg1 && stencilMask == arg2) return
+            stencilFunc = arg0; stencilRef = arg1; stencilMask = arg2
+            gl.stencilFunc(arg0, arg1, arg2)
+        }
+
+        actual fun glStencilOp(arg0: Int, arg1: Int, arg2: Int) {
+            if (stencilFail == arg0 && stencilZFail == arg1 && stencilZPass == arg2) return
+            stencilFail = arg0; stencilZFail = arg1; stencilZPass = arg2
+            gl.stencilOp(arg0, arg1, arg2)
+        }
 
         actual fun glViewport(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
             viewportX = arg0; viewportY = arg1; viewportW = arg2; viewportH = arg3
@@ -439,35 +648,35 @@ actual class OpenGL {
         actual fun glLightf(arg0: Int, arg1: Int, arg2: Float) = exec {
             val light = arg0 - GL_LIGHT0
             if (light !in 0 until MAX_LIGHTS) return@exec
-            state.ffpLightingDirty = true
             when (arg1) {
-                GL_CONSTANT_ATTENUATION -> state.lightAttenuation[light][0] = arg2
-                GL_LINEAR_ATTENUATION -> state.lightAttenuation[light][1] = arg2
-                GL_QUADRATIC_ATTENUATION -> state.lightAttenuation[light][2] = arg2
+                GL_CONSTANT_ATTENUATION -> state.setLightScalar(state.lightAttenuation[light], 0, arg2)
+                GL_LINEAR_ATTENUATION -> state.setLightScalar(state.lightAttenuation[light], 1, arg2)
+                GL_QUADRATIC_ATTENUATION -> state.setLightScalar(state.lightAttenuation[light], 2, arg2)
             }
         }
-        actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
+        actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
             val light = arg0 - GL_LIGHT0
-            if (light !in 0 until MAX_LIGHTS) return@exec
-            state.ffpLightingDirty = true
+            if (light !in 0 until MAX_LIGHTS) return
             val v = arg2.slice(arg3, 4)
-            when (arg1) {
-                GL_AMBIENT -> v.copyInto(state.lightAmbient[light])
-                GL_DIFFUSE -> v.copyInto(state.lightDiffuse[light])
-                GL_POSITION -> state.transformLightPosition(v).copyInto(state.lightPosition[light])
+            exec {
+                when (arg1) {
+                    GL_AMBIENT -> state.setLightVector(state.lightAmbient[light], v)
+                    GL_DIFFUSE -> state.setLightVector(state.lightDiffuse[light], v)
+                    GL_POSITION -> state.setLightVector(state.lightPosition[light], state.transformLightPosition(v))
+                }
             }
         }
 
-        actual fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
-            if (arg0 == GL_LIGHT_MODEL_AMBIENT) {
-                arg1.slice(arg2, 4).copyInto(state.globalAmbient)
-                state.ffpLightingDirty = true
-            }
+        actual fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int) {
+            if (arg0 != GL_LIGHT_MODEL_AMBIENT) return
+            val ambient = arg1.slice(arg2, 4)
+            exec { state.setLightVector(state.globalAmbient, ambient) }
         }
 
         actual fun glMaterialfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {}
 
         actual fun glFogf(arg0: Int, arg1: Float) = exec {
+            flushBatch()
             state.ffpStateDirty = true
             when (arg0) {
                 GL_FOG_START -> state.fogStart = arg1; GL_FOG_END -> state.fogEnd = arg1
@@ -475,87 +684,87 @@ actual class OpenGL {
         }
 
         actual fun glFogi(arg0: Int, arg1: Int) {}
-        actual fun glFogfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
-            state.ffpStateDirty = true
-            when (arg0) {
-                GL_FOG_COLOR -> arg1.slice(arg2, 4).copyInto(state.fogColor)
-                GL_FOG_START -> state.fogStart = arg1?.get(arg2) ?: state.fogStart
-                GL_FOG_END -> state.fogEnd = arg1?.get(arg2) ?: state.fogEnd
+        actual fun glFogfv(arg0: Int, arg1: FloatArray?, arg2: Int) {
+            val colour = if (arg0 == GL_FOG_COLOR) arg1.slice(arg2, 4) else null
+            val scalar = arg1?.getOrNull(arg2)
+            exec {
+                flushBatch()
+                state.ffpStateDirty = true
+                when (arg0) {
+                    GL_FOG_COLOR -> colour!!.copyInto(state.fogColor)
+                    GL_FOG_START -> state.fogStart = scalar ?: state.fogStart
+                    GL_FOG_END -> state.fogEnd = scalar ?: state.fogEnd
+                }
             }
         }
 
         actual fun glTexGeni(arg0: Int, arg1: Int, arg2: Int) = exec {
             if (arg1 != GL_TEXTURE_GEN_MODE) return@exec
             if (arg0 !in GL_S..GL_Q) return@exec
-            texturingUnitIndex()?.let {
-                state.texGenMode[it][arg0 - GL_S] = arg2
-                state.texEnvDirty[it] = true
-                state.texGenDirty[it] = true
-            }
+            texturingUnitIndex()?.let { state.setTexGenMode(it, arg0 - GL_S, arg2) }
         }
 
         actual fun glTexGenfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
             if (arg2 == null || arg0 !in GL_S..GL_Q) return
             if (arg1 != GL_OBJECT_PLANE && arg1 != GL_EYE_PLANE) return
-            // Copy now: callers reuse and mutate the array, and display lists replay this later.
+            // Copy now, outside exec - see the note on slice() above.
             val plane = floatArrayOf(arg2[arg3], arg2[arg3 + 1], arg2[arg3 + 2], arg2[arg3 + 3])
             exec {
                 val unit = texturingUnitIndex() ?: return@exec
                 val coord = arg0 - GL_S
                 if (arg1 == GL_OBJECT_PLANE) {
-                    plane.copyInto(state.texGenObjectPlane[unit][coord])
+                    state.setTexGenPlane(unit, state.texGenObjectPlane[unit][coord], plane)
                 } else {
                     // GL_EYE_PLANE: stored as plane * inverse(modelview at specification time), so
                     // the plane stays fixed in eye space whatever the modelview does afterwards.
                     val inv = Mat4.invert(state.matrixStack.modelview()) ?: Mat4.identity()
-                    val dst = state.texGenEyePlane[unit][coord]
+                    val eyePlane = FloatArray(4)
                     for (j in 0 until 4) {
                         var sum = 0f
                         for (i in 0 until 4) sum += plane[i] * inv[j * 4 + i]
-                        dst[j] = sum
+                        eyePlane[j] = sum
                     }
+                    state.setTexGenPlane(unit, state.texGenEyePlane[unit][coord], eyePlane)
                 }
-                state.texGenDirty[unit] = true
             }
         }
         actual fun glTexEnvi(arg0: Int, arg1: Int, arg2: Int) = exec {
             if (arg0 != GL_TEXTURE_ENV) return@exec
             val unit = texturingUnitIndex() ?: return@exec
-            state.texEnvDirty[unit] = true
             when (arg1) {
-                GL_COMBINE_RGB -> state.combineRgb[unit] = arg2
-                GL_COMBINE_ALPHA -> state.combineAlpha[unit] = arg2
-                GL_SOURCE0_RGB -> state.source0Rgb[unit] = arg2
-                GL_SOURCE1_RGB -> state.source1Rgb[unit] = arg2
-                GL_SOURCE2_RGB -> state.source2Rgb[unit] = arg2
-                GL_OPERAND0_RGB -> state.operand0Rgb[unit] = arg2
-                GL_OPERAND1_RGB -> state.operand1Rgb[unit] = arg2
-                GL_OPERAND2_RGB -> state.operand2Rgb[unit] = arg2
-                GL_SOURCE0_ALPHA -> state.source0Alpha[unit] = arg2
-                GL_SOURCE1_ALPHA -> state.source1Alpha[unit] = arg2
-                GL_SOURCE2_ALPHA -> state.source2Alpha[unit] = arg2
-                GL_OPERAND0_ALPHA -> state.operand0Alpha[unit] = arg2
-                GL_OPERAND1_ALPHA -> state.operand1Alpha[unit] = arg2
-                GL_OPERAND2_ALPHA -> state.operand2Alpha[unit] = arg2
-                GL_RGB_SCALE -> state.rgbScale[unit] = arg2.toFloat()
-                GL_ALPHA_SCALE -> state.alphaScale[unit] = arg2.toFloat()
+                GL_COMBINE_RGB -> state.setTexEnvInt(state.combineRgb, unit, arg2)
+                GL_COMBINE_ALPHA -> state.setTexEnvInt(state.combineAlpha, unit, arg2)
+                GL_SOURCE0_RGB -> state.setTexEnvInt(state.source0Rgb, unit, arg2)
+                GL_SOURCE1_RGB -> state.setTexEnvInt(state.source1Rgb, unit, arg2)
+                GL_SOURCE2_RGB -> state.setTexEnvInt(state.source2Rgb, unit, arg2)
+                GL_OPERAND0_RGB -> state.setTexEnvInt(state.operand0Rgb, unit, arg2)
+                GL_OPERAND1_RGB -> state.setTexEnvInt(state.operand1Rgb, unit, arg2)
+                GL_OPERAND2_RGB -> state.setTexEnvInt(state.operand2Rgb, unit, arg2)
+                GL_SOURCE0_ALPHA -> state.setTexEnvInt(state.source0Alpha, unit, arg2)
+                GL_SOURCE1_ALPHA -> state.setTexEnvInt(state.source1Alpha, unit, arg2)
+                GL_SOURCE2_ALPHA -> state.setTexEnvInt(state.source2Alpha, unit, arg2)
+                GL_OPERAND0_ALPHA -> state.setTexEnvInt(state.operand0Alpha, unit, arg2)
+                GL_OPERAND1_ALPHA -> state.setTexEnvInt(state.operand1Alpha, unit, arg2)
+                GL_OPERAND2_ALPHA -> state.setTexEnvInt(state.operand2Alpha, unit, arg2)
+                GL_RGB_SCALE -> state.setTexEnvFloat(state.rgbScale, unit, arg2.toFloat())
+                GL_ALPHA_SCALE -> state.setTexEnvFloat(state.alphaScale, unit, arg2.toFloat())
             }
         }
 
         actual fun glTexEnvf(arg0: Int, arg1: Int, arg2: Float) = exec {
             if (arg0 != GL_TEXTURE_ENV) return@exec
             val unit = texturingUnitIndex() ?: return@exec
-            state.texEnvDirty[unit] = true
             when (arg1) {
-                GL_RGB_SCALE -> state.rgbScale[unit] = arg2
-                GL_ALPHA_SCALE -> state.alphaScale[unit] = arg2
+                GL_RGB_SCALE -> state.setTexEnvFloat(state.rgbScale, unit, arg2)
+                GL_ALPHA_SCALE -> state.setTexEnvFloat(state.alphaScale, unit, arg2)
             }
         }
-        actual fun glTexEnvfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
-            if (arg0 == GL_TEXTURE_ENV && arg1 == GL_TEXTURE_ENV_COLOR) {
+        actual fun glTexEnvfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
+            if (arg0 != GL_TEXTURE_ENV || arg1 != GL_TEXTURE_ENV_COLOR) return
+            val colour = arg2.slice(arg3, 4)
+            exec {
                 val unit = texturingUnitIndex() ?: return@exec
-                arg2.slice(arg3, 4).copyInto(state.textureEnvColor[unit])
-                state.texEnvDirty[unit] = true
+                state.setTexEnvVector(unit, state.textureEnvColor[unit], colour)
             }
         }
 
@@ -660,7 +869,13 @@ actual class OpenGL {
         actual fun glDeleteTextures(arg0: Int, arg1: IntArray?, arg2: Int) {
             for (i in 0 until arg0) {
                 val id = arg1?.get(arg2 + i) ?: continue
-                state.textures[id]?.let { gl.deleteTexture(it) }
+                state.textures[id]?.let {
+                    // Deleting unbinds the texture everywhere in GL, so drop it from the mirrors
+                    // too, or a later bind of whatever replaces it could be deduped against a
+                    // binding that no longer exists.
+                    state.forgetTexture(it)
+                    gl.deleteTexture(it)
+                }
                 state.textures.release(id)
             }
         }
@@ -668,8 +883,19 @@ actual class OpenGL {
         actual fun glBindTexture(arg0: Int, arg1: Int) = exec {
             val target = fixTarget(arg0)
             val tex = if (arg1 == 0) null else state.textures[arg1]
-            gl.bindTexture(target, tex)
             val unit = state.activeTextureUnit
+            // Per-unit, per-target bindings are already mirrored for the sampler-unit copies
+            // below, so the redundant rebinds the client makes (a sprite rebinds its texture even
+            // when it is the same one as the last sprite) can be dropped here.
+            val alreadyBound = when (target) {
+                WebGL2RenderingContext.TEXTURE_2D -> state.boundTexture2D[unit] === tex
+                WebGL2RenderingContext.TEXTURE_CUBE_MAP -> state.boundTextureCubeMap[unit] === tex
+                GL_TEXTURE_3D -> state.boundTexture3D[unit] === tex
+                else -> false
+            }
+            if (!alreadyBound) {
+                gl.bindTexture(target, tex)
+            }
             if (target == WebGL2RenderingContext.TEXTURE_2D) state.boundTexture2D[unit] = tex
             else if (target == WebGL2RenderingContext.TEXTURE_CUBE_MAP) state.boundTextureCubeMap[unit] = tex
             else if (target == GL_TEXTURE_3D) state.boundTexture3D[unit] = tex
@@ -681,10 +907,7 @@ actual class OpenGL {
             // since they all share this uniform) samples through the wrong sampler. Deriving the
             // target from the actual bind call too makes it self-healing regardless of
             // enable/disable call ordering elsewhere.
-            texturingUnitIndex()?.let {
-                state.textureTarget[it] = target
-                state.texEnvDirty[it] = true
-            }
+            texturingUnitIndex()?.let { state.setTextureTarget(it, target) }
         }
 
         actual fun glTexParameteri(arg0: Int, arg1: Int, arg2: Int) = gl.texParameteri(fixTarget(arg0), arg1, arg2)
@@ -692,8 +915,10 @@ actual class OpenGL {
         actual fun glGenerateMipmapEXT(arg0: Int) = gl.generateMipmap(fixTarget(arg0))
 
         actual fun glActiveTexture(arg0: Int) = exec {
-            state.activeTextureUnit = arg0 - WebGL2RenderingContext.TEXTURE0
-            state.matrixStack.textureUnit = state.activeTextureUnit
+            val unit = arg0 - WebGL2RenderingContext.TEXTURE0
+            state.matrixStack.textureUnit = unit
+            if (state.activeTextureUnit == unit) return@exec
+            state.activeTextureUnit = unit
             gl.activeTexture(arg0)
         }
 
@@ -1243,7 +1468,7 @@ actual class OpenGL {
 
         actual fun glUseProgramObjectARB(arg0: Long) {
             val obj = if (arg0 == 0L) null else state.glObjects[arg0] as? ShaderOrProgram.Program
-            gl.useProgram(obj?.program)
+            state.useProgram(obj?.program)
             state.boundProgram = obj?.program
             state.boundProgramObj = obj
         }
@@ -1332,13 +1557,18 @@ actual class OpenGL {
         actual fun glGenProgramARB(): Int = state.arbPrograms.allocate(ArbProgramRuntime())
 
         actual fun glDeleteProgramARB(arg0: Int) = exec {
+            state.immediateMode.flushPending()
             state.arbPrograms[arg0]?.delete(state.gl)
             state.arbPrograms.release(arg0)
         }
 
         actual fun glBindProgramARB(arg0: Int, arg1: Int) = exec {
             if (arg0 == GL_VERTEX_PROGRAM_ARB) {
-                state.boundVertexProgram = if (arg1 == 0) null else state.arbPrograms[arg1]
+                val program = if (arg1 == 0) null else state.arbPrograms[arg1]
+                if (program !== state.boundVertexProgram) {
+                    flushBatch()
+                    state.boundVertexProgram = program
+                }
             }
         }
 
@@ -1346,16 +1576,19 @@ actual class OpenGL {
             loadArbProgram(arg0, arg1, arg2, 0)
         }
 
-        actual fun glProgramRawARB(arg0: Int, arg1: Int, arg2: ByteArray?) = exec {
-            if (arg2 == null) {
-                state.arbErrorPosition = 0
-            } else {
-                // The assembly is ASCII; strip any NUL padding before transpiling.
-                loadArbProgram(arg0, arg1, arg2.decodeToString().substringBefore('\u0000'), 0)
+        actual fun glProgramRawARB(arg0: Int, arg1: Int, arg2: ByteArray?) {
+            // The assembly is ASCII; strip any NUL padding before transpiling.
+            val text = arg2?.decodeToString()?.substringBefore('\u0000')
+            exec {
+                if (text == null) state.arbErrorPosition = 0
+                else loadArbProgram(arg0, arg1, text, 0)
             }
         }
 
         private fun loadArbProgram(target: Int, format: Int, text: String?, line: Int) {
+            // Compiling and linking here binds and unbinds programs through state.gl directly,
+            // bypassing the `gl` accessor's flush, so drain any pending batch up front.
+            state.immediateMode.flushPending()
             if (target != GL_VERTEX_PROGRAM_ARB) {
                 // Fragment-program assembly (34820) has no emulation — fail the load so the
                 // caller falls back exactly as it would on unsupported hardware.
@@ -1372,6 +1605,10 @@ actual class OpenGL {
                 return
             }
             state.arbErrorPosition = -1
+            // build() binds the freshly linked program to assign sampler units and then unbinds
+            // it, both without going through GlState.useProgram - drop the mirror so the next
+            // draw re-binds for real.
+            state.forgetBoundProgram()
             if (!runtime.loadSource(state.gl, text, line)) {
                 state.arbErrorPosition = runtime.errorLine
             }
@@ -1379,13 +1616,17 @@ actual class OpenGL {
 
         actual fun glProgramLocalParameter4fARB(arg0: Int, arg1: Int, arg2: Float, arg3: Float, arg4: Float, arg5: Float) = exec {
             if (arg0 == GL_VERTEX_PROGRAM_ARB) {
+                flushBatch()
                 state.boundVertexProgram?.setLocalParameter(arg1, arg2, arg3, arg4, arg5)
             }
         }
 
-        actual fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
-            if (arg0 == GL_VERTEX_PROGRAM_ARB && arg2 != null && arg3 >= 0 && arg3 + 4 <= arg2.size) {
-                state.boundVertexProgram?.setLocalParameter(arg1, arg2[arg3], arg2[arg3 + 1], arg2[arg3 + 2], arg2[arg3 + 3])
+        actual fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
+            if (arg0 != GL_VERTEX_PROGRAM_ARB || arg2 == null || arg3 < 0 || arg3 + 4 > arg2.size) return
+            val x = arg2[arg3]; val y = arg2[arg3 + 1]; val z = arg2[arg3 + 2]; val w = arg2[arg3 + 3]
+            exec {
+                flushBatch()
+                state.boundVertexProgram?.setLocalParameter(arg1, x, y, z, w)
             }
         }
     }

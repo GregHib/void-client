@@ -29,6 +29,29 @@ private object NativeHeapMemory {
 
 fun nativeHeapBytes(address: Long): ByteArray? = NativeHeapMemory.buffers[address.toInt()]
 
+private external class FinalizationRegistry(cleanup: (Int) -> Unit) {
+    fun register(target: Any, heldValue: Int)
+}
+
+/** FinalizationRegistry is ES2021; without it buffers simply stay allocated, as before. */
+private val finalizationSupported: Boolean =
+    js("typeof FinalizationRegistry === 'function'").unsafeCast<Boolean>()
+
+/**
+ * Frees a heap slot once the NativeHeapBuffer that owns it is collected.
+ *
+ * NativeHeapBuffer.finalize() does exactly this on the JVM, and finalizers never run on JS - so
+ * every buffer ever allocated stayed in the table. OpenGlTerrainTile builds a fresh
+ * NativeVertexBuffer for each textured terrain batch it draws, so that was a steady leak for as
+ * long as the client ran.
+ *
+ * The handle is the held value rather than the buffer itself, since a registry entry must not
+ * reference its own target. Nothing else frees a handle, so a slot cannot be freed twice and then
+ * reused out from under a live buffer.
+ */
+private val bufferFinalizer: FinalizationRegistry? =
+    if (finalizationSupported) FinalizationRegistry { handle -> NativeHeapMemory.deallocate(handle) } else null
+
 actual class NativeHeap actual constructor(actual val b: Int) {
     private var allocated = true
 
@@ -43,7 +66,10 @@ actual class NativeHeap actual constructor(actual val b: Int) {
 
     actual fun a(arg0: Int, arg1: Boolean): NativeHeapBuffer {
         check(allocated)
-        return NativeHeapBuffer(this, this.allocateBuffer(arg0, arg1), arg0)
+        val handle = this.allocateBuffer(arg0, arg1)
+        val buffer = NativeHeapBuffer(this, handle, arg0)
+        bufferFinalizer?.register(buffer, handle)
+        return buffer
     }
 
     actual var a: Boolean
