@@ -34,19 +34,26 @@ class LoadingScreenImageNode internal constructor(var aByteArray9499: ByteArray?
             if (i_4_ < 0) i_4_ = 0
             else if (i_4_ > 100) i_4_ = 100
             var adjustedZoom = ((-AbstractMenuEntryStatics.aShort1700 + HeapDiagnosticsHolder.aShort2250) * i_4_ / 100 + AbstractMenuEntryStatics.aShort1700)
-            val base = adjustedZoom
-            if (TextureLoaderUtil.zoomStep != 0) adjustedZoom += TextureLoaderUtil.zoomStep
-            var min = AbstractMenuEntryStatics.aShort1700 * Config.FOV_MIN_FACTOR_NUM / Config.FOV_MIN_FACTOR_DEN
-            var max = HeapDiagnosticsHolder.aShort2250 * Config.FOV_MAX_FACTOR_NUM / Config.FOV_MAX_FACTOR_DEN
-            if (min < Config.FOV_MIN_ABS) min = Config.FOV_MIN_ABS
-            if (min > max) {
-                val tmp = min
-                min = max
-                max = tmp
+            if (Config.scrollCameraZoom) {
+                val base = adjustedZoom
+                if (TextureLoaderUtil.zoomStep != 0) adjustedZoom += TextureLoaderUtil.zoomStep
+                var min = AbstractMenuEntryStatics.aShort1700 * Config.FOV_MIN_FACTOR_NUM / Config.FOV_MIN_FACTOR_DEN
+                var max = HeapDiagnosticsHolder.aShort2250 * Config.FOV_MAX_FACTOR_NUM / Config.FOV_MAX_FACTOR_DEN
+                if (min < Config.FOV_MIN_ABS) min = Config.FOV_MIN_ABS
+                if (min > max) {
+                    val tmp = min
+                    min = max
+                    max = tmp
+                }
+                if (adjustedZoom < min) adjustedZoom = min
+                else if (adjustedZoom > max) adjustedZoom = max
+                if (TextureLoaderUtil.zoomStep != 0) TextureLoaderUtil.zoomStep = adjustedZoom - base
+            } else {
+                // Clear here, not only at the scroll handler, so turning the flag off at runtime
+                // snaps the camera back on the next frame rather than after the next scroll. The
+                // widened clamp above is skipped entirely, leaving the original 634 limits below.
+                TextureLoaderUtil.zoomStep = Config.ZOOM_OFFSET_DEFAULT
             }
-            if (adjustedZoom < min) adjustedZoom = min
-            else if (adjustedZoom > max) adjustedZoom = max
-            if (TextureLoaderUtil.zoomStep != 0) TextureLoaderUtil.zoomStep = adjustedZoom - base
             if (adjustedZoom < ChatCommandProcessor.aShort9555) adjustedZoom = ChatCommandProcessor.aShort9555.toInt()
             else if (ColourAdjustment.aShort851 < adjustedZoom) adjustedZoom = ColourAdjustment.aShort851.toInt()
             var i_6_ = 512 * adjustedZoom * i_3_ / (i_1_ * 334)

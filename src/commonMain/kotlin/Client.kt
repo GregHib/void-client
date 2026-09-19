@@ -5114,7 +5114,7 @@ class Client : GameAppletFrame() {
                             TextureLoaderUtil.overGameScreen = false
                             FloatGrid.method1583((-73).toByte())
                             ResourceLoaderThread.anInt3918++
-                            if (TextureLoaderUtil.overGameScreen && TextureLoaderUtil.scrollWheelDiff != 0 && !FontMetaRef.aBoolean4328) {
+                            if (Config.scrollCameraZoom && TextureLoaderUtil.overGameScreen && TextureLoaderUtil.scrollWheelDiff != 0 && !FontMetaRef.aBoolean4328) {
                                 if (AsyncTaskHandle.anInt2581 <= 0 || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(82, -125) || !LoadProgressCounters.aKeyboardInputSource_2449!!.method2696(81, -126)) {
                                     TextureLoaderUtil.zoomStep += -TextureLoaderUtil.scrollWheelDiff * Config.ZOOM_OFFSET_STEP
                                 }
