@@ -78,6 +78,8 @@ const val MAX_LIGHTS = 8
 const val GL_BLEND = 3042
 const val GL_DEPTH_TEST = 2929
 const val GL_CULL_FACE = 2884
+const val GL_STENCIL_TEST = 2960
+const val GL_POLYGON_OFFSET_FILL = 32823
 
 const val GL_TEXTURE_GEN_R = 3170
 const val GL_TEXTURE_GEN_Q = 3171

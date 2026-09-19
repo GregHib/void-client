@@ -6,7 +6,20 @@ actual class EventQueue actual constructor() {
     internal var pending: Event? = null
 }
 
-actual fun EventQueue.peekEvent(): Event? = pending
+/**
+ * Takes the pending event rather than only looking at it.
+ *
+ * Nothing on JS ever dispatched what postEvent stored, so the field stayed set forever once
+ * anything had been posted. WorldMapPolygonIconLabel.method3578 drains the queue with
+ * `while (i < 50 && peekEvent() != null) { sleep(1); i++ }` at the end of every game tick and
+ * every audio-mixer tick, so a permanently non-null peek meant 50 dead iterations per tick,
+ * forever, each one going through sleep(). Consuming here is what a real dispatch would have done.
+ */
+actual fun EventQueue.peekEvent(): Event? {
+    val event = pending
+    pending = null
+    return event
+}
 
 actual fun EventQueue.postEvent(event: Event) {
     pending = event

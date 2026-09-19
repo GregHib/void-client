@@ -20,6 +20,16 @@ private const val INITIAL_VERTEX_CAPACITY = 256 * FLOATS_PER_VERTEX
 // Smallest vertex span the quad index buffer is built for; larger batches grow it by doubling.
 private const val INITIAL_INDEX_VERTEX_SPAN = 256
 
+// Upper bound on a deferred batch, so a long run of same-state quads cannot grow the staging
+// array without limit. At 16 floats a vertex this is a 256 KB upload, which is already far past
+// the point where per-draw overhead matters.
+private const val MAX_BATCHED_VERTICES = 4096
+
+// Independent-primitive modes, whose vertices can be concatenated across glBegin/glEnd pairs.
+private const val GL_POINTS = 0
+private const val GL_LINES = 1
+private const val GL_TRIANGLES = 4
+
 class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val state: GlState) {
     private var active = false
     private var mode = 0
@@ -45,11 +55,15 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
     private var indexBufferMode = 0
     private var indexBufferVertexSpan = 0
 
+    /** Guards against re-entering the flush from the GL calls the flush itself makes. */
+    private var flushing = false
+
     fun begin(mode: Int) {
+        // A batch already waiting can only be continued by an identical, concatenable mode.
+        // Otherwise it has to go out now, while the GL state it was recorded under is still live.
+        if (vertexCount > 0 && (mode != this.mode || !isConcatenable(mode))) flushPending()
         active = true
         this.mode = mode
-        vertexFloatCount = 0
-        vertexCount = 0
     }
 
     fun vertex(x: Float, y: Float, z: Float) {
@@ -68,8 +82,28 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
         vertexCount++
     }
 
+    /**
+     * Ends a primitive. The batch is *not* drawn here: as long as the next glBegin asks for the
+     * same concatenable mode and nothing has touched GL in between, its vertices are appended to
+     * this one and the whole run goes out as a single draw.
+     *
+     * Interface drawing is what this is for. Every filled rectangle (GlSpriteRenderer.method964) is
+     * its own glBegin/glEnd around four vertices, all against the renderer's shared blank texture,
+     * so a run of them differs only in per-vertex colour - which lives in the vertex data, not in
+     * GL state.
+     *
+     * Deferral is only safe because every other entry point in the shim flushes first; see the
+     * `gl` accessor and the flush notes in OpenGL.js.kt.
+     */
     fun end() {
         active = false
+        if (vertexCount == 0) return
+        if (!isConcatenable(mode) || vertexCount >= MAX_BATCHED_VERTICES) flushPending()
+    }
+
+    /** Draws whatever has accumulated. Safe to call at any time; a no-op when nothing is pending. */
+    fun flushPending() {
+        if (active || flushing) return
         val count = vertexCount
         val floatCount = vertexFloatCount
         // Reset before drawing so an unbalanced second glEnd() is a no-op rather than a silent
@@ -78,6 +112,24 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
         vertexCount = 0
         vertexFloatCount = 0
         if (count == 0) return
+        flushing = true
+        try {
+            draw(count, floatCount)
+        } finally {
+            flushing = false
+        }
+    }
+
+    /**
+     * Whether vertices from two consecutive primitives of this mode can simply be concatenated.
+     *
+     * Strips, fans and polygons cannot: their triangles are defined by adjacency, so joining two
+     * runs would weld the end of one to the start of the next. Independent primitives can.
+     */
+    private fun isConcatenable(mode: Int): Boolean =
+        mode == GL_QUADS || mode == GL_TRIANGLES || mode == GL_LINES || mode == GL_POINTS
+
+    private fun draw(count: Int, floatCount: Int) {
 
         val indexCount = indexCountFor(mode, count)
         val drawMode = if (mode == GL_POLYGON) WebGL2RenderingContext.TRIANGLE_FAN else mode

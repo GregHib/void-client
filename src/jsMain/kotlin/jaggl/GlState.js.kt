@@ -83,9 +83,16 @@ class GlState(val gl: WebGL2RenderingContext) {
     var boundTexture2D = arrayOfNulls<WebGLTexture>(32)
     var boundTextureCubeMap = arrayOfNulls<WebGLTexture>(32)
     var boundTexture3D = arrayOfNulls<WebGLTexture>(32)
+    // Mirror of the reserved 3D/cube sampler units, which only [bindSampler] ever writes.
+    private val reservedSamplerTexture = arrayOfNulls<WebGLTexture>(16)
+    private val reservedSamplerTarget = IntArray(16) { -1 }
     var boundArrayBuffer: WebGLBuffer? = null
     var boundElementArrayBuffer: WebGLBuffer? = null
     var boundProgram: WebGLProgram? = null
+    // The program actually bound in GL. Distinct from [boundProgram], which is what the *client*
+    // last asked for via glUseProgramObjectARB - the shim binds its own fixed-function and
+    // transpiled-ARB programs on top of that, so the client's value cannot be used to dedupe.
+    internal var boundGlProgram: WebGLProgram? = null
     var boundProgramObj: ShaderOrProgram.Program? = null
     var boundFramebuffer: WebGLFramebuffer? = null
     var readbackFramebuffer: WebGLFramebuffer? = null
@@ -134,6 +141,11 @@ class GlState(val gl: WebGL2RenderingContext) {
     val texGenDirty = booleanArrayOf(true, true, true)
     private var lastProjectionVersion = -1
     private val lastTextureMatrixVersion = intArrayOf(-1, -1, -1)
+    // Uniform storage belongs to a WebGLProgram, so a gated upload is only skippable while the
+    // same program stays bound. The fixed-function program is a singleton, but the ARB path swaps
+    // programs underneath it, so track which program last received the modelview.
+    private var lastFfModelViewVersion = -1
+    private var lastFfModelViewProgram: WebGLProgram? = null
 
     var alphaFunc = GL_ALWAYS
     var alphaRef = 0f
@@ -184,6 +196,198 @@ class GlState(val gl: WebGL2RenderingContext) {
     val currentTexCoord1 = floatArrayOf(0f, 0f, 0f)
     val currentNormal = floatArrayOf(0f, 0f, 1f)
 
+    // ---- Value-based dirty tracking ---------------------------------------------------------
+    //
+    // The client re-issues identical fixed-function state constantly, on purpose: OpenGlRenderer
+    // deliberately dropped its own redundancy caches (see the "Always re-issue rather than eliding"
+    // comments on method3728 / method3729) because a native driver dedupes them almost for free.
+    // GL_LIGHTING is toggled once per model and per terrain chunk, and the same glTexEnvi value is
+    // sent twice per call and three times per glyph.
+    //
+    // Marking a block dirty on the *call* therefore turned each of those into a full re-upload -
+    // 42 uniform calls for the light block alone. These setters mark it dirty only when a value
+    // actually changes, which costs one comparison and removes the re-upload. The renderer keeps
+    // its behaviour; the shim is now the thing that filters, because it is the only layer left
+    // that can see the real GL state.
+    //
+    // They also drain any deferred immediate-mode batch, on the change path only. That batch has
+    // to be drawn under the state it was recorded with, and these are the changes that never reach
+    // WebGL on their own - see the flush notes in OpenGL.js.kt.
+
+    fun setLightingEnabled(value: Boolean) {
+        if (lightingEnabled == value) return
+        flushImmediate()
+        lightingEnabled = value
+        ffpLightingDirty = true
+    }
+
+    fun setLightEnabled(light: Int, value: Boolean) {
+        if (lightEnabled[light] == value) return
+        flushImmediate()
+        lightEnabled[light] = value
+        ffpLightingDirty = true
+    }
+
+    /** Copies [v] into [target], marking the light block dirty only if any component moved. */
+    fun setLightVector(target: FloatArray, v: FloatArray) {
+        var changed = false
+        for (i in target.indices) {
+            val value = v[i]
+            if (target[i] != value) {
+                target[i] = value
+                changed = true
+            }
+        }
+        if (changed) {
+            flushImmediate()
+            ffpLightingDirty = true
+        }
+    }
+
+    fun setLightScalar(target: FloatArray, index: Int, value: Float) {
+        if (target[index] == value) return
+        flushImmediate()
+        target[index] = value
+        ffpLightingDirty = true
+    }
+
+    fun setTexturingEnabled(unit: Int, value: Boolean) {
+        if (texturingEnabled[unit] == value) return
+        flushImmediate()
+        texturingEnabled[unit] = value
+        texEnvDirty[unit] = true
+    }
+
+    fun setTextureTarget(unit: Int, target: Int) {
+        if (textureTarget[unit] == target) return
+        flushImmediate()
+        textureTarget[unit] = target
+        texEnvDirty[unit] = true
+    }
+
+    fun setTexGenEnabled(unit: Int, coord: Int, value: Boolean) {
+        if (texGenEnabled[unit][coord] == value) return
+        flushImmediate()
+        texGenEnabled[unit][coord] = value
+        texEnvDirty[unit] = true
+        texGenDirty[unit] = true
+    }
+
+    fun setTexGenMode(unit: Int, coord: Int, mode: Int) {
+        if (texGenMode[unit][coord] == mode) return
+        flushImmediate()
+        texGenMode[unit][coord] = mode
+        texEnvDirty[unit] = true
+        texGenDirty[unit] = true
+    }
+
+    /** Writes one per-unit texenv int (combine mode, source, operand), dirtying only on a change. */
+    fun setTexEnvInt(target: IntArray, unit: Int, value: Int) {
+        if (target[unit] == value) return
+        flushImmediate()
+        target[unit] = value
+        texEnvDirty[unit] = true
+    }
+
+    fun setTexEnvFloat(target: FloatArray, unit: Int, value: Float) {
+        if (target[unit] == value) return
+        flushImmediate()
+        target[unit] = value
+        texEnvDirty[unit] = true
+    }
+
+    /** Copies [v] into [target] (the unit's env colour), dirtying only if a component moved. */
+    fun setTexEnvVector(unit: Int, target: FloatArray, v: FloatArray) {
+        var changed = false
+        for (i in target.indices) {
+            val value = v[i]
+            if (target[i] != value) {
+                target[i] = value
+                changed = true
+            }
+        }
+        if (changed) {
+            flushImmediate()
+            texEnvDirty[unit] = true
+        }
+    }
+
+    /** Copies a computed texgen plane into [target], dirtying texgen only if a component moved. */
+    fun setTexGenPlane(unit: Int, target: FloatArray, v: FloatArray) {
+        var changed = false
+        for (i in target.indices) {
+            val value = v[i]
+            if (target[i] != value) {
+                target[i] = value
+                changed = true
+            }
+        }
+        if (changed) {
+            flushImmediate()
+            texGenDirty[unit] = true
+        }
+    }
+
+    fun setFogEnabled(value: Boolean) {
+        if (fogEnabled == value) return
+        flushImmediate()
+        fogEnabled = value
+        ffpStateDirty = true
+    }
+
+    fun setAlphaTestEnabled(value: Boolean) {
+        if (alphaTestEnabled == value) return
+        flushImmediate()
+        alphaTestEnabled = value
+        ffpStateDirty = true
+    }
+
+    /**
+     * Binds [program], skipping the call when it is already current. Every program bind the shim
+     * makes during drawing must go through here, or the mirror goes stale and a draw silently
+     * runs against the wrong program.
+     */
+    fun useProgram(program: WebGLProgram?) {
+        flushImmediate()
+        if (boundGlProgram === program) return
+        boundGlProgram = program
+        gl.useProgram(program)
+    }
+
+    /**
+     * Resyncs the program mirror before code that binds programs without going through
+     * [useProgram].
+     *
+     * Issues the unbind rather than just assuming it, so the mirror states a fact about GL instead
+     * of a guess. A mirror that claims "no program bound" while GL still has one would let the next
+     * useProgram(null) be elided against a program that is actually live.
+     */
+    fun forgetBoundProgram() {
+        useProgram(null)
+    }
+
+    /** Removes [texture] from every binding mirror; GL unbinds it everywhere on delete. */
+    fun forgetTexture(texture: WebGLTexture) {
+        flushImmediate()
+        for (i in boundTexture2D.indices) if (boundTexture2D[i] === texture) boundTexture2D[i] = null
+        for (i in boundTextureCubeMap.indices) if (boundTextureCubeMap[i] === texture) boundTextureCubeMap[i] = null
+        for (i in boundTexture3D.indices) if (boundTexture3D[i] === texture) boundTexture3D[i] = null
+        for (i in reservedSamplerTexture.indices) if (reservedSamplerTexture[i] === texture) {
+            reservedSamplerTexture[i] = null
+            reservedSamplerTarget[i] = -1
+        }
+    }
+
+    /**
+     * Draws any deferred immediate-mode batch, if the emulator exists yet.
+     *
+     * The lateinit check matters during context creation, where GlState is fully usable before
+     * [immediateMode] has been attached to it.
+     */
+    private fun flushImmediate() {
+        if (this::immediateMode.isInitialized) immediateMode.flushPending()
+    }
+
     fun prepareDraw() {
         val program = boundProgramObj
         if (program == null) {
@@ -196,9 +400,20 @@ class GlState(val gl: WebGL2RenderingContext) {
                 return
             }
 
-            gl.useProgram(fixedFunctionShader.program)
+            useProgram(fixedFunctionShader.program)
             val s = fixedFunctionShader
-            gl.uniformMatrix4fv(s.uModelView, false, matrixStack.modelview().asFloat32Array())
+            // Projection and the texture matrices were already version-gated here; the modelview
+            // was not, so every draw re-uploaded the same 16 floats - a model with N material
+            // batches sent it N times, and a line of text sent it once per glyph. The version
+            // counter it needs already exists, and both the ARB and compat paths use it.
+            val modelViewVersion = matrixStack.version(GL_MODELVIEW)
+            if (modelViewVersion != lastFfModelViewVersion ||
+                lastFfModelViewProgram !== fixedFunctionShader.program
+            ) {
+                lastFfModelViewVersion = modelViewVersion
+                lastFfModelViewProgram = fixedFunctionShader.program
+                gl.uniformMatrix4fv(s.uModelView, false, matrixStack.modelview().asFloat32Array())
+            }
 
             val projectionVersion = matrixStack.version(GL_PROJECTION)
             if (projectionVersion != lastProjectionVersion) {
@@ -292,8 +507,20 @@ class GlState(val gl: WebGL2RenderingContext) {
         }
     }
 
-    /** Binds [texture] as [target] on a reserved sampler unit, restoring the active unit. */
+    /**
+     * Binds [texture] as [target] on a reserved sampler unit, restoring the active unit.
+     *
+     * uploadFfFragmentUniforms calls this on every draw that has a cube or 3D texture enabled,
+     * regardless of whether the binding changed - three GL calls per draw on the water and
+     * cube-map paths. The reserved units are only ever written from here, so mirroring them is
+     * enough to make a repeat a no-op.
+     */
     fun bindSampler(target: Int, glUnit: Int, texture: WebGLTexture?) {
+        if (glUnit < reservedSamplerTexture.size) {
+            if (reservedSamplerTexture[glUnit] === texture && reservedSamplerTarget[glUnit] == target) return
+            reservedSamplerTexture[glUnit] = texture
+            reservedSamplerTarget[glUnit] = target
+        }
         gl.activeTexture(WebGL2RenderingContext.TEXTURE0 + glUnit)
         gl.bindTexture(target, texture)
         gl.activeTexture(WebGL2RenderingContext.TEXTURE0 + activeTextureUnit)
