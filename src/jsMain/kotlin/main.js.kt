@@ -26,6 +26,7 @@ class JsLoader : Panel(), GameApplet {
         resize()
         window.addEventListener("resize", { resize() })
         (document.getElementById("client") ?: document.body!!).appendChild(element)
+        setupTouchKeyboard()
 
         GlobalScope.launch {
             CachePersistence.hydrate()

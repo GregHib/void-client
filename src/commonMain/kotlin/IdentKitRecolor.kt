@@ -194,6 +194,21 @@ class IdentKitRecolor internal constructor(@JvmField var anInt144: Int, i_46_: I
             } while (false)
         }
 
+        /**
+         * Screen-space bounds (x, y, width, height) of the chat/command input box, mirroring the
+         * layout [method207] draws to. Used by the JS client to hit-test taps against the chat box
+         * so it knows when to show/hide the on-screen keyboard.
+         */
+        fun chatBoxBounds(): IntArray {
+            var x = 0
+            var y = 0
+            if (GrayscaleNoiseTexture.aBoolean5300) {
+                x = NativeTerrainTile.method4008((-127).toByte())
+                y = SceneTilePlaneManager.method260(false)
+            }
+            return intArrayOf(x, y, QuestType.anInt4017, 350)
+        }
+
         @JvmStatic
         fun method208(i: Byte) {
             if (i.toInt() != 0) method204(29)
