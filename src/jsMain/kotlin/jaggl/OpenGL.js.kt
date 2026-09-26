@@ -930,6 +930,7 @@ actual class OpenGL {
         actual fun glCopyTexImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) {
             val target = fixTarget(arg0)
             val n = readScale
+            if (readFramebuffer == null) opaqueWindowRect(arg3 * n, arg4 * n, arg5 * n, arg6 * n)
             val texture = if (arg1 == 0) state.boundTextureFor(target) else null
             if (n == 1) {
                 gl.copyTexImage2D(target, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
@@ -954,6 +955,7 @@ actual class OpenGL {
         actual fun glCopyTexSubImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) {
             val target = fixTarget(arg0)
             val n = readScale
+            if (readFramebuffer == null) opaqueWindowRect(arg4 * n, arg5 * n, arg6 * n, arg7 * n)
             val texture = state.boundTextureFor(target)
             if (n > 1 && arg1 == 0 && texture != null && target == WebGL2RenderingContext.TEXTURE_2D) {
                 if (textureScale(texture) != n && texture.asDynamic().__jagglNoUpgrade != true) {
@@ -972,6 +974,37 @@ actual class OpenGL {
                 return
             }
             copyWindowToTexture(target, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+        }
+
+        /**
+         * Sets alpha to 1 in a rect of the window (physical pixels) before it is copied into a
+         * texture. The JVM's window has no alpha channel, so a copy from it always reads alpha as
+         * 1 and the minimap texture comes out opaque. The browser canvas does have one (it must:
+         * WebGL refuses RGBA copies from a canvas without alpha), and blending the minimap's
+         * scenery sprites into it leaves fractional alpha at their soft edges. Copied as is, those
+         * minimap pixels turned translucent over whatever the canvas held underneath - cleared or
+         * the previous frame, depending on how game frames line up with the browser's - and
+         * flickered.
+         */
+        private fun opaqueWindowRect(x: Int, y: Int, w: Int, h: Int) {
+            if (w <= 0 || h <= 0) return
+            if (drawFramebuffer != null) gl.bindFramebuffer(GL_DRAW_FRAMEBUFFER, null)
+            val mask = gl.getParameter(GL_COLOR_WRITEMASK).unsafeCast<Array<Boolean>>()
+            val clear = gl.getParameter(GL_COLOR_CLEAR_VALUE).unsafeCast<Float32Array>()
+            val scissor = gl.isEnabled(GL_SCISSOR_TEST)
+            val discard = gl.isEnabled(GL_RASTERIZER_DISCARD)
+            if (!scissor) gl.enable(GL_SCISSOR_TEST)
+            if (discard) gl.disable(GL_RASTERIZER_DISCARD)
+            gl.scissor(x, y, w, h)
+            gl.colorMask(false, false, false, true)
+            gl.clearColor(0f, 0f, 0f, 1f)
+            gl.clear(GL_COLOR_BUFFER_BIT)
+            gl.colorMask(mask[0], mask[1], mask[2], mask[3])
+            gl.clearColor(clear[0], clear[1], clear[2], clear[3])
+            if (!scissor) gl.disable(GL_SCISSOR_TEST)
+            if (discard) gl.enable(GL_RASTERIZER_DISCARD)
+            if (drawFramebuffer != null) gl.bindFramebuffer(GL_DRAW_FRAMEBUFFER, drawFramebuffer)
+            applyScissor()
         }
 
         private const val GL_READ_FRAMEBUFFER = 0x8CA8
