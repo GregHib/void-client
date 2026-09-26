@@ -1235,28 +1235,11 @@ class SoftwareRenderer private constructor(var_renderConfig: RenderConfig?) : Re
             var i_340_ = i + i_334_ * this.anInt7477
             val i_341_ = i_337_ ushr 24
             if (i_338_ == 0 || i_338_ == 1 && i_341_ == 255) {
-                val i_342_ = i_335_ shr 3
-                val i_343_ = i_335_ and 0x7
-                i_335_ = i_340_ - 1
-                for (i_344_ in -i_336_..-1) {
-                    if (i_342_ > 0) {
-                        i = i_342_
-                        do {
-                            this.anIntArray7483!![++i_335_] = i_337_
-                            this.anIntArray7483!![++i_335_] = i_337_
-                            this.anIntArray7483!![++i_335_] = i_337_
-                            this.anIntArray7483!![++i_335_] = i_337_
-                            this.anIntArray7483!![++i_335_] = i_337_
-                            this.anIntArray7483!![++i_335_] = i_337_
-                            this.anIntArray7483!![++i_335_] = i_337_
-                            this.anIntArray7483!![++i_335_] = i_337_
-                        } while (--i > 0)
-                    }
-                    if (i_343_ > 0) {
-                        i = i_343_
-                        do this.anIntArray7483!![++i_335_] = i_337_ while (--i > 0)
-                    }
-                    i_335_ += i_339_
+                // One native fill per row (TypedArray.fill on JS) rather than a per-pixel `!!` store.
+                val pixels = this.anIntArray7483!!
+                for (i_344_ in 0..<i_336_) {
+                    pixels.fill(i_337_, i_340_, i_340_ + i_335_)
+                    i_340_ += this.anInt7477
                 }
             } else if (i_338_ == 1) {
                 i_337_ = (((i_337_ and 0xff00ff) * i_341_ shr 8 and 0xff00ff) + (((i_337_ and 0xff00ff.inv()) ushr 8) * i_341_ and 0xff00ff.inv()))

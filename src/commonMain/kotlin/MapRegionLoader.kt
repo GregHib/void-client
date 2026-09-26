@@ -26,6 +26,25 @@ open class MapRegionLoader {
 
         var aObjectTypeList_1245: ObjectTypeList? = null
 
+        // Direct-indexed memo in front of aObjectTypeList_1245. The full-map draw looks up every
+        // visible tile's objects each frame; going through the LRU (Long-keyed hash + relink) made
+        // that the dominant cost on JS when zoomed out. Dropped when the list or its caches reset.
+        private var objectTypeMemo: Array<ObjectType?>? = null
+        private var objectTypeMemoList: ObjectTypeList? = null
+        private var objectTypeMemoResets = 0
+
+        private fun worldMapObjectType(id: Int): ObjectType {
+            val list = aObjectTypeList_1245!!
+            var memo = objectTypeMemo
+            if (memo == null || objectTypeMemoList !== list || objectTypeMemoResets != ObjectTypeList.anInt3356) {
+                memo = arrayOfNulls(65536)
+                objectTypeMemo = memo
+                objectTypeMemoList = list
+                objectTypeMemoResets = ObjectTypeList.anInt3356
+            }
+            return memo[id] ?: list.method2005(0, id).also { memo[id] = it }
+        }
+
         var aSmoothingBuffer_1246: SmoothingBuffer? = null
 
         var aFloat1247: Float = 0f
@@ -138,6 +157,8 @@ open class MapRegionLoader {
             aFloorOverlayTypeList_1239 = null
             aFloorUnderlayTypeList_1240 = null
             aObjectTypeList_1245 = null
+            objectTypeMemo = null
+            objectTypeMemoList = null
             aWorldMapInfoTypeList_1238 = null
             aMapSceneTypeList_1242 = null
             anVarResolver_1244 = null
@@ -177,6 +198,8 @@ open class MapRegionLoader {
 
         @JvmStatic
         fun method749() {
+            objectTypeMemo = null
+            objectTypeMemoList = null
             aByteArray1273 = null
             aByteArray1264 = null
             aShortArray1270 = null
@@ -389,7 +412,7 @@ open class MapRegionLoader {
                 for (i_69_ in `is`.indices) {
                     val i_70_ = is_63_!![i_69_].toInt() and 0x3f
                     if (i_70_ == 0 || i_70_ == 2 || i_70_ == 3 || i_70_ == 9) {
-                        val objectType: ObjectType = aObjectTypeList_1245!!.method2005(0, `is`[i_69_].toInt() and 0xffff)
+                        val objectType: ObjectType = worldMapObjectType(`is`[i_69_].toInt() and 0xffff)
                         if (objectType.anInt875 == -1) {
                             var i_71_ = -3355444
                             if (objectType.anInt874 == 1) i_71_ = -3407872
@@ -580,7 +603,7 @@ open class MapRegionLoader {
         private fun method763(var_renderer: Renderer?, i: Int, i_118_: Int, i_119_: Int, i_120_: Int, `is`: ShortArray?, is_121_: ByteArray?) {
             if (`is` != null) {
                 for (i_122_ in `is`.indices) {
-                    val objectType: ObjectType = aObjectTypeList_1245!!.method2005(0, `is`[i_122_].toInt() and 0xffff)
+                    val objectType: ObjectType = worldMapObjectType(`is`[i_122_].toInt() and 0xffff)
                     val i_123_ = objectType.anInt875
                     if (i_123_ != -1) {
                         val mapSceneType: MapSceneType? = aMapSceneTypeList_1242!!.method1173(31.toByte(), i_123_)
@@ -614,92 +637,156 @@ open class MapRegionLoader {
             for (i_130_ in 0..<aFloorOverlayTypeList_1239!!.anInt3429) anIntArray1260!![i_130_ + 1] = method759(var_renderConfig, i_130_, i, i_129_)
         }
 
+        private class VisibleRows {
+            var rows: IntArray? = null
+            var tops: IntArray? = null
+            var heights: IntArray? = null
+        }
+
+        private val visibleTiles = VisibleRows()
+        private val visibleScenes = VisibleRows()
+
+        /**
+         * Rows in [from, until) of method765's grid that cover at least one pixel and whose map row
+         * (row + minY) lies in [mapMin, mapMax), in ascending order. Returns how many were stored.
+         */
+        private fun collectVisibleRows(from: Int, until: Int, originY: Int, scale: Int, offset: Int, minY: Int, mapMin: Int, mapMax: Int, out: VisibleRows): Int {
+            val capacity = until - from
+            if (capacity <= 0) return 0
+            var rows = out.rows
+            if (rows == null || rows.size < capacity) {
+                rows = IntArray(capacity)
+                out.rows = rows
+                out.tops = IntArray(capacity)
+                out.heights = IntArray(capacity)
+            }
+            val tops = out.tops!!
+            val heights = out.heights!!
+            var count = 0
+            for (row in from..<until) {
+                val mapRow = row + minY
+                if (mapRow < mapMin || mapRow >= mapMax) continue
+                val top = originY - (offset + scale * (row + 1) shr 16)
+                val height = originY - (offset + scale * row shr 16) - top
+                if (height > 0) {
+                    rows[count] = row
+                    tops[count] = top
+                    heights[count] = height
+                    count++
+                }
+            }
+            return count
+        }
+
         private fun method765(var_renderer: Renderer, i: Int, i_131_: Int, i_132_: Int, i_133_: Int) {
+            // Hoisted: every `!!` on a companion field is a call plus a null check per tile on JS.
+            val colourHi = aByteArray1264!!
+            val colourLo = aShortArray1270!!
+            val overlays = aByteArray1256!!
+            val objects = aShortArray1261!!
+            val shapes = aByteArray1275!!
+            val rotations = aByteArray1258!!
+            val singleObject = aShortArray1252!!
+            val singleRotation = aByteArray1248!!
+            val overlayColours = anIntArray1260!!
+            val objectStacks = aHashtable_1271!!
             var i_134_: Int = anInt1265 - anInt1274
             var i_135_: Int = anInt1277 - anInt1257
             if (anInt1265 < anInt1259) i_134_++
             if (anInt1277 < anInt1267) i_135_++
+            // Zoomed out a tile is under a pixel, so most rows have zero height. Collect the rows that
+            // cover pixels once per frame instead of re-deriving (and skipping) every row per column.
+            val originY = anInt1268
+            val originX = anInt1272
+            val minX = anInt1274
+            val minY = anInt1257
+            val mapWidth = anInt1259
+            val mapHeight = anInt1267
+            val tileCount = collectVisibleRows(0, i_135_, originY, i_131_, i_133_, minY, Int.MIN_VALUE, Int.MAX_VALUE, visibleTiles)
+            val tileRows = visibleTiles.rows!!
+            val tileTops = visibleTiles.tops!!
+            val tileHeights = visibleTiles.heights!!
+            val groupColour = aClass348_Sub42_Sub14_1243!!.anInt9634
+            val defaultColour = overlayColours[(aFloorOverlayTypeList_1239!!.anInt3447) + 1]
             for (i_136_ in 0..<i_134_) {
-                val i_137_: Int = (i_132_ + i * i_136_ shr 16) + anInt1272
-                val i_138_: Int = (i_132_ + i * (i_136_ + 1) shr 16) + anInt1272
+                val i_137_: Int = (i_132_ + i * i_136_ shr 16) + originX
+                val i_138_: Int = (i_132_ + i * (i_136_ + 1) shr 16) + originX
                 val i_139_ = i_138_ - i_137_
                 if (i_139_ > 0) {
-                    val i_140_: Int = anInt1274 + i_136_
-                    if (i_140_ >= 0 && i_140_ < anInt1259) {
-                        for (i_146_ in 0..<i_135_) {
-                            val i_147_: Int = (anInt1268 - (i_133_ + i_131_ * (i_146_ + 1) shr 16))
-                            val i_148_: Int = anInt1268 - (i_133_ + i_131_ * i_146_ shr 16)
-                            val i_149_ = i_148_ - i_147_
-                            if (i_149_ > 0) {
-                                val i_150_: Int = i_146_ + anInt1257
-                                val i_151_: Int = i_140_ + i_150_ * anInt1259
-                                var i_152_ = 0
-                                var i_153_ = 0
-                                var i_154_ = 0
-                                if (i_150_ >= 0 && i_150_ < anInt1267) {
-                                    i_152_ = ((aByteArray1264!![i_151_].toInt() and 0xff) shl 16 or (aShortArray1270!![i_151_].toInt() and 0xffff))
-                                    if (i_152_ != 0) i_152_ = i_152_ or 0xffffff.inv()
-                                    i_153_ = aByteArray1256!![i_151_].toInt() and 0xff
-                                    i_154_ = aShortArray1261!![i_151_].toInt() and 0xffff
-                                }
-                                if (i_152_ == 0 && i_153_ == 0 && i_154_ == 0) {
-                                    if (aClass348_Sub42_Sub14_1243!!.anInt9634 != -1) i_152_ = (0xffffff.inv() or (aClass348_Sub42_Sub14_1243!!.anInt9634))
-                                    else if ((i_136_ + anInt1274 and 0x4) != (i_146_ + anInt1277 and 0x4)) i_152_ = -11840664
-                                    else i_152_ = (anIntArray1260!![(aFloorOverlayTypeList_1239!!.anInt3447) + 1])
-                                    if (i_152_ == 0) i_152_ = -16777216
-                                    var_renderer.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0)
-                                } else if (i_154_ > 0) {
-                                    if (i_154_ == 65535) {
-                                        val class348_sub39 = ((aHashtable_1271!!.method3480((i_140_ shl 16 or i_150_).toLong(), -6008)) as ShortByteArrayPair?)
-                                        if (class348_sub39 != null) method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025), true)
-                                    } else {
-                                        aShortArray1252!![0] = (i_154_ - 1).toShort()
-                                        aByteArray1248!![0] = aByteArray1258!![i_151_]
-                                        Companion.method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), aShortArray1252, aByteArray1248!!, true)
-                                    }
-                                } else Companion.method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, aByteArray1275!![i_151_].toInt(), null, null, true)
+                    val i_140_: Int = minX + i_136_
+                    if (i_140_ >= 0 && i_140_ < mapWidth) {
+                        for (row in 0..<tileCount) {
+                            val i_146_ = tileRows[row]
+                            val i_147_ = tileTops[row]
+                            val i_149_ = tileHeights[row]
+                            val i_150_: Int = i_146_ + minY
+                            val i_151_: Int = i_140_ + i_150_ * mapWidth
+                            var i_152_ = 0
+                            var i_153_ = 0
+                            var i_154_ = 0
+                            if (i_150_ >= 0 && i_150_ < mapHeight) {
+                                i_152_ = ((colourHi[i_151_].toInt() and 0xff) shl 16 or (colourLo[i_151_].toInt() and 0xffff))
+                                if (i_152_ != 0) i_152_ = i_152_ or 0xffffff.inv()
+                                i_153_ = overlays[i_151_].toInt() and 0xff
+                                i_154_ = objects[i_151_].toInt() and 0xffff
                             }
+                            if (i_152_ == 0 && i_153_ == 0 && i_154_ == 0) {
+                                if (groupColour != -1) i_152_ = (0xffffff.inv() or groupColour)
+                                else if ((i_136_ + minX and 0x4) != (i_146_ + anInt1277 and 0x4)) i_152_ = -11840664
+                                else i_152_ = defaultColour
+                                if (i_152_ == 0) i_152_ = -16777216
+                                var_renderer.aa(i_137_, i_147_, i_139_, i_149_, i_152_, 0)
+                            } else if (i_154_ > 0) {
+                                if (i_154_ == 65535) {
+                                    val class348_sub39 = ((objectStacks.method3480((i_140_ shl 16 or i_150_).toLong(), -6008)) as ShortByteArrayPair?)
+                                    if (class348_sub39 != null) method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, shapes[i_151_].toInt(), (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025), true)
+                                } else {
+                                    singleObject[0] = (i_154_ - 1).toShort()
+                                    singleRotation[0] = rotations[i_151_]
+                                    method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, shapes[i_151_].toInt(), singleObject, singleRotation, true)
+                                }
+                            } else method755(var_renderer, i_137_, i_147_, i_139_, i_149_, i_152_, i_153_, shapes[i_151_].toInt(), null, null, true)
                         }
                     } else {
                         for (i_141_ in 0..<i_135_) {
-                            val i_142_: Int = (anInt1268 - (i_133_ + i_131_ * (i_141_ + 1) shr 16))
-                            val i_143_: Int = anInt1268 - (i_133_ + i_131_ * i_141_ shr 16)
+                            val i_142_: Int = (originY - (i_133_ + i_131_ * (i_141_ + 1) shr 16))
+                            val i_143_: Int = originY - (i_133_ + i_131_ * i_141_ shr 16)
                             val i_144_ = i_143_ - i_142_
                             var i_145_: Int
-                            if (aClass348_Sub42_Sub14_1243!!.anInt9634 != -1) i_145_ = 0xffffff.inv() or (aClass348_Sub42_Sub14_1243!!.anInt9634)
-                            else if ((i_136_ + anInt1274 and 0x4) != (i_141_ + anInt1277 and 0x4)) i_145_ = -11840664
-                            else i_145_ = anIntArray1260!![(aFloorOverlayTypeList_1239!!.anInt3447) + 1]
+                            if (groupColour != -1) i_145_ = 0xffffff.inv() or groupColour
+                            else if ((i_136_ + minX and 0x4) != (i_141_ + anInt1277 and 0x4)) i_145_ = -11840664
+                            else i_145_ = defaultColour
                             if (i_145_ == 0) i_145_ = -16777216
                             var_renderer.aa(i_137_, i_142_, i_139_, i_144_, i_145_, 0)
                         }
                     }
                 }
             }
+            // Map scenes: only in-bounds rows with pixels, and method763 draws nothing for empty tiles.
+            val sceneCount = collectVisibleRows(-16, i_135_ + 16, originY, i_131_, i_133_, minY, 0, mapHeight, visibleScenes)
+            val sceneRows = visibleScenes.rows!!
+            val sceneTops = visibleScenes.tops!!
+            val sceneHeights = visibleScenes.heights!!
             for (i_155_ in -16..<i_134_ + 16) {
-                val i_156_: Int = (i_132_ + i * i_155_ shr 16) + anInt1272
-                val i_157_: Int = (i_132_ + i * (i_155_ + 1) shr 16) + anInt1272
+                val i_156_: Int = (i_132_ + i * i_155_ shr 16) + originX
+                val i_157_: Int = (i_132_ + i * (i_155_ + 1) shr 16) + originX
                 val i_158_ = i_157_ - i_156_
                 if (i_158_ > 0) {
-                    val i_159_: Int = i_155_ + anInt1274
-                    if (i_159_ >= 0 && i_159_ < anInt1259) {
-                        for (i_160_ in -16..<i_135_ + 16) {
-                            val i_161_: Int = (anInt1268 - (i_133_ + i_131_ * (i_160_ + 1) shr 16))
-                            val i_162_: Int = anInt1268 - (i_133_ + i_131_ * i_160_ shr 16)
-                            val i_163_ = i_162_ - i_161_
-                            if (i_163_ > 0) {
-                                val i_164_: Int = i_160_ + anInt1257
-                                if (i_164_ >= 0 && i_164_ < anInt1267) {
-                                    val i_165_: Int = ((aShortArray1261!![i_159_ + i_164_ * anInt1259]).toInt() and 0xffff)
-                                    if (i_165_ > 0) {
-                                        if (i_165_ == 65535) {
-                                            val class348_sub39 = ((aHashtable_1271!!.method3480((i_159_ shl 16 or i_164_).toLong(), -6008)) as ShortByteArrayPair?)
-                                            if (class348_sub39 != null) method763(var_renderer, i_156_, i_161_, i_158_, i_163_, (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025))
-                                        } else {
-                                            aShortArray1252!![0] = (i_165_ - 1).toShort()
-                                            aByteArray1248!![0] = (aByteArray1258!![i_159_ + i_164_ * anInt1259])
-                                            Companion.method763(var_renderer, i_156_, i_161_, i_158_, i_163_, aShortArray1252, aByteArray1248!!)
-                                        }
-                                    } else Companion.method763(var_renderer, i_156_, i_161_, i_158_, i_163_, null, null)
+                    val i_159_: Int = i_155_ + minX
+                    if (i_159_ >= 0 && i_159_ < mapWidth) {
+                        for (row in 0..<sceneCount) {
+                            val i_164_: Int = sceneRows[row] + minY
+                            val i_165_: Int = ((objects[i_159_ + i_164_ * mapWidth]).toInt() and 0xffff)
+                            if (i_165_ > 0) {
+                                val i_161_ = sceneTops[row]
+                                val i_163_ = sceneHeights[row]
+                                if (i_165_ == 65535) {
+                                    val class348_sub39 = ((objectStacks.method3480((i_159_ shl 16 or i_164_).toLong(), -6008)) as ShortByteArrayPair?)
+                                    if (class348_sub39 != null) method763(var_renderer, i_156_, i_161_, i_158_, i_163_, (class348_sub39.aShortArray7024), (class348_sub39.aByteArray7025))
+                                } else {
+                                    singleObject[0] = (i_165_ - 1).toShort()
+                                    singleRotation[0] = (rotations[i_159_ + i_164_ * mapWidth])
+                                    method763(var_renderer, i_156_, i_161_, i_158_, i_163_, singleObject, singleRotation)
                                 }
                             }
                         }
