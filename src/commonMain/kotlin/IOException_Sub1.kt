@@ -58,6 +58,43 @@ class IOException_Sub1(string: String?) : IOException(string) {
             } while (false)
         }
 
+        /**
+         * [method129] over keys held as `hi * 2^32 + (lo as unsigned)` in two IntArrays instead of a LongArray.
+         * Kotlin/JS emulates Long with heap objects, so the original's per-comparison Long subtract made
+         * sorting every model's faces a large share of a region load. The partitioning, including the
+         * original's alternating `>`/`>=` tie-break and its Long.MAX_VALUE special case, is reproduced
+         * exactly, so the resulting order is identical.
+         */
+        fun sortIntPairKeys(hi: IntArray, lo: IntArray, idx: IntArray, from: Int, to: Int) {
+            if (to <= from) return
+            val mid = (to + from) / 2
+            var store = from
+            val ph = hi[mid]
+            val pl = lo[mid]
+            val pi = idx[mid]
+            hi[mid] = hi[to]; hi[to] = ph
+            lo[mid] = lo[to]; lo[to] = pl
+            idx[mid] = idx[to]; idx[to] = pi
+            val tieBreak = if (ph == Int.MAX_VALUE && pl == -1) 0 else 1
+            val plU = pl xor Int.MIN_VALUE
+            for (j in from until to) {
+                val h = hi[j]
+                val cmp = if (ph != h) (if (ph > h) 1 else -1) else plU.compareTo(lo[j] xor Int.MIN_VALUE)
+                // Original: pivot + (tieBreak and j) > key[j]
+                if (cmp > 0 || (cmp == 0 && (tieBreak and j) != 0)) {
+                    val th = hi[j]; hi[j] = hi[store]; hi[store] = th
+                    val tl = lo[j]; lo[j] = lo[store]; lo[store] = tl
+                    val ti = idx[j]; idx[j] = idx[store]; idx[store] = ti
+                    store++
+                }
+            }
+            hi[to] = hi[store]; hi[store] = ph
+            lo[to] = lo[store]; lo[store] = pl
+            idx[to] = idx[store]; idx[store] = pi
+            sortIntPairKeys(hi, lo, idx, from, store - 1)
+            sortIntPairKeys(hi, lo, idx, store + 1, to)
+        }
+
         @JvmStatic
         fun method130(i: Int) {
             if (i == 8) {

@@ -68,4 +68,32 @@ class RegionLoadPerfTest {
             roundTrip(data, deflateRaw(data, 1 + random.nextInt(9)))
         }
     }
+
+    @Test
+    fun `int pair sort matches original long sort`() {
+        val random = Random(42)
+        repeat(500) {
+            val n = random.nextInt(0, 300)
+            val his = IntArray(n)
+            val los = IntArray(n)
+            val longs = LongArray(n)
+            for (i in 0 until n) {
+                if (random.nextInt(10) == 0) {
+                    his[i] = Int.MAX_VALUE; los[i] = -1; longs[i] = Long.MAX_VALUE
+                    continue
+                }
+                // Small ranges so duplicate keys (tie-break paths) are common.
+                val a = random.nextInt(-3, 4) shl random.nextInt(0, 24)
+                val b = if (random.nextBoolean()) random.nextInt(-4, 4) else random.nextInt()
+                longs[i] = (a.toLong() shl 32) - -b.toLong()
+                his[i] = if (b < 0) a - 1 else a
+                los[i] = b
+            }
+            val idxA = IntArray(n) { it }
+            val idxB = IntArray(n) { it }
+            IOException_Sub1.method129(0, -107, longs, n - 1, idxA)
+            IOException_Sub1.sortIntPairKeys(his, los, idxB, 0, n - 1)
+            assertContentEquals(idxA, idxB)
+        }
+    }
 }

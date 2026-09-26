@@ -4,7 +4,6 @@ import ParticleEmitterFactoryStatics.method1885
 import SphereMapMaterialPass.Companion.method2174
 import Texture2DProvider.Companion.method2259
 import ArchiveResourceProvider.Companion.method2352
-import PcmStreamBuffer.Companion.method2832
 import BlankTextureNode.Companion.method3100
 import CachedRgbNoiseTexture.Companion.method565
 import RasterSprite.Companion.method166
@@ -2992,7 +2991,9 @@ class OpenGlModel : AbstractModel {
                     i_698_++
                 }
                 anInt5537 = anInt5632
-                val ls = LongArray(anInt5632)
+                // Sort keys as (hi, lo) Int pairs rather than a LongArray; see IOException_Sub1.sortIntPairKeys.
+                val keyHi = IntArray(anInt5632)
+                val keyLo = IntArray(anInt5632)
                 val bool = (0x100 and anInt5648) != 0
                 var i_699_ = 0
                 while (anInt5632 > i_699_) {
@@ -3018,7 +3019,8 @@ class OpenGlModel : AbstractModel {
                             i_706_++
                         }
                         if (bool_705_) {
-                            ls[i_699_] = 9223372036854775807L
+                            keyHi[i_699_] = Int.MAX_VALUE // Long.MAX_VALUE
+                            keyLo[i_699_] = -1
                             anInt5537--
                             i_699_++
                             continue
@@ -3046,13 +3048,15 @@ class OpenGlModel : AbstractModel {
                     i_701_ += i_704_ and 0xff
                     i_702_ += (i_708_ and 0xffff) shl 16
                     i_702_ += i_699_ and 0xffff
-                    ls[i_699_] = (i_701_.toLong() shl 32) - -i_702_.toLong()
+                    // (i_701_.toLong() shl 32) + i_702_.toLong(), with lo re-expressed as unsigned
+                    keyHi[i_699_] = if (i_702_ < 0) i_701_ - 1 else i_701_
+                    keyLo[i_699_] = i_702_
                     val class64_sub3_710_ = this
                     class64_sub3_710_.aBoolean5638 = (class64_sub3_710_.aBoolean5638 or (npcAppearanceFlags != null && (npcAppearanceFlags.aByte198.toInt() != 0 || npcAppearanceFlags.aByte211.toInt() != 0)))
                     aBoolean5595 = aBoolean5595 or bool_709_
                     i_699_++
                 }
-                method2832(`is`, ls, 0)
+                IOException_Sub1.sortIntPairKeys(keyHi, keyLo, `is`, 0, anInt5632 - 1)
                 anIntArray5644 = modelDefinition.anIntArray1852
                 anIntArray5593 = modelDefinition.anIntArray1847
                 anInt5642 = modelDefinition.anInt1836
