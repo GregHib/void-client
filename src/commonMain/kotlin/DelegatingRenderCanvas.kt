@@ -198,6 +198,9 @@ class DelegatingRenderCanvas internal constructor(private val aComponent64: Comp
                     }
                 } else OpenGlRenderNode.aSmoothingBuffer_10488 = SmoothingBuffer(0)
             }
+            // The build below blocks for seconds. On JS the loading box drawn just before it is only
+            // on screen once the browser has painted, so wait a tick for that (no-op on the JVM).
+            if (bool && immediatePresentPending) return
             if (bool) {
                 bool = true
                 CompositeNpcModelBuilder.anInt2101 = 0

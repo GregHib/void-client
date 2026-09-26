@@ -52,3 +52,18 @@ expect val js5ReadsPerPump: Int
  * outside the tick is safe.
  */
 expect fun registerJs5Pump(pump: () -> Unit)
+
+/**
+ * Called when the client draws a frame it expects to be visible *immediately*, e.g. the
+ * "Loading - please wait." box, which the original presents with a real buffer swap right before
+ * blocking on a long synchronous scene build.
+ *
+ * On the JVM that swap is on screen at once, so this is a no-op. On JS a swap does nothing: the
+ * browser only composites the canvas after the current task returns and a rendering opportunity
+ * comes round, so a build started in the same task overwrites the box before it is ever shown.
+ * The JS actual marks a present as pending until the browser's next animation frame.
+ */
+expect fun requestImmediatePresent()
+
+/** True while a frame passed to [requestImmediatePresent] has not yet reached the screen. */
+expect val immediatePresentPending: Boolean

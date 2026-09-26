@@ -42,6 +42,25 @@ actual fun runLoop(
     window.setTimeout({ tick() }, 0)
 }
 
+private var presentPending = false
+private var presentGeneration = 0
+
+/**
+ * rAF callbacks run in the browser's rendering step, immediately before it paints; any task that
+ * runs after the callback therefore runs after the frame has been committed. Hidden tabs never
+ * fire rAF, so a timeout releases the wait there rather than stalling the caller indefinitely.
+ */
+actual fun requestImmediatePresent() {
+    if (presentPending) return
+    presentPending = true
+    val generation = ++presentGeneration
+    val release = { if (presentGeneration == generation) presentPending = false }
+    window.requestAnimationFrame { release() }
+    window.setTimeout(release, 250)
+}
+
+actual val immediatePresentPending: Boolean get() = presentPending
+
 actual val executeWorkerTasksInline: Boolean = true
 
 /**

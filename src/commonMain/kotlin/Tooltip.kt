@@ -76,6 +76,7 @@ object Tooltip {
                     } catch (clientException_: ClientException) {
                         /* empty */
                     }
+                    requestImmediatePresent()
                 }
             }
         } catch (runtimeexception: RuntimeException) {

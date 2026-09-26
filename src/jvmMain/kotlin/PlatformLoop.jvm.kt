@@ -26,3 +26,9 @@ actual val js5ReadsPerPump: Int = 100
 /** The tick owns a real thread at a steady rate, so the pump needs no second driver. */
 actual fun registerJs5Pump(pump: () -> Unit) {
 }
+
+/** The buffer swap is a real, synchronous present on the JVM. */
+actual fun requestImmediatePresent() {
+}
+
+actual val immediatePresentPending: Boolean = false
