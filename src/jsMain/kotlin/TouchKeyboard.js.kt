@@ -1,3 +1,4 @@
+import awt.UiScale
 import kotlinx.browser.document
 import kotlinx.browser.window
 import org.w3c.dom.HTMLCanvasElement
@@ -79,8 +80,8 @@ fun setupTouchKeyboard() {
             hiddenInput.blur()
             return@addEventListener
         }
-        val x = mouseEvent.offsetX.toInt()
-        val y = mouseEvent.offsetY.toInt()
+        val x = mouseEvent.offsetX.toInt() / UiScale.factor
+        val y = mouseEvent.offsetY.toInt() / UiScale.factor
         val bounds = IdentKitRecolor.chatBoxBounds()
         val insideChatBox = x >= bounds[0] && x < bounds[0] + bounds[2] && y >= bounds[1] && y < bounds[1] + bounds[3]
         if (insideChatBox) hiddenInput.focus() else hiddenInput.blur()

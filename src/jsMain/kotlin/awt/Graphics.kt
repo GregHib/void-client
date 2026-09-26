@@ -37,7 +37,9 @@ actual abstract class Graphics {
 
 // Concrete impl — plain overrides, NO `actual` keyword here
 internal class CanvasGraphics(
-    private val ctx: CanvasRenderingContext2D
+    private val ctx: CanvasRenderingContext2D,
+    /** Device pixels per logical pixel ([UiScale.factor] for the on-screen canvas, 1 for images). */
+    private val scale: Int = 1
 ) : Graphics() {
 
     private var color: Color = Color(0, 0, 0)
@@ -59,6 +61,10 @@ internal class CanvasGraphics(
         // this instance would inherit that instance's clip and translate instead of starting
         // pristine, which AWT guarantees.
         ctx.restore()
+        // The scale is part of the saved baseline, so applyClip's restore()/save() keeps it.
+        // Nearest-neighbour keeps upscaled images crisp pixel art rather than blurred.
+        ctx.setTransform(scale.toDouble(), 0.0, 0.0, scale.toDouble(), 0.0, 0.0)
+        ctx.imageSmoothingEnabled = scale == 1
         ctx.save()
     }
 
@@ -155,7 +161,7 @@ internal class CanvasGraphics(
     override fun getClipBounds(): Rectangle = clip ?: fullCanvasBounds()
 
     private fun fullCanvasBounds(): Rectangle =
-        Rectangle(0, 0, ctx.canvas.width, ctx.canvas.height)
+        Rectangle(0, 0, ctx.canvas.width / scale, ctx.canvas.height / scale)
 
     // Replaces the clip absolutely (AWT semantics), unlike ctx.clip() which
     // only ever intersects with whatever region is already in effect.

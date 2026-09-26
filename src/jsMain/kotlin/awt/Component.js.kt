@@ -50,24 +50,29 @@ actual abstract class Component : ImageObserver {
     private val mouseWheelListeners = mutableListOf<MouseWheelListener>()
     private var domListenersAttached = false
 
+    // Sizes and positions are logical pixels: the element is UiScale.factor times larger on
+    // screen, and every getter divides back down, so the client never sees physical pixels.
     actual fun setSize(width: Int, height: Int) {
+        val scale = UiScale.factor
+        val w = width * scale
+        val h = height * scale
         val canvas = element as? HTMLCanvasElement
-        if (canvas != null && canvas.width == width && canvas.height == height) return
-        canvas?.let { it.width = width; it.height = height }
-        element.style.width = "${width}px"
-        element.style.height = "${height}px"
+        if (canvas != null && canvas.width == w && canvas.height == h) return
+        canvas?.let { it.width = w; it.height = h }
+        element.style.width = "${w}px"
+        element.style.height = "${h}px"
     }
 
     actual fun getWidth(): Int {
-        (element as? HTMLCanvasElement)?.let { return it.width }
+        (element as? HTMLCanvasElement)?.let { return it.width / UiScale.factor }
         ensureSizeObserved()
-        return cachedClientWidth
+        return cachedClientWidth / UiScale.factor
     }
 
     actual fun getHeight(): Int {
-        (element as? HTMLCanvasElement)?.let { return it.height }
+        (element as? HTMLCanvasElement)?.let { return it.height / UiScale.factor }
         ensureSizeObserved()
-        return cachedClientHeight
+        return cachedClientHeight / UiScale.factor
     }
 
     /** Lazily starts observing [element]'s box size so [getWidth]/[getHeight] can return a cached value
@@ -83,13 +88,11 @@ actual abstract class Component : ImageObserver {
         }.also { it.observe(element) }
     }
 
-    actual fun getX(): Int = element.offsetLeft
-    actual fun getY(): Int = element.offsetTop
+    actual fun getX(): Int = element.offsetLeft / UiScale.factor
+    actual fun getY(): Int = element.offsetTop / UiScale.factor
 
     actual fun setBounds(x: Int, y: Int, width: Int, height: Int) {
-        element.style.position = "absolute"
-        element.style.left = "${x}px"
-        element.style.top = "${y}px"
+        setLocation(x, y)
         setSize(width, height)
     }
 
@@ -127,7 +130,7 @@ actual abstract class Component : ImageObserver {
     actual fun getGraphics(): Graphics {
         val canvas = element as? HTMLCanvasElement
             ?: error("getGraphics() requires a canvas-backed component")
-        return CanvasGraphics(canvas.getContext("2d") as CanvasRenderingContext2D)
+        return CanvasGraphics(canvas.getContext("2d") as CanvasRenderingContext2D, UiScale.factor)
     }
 
     actual override fun imageUpdate(img: Image, infoflags: Int, x: Int, y: Int, width: Int, height: Int): Boolean = false
@@ -241,8 +244,8 @@ actual abstract class Component : ImageObserver {
 
     actual fun setLocation(x: Int, y: Int) {
         element.style.position = "absolute"
-        element.style.left = "${x}px"
-        element.style.top = "${y}px"
+        element.style.left = "${x * UiScale.factor}px"
+        element.style.top = "${y * UiScale.factor}px"
     }
 
     actual fun prepareImage(image: Image, observer: ImageObserver): Boolean = true

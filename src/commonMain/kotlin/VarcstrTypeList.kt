@@ -74,6 +74,7 @@ class VarcstrTypeList internal constructor(sceneProjector: SceneProjector?, i: I
                         method94("displayfps - Toggle FPS and other information", -89)
                         method94("renderer - Print graphics renderer information", 122)
                         method94("heap - Print java memory information", -88)
+                        method94("uiscale [1-4] - Set the interface scale (browser only)", -88)
                         return
                     }
                     if (string.equals("cls", ignoreCase = true)) {
@@ -101,6 +102,15 @@ class VarcstrTypeList internal constructor(sceneProjector: SceneProjector?, i: I
                     }
                     if (string == "heap") {
                         method94(("Heap: " + QuickChatTypeList.anInt2964 + "MB"), 69)
+                        return
+                    }
+                    if (string != null && string.startsWith("uiscale", ignoreCase = true)) {
+                        val argument = string.substring(7).trim { it <= ' ' }
+                        // No argument cycles 1 -> 2 -> 3 -> 1.
+                        val scale = if (argument.isEmpty()) getInterfaceScale() % 3 + 1 else RegionSceneShifter.method3156(true, argument)
+                        method94(setInterfaceScale(scale), 69)
+                        // Relayout even if the logical size happens to come out unchanged.
+                        TextureLoadExceptionStatics.aBoolean4604 = true
                         return
                     }
                 } catch (exception: Exception) {

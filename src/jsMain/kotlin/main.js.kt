@@ -1,5 +1,6 @@
 import awt.Component
 import awt.Panel
+import awt.UiScale
 import io.CachePersistence
 import kotlinx.browser.document
 import kotlinx.browser.window
@@ -21,6 +22,7 @@ class JsLoader : Panel(), GameApplet {
     private val params: MutableMap<String, String> = mutableMapOf()
 
     fun boot() {
+        instance = this
         setParms()
         element.style.position = "relative"
         resize()
@@ -38,8 +40,9 @@ class JsLoader : Panel(), GameApplet {
         }
     }
 
-    private fun resize() {
-        setSize(window.innerWidth, window.innerHeight)
+    /** Fills the window. Sizes are logical pixels, so the interface scale divides the window size. */
+    fun resize() {
+        setSize(window.innerWidth / UiScale.factor, window.innerHeight / UiScale.factor)
     }
 
     /** Ported verbatim from jvmMain Loader.setParms(). */
@@ -97,6 +100,10 @@ class JsLoader : Panel(), GameApplet {
 
     companion object {
         const val ADDRESS = "127.0.0.1"
+
+        /** The booted loader, for the `uiscale` console command to re-fit it to the window. */
+        var instance: JsLoader? = null
+            private set
     }
 }
 

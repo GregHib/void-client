@@ -1,9 +1,12 @@
 package jaggl
 
 import awt.Canvas
+import awt.UiScale
 import lang.Thread
 import util.Hashtable
+import org.khronos.webgl.ArrayBufferView
 import org.khronos.webgl.Float32Array
+import org.khronos.webgl.Int32Array
 import org.khronos.webgl.get
 import org.khronos.webgl.set
 import org.khronos.webgl.Uint8Array
@@ -96,8 +99,14 @@ actual class OpenGL {
             attribStack.clear()
             viewportX = 0
             viewportY = 0
-            viewportW = canvasEl.width
-            viewportH = canvasEl.height
+            viewportW = canvasEl.width / UiScale.factor
+            viewportH = canvasEl.height / UiScale.factor
+            scissorX = 0
+            scissorY = 0
+            scissorW = viewportW
+            scissorH = viewportH
+            readFramebuffer = null
+            drawFramebuffer = null
             val newState = GlState(context)
             newState.immediateMode = ImmediateModeEmulator(context, newState)
             newState.fixedFunctionShader = FixedFunctionShader(context)
@@ -149,11 +158,42 @@ actual class OpenGL {
 
         private const val GL_VIEWPORT_BIT = 0x800
 
-        /** Mirror of the current GL viewport, kept for [glPushAttrib]/[glPopAttrib]. */
+        /**
+         * Mirror of the current GL viewport, kept for [glPushAttrib]/[glPopAttrib]. Like the
+         * scissor box below it is in the client's logical pixels: see [windowScale].
+         */
         private var viewportX = 0
         private var viewportY = 0
         private var viewportW = 0
         private var viewportH = 0
+        private var scissorX = 0
+        private var scissorY = 0
+        private var scissorW = 0
+        private var scissorH = 0
+
+        /** Framebuffers bound to the read and draw targets; null is the window. */
+        private var readFramebuffer: WebGLFramebuffer? = null
+        private var drawFramebuffer: WebGLFramebuffer? = null
+
+        /**
+         * The client works in logical pixels ([UiScale]): the canvas it sees, its ortho projection
+         * and its viewport/scissor rects are all [UiScale.factor] times smaller than the drawing
+         * buffer. Projections map to NDC so they need no change, but every call that takes window
+         * pixels has to be scaled back up when it targets the window. Offscreen framebuffers are
+         * allocated at the logical sizes the client asks for, so they are left as they are.
+         */
+        private val drawScale: Int get() = if (drawFramebuffer == null) UiScale.factor else 1
+        private val readScale: Int get() = if (readFramebuffer == null) UiScale.factor else 1
+
+        private fun applyViewport() {
+            val n = drawScale
+            gl.viewport(viewportX * n, viewportY * n, viewportW * n, viewportH * n)
+        }
+
+        private fun applyScissor() {
+            val n = drawScale
+            gl.scissor(scissorX * n, scissorY * n, scissorW * n, scissorH * n)
+        }
         private val attribStack = ArrayList<IntArray?>()
 
         actual val b: Hashtable<Any?, Any?> = Hashtable()
@@ -425,13 +465,16 @@ actual class OpenGL {
         actual fun glDepthMask(arg0: Boolean) = gl.depthMask(arg0)
         actual fun glCullFace(arg0: Int) = gl.cullFace(arg0)
         actual fun glColorMask(arg0: Boolean, arg1: Boolean, arg2: Boolean, arg3: Boolean) = gl.colorMask(arg0, arg1, arg2, arg3)
-        actual fun glScissor(arg0: Int, arg1: Int, arg2: Int, arg3: Int) = gl.scissor(arg0, arg1, arg2, arg3)
+        actual fun glScissor(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
+            scissorX = arg0; scissorY = arg1; scissorW = arg2; scissorH = arg3
+            applyScissor()
+        }
         actual fun glStencilFunc(arg0: Int, arg1: Int, arg2: Int) = gl.stencilFunc(arg0, arg1, arg2)
         actual fun glStencilOp(arg0: Int, arg1: Int, arg2: Int) = gl.stencilOp(arg0, arg1, arg2)
 
         actual fun glViewport(arg0: Int, arg1: Int, arg2: Int, arg3: Int) {
             viewportX = arg0; viewportY = arg1; viewportW = arg2; viewportH = arg3
-            gl.viewport(arg0, arg1, arg2, arg3)
+            applyViewport()
         }
         actual fun glClearColor(arg0: Float, arg1: Float, arg2: Float, arg3: Float) = gl.clearColor(arg0, arg1, arg2, arg3)
         actual fun glClearDepth(arg0: Float) = gl.clearDepth(arg0)
@@ -867,11 +910,131 @@ actual class OpenGL {
             gl.texSubImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
         }
 
-        actual fun glCopyTexImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) =
-            gl.copyTexImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+        actual fun glCopyTexImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) {
+            val target = fixTarget(arg0)
+            val n = readScale
+            if (n == 1) {
+                gl.copyTexImage2D(target, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+                return
+            }
+            // Allocate the logical-size level with the requested format (its contents are
+            // overwritten straight away), then fill it with the downsampled window rect.
+            gl.copyTexImage2D(target, arg1, arg2, arg3 * n, arg4 * n, arg5, arg6, arg7)
+            copyWindowToTexture(target, arg1, 0, 0, arg3, arg4, arg5, arg6)
+        }
 
-        actual fun glCopyTexSubImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) =
-            gl.copyTexSubImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+        actual fun glCopyTexSubImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) {
+            val target = fixTarget(arg0)
+            if (readScale == 1) {
+                gl.copyTexSubImage2D(target, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+                return
+            }
+            copyWindowToTexture(target, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+        }
+
+        private const val GL_READ_FRAMEBUFFER = 0x8CA8
+        private const val GL_DRAW_FRAMEBUFFER = 0x8CA9
+        private const val GL_COLOR_ATTACHMENT0 = 0x8CE0
+        private const val GL_NEAREST = 0x2600
+        private const val GL_RGBA8 = 0x8058
+        private const val GL_TEXTURE_MIN_FILTER = 0x2801
+        private const val GL_TEXTURE_MAG_FILTER = 0x2800
+        private const val GL_RASTERIZER_DISCARD = 0x8C89
+        private const val GL_PACK_ALIGNMENT = 0x0D05
+        private const val GL_UNSIGNED_INT_8_8_8_8 = 0x8035
+        private const val GL_UNSIGNED_BYTE = 0x1401
+        private const val GL_CUBE_MAP_POSITIVE_X = 0x8515
+        private const val GL_CUBE_MAP_NEGATIVE_Z = 0x851A
+
+        /** Scratch objects for [copyWindowToTexture], owned by [scratchState]'s context. */
+        private var scratchState: GlState? = null
+        private var scratchTexture: WebGLTexture? = null
+        private var scratchReadFbo: WebGLFramebuffer? = null
+        private var scratchDrawFbo: WebGLFramebuffer? = null
+
+        /**
+         * copyTex(Sub)Image2D from the window when it is [UiScale.factor] times the client's
+         * logical size: copies the physical rect into a scratch texture (copies resolve an
+         * antialiased window, which a scaled blit from it could not), then blits that down into
+         * the logical-size destination level.
+         */
+        private fun copyWindowToTexture(target: Int, level: Int, xoffset: Int, yoffset: Int, x: Int, y: Int, width: Int, height: Int) {
+            if (width <= 0 || height <= 0) return
+            val n = UiScale.factor
+            val st = state
+            if (scratchState !== st) {
+                scratchState = st
+                scratchTexture = gl.createTexture()
+                scratchReadFbo = gl.createFramebuffer()
+                scratchDrawFbo = gl.createFramebuffer()
+            }
+            val unit = st.activeTextureUnit
+            val isCubeFace = target in GL_CUBE_MAP_POSITIVE_X..GL_CUBE_MAP_NEGATIVE_Z
+            val destination = if (isCubeFace) st.boundTextureCubeMap[unit] else st.boundTexture2D[unit]
+            if (destination == null) return
+
+            gl.bindTexture(WebGL2RenderingContext.TEXTURE_2D, scratchTexture)
+            gl.texParameteri(WebGL2RenderingContext.TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_NEAREST)
+            gl.texParameteri(WebGL2RenderingContext.TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST)
+            gl.copyTexImage2D(WebGL2RenderingContext.TEXTURE_2D, 0, GL_RGBA8, x * n, y * n, width * n, height * n, 0)
+            gl.bindTexture(WebGL2RenderingContext.TEXTURE_2D, st.boundTexture2D[unit])
+
+            gl.bindFramebuffer(GL_READ_FRAMEBUFFER, scratchReadFbo)
+            gl.framebufferTexture2D(GL_READ_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, WebGL2RenderingContext.TEXTURE_2D, scratchTexture, 0)
+            gl.bindFramebuffer(GL_DRAW_FRAMEBUFFER, scratchDrawFbo)
+            gl.framebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, target, destination, level)
+            gl.drawBuffers(arrayOf(GL_COLOR_ATTACHMENT0))
+            val scissor = gl.isEnabled(GL_SCISSOR_TEST)
+            val discard = gl.isEnabled(GL_RASTERIZER_DISCARD)
+            if (scissor) gl.disable(GL_SCISSOR_TEST)
+            if (discard) gl.disable(GL_RASTERIZER_DISCARD)
+            gl.blitFramebuffer(0, 0, width * n, height * n, xoffset, yoffset, xoffset + width, yoffset + height, GL_COLOR_BUFFER_BIT, GL_NEAREST)
+            if (scissor) gl.enable(GL_SCISSOR_TEST)
+            if (discard) gl.enable(GL_RASTERIZER_DISCARD)
+            // Detach so the destination is not left attached to a framebuffer while sampled.
+            gl.framebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, target, null, level)
+            gl.bindFramebuffer(GL_READ_FRAMEBUFFER, readFramebuffer)
+            gl.bindFramebuffer(GL_DRAW_FRAMEBUFFER, drawFramebuffer)
+        }
+
+        /**
+         * readPixels from the window when it is [UiScale.factor] times the client's logical size:
+         * reads the physical rect and keeps one pixel per [UiScale.factor]-square block, so the
+         * caller gets the logical-size image it asked for.
+         */
+        private fun readWindowPixels(x: Int, y: Int, width: Int, height: Int, format: Int, type: Int, dst: ArrayBufferView, dstOffset: Int) {
+            if (width <= 0 || height <= 0) return
+            val n = UiScale.factor
+            val packed = type == GL_UNSIGNED_INT_8_8_8_8 || type == GL_UNSIGNED_INT_8_8_8_8_REV
+            val components = if (packed) 1 else when (format) {
+                GL_RGBA, GL_BGRA -> 4
+                GL_RGB -> 3
+                GL_LUMINANCE_ALPHA -> 2
+                else -> 1
+            }
+            val elementBytes = dst.asDynamic().BYTES_PER_ELEMENT as Int
+            val align = gl.getParameter(GL_PACK_ALIGNMENT) as Int
+            fun rowElements(pixels: Int): Int {
+                val bytes = pixels * components * (if (packed) 4 else elementBytes)
+                return ((bytes + align - 1) / align * align) / elementBytes
+            }
+            val srcRow = rowElements(width * n)
+            val dstRow = rowElements(width)
+            val tmpLength = srcRow * height * n
+            val tmp: ArrayBufferView = if (dst is Uint8Array) Uint8Array(tmpLength) else Int32Array(tmpLength)
+            gl.readPixels(x * n, y * n, width * n, height * n, format, type, tmp)
+            val src = tmp.asDynamic()
+            val out = dst.asDynamic()
+            for (row in 0 until height) {
+                val srcBase = row * n * srcRow
+                val dstBase = dstOffset + row * dstRow
+                for (col in 0 until width) {
+                    val s = srcBase + col * n * components
+                    val d = dstBase + col * components
+                    for (c in 0 until components) out[d + c] = src[s + c]
+                }
+            }
+        }
 
         actual fun glCopyTexSubImage3D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int) =
             gl.copyTexSubImage3D(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8)
@@ -1107,11 +1270,13 @@ actual class OpenGL {
         actual fun glPixelZoom(arg0: Float, arg1: Float) {}
         actual fun glReadPixelsi(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: IntArray?, arg7: Int) {
             arg6 ?: return
+            if (readScale != 1) return readWindowPixels(arg0, arg1, arg2, arg3, arg4, arg5, arg6.asInt32Array(), arg7)
             gl.readPixels(arg0, arg1, arg2, arg3, arg4, arg5, arg6.asInt32Array())
         }
 
         actual fun glReadPixelsub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: ByteArray?, arg7: Int) {
             arg6 ?: return
+            if (readScale != 1) return readWindowPixels(arg0, arg1, arg2, arg3, arg4, arg5, arg6.asUint8Array(), arg7)
             gl.readPixels(arg0, arg1, arg2, arg3, arg4, arg5, arg6.asUint8Array())
         }
         actual fun glCopyPixels(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) {}
@@ -1137,6 +1302,17 @@ actual class OpenGL {
             val fb = if (arg1 == 0) null else state.framebuffers[arg1]
             gl.bindFramebuffer(arg0, fb)
             state.boundFramebuffer = fb
+            if (arg0 != GL_DRAW_FRAMEBUFFER) readFramebuffer = fb
+            if (arg0 != GL_READ_FRAMEBUFFER) {
+                val scaleChanged = (drawFramebuffer == null) != (fb == null)
+                drawFramebuffer = fb
+                // Viewport and scissor are stored in logical pixels; switching between the window
+                // and an offscreen target changes their scale, whichever order the client set them.
+                if (scaleChanged && UiScale.factor != 1) {
+                    applyViewport()
+                    applyScissor()
+                }
+            }
         }
 
         actual fun glFramebufferTexture2DEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) {
@@ -1155,8 +1331,11 @@ actual class OpenGL {
         }
 
         actual fun glCheckFramebufferStatusEXT(arg0: Int): Int = gl.checkFramebufferStatus(arg0)
-        actual fun glBlitFramebufferEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: Int) =
-            gl.blitFramebuffer(arg0, arg1, arg2, arg3, arg4, arg5, arg6, arg7, arg8, arg9)
+        actual fun glBlitFramebufferEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: Int) {
+            val r = readScale
+            val d = drawScale
+            gl.blitFramebuffer(arg0 * r, arg1 * r, arg2 * r, arg3 * r, arg4 * d, arg5 * d, arg6 * d, arg7 * d, arg8, arg9)
+        }
 
         actual fun glDrawBuffer(arg0: Int) {
             val mode = if (state.boundFramebuffer == null && arg0 != WebGL2RenderingContext.NONE) {

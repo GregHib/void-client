@@ -1,10 +1,12 @@
 package awt.event
 
+import awt.UiScale
+
 actual class MouseEvent(private val event: org.w3c.dom.events.MouseEvent) {
     // offsetX/offsetY are relative to the padding edge of the target element (the canvas),
     // which is exactly what AWT callers expect - clientX/clientY would be page-relative.
-    actual fun getX(): Int = event.offsetX.toInt()
-    actual fun getY(): Int = event.offsetY.toInt()
+    actual fun getX(): Int = event.offsetX.toInt() / UiScale.factor
+    actual fun getY(): Int = event.offsetY.toInt() / UiScale.factor
     // DOM click events carry the click count in `detail`
     actual fun getClickCount(): Int = event.detail
     actual fun consume() { event.preventDefault() }
