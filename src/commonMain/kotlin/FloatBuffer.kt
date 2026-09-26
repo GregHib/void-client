@@ -41,12 +41,13 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
             ProportionalScrollbarComponent.anInt9930 = 0
             LoadingScreenImageNode.anInt9504 = 0
             ActorEntity.anInt3049++
+            val batching = DecorBatcher.beginPass(i_4_, bool_3_)
             if ((i_2_ and 0x2) == 0) {
                 var class318_sub1 = LinkedListNodeStatics.aClass318_Sub1Array4293!![i_4_]
                 while (class318_sub1 != null) {
                     if (!method2778(class318_sub1, bool, `is`, i, i_0_)) {
                         method4001(class318_sub1)
-                        if (class318_sub1.anInt6389 != -1) RemoveRoofsOptionState.aClass318_Sub1Array6066!![ProportionalScrollbarComponent.anInt9930++] = class318_sub1
+                        if (class318_sub1.anInt6389 != -1 && !(batching && DecorBatcher.consume(class318_sub1))) RemoveRoofsOptionState.aClass318_Sub1Array6066!![ProportionalScrollbarComponent.anInt9930++] = class318_sub1
                     }
                     class318_sub1 = class318_sub1.aClass318_Sub1_6379
                 }
@@ -70,7 +71,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                             if (class318_sub1.anInt6389 != -1) GlTexture3D.aClass318_Sub1Array3737!![LoadingScreenImageNode.anInt9504++] = class318_sub1
                         } else {
                             method4001(class318_sub1)
-                            if (class318_sub1.anInt6389 != -1) RemoveRoofsOptionState.aClass318_Sub1Array6066!![ProportionalScrollbarComponent.anInt9930++] = class318_sub1
+                            if (class318_sub1.anInt6389 != -1 && !(batching && DecorBatcher.consume(class318_sub1))) RemoveRoofsOptionState.aClass318_Sub1Array6066!![ProportionalScrollbarComponent.anInt9930++] = class318_sub1
                         }
                     }
                     class318_sub1 = class318_sub1.aClass318_Sub1_6379
@@ -91,6 +92,7 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                 ParticleSystemState.method1295(RemoveRoofsOptionState.aClass318_Sub1Array6066!!, 0, ProportionalScrollbarComponent.anInt9930 - 1)
                 for (i_6_ in 0..<ProportionalScrollbarComponent.anInt9930) MinimapRectClipper.method227(RemoveRoofsOptionState.aClass318_Sub1Array6066!![i_6_]!!, true, bool_3_)
             }
+            if (batching) DecorBatcher.endPass()
             if (ProjectedGroundDecor.aBoolean10221) NativeLibraryState.aRenderer171!!.method3642(0, null)
             if ((i_2_ and 0x2) == 0) {
                 for (i_7_ in DelegatingRenderCanvas.anInt67..<MapAreaDefinition.anInt2524) {

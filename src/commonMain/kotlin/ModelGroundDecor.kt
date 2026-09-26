@@ -72,7 +72,11 @@ class ModelGroundDecor internal constructor(var_renderer: Renderer?, objectType:
             }
             break
         } while (false)
+        DecorBatcher.onDecorModel(this.aAbstractModel_10028)
     }
+
+    /** Whether [method2386] hands this entity to the deferred (picking) path; see DecorBatcher. */
+    val batchDeferred: Boolean get() = aBoolean10014
 
     public override fun method2379(i: Int): Int {
         anInt10027++

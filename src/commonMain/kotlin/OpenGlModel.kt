@@ -157,6 +157,7 @@ class OpenGlModel : AbstractModel {
                 class348_sub49_sub1.method3397(31, aShortArray5566!![i_13_].toInt())
             }
         }
+        if (batchCapture) captureIndices(class348_sub49_sub1.aByteArray7154!!, class348_sub49_sub1.anInt7197)
         if (class348_sub49_sub1.anInt7197 != 0) {
             if (bool) {
                 if (anByteArrayCodec_5647 == null) anByteArrayCodec_5647 = aHa_Sub2_5598.method3733(5123, -39, (class348_sub49_sub1.anInt7197), (class348_sub49_sub1.aByteArray7154), true)
@@ -1566,6 +1567,7 @@ class OpenGlModel : AbstractModel {
                     }
                 }
                 class348_sub49_sub1.anInt7197 = anInt5529 * i_295_
+                if (batchCapture) captureVertexStreams(class348_sub49_sub1.aByteArray7154!!, i_295_.toInt(), bool_293_, i_296_.toInt(), bool_291_, i_297_.toInt(), bool_292_, i_298_.toInt(), bool_294_, i_299_.toInt())
                 val byteBufferReader: ByteBufferReader?
                 if (bool) {
                     if (anByteBufferReader_5554 != null) anByteBufferReader_5554!!.method11(i_295_.toInt(), class348_sub49_sub1.anInt7197, (class348_sub49_sub1.aByteArray7154), -9894)
@@ -3466,6 +3468,80 @@ class OpenGlModel : AbstractModel {
             }
             break
         } while (false)
+    }
+
+    /*
+     * Ground-decor batching (see DecorBatcher). While [batchCapture] is set, every pack of this
+     * model's vertex streams (method688) and indices (method678) also keeps a copy of the packed
+     * bytes, in the platform byte order the renderer uploads. method691 releases the source arrays
+     * after the first pack, so these copies are the only way to rebuild the geometry into a batch.
+     * [batchCapture] is only ever set by DecorBatcher, and only where batching is supported.
+     */
+    var batchCapture = false
+    var capturedPositions: ByteArray? = null // 3 floats per packed vertex
+    var capturedColours: ByteArray? = null // 4 unsigned bytes per packed vertex
+    var capturedNormals: ByteArray? = null // 3 floats per packed vertex
+    var capturedTexCoords: ByteArray? = null // 2 floats per packed vertex
+    var capturedIndices: ByteArray? = null // 3 unsigned shorts per face
+    var capturedGroups: IntArray? = null // face-range bounds of the material groups (anIntArray5626)
+    var capturedGroupTextures: IntArray? = null // texture id per material group, -1 for none
+
+    val batchVertexCount: Int get() = anInt5529
+    val batchHasColours: Boolean get() = aHoverActionEntry_5610 != null
+    val batchHasNormals: Boolean get() = aHoverActionEntry_5563 != null
+    val batchHasTexCoords: Boolean get() = aHoverActionEntry_5620 != null
+
+    /**
+     * Brings the packed streams and indices up to date, as the first draw would (the packing half
+     * of [method677]), so their copies are captured. Returns whether complete copies now exist.
+     */
+    fun prepareForBatch(): Boolean {
+        if (!batchCapture || anInt5537 == 0 || anInt5529 == 0) return false
+        if (aMapSceneTileDefinitionArray5621 != null || aWidgetRedrawRegionArray5541 != null || aModelFacePriorityNodeArray5640 != null) return false
+        val wrapper = aArchiveFileConditionWrapper_5575 ?: return false
+        if (aHoverActionEntry_5605 == null) return false
+        if (aByte5581.toInt() != 0) method688(5, true)
+        method688(5, false)
+        if (wrapper.anByteArrayCodec_3463 == null) method678((aByte5581.toInt() and 0x10) != 0, 27.toByte())
+        method691(110.toByte())
+        return capturedPositions != null && capturedIndices != null && capturedGroups != null &&
+            (aHoverActionEntry_5610 == null || capturedColours != null) &&
+            (aHoverActionEntry_5563 == null || capturedNormals != null) &&
+            (aHoverActionEntry_5620 == null || capturedTexCoords != null)
+    }
+
+    private fun captureVertexStreams(src: ByteArray, stride: Int, pos: Boolean, posOffset: Int, col: Boolean, colOffset: Int, nrm: Boolean, nrmOffset: Int, uv: Boolean, uvOffset: Int) {
+        if (pos) capturedPositions = captureStream(src, stride, posOffset, 12, capturedPositions)
+        if (col) capturedColours = captureStream(src, stride, colOffset, 4, capturedColours)
+        if (nrm) capturedNormals = captureStream(src, stride, nrmOffset, 12, capturedNormals)
+        if (uv) capturedTexCoords = captureStream(src, stride, uvOffset, 8, capturedTexCoords)
+    }
+
+    private fun captureStream(src: ByteArray, stride: Int, offset: Int, size: Int, old: ByteArray?): ByteArray {
+        val n = anInt5529
+        val dst = if (old != null && old.size == n * size) old else ByteArray(n * size)
+        var s = offset
+        var d = 0
+        for (v in 0..<n) {
+            for (b in 0..<size) dst[d + b] = src[s + b]
+            s += stride
+            d += size
+        }
+        return dst
+    }
+
+    private fun captureIndices(src: ByteArray, length: Int) {
+        val groups = anIntArray5626
+        val textures = aShortArray5601
+        if (groups == null || textures == null) return
+        capturedIndices = src.copyOf(length)
+        capturedGroups = groups.copyOf()
+        val groupTextures = IntArray(groups.size - 1)
+        for (g in groupTextures.indices) {
+            val t = textures[groups[g]].toInt() and 0xffff
+            groupTextures[g] = if (t == 65535) -1 else t
+        }
+        capturedGroupTextures = groupTextures
     }
 
     companion object {

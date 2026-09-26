@@ -27,8 +27,21 @@ abstract class GlVertexBufferBase {
         }
     }
 
+    private var released = false
+
+    /**
+     * Queues the GL buffer for deletion now rather than on finalization, which never happens on
+     * JS. Used by DecorBatcher for batches it drops.
+     */
+    fun release() {
+        if (released) return
+        released = true
+        this.aHa_Sub2_1927!!.method3780(anInt1921, -1, this.anInt1929)
+    }
+
     @Throws(Throwable::class)
     protected fun finalize() {
+        if (released) return
         anInt1922++
         this.aHa_Sub2_1927!!.method3780(anInt1921, -1, this.anInt1929)
 //        super.finalize()

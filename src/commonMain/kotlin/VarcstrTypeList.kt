@@ -100,6 +100,11 @@ class VarcstrTypeList internal constructor(sceneProjector: SceneProjector?, i: I
                         method94(("Driver Version: " + (class365.aLong4471)), i + -32)
                         return
                     }
+                    if (string == "batchdecor") {
+                        DecorBatcher.enabled = !DecorBatcher.enabled
+                        method94("Ground decor batching " + (if (DecorBatcher.enabled) "on" else "off"), 83)
+                        return
+                    }
                     if (string == "heap") {
                         method94(("Heap: " + QuickChatTypeList.anInt2964 + "MB"), 69)
                         return

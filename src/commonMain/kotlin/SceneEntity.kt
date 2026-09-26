@@ -24,6 +24,9 @@ abstract class SceneEntity : SceneLinkedListNode() {
     var anInt6389: Int = 0
 
     var aBoolean6391: Boolean = false
+
+    /** This entity's place in a ground-decor batch, or a marker; owned by DecorBatcher. */
+    var decorBatchSlot: Any? = null
     abstract fun method2376(i: Int): Boolean
 
     abstract fun method2377(i: Byte): Boolean

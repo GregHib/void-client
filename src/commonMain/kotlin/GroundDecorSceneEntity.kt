@@ -204,7 +204,14 @@ class GroundDecorSceneEntity internal constructor(var_renderer: Renderer?, objec
             }
             break
         } while (false)
+        DecorBatcher.onDecorModel(aAbstractModel_9993)
     }
+
+    /** The model [method2386] draws; see DecorBatcher. */
+    val batchModel: AbstractModel? get() = aAbstractModel_9993
+
+    /** Whether [method2386] hands this entity to the deferred (picking) path; see DecorBatcher. */
+    val batchDeferred: Boolean get() = aBoolean9974
 
     public override fun method2381(var_renderer: Renderer?, i: Int): CircleHitbox? {
         if (aCircleHitbox_9999 == null) aCircleHitbox_9999 = (method2967(this.x, method2404(var_renderer!!, 86, 0), this.y, this.anInt6382, i xor 0x5))
