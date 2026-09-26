@@ -157,7 +157,7 @@ class OpenGlModel : AbstractModel {
                 class348_sub49_sub1.method3397(31, aShortArray5566!![i_13_].toInt())
             }
         }
-        if (batchCapture) captureIndices(class348_sub49_sub1.aByteArray7154!!, class348_sub49_sub1.anInt7197)
+        if (aArchiveFileConditionWrapper_5575!!.captureWanted) aArchiveFileConditionWrapper_5575!!.capturedIndices = class348_sub49_sub1.aByteArray7154!!.copyOf(class348_sub49_sub1.anInt7197)
         if (class348_sub49_sub1.anInt7197 != 0) {
             if (bool) {
                 if (anByteArrayCodec_5647 == null) anByteArrayCodec_5647 = aHa_Sub2_5598.method3733(5123, -39, (class348_sub49_sub1.anInt7197), (class348_sub49_sub1.aByteArray7154), true)
@@ -1567,7 +1567,7 @@ class OpenGlModel : AbstractModel {
                     }
                 }
                 class348_sub49_sub1.anInt7197 = anInt5529 * i_295_
-                if (batchCapture) captureVertexStreams(class348_sub49_sub1.aByteArray7154!!, i_295_.toInt(), bool_293_, i_296_.toInt(), bool_291_, i_297_.toInt(), bool_292_, i_298_.toInt(), bool_294_, i_299_.toInt())
+                captureVertexStreams(class348_sub49_sub1.aByteArray7154!!, i_295_.toInt(), bool_293_, i_296_.toInt(), bool_291_, i_297_.toInt(), bool_292_, i_298_.toInt(), bool_294_, i_299_.toInt())
                 val byteBufferReader: ByteBufferReader?
                 if (bool) {
                     if (anByteBufferReader_5554 != null) anByteBufferReader_5554!!.method11(i_295_.toInt(), class348_sub49_sub1.anInt7197, (class348_sub49_sub1.aByteArray7154), -9894)
@@ -1601,113 +1601,137 @@ class OpenGlModel : AbstractModel {
     public override fun method615(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?, i: Int) {
         try {
             anInt5611++
-            if (anInt5529 != 0) {
-                val class101_sub3 = aHa_Sub2_5598!!.aClass101_Sub3_7760
-                if (!aBoolean5527) method692((-123).toByte())
+            if (anInt5529 != 0 && method615Project(abstractCameraTransform, class318_sub3)) {
                 val class101_sub3_350_ = abstractCameraTransform as ProjectionCameraTransform
-                TextureLoaderUtil.aFloat3994 = ((class101_sub3_350_.aFloat5754 * class101_sub3.aFloat5784) + ((class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3_350_.aFloat5769 * class101_sub3.aFloat5754)))
-                SpriteRenderable.aFloat4720 = (class101_sub3.aFloat5751 + ((class101_sub3.aFloat5756 * class101_sub3_350_.aFloat5747) + (class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5754) + (class101_sub3_350_.aFloat5751 * class101_sub3.aFloat5784)))
-                val f = (SpriteRenderable.aFloat4720 + TextureLoaderUtil.aFloat3994 * aShort5591.toFloat())
-                val f_351_ = (TextureLoaderUtil.aFloat3994 * aShort5629.toFloat() + SpriteRenderable.aFloat4720)
-                val f_352_: Float
-                val f_353_: Float
-                if (f > f_351_) {
-                    f_352_ = f_351_ - aShort5634.toFloat()
-                    f_353_ = f + aShort5634.toFloat()
-                } else {
-                    f_352_ = -aShort5634.toFloat() + f
-                    f_353_ = f_351_ + aShort5634.toFloat()
-                }
-                if (!(aHa_Sub2_5598.aFloat7874 <= f_352_) && !(aHa_Sub2_5598.anInt7826.toFloat() >= f_353_)) {
-                    CubemapTexture2dSource.aFloat8696 = ((class101_sub3.aFloat5750 * class101_sub3_350_.aFloat5769) + (class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5770) + (class101_sub3.aFloat5781 * (class101_sub3_350_.aFloat5754)))
-                    ModelLightingConfig.aFloat2555 = (class101_sub3.aFloat5747 + ((class101_sub3.aFloat5781 * (class101_sub3_350_.aFloat5751)) + ((class101_sub3.aFloat5770 * (class101_sub3_350_.aFloat5747)) + ((class101_sub3_350_.aFloat5772) * (class101_sub3.aFloat5750)))))
-                    val f_354_ = (aShort5591.toFloat() * CubemapTexture2dSource.aFloat8696 + ModelLightingConfig.aFloat2555)
-                    val f_355_ = (aShort5629.toFloat() * CubemapTexture2dSource.aFloat8696 + ModelLightingConfig.aFloat2555)
-                    val f_356_: Float
-                    val f_357_: Float
-                    if (f_354_ > f_355_) {
-                        f_356_ = (aHa_Sub2_5598.anInt7771.toFloat() * (-aShort5634.toFloat() + f_355_))
-                        f_357_ = (aHa_Sub2_5598.anInt7771.toFloat() * (aShort5634.toFloat() + f_354_))
-                    } else {
-                        f_357_ = (aHa_Sub2_5598.anInt7771.toFloat() * (f_355_ + aShort5634.toFloat()))
-                        f_356_ = ((-aShort5634.toFloat() + f_354_) * aHa_Sub2_5598.anInt7771.toFloat())
-                    }
-                    if (!(aHa_Sub2_5598.aFloat7835 <= f_356_ / f_353_) && !(f_357_ / f_353_ <= aHa_Sub2_5598.aFloat7872)) {
-                        LinkedListIterator.aFloat2111 = ((class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5769) + ((class101_sub3_350_.aFloat5747) * class101_sub3.aFloat5761) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5751)) + class101_sub3.aFloat5772)
-                        SmoothingBuffer.aFloat3242 = ((class101_sub3.aFloat5761 * (class101_sub3_350_.aFloat5750)) + (class101_sub3.aFloat5769 * (class101_sub3_350_.aFloat5769)) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5754)))
-                        val f_358_ = (LinkedListIterator.aFloat2111 + SmoothingBuffer.aFloat3242 * aShort5591.toFloat())
-                        val f_359_ = (LinkedListIterator.aFloat2111 + aShort5629.toFloat() * SmoothingBuffer.aFloat3242)
-                        val f_360_: Float
-                        val f_361_: Float
-                        if (f_358_ > f_359_) {
-                            f_360_ = ((aShort5634.toFloat() + f_358_) * (aHa_Sub2_5598.anInt7794).toFloat())
-                            f_361_ = (aHa_Sub2_5598.anInt7794.toFloat() * (f_359_ - aShort5634.toFloat()))
-                        } else {
-                            f_360_ = ((aShort5634.toFloat() + f_359_) * (aHa_Sub2_5598.anInt7794).toFloat())
-                            f_361_ = (aHa_Sub2_5598.anInt7794.toFloat() * (f_358_ - aShort5634.toFloat()))
-                        }
-                        if (!(f_361_ / f_353_ >= aHa_Sub2_5598.aFloat7830) && !(aHa_Sub2_5598.aFloat7836 >= f_360_ / f_353_)) {
-                            if (class318_sub3 != null || aMapSceneTileDefinitionArray5621 != null) {
-                                CubeMapMaterialPass.aFloat6304 = (((class101_sub3_350_.aFloat5762) * (class101_sub3.aFloat5754)) + ((class101_sub3_350_.aFloat5781) * (class101_sub3.aFloat5756)) + ((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5784)))
-                                NamedTimedNode.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_350_.aFloat5756)) + ((class101_sub3_350_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_350_.aFloat5761))))
-                                SkyboxGradient.aFloat3935 = (((class101_sub3.aFloat5781) * (class101_sub3_350_.aFloat5784)) + ((class101_sub3_350_.aFloat5762 * (class101_sub3.aFloat5750)) + (class101_sub3_350_.aFloat5781 * (class101_sub3.aFloat5770))))
-                                aFloat3943 = (((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5770)) + ((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5769)) + ((class101_sub3_350_.aFloat5756) * (class101_sub3.aFloat5762)))
-                                ParticleSystemState.aFloat2203 = (((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5750)) + ((class101_sub3.aFloat5770) * class101_sub3_350_.aFloat5770) + ((class101_sub3.aFloat5781) * class101_sub3_350_.aFloat5756))
-                                GameDisplayManager.aFloat2836 = (((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5762)) + (((class101_sub3.aFloat5769) * class101_sub3_350_.aFloat5762) + ((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5781))))
-                            }
-                            if (class318_sub3 != null) {
-                                var bool = false
-                                var bool_362_ = true
-                                val i_363_ = aShort5540 - -aShort5586 shr 1
-                                val i_364_ = aShort5617 - -aShort5646 shr 1
-                                val i_365_ = ((i_364_.toFloat() * SkyboxGradient.aFloat3935) + ((ParticleSystemState.aFloat2203 * i_363_.toFloat()) + ModelLightingConfig.aFloat2555 + (aShort5591.toFloat() * (CubemapTexture2dSource.aFloat8696)))).toInt()
-                                val i_366_ = (LinkedListIterator.aFloat2111 + (i_363_.toFloat() * aFloat3943) + (aShort5591.toFloat() * SmoothingBuffer.aFloat3242) + (i_364_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
-                                val i_367_ = ((NamedTimedNode.aFloat8784 * i_363_.toFloat()) + SpriteRenderable.aFloat4720 + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPass.aFloat6304 * i_364_.toFloat())).toInt()
-                                if (aHa_Sub2_5598.anInt7826 <= i_367_) {
-                                    class318_sub3.anInt6405 = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853))
-                                    class318_sub3.anInt6402 = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810))
-                                } else bool = true
-                                val i_368_ = (ModelLightingConfig.aFloat2555 + (ParticleSystemState.aFloat2203 * i_363_.toFloat()) + (CubemapTexture2dSource.aFloat8696 * aShort5629.toFloat()) + (SkyboxGradient.aFloat3935 * i_364_.toFloat())).toInt()
-                                val i_369_ = ((i_364_.toFloat() * GameDisplayManager.aFloat2836) + ((SmoothingBuffer.aFloat3242 * aShort5629.toFloat()) + (LinkedListIterator.aFloat2111 + (aFloat3943 * i_363_.toFloat())))).toInt()
-                                val i_370_ = ((CubeMapMaterialPass.aFloat6304 * i_364_.toFloat()) + ((i_363_.toFloat() * (NamedTimedNode.aFloat8784)) + SpriteRenderable.aFloat4720 + (aShort5629.toFloat() * TextureLoaderUtil.aFloat3994))).toInt()
-                                if (i_370_ >= aHa_Sub2_5598.anInt7826) {
-                                    class318_sub3.anInt6406 = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853))
-                                    class318_sub3.anInt6404 = (i_369_ * (aHa_Sub2_5598.anInt7794) / i_370_ + (aHa_Sub2_5598.anInt7810))
-                                } else bool = true
-                                if (bool) {
-                                    if ((aHa_Sub2_5598.anInt7826 <= i_367_) || ((aHa_Sub2_5598.anInt7826) <= i_370_)) {
-                                        if (i_367_ < (aHa_Sub2_5598.anInt7826)) {
-                                            val i_371_ = ((-(aHa_Sub2_5598.anInt7826) + i_370_ shl 16) / (i_370_ + -i_367_))
-                                            val i_372_ = (((-i_365_ + i_368_) * i_371_ shr 16) + i_368_)
-                                            class318_sub3.anInt6405 = ((aHa_Sub2_5598.anInt7853) - -(i_372_ * (aHa_Sub2_5598.anInt7771) / (aHa_Sub2_5598.anInt7826)))
-                                            val i_373_ = ((i_371_ * (i_369_ - i_366_) shr 16) + i_369_)
-                                            class318_sub3.anInt6402 = ((i_373_ * aHa_Sub2_5598.anInt7794 / (aHa_Sub2_5598.anInt7826)) + (aHa_Sub2_5598.anInt7810))
-                                        } else if (i_370_ < (aHa_Sub2_5598.anInt7826)) {
-                                            val i_374_ = ((-(aHa_Sub2_5598.anInt7826) + i_367_ shl 16) / (i_367_ - i_370_))
-                                            val i_375_ = (i_365_ - -(i_374_ * (-i_368_ + i_365_) shr 16))
-                                            val i_376_ = (((i_366_ - i_369_) * i_374_ shr 16) + i_366_)
-                                            class318_sub3.anInt6405 = ((i_375_ * aHa_Sub2_5598.anInt7771 / (aHa_Sub2_5598.anInt7826)) + (aHa_Sub2_5598.anInt7853))
-                                            class318_sub3.anInt6402 = ((aHa_Sub2_5598.anInt7810) + (aHa_Sub2_5598.anInt7794 * i_376_ / (aHa_Sub2_5598.anInt7826)))
-                                        }
-                                    } else bool_362_ = false
-                                }
-                                if (bool_362_) {
-                                    if (i_370_ < i_367_) class318_sub3.anInt6403 = ((aHa_Sub2_5598.anInt7853) + ((aHa_Sub2_5598.anInt7771) * (i_365_ - -aShort5634) / i_367_) - class318_sub3.anInt6405)
-                                    else class318_sub3.anInt6403 = ((aHa_Sub2_5598.anInt7853) - -((aHa_Sub2_5598.anInt7771) * (aShort5634 + i_368_) / i_370_) + -class318_sub3.anInt6406)
-                                    class318_sub3.aBoolean6401 = true
-                                }
-                            }
-                            aHa_Sub2_5598.method3784((-62).toByte())
-                            aHa_Sub2_5598.method3758(false, class101_sub3_350_)
-                            method677(127.toByte())
-                            aHa_Sub2_5598.method3734(true)
-                            method682(true)
-                        }
-                    }
-                }
+                aHa_Sub2_5598!!.method3784((-62).toByte())
+                aHa_Sub2_5598.method3758(false, class101_sub3_350_)
+                method677(127.toByte())
+                aHa_Sub2_5598.method3734(true)
+                method682(true)
             }
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("paa.KA(" + (if (abstractCameraTransform != null) "{...}" else "null") + ',' + (if (class318_sub3 != null) "{...}" else "null") + ',' + i + ')'))
+        }
+    }
+
+    /**
+     * The culling and picking half of [method615], split out unchanged: frustum-tests the model's
+     * bounds under [abstractCameraTransform], publishes its screen rectangle into [class318_sub3],
+     * and returns whether [method615] should draw it. Requires anInt5529 != 0.
+     */
+    private fun method615Project(abstractCameraTransform: AbstractCameraTransform?, class318_sub3: SceneOcculder?): Boolean {
+        val class101_sub3 = aHa_Sub2_5598!!.aClass101_Sub3_7760
+        if (!aBoolean5527) method692((-123).toByte())
+        val class101_sub3_350_ = abstractCameraTransform as ProjectionCameraTransform
+        TextureLoaderUtil.aFloat3994 = ((class101_sub3_350_.aFloat5754 * class101_sub3.aFloat5784) + ((class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5756) + (class101_sub3_350_.aFloat5769 * class101_sub3.aFloat5754)))
+        SpriteRenderable.aFloat4720 = (class101_sub3.aFloat5751 + ((class101_sub3.aFloat5756 * class101_sub3_350_.aFloat5747) + (class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5754) + (class101_sub3_350_.aFloat5751 * class101_sub3.aFloat5784)))
+        val f = (SpriteRenderable.aFloat4720 + TextureLoaderUtil.aFloat3994 * aShort5591.toFloat())
+        val f_351_ = (TextureLoaderUtil.aFloat3994 * aShort5629.toFloat() + SpriteRenderable.aFloat4720)
+        val f_352_: Float
+        val f_353_: Float
+        if (f > f_351_) {
+            f_352_ = f_351_ - aShort5634.toFloat()
+            f_353_ = f + aShort5634.toFloat()
+        } else {
+            f_352_ = -aShort5634.toFloat() + f
+            f_353_ = f_351_ + aShort5634.toFloat()
+        }
+        if (!(aHa_Sub2_5598.aFloat7874 <= f_352_) && !(aHa_Sub2_5598.anInt7826.toFloat() >= f_353_)) {
+            CubemapTexture2dSource.aFloat8696 = ((class101_sub3.aFloat5750 * class101_sub3_350_.aFloat5769) + (class101_sub3_350_.aFloat5750 * class101_sub3.aFloat5770) + (class101_sub3.aFloat5781 * (class101_sub3_350_.aFloat5754)))
+            ModelLightingConfig.aFloat2555 = (class101_sub3.aFloat5747 + ((class101_sub3.aFloat5781 * (class101_sub3_350_.aFloat5751)) + ((class101_sub3.aFloat5770 * (class101_sub3_350_.aFloat5747)) + ((class101_sub3_350_.aFloat5772) * (class101_sub3.aFloat5750)))))
+            val f_354_ = (aShort5591.toFloat() * CubemapTexture2dSource.aFloat8696 + ModelLightingConfig.aFloat2555)
+            val f_355_ = (aShort5629.toFloat() * CubemapTexture2dSource.aFloat8696 + ModelLightingConfig.aFloat2555)
+            val f_356_: Float
+            val f_357_: Float
+            if (f_354_ > f_355_) {
+                f_356_ = (aHa_Sub2_5598.anInt7771.toFloat() * (-aShort5634.toFloat() + f_355_))
+                f_357_ = (aHa_Sub2_5598.anInt7771.toFloat() * (aShort5634.toFloat() + f_354_))
+            } else {
+                f_357_ = (aHa_Sub2_5598.anInt7771.toFloat() * (f_355_ + aShort5634.toFloat()))
+                f_356_ = ((-aShort5634.toFloat() + f_354_) * aHa_Sub2_5598.anInt7771.toFloat())
+            }
+            if (!(aHa_Sub2_5598.aFloat7835 <= f_356_ / f_353_) && !(f_357_ / f_353_ <= aHa_Sub2_5598.aFloat7872)) {
+                LinkedListIterator.aFloat2111 = ((class101_sub3_350_.aFloat5772 * class101_sub3.aFloat5769) + ((class101_sub3_350_.aFloat5747) * class101_sub3.aFloat5761) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5751)) + class101_sub3.aFloat5772)
+                SmoothingBuffer.aFloat3242 = ((class101_sub3.aFloat5761 * (class101_sub3_350_.aFloat5750)) + (class101_sub3.aFloat5769 * (class101_sub3_350_.aFloat5769)) + (class101_sub3.aFloat5762 * (class101_sub3_350_.aFloat5754)))
+                val f_358_ = (LinkedListIterator.aFloat2111 + SmoothingBuffer.aFloat3242 * aShort5591.toFloat())
+                val f_359_ = (LinkedListIterator.aFloat2111 + aShort5629.toFloat() * SmoothingBuffer.aFloat3242)
+                val f_360_: Float
+                val f_361_: Float
+                if (f_358_ > f_359_) {
+                    f_360_ = ((aShort5634.toFloat() + f_358_) * (aHa_Sub2_5598.anInt7794).toFloat())
+                    f_361_ = (aHa_Sub2_5598.anInt7794.toFloat() * (f_359_ - aShort5634.toFloat()))
+                } else {
+                    f_360_ = ((aShort5634.toFloat() + f_359_) * (aHa_Sub2_5598.anInt7794).toFloat())
+                    f_361_ = (aHa_Sub2_5598.anInt7794.toFloat() * (f_358_ - aShort5634.toFloat()))
+                }
+                if (!(f_361_ / f_353_ >= aHa_Sub2_5598.aFloat7830) && !(aHa_Sub2_5598.aFloat7836 >= f_360_ / f_353_)) {
+                    if (class318_sub3 != null || aMapSceneTileDefinitionArray5621 != null) {
+                        CubeMapMaterialPass.aFloat6304 = (((class101_sub3_350_.aFloat5762) * (class101_sub3.aFloat5754)) + ((class101_sub3_350_.aFloat5781) * (class101_sub3.aFloat5756)) + ((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5784)))
+                        NamedTimedNode.aFloat8784 = (((class101_sub3.aFloat5784) * (class101_sub3_350_.aFloat5756)) + ((class101_sub3_350_.aFloat5770 * (class101_sub3.aFloat5756)) + ((class101_sub3.aFloat5754) * (class101_sub3_350_.aFloat5761))))
+                        SkyboxGradient.aFloat3935 = (((class101_sub3.aFloat5781) * (class101_sub3_350_.aFloat5784)) + ((class101_sub3_350_.aFloat5762 * (class101_sub3.aFloat5750)) + (class101_sub3_350_.aFloat5781 * (class101_sub3.aFloat5770))))
+                        aFloat3943 = (((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5770)) + ((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5769)) + ((class101_sub3_350_.aFloat5756) * (class101_sub3.aFloat5762)))
+                        ParticleSystemState.aFloat2203 = (((class101_sub3_350_.aFloat5761) * (class101_sub3.aFloat5750)) + ((class101_sub3.aFloat5770) * class101_sub3_350_.aFloat5770) + ((class101_sub3.aFloat5781) * class101_sub3_350_.aFloat5756))
+                        GameDisplayManager.aFloat2836 = (((class101_sub3_350_.aFloat5784) * (class101_sub3.aFloat5762)) + (((class101_sub3.aFloat5769) * class101_sub3_350_.aFloat5762) + ((class101_sub3.aFloat5761) * (class101_sub3_350_.aFloat5781))))
+                    }
+                    if (class318_sub3 != null) {
+                        var bool = false
+                        var bool_362_ = true
+                        val i_363_ = aShort5540 - -aShort5586 shr 1
+                        val i_364_ = aShort5617 - -aShort5646 shr 1
+                        val i_365_ = ((i_364_.toFloat() * SkyboxGradient.aFloat3935) + ((ParticleSystemState.aFloat2203 * i_363_.toFloat()) + ModelLightingConfig.aFloat2555 + (aShort5591.toFloat() * (CubemapTexture2dSource.aFloat8696)))).toInt()
+                        val i_366_ = (LinkedListIterator.aFloat2111 + (i_363_.toFloat() * aFloat3943) + (aShort5591.toFloat() * SmoothingBuffer.aFloat3242) + (i_364_.toFloat() * GameDisplayManager.aFloat2836)).toInt()
+                        val i_367_ = ((NamedTimedNode.aFloat8784 * i_363_.toFloat()) + SpriteRenderable.aFloat4720 + (TextureLoaderUtil.aFloat3994 * aShort5591.toFloat()) + (CubeMapMaterialPass.aFloat6304 * i_364_.toFloat())).toInt()
+                        if (aHa_Sub2_5598.anInt7826 <= i_367_) {
+                            class318_sub3.anInt6405 = (i_365_ * (aHa_Sub2_5598.anInt7771) / i_367_ + (aHa_Sub2_5598.anInt7853))
+                            class318_sub3.anInt6402 = (i_366_ * (aHa_Sub2_5598.anInt7794) / i_367_ + (aHa_Sub2_5598.anInt7810))
+                        } else bool = true
+                        val i_368_ = (ModelLightingConfig.aFloat2555 + (ParticleSystemState.aFloat2203 * i_363_.toFloat()) + (CubemapTexture2dSource.aFloat8696 * aShort5629.toFloat()) + (SkyboxGradient.aFloat3935 * i_364_.toFloat())).toInt()
+                        val i_369_ = ((i_364_.toFloat() * GameDisplayManager.aFloat2836) + ((SmoothingBuffer.aFloat3242 * aShort5629.toFloat()) + (LinkedListIterator.aFloat2111 + (aFloat3943 * i_363_.toFloat())))).toInt()
+                        val i_370_ = ((CubeMapMaterialPass.aFloat6304 * i_364_.toFloat()) + ((i_363_.toFloat() * (NamedTimedNode.aFloat8784)) + SpriteRenderable.aFloat4720 + (aShort5629.toFloat() * TextureLoaderUtil.aFloat3994))).toInt()
+                        if (i_370_ >= aHa_Sub2_5598.anInt7826) {
+                            class318_sub3.anInt6406 = (i_368_ * (aHa_Sub2_5598.anInt7771) / i_370_ + (aHa_Sub2_5598.anInt7853))
+                            class318_sub3.anInt6404 = (i_369_ * (aHa_Sub2_5598.anInt7794) / i_370_ + (aHa_Sub2_5598.anInt7810))
+                        } else bool = true
+                        if (bool) {
+                            if ((aHa_Sub2_5598.anInt7826 <= i_367_) || ((aHa_Sub2_5598.anInt7826) <= i_370_)) {
+                                if (i_367_ < (aHa_Sub2_5598.anInt7826)) {
+                                    val i_371_ = ((-(aHa_Sub2_5598.anInt7826) + i_370_ shl 16) / (i_370_ + -i_367_))
+                                    val i_372_ = (((-i_365_ + i_368_) * i_371_ shr 16) + i_368_)
+                                    class318_sub3.anInt6405 = ((aHa_Sub2_5598.anInt7853) - -(i_372_ * (aHa_Sub2_5598.anInt7771) / (aHa_Sub2_5598.anInt7826)))
+                                    val i_373_ = ((i_371_ * (i_369_ - i_366_) shr 16) + i_369_)
+                                    class318_sub3.anInt6402 = ((i_373_ * aHa_Sub2_5598.anInt7794 / (aHa_Sub2_5598.anInt7826)) + (aHa_Sub2_5598.anInt7810))
+                                } else if (i_370_ < (aHa_Sub2_5598.anInt7826)) {
+                                    val i_374_ = ((-(aHa_Sub2_5598.anInt7826) + i_367_ shl 16) / (i_367_ - i_370_))
+                                    val i_375_ = (i_365_ - -(i_374_ * (-i_368_ + i_365_) shr 16))
+                                    val i_376_ = (((i_366_ - i_369_) * i_374_ shr 16) + i_366_)
+                                    class318_sub3.anInt6405 = ((i_375_ * aHa_Sub2_5598.anInt7771 / (aHa_Sub2_5598.anInt7826)) + (aHa_Sub2_5598.anInt7853))
+                                    class318_sub3.anInt6402 = ((aHa_Sub2_5598.anInt7810) + (aHa_Sub2_5598.anInt7794 * i_376_ / (aHa_Sub2_5598.anInt7826)))
+                                }
+                            } else bool_362_ = false
+                        }
+                        if (bool_362_) {
+                            if (i_370_ < i_367_) class318_sub3.anInt6403 = ((aHa_Sub2_5598.anInt7853) + ((aHa_Sub2_5598.anInt7771) * (i_365_ - -aShort5634) / i_367_) - class318_sub3.anInt6405)
+                            else class318_sub3.anInt6403 = ((aHa_Sub2_5598.anInt7853) - -((aHa_Sub2_5598.anInt7771) * (aShort5634 + i_368_) / i_370_) + -class318_sub3.anInt6406)
+                            class318_sub3.aBoolean6401 = true
+                        }
+                    }
+                    return true
+                }
+            }
+        }
+        return false
+    }
+
+    /**
+     * Everything [method615] does for [transform] except the draw: frustum culling and the screen
+     * rectangle in [occluder] used for mouse picking. For DecorBatcher, which draws the model from a
+     * batch but must still publish the rectangle of clickable entities.
+     */
+    fun projectForBatch(transform: AbstractCameraTransform, occluder: SceneOcculder): Boolean {
+        try {
+            return anInt5529 != 0 && method615Project(transform, occluder)
+        } catch (runtimeexception: RuntimeException) {
+            throw TextureLoadException.method2929(runtimeexception, "paa.KA(batch)")
         }
     }
 
@@ -3471,29 +3495,44 @@ class OpenGlModel : AbstractModel {
     }
 
     /*
-     * Ground-decor batching (see DecorBatcher). While [batchCapture] is set, every pack of this
-     * model's vertex streams (method688) and indices (method678) also keeps a copy of the packed
-     * bytes, in the platform byte order the renderer uploads. method691 releases the source arrays
-     * after the first pack, so these copies are the only way to rebuild the geometry into a batch.
-     * [batchCapture] is only ever set by DecorBatcher, and only where batching is supported.
+     * Ground-decor batching (see DecorBatcher). DecorBatcher marks the stream descriptors and the
+     * index wrapper of a decor model; every pack of a marked stream (method688) or of marked
+     * indices (method678) then also keeps a copy of the packed bytes on that descriptor or wrapper,
+     * in the platform byte order the renderer uploads. method691 releases the source arrays after
+     * the first pack, so these copies are the only way to rebuild the geometry into a batch. The
+     * copies live on the descriptor rather than the model because model copies (method614) share
+     * the descriptors of streams they do not change, and whichever copy packs first packs for all.
      */
     var batchCapture = false
-    var capturedPositions: ByteArray? = null // 3 floats per packed vertex
-    var capturedColours: ByteArray? = null // 4 unsigned bytes per packed vertex
-    var capturedNormals: ByteArray? = null // 3 floats per packed vertex
-    var capturedTexCoords: ByteArray? = null // 2 floats per packed vertex
-    var capturedIndices: ByteArray? = null // 3 unsigned shorts per face
+        private set
     var capturedGroups: IntArray? = null // face-range bounds of the material groups (anIntArray5626)
     var capturedGroupTextures: IntArray? = null // texture id per material group, -1 for none
+
+    val capturedPositions: ByteArray? get() = aHoverActionEntry_5605?.captured?.takeIf { it.size == anInt5529 * 12 } // 3 floats per packed vertex
+    val capturedColours: ByteArray? get() = aHoverActionEntry_5610?.captured?.takeIf { it.size == anInt5529 * 4 } // 4 unsigned bytes per packed vertex
+    val capturedNormals: ByteArray? get() = aHoverActionEntry_5563?.captured?.takeIf { it.size == anInt5529 * 12 } // 3 floats per packed vertex
+    val capturedTexCoords: ByteArray? get() = aHoverActionEntry_5620?.captured?.takeIf { it.size == anInt5529 * 8 } // 2 floats per packed vertex
+    val capturedIndices: ByteArray? get() = aArchiveFileConditionWrapper_5575?.capturedIndices?.takeIf { it.size == anInt5537 * 6 } // 3 unsigned shorts per face
 
     val batchVertexCount: Int get() = anInt5529
     val batchHasColours: Boolean get() = aHoverActionEntry_5610 != null
     val batchHasNormals: Boolean get() = aHoverActionEntry_5563 != null
     val batchHasTexCoords: Boolean get() = aHoverActionEntry_5620 != null
 
+    /** Marks this model's streams and indices for capture. Must happen before they are first packed. */
+    fun markForBatchCapture() {
+        batchCapture = true
+        aHoverActionEntry_5605?.captureWanted = true
+        aHoverActionEntry_5610?.captureWanted = true
+        aHoverActionEntry_5563?.captureWanted = true
+        aHoverActionEntry_5620?.captureWanted = true
+        aArchiveFileConditionWrapper_5575?.captureWanted = true
+    }
+
     /**
      * Brings the packed streams and indices up to date, as the first draw would (the packing half
-     * of [method677]), so their copies are captured. Returns whether complete copies now exist.
+     * of [method677]), so their copies are captured, and snapshots the material groups. Returns
+     * whether complete copies now exist.
      */
     fun prepareForBatch(): Boolean {
         if (!batchCapture || anInt5537 == 0 || anInt5529 == 0) return false
@@ -3504,7 +3543,14 @@ class OpenGlModel : AbstractModel {
         method688(5, false)
         if (wrapper.anByteArrayCodec_3463 == null) method678((aByte5581.toInt() and 0x10) != 0, 27.toByte())
         method691(110.toByte())
-        return capturedPositions != null && capturedIndices != null && capturedGroups != null &&
+        val groups = anIntArray5626 ?: return false
+        val textures = aShortArray5601 ?: return false
+        capturedGroups = groups.copyOf()
+        capturedGroupTextures = IntArray(groups.size - 1) { g ->
+            val t = textures[groups[g]].toInt() and 0xffff
+            if (t == 65535) -1 else t
+        }
+        return capturedPositions != null && capturedIndices != null &&
             (aHoverActionEntry_5610 == null || capturedColours != null) &&
             (aHoverActionEntry_5563 == null || capturedNormals != null) &&
             (aHoverActionEntry_5620 == null || capturedTexCoords != null)
@@ -3533,14 +3579,16 @@ class OpenGlModel : AbstractModel {
     }
 
     private fun captureVertexStreams(src: ByteArray, stride: Int, pos: Boolean, posOffset: Int, col: Boolean, colOffset: Int, nrm: Boolean, nrmOffset: Int, uv: Boolean, uvOffset: Int) {
-        if (pos) capturedPositions = captureStream(src, stride, posOffset, 12, capturedPositions)
-        if (col) capturedColours = captureStream(src, stride, colOffset, 4, capturedColours)
-        if (nrm) capturedNormals = captureStream(src, stride, nrmOffset, 12, capturedNormals)
-        if (uv) capturedTexCoords = captureStream(src, stride, uvOffset, 8, capturedTexCoords)
+        if (pos) captureStream(aHoverActionEntry_5605!!, src, stride, posOffset, 12)
+        if (col) captureStream(aHoverActionEntry_5610!!, src, stride, colOffset, 4)
+        if (nrm) captureStream(aHoverActionEntry_5563!!, src, stride, nrmOffset, 12)
+        if (uv) captureStream(aHoverActionEntry_5620!!, src, stride, uvOffset, 8)
     }
 
-    private fun captureStream(src: ByteArray, stride: Int, offset: Int, size: Int, old: ByteArray?): ByteArray {
+    private fun captureStream(entry: HoverActionEntry, src: ByteArray, stride: Int, offset: Int, size: Int) {
+        if (!entry.captureWanted) return
         val n = anInt5529
+        val old = entry.captured
         val dst = if (old != null && old.size == n * size) old else ByteArray(n * size)
         var s = offset
         var d = 0
@@ -3549,21 +3597,7 @@ class OpenGlModel : AbstractModel {
             s += stride
             d += size
         }
-        return dst
-    }
-
-    private fun captureIndices(src: ByteArray, length: Int) {
-        val groups = anIntArray5626
-        val textures = aShortArray5601
-        if (groups == null || textures == null) return
-        capturedIndices = src.copyOf(length)
-        capturedGroups = groups.copyOf()
-        val groupTextures = IntArray(groups.size - 1)
-        for (g in groupTextures.indices) {
-            val t = textures[groups[g]].toInt() and 0xffff
-            groupTextures[g] = if (t == 65535) -1 else t
-        }
-        capturedGroupTextures = groupTextures
+        entry.captured = dst
     }
 
     companion object {

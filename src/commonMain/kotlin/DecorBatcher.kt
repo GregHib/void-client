@@ -1,6 +1,7 @@
 /**
- * Draws static, non-interactive ground decor from per-chunk batches instead of one model draw
- * (plus the per-entity setup in [SkyboxSphereType.method365]) for each entity.
+ * Draws static scene objects (ground decor, scenery such as trees and rocks, and walls) from
+ * per-chunk batches instead of one model draw (plus the per-entity setup in
+ * [SkyboxSphereType.method365]) for each entity.
  *
  * How it hooks in ([FloatBuffer.method3398], the scene pass):
  * - [beginPass] decides whether this pass can use batches at all.
@@ -12,13 +13,19 @@
  *   neighbouring ranges, so a fully visible chunk costs one draw per material and hidden members
  *   (roofs, occlusion, off-screen) stay hidden exactly as before.
  *
- * Eligible: [ModelGroundDecor] and [GroundDecorSceneEntity] in the static scene lists whose model
- * has no alpha-blended faces, no billboards or emitters, no point lights, and does not take the
- * deferred (picking) path. Anything else, and any entity the index has not seen yet, takes the
- * normal path, so the fallback is always the original rendering.
+ * Eligible: [ModelGroundDecor], [GroundDecorSceneEntity], [NpcActorEntity] (static scenery,
+ * despite the name) and [ModelWallEntity] in the static scene lists, which all draw one model
+ * placed by a translation in their [SceneEntity.method2386], and whose model has no alpha-blended
+ * faces, no billboards or emitters and no point lights. Anything else, and any entity the index
+ * has not seen yet, takes the normal path, so the fallback is always the original rendering.
  *
- * Geometry comes from copies the model keeps of its packed streams ([OpenGlModel.batchCapture]),
- * translated to world space the way [ModelGroundDecor.method2386] positions the model.
+ * Clickable entities (those [SceneEntity.method2386] hands to the deferred path) still need their
+ * screen rectangle every frame for mouse-over and menus: [consume] computes it exactly as the
+ * model draw would ([OpenGlModel.projectForBatch]) and queues it with
+ * [SceneObjectSpawner.method774], as [SkyboxSphereType.method365] does, while the batch draws them.
+ *
+ * Geometry comes from copies kept of the model's packed streams ([OpenGlModel.markForBatchCapture]),
+ * translated to world space the way each class's method2386 positions the model ([originX]).
  *
  * Keeping batches current:
  * - Decor that leaves the scene is never marked visible again, so its range is not drawn.
@@ -40,7 +47,12 @@ object DecorBatcher {
     /** Draw eligible decor from batches. Toggled by the `batchdecor` console command. */
     var enabled: Boolean = captureEnabled
 
-    private const val CHUNK_SHIFT = 3 // 8x8 tiles
+    /**
+     * Log2 of the chunk size in tiles (16x16). Measured at the fully zoomed-out view: 8x8 needed
+     * twice the material switches, and 32x32 or larger saved almost no draws, which by then are
+     * mostly split by hidden members rather than by materials.
+     */
+    private const val CHUNK_SHIFT = 4
     private const val MAX_BUILDS_PER_PASS = 16
     private const val MAX_DIRTY_CHUNKS = 32 // more than this in one pass: re-index everything
     private const val MAX_EVICTIONS = 3
@@ -61,7 +73,7 @@ object DecorBatcher {
 
     /** Called by decor entities for the model they will draw, before it is first packed. */
     fun onDecorModel(model: AbstractModel?) {
-        if (captureEnabled && model is OpenGlModel) model.batchCapture = true
+        if (captureEnabled && model is OpenGlModel) model.markForBatchCapture()
     }
 
     /**
@@ -115,11 +127,12 @@ object DecorBatcher {
                     batch.pass = pass
                     passBatches.add(batch)
                 }
+                if (slot.deferred) publishPickRect(e, slot)
                 return true
             }
         } else if (slot === INELIGIBLE || slot is Evicted) return false
         // Not indexed, or indexed into a chunk that has since been rebuilt: new to the scene.
-        if (e is ModelGroundDecor || e is GroundDecorSceneEntity) {
+        if (isCandidate(e)) {
             val key = chunkKey(e)
             if (chunks[key]?.indexedPass == pass) e.decorBatchSlot = INELIGIBLE // not in the scanned lists
             else dirtyChunks.add(key)
@@ -149,19 +162,41 @@ object DecorBatcher {
         return (cx shl 16) or (cy and 0xffff)
     }
 
+    /** The deferred half of [SkyboxSphereType.method365] and method2386, without the draw. */
+    private fun publishPickRect(e: SceneEntity, member: Member) {
+        val transform = renderer!!.method3705()
+        transform.method894(member.x, member.height, member.y)
+        val sceneModel = ChatMessageStream.method136(1, true, false)
+        member.model.projectForBatch(transform, sceneModel.aClass318_Sub3Array6414!![0]!!)
+        sceneModel.aClass318_Sub1_6410 = e
+        PlayerSequenceSelector.aSceneObjectSpawner_1208!!.method774(sceneModel, 18802)
+    }
+
+    private fun deferredOf(e: SceneEntity): Boolean = when (e) {
+        is ModelGroundDecor -> e.batchDeferred
+        is GroundDecorSceneEntity -> e.batchDeferred
+        is NpcActorEntity -> e.batchDeferred
+        is ModelWallEntity -> e.batchDeferred
+        else -> false
+    }
+
+    private fun isCandidate(e: SceneEntity): Boolean =
+        e is ModelGroundDecor || e is GroundDecorSceneEntity || e is NpcActorEntity || e is ModelWallEntity
+
     private fun modelOf(e: SceneEntity): OpenGlModel? = when (e) {
         is ModelGroundDecor -> e.aAbstractModel_10028 as? OpenGlModel
         is GroundDecorSceneEntity -> e.batchModel as? OpenGlModel
+        is NpcActorEntity -> e.aAbstractModel_10071 as? OpenGlModel
+        is ModelWallEntity -> e.batchModel as? OpenGlModel
         else -> null
     }
 
+    /** The translation each class's method2386 gives its model: x and y (world z), plus the height. */
+    private fun originX(e: SceneEntity): Int = if (e is ModelWallEntity) e.x + e.aShort8781 else e.x
+
+    private fun originY(e: SceneEntity): Int = if (e is ModelWallEntity) e.y + e.aShort8769 else e.y
+
     private fun eligible(e: SceneEntity): Boolean {
-        val deferred = when (e) {
-            is ModelGroundDecor -> e.batchDeferred
-            is GroundDecorSceneEntity -> e.batchDeferred
-            else -> return false
-        }
-        if (deferred) return false
         val model = modelOf(e) ?: return false
         if (!model.batchCapture || model.F()) return false
         return !ProjectedGroundDecor.aBoolean10221 || e.method2384(lightScratch, 49) == 0
@@ -190,7 +225,7 @@ object DecorBatcher {
     private fun indexList(head: SceneEntity?, all: Boolean) {
         var e = head
         while (e != null) {
-            if (e is ModelGroundDecor || e is GroundDecorSceneEntity) {
+            if (isCandidate(e)) {
                 val key = chunkKey(e)
                 val chunk = if (all) chunks.getOrPut(key) { Chunk(pass) } else chunks[key]?.takeIf { it.indexedPass == pass }
                 if (chunk != null) {
@@ -220,9 +255,9 @@ object DecorBatcher {
     private class Evicted(val evictions: Int)
 
     /** Entry [index] of [batch], built from [model] placed at ([x], [height], [y]). */
-    private class Member(val batch: Batch, val index: Int, val model: OpenGlModel, val evictions: Int, val x: Int, val height: Int, val y: Int) {
+    private class Member(val batch: Batch, val index: Int, val model: OpenGlModel, val evictions: Int, val x: Int, val height: Int, val y: Int, val deferred: Boolean) {
         fun isCurrent(e: SceneEntity): Boolean =
-            e.x == x && e.y == y && e.anInt6382 == height && modelOf(e) === model && model.batchStillCurrent()
+            originX(e) == x && originY(e) == y && e.anInt6382 == height && modelOf(e) === model && model.batchStillCurrent()
     }
 
     /** The eligible decor of one chunk: entities until first drawn, then one batch per vertex format. */
@@ -307,9 +342,9 @@ object DecorBatcher {
                 val col = m.capturedColours
                 val nrm = m.capturedNormals
                 val uv = m.capturedTexCoords
-                val tx = e.x.toFloat()
+                val tx = originX(e).toFloat()
                 val ty = e.anInt6382.toFloat()
-                val tz = e.y.toFloat()
+                val tz = originY(e).toFloat()
                 for (v in 0..<m.batchVertexCount) {
                     val o = (base + v) * stride
                     val p = v * 12
@@ -370,7 +405,7 @@ object DecorBatcher {
             texCoords = if (hasTexCoords) HoverActionEntry(vertices, 5126, 2, texCoordOffset) else null
             for (i in members.indices) {
                 val e = members[i]
-                e.decorBatchSlot = Member(this, i, models[i], evictionsOf(e.decorBatchSlot), e.x, e.anInt6382, e.y)
+                e.decorBatchSlot = Member(this, i, models[i], evictionsOf(e.decorBatchSlot), originX(e), e.anInt6382, originY(e), deferredOf(e))
             }
         }
 

@@ -179,7 +179,14 @@ class ModelWallEntity internal constructor(var_renderer: Renderer?, objectType: 
             }
             break
         } while (false)
+        DecorBatcher.onDecorModel(aAbstractModel_10124)
     }
+
+    /** The model [method2386] draws; see DecorBatcher. */
+    val batchModel: AbstractModel? get() = aAbstractModel_10124
+
+    /** Whether [method2386] hands this entity to the deferred (picking) path; see DecorBatcher. */
+    val batchDeferred: Boolean get() = aBoolean10130
 
     override fun method41(i: Int): Int {
         if (i != -32228) aBoolean10130 = true

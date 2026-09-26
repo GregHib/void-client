@@ -7,6 +7,10 @@ class HoverActionEntry internal constructor(var anByteBufferReader_1811: ByteBuf
     var aByte1812: Byte
     var aByte1814: Byte
 
+    /** Set by DecorBatcher: keep a copy of this stream's packed bytes in [captured]. */
+    var captureWanted = false
+    var captured: ByteArray? = null
+
     init {
         this.aShort1810 = i.toShort()
         this.aByte1812 = i_1_.toByte()

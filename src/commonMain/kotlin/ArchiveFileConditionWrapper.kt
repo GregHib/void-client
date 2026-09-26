@@ -5,6 +5,10 @@ import kotlin.jvm.JvmStatic
 class ArchiveFileConditionWrapper {
     var anByteArrayCodec_3463: ByteArrayCodec? = null
 
+    /** Set by DecorBatcher: keep a copy of the packed indices in [capturedIndices]. */
+    var captureWanted = false
+    var capturedIndices: ByteArray? = null
+
     companion object {
         var anIntArray3464: IntArray? = IntArray(6)
 

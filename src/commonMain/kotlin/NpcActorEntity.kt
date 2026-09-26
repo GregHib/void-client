@@ -43,7 +43,11 @@ class NpcActorEntity internal constructor(var_renderer: Renderer?, objectType: O
             }
             break
         } while (false)
+        DecorBatcher.onDecorModel(this.aAbstractModel_10071)
     }
+
+    /** Whether [method2386] hands this entity to the deferred (picking) path; see DecorBatcher. */
+    val batchDeferred: Boolean get() = aBoolean10076
 
     override fun method39(i: Int): Int {
         anInt10080++
