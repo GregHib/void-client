@@ -70,6 +70,26 @@ class RegionLoadPerfTest {
     }
 
     @Test
+    fun `hashtable int bucket index matches original long mask`() {
+        val random = Random(7)
+        for (size in listOf(0, 1, 2, 8, 64, 1024, 1 shl 20, Int.MAX_VALUE, 3, 1000)) {
+            repeat(2000) {
+                val l = when (it % 4) {
+                    0 -> random.nextLong()
+                    1 -> random.nextInt().toLong()
+                    2 -> -random.nextLong(0, Long.MAX_VALUE)
+                    else -> random.nextLong(0, 1L shl 40)
+                }
+                assertEquals((l and (size - 1).toLong()).toInt(), l.toInt() and (size - 1))
+            }
+        }
+        val table = Hashtable(256)
+        val keys = LongArray(3000) { if (it % 2 == 0) random.nextLong() else -random.nextInt(0, 100000).toLong() }.distinct()
+        val nodes = keys.map { k -> LinkedListNode().also { table.method3483(99, k, it) } }
+        keys.forEachIndexed { i, k -> assertEquals(nodes[i], table.method3480(k, -6008)) }
+    }
+
+    @Test
     fun `int pair sort matches original long sort`() {
         val random = Random(42)
         repeat(500) {

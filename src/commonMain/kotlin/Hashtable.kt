@@ -8,6 +8,13 @@ class Hashtable internal constructor(var anInt4377: Int) {
     private var aLinkedListNode_4390: LinkedListNode? = null
     private var anInt4391 = 0
 
+    /**
+     * `(l and (anInt4377 - 1).toLong()).toInt()`, as the original wrote it, computed on the low word
+     * only. The mask is a non-negative Int, so the high word never survives the `and`; on JS this
+     * avoids allocating two emulated Longs on every lookup and insert.
+     */
+    private fun bucket(l: Long): Int = l.toInt() and (this.anInt4377 - 1)
+
     fun method3474(i: Int): Int {
         anInt4387++
         var i_0_ = 0
@@ -32,7 +39,7 @@ class Hashtable internal constructor(var anInt4377: Int) {
     fun method3476(bool: Boolean): LinkedListNode? {
         anInt4384++
         if (aLinkedListNode_4389 == null) return null
-        val class348 = (this.aLinkedListNodeArray4374[((this.anInt4377 - 1).toLong() and aLong4385).toInt()])
+        val class348 = (this.aLinkedListNodeArray4374[bucket(aLong4385)])
         while ( /**/aLinkedListNode_4389 !== class348) {
             if (aLinkedListNode_4389!!.aLong4291 == aLong4385) {
                 val class348_3_ = aLinkedListNode_4389
@@ -65,7 +72,7 @@ class Hashtable internal constructor(var anInt4377: Int) {
         try {
             aLong4385 = l
             anInt4379++
-            val class348 = (this.aLinkedListNodeArray4374[(l and (this.anInt4377 + -1).toLong()).toInt()])
+            val class348 = (this.aLinkedListNodeArray4374[bucket(l)])
             if (i != -6008) method3484(80)
             aLinkedListNode_4389 = class348.aLinkedListNode_4294
             while (aLinkedListNode_4389 !== class348) {
@@ -121,7 +128,7 @@ class Hashtable internal constructor(var anInt4377: Int) {
             anInt4382++
             if (i < 18) method3481(71)
             if (linkedListNode!!.aLinkedListNode_4295 != null) linkedListNode.method2715(57.toByte())
-            val class348_10_ = (this.aLinkedListNodeArray4374[(l and (-1 + this.anInt4377).toLong()).toInt()])
+            val class348_10_ = (this.aLinkedListNodeArray4374[bucket(l)])
             linkedListNode.aLinkedListNode_4294 = class348_10_
             linkedListNode.aLinkedListNode_4295 = class348_10_.aLinkedListNode_4295
             linkedListNode.aLinkedListNode_4295!!.aLinkedListNode_4294 = linkedListNode
