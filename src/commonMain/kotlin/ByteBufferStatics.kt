@@ -169,6 +169,7 @@ object ByteBufferStatics {
                 }
             }
             if (GroundDecorSceneEntity.method2402(i_71_, (-64).toByte()) || i_71_ == 13) FacingDirectionNode.aRenderer6654!!.method3673()
+            if (!GroundDecorSceneEntity.method2402(i_71_, (-119).toByte())) releaseLoadingBackdrop()
             WorldMapRenderer.anInt4674 = i_71_
         }
     }

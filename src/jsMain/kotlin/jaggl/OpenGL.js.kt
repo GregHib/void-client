@@ -142,6 +142,9 @@ actual class OpenGL {
 
     actual companion object {
         lateinit var state: GlState
+
+        /** The live WebGL context, or null before the first successful [init]. */
+        val contextOrNull: WebGL2RenderingContext? get() = if (::state.isInitialized) state.gl else null
         private val gl: WebGL2RenderingContext get() = state.gl
 
         private const val GL_VIEWPORT_BIT = 0x800

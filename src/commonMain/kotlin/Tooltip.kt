@@ -22,6 +22,8 @@ object Tooltip {
             anInt4457++
             val bool_0_ = !LocalizedTextTriple.aBoolean3763 || method3490(true)
             if (bool_0_) {
+                // A box presented on its own stands in for a frozen frame; restore that frame under it.
+                if (bool && var_renderer is OpenGlRenderer) drawLoadingBackdrop()
                 if (LocalizedTextTriple.aBoolean3763 && bool_0_) {
                     class143 = ClanChatRequestSender.aFontDefinition_3649
                     class324 = var_renderer!!.method3686(class143, (ProportionalScrollbarComponent.aSpriteImageArray9929), true)
