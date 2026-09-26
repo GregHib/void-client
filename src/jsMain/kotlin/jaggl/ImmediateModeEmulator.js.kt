@@ -1,8 +1,14 @@
 package jaggl
 
+import kotlin.math.abs
+import kotlin.math.floor
+
 const val GL_QUADS = 7
 const val GL_QUAD_STRIP = 8
 const val GL_POLYGON = 9
+private const val GL_LINES = 1
+private const val GL_LINE_LOOP = 2
+private const val GL_LINE_STRIP = 3
 
 // Per-vertex layout, in floats: position(3) colour(4) texcoord0(3) normal(3) texcoord1(3).
 // texcoord0 carries three components (not two) because glTexCoord3f/3i and the unit-0 branch of
@@ -19,6 +25,8 @@ private const val INITIAL_VERTEX_CAPACITY = 256 * FLOATS_PER_VERTEX
 
 // Smallest vertex span the quad index buffer is built for; larger batches grow it by doubling.
 private const val INITIAL_INDEX_VERTEX_SPAN = 256
+
+private val QUAD_TRIANGLES = intArrayOf(0, 1, 2, 0, 2, 3)
 
 class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val state: GlState) {
     private var active = false
@@ -44,6 +52,9 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
     private var indexScratch = IntArray(0)
     private var indexBufferMode = 0
     private var indexBufferVertexSpan = 0
+
+    // Triangles that [expandLines] builds in place of scaled window lines.
+    private var lineVertices = FloatArray(0)
 
     fun begin(mode: Int) {
         active = true
@@ -79,13 +90,29 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
         vertexFloatCount = 0
         if (count == 0) return
 
+        var source = vertices
+        var drawCount = count
+        var drawFloatCount = floatCount
+        var drawMode = if (mode == GL_POLYGON) WebGL2RenderingContext.TRIANGLE_FAN else mode
+        var disableCull = false
+        if ((mode == GL_LINES || mode == GL_LINE_LOOP || mode == GL_LINE_STRIP) && OpenGL.drawScale > 1) {
+            val expanded = expandLines(count)
+            if (expanded == 0) return
+            if (expanded > 0) {
+                source = lineVertices
+                drawCount = expanded
+                drawFloatCount = expanded * FLOATS_PER_VERTEX
+                drawMode = WebGL2RenderingContext.TRIANGLES
+                // Lines are never culled; the quads standing in for them must not be either.
+                disableCull = gl.isEnabled(GL_CULL_FACE)
+            }
+        }
         val indexCount = indexCountFor(mode, count)
-        val drawMode = if (mode == GL_POLYGON) WebGL2RenderingContext.TRIANGLE_FAN else mode
         if (indexCount == 0 && (mode == GL_QUADS || mode == GL_QUAD_STRIP)) return
 
-        val view = vertices.asFloat32Array().subarray(0, floatCount)
+        val view = source.asFloat32Array().subarray(0, drawFloatCount)
         gl.bindBuffer(WebGL2RenderingContext.ARRAY_BUFFER, streamBuffer)
-        val byteCount = floatCount * 4
+        val byteCount = drawFloatCount * 4
         if (byteCount > streamBufferBytes) {
             var newBytes = if (streamBufferBytes == 0) byteCount else streamBufferBytes * 2
             while (newBytes < byteCount) newBytes *= 2
@@ -118,10 +145,120 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
             gl.bindBuffer(WebGL2RenderingContext.ELEMENT_ARRAY_BUFFER, state.boundElementArrayBuffer)
         } else {
             state.prepareDraw()
-            gl.drawArrays(drawMode, 0, count)
+            if (disableCull) gl.disable(GL_CULL_FACE)
+            gl.drawArrays(drawMode, 0, drawCount)
+            if (disableCull) gl.enable(GL_CULL_FACE)
         }
 
         gl.bindBuffer(WebGL2RenderingContext.ARRAY_BUFFER, state.boundArrayBuffer)
+    }
+
+    /**
+     * Lines drawn to the window at an interface scale above 1. WebGL caps line width at 1, so a
+     * 1px interface line would cover only one of the N physical rows of its logical pixel, leaving
+     * gaps between borders and fills and half-drawn shadows. Rebuilds each segment as a quad
+     * covering exactly the logical pixels GL's diamond-exit rule would have lit (one per column
+     * for an x-major line, one per row for a y-major one, the last pixel excluded), so it
+     * rasterises N physical pixels thick.
+     *
+     * Works in logical window space, so it needs an affine (orthographic) transform through the
+     * fixed-function path, which is what all 2D drawing uses. Returns the number of triangle
+     * vertices written to [lineVertices], 0 when no segment covers a pixel, or -1 to draw the
+     * lines unchanged.
+     */
+    private fun expandLines(count: Int): Int {
+        if (state.vertexProgramEnabled || state.boundProgramObj != null) return -1
+        val m = state.matrixStack.mvp()
+        if (m[3] != 0f || m[7] != 0f || m[11] != 0f || m[15] == 0f) return -1
+        val sx = OpenGL.viewportW / 2f / m[15]
+        val sy = OpenGL.viewportH / 2f / m[15]
+        val ox = OpenGL.viewportX + OpenGL.viewportW / 2f
+        val oy = OpenGL.viewportY + OpenGL.viewportH / 2f
+        // Window offset = J * object offset (in x/y); J is inverted to map quad corners back.
+        val j00 = m[0] * sx
+        val j01 = m[4] * sx
+        val j10 = m[1] * sy
+        val j11 = m[5] * sy
+        val det = j00 * j11 - j01 * j10
+        if (det == 0f || det.isNaN()) return -1
+        val half = maxOf(OpenGL.lineWidth, 1f) / 2f
+
+        val segments = when (mode) {
+            GL_LINES -> count / 2
+            GL_LINE_STRIP -> count - 1
+            else -> if (count >= 2) count else 0
+        }
+        val required = segments * 6 * FLOATS_PER_VERTEX
+        if (lineVertices.size < required) lineVertices = FloatArray(required)
+        var written = 0
+        val cornerX = FloatArray(4)
+        val cornerY = FloatArray(4)
+        val cornerT = FloatArray(4)
+        for (segment in 0 until segments) {
+            val a = if (mode == GL_LINES) segment * 2 else segment
+            val b = if (mode == GL_LINES) a + 1 else (segment + 1) % count
+            val aBase = a * FLOATS_PER_VERTEX
+            val bBase = b * FLOATS_PER_VERTEX
+            val axObj = vertices[aBase]
+            val ayObj = vertices[aBase + 1]
+            val azObj = vertices[aBase + 2]
+            val ax = (m[0] * axObj + m[4] * ayObj + m[8] * azObj + m[12]) * sx + ox
+            val ay = (m[1] * axObj + m[5] * ayObj + m[9] * azObj + m[13]) * sy + oy
+            val bxObj = vertices[bBase]
+            val byObj = vertices[bBase + 1]
+            val bzObj = vertices[bBase + 2]
+            val bx = (m[0] * bxObj + m[4] * byObj + m[8] * bzObj + m[12]) * sx + ox
+            val by = (m[1] * bxObj + m[5] * byObj + m[9] * bzObj + m[13]) * sy + oy
+            val dx = bx - ax
+            val dy = by - ay
+            if (abs(dx) >= abs(dy)) {
+                if (dx == 0f) continue
+                val xs = if (dx > 0) floor(ax) else floor(ax) + 1
+                val xe = if (dx > 0) floor(bx) else floor(bx) + 1
+                if (xs == xe) continue
+                val slope = dy / dx
+                val centre = floor(ay) + 0.5f
+                val ys = centre + (xs - ax) * slope
+                val ye = centre + (xe - ax) * slope
+                cornerX[0] = xs; cornerY[0] = ys - half
+                cornerX[1] = xs; cornerY[1] = ys + half
+                cornerX[2] = xe; cornerY[2] = ye + half
+                cornerX[3] = xe; cornerY[3] = ye - half
+                val ts = (xs - ax) / dx
+                val te = (xe - ax) / dx
+                cornerT[0] = ts; cornerT[1] = ts; cornerT[2] = te; cornerT[3] = te
+            } else {
+                val ys = if (dy > 0) floor(ay) else floor(ay) + 1
+                val ye = if (dy > 0) floor(by) else floor(by) + 1
+                if (ys == ye) continue
+                val slope = dx / dy
+                val centre = floor(ax) + 0.5f
+                val xs = centre + (ys - ay) * slope
+                val xe = centre + (ye - ay) * slope
+                cornerX[0] = xs - half; cornerY[0] = ys
+                cornerX[1] = xs + half; cornerY[1] = ys
+                cornerX[2] = xe + half; cornerY[2] = ye
+                cornerX[3] = xe - half; cornerY[3] = ye
+                val ts = (ys - ay) / dy
+                val te = (ye - ay) / dy
+                cornerT[0] = ts; cornerT[1] = ts; cornerT[2] = te; cornerT[3] = te
+            }
+            for (corner in QUAD_TRIANGLES) {
+                val t = cornerT[corner]
+                val out = written * FLOATS_PER_VERTEX
+                for (f in 0 until FLOATS_PER_VERTEX) {
+                    val from = vertices[aBase + f]
+                    lineVertices[out + f] = from + (vertices[bBase + f] - from) * t
+                }
+                val wx = cornerX[corner] - ax
+                val wy = cornerY[corner] - ay
+                lineVertices[out] = axObj + (j11 * wx - j01 * wy) / det
+                lineVertices[out + 1] = ayObj + (j00 * wy - j10 * wx) / det
+                lineVertices[out + 2] = azObj
+                written++
+            }
+        }
+        return written
     }
 
     /** Triangle indices needed to draw [verts] vertices as [mode], or 0 if [mode] draws directly. */

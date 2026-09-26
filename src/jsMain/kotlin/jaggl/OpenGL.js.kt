@@ -162,10 +162,14 @@ actual class OpenGL {
          * Mirror of the current GL viewport, kept for [glPushAttrib]/[glPopAttrib]. Like the
          * scissor box below it is in the client's logical pixels: see [windowScale].
          */
-        private var viewportX = 0
-        private var viewportY = 0
-        private var viewportW = 0
-        private var viewportH = 0
+        internal var viewportX = 0
+            private set
+        internal var viewportY = 0
+            private set
+        internal var viewportW = 0
+            private set
+        internal var viewportH = 0
+            private set
         private var scissorX = 0
         private var scissorY = 0
         private var scissorW = 0
@@ -182,7 +186,7 @@ actual class OpenGL {
          * pixels has to be scaled back up when it targets the window. Offscreen framebuffers are
          * allocated at the logical sizes the client asks for, so they are left as they are.
          */
-        private val drawScale: Int get() = if (drawFramebuffer == null) UiScale.factor else 1
+        internal val drawScale: Int get() = if (drawFramebuffer == null) UiScale.factor else 1
         private val readScale: Int get() = if (readFramebuffer == null) UiScale.factor else 1
 
         private fun applyViewport() {
@@ -432,7 +436,14 @@ actual class OpenGL {
         }
 
         actual fun glPointSize(arg0: Float) {}
-        actual fun glLineWidth(arg0: Float) = gl.lineWidth(arg0)
+        /** Current glLineWidth, for [ImmediateModeEmulator]'s scaled lines (WebGL caps the real one at 1). */
+        internal var lineWidth = 1f
+            private set
+
+        actual fun glLineWidth(arg0: Float) {
+            lineWidth = arg0
+            gl.lineWidth(arg0)
+        }
         actual fun glPolygonMode(arg0: Int, arg1: Int) {}
         /**
          * The client brackets its offscreen passes - the sky cubemap (CubemapTextureGlSource),
