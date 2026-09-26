@@ -1085,7 +1085,7 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
             if (i_118_ >= -127) aMinimapRenderer_7707 = null
             i_120_ *= method3785(i_121_, 4)
             method3793(1, byteArrayCodec)
-            glDrawElements(i_119_, i, i_121_, (byteArrayCodec.method36(78.toByte()) + i_120_.toLong()))
+            glDrawElements(i_119_, i, i_121_, bufferOffset(byteArrayCodec.method36(78.toByte()), i_120_))
         } catch (runtimeexception: RuntimeException) {
             throw TextureLoadException.method2929(runtimeexception, ("qo.MA(" + i + ',' + i_118_ + ',' + i_119_ + ',' + (if (byteArrayCodec != null) "{...}" else "null") + ',' + i_120_ + ')'))
         }
@@ -2443,28 +2443,34 @@ public class OpenGlRenderer(canvas: Canvas?, var_renderConfig: RenderConfig?, i:
         } while (false)
     }
 
+    /**
+     * base + offset for a buffer pointer. Base is 0 for VBO-backed buffers (the usual case), and
+     * skipping the Long add there avoids emulated-Long arithmetic on JS on every model draw.
+     */
+    private fun bufferOffset(base: Long, offset: Int): Long = if (base == 0L) offset.toLong() else base + offset
+
     fun method3794(hoverActionEntry: HoverActionEntry?, hoverActionEntry_279_: HoverActionEntry?, i: Int, hoverActionEntry_280_: HoverActionEntry?, hoverActionEntry_281_: HoverActionEntry?) {
         try {
             if (hoverActionEntry != null) {
                 method3750(i + 26493, hoverActionEntry.anByteBufferReader_1811)
-                glVertexPointer(hoverActionEntry.aByte1814.toInt(), hoverActionEntry.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), (anByteBufferReader_7852!!.method12(42.toByte()) - -(hoverActionEntry.aByte1812).toLong()))
+                glVertexPointer(hoverActionEntry.aByte1814.toInt(), hoverActionEntry.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), bufferOffset(anByteBufferReader_7852!!.method12(42.toByte()), hoverActionEntry.aByte1812.toInt()))
                 glEnableClientState(32884)
             } else glDisableClientState(32884)
             anInt7529++
             if (hoverActionEntry_281_ != null) {
                 method3750(56, hoverActionEntry_281_.anByteBufferReader_1811)
-                glNormalPointer(hoverActionEntry_281_.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), (anByteBufferReader_7852!!.method12(42.toByte()) - -(hoverActionEntry_281_.aByte1812).toLong()))
+                glNormalPointer(hoverActionEntry_281_.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), bufferOffset(anByteBufferReader_7852!!.method12(42.toByte()), hoverActionEntry_281_.aByte1812.toInt()))
                 glEnableClientState(32885)
             } else glDisableClientState(32885)
             if (hoverActionEntry_279_ != null) {
                 method3750(67, hoverActionEntry_279_.anByteBufferReader_1811)
-                glColorPointer(hoverActionEntry_279_.aByte1814.toInt(), hoverActionEntry_279_.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), (anByteBufferReader_7852!!.method12(42.toByte()) + (hoverActionEntry_279_.aByte1812).toLong()))
+                glColorPointer(hoverActionEntry_279_.aByte1814.toInt(), hoverActionEntry_279_.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), bufferOffset(anByteBufferReader_7852!!.method12(42.toByte()), hoverActionEntry_279_.aByte1812.toInt()))
                 glEnableClientState(32886)
             } else glDisableClientState(32886)
             if (i == -26411) {
                 if (hoverActionEntry_280_ != null) {
                     method3750(119, hoverActionEntry_280_.anByteBufferReader_1811)
-                    glTexCoordPointer(hoverActionEntry_280_.aByte1814.toInt(), hoverActionEntry_280_.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), (anByteBufferReader_7852!!.method12(42.toByte()) - -hoverActionEntry_280_.aByte1812.toLong()))
+                    glTexCoordPointer(hoverActionEntry_280_.aByte1814.toInt(), hoverActionEntry_280_.aShort1810.toInt(), anByteBufferReader_7852!!.method13((-97).toByte()), bufferOffset(anByteBufferReader_7852!!.method12(42.toByte()), hoverActionEntry_280_.aByte1812.toInt()))
                     glEnableClientState(32888)
                 } else glDisableClientState(32888)
             }

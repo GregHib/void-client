@@ -169,6 +169,9 @@ class GlState(val gl: WebGL2RenderingContext) {
     // TexGen state only feeds the fixed-function *vertex* stage (uTexGenMode); kept separate
     // so transpiled-ARB draws can consume texEnvDirty without losing texgen updates.
     val texGenDirty = booleanArrayOf(true, true, true)
+    // Planes rarely change, while material passes toggle texgen enables/modes per switch; kept
+    // apart so a toggle re-sends one uTexGenMode uniform rather than all 8 plane uniforms too.
+    val texGenPlaneDirty = booleanArrayOf(true, true, true)
     private var lastProjectionVersion = -1
     // Models issue one draw per material group under the same modelview, so the matrix only
     // needs re-sending when the stack actually changed.
@@ -225,7 +228,6 @@ class GlState(val gl: WebGL2RenderingContext) {
     val currentNormal = floatArrayOf(0f, 0f, 1f)
 
     fun prepareDraw() {
-        GlStats.onDraw()
         val program = boundProgramObj
         if (program == null) {
             // Transpiled ARB vertex program path: the ARB assembly (paired with the shared
@@ -271,7 +273,6 @@ class GlState(val gl: WebGL2RenderingContext) {
                     gl.uniform4fv(s.uLightDiffuse[i], lightDiffuse[i].asFloat32Array())
                     gl.uniform4fv(s.uLightPosition[i], lightPosition[i].asFloat32Array())
                     gl.uniform3fv(s.uLightAttenuation[i], lightAttenuation[i].asFloat32Array())
-                    GlStats.lightUploads++
                 }
                 lightDirtyMask = 0
             }
@@ -287,6 +288,9 @@ class GlState(val gl: WebGL2RenderingContext) {
                         if (en[0]) md[0] else 0, if (en[1]) md[1] else 0,
                         if (en[2]) md[2] else 0, if (en[3]) md[3] else 0,
                     )
+                }
+                if (texGenPlaneDirty[unit]) {
+                    texGenPlaneDirty[unit] = false
                     for (c in 0 until 4) {
                         gl.uniform4fv(s.uTexGenObjPlane[unit * 4 + c], texGenObjectPlane[unit][c].asFloat32Array())
                         gl.uniform4fv(s.uTexGenEyePlane[unit * 4 + c], texGenEyePlane[unit][c].asFloat32Array())

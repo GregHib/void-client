@@ -66,22 +66,27 @@ abstract class GroundDecorEntity internal constructor(i: Int, i_10_: Int, i_11_:
             var i_21_ = this.aShort8750.toInt()
             while (this.aShort8747 >= i_21_) {
                 val l = (SceneEntity.aLongArrayArrayArray10431!![this.plane.toInt()]!![i_20_]!![i_21_])
-                var l_22_ = 0L
-                while_103_@ while (l_22_ <= 48L) {
-                    val i_23_ = (l ushr l_22_.toInt() and 0xffffL).toInt()
+                // Four 16-bit ids packed into l; unpacked from its Int halves because Long
+                // shifts are emulated (and slow) on JS.
+                val lo = l.toInt()
+                val hi = (l ushr 32).toInt()
+                var slot = 0
+                while_103_@ while (slot < 4) {
+                    val half = if (slot < 2) lo else hi
+                    val i_23_ = (half ushr ((slot and 1) shl 4)) and 0xffff
                     if (i_23_ <= 0) break
                     val class211 = SceneEntity.aSoundEnvelopeArray5993!![-1 + i_23_]
                     var i_24_ = 0
                     while (i_19_ > i_24_) {
                         if (class211!!.aClass348_Sub1_2745 === class348_sub1s!![i_24_]) {
-                            l_22_ += 16L
+                            slot++
                             continue@while_103_
                         }
                         i_24_++
                     }
                     class348_sub1s!![i_19_++] = class211!!.aClass348_Sub1_2745
                     if (i_19_ == 4) break@while_104_
-                    l_22_ += 16L
+                    slot++
                 }
                 i_21_++
             }

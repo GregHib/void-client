@@ -1,4 +1,5 @@
 import SpotAnimDefCache.method1943
+import kotlin.math.floor
 import kotlin.math.sqrt
 
 /* Class318_Sub9_Sub2_Sub1 - Decompiled by JODE
@@ -352,9 +353,14 @@ class ProjectileNode internal constructor(var aClass318_Sub7_10419: SpotAnimEnti
                 aShort10423 = d_27_.toInt().toShort()
                 aShort10422 = d_28_.toInt().toShort()
             }
-            this.anInt8791 += ((aShort10424.toLong() * (anInt10421 shl 2).toLong() shr 23) * i.toLong()).toInt()
-            this.anInt8796 += ((aShort10423.toLong() * (anInt10421 shl 2).toLong() shr 23) * i.toLong()).toInt()
-            this.anInt8789 += ((aShort10422.toLong() * (anInt10421 shl 2).toLong() shr 23) * i.toLong()).toInt()
+            // Was (short.toLong() * scale.toLong() shr 23) * i, truncated to Int. The product is
+            // below 2^46 so Double holds it exactly and floor(/ 2^23) equals the arithmetic shift;
+            // the shifted value fits an Int, and Int multiplication wraps exactly like
+            // Long.toInt(). Avoids emulated Long multiplies per particle on JS.
+            val scale = (anInt10421 shl 2).toDouble()
+            this.anInt8791 += floor(aShort10424 * scale / 8388608.0).toInt() * i
+            this.anInt8796 += floor(aShort10423 * scale / 8388608.0).toInt() * i
+            this.anInt8789 += floor(aShort10422 * scale / 8388608.0).toInt() * i
         }
     }
 

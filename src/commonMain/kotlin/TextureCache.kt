@@ -9,16 +9,51 @@ class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_render
     private val aRenderConfig4359: RenderConfig?
     private var aLruByteCache_4361: LruByteCache? = LruByteCache(256)
 
+    /*
+     * Id-indexed front cache over the LRU. method3467 runs on every material change (thousands
+     * of times a frame when zoomed out), and each LRU lookup is a Long-keyed hashtable probe
+     * plus a list relink - costly on JS, where Long is emulated. The front cache is cleared
+     * whenever the LRU can drop entries (clear, per-frame aging, an insert that may evict), so
+     * it only ever holds textures the LRU still holds, and every texture in use still goes
+     * through the LRU once per frame to keep its recency.
+     */
+    private var frontCache = arrayOfNulls<GlTexture2D>(0)
+    private var frontCacheIds = IntArray(64)
+    private var frontCacheCount = 0
+
+    private fun frontCachePut(id: Int, texture: GlTexture2D) {
+        if (id < 0) return
+        if (id >= frontCache.size) frontCache = frontCache.copyOf(maxOf(id + 1, frontCache.size * 2, 256))
+        if (frontCache[id] == null) {
+            if (frontCacheCount == frontCacheIds.size) frontCacheIds = frontCacheIds.copyOf(frontCacheCount * 2)
+            frontCacheIds[frontCacheCount++] = id
+        }
+        frontCache[id] = texture
+    }
+
+    private fun frontCacheClear() {
+        for (k in 0 until frontCacheCount) frontCache[frontCacheIds[k]] = null
+        frontCacheCount = 0
+    }
+
     fun method3463(i: Byte) {
         anInt4360++
+        frontCacheClear()
         aLruByteCache_4361!!.method590(0)
         if (i.toInt() != -110) aLruByteCache_4361 = null
     }
 
     fun method3467(i: Int, i_4_: Int): GlTexture2D? {
         anInt4357++
+        if (i >= 0 && i < frontCache.size) {
+            val cached = frontCache[i]
+            if (cached != null) return cached
+        }
         val `object` = aLruByteCache_4361!!.method583(i.toLong(), -127)
-        if (`object` != null) return `object` as GlTexture2D
+        if (`object` != null) {
+            frontCachePut(i, `object` as GlTexture2D)
+            return `object`
+        }
         if (!aRenderConfig4359!!.method4(-7953, i)) return null
         val class12 = aRenderConfig4359.method3(i, -6662)
         val i_5_ = (if (!class12!!.aBoolean199) aHa_Sub2_4355!!.anInt7712 else 64)
@@ -34,12 +69,16 @@ class TextureCache internal constructor(var_ha_Sub2: OpenGlRenderer?, var_render
         }
         class258_sub3.method1965(class12.aBoolean215, class12.aBoolean217, 10243)
         if (i_4_ != 256) method3466(22)
+        // Inserting can evict other entries from the LRU.
+        frontCacheClear()
         aLruByteCache_4361!!.method582(class258_sub3, i.toLong(), (-114).toByte())
+        frontCachePut(i, class258_sub3)
         return class258_sub3
     }
 
     fun method3469(i: Int) {
         if (i == 8218) {
+            frontCacheClear()
             anInt4353++
             aLruByteCache_4361!!.method578(2, 5)
         }

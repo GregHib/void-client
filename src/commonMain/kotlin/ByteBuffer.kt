@@ -510,6 +510,11 @@ open class ByteBuffer : LinkedListNode {
     }
 
     fun writeInt(i: Byte, i_90_: Int) {
+        if (i >= 84) {
+            this.aByteArray7154!!.putIntBE(this.anInt7197, i_90_)
+            this.anInt7197 += 4
+            return
+        }
         this.aByteArray7154!![this.anInt7197++] = (i_90_ shr 24).toByte()
         if (i < 84) writeByteAdd((-122).toByte(), -112)
         anInt7202++
@@ -547,6 +552,13 @@ open class ByteBuffer : LinkedListNode {
     }
 
     fun method3394(i: Int, i_93_: Int) {
+        if (i == -23892) {
+            // Little-endian int: one 32-bit store (see ByteArrayWrites) instead of four byte
+            // stores - this runs per vertex attribute when animated models are re-packed.
+            this.aByteArray7154!!.putIntLE(this.anInt7197, i_93_)
+            this.anInt7197 += 4
+            return
+        }
         this.aByteArray7154!![this.anInt7197++] = i_93_.toByte()
         anInt7141++
         this.aByteArray7154!![this.anInt7197++] = (i_93_ shr 8).toByte()

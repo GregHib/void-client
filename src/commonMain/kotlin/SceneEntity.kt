@@ -50,13 +50,16 @@ abstract class SceneEntity : SceneLinkedListNode() {
         anInt6384++
         if (i_30_ != -2) this.aByte6376 = 33.toByte()
         val l = (aLongArrayArrayArray10431!![this.plane.toInt()]!![i]!![i_31_])
-        var l_32_ = 0L
+        // Four 16-bit ids packed into l; unpacked from its Int halves because Long shifts are
+        // emulated (and slow) on JS.
+        val lo = l.toInt()
+        val hi = (l ushr 32).toInt()
         var i_33_ = 0
-        while ( /**/l_32_ <= 48) {
-            val i_34_ = (0xffffL and (l shr l_32_.toInt())).toInt()
+        while (i_33_ < 4) {
+            val half = if (i_33_ < 2) lo else hi
+            val i_34_ = (half ushr ((i_33_ and 1) shl 4)) and 0xffff
             if (i_34_ <= 0) break
             class348_sub1s[i_33_++] = (SceneEntity.aSoundEnvelopeArray5993!![i_34_ + -1]!!.aClass348_Sub1_2745)
-            l_32_ += 16L
         }
         for (i_35_ in i_33_..3) class348_sub1s[i_35_] = null
         return i_33_

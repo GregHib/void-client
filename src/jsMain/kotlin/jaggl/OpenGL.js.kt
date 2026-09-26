@@ -392,9 +392,11 @@ actual class OpenGL {
                     }
                 GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
                     texturingUnitIndex()?.let {
-                        state.texGenEnabled[it][arg0 - GL_TEXTURE_GEN_S] = true
-                        state.texEnvDirty[it] = true
-                        state.texGenDirty[it] = true
+                        val enabled = state.texGenEnabled[it]
+                        if (enabled[arg0 - GL_TEXTURE_GEN_S] != true) {
+                            enabled[arg0 - GL_TEXTURE_GEN_S] = true
+                            state.texGenDirty[it] = true
+                        }
                     }
                 GL_FOG -> if (!state.fogEnabled) { state.fogEnabled = true; state.ffpStateDirty = true }
                 GL_ALPHA_TEST -> if (!state.alphaTestEnabled) { state.alphaTestEnabled = true; state.ffpStateDirty = true }
@@ -422,9 +424,11 @@ actual class OpenGL {
                     }
                 GL_TEXTURE_GEN_S, GL_TEXTURE_GEN_T, GL_TEXTURE_GEN_R, GL_TEXTURE_GEN_Q ->
                     texturingUnitIndex()?.let {
-                        state.texGenEnabled[it][arg0 - GL_TEXTURE_GEN_S] = false
-                        state.texEnvDirty[it] = true
-                        state.texGenDirty[it] = true
+                        val enabled = state.texGenEnabled[it]
+                        if (enabled[arg0 - GL_TEXTURE_GEN_S] != false) {
+                            enabled[arg0 - GL_TEXTURE_GEN_S] = false
+                            state.texGenDirty[it] = true
+                        }
                     }
                 GL_FOG -> if (state.fogEnabled) { state.fogEnabled = false; state.ffpStateDirty = true }
                 GL_ALPHA_TEST -> if (state.alphaTestEnabled) { state.alphaTestEnabled = false; state.ffpStateDirty = true }
@@ -579,9 +583,11 @@ actual class OpenGL {
             if (arg1 != GL_TEXTURE_GEN_MODE) return@exec
             if (arg0 !in GL_S..GL_Q) return@exec
             texturingUnitIndex()?.let {
-                state.texGenMode[it][arg0 - GL_S] = arg2
-                state.texEnvDirty[it] = true
-                state.texGenDirty[it] = true
+                val modes = state.texGenMode[it]
+                if (modes[arg0 - GL_S] != arg2) {
+                    modes[arg0 - GL_S] = arg2
+                    state.texGenDirty[it] = true
+                }
             }
         }
 
@@ -594,7 +600,7 @@ actual class OpenGL {
                 val unit = texturingUnitIndex() ?: return@exec
                 val coord = arg0 - GL_S
                 if (arg1 == GL_OBJECT_PLANE) {
-                    plane.copyInto(state.texGenObjectPlane[unit][coord])
+                    if (!copyIfChanged(plane, state.texGenObjectPlane[unit][coord])) return@exec
                 } else {
                     // GL_EYE_PLANE: stored as plane * inverse(modelview at specification time), so
                     // the plane stays fixed in eye space whatever the modelview does afterwards.
@@ -606,7 +612,7 @@ actual class OpenGL {
                         dst[j] = sum
                     }
                 }
-                state.texGenDirty[unit] = true
+                state.texGenPlaneDirty[unit] = true
             }
         }
         actual fun glTexEnvi(arg0: Int, arg1: Int, arg2: Int) = exec {
@@ -1402,7 +1408,6 @@ actual class OpenGL {
                             bound = p.sourceBuffer
                         }
                         gl.vertexAttribPointer(loc, p.size, p.type, p.normalized, p.stride, p.offset)
-                        GlStats.attribPointers++
                         state.glAttribBuffer[loc] = p.sourceBuffer
                         state.glAttribSize[loc] = p.size
                         state.glAttribType[loc] = p.type

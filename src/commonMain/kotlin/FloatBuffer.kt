@@ -5,13 +5,10 @@ import OpenGlTerrainTile.Companion.method4001
 
 class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
     fun method3399(i: Int, f: Float) {
-        anInt9741++
-        val i_23_ = floatToRawIntBits(f)
-        this.aByteArray7154!![this.anInt7197++] = i_23_.toByte()
-        this.aByteArray7154!![this.anInt7197++] = (i_23_ shr 8).toByte()
         if (i != 18291) aBoolean9746 = true
-        this.aByteArray7154!![this.anInt7197++] = (i_23_ shr 16).toByte()
-        this.aByteArray7154!![this.anInt7197++] = (i_23_ shr 24).toByte()
+        // One 32-bit float store (see ByteArrayWrites) instead of floatToRawIntBits + 4 byte stores.
+        this.aByteArray7154!!.putFloatLE(this.anInt7197, f)
+        this.anInt7197 += 4
     }
 
     fun method3400(f: Float, i: Byte) {

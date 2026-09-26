@@ -437,7 +437,6 @@ private fun uploadFfCombine(gl: WebGL2RenderingContext, L: FfFragmentUniformLoca
         sh[f + SF_ENV_SCALE] = rgbScale
         sh[f + SF_ENV_SCALE + 1] = alphaScale
         gl.uniform2f(L.envScale[unit], rgbScale, alphaScale)
-        GlStats.fragUniforms++
     }
 }
 
@@ -445,7 +444,6 @@ private fun setInt(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, lo
     if (L.shadowInt[slot] == v) return
     L.shadowInt[slot] = v
     gl.uniform1i(loc, v)
-    GlStats.fragUniforms++
 }
 
 private fun setInt3(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, loc: WebGLUniformLocation?, slot: Int, a: Int, b: Int, c: Int) {
@@ -453,14 +451,12 @@ private fun setInt3(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, l
     if (sh[slot] == a && sh[slot + 1] == b && sh[slot + 2] == c) return
     sh[slot] = a; sh[slot + 1] = b; sh[slot + 2] = c
     gl.uniform3i(loc, a, b, c)
-    GlStats.fragUniforms++
 }
 
 private fun setFloat(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, loc: WebGLUniformLocation?, slot: Int, v: Float) {
     if (L.shadowFloat[slot] == v) return
     L.shadowFloat[slot] = v
     gl.uniform1f(loc, v)
-    GlStats.fragUniforms++
 }
 
 private fun setFloat4(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, loc: WebGLUniformLocation?, slot: Int, v: FloatArray) {
@@ -468,7 +464,6 @@ private fun setFloat4(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations,
     if (sh[slot] == v[0] && sh[slot + 1] == v[1] && sh[slot + 2] == v[2] && sh[slot + 3] == v[3]) return
     sh[slot] = v[0]; sh[slot + 1] = v[1]; sh[slot + 2] = v[2]; sh[slot + 3] = v[3]
     gl.uniform4fv(loc, v.asFloat32Array())
-    GlStats.fragUniforms++
 }
 
 // Shadow-slot layout for FfFragmentUniformLocations.shadowInt / shadowFloat.
