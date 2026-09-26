@@ -65,7 +65,7 @@ class VarcstrTypeList internal constructor(sceneProjector: SceneProjector?, i: I
         @JvmStatic
         fun method812(string: String?, bool: Boolean, bool_0_: Boolean, i: Byte) {
             try {
-                if (i.toInt() != -79) Companion.method814((-79).toByte(), 126L)
+                if (i.toInt() != -79) method814((-79).toByte(), 126L)
                 anInt1437++
                 try {
                     if (WorldMapRenderer.anInt4674 != 10 && (string.equals("commands", ignoreCase = true) || string.equals("help", ignoreCase = true))) {
@@ -75,6 +75,8 @@ class VarcstrTypeList internal constructor(sceneProjector: SceneProjector?, i: I
                         method94("renderer - Print graphics renderer information", 122)
                         method94("heap - Print java memory information", -88)
                         method94("uiscale [1-4] - Set the interface scale (browser only)", -88)
+                        method94("ids - Toggle ids in menu options", -88)
+                        method94("render_dist [1.0-2.0] - Set the render and culling distance multiplier", -88)
                         return
                     }
                     if (string.equals("cls", ignoreCase = true)) {
@@ -103,6 +105,32 @@ class VarcstrTypeList internal constructor(sceneProjector: SceneProjector?, i: I
                     if (string == "batchdecor") {
                         DecorBatcher.enabled = !DecorBatcher.enabled
                         method94("Ground decor batching " + (if (DecorBatcher.enabled) "on" else "off"), 83)
+                        return
+                    }
+                    if (string == "ids") {
+                        // Menu text is rebuilt every frame, so the id suffixes appear/disappear immediately.
+                        Config.debug = !Config.debug
+                        method94("Debug ids " + (if (Config.debug) "on" else "off"), 83)
+                        return
+                    }
+                    if (string != null && string.startsWith("render_dist", ignoreCase = true)) {
+                        val argument = string.substring(11).trim { it <= ' ' }
+                        if (argument.isEmpty()) {
+                            method94("Render distance: " + Config.RENDER_DISTANCE_MULTIPLIER, 83)
+                            return
+                        }
+                        val multiplier = argument.toDoubleOrNull()
+                        if (multiplier == null || multiplier < 1.0 || multiplier > 2.0) {
+                            method94("Usage: render_dist [1.0-2.0]", 83)
+                            return
+                        }
+                        Config.RENDER_DISTANCE_MULTIPLIER = multiplier
+                        Config.CULLING_DISTANCE_MULTIPLIER = multiplier
+                        // Recompute the fog/cull distance, then rebuild the scene so the new draw distance
+                        // (and the tile shape buffer sized from it) takes effect.
+                        if (FacingDirectionNode.aRenderer6654 != null) BufferToggleState.method2196((-9).toByte())
+                        TextureTileRenderer.method2953((-117).toByte())
+                        method94("Render distance set to $multiplier", 83)
                         return
                     }
                     if (string == "heap") {
