@@ -60,7 +60,9 @@ class GlTextureCubeMap : GlTexture {
 
     companion object {
 
-        var aLongArray8530: LongArray? = null
+        var vertexKeyHi: IntArray? = null
+
+        var vertexKeyLo: IntArray? = null
 
         var aParticleEmitterNodeArray8531s: Array<ParticleEmitterNode?>? = arrayOfNulls<ParticleEmitterNode>(50)
 
@@ -74,7 +76,8 @@ class GlTextureCubeMap : GlTexture {
         @JvmStatic
         fun method1962(i: Int) {
             aStringArray8532 = null
-            aLongArray8530 = null
+            vertexKeyHi = null
+            vertexKeyLo = null
             aParticleEmitterNodeArray8531s = null
             if (i != -1) aStringArray8532 = null
         }

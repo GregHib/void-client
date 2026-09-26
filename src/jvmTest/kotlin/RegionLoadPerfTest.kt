@@ -116,4 +116,25 @@ class RegionLoadPerfTest {
             assertContentEquals(idxA, idxB)
         }
     }
+
+    @Test
+    fun `int pair vertex keys match original long keys`() {
+        val random = Random(9)
+        val edges = intArrayOf(0, 1, 2, -1, -2, Int.MAX_VALUE, Int.MIN_VALUE, Int.MAX_VALUE - 1, Int.MIN_VALUE + 1)
+        fun pick(): Int = when (random.nextInt(4)) {
+            0 -> edges[random.nextInt(edges.size)]
+            1 -> random.nextInt(-3, 3)
+            else -> random.nextInt()
+        }
+        repeat(200_000) {
+            // Both OpenGlModel call-site shapes: a = sum of shifted Ints, b = Int, c = the 0..2 offset.
+            val i736 = pick(); val i747 = pick(); val i738 = pick()
+            val b = pick()
+            val c = if (random.nextBoolean()) random.nextInt(0, 3) else pick()
+            val original = (((i736 shl 8).toLong() + ((i747 shl 24).toLong() + i738.toLong())) shl 32) + b.toLong() + c.toLong()
+            val a = (i736 shl 8) + (i747 shl 24) + i738
+            assertEquals((original ushr 32).toInt(), OpenGlModel.vertexKeyHi(a, b, c))
+            assertEquals(original.toInt(), b + c)
+        }
+    }
 }

@@ -445,24 +445,28 @@ class OpenGlModel : AbstractModel {
         anInt5549++
     }
 
-    private fun method683(i: Int, i_97_: Int, l: Long, i_98_: Int, modelDefinition: ModelDefinition?, i_99_: Int, f: Float, i_100_: Int, i_101_: Int, f_102_: Float): Short {
+    private fun method683(i: Int, i_97_: Int, keyHi: Int, keyLo: Int, i_98_: Int, modelDefinition: ModelDefinition?, i_99_: Int, f: Float, i_100_: Int, i_101_: Int, f_102_: Float): Short {
         try {
             anInt5599++
             val i_103_ = anIntArray5528!![i_101_]
             val i_104_ = anIntArray5528!![1 + i_101_]
+            val slots = aShortArray5649!!
+            val keysHi = GlTextureCubeMap.vertexKeyHi!!
+            val keysLo = GlTextureCubeMap.vertexKeyLo!!
             var i_105_ = i_100_
             var i_106_ = i_103_
             while (i_104_ > i_106_) {
-                val i_107_ = aShortArray5649!![i_106_]
+                val i_107_ = slots[i_106_]
                 if (i_107_.toInt() == 0) {
                     i_105_ = i_106_
                     break
                 }
-                if (l == GlTextureCubeMap.aLongArray8530!![i_106_]) return (i_107_ - 1).toShort()
+                if (keyLo == keysLo[i_106_] && keyHi == keysHi[i_106_]) return (i_107_ - 1).toShort()
                 i_106_++
             }
-            aShortArray5649!![i_105_] = (anInt5529 + 1).toShort()
-            GlTextureCubeMap.aLongArray8530!![i_105_] = l
+            slots[i_105_] = (anInt5529 + 1).toShort()
+            keysHi[i_105_] = keyHi
+            keysLo[i_105_] = keyLo
             aShortArray5564!![anInt5529] = i_98_.toShort()
             aShortArray5583!![anInt5529] = i.toShort()
             aShortArray5576!![anInt5529] = i_97_.toShort()
@@ -471,7 +475,7 @@ class OpenGlModel : AbstractModel {
             aFloatArray5571!![anInt5529] = f_102_
             return (anInt5529++).toShort()
         } catch (runtimeexception: RuntimeException) {
-            throw TextureLoadException.method2929(runtimeexception, ("paa.R(" + i + ',' + i_97_ + ',' + l + ',' + i_98_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_99_ + ',' + f + ',' + i_100_ + ',' + i_101_ + ',' + f_102_ + ')'))
+            throw TextureLoadException.method2929(runtimeexception, ("paa.R(" + i + ',' + i_97_ + ',' + keyHi + ',' + keyLo + ',' + i_98_ + ',' + (if (modelDefinition != null) "{...}" else "null") + ',' + i_99_ + ',' + f + ',' + i_100_ + ',' + i_101_ + ',' + f_102_ + ')'))
         }
     }
 
@@ -3091,7 +3095,8 @@ class OpenGlModel : AbstractModel {
                 }
                 val i_715_ = anInt5632 * 3
                 aShortArray5649 = ShortArray(i_715_)
-                GlTextureCubeMap.aLongArray8530 = LongArray(i_715_)
+                GlTextureCubeMap.vertexKeyHi = IntArray(i_715_)
+                GlTextureCubeMap.vertexKeyLo = IntArray(i_715_)
                 aShortArray5601 = ShortArray(anInt5632)
                 aFloatArray5571 = FloatArray(i_715_)
                 aShortArray5564 = ShortArray(i_715_)
@@ -3377,22 +3382,25 @@ class OpenGlModel : AbstractModel {
                     if (modelDefinition.aByteArray1843 != null) i_807_ = modelDefinition.aByteArray1843!![i_735_]
                     else i_807_ = 0.toByte()
                     if (i_807_.toInt() == 0) {
-                        val l = ((((i_736_ shl 8).toLong() + ((i_747_ shl 24).toLong() + i_738_.toLong())) shl 32) + (i_737_ shl 2).toLong())
+                        // Vertex key (keyA shl 32) + keyB + offset, held as (hi, lo) Ints; see vertexKeyHi.
+                        val keyA = (i_736_ shl 8) + (i_747_ shl 24) + i_738_
+                        val keyB = i_737_ shl 2
                         val i_808_ = modelDefinition.aShortArray1863[i_735_]
                         val i_809_ = modelDefinition.aShortArray1835!![i_735_]
                         val i_810_ = modelDefinition.aShortArray1855[i_735_]
                         var class8 = npcAnimationResolvers[i_808_.toInt()]!!
-                        aShortArray5592!![i_734_] = method683(class8.anInt162, class8.anInt159, l, class8.anInt161, modelDefinition, class8.anInt160, f, 0, i_808_.toInt(), f_740_)
+                        aShortArray5592!![i_734_] = method683(class8.anInt162, class8.anInt159, vertexKeyHi(keyA, keyB, 0), keyB, class8.anInt161, modelDefinition, class8.anInt160, f, 0, i_808_.toInt(), f_740_)
                         class8 = npcAnimationResolvers[i_809_.toInt()]!!
-                        aShortArray5579!![i_734_] = method683(class8.anInt162, class8.anInt159, i_745_.toLong() + l, class8.anInt161, modelDefinition, class8.anInt160, f_741_, 0, i_809_.toInt(), f_742_)
+                        aShortArray5579!![i_734_] = method683(class8.anInt162, class8.anInt159, vertexKeyHi(keyA, keyB, i_745_), keyB + i_745_, class8.anInt161, modelDefinition, class8.anInt160, f_741_, 0, i_809_.toInt(), f_742_)
                         class8 = npcAnimationResolvers[i_810_.toInt()]!!
-                        aShortArray5566!![i_734_] = method683(class8.anInt162, class8.anInt159, l + i_746_.toLong(), class8.anInt161, modelDefinition, class8.anInt160, f_743_, 0, i_810_.toInt(), f_744_)
+                        aShortArray5566!![i_734_] = method683(class8.anInt162, class8.anInt159, vertexKeyHi(keyA, keyB, i_746_), keyB + i_746_, class8.anInt161, modelDefinition, class8.anInt160, f_743_, 0, i_810_.toInt(), f_744_)
                     } else if (i_807_.toInt() == 1) {
                         val class347 = dragDropControllers[i_735_]!!
-                        val l = ((((i_736_ shl 8).toLong() + (i_747_ shl 24).toLong() + i_738_.toLong()) shl 32) + ((if (class347.anInt4282 > 0) 1024 else 2048) + (i_737_ shl 2) + ((class347.anInt4279) + 256 shl 12) - -(256 + (class347.anInt4283) shl 22)).toLong())
-                        aShortArray5592!![i_734_] = method683(class347.anInt4279, class347.anInt4283, l, class347.anInt4282, modelDefinition, 0, f, 0, (modelDefinition.aShortArray1863[i_735_]).toInt(), f_740_)
-                        aShortArray5579!![i_734_] = method683(class347.anInt4279, class347.anInt4283, l + i_745_.toLong(), class347.anInt4282, modelDefinition, 0, f_741_, 0, (modelDefinition.aShortArray1835!![i_735_]).toInt(), f_742_)
-                        aShortArray5566!![i_734_] = method683(class347.anInt4279, class347.anInt4283, l + i_746_.toLong(), class347.anInt4282, modelDefinition, 0, f_743_, 0, (modelDefinition.aShortArray1855[i_735_]).toInt(), f_744_)
+                        val keyA = (i_736_ shl 8) + (i_747_ shl 24) + i_738_
+                        val keyB = (if (class347.anInt4282 > 0) 1024 else 2048) + (i_737_ shl 2) + ((class347.anInt4279) + 256 shl 12) - -(256 + (class347.anInt4283) shl 22)
+                        aShortArray5592!![i_734_] = method683(class347.anInt4279, class347.anInt4283, vertexKeyHi(keyA, keyB, 0), keyB, class347.anInt4282, modelDefinition, 0, f, 0, (modelDefinition.aShortArray1863[i_735_]).toInt(), f_740_)
+                        aShortArray5579!![i_734_] = method683(class347.anInt4279, class347.anInt4283, vertexKeyHi(keyA, keyB, i_745_), keyB + i_745_, class347.anInt4282, modelDefinition, 0, f_741_, 0, (modelDefinition.aShortArray1835!![i_735_]).toInt(), f_742_)
+                        aShortArray5566!![i_734_] = method683(class347.anInt4279, class347.anInt4283, vertexKeyHi(keyA, keyB, i_746_), keyB + i_746_, class347.anInt4282, modelDefinition, 0, f_743_, 0, (modelDefinition.aShortArray1855[i_735_]).toInt(), f_744_)
                     }
                     if (modelDefinition.aByteArray1834 != null) aByteArray5542!![i_734_] = modelDefinition.aByteArray1834!![i_735_]
                     if (modelDefinition.aShortArray1856 != null) aShortArray5573!![i_734_] = modelDefinition.aShortArray1856!![i_735_]
@@ -3422,7 +3430,8 @@ class OpenGlModel : AbstractModel {
                     i_815_++
                 }
                 anIntArray5626!![i_811_] = anInt5537
-                GlTextureCubeMap.aLongArray8530 = null
+                GlTextureCubeMap.vertexKeyHi = null
+                GlTextureCubeMap.vertexKeyLo = null
                 aShortArray5564 = NativeVertexBuffer.method1078(aShortArray5564, anInt5529, 114)
                 aShortArray5583 = NativeVertexBuffer.method1078(aShortArray5583, anInt5529, 126)
                 aShortArray5576 = NativeVertexBuffer.method1078(aShortArray5576, anInt5529, 100)
@@ -3460,6 +3469,16 @@ class OpenGlModel : AbstractModel {
     }
 
     companion object {
+
+        /**
+         * High word of the 64-bit vertex key `(a.toLong() shl 32) + b.toLong() + c.toLong()`, computed
+         * with Int arithmetic. Kotlin/JS emulates Long with heap objects, and this key was built three
+         * times per face. The low word is simply `b + c`; `(hi, lo)` identifies the Long exactly.
+         */
+        fun vertexKeyHi(a: Int, b: Int, c: Int): Int {
+            val carry = if (((b + c) xor Int.MIN_VALUE) < (b xor Int.MIN_VALUE)) 1 else 0
+            return a + (b shr 31) + (c shr 31) + carry
+        }
 
         var anInt5530: Int = 0
 
