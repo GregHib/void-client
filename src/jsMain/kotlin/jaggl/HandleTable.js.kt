@@ -1,19 +1,23 @@
 package jaggl
 
+/**
+ * GL-name -> WebGL object table. Backed by a native JS Map rather than HashMap<Int, T>: lookups
+ * run on every texture/buffer bind, and the Kotlin HashMap boxes and hashes the Int key.
+ */
 class IntHandleTable<T : Any> {
     private var next = 1
-    private val map = HashMap<Int, T>()
+    private val map: dynamic = js("new Map()")
 
     fun allocate(obj: T): Int {
         val id = next++
-        map[id] = obj
+        map.set(id, obj)
         return id
     }
 
-    operator fun get(id: Int): T? = map[id]
+    operator fun get(id: Int): T? = map.get(id).unsafeCast<T?>()
 
     fun release(id: Int) {
-        map.remove(id)
+        map.delete(id)
     }
 }
 

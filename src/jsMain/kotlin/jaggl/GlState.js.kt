@@ -100,13 +100,47 @@ class GlState(val gl: WebGL2RenderingContext) {
 
     val quadIndexBuffer: WebGLBuffer by lazy { gl.createBuffer()!! }
 
-    val clientArrays: Map<Int, ClientArrayPointer> = mapOf(
-        ATTRIB_POSITION to ClientArrayPointer(),
-        ATTRIB_COLOR to ClientArrayPointer(),
-        ATTRIB_TEXCOORD0 to ClientArrayPointer(),
-        ATTRIB_NORMAL to ClientArrayPointer(),
-        ATTRIB_TEXCOORD1 to ClientArrayPointer(),
-    )
+    // Indexed by attribute location (ATTRIB_POSITION..ATTRIB_TEXCOORD1 are 0..4).
+    val clientArrays: Array<ClientArrayPointer> = Array(ATTRIB_COUNT) { ClientArrayPointer() }
+
+    /**
+     * What the WebGL context currently holds for each vertex attribute, so bindClientArrays()
+     * only issues the calls that change something. Every draw used to re-issue bindBuffer +
+     * enableVertexAttribArray + vertexAttribPointer for all five attributes, and each of those
+     * is a serialized command to Firefox's out-of-process WebGL host. Anything else that sets
+     * attribute state directly (ImmediateModeEmulator) must call [invalidateAttribCache].
+     */
+    val glAttribEnabled = BooleanArray(ATTRIB_COUNT)
+    val glAttribBuffer = arrayOfNulls<WebGLBuffer>(ATTRIB_COUNT)
+    val glAttribSize = IntArray(ATTRIB_COUNT) { -1 }
+    val glAttribType = IntArray(ATTRIB_COUNT)
+    val glAttribNormalized = BooleanArray(ATTRIB_COUNT)
+    val glAttribStride = IntArray(ATTRIB_COUNT)
+    val glAttribOffset = IntArray(ATTRIB_COUNT)
+    // Generic (constant) attribute value used while the array is disabled; context state, not VAO.
+    val glAttribConstant = Array(ATTRIB_COUNT) { floatArrayOf(Float.NaN, Float.NaN, Float.NaN, Float.NaN) }
+
+    fun invalidateAttribCache() {
+        glAttribSize.fill(-1)
+        glAttribBuffer.fill(null)
+        for (i in 0 until ATTRIB_COUNT) glAttribEnabled[i] = true // forces a disable to be re-issued
+    }
+
+    // The WebGLProgram last passed to gl.useProgram; every useProgram must go through [useProgram].
+    private var currentGlProgram: WebGLProgram? = null
+    private var currentGlProgramKnown = false
+
+    fun useProgram(program: WebGLProgram?) {
+        if (currentGlProgramKnown && program === currentGlProgram) return
+        gl.useProgram(program)
+        currentGlProgram = program
+        currentGlProgramKnown = true
+    }
+
+    /** Call after anything that invokes gl.useProgram without going through [useProgram]. */
+    fun invalidateProgramCache() {
+        currentGlProgramKnown = false
+    }
 
     var lightingEnabled = false
     var fogEnabled = false
@@ -122,6 +156,9 @@ class GlState(val gl: WebGL2RenderingContext) {
     // terrain/objects flipping between stale and fresh lighting depending on whether a water
     // (ARB) draw happened to run first, i.e. camera-angle/visibility dependent.
     var ffpLightingDirty = true
+    // Bit i set = light i's uniforms must be re-uploaded to fixedFunctionShader.program. Kept
+    // per light so a change to one light no longer re-sends all 8 lights (40 uniform calls).
+    var lightDirtyMask = (1 shl MAX_LIGHTS) - 1
     val texEnvDirty = booleanArrayOf(true, true, true)
     // The fixed-function fragment stage is shared (by source) between the fixed-function
     // program and every transpiled ARB vertex program, but each is a distinct WebGLProgram
@@ -133,6 +170,9 @@ class GlState(val gl: WebGL2RenderingContext) {
     // so transpiled-ARB draws can consume texEnvDirty without losing texgen updates.
     val texGenDirty = booleanArrayOf(true, true, true)
     private var lastProjectionVersion = -1
+    // Models issue one draw per material group under the same modelview, so the matrix only
+    // needs re-sending when the stack actually changed.
+    private var lastModelViewVersion = -1
     private val lastTextureMatrixVersion = intArrayOf(-1, -1, -1)
 
     var alphaFunc = GL_ALWAYS
@@ -185,6 +225,7 @@ class GlState(val gl: WebGL2RenderingContext) {
     val currentNormal = floatArrayOf(0f, 0f, 1f)
 
     fun prepareDraw() {
+        GlStats.onDraw()
         val program = boundProgramObj
         if (program == null) {
             // Transpiled ARB vertex program path: the ARB assembly (paired with the shared
@@ -196,9 +237,13 @@ class GlState(val gl: WebGL2RenderingContext) {
                 return
             }
 
-            gl.useProgram(fixedFunctionShader.program)
+            useProgram(fixedFunctionShader.program)
             val s = fixedFunctionShader
-            gl.uniformMatrix4fv(s.uModelView, false, matrixStack.modelview().asFloat32Array())
+            val modelViewVersion = matrixStack.version(GL_MODELVIEW)
+            if (modelViewVersion != lastModelViewVersion) {
+                lastModelViewVersion = modelViewVersion
+                gl.uniformMatrix4fv(s.uModelView, false, matrixStack.modelview().asFloat32Array())
+            }
 
             val projectionVersion = matrixStack.version(GL_PROJECTION)
             if (projectionVersion != lastProjectionVersion) {
@@ -217,13 +262,18 @@ class GlState(val gl: WebGL2RenderingContext) {
                 ffpLightingDirty = false
                 gl.uniform1i(s.uLightingEnabled, if (lightingEnabled) 1 else 0)
                 gl.uniform4fv(s.uGlobalAmbient, globalAmbient.asFloat32Array())
+            }
+            if (lightDirtyMask != 0) {
                 for (i in 0 until MAX_LIGHTS) {
+                    if ((lightDirtyMask and (1 shl i)) == 0) continue
                     gl.uniform1i(s.uLightEnabled[i], if (lightEnabled[i]) 1 else 0)
                     gl.uniform4fv(s.uLightAmbient[i], lightAmbient[i].asFloat32Array())
                     gl.uniform4fv(s.uLightDiffuse[i], lightDiffuse[i].asFloat32Array())
                     gl.uniform4fv(s.uLightPosition[i], lightPosition[i].asFloat32Array())
                     gl.uniform3fv(s.uLightAttenuation[i], lightAttenuation[i].asFloat32Array())
+                    GlStats.lightUploads++
                 }
+                lightDirtyMask = 0
             }
             val ffpWasDirty = ffpStateDirty
 

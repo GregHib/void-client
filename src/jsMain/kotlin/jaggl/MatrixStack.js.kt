@@ -133,31 +133,30 @@ object Mat4 {
 }
 
 class MatrixStack {
-    private val stacks = HashMap<Int, ArrayDeque<FloatArray>>()
+    // Indexed by slot(): 0 = modelview, 1 = projection, 2 + unit = texture matrix of that unit.
+    // Plain arrays rather than HashMap<Int, ...>: version()/modelview() run on every draw call.
+    private val stacks = arrayOfNulls<ArrayDeque<FloatArray>>(2 + MAX_TEXTURE_MATRIX_UNITS)
+    private val versions = IntArray(2 + MAX_TEXTURE_MATRIX_UNITS)
     var mode: Int = GL_MODELVIEW
 
     var textureUnit: Int = 0
 
-    init {
-        stacks[GL_MODELVIEW] = ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) }
-        stacks[GL_PROJECTION] = ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) }
-        stacks[GL_TEXTURE_MATRIX] = ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) }
+    private fun slot(mode: Int, unit: Int): Int = when (mode) {
+        GL_MODELVIEW -> 0
+        GL_PROJECTION -> 1
+        else -> 2 + unit
     }
 
-    private val versions = HashMap<Int, Int>()
+    private fun stack(slot: Int): ArrayDeque<FloatArray> =
+        stacks[slot] ?: ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) }.also { stacks[slot] = it }
 
-    private fun key(mode: Int): Int = if (mode == GL_TEXTURE_MATRIX) GL_TEXTURE_MATRIX + textureUnit else mode
-
-    private fun current(): ArrayDeque<FloatArray> =
-        stacks.getOrPut(key(mode)) { ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) } }
+    private fun current(): ArrayDeque<FloatArray> = stack(slot(mode, textureUnit))
 
     private fun bump() {
-        val k = key(mode)
-        versions[k] = (versions[k] ?: 0) + 1
+        versions[slot(mode, textureUnit)]++
     }
 
-    fun version(mode: Int, unit: Int = 0): Int =
-        versions[if (mode == GL_TEXTURE_MATRIX) mode + unit else mode] ?: 0
+    fun version(mode: Int, unit: Int = 0): Int = versions[slot(mode, unit)]
 
     fun top(): FloatArray = current().last()
 
@@ -179,9 +178,13 @@ class MatrixStack {
     fun ortho(l: Double, r: Double, b: Double, t: Double, n: Double, f: Double) { mult(Mat4.ortho(l, r, b, t, n, f)) }
     fun frustum(l: Double, r: Double, b: Double, t: Double, n: Double, f: Double) { mult(Mat4.frustum(l, r, b, t, n, f)) }
 
-    fun modelview(): FloatArray = stacks[GL_MODELVIEW]!!.last()
-    fun projection(): FloatArray = stacks[GL_PROJECTION]!!.last()
-    fun textureMatrix(unit: Int = 0): FloatArray =
-        stacks.getOrPut(GL_TEXTURE_MATRIX + unit) { ArrayDeque<FloatArray>().apply { addLast(Mat4.identity()) } }.last()
+    fun modelview(): FloatArray = stack(0).last()
+    fun projection(): FloatArray = stack(1).last()
+    fun textureMatrix(unit: Int = 0): FloatArray = stack(2 + unit).last()
     fun mvp(): FloatArray = Mat4.multiply(projection(), modelview())
+
+    private companion object {
+        // glActiveTexture accepts GL_TEXTURE0..GL_TEXTURE31.
+        const val MAX_TEXTURE_MATRIX_UNITS = 32
+    }
 }

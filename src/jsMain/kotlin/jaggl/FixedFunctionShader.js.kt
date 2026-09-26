@@ -5,6 +5,7 @@ const val ATTRIB_COLOR = 1
 const val ATTRIB_TEXCOORD0 = 2
 const val ATTRIB_NORMAL = 3
 const val ATTRIB_TEXCOORD1 = 4
+const val ATTRIB_COUNT = 5
 
 private const val VERTEX_SOURCE = """#version 300 es
 layout(location = 0) in vec4 aPosition;
@@ -359,6 +360,13 @@ class FfFragmentUniformLocations(gl: WebGL2RenderingContext, program: WebGLProgr
     val opAlpha: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uOpAlpha[$it]") }
     val texEnvColor: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uTexEnvColor[$it]") }
     val envScale: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uEnvScale[$it]") }
+
+    // Last values uploaded into *this* program's uniforms (each linked program has its own
+    // storage), so uploadFfFragmentUniforms only sends the uniforms that actually differ.
+    // Toggling texturing between models used to re-send ~11 uniforms per draw; now it's one.
+    // Sentinels (MIN_VALUE / NaN) never match, forcing the first upload.
+    internal val shadowInt = IntArray(FF_SHADOW_INTS) { Int.MIN_VALUE }
+    internal val shadowFloat = FloatArray(FF_SHADOW_FLOATS) { Float.NaN }
 }
 
 /**
@@ -382,22 +390,23 @@ fun uploadFfFragmentUniforms(gl: WebGL2RenderingContext, state: GlState, L: FfFr
     val forceGlobal = force || programChanged
     if (forceGlobal) {
         state.ffpStateDirty = false
-        gl.uniform1i(L.alphaTestEnabled, if (state.alphaTestEnabled) 1 else 0)
-        gl.uniform1i(L.alphaFunc, state.alphaFunc)
-        gl.uniform1f(L.alphaRef, state.alphaRef)
-        gl.uniform1i(L.fogEnabled, if (state.fogEnabled) 1 else 0)
-        gl.uniform4fv(L.fogColor, state.fogColor.asFloat32Array())
-        gl.uniform1f(L.fogStart, state.fogStart)
-        gl.uniform1f(L.fogEnd, state.fogEnd)
+        setInt(gl, L, L.alphaTestEnabled, SI_ALPHA_TEST, if (state.alphaTestEnabled) 1 else 0)
+        setInt(gl, L, L.alphaFunc, SI_ALPHA_FUNC, state.alphaFunc)
+        setFloat(gl, L, L.alphaRef, SF_ALPHA_REF, state.alphaRef)
+        setInt(gl, L, L.fogEnabled, SI_FOG_ENABLED, if (state.fogEnabled) 1 else 0)
+        setFloat4(gl, L, L.fogColor, SF_FOG_COLOR, state.fogColor)
+        setFloat(gl, L, L.fogStart, SF_FOG_START, state.fogStart)
+        setFloat(gl, L, L.fogEnd, SF_FOG_END, state.fogEnd)
     }
     for (unit in 0 until 3) {
         val cube = state.textureTarget[unit] == GL_TEXTURE_CUBE_MAP
         val is3d = state.textureTarget[unit] == GL_TEXTURE_3D
         if (state.texEnvDirty[unit] || programChanged) {
             state.texEnvDirty[unit] = false
-            gl.uniform1i(L.useTexture[unit], if (state.texturingEnabled[unit]) 1 else 0)
-            gl.uniform1i(L.is3D[unit], if (state.texturingEnabled[unit] && is3d) 1 else 0)
-            gl.uniform1i(L.cubeMap[unit], if (cube) 1 else 0)
+            val i = unit * SI_UNIT_STRIDE
+            setInt(gl, L, L.useTexture[unit], i + SI_USE_TEXTURE, if (state.texturingEnabled[unit]) 1 else 0)
+            setInt(gl, L, L.is3D[unit], i + SI_IS_3D, if (state.texturingEnabled[unit] && is3d) 1 else 0)
+            setInt(gl, L, L.cubeMap[unit], i + SI_CUBE_MAP, if (cube) 1 else 0)
             if (state.texturingEnabled[unit]) uploadFfCombine(gl, L, state, unit)
         }
         // Copy the logical-unit binding onto the reserved sampler unit (2D samplers read
@@ -412,12 +421,77 @@ fun uploadFfFragmentUniforms(gl: WebGL2RenderingContext, state: GlState, L: FfFr
 }
 
 private fun uploadFfCombine(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, state: GlState, unit: Int) {
-    gl.uniform1i(L.combineRgb[unit], state.combineRgb[unit])
-    gl.uniform1i(L.combineAlpha[unit], state.combineAlpha[unit])
-    gl.uniform3i(L.srcRgb[unit], state.source0Rgb[unit], state.source1Rgb[unit], state.source2Rgb[unit])
-    gl.uniform3i(L.opRgb[unit], state.operand0Rgb[unit], state.operand1Rgb[unit], state.operand2Rgb[unit])
-    gl.uniform3i(L.srcAlpha[unit], state.source0Alpha[unit], state.source1Alpha[unit], state.source2Alpha[unit])
-    gl.uniform3i(L.opAlpha[unit], state.operand0Alpha[unit], state.operand1Alpha[unit], state.operand2Alpha[unit])
-    gl.uniform4fv(L.texEnvColor[unit], state.textureEnvColor[unit].asFloat32Array())
-    gl.uniform2f(L.envScale[unit], state.rgbScale[unit], state.alphaScale[unit])
+    val i = unit * SI_UNIT_STRIDE
+    setInt(gl, L, L.combineRgb[unit], i + SI_COMBINE_RGB, state.combineRgb[unit])
+    setInt(gl, L, L.combineAlpha[unit], i + SI_COMBINE_ALPHA, state.combineAlpha[unit])
+    setInt3(gl, L, L.srcRgb[unit], i + SI_SRC_RGB, state.source0Rgb[unit], state.source1Rgb[unit], state.source2Rgb[unit])
+    setInt3(gl, L, L.opRgb[unit], i + SI_OP_RGB, state.operand0Rgb[unit], state.operand1Rgb[unit], state.operand2Rgb[unit])
+    setInt3(gl, L, L.srcAlpha[unit], i + SI_SRC_ALPHA, state.source0Alpha[unit], state.source1Alpha[unit], state.source2Alpha[unit])
+    setInt3(gl, L, L.opAlpha[unit], i + SI_OP_ALPHA, state.operand0Alpha[unit], state.operand1Alpha[unit], state.operand2Alpha[unit])
+    val f = unit * SF_UNIT_STRIDE
+    setFloat4(gl, L, L.texEnvColor[unit], f + SF_TEX_ENV_COLOR, state.textureEnvColor[unit])
+    val sh = L.shadowFloat
+    val rgbScale = state.rgbScale[unit]
+    val alphaScale = state.alphaScale[unit]
+    if (sh[f + SF_ENV_SCALE] != rgbScale || sh[f + SF_ENV_SCALE + 1] != alphaScale) {
+        sh[f + SF_ENV_SCALE] = rgbScale
+        sh[f + SF_ENV_SCALE + 1] = alphaScale
+        gl.uniform2f(L.envScale[unit], rgbScale, alphaScale)
+        GlStats.fragUniforms++
+    }
 }
+
+private fun setInt(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, loc: WebGLUniformLocation?, slot: Int, v: Int) {
+    if (L.shadowInt[slot] == v) return
+    L.shadowInt[slot] = v
+    gl.uniform1i(loc, v)
+    GlStats.fragUniforms++
+}
+
+private fun setInt3(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, loc: WebGLUniformLocation?, slot: Int, a: Int, b: Int, c: Int) {
+    val sh = L.shadowInt
+    if (sh[slot] == a && sh[slot + 1] == b && sh[slot + 2] == c) return
+    sh[slot] = a; sh[slot + 1] = b; sh[slot + 2] = c
+    gl.uniform3i(loc, a, b, c)
+    GlStats.fragUniforms++
+}
+
+private fun setFloat(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, loc: WebGLUniformLocation?, slot: Int, v: Float) {
+    if (L.shadowFloat[slot] == v) return
+    L.shadowFloat[slot] = v
+    gl.uniform1f(loc, v)
+    GlStats.fragUniforms++
+}
+
+private fun setFloat4(gl: WebGL2RenderingContext, L: FfFragmentUniformLocations, loc: WebGLUniformLocation?, slot: Int, v: FloatArray) {
+    val sh = L.shadowFloat
+    if (sh[slot] == v[0] && sh[slot + 1] == v[1] && sh[slot + 2] == v[2] && sh[slot + 3] == v[3]) return
+    sh[slot] = v[0]; sh[slot + 1] = v[1]; sh[slot + 2] = v[2]; sh[slot + 3] = v[3]
+    gl.uniform4fv(loc, v.asFloat32Array())
+    GlStats.fragUniforms++
+}
+
+// Shadow-slot layout for FfFragmentUniformLocations.shadowInt / shadowFloat.
+private const val SI_USE_TEXTURE = 0
+private const val SI_IS_3D = 1
+private const val SI_CUBE_MAP = 2
+private const val SI_COMBINE_RGB = 3
+private const val SI_COMBINE_ALPHA = 4
+private const val SI_SRC_RGB = 5
+private const val SI_OP_RGB = 8
+private const val SI_SRC_ALPHA = 11
+private const val SI_OP_ALPHA = 14
+private const val SI_UNIT_STRIDE = 17
+private const val SI_ALPHA_TEST = 3 * SI_UNIT_STRIDE
+private const val SI_ALPHA_FUNC = SI_ALPHA_TEST + 1
+private const val SI_FOG_ENABLED = SI_ALPHA_TEST + 2
+internal const val FF_SHADOW_INTS = SI_ALPHA_TEST + 3
+
+private const val SF_TEX_ENV_COLOR = 0
+private const val SF_ENV_SCALE = 4
+private const val SF_UNIT_STRIDE = 6
+private const val SF_ALPHA_REF = 3 * SF_UNIT_STRIDE
+private const val SF_FOG_COLOR = SF_ALPHA_REF + 1
+private const val SF_FOG_START = SF_ALPHA_REF + 5
+private const val SF_FOG_END = SF_ALPHA_REF + 6
+internal const val FF_SHADOW_FLOATS = SF_ALPHA_REF + 7

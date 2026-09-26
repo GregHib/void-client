@@ -1046,7 +1046,7 @@ internal class ArbProgramRuntime {
     fun useAndUpload(gl: WebGL2RenderingContext, state: GlState): Boolean {
         val prog = program
         if (!built || prog == null) return false
-        gl.useProgram(prog)
+        state.useProgram(prog)
 
         val mvVersion = state.matrixStack.version(GL_MODELVIEW)
         if (mvVersion != lastModelViewVersion) {

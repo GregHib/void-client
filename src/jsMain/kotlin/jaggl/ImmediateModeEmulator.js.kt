@@ -151,6 +151,7 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
         gl.vertexAttribPointer(ATTRIB_NORMAL, 3, WebGL2RenderingContext.FLOAT, false, stride, OFFSET_NORMAL * 4)
         gl.enableVertexAttribArray(ATTRIB_TEXCOORD1)
         gl.vertexAttribPointer(ATTRIB_TEXCOORD1, 3, WebGL2RenderingContext.FLOAT, false, stride, OFFSET_TEXCOORD1 * 4)
+        state.invalidateAttribCache()
 
         if (indexCount > 0) {
             ensureIndices(mode, count)
