@@ -142,21 +142,7 @@ class CutsceneSequenceData internal constructor(`is`: ByteArray?, i: Int, is_27_
 
         fun method2730(i: Int, i_4_: Int, `is`: ByteArray, i_5_: Int): ByteArray {
             anInt8811++
-            val is_6_: ByteArray?
-            if (i_4_ > 0) {
-                is_6_ = ByteArray(i_5_)
-                var i_7_ = 0
-                while (i_5_ > i_7_) {
-                    is_6_[i_7_] = `is`[i_4_ + i_7_]
-                    i_7_++
-                }
-            } else is_6_ = `is`
-            val whirlpoolHash = WhirlpoolHash()
-            whirlpoolHash.method829(i + -4682)
-            whirlpoolHash.method832((i_5_ * 8).toLong(), is_6_, -69)
-            val is_8_ = ByteArray(64)
-            whirlpoolHash.method833(true, 0, is_8_)
-            return is_8_
+            return Whirlpool.digest(`is`, if (i_4_ > 0) i_4_ else 0, i_5_)
         }
 
 
