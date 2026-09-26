@@ -42,6 +42,9 @@ actual fun runLoop(
     window.setTimeout({ tick() }, 0)
 }
 
+/** Enough for the distinct objects of a dense region, so the minimap rebuild decodes each once. */
+actual val objectTypeCacheSize: Int = 2048
+
 private var presentPending = false
 private var presentGeneration = 0
 

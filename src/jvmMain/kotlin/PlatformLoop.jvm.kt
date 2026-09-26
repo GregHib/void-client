@@ -27,6 +27,9 @@ actual val js5ReadsPerPump: Int = 100
 actual fun registerJs5Pump(pump: () -> Unit) {
 }
 
+/** The original size; re-inflating a config group is cheap with native zlib. */
+actual val objectTypeCacheSize: Int = 64
+
 /** The buffer swap is a real, synchronous present on the JVM. */
 actual fun requestImmediatePresent() {
 }

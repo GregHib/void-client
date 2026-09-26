@@ -54,6 +54,15 @@ expect val js5ReadsPerPump: Int
 expect fun registerJs5Pump(pump: () -> Unit)
 
 /**
+ * Entry count of ObjectTypeList's decoded-definition cache outside the world map (which raises it
+ * to 4096 itself). The original's 64 thrashes on a region load: the minimap rebuild visits every
+ * object in the region, and outside the loading state the config archives drop each unpacked group
+ * after a single read (Js5Archive discard mode 2), so every miss inflates a whole 256-entry group
+ * again. That is cheap with native zlib on the JVM and expensive with pure-Kotlin inflate on JS.
+ */
+expect val objectTypeCacheSize: Int
+
+/**
  * Called when the client draws a frame it expects to be visible *immediately*, e.g. the
  * "Loading - please wait." box, which the original presents with a real buffer swap right before
  * blocking on a long synchronous scene build.

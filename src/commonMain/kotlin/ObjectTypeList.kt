@@ -136,7 +136,7 @@ class ObjectTypeList internal constructor(sceneProjector: SceneProjector?, i: In
     }
 
     init {
-        aLruByteCache_3350 = LruByteCache(64)
+        aLruByteCache_3350 = LruByteCache(objectTypeCacheSize)
         this.aLruByteCache_3360 = LruByteCache(500)
         this.aLruByteCache_3361 = LruByteCache(30)
         this.aLruByteCache_3362 = LruByteCache(50)
