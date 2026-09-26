@@ -956,7 +956,11 @@ actual class OpenGL {
             val n = readScale
             val texture = state.boundTextureFor(target)
             if (n > 1 && arg1 == 0 && texture != null && target == WebGL2RenderingContext.TEXTURE_2D) {
-                if (textureScale(texture) == 1 && texture.asDynamic().__jagglFresh == true) upgradeTexture(texture, n)
+                if (textureScale(texture) != n && texture.asDynamic().__jagglNoUpgrade != true) {
+                    // Scale changed since it was upgraded: bring it back to logical size first.
+                    if (textureScale(texture) > 1) demoteTexture(texture)
+                    upgradeTexture(texture, n, texture.asDynamic().__jagglFresh != true)
+                }
                 if (textureScale(texture) == n) {
                     gl.copyTexSubImage2D(target, 0, arg2 * n, arg3 * n, arg4 * n, arg5 * n, arg6 * n, arg7 * n)
                     return
@@ -988,12 +992,12 @@ actual class OpenGL {
          * High-resolution window grabs. The minimap is built by copying tiles of the rendered
          * scene from the window into one large texture, then drawn scaled up with the interface.
          * At a UI scale of N the window holds N times the detail the client's logical-size texture
-         * can, so a texture that only ever receives window copies is allocated N times larger
-         * instead ("upgraded"): normalised texture coordinates sample it exactly as before, just
-         * sharper. The recorded size (__jagglWidth/Height) stays logical. Anything else that
-         * writes to it - a CPU upload, rendering into it, a copy at another scale - first
-         * downsamples it back to the logical size ("demotes" it), keeping its contents, so no
-         * other path ever sees a texture of an unexpected size.
+         * can, so a texture that receives a window copy is reallocated N times larger, contents
+         * scaled up with it ("upgraded"): normalised texture coordinates sample it exactly as
+         * before, just sharper. The recorded size (__jagglWidth/Height) stays logical. Anything
+         * else that writes to it - a CPU upload, rendering into it - first downsamples it back to
+         * the logical size ("demotes" it), keeping its contents, so no other path ever sees a
+         * texture of an unexpected size; such a texture stays logical until it is reallocated.
          */
 
         private fun textureScale(texture: WebGLTexture): Int = (texture.asDynamic().__jagglScale as? Int) ?: 1
@@ -1008,11 +1012,19 @@ actual class OpenGL {
             val texture = state.boundTextureFor(target) ?: return
             setTextureScale(texture, 1)
             texture.asDynamic().__jagglFresh = empty
+            texture.asDynamic().__jagglNoUpgrade = false
         }
 
-        /** [texture] is about to be written at its logical size by something other than a window copy. */
+        /**
+         * [texture] is about to be written at its logical size by something other than a window
+         * copy. A texture demoted this way is not upgraded again, so one that mixes window copies
+         * with other writes doesn't bounce between sizes every frame.
+         */
         private fun prepareTextureWrite(texture: WebGLTexture) {
-            if (textureScale(texture) > 1) demoteTexture(texture)
+            if (textureScale(texture) > 1) {
+                demoteTexture(texture)
+                texture.asDynamic().__jagglNoUpgrade = true
+            }
             texture.asDynamic().__jagglFresh = false
         }
 
@@ -1029,13 +1041,30 @@ actual class OpenGL {
             return intArrayOf(w as Int, h as Int)
         }
 
-        /** Reallocates the empty, bound [texture] at [scale] times its logical size. */
-        private fun upgradeTexture(texture: WebGLTexture, scale: Int) {
+        /**
+         * Reallocates the bound [texture] at [scale] times its logical size, scaling its current
+         * contents up with it when [preserve] (the minimap starts out as an opaque black image).
+         */
+        private fun upgradeTexture(texture: WebGLTexture, scale: Int, preserve: Boolean) {
             val size = logicalSize(texture) ?: return
             val format = texture.asDynamic().__jagglInternalFormat
             if (format != GL_RGB && format != GL_RGBA) return
-            gl.texImage2D(WebGL2RenderingContext.TEXTURE_2D, 0, format as Int, size[0] * scale, size[1] * scale, 0, format, GL_UNSIGNED_BYTE, null)
+            val w = size[0]
+            val h = size[1]
+            var temp: WebGLTexture? = null
+            if (preserve) {
+                temp = gl.createTexture() ?: return
+                gl.bindTexture(WebGL2RenderingContext.TEXTURE_2D, temp)
+                gl.texImage2D(WebGL2RenderingContext.TEXTURE_2D, 0, format as Int, w, h, 0, format, GL_UNSIGNED_BYTE, null)
+                blitTexture(texture, w, h, WebGL2RenderingContext.TEXTURE_2D, temp, 0, 0, 0, w, h)
+                gl.bindTexture(WebGL2RenderingContext.TEXTURE_2D, texture)
+            }
+            gl.texImage2D(WebGL2RenderingContext.TEXTURE_2D, 0, format as Int, w * scale, h * scale, 0, format, GL_UNSIGNED_BYTE, null)
             setTextureScale(texture, scale)
+            if (temp != null) {
+                blitTexture(temp, w, h, WebGL2RenderingContext.TEXTURE_2D, texture, 0, 0, 0, w * scale, h * scale)
+                gl.deleteTexture(temp)
+            }
         }
 
         /** Downsamples an upgraded [texture] back to its logical size, keeping its contents. */

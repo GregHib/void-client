@@ -111,7 +111,7 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
         var disableCull = false
         val scaled = OpenGL.drawScale > 1 && loadWindowTransform()
         val isLines = mode == GL_LINES || mode == GL_LINE_LOOP || mode == GL_LINE_STRIP
-        if (scaled && !isLines && mode != 0) snapToPixelGrid(count)
+        if (scaled && mode == GL_QUADS) snapToPixelGrid(count)
         if (scaled && isLines) {
             val expanded = expandLines(count)
             if (expanded == 0) return
@@ -285,30 +285,49 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
     }
 
     /**
-     * Filled 2D geometry drawn to the window at an interface scale above 1. The client offsets
-     * much of its 2D drawing by a fraction of a pixel (fillRect draws its quad at x + 0.35), which
-     * at 1x still covers exactly the intended pixels because coverage is decided at pixel centres.
-     * Scaled up N times, the same edge lands at N*x + 0.35*N, past the centre of the first
-     * physical pixel, so fills shift a physical pixel right/down relative to sprites drawn at
-     * integer positions - gaps between a menu's header and its options, fills overlapping a
-     * border's shadow, seams between adjacent sprites. Snapping every vertex to the logical pixel
-     * edge that 1x rasterisation would have used, ceil(x - 0.5), reproduces 1x coverage exactly,
-     * N physical pixels per logical one. Needs [loadWindowTransform].
+     * Axis-aligned 2D quads (fills, sprites, glyphs) drawn to the window at an interface scale
+     * above 1. The client offsets much of its 2D drawing by a fraction of a pixel (fillRect draws
+     * its quad at x + 0.35), which at 1x still covers exactly the intended pixels because coverage
+     * is decided at pixel centres. Scaled up N times, the same edge lands at N*x + 0.35*N, past the
+     * centre of the first physical pixel, so fills shift a physical pixel right/down relative to
+     * sprites drawn at integer positions - gaps between a menu's header and its options, fills
+     * overlapping a border's shadow, seams between adjacent sprites. Snapping each vertex to the
+     * logical pixel edge that 1x rasterisation would have used, ceil(x - 0.5), reproduces 1x
+     * coverage exactly, N physical pixels per logical one.
+     *
+     * Rotated quads are left alone: moving their corners would skew texture coordinates derived
+     * from screen position (the minimap's and compass's mask), which shimmers as the angle drifts.
+     * Needs [loadWindowTransform].
      */
     private fun snapToPixelGrid(count: Int) {
-        for (v in 0 until count) {
-            val base = v * FLOATS_PER_VERTEX
-            val px = vertices[base]
-            val py = vertices[base + 1]
-            val pz = vertices[base + 2]
-            val wx = (m[0] * px + m[4] * py + m[8] * pz + m[12]) * sx + ox
-            val wy = (m[1] * px + m[5] * py + m[9] * pz + m[13]) * sy + oy
-            val dx = ceil(wx - 0.5f) - wx
-            val dy = ceil(wy - 0.5f) - wy
-            vertices[base] = px + (j11 * dx - j01 * dy) / det
-            vertices[base + 1] = py + (j00 * dy - j10 * dx) / det
+        val wx = FloatArray(4)
+        val wy = FloatArray(4)
+        var quad = 0
+        while (quad + 4 <= count) {
+            for (c in 0 until 4) {
+                val base = (quad + c) * FLOATS_PER_VERTEX
+                val px = vertices[base]
+                val py = vertices[base + 1]
+                val pz = vertices[base + 2]
+                wx[c] = (m[0] * px + m[4] * py + m[8] * pz + m[12]) * sx + ox
+                wy[c] = (m[1] * px + m[5] * py + m[9] * pz + m[13]) * sy + oy
+            }
+            val verticalFirst = same(wx[0], wx[1]) && same(wx[2], wx[3]) && same(wy[1], wy[2]) && same(wy[3], wy[0])
+            val horizontalFirst = same(wy[0], wy[1]) && same(wy[2], wy[3]) && same(wx[1], wx[2]) && same(wx[3], wx[0])
+            if (verticalFirst || horizontalFirst) {
+                for (c in 0 until 4) {
+                    val base = (quad + c) * FLOATS_PER_VERTEX
+                    val dx = ceil(wx[c] - 0.5f) - wx[c]
+                    val dy = ceil(wy[c] - 0.5f) - wy[c]
+                    vertices[base] += (j11 * dx - j01 * dy) / det
+                    vertices[base + 1] += (j00 * dy - j10 * dx) / det
+                }
+            }
+            quad += 4
         }
     }
+
+    private fun same(a: Float, b: Float): Boolean = abs(a - b) < 0.001f
 
     /** Triangle indices needed to draw [verts] vertices as [mode], or 0 if [mode] draws directly. */
     private fun indexCountFor(mode: Int, verts: Int): Int = when (mode) {
