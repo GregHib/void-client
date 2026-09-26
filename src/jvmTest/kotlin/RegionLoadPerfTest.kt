@@ -137,4 +137,46 @@ class RegionLoadPerfTest {
             assertEquals(original.toInt(), b + c)
         }
     }
+
+    @Test
+    fun `int pair terrain keys match original long keys`() {
+        val random = Random(11)
+        fun pick(): Int = when (random.nextInt(4)) {
+            0 -> random.nextInt(-2, 2)
+            1 -> random.nextInt(0, 1 shl 16)
+            else -> random.nextInt()
+        }
+        repeat(200_000) {
+            val a = pick(); val b = pick(); val c = pick(); val d = pick()
+            val original = ((a shl 16).toLong() or (c.toLong() shl 32 or (d.toLong() shl 48)) or b.toLong())
+            assertEquals((original ushr 32).toInt(), OpenGlTerrainTile.terrainKeyHi(a, b, c, d))
+            assertEquals(original.toInt(), (a shl 16) or b)
+        }
+    }
+
+    @Test
+    fun `int pair short map matches hashtable of short key nodes`() {
+        val random = Random(13)
+        repeat(200) {
+            val n = random.nextInt(0, 5000)
+            val table = Hashtable(maxOf(1, Integer.highestOneBit(maxOf(1, n / 4))))
+            val map = IntPairShortMap(random.nextInt(0, 64))
+            var next = 0
+            repeat(n) {
+                // Narrow key space so repeats are common; sometimes skip the lookup, as the terrain code does.
+                val hi = random.nextInt(-2, 3)
+                val lo = random.nextInt(-40, 40)
+                val key = (hi.toLong() shl 32) or (lo.toLong() and 0xffffffffL)
+                val lookup = random.nextInt(4) != 0
+                val node = if (lookup) table.method3480(key, -6008) as ShortKeyNode? else null
+                val found = if (lookup) map.get(hi, lo) else -1
+                assertEquals(node?.aShort6911?.toInt()?.and(0xffff) ?: -1, found)
+                if (node == null) {
+                    val value = (next++ * 7919).toShort()
+                    table.method3483(114.toByte(), key, ShortKeyNode(value))
+                    map.putIfAbsent(hi, lo, value)
+                }
+            }
+        }
+    }
 }

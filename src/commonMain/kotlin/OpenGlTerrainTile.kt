@@ -136,7 +136,8 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
             val class348_sub20s = arrayOfNulls<TextureTileRenderer>(anInt8284)
             var i_34_ = ColorThresholdEffect.method3051(anInt8284 / 4, 4096)
             if (i_34_ < 1) i_34_ = 1
-            val hashtable = Hashtable(i_34_)
+            // Keys held as (hi, lo) Ints rather than Longs in a Hashtable; see IntPairShortMap.
+            val vertexKeys = IntPairShortMap(i_34_ * 4)
             val class348_sub20s_35_ = arrayOfNulls<TextureTileRenderer>(anInt8280)
             var i_36_ = 0
             while (this.anInt4587 > i_36_) {
@@ -187,7 +188,9 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                             val i_69_ = is_42_[i_64_]
                             val i_70_ = is_41_[i_64_]
                             val i_71_ = if (is_43_ != null) is_43_[i_64_] else 0
-                            val l = ((i_67_ shl 16).toLong() or (i_69_.toLong() shl 32 or (i_70_.toLong() shl 48)) or i_68_.toLong())
+                            // (i_67_ shl 16).toLong() or (i_69_.toLong() shl 32) or (i_70_.toLong() shl 48) or i_68_.toLong()
+                            val keyHi = terrainKeyHi(i_67_, i_68_, i_69_, i_70_)
+                            val keyLo = (i_67_ shl 16) or i_68_
                             val i_72_ = is_39_[i_64_]
                             val i_73_ = is_40_[i_64_]
                             var i_74_ = 74
@@ -249,10 +252,10 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                                 }
                                 i_75_ = (SoundEnvelope.anIntArray179!![0xff80 and i_69_ or i_90_])
                             }
-                            var linkedListNode: LinkedListNode? = null
-                            if ((i_65_ and -1 + anInt8260) == 0 && (anInt8260 + -1 and i_66_) == 0) linkedListNode = hashtable.method3480(l, -6008)
+                            var found = -1
+                            if ((i_65_ and -1 + anInt8260) == 0 && (anInt8260 + -1 and i_66_) == 0) found = vertexKeys.get(keyHi, keyLo)
                             val i_91_: Int
-                            if (linkedListNode == null) {
+                            if (found == -1) {
                                 var i_92_: Int
                                 if (i_69_ != i_70_) {
                                     var i_93_ = (i_70_ and 0x7f) * i_74_ shr 7
@@ -314,10 +317,10 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
                                 i_91_ = anInt8246++
                                 is_63_[i_64_] = i_91_.toShort()
                                 if (i_69_ != -1) class348_sub20s[i_91_] = class348_sub20s_38_[i_64_]
-                                hashtable.method3483(114.toByte(), l, ShortKeyNode(is_63_[i_64_]))
+                                vertexKeys.putIfAbsent(keyHi, keyLo, is_63_[i_64_])
                             } else {
-                                is_63_[i_64_] = (linkedListNode as ShortKeyNode).aShort6911
-                                i_91_ = 0xffff and is_63_[i_64_].toInt()
+                                is_63_[i_64_] = found.toShort()
+                                i_91_ = found
                                 if (i_69_ != -1 && ((class348_sub20s[i_91_]!!.aLong4291) > class348_sub20s_38_[i_64_]!!.aLong4291)) class348_sub20s[i_91_] = class348_sub20s_38_[i_64_]
                             }
                             for (i_98_ in 0..<i_60_) class348_sub20s_35_[i_98_]!!.method2949(97.toByte(), i_91_, i_74_, i_75_, f_89_)
@@ -768,6 +771,13 @@ class OpenGlTerrainTile(var_ha_Sub2: OpenGlRenderer?, i: Int, i_133_: Int, i_134
     }
 
     companion object {
+
+        /**
+         * High word of the terrain vertex key `(a shl 16).toLong() or (c.toLong() shl 32) or (d.toLong() shl 48) or b.toLong()`,
+         * computed with Int arithmetic; the low word is `(a shl 16) or b`. Negative terms sign-extend
+         * into the high word, as they did in the Long.
+         */
+        fun terrainKeyHi(a: Int, b: Int, c: Int, d: Int): Int = ((a shl 16) shr 31) or (b shr 31) or c or (d shl 16)
 
         var anInt8236: Int = 0
 
