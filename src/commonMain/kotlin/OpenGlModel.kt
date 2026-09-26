@@ -3510,6 +3510,28 @@ class OpenGlModel : AbstractModel {
             (aHoverActionEntry_5620 == null || capturedTexCoords != null)
     }
 
+    /**
+     * Whether the copies a batch was built from still describe this model: nothing has marked a
+     * stream or the indices for re-packing, and no material group has been retextured.
+     */
+    fun batchStillCurrent(): Boolean {
+        if (aHoverActionEntry_5605?.anByteBufferReader_1811 == null) return false
+        if (aHoverActionEntry_5610 != null && aHoverActionEntry_5610!!.anByteBufferReader_1811 == null) return false
+        if (aHoverActionEntry_5563 != null && aHoverActionEntry_5563!!.anByteBufferReader_1811 == null) return false
+        if (aHoverActionEntry_5620 != null && aHoverActionEntry_5620!!.anByteBufferReader_1811 == null) return false
+        if (aArchiveFileConditionWrapper_5575?.anByteArrayCodec_3463 == null) return false
+        val textures = aShortArray5601
+        val groups = capturedGroups
+        val groupTextures = capturedGroupTextures
+        if (textures != null && groups != null && groupTextures != null) {
+            for (g in groupTextures.indices) {
+                val t = textures[groups[g]].toInt() and 0xffff
+                if ((if (t == 65535) -1 else t) != groupTextures[g]) return false
+            }
+        }
+        return true
+    }
+
     private fun captureVertexStreams(src: ByteArray, stride: Int, pos: Boolean, posOffset: Int, col: Boolean, colOffset: Int, nrm: Boolean, nrmOffset: Int, uv: Boolean, uvOffset: Int) {
         if (pos) capturedPositions = captureStream(src, stride, posOffset, 12, capturedPositions)
         if (col) capturedColours = captureStream(src, stride, colOffset, 4, capturedColours)
