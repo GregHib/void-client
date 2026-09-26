@@ -40,7 +40,10 @@ class Inflate(@Suppress("UNUSED_PARAMETER") nowrap: Boolean = true) {
             finalBlock = readBits(1) == 1
             when (readBits(2)) {
                 0 -> { // stored
-                    bitBuf = 0; bitCnt = 0 // align to byte boundary
+                    // Align to a byte boundary. decodeSymbol can buffer whole bytes ahead, so hand
+                    // those back first; only the partial byte's leftover bits are discarded.
+                    inPos -= bitCnt ushr 3
+                    bitBuf = 0; bitCnt = 0
                     val len = (input[inPos].toInt() and 0xFF) or ((input[inPos + 1].toInt() and 0xFF) shl 8)
                     inPos += 4 // skip LEN and NLEN
                     input.copyInto(out, outPos, inPos, inPos + len)
@@ -69,7 +72,30 @@ class Inflate(@Suppress("UNUSED_PARAMETER") nowrap: Boolean = true) {
         return v
     }
 
+    /**
+     * Table-driven decode: peeks [FAST_BITS] bits and resolves any code up to that length with one
+     * lookup, instead of walking the canonical code one bit (and one [readBits] call) at a time.
+     * Longer codes fall back to [decodeSymbolSlow]. Bits past the end of the input peek as zero; a
+     * valid stream never consumes them.
+     */
     private fun decodeSymbol(h: Huffman): Int {
+        while (bitCnt < FAST_BITS) {
+            val b = if (inPos < inEnd) input[inPos].toInt() and 0xFF else 0
+            inPos++
+            bitBuf = bitBuf or (b shl bitCnt)
+            bitCnt += 8
+        }
+        val entry = h.fast[bitBuf and FAST_MASK]
+        if (entry != 0) {
+            val len = entry ushr 16
+            bitBuf = bitBuf ushr len
+            bitCnt -= len
+            return entry and 0xFFFF
+        }
+        return decodeSymbolSlow(h)
+    }
+
+    private fun decodeSymbolSlow(h: Huffman): Int {
         var code = 0
         var first = 0
         var index = 0
@@ -136,6 +162,9 @@ class Inflate(@Suppress("UNUSED_PARAMETER") nowrap: Boolean = true) {
         val counts = IntArray(MAX_BITS + 1)
         val symbols: IntArray
 
+        /** Indexed by the next [FAST_BITS] input bits: `(length shl 16) or symbol`, or 0 if longer. */
+        val fast = IntArray(1 shl FAST_BITS)
+
         init {
             for (len in codeLengths) counts[len]++
             counts[0] = 0
@@ -146,12 +175,37 @@ class Inflate(@Suppress("UNUSED_PARAMETER") nowrap: Boolean = true) {
                 if (codeLengths[sym] != 0) syms[offsets[codeLengths[sym]]++] = sym
             }
             symbols = syms
+
+            // Canonical codes in (length, symbol) order, which is the order of [symbols]. DEFLATE
+            // sends codes MSB-first but the bit reader is LSB-first, so each code is bit-reversed
+            // and replicated across every value of the bits that follow it.
+            var code = 0
+            var k = 0
+            for (len in 1..MAX_BITS) {
+                for (c in 0 until counts[len]) {
+                    if (len <= FAST_BITS) {
+                        var rev = 0
+                        for (b in 0 until len) rev = rev or (((code ushr b) and 1) shl (len - 1 - b))
+                        val entry = (len shl 16) or syms[k]
+                        var f = rev
+                        while (f < fast.size) {
+                            fast[f] = entry
+                            f += 1 shl len
+                        }
+                    }
+                    code++
+                    k++
+                }
+                code = code shl 1
+            }
         }
     }
 
     companion object {
         private val EMPTY = ByteArray(0)
         private const val MAX_BITS = 15
+        private const val FAST_BITS = 10
+        private const val FAST_MASK = (1 shl FAST_BITS) - 1
 
         private val LEN_BASE = intArrayOf(
             3, 4, 5, 6, 7, 8, 9, 10, 11, 13, 15, 17, 19, 23, 27, 31,
