@@ -153,6 +153,7 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
         gl.vertexAttribPointer(ATTRIB_TEXCOORD1, 3, WebGL2RenderingContext.FLOAT, false, stride, OFFSET_TEXCOORD1 * 4)
         state.invalidateAttribCache()
 
+        if (scaled) state.logicalSampleScale = OpenGL.drawScale.toFloat()
         if (indexCount > 0) {
             ensureIndices(mode, count)
             state.prepareDraw()
@@ -169,6 +170,7 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
         }
 
         gl.bindBuffer(WebGL2RenderingContext.ARRAY_BUFFER, state.boundArrayBuffer)
+        state.logicalSampleScale = 0f
     }
 
     /**

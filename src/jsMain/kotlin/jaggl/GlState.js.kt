@@ -166,6 +166,9 @@ class GlState(val gl: WebGL2RenderingContext) {
     // whichever program happens to draw first after a state change; track which program last
     // received the upload so a switch to a different program forces a full re-upload too.
     internal var lastFragUniformProgram: WebGLProgram? = null
+
+    /** The interface scale while [ImmediateModeEmulator] draws scaled 2D to the window, else 0. */
+    var logicalSampleScale = 0f
     // TexGen state only feeds the fixed-function *vertex* stage (uTexGenMode); kept separate
     // so transpiled-ARB draws can consume texEnvDirty without losing texgen updates.
     val texGenDirty = booleanArrayOf(true, true, true)

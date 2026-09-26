@@ -135,6 +135,8 @@ uniform ivec3 uSrcAlpha[3];
 uniform ivec3 uOpAlpha[3];
 uniform vec4 uTexEnvColor[3];
 uniform vec2 uEnvScale[3];
+// Interface scale N for 2D drawing to the window, 0 otherwise: see logicalCentre().
+uniform highp float uLogicalScale;
 
 vec4 combineSource(int src, vec4 texColor, vec4 previous, vec4 constant) {
     if (src == 34166) return constant;
@@ -213,6 +215,20 @@ vec4 sampleLuminanceAlpha3D(sampler3D s, vec3 coord) {
     return vec4(t.r, t.r, t.r, t.g);
 }
 
+// At an interface scale N every logical pixel is N x N physical ones. At 1x a fragment samples
+// at its pixel centre, which for 1:1 2D drawing is a texel centre, so LINEAR-filtered masks
+// (the minimap's and compass's, on units 1/2) come out all-or-nothing. Sampled at physical
+// centres, N x N fragments land between texel centres and edge pixels get partial coverage,
+// which shimmers against the frame as the rotating minimap under them moves. Re-evaluating the
+// (affine, in 2D) texcoord at the logical pixel's centre samples exactly where 1x does.
+// highp: window coordinates past 2048 don't fit mediump at half-pixel precision.
+highp vec2 logicalCentre(highp vec2 coord) {
+    if (uLogicalScale <= 1.0) return coord;
+    highp vec2 centre = (floor(gl_FragCoord.xy / uLogicalScale) + 0.5) * uLogicalScale;
+    highp vec2 offset = centre - gl_FragCoord.xy;
+    return coord + dFdx(coord) * offset.x + dFdy(coord) * offset.y;
+}
+
 vec4 sampleUnit(int unit) {
     // 3D textures (the animated water normal map) are sampled with the texcoord's full vec3;
     // the animated slice coordinate r arrives through the per-unit texture matrix.
@@ -223,11 +239,11 @@ vec4 sampleUnit(int unit) {
     if (unit == 1) {
         if (uCubeMap[1]) return texture(uTextureCube1, vTexCoord1);
         if (uIs3D[1] != 0) return sampleLuminanceAlpha3D(uTexture3D1, vTexCoord1);
-        return texture(uTexture1, vTexCoord1.xy);
+        return texture(uTexture1, logicalCentre(vTexCoord1.xy));
     }
     if (uCubeMap[2]) return texture(uTextureCube2, vTexCoord2);
     if (uIs3D[2] != 0) return sampleLuminanceAlpha3D(uTexture3D2, vTexCoord2);
-    return texture(uTexture2, vTexCoord2.xy);
+    return texture(uTexture2, logicalCentre(vTexCoord2.xy));
 }
 
 void main() {
@@ -360,6 +376,7 @@ class FfFragmentUniformLocations(gl: WebGL2RenderingContext, program: WebGLProgr
     val opAlpha: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uOpAlpha[$it]") }
     val texEnvColor: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uTexEnvColor[$it]") }
     val envScale: Array<WebGLUniformLocation?> = Array(3) { gl.getUniformLocation(program, "uEnvScale[$it]") }
+    val logicalScale: WebGLUniformLocation? = gl.getUniformLocation(program, "uLogicalScale")
 
     // Last values uploaded into *this* program's uniforms (each linked program has its own
     // storage), so uploadFfFragmentUniforms only sends the uniforms that actually differ.
@@ -398,6 +415,7 @@ fun uploadFfFragmentUniforms(gl: WebGL2RenderingContext, state: GlState, L: FfFr
         setFloat(gl, L, L.fogStart, SF_FOG_START, state.fogStart)
         setFloat(gl, L, L.fogEnd, SF_FOG_END, state.fogEnd)
     }
+    setFloat(gl, L, L.logicalScale, SF_LOGICAL_SCALE, state.logicalSampleScale)
     for (unit in 0 until 3) {
         val cube = state.textureTarget[unit] == GL_TEXTURE_CUBE_MAP
         val is3d = state.textureTarget[unit] == GL_TEXTURE_3D
@@ -489,4 +507,5 @@ private const val SF_ALPHA_REF = 3 * SF_UNIT_STRIDE
 private const val SF_FOG_COLOR = SF_ALPHA_REF + 1
 private const val SF_FOG_START = SF_ALPHA_REF + 5
 private const val SF_FOG_END = SF_ALPHA_REF + 6
-internal const val FF_SHADOW_FLOATS = SF_ALPHA_REF + 7
+private const val SF_LOGICAL_SCALE = SF_ALPHA_REF + 7
+internal const val FF_SHADOW_FLOATS = SF_ALPHA_REF + 8
