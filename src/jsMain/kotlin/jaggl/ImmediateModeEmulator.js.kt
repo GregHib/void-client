@@ -1,6 +1,7 @@
 package jaggl
 
 import kotlin.math.abs
+import kotlin.math.ceil
 import kotlin.math.floor
 
 const val GL_QUADS = 7
@@ -56,6 +57,19 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
     // Triangles that [expandLines] builds in place of scaled window lines.
     private var lineVertices = FloatArray(0)
 
+    // Object -> logical window transform, set by [loadWindowTransform]. Window x/y of an object
+    // point is (m * p).xy * (sx, sy) + (ox, oy); j00..j11 is its 2x2 Jacobian, inverted via det.
+    private var m = FloatArray(16)
+    private var sx = 0f
+    private var sy = 0f
+    private var ox = 0f
+    private var oy = 0f
+    private var j00 = 0f
+    private var j01 = 0f
+    private var j10 = 0f
+    private var j11 = 0f
+    private var det = 0f
+
     fun begin(mode: Int) {
         active = true
         this.mode = mode
@@ -95,7 +109,10 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
         var drawFloatCount = floatCount
         var drawMode = if (mode == GL_POLYGON) WebGL2RenderingContext.TRIANGLE_FAN else mode
         var disableCull = false
-        if ((mode == GL_LINES || mode == GL_LINE_LOOP || mode == GL_LINE_STRIP) && OpenGL.drawScale > 1) {
+        val scaled = OpenGL.drawScale > 1 && loadWindowTransform()
+        val isLines = mode == GL_LINES || mode == GL_LINE_LOOP || mode == GL_LINE_STRIP
+        if (scaled && !isLines && mode != 0) snapToPixelGrid(count)
+        if (scaled && isLines) {
             val expanded = expandLines(count)
             if (expanded == 0) return
             if (expanded > 0) {
@@ -161,26 +178,10 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
      * for an x-major line, one per row for a y-major one, the last pixel excluded), so it
      * rasterises N physical pixels thick.
      *
-     * Works in logical window space, so it needs an affine (orthographic) transform through the
-     * fixed-function path, which is what all 2D drawing uses. Returns the number of triangle
-     * vertices written to [lineVertices], 0 when no segment covers a pixel, or -1 to draw the
-     * lines unchanged.
+     * Needs [loadWindowTransform]. Returns the number of triangle vertices written to
+     * [lineVertices], or 0 when no segment covers a pixel.
      */
     private fun expandLines(count: Int): Int {
-        if (state.vertexProgramEnabled || state.boundProgramObj != null) return -1
-        val m = state.matrixStack.mvp()
-        if (m[3] != 0f || m[7] != 0f || m[11] != 0f || m[15] == 0f) return -1
-        val sx = OpenGL.viewportW / 2f / m[15]
-        val sy = OpenGL.viewportH / 2f / m[15]
-        val ox = OpenGL.viewportX + OpenGL.viewportW / 2f
-        val oy = OpenGL.viewportY + OpenGL.viewportH / 2f
-        // Window offset = J * object offset (in x/y); J is inverted to map quad corners back.
-        val j00 = m[0] * sx
-        val j01 = m[4] * sx
-        val j10 = m[1] * sy
-        val j11 = m[5] * sy
-        val det = j00 * j11 - j01 * j10
-        if (det == 0f || det.isNaN()) return -1
         val half = maxOf(OpenGL.lineWidth, 1f) / 2f
 
         val segments = when (mode) {
@@ -259,6 +260,54 @@ class ImmediateModeEmulator(private val gl: WebGL2RenderingContext, private val 
             }
         }
         return written
+    }
+
+    /**
+     * Loads the object -> logical window transform for this draw. Only affine (orthographic)
+     * transforms through the fixed-function path qualify, which is what all 2D drawing uses; the
+     * 3D scene (perspective) and shader passes are left alone. False when the draw doesn't qualify.
+     */
+    private fun loadWindowTransform(): Boolean {
+        if (state.vertexProgramEnabled || state.boundProgramObj != null) return false
+        val mvp = state.matrixStack.mvp()
+        if (mvp[3] != 0f || mvp[7] != 0f || mvp[11] != 0f || mvp[15] == 0f) return false
+        m = mvp
+        sx = OpenGL.viewportW / 2f / mvp[15]
+        sy = OpenGL.viewportH / 2f / mvp[15]
+        ox = OpenGL.viewportX + OpenGL.viewportW / 2f
+        oy = OpenGL.viewportY + OpenGL.viewportH / 2f
+        j00 = mvp[0] * sx
+        j01 = mvp[4] * sx
+        j10 = mvp[1] * sy
+        j11 = mvp[5] * sy
+        det = j00 * j11 - j01 * j10
+        return det != 0f && !det.isNaN()
+    }
+
+    /**
+     * Filled 2D geometry drawn to the window at an interface scale above 1. The client offsets
+     * much of its 2D drawing by a fraction of a pixel (fillRect draws its quad at x + 0.35), which
+     * at 1x still covers exactly the intended pixels because coverage is decided at pixel centres.
+     * Scaled up N times, the same edge lands at N*x + 0.35*N, past the centre of the first
+     * physical pixel, so fills shift a physical pixel right/down relative to sprites drawn at
+     * integer positions - gaps between a menu's header and its options, fills overlapping a
+     * border's shadow, seams between adjacent sprites. Snapping every vertex to the logical pixel
+     * edge that 1x rasterisation would have used, ceil(x - 0.5), reproduces 1x coverage exactly,
+     * N physical pixels per logical one. Needs [loadWindowTransform].
+     */
+    private fun snapToPixelGrid(count: Int) {
+        for (v in 0 until count) {
+            val base = v * FLOATS_PER_VERTEX
+            val px = vertices[base]
+            val py = vertices[base + 1]
+            val pz = vertices[base + 2]
+            val wx = (m[0] * px + m[4] * py + m[8] * pz + m[12]) * sx + ox
+            val wy = (m[1] * px + m[5] * py + m[9] * pz + m[13]) * sy + oy
+            val dx = ceil(wx - 0.5f) - wx
+            val dy = ceil(wy - 0.5f) - wy
+            vertices[base] = px + (j11 * dx - j01 * dy) / det
+            vertices[base + 1] = py + (j00 * dy - j10 * dx) / det
+        }
     }
 
     /** Triangle indices needed to draw [verts] vertices as [mode], or 0 if [mode] draws directly. */
