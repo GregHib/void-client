@@ -299,7 +299,7 @@ class GlState(val gl: WebGL2RenderingContext) {
         gl.activeTexture(WebGL2RenderingContext.TEXTURE0 + activeTextureUnit)
     }
 
-    private fun boundTextureFor(target: Int): WebGLTexture? = when {
+    fun boundTextureFor(target: Int): WebGLTexture? = when {
         target == WebGL2RenderingContext.TEXTURE_2D || target == GL_TEXTURE_1D -> boundTexture2D[activeTextureUnit]
         target == GL_TEXTURE_3D -> boundTexture3D[activeTextureUnit]
         target == WebGL2RenderingContext.TEXTURE_CUBE_MAP || target in 34069..34074 ->

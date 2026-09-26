@@ -805,6 +805,7 @@ actual class OpenGL {
             gl.texImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
             state.recordTextureInternalFormat(fixTarget(arg0), arg2)
             if (arg1 == 0) state.recordTextureSize(fixTarget(arg0), arg3, arg4)
+            textureAllocated(fixTarget(arg0), arg1, data == null)
         }
 
         actual fun glTexImage2Di(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: IntArray?, arg9: Int) {
@@ -822,12 +823,14 @@ actual class OpenGL {
             gl.texImage2D(target, arg1, internalformat, arg3, arg4, arg5, format, type, data)
             state.recordTextureInternalFormat(target, internalformat)
             if (arg1 == 0) state.recordTextureSize(target, arg3, arg4)
+            textureAllocated(target, arg1, data == null)
         }
 
         actual fun glTexImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int) {
             val data = arg8?.asFloat32Array()?.subarray(arg9, arg8.size)
             gl.texImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
             state.recordTextureInternalFormat(fixTarget(arg0), arg2)
+            textureAllocated(fixTarget(arg0), arg1, false)
         }
 
         actual fun glTexImage3Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: Int, arg9: ByteArray?, arg10: Int) {
@@ -839,6 +842,7 @@ actual class OpenGL {
 
         actual fun glTexSubImage2Dub(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: ByteArray?, arg9: Int) {
             val data = arg8?.asUint8Array()?.subarray(arg9, arg8.size)
+            state.boundTextureFor(fixTarget(arg0))?.let { prepareTextureWrite(it) }
             gl.texSubImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
             if (data != null) replicateSpriteEdges(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
         }
@@ -912,20 +916,33 @@ actual class OpenGL {
             if (arg6 == GL_BGRA && data is Uint8Array) {
                 data = if (toRgb) bgraToRgb(data) else swapRedBlue(data)
             }
+            state.boundTextureFor(target)?.let { prepareTextureWrite(it) }
             gl.texSubImage2D(target, arg1, arg2, arg3, arg4, arg5, format, type, data)
             if (data is Uint8Array) replicateSpriteEdges(target, arg1, arg2, arg3, arg4, arg5, format, type, data)
         }
 
         actual fun glTexSubImage2Df(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int, arg8: FloatArray?, arg9: Int) {
             val data = arg8?.asFloat32Array()?.subarray(arg9, arg8.size)
+            state.boundTextureFor(fixTarget(arg0))?.let { prepareTextureWrite(it) }
             gl.texSubImage2D(fixTarget(arg0), arg1, arg2, arg3, arg4, arg5, arg6, arg7, data)
         }
 
         actual fun glCopyTexImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) {
             val target = fixTarget(arg0)
             val n = readScale
+            val texture = if (arg1 == 0) state.boundTextureFor(target) else null
             if (n == 1) {
                 gl.copyTexImage2D(target, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
+                texture?.let { setTextureScale(it, 1) }
+                return
+            }
+            if (texture != null && target == WebGL2RenderingContext.TEXTURE_2D && (arg2 == GL_RGB || arg2 == GL_RGBA)) {
+                // A texture grabbed from the window keeps the window's full resolution.
+                gl.copyTexImage2D(target, 0, arg2, arg3 * n, arg4 * n, arg5 * n, arg6 * n, arg7)
+                state.recordTextureInternalFormat(target, arg2)
+                state.recordTextureSize(target, arg5, arg6)
+                setTextureScale(texture, n)
+                texture.asDynamic().__jagglFresh = false
                 return
             }
             // Allocate the logical-size level with the requested format (its contents are
@@ -936,7 +953,17 @@ actual class OpenGL {
 
         actual fun glCopyTexSubImage2D(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int, arg5: Int, arg6: Int, arg7: Int) {
             val target = fixTarget(arg0)
-            if (readScale == 1) {
+            val n = readScale
+            val texture = state.boundTextureFor(target)
+            if (n > 1 && arg1 == 0 && texture != null && target == WebGL2RenderingContext.TEXTURE_2D) {
+                if (textureScale(texture) == 1 && texture.asDynamic().__jagglFresh == true) upgradeTexture(texture, n)
+                if (textureScale(texture) == n) {
+                    gl.copyTexSubImage2D(target, 0, arg2 * n, arg3 * n, arg4 * n, arg5 * n, arg6 * n, arg7 * n)
+                    return
+                }
+            }
+            if (texture != null) prepareTextureWrite(texture)
+            if (n == 1) {
                 gl.copyTexSubImage2D(target, arg1, arg2, arg3, arg4, arg5, arg6, arg7)
                 return
             }
@@ -957,28 +984,131 @@ actual class OpenGL {
         private const val GL_CUBE_MAP_POSITIVE_X = 0x8515
         private const val GL_CUBE_MAP_NEGATIVE_Z = 0x851A
 
-        /** Scratch objects for [copyWindowToTexture], owned by [scratchState]'s context. */
+        /*
+         * High-resolution window grabs. The minimap is built by copying tiles of the rendered
+         * scene from the window into one large texture, then drawn scaled up with the interface.
+         * At a UI scale of N the window holds N times the detail the client's logical-size texture
+         * can, so a texture that only ever receives window copies is allocated N times larger
+         * instead ("upgraded"): normalised texture coordinates sample it exactly as before, just
+         * sharper. The recorded size (__jagglWidth/Height) stays logical. Anything else that
+         * writes to it - a CPU upload, rendering into it, a copy at another scale - first
+         * downsamples it back to the logical size ("demotes" it), keeping its contents, so no
+         * other path ever sees a texture of an unexpected size.
+         */
+
+        private fun textureScale(texture: WebGLTexture): Int = (texture.asDynamic().__jagglScale as? Int) ?: 1
+
+        private fun setTextureScale(texture: WebGLTexture, scale: Int) {
+            texture.asDynamic().__jagglScale = scale
+        }
+
+        /** Level 0 of the bound [target] was just (re)allocated at its logical size. */
+        private fun textureAllocated(target: Int, level: Int, empty: Boolean) {
+            if (level != 0) return
+            val texture = state.boundTextureFor(target) ?: return
+            setTextureScale(texture, 1)
+            texture.asDynamic().__jagglFresh = empty
+        }
+
+        /** [texture] is about to be written at its logical size by something other than a window copy. */
+        private fun prepareTextureWrite(texture: WebGLTexture) {
+            if (textureScale(texture) > 1) demoteTexture(texture)
+            texture.asDynamic().__jagglFresh = false
+        }
+
+        private fun copyableFormat(texture: WebGLTexture): Int {
+            val format = texture.asDynamic().__jagglInternalFormat
+            return if (format == GL_RGB) GL_RGB else GL_RGBA
+        }
+
+        private fun logicalSize(texture: WebGLTexture): IntArray? {
+            val t = texture.asDynamic()
+            val w = t.__jagglWidth
+            val h = t.__jagglHeight
+            if (w == null || w == undefined || h == null || h == undefined) return null
+            return intArrayOf(w as Int, h as Int)
+        }
+
+        /** Reallocates the empty, bound [texture] at [scale] times its logical size. */
+        private fun upgradeTexture(texture: WebGLTexture, scale: Int) {
+            val size = logicalSize(texture) ?: return
+            val format = texture.asDynamic().__jagglInternalFormat
+            if (format != GL_RGB && format != GL_RGBA) return
+            gl.texImage2D(WebGL2RenderingContext.TEXTURE_2D, 0, format as Int, size[0] * scale, size[1] * scale, 0, format, GL_UNSIGNED_BYTE, null)
+            setTextureScale(texture, scale)
+        }
+
+        /** Downsamples an upgraded [texture] back to its logical size, keeping its contents. */
+        private fun demoteTexture(texture: WebGLTexture) {
+            val scale = textureScale(texture)
+            val size = logicalSize(texture)
+            setTextureScale(texture, 1)
+            if (size == null) return
+            val w = size[0]
+            val h = size[1]
+            val format = copyableFormat(texture)
+            val unit = state.activeTextureUnit
+            val temp = gl.createTexture() ?: return
+            gl.bindTexture(WebGL2RenderingContext.TEXTURE_2D, temp)
+            gl.texImage2D(WebGL2RenderingContext.TEXTURE_2D, 0, format, w, h, 0, format, GL_UNSIGNED_BYTE, null)
+            blitTexture(texture, w * scale, h * scale, WebGL2RenderingContext.TEXTURE_2D, temp, 0, 0, 0, w, h)
+            gl.bindTexture(WebGL2RenderingContext.TEXTURE_2D, texture)
+            gl.texImage2D(WebGL2RenderingContext.TEXTURE_2D, 0, format, w, h, 0, format, GL_UNSIGNED_BYTE, null)
+            blitTexture(temp, w, h, WebGL2RenderingContext.TEXTURE_2D, texture, 0, 0, 0, w, h)
+            gl.bindTexture(WebGL2RenderingContext.TEXTURE_2D, state.boundTexture2D[unit])
+            gl.deleteTexture(temp)
+        }
+
+        /** Scratch objects for window copies, owned by [scratchState]'s context. */
         private var scratchState: GlState? = null
         private var scratchTexture: WebGLTexture? = null
         private var scratchReadFbo: WebGLFramebuffer? = null
         private var scratchDrawFbo: WebGLFramebuffer? = null
 
+        private fun ensureScratch() {
+            if (scratchState === state) return
+            scratchState = state
+            scratchTexture = gl.createTexture()
+            scratchReadFbo = gl.createFramebuffer()
+            scratchDrawFbo = gl.createFramebuffer()
+        }
+
         /**
-         * copyTex(Sub)Image2D from the window when it is [UiScale.factor] times the client's
-         * logical size: copies the physical rect into a scratch texture (copies resolve an
-         * antialiased window, which a scaled blit from it could not), then blits that down into
-         * the logical-size destination level.
+         * Blits the whole of level 0 of 2D texture [source] ([sourceW] x [sourceH]) into the given
+         * rect of [level] of [destination], then restores the client's framebuffer bindings.
+         */
+        private fun blitTexture(source: WebGLTexture?, sourceW: Int, sourceH: Int, target: Int, destination: WebGLTexture, level: Int, x: Int, y: Int, w: Int, h: Int) {
+            ensureScratch()
+            gl.bindFramebuffer(GL_READ_FRAMEBUFFER, scratchReadFbo)
+            gl.framebufferTexture2D(GL_READ_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, WebGL2RenderingContext.TEXTURE_2D, source, 0)
+            gl.bindFramebuffer(GL_DRAW_FRAMEBUFFER, scratchDrawFbo)
+            gl.framebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, target, destination, level)
+            gl.drawBuffers(arrayOf(GL_COLOR_ATTACHMENT0))
+            val scissor = gl.isEnabled(GL_SCISSOR_TEST)
+            val discard = gl.isEnabled(GL_RASTERIZER_DISCARD)
+            if (scissor) gl.disable(GL_SCISSOR_TEST)
+            if (discard) gl.disable(GL_RASTERIZER_DISCARD)
+            gl.blitFramebuffer(0, 0, sourceW, sourceH, x, y, x + w, y + h, GL_COLOR_BUFFER_BIT, GL_NEAREST)
+            if (scissor) gl.enable(GL_SCISSOR_TEST)
+            if (discard) gl.enable(GL_RASTERIZER_DISCARD)
+            // Detach so neither texture is left attached to a framebuffer while sampled.
+            gl.framebufferTexture2D(GL_READ_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, WebGL2RenderingContext.TEXTURE_2D, null, 0)
+            gl.framebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, target, null, level)
+            gl.bindFramebuffer(GL_READ_FRAMEBUFFER, readFramebuffer)
+            gl.bindFramebuffer(GL_DRAW_FRAMEBUFFER, drawFramebuffer)
+        }
+
+        /**
+         * copyTex(Sub)Image2D from the window into a logical-size texture when the window is
+         * [UiScale.factor] times the client's logical size: copies the physical rect into a
+         * scratch texture (copies resolve an antialiased window, which a scaled blit from it could
+         * not), then blits that down into the destination level.
          */
         private fun copyWindowToTexture(target: Int, level: Int, xoffset: Int, yoffset: Int, x: Int, y: Int, width: Int, height: Int) {
             if (width <= 0 || height <= 0) return
             val n = UiScale.factor
+            ensureScratch()
             val st = state
-            if (scratchState !== st) {
-                scratchState = st
-                scratchTexture = gl.createTexture()
-                scratchReadFbo = gl.createFramebuffer()
-                scratchDrawFbo = gl.createFramebuffer()
-            }
             val unit = st.activeTextureUnit
             val isCubeFace = target in GL_CUBE_MAP_POSITIVE_X..GL_CUBE_MAP_NEGATIVE_Z
             val destination = if (isCubeFace) st.boundTextureCubeMap[unit] else st.boundTexture2D[unit]
@@ -989,23 +1119,7 @@ actual class OpenGL {
             gl.texParameteri(WebGL2RenderingContext.TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_NEAREST)
             gl.copyTexImage2D(WebGL2RenderingContext.TEXTURE_2D, 0, GL_RGBA8, x * n, y * n, width * n, height * n, 0)
             gl.bindTexture(WebGL2RenderingContext.TEXTURE_2D, st.boundTexture2D[unit])
-
-            gl.bindFramebuffer(GL_READ_FRAMEBUFFER, scratchReadFbo)
-            gl.framebufferTexture2D(GL_READ_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, WebGL2RenderingContext.TEXTURE_2D, scratchTexture, 0)
-            gl.bindFramebuffer(GL_DRAW_FRAMEBUFFER, scratchDrawFbo)
-            gl.framebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, target, destination, level)
-            gl.drawBuffers(arrayOf(GL_COLOR_ATTACHMENT0))
-            val scissor = gl.isEnabled(GL_SCISSOR_TEST)
-            val discard = gl.isEnabled(GL_RASTERIZER_DISCARD)
-            if (scissor) gl.disable(GL_SCISSOR_TEST)
-            if (discard) gl.disable(GL_RASTERIZER_DISCARD)
-            gl.blitFramebuffer(0, 0, width * n, height * n, xoffset, yoffset, xoffset + width, yoffset + height, GL_COLOR_BUFFER_BIT, GL_NEAREST)
-            if (scissor) gl.enable(GL_SCISSOR_TEST)
-            if (discard) gl.enable(GL_RASTERIZER_DISCARD)
-            // Detach so the destination is not left attached to a framebuffer while sampled.
-            gl.framebufferTexture2D(GL_DRAW_FRAMEBUFFER, GL_COLOR_ATTACHMENT0, target, null, level)
-            gl.bindFramebuffer(GL_READ_FRAMEBUFFER, readFramebuffer)
-            gl.bindFramebuffer(GL_DRAW_FRAMEBUFFER, drawFramebuffer)
+            blitTexture(scratchTexture, width * n, height * n, target, destination, level, xoffset, yoffset, width, height)
         }
 
         /**
@@ -1328,6 +1442,8 @@ actual class OpenGL {
 
         actual fun glFramebufferTexture2DEXT(arg0: Int, arg1: Int, arg2: Int, arg3: Int, arg4: Int) {
             val tex = if (arg3 == 0) null else state.textures[arg3]
+            // Rendering into a texture happens at its logical size.
+            if (tex != null) prepareTextureWrite(tex)
             gl.framebufferTexture2D(arg0, arg1, fixTarget(arg2), tex, arg4)
         }
 
