@@ -1,5 +1,11 @@
 package io
 
+import org.khronos.webgl.Int8Array
+import kotlin.js.unsafeCast
+
+/** Persistence granularity: a flush writes only the chunks of a file touched since the last one. */
+internal const val CHUNK_SIZE = 1 shl 20
+
 /**
  * A browser has no filesystem, but the client cannot run without one: PrivilegedOperationWorker
  * opens the cache files unguarded, and FileStoreLocator.method1464 throws RuntimeException if
@@ -13,16 +19,29 @@ internal class MemFile {
     var data: ByteArray = ByteArray(0)
     var size: Int = 0
 
+    /** Indices of [CHUNK_SIZE] chunks changed since the last flush to [IndexedDbStore]. */
+    val dirtyChunks: MutableSet<Int> = HashSet()
+
+    fun markDirty(start: Int, end: Int) {
+        if (end <= start) return
+        for (chunk in start / CHUNK_SIZE..(end - 1) / CHUNK_SIZE) dirtyChunks.add(chunk)
+    }
+
     fun ensureCapacity(required: Int) {
         if (required <= data.size) return
         var capacity = if (data.size == 0) 32 else data.size
         while (capacity < required) capacity = capacity shl 1
-        data = data.copyOf(capacity)
+        // Native copy: Kotlin's copyOf is a per-element JS loop, a visible freeze at cache size.
+        val grown = Int8Array(capacity)
+        grown.set(data.unsafeCast<Int8Array>())
+        data = grown.unsafeCast<ByteArray>()
     }
 
     fun truncate(newLength: Int) {
         if (newLength < size) {
             data.fill(0, newLength, size)
+            // Persisted chunks past the new end must be deleted (or rewritten as zeros if regrown).
+            markDirty(newLength, size)
         } else {
             ensureCapacity(newLength)
         }
@@ -38,10 +57,12 @@ internal object MemFs {
     val dirtyPaths: MutableSet<String> = mutableSetOf()
     val pendingDeletes: MutableSet<String> = mutableSetOf()
 
+    /**
+     * A pending delete is kept even if the path is written again: the flush clears every stored
+     * chunk of a deleted path before writing, so chunks of the old file can't outlive it.
+     */
     fun markDirty(path: String) {
-        val key = normalise(path)
-        pendingDeletes.remove(key)
-        dirtyPaths.add(key)
+        dirtyPaths.add(normalise(path))
     }
 
     /** Collapses Windows separators and duplicate slashes so the two File constructors agree. */
@@ -94,9 +115,10 @@ internal object MemFs {
         val source = normalise(from)
         val target = normalise(to)
         val file = files.remove(source) ?: return false
-        files[target] = file
+        if (files.put(target, file) != null) pendingDeletes.add(target)
         dirtyPaths.remove(source)
         pendingDeletes.add(source)
+        file.markDirty(0, file.size)
         markDirty(target)
         return true
     }

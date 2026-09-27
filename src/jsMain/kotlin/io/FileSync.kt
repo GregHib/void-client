@@ -1,6 +1,8 @@
 package io
 
+import org.khronos.webgl.Int8Array
 import org.khronos.webgl.Uint8Array
+import kotlin.js.unsafeCast
 
 internal const val DEFAULT_BUFFER_SIZE: Int = 8 * 1024
 
@@ -55,9 +57,7 @@ fun readSync(fd: Int, buffer: Uint8Array, offset: Int, length: Int, position: Do
     val start = position?.toInt() ?: descriptor.position
     if (start >= descriptor.file.size) return 0
     val count = minOf(length, descriptor.file.size - start)
-    for (i in 0 until count) {
-        buffer.asDynamic()[offset + i] = descriptor.file.data[start + i].toInt() and 0xFF
-    }
+    buffer.set(descriptor.file.data.byteView(start, count), offset)
     if (position == null) descriptor.position = start + count
     return count
 }
@@ -67,13 +67,18 @@ fun writeSync(fd: Int, buffer: Uint8Array, offset: Int, length: Int, position: D
     val start = position?.toInt() ?: descriptor.position
     val end = start + length
     descriptor.file.ensureCapacity(end)
-    for (i in 0 until length) {
-        descriptor.file.data[start + i] = (buffer.asDynamic()[offset + i] as Int).toByte()
-    }
+    descriptor.file.data.byteView(start, length).set(buffer.subarray(offset, offset + length))
     if (end > descriptor.file.size) descriptor.file.size = end
     if (position == null) descriptor.position = end
+    descriptor.file.markDirty(start, end)
     MemFs.markDirty(descriptor.path)
     return length
+}
+
+/** Unsigned view of [length] bytes from [start], so `set` copies raw bytes natively. */
+private fun ByteArray.byteView(start: Int, length: Int): Uint8Array {
+    val bytes = unsafeCast<Int8Array>()
+    return Uint8Array(bytes.buffer, bytes.byteOffset + start, length)
 }
 
 fun fstatSync(fd: Int): Stats = MemStats(descriptor(fd).file.size.toDouble())

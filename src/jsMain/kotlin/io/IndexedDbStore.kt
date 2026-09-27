@@ -1,8 +1,6 @@
 package io
 
 import kotlinx.coroutines.suspendCancellableCoroutine
-import org.khronos.webgl.ArrayBuffer
-import org.khronos.webgl.Int8Array
 import kotlin.coroutines.resume
 import kotlin.coroutines.resumeWithException
 import kotlin.js.unsafeCast
@@ -49,8 +47,6 @@ private external interface IDBFactory {
 
 private fun indexedDbFactory(): IDBFactory = js("window.indexedDB")
 
-private fun ArrayBuffer.toByteArray(): ByteArray = Int8Array(this).unsafeCast<ByteArray>()
-
 /** Coroutine wrapper around the browser's IndexedDB, storing one record per [MemFs] path. */
 internal object IndexedDbStore {
     private var db: IDBDatabase? = null
@@ -73,46 +69,36 @@ internal object IndexedDbStore {
         return opened
     }
 
-    suspend fun getAll(): Map<String, ByteArray> {
+    /** Every stored record, as the plain objects [put] wrote. */
+    suspend fun getAll(): Array<dynamic> {
         val store = database().transaction(STORE_NAME, "readonly").objectStore(STORE_NAME)
         return suspendCancellableCoroutine { cont ->
             val request = store.getAll()
-            request.onsuccess = {
-                val records: dynamic = request.result
-                val length: Int = records.length as Int
-                val result = HashMap<String, ByteArray>(length)
-                for (i in 0 until length) {
-                    val record = records[i]
-                    val path = record.path as String
-                    val buffer = record.bytes as ArrayBuffer
-                    result[path] = buffer.toByteArray()
-                }
-                cont.resume(result)
-            }
+            request.onsuccess = { cont.resume(request.result.unsafeCast<Array<dynamic>>()) }
             request.onerror = { cont.resumeWithException(RuntimeException("IndexedDB getAll failed")) }
         }
     }
 
-    suspend fun put(path: String, bytes: ByteArray) {
+    /** Stores [record], keyed by its `path` field. */
+    suspend fun put(record: dynamic) {
         val store = database().transaction(STORE_NAME, "readwrite").objectStore(STORE_NAME)
         suspendCancellableCoroutine<Unit> { cont ->
-            val view = bytes.asUint8Array()
-            val buffer = view.buffer.slice(view.byteOffset, view.byteOffset + view.length)
-            val record = js("({})")
-            record.path = path
-            record.bytes = buffer
             val request = store.put(record)
             request.onsuccess = { cont.resume(Unit) }
-            request.onerror = { cont.resumeWithException(RuntimeException("IndexedDB put failed for $path")) }
+            request.onerror = { cont.resumeWithException(RuntimeException("IndexedDB put failed for ${record.path}")) }
         }
     }
 
-    suspend fun delete(path: String) {
+    suspend fun delete(key: String) = delete(key, key)
+
+    /** Deletes every record whose key lies in [lower]..[upper]. */
+    suspend fun delete(lower: String, upper: String) {
         val store = database().transaction(STORE_NAME, "readwrite").objectStore(STORE_NAME)
         suspendCancellableCoroutine<Unit> { cont ->
-            val request = store.delete(path)
+            val range: dynamic = js("IDBKeyRange").bound(lower, upper)
+            val request = store.delete(range)
             request.onsuccess = { cont.resume(Unit) }
-            request.onerror = { cont.resumeWithException(RuntimeException("IndexedDB delete failed for $path")) }
+            request.onerror = { cont.resumeWithException(RuntimeException("IndexedDB delete failed for $lower")) }
         }
     }
 }
