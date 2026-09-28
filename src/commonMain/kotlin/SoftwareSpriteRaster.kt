@@ -132,93 +132,94 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
         aHa_Sub2_1616.method3753(1, 1)
         val f = 1.0f / (aHa_Sub2_1616.anInt7733 * 128).toFloat()
         if (bool) {
+            // The prebuilt chunk index buffer covers every tile of the chunk (8x8 tiles at the
+            // default shadow scale), so drawing it when only part of the chunk is visible paints
+            // shadows onto terrain that was culled past the draw distance - floating in the void
+            // beyond the map edge. Only use it when the whole chunk is drawn; otherwise emit just
+            // the visible tiles, matching the terrain pass.
             for (i_51_ in 0..<anInt1625) {
-                val i_52_ = i_51_ shl anInt1613
-                val i_53_ = 1 + i_51_ shl anInt1613
                 for (i_54_ in 0..<anInt1618) {
-                    val i_55_ = i_54_ shl anInt1613
-                    val i_56_ = 1 + i_54_ shl anInt1613
-                    var i_57_ = i_55_
-                    while_43_@ while (i_56_ > i_57_) {
-                        if (-i_35_ <= i_57_ + -i_37_ && i_35_ >= -i_37_ + i_57_) {
-                            var i_58_ = i_52_
-                            while (i_53_ > i_58_) {
-                                if (-i_35_ <= -i_36_ + i_58_ && -i_36_ + i_58_ <= i_35_ && (bools[i_35_ + i_57_ - i_37_]!![i_35_ + i_58_ + -i_36_])) {
-                                    glMatrixMode(5890)
-                                    glLoadIdentity()
-                                    glScalef(f, f, 1.0f)
-                                    glTranslatef(-i_54_.toFloat() / f, -i_51_.toFloat() / f, 1.0f)
-                                    glMatrixMode(5888)
-                                    aTerrainTileGeometryArrayArray1623!![i_54_][i_51_]!!.method1644(((-121).toByte()).toByte())
-                                    break@while_43_
-                                }
-                                i_58_++
-                            }
+                    when (chunkVisibility(i_54_, i_51_, bools, i_35_, i_36_, i_37_)) {
+                        CHUNK_HIDDEN -> {}
+                        CHUNK_FULL -> {
+                            glMatrixMode(5890)
+                            glLoadIdentity()
+                            glScalef(f, f, 1.0f)
+                            glTranslatef(-i_54_.toFloat() / f, -i_51_.toFloat() / f, 1.0f)
+                            glMatrixMode(5888)
+                            aTerrainTileGeometryArrayArray1623!![i_54_][i_51_]!!.method1644(((-121).toByte()).toByte())
                         }
-                        i_57_++
+                        else -> drawVisibleTiles(i_54_, i_51_, bools, i_35_, i_36_, i_37_, f)
                     }
                 }
             }
         } else {
-            var i_39_ = 0
-            while (anInt1625 > i_39_) {
-                val i_40_ = i_39_ shl anInt1613
-                val i_41_ = i_39_ + 1 shl anInt1613
-                var i_42_ = 0
-                while (anInt1618 > i_42_) {
-                    var i_43_ = 0
-                    val i_44_ = i_42_ shl anInt1613
-                    val i_45_ = 1 + i_42_ shl anInt1613
-                    val class348_sub49_sub1 = aHa_Sub2_1616.aClass348_Sub49_Sub1_7798
-                    class348_sub49_sub1!!.anInt7197 = 0
-                    var i_46_ = i_40_
-                    while (i_41_ > i_46_) {
-                        if (-i_35_ <= -i_36_ + i_46_ && -i_36_ + i_46_ <= i_35_) {
-                            var i_47_ = i_44_ + i_46_ * aS_Sub2_1622!!.anInt4587
-                            var i_48_ = i_44_
-                            while (i_45_ > i_48_) {
-                                if ((-i_35_ <= -i_37_ + i_48_) && -i_37_ + i_48_ <= i_35_ && (bools[i_35_ + i_48_ - i_37_]!![i_35_ + i_46_ + -i_36_])) {
-                                    val `is` = (aS_Sub2_1622.aShortArrayArray8267[i_47_])
-                                    if (`is` != null) {
-                                        if (aHa_Sub2_1616.aBoolean7775) {
-                                            var i_50_ = 0
-                                            while ((i_50_ < `is`.size)) {
-                                                i_43_++
-                                                class348_sub49_sub1.writeShort(107.toByte(), 0xffff and `is`[i_50_].toInt())
-                                                i_50_++
-                                            }
-                                        } else {
-                                            var i_49_ = 0
-                                            while (`is`.size > i_49_) {
-                                                class348_sub49_sub1.method3397(111, `is`[i_49_].toInt() and 0xffff)
-                                                i_43_++
-                                                i_49_++
-                                            }
-                                        }
-                                    }
-                                }
-                                i_47_++
-                                i_48_++
-                            }
-                        }
-                        i_46_++
-                    }
-                    if (i_43_ > 0) {
-                        glMatrixMode(5890)
-                        glLoadIdentity()
-                        glScalef(f, f, 1.0f)
-                        glTranslatef(-i_42_.toFloat() / f, -i_39_.toFloat() / f, 1.0f)
-                        glMatrixMode(5888)
-                        aTerrainTileGeometryArrayArray1623!![i_42_][i_39_]!!.method1643((class348_sub49_sub1.aByteArray7154), 5123, i_43_, 70.toByte())
-                    }
-                    i_42_++
-                }
-                i_39_++
+            for (i_39_ in 0..<anInt1625) {
+                for (i_42_ in 0..<anInt1618) drawVisibleTiles(i_42_, i_39_, bools, i_35_, i_36_, i_37_, f)
             }
         }
         glMatrixMode(5890)
         glLoadIdentity()
         glMatrixMode(5888)
+    }
+
+    /** Whether tile ([x], [y]) is inside the draw window centred on ([camX], [camY]) and marked visible. */
+    private fun tileVisible(x: Int, y: Int, bools: Array<BooleanArray?>, radius: Int, camY: Int, camX: Int): Boolean {
+        val dx = x - camX
+        val dy = y - camY
+        return dx >= -radius && dx <= radius && dy >= -radius && dy <= radius && bools[radius + dx]!![radius + dy]
+    }
+
+    /**
+     * [CHUNK_FULL] when every tile of the chunk that has terrain geometry is visible, so the chunk's
+     * prebuilt index buffer can be drawn as-is; [CHUNK_HIDDEN] when none is; [CHUNK_PARTIAL] otherwise.
+     */
+    private fun chunkVisibility(chunkX: Int, chunkY: Int, bools: Array<BooleanArray?>, radius: Int, camY: Int, camX: Int): Int {
+        val x0 = chunkX shl anInt1613
+        val y0 = chunkY shl anInt1613
+        val size = 1 shl anInt1613
+        val tiles = aS_Sub2_1622!!.aShortArrayArray8267
+        val width = aS_Sub2_1622.anInt4587
+        var any = false
+        var all = true
+        for (y in y0..<y0 + size) {
+            for (x in x0..<x0 + size) {
+                if (tileVisible(x, y, bools, radius, camY, camX)) any = true
+                else if (tiles[x + y * width] != null) all = false
+                if (any && !all) return CHUNK_PARTIAL
+            }
+        }
+        return if (!any) CHUNK_HIDDEN else CHUNK_FULL
+    }
+
+    /** Draws the shadow overlay for only the visible tiles of one chunk, via a streamed index buffer. */
+    private fun drawVisibleTiles(chunkX: Int, chunkY: Int, bools: Array<BooleanArray?>, radius: Int, camY: Int, camX: Int, f: Float) {
+        val x0 = chunkX shl anInt1613
+        val y0 = chunkY shl anInt1613
+        val size = 1 shl anInt1613
+        val buffer = aHa_Sub2_1616!!.aClass348_Sub49_Sub1_7798!!
+        buffer.anInt7197 = 0
+        var count = 0
+        for (y in y0..<y0 + size) {
+            for (x in x0..<x0 + size) {
+                if (!tileVisible(x, y, bools, radius, camY, camX)) continue
+                val `is` = aS_Sub2_1622!!.aShortArrayArray8267[x + y * aS_Sub2_1622.anInt4587] ?: continue
+                if (aHa_Sub2_1616.aBoolean7775) {
+                    for (index in `is`) buffer.writeShort(107.toByte(), 0xffff and index.toInt())
+                } else {
+                    for (index in `is`) buffer.method3397(111, 0xffff and index.toInt())
+                }
+                count += `is`.size
+            }
+        }
+        if (count > 0) {
+            glMatrixMode(5890)
+            glLoadIdentity()
+            glScalef(f, f, 1.0f)
+            glTranslatef(-chunkX.toFloat() / f, -chunkY.toFloat() / f, 1.0f)
+            glMatrixMode(5888)
+            aTerrainTileGeometryArrayArray1623!![chunkX][chunkY]!!.method1643(buffer.aByteArray7154, 5123, count, 70.toByte())
+        }
     }
 
     fun method957(i: Int) {
@@ -295,6 +296,10 @@ class SoftwareSpriteRaster internal constructor(var_ha_Sub2: OpenGlRenderer?, va
     }
 
     companion object {
+
+        private const val CHUNK_HIDDEN = 0
+        private const val CHUNK_PARTIAL = 1
+        private const val CHUNK_FULL = 2
 
         var anInt1610: Int = 0
 

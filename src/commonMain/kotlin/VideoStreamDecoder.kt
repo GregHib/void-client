@@ -110,96 +110,95 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
         aHa_Sub3_4111.method3814(false, false, -2, 82.toByte())
         val f = 1.0f / (aHa_Sub3_4111.anInt8125 * i).toFloat()
         if (bool) {
-            var i_27_ = 0
-            while (anInt4118 > i_27_) {
-                val i_28_ = i_27_ shl anInt4124
-                val i_29_ = 1 + i_27_ shl anInt4124
-                var i_30_ = 0
-                while (anInt4121 > i_30_) {
-                    if (aTerrainChunkBuilderArrayArray4122!![i_30_]!![i_27_] != null) {
-                        val i_31_ = i_30_ shl anInt4124
-                        val i_32_ = i_30_ + 1 shl anInt4124
-                        while_119_@ for (i_33_ in i_31_..<i_32_) {
-                            if (-i_25_ + i_33_ >= -i_24_ && i_24_ >= -i_25_ + i_33_) {
-                                var i_34_ = i_28_
-                                while ((i_29_ > i_34_)) {
-                                    if (-i_24_ <= i_34_ + -i_26_ && i_24_ >= -i_26_ + i_34_ && (bools[i_24_ + (-i_25_ + i_33_)]!![-i_26_ + i_34_ + i_24_])) {
-                                        val class101_sub2 = aHa_Sub3_4111.method3820(false)
-                                        class101_sub2.method932(1.0f, f, f, (-65).toByte())
-                                        class101_sub2.method891(-i_30_, -i_27_, 0)
-                                        aHa_Sub3_4111.method3853(i xor 0x9f.inv(), WaterDetailOptionState.aConfigFlagUtil_6030)
-                                        aTerrainChunkBuilderArrayArray4122!![i_30_]!![i_27_]!!.method871(116.toByte())
-                                        break@while_119_
-                                    }
-                                    i_34_++
-                                }
-                            }
+            // The prebuilt chunk buffer covers every tile of the chunk, so drawing it when only part
+            // of the chunk is visible paints shadows onto terrain culled past the draw distance -
+            // floating in the void beyond the map edge. Only use it when the whole chunk is drawn;
+            // otherwise emit just the visible tiles, matching the terrain pass.
+            for (i_27_ in 0..<anInt4118) {
+                for (i_30_ in 0..<anInt4121) {
+                    val chunk = aTerrainChunkBuilderArrayArray4122!![i_30_]!![i_27_] ?: continue
+                    when (chunkVisibility(i_30_, i_27_, bools, i_24_, i_25_, i_26_)) {
+                        CHUNK_HIDDEN -> {}
+                        CHUNK_FULL -> {
+                            val class101_sub2 = aHa_Sub3_4111.method3820(false)
+                            class101_sub2.method932(1.0f, f, f, (-65).toByte())
+                            class101_sub2.method891(-i_30_, -i_27_, 0)
+                            aHa_Sub3_4111.method3853(i xor 0x9f.inv(), WaterDetailOptionState.aConfigFlagUtil_6030)
+                            chunk.method871(116.toByte())
                         }
+                        else -> drawVisibleTiles(chunk, i_30_, i_27_, bools, i_24_, i_25_, i_26_, i, f)
                     }
-                    i_30_++
                 }
-                i_27_++
             }
         } else {
-            var i_35_ = 0
-            while (anInt4118 > i_35_) {
-                val i_36_ = i_35_ shl anInt4124
-                val i_37_ = 1 + i_35_ shl anInt4124
+            for (i_35_ in 0..<anInt4118) {
                 for (i_38_ in 0..<anInt4121) {
-                    val class97 = aTerrainChunkBuilderArrayArray4122!![i_38_]!![i_35_]
-                    if (class97 != null) {
-                        val interface5_impl2 = aHa_Sub3_4111.method3822(118, (class97.anInt1563) * 3)
-                        val buffer = interface5_impl2.method24(true, false)
-                        if (buffer != null) {
-                            val stream = aHa_Sub3_4111.method3893(buffer, 9179)
-                            var i_39_ = 0
-                            val i_40_ = i_38_ shl anInt4124
-                            val i_41_ = i_38_ + 1 shl anInt4124
-                            for (i_42_ in i_36_..<i_37_) {
-                                if (-i_26_ + i_42_ >= -i_24_ && (i_42_ - i_26_ <= i_24_)) {
-                                    var i_43_ = (i_42_ * aS_Sub3_4116!!.anInt4587 - -i_40_)
-                                    var i_44_ = i_40_
-                                    while ((i_44_ < i_41_)) {
-                                        if ((-i_25_ + i_44_ >= -i_24_) && i_24_ >= i_44_ - i_25_ && (bools[i_24_ + (i_44_ + -i_25_)]!![i_24_ + -i_26_ + i_42_])) {
-                                            val `is` = (aS_Sub3_4116.aShortArrayArray8299[i_43_])
-                                            if (`is` != null) {
-                                                if (c()) {
-                                                    var i_46_ = 0
-                                                    while ((`is`.size > i_46_)) {
-                                                        stream.d(`is`[i_46_].toInt() and 0xffff)
-                                                        i_39_++
-                                                        i_46_++
-                                                    }
-                                                } else {
-                                                    var i_45_ = 0
-                                                    while (`is`.size > i_45_) {
-                                                        i_39_++
-                                                        stream.a(`is`[i_45_].toInt() and 0xffff)
-                                                        i_45_++
-                                                    }
-                                                }
-                                            }
-                                        }
-                                        i_43_++
-                                        i_44_++
-                                    }
-                                }
-                            }
-                            stream.a()
-                            if (interface5_impl2.method22(-23) && i_39_ > 0) {
-                                val class101_sub2 = aHa_Sub3_4111.method3820(false)
-                                class101_sub2.method932(1.0f, f, f, (-62).toByte())
-                                class101_sub2.method891(-i_38_, -i_35_, 0)
-                                aHa_Sub3_4111.method3853(i xor 0x9f.inv(), (WaterDetailOptionState.aConfigFlagUtil_6030))
-                                class97.method875(-82, interface5_impl2, i_39_ / 3)
-                            }
-                        }
-                    }
+                    val class97 = aTerrainChunkBuilderArrayArray4122!![i_38_]!![i_35_] ?: continue
+                    drawVisibleTiles(class97, i_38_, i_35_, bools, i_24_, i_25_, i_26_, i, f)
                 }
-                i_35_++
             }
         }
         aHa_Sub3_4111.method3879(-8629)
+    }
+
+    /** Whether tile ([x], [y]) is inside the draw window centred on ([camX], [camY]) and marked visible. */
+    private fun tileVisible(x: Int, y: Int, bools: Array<BooleanArray?>, radius: Int, camX: Int, camY: Int): Boolean {
+        val dx = x - camX
+        val dy = y - camY
+        return dx >= -radius && dx <= radius && dy >= -radius && dy <= radius && bools[radius + dx]!![radius + dy]
+    }
+
+    /**
+     * [CHUNK_FULL] when every tile of the chunk that has terrain geometry is visible, so the chunk's
+     * prebuilt buffer can be drawn as-is; [CHUNK_HIDDEN] when none is; [CHUNK_PARTIAL] otherwise.
+     */
+    private fun chunkVisibility(chunkX: Int, chunkY: Int, bools: Array<BooleanArray?>, radius: Int, camX: Int, camY: Int): Int {
+        val x0 = chunkX shl anInt4124
+        val y0 = chunkY shl anInt4124
+        val size = 1 shl anInt4124
+        val tiles = aS_Sub3_4116!!.aShortArrayArray8299
+        val width = aS_Sub3_4116.anInt4587
+        var any = false
+        var all = true
+        for (y in y0..<y0 + size) {
+            for (x in x0..<x0 + size) {
+                if (tileVisible(x, y, bools, radius, camX, camY)) any = true
+                else if (tiles[x + y * width] != null) all = false
+                if (any && !all) return CHUNK_PARTIAL
+            }
+        }
+        return if (!any) CHUNK_HIDDEN else CHUNK_FULL
+    }
+
+    /** Draws the shadow overlay for only the visible tiles of one chunk, via a streamed index buffer. */
+    private fun drawVisibleTiles(chunk: TerrainChunkBuilder, chunkX: Int, chunkY: Int, bools: Array<BooleanArray?>, radius: Int, camX: Int, camY: Int, i: Int, f: Float) {
+        val interface5_impl2 = aHa_Sub3_4111!!.method3822(118, chunk.anInt1563 * 3)
+        val buffer = interface5_impl2.method24(true, false) ?: return
+        val stream = aHa_Sub3_4111.method3893(buffer, 9179)
+        val x0 = chunkX shl anInt4124
+        val y0 = chunkY shl anInt4124
+        val size = 1 shl anInt4124
+        var count = 0
+        for (y in y0..<y0 + size) {
+            for (x in x0..<x0 + size) {
+                if (!tileVisible(x, y, bools, radius, camX, camY)) continue
+                val `is` = aS_Sub3_4116!!.aShortArrayArray8299[x + y * aS_Sub3_4116.anInt4587] ?: continue
+                if (c()) {
+                    for (index in `is`) stream.d(index.toInt() and 0xffff)
+                } else {
+                    for (index in `is`) stream.a(index.toInt() and 0xffff)
+                }
+                count += `is`.size
+            }
+        }
+        stream.a()
+        if (interface5_impl2.method22(-23) && count > 0) {
+            val class101_sub2 = aHa_Sub3_4111.method3820(false)
+            class101_sub2.method932(1.0f, f, f, (-62).toByte())
+            class101_sub2.method891(-chunkX, -chunkY, 0)
+            aHa_Sub3_4111.method3853(i xor 0x9f.inv(), WaterDetailOptionState.aConfigFlagUtil_6030)
+            chunk.method875(-82, interface5_impl2, count / 3)
+        }
     }
 
     fun method2632(i: Int) {
@@ -297,6 +296,10 @@ class VideoStreamDecoder internal constructor(var_ha_Sub3: NativeRenderer?, var_
     }
 
     companion object {
+
+        private const val CHUNK_HIDDEN = 0
+        private const val CHUNK_PARTIAL = 1
+        private const val CHUNK_FULL = 2
         var anInt4110: Int = 0
         var anInt4114: Int = 0
         var anInt4115: Int = 0
