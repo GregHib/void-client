@@ -97,10 +97,16 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
             if ((i_2_ and 0x2) == 0) {
                 for (i_7_ in DelegatingRenderCanvas.anInt67..<MapAreaDefinition.anInt2524) {
                     if (i_7_ >= i && `is` != null) {
+                        // Clip the visibility window's far edge against the scene. The window starts at scene
+                        // (anInt492 - anInt8412), not anInt492: once the draw distance exceeds half the scene
+                        // both edges clip, and ignoring the low-side offset skipped the far tiles, leaving
+                        // upper-floor tiles there visible with roofs hidden.
                         var i_8_ = ActorEntity.aBooleanArrayArray1572!!.size
-                        if ((ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size) > ActorEntity.anInt6451) i_8_ -= (ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size - ActorEntity.anInt6451)
+                        val overX = ByteArrayPool.anInt492 - AnimatedModelRenderer.anInt8412 + i_8_ - ActorEntity.anInt6451
+                        if (overX > 0) i_8_ -= overX
                         var i_9_ = ActorEntity.aBooleanArrayArray1572!![0]!!.size
-                        if ((IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size) > ActorEntity.anInt7054) i_9_ -= (IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size - ActorEntity.anInt7054)
+                        val overY = IntPair.anInt6974 - WorldMapRenderer.anInt4686 + i_9_ - ActorEntity.anInt7054
+                        if (overY > 0) i_9_ -= overY
                         var bools = FacingDirectionNode.aBooleanArrayArray6656
                         if (SpriteTextureNode.aBoolean9242) {
                             if (VoronoiNoiseTextureNode.aBoolean9121) bools = OverlayColorTable.aBooleanArrayArrayArray1751!![i_7_]
@@ -128,9 +134,11 @@ class FloatBuffer internal constructor(i: Int) : ByteBuffer(i) {
                         else ActorEntity.aTerrainTileArray5191!![i_7_]!!.method3983(ActorEntity.anInt6111, ActorEntity.anInt8502, ActorEntity.anInt10084, FacingDirectionNode.aBooleanArrayArray6656!!, false, i_2_)
                     } else {
                         var i_16_ = ActorEntity.aBooleanArrayArray1572!!.size
-                        if ((ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size) > ActorEntity.anInt6451) i_16_ -= (ByteArrayPool.anInt492 + ActorEntity.aBooleanArrayArray1572!!.size - ActorEntity.anInt6451)
+                        val overX = ByteArrayPool.anInt492 - AnimatedModelRenderer.anInt8412 + i_16_ - ActorEntity.anInt6451
+                        if (overX > 0) i_16_ -= overX
                         var i_17_ = ActorEntity.aBooleanArrayArray1572!![0]!!.size
-                        if ((IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size) > ActorEntity.anInt7054) i_17_ -= (IntPair.anInt6974 + ActorEntity.aBooleanArrayArray1572!![0]!!.size - ActorEntity.anInt7054)
+                        val overY = IntPair.anInt6974 - WorldMapRenderer.anInt4686 + i_17_ - ActorEntity.anInt7054
+                        if (overY > 0) i_17_ -= overY
                         var bools = FacingDirectionNode.aBooleanArrayArray6656
                         if (SpriteTextureNode.aBoolean9242) {
                             if (VoronoiNoiseTextureNode.aBoolean9121) bools = OverlayColorTable.aBooleanArrayArrayArray1751!![i_7_]
