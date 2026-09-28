@@ -80,7 +80,10 @@ internal fun translateLegacyGlsl(source: String, shaderType: Int): String {
             header.append("out vec4 vTexCoord[$TEXCOORD_ARRAY_SIZE];\n")
             header.append("out float vFogFragCoord;\n")
             if (usesFtransform) {
-                header.append("vec4 ftransform() { return uProjectionMatrix * uModelViewMatrix * aVertex; }\n")
+                // ftransform() is defined to be invariant with the fixed-function transform, so
+                // use the same CPU-multiplied MVP and expression as FixedFunctionShader.
+                header.append("invariant gl_Position;\n")
+                header.append("vec4 ftransform() { return uModelViewProjectionMatrix * aVertex; }\n")
             }
         } else {
             header.append("in vec4 vTexCoord[$TEXCOORD_ARRAY_SIZE];\n")

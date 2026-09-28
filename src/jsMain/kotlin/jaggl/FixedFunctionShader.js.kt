@@ -15,7 +15,8 @@ layout(location = 3) in vec3 aNormal;
 layout(location = 4) in vec3 aTexCoord1;
 
 uniform mat4 uModelView;
-uniform mat4 uProjection;
+// projection * modelview, multiplied once on the CPU (MatrixStack.mvp) - see main().
+uniform mat4 uModelViewProjection;
 uniform mat4 uTextureMatrixU[3];
 // Per unit, per coordinate (s, t, r, q) GL_TEXTURE_GEN_MODE, or 0 where that coordinate's
 // texgen is disabled and the vertex attribute passes through.
@@ -43,8 +44,12 @@ out vec3 vTexCoord2;
 invariant gl_Position;
 
 void main() {
+    // gl_Position deliberately shares no subexpression with viewPos: deriving it from viewPos
+    // lets the compiler lower the modelview product differently here than in a transpiled ARB
+    // program (which computes its own view position with DP4s), and the rounding difference
+    // makes coplanar multi-pass terrain (e.g. SD water over a shore texture) z-fight.
+    gl_Position = uModelViewProjection * aPosition;
     vec4 viewPos = uModelView * aPosition;
-    gl_Position = uProjection * viewPos;
 
     vec3 rawEyeNormal = mat3(uModelView) * aNormal;
     float eyeNormalLenSq = dot(rawEyeNormal, rawEyeNormal);
@@ -270,7 +275,7 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
     val program: WebGLProgram
 
     val uModelView: WebGLUniformLocation?
-    val uProjection: WebGLUniformLocation?
+    val uModelViewProjection: WebGLUniformLocation?
     val uLightingEnabled: WebGLUniformLocation?
     val uGlobalAmbient: WebGLUniformLocation?
     val uLightEnabled: Array<WebGLUniformLocation?>
@@ -299,7 +304,7 @@ class FixedFunctionShader(private val gl: WebGL2RenderingContext) {
         program = prog
 
         uModelView = gl.getUniformLocation(program, "uModelView")
-        uProjection = gl.getUniformLocation(program, "uProjection")
+        uModelViewProjection = gl.getUniformLocation(program, "uModelViewProjection")
         uTextureMatrixU = perUnit("uTextureMatrixU")
         uTexGenMode = perUnit("uTexGenMode")
         uTexGenObjPlane = Array(12) { gl.getUniformLocation(program, "uTexGenObjPlane[$it]") }

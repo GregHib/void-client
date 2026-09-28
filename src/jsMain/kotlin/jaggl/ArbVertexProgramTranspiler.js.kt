@@ -774,6 +774,7 @@ internal object ArbVertexProgramTranspiler {
         sb.append("// Transpiled from ARB_vertex_program (ARBvp1.0) for WebGL2.\n")
         sb.append("uniform mat4 uModelViewMatrix;\n")
         sb.append("uniform mat4 uProjectionMatrix;\n")
+        sb.append("uniform mat4 uModelViewProjection;\n")
         sb.append("uniform mat4 uTextureMatrices[3];\n")
         if (ctx.maxLocalIndex >= 0) sb.append("uniform vec4 uProgramLocal[${ctx.maxLocalIndex + 1}];\n")
         if (ctx.maxEnvIndex >= 0) sb.append("uniform vec4 uProgramEnv[${ctx.maxEnvIndex + 1}];\n")
@@ -801,7 +802,7 @@ internal object ArbVertexProgramTranspiler {
         if (ctx.needsNormalRows) sb.append("vec3 arbRow3(mat3 m, int r) { return vec3(m[0][r], m[1][r], m[2][r]); }\n")
 
         sb.append("void main() {\n")
-        sb.append("    mat4 arbMvp = uProjectionMatrix * uModelViewMatrix;\n")
+        sb.append("    mat4 arbMvp = uModelViewProjection;\n")
         if (ctx.needsNormalRows) sb.append("    mat3 arbNormalMat = mat3(uModelViewMatrix);\n")
 
         // Result registers, defaulted per the fixed-function conventions.
@@ -833,11 +834,15 @@ internal object ArbVertexProgramTranspiler {
             // ARB_position_invariant requires gl_Position to match the fixed-function pipeline's
             // transform bit-for-bit (that's the whole point of the option: mixing
             // position-invariant vertex-program draws with fixed-function draws of coincident
-            // geometry - e.g. water meeting terrain - must not z-fight). Floating point is not
-            // associative, so this has to reproduce FixedFunctionShader's VERTEX_SOURCE operation
-            // order (uProjection * (uModelView * aPosition), i.e. transform to view space first,
-            // then project) rather than pre-multiplying the two matrices together first.
-            sb.append("    gl_Position = uProjectionMatrix * (uModelViewMatrix * aPosition);\n")
+            // geometry - e.g. SD water blended over a shore texture, drawn as separate LEQUAL
+            // passes over the same triangles - must not z-fight). This must be the exact
+            // expression FixedFunctionShader's VERTEX_SOURCE uses: one product with the
+            // CPU-multiplied MVP (MatrixStack.mvp), sharing nothing with the program body.
+            // Computing uProjection * (uModelView * aPosition) instead left the compiler free to fold the
+            // inner product into the program's own `DP4 viewPos, mvMatrix[i], iPos` rows here but
+            // not in the fixed-function shader - different rounding, and at grazing camera angles
+            // the water failed the depth test against the pass beneath it in flickering patches.
+            sb.append("    gl_Position = uModelViewProjection * aPosition;\n")
         }
         sb.append("}\n")
         return sb.toString()
@@ -908,6 +913,7 @@ internal class ArbProgramRuntime {
     private var program: WebGLProgram? = null
     private var uModelViewMatrix: WebGLUniformLocation? = null
     private var uProjectionMatrix: WebGLUniformLocation? = null
+    private var uModelViewProjection: WebGLUniformLocation? = null
     private var uTextureMatrices: Array<WebGLUniformLocation?> = arrayOfNulls(3)
 
     // Per-program (this instance is 1:1 with a linked WebGLProgram) dirty tracking for
@@ -997,8 +1003,13 @@ internal class ArbProgramRuntime {
                 return false
             }
             program = prog
-            uModelViewMatrix = gl.getUniformLocation(prog, "uModelViewMatrix")
+            // A reload links a new program with zeroed uniforms: forget what the old one received.
+            lastModelViewVersion = -1
+            lastProjectionVersion = -1
+            lastTextureMatrixVersion.fill(-1)
+            uModelViewMatrix =gl.getUniformLocation(prog, "uModelViewMatrix")
             uProjectionMatrix = gl.getUniformLocation(prog, "uProjectionMatrix")
+            uModelViewProjection = gl.getUniformLocation(prog, "uModelViewProjection")
             for (u in 0..2) uTextureMatrices[u] = gl.getUniformLocation(prog, "uTextureMatrices[$u]")
             uProgramLocal = if (maxLocalIndex >= 0) gl.getUniformLocation(prog, "uProgramLocal[0]") else null
             uArbLightModelAmbient = if (usesLightModelAmbient) gl.getUniformLocation(prog, "uArbLightModelAmbient") else null
@@ -1049,14 +1060,19 @@ internal class ArbProgramRuntime {
         state.useProgram(prog)
 
         val mvVersion = state.matrixStack.version(GL_MODELVIEW)
-        if (mvVersion != lastModelViewVersion) {
+        val mvChanged = mvVersion != lastModelViewVersion
+        if (mvChanged) {
             lastModelViewVersion = mvVersion
             gl.uniformMatrix4fv(uModelViewMatrix, false, state.matrixStack.modelview().asFloat32Array())
         }
         val projVersion = state.matrixStack.version(GL_PROJECTION)
-        if (projVersion != lastProjectionVersion) {
+        val projChanged = projVersion != lastProjectionVersion
+        if (projChanged) {
             lastProjectionVersion = projVersion
             gl.uniformMatrix4fv(uProjectionMatrix, false, state.matrixStack.projection().asFloat32Array())
+        }
+        if (mvChanged || projChanged) {
+            gl.uniformMatrix4fv(uModelViewProjection, false, state.matrixStack.mvp().asFloat32Array())
         }
         for (u in 0..2) {
             val loc = uTextureMatrices[u] ?: continue

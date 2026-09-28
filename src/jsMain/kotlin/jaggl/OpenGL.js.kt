@@ -334,8 +334,15 @@ actual class OpenGL {
 
         actual fun glMatrixMode(arg0: Int) = exec { state.matrixStack.mode = arg0 }
         actual fun glLoadIdentity() = exec { state.matrixStack.loadIdentity() }
-        actual fun glLoadMatrixf(arg0: FloatArray?, arg1: Int) = exec { state.matrixStack.loadMatrix(arg0.slice(arg1, 16)) }
-        actual fun glMultMatrixf(arg0: FloatArray?, arg1: Int) = exec { state.matrixStack.mult(arg0.slice(arg1, 16)) }
+        // Array arguments are copied before exec throughout: see glTexEnvfv.
+        actual fun glLoadMatrixf(arg0: FloatArray?, arg1: Int) {
+            val m = arg0.slice(arg1, 16)
+            exec { state.matrixStack.loadMatrix(m) }
+        }
+        actual fun glMultMatrixf(arg0: FloatArray?, arg1: Int) {
+            val m = arg0.slice(arg1, 16)
+            exec { state.matrixStack.mult(m) }
+        }
         actual fun glPushMatrix() = exec { state.matrixStack.push() }
         actual fun glPopMatrix() = exec { state.matrixStack.pop() }
         actual fun glTranslatef(arg0: Float, arg1: Float, arg2: Float) = exec { state.matrixStack.translate(arg0, arg1, arg2) }
@@ -527,10 +534,15 @@ actual class OpenGL {
                 state.lightDirtyMask = state.lightDirtyMask or (1 shl light)
             }
         }
-        actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
-            val light = arg0 - GL_LIGHT0
-            if (light !in 0 until MAX_LIGHTS) return@exec
+        // Array arguments are copied before exec throughout: see glTexEnvfv.
+        actual fun glLightfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
             val v = arg2.slice(arg3, 4)
+            exec { lightfv(arg0, arg1, v) }
+        }
+
+        private fun lightfv(arg0: Int, arg1: Int, v: FloatArray) {
+            val light = arg0 - GL_LIGHT0
+            if (light !in 0 until MAX_LIGHTS) return
             val changed = when (arg1) {
                 GL_AMBIENT -> copyIfChanged(v, state.lightAmbient[light])
                 GL_DIFFUSE -> copyIfChanged(v, state.lightDiffuse[light])
@@ -549,9 +561,12 @@ actual class OpenGL {
             return true
         }
 
-        actual fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
-            if (arg0 == GL_LIGHT_MODEL_AMBIENT && copyIfChanged(arg1.slice(arg2, 4), state.globalAmbient)) {
-                state.ffpLightingDirty = true
+        actual fun glLightModelfv(arg0: Int, arg1: FloatArray?, arg2: Int) {
+            val v = arg1.slice(arg2, 4)
+            exec {
+                if (arg0 == GL_LIGHT_MODEL_AMBIENT && copyIfChanged(v, state.globalAmbient)) {
+                    state.ffpLightingDirty = true
+                }
             }
         }
 
@@ -565,16 +580,20 @@ actual class OpenGL {
         }
 
         actual fun glFogi(arg0: Int, arg1: Int) {}
-        actual fun glFogfv(arg0: Int, arg1: FloatArray?, arg2: Int) = exec {
-            when (arg0) {
-                GL_FOG_COLOR -> if (copyIfChanged(arg1.slice(arg2, 4), state.fogColor)) state.ffpStateDirty = true
-                GL_FOG_START -> {
-                    val v = arg1?.get(arg2) ?: state.fogStart
-                    if (state.fogStart != v) { state.fogStart = v; state.ffpStateDirty = true }
-                }
-                GL_FOG_END -> {
-                    val v = arg1?.get(arg2) ?: state.fogEnd
-                    if (state.fogEnd != v) { state.fogEnd = v; state.ffpStateDirty = true }
+        actual fun glFogfv(arg0: Int, arg1: FloatArray?, arg2: Int) {
+            val color = if (arg0 == GL_FOG_COLOR) arg1.slice(arg2, 4) else null
+            val scalar = if (arg0 == GL_FOG_START || arg0 == GL_FOG_END) arg1?.get(arg2) else null
+            exec {
+                when (arg0) {
+                    GL_FOG_COLOR -> if (copyIfChanged(color!!, state.fogColor)) state.ffpStateDirty = true
+                    GL_FOG_START -> {
+                        val v = scalar ?: state.fogStart
+                        if (state.fogStart != v) { state.fogStart = v; state.ffpStateDirty = true }
+                    }
+                    GL_FOG_END -> {
+                        val v = scalar ?: state.fogEnd
+                        if (state.fogEnd != v) { state.fogEnd = v; state.ffpStateDirty = true }
+                    }
                 }
             }
         }
@@ -659,10 +678,19 @@ actual class OpenGL {
                 GL_ALPHA_SCALE -> setEnvScale(state.alphaScale, unit, arg2)
             }
         }
-        actual fun glTexEnvfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
-            if (arg0 == GL_TEXTURE_ENV && arg1 == GL_TEXTURE_ENV_COLOR) {
-                val unit = texturingUnitIndex() ?: return@exec
-                if (copyIfChanged(arg2.slice(arg3, 4), state.textureEnvColor[unit])) state.texEnvDirty[unit] = true
+        actual fun glTexEnvfv(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
+            // Copy now, not inside exec: GL captures array arguments when a display list is
+            // compiled, and the client reuses the source array. WaterMaterialPass records its
+            // unit-1 constant colour (the SD water's alpha) from the shared array that
+            // method3808 also fills with each terrain point light's colour/intensity, so reading
+            // it at replay gave the water the last light's alpha - flashing whenever the
+            // "flickering effects" option animates light intensity.
+            val color = arg2.slice(arg3, 4)
+            exec {
+                if (arg0 == GL_TEXTURE_ENV && arg1 == GL_TEXTURE_ENV_COLOR) {
+                    val unit = texturingUnitIndex() ?: return@exec
+                    if (copyIfChanged(color, state.textureEnvColor[unit])) state.texEnvDirty[unit] = true
+                }
             }
         }
 
@@ -1853,10 +1881,11 @@ actual class OpenGL {
             }
         }
 
-        actual fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) = exec {
-            if (arg0 == GL_VERTEX_PROGRAM_ARB && arg2 != null && arg3 >= 0 && arg3 + 4 <= arg2.size) {
-                state.boundVertexProgram?.setLocalParameter(arg1, arg2[arg3], arg2[arg3 + 1], arg2[arg3 + 2], arg2[arg3 + 3])
-            }
+        actual fun glProgramLocalParameter4fvARB(arg0: Int, arg1: Int, arg2: FloatArray?, arg3: Int) {
+            if (arg0 != GL_VERTEX_PROGRAM_ARB || arg2 == null || arg3 < 0 || arg3 + 4 > arg2.size) return
+            // Read now rather than inside exec - see glTexEnvfv.
+            val x = arg2[arg3]; val y = arg2[arg3 + 1]; val z = arg2[arg3 + 2]; val w = arg2[arg3 + 3]
+            exec { state.boundVertexProgram?.setLocalParameter(arg1, x, y, z, w) }
         }
     }
 }

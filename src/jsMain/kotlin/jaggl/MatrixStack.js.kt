@@ -181,7 +181,27 @@ class MatrixStack {
     fun modelview(): FloatArray = stack(0).last()
     fun projection(): FloatArray = stack(1).last()
     fun textureMatrix(unit: Int = 0): FloatArray = stack(2 + unit).last()
-    fun mvp(): FloatArray = Mat4.multiply(projection(), modelview())
+    private var mvpCache: FloatArray? = null
+    private var mvpModelViewVersion = -1
+    private var mvpProjectionVersion = -1
+
+    /**
+     * projection * modelview, recomputed only when either matrix changed. Returns a fresh array
+     * per recompute (never mutated afterwards), so callers may hold on to it. Every program that
+     * positions geometry uploads this one product rather than multiplying on the GPU, so the
+     * fixed-function shader and the transpiled ARB programs see bit-identical clip transforms.
+     */
+    fun mvp(): FloatArray {
+        val mvVersion = versions[0]
+        val projVersion = versions[1]
+        val cached = mvpCache
+        if (cached != null && mvVersion == mvpModelViewVersion && projVersion == mvpProjectionVersion) return cached
+        val m = Mat4.multiply(projection(), modelview())
+        mvpCache = m
+        mvpModelViewVersion = mvVersion
+        mvpProjectionVersion = projVersion
+        return m
+    }
 
     private companion object {
         // glActiveTexture accepts GL_TEXTURE0..GL_TEXTURE31.

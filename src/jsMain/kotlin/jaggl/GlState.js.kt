@@ -245,15 +245,17 @@ class GlState(val gl: WebGL2RenderingContext) {
             useProgram(fixedFunctionShader.program)
             val s = fixedFunctionShader
             val modelViewVersion = matrixStack.version(GL_MODELVIEW)
-            if (modelViewVersion != lastModelViewVersion) {
+            val modelViewChanged = modelViewVersion != lastModelViewVersion
+            if (modelViewChanged) {
                 lastModelViewVersion = modelViewVersion
                 gl.uniformMatrix4fv(s.uModelView, false, matrixStack.modelview().asFloat32Array())
             }
 
             val projectionVersion = matrixStack.version(GL_PROJECTION)
-            if (projectionVersion != lastProjectionVersion) {
-                lastProjectionVersion = projectionVersion
-                gl.uniformMatrix4fv(s.uProjection, false, matrixStack.projection().asFloat32Array())
+            val projectionChanged = projectionVersion != lastProjectionVersion
+            if (projectionChanged) lastProjectionVersion = projectionVersion
+            if (modelViewChanged || projectionChanged) {
+                gl.uniformMatrix4fv(s.uModelViewProjection, false, matrixStack.mvp().asFloat32Array())
             }
 
             for (unit in 0 until 3) {
@@ -323,7 +325,7 @@ class GlState(val gl: WebGL2RenderingContext) {
         }
 
         if (mvChanged || projChanged) {
-            gl.uniformMatrix4fv(c.modelViewProjection, false, Mat4.multiply(proj, mv).asFloat32Array())
+            gl.uniformMatrix4fv(c.modelViewProjection, false, matrixStack.mvp().asFloat32Array())
         }
 
         val texVersion = matrixStack.version(GL_TEXTURE_MATRIX)
