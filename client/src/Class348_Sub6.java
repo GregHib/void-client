@@ -36,7 +36,7 @@ final class Class348_Sub6 extends Class348 {
             if (i != 20) anInt6633 = -118;
             if (file != null) {
                 try {
-                    System.load(file.getPath());
+                    System.load(file.getAbsolutePath());
                     Player.aHashtable10565.put(string, (aClass6640 != null ? aClass6640 : (aClass6640 = Class90.class)));
                     return true;
                 } catch (Throwable throwable) {
