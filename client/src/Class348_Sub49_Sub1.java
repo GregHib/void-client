@@ -70,9 +70,11 @@ final class Class348_Sub49_Sub1 extends Class348_Sub49 {
             for (int i_7_ = Canvas_Sub1.anInt67; i_7_ < Class189.anInt2524; i_7_++) {
                 if (i_7_ >= i && is != null) {
                     int i_8_ = Class99.aBooleanArrayArray1572.length;
-                    if ((Class37.anInt492 + Class99.aBooleanArrayArray1572.length) > Class318_Sub7.anInt6451) i_8_ -= (Class37.anInt492 + Class99.aBooleanArrayArray1572.length - Class318_Sub7.anInt6451);
+                    int overX = Class37.anInt492 - Class99.aBooleanArrayArray1572.length + i_8_ - Class318_Sub7.anInt6451;
+                    if (overX > 0) i_8_ -= overX;
                     int i_9_ = Class99.aBooleanArrayArray1572[0].length;
-                    if ((Class348_Sub34.anInt6974 + Class99.aBooleanArrayArray1572[0].length) > Class348_Sub41.anInt7054) i_9_ -= (Class348_Sub34.anInt6974 + Class99.aBooleanArrayArray1572[0].length - Class348_Sub41.anInt7054);
+                    int overY = Class348_Sub34.anInt6974 - Class240.anInt4686 + i_9_ - Class348_Sub41.anInt7054;
+                    if (overY > 0) i_9_ -= overY;
                     boolean[][] bools = Class348_Sub8.aBooleanArrayArray6656;
                     if (Class348_Sub40_Sub17.aBoolean9242) {
                         if (Class348_Sub40_Sub5.aBoolean9121) bools = Class115.aBooleanArrayArrayArray1751[i_7_];
